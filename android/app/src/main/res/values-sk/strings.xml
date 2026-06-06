@@ -1,0 +1,1577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Nastavenia</string>
+    <string name="title_accessibility">Prístupnosť</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Získať poverenia</string>
+    <string name="title_scan_verification_qr">Skenovať overovací QR kód</string>
+    <string name="title_verifying_age">Overuje sa vek</string>
+    <string name="title_age_verified">Vek overený</string>
+    <string name="title_verification_failed">Overenie zlyhalo</string>
+    <string name="title_officer_mode">Režim úradníka</string>
+    <string name="title_officer_dashboard">Nástenka úradníka</string>
+    <string name="title_issue_credential">Vydať poverenie</string>
+    <string name="title_credential_ready">Poverenie je pripravené</string>
+    <string name="title_get_your_credential">Získajte svoje poverenie</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Vitajte v Provii Wallet</string>
+    <string name="welcome_subtitle">Bezpečné overenie veku jednoducho</string>
+    <string name="welcome_first_credential">Začnite pridaním svojho prvého poverenia na overenie veku</string>
+    <string name="welcome_description">Súkromné overenie veku pomocou dôkazov s nulovými znalosťami</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Vitajte v Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Vyberte si preferovaný jazyk</string>
+    <string name="onboarding_use_english">Používať angličtinu</string>
+    <string name="onboarding_use_english_description">Pokračovať s angličtinou ako jazykom aplikácie</string>
+    <string name="onboarding_rotating_button_description">Tlačidlo Zmeniť jazyk, aktuálne zobrazené: %1$s. Klepnutím vyberte iný jazyk.</string>
+    <string name="onboarding_change_later">Toto môžete zmeniť neskôr v Nastaveniach</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Prístupnosť</string>
+    <string name="onboarding_accessibility_desc">Chceli by ste prispôsobiť funkcie prístupnosti, ako je veľkosť textu, dotykové ciele alebo obmedzenie pohybu?</string>
+    <string name="onboarding_use_defaults">Použiť predvolené</string>
+    <string name="onboarding_use_defaults_description">Pokračovať so štandardnými nastaveniami prístupnosti</string>
+    <string name="onboarding_open_accessibility">Nastavenia prístupnosti</string>
+    <string name="onboarding_open_accessibility_description">Otvoriť nastavenia prístupnosti na prispôsobenie aplikácie</string>
+    <string name="onboarding_accessibility_later">Toto môžete zmeniť neskôr v Nastaveniach</string>
+    <string name="onboarding_accessibility_features_title">Dostupné funkcie zahŕňajú:</string>
+    <string name="onboarding_feature_text_size">Väčšie veľkosti textu</string>
+    <string name="onboarding_feature_touch_targets">Zväčšené dotykové ciele</string>
+    <string name="onboarding_feature_reduce_motion">Obmedzený pohyb</string>
+    <string name="onboarding_feature_high_contrast">Režim vysokého kontrastu</string>
+    <string name="onboarding_talkback_detected">TalkBack zistený</string>
+    <string name="onboarding_talkback_message">Povolili sme podrobné popisy, ktoré vám pomôžu orientovať sa v aplikácii.</string>
+    <string name="onboarding_continue_to_setup">Pokračovať na nastavenie</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Vyžaduje sa jednorazové nastavenie</string>
+    <string name="setup_download_required">Vyžaduje sa stiahnutie</string>
+    <string name="setup_download_description">Táto aplikácia potrebuje stiahnuť bezpečnostné komponenty pre dôkazy s nulovými znalosťami (približne 87 MB).</string>
+    <string name="setup_wifi_recommended">Odporúča sa Wi-Fi</string>
+    <string name="setup_checking_status">Kontroluje sa stav nastavenia...</string>
+    <string name="setup_already_setup">Už je nastavené!</string>
+    <string name="setup_ready_message">Vaša peňaženka je pripravená na bezpečné overenie veku</string>
+    <string name="setup_preparing">Pripravuje sa bezpečný overovací systém...</string>
+    <string name="setup_checking_components">Kontrolujú sa bezpečnostné komponenty...</string>
+    <string name="setup_downloading">Sťahujú sa bezpečnostné komponenty</string>
+    <string name="setup_download_progress_description">%1$d%% dokončené (%2$s MB z %3$s MB stiahnutých)</string>
+    <string name="setup_initializing">Inicializujú sa bezpečnostné komponenty...</string>
+    <string name="setup_complete">Nastavenie dokončené!</string>
+    <string name="setup_download_info">Umožňuje to dôkazy s nulovými znalosťami pre súkromné overenie veku</string>
+    <string name="setup_one_time_download">Jednorazové stiahnutie</string>
+    <string name="setup_stuck_message">Toto trvá dlhšie, ako sa očakávalo</string>
+    <string name="setup_stuck_description">Nastavenie môže byť zaseknuté. Skúste reštartovať.</string>
+    <string name="setup_restart_message">Aplikácia sa musí reštartovať. Niekedy sa to stáva pri prvom spustení.</string>
+    <string name="setup_storage_full">Úložisko je plné</string>
+    <string name="setup_connection_error">Chyba pripojenia</string>
+    <string name="setup_failed">Nastavenie zlyhalo</string>
+    <string name="setup_initialization_error">Chyba inicializácie</string>
+    <string name="error_storage_init_failed">Inicializácia úložiska zlyhala. Reštartujte aplikáciu.</string>
+    <string name="error_storage_init_close_restart">Inicializácia úložiska zlyhala. Zatvorte a reštartujte aplikáciu.</string>
+    <string name="setup_free_storage_message">Uvoľnite aspoň 65 MB a skúste znova</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Súkromie chránené</string>
+    <string name="setup_privacy_description">Vaše overenie veku využíva dôkazy s nulovými znalosťami. Vaše dátum narodenia sa nikdy nezdieľa.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Moje poverenia</string>
+    <string name="credentials_empty">Žiadne uložené poverenia</string>
+    <string name="credential_active">Poverenie aktívne</string>
+    <string name="credential_expired">Poverenie vypršalo</string>
+    <string name="credential_ready_for_verification">Pripravené na overenie</string>
+    <string name="credential_expired_message">Platnosť vášho poverenia vypršala a musí byť nahradené</string>
+    <string name="credential_stored_successfully">Poverenie úspešne uložené</string>
+    <string name="credential_stored_description">Vaše vekové poverenie bolo bezpečne uložené a je pripravené na použitie</string>
+    <string name="credential_can_prove_age">Teraz môžete súkromne preukázať svoj vek</string>
+    <string name="credential_returning">Návrat k povereniam...</string>
+    <string name="credential_view_credentials">Zobraziť poverenia</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Hotovo</string>
+    <string name="action_scan_qr_code">Skenovať QR kód</string>
+    <string name="action_find_locations">Nájsť miesta</string>
+    <string name="action_get_credential">Získať poverenie</string>
+    <string name="action_replace_credential">Nahradiť novým poverením</string>
+    <string name="action_replace_credential_now">Nahradiť poverenie teraz</string>
+    <string name="action_delete_credential">Odstrániť poverenie</string>
+    <string name="credential_action_scan_description">Získať poverenie od oprávneného vydavateľa</string>
+    <string name="credential_action_find_description">Objaviť vydavateľov v okolí</string>
+    <string name="credential_remove_description">Odstrániť aktuálne poverenie</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Súkromie</string>
+    <string name="credential_info_privacy_value">Chránené</string>
+    <string name="credential_info_status">Stav</string>
+    <string name="credential_info_status_value">Platné</string>
+    <string name="credential_tip_title">Rýchly tip</string>
+    <string name="credential_tip_message">Klepnutím na tlačidlo \'Overiť vek\' naskenujte overovacie QR (Quick Response) kódy v zúčastnených prevádzkach.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">Skenovať QR kód</string>
+    <string name="verification_verify_age">Overiť vek</string>
+    <string name="verification_generating_proof">Generuje sa dôkaz...</string>
+    <string name="verification_success">Overenie úspešné</string>
+    <string name="verification_failed">Overenie zlyhalo</string>
+    <string name="verification_age_verified">Vek overený</string>
+    <string name="verification_age_verified_message">Váš vek bol súkromne overený</string>
+    <string name="verification_can_return">Teraz sa môžete vrátiť na stránku a pokračovať.</string>
+    <string name="verification_returning_browser">Návrat do prehliadača...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">Krok 1 z 2</string>
+    <string name="verification_step_2_of_2">Krok 2 z 2</string>
+    <string name="verification_point_camera">Namierjte kameru na overovací QR kód</string>
+    <string name="verification_hold_steady">Držte zariadenie stabilne, kým nebudete počuť potvrdzovací zvuk.</string>
+    <string name="verification_reading_request">Číta sa požiadavka na overenie...</string>
+    <string name="verification_processing_challenge">Spracúva sa výzva...</string>
+    <string name="verification_creating_proof">Vytvára sa dôkaz veku...</string>
+    <string name="verification_submitting_proof">Odosieľa sa dôkaz...</string>
+    <string name="verification_processing_message">Môže to trvať niekoľko sekúnd</string>
+    <string name="verification_preparing_proof">Pripravujeme súkromný dôkaz pomocou vášho uloženého poverenia.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Číta sa požiadavka na overenie...</string>
+    <string name="verification_status_processing_challenge">Spracúva sa výzva...</string>
+    <string name="verification_status_creating_proof">Vytvára sa dôkaz veku...</string>
+    <string name="verification_status_submitting_proof">Odosieľa sa dôkaz...</string>
+    <string name="verification_status_verified">✔ Vek overený</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Nedá sa zobraziť výzva na overenie totožnosti</string>
+    <string name="verification_error_verification_failed">Overenie zlyhalo</string>
+    <string name="verification_error_generic">Vyskytla sa chyba</string>
+    <string name="verification_error_failed_to_process_code">Nepodarilo sa spracovať kód</string>
+    <string name="verification_error_failed_to_process_challenge">Nepodarilo sa spracovať výzvu</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Dôveryhodní vydavatelia v Austrálii</string>
+    <string name="issuers_loading">Načítavajú sa vydavatelia...</string>
+    <string name="issuers_loaded">Vydavatelia úspešne načítaní</string>
+    <string name="issuers_unable_to_load">Nepodarilo sa načítať vydavateľov</string>
+    <string name="issuers_check_connection">Skontrolujte svoje internetové pripojenie a skúste znova</string>
+    <string name="issuers_categories_header">KATEGÓRIE</string>
+    <string name="issuers_available_header">DOSTUPNÍ VYDAVATELIA</string>
+    <string name="issuers_found_count">Nájdených: %d</string>
+    <string name="issuer_status_coming_soon">Čoskoro</string>
+    <string name="issuer_status_verified">Overený</string>
+    <string name="issuer_how_to_get">Ako získať poverenie</string>
+    <string name="issuer_service_locations">Miesta poskytovania služieb</string>
+    <string name="issuer_visit_website">Navštíviť webovú stránku %s</string>
+    <string name="issuer_learn_more">Zistiť viac o %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Bankovníctvo</string>
+    <string name="category_super_fund">Super fond</string>
+    <string name="category_government">Vláda</string>
+    <string name="category_travel">Cestovanie</string>
+    <string name="category_telco">Telekomunikácie</string>
+    <string name="category_insurance">Poistenie</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Nastavenia</string>
+    <string name="settings_section_sandbox">Režim Sandbox</string>
+    <string name="settings_section_general">Všeobecné</string>
+    <string name="settings_section_credentials">Poverenia</string>
+    <string name="settings_section_advanced">Rozšírené</string>
+    <string name="settings_section_privacy">Súkromie</string>
+    <string name="settings_security">Zabezpečenie</string>
+    <string name="settings_biometric">Používať biometrickú autentifikáciu</string>
+    <string name="settings_environment">Nastavenia prostredia</string>
+    <string name="settings_environment_description">Zobraziť aktuálnu konfiguráciu prostredia</string>
+    <string name="settings_reset_proving_key">Obnoviť dokazovací kľúč</string>
+    <string name="settings_reset_proving_key_description">Znovu stiahnuť bezpečnostné komponenty (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Vystaviť testovacie poverenie ako Vydavateľ</string>
+    <string name="settings_mint_test_credential_subtitle">Vystavte testovacie poverenie do svojej peňaženky, aby ste ho mohli overiť z dema spoliehajúcej sa strany.</string>
+    <string name="settings_find_trusted_issuers">Nájsť dôveryhodných vydavateľov</string>
+    <string name="settings_version">Verzia: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Klepnite 5-krát pre prepnutie</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Jazyk</string>
+    <string name="language_selection_description">Vyberte si preferovaný jazyk. Aplikácia sa reštartuje, aby sa zmeny uplatnili.</string>
+    <string name="language_selected">Vybraté</string>
+    <string name="settings_language">Jazyk</string>
+    <string name="settings_language_description">Zmeniť jazyk aplikácie</string>
+    <string name="settings_licenses">Licencie open source</string>
+    <string name="settings_licenses_description">Zobraziť licencie tretích strán</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Potvrdiť jazyk</string>
+    <string name="language_change_to">Zmeniť jazyk na:</string>
+    <string name="language_restart_notice">Aplikácia sa reštartuje, aby sa uplatnil tento jazyk.</string>
+    <string name="language_apply">Použiť</string>
+    <string name="language_cancel">Zrušiť</string>
+    <string name="language_skip_title">Preskočiť výber jazyka?</string>
+    <string name="language_skip_message">Ak preskočíte, aplikácia bude štandardne používať angličtinu. Jazyk môžete zmeniť neskôr v Nastaveniach.</string>
+    <string name="language_use_english">Používať angličtinu</string>
+    <string name="language_go_back">Späť</string>
+    <string name="language_help_title">Pomoc pri výbere jazyka</string>
+    <string name="language_help_how_to">Ako vybrať jazyk:</string>
+    <string name="language_help_step1">1. Použite vyhľadávacie pole na nájdenie jazyka</string>
+    <string name="language_help_step2">2. Klepnite na preferovaný jazyk</string>
+    <string name="language_help_step3">3. Potvrďte výber</string>
+    <string name="language_help_system_note">Váš systémový jazyk je zvýraznený hore, ak je podporovaný.</string>
+    <string name="language_help_settings_note">Toto môžete zmeniť neskôr v Nastaveniach.</string>
+    <string name="language_got_it">Rozumiem</string>
+    <string name="language_select_title">Vybrať jazyk</string>
+    <string name="language_skip_button">Preskočiť (použiť angličtinu)</string>
+    <string name="language_search_placeholder">Hľadať jazyky...</string>
+    <string name="language_no_results">Žiadne jazyky sa nenašli</string>
+    <string name="language_try_different">Skúste iný hľadaný výraz</string>
+    <string name="language_system_badge">Systémový jazyk</string>
+    <string name="language_count">%d jazykov</string>
+    <string name="language_no_match_announcement">Nenašli sa žiadne jazyky zodpovedajúce vášmu vyhľadávaniu</string>
+    <string name="language_found_announcement">Nájdené: %d jazykov</string>
+    <string name="language_search_cleared">Vyhľadávanie vymazané, zobrazujú sa všetky %d jazyky</string>
+    <string name="language_selected_announcement">Vybraté %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Obrazovka výberu jazyka</string>
+    <string name="language_help_button_description">Pomoc a informácie o výbere jazyka</string>
+    <string name="language_skip_description">Preskočiť výber jazyka a štandardne použiť angličtinu</string>
+    <string name="language_clear_search_description">Vymazať vyhľadávanie</string>
+    <string name="language_count_description">Dostupné jazyky: %d</string>
+    <string name="language_apply_description">Uplatniť výber jazyka a pokračovať</string>
+    <string name="language_cancel_description">Zrušiť výber jazyka</string>
+    <string name="language_cancelled_announcement">Výber jazyka zrušený</string>
+    <string name="language_selected_description">Vybraný jazyk: %1$s, %2$s</string>
+    <string name="language_item_system">Systémový jazyk: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, aktuálne vybraté</string>
+    <string name="language_item_system_selected">Systémový jazyk: %1$s, %2$s, aktuálne vybraté</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Návrat k výberu jazyka</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Režim Sandbox aktívny</string>
+    <string name="sandbox_mode_banner">REŽIM SANDBOX AKTÍVNY</string>
+    <string name="sandbox_mode_description">Používa sa testovacie prostredie. Klepnite päťkrát na číslo verzie pre prepnutie.</string>
+    <string name="sandbox_credential_title">Poverenie Sandbox</string>
+    <string name="sandbox_credential_description">Vygenerujte poverenie Sandbox na testovanie overovacích tokov bez dotyku produkčných dát.</string>
+    <string name="sandbox_select_age">Vybrať vek</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Predvolený dátum narodenia: %s</string>
+    <string name="sandbox_override_dob">Prepísať predvolený dátum narodenia</string>
+    <string name="sandbox_override_description">Použiť presný dátum namiesto predvoleného podľa veku.</string>
+    <string name="sandbox_date_of_birth">Dátum narodenia</string>
+    <string name="sandbox_generate_credential">Vygenerovať poverenie</string>
+    <string name="sandbox_generating">Generuje sa…</string>
+    <string name="sandbox_test_credential_saved">Testovacie poverenie uložené</string>
+    <string name="sandbox_id_prefix">Identifikačný prefix: %s…</string>
+    <string name="sandbox_unable_to_generate">Nedá sa vygenerovať poverenie</string>
+    <string name="settings_sandbox_dob_format">Dátum narodenia: %s</string>
+    <string name="settings_sandbox_age_dob_format">Vek %d+ (Dátum narodenia: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Konfigurácia prostredia</string>
+    <string name="environment_current">Aktuálne: %s</string>
+    <string name="environment_issuer_api">Issuer API (Application Programming Interface): %s</string>
+    <string name="environment_verifier_api">Verifier API (Application Programming Interface): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Odstrániť poverenie?</string>
+    <string name="dialog_delete_credential_message">Táto akcia odstráni poverenie z vášho zariadenia. V prípade potreby ho môžete znova získať od vydavateľa.</string>
+    <string name="dialog_delete_credential_announcement">Dialógové okno otvorené: Odstrániť poverenie</string>
+    <string name="dialog_reset_proving_key_title">Obnoviť dokazovací kľúč?</string>
+    <string name="dialog_reset_proving_key_message">Dokazovací kľúč a podporné súbory budú vymazané a znovu stiahnuté pri ďalšom otvorení aplikácie.</string>
+    <string name="dialog_reset_proving_key_announcement">Dialógové okno otvorené: Obnoviť dokazovací kľúč</string>
+    <string name="dialog_environment_info_announcement">Dialógové okno otvorené: Konfigurácia prostredia</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">Prístupnosť</string>
+    <string name="accessibility_service_label">Prístupnosť Provii Wallet</string>
+    <string name="accessibility_service_description">Služba prístupnosti Provii Wallet poskytuje rozšírenú podporu pre používateľov so zdravotným postihnutím. Zahŕňa automatické čítanie poverení, navigáciu s vedením a zjednodušené interakcie.</string>
+    <string name="accessibility_personalize">Prispôsobte si svoju skúsenosť</string>
+    <string name="accessibility_customize_features">Prispôsobiť funkcie prístupnosti</string>
+    <string name="accessibility_quick_setup">Rýchle nastavenie</string>
+    <string name="accessibility_features_active">%d aktívnych funkcií</string>
+    <string name="accessibility_customize_experience">Prispôsobte si svoju skúsenosť</string>
+    <string name="accessibility_reset_title">Obnoviť nastavenia prístupnosti?</string>
+    <string name="accessibility_reset_message">Všetky predvoľby prístupnosti sa vrátia na predvolené hodnoty.</string>
+    <string name="accessibility_reset">Obnoviť nastavenia prístupnosti</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Zrak</string>
+    <string name="accessibility_category_interaction">Interakcia</string>
+    <string name="accessibility_category_cognitive">Kognitívna podpora</string>
+    <string name="accessibility_category_alternative_input">Alternatívny vstup</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Veľmi veľký text</string>
+    <string name="accessibility_extra_large_text_description">Zvýšiť základné veľkosti písma o 45 %</string>
+    <string name="accessibility_high_contrast">Vysoký kontrast</string>
+    <string name="accessibility_high_contrast_description">Použiť farby s vysokým kontrastom</string>
+    <string name="accessibility_reduce_transparency">Znížiť priehľadnosť</string>
+    <string name="accessibility_reduce_transparency_description">Odstrániť efekty rozmazania a skla</string>
+    <string name="accessibility_dyslexia_font">Písmo priateľské k dyslexii</string>
+    <string name="accessibility_dyslexia_font_description">Použiť písmo OpenDyslexic pre lepšiu čitateľnosť</string>
+    <string name="accessibility_color_blind_mode">Režim pre farboslepých</string>
+    <string name="accessibility_color_blind_optimized">Farby optimalizované pre %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Žiadny</string>
+    <string name="color_blind_protanopia">Protanopia (slepota na červenú)</string>
+    <string name="color_blind_deuteranopia">Deuteranopia (slepota na zelenú)</string>
+    <string name="color_blind_tritanopia">Tritanopia (slepota na modrú)</string>
+    <string name="color_blind_monochrome">Monochromatický</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Väčšie dotykové ciele</string>
+    <string name="accessibility_larger_touch_targets_description">Zväčšiť veľkosť tlačidiel a čipov</string>
+    <string name="accessibility_reduce_motion">Znížiť pohyb</string>
+    <string name="accessibility_reduce_motion_description">Minimalizovať animácie a prechody</string>
+    <string name="accessibility_extended_timeouts">Predĺžené časové limity</string>
+    <string name="accessibility_extended_timeouts_description">Povoliť viac času pre časovo obmedzené akcie</string>
+    <string name="accessibility_simplified_gestures">Zjednodušené gestá</string>
+    <string name="accessibility_simplified_gestures_description">Znížiť počet viacstupňových gest</string>
+    <string name="accessibility_haptic_feedback">Haptická odozva</string>
+    <string name="accessibility_haptic_feedback_description">Vibračné potvrdenie akcií</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Zjednodušené rozhranie</string>
+    <string name="accessibility_simplified_interface_description">Skryť rozšírené možnosti a znížiť neporiadok</string>
+    <string name="accessibility_show_step_numbers">Zobraziť čísla krokov</string>
+    <string name="accessibility_show_step_numbers_description">Zobraziť indikátory postupu</string>
+    <string name="accessibility_detailed_descriptions">Podrobné popisy</string>
+    <string name="accessibility_detailed_descriptions_description">Poskytnúť ďalší vysvetľujúci text</string>
+    <string name="accessibility_confirm_actions">Potvrdiť pred akciami</string>
+    <string name="accessibility_confirm_actions_description">Vyžiadať potvrdenie pri dôležitých operáciách</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Manuálne zadávanie kódu</string>
+    <string name="accessibility_manual_code_entry_description">Umožniť zadávanie QR (Quick Response) kódov namiesto skenovania</string>
+    <string name="accessibility_voice_input">Hlasový vstup</string>
+    <string name="accessibility_voice_input_description">Povoliť rozpoznávanie reči pre textové polia</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Zrak</string>
+    <string name="accessibility_profile_motor">Motorika</string>
+    <string name="accessibility_profile_cognitive">Kognitívne</string>
+    <string name="accessibility_profile_senior">Seniori</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Späť</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Domov</string>
+    <string name="breadcrumb_settings">Nastavenia</string>
+    <string name="breadcrumb_accessibility">Prístupnosť</string>
+    <string name="breadcrumb_language">Jazyk</string>
+    <string name="breadcrumb_help">Centrum pomoci</string>
+    <string name="breadcrumb_officer_mode">Režim úradníka</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Typografia a rozostupy textu</string>
+    <string name="accessibility_line_spacing">Riadkovanie</string>
+    <string name="accessibility_line_spacing_description">Upraviť medzery medzi riadkami textu</string>
+    <string name="accessibility_paragraph_spacing">Medzery medzi odsekmi</string>
+    <string name="accessibility_paragraph_spacing_description">Upraviť medzery medzi odsekmi</string>
+    <string name="accessibility_letter_spacing">Medzery medzi písmenami</string>
+    <string name="accessibility_letter_spacing_description">Upraviť medzery medzi písmenami</string>
+    <string name="accessibility_typography_aaa_note">Odporúčania AAA: 1,5-násobné riadkovanie, 2,0-násobné medzery medzi odsekmi a medzery medzi písmenami 0,12em.</string>
+    <string name="accessibility_spacing_current">Aktuálne: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Správanie časového limitu</string>
+    <string name="accessibility_timeout_no_automatic">Žiadne automatické časové limity pre súlad s AAA</string>
+    <string name="accessibility_timeout_auto_advance_30">Automatický postup po 30 sekundách</string>
+    <string name="accessibility_timeout_auto_advance_60">Automatický postup po 60 sekundách</string>
+    <string name="accessibility_timeout_set_announcement">Správanie časového limitu nastavené na %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Úroveň kontrastu</string>
+    <string name="accessibility_contrast_aaa_ratio">Kontrastný pomer 7:1 pre súlad s AAA</string>
+    <string name="accessibility_contrast_standard">Štandardný kontrast</string>
+    <string name="accessibility_contrast_aa_ratio">Kontrastný pomer 4,5:1 pre súlad s AA</string>
+    <string name="accessibility_contrast_set_announcement">Úroveň kontrastu nastavená na %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Režim pre farboslepých nastavený na %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">Posuvník %1$s. Aktuálna hodnota: %2$s. %3$sRozsah od %4$s do %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">V súlade s AAA. </string>
+    <string name="accessibility_slider_announcement">%1$s nastavené na %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, v súlade s AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s povolené</string>
+    <string name="accessibility_toggle_disabled">%s zakázané</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Odozva overenia</string>
+    <string name="accessibility_sound_enabled">Prehrať zvuk pri úspechu</string>
+    <string name="accessibility_sound_enabled_description">Prehrať potvrdzujúci zvuk po úspešnom overení</string>
+    <string name="accessibility_sound_style">Štýl zvuku</string>
+    <string name="accessibility_sound_preview">Ukážka zvuku</string>
+    <string name="accessibility_sound_preview_preset">Ukážka %s</string>
+    <string name="accessibility_sound_style_set_announcement">Štýl zvuku nastavený na %s</string>
+    <string name="accessibility_haptic_enabled">Vibrovať pri úspechu</string>
+    <string name="accessibility_haptic_enabled_description">Poskytnúť haptickú odozvu po úspešnom overení</string>
+    <string name="accessibility_sound_footer">Zvuk rešpektuje nastavenia tichého režimu vášho zariadenia</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Hlasitosť</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Ukážka aktuálnej hlasitosti</string>
+    <string name="accessibility_volume_set_announcement">Hlasitosť nastavená na %d percent</string>
+    <string name="accessibility_volume_slider_description">Posuvník hlasitosti. Aktuálna hodnota: %d percent</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Obnoviť nastavenia</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">Režim úradníka</string>
+    <string name="officer_id">Identifikácia úradníka (ID)</string>
+    <string name="officer_id_placeholder">napr. OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Zadajte pridelenú identifikáciu úradníka</string>
+    <string name="officer_yubikey_connected">YubiKey pripojený</string>
+    <string name="officer_connect_yubikey">Pripojiť YubiKey</string>
+    <string name="officer_touch_yubikey">Dotknite sa YubiKey na autentifikáciu...</string>
+    <string name="officer_authenticate_hmac">Autentifikovať pomocou HMAC (Hash-based Message Authentication Code)</string>
+    <string name="officer_authentication_process">Proces autentifikácie:</string>
+    <string name="officer_auth_steps">1. Zadajte svoju identifikáciu úradníka\n2. Kliknite na Autentifikovať\n3. Dotknite sa YubiKey, keď bliká\n4. Autentifikácia HMAC (Hash-based Message Authentication Code) overí vašu totožnosť</string>
+    <string name="officer_auth_failed">Autentifikácia zlyhala. Overte svoju identifikáciu úradníka a skúste znova.</string>
+    <string name="officer_session_info">Úradník: %s</string>
+    <string name="officer_station_info">Stanica: %s</string>
+    <string name="officer_issued_today">Vydané dnes: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Vydať vekové poverenie</string>
+    <string name="officer_issue_description">Overte totožnosť používateľa a vydajte digitálne vekové poverenie</string>
+    <string name="officer_start_issuance">Začať nové vydávanie</string>
+    <string name="officer_issuance_process">PROCES VYDÁVANIA</string>
+    <string name="officer_issuance_steps">1. Skontrolujte fyzický identifikačný doklad používateľa\n2. Zadajte jeho dátum narodenia\n3. Overte, či sa informácie presne zhodujú\n4. Vydajte poverenie s osvedčovacím QR (Quick Response) kódom\n5. Používateľ naskenuje QR kód na prijatie poverenia</string>
+    <string name="officer_verify_identity">Overiť totožnosť používateľa</string>
+    <string name="officer_select_dob">Vybrať dátum narodenia</string>
+    <string name="officer_change_date">Zmeniť dátum</string>
+    <string name="officer_age_years">Vek: %d rokov</string>
+    <string name="officer_under_18_warning">Mladší ako 18 rokov - Nemôže vydať poverenie</string>
+    <string name="officer_verification_checklist">KONTROLNÝ ZOZNAM OVERENIA</string>
+    <string name="officer_document_verified">Fyzický doklad overený</string>
+    <string name="officer_document_verified_description">Videl/-a som platný vládou vydaný doklad totožnosti</string>
+    <string name="officer_dob_matches">Dátum narodenia sa presne zhoduje</string>
+    <string name="officer_dob_matches_description">Dátum narodenia na fyzickom doklade je: %s</string>
+    <string name="officer_issue_credential">Vydať poverenie</string>
+    <string name="officer_user_scanned_successfully">Používateľ úspešne naskenoval</string>
+    <string name="officer_return_to_dashboard">Vrátiť sa na nástenku</string>
+    <string name="officer_go_back">Späť</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">Autentifikácia YubiKey</string>
+    <string name="yubikey_step_format">Krok %1$d z %2$d</string>
+    <string name="yubikey_led_should_blink">LED dióda YubiKey by mala blikať</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Overuje sa vstup...</string>
+    <string name="officer_state_creating_attestation">Vytvára sa osvedčenie...</string>
+    <string name="officer_state_computing_commitment">Vypočítava sa kryptografický záväzok...</string>
+    <string name="officer_state_creating_session">Vytvára sa bezpečná relácia...</string>
+    <string name="officer_state_signing">Podpisuje sa poverenie...</string>
+    <string name="officer_state_finalizing">Dokončuje sa poverenie...</string>
+    <string name="officer_state_storing_attestation">Ukladá sa osvedčenie...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">Relácia čoskoro vyprší</string>
+    <string name="officer_session_expiring_message">Vaša relácia vyprší o %d sekúnd. Chcete uložiť postup?</string>
+    <string name="officer_session_expiring_announcement">Upozornenie: Vaša relácia vyprší o %d sekúnd</string>
+    <string name="officer_save_and_continue">Uložiť a pokračovať</string>
+    <string name="officer_continue_without_saving">Pokračovať bez uloženia</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">DÁTUM NARODENIA</string>
+    <string name="officer_age_format">Vek: %d rokov</string>
+    <string name="officer_under_18_full_warning">Mladší ako 18 rokov - Nemôže vydať poverenie. Na vekové overovacie poverenia majú nárok iba osoby vo veku 18 rokov a staršie. Overte správnosť dátumu narodenia.</string>
+    <string name="officer_verification_checklist_header">KONTROLNÝ ZOZNAM OVERENIA</string>
+    <string name="officer_physical_document_verified">Fyzický doklad overený</string>
+    <string name="officer_sighted_valid_id">Videl/-a som platný vládou vydaný doklad totožnosti</string>
+    <string name="officer_dob_matches_exactly">Dátum narodenia sa presne zhoduje</string>
+    <string name="officer_dob_on_document">Dátum narodenia na fyzickom doklade je: %s</string>
+    <string name="officer_error_label">Chyba</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">Naskenujte vydávací QR (Quick Response) kód</string>
+    <string name="issuance_downloads_credential">Tým sa stiahne vaše vekové poverenie.</string>
+    <string name="issuance_center_qr">Vycentrujte QR kód v rámci rámu a držte zariadenie stabilne.</string>
+    <string name="issuance_enter_code_manually">Zadať kód manuálne</string>
+    <string name="issuance_processing_qr">Spracúva sa QR kód…</string>
+    <string name="issuance_invalid_data">Neplatné vydávacie dáta</string>
+    <string name="issuance_verification_qr_error">Toto je overovací QR kód. Naskenujte prosím vydávací QR kód poverenia.</string>
+    <string name="issuance_invalid_qr_format">Neplatný formát QR kódu</string>
+    <string name="issuance_failed_to_process">Nepodarilo sa spracovať QR kód: %s</string>
+    <string name="issuance_code">Vydávací kód</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">Manuálne zadávanie kódu</string>
+    <string name="manual_entry_enter_code_manually">Zadať kód manuálne</string>
+    <string name="manual_entry_verification_description">Zadajte 12-ciferný overovací kód zobrazený na obrazovke overovateľa.</string>
+    <string name="manual_entry_issuance_description">Napíšte kód zobrazený na obrazovke vydavateľa.</string>
+    <string name="manual_entry_verification_code">Overovací kód</string>
+    <string name="manual_entry_submit">Odoslať kód</string>
+    <string name="manual_entry_please_enter">Zadajte kód</string>
+    <string name="manual_entry_please_enter_verification">Zadajte overovací kód</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Začať počúvať</string>
+    <string name="voice_input_stop_listening">Prestať počúvať</string>
+    <string name="voice_input_recognized">Rozpoznané:</string>
+    <string name="content_desc_voice_input_listening">Počúva sa hlasový vstup</string>
+    <string name="content_desc_voice_input_available">Hlasový vstup dostupný</string>
+    <string name="voice_input_permission_title">Je potrebné povolenie pre mikrofón</string>
+    <string name="voice_input_permission_message">Hlasový vstup vyžaduje prístup k mikrofónu. Môžete ho povoliť v systémových nastaveniach.</string>
+    <string name="voice_input_listening">Počúva sa…</string>
+    <string name="voice_input_error">Chyba hlasového vstupu</string>
+    <string name="voice_input_tap_to_speak">Klepnutím hovorte</string>
+    <string name="voice_input_did_you_say">Povedali ste "%1$s"?</string>
+    <string name="voice_input_confirm">Potvrdiť</string>
+    <string name="voice_input_retry">Skúsiť znova</string>
+    <string name="voice_input_cancel">Zrušiť</string>
+    <string name="voice_input_button">Hlasový vstup</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">Hlasový vstup nie je na tomto zariadení dostupný</string>
+    <string name="voice_input_error_audio">Chyba záznamu zvuku. Skontrolujte mikrofón.</string>
+    <string name="voice_input_error_network">Sieťová chyba. Skontrolujte pripojenie.</string>
+    <string name="voice_input_error_network_timeout">Časový limit siete. Skúste znova.</string>
+    <string name="voice_input_error_no_match">Žiadna reč nezistená. Skúste znova.</string>
+    <string name="voice_input_error_recognizer_busy">Hlasový vstup je zaneprázdnený. Počkajte.</string>
+    <string name="voice_input_error_server">Chyba servera. Skúste neskôr.</string>
+    <string name="voice_input_error_speech_timeout">Reč nebola zaznamenaná. Hovorte hlasnejšie.</string>
+    <string name="voice_input_error_insufficient_permissions">Povolenie pre mikrofón zamietnuté.</string>
+    <string name="voice_input_error_generic">Chyba hlasového vstupu. Skúste znova.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">Späť</string>
+    <string name="action_close">Zatvoriť</string>
+    <string name="action_cancel">Zrušiť</string>
+    <string name="action_ok">OK</string>
+    <string name="action_set">Nastaviť</string>
+    <string name="action_change">Zmeniť</string>
+    <string name="action_delete">Odstrániť</string>
+    <string name="action_reset">Obnoviť</string>
+    <string name="action_retry">Zopakovať</string>
+    <string name="action_try_again">Skúsiť znova</string>
+    <string name="action_refresh">Obnoviť</string>
+    <string name="action_download_now">Stiahnuť teraz</string>
+    <string name="action_retry_setup">Zopakovať nastavenie</string>
+    <string name="action_retry_download">Zopakovať stiahnutie</string>
+    <string name="action_restart_setup">Reštartovať nastavenie</string>
+    <string name="action_manage_storage">Spravovať úložisko</string>
+    <string name="action_check_wifi_settings">Najprv skontrolovať nastavenia Wi-Fi</string>
+    <string name="action_check_wifi_settings_short">Skontrolovať nastavenia Wi-Fi</string>
+    <string name="action_grant_permission">Udeliť povolenie</string>
+    <string name="action_grant_camera_access">Udeliť prístup ku kamere</string>
+    <string name="action_return_to_browser">Vrátiť sa do prehliadača</string>
+    <string name="action_show_debug_info">Zobraziť Debug informácie</string>
+    <string name="action_reset_redownload">Obnoviť a znovu stiahnuť</string>
+    <string name="action_end_session">Ukončiť reláciu</string>
+    <string name="action_expand">Rozbaliť</string>
+    <string name="action_collapse">Zbaliť</string>
+    <string name="accessibility_state_expanded">Rozbalené</string>
+    <string name="accessibility_state_collapsed">Zbalené</string>
+    <string name="accessibility_state_checked">Zaškrtnuté</string>
+    <string name="accessibility_state_unchecked">Nezaškrtnuté</string>
+    <string name="accessibility_state_selected">Vybraté</string>
+    <string name="accessibility_state_not_selected">Nevybraté</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">Vyskytla sa chyba</string>
+    <string name="error_camera_permission">Na skenovanie QR (Quick Response) kódov je potrebné povolenie kamery</string>
+    <string name="error_camera_access_needed">Je potrebný prístup ku kamere</string>
+    <string name="error_camera_permission_description">Udeľte povolenie kamery na skenovanie QR kódov alebo povoľte manuálne zadávanie v nastaveniach prístupnosti.</string>
+    <string name="error_camera_permission_required">Na skenovanie QR kódov je potrebné povolenie kamery</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">Vyhľadáva sa QR kód...</string>
+    <string name="qr_scanner_camera_required">Je potrebné povolenie kamery</string>
+    <string name="qr_scanner_camera_preview">Ukážka kamery na skenovanie QR kódov</string>
+    <string name="qr_scanner_status_scanning">Vyhľadáva sa QR kód</string>
+    <string name="qr_scanner_requesting_permission">Žiada sa povolenie kamery</string>
+    <string name="error_camera_start_failed">Nepodarilo sa spustiť kameru: %s</string>
+    <string name="error_camera_init_failed">Inicializácia kamery zlyhala: %s</string>
+    <string name="error_biometric_not_available">Biometrická autentifikácia nie je dostupná</string>
+    <string name="error_network">Vyskytla sa sieťová chyba</string>
+    <string name="error_no_credential">Žiadne poverenie nie je dostupné. Najprv si zaobstarajte poverenie.</string>
+    <string name="credential_picker_title">Vybrať poverenie</string>
+    <string name="credential_picker_description">Máte viacero poverení, ktoré možno použiť na toto overenie. Vyberte jedno.</string>
+    <string name="credential_picker_expired_label">Vypršané</string>
+    <string name="credential_picker_accessibility_select">Vybrať poverenie: %1$s</string>
+    <string name="error_failed_to_process_challenge">Nepodarilo sa spracovať výzvu</string>
+    <string name="error_failed_to_create_proof">Nepodarilo sa vytvoriť dôkaz</string>
+    <string name="error_verification_failed">Overenie zlyhalo</string>
+    <string name="error_occurred_during_verification">Počas overenia sa vyskytla chyba</string>
+    <string name="error_connection_timeout">Časový limit pripojenia vypršal. Skúste znova.</string>
+    <string name="error_unable_to_connect">Nedá sa pripojiť. Skontrolujte internetové pripojenie.</string>
+    <string name="error_secure_connection_failed">Bezpečné pripojenie zlyhalo. Skúste znova.</string>
+    <string name="error_security_verification_failed">Overenie zabezpečenia zlyhalo. Skúste znova.</string>
+    <string name="error_invalid_input">Neplatný vstup. Skontrolujte informácie a skúste znova.</string>
+    <string name="error_operation_in_progress">Prebieha iná operácia. Čakajte.</string>
+    <string name="error_operation_cancelled">Operácia bola zrušená.</string>
+    <string name="error_age_requirement_not_met">Vekový požiadavok pre toto poverenie nie je splnený.</string>
+    <string name="error_biometric_required">Na pokračovanie je potrebná biometrická autentifikácia.</string>
+    <string name="error_wallet_not_initialized">Peňaženka nie je inicializovaná. Reštartujte aplikáciu.</string>
+    <string name="error_security">Bezpečnostná chyba. Skúste znova.</string>
+    <string name="error_connection_timeout_short">Časový limit pripojenia. Skúste znova.</string>
+    <string name="error_invalid_input_provided">Bol zadaný neplatný vstup.</string>
+    <string name="error_invalid_data_format">Neplatný formát dát. Skúste znova.</string>
+    <string name="error_storage">Chyba úložiska. Skontrolujte úložisko zariadenia.</string>
+    <string name="error_network_short">Sieťová chyba. Skontrolujte pripojenie.</string>
+    <string name="error_label">Chyba</string>
+    <string name="error_dismiss">Zavrieť chybu</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">Spracúva sa...</string>
+    <string name="status_initializing_wallet">Inicializuje sa peňaženka...</string>
+    <string name="status_loading">Načítava sa...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">Súkromie chránené</string>
+    <string name="privacy_zk_description">Váš dátum narodenia sa nikdy nezdieľa. Overovatelia sa dozvedia iba to, či spĺňate ich vekovú požiadavku.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Nastavenia súkromia</string>
+    <string name="privacy_settings_description">Kontrolovať zber dát a spravovať vaše dáta</string>
+    <string name="privacy_section_data_collection">Zber dát</string>
+    <string name="privacy_section_your_data">Vaše dáta</string>
+    <string name="privacy_protection_title">Vaše súkromie je chránené</string>
+    <string name="privacy_protection_description">Provii Wallet používa dôkazy s nulovými znalosťami na overenie vášho veku bez odhalenia dátumu narodenia. Vaše poverenie je uložené iba na vašom zariadení a nikdy sa s nikým nezdieľa.</string>
+    <string name="privacy_analytics_title">Analytika</string>
+    <string name="privacy_analytics_description">Pomôžte zlepšiť Provii Wallet zdieľaním anonymných dát o používaní</string>
+    <string name="privacy_analytics_enabled">Analytika povolená</string>
+    <string name="privacy_analytics_disabled">Analytika zakázaná</string>
+    <string name="privacy_crash_reporting_title">Hlásenie pádov</string>
+    <string name="privacy_crash_reporting_description">Pomôžte nám opravovať chyby automatickým odosielaním správ o pádoch</string>
+    <string name="privacy_crash_reporting_enabled">Hlásenie pádov povolené</string>
+    <string name="privacy_crash_reporting_disabled">Hlásenie pádov zakázané</string>
+    <string name="privacy_what_we_collect_title">Aké dáta zbierame</string>
+    <string name="privacy_what_we_collect_subtitle">Klepnutím sa dozviete o našich dátových postupoch</string>
+    <string name="privacy_data_collection_info_title">Informácie o zbere dát</string>
+    <string name="privacy_data_we_collect_header">Čo zbierame (ak je povolené):</string>
+    <string name="privacy_data_we_collect_list">- Anonymné štatistiky používania aplikácie\n- Správy o pádoch a chybové záznamy\n- Typ zariadenia a verzia OS\n- Informácie o verzii aplikácie</string>
+    <string name="privacy_data_we_dont_collect_header">Čo nikdy nezbierame:</string>
+    <string name="privacy_data_we_dont_collect_list">- Váš dátum narodenia\n- Vaše meno ani osobné údaje\n- Vašu polohu\n- Vaše poverenie\n- Biometrické dáta</string>
+    <string name="privacy_data_never_shared_note">Vaše poverenie sa nikdy nezdieľa s Provii ani s tretími stranami. Zostáva na vašom zariadení.</string>
+    <string name="privacy_policy_title">Zásady ochrany súkromia</string>
+    <string name="privacy_policy_subtitle">Prečítajte si naše úplné zásady ochrany súkromia</string>
+    <string name="privacy_delete_my_data_title">Odstrániť moje dáta</string>
+    <string name="privacy_delete_my_data_subtitle">Odstrániť všetky uložené poverenia a dáta</string>
+    <string name="privacy_delete_data_dialog_title">Odstrániť všetky dáta?</string>
+    <string name="privacy_delete_data_dialog_message">Týmto sa natrvalo odstránia všetky vaše poverenia a dáta aplikácie z tohto zariadenia. Na ďalšie používanie aplikácie budete musieť získať nové poverenie.</string>
+    <string name="privacy_delete_data_dialog_warning">Túto akciu nie je možné vrátiť späť.</string>
+    <string name="privacy_delete_data_confirm">Odstrániť všetko</string>
+    <string name="privacy_footer_note">Tieto nastavenia môžete kedykoľvek zmeniť. Zmeny sa uplatnia okamžite.</string>
+    <string name="dialog_delete_data_announcement">Dialógové okno na potvrdenie odstránenia dát otvorené</string>
+    <string name="dialog_data_collection_info_announcement">Dialógové okno s informáciami o zbere dát otvorené</string>
+    <string name="content_desc_privacy_settings">Nastavenia súkromia, kontrola zberu dát a správa vašich dát</string>
+    <string name="content_desc_data_collection_info">Zobraziť informácie o zbere dát</string>
+    <string name="content_desc_privacy_policy">Zobraziť zásady ochrany súkromia</string>
+    <string name="content_desc_opens_external_link">Otvoriť v prehliadači</string>
+    <string name="content_desc_delete_my_data">Odstrániť všetky moje dáta</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">Späť</string>
+    <string name="content_desc_settings">Nastavenia</string>
+    <string name="content_desc_refresh">Obnoviť</string>
+    <string name="content_desc_verified">Overené</string>
+    <string name="content_desc_expand">Rozbaliť</string>
+    <string name="content_desc_collapse">Zbaliť</string>
+    <string name="content_desc_warning_error">Upozornenie: Vyskytla sa chyba</string>
+    <string name="content_desc_sandbox_indicator">Indikátor režimu Sandbox</string>
+    <string name="content_desc_success">Úspech</string>
+    <string name="content_desc_warning">Upozornenie</string>
+    <string name="content_desc_information">Informácia</string>
+    <string name="content_desc_error">Chyba</string>
+    <string name="content_desc_sandbox_warning">Upozornenie na režim Sandbox</string>
+    <string name="content_desc_app_info">Informácie o aplikácii</string>
+    <string name="content_desc_accessibility_settings">Nastavenia prístupnosti</string>
+    <string name="content_desc_language_settings">Nastavenia jazyka</string>
+    <string name="content_desc_licenses">Licencie open source</string>
+    <string name="content_desc_select_dob">Vybrať dátum narodenia</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Vystaviť testovacie poverenie ako Vydavateľ</string>
+    <string name="content_desc_get_credential">Získať poverenie</string>
+    <string name="content_desc_delete_credential">Odstrániť poverenie</string>
+    <string name="content_desc_reset_proving_key">Obnoviť dokazovací kľúč</string>
+    <string name="content_desc_environment_info">Informácie o prostredí</string>
+    <string name="content_desc_help_support">Pomoc a podpora</string>
+    <string name="content_desc_privacy_protected">Súkromie chránené</string>
+    <string name="preview_settings_title">Ukážka nastavení</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">Úspech</string>
+    <string name="accessibility_verification_error_description">Chyba</string>
+    <string name="accessibility_breadcrumb_location_description">Umiestnenie: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">potom</string>
+    <string name="accessibility_breadcrumb_current_page_description">Aktuálna stránka: %s</string>
+    <string name="accessibility_settings_navigate_description">Navigovať</string>
+    <string name="accessibility_credentials_settings_description">Nastavenia</string>
+    <string name="accessibility_verification_back_description">Späť</string>
+    <string name="accessibility_officer_back_description">Späť</string>
+    <string name="accessibility_discovery_back_description">Späť</string>
+    <string name="accessibility_discovery_refresh_description">Obnoviť</string>
+    <string name="accessibility_discovery_verified_description">Overené</string>
+    <string name="accessibility_officer_done_description">Hotovo</string>
+    <string name="accessibility_officer_attestation_qr_description">Osvedčovací QR kód na skenovanie používateľom</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">Preskočiť na %s</string>
+    <string name="accessibility_skip_main_content">hlavný obsah</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Zrakovo postihnutí</string>
+    <string name="accessibility_profile_motor_impaired">Motoricky postihnutí</string>
+    <string name="accessibility_profile_cognitive_support">Kognitívna podpora</string>
+    <string name="accessibility_profile_elderly_support">Podpora pre seniorov</string>
+    <string name="accessibility_profile_default">Predvolené</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Žiadny</string>
+    <string name="color_blind_mode_protanopia">Protanopia</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopia</string>
+    <string name="color_blind_mode_tritanopia">Tritanopia</string>
+    <string name="color_blind_mode_monochrome">Monochromatický</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Štandardný</string>
+    <string name="contrast_level_high">Vysoký (AA)</string>
+    <string name="contrast_level_maximum">Maximálny (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Plná šírka</string>
+    <string name="text_width_comfortable">Pohodlná (80 znakov)</string>
+    <string name="text_width_narrow">Úzka (60 znakov)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Bez časového limitu (AAA)</string>
+    <string name="timeout_behavior_standard">Štandardný (30 s)</string>
+    <string name="timeout_behavior_extended">Predĺžený (60 s)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Štandardný</string>
+    <string name="reading_level_standard_description">Bežný text s odbornými výrazmi</string>
+    <string name="reading_level_simplified">Zjednodušený (7. – 9. ročník)</string>
+    <string name="reading_level_simplified_description">Jednoduchšie slová a kratšie vety (v súlade s AAA)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">Pomoc</string>
+    <string name="help_and_support">Pomoc a podpora</string>
+    <string name="help_description">Získajte pomoc s funkciami aplikácie a prístupnosťou</string>
+    <string name="help_center">Centrum pomoci</string>
+    <string name="help_center_description">Prehliadajte témy pomoci a dozviete sa o funkciách aplikácie</string>
+    <string name="help_search">Hľadať pomoc</string>
+    <string name="help_search_placeholder">Hľadať témy pomoci...</string>
+    <string name="help_search_active">Vyhľadávanie aktivované</string>
+    <string name="help_search_inactive">Vyhľadávanie deaktivované</string>
+    <string name="help_no_results">Nenašli sa žiadne témy pomoci zodpovedajúce vášmu vyhľadávaniu</string>
+    <string name="help_topic_not_found">Téma pomoci sa nenašla</string>
+    <string name="help_related_topics">Súvisiace témy</string>
+    <string name="help_content_heading">Obsah pomoci</string>
+    <string name="help_related_topic_position">%1$s, položka %2$d z %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Zrak</string>
+    <string name="help_category_typography">Typografia</string>
+    <string name="help_category_interaction">Interakcia</string>
+    <string name="help_category_cognitive">Kognitívna podpora</string>
+    <string name="help_category_alternative_input">Alternatívny vstup</string>
+    <string name="help_category_features">Funkcie</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Získanie poverenia</string>
+    <string name="help_topic_getting_credential_summary">Naučte sa, ako získať prvé poverenie na overenie veku</string>
+    <string name="help_topic_getting_credential_content">Ako získať poverenie na overenie veku:\n\n1. Navštívte oprávneného vydavateľa\n2. Predložte vládou vydaný doklad totožnosti\n3. Naskenujte poskytnutý QR kód\n4. Vaše poverenie bude bezpečne uložené\n\nVáš dátum narodenia je uložený lokálne a nikdy sa nezdieľa.</string>
+
+    <string name="help_topic_verifying_age_title">Overenie vášho veku</string>
+    <string name="help_topic_verifying_age_summary">Ako preukázať vek bez zdieľania osobných informácií</string>
+    <string name="help_topic_verifying_age_content">Keď potrebujete overiť vek:\n\n1. Overovateľ vám ukáže QR kód\n2. Naskenujte ho aplikáciou\n3. Aplikácia vytvorí matematický dôkaz\n4. Zdieľa sa iba odpoveď áno/nie\n\nVáš skutočný dátum narodenia sa NIKDY neodhalí.</string>
+
+    <string name="help_topic_accessibility_title">Funkcie prístupnosti</string>
+    <string name="help_topic_accessibility_summary">Prispôsobte aplikáciu svojim potrebám</string>
+    <string name="help_topic_accessibility_content">Aplikácia obsahuje mnohé funkcie prístupnosti:\n\n- Veľký text a režimy vysokého kontrastu\n- Hlasový vstup a podpora čítačky obrazovky\n- Zjednodušené gestá a používateľské rozhranie\n- Možnosti manuálneho zadávania kódov\n- Predĺžené časové limity\n\nPrístupné cez Nastavenia > Prístupnosť</string>
+
+    <string name="help_topic_privacy_security_title">Súkromie a zabezpečenie</string>
+    <string name="help_topic_privacy_security_summary">Ako sú chránené vaše informácie</string>
+    <string name="help_topic_privacy_security_content">Vaše súkromie je naša najvyššia priorita:\n\n- Poverenia uložené lokálne na vašom zariadení\n- Dôkazy s nulovými znalosťami chránia vaše dáta\n- Žiadne sledovanie ani analytika\n- Biometrická autentifikácia dostupná\n- Dáta nikdy neopustia vaše zariadenie bez šifrovania</string>
+
+    <string name="help_topic_troubleshooting_title">Riešenie problémov</string>
+    <string name="help_topic_troubleshooting_summary">Bežné problémy a riešenia</string>
+    <string name="help_topic_troubleshooting_content">Bežné problémy a riešenia:\n\nSkener QR kódov nefunguje:\n- Skontrolujte povolenia kamery v Nastaveniach\n- Skúste možnosť manuálneho zadávania kódu\n\nPoverenie sa nenačítava:\n- Skontrolujte internetové pripojenie\n- Skúste obnoviť dokazovací kľúč\n\nOverenie zlyhalo:\n- Uistite sa, že platnosť poverenia nevypršala\n- Kontaktujte overovateľa pre podporu</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">DÁTUM NARODENIA</string>
+    <string name="date_of_birth">Dátum narodenia</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">%d rokov</string>
+    <string name="format_step_indicator">Krok %1$d z %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">Poverenia</string>
+    <string name="tab_settings">Nastavenia</string>
+    <string name="tab_help">Pomoc</string>
+    <string name="tab_credentials_description">Zobraziť vaše poverenia</string>
+    <string name="tab_settings_description">Nastavenia aplikácie</string>
+    <string name="tab_help_description">Získať pomoc a podporu</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">Hľadať</string>
+    <string name="search_field_label">Pole vyhľadávania</string>
+    <string name="search_placeholder">Hľadať nastavenia, pomoc a funkcie</string>
+    <string name="search_clear">Vymazať vyhľadávanie</string>
+    <string name="search_popular">Obľúbené vyhľadávania</string>
+    <string name="search_results_heading">Výsledky vyhľadávania</string>
+    <string name="search_no_results">Žiadne výsledky</string>
+    <string name="search_try_suggestions">Skúste hľadať:\n• Prístupnosť\n• Nastavenia\n• Pomoc\n• Jazyk</string>
+    <string name="search_results_announcement_singular">Nájdený 1 výsledok</string>
+    <string name="search_results_announcement_plural">Nájdené: %d výsledkov</string>
+    <string name="search_no_results_announcement">Nenašli sa žiadne výsledky</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">Rýchly prístup</string>
+    <string name="help_topics">Témy pomoci</string>
+    <string name="help_glossary">Slovník pojmov</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">Licencie open source</string>
+    <string name="licenses_description">Táto aplikácia používa nasledujúci softvér s otvoreným zdrojovým kódom. Sme vďační vývojárom, ktorí tieto knižnice vytvorili.</string>
+    <string name="licenses_tap_to_view">Klepnutím zobrazíte úplnú licenciu</string>
+    <string name="licenses_group_header">%1$s (%2$d knižníc)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">Žiadne internetové pripojenie. Skontrolujte sieť a skúste znova.</string>
+    <string name="error_unexpected">Vyskytla sa neočakávaná chyba. Reštartujte aplikáciu.</string>
+    <string name="error_unexpected_try_again">Vyskytla sa neočakávaná chyba. Skúste znova.</string>
+    <string name="error_storage_detailed">Chyba úložiska: %s</string>
+    <string name="error_network_detailed">Sieťová chyba: %s</string>
+    <string name="error_proof_generation_failed">Nepodarilo sa vygenerovať dôkaz: %s</string>
+    <string name="error_not_eligible">Neoprávnený. Nespĺňate požiadavky pre toto overenie.</string>
+    <string name="error_challenge_expired">Výzva vypršala alebo sa nenašla. Požiadajte o novú.</string>
+    <string name="error_challenge_expired_scan_new">Táto výzva vypršala. Naskenujte nový QR kód.</string>
+    <string name="error_request_out_of_order">Požiadavka mimo poradia. Skúste znova.</string>
+    <string name="error_too_many_requests">Príliš mnoho požiadaviek. Chvíľu počkajte a skúste znova.</string>
+    <string name="error_server">Chyba servera. Skúste neskôr.</string>
+    <string name="error_request_failed">Požiadavka zlyhala (%d). Skúste znova.</string>
+    <string name="error_not_eligible_short">Neoprávnený pre toto overenie</string>
+    <string name="error_challenge_not_found">Výzva sa nenašla</string>
+    <string name="error_complete_steps_in_order">Dokončite kroky v správnom poradí</string>
+    <string name="error_challenge_expired_short">Výzva vypršala</string>
+    <string name="error_authentication_cancelled">Autentifikácia zrušená. Na dokončenie overenia veku overte svoju totožnosť.</string>
+    <string name="error_invalid_data_format_short">Neplatný formát dát. Skúste znova.</string>
+    <string name="error_storage_check_device">Chyba úložiska. Skontrolujte úložisko zariadenia.</string>
+    <string name="error_network_check_connection">Sieťová chyba. Skontrolujte pripojenie.</string>
+    <string name="error_proof_generation_failed_short">Nepodarilo sa vygenerovať dôkaz. Skúste znova.</string>
+    <string name="error_operation_in_progress_short">Prebieha iná operácia.</string>
+    <string name="error_no_internet_short">Žiadne internetové pripojenie. Skontrolujte sieť.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Skenovať overovací QR kód</string>
+    <string name="verification_verifying_title">Overuje sa vek</string>
+    <string name="verification_success_title">Vek overený</string>
+    <string name="verification_failed_title">Overenie zlyhalo</string>
+    <string name="verification_processing_wait">Môže to trvať niekoľko sekúnd</string>
+    <string name="verification_success_message">Váš vek bol súkromne overený</string>
+    <string name="verification_return_to_site">Teraz sa môžete vrátiť na stránku a pokračovať.</string>
+    <string name="verification_please_enter_code">Zadajte overovací kód. Kód by mal byť buď 12-ciferný skrátený kód alebo úplná overovacia URL (web adresa) od overovateľa.</string>
+    <string name="verification_error_occurred">Počas overenia sa vyskytla chyba</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Spracúva sa...</string>
+    <string name="credential_list_verify_age_button">Overiť vek</string>
+    <string name="credential_list_generate_in_person_description">Vygenerovať poverenie osobne</string>
+    <string name="credential_list_scan_qr_title">Skenovať QR kód</string>
+    <string name="credential_list_find_locations_title">Nájsť miesta</string>
+    <string name="credential_section_my_credential">Moje poverenie</string>
+    <string name="credential_section_managed">Spravované poverenia</string>
+    <string name="credential_list_get_credential_button">Získať poverenie</string>
+    <string name="credential_list_add_managed_button">Pridať spravované poverenie</string>
+    <string name="credential_section_managed_empty">Pridajte poverenie pre niekoho, o koho sa staráte, napríklad dieťa.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Podrobnosti poverenia</string>
+    <string name="credential_detail_not_found">Poverenie sa nenašlo</string>
+    <string name="credential_detail_nickname">Prezývka</string>
+    <string name="credential_detail_no_nickname">Žiadna prezývka nenastavená</string>
+    <string name="credential_detail_edit_nickname">Upraviť prezývku</string>
+    <string name="credential_detail_status">Stav</string>
+    <string name="credential_detail_delete">Odstrániť poverenie</string>
+    <string name="credential_detail_delete_title">Odstrániť poverenie</string>
+    <string name="credential_detail_delete_message">Naozaj chcete odstrániť toto poverenie? Túto akciu nie je možné vrátiť späť.</string>
+    <string name="credential_type_primary">Primárne</string>
+    <string name="credential_type_managed">Spravované</string>
+    <string name="credential_status_valid">Platné</string>
+    <string name="credential_status_expired">Vypršané</string>
+    <string name="credential_status_invalid">Neplatné</string>
+    <string name="action_save">Uložiť</string>
+    <string name="credential_slots_full_title">Dosiahnutý maximálny počet poverení</string>
+    <string name="credential_slots_full_message">Dosiahli ste maximálny počet poverení. Na pridanie nového odstráňte existujúce poverenie.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">Spravované poverenie</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">Overiť vek pre %1$s?</string>
+    <string name="managed_confirm_message">Chystáte sa overiť vek pomocou spravovaného poverenia %1$s.</string>
+    <string name="managed_confirm_proceed">Overiť pre %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Vytvára sa dôkaz pre %1$s</string>
+    <string name="verification_age_verified_for">Vek overený pre %1$s</string>
+    <string name="deeplink_verification_age_verified_for">Vek overený pre %1$s</string>
+    <string name="attestation_managed_credential_received">Poverenie pre %1$s prijaté!</string>
+    <string name="attestation_managed_credential_stored">Poverenie vášho dieťaťa bolo bezpečne uložené.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">Odstrániť poverenie %1$s?</string>
+    <string name="credential_detail_delete_managed_message">Naozaj chcete odstrániť toto spravované poverenie pre %1$s? Túto akciu nie je možné vrátiť späť. Na jeho nahradenie budete musieť znova navštíviť vydavateľa.</string>
+    <string name="credential_detail_save_error">Nepodarilo sa uložiť prezývku</string>
+    <string name="credential_detail_delete_error">Nepodarilo sa odstrániť poverenie</string>
+    <string name="accessibility_saving">Ukladá sa...</string>
+    <string name="accessibility_deleting">Odstraňuje sa...</string>
+    <string name="accessibility_loading">Načítava sa, čakajte</string>
+    <string name="accessibility_issuing_credential">Vydáva sa poverenie, čakajte</string>
+    <string name="dialog_delete_all_credentials_title">Odstrániť všetky poverenia?</string>
+    <string name="dialog_delete_all_credentials_message">Tým sa odstráni vaše poverenie a všetky spravované poverenia pre deti. Túto akciu nie je možné vrátiť späť.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">Spravované</string>
+    <string name="credential_slots_count">%1$d z 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Pripravuje sa overenie...</string>
+    <string name="deeplink_verification_checking_credential">Kontroluje sa poverenie...</string>
+    <string name="deeplink_verification_processing_challenge">Spracúva sa výzva...</string>
+    <string name="deeplink_verification_creating_proof">Vytvára sa bezpečný dôkaz...</string>
+    <string name="deeplink_verification_submitting_proof">Odosieľa sa dôkaz...</string>
+    <string name="deeplink_verification_success">✔ Vek úspešne overený</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">Poverenie sa nenašlo. Najprv si nastavte poverenie.</string>
+    <string name="deeplink_verification_error_failed_challenge">Nepodarilo sa spracovať výzvu na overenie</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Nedá sa zobraziť výzva na overenie totožnosti</string>
+    <string name="deeplink_verification_error_failed_proof">Nepodarilo sa vytvoriť dôkaz veku</string>
+    <string name="deeplink_verification_error_verification_failed">Overenie zlyhalo</string>
+    <string name="deeplink_verification_error_unexpected">Vyskytla sa neočakávaná chyba</string>
+    <string name="deeplink_verification_error_no_credential_selected">Nebolo vybraté žiadne poverenie. Skúste znova.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Vybrať poverenie</string>
+    <string name="deeplink_verification_select_credential_subtitle">Je dostupných viacero poverení. Vyberte, ktoré použiť pre toto overenie.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Overuje sa vek</string>
+    <string name="deeplink_verification_title_verified">Overené</string>
+    <string name="deeplink_verification_title_failed">Overenie zlyhalo</string>
+    <string name="deeplink_verification_please_wait">Čakajte...</string>
+    <string name="deeplink_verification_age_verified">Vek overený!</string>
+    <string name="deeplink_verification_under_age_verified">Overené: mladší ako %1$d</string>
+    <string name="deeplink_verification_returning_browser">Návrat do prehliadača...</string>
+    <string name="deeplink_verification_return_to_browser">Vrátiť sa do prehliadača</string>
+    <string name="deeplink_verification_failed_title">Overenie zlyhalo</string>
+    <string name="deeplink_verification_error_occurred">Počas overenia sa vyskytla chyba</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">PROCES VYDÁVANIA</string>
+    <string name="officer_issuance_process_steps">1. Skontrolujte fyzický identifikačný doklad používateľa\n2. Zadajte ich dátum narodenia\n3. Overte, či sa informácie presne zhodujú\n4. Vydajte poverenie s osvedčovacím QR (Quick Response) kódom\n5. Používateľ naskenuje QR kód na prijatie poverenia</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">Nepodarilo sa vygenerovať QR kód</string>
+    <string name="officer_attestation_ready_title">Osvedčenie je pripravené</string>
+    <string name="officer_attestation_scan_instruction">Používateľ by mal naskenovať tento QR kód svojou aplikáciou Provii Wallet</string>
+    <string name="officer_attestation_deeplink_label">OSVEDČOVACÍ DEEPLINK</string>
+    <string name="officer_wait_for_attestation_scan">Čakajte, kým používateľ naskenuje</string>
+    <string name="officer_attestation_info">Poverenie sa vygeneruje na jeho zariadení</string>
+    <string name="officer_attestation_complete">Osvedčenie dokončené</string>
+    <string name="officer_user_will_complete_credential">Používateľ dokončí generovanie poverenia na svojom zariadení</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Dekódujú sa dáta osvedčenia...</string>
+    <string name="attestation_generating_randomness">Generuje sa bezpečná náhodnosť...</string>
+    <string name="attestation_sending">Odosiela sa vydavateľovi...</string>
+    <string name="attestation_verifying">Overuje sa záväzok...</string>
+    <string name="attestation_storing">Ukladá sa poverenie...</string>
+    <string name="attestation_complete">Poverenie dokončené!</string>
+    <string name="attestation_error_invalid_data">Neplatné dáta osvedčenia</string>
+    <string name="attestation_error_expired">Platnosť osvedčenia vypršala</string>
+    <string name="attestation_error_network">Sieťová chyba - skontrolujte pripojenie</string>
+    <string name="attestation_error_unexpected">Vyskytla sa neočakávaná chyba</string>
+    <string name="attestation_title_processing">Spracúva sa osvedčenie</string>
+    <string name="attestation_title_success">Poverenie prijaté</string>
+    <string name="attestation_title_failed">Vydávanie zlyhalo</string>
+    <string name="attestation_secure_issuance">Bezpečné vydávanie</string>
+    <string name="attestation_privacy_preserving">Vydávanie poverenia s ochranou súkromia</string>
+    <string name="attestation_may_take_seconds">Môže to trvať niekoľko sekúnd</string>
+    <string name="attestation_keep_app_open">Ponechajte aplikáciu otvorenú</string>
+    <string name="attestation_credential_received">Poverenie prijaté!</string>
+    <string name="attestation_credential_stored_description">Vaše poverenie na overenie veku bolo bezpečne uložené</string>
+    <string name="attestation_issuer_verified">Vydavateľ overený</string>
+    <string name="attestation_failed_title">Vydávanie zlyhalo</string>
+    <string name="attestation_scan_qr_instead">Skenovať QR kód namiesto toho</string>
+    <string name="attestation_go_back">Späť</string>
+    <string name="attestation_step_decode">Dekódovať</string>
+    <string name="attestation_step_generate">Vygenerovať</string>
+    <string name="attestation_step_send">Odoslať</string>
+    <string name="attestation_step_verify">Overiť</string>
+    <string name="attestation_step_store">Uložiť</string>
+    <string name="attestation_step_complete">Dokončiť</string>
+    <string name="accessibility_attestation_encrypted_description">Spracúva sa šifrované osvedčenie</string>
+    <string name="accessibility_attestation_success_description">Značka úspechu indikujúca prijaté poverenie</string>
+    <string name="accessibility_attestation_error_description">Ikona chyby indikujúca zlyhanie vydávania</string>
+    <string name="accessibility_step_complete">Krok %1$s dokončený</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Príjemca poverenia</string>
+    <string name="attestation_recipient_prompt">Toto poverenie je pre\u2026</string>
+    <string name="attestation_recipient_me">Mňa</string>
+    <string name="attestation_recipient_child">Dieťa</string>
+    <string name="attestation_nickname_title">Prezývka dieťaťa</string>
+    <string name="attestation_nickname_prompt">Zadajte prezývku, aby ste rozlíšili poverenia</string>
+    <string name="attestation_nickname_placeholder">napr. Alex</string>
+    <string name="attestation_nickname_continue">Pokračovať</string>
+    <string name="attestation_nickname_back">Späť</string>
+    <string name="accessibility_attestation_recipient_heading">Vyberte, pre koho je toto poverenie</string>
+    <string name="accessibility_attestation_nickname_heading">Zadajte prezývku pre dieťa</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Neplatný formát ID úradníka</string>
+    <string name="officer_auth_error_challenge_failed">Nepodarilo sa získať výzvu YubiKey: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Dotknite sa YubiKey na autentifikáciu</string>
+    <string name="officer_auth_error_touch_timeout">Časový limit dotyku YubiKey vypršal</string>
+    <string name="officer_auth_error_verify_document_dob">Overte zhodu dokladu a dátumu narodenia</string>
+    <string name="officer_auth_error_invalid_date_format">Neplatný formát dátumu. Použite RRRR-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">Používateľ musí mať 18 alebo viac rokov</string>
+    <string name="officer_auth_error_not_authenticated">Nie ste autentifikovaný. Najprv zadajte vaše ID úradníka.</string>
+    <string name="officer_auth_error_issue_failed">Nepodarilo sa vydať poverenie</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Klepnutím zobrazíte</string>
+    <string name="gesture_desc_long_press_options">, dlhým stlačením zobrazíte možnosti</string>
+    <string name="gesture_desc_swipe_left">, potiahnutím doľava zobrazíte ďalšie akcie</string>
+    <string name="gesture_desc_swipe_right">, potiahnutím doprava zobrazíte ďalšie akcie</string>
+    <string name="gesture_desc_tap_to_activate">Klepnutím aktivujete</string>
+    <string name="gesture_desc_long_press_format">. Dlhé stlačenie: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Zopakovať</string>
+    <string name="main_activity_reset_redownload">Obnoviť a znovu stiahnuť</string>
+    <string name="main_activity_show_debug_info">Zobraziť Debug informácie</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Nastavenia prístupnosti</string>
+    <string name="search_item_accessibility_settings_subtitle">Prispôsobte si svoju skúsenosť</string>
+    <string name="search_item_large_text_title">Veľký text</string>
+    <string name="search_item_large_text_subtitle">Zväčšiť veľkosť textu</string>
+    <string name="search_item_high_contrast_title">Vysoký kontrast</string>
+    <string name="search_item_high_contrast_subtitle">Zlepšiť viditeľnosť</string>
+    <string name="search_item_voice_input_title">Hlasový vstup</string>
+    <string name="search_item_voice_input_subtitle">Ovládanie hlasom</string>
+    <string name="search_item_manual_code_entry_title">Manuálne zadávanie kódu</string>
+    <string name="search_item_manual_code_entry_subtitle">Písať kódy namiesto skenovania</string>
+    <string name="search_item_simplified_ui_title">Zjednodušené používateľské rozhranie</string>
+    <string name="search_item_simplified_ui_subtitle">Znížiť vizuálnu zložitosť</string>
+    <string name="search_item_color_blindness_title">Podpora farbosleposti</string>
+    <string name="search_item_color_blindness_subtitle">Upraviť farby pre lepšiu viditeľnosť</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Nastavenia</string>
+    <string name="search_item_settings_subtitle">Konfigurácia aplikácie</string>
+    <string name="search_item_language_title">Jazyk</string>
+    <string name="search_item_language_subtitle">Zmeniť jazyk aplikácie</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Moje poverenia</string>
+    <string name="search_item_credentials_subtitle">Zobraziť vaše poverenia</string>
+    <string name="search_item_get_credential_title">Získať poverenie</string>
+    <string name="search_item_get_credential_subtitle">Nájsť vydavateľov</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Pomoc</string>
+    <string name="search_item_help_subtitle">Získať pomoc</string>
+    <string name="search_item_privacy_title">Ochrana súkromia</string>
+    <string name="search_item_privacy_subtitle">Ako sú chránené vaše dáta</string>
+    <string name="search_item_verification_title">Overenie veku</string>
+    <string name="search_item_verification_subtitle">Preukázať vek</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Pevne zakódovaný záložný register pre prostredie Sandbox</string>
+    <string name="issuer_fallback_production_description">Pevne zakódovaný záložný register pre produkciu</string>
+    <string name="issuer_fallback_category_government">Vláda</string>
+    <string name="issuer_fallback_category_government_description">Vládou vydané poverenia</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii Sandbox vydavateľ</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Oficiálny vydavateľ Provii Sandbox na testovanie</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Navštívte portál vydavateľa Sandbox</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Oficiálny vydavateľ poverení Provii</string>
+    <string name="issuer_fallback_production_issuer_instructions">Navštívte miestnu pobočku DMV</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">Dátum narodenia nemôže byť v budúcnosti</string>
+    <string name="validation_error_invalid_date_format">Neplatný formát dátumu</string>
+    <string name="validation_error_officer_id_too_short">Identifikácia úradníka je príliš krátka</string>
+    <string name="validation_error_invalid_officer_id_format">Neplatný formát identifikácie úradníka</string>
+    <string name="validation_error_empty_qr_code">Prázdny QR kód</string>
+    <string name="validation_error_qr_code_too_large">QR kód je príliš veľký</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">Teraz ste vývojár!</string>
+    <string name="sandbox_toast_enabled">Režim Sandbox povolený\nPoužíva sa testovacie prostredie</string>
+    <string name="sandbox_toast_disabled">Produkčný režim povolený\nPoužíva sa produkčné prostredie</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">Ste 1 krok od vývojárskeho režimu</string>
+    <string name="sandbox_toast_steps_away">Ste %1$d krokov od vývojárskeho režimu</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">Žiadny YubiKey nie je pripojený</string>
+    <string name="yubikey_error_timeout">Vypršal časový limit čakania na dotyk YubiKey. Pri bliknutí sa kľúča ho dotknite.</string>
+    <string name="yubikey_error_not_supported">Odpoveď na výzvu nie je nakonfigurovaná na tomto slote YubiKey</string>
+    <string name="yubikey_error_no_slot">Slot 2 nie je nakonfigurovaný pre HMAC (Hash-based Message Authentication Code) SHA1 odpoveď na výzvu</string>
+    <string name="yubikey_error_hmac_failed">Výpočet HMAC (Hash-based Message Authentication Code) zlyhal: %s</string>
+    <string name="yubikey_error_session_failed">Nepodarilo sa pripojiť k YubiKey: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">Peňaženka nie je inicializovaná</string>
+    <string name="wallet_error_proving_key_not_found">Dokazovací kľúč sa nenašiel - prosím, znovu stiahnite</string>
+    <string name="wallet_error_proving_key_not_readable">Nie je možné prečítať súbor dokazovacieho kľúča</string>
+    <string name="wallet_error_out_of_memory">Nedostatok pamäte - reštartujte aplikáciu</string>
+    <string name="wallet_error_prover_error">Chyba overovateľa: %s</string>
+    <string name="wallet_error_ffi_error">Chyba FFI: %s</string>
+    <string name="wallet_error_prover_init_failed">Nepodarilo sa inicializovať overovateľ: %s</string>
+    <string name="wallet_error_prover_verification_failed">Overenie inicializácie overovateľa zlyhalo</string>
+    <string name="wallet_error_verifier_url_update_failed">Nepodarilo sa aktualizovať URL (web adresu) overovateľa! Očakávané %1$s, ale získané %2$s</string>
+    <string name="wallet_error_wallet_still_null">Peňaženka je stále nulová po inicializácii</string>
+    <string name="wallet_error_credential_not_found">Poverenie sa nenašlo</string>
+    <string name="wallet_error_credential_access_failed">Nie je možné pristupovať k povereniu: %s</string>
+    <string name="wallet_error_invalid_format">Neplatný formát: %s</string>
+    <string name="wallet_error_not_initialized_short">Overovateľ nie je inicializovaný</string>
+    <string name="wallet_error_proving_key_unavailable">Dokazovací kľúč nie je dostupný. Vyžaduje sa nastavenie.</string>
+    <string name="wallet_error_storage_init_failed">Inicializácia úložiska zlyhala</string>
+    <string name="wallet_error_biometric_unavailable">Biometrická autentifikácia nie je dostupná</string>
+    <string name="wallet_error_auth_failed">Autentifikácia zlyhala</string>
+    <string name="wallet_error_sandbox_disabled">Povoľte režim Sandbox na generovanie testovacích poverení</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Nie je možné načítať poverenia Sandbox. Skontrolujte internetové pripojenie.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Vyžaduje sa autentifikácia</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Overte svoju totožnosť na vytvorenie dôkazu veku</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Prístup k bezpečnému úložisku</string>
+    <string name="keystore_biometric_prompt_cancel">Zrušiť</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, rozbalené, zobrazuje sa úplný text licencie</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, zbalené, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">Žiadne</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Mobilné dáta</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Neznáme</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">Úrovne kontrastu</string>
+    <string name="help_topic_extra_large_text_title">Veľmi veľký text</string>
+    <string name="help_topic_reduce_transparency_title">Znížiť priehľadnosť</string>
+    <string name="help_topic_color_blind_modes_title">Režimy pre farboslepých</string>
+    <string name="help_topic_line_spacing_title">Riadkovanie</string>
+    <string name="help_topic_paragraph_spacing_title">Medzery medzi odsekmi</string>
+    <string name="help_topic_letter_spacing_title">Medzery medzi písmenami</string>
+    <string name="help_topic_text_width_title">Šírka textu</string>
+    <string name="help_topic_touch_targets_title">Väčšie dotykové ciele</string>
+    <string name="help_topic_reduce_motion_title">Znížiť pohyb</string>
+    <string name="help_topic_timeout_behavior_title">Správanie časového limitu</string>
+    <string name="help_topic_simplified_gestures_title">Zjednodušené gestá</string>
+    <string name="help_topic_haptic_feedback_title">Haptická odozva</string>
+    <string name="help_topic_data_preservation_title">Zachovanie dát</string>
+    <string name="help_topic_simplified_ui_title">Zjednodušené používateľské rozhranie</string>
+    <string name="help_topic_step_indicators_title">Indikátory krokov</string>
+    <string name="help_topic_verbose_descriptions_title">Podrobné popisy</string>
+    <string name="help_topic_confirm_actions_title">Potvrdiť akcie</string>
+    <string name="help_topic_reading_level_title">Zjednodušená úroveň čítania</string>
+    <string name="help_topic_help_system_title">Systém pomoci</string>
+    <string name="help_topic_manual_code_entry_title">Manuálne zadávanie kódu</string>
+    <string name="help_topic_voice_input_title">Hlasový vstup</string>
+    <string name="help_topic_screen_reader_title">Podpora čítačky obrazovky</string>
+    <string name="help_topic_accessibility_profiles_title">Profily rýchleho nastavenia</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">Ovládanie kontrastného pomeru medzi textom a pozadím:\n\n• Štandardný: Predvolené farby aplikácie\n• Vysoký (AA): Kontrastný pomer 4,5:1\n• Maximálny (AAA): Kontrastný pomer 7:1+\n\nVyšší kontrast uľahčuje čítanie textu, najmä v jasnom prostredí alebo pre používateľov so slabým zrakom.\n\nSúlad s WCAG AAA vyžaduje maximálny kontrast.</string>
+    <string name="help_topic_extra_large_text_text">Zvyšuje všetky veľkosti textu o 50 % v celej aplikácii.\n\nUľahčuje čítanie textu pre používateľov s:\n• Slabým zrakom\n• Vekom súvisiacimi zmenami zraku\n• Ťažkosťami so čítaním\n\nKombinuje sa s nastaveniami veľkosti systémového písma pre maximálnu flexibilitu.</string>
+    <string name="help_topic_reduce_transparency_text">Odstraňuje priehľadné vrstvy a efekty rozmazania.\n\nVýhody:\n• Jasnejšia vizuálna hierarchia\n• Lepšia čitateľnosť textu\n• Znížený vizuálny šum\n• Nižšia kognitívna záťaž\n\nOdporúčané pre používateľov so slabým zrakom alebo kognitívnymi ťažkosťami.</string>
+    <string name="help_topic_color_blind_modes_text">Upravuje farby pre rôzne typy farbosleposti:\n\n• Protanopia: Slepota na červenú\n• Deuteranopia: Slepota na zelenú\n• Tritanopia: Slepota na modrú\n• Monochromatický: Úplná farbosleposť\n\nKaždý režim používa starostlivo vybrané farby rozoznateľné pre daný typ poruchy farebného videnia.</string>
+    <string name="help_topic_line_spacing_text">Upravuje medzery medzi riadkami textu (1,0x – 2,0x).\n\n• Predvolené: 1,0x\n• V súlade s AAA: 1,5x alebo viac\n\nZväčšené riadkovanie:\n• Zlepšuje porozumenie textu\n• Znižuje únavu očí\n• Pomáha používateľom s dyslexiou\n• Robí textové bloky menej zahlcujúcimi</string>
+    <string name="help_topic_paragraph_spacing_text">Upravuje medzery medzi odsekmi (1,0x – 3,0x).\n\n• Predvolené: 1,0x\n• V súlade s AAA: 2,0x alebo viac\n\nZväčšené medzery medzi odsekmi:\n• Zreteľne oddeľujú myšlienky\n• Zlepšujú vizuálnu organizáciu\n• Znižujú kognitívnu záťaž\n• Pomáhajú udržiavať polohu čítania</string>
+    <string name="help_topic_letter_spacing_text">Upravuje medzery medzi písmenami (0,0em – 0,2em).\n\n• Predvolené: 0,0em\n• V súlade s AAA: 0,12em alebo viac\n\nZväčšené medzery medzi písmenami:\n• Robia jednotlivé písmená výraznejšími\n• Pomáhajú používateľom s dyslexiou\n• Zlepšujú presnosť čítania\n• Znižujú zámenu písmen</string>
+    <string name="help_topic_text_width_text">Obmedzuje dĺžku riadkov pre ľahšie čítanie:\n\n• Plná šírka: Bez obmedzenia\n• Pohodlná: 80 znakov (odporúčané)\n• Úzka: 60 znakov\n\nVýskum ukazuje, že optimálne čítanie nastáva pri 60 – 80 znakoch na riadok. Kratšie riadky znižujú pohyb očí a zlepšujú porozumenie.</string>
+    <string name="help_topic_touch_targets_text">Zvyšuje minimálnu veľkosť dotykového cieľa na 60 dp (z 44 dp).\n\nVýhody:\n• Jednoduchšie klepanie na tlačidlá a ovládacie prvky\n• Znižuje náhodné klepnutia\n• Pomáha používateľom s motorickými poruchami\n• Lepšie pre použitie jednou rukou\n\nWCAG AAA vyžaduje minimum 60 dp.</string>
+    <string name="help_topic_reduce_motion_text">Odstraňuje všetky animácie a prechody.\n\nVýhody:\n• Zabraňuje kinetóze\n• Znižuje rozptyľovanie\n• Znižuje kognitívnu záťaž\n• Zlepšuje sústredenie\n\nOdporúčané pre používateľov s:\n• Vestibulárnymiporuchami\n• Ťažkosťami so sústredením\n• Citlivosťou na pohyb</string>
+    <string name="help_topic_timeout_behavior_text">Ovláda automatický časový limit na overovacích obrazovkách:\n\n• Bez časového limitu (AAA): Neobmedzený čas\n• Štandardný: 30 sekúnd\n• Predĺžený: 60 sekúnd\n\nWCAG AAA vyžaduje možnosť bez časového limitu pre používateľov, ktorí potrebujú viac času na dokončenie úloh.\n\nDáta formulára sa automaticky uložia pred vypršaním časového limitu.</string>
+    <string name="help_topic_simplified_gestures_text">Nahrádza zložité gestá jednoduchými alternatívami:\n\n• Potiahnutie → Klepnutie na tlačidlo\n• Dlhé stlačenie → Bežné klepnutie s potvrdením\n• Stiahnutie prstov/priblíženie → Tlačidlá\n\nPomáha používateľom s:\n• Motorickými poruchami\n• Tremorom\n• Obmedzenou obratnosťou\n• Ťažkosťami s dotykovými obrazovkami</string>
+    <string name="help_topic_haptic_feedback_text">Poskytuje vibračnú odozvu pre akcie.\n\nVýhody:\n• Potvrdzuje stlačenia tlačidiel\n• Indikuje chyby\n• Poskytuje hmatové potvrdenie\n\nMôže byť vypnuté pre používateľov, ktorí:\n• Ho považujú za rušivé\n• Majú zmyslovú precitlivenosť\n• Preferujú tichú prevádzku</string>
+    <string name="help_topic_data_preservation_text">Automaticky ukladá dáta formulára pred vypršaním časového limitu.\n\nFunkcie:\n• Upozornenie 10 sekúnd pred vypršaním\n• Možnosť uložiť alebo zahodiť dáta\n• Automatická obnova pri návrate\n• Uchovávanie dát na 24 hodín\n\nZaisťuje, že nepríde k strate dát, ak potrebujete viac času alebo zažijete prerušenie.</string>
+    <string name="help_topic_simplified_ui_text">Znižuje vizuálnu zložitosť:\n\n• Menej prvkov UI zobrazených naraz\n• Väčšie, jasnejšie tlačidlá\n• Viac voľného priestoru\n• Zjednodušené rozvrhnutia\n\nVýhody:\n• Ľahšie pochopiteľné\n• Menej zahlcujúce\n• Lepšie sústredenie\n• Znížená kognitívna záťaž</string>
+    <string name="help_topic_step_indicators_text">Zobrazuje postup v rámci viacstupňových procesov.\n\nZobrazuje:\n• Číslo aktuálneho kroku\n• Celkový počet krokov\n• Vizualizáciu postupu\n\nVýhody:\n• Znižuje úzkosť\n• Nastavuje jasné očakávania\n• Pomáha udržiavať orientáciu\n• Zobrazuje postup dokončenia</string>
+    <string name="help_topic_verbose_descriptions_text">Poskytuje ďalší kontext a vysvetlenia:\n\n• Dlhšie popisky tlačidiel\n• Podrobnejšie pokyny\n• Ďalšie nápovedy\n• Jasnejšie chybové hlásenia\n\nPomáha používateľom:\n• Porozumieť akciám pred ich vykonaním\n• Vyhnúť sa chybám\n• Naučiť sa funkcie aplikácie\n• Budovať sebadôveru</string>
+    <string name="help_topic_confirm_actions_text">Vyžaduje potvrdenie pre dôležité akcie:\n\n• Odstránenie poverení\n• Zmena nastavení\n• Vymazanie dát\n\nWCAG AAA vyžaduje potvrdenie pre všetky deštruktívne akcie.\n\nVýhody:\n• Zabraňuje nehodám\n• Umožňuje kontrolu pred akciou\n• Znižuje úzkosť\n• Poskytuje druhú šancu</string>
+    <string name="help_topic_reading_level_text">Používa jednoduchší jazyk (úroveň 7. – 9. ročníka):\n\n• Kratšie vety\n• Bežné slová namiesto žargónu\n• Jasný, priamy jazyk\n• Menej technických výrazov\n\nV súlade s WCAG AAA po aktivácii.\n\nVýhody:\n• Ľahšie pochopiteľné\n• Rýchlejšie porozumenie\n• Lepšie pre nenatívnych hovoriacich\n• Znížená kognitívna záťaž</string>
+    <string name="help_topic_help_system_text">Kontextová pomoc dostupná v celej aplikácii.\n\nFunkcie:\n• 27 tém pomoci\n• Prehľadávateľné centrum pomoci\n• Navigácia súvisiacich tém\n• Technický slovník pojmov\n\nPomoc je dostupná z:\n• Obrazoviek nastavení\n• Zložitých funkcií\n• Chybových hlásení\n• Kdekoľvek vidíte ikonu pomoci</string>
+    <string name="help_topic_manual_code_entry_text">Zadávajte dáta QR kódu manuálne namiesto skenovania.\n\nVýhody:\n• Funguje, keď nie je dostupný prístup ku kamere\n• Pomáha používateľom s motorickými ťažkosťami\n• Lepšie pri slabom osvetlení\n• Netreba držať telefón stabilne\n\nAlternatíva ku skenovaniu QR kódov kamerou.</string>
+    <string name="help_topic_voice_input_text">Používajte hlas na zadávanie textu namiesto písania.\n\nVýhody:\n• Vstup bez rúk\n• Rýchlejšie ako písanie\n• Pomáha používateľom s motorickými poruchami\n• Znižuje opakované zaťaženie\n\nPoužíva vstavaný systém rozpoznávania hlasu vášho zariadenia.</string>
+    <string name="help_topic_screen_reader_text">Plná podpora čítačky obrazovky TalkBack.\n\nFunkcie:\n• Všetky prvky UI sú označené\n• Správna štruktúra nadpisov\n• Logické poradie navigácie\n• Vlastné nápovedy pre zložité akcie\n\nAplikácia automaticky povolí:\n• Podrobné popisy\n• Vylepšené dotykové ciele\n\nkeď je detekovaný TalkBack.</string>
+    <string name="help_topic_accessibility_profiles_text">Vopred nakonfigurované profily prístupnosti:\n\n• Zrakovo postihnutí: Vysoký kontrast, veľký text, haptika\n• Motoricky postihnutí: Veľké ciele, predĺžené časové limity, potvrdenia\n• Kognitívne: Zjednodušené UI, indikátory krokov, popisy\n• Seniori: Veľký text, ciele, zjednodušené UI, obmedzený pohyb\n• Predvolené: Obnoviť všetky nastavenia\n\nKaždý profil povolí najužitočnejšie nastavenia pre danú skupinu používateľov. Po aplikovaní profilu si môžete nastavenia ďalej prispôsobiť.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">Overenie veku</string>
+    <string name="content_age_verification_explanation">Čakajte, kým bezpečne overíme váš vek pomocou dôkazov s nulovými znalosťami. Váš dátum narodenia sa nikdy nezdieľa s overovateľom.</string>
+    <string name="content_age_verification_instructions">Namierjte kameru na overovací QR kód. Kód sa automaticky naskenuje po detekcii.</string>
+    <string name="content_age_verification_success">Váš vek bol úspešne overený. Overovateľ vie, že spĺňate ich vekovú požiadavku, bez toho aby sa dozvedel váš skutočný dátum narodenia.</string>
+    <string name="content_age_verification_failed">Overenie zlyhalo. Skúste znova naskenovať QR kód alebo použite manuálne zadávanie kódu.</string>
+    <string name="content_credential_issuance_title">Vydávanie poverenia</string>
+    <string name="content_credential_issuance_explanation">Naskenujte QR kód poskytnutý oprávneným vydavateľom na prijatie vášho digitálneho vekového poverenia.</string>
+    <string name="content_credential_issuance_instructions">Namierjte kameru na vydávací QR kód zobrazený úradníkom. Vaše poverenie sa vygeneruje na vašom zariadení.</string>
+    <string name="content_credential_issuance_success">Poverenie úspešne vytvorené. Toto poverenie môžete teraz použiť na overenie veku.</string>
+    <string name="content_credential_description">Poverenie je kryptograficky podpísaný dôkaz vašej totožnosti, ktorý umožňuje overenie s ochranou súkromia.</string>
+    <string name="content_zero_knowledge_explanation">Dôkazy s nulovými znalosťami vám umožňujú preukázať splnenie vekovej požiadavky bez odhalenia skutočného veku.</string>
+    <string name="content_setup_proving_key">Sťahuje sa kryptografický dokazovací kľúč potrebný na generovanie dôkazov s nulovými znalosťami</string>
+    <string name="content_processing_challenge">Spracúva sa overovacia výzva</string>
+    <string name="content_creating_proof">Vytvára sa vekový dôkaz s nulovými znalosťami</string>
+    <string name="content_submitting_proof">Odosieľa sa dôkaz overovateľovi</string>
+    <string name="content_error_no_credential">Žiadne poverenie nie je dostupné. Najprv získajte poverenie od oprávneného vydavateľa.</string>
+    <string name="content_error_network_failed">Sieťové pripojenie zlyhalo. Skontrolujte internetové pripojenie a skúste znova.</string>
+    <string name="content_error_invalid_qr">Neplatný QR kód. Uistite sa, že skenujete správny overovací kód.</string>
+    <string name="content_error_verification_failed">Overenie zlyhalo. Server nedokázal overiť váš dôkaz.</string>
+    <string name="content_officer_authentication_title">Autentifikácia úradníka</string>
+    <string name="content_officer_issuance_title">Vydávanie poverenia</string>
+    <string name="content_officer_dob_prompt">Zadajte overený dátum narodenia žiadateľa z jeho oficiálneho identifikačného dokladu.</string>
+    <string name="content_onboarding_welcome">Vitajte v Provii Wallet - vašom riešení pre digitálne overenie veku s ochranou súkromia.</string>
+    <string name="content_onboarding_privacy">Váš dátum narodenia je bezpečne uložený na vašom zariadení a nikdy sa neposiela overovateľom.</string>
+    <string name="content_onboarding_get_started">Ak chcete začať, navštívte oprávneného vydavateľa a získajte digitálne vekové poverenie.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">Skontrolovať vek</string>
+    <string name="content_age_verification_explanation_simplified">Kontrolujeme váš vek. Váš dátum narodenia nevidíme ani nezdieľame.</string>
+    <string name="content_age_verification_instructions_simplified">Namierjte kameru na QR kód. Naskenuje sa samo.</string>
+    <string name="content_age_verification_success_simplified">Výborne! Webová stránka vie, že ste dosť starí. Váš dátum narodenia nevedia.</string>
+    <string name="content_age_verification_failed_simplified">To nevyšlo. Skúste znova skenovať alebo napíšte kód ručne.</string>
+    <string name="content_credential_issuance_title_simplified">Získať preukaz</string>
+    <string name="content_credential_issuance_explanation_simplified">Naskenujte kód z vládneho úradu a získajte digitálny preukaz.</string>
+    <string name="content_credential_issuance_instructions_simplified">Namierjte kameru na kód. Váš preukaz sa uloží do telefónu.</string>
+    <string name="content_credential_issuance_success_simplified">Hotovo! Teraz môžete digitálnym preukazom preukázať vek.</string>
+    <string name="content_credential_description_simplified">Poverenie je ako digitálny preukaz totožnosti, ktorý dokazuje, kto ste, bez zdieľania súkromných údajov.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Môžete dokázať, že ste dosť starí, bez toho aby ste komukoľvek prezradili skutočný vek.</string>
+    <string name="content_setup_proving_key_simplified">Sťahujú sa bezpečnostné súbory potrebné na fungovanie aplikácie</string>
+    <string name="content_processing_challenge_simplified">Číta sa požiadavka na overenie veku</string>
+    <string name="content_creating_proof_simplified">Vytvára sa dôkaz veku</string>
+    <string name="content_submitting_proof_simplified">Odosiela sa dôkaz webovej stránke</string>
+    <string name="content_error_no_credential_simplified">Ešte nemáte preukaz. Najprv navštívte vládny úrad.</string>
+    <string name="content_error_network_failed_simplified">Nedá sa pripojiť na internet. Skontrolujte Wi-Fi alebo mobilné dáta a skúste znova.</string>
+    <string name="content_error_invalid_qr_simplified">Tento kód nevyzerá správne. Uistite sa, že skenujete správny kód.</string>
+    <string name="content_error_verification_failed_simplified">To nevyšlo. Webová stránka nedokázala skontrolovať váš dôkaz. Skúste znova.</string>
+    <string name="content_officer_authentication_title_simplified">Prihlásenie úradníka</string>
+    <string name="content_officer_issuance_title_simplified">Vytvoriť preukaz</string>
+    <string name="content_officer_dob_prompt_simplified">Zadajte dátum narodenia osoby z jej oficiálneho preukazu totožnosti.</string>
+    <string name="content_onboarding_welcome_simplified">Vitajte v Provii Wallet - súkromne preukážte vek.</string>
+    <string name="content_onboarding_privacy_simplified">Váš dátum narodenia zostáva v telefóne. Nikto iný ho nevidí.</string>
+    <string name="content_onboarding_get_started_simplified">Ak chcete začať, navštívte vládny úrad a získajte digitálny preukaz.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Quick Response (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Osobné identifikačné číslo (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">Dátum narodenia (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Identifikácia (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">Používateľské rozhranie (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Uniform Resource Locator (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Rozhranie na programovanie aplikácií (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">Pozastaviť animácie</string>
+    <string name="animation_resume_animations">Obnoviť animácie</string>
+    <string name="animation_pause_button_text">Pozastaviť</string>
+    <string name="animation_resume_button_text">Obnoviť</string>
+    <string name="animation_toggles_playback_hint">Prepína prehrávanie animácií</string>
+    <string name="animation_paused_announcement">Animácie pozastavené</string>
+    <string name="animation_resumed_announcement">Animácie obnovené</string>
+    <string name="animation_active_count">%d aktívnych animácií</string>
+    <string name="animation_loading_default">Načítava sa</string>
+    <string name="animation_please_wait">Čakajte, kým sa táto operácia dokončí</string>
+    <string name="animation_percent_complete">%d percent dokončené</string>
+    <string name="animation_loading_in_progress">Prebieha</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">Klávesové skratky</string>
+    <string name="keyboard_shortcuts_done">Hotovo</string>
+    <string name="keyboard_shortcuts_app_section">Skratky aplikácie</string>
+    <string name="keyboard_shortcuts_navigation_section">Navigácia</string>
+    <string name="keyboard_shortcuts_tips_section">Tipy</string>
+    <string name="keyboard_shortcuts_navigation_footer">Tieto navigačné klávesy fungujú v celej aplikácii s externými klávesnicami</string>
+    <string name="keyboard_shortcuts_tip_external">Externé klávesnice Bluetooth a USB sú plne podporované</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Pomocou šípkových kláves navigujte medzi položkami v zoznamoch</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Podržaním klávesy Ctrl zobrazíte dostupné skratky na tejto obrazovke</string>
+    <string name="keyboard_shortcuts_tip_a11y">Všetky funkcie v tejto aplikácii sú dostupné cez klávesnicu</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Zavrieť klávesové skratky</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">Nastavenia</string>
+    <string name="keyboard_shortcut_label_accessibility">Prístupnosť</string>
+    <string name="keyboard_shortcut_label_help">Centrum pomoci</string>
+    <string name="keyboard_shortcut_label_add_credential">Pridať poverenie</string>
+    <string name="keyboard_shortcut_label_verify">Overiť</string>
+    <string name="keyboard_shortcut_label_shortcuts">Skratky</string>
+    <string name="keyboard_shortcut_desc_settings">Otvoriť nastavenia</string>
+    <string name="keyboard_shortcut_desc_accessibility">Nastavenia prístupnosti</string>
+    <string name="keyboard_shortcut_desc_help">Centrum pomoci</string>
+    <string name="keyboard_shortcut_desc_add_credential">Pridať poverenie</string>
+    <string name="keyboard_shortcut_desc_verify">Spustiť overenie</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Klávesové skratky</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">Späť / Zavrieť</string>
+    <string name="keyboard_shortcut_nav_back_desc">Zavrieť aktuálnu obrazovku alebo dialógové okno</string>
+    <string name="keyboard_shortcut_nav_next">Ďalšie pole</string>
+    <string name="keyboard_shortcut_nav_next_desc">Presunúť fokus na nasledujúci interaktívny prvok</string>
+    <string name="keyboard_shortcut_nav_prev">Predchádzajúce pole</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Presunúť fokus na predchádzajúci interaktívny prvok</string>
+    <string name="keyboard_shortcut_nav_submit">Odoslať / Pokračovať</string>
+    <string name="keyboard_shortcut_nav_submit_desc">Aktivovať fokusované tlačidlo alebo odoslať formulár</string>
+    <string name="keyboard_shortcut_nav_activate">Aktivovať tlačidlo</string>
+    <string name="keyboard_shortcut_nav_activate_desc">Aktivovať aktuálne fokusované tlačidlo alebo prepínač</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">Dialógové okno otvorené. Stlačením Escape zavriete, Enter potvrdíte.</string>
+    <string name="modal_closed_announcement">Dialógové okno zatvorené</string>
+    <string name="modal_button_primary_label">%s (primárna akcia)</string>
+    <string name="modal_button_cancel_label">%s (zrušiť)</string>
+    <string name="modal_button_destructive_label">%s (deštruktívna akcia)</string>
+    <string name="modal_button_primary_hint">Dvojitým klepnutím potvrďte alebo stlačte Enter</string>
+    <string name="modal_button_cancel_hint">Dvojitým klepnutím zrušte alebo stlačte Escape</string>
+    <string name="modal_button_destructive_hint">Dvojitým klepnutím vykonajte deštruktívnu akciu</string>
+    <string name="modal_button_secondary_hint">Dvojitým klepnutím vykonajte akciu</string>
+    <string name="modal_confirm">Potvrdiť</string>
+    <string name="modal_cancel">Zrušiť</string>
+    <string name="modal_delete">Odstrániť</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">Odstrániť %1$s</string>
+    <string name="a11y_edit_nickname_for">Upraviť prezývku pre %1$s</string>
+    <string name="accessibility_attestation_scan_back">Späť</string>
+    <string name="attestation_replace_confirm">Nahradiť</string>
+    <string name="attestation_replace_primary_message">Už máte osobné poverenie. Vytvorením nového ho nahradíte. Túto akciu nie je možné vrátiť späť.</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">Nahradiť existujúce poverenie?</string>
+    <string name="attestation_scan_error_empty">QR kód bol prázdny</string>
+    <string name="attestation_scan_instruction">Namierte kameru na QR kód zobrazený úradníkom</string>
+    <string name="attestation_scan_invalid_qr">Tento QR kód neobsahuje údaje osvedčenia</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">Skenovať osvedčenie</string>
+    <string name="attestation_scan_wrong_type_toast">Toto je overovací QR kód, nie QR kód poverenia</string>
+    <string name="biometric_required_message">Aplikácia vyžaduje zámku obrazovky (PIN, vzor alebo biometriu) na bezpečné uloženie poverení. Pred pokračovaním si ju nastavte v nastaveniach zabezpečenia zariadenia.</string>
+    <string name="biometric_required_open_settings">Otvoriť nastavenia zabezpečenia</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">Vyžaduje sa zámka obrazovky</string>
+    <string name="challenge_sandbox_prompt_announcement">Prijatá výzva sandboxu. Vyberte, či chcete povoliť režim sandbox a pokračovať, alebo výzvu odmietnuť.</string>
+    <string name="challenge_sandbox_prompt_body">Túto výzvu vydal sandboxový overovateľ. Bude úspešná, len ak v tejto peňaženke povolíte režim sandbox.</string>
+    <string name="challenge_sandbox_prompt_primary">Povoliť sandbox a pokračovať</string>
+    <string name="challenge_sandbox_prompt_secondary">Odmietnuť výzvu</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">Prijatá výzva sandboxu</string>
+    <string name="credential_detail_nickname_error">Nepodarilo sa uložiť prezývku</string>
+    <string name="credential_list_managed_count">%1$d z %2$d</string>
+    <string name="credential_picker_count_shown">Zobrazené poverenia: %1$d</string>
+    <string name="credential_picker_filter_clear">Vymazať filter</string>
+    <string name="credential_picker_filter_label">Filtrovať poverenia podľa mena</string>
+    <string name="credential_picker_filter_placeholder">Filtrovať poverenia</string>
+    <string name="credential_picker_no_results">Žiadne zodpovedajúce poverenia</string>
+    <string name="credential_picker_section_managed">Spravované poverenia</string>
+    <string name="credential_picker_section_me">Ja</string>
+    <string name="credential_picker_subtitle">Vyberte, koho vek sa overuje.</string>
+    <string name="credential_row_action_delete">Odstrániť</string>
+    <string name="credential_row_action_edit">Upraviť prezývku</string>
+    <string name="credential_row_overflow_menu">Možnosti poverenia</string>
+    <string name="deeplink_sandbox_prompt_announcement">Zistený sandboxový odkaz. Vyberte, či chcete povoliť režim sandbox a otvoriť odkaz.</string>
+    <string name="deeplink_sandbox_prompt_body">Tento deep-link bude úspešný, len ak v tejto peňaženke povolíte režim sandbox.</string>
+    <string name="deeplink_sandbox_prompt_primary">Povoliť sandbox a otvoriť</string>
+    <string name="deeplink_sandbox_prompt_secondary">Zrušiť</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">Zistený sandboxový odkaz</string>
+    <string name="empty_credential_option_find_apps_a11y">Nájdite zúčastnenú aplikáciu. Získajte poverenie od svojho dôchodkového fondu, banky, telekomunikačného operátora, zdravotnej poisťovne alebo kohokoľvek, kto už pozná váš vek.</string>
+    <string name="empty_credential_option_find_apps_desc">Získajte poverenie od svojho dôchodkového fondu, banky, telekomunikačného operátora, zdravotnej poisťovne alebo kohokoľvek, kto už pozná váš vek</string>
+    <string name="empty_credential_option_find_apps_title">Nájsť zúčastnenú aplikáciu</string>
+    <string name="empty_credential_option_find_locations_a11y">Nájdite miesto vo svojom okolí. Navštívte ho osobne s dokladom totožnosti a získajte poverenie.</string>
+    <string name="empty_credential_option_find_locations_desc">Navštívte miesto osobne s dokladom totožnosti a získajte poverenie</string>
+    <string name="empty_credential_option_find_locations_title">Nájsť miesto vo vašom okolí</string>
+    <string name="empty_credential_option_managed_a11y">Starám sa o niekoho. Spravujte poverenia pre osoby, o ktoré sa staráte.</string>
+    <string name="empty_credential_option_managed_desc">Spravujte poverenia pre osoby, o ktoré sa staráte</string>
+    <string name="empty_credential_option_managed_title">Starám sa o niekoho</string>
+    <string name="empty_credential_option_scan_a11y">Mám QR kód na skenovanie. Overovateľ vám dal kód po overení vašej totožnosti.</string>
+    <string name="empty_credential_option_scan_desc">Overovateľ vám dal kód po overení vašej totožnosti</string>
+    <string name="empty_credential_option_scan_title">Mám QR kód na skenovanie</string>
+    <string name="empty_credential_subtitle">Vyberte si, ako chcete získať svoje prvé poverenie</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">Zatiaľ žiadne poverenia</string>
+    <string name="error_screen_lock_required">Na bezpečné uloženie poverení je potrebná zámka obrazovky (PIN, vzor alebo biometria). Nastavte si ju v nastaveniach zariadenia.</string>
+    <string name="issuers_no_apps_found_description">Vráťte sa čoskoro, keďže ďalšie aplikácie pridávajú podporu pre Provii</string>
+    <string name="issuers_no_apps_found">Zatiaľ žiadne zúčastnené aplikácie</string>
+    <string name="issuers_no_locations_found_description">Vráťte sa čoskoro, keďže pribúdajú ďalšie miesta</string>
+    <string name="issuers_no_locations_found">Žiadne miesta sa nenašli</string>
+    <string name="managed_credential_explainer_body">Ak chcete získať spravované poverenie pre niekoho, o koho sa staráte, navštívte zúčastnené miesto spoločne. Overovateľ skontroluje jeho doklad totožnosti. Pri skenovaní QR kódu sa vás opýta, či je toto poverenie pre vás alebo pre osobu, ktorú spravujete.</string>
+    <string name="managed_credential_explainer_find_location">Nájsť miesto</string>
+    <string name="managed_credential_explainer_have_qr">Už mám QR kód</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">Spravované poverenia</string>
+    <string name="sandbox_credential_type">Typ poverenia</string>
+    <string name="sandbox_managed_credential_saved">Spravované poverenie uložené (%s)</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">Režim sandbox je teraz aktívny. Peňaženka je pripojená k sandboxovým serverom.</string>
+    <string name="sandbox_nickname_helper">Pomenujte toto poverenie, aby ste ho vedeli identifikovať vo svojej peňaženke.</string>
+    <string name="sandbox_nickname_label">Prezývka</string>
+    <string name="sandbox_nickname_placeholder">napr. Sára</string>
+    <string name="sandbox_nickname_required">Pre spravované poverenia sa vyžaduje prezývka</string>
+    <string name="sandbox_type_managed_credential">Spravované poverenie</string>
+    <string name="sandbox_type_your_credential">Vaše poverenie</string>
+    <string name="title_find_apps">Nájsť zúčastnenú aplikáciu</string>
+    <string name="title_find_locations">Nájsť miesto</string>
+    <string name="verification_go_to_attestation">Získať poverenie</string>
+    <string name="verification_wrong_qr_type_message">Tento QR kód slúži na získanie nového poverenia, nie na overenie veku. Chcete namiesto toho prejsť na obrazovku osvedčenia?</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">Zistený QR kód osvedčenia</string>
+    <string name="walkthrough_back">Späť</string>
+    <string name="walkthrough_get_started">Začať</string>
+    <string name="walkthrough_next">Ďalej</string>
+    <string name="walkthrough_page_indicator">Strana %1$d z %2$d</string>
+    <string name="walkthrough_page1_body">Vaše poverenie obsahuje váš vek. Nič iné. Nie vaše meno, nie vašu adresu, nie vašu totožnosť.\n\nDokazuje, že máte viac (alebo menej) ako určitý vek bez odhalenia dátumu narodenia.</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">Čo je to poverenie?</string>
+    <string name="walkthrough_page2_body">Poverenie môžete získať prostredníctvom aplikácie od spoločnosti, ktorá už pozná váš vek. Napríklad od vašej banky alebo dôchodkového fondu. Keďže váš vek už overili, nič sa nemusí znova zdieľať.\n\nPrípadne navštívte zúčastnené miesto s dokladom totožnosti potvrdzujúcim váš dátum narodenia. Váš dátum narodenia bude skontrolovaný, použitý na vytvorenie poverenia a potom zahodený. Vydavateľ vaše poverenie nikdy neuvidí. Vaša totožnosť s ním nikdy nebude spojená.</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">Ako ho získate?</string>
+    <string name="walkthrough_page3_body">Ak sa staráte o niekoho, kto potrebuje vekové poverenie, môžete ho zaňho získať a spravovať vo svojom zariadení.\n\nNavštívte zúčastnené miesto spoločne s dokladom totožnosti potvrdzujúcim ich dátum narodenia. Pri skenovaní QR kódu sa vás opýta, či je toto poverenie pre vás alebo pre osobu, ktorú spravujete.\n\nPridajte prezývku, aby ste odlíšili ich poverenia.</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">Zverené osoby</string>
+    <string name="walkthrough_page4_body">Aplikácia, ktorá sa snaží overiť váš vek, môže poslať výzvu priamo do vašej peňaženky Provii. Vy si vyberiete, ktoré poverenie použiť. Po úspešnom overení sa vrátite do žiadajúcej aplikácie a budete môcť pokračovať ako overený.\n\nPrípadne sa vám môže zobraziť QR kód na inom zariadení alebo odkaz vo vašom mobilnom prehliadači, ktorý vedie priamo do vašej peňaženky. K dispozícii je aj možnosť skráteného kódu pre prístupnosť.\n\nNikdy sa nezdieľajú žiadne osobné údaje. Iba odpoveď áno alebo nie na to, či spĺňate vekovú požiadavku.</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">Ako funguje overenie?</string>
+    <string name="walkthrough_page5_body">Vaším prvým krokom je získať poverenie prostredníctvom zúčastnenej aplikácie alebo na mieste vo vašom okolí.\n\nOdtiaľ si môžete overiť svoj vek, kedykoľvek to bude potrebné, bez zdieľania akýchkoľvek osobných údajov. Môžete tiež spravovať poverenia pre osoby, o ktoré sa staráte.</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">Všetko je pripravené</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">Preskočiť</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

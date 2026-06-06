@@ -1,0 +1,725 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main, develop]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - 'LICENSE*'
+      - '.gitignore'
+      - 'CHANGELOG*'
+  pull_request:
+    branches: [main, develop]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - 'LICENSE*'
+      - '.gitignore'
+      - 'CHANGELOG*'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  # =============================================================================
+  # iOS Linting
+  # =============================================================================
+  ios-lint:
+    name: iOS Lint (SwiftLint)
+    runs-on: macos-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Install SwiftLint
+        run: |
+          brew install swiftlint 2>/dev/null || true
+          brew link --overwrite swiftlint 2>/dev/null || true
+          command -v swiftlint || { echo "::error::SwiftLint not available"; exit 1; }
+
+      - name: Run SwiftLint
+        run: |
+          cd ios
+          swiftlint lint --strict --reporter github-actions-logging
+
+  # =============================================================================
+  # Android Linting
+  # =============================================================================
+  android-lint:
+    name: Android Lint (ktlint)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654 # v5.2.0
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Cache Gradle dependencies
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+            android/.gradle
+          key: gradle-${{ runner.os }}-${{ hashFiles('android/**/*.gradle*', 'android/gradle/wrapper/gradle-wrapper.properties') }}
+          restore-keys: |
+            gradle-${{ runner.os }}-
+
+      - name: Run ktlint
+        run: |
+          cd android
+          # Install ktlint
+          curl -sSLO https://github.com/pinterest/ktlint/releases/download/1.0.1/ktlint
+          chmod a+x ktlint
+          # Auto-format first (best-effort), then check for remaining violations
+          ./ktlint --format "app/src/**/*.kt" || true
+          ./ktlint --reporter=checkstyle,output=ktlint-report.xml "app/src/**/*.kt"
+
+      - name: Verify lint baseline exists
+        run: |
+          if [ ! -f android/app/lint-baseline.xml ]; then
+            echo "::error::android/app/lint-baseline.xml is missing. Commit a baseline before merging."
+            exit 1
+          fi
+
+      - name: Run Android Lint
+        run: |
+          cd android
+          ./gradlew lintDebug --no-daemon --no-build-cache
+
+      - name: Upload Lint Reports
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: always()
+        with:
+          name: android-lint-reports
+          path: |
+            android/app/build/reports/lint-results*.html
+            android/app/build/reports/lint-results*.xml
+            android/ktlint-report.xml
+          retention-days: 7
+
+  # =============================================================================
+  # iOS Build
+  # =============================================================================
+  ios-build:
+    name: iOS Build
+    runs-on: macos-latest
+    timeout-minutes: 45
+    needs: [ios-lint]
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Download provii-mobile-sdk bundle
+        uses: robinraju/release-downloader@28fc21f50d76778e7023361aa1f863e717d3d56f # v1.13
+        with:
+          repository: provii/provii-mobile-sdk
+          tag: 'v0.1.0'
+          fileName: 'provii-mobile-sdk-bundle.tar.gz'
+          out-file-path: provii-mobile-sdk-artifacts
+          token: ${{ github.token }}
+
+      - name: Verify provii-mobile-sdk bundle checksum
+        run: |
+          ARTIFACT="provii-mobile-sdk-artifacts/provii-mobile-sdk-bundle.tar.gz"
+          ACTUAL=$(shasum -a 256 "$ARTIFACT" | awk '{print $1}')
+          EXPECTED="ff63d12a31a47e05cff8d83968099cd47e12b9717518f1094fb482097216080b"
+          if [ "$ACTUAL" != "$EXPECTED" ]; then
+            echo "::error::provii-mobile-sdk bundle checksum mismatch"
+            echo "  expected: $EXPECTED"
+            echo "  actual:   $ACTUAL"
+            exit 1
+          fi
+          echo "provii-mobile-sdk bundle checksum verified: $ACTUAL"
+          echo "## provii-mobile-sdk iOS" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Field | Value |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|-------|-------|" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Release tag | v0.1.0 |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| SHA256 | \`$ACTUAL\` |" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Extract provii-mobile-sdk XCFramework
+        run: |
+          mkdir -p ios/Frameworks
+          tar -xzf provii-mobile-sdk-artifacts/provii-mobile-sdk-bundle.tar.gz
+          cp -r release-artifacts/ios/ProviiSDK.xcframework ios/Frameworks/
+          cp -r release-artifacts/bindings/swift/* ios/ProviiWallet/ProviiWallet/SDK/
+          echo "provii-mobile-sdk iOS artifacts extracted"
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@c4e5b1316158f92e3d49443a9d58b31d25ac0f8f # v1.306.0
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Cache CocoaPods
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            ios/Pods
+            ~/Library/Caches/CocoaPods
+          key: pods-${{ runner.os }}-${{ hashFiles('ios/Podfile.lock') }}
+          restore-keys: |
+            pods-${{ runner.os }}-
+
+      - name: Cache Swift Package Manager
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            ~/Library/Developer/Xcode/DerivedData/**/SourcePackages
+            ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
+          restore-keys: |
+            spm-${{ runner.os }}-
+
+      - name: Install CocoaPods dependencies
+        run: |
+          cd ios
+          pod install --repo-update
+
+      - name: Select Xcode version
+        run: |
+          sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+      - name: Install xcpretty
+        run: gem install xcpretty
+
+      - name: Build iOS app
+        run: |
+          set -o pipefail
+          cd ios
+          xcodebuild build \
+            -workspace wallet.xcworkspace \
+            -scheme wallet \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO \
+            ONLY_ACTIVE_ARCH=YES \
+            | xcpretty --color --report html --output build-report.html
+
+      - name: Upload Build Report
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: always()
+        with:
+          name: ios-build-report
+          path: ios/build-report.html
+          retention-days: 7
+
+  # =============================================================================
+  # iOS Tests
+  # =============================================================================
+  ios-test:
+    name: iOS Tests
+    runs-on: macos-latest
+    timeout-minutes: 45
+    needs: [ios-build]
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@c4e5b1316158f92e3d49443a9d58b31d25ac0f8f # v1.306.0
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Cache CocoaPods
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            ios/Pods
+            ~/Library/Caches/CocoaPods
+          key: pods-${{ runner.os }}-${{ hashFiles('ios/Podfile.lock') }}
+          restore-keys: |
+            pods-${{ runner.os }}-
+
+      - name: Download provii-mobile-sdk bundle
+        uses: robinraju/release-downloader@28fc21f50d76778e7023361aa1f863e717d3d56f # v1.13
+        with:
+          repository: provii/provii-mobile-sdk
+          tag: 'v0.1.0'
+          fileName: 'provii-mobile-sdk-bundle.tar.gz'
+          out-file-path: provii-mobile-sdk-artifacts
+          token: ${{ github.token }}
+
+      - name: Extract provii-mobile-sdk XCFramework
+        run: |
+          mkdir -p ios/Frameworks
+          tar -xzf provii-mobile-sdk-artifacts/provii-mobile-sdk-bundle.tar.gz
+          cp -r release-artifacts/ios/ProviiSDK.xcframework ios/Frameworks/
+          cp -r release-artifacts/bindings/swift/* ios/ProviiWallet/ProviiWallet/SDK/
+          echo "provii-mobile-sdk iOS artifacts extracted for test job"
+
+      - name: Install CocoaPods dependencies
+        run: |
+          cd ios
+          pod install
+
+      - name: Install xcpretty
+        run: gem install xcpretty
+
+      - name: Resolve iOS simulator destination
+        id: sim
+        run: |
+          # Find an available iPhone simulator, preferring iPhone 16.
+          SIM_ID=$(xcrun simctl list devices available -j \
+            | python3 -c "
+          import json, sys
+          data = json.load(sys.stdin)
+          best = None
+          for runtime, devices in data.get('devices', {}).items():
+              if 'iOS' not in runtime:
+                  continue
+              for d in devices:
+                  if d.get('isAvailable'):
+                      name = d.get('name', '')
+                      udid = d.get('udid', '')
+                      if 'iPhone 16' in name:
+                          print(udid); sys.exit(0)
+                      if 'iPhone' in name and best is None:
+                          best = udid
+          if best:
+              print(best)
+          else:
+              sys.exit(1)
+          ")
+          echo "destination=platform=iOS Simulator,id=$SIM_ID" >> "$GITHUB_OUTPUT"
+          echo "Resolved simulator: $SIM_ID"
+
+      - name: Run iOS unit tests
+        run: |
+          set -o pipefail
+          cd ios
+          xcodebuild test \
+            -workspace wallet.xcworkspace \
+            -scheme wallet \
+            -sdk iphonesimulator \
+            -destination '${{ steps.sim.outputs.destination }}' \
+            -configuration Debug \
+            -enableCodeCoverage YES \
+            -only-testing:walletTests \
+            CODE_SIGNING_ALLOWED=NO \
+            ONLY_ACTIVE_ARCH=YES \
+            -resultBundlePath TestResults \
+            | xcpretty --color --report junit --output test-results.xml
+
+      - name: Enforce coverage gate (85% line on logic scope)
+        if: always()
+        run: |
+          cd ios
+          bash scripts/check_coverage_gate.sh TestResults.xcresult 85
+
+      - name: Upload Test Results
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: always()
+        with:
+          name: ios-test-results
+          path: |
+            ios/test-results.xml
+            ios/TestResults.xcresult
+          retention-days: 14
+
+  # =============================================================================
+  # Android Build
+  # =============================================================================
+  android-build:
+    name: Android Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    needs: [android-lint]
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Download provii-mobile-sdk bundle
+        uses: robinraju/release-downloader@28fc21f50d76778e7023361aa1f863e717d3d56f # v1.13
+        with:
+          repository: provii/provii-mobile-sdk
+          tag: 'v0.1.0'
+          fileName: 'provii-mobile-sdk-bundle.tar.gz'
+          out-file-path: provii-mobile-sdk-artifacts
+          token: ${{ github.token }}
+
+      - name: Verify provii-mobile-sdk bundle checksum
+        run: |
+          ARTIFACT="provii-mobile-sdk-artifacts/provii-mobile-sdk-bundle.tar.gz"
+          ACTUAL=$(sha256sum "$ARTIFACT" | awk '{print $1}')
+          EXPECTED="ff63d12a31a47e05cff8d83968099cd47e12b9717518f1094fb482097216080b"
+          if [ "$ACTUAL" != "$EXPECTED" ]; then
+            echo "::error::provii-mobile-sdk bundle checksum mismatch"
+            echo "  expected: $EXPECTED"
+            echo "  actual:   $ACTUAL"
+            exit 1
+          fi
+          echo "provii-mobile-sdk bundle checksum verified: $ACTUAL"
+          echo "## provii-mobile-sdk Android" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Field | Value |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|-------|-------|" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Release tag | v0.1.0 |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| SHA256 | \`$ACTUAL\` |" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Extract provii-mobile-sdk
+        run: |
+          mkdir -p android/app/libs
+          tar -xzf provii-mobile-sdk-artifacts/provii-mobile-sdk-bundle.tar.gz
+          cp -r release-artifacts/android/* android/app/libs/
+          cp -r release-artifacts/bindings/kotlin/* android/app/src/main/java/
+          echo "provii-mobile-sdk Android artifacts extracted"
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654 # v5.2.0
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Cache Gradle dependencies
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+            android/.gradle
+          key: gradle-${{ runner.os }}-${{ hashFiles('android/**/*.gradle*', 'android/gradle/wrapper/gradle-wrapper.properties') }}
+          restore-keys: |
+            gradle-${{ runner.os }}-
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x android/gradlew
+
+      - name: Build Debug APK
+        run: |
+          cd android
+          ./gradlew assembleDebug --no-daemon --no-build-cache
+
+      - name: Upload Debug APK
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: debug-apk
+          path: android/app/build/outputs/apk/debug/*.apk
+          retention-days: 7
+
+  # =============================================================================
+  # Android Tests
+  # =============================================================================
+  android-test:
+    name: Android Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    needs: [android-build]
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654 # v5.2.0
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Cache Gradle dependencies
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+            android/.gradle
+          key: gradle-${{ runner.os }}-${{ hashFiles('android/**/*.gradle*', 'android/gradle/wrapper/gradle-wrapper.properties') }}
+          restore-keys: |
+            gradle-${{ runner.os }}-
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x android/gradlew
+
+      - name: Run Unit Tests
+        run: |
+          cd android
+          ./gradlew testDebugUnitTest --no-daemon
+
+      - name: Enforce coverage gate (85% line on logic scope)
+        run: |
+          cd android
+          ./gradlew jacocoCoverageGate --no-daemon
+
+      - name: Upload Test Results
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: always()
+        with:
+          name: android-test-results
+          path: |
+            android/app/build/reports/tests/
+            android/app/build/test-results/
+            android/app/build/reports/jacoco/
+          retention-days: 14
+
+  # =============================================================================
+  # Android Instrumented Tests (PR only - runs on emulator with KVM)
+  # =============================================================================
+  android-instrumented-test:
+    name: Android Instrumented Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    needs: [android-test]
+    if: github.event_name == 'pull_request'
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: false
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654 # v5.2.0
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Cache Gradle dependencies
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+            android/.gradle
+          key: gradle-${{ runner.os }}-${{ hashFiles('android/**/*.gradle*', 'android/gradle/wrapper/gradle-wrapper.properties') }}
+          restore-keys: |
+            gradle-${{ runner.os }}-
+
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x android/gradlew
+
+      - name: Run Instrumented Tests
+        uses: reactivecircus/android-emulator-runner@e89f39f1abbbd05b1113a29cf4db69e7540cae5a # v2.37.0
+        with:
+          api-level: 34
+          arch: x86_64
+          target: google_apis
+          profile: pixel_6
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+          disable-animations: true
+          script: |
+            cd android
+            ./gradlew connectedDebugAndroidTest --no-daemon
+
+      - name: Upload Instrumented Test Results
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: always()
+        with:
+          name: android-instrumented-test-results
+          path: android/app/build/reports/androidTests/
+          retention-days: 14
+
+  # =============================================================================
+  # iOS UI Tests (path-filtered, macOS runner)
+  # =============================================================================
+  ios-ui-test:
+    name: iOS UI Tests
+    runs-on: macos-latest
+    timeout-minutes: 60
+    if: github.event_name == 'pull_request'
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Detect changed paths
+        uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
+        id: filter
+        with:
+          filters: |
+            ios:
+              - 'ios/**'
+              - 'rust/src/**/*.swift'
+              - 'bindings/**/*.swift'
+
+      - name: Set up Ruby
+        if: steps.filter.outputs.ios == 'true'
+        uses: ruby/setup-ruby@c4e5b1316158f92e3d49443a9d58b31d25ac0f8f # v1.306.0
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Cache CocoaPods
+        if: steps.filter.outputs.ios == 'true'
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            ios/Pods
+            ~/Library/Caches/CocoaPods
+          key: pods-${{ runner.os }}-${{ hashFiles('ios/Podfile.lock') }}
+          restore-keys: |
+            pods-${{ runner.os }}-
+
+      - name: Select Xcode version
+        if: steps.filter.outputs.ios == 'true'
+        run: sudo xcode-select -s /Applications/Xcode_15.2.app/Contents/Developer
+
+      - name: Install CocoaPods dependencies
+        if: steps.filter.outputs.ios == 'true'
+        run: |
+          cd ios
+          pod install
+
+      - name: Install xcpretty
+        if: steps.filter.outputs.ios == 'true'
+        run: gem install xcpretty
+
+      - name: Run iOS UI Tests
+        if: steps.filter.outputs.ios == 'true'
+        run: |
+          xcodebuild test \
+            -project ios/ProviiWallet/ProviiWallet.xcodeproj \
+            -scheme wallet \
+            -only-testing:walletUITests \
+            -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.2' \
+            -resultBundlePath TestResults \
+            | xcpretty --color --report junit --output ios/ui-test-results.xml
+
+      - name: Upload UI Test Results
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: always() && steps.filter.outputs.ios == 'true'
+        with:
+          name: ios-ui-test-results-${{ github.sha }}
+          path: |
+            ios/ui-test-results.xml
+            TestResults.xcresult
+          retention-days: 14
+
+  # =============================================================================
+  # Summary Job
+  # =============================================================================
+  ci-summary:
+    name: CI Summary
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: [ios-lint, android-lint, ios-build, ios-test, android-build, android-test, android-instrumented-test, ios-ui-test]
+    if: always()
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Check CI Status
+        env:
+          IOS_LINT_RESULT: ${{ needs.ios-lint.result }}
+          ANDROID_LINT_RESULT: ${{ needs.android-lint.result }}
+          IOS_BUILD_RESULT: ${{ needs.ios-build.result }}
+          IOS_TEST_RESULT: ${{ needs.ios-test.result }}
+          ANDROID_BUILD_RESULT: ${{ needs.android-build.result }}
+          ANDROID_TEST_RESULT: ${{ needs.android-test.result }}
+          ANDROID_INSTRUMENTED_TEST_RESULT: ${{ needs.android-instrumented-test.result }}
+          IOS_UI_TEST_RESULT: ${{ needs.ios-ui-test.result }}
+        run: |
+          echo "## CI Results Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Job | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|-----|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| iOS Lint | ${IOS_LINT_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Android Lint | ${ANDROID_LINT_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| iOS Build | ${IOS_BUILD_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| iOS Tests | ${IOS_TEST_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Android Build | ${ANDROID_BUILD_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Android Tests | ${ANDROID_TEST_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Android Instrumented Tests | ${ANDROID_INSTRUMENTED_TEST_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| iOS UI Tests | ${IOS_UI_TEST_RESULT} |" >> $GITHUB_STEP_SUMMARY
+
+          # Fail if any required job failed
+          if [[ "${IOS_LINT_RESULT}" == "failure" ]] || \
+             [[ "${ANDROID_LINT_RESULT}" == "failure" ]] || \
+             [[ "${IOS_BUILD_RESULT}" == "failure" ]] || \
+             [[ "${IOS_TEST_RESULT}" == "failure" ]] || \
+             [[ "${ANDROID_BUILD_RESULT}" == "failure" ]] || \
+             [[ "${ANDROID_TEST_RESULT}" == "failure" ]] || \
+             [[ "${ANDROID_INSTRUMENTED_TEST_RESULT}" == "failure" ]] || \
+             [[ "${IOS_UI_TEST_RESULT}" == "failure" ]]; then
+            echo "::error::One or more CI jobs failed"
+            exit 1
+          fi

@@ -1,0 +1,43 @@
+# Gitleaks configuration for provii-mobile
+# https://github.com/gitleaks/gitleaks
+
+[extend]
+useDefault = true
+
+# Allowlist for known false positives and test values
+[allowlist]
+description = "Allowlist for test values and removed sandbox constants"
+
+# Historical sandbox constants (no longer in code, only in git history)
+# These were test/sandbox values, not production secrets
+commits = [
+    "03b4280a1d93f6ce432c9f370b32cfe07d77ac42",  # Android WalletRepository sandbox constants
+    "d8c1f50a584a25f00c4c468c0cfa119412641715",  # iOS WalletRepository sandbox constants
+    "fc65405f0ded1918c188253c54e6e074b874706b",  # DeepLinkSecurityTest test tokens
+]
+
+# Paths containing test data
+paths = [
+    '''.*Test\.kt$''',
+    '''.*Test\.swift$''',
+    '''.*Tests\.kt$''',
+    '''.*Tests\.swift$''',
+    '''ios/ProviiWallet/ProviiWallet/Features/Onboarding/Views/ScanPickupView\.swift''',
+    '''ios/ProviiWallet/ProviiWallet/Navigation/DeepLinkHandler\.swift''',
+]
+
+# Specific fingerprints from Gitleaks findings
+[[rules]]
+id = "sandbox-hmac-secret"
+description = "Historical sandbox HMAC secret (test value)"
+regex = '''nfs1Tjotf1Vtl3Y5X4TF2331K0Z8kC7K6UseNJrUOeE='''
+
+[[rules]]
+id = "sandbox-client-id"
+description = "Historical sandbox client ID (test value)"
+regex = '''client-524fad82f08fd04e'''
+
+[[rules]]
+id = "test-hex-tokens"
+description = "Test hex token patterns used in unit tests"
+regex = '''(0123456789abcde|abcdef0123456789)'''

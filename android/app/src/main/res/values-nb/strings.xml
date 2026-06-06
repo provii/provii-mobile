@@ -1,0 +1,1577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Innstillinger</string>
+    <string name="title_accessibility">Tilgjengelighet</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Hent legitimasjon</string>
+    <string name="title_scan_verification_qr">Skann verifiserings-QR-kode</string>
+    <string name="title_verifying_age">Verifiserer alder</string>
+    <string name="title_age_verified">Alder verifisert</string>
+    <string name="title_verification_failed">Verifisering mislyktes</string>
+    <string name="title_officer_mode">Tjenestepersonmodus</string>
+    <string name="title_officer_dashboard">Tjenestepersonoversikt</string>
+    <string name="title_issue_credential">Utsted legitimasjon</string>
+    <string name="title_credential_ready">Legitimasjon klar</string>
+    <string name="title_get_your_credential">Hent din legitimasjon</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Velkommen til Provii Wallet</string>
+    <string name="welcome_subtitle">Sikker aldersverifisering gjort enkelt</string>
+    <string name="welcome_first_credential">Kom i gang ved å legge til din første aldersverifiseringslegitimasjon</string>
+    <string name="welcome_description">Privat aldersverifisering med nullkunnskapsbevis</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Velkommen til Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Velg foretrukket språk</string>
+    <string name="onboarding_use_english">Bruk engelsk</string>
+    <string name="onboarding_use_english_description">Fortsett med engelsk som appspråk</string>
+    <string name="onboarding_rotating_button_description">Endre språk-knapp, viser for øyeblikket: %1$s. Trykk for å velge et annet språk.</string>
+    <string name="onboarding_change_later">Du kan endre dette senere i Innstillinger</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Tilgjengelighet</string>
+    <string name="onboarding_accessibility_desc">Ønsker du å tilpasse tilgjengelighetsfunksjoner som tekststørrelse, berøringsflater eller redusert bevegelse?</string>
+    <string name="onboarding_use_defaults">Bruk standardinnstillinger</string>
+    <string name="onboarding_use_defaults_description">Fortsett med standard tilgjengelighetsinnstillinger</string>
+    <string name="onboarding_open_accessibility">Tilgjengelighetsinnstillinger</string>
+    <string name="onboarding_open_accessibility_description">Åpne tilgjengelighetsinnstillinger for å tilpasse appen</string>
+    <string name="onboarding_accessibility_later">Du kan endre dette senere i Innstillinger</string>
+    <string name="onboarding_accessibility_features_title">Tilgjengelige funksjoner inkluderer:</string>
+    <string name="onboarding_feature_text_size">Større tekststørrelser</string>
+    <string name="onboarding_feature_touch_targets">Økte berøringsflater</string>
+    <string name="onboarding_feature_reduce_motion">Redusert bevegelse</string>
+    <string name="onboarding_feature_high_contrast">Høykontrastmodus</string>
+    <string name="onboarding_talkback_detected">TalkBack oppdaget</string>
+    <string name="onboarding_talkback_message">Vi har aktivert utfyllende beskrivelser for å hjelpe deg navigere i appen.</string>
+    <string name="onboarding_continue_to_setup">Fortsett til oppsett</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Engangsoppsett kreves</string>
+    <string name="setup_download_required">Nedlasting kreves</string>
+    <string name="setup_download_description">Appen trenger å laste ned sikkerhetskomponenter for nullkunnskapsbevis (omtrent 87 MB).</string>
+    <string name="setup_wifi_recommended">Wi-Fi anbefales</string>
+    <string name="setup_checking_status">Kontrollerer oppsettsstatus…</string>
+    <string name="setup_already_setup">Allerede konfigurert!</string>
+    <string name="setup_ready_message">Lommeboken din er klar for sikker aldersverifisering</string>
+    <string name="setup_preparing">Forbereder sikkert verifiseringssystem…</string>
+    <string name="setup_checking_components">Kontrollerer sikkerhetskomponenter…</string>
+    <string name="setup_downloading">Laster ned sikkerhetskomponenter</string>
+    <string name="setup_download_progress_description">%1$d%% fullført (%2$s MB av %3$s MB lastet ned)</string>
+    <string name="setup_initializing">Initialiserer sikkerhetskomponenter…</string>
+    <string name="setup_complete">Oppsett fullført!</string>
+    <string name="setup_download_info">Dette muliggjør nullkunnskapsbevis for privat aldersverifisering</string>
+    <string name="setup_one_time_download">Engangs nedlasting</string>
+    <string name="setup_stuck_message">Dette tar lengre tid enn forventet</string>
+    <string name="setup_stuck_description">Oppsettet kan ha stoppet opp. Prøv å starte på nytt.</string>
+    <string name="setup_restart_message">Appen må starte på nytt. Dette skjer noen ganger ved første oppstart.</string>
+    <string name="setup_storage_full">Lagring full</string>
+    <string name="setup_connection_error">Tilkoblingsfeil</string>
+    <string name="setup_failed">Oppsett mislyktes</string>
+    <string name="setup_initialization_error">Initialiseringsfeil</string>
+    <string name="error_storage_init_failed">Lagringsinitalisering mislyktes. Start appen på nytt.</string>
+    <string name="error_storage_init_close_restart">Lagringsinitalisering mislyktes. Lukk og start appen på nytt.</string>
+    <string name="setup_free_storage_message">Frigjør minst 65 MB og prøv igjen</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Personvern beskyttet</string>
+    <string name="setup_privacy_description">Aldersverifiseringen din bruker nullkunnskapsbevis. Fødselsdatoen din deles aldri.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Mine legitimasjoner</string>
+    <string name="credentials_empty">Ingen legitimasjoner lagret</string>
+    <string name="credential_active">Legitimasjon aktiv</string>
+    <string name="credential_expired">Legitimasjon utløpt</string>
+    <string name="credential_ready_for_verification">Klar for verifisering</string>
+    <string name="credential_expired_message">Legitimasjonen din har utløpt og må erstattes</string>
+    <string name="credential_stored_successfully">Legitimasjon lagret</string>
+    <string name="credential_stored_description">Alderslegitimasjonen din er sikkert lagret og klar til bruk</string>
+    <string name="credential_can_prove_age">Du kan nå bevise alderen din privat</string>
+    <string name="credential_returning">Returnerer til legitimasjoner…</string>
+    <string name="credential_view_credentials">Vis legitimasjoner</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Ferdig</string>
+    <string name="action_scan_qr_code">Skann QR-kode</string>
+    <string name="action_find_locations">Finn steder</string>
+    <string name="action_get_credential">Hent en legitimasjon</string>
+    <string name="action_replace_credential">Erstatt med ny legitimasjon</string>
+    <string name="action_replace_credential_now">Erstatt legitimasjon nå</string>
+    <string name="action_delete_credential">Slett legitimasjon</string>
+    <string name="credential_action_scan_description">Hent legitimasjon fra autorisert utsteder</string>
+    <string name="credential_action_find_description">Finn utstedere i nærheten</string>
+    <string name="credential_remove_description">Fjern gjeldende legitimasjon</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Personvern</string>
+    <string name="credential_info_privacy_value">Beskyttet</string>
+    <string name="credential_info_status">Status</string>
+    <string name="credential_info_status_value">Gyldig</string>
+    <string name="credential_tip_title">Raskt tips</string>
+    <string name="credential_tip_message">Trykk på «Verifiser alder»-knappen for å skanne verifiserings-QR-koder (Quick Response) på deltakende steder.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">Skann QR-kode</string>
+    <string name="verification_verify_age">Verifiser alder</string>
+    <string name="verification_generating_proof">Genererer bevis…</string>
+    <string name="verification_success">Verifisering vellykket</string>
+    <string name="verification_failed">Verifisering mislyktes</string>
+    <string name="verification_age_verified">Alder verifisert</string>
+    <string name="verification_age_verified_message">Alderen din er verifisert privat</string>
+    <string name="verification_can_return">Du kan nå returnere til nettstedet for å fortsette.</string>
+    <string name="verification_returning_browser">Returnerer til nettleser…</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">Steg 1 av 2</string>
+    <string name="verification_step_2_of_2">Steg 2 av 2</string>
+    <string name="verification_point_camera">Pek kameraet mot verifiserings-QR-koden</string>
+    <string name="verification_hold_steady">Hold rolig til du hører en bekreftelseslyd.</string>
+    <string name="verification_reading_request">Leser verifiseringsforespørsel…</string>
+    <string name="verification_processing_challenge">Behandler utfordring…</string>
+    <string name="verification_creating_proof">Oppretter aldersbevis…</string>
+    <string name="verification_submitting_proof">Sender inn bevis…</string>
+    <string name="verification_processing_message">Dette kan ta noen sekunder</string>
+    <string name="verification_preparing_proof">Vi forbereder et privat bevis ved hjelp av din lagrede legitimasjon.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Leser verifiseringsforespørsel…</string>
+    <string name="verification_status_processing_challenge">Behandler utfordring…</string>
+    <string name="verification_status_creating_proof">Oppretter aldersbevis…</string>
+    <string name="verification_status_submitting_proof">Sender inn bevis…</string>
+    <string name="verification_status_verified">✔ Alder verifisert</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Kan ikke vise autentiseringsforespørsel</string>
+    <string name="verification_error_verification_failed">Verifisering mislyktes</string>
+    <string name="verification_error_generic">En feil oppstod</string>
+    <string name="verification_error_failed_to_process_code">Kunne ikke behandle kode</string>
+    <string name="verification_error_failed_to_process_challenge">Kunne ikke behandle utfordring</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Betrodde utstedere i Australia</string>
+    <string name="issuers_loading">Laster utstedere…</string>
+    <string name="issuers_loaded">Utstedere lastet inn</string>
+    <string name="issuers_unable_to_load">Kan ikke laste utstedere</string>
+    <string name="issuers_check_connection">Kontroller internettilkoblingen og prøv igjen</string>
+    <string name="issuers_categories_header">KATEGORIER</string>
+    <string name="issuers_available_header">TILGJENGELIGE UTSTEDERE</string>
+    <string name="issuers_found_count">%d funnet</string>
+    <string name="issuer_status_coming_soon">Kommer snart</string>
+    <string name="issuer_status_verified">Verifisert</string>
+    <string name="issuer_how_to_get">Slik får du legitimasjon</string>
+    <string name="issuer_service_locations">Tjenestesteder</string>
+    <string name="issuer_visit_website">Besøk %s nettsted</string>
+    <string name="issuer_learn_more">Lær mer om %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Bank</string>
+    <string name="category_super_fund">Pensjonsfond</string>
+    <string name="category_government">Offentlig</string>
+    <string name="category_travel">Reise</string>
+    <string name="category_telco">Telekom</string>
+    <string name="category_insurance">Forsikring</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Innstillinger</string>
+    <string name="settings_section_sandbox">Sandbox-modus</string>
+    <string name="settings_section_general">Generelt</string>
+    <string name="settings_section_credentials">Legitimasjoner</string>
+    <string name="settings_section_advanced">Avansert</string>
+    <string name="settings_section_privacy">Personvern</string>
+    <string name="settings_security">Sikkerhet</string>
+    <string name="settings_biometric">Bruk biometrisk autentisering</string>
+    <string name="settings_environment">Miljøinnstillinger</string>
+    <string name="settings_environment_description">Vis gjeldende miljøkonfigurasjon</string>
+    <string name="settings_reset_proving_key">Tilbakestill bevisnøkkel</string>
+    <string name="settings_reset_proving_key_description">Last ned sikkerhetskomponenter på nytt (Debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Utsted testlegitimasjon som Utsteder</string>
+    <string name="settings_mint_test_credential_subtitle">Utsted en testlegitimasjon til lommeboken din slik at du kan verifisere den fra en relying party-demo.</string>
+    <string name="settings_find_trusted_issuers">Finn betrodde utstedere</string>
+    <string name="settings_version">Versjon: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Trykk 5 ganger for å slå av/på</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Språk</string>
+    <string name="language_selection_description">Velg foretrukket språk. Appen starter på nytt for å ta i bruk endringene.</string>
+    <string name="language_selected">Valgt</string>
+    <string name="settings_language">Språk</string>
+    <string name="settings_language_description">Endre appspråk</string>
+    <string name="settings_licenses">Lisenser for åpen kildekode</string>
+    <string name="settings_licenses_description">Vis tredjepartslisenser</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Bekreft språk</string>
+    <string name="language_change_to">Endre språk til:</string>
+    <string name="language_restart_notice">Appen starter på nytt for å ta i bruk dette språket.</string>
+    <string name="language_apply">Bruk</string>
+    <string name="language_cancel">Avbryt</string>
+    <string name="language_skip_title">Hopp over språkvalg?</string>
+    <string name="language_skip_message">Hvis du hopper over, bruker appen engelsk som standard. Du kan endre språket senere i Innstillinger.</string>
+    <string name="language_use_english">Bruk engelsk</string>
+    <string name="language_go_back">Gå tilbake</string>
+    <string name="language_help_title">Hjelp til språkvalg</string>
+    <string name="language_help_how_to">Slik velger du språk:</string>
+    <string name="language_help_step1">1. Bruk søkefeltet for å finne språket ditt</string>
+    <string name="language_help_step2">2. Trykk på foretrukket språk</string>
+    <string name="language_help_step3">3. Bekreft valget ditt</string>
+    <string name="language_help_system_note">Systemspråket ditt er fremhevet øverst hvis det støttes.</string>
+    <string name="language_help_settings_note">Du kan endre dette senere i Innstillinger.</string>
+    <string name="language_got_it">Forstått</string>
+    <string name="language_select_title">Velg språk</string>
+    <string name="language_skip_button">Hopp over (bruk engelsk)</string>
+    <string name="language_search_placeholder">Søk etter språk…</string>
+    <string name="language_no_results">Ingen språk funnet</string>
+    <string name="language_try_different">Prøv et annet søkeord</string>
+    <string name="language_system_badge">Systemspråk</string>
+    <string name="language_count">%d språk</string>
+    <string name="language_no_match_announcement">Ingen språk funnet som samsvarer med søket ditt</string>
+    <string name="language_found_announcement">%d språk funnet</string>
+    <string name="language_search_cleared">Søk tømt, viser alle %d språk</string>
+    <string name="language_selected_announcement">Valgte %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Skjerm for språkvalg</string>
+    <string name="language_help_button_description">Hjelp og informasjon om språkvalg</string>
+    <string name="language_skip_description">Hopp over språkvalg og bruk engelsk som standard</string>
+    <string name="language_clear_search_description">Tøm søk</string>
+    <string name="language_count_description">%d språk tilgjengelig</string>
+    <string name="language_apply_description">Bruk språkvalg og fortsett</string>
+    <string name="language_cancel_description">Avbryt språkvalg</string>
+    <string name="language_cancelled_announcement">Språkvalg avbrutt</string>
+    <string name="language_selected_description">Valgt språk: %1$s, %2$s</string>
+    <string name="language_item_system">Systemspråk: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, valgt for øyeblikket</string>
+    <string name="language_item_system_selected">Systemspråk: %1$s, %2$s, valgt for øyeblikket</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Returnerte til språkvalg</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Sandbox-modus aktiv</string>
+    <string name="sandbox_mode_banner">SANDBOX-MODUS AKTIV</string>
+    <string name="sandbox_mode_description">Bruker testmiljøet. Trykk på versjonsnummeret fem ganger for å slå av/på.</string>
+    <string name="sandbox_credential_title">Sandbox-legitimasjon</string>
+    <string name="sandbox_credential_description">Generer en Sandbox-legitimasjon for å teste verifiseringsflyter uten å berøre produksjonsdata.</string>
+    <string name="sandbox_select_age">Velg alder</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Standard fødselsdato: %s</string>
+    <string name="sandbox_override_dob">Overstyr standard fødselsdato</string>
+    <string name="sandbox_override_description">Bruk en eksakt dato i stedet for aldersbasert standard.</string>
+    <string name="sandbox_date_of_birth">Fødselsdato</string>
+    <string name="sandbox_generate_credential">Generer legitimasjon</string>
+    <string name="sandbox_generating">Genererer…</string>
+    <string name="sandbox_test_credential_saved">Testlegitimasjon lagret</string>
+    <string name="sandbox_id_prefix">Identifikasjonsprefiks: %s…</string>
+    <string name="sandbox_unable_to_generate">Kan ikke generere legitimasjon</string>
+    <string name="settings_sandbox_dob_format">Fødselsdato: %s</string>
+    <string name="settings_sandbox_age_dob_format">Alder %d+ (Fødselsdato: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Miljøkonfigurasjon</string>
+    <string name="environment_current">Gjeldende: %s</string>
+    <string name="environment_issuer_api">Utsteder-API (Application Programming Interface): %s</string>
+    <string name="environment_verifier_api">Verifiserings-API (Application Programming Interface): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Slett legitimasjon?</string>
+    <string name="dialog_delete_credential_message">Denne handlingen fjerner legitimasjonen fra enheten din. Du kan hente den igjen fra utstederen ved behov.</string>
+    <string name="dialog_delete_credential_announcement">Dialogboks åpnet: Slett legitimasjon</string>
+    <string name="dialog_reset_proving_key_title">Tilbakestill bevisnøkkel?</string>
+    <string name="dialog_reset_proving_key_message">Bevisnøkkelen og tilhørende filer vil bli slettet og lastet ned igjen neste gang du åpner appen.</string>
+    <string name="dialog_reset_proving_key_announcement">Dialogboks åpnet: Tilbakestill bevisnøkkel</string>
+    <string name="dialog_environment_info_announcement">Dialogboks åpnet: Miljøkonfigurasjon</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">Tilgjengelighet</string>
+    <string name="accessibility_service_label">Provii Wallet-tilgjengelighet</string>
+    <string name="accessibility_service_description">Provii Wallets tilgjengelighetstjeneste gir forbedret støtte for brukere med funksjonsnedsettelser. Dette inkluderer automatisk legitimasjonslesing, veiledet navigasjon og forenklede interaksjoner.</string>
+    <string name="accessibility_personalize">Tilpass opplevelsen din</string>
+    <string name="accessibility_customize_features">Tilpass tilgjengelighetsfunksjoner</string>
+    <string name="accessibility_quick_setup">Hurtigoppsett</string>
+    <string name="accessibility_features_active">%d funksjoner aktive</string>
+    <string name="accessibility_customize_experience">Tilpass opplevelsen din</string>
+    <string name="accessibility_reset_title">Tilbakestille tilgjengelighetsinnstillinger?</string>
+    <string name="accessibility_reset_message">Alle tilgjengelighetsinnstillinger vil returnere til standard.</string>
+    <string name="accessibility_reset">Tilbakestill tilgjengelighetsinnstillinger</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Syn</string>
+    <string name="accessibility_category_interaction">Interaksjon</string>
+    <string name="accessibility_category_cognitive">Kognitiv støtte</string>
+    <string name="accessibility_category_alternative_input">Alternativ inndata</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Ekstra stor tekst</string>
+    <string name="accessibility_extra_large_text_description">Øk grunnleggende skriftstørrelser med 45 %</string>
+    <string name="accessibility_high_contrast">Høy kontrast</string>
+    <string name="accessibility_high_contrast_description">Bruk høykontrastfarger</string>
+    <string name="accessibility_reduce_transparency">Reduser gjennomsiktighet</string>
+    <string name="accessibility_reduce_transparency_description">Fjern uskarphet og glasseffekter</string>
+    <string name="accessibility_dyslexia_font">Dysleksivennlig skrift</string>
+    <string name="accessibility_dyslexia_font_description">Bruk OpenDyslexic-skrift for bedre lesbarhet</string>
+    <string name="accessibility_color_blind_mode">Fargeblindmodus</string>
+    <string name="accessibility_color_blind_optimized">Optimaliserte farger for %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Ingen</string>
+    <string name="color_blind_protanopia">Protanopi (Rødblind)</string>
+    <string name="color_blind_deuteranopia">Deuteranopi (Grønnblind)</string>
+    <string name="color_blind_tritanopia">Tritanopi (Blåblind)</string>
+    <string name="color_blind_monochrome">Monokrom</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Større berøringsflater</string>
+    <string name="accessibility_larger_touch_targets_description">Øk størrelsen på knapper og elementer</string>
+    <string name="accessibility_reduce_motion">Reduser bevegelse</string>
+    <string name="accessibility_reduce_motion_description">Minimer animasjoner og overganger</string>
+    <string name="accessibility_extended_timeouts">Forlenget tidsavbrudd</string>
+    <string name="accessibility_extended_timeouts_description">Tillat mer tid til tidsbegrensede handlinger</string>
+    <string name="accessibility_simplified_gestures">Forenklede bevegelser</string>
+    <string name="accessibility_simplified_gestures_description">Reduser flertrinns bevegelser</string>
+    <string name="accessibility_haptic_feedback">Haptisk tilbakemelding</string>
+    <string name="accessibility_haptic_feedback_description">Vibrasjonsbekreftelse for handlinger</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Forenklet grensesnitt</string>
+    <string name="accessibility_simplified_interface_description">Skjul avanserte alternativer og reduser rot</string>
+    <string name="accessibility_show_step_numbers">Vis trinnnumre</string>
+    <string name="accessibility_show_step_numbers_description">Vis fremdriftsindikatorer</string>
+    <string name="accessibility_detailed_descriptions">Detaljerte beskrivelser</string>
+    <string name="accessibility_detailed_descriptions_description">Gi ytterligere forklarende tekst</string>
+    <string name="accessibility_confirm_actions">Bekreft før handlinger</string>
+    <string name="accessibility_confirm_actions_description">Be om bekreftelse ved viktige operasjoner</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Manuell koderegistrering</string>
+    <string name="accessibility_manual_code_entry_description">Tillat at QR-koder (Quick Response) skrives inn i stedet for å skannes</string>
+    <string name="accessibility_voice_input">Stemmeinndata</string>
+    <string name="accessibility_voice_input_description">Aktiver talegjenkjenning for tekstfelt</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Syn</string>
+    <string name="accessibility_profile_motor">Motorikk</string>
+    <string name="accessibility_profile_cognitive">Kognitivt</string>
+    <string name="accessibility_profile_senior">Senior</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Tilbake</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Hjem</string>
+    <string name="breadcrumb_settings">Innstillinger</string>
+    <string name="breadcrumb_accessibility">Tilgjengelighet</string>
+    <string name="breadcrumb_language">Språk</string>
+    <string name="breadcrumb_help">Hjelpesenter</string>
+    <string name="breadcrumb_officer_mode">Tjenestepersonmodus</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Typografi og tekstmellomrom</string>
+    <string name="accessibility_line_spacing">Linjeavstand</string>
+    <string name="accessibility_line_spacing_description">Juster mellomrom mellom tekstlinjer</string>
+    <string name="accessibility_paragraph_spacing">Avsnittsavstand</string>
+    <string name="accessibility_paragraph_spacing_description">Juster mellomrom mellom avsnitt</string>
+    <string name="accessibility_letter_spacing">Bokstavavstand</string>
+    <string name="accessibility_letter_spacing_description">Juster mellomrom mellom bokstaver</string>
+    <string name="accessibility_typography_aaa_note">AAA-anbefalinger: 1,5x linjeavstand, 2,0x avsnittsavstand og 0,12em bokstavavstand.</string>
+    <string name="accessibility_spacing_current">Gjeldende: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Tidsavbruddsatferd</string>
+    <string name="accessibility_timeout_no_automatic">Ingen automatiske tidsavbrudd for AAA-samsvar</string>
+    <string name="accessibility_timeout_auto_advance_30">Automatisk fremgang etter 30 sekunder</string>
+    <string name="accessibility_timeout_auto_advance_60">Automatisk fremgang etter 60 sekunder</string>
+    <string name="accessibility_timeout_set_announcement">Tidsavbruddsatferd satt til %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Kontrastnivå</string>
+    <string name="accessibility_contrast_aaa_ratio">7:1 kontrastforhold for AAA-samsvar</string>
+    <string name="accessibility_contrast_standard">Standard kontrast</string>
+    <string name="accessibility_contrast_aa_ratio">4,5:1 kontrastforhold for AA-samsvar</string>
+    <string name="accessibility_contrast_set_announcement">Kontrastnivå satt til %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Fargeblindmodus satt til %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">%1$s-glidebryter. Gjeldende verdi: %2$s. %3$sOmråde fra %4$s til %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">AAA-kompatibel. </string>
+    <string name="accessibility_slider_announcement">%1$s satt til %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, AAA-kompatibel</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s aktivert</string>
+    <string name="accessibility_toggle_disabled">%s deaktivert</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Verifiseringstilbakemelding</string>
+    <string name="accessibility_sound_enabled">Spill lyd ved suksess</string>
+    <string name="accessibility_sound_enabled_description">Spill en bekreftelseslyd etter vellykket verifisering</string>
+    <string name="accessibility_sound_style">Lydstil</string>
+    <string name="accessibility_sound_preview">Forhåndsvis lyd</string>
+    <string name="accessibility_sound_preview_preset">Forhåndsvis %s</string>
+    <string name="accessibility_sound_style_set_announcement">Lydstil satt til %s</string>
+    <string name="accessibility_haptic_enabled">Vibrer ved suksess</string>
+    <string name="accessibility_haptic_enabled_description">Gi haptisk tilbakemelding etter vellykket verifisering</string>
+    <string name="accessibility_sound_footer">Lyd respekterer enhetens stillemodus</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Volum</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Forhåndsvis gjeldende volum</string>
+    <string name="accessibility_volume_set_announcement">Volum satt til %d prosent</string>
+    <string name="accessibility_volume_slider_description">Volumglidebryter. Gjeldende verdi: %d prosent</string>
+    <string name="accessibility_volume_min">0 %</string>
+    <string name="accessibility_volume_max">100 %</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Tilbakestill innstillinger</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">Tjenestepersonmodus</string>
+    <string name="officer_id">Tjenesteperson-ID (identifikasjon)</string>
+    <string name="officer_id_placeholder">f.eks. OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Skriv inn din tildelte tjenestepersonidentifikasjon</string>
+    <string name="officer_yubikey_connected">YubiKey tilkoblet</string>
+    <string name="officer_connect_yubikey">Koble til YubiKey</string>
+    <string name="officer_touch_yubikey">Berør YubiKey for å autentisere…</string>
+    <string name="officer_authenticate_hmac">Autentiser med HMAC (Hash-based Message Authentication Code)</string>
+    <string name="officer_authentication_process">Autentiseringsprosess:</string>
+    <string name="officer_auth_steps">1. Skriv inn tjenesteperson-ID\n2. Klikk Autentiser\n3. Berør YubiKey når den blinker\n4. HMAC-autentisering (Hash-based Message Authentication Code) verifiserer identiteten din</string>
+    <string name="officer_auth_failed">Autentisering mislyktes. Kontroller tjenesteperson-ID og prøv igjen.</string>
+    <string name="officer_session_info">Tjenesteperson: %s</string>
+    <string name="officer_station_info">Stasjon: %s</string>
+    <string name="officer_issued_today">Utstedt i dag: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Utsted alderslegitimasjon</string>
+    <string name="officer_issue_description">Verifiser brukerens identitet og utsted en digital alderslegitimasjon</string>
+    <string name="officer_start_issuance">Start ny utstedelse</string>
+    <string name="officer_issuance_process">UTSTEDELSESPROSESS</string>
+    <string name="officer_issuance_steps">1. Kontroller brukerens fysiske identifikasjonsdokument\n2. Skriv inn fødselsdatoen deres\n3. Verifiser at informasjonen stemmer nøyaktig\n4. Utsted legitimasjon med attest-QR-kode (Quick Response)\n5. Bruker skanner QR-koden for å motta legitimasjon</string>
+    <string name="officer_verify_identity">Verifiser brukeridentitet</string>
+    <string name="officer_select_dob">Velg fødselsdato</string>
+    <string name="officer_change_date">Endre dato</string>
+    <string name="officer_age_years">Alder: %d år</string>
+    <string name="officer_under_18_warning">Under 18 – Kan ikke utstede legitimasjon</string>
+    <string name="officer_verification_checklist">VERIFISERINGSSJEKKLISTE</string>
+    <string name="officer_document_verified">Fysisk dokument verifisert</string>
+    <string name="officer_document_verified_description">Jeg har sett et gyldig offentlig utstedt identifikasjonsdokument</string>
+    <string name="officer_dob_matches">Fødselsdato stemmer nøyaktig</string>
+    <string name="officer_dob_matches_description">Fødselsdatoen på det fysiske dokumentet er: %s</string>
+    <string name="officer_issue_credential">Utsted legitimasjon</string>
+    <string name="officer_user_scanned_successfully">Bruker har skannet vellykket</string>
+    <string name="officer_return_to_dashboard">Returner til oversikt</string>
+    <string name="officer_go_back">Gå tilbake</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">YubiKey-autentisering</string>
+    <string name="yubikey_step_format">Steg %1$d av %2$d</string>
+    <string name="yubikey_led_should_blink">YubiKey-LED bør blinke</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Validerer inndata…</string>
+    <string name="officer_state_creating_attestation">Oppretter attest…</string>
+    <string name="officer_state_computing_commitment">Beregner kryptografisk binding…</string>
+    <string name="officer_state_creating_session">Oppretter sikker økt…</string>
+    <string name="officer_state_signing">Signerer legitimasjon…</string>
+    <string name="officer_state_finalizing">Ferdigstiller legitimasjon…</string>
+    <string name="officer_state_storing_attestation">Lagrer attest…</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">Økt utløper snart</string>
+    <string name="officer_session_expiring_message">Økten din utløper om %d sekunder. Ønsker du å lagre fremdriften?</string>
+    <string name="officer_session_expiring_announcement">Advarsel: Økten din utløper om %d sekunder</string>
+    <string name="officer_save_and_continue">Lagre og fortsett</string>
+    <string name="officer_continue_without_saving">Fortsett uten å lagre</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">FØDSELSDATO</string>
+    <string name="officer_age_format">Alder: %d år</string>
+    <string name="officer_under_18_full_warning">Under 18 – Kan ikke utstede legitimasjon. Kun personer som er 18 år eller eldre er berettiget til aldersverifiseringslegitimasjon. Kontroller at fødselsdatoen er korrekt.</string>
+    <string name="officer_verification_checklist_header">VERIFISERINGSSJEKKLISTE</string>
+    <string name="officer_physical_document_verified">Fysisk dokument verifisert</string>
+    <string name="officer_sighted_valid_id">Jeg har sett et gyldig offentlig utstedt identifikasjonsdokument</string>
+    <string name="officer_dob_matches_exactly">Fødselsdato stemmer nøyaktig</string>
+    <string name="officer_dob_on_document">Fødselsdatoen på det fysiske dokumentet er: %s</string>
+    <string name="officer_error_label">Feil</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">Skann utstedelsens QR-kode (Quick Response)</string>
+    <string name="issuance_downloads_credential">Dette laster ned alderslegitimasjonen din.</string>
+    <string name="issuance_center_qr">Sentrér QR-koden innenfor rammen og hold rolig.</string>
+    <string name="issuance_enter_code_manually">Skriv inn kode manuelt</string>
+    <string name="issuance_processing_qr">Behandler QR-kode…</string>
+    <string name="issuance_invalid_data">Ugyldige utstedelsesdata</string>
+    <string name="issuance_verification_qr_error">Dette er en verifiserings-QR-kode. Skann legitimasjonsutstedingens QR-kode.</string>
+    <string name="issuance_invalid_qr_format">Ugyldig QR-kodeformat</string>
+    <string name="issuance_failed_to_process">Kunne ikke behandle QR-kode: %s</string>
+    <string name="issuance_code">Utstedelseskode</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">Manuell koderegistrering</string>
+    <string name="manual_entry_enter_code_manually">Skriv inn kode manuelt</string>
+    <string name="manual_entry_verification_description">Skriv inn den 12-sifrede verifiseringskoden som vises på verifikatørens skjerm.</string>
+    <string name="manual_entry_issuance_description">Skriv inn koden som vises på utstederens skjerm.</string>
+    <string name="manual_entry_verification_code">Verifiseringskode</string>
+    <string name="manual_entry_submit">Send inn kode</string>
+    <string name="manual_entry_please_enter">Skriv inn en kode</string>
+    <string name="manual_entry_please_enter_verification">Skriv inn en verifiseringskode</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Start lytting</string>
+    <string name="voice_input_stop_listening">Stopp lytting</string>
+    <string name="voice_input_recognized">Gjenkjent:</string>
+    <string name="content_desc_voice_input_listening">Lytter etter stemmeinndata</string>
+    <string name="content_desc_voice_input_available">Stemmeinndata tilgjengelig</string>
+    <string name="voice_input_permission_title">Mikrofontillatelse kreves</string>
+    <string name="voice_input_permission_message">Stemmeinndata krever mikrofontilgang. Du kan aktivere det fra systeminnstillingene.</string>
+    <string name="voice_input_listening">Lytter…</string>
+    <string name="voice_input_error">Stemmeinndata-feil</string>
+    <string name="voice_input_tap_to_speak">Trykk for å snakke</string>
+    <string name="voice_input_did_you_say">Sa du «%1$s»?</string>
+    <string name="voice_input_confirm">Bekreft</string>
+    <string name="voice_input_retry">Prøv igjen</string>
+    <string name="voice_input_cancel">Avbryt</string>
+    <string name="voice_input_button">Stemmeinndata</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">Stemmeinndata er ikke tilgjengelig på denne enheten</string>
+    <string name="voice_input_error_audio">Lydopptaksfeil. Kontroller mikrofon.</string>
+    <string name="voice_input_error_network">Nettverksfeil. Kontroller tilkobling.</string>
+    <string name="voice_input_error_network_timeout">Nettverkstidsavbrudd. Prøv igjen.</string>
+    <string name="voice_input_error_no_match">Ingen tale registrert. Prøv igjen.</string>
+    <string name="voice_input_error_recognizer_busy">Stemmeinndata opptatt. Vent litt.</string>
+    <string name="voice_input_error_server">Serverfeil. Prøv igjen senere.</string>
+    <string name="voice_input_error_speech_timeout">Ingen tale hørt. Snakk høyere.</string>
+    <string name="voice_input_error_insufficient_permissions">Mikrofontillatelse nektet.</string>
+    <string name="voice_input_error_generic">Stemmeinndata-feil. Prøv igjen.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">Tilbake</string>
+    <string name="action_close">Lukk</string>
+    <string name="action_cancel">Avbryt</string>
+    <string name="action_ok">OK</string>
+    <string name="action_set">Sett</string>
+    <string name="action_change">Endre</string>
+    <string name="action_delete">Slett</string>
+    <string name="action_reset">Tilbakestill</string>
+    <string name="action_retry">Prøv igjen</string>
+    <string name="action_try_again">Prøv igjen</string>
+    <string name="action_refresh">Oppdater</string>
+    <string name="action_download_now">Last ned nå</string>
+    <string name="action_retry_setup">Prøv oppsett igjen</string>
+    <string name="action_retry_download">Prøv nedlasting igjen</string>
+    <string name="action_restart_setup">Start oppsett på nytt</string>
+    <string name="action_manage_storage">Administrer lagring</string>
+    <string name="action_check_wifi_settings">Kontroller Wi-Fi-innstillinger først</string>
+    <string name="action_check_wifi_settings_short">Kontroller Wi-Fi-innstillinger</string>
+    <string name="action_grant_permission">Gi tillatelse</string>
+    <string name="action_grant_camera_access">Gi kameratilgang</string>
+    <string name="action_return_to_browser">Returner til nettleser</string>
+    <string name="action_show_debug_info">Vis Debug-info</string>
+    <string name="action_reset_redownload">Tilbakestill og last ned på nytt</string>
+    <string name="action_end_session">Avslutt økt</string>
+    <string name="action_expand">Utvid</string>
+    <string name="action_collapse">Skjul</string>
+    <string name="accessibility_state_expanded">Utvidet</string>
+    <string name="accessibility_state_collapsed">Skjult</string>
+    <string name="accessibility_state_checked">Avkrysset</string>
+    <string name="accessibility_state_unchecked">Ikke avkrysset</string>
+    <string name="accessibility_state_selected">Valgt</string>
+    <string name="accessibility_state_not_selected">Ikke valgt</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">En feil oppstod</string>
+    <string name="error_camera_permission">Kameratillatelse kreves for QR-skanning (Quick Response)</string>
+    <string name="error_camera_access_needed">Kameratilgang kreves</string>
+    <string name="error_camera_permission_description">Gi kameratillatelse for å skanne QR-koder, eller aktiver manuell registrering fra tilgjengelighetsinnstillinger.</string>
+    <string name="error_camera_permission_required">Kameratillatelse kreves for å skanne QR-koder</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">Skanner etter QR-kode…</string>
+    <string name="qr_scanner_camera_required">Kameratillatelse kreves</string>
+    <string name="qr_scanner_camera_preview">Kameraforhåndsvisning for skanning av QR-koder</string>
+    <string name="qr_scanner_status_scanning">Skanner etter QR-kode</string>
+    <string name="qr_scanner_requesting_permission">Ber om kameratillatelse</string>
+    <string name="error_camera_start_failed">Kunne ikke starte kamera: %s</string>
+    <string name="error_camera_init_failed">Kamerainitialisering mislyktes: %s</string>
+    <string name="error_biometric_not_available">Biometrisk autentisering ikke tilgjengelig</string>
+    <string name="error_network">Nettverksfeil oppstod</string>
+    <string name="error_no_credential">Ingen legitimasjon tilgjengelig. Hent en legitimasjon først.</string>
+    <string name="credential_picker_title">Velg en legitimasjon</string>
+    <string name="credential_picker_description">Du har flere legitimasjoner som kan brukes til denne verifiseringen. Velg en.</string>
+    <string name="credential_picker_expired_label">Utløpt</string>
+    <string name="credential_picker_accessibility_select">Velg legitimasjon: %1$s</string>
+    <string name="error_failed_to_process_challenge">Kunne ikke behandle utfordring</string>
+    <string name="error_failed_to_create_proof">Kunne ikke opprette bevis</string>
+    <string name="error_verification_failed">Verifisering mislyktes</string>
+    <string name="error_occurred_during_verification">En feil oppstod under verifisering</string>
+    <string name="error_connection_timeout">Tilkoblingen fikk tidsavbrudd. Prøv igjen.</string>
+    <string name="error_unable_to_connect">Kan ikke koble til. Kontroller internettilkoblingen.</string>
+    <string name="error_secure_connection_failed">Sikker tilkobling mislyktes. Prøv igjen.</string>
+    <string name="error_security_verification_failed">Sikkerhetsverifisering mislyktes. Prøv igjen.</string>
+    <string name="error_invalid_input">Ugyldig inndata. Kontroller informasjonen og prøv igjen.</string>
+    <string name="error_operation_in_progress">En annen operasjon pågår. Vent litt.</string>
+    <string name="error_operation_cancelled">Operasjonen ble avbrutt.</string>
+    <string name="error_age_requirement_not_met">Alderskrav ikke oppfylt for denne legitimasjonen.</string>
+    <string name="error_biometric_required">Biometrisk autentisering kreves for å fortsette.</string>
+    <string name="error_wallet_not_initialized">Lommebok ikke initialisert. Start appen på nytt.</string>
+    <string name="error_security">Sikkerhetsfeil. Prøv igjen.</string>
+    <string name="error_connection_timeout_short">Tilkoblingen fikk tidsavbrudd. Prøv igjen.</string>
+    <string name="error_invalid_input_provided">Ugyldig inndata oppgitt.</string>
+    <string name="error_invalid_data_format">Ugyldig dataformat. Prøv igjen.</string>
+    <string name="error_storage">Lagringsfeil. Kontroller enhetslagring.</string>
+    <string name="error_network_short">Nettverksfeil. Kontroller tilkoblingen.</string>
+    <string name="error_label">Feil</string>
+    <string name="error_dismiss">Lukk feil</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">Behandler…</string>
+    <string name="status_initializing_wallet">Initialiserer lommebok…</string>
+    <string name="status_loading">Laster…</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">Personvern beskyttet</string>
+    <string name="privacy_zk_description">Fødselsdatoen din deles aldri. Verifisatører lærer bare om du oppfyller alderskravet deres.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Personverninnstillinger</string>
+    <string name="privacy_settings_description">Kontroller datainnsamling og administrer dataene dine</string>
+    <string name="privacy_section_data_collection">Datainnsamling</string>
+    <string name="privacy_section_your_data">Dine data</string>
+    <string name="privacy_protection_title">Personvernet ditt er beskyttet</string>
+    <string name="privacy_protection_description">Provii Wallet bruker nullkunnskapsbevis for å verifisere alderen din uten å avsløre fødselsdatoen din. Legitimasjonsdataene dine lagres kun på enheten din og deles aldri med noen.</string>
+    <string name="privacy_analytics_title">Analyser</string>
+    <string name="privacy_analytics_description">Hjelp til å forbedre Provii Wallet ved å dele anonyme bruksdata</string>
+    <string name="privacy_analytics_enabled">Analyser aktivert</string>
+    <string name="privacy_analytics_disabled">Analyser deaktivert</string>
+    <string name="privacy_crash_reporting_title">Krasjrapportering</string>
+    <string name="privacy_crash_reporting_description">Hjelp oss å fikse feil ved å sende krasjrapporter automatisk</string>
+    <string name="privacy_crash_reporting_enabled">Krasjrapportering aktivert</string>
+    <string name="privacy_crash_reporting_disabled">Krasjrapportering deaktivert</string>
+    <string name="privacy_what_we_collect_title">Hvilke data vi samler inn</string>
+    <string name="privacy_what_we_collect_subtitle">Trykk for å lære om datapraksis</string>
+    <string name="privacy_data_collection_info_title">Informasjon om datainnsamling</string>
+    <string name="privacy_data_we_collect_header">Hva vi samler inn (hvis aktivert):</string>
+    <string name="privacy_data_we_collect_list">- Anonym appbruksstatistikk\n- Krasjrapporter og feillogger\n- Enhetstype og OS-versjon\n- Appversjonsinformasjon</string>
+    <string name="privacy_data_we_dont_collect_header">Hva vi aldri samler inn:</string>
+    <string name="privacy_data_we_dont_collect_list">- Fødselsdatoen din\n- Navnet ditt eller personlige opplysninger\n- Posisjonen din\n- Legitimasjonsdataene dine\n- Biometriske data</string>
+    <string name="privacy_data_never_shared_note">Legitimasjonsdataene dine deles aldri med Provii eller noen tredjepart. De forblir på enheten din.</string>
+    <string name="privacy_policy_title">Personvernerklæring</string>
+    <string name="privacy_policy_subtitle">Les vår fullstendige personvernerklæring</string>
+    <string name="privacy_delete_my_data_title">Slett mine data</string>
+    <string name="privacy_delete_my_data_subtitle">Fjern alle lagrede legitimasjoner og data</string>
+    <string name="privacy_delete_data_dialog_title">Slette alle data?</string>
+    <string name="privacy_delete_data_dialog_message">Dette vil permanent slette alle legitimasjoner og appdata fra denne enheten. Du må skaffe en ny legitimasjon for å bruke appen igjen.</string>
+    <string name="privacy_delete_data_dialog_warning">Denne handlingen kan ikke angres.</string>
+    <string name="privacy_delete_data_confirm">Slett alt</string>
+    <string name="privacy_footer_note">Du kan endre disse innstillingene når som helst. Endringer trer i kraft umiddelbart.</string>
+    <string name="dialog_delete_data_announcement">Dialogboks for sletting av data åpnet</string>
+    <string name="dialog_data_collection_info_announcement">Dialogboks for datainnsamlingsinformasjon åpnet</string>
+    <string name="content_desc_privacy_settings">Personverninnstillinger, kontroller datainnsamling og administrer dataene dine</string>
+    <string name="content_desc_data_collection_info">Vis informasjon om datainnsamling</string>
+    <string name="content_desc_privacy_policy">Vis personvernerklæring</string>
+    <string name="content_desc_opens_external_link">Åpnes i nettleser</string>
+    <string name="content_desc_delete_my_data">Slett alle mine data</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">Tilbake</string>
+    <string name="content_desc_settings">Innstillinger</string>
+    <string name="content_desc_refresh">Oppdater</string>
+    <string name="content_desc_verified">Verifisert</string>
+    <string name="content_desc_expand">Utvid</string>
+    <string name="content_desc_collapse">Skjul</string>
+    <string name="content_desc_warning_error">Advarsel: Feil oppstod</string>
+    <string name="content_desc_sandbox_indicator">Sandbox-modusindikator</string>
+    <string name="content_desc_success">Vellykket</string>
+    <string name="content_desc_warning">Advarsel</string>
+    <string name="content_desc_information">Informasjon</string>
+    <string name="content_desc_error">Feil</string>
+    <string name="content_desc_sandbox_warning">Sandbox-modusadvarsel</string>
+    <string name="content_desc_app_info">Appinformasjon</string>
+    <string name="content_desc_accessibility_settings">Tilgjengelighetsinnstillinger</string>
+    <string name="content_desc_language_settings">Språkinnstillinger</string>
+    <string name="content_desc_licenses">Lisenser for åpen kildekode</string>
+    <string name="content_desc_select_dob">Velg fødselsdato</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Utsted testlegitimasjon som Utsteder</string>
+    <string name="content_desc_get_credential">Hent legitimasjon</string>
+    <string name="content_desc_delete_credential">Slett legitimasjon</string>
+    <string name="content_desc_reset_proving_key">Tilbakestill bevisnøkkel</string>
+    <string name="content_desc_environment_info">Miljøinformasjon</string>
+    <string name="content_desc_help_support">Hjelp og støtte</string>
+    <string name="content_desc_privacy_protected">Personvern beskyttet</string>
+    <string name="preview_settings_title">Forhåndsvisning av innstillinger</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">Vellykket</string>
+    <string name="accessibility_verification_error_description">Feil</string>
+    <string name="accessibility_breadcrumb_location_description">Plassering: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">deretter</string>
+    <string name="accessibility_breadcrumb_current_page_description">Gjeldende side: %s</string>
+    <string name="accessibility_settings_navigate_description">Naviger</string>
+    <string name="accessibility_credentials_settings_description">Innstillinger</string>
+    <string name="accessibility_verification_back_description">Tilbake</string>
+    <string name="accessibility_officer_back_description">Tilbake</string>
+    <string name="accessibility_discovery_back_description">Tilbake</string>
+    <string name="accessibility_discovery_refresh_description">Oppdater</string>
+    <string name="accessibility_discovery_verified_description">Verifisert</string>
+    <string name="accessibility_officer_done_description">Ferdig</string>
+    <string name="accessibility_officer_attestation_qr_description">Attest-QR-kode for bruker å skanne</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">Hopp til %s</string>
+    <string name="accessibility_skip_main_content">hovedinnhold</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Synshemmet</string>
+    <string name="accessibility_profile_motor_impaired">Motorisk hemmet</string>
+    <string name="accessibility_profile_cognitive_support">Kognitiv støtte</string>
+    <string name="accessibility_profile_elderly_support">Eldrestøtte</string>
+    <string name="accessibility_profile_default">Standard</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Ingen</string>
+    <string name="color_blind_mode_protanopia">Protanopi</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopi</string>
+    <string name="color_blind_mode_tritanopia">Tritanopi</string>
+    <string name="color_blind_mode_monochrome">Monokrom</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Standard</string>
+    <string name="contrast_level_high">Høy (AA)</string>
+    <string name="contrast_level_maximum">Maksimal (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Full bredde</string>
+    <string name="text_width_comfortable">Behagelig (80 tegn)</string>
+    <string name="text_width_narrow">Smal (60 tegn)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Ingen tidsavbrudd (AAA)</string>
+    <string name="timeout_behavior_standard">Standard (30 s)</string>
+    <string name="timeout_behavior_extended">Utvidet (60 s)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Standard</string>
+    <string name="reading_level_standard_description">Vanlig tekst med faglige uttrykk</string>
+    <string name="reading_level_simplified">Forenklet (trinn 7–9)</string>
+    <string name="reading_level_simplified_description">Enklere ord og kortere setninger (AAA-kompatibel)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">Hjelp</string>
+    <string name="help_and_support">Hjelp og støtte</string>
+    <string name="help_description">Få hjelp med appfunksjoner og tilgjengelighet</string>
+    <string name="help_center">Hjelpesenter</string>
+    <string name="help_center_description">Bla gjennom hjelpetemaer og lær om appfunksjoner</string>
+    <string name="help_search">Søk i hjelp</string>
+    <string name="help_search_placeholder">Søk i hjelpetemaer…</string>
+    <string name="help_search_active">Søk aktivert</string>
+    <string name="help_search_inactive">Søk deaktivert</string>
+    <string name="help_no_results">Ingen hjelpetemaer funnet som samsvarer med søket</string>
+    <string name="help_topic_not_found">Hjelpetema ikke funnet</string>
+    <string name="help_related_topics">Relaterte temaer</string>
+    <string name="help_content_heading">Hjelpeinnhold</string>
+    <string name="help_related_topic_position">%1$s, element %2$d av %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Syn</string>
+    <string name="help_category_typography">Typografi</string>
+    <string name="help_category_interaction">Interaksjon</string>
+    <string name="help_category_cognitive">Kognitiv støtte</string>
+    <string name="help_category_alternative_input">Alternativ inndata</string>
+    <string name="help_category_features">Funksjoner</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Skaffe en legitimasjon</string>
+    <string name="help_topic_getting_credential_summary">Lær hvordan du skaffer din første aldersverifiseringslegitimasjon</string>
+    <string name="help_topic_getting_credential_content">Slik får du aldersverifiseringslegitimasjonen din:\n\n1. Besøk et autorisert utstedersted\n2. Fremvis offentlig utstedt ID\n3. Skann QR-koden som oppgis\n4. Legitimasjonen din lagres sikkert\n\nFødselsdatoen din lagres lokalt og deles aldri.</string>
+
+    <string name="help_topic_verifying_age_title">Verifisere alderen din</string>
+    <string name="help_topic_verifying_age_summary">Slik beviser du alderen din uten å dele personopplysninger</string>
+    <string name="help_topic_verifying_age_content">Når du trenger å verifisere alderen din:\n\n1. Verifisatøren viser deg en QR-kode\n2. Skann den med appen\n3. Appen oppretter et matematisk bevis\n4. Bare ja/nei-svaret deles\n\nDen faktiske fødselsdatoen din avsløres ALDRI.</string>
+
+    <string name="help_topic_accessibility_title">Tilgjengelighetsfunksjoner</string>
+    <string name="help_topic_accessibility_summary">Tilpass appen til dine behov</string>
+    <string name="help_topic_accessibility_content">Appen inkluderer mange tilgjengelighetsfunksjoner:\n\n- Store tekster og høykontrastmodi\n- Stemmeinndata og skjermlesersstøtte\n- Forenklede bevegelser og grensesnitt\n- Manuelle koderegistreringsalternativer\n- Forlenget tidsavbrudd\n\nTilgang via Innstillinger > Tilgjengelighet</string>
+
+    <string name="help_topic_privacy_security_title">Personvern og sikkerhet</string>
+    <string name="help_topic_privacy_security_summary">Slik beskyttes informasjonen din</string>
+    <string name="help_topic_privacy_security_content">Personvernet ditt er vår høyeste prioritet:\n\n- Legitimasjoner lagres lokalt på enheten din\n- Nullkunnskapsbevis beskytter dataene dine\n- Ingen sporing eller analyser\n- Biometrisk autentisering tilgjengelig\n- Data forlater aldri enheten din ukryptert</string>
+
+    <string name="help_topic_troubleshooting_title">Feilsøking</string>
+    <string name="help_topic_troubleshooting_summary">Vanlige problemer og løsninger</string>
+    <string name="help_topic_troubleshooting_content">Vanlige problemer og løsninger:\n\nQR-skanner virker ikke:\n- Kontroller kameratillatelser i Innstillinger\n- Prøv manuell koderegistreringsalternativ\n\nLegitmasjon laster ikke:\n- Kontroller internettilkoblingen\n- Prøv å tilbakestille bevisnøkkelen\n\nVerifisering mislyktes:\n- Sørg for at legitimasjonen ikke er utløpt\n- Kontakt verifisatøren for støtte</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">FØDSELSDATO</string>
+    <string name="date_of_birth">Fødselsdato</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">%d år</string>
+    <string name="format_step_indicator">Steg %1$d av %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">Legitimasjoner</string>
+    <string name="tab_settings">Innstillinger</string>
+    <string name="tab_help">Hjelp</string>
+    <string name="tab_credentials_description">Vis legitimasjonene dine</string>
+    <string name="tab_settings_description">Appinnstillinger</string>
+    <string name="tab_help_description">Få hjelp og støtte</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">Søk</string>
+    <string name="search_field_label">Søkefelt</string>
+    <string name="search_placeholder">Søk i innstillinger, hjelp og funksjoner</string>
+    <string name="search_clear">Tøm søk</string>
+    <string name="search_popular">Populære søk</string>
+    <string name="search_results_heading">Søkeresultater</string>
+    <string name="search_no_results">Ingen resultater funnet</string>
+    <string name="search_try_suggestions">Prøv å søke etter:\n• Tilgjengelighet\n• Innstillinger\n• Hjelp\n• Språk</string>
+    <string name="search_results_announcement_singular">Fant 1 resultat</string>
+    <string name="search_results_announcement_plural">Fant %d resultater</string>
+    <string name="search_no_results_announcement">Ingen resultater funnet</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">Hurtigtilgang</string>
+    <string name="help_topics">Hjelpetemaer</string>
+    <string name="help_glossary">Ordliste</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">Lisenser for åpen kildekode</string>
+    <string name="licenses_description">Denne appen bruker følgende programvare med åpen kildekode. Vi er takknemlige overfor utviklerne som skapte disse bibliotekene.</string>
+    <string name="licenses_tap_to_view">Trykk for å se full lisens</string>
+    <string name="licenses_group_header">%1$s (%2$d biblioteker)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">Ingen internettilkobling. Kontroller nettverket og prøv igjen.</string>
+    <string name="error_unexpected">En uventet feil oppstod. Start appen på nytt.</string>
+    <string name="error_unexpected_try_again">En uventet feil oppstod. Prøv igjen.</string>
+    <string name="error_storage_detailed">Lagringsfeil: %s</string>
+    <string name="error_network_detailed">Nettverksfeil: %s</string>
+    <string name="error_proof_generation_failed">Kunne ikke generere bevis: %s</string>
+    <string name="error_not_eligible">Ikke berettiget. Du oppfyller ikke kravene for denne verifiseringen.</string>
+    <string name="error_challenge_expired">Utfordring utløpt eller ikke funnet. Be om en ny.</string>
+    <string name="error_challenge_expired_scan_new">Denne utfordringen har utløpt. Skann en ny QR-kode.</string>
+    <string name="error_request_out_of_order">Forespørsel utenfor rekkefølge. Prøv igjen.</string>
+    <string name="error_too_many_requests">For mange forespørsler. Vent litt og prøv igjen.</string>
+    <string name="error_server">Serverfeil. Prøv igjen senere.</string>
+    <string name="error_request_failed">Forespørsel mislyktes (%d). Prøv igjen.</string>
+    <string name="error_not_eligible_short">Ikke berettiget til denne verifiseringen</string>
+    <string name="error_challenge_not_found">Utfordring ikke funnet</string>
+    <string name="error_complete_steps_in_order">Fullfør trinnene i rekkefølge</string>
+    <string name="error_challenge_expired_short">Utfordring utløpt</string>
+    <string name="error_authentication_cancelled">Autentisering avbrutt. Bekreft identiteten din for å fullføre aldersverifisering.</string>
+    <string name="error_invalid_data_format_short">Ugyldig dataformat. Prøv igjen.</string>
+    <string name="error_storage_check_device">Lagringsfeil. Kontroller enhetslagring.</string>
+    <string name="error_network_check_connection">Nettverksfeil. Kontroller tilkoblingen.</string>
+    <string name="error_proof_generation_failed_short">Kunne ikke generere bevis. Prøv igjen.</string>
+    <string name="error_operation_in_progress_short">En annen operasjon pågår.</string>
+    <string name="error_no_internet_short">Ingen internettilkobling. Kontroller nettverket.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Skann verifiserings-QR</string>
+    <string name="verification_verifying_title">Verifiserer alder</string>
+    <string name="verification_success_title">Alder verifisert</string>
+    <string name="verification_failed_title">Verifisering mislyktes</string>
+    <string name="verification_processing_wait">Dette kan ta noen sekunder</string>
+    <string name="verification_success_message">Alderen din er verifisert privat</string>
+    <string name="verification_return_to_site">Du kan nå returnere til nettstedet for å fortsette.</string>
+    <string name="verification_please_enter_code">Skriv inn en verifiseringskode. Koden bør enten være en 12-sifret kortkode eller en full verifiserings-URL fra verifisatøren.</string>
+    <string name="verification_error_occurred">En feil oppstod under verifisering</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Behandler…</string>
+    <string name="credential_list_verify_age_button">Verifiser alder</string>
+    <string name="credential_list_generate_in_person_description">Generer legitimasjon personlig</string>
+    <string name="credential_list_scan_qr_title">Skann QR-kode</string>
+    <string name="credential_list_find_locations_title">Finn steder</string>
+    <string name="credential_section_my_credential">Min legitimasjon</string>
+    <string name="credential_section_managed">Administrerte legitimasjoner</string>
+    <string name="credential_list_get_credential_button">Hent legitimasjon</string>
+    <string name="credential_list_add_managed_button">Legg til administrert legitimasjon</string>
+    <string name="credential_section_managed_empty">Legg til en legitimasjon for noen du tar vare på, for eksempel et barn.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Legitimasjonsdetaljer</string>
+    <string name="credential_detail_not_found">Legitimasjon ikke funnet</string>
+    <string name="credential_detail_nickname">Kallenavn</string>
+    <string name="credential_detail_no_nickname">Ingen kallenavn angitt</string>
+    <string name="credential_detail_edit_nickname">Rediger kallenavn</string>
+    <string name="credential_detail_status">Status</string>
+    <string name="credential_detail_delete">Slett legitimasjon</string>
+    <string name="credential_detail_delete_title">Slett legitimasjon</string>
+    <string name="credential_detail_delete_message">Er du sikker på at du vil slette denne legitimasjonen? Denne handlingen kan ikke angres.</string>
+    <string name="credential_type_primary">Primær</string>
+    <string name="credential_type_managed">Administrert</string>
+    <string name="credential_status_valid">Gyldig</string>
+    <string name="credential_status_expired">Utløpt</string>
+    <string name="credential_status_invalid">Ugyldig</string>
+    <string name="action_save">Lagre</string>
+    <string name="credential_slots_full_title">Maksimalt antall legitimasjoner nådd</string>
+    <string name="credential_slots_full_message">Du har nådd det maksimale antallet legitimasjoner. Slett en eksisterende legitimasjon for å legge til en ny.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">Administrert legitimasjon</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">Verifisere alder for %1$s?</string>
+    <string name="managed_confirm_message">Du er i ferd med å verifisere alder ved hjelp av %1$s sin administrerte legitimasjon.</string>
+    <string name="managed_confirm_proceed">Verifiser for %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Oppretter bevis for %1$s</string>
+    <string name="verification_age_verified_for">Alder verifisert for %1$s</string>
+    <string name="deeplink_verification_age_verified_for">Alder verifisert for %1$s</string>
+    <string name="attestation_managed_credential_received">Legitimasjon for %1$s mottatt!</string>
+    <string name="attestation_managed_credential_stored">Barnets legitimasjon er sikkert lagret.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">Slette %1$s sin legitimasjon?</string>
+    <string name="credential_detail_delete_managed_message">Er du sikker på at du vil slette den administrerte legitimasjonen for %1$s? Denne handlingen kan ikke angres. Du må besøke en utsteder igjen for å erstatte den.</string>
+    <string name="credential_detail_save_error">Kunne ikke lagre kallenavn</string>
+    <string name="credential_detail_delete_error">Kunne ikke slette legitimasjon</string>
+    <string name="accessibility_saving">Lagrer…</string>
+    <string name="accessibility_deleting">Sletter…</string>
+    <string name="accessibility_loading">Laster, vent litt</string>
+    <string name="accessibility_issuing_credential">Utsteder legitimasjon, vent litt</string>
+    <string name="dialog_delete_all_credentials_title">Slette alle legitimasjoner?</string>
+    <string name="dialog_delete_all_credentials_message">Dette vil slette legitimasjonen din og eventuelle administrerte legitimasjoner for barn. Denne handlingen kan ikke angres.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">Administrert</string>
+    <string name="credential_slots_count">%1$d av 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Forbereder verifisering…</string>
+    <string name="deeplink_verification_checking_credential">Kontrollerer legitimasjon…</string>
+    <string name="deeplink_verification_processing_challenge">Behandler utfordring…</string>
+    <string name="deeplink_verification_creating_proof">Oppretter sikkert bevis…</string>
+    <string name="deeplink_verification_submitting_proof">Sender inn bevis…</string>
+    <string name="deeplink_verification_success">✔ Alder verifisert</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">Ingen legitimasjon funnet. Konfigurer legitimasjonen din først.</string>
+    <string name="deeplink_verification_error_failed_challenge">Kunne ikke behandle verifiseringsutfordring</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Kan ikke vise autentiseringsforespørsel</string>
+    <string name="deeplink_verification_error_failed_proof">Kunne ikke opprette aldersbevis</string>
+    <string name="deeplink_verification_error_verification_failed">Verifisering mislyktes</string>
+    <string name="deeplink_verification_error_unexpected">En uventet feil oppstod</string>
+    <string name="deeplink_verification_error_no_credential_selected">Ingen legitimasjon ble valgt. Prøv igjen.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Velg en legitimasjon</string>
+    <string name="deeplink_verification_select_credential_subtitle">Flere legitimasjoner er tilgjengelige. Velg hvilken du vil bruke til denne verifiseringen.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Verifiserer alder</string>
+    <string name="deeplink_verification_title_verified">Verifisert</string>
+    <string name="deeplink_verification_title_failed">Verifisering mislyktes</string>
+    <string name="deeplink_verification_please_wait">Vent litt…</string>
+    <string name="deeplink_verification_age_verified">Alder verifisert!</string>
+    <string name="deeplink_verification_under_age_verified">Verifisert under %1$d</string>
+    <string name="deeplink_verification_returning_browser">Returnerer til nettleser…</string>
+    <string name="deeplink_verification_return_to_browser">Returner til nettleser</string>
+    <string name="deeplink_verification_failed_title">Verifisering mislyktes</string>
+    <string name="deeplink_verification_error_occurred">En feil oppstod under verifisering</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">UTSTEDELSESPROSESS</string>
+    <string name="officer_issuance_process_steps">1. Kontroller brukerens fysiske identifikasjonsdokument\n2. Skriv inn fødselsdatoen deres\n3. Verifiser at informasjonen stemmer nøyaktig\n4. Utsted legitimasjon med attest-QR-kode (Quick Response)\n5. Bruker skanner QR-koden for å motta legitimasjon</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">Kunne ikke generere QR-kode</string>
+    <string name="officer_attestation_ready_title">Attest klar</string>
+    <string name="officer_attestation_scan_instruction">Bruker bør skanne denne QR-koden med sin Provii Wallet-app</string>
+    <string name="officer_attestation_deeplink_label">ATTEST DEEPLINK</string>
+    <string name="officer_wait_for_attestation_scan">Vent på at bruker skanner</string>
+    <string name="officer_attestation_info">Legitimasjonen vil genereres på deres enhet</string>
+    <string name="officer_attestation_complete">Attest fullført</string>
+    <string name="officer_user_will_complete_credential">Bruker vil fullføre legitimasjonsgenerering på sin enhet</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Dekoder attestdata…</string>
+    <string name="attestation_generating_randomness">Genererer sikker tilfeldighet…</string>
+    <string name="attestation_sending">Sender til utsteder…</string>
+    <string name="attestation_verifying">Verifiserer binding…</string>
+    <string name="attestation_storing">Lagrer legitimasjon…</string>
+    <string name="attestation_complete">Legitimasjon fullført!</string>
+    <string name="attestation_error_invalid_data">Ugyldige attestdata</string>
+    <string name="attestation_error_expired">Attesten har utløpt</string>
+    <string name="attestation_error_network">Nettverksfeil – kontroller tilkoblingen</string>
+    <string name="attestation_error_unexpected">En uventet feil oppstod</string>
+    <string name="attestation_title_processing">Behandler attest</string>
+    <string name="attestation_title_success">Legitimasjon mottatt</string>
+    <string name="attestation_title_failed">Utstedelse mislyktes</string>
+    <string name="attestation_secure_issuance">Sikker utstedelse</string>
+    <string name="attestation_privacy_preserving">Personvernbevarende legitimasjonsutstedelse</string>
+    <string name="attestation_may_take_seconds">Dette kan ta noen sekunder</string>
+    <string name="attestation_keep_app_open">Hold appen åpen</string>
+    <string name="attestation_credential_received">Legitimasjon mottatt!</string>
+    <string name="attestation_credential_stored_description">Aldersverifiseringslegitimasjonen din er sikkert lagret</string>
+    <string name="attestation_issuer_verified">Utsteder verifisert</string>
+    <string name="attestation_failed_title">Utstedelse mislyktes</string>
+    <string name="attestation_scan_qr_instead">Skann QR-kode i stedet</string>
+    <string name="attestation_go_back">Gå tilbake</string>
+    <string name="attestation_step_decode">Dekoder</string>
+    <string name="attestation_step_generate">Generer</string>
+    <string name="attestation_step_send">Send</string>
+    <string name="attestation_step_verify">Verifiser</string>
+    <string name="attestation_step_store">Lagre</string>
+    <string name="attestation_step_complete">Fullført</string>
+    <string name="accessibility_attestation_encrypted_description">Kryptert attest behandles</string>
+    <string name="accessibility_attestation_success_description">Hakemerke som indikerer at legitimasjon er mottatt</string>
+    <string name="accessibility_attestation_error_description">Feilikon som indikerer at utstedelse mislyktes</string>
+    <string name="accessibility_step_complete">Trinn %1$s fullført</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Legitimasjonsmottaker</string>
+    <string name="attestation_recipient_prompt">Denne legitimasjonen er for\u2026</string>
+    <string name="attestation_recipient_me">Meg</string>
+    <string name="attestation_recipient_child">Et barn</string>
+    <string name="attestation_nickname_title">Barnets kallenavn</string>
+    <string name="attestation_nickname_prompt">Angi et kallenavn slik at du kan skille legitimasjoner fra hverandre</string>
+    <string name="attestation_nickname_placeholder">f.eks. Alex</string>
+    <string name="attestation_nickname_continue">Fortsett</string>
+    <string name="attestation_nickname_back">Tilbake</string>
+    <string name="accessibility_attestation_recipient_heading">Velg hvem denne legitimasjonen er for</string>
+    <string name="accessibility_attestation_nickname_heading">Skriv inn et kallenavn for barnet</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Ugyldig tjenesteperson-ID-format</string>
+    <string name="officer_auth_error_challenge_failed">Kunne ikke hente YubiKey-utfordring: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Berør YubiKey for å autentisere</string>
+    <string name="officer_auth_error_touch_timeout">YubiKey-berøring fikk tidsavbrudd</string>
+    <string name="officer_auth_error_verify_document_dob">Kontroller at dokumentet og fødselsdatoen stemmer overens</string>
+    <string name="officer_auth_error_invalid_date_format">Ugyldig datoformat. Bruk YYYY-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">Bruker må være 18 år eller eldre</string>
+    <string name="officer_auth_error_not_authenticated">Ikke autentisert. Skriv inn tjenesteperson-ID-en din først.</string>
+    <string name="officer_auth_error_issue_failed">Kunne ikke utstede legitimasjon</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Trykk for å se</string>
+    <string name="gesture_desc_long_press_options">, hold inne for alternativer</string>
+    <string name="gesture_desc_swipe_left">, sveip til venstre for flere handlinger</string>
+    <string name="gesture_desc_swipe_right">, sveip til høyre for flere handlinger</string>
+    <string name="gesture_desc_tap_to_activate">Trykk for å aktivere</string>
+    <string name="gesture_desc_long_press_format">. Hold inne: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Prøv igjen</string>
+    <string name="main_activity_reset_redownload">Tilbakestill og last ned på nytt</string>
+    <string name="main_activity_show_debug_info">Vis Debug-info</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Tilgjengelighetsinnstillinger</string>
+    <string name="search_item_accessibility_settings_subtitle">Tilpass opplevelsen din</string>
+    <string name="search_item_large_text_title">Stor tekst</string>
+    <string name="search_item_large_text_subtitle">Øk tekststørrelse</string>
+    <string name="search_item_high_contrast_title">Høy kontrast</string>
+    <string name="search_item_high_contrast_subtitle">Forbedre synlighet</string>
+    <string name="search_item_voice_input_title">Stemmeinndata</string>
+    <string name="search_item_voice_input_subtitle">Kontroller med stemme</string>
+    <string name="search_item_manual_code_entry_title">Manuell koderegistrering</string>
+    <string name="search_item_manual_code_entry_subtitle">Skriv inn koder i stedet for å skanne</string>
+    <string name="search_item_simplified_ui_title">Forenklet brukergrensesnitt</string>
+    <string name="search_item_simplified_ui_subtitle">Reduser visuell kompleksitet</string>
+    <string name="search_item_color_blindness_title">Støtte for fargeblindhet</string>
+    <string name="search_item_color_blindness_subtitle">Juster farger for bedre synlighet</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Innstillinger</string>
+    <string name="search_item_settings_subtitle">Appkonfigurasjon</string>
+    <string name="search_item_language_title">Språk</string>
+    <string name="search_item_language_subtitle">Endre appspråk</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Mine legitimasjoner</string>
+    <string name="search_item_credentials_subtitle">Vis legitimasjonene dine</string>
+    <string name="search_item_get_credential_title">Hent en legitimasjon</string>
+    <string name="search_item_get_credential_subtitle">Finn utstedere</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Hjelp</string>
+    <string name="search_item_help_subtitle">Få assistanse</string>
+    <string name="search_item_privacy_title">Personvernbeskyttelse</string>
+    <string name="search_item_privacy_subtitle">Slik beskyttes dataene dine</string>
+    <string name="search_item_verification_title">Aldersverifisering</string>
+    <string name="search_item_verification_subtitle">Bevis alderen din</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Hardkodet reserveregister for Sandbox-miljø</string>
+    <string name="issuer_fallback_production_description">Hardkodet reserveregister for produksjon</string>
+    <string name="issuer_fallback_category_government">Offentlig</string>
+    <string name="issuer_fallback_category_government_description">Offentlig utstedte legitimasjoner</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii Sandbox-utsteder</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Offisiell Provii Sandbox-utsteder for testing</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Besøk Sandbox-utstederportalen</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Offisiell Provii-legitimasjonsutsteder</string>
+    <string name="issuer_fallback_production_issuer_instructions">Besøk ditt lokale DMV-kontor</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">Fødselsdato kan ikke være i fremtiden</string>
+    <string name="validation_error_invalid_date_format">Ugyldig datoformat</string>
+    <string name="validation_error_officer_id_too_short">Tjenesteperson-ID for kort</string>
+    <string name="validation_error_invalid_officer_id_format">Ugyldig tjenesteperson-ID-format</string>
+    <string name="validation_error_empty_qr_code">Tom QR-kode</string>
+    <string name="validation_error_qr_code_too_large">QR-kode for stor</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">Du er nå en utvikler!</string>
+    <string name="sandbox_toast_enabled">Sandbox-modus aktivert\nBruker testmiljø</string>
+    <string name="sandbox_toast_disabled">Produksjonsmodus aktivert\nBruker produksjonsmiljø</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">Du er 1 steg fra utviklermodus</string>
+    <string name="sandbox_toast_steps_away">Du er %1$d steg fra utviklermodus</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">Ingen YubiKey tilkoblet</string>
+    <string name="yubikey_error_timeout">Tidsavbrudd ved venting på YubiKey-berøring. Berør nøkkelen når den blinker.</string>
+    <string name="yubikey_error_not_supported">Utfordrings-respons ikke konfigurert på denne YubiKey-sporet</string>
+    <string name="yubikey_error_no_slot">Spor 2 er ikke konfigurert for HMAC SHA1-utfordrings-respons (Hash-based Message Authentication Code)</string>
+    <string name="yubikey_error_hmac_failed">HMAC-beregning (Hash-based Message Authentication Code) mislyktes: %s</string>
+    <string name="yubikey_error_session_failed">Kunne ikke koble til YubiKey: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">Lommebok ikke initialisert</string>
+    <string name="wallet_error_proving_key_not_found">Bevisnøkkel ikke funnet – last ned på nytt</string>
+    <string name="wallet_error_proving_key_not_readable">Kan ikke lese bevisnøkkelfil</string>
+    <string name="wallet_error_out_of_memory">Tomt for minne – start appen på nytt</string>
+    <string name="wallet_error_prover_error">Bevisfeil: %s</string>
+    <string name="wallet_error_ffi_error">FFI-feil: %s</string>
+    <string name="wallet_error_prover_init_failed">Kunne ikke initialisere bevis: %s</string>
+    <string name="wallet_error_prover_verification_failed">Verifisering av bevisinitialisering mislyktes</string>
+    <string name="wallet_error_verifier_url_update_failed">Kunne ikke oppdatere verifiserings-URL (nettadresse)! Forventet %1$s men fikk %2$s</string>
+    <string name="wallet_error_wallet_still_null">Lommebok fremdeles null etter initialisering</string>
+    <string name="wallet_error_credential_not_found">Legitimasjon ikke funnet</string>
+    <string name="wallet_error_credential_access_failed">Kan ikke få tilgang til legitimasjon: %s</string>
+    <string name="wallet_error_invalid_format">Ugyldig format: %s</string>
+    <string name="wallet_error_not_initialized_short">Bevis ikke initialisert</string>
+    <string name="wallet_error_proving_key_unavailable">Bevisnøkkel ikke tilgjengelig. Oppsett kreves.</string>
+    <string name="wallet_error_storage_init_failed">Lagringsinitalisering mislyktes</string>
+    <string name="wallet_error_biometric_unavailable">Biometrisk autentisering ikke tilgjengelig</string>
+    <string name="wallet_error_auth_failed">Autentisering mislyktes</string>
+    <string name="wallet_error_sandbox_disabled">Aktiver Sandbox-modus for å generere testlegitimasjoner</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Kan ikke hente Sandbox-legitimasjoner. Kontroller internettilkoblingen.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Autentisering kreves</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Bekreft identiteten din for å opprette aldersbevis</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Få tilgang til sikker lagring</string>
+    <string name="keystore_biometric_prompt_cancel">Avbryt</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, utvidet, viser full lienstekst</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, skjult, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">Ingen</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Mobil</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Ukjent</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">Kontrastnivåer</string>
+    <string name="help_topic_extra_large_text_title">Ekstra stor tekst</string>
+    <string name="help_topic_reduce_transparency_title">Reduser gjennomsiktighet</string>
+    <string name="help_topic_color_blind_modes_title">Fargeblindmodi</string>
+    <string name="help_topic_line_spacing_title">Linjeavstand</string>
+    <string name="help_topic_paragraph_spacing_title">Avsnittsavstand</string>
+    <string name="help_topic_letter_spacing_title">Bokstavavstand</string>
+    <string name="help_topic_text_width_title">Tekstbredde</string>
+    <string name="help_topic_touch_targets_title">Større berøringsflater</string>
+    <string name="help_topic_reduce_motion_title">Reduser bevegelse</string>
+    <string name="help_topic_timeout_behavior_title">Tidsavbruddsatferd</string>
+    <string name="help_topic_simplified_gestures_title">Forenklede bevegelser</string>
+    <string name="help_topic_haptic_feedback_title">Haptisk tilbakemelding</string>
+    <string name="help_topic_data_preservation_title">Databevaring</string>
+    <string name="help_topic_simplified_ui_title">Forenklet brukergrensesnitt</string>
+    <string name="help_topic_step_indicators_title">Trinnsindikatorer</string>
+    <string name="help_topic_verbose_descriptions_title">Detaljerte beskrivelser</string>
+    <string name="help_topic_confirm_actions_title">Bekreft handlinger</string>
+    <string name="help_topic_reading_level_title">Forenklet lesenivå</string>
+    <string name="help_topic_help_system_title">Hjelpesystem</string>
+    <string name="help_topic_manual_code_entry_title">Manuell koderegistrering</string>
+    <string name="help_topic_voice_input_title">Stemmeinndata</string>
+    <string name="help_topic_screen_reader_title">Skjermleserstøtte</string>
+    <string name="help_topic_accessibility_profiles_title">Hurtigoppsettsprofiler</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">Kontroller kontrastforholdet mellom tekst og bakgrunner:\n\n• Standard: Standard appfarger\n• Høy (AA): 4,5:1 kontrastforhold\n• Maksimal (AAA): 7:1+ kontrastforhold\n\nHøyere kontrast gjør tekst lettere å lese, spesielt i lyse omgivelser eller for brukere med nedsatt syn.\n\nWCAG AAA-samsvar krever maksimal kontrast.</string>
+    <string name="help_topic_extra_large_text_text">Øker alle tekststørrelser med 50 % i hele appen.\n\nDette gjør tekst lettere å lese for brukere med:\n• Nedsatt syn\n• Aldersrelaterte synsendringer\n• Leseproblemer\n\nKombinerer med systemskriftstørrelsesinnstillinger for maksimal fleksibilitet.</string>
+    <string name="help_topic_reduce_transparency_text">Fjerner gjennomsiktige overlegg og uskarphetseffekter.\n\nFordeler:\n• Klarere visuelt hierarki\n• Bedre tekstlesbarhet\n• Redusert visuell støy\n• Lavere kognitiv belastning\n\nAnbefalt for brukere med nedsatt syn eller kognitive problemer.</string>
+    <string name="help_topic_color_blind_modes_text">Justerer farger for ulike typer fargeblindhet:\n\n• Protanopi: Rødblind\n• Deuteranopi: Grønnblind\n• Tritanopi: Blåblind\n• Monokrom: Fullstendig fargeblindhet\n\nHver modus bruker nøye utvalgte farger som er mulig å skille for den spesifikke typen fargesyn.</string>
+    <string name="help_topic_line_spacing_text">Justerer mellomrom mellom tekstlinjer (1,0x – 2,0x).\n\n• Standard: 1,0x\n• AAA-kompatibel: 1,5x eller høyere\n\nØkt linjeavstand:\n• Forbedrer leseforståelsen\n• Reduserer øyetretthet\n• Hjelper brukere med dysleksi\n• Gjør tekstblokker mindre overveldende</string>
+    <string name="help_topic_paragraph_spacing_text">Justerer mellomrom mellom avsnitt (1,0x – 3,0x).\n\n• Standard: 1,0x\n• AAA-kompatibel: 2,0x eller høyere\n\nØkt avsnittsavstand:\n• Skiller ideer tydelig\n• Forbedrer visuell organisering\n• Reduserer kognitiv belastning\n• Hjelper å beholde leseposisjon</string>
+    <string name="help_topic_letter_spacing_text">Justerer mellomrom mellom bokstaver (0,0em – 0,2em).\n\n• Standard: 0,0em\n• AAA-kompatibel: 0,12em eller høyere\n\nØkt bokstavavstand:\n• Gjør individuelle bokstaver mer distinkte\n• Hjelper brukere med dysleksi\n• Forbedrer lesenøyaktighet\n• Reduserer bokstavforvirring</string>
+    <string name="help_topic_text_width_text">Begrenser linjelengde for enklere lesing:\n\n• Full bredde: Ingen begrensning\n• Behagelig: 80 tegn (anbefalt)\n• Smal: 60 tegn\n\nForskning viser optimal lesing ved 60–80 tegn per linje. Kortere linjer reduserer øyebevegelse og forbedrer forståelse.</string>
+    <string name="help_topic_touch_targets_text">Øker minimum berøringsflate til 60dp (fra 44dp).\n\nFordeler:\n• Lettere å trykke på knapper og kontroller\n• Reduserer utilsiktede trykk\n• Hjelper brukere med motoriske problemer\n• Bedre for enhendig bruk\n\nWCAG AAA krever 60dp minimum.</string>
+    <string name="help_topic_reduce_motion_text">Fjerner alle animasjoner og overganger.\n\nFordeler:\n• Forhindrer bevegelsessyke\n• Reduserer distraksjoner\n• Senker kognitiv belastning\n• Forbedrer fokus\n\nAnbefalt for brukere med:\n• Vestibulære lidelser\n• Konsentrasjonsvansker\n• Bevegelsesfølsomhet</string>
+    <string name="help_topic_timeout_behavior_text">Kontrollerer automatisk tidsavbrudd på verifiseringsskjermer:\n\n• Ingen tidsavbrudd (AAA): Ubegrenset tid\n• Standard: 30 sekunder\n• Utvidet: 60 sekunder\n\nWCAG AAA krever alternativ uten tidsavbrudd for brukere som trenger mer tid.\n\nSkjemadata lagres automatisk før tidsavbrudd.</string>
+    <string name="help_topic_simplified_gestures_text">Erstatter komplekse bevegelser med enkle alternativer:\n\n• Sveip → Trykk på knapp\n• Hold inne → Vanlig trykk med bekreftelse\n• Klype/zoom → Knapper\n\nHjelper brukere med:\n• Motoriske problemer\n• Skjelving\n• Begrenset fingerferdighet\n• Berøringsskjermproblemer</string>
+    <string name="help_topic_haptic_feedback_text">Gir vibrasjonstilbakemelding for handlinger.\n\nFordeler:\n• Bekrefter knappetrykk\n• Indikerer feil\n• Gir taktil bekreftelse\n\nKan deaktiveres for brukere som:\n• Finner det distraherende\n• Har sensorisk følsomhet\n• Foretrekker stille drift</string>
+    <string name="help_topic_data_preservation_text">Lagrer skjemadata automatisk før tidsavbrudd.\n\nFunksjoner:\n• Advarsel 10 sekunder før tidsavbrudd\n• Mulighet til å lagre eller forkaste data\n• Automatisk gjenoppretting ved retur\n• 24-timers dataoppbevaring\n\nSikrer at ingen data går tapt om du trenger mer tid eller opplever avbrudd.</string>
+    <string name="help_topic_simplified_ui_text">Reduserer visuell kompleksitet:\n\n• Færre UI-elementer vist samtidig\n• Større og tydeligere knapper\n• Mer luft\n• Forenklede oppsett\n\nFordeler:\n• Lettere å forstå\n• Mindre overveldende\n• Bedre fokus\n• Redusert kognitiv belastning</string>
+    <string name="help_topic_step_indicators_text">Viser fremgang gjennom flertrinns prosesser.\n\nViser:\n• Gjeldende trinnnummer\n• Totalt antall trinn\n• Fremdriftsvisualisering\n\nFordeler:\n• Reduserer angst\n• Setter klare forventninger\n• Hjelper å beholde orientering\n• Viser fullføringsfremgang</string>
+    <string name="help_topic_verbose_descriptions_text">Gir ekstra kontekst og forklaringer:\n\n• Lengre knappemerker\n• Mer detaljerte instruksjoner\n• Ytterligere hint\n• Klarere feilmeldinger\n\nHjelper brukere:\n• Forstå handlinger før de utføres\n• Unngå feil\n• Lære appfunksjonalitet\n• Bygge selvtillit</string>
+    <string name="help_topic_confirm_actions_text">Krever bekreftelse for viktige handlinger:\n\n• Slette legitimasjoner\n• Endre innstillinger\n• Tømme data\n\nWCAG AAA krever bekreftelse for alle destruktive handlinger.\n\nFordeler:\n• Forhindrer ulykker\n• Tillater gjennomgang før handling\n• Reduserer angst\n• Gir en ny sjanse</string>
+    <string name="help_topic_reading_level_text">Bruker enklere språk (trinn 7–9-nivå):\n\n• Kortere setninger\n• Vanlige ord i stedet for faguttrykk\n• Klart og direkte språk\n• Færre tekniske termer\n\nWCAG AAA-kompatibel når aktivert.\n\nFordeler:\n• Lettere å forstå\n• Raskere forståelse\n• Bedre for ikke-morsmålsbrukere\n• Redusert kognitiv belastning</string>
+    <string name="help_topic_help_system_text">Kontekstsensitiv hjelp tilgjengelig i hele appen.\n\nFunksjoner:\n• 27 hjelpetemaer\n• Søkbart hjelpesenter\n• Navigering mellom relaterte temaer\n• Teknisk ordliste\n\nTilgang til hjelp fra:\n• Innstillingsskjermer\n• Komplekse funksjoner\n• Feilmeldinger\n• Hvor som helst du ser et hjelpeikon</string>
+    <string name="help_topic_manual_code_entry_text">Skriv inn QR-kodedata manuelt i stedet for å skanne.\n\nFordeler:\n• Fungerer når kameratilgang ikke er tilgjengelig\n• Hjelper brukere med motoriske vansker\n• Bedre i dårlig belysning\n• Ikke nødvendig å holde telefonen i ro\n\nAlternativ til kamerabasert QR-skanning.</string>
+    <string name="help_topic_voice_input_text">Bruk stemme for å skrive inn tekst i stedet for å taste.\n\nFordeler:\n• Håndfri inndata\n• Raskere enn å taste\n• Hjelper brukere med motoriske problemer\n• Reduserer belastningsskader\n\nBruker enhetens innebygde talegjenkjenning.</string>
+    <string name="help_topic_screen_reader_text">Full støtte for TalkBack-skjermleser.\n\nFunksjoner:\n• Alle UI-elementer merket\n• Riktig overskriftsstruktur\n• Logisk navigeringsrekkefølge\n• Egendefinerte hint for komplekse handlinger\n\nAppen aktiverer automatisk:\n• Detaljerte beskrivelser\n• Forbedrede berøringsflater\n\nnår TalkBack oppdages.</string>
+    <string name="help_topic_accessibility_profiles_text">Forhåndskonfigurerte tilgjengelighetsprofiler:\n\n• Synshemmet: Høy kontrast, stor tekst, haptikk\n• Motorisk hemmet: Store flater, utvidet tidsavbrudd, bekreftelser\n• Kognitivt: Forenklet UI, trinnsindikatorer, beskrivelser\n• Eldre: Stor tekst, flater, forenklet UI, redusert bevegelse\n• Standard: Tilbakestill alle innstillinger\n\nHver profil aktiverer de mest nyttige innstillingene for den brukergruppen. Du kan tilpasse ytterligere etter å ha brukt en profil.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">Aldersverifisering</string>
+    <string name="content_age_verification_explanation">Vent mens vi verifiserer alderen din sikkert ved hjelp av nullkunnskapsbevis. Fødselsdatoen din deles aldri med verifisatøren.</string>
+    <string name="content_age_verification_instructions">Pek kameraet mot verifiserings-QR-koden. Koden skannes automatisk når den oppdages.</string>
+    <string name="content_age_verification_success">Alderen din er verifisert. Verifisatøren vet at du oppfyller alderskravet uten å kjenne din faktiske fødselsdato.</string>
+    <string name="content_age_verification_failed">Verifisering mislyktes. Prøv å skanne QR-koden igjen eller bruk manuell koderegistrering.</string>
+    <string name="content_credential_issuance_title">Legitimasjonsutstedelse</string>
+    <string name="content_credential_issuance_explanation">Skann QR-koden fra den autoriserte utstederen for å motta din digitale alderslegitimasjon.</string>
+    <string name="content_credential_issuance_instructions">Pek kameraet mot utstedingens QR-kode som tjenestepersonen viser. Legitimasjonen din genereres på enheten din.</string>
+    <string name="content_credential_issuance_success">Legitimasjon opprettet. Du kan nå bruke denne legitimasjonen til aldersverifisering.</string>
+    <string name="content_credential_description">En legitimasjon er et kryptografisk signert bevis på identiteten din som muliggjør personvernbevarende verifisering.</string>
+    <string name="content_zero_knowledge_explanation">Nullkunnskapsbevis lar deg bevise at du oppfyller et alderskrav uten å avsløre den faktiske alderen din.</string>
+    <string name="content_setup_proving_key">Laster ned kryptografisk bevisnøkkel som kreves for generering av nullkunnskapsbevis</string>
+    <string name="content_processing_challenge">Behandler verifiseringsutfordring</string>
+    <string name="content_creating_proof">Oppretter nullkunnskapsaldersbevis</string>
+    <string name="content_submitting_proof">Sender bevis til verifisatør</string>
+    <string name="content_error_no_credential">Ingen legitimasjon tilgjengelig. Skaff en legitimasjon fra en autorisert utsteder først.</string>
+    <string name="content_error_network_failed">Nettverkstilkobling mislyktes. Kontroller internettilkoblingen og prøv igjen.</string>
+    <string name="content_error_invalid_qr">Ugyldig QR-kode. Sørg for at du skanner den riktige verifiseringskoden.</string>
+    <string name="content_error_verification_failed">Verifisering mislyktes. Serveren kunne ikke validere beviset ditt.</string>
+    <string name="content_officer_authentication_title">Tjenestepersonautorisasjon</string>
+    <string name="content_officer_issuance_title">Legitimasjonsutstedelse</string>
+    <string name="content_officer_dob_prompt">Skriv inn søkerens verifiserte fødselsdato fra det offisielle identifikasjonsdokumentet.</string>
+    <string name="content_onboarding_welcome">Velkommen til Provii Wallet – din personvernbevarende digitale aldersverifiseringsløsning.</string>
+    <string name="content_onboarding_privacy">Fødselsdatoen din lagres sikkert på enheten din og sendes aldri til verifisatører.</string>
+    <string name="content_onboarding_get_started">For å komme i gang, besøk en autorisert utsteder for å skaffe din digitale alderslegitimasjon.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">Sjekk alderen din</string>
+    <string name="content_age_verification_explanation_simplified">Vi sjekker alderen din. Vi ser ikke eller deler bursdagen din.</string>
+    <string name="content_age_verification_instructions_simplified">Pek kameraet mot QR-koden. Den skannes av seg selv.</string>
+    <string name="content_age_verification_success_simplified">Bra! Nettstedet vet at du er gammel nok. De kjenner ikke bursdagen din.</string>
+    <string name="content_age_verification_failed_simplified">Det fungerte ikke. Prøv å skanne igjen eller skriv inn koden manuelt.</string>
+    <string name="content_credential_issuance_title_simplified">Hent ditt ID-kort</string>
+    <string name="content_credential_issuance_explanation_simplified">Skann koden fra offentlig kontor for å få din digitale ID.</string>
+    <string name="content_credential_issuance_instructions_simplified">Pek kameraet mot koden. ID-en din lagres på telefonen.</string>
+    <string name="content_credential_issuance_success_simplified">Ferdig! Du kan nå bruke din digitale ID til å bevise alderen din.</string>
+    <string name="content_credential_description_simplified">En legitimasjon er som et digitalt ID-kort som beviser hvem du er uten å dele private detaljer.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Du kan bevise at du er gammel nok uten å fortelle noen din faktiske alder.</string>
+    <string name="content_setup_proving_key_simplified">Laster ned sikkerhetsfiler som trengs for at appen skal fungere</string>
+    <string name="content_processing_challenge_simplified">Leser alderskontrollforespørselen</string>
+    <string name="content_creating_proof_simplified">Oppretter aldersbeviset ditt</string>
+    <string name="content_submitting_proof_simplified">Sender bevis til nettsted</string>
+    <string name="content_error_no_credential_simplified">Du har ikke en ID ennå. Besøk et offentlig kontor for å få en først.</string>
+    <string name="content_error_network_failed_simplified">Kan ikke koble til internett. Kontroller Wi-Fi eller data og prøv igjen.</string>
+    <string name="content_error_invalid_qr_simplified">Den koden ser ikke riktig ut. Sørg for at du skanner den riktige koden.</string>
+    <string name="content_error_verification_failed_simplified">Det fungerte ikke. Nettstedet kunne ikke sjekke beviset ditt. Prøv igjen.</string>
+    <string name="content_officer_authentication_title_simplified">Tjenestepersoninnlogging</string>
+    <string name="content_officer_issuance_title_simplified">Lag ID-kort</string>
+    <string name="content_officer_dob_prompt_simplified">Skriv inn personens bursdag fra den offisielle identifikasjonen.</string>
+    <string name="content_onboarding_welcome_simplified">Velkommen til Provii Wallet – bevis alderen din privat.</string>
+    <string name="content_onboarding_privacy_simplified">Bursdagen din forblir på telefonen. Ingen andre kan se den.</string>
+    <string name="content_onboarding_get_started_simplified">For å starte, besøk et offentlig kontor for å få din digitale ID.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Quick Response (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Personal Identification Number (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">Date of Birth (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Identification (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">User Interface (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Uniform Resource Locator (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Application Programming Interface (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">Sett animasjoner på pause</string>
+    <string name="animation_resume_animations">Gjenoppta animasjoner</string>
+    <string name="animation_pause_button_text">Pause</string>
+    <string name="animation_resume_button_text">Gjenoppta</string>
+    <string name="animation_toggles_playback_hint">Slår av/på animasjonsavspilling</string>
+    <string name="animation_paused_announcement">Animasjoner på pause</string>
+    <string name="animation_resumed_announcement">Animasjoner gjenopptatt</string>
+    <string name="animation_active_count">%d aktive animasjoner</string>
+    <string name="animation_loading_default">Laster</string>
+    <string name="animation_please_wait">Vent mens denne operasjonen fullføres</string>
+    <string name="animation_percent_complete">%d prosent fullført</string>
+    <string name="animation_loading_in_progress">Pågår</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">Hurtigtaster</string>
+    <string name="keyboard_shortcuts_done">Ferdig</string>
+    <string name="keyboard_shortcuts_app_section">App-hurtigtaster</string>
+    <string name="keyboard_shortcuts_navigation_section">Navigasjon</string>
+    <string name="keyboard_shortcuts_tips_section">Tips</string>
+    <string name="keyboard_shortcuts_navigation_footer">Disse navigasjonstastene fungerer i hele appen med eksterne tastaturer</string>
+    <string name="keyboard_shortcuts_tip_external">Eksterne Bluetooth- og USB-tastaturer støttes fullt ut</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Bruk piltastene for å navigere mellom elementer i lister</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Hold Ctrl for å se tilgjengelige hurtigtaster på denne skjermen</string>
+    <string name="keyboard_shortcuts_tip_a11y">Alle funksjoner i denne appen er tilgjengelige via tastatur</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Lukk hurtigtaster</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">Innstillinger</string>
+    <string name="keyboard_shortcut_label_accessibility">Tilgjengelighet</string>
+    <string name="keyboard_shortcut_label_help">Hjelpesenter</string>
+    <string name="keyboard_shortcut_label_add_credential">Legg til legitimasjon</string>
+    <string name="keyboard_shortcut_label_verify">Verifiser</string>
+    <string name="keyboard_shortcut_label_shortcuts">Hurtigtaster</string>
+    <string name="keyboard_shortcut_desc_settings">Åpne innstillinger</string>
+    <string name="keyboard_shortcut_desc_accessibility">Tilgjengelighetsinnstillinger</string>
+    <string name="keyboard_shortcut_desc_help">Hjelpesenter</string>
+    <string name="keyboard_shortcut_desc_add_credential">Legg til legitimasjon</string>
+    <string name="keyboard_shortcut_desc_verify">Start verifisering</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Hurtigtaster</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">Gå tilbake / Avvis</string>
+    <string name="keyboard_shortcut_nav_back_desc">Avvis gjeldende skjerm eller dialogboks</string>
+    <string name="keyboard_shortcut_nav_next">Neste felt</string>
+    <string name="keyboard_shortcut_nav_next_desc">Flytt fokus til neste interaktive element</string>
+    <string name="keyboard_shortcut_nav_prev">Forrige felt</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Flytt fokus til forrige interaktive element</string>
+    <string name="keyboard_shortcut_nav_submit">Send inn / Fortsett</string>
+    <string name="keyboard_shortcut_nav_submit_desc">Aktiver fokusert knapp eller send inn skjema</string>
+    <string name="keyboard_shortcut_nav_activate">Aktiver knapp</string>
+    <string name="keyboard_shortcut_nav_activate_desc">Aktiver den fokuserte knappen eller vippebryteren</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">Dialogboks åpnet. Trykk Escape for å avvise, Enter for å bekrefte.</string>
+    <string name="modal_closed_announcement">Dialogboks lukket</string>
+    <string name="modal_button_primary_label">%s (primær handling)</string>
+    <string name="modal_button_cancel_label">%s (avbryt)</string>
+    <string name="modal_button_destructive_label">%s (destruktiv handling)</string>
+    <string name="modal_button_primary_hint">Dobbelttrykk for å bekrefte, eller trykk Enter</string>
+    <string name="modal_button_cancel_hint">Dobbelttrykk for å avbryte, eller trykk Escape</string>
+    <string name="modal_button_destructive_hint">Dobbelttrykk for å utføre destruktiv handling</string>
+    <string name="modal_button_secondary_hint">Dobbelttrykk for å utføre handling</string>
+    <string name="modal_confirm">Bekreft</string>
+    <string name="modal_cancel">Avbryt</string>
+    <string name="modal_delete">Slett</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">Slett %1$s</string>
+    <string name="a11y_edit_nickname_for">Rediger kallenavn for %1$s</string>
+    <string name="accessibility_attestation_scan_back">Gå tilbake</string>
+    <string name="attestation_replace_confirm">Erstatt</string>
+    <string name="attestation_replace_primary_message">Du har allerede en personlig legitimasjon. Hvis du oppretter en ny, erstattes den eksisterende. Dette kan ikke angres.</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">Erstatte eksisterende legitimasjon?</string>
+    <string name="attestation_scan_error_empty">QR-koden var tom</string>
+    <string name="attestation_scan_instruction">Pek kameraet mot QR-koden som tjenestepersonen viser</string>
+    <string name="attestation_scan_invalid_qr">Denne QR-koden inneholder ikke attestdata</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">Skann attest</string>
+    <string name="attestation_scan_wrong_type_toast">Dette er en verifiserings-QR, ikke en legitimasjons-QR</string>
+    <string name="biometric_required_message">Denne appen krever skjermlås (PIN-kode, mønster eller biometri) for å lagre legitimasjoner sikkert. Konfigurer dette i enhetens sikkerhetsinnstillinger før du fortsetter.</string>
+    <string name="biometric_required_open_settings">Åpne sikkerhetsinnstillinger</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">Skjermlås kreves</string>
+    <string name="challenge_sandbox_prompt_announcement">Sandbox-utfordring mottatt. Velg om du vil aktivere sandbox-modus og fortsette, eller avvise utfordringen.</string>
+    <string name="challenge_sandbox_prompt_body">Denne utfordringen ble utstedt av en sandbox-verifikator. Den vil ikke lykkes med mindre du aktiverer sandbox-modus i denne lommeboken.</string>
+    <string name="challenge_sandbox_prompt_primary">Aktiver sandbox og fortsett</string>
+    <string name="challenge_sandbox_prompt_secondary">Avvis utfordring</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">Sandbox-utfordring mottatt</string>
+    <string name="credential_detail_nickname_error">Kunne ikke lagre kallenavn</string>
+    <string name="credential_list_managed_count">%1$d av %2$d</string>
+    <string name="credential_picker_count_shown">%1$d legitimasjoner vises</string>
+    <string name="credential_picker_filter_clear">Tøm filter</string>
+    <string name="credential_picker_filter_label">Filtrer legitimasjoner etter navn</string>
+    <string name="credential_picker_filter_placeholder">Filtrer legitimasjoner</string>
+    <string name="credential_picker_no_results">Ingen samsvarende legitimasjoner</string>
+    <string name="credential_picker_section_managed">Administrerte legitimasjoner</string>
+    <string name="credential_picker_section_me">Meg</string>
+    <string name="credential_picker_subtitle">Velg hvem som verifiseres.</string>
+    <string name="credential_row_action_delete">Slett</string>
+    <string name="credential_row_action_edit">Rediger kallenavn</string>
+    <string name="credential_row_overflow_menu">Legitimasjonsalternativer</string>
+    <string name="deeplink_sandbox_prompt_announcement">Sandbox-lenke oppdaget. Velg om du vil aktivere sandbox-modus og åpne lenken.</string>
+    <string name="deeplink_sandbox_prompt_body">Denne dyplenken vil bare lykkes hvis du aktiverer sandbox-modus i denne lommeboken.</string>
+    <string name="deeplink_sandbox_prompt_primary">Aktiver sandbox og åpne</string>
+    <string name="deeplink_sandbox_prompt_secondary">Avbryt</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">Sandbox-lenke oppdaget</string>
+    <string name="empty_credential_option_find_apps_a11y">Finn en deltakende app. Få en legitimasjon fra pensjonsfondet, banken, telekomleverandøren, helseforsikringen eller andre som allerede kjenner alderen din.</string>
+    <string name="empty_credential_option_find_apps_desc">Få en legitimasjon fra pensjonsfondet, banken, telekomleverandøren, helseforsikringen eller andre som allerede kjenner alderen din</string>
+    <string name="empty_credential_option_find_apps_title">Finn en deltakende app</string>
+    <string name="empty_credential_option_find_locations_a11y">Finn et sted i nærheten. Møt opp personlig med ID-en din for å få en legitimasjon.</string>
+    <string name="empty_credential_option_find_locations_desc">Møt opp personlig med ID-en din for å få en legitimasjon</string>
+    <string name="empty_credential_option_find_locations_title">Finn et sted i nærheten</string>
+    <string name="empty_credential_option_managed_a11y">Jeg tar vare på noen. Administrer legitimasjoner for personer du tar vare på.</string>
+    <string name="empty_credential_option_managed_desc">Administrer legitimasjoner for personer du tar vare på</string>
+    <string name="empty_credential_option_managed_title">Jeg tar vare på noen</string>
+    <string name="empty_credential_option_scan_a11y">Jeg har en QR-kode å skanne. En verifikator ga deg en kode etter å ha sett identifikasjonen din.</string>
+    <string name="empty_credential_option_scan_desc">En verifikator ga deg en kode etter å ha sett identifikasjonen din</string>
+    <string name="empty_credential_option_scan_title">Jeg har en QR-kode å skanne</string>
+    <string name="empty_credential_subtitle">Velg hvordan du vil få din første legitimasjon</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">Ingen legitimasjoner ennå</string>
+    <string name="error_screen_lock_required">Skjermlås (PIN-kode, mønster eller biometri) kreves for å lagre legitimasjoner sikkert. Konfigurer dette i enhetsinnstillingene.</string>
+    <string name="issuers_no_apps_found_description">Sjekk tilbake snart, etter hvert som flere apper legger til støtte for Provii</string>
+    <string name="issuers_no_apps_found">Ingen deltakende apper ennå</string>
+    <string name="issuers_no_locations_found_description">Sjekk tilbake snart, etter hvert som flere steder legges til</string>
+    <string name="issuers_no_locations_found">Ingen steder funnet</string>
+    <string name="managed_credential_explainer_body">For å få en administrert legitimasjon for noen du tar vare på, besøk et deltakende sted sammen. Verifikatoren vil se identifikasjonen deres. Når du skanner QR-koden, blir du spurt om legitimasjonen er for deg eller for noen du administrerer.</string>
+    <string name="managed_credential_explainer_find_location">Finn et sted</string>
+    <string name="managed_credential_explainer_have_qr">Jeg har allerede en QR-kode</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">Administrerte legitimasjoner</string>
+    <string name="sandbox_credential_type">Legitimasjonstype</string>
+    <string name="sandbox_managed_credential_saved">Administrert legitimasjon lagret (%s)</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">Sandbox-modus er nå aktiv. Lommeboken er koblet til sandbox-servere.</string>
+    <string name="sandbox_nickname_helper">Gi denne legitimasjonen et navn slik at du kan kjenne den igjen i lommeboken.</string>
+    <string name="sandbox_nickname_label">Kallenavn</string>
+    <string name="sandbox_nickname_placeholder">f.eks. Sara</string>
+    <string name="sandbox_nickname_required">Et kallenavn kreves for administrerte legitimasjoner</string>
+    <string name="sandbox_type_managed_credential">Administrert legitimasjon</string>
+    <string name="sandbox_type_your_credential">Din legitimasjon</string>
+    <string name="title_find_apps">Finn en deltakende app</string>
+    <string name="title_find_locations">Finn et sted</string>
+    <string name="verification_go_to_attestation">Hent legitimasjon</string>
+    <string name="verification_wrong_qr_type_message">Denne QR-koden er for å hente en ny legitimasjon, ikke for aldersverifisering. Vil du heller gå til attest-skjermen?</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">Attest-QR oppdaget</string>
+    <string name="walkthrough_back">Tilbake</string>
+    <string name="walkthrough_get_started">Kom i gang</string>
+    <string name="walkthrough_next">Neste</string>
+    <string name="walkthrough_page_indicator">Side %1$d av %2$d</string>
+    <string name="walkthrough_page1_body">Legitimasjonen din inneholder alderen din. Ingenting annet. Ikke navnet ditt, ikke adressen din, ikke identiteten din.\n\nDen beviser at du er over (eller under) en bestemt alder uten å avsløre fødselsdatoen din.</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">Hva er en legitimasjon?</string>
+    <string name="walkthrough_page2_body">Du kan få en legitimasjon gjennom en app fra et selskap som allerede kjenner alderen din. Banken eller pensjonsfondet ditt, for eksempel. Siden de allerede har verifisert alderen din, trenger ingenting å deles på nytt.\n\nAlternativt kan du besøke et deltakende sted med identifikasjon som beviser fødselsdatoen din. Fødselsdatoen din blir sett, brukt til å opprette legitimasjonen din, og deretter forkastet. Utstederen ser aldri legitimasjonen din. Identiteten din er aldri knyttet til den.</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">Hvordan får du en?</string>
+    <string name="walkthrough_page3_body">Hvis du tar vare på noen som trenger en alderslegitimasjon, kan du få en for dem og administrere den på enheten din.\n\nBesøk et deltakende sted sammen med identifikasjon som beviser fødselsdatoen deres. Når du skanner QR-koden, blir du spurt om legitimasjonen er for deg eller for noen du administrerer.\n\nLegg til et kallenavn slik at du kan skille legitimasjonene deres fra hverandre.</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">Personer du tar vare på</string>
+    <string name="walkthrough_page4_body">En app som prøver å verifisere alderen din, kan sende en utfordring direkte til Provii-lommeboken din. Du velger hvilken legitimasjon som skal brukes. Etter vellykket verifisering blir du tatt tilbake til appen som ba om verifisering, og kan fortsette som verifisert.\n\nAlternativt kan du bli vist en QR-kode på en annen enhet, eller en lenke i mobilnettleseren din som går rett til lommeboken din. Det finnes også et alternativ med kortkode for tilgjengelighet.\n\nIngen personlig informasjon deles noen gang. Bare et ja eller nei på om du oppfyller alderskravet.</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">Hvordan fungerer verifisering?</string>
+    <string name="walkthrough_page5_body">Det første du må gjøre er å få en legitimasjon gjennom en deltakende app eller på et sted i nærheten av deg.\n\nDerfra kan du verifisere alderen din når det trengs, uten å dele personlig informasjon. Du kan også administrere legitimasjoner for personer du tar vare på.</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">Du er klar</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">Hopp over</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

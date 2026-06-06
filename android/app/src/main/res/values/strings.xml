@@ -1,0 +1,1601 @@
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Settings</string>
+    <string name="title_accessibility">Accessibility</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Get Credentials</string>
+    <string name="title_scan_verification_qr">Scan Verification QR Code</string>
+    <string name="title_verifying_age">Verifying Age</string>
+    <string name="title_age_verified">Age Verified</string>
+    <string name="title_verification_failed">Verification Failed</string>
+    <string name="title_officer_mode">Officer Mode</string>
+    <string name="title_officer_dashboard">Officer Dashboard</string>
+    <string name="title_issue_credential">Issue Credential</string>
+    <string name="title_credential_ready">Credential Ready</string>
+    <string name="title_get_your_credential">Get Your Credential</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Welcome to Provii Wallet</string>
+    <string name="welcome_subtitle">Secure age verification made simple</string>
+    <string name="welcome_first_credential">Get started by adding your first age verification credential</string>
+    <string name="welcome_description">Private age verification using zero knowledge proofs</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Welcome to Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Choose your language preference</string>
+    <string name="onboarding_use_english">Use English</string>
+    <string name="onboarding_use_english_description">Continue using English as the app language</string>
+    <string name="onboarding_rotating_button_description">Change Language button, currently showing: %1$s. Tap to select a different language.</string>
+    <string name="onboarding_change_later">You can change this later in Settings</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Accessibility</string>
+    <string name="onboarding_accessibility_desc">Would you like to customize accessibility features like text size, touch targets, or reduced motion?</string>
+    <string name="onboarding_use_defaults">Use Defaults</string>
+    <string name="onboarding_use_defaults_description">Continue with standard accessibility settings</string>
+    <string name="onboarding_open_accessibility">Accessibility Settings</string>
+    <string name="onboarding_open_accessibility_description">Open accessibility settings to customize the app</string>
+    <string name="onboarding_accessibility_later">You can change this later in Settings</string>
+    <string name="onboarding_accessibility_features_title">Available features include:</string>
+    <string name="onboarding_feature_text_size">Larger text sizes</string>
+    <string name="onboarding_feature_touch_targets">Increased touch targets</string>
+    <string name="onboarding_feature_reduce_motion">Reduced motion</string>
+    <string name="onboarding_feature_high_contrast">High contrast mode</string>
+    <string name="onboarding_talkback_detected">TalkBack Detected</string>
+    <string name="onboarding_talkback_message">We\'ve enabled verbose descriptions to help you navigate the app.</string>
+    <string name="onboarding_continue_to_setup">Continue to Setup</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">One-time Setup Required</string>
+    <string name="setup_download_required">Download Required</string>
+    <string name="setup_download_description">This app needs to download security components for zero knowledge proofs (approximately 87 MB).</string>
+    <string name="setup_wifi_recommended">Wi-Fi recommended</string>
+    <string name="setup_checking_status">Checking setup status...</string>
+    <string name="setup_already_setup">Already Set Up!</string>
+    <string name="setup_ready_message">Your wallet is ready for secure age verification</string>
+    <string name="setup_preparing">Preparing secure verification system...</string>
+    <string name="setup_checking_components">Checking security components...</string>
+    <string name="setup_downloading">Downloading security components</string>
+    <string name="setup_download_progress_description">%1$d%% complete (%2$s MB of %3$s MB downloaded)</string>
+    <string name="setup_initializing">Initializing security components...</string>
+    <string name="setup_complete">Setup Complete!</string>
+    <string name="setup_download_info">This enables zero knowledge proofs for private age verification</string>
+    <string name="setup_one_time_download">One-time download</string>
+    <string name="setup_stuck_message">This is taking longer than expected</string>
+    <string name="setup_stuck_description">The setup might be stuck. Try restarting.</string>
+    <string name="setup_restart_message">The app needs to restart. This sometimes happens on first launch.</string>
+    <string name="setup_storage_full">Storage Full</string>
+    <string name="setup_connection_error">Connection Error</string>
+    <string name="setup_failed">Setup Failed</string>
+    <string name="setup_initialization_error">Initialisation Error</string>
+    <string name="error_storage_init_failed">Storage initialisation failed. Please restart the app.</string>
+    <string name="error_storage_init_close_restart">Storage initialisation failed. Please close and restart the app.</string>
+    <string name="setup_free_storage_message">Free up at least 65 MB and try again</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Privacy Protected</string>
+    <string name="setup_privacy_description">Your age verification uses zero knowledge proofs. Your date of birth is never shared.</string>
+
+    <!-- ==================== WALKTHROUGH ==================== -->
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">Skip</string>
+    <string name="walkthrough_next">Next</string>
+    <string name="walkthrough_back">Back</string>
+    <string name="walkthrough_get_started">Get Started</string>
+    <string name="walkthrough_page_indicator">Page %1$d of %2$d</string>
+
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">What is a credential?</string>
+    <string name="walkthrough_page1_body">Your credential contains your age. Nothing else. Not your name, not your address, not your identity.\n\nIt proves you are over (or under) a certain age without revealing your date of birth.</string>
+
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">How do you get one?</string>
+    <string name="walkthrough_page2_body">You can get a credential through an app from a company that already knows your age. Your bank or super fund, for example. Because they have already verified your age, nothing needs to be shared again.\n\nAlternatively, visit a participating location with identification proving your date of birth. Your date of birth is sighted, used to create your credential, and then discarded. The issuer never sees your credential. Your identity is never tied to it.</string>
+
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">Dependants</string>
+    <string name="walkthrough_page3_body">If you care for someone who needs an age credential, you can get one for them and manage it on your device.\n\nVisit a participating location together with identification proving their date of birth. When you scan the QR code, you will be asked whether this credential is for you or for someone you manage.\n\nAdd a nickname so you can tell their credentials apart.</string>
+
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">How does verification work?</string>
+    <string name="walkthrough_page4_body">An app trying to verify your age can send a challenge directly to your Provii wallet. You choose which credential to use. Upon successful verification, you will be taken back to the requesting app and be able to proceed as verified.\n\nAlternatively, you may be presented with a QR code on another device, or a link in your mobile browser that goes straight to your wallet. There is also a short code option for accessibility.\n\nNo personal information is ever shared. Just a yes or no answer to whether you meet the age requirement.</string>
+
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">You are all set</string>
+    <string name="walkthrough_page5_body">Your first step is to get a credential through a participating app or at a location near you.\n\nFrom there, you can verify your age whenever it is needed, without sharing any personal information. You can also manage credentials for people you care for.</string>
+
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">No Credentials Yet</string>
+    <string name="empty_credential_subtitle">Choose how you would like to get your first credential</string>
+    <string name="empty_credential_option_scan_title">I have a QR code to scan</string>
+    <string name="empty_credential_option_scan_desc">A verifier gave you a code after sighting your identification</string>
+    <string name="empty_credential_option_scan_a11y">I have a QR code to scan. A verifier gave you a code after sighting your identification.</string>
+    <string name="empty_credential_option_find_apps_title">Find a participating app</string>
+    <string name="empty_credential_option_find_apps_desc">Get a credential from your super, bank, telco, health insurer, or anyone who already knows your age</string>
+    <string name="empty_credential_option_find_apps_a11y">Find a participating app. Get a credential from your super, bank, telco, health insurer, or anyone who already knows your age.</string>
+    <string name="empty_credential_option_find_locations_title">Find a location near you</string>
+    <string name="empty_credential_option_find_locations_desc">Visit in person with your ID to get a credential</string>
+    <string name="empty_credential_option_find_locations_a11y">Find a location near you. Visit in person with your ID to get a credential.</string>
+    <string name="empty_credential_option_managed_title">I care for someone</string>
+    <string name="empty_credential_option_managed_desc">Manage credentials for people you care for</string>
+    <string name="empty_credential_option_managed_a11y">I care for someone. Manage credentials for people you care for.</string>
+
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">Managed Credentials</string>
+    <string name="managed_credential_explainer_body">To get a managed credential for someone you care for, visit a participating location together. The verifier will sight their identification. When you scan the QR code, you will be asked whether this credential is for you or for someone you manage.</string>
+    <string name="managed_credential_explainer_find_location">Find a location</string>
+    <string name="managed_credential_explainer_have_qr">I already have a QR code</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">My Credentials</string>
+    <string name="credentials_empty">No credentials stored</string>
+    <string name="credential_active">Credential Active</string>
+    <string name="credential_expired">Credential Expired</string>
+    <string name="credential_ready_for_verification">Ready for verification</string>
+    <string name="credential_expired_message">Your credential has expired and needs to be replaced</string>
+    <string name="credential_stored_successfully">Credential Stored Successfully</string>
+    <string name="credential_stored_description">Your age credential has been securely stored and is ready to use</string>
+    <string name="credential_can_prove_age">You can now prove your age privately</string>
+    <string name="credential_returning">Returning to credentials...</string>
+    <string name="credential_view_credentials">View Credentials</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Done</string>
+    <string name="action_scan_qr_code">Scan QR Code</string>
+    <string name="action_find_locations">Find Locations</string>
+    <string name="action_get_credential">Get a credential</string>
+    <string name="action_replace_credential">Replace with New Credential</string>
+    <string name="action_replace_credential_now">Replace Credential Now</string>
+    <string name="action_delete_credential">Delete credential</string>
+    <string name="credential_action_scan_description">Get credential from authorised issuer</string>
+    <string name="credential_action_find_description">Discover nearby issuers</string>
+    <string name="credential_remove_description">Remove current credential</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Privacy</string>
+    <string name="credential_info_privacy_value">Protected</string>
+    <string name="credential_info_status">Status</string>
+    <string name="credential_info_status_value">Valid</string>
+    <string name="credential_tip_title">Quick Tip</string>
+    <string name="credential_tip_message">Tap the \'Verify Age\' button to scan verification QR (Quick Response) codes at participating venues.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">Scan QR Code</string>
+    <string name="verification_verify_age">Verify Age</string>
+    <string name="verification_generating_proof">Generating proof...</string>
+    <string name="verification_success">Verification successful</string>
+    <string name="verification_failed">Verification Failed</string>
+    <string name="verification_age_verified">Age Verified</string>
+    <string name="verification_age_verified_message">Your age has been verified privately</string>
+    <string name="verification_can_return">You can now return to the site to continue.</string>
+    <string name="verification_returning_browser">Returning to browser...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">Step 1 of 2</string>
+    <string name="verification_step_2_of_2">Step 2 of 2</string>
+    <string name="verification_point_camera">Point camera at verification QR code</string>
+    <string name="verification_hold_steady">Hold steady until you hear a confirmation chime.</string>
+    <string name="verification_reading_request">Reading verification request...</string>
+    <string name="verification_processing_challenge">Processing challenge...</string>
+    <string name="verification_creating_proof">Creating age proof...</string>
+    <string name="verification_submitting_proof">Submitting proof...</string>
+    <string name="verification_processing_message">This may take a few seconds</string>
+    <string name="verification_preparing_proof">We are preparing a private proof using your saved credential.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Reading verification request...</string>
+    <string name="verification_status_processing_challenge">Processing challenge...</string>
+    <string name="verification_status_creating_proof">Creating age proof...</string>
+    <string name="verification_status_submitting_proof">Submitting proof...</string>
+    <string name="verification_status_verified">✔ Age verified</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Unable to show authentication prompt</string>
+    <string name="verification_error_verification_failed">Verification failed</string>
+    <string name="verification_error_generic">An error occurred</string>
+    <string name="verification_error_failed_to_process_code">Failed to process code</string>
+    <string name="verification_error_failed_to_process_challenge">Failed to process challenge</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Trusted issuers in Australia</string>
+    <string name="issuers_loading">Loading issuers...</string>
+    <string name="issuers_loaded">Issuers loaded successfully</string>
+    <string name="issuers_unable_to_load">Unable to load issuers</string>
+    <string name="issuers_check_connection">Check your internet connection and try again</string>
+    <string name="issuers_categories_header">CATEGORIES</string>
+    <string name="issuers_available_header">AVAILABLE ISSUERS</string>
+    <string name="issuers_found_count">%d found</string>
+    <string name="issuer_status_coming_soon">Coming Soon</string>
+    <string name="issuer_status_verified">Verified</string>
+    <string name="issuer_how_to_get">How to get credential</string>
+    <string name="issuer_service_locations">Service Locations</string>
+    <string name="issuer_visit_website">Visit %s website</string>
+    <string name="issuer_learn_more">Learn more about %s</string>
+    <string name="issuers_no_apps_found">No participating apps yet</string>
+    <string name="issuers_no_apps_found_description">Check back soon as more apps add support for Provii</string>
+    <string name="issuers_no_locations_found">No locations found</string>
+    <string name="issuers_no_locations_found_description">Check back soon as more locations are added</string>
+    <string name="title_find_apps">Find a Participating App</string>
+    <string name="title_find_locations">Find a Location</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Banking</string>
+    <string name="category_super_fund">Super Fund</string>
+    <string name="category_government">Government</string>
+    <string name="category_travel">Travel</string>
+    <string name="category_telco">Telco</string>
+    <string name="category_insurance">Insurance</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_sandbox">Sandbox Mode</string>
+    <string name="settings_section_general">General</string>
+    <string name="settings_section_credentials">Credentials</string>
+    <string name="settings_section_advanced">Advanced</string>
+    <string name="settings_section_privacy">Privacy</string>
+    <string name="settings_security">Security</string>
+    <string name="settings_biometric">Use biometric authentication</string>
+    <string name="settings_environment">Environment settings</string>
+    <string name="settings_environment_description">View current environment configuration</string>
+    <string name="settings_reset_proving_key">Reset proving key</string>
+    <string name="settings_reset_proving_key_description">Re-download security components (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Mint test credential as Issuer</string>
+    <string name="settings_mint_test_credential_subtitle">Issue a test credential to your wallet so you can verify against it from a relying party demo.</string>
+    <string name="settings_find_trusted_issuers">Find trusted issuers</string>
+    <string name="settings_version">Version: %s</string>
+    <string name="settings_tap_5x_toggle">Tap 5x to toggle</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Language</string>
+    <string name="language_selection_description">Select your preferred language. The app will restart to apply changes.</string>
+    <string name="language_selected">Selected</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_description">Change app language</string>
+    <string name="settings_licenses">Open Source Licenses</string>
+    <string name="settings_licenses_description">View third-party licenses</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Confirm Language</string>
+    <string name="language_change_to">Change language to:</string>
+    <string name="language_restart_notice">The app will restart to apply this language.</string>
+    <string name="language_apply">Apply</string>
+    <string name="language_cancel">Cancel</string>
+    <string name="language_skip_title">Skip Language Selection?</string>
+    <string name="language_skip_message">If you skip, the app will use English by default. You can change the language later in Settings.</string>
+    <string name="language_use_english">Use English</string>
+    <string name="language_go_back">Go Back</string>
+    <string name="language_help_title">Language Selection Help</string>
+    <string name="language_help_how_to">How to select your language:</string>
+    <string name="language_help_step1">1. Use the search box to find your language</string>
+    <string name="language_help_step2">2. Tap on your preferred language</string>
+    <string name="language_help_step3">3. Confirm your selection</string>
+    <string name="language_help_system_note">Your system language is highlighted at the top if supported.</string>
+    <string name="language_help_settings_note">You can change this later in Settings.</string>
+    <string name="language_got_it">Got It</string>
+    <string name="language_select_title">Select Language</string>
+    <string name="language_skip_button">Skip (Use English)</string>
+    <string name="language_search_placeholder">Search languages...</string>
+    <string name="language_no_results">No languages found</string>
+    <string name="language_try_different">Try a different search term</string>
+    <string name="language_system_badge">System Language</string>
+    <string name="language_count">%d languages</string>
+    <string name="language_no_match_announcement">No languages found matching your search</string>
+    <string name="language_found_announcement">%d languages found</string>
+    <string name="language_search_cleared">Search cleared, showing all %d languages</string>
+    <string name="language_selected_announcement">Selected %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Language selection screen</string>
+    <string name="language_help_button_description">Help and information about language selection</string>
+    <string name="language_skip_description">Skip language selection and use English by default</string>
+    <string name="language_clear_search_description">Clear search</string>
+    <string name="language_count_description">%d languages available</string>
+    <string name="language_apply_description">Apply language selection and continue</string>
+    <string name="language_cancel_description">Cancel language selection</string>
+    <string name="language_cancelled_announcement">Language selection cancelled</string>
+    <string name="language_selected_description">Selected language: %1$s, %2$s</string>
+    <string name="language_item_system">System language: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, currently selected</string>
+    <string name="language_item_system_selected">System language: %1$s, %2$s, currently selected</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Returned to language selection</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Sandbox mode active</string>
+    <string name="sandbox_mode_banner">SANDBOX MODE ACTIVE</string>
+    <string name="sandbox_mode_description">Using the test environment. Tap the version number five times to toggle.</string>
+    <string name="sandbox_credential_title">Sandbox credential</string>
+    <string name="sandbox_credential_description">Generate a sandbox credential to exercise verification flows without touching production data.</string>
+    <string name="sandbox_select_age">Select age</string>
+    <string name="sandbox_age_format">%d yrs</string>
+    <string name="sandbox_default_dob">Default date of birth: %s</string>
+    <string name="sandbox_override_dob">Override default date of birth</string>
+    <string name="sandbox_override_description">Use an exact date instead of the age-based default.</string>
+    <string name="sandbox_date_of_birth">Date of birth</string>
+    <string name="sandbox_generate_credential">Generate credential</string>
+    <string name="sandbox_generating">Generating…</string>
+    <string name="sandbox_test_credential_saved">Test credential saved</string>
+    <string name="sandbox_id_prefix">Identification prefix: %s…</string>
+    <string name="sandbox_unable_to_generate">Unable to generate credential</string>
+    <string name="sandbox_credential_type">Credential type</string>
+    <string name="sandbox_type_your_credential">Your credential</string>
+    <string name="sandbox_type_managed_credential">Managed credential</string>
+    <string name="sandbox_nickname_label">Nickname</string>
+    <string name="sandbox_nickname_placeholder">e.g. Sarah</string>
+    <string name="sandbox_nickname_helper">Give this credential a name so you can identify it in your wallet.</string>
+    <string name="sandbox_nickname_required">A nickname is required for managed credentials</string>
+    <string name="sandbox_managed_credential_saved">Managed credential saved (%s)</string>
+    <string name="settings_sandbox_dob_format">Date of Birth: %s</string>
+    <string name="settings_sandbox_age_dob_format">Age %d (Date of Birth: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Environment configuration</string>
+    <string name="environment_current">Current: %s</string>
+    <string name="environment_issuer_api">Issuer API (Application Programming Interface): %s</string>
+    <string name="environment_verifier_api">Verifier API (Application Programming Interface): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Delete credential?</string>
+    <string name="dialog_delete_credential_message">This action removes the credential from your device. You can retrieve it again from the issuer if needed.</string>
+    <string name="dialog_delete_credential_announcement">Dialog opened: Delete credential</string>
+    <string name="dialog_reset_proving_key_title">Reset proving key?</string>
+    <string name="dialog_reset_proving_key_message">The proving key and supportive files will be deleted and downloaded again the next time you open the app.</string>
+    <string name="dialog_reset_proving_key_announcement">Dialog opened: Reset proving key</string>
+    <string name="dialog_environment_info_announcement">Dialog opened: Environment configuration</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">Accessibility</string>
+    <string name="accessibility_service_label">Provii Wallet Accessibility</string>
+    <string name="accessibility_service_description">Provii Wallet accessibility service provides enhanced support for users with disabilities. This includes automatic credential reading, guided navigation, and simplified interactions.</string>
+    <string name="accessibility_personalize">Personalize your experience</string>
+    <string name="accessibility_customize_features">Customize accessibility features</string>
+    <string name="accessibility_quick_setup">Quick setup</string>
+    <string name="accessibility_features_active">%d features active</string>
+    <string name="accessibility_customize_experience">Customize your experience</string>
+    <string name="accessibility_reset_title">Reset accessibility settings?</string>
+    <string name="accessibility_reset_message">All accessibility preferences will return to their defaults.</string>
+    <string name="accessibility_reset">Reset accessibility settings</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Vision</string>
+    <string name="accessibility_category_interaction">Interaction</string>
+    <string name="accessibility_category_cognitive">Cognitive support</string>
+    <string name="accessibility_category_alternative_input">Alternative input</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Extra large text</string>
+    <string name="accessibility_extra_large_text_description">Increase base font sizes by 45%</string>
+    <string name="accessibility_high_contrast">High contrast</string>
+    <string name="accessibility_high_contrast_description">Use high contrast colors</string>
+    <string name="accessibility_reduce_transparency">Reduce transparency</string>
+    <string name="accessibility_reduce_transparency_description">Remove blur and glass effects</string>
+    <string name="accessibility_dyslexia_font">Dyslexia friendly font</string>
+    <string name="accessibility_dyslexia_font_description">Use OpenDyslexic font for improved readability</string>
+    <string name="accessibility_color_blind_mode">Color blind mode</string>
+    <string name="accessibility_color_blind_optimized">Optimized colors for %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">None</string>
+    <string name="color_blind_protanopia">Protanopia (Red-blind)</string>
+    <string name="color_blind_deuteranopia">Deuteranopia (Green-blind)</string>
+    <string name="color_blind_tritanopia">Tritanopia (Blue-blind)</string>
+    <string name="color_blind_monochrome">Monochrome</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Larger touch targets</string>
+    <string name="accessibility_larger_touch_targets_description">Increase button and chip sizes</string>
+    <string name="accessibility_reduce_motion">Reduce motion</string>
+    <string name="accessibility_reduce_motion_description">Minimise animations and transitions</string>
+    <string name="accessibility_extended_timeouts">Extended timeouts</string>
+    <string name="accessibility_extended_timeouts_description">Allow more time for timed actions</string>
+    <string name="accessibility_simplified_gestures">Simplified gestures</string>
+    <string name="accessibility_simplified_gestures_description">Reduce multi-step gestures</string>
+    <string name="accessibility_haptic_feedback">Haptic feedback</string>
+    <string name="accessibility_haptic_feedback_description">Vibration confirmation for actions</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Simplified interface</string>
+    <string name="accessibility_simplified_interface_description">Hide advanced options and reduce clutter</string>
+    <string name="accessibility_show_step_numbers">Show step numbers</string>
+    <string name="accessibility_show_step_numbers_description">Display progress indicators</string>
+    <string name="accessibility_detailed_descriptions">Detailed descriptions</string>
+    <string name="accessibility_detailed_descriptions_description">Provide additional explanatory text</string>
+    <string name="accessibility_confirm_actions">Confirm before actions</string>
+    <string name="accessibility_confirm_actions_description">Ask for confirmation on important operations</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Manual code entry</string>
+    <string name="accessibility_manual_code_entry_description">Allow QR (Quick Response) codes to be typed instead of scanned</string>
+    <string name="accessibility_voice_input">Voice input</string>
+    <string name="accessibility_voice_input_description">Enable speech recognition for text fields</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Vision</string>
+    <string name="accessibility_profile_motor">Motor</string>
+    <string name="accessibility_profile_cognitive">Cognitive</string>
+    <string name="accessibility_profile_senior">Senior</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Back</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Home</string>
+    <string name="breadcrumb_settings">Settings</string>
+    <string name="breadcrumb_accessibility">Accessibility</string>
+    <string name="breadcrumb_language">Language</string>
+    <string name="breadcrumb_help">Help Center</string>
+    <string name="breadcrumb_officer_mode">Officer Mode</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Typography &amp; Text Spacing</string>
+    <string name="accessibility_line_spacing">Line Spacing</string>
+    <string name="accessibility_line_spacing_description">Adjust space between lines of text</string>
+    <string name="accessibility_paragraph_spacing">Paragraph Spacing</string>
+    <string name="accessibility_paragraph_spacing_description">Adjust space between paragraphs</string>
+    <string name="accessibility_letter_spacing">Letter Spacing</string>
+    <string name="accessibility_letter_spacing_description">Adjust space between letters</string>
+    <string name="accessibility_typography_aaa_note">AAA recommendations: 1.5x line spacing, 2.0x paragraph spacing, and 0.12em letter spacing.</string>
+    <string name="accessibility_spacing_current">Current: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Timeout Behavior</string>
+    <string name="accessibility_timeout_no_automatic">No automatic timeouts for AAA compliance</string>
+    <string name="accessibility_timeout_auto_advance_30">Auto-advance after 30 seconds</string>
+    <string name="accessibility_timeout_auto_advance_60">Auto-advance after 60 seconds</string>
+    <string name="accessibility_timeout_set_announcement">Timeout behavior set to %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Contrast Level</string>
+    <string name="accessibility_contrast_aaa_ratio">7:1 contrast ratio for AAA compliance</string>
+    <string name="accessibility_contrast_standard">Standard contrast</string>
+    <string name="accessibility_contrast_aa_ratio">4.5:1 contrast ratio for AA compliance</string>
+    <string name="accessibility_contrast_set_announcement">Contrast level set to %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Color blind mode set to %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">%1$s slider. Current value: %2$s. %3$sRange from %4$s to %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">AAA compliant. </string>
+    <string name="accessibility_slider_announcement">%1$s set to %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, AAA compliant</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s enabled</string>
+    <string name="accessibility_toggle_disabled">%s disabled</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Verification Feedback</string>
+    <string name="accessibility_sound_enabled">Play sound on success</string>
+    <string name="accessibility_sound_enabled_description">Play a confirmation sound after successful verification</string>
+    <string name="accessibility_sound_style">Sound Style</string>
+    <string name="accessibility_sound_preview">Preview sound</string>
+    <string name="accessibility_sound_preview_preset">Preview %s</string>
+    <string name="accessibility_sound_style_set_announcement">Sound style set to %s</string>
+    <string name="accessibility_haptic_enabled">Vibrate on success</string>
+    <string name="accessibility_haptic_enabled_description">Provide haptic feedback after successful verification</string>
+    <string name="accessibility_sound_footer">Sound respects your device\'s silent mode settings</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Volume</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Preview current volume</string>
+    <string name="accessibility_volume_set_announcement">Volume set to %d percent</string>
+    <string name="accessibility_volume_slider_description">Volume slider. Current value: %d percent</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Reset Settings</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorised officers issuing credentials -->
+    <string name="officer_mode">Officer Mode</string>
+    <string name="officer_id">Officer Email</string>
+    <string name="officer_id_placeholder">e.g., officer@example.com</string>
+    <string name="officer_id_hint">Enter the email address registered for this officer</string>
+    <string name="officer_yubikey_connected">Yubikey Connected</string>
+    <string name="officer_connect_yubikey">Connect Yubikey</string>
+    <string name="officer_touch_yubikey">Touch your Yubikey to authenticate...</string>
+    <string name="officer_authenticate_hmac">Get Started</string>
+    <string name="officer_authentication_process">How It Works:</string>
+    <string name="officer_auth_steps">1. Enter your officer email\n2. Tap Get Started\n3. Enter the holder\'s date of birth\n4. Touch your YubiKey to sign the attestation</string>
+    <string name="officer_auth_failed">Could not proceed. Please verify your officer email and try again.</string>
+    <string name="officer_session_info">Officer: %s</string>
+    <string name="officer_station_info">Station: %s</string>
+    <string name="officer_issued_today">Issued today: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Issue Age Credential</string>
+    <string name="officer_issue_description">Verify user\'s identity and issue a digital age credential</string>
+    <string name="officer_start_issuance">Start New Issuance</string>
+    <string name="officer_issuance_process">ISSUANCE PROCESS</string>
+    <string name="officer_issuance_steps">1. Check user\'s physical identification document\n2. Enter their date of birth\n3. Verify information matches exactly\n4. Issue credential with attestation QR (Quick Response) code\n5. User scans QR code to receive credential</string>
+    <string name="officer_verify_identity">Verify User Identity</string>
+    <string name="officer_select_dob">Select Date of Birth</string>
+    <string name="officer_change_date">Change Date</string>
+    <string name="officer_age_years">Age: %d years</string>
+    <string name="officer_under_18_warning">Under 18 - Managed credential</string>
+    <string name="officer_verification_checklist">VERIFICATION CHECKLIST</string>
+    <string name="officer_document_verified">Physical document verified</string>
+    <string name="officer_document_verified_description">I have sighted a valid government-issued identification</string>
+    <string name="officer_dob_matches">Date of birth matches exactly</string>
+    <string name="officer_dob_matches_description">The Date of Birth on physical document is: %s</string>
+    <string name="officer_issue_credential">Issue Credential</string>
+    <string name="officer_user_scanned_successfully">User Has Scanned Successfully</string>
+    <string name="officer_return_to_dashboard">Return to Dashboard</string>
+    <string name="officer_go_back">Go Back</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">Yubikey Authentication</string>
+    <string name="yubikey_step_format">Step %1$d of %2$d</string>
+    <string name="yubikey_led_should_blink">The Yubikey LED should be blinking</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Validating input...</string>
+    <string name="officer_state_creating_attestation">Creating attestation...</string>
+    <string name="officer_state_computing_commitment">Computing cryptographic commitment...</string>
+    <string name="officer_state_creating_session">Creating secure session...</string>
+    <string name="officer_state_signing">Signing credential...</string>
+    <string name="officer_state_finalizing">Finalizing credential...</string>
+    <string name="officer_state_storing_attestation">Storing attestation...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">Session Expiring Soon</string>
+    <string name="officer_session_expiring_message">Your session will expire in %d seconds. Would you like to save your progress?</string>
+    <string name="officer_session_expiring_announcement">Warning: Your session will expire in %d seconds</string>
+    <string name="officer_save_and_continue">Save and Continue</string>
+    <string name="officer_continue_without_saving">Continue Without Saving</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">DATE OF BIRTH</string>
+    <string name="officer_age_format">Age: %d years</string>
+    <string name="officer_under_18_full_warning">This person is under 18. The credential will be issued as a managed credential requiring a parent or guardian.</string>
+    <string name="officer_verification_checklist_header">VERIFICATION CHECKLIST</string>
+    <string name="officer_physical_document_verified">Physical document verified</string>
+    <string name="officer_sighted_valid_id">I have sighted a valid government-issued identification</string>
+    <string name="officer_dob_matches_exactly">Date of birth matches exactly</string>
+    <string name="officer_dob_on_document">The Date of Birth on physical document is: %s</string>
+    <string name="officer_error_label">Error</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">Scan the issuance QR (Quick Response) code</string>
+    <string name="issuance_downloads_credential">This downloads your age credential.</string>
+    <string name="issuance_center_qr">Center the QR code within the frame and hold steady.</string>
+    <string name="issuance_enter_code_manually">Enter code manually</string>
+    <string name="issuance_processing_qr">Processing QR code…</string>
+    <string name="issuance_invalid_data">Invalid issuance data</string>
+    <string name="issuance_verification_qr_error">This is a verification QR code. Please scan the credential issuance QR code.</string>
+    <string name="issuance_invalid_qr_format">Invalid QR code format</string>
+    <string name="issuance_failed_to_process">Failed to process QR code: %s</string>
+    <string name="issuance_code">Issuance code</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">Manual code entry</string>
+    <string name="manual_entry_enter_code_manually">Enter code manually</string>
+    <string name="manual_entry_verification_description">Enter the 12-digit verification code shown on the verifier\'s screen.</string>
+    <string name="manual_entry_issuance_description">Type the code shown on the issuer\'s screen.</string>
+    <string name="manual_entry_verification_code">Verification code</string>
+    <string name="manual_entry_submit">Submit code</string>
+    <string name="manual_entry_please_enter">Please enter a code</string>
+    <string name="manual_entry_please_enter_verification">Please enter a verification code</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Start listening</string>
+    <string name="voice_input_stop_listening">Stop listening</string>
+    <string name="voice_input_recognized">Recognized:</string>
+    <string name="content_desc_voice_input_listening">Listening for voice input</string>
+    <string name="content_desc_voice_input_available">Voice input available</string>
+    <string name="voice_input_permission_title">Microphone permission needed</string>
+    <string name="voice_input_permission_message">Voice input requires microphone access. You can enable it from system settings.</string>
+    <string name="voice_input_listening">Listening…</string>
+    <string name="voice_input_error">Voice Input Error</string>
+    <string name="voice_input_tap_to_speak">Tap to speak</string>
+    <string name="voice_input_did_you_say">Did you say "%1$s"?</string>
+    <string name="voice_input_confirm">Confirm</string>
+    <string name="voice_input_retry">Try Again</string>
+    <string name="voice_input_cancel">Cancel</string>
+    <string name="voice_input_button">Voice Input</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">Voice input is not available on this device</string>
+    <string name="voice_input_error_audio">Audio recording error. Check microphone.</string>
+    <string name="voice_input_error_network">Network error. Check connection.</string>
+    <string name="voice_input_error_network_timeout">Network timeout. Try again.</string>
+    <string name="voice_input_error_no_match">No speech detected. Please try again.</string>
+    <string name="voice_input_error_recognizer_busy">Voice input busy. Please wait.</string>
+    <string name="voice_input_error_server">Server error. Try again later.</string>
+    <string name="voice_input_error_speech_timeout">No speech heard. Please speak louder.</string>
+    <string name="voice_input_error_insufficient_permissions">Microphone permission denied.</string>
+    <string name="voice_input_error_generic">Voice input error. Please try again.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">Back</string>
+    <string name="action_close">Close</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_ok">OK</string>
+    <string name="action_set">Set</string>
+    <string name="action_change">Change</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_try_again">Try Again</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_download_now">Download Now</string>
+    <string name="action_retry_setup">Retry Setup</string>
+    <string name="action_retry_download">Retry Download</string>
+    <string name="action_restart_setup">Restart Setup</string>
+    <string name="action_manage_storage">Manage Storage</string>
+    <string name="action_check_wifi_settings">Check Wi-Fi Settings First</string>
+    <string name="action_check_wifi_settings_short">Check Wi-Fi Settings</string>
+    <string name="action_grant_permission">Grant Permission</string>
+    <string name="action_grant_camera_access">Grant camera access</string>
+    <string name="action_return_to_browser">Return to Browser</string>
+    <string name="action_show_debug_info">Show Debug Info</string>
+    <string name="action_reset_redownload">Reset and Re-download</string>
+    <string name="action_end_session">End Session</string>
+    <string name="action_expand">Expand</string>
+    <string name="action_collapse">Collapse</string>
+    <string name="accessibility_state_expanded">Expanded</string>
+    <string name="accessibility_state_collapsed">Collapsed</string>
+    <string name="accessibility_state_checked">Checked</string>
+    <string name="accessibility_state_unchecked">Unchecked</string>
+    <string name="accessibility_state_selected">Selected</string>
+    <string name="accessibility_state_not_selected">Not selected</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">An error occurred</string>
+    <string name="error_camera_permission">Camera permission required for QR (Quick Response) scanning</string>
+    <string name="error_camera_access_needed">Camera access needed</string>
+    <string name="error_camera_permission_description">Grant camera permission to scan QR codes or enable manual entry from accessibility settings.</string>
+    <string name="error_camera_permission_required">Camera permission is required to scan QR codes</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">Scanning for QR code...</string>
+    <string name="qr_scanner_camera_required">Camera permission required</string>
+    <string name="qr_scanner_camera_preview">Camera preview for scanning QR codes</string>
+    <string name="qr_scanner_status_scanning">Scanning for QR code</string>
+    <string name="qr_scanner_requesting_permission">Requesting camera permission</string>
+    <string name="error_camera_start_failed">Failed to start camera: %s</string>
+    <string name="error_camera_init_failed">Camera initialization failed: %s</string>
+    <string name="error_biometric_not_available">Biometric authentication not available</string>
+    <string name="error_network">Network error occurred</string>
+    <string name="error_no_credential">No credential available. Please get a credential first.</string>
+    <string name="credential_picker_title">Choose a Credential</string>
+    <string name="credential_picker_description">You have multiple credentials that can be used for this verification. Please select one.</string>
+    <string name="credential_picker_expired_label">Expired</string>
+    <string name="credential_picker_accessibility_select">Select credential: %1$s</string>
+    <string name="credential_picker_subtitle">Select who is being verified.</string>
+    <string name="credential_picker_section_me">Me</string>
+    <string name="credential_picker_section_managed">Managed Credentials</string>
+    <string name="credential_picker_filter_placeholder">Filter credentials</string>
+    <string name="credential_picker_filter_label">Filter credentials by name</string>
+    <string name="credential_picker_filter_clear">Clear filter</string>
+    <string name="credential_picker_no_results">No matching credentials</string>
+    <string name="credential_picker_count_shown">%1$d credentials shown</string>
+    <string name="credential_list_managed_count">%1$d of %2$d</string>
+    <string name="credential_row_overflow_menu">Credential options</string>
+    <string name="credential_row_action_edit">Edit Nickname</string>
+    <string name="credential_row_action_delete">Delete</string>
+    <string name="a11y_edit_nickname_for">Edit nickname for %1$s</string>
+    <string name="a11y_delete_credential_for">Delete %1$s</string>
+    <string name="credential_detail_nickname_error">Failed to save nickname</string>
+    <string name="error_failed_to_process_challenge">Failed to process challenge</string>
+    <string name="error_failed_to_create_proof">Failed to create proof</string>
+    <string name="error_verification_failed">Verification failed</string>
+    <string name="error_occurred_during_verification">An error occurred during verification</string>
+    <string name="error_connection_timeout">Connection timed out. Please try again.</string>
+    <string name="error_unable_to_connect">Unable to connect. Please check your internet connection.</string>
+    <string name="error_secure_connection_failed">Secure connection failed. Please try again.</string>
+    <string name="error_security_verification_failed">Security verification failed. Please try again.</string>
+    <string name="error_invalid_input">Invalid input. Please check your information and try again.</string>
+    <string name="error_operation_in_progress">Another operation is in progress. Please wait.</string>
+    <string name="error_operation_cancelled">Operation was cancelled.</string>
+    <string name="error_age_requirement_not_met">Age requirement not met for this credential.</string>
+    <string name="error_biometric_required">Biometric authentication is required to continue.</string>
+    <string name="error_wallet_not_initialized">Wallet not initialized. Please restart the app.</string>
+    <string name="error_security">Security error. Please try again.</string>
+    <string name="error_connection_timeout_short">Connection timeout. Please try again.</string>
+    <string name="error_invalid_input_provided">Invalid input provided.</string>
+    <string name="error_invalid_data_format">Invalid data format. Please try again.</string>
+    <string name="error_storage">Storage error. Please check device storage.</string>
+    <string name="error_network_short">Network error. Please check your connection.</string>
+    <string name="error_label">Error</string>
+    <string name="error_dismiss">Dismiss error</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">Processing...</string>
+    <string name="status_initializing_wallet">Initializing wallet...</string>
+    <string name="status_loading">Loading...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">Privacy protected</string>
+    <string name="privacy_zk_description">Your date of birth is never shared. Verifiers only learn if you meet their age requirement.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Privacy Settings</string>
+    <string name="privacy_settings_description">Control data collection and manage your data</string>
+    <string name="privacy_section_data_collection">Data Collection</string>
+    <string name="privacy_section_your_data">Your Data</string>
+    <string name="privacy_protection_title">Your Privacy is Protected</string>
+    <string name="privacy_protection_description">Provii Wallet uses zero knowledge proofs to verify your age without revealing your date of birth. Your credential data is stored only on your device and never shared with anyone.</string>
+    <string name="privacy_analytics_title">Analytics</string>
+    <string name="privacy_analytics_description">Help improve Provii Wallet by sharing anonymous usage data</string>
+    <string name="privacy_analytics_enabled">Analytics enabled</string>
+    <string name="privacy_analytics_disabled">Analytics disabled</string>
+    <string name="privacy_crash_reporting_title">Crash Reporting</string>
+    <string name="privacy_crash_reporting_description">Help us fix bugs by automatically sending crash reports</string>
+    <string name="privacy_crash_reporting_enabled">Crash reporting enabled</string>
+    <string name="privacy_crash_reporting_disabled">Crash reporting disabled</string>
+    <string name="privacy_what_we_collect_title">What Data We Collect</string>
+    <string name="privacy_what_we_collect_subtitle">Tap to learn about our data practices</string>
+    <string name="privacy_data_collection_info_title">Data Collection Information</string>
+    <string name="privacy_data_we_collect_header">What we collect (if enabled):</string>
+    <string name="privacy_data_we_collect_list">- Anonymous app usage statistics\n- Crash reports and error logs\n- Device type and OS version\n- App version information</string>
+    <string name="privacy_data_we_dont_collect_header">What we never collect:</string>
+    <string name="privacy_data_we_dont_collect_list">- Your date of birth\n- Your name or personal details\n- Your location\n- Your credential data\n- Biometric data</string>
+    <string name="privacy_data_never_shared_note">Your credential data is never shared with Provii or any third party. It stays on your device.</string>
+    <string name="privacy_policy_title">Privacy Policy</string>
+    <string name="privacy_policy_subtitle">Read our full privacy policy</string>
+    <string name="privacy_delete_my_data_title">Delete My Data</string>
+    <string name="privacy_delete_my_data_subtitle">Remove all stored credentials and data</string>
+    <string name="privacy_delete_data_dialog_title">Delete All Data?</string>
+    <string name="privacy_delete_data_dialog_message">This will permanently delete all your credentials and app data from this device. You will need to obtain a new credential to use the app again.</string>
+    <string name="privacy_delete_data_dialog_warning">This action cannot be undone.</string>
+    <string name="privacy_delete_data_confirm">Delete Everything</string>
+    <string name="privacy_footer_note">You can change these settings at any time. Changes take effect immediately.</string>
+    <string name="dialog_delete_data_announcement">Delete data confirmation dialog opened</string>
+    <string name="dialog_data_collection_info_announcement">Data collection information dialog opened</string>
+    <string name="content_desc_privacy_settings">Privacy settings, control data collection and manage your data</string>
+    <string name="content_desc_data_collection_info">View data collection information</string>
+    <string name="content_desc_privacy_policy">View privacy policy</string>
+    <string name="content_desc_opens_external_link">Opens in browser</string>
+    <string name="content_desc_delete_my_data">Delete all my data</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">Back</string>
+    <string name="content_desc_settings">Settings</string>
+    <string name="content_desc_refresh">Refresh</string>
+    <string name="content_desc_verified">Verified</string>
+    <string name="content_desc_expand">Expand</string>
+    <string name="content_desc_collapse">Collapse</string>
+    <string name="content_desc_warning_error">Warning: Error occurred</string>
+    <string name="content_desc_sandbox_indicator">Sandbox mode indicator</string>
+    <string name="content_desc_success">Success</string>
+    <string name="content_desc_warning">Warning</string>
+    <string name="content_desc_information">Information</string>
+    <string name="content_desc_error">Error</string>
+    <string name="content_desc_sandbox_warning">Sandbox Mode Warning</string>
+    <string name="content_desc_app_info">App information</string>
+    <string name="content_desc_accessibility_settings">Accessibility settings</string>
+    <string name="content_desc_language_settings">Language settings</string>
+    <string name="content_desc_licenses">Open source licenses</string>
+    <string name="content_desc_select_dob">Select date of birth</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Mint test credential as Issuer</string>
+    <string name="content_desc_get_credential">Get credential</string>
+    <string name="content_desc_delete_credential">Delete credential</string>
+    <string name="content_desc_reset_proving_key">Reset proving key</string>
+    <string name="content_desc_environment_info">Environment information</string>
+    <string name="content_desc_help_support">Help and support</string>
+    <string name="content_desc_privacy_protected">Privacy Protected</string>
+    <string name="preview_settings_title">Settings Preview</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">Success</string>
+    <string name="accessibility_verification_error_description">Error</string>
+    <string name="accessibility_breadcrumb_location_description">Location: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">then</string>
+    <string name="accessibility_breadcrumb_current_page_description">Current page: %s</string>
+    <string name="accessibility_settings_navigate_description">Navigate</string>
+    <string name="accessibility_credentials_settings_description">Settings</string>
+    <string name="accessibility_verification_back_description">Back</string>
+    <string name="accessibility_officer_back_description">Back</string>
+    <string name="accessibility_discovery_back_description">Back</string>
+    <string name="accessibility_discovery_refresh_description">Refresh</string>
+    <string name="accessibility_discovery_verified_description">Verified</string>
+    <string name="accessibility_officer_done_description">Done</string>
+    <string name="accessibility_officer_attestation_qr_description">Attestation QR code for user to scan</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">Skip to %s</string>
+    <string name="accessibility_skip_main_content">main content</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Vision Impaired</string>
+    <string name="accessibility_profile_motor_impaired">Motor Impaired</string>
+    <string name="accessibility_profile_cognitive_support">Cognitive Support</string>
+    <string name="accessibility_profile_elderly_support">Elderly Support</string>
+    <string name="accessibility_profile_default">Default</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">None</string>
+    <string name="color_blind_mode_protanopia">Protanopia</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopia</string>
+    <string name="color_blind_mode_tritanopia">Tritanopia</string>
+    <string name="color_blind_mode_monochrome">Monochrome</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Standard</string>
+    <string name="contrast_level_high">High (AA)</string>
+    <string name="contrast_level_maximum">Maximum (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Full Width</string>
+    <string name="text_width_comfortable">Comfortable (80 chars)</string>
+    <string name="text_width_narrow">Narrow (60 chars)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">No Timeout (AAA)</string>
+    <string name="timeout_behavior_standard">Standard (30s)</string>
+    <string name="timeout_behavior_extended">Extended (60s)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Standard</string>
+    <string name="reading_level_standard_description">Regular text with technical terms</string>
+    <string name="reading_level_simplified">Simplified (Grade 7-9)</string>
+    <string name="reading_level_simplified_description">Simpler words and shorter sentences (AAA compliant)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">Help</string>
+    <string name="help_and_support">Help &amp; Support</string>
+    <string name="help_description">Get help with app features and accessibility</string>
+    <string name="help_center">Help Center</string>
+    <string name="help_center_description">Browse help topics and learn about app features</string>
+    <string name="help_search">Search help</string>
+    <string name="help_search_placeholder">Search help topics...</string>
+    <string name="help_search_active">Search activated</string>
+    <string name="help_search_inactive">Search deactivated</string>
+    <string name="help_no_results">No help topics found matching your search</string>
+    <string name="help_topic_not_found">Help topic not found</string>
+    <string name="help_related_topics">Related Topics</string>
+    <string name="help_content_heading">Help Content</string>
+    <string name="help_related_topic_position">%1$s, item %2$d of %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Vision</string>
+    <string name="help_category_typography">Typography</string>
+    <string name="help_category_interaction">Interaction</string>
+    <string name="help_category_cognitive">Cognitive Support</string>
+    <string name="help_category_alternative_input">Alternative Input</string>
+    <string name="help_category_features">Features</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Getting a Credential</string>
+    <string name="help_topic_getting_credential_summary">Learn how to obtain your first age verification credential</string>
+    <string name="help_topic_getting_credential_content">To get your age verification credential:\n\n1. Visit an authorised issuer location\n2. Present your government-issued ID\n3. Scan the QR code provided\n4. Your credential will be saved securely\n\nYour date of birth is stored locally and never shared.</string>
+
+    <string name="help_topic_verifying_age_title">Verifying Your Age</string>
+    <string name="help_topic_verifying_age_summary">How to prove your age without sharing personal information</string>
+    <string name="help_topic_verifying_age_content">When you need to verify your age:\n\n1. The verifier will show you a QR code\n2. Scan it with the app\n3. The app creates a mathematical proof\n4. Only the yes/no answer is shared\n\nYour actual date of birth is NEVER revealed.</string>
+
+    <string name="help_topic_accessibility_title">Accessibility Features</string>
+    <string name="help_topic_accessibility_summary">Customize the app for your needs</string>
+    <string name="help_topic_accessibility_content">The app includes many accessibility features:\n\n- Large text and high contrast modes\n- Voice input and screen reader support\n- Simplified gestures and user interface\n- Manual code entry options\n- Extended timeouts\n\nAccess these in Settings > Accessibility</string>
+
+    <string name="help_topic_privacy_security_title">Privacy &amp; Security</string>
+    <string name="help_topic_privacy_security_summary">How your information is protected</string>
+    <string name="help_topic_privacy_security_content">Your privacy is our top priority:\n\n- Credentials stored locally on your device\n- Zero-knowledge proofs protect your data\n- No tracking or analytics\n- Biometric authentication available\n- Data never leaves your device unencrypted</string>
+
+    <string name="help_topic_troubleshooting_title">Troubleshooting</string>
+    <string name="help_topic_troubleshooting_summary">Common issues and solutions</string>
+    <string name="help_topic_troubleshooting_content">Common problems and fixes:\n\nQR Scanner Not Working:\n- Check camera permissions in Settings\n- Try manual code entry option\n\nCredential Not Loading:\n- Check your internet connection\n- Try resetting the proving key\n\nVerification Failed:\n- Ensure credential is not expired\n- Contact the verifier for support</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">DATE OF BIRTH</string>
+    <string name="date_of_birth">Date of birth</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">%d years</string>
+    <string name="format_step_indicator">Step %1$d of %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">Credentials</string>
+    <string name="tab_settings">Settings</string>
+    <string name="tab_help">Help</string>
+    <string name="tab_credentials_description">View your credentials</string>
+    <string name="tab_settings_description">App settings</string>
+    <string name="tab_help_description">Get help and support</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">Search</string>
+    <string name="search_field_label">Search field</string>
+    <string name="search_placeholder">Search settings, help, and features</string>
+    <string name="search_clear">Clear search</string>
+    <string name="search_popular">Popular Searches</string>
+    <string name="search_results_heading">Search Results</string>
+    <string name="search_no_results">No Results Found</string>
+    <string name="search_try_suggestions">Try searching for:\n• Accessibility\n• Settings\n• Help\n• Language</string>
+    <string name="search_results_announcement_singular">Found 1 result</string>
+    <string name="search_results_announcement_plural">Found %d results</string>
+    <string name="search_no_results_announcement">No results found</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">Quick Access</string>
+    <string name="help_topics">Help Topics</string>
+    <string name="help_glossary">Glossary</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">Open Source Licenses</string>
+    <string name="licenses_description">This app uses the following open source software. We are grateful to the developers who created these libraries.</string>
+    <string name="licenses_tap_to_view">Tap to view full license</string>
+    <string name="licenses_group_header">%1$s (%2$d libraries)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">No internet connection. Please check your network and try again.</string>
+    <string name="error_unexpected">An unexpected error occurred. Please restart the app.</string>
+    <string name="error_unexpected_try_again">An unexpected error occurred. Please try again.</string>
+    <string name="error_storage_detailed">Storage error: %s</string>
+    <string name="error_network_detailed">Network error: %s</string>
+    <string name="error_proof_generation_failed">Failed to generate proof: %s</string>
+    <string name="error_not_eligible">Not eligible. You do not meet the requirements for this verification.</string>
+    <string name="error_challenge_expired">Challenge expired or not found. Please request a new one.</string>
+    <string name="error_challenge_expired_scan_new">This challenge has expired. Please scan a new QR code.</string>
+    <string name="error_request_out_of_order">Request out of order. Please try again.</string>
+    <string name="error_too_many_requests">Too many requests. Please wait a moment and try again.</string>
+    <string name="error_server">Server error. Please try again later.</string>
+    <string name="error_request_failed">Request failed (%d). Please try again.</string>
+    <string name="error_not_eligible_short">Not eligible for this verification</string>
+    <string name="error_challenge_not_found">Challenge not found</string>
+    <string name="error_complete_steps_in_order">Please complete the steps in order</string>
+    <string name="error_challenge_expired_short">Challenge expired</string>
+    <string name="error_authentication_cancelled">Authentication cancelled. Biometric authentication is required to use your credential.</string>
+    <string name="error_invalid_data_format_short">Invalid data format. Please try again.</string>
+    <string name="error_storage_check_device">Storage error. Please check device storage.</string>
+    <string name="error_network_check_connection">Network error. Please check your connection.</string>
+    <string name="error_proof_generation_failed_short">Failed to generate proof. Please try again.</string>
+    <string name="error_operation_in_progress_short">Another operation is in progress.</string>
+    <string name="error_no_internet_short">No internet connection. Please check your network.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Scan Verification QR</string>
+    <string name="verification_verifying_title">Verifying Age</string>
+    <string name="verification_success_title">Age Verified</string>
+    <string name="verification_failed_title">Verification Failed</string>
+    <string name="verification_processing_wait">This may take a few seconds</string>
+    <string name="verification_success_message">Your age has been verified privately</string>
+    <string name="verification_return_to_site">You can now return to the site to continue.</string>
+    <string name="verification_please_enter_code">Please enter a verification code. The code should be either a 12-digit short code or a full verification URL from the verifier.</string>
+    <string name="verification_error_occurred">An error occurred during verification</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Processing...</string>
+    <string name="credential_list_verify_age_button">Verify Age</string>
+    <string name="credential_list_generate_in_person_description">Generate credential in person</string>
+    <string name="credential_list_scan_qr_title">Scan QR Code</string>
+    <string name="credential_list_find_locations_title">Find Locations</string>
+    <string name="credential_section_my_credential">My Credential</string>
+    <string name="credential_section_managed">Managed Credentials</string>
+    <string name="credential_list_get_credential_button">Get Credential</string>
+    <string name="credential_list_add_managed_button">Add Managed Credential</string>
+    <string name="credential_section_managed_empty">Add a credential for someone you care for, such as a child.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Credential Details</string>
+    <string name="credential_detail_not_found">Credential not found</string>
+    <string name="credential_detail_nickname">Nickname</string>
+    <string name="credential_detail_no_nickname">No nickname set</string>
+    <string name="credential_detail_edit_nickname">Edit nickname</string>
+    <string name="credential_detail_status">Status</string>
+    <string name="credential_detail_delete">Delete Credential</string>
+    <string name="credential_detail_delete_title">Delete Credential</string>
+    <string name="credential_detail_delete_message">Are you sure you want to delete this credential? This action cannot be undone.</string>
+    <string name="credential_type_primary">Primary</string>
+    <string name="credential_type_managed">Managed</string>
+    <string name="credential_status_valid">Valid</string>
+    <string name="credential_status_expired">Expired</string>
+    <string name="credential_status_invalid">Invalid</string>
+    <string name="action_save">Save</string>
+    <string name="credential_slots_full_title">Maximum Credentials Reached</string>
+    <string name="credential_slots_full_message">You have reached the maximum number of credentials. Delete an existing credential to add a new one.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">Managed credential</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">Verify age for %1$s?</string>
+    <string name="managed_confirm_message">You are about to verify age using %1$s\'s managed credential.</string>
+    <string name="managed_confirm_proceed">Verify for %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Creating proof for %1$s</string>
+    <string name="verification_age_verified_for">Age verified for %1$s</string>
+    <string name="deeplink_verification_age_verified_for">Age verified for %1$s</string>
+    <string name="attestation_managed_credential_received">Credential for %1$s received!</string>
+    <string name="attestation_managed_credential_stored">Your child\'s credential has been securely stored.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">Delete %1$s\'s credential?</string>
+    <string name="credential_detail_delete_managed_message">Are you sure you want to delete this managed credential for %1$s? This action cannot be undone. You will need to visit an issuer again to replace it.</string>
+    <string name="credential_detail_save_error">Failed to save nickname</string>
+    <string name="credential_detail_delete_error">Failed to delete credential</string>
+    <string name="accessibility_saving">Saving...</string>
+    <string name="accessibility_deleting">Deleting...</string>
+    <string name="accessibility_loading">Loading, please wait</string>
+    <string name="accessibility_issuing_credential">Issuing credential, please wait</string>
+    <string name="dialog_delete_all_credentials_title">Delete all credentials?</string>
+    <string name="dialog_delete_all_credentials_message">This will delete your credential and any managed credentials for children. This action cannot be undone.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">Managed</string>
+    <string name="credential_slots_count">%1$d of 15</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Preparing verification...</string>
+    <string name="deeplink_verification_checking_credential">Checking credential...</string>
+    <string name="deeplink_verification_processing_challenge">Processing challenge...</string>
+    <string name="deeplink_verification_creating_proof">Creating secure proof...</string>
+    <string name="deeplink_verification_submitting_proof">Submitting proof...</string>
+    <string name="deeplink_verification_success">✔ Age verified successfully</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">No credential found. Please set up your credential first.</string>
+    <string name="deeplink_verification_error_failed_challenge">Failed to process verification challenge</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Unable to show authentication prompt</string>
+    <string name="deeplink_verification_error_failed_proof">Failed to create age proof</string>
+    <string name="deeplink_verification_error_verification_failed">Verification failed</string>
+    <string name="deeplink_verification_error_unexpected">An unexpected error occurred</string>
+    <string name="deeplink_verification_error_no_credential_selected">No credential was selected. Please try again.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Select a Credential</string>
+    <string name="deeplink_verification_select_credential_subtitle">Multiple credentials are available. Choose which one to use for this verification.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Verifying Age</string>
+    <string name="deeplink_verification_title_verified">Verified</string>
+    <string name="deeplink_verification_title_failed">Verification Failed</string>
+    <string name="deeplink_verification_please_wait">Please wait...</string>
+    <string name="deeplink_verification_age_verified">Age Verified!</string>
+    <string name="deeplink_verification_under_age_verified">Verified Under %1$d</string>
+    <string name="deeplink_verification_returning_browser">Returning to browser...</string>
+    <string name="deeplink_verification_return_to_browser">Return to Browser</string>
+    <string name="deeplink_verification_failed_title">Verification Failed</string>
+    <string name="deeplink_verification_error_occurred">An error occurred during verification</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">ISSUANCE PROCESS</string>
+    <string name="officer_issuance_process_steps">1. Check user\'s physical identification document\n2. Enter their date of birth\n3. Verify information matches exactly\n4. Issue credential with attestation QR (Quick Response) code\n5. User scans QR code to receive credential</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">Failed to generate QR code</string>
+    <string name="officer_attestation_ready_title">Attestation Ready</string>
+    <string name="officer_attestation_scan_instruction">User should scan this QR code with their Provii Wallet app</string>
+    <string name="officer_attestation_deeplink_label">ATTESTATION DEEPLINK</string>
+    <string name="officer_wait_for_attestation_scan">Wait for user to scan</string>
+    <string name="officer_attestation_info">The credential will be generated on their device</string>
+    <string name="officer_attestation_complete">Attestation complete</string>
+    <string name="officer_user_will_complete_credential">User will complete credential generation on their device</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Decoding attestation data...</string>
+    <string name="attestation_generating_randomness">Generating secure randomness...</string>
+    <string name="attestation_sending">Sending to issuer...</string>
+    <string name="attestation_verifying">Verifying commitment...</string>
+    <string name="attestation_storing">Storing credential...</string>
+    <string name="attestation_complete">Credential complete!</string>
+    <string name="attestation_error_invalid_data">Invalid attestation data</string>
+    <string name="attestation_error_expired">Attestation has expired</string>
+    <string name="attestation_error_network">Network error - please check your connection</string>
+    <string name="attestation_error_unexpected">An unexpected error occurred</string>
+    <string name="attestation_title_processing">Processing Attestation</string>
+    <string name="attestation_title_success">Credential Received</string>
+    <string name="attestation_title_failed">Issuance Failed</string>
+    <string name="attestation_secure_issuance">Secure Issuance</string>
+    <string name="attestation_privacy_preserving">Privacy preserving credential issuance</string>
+    <string name="attestation_may_take_seconds">This may take a few seconds</string>
+    <string name="attestation_keep_app_open">Please keep the app open</string>
+    <string name="attestation_credential_received">Credential Received!</string>
+    <string name="attestation_credential_stored_description">Your age verification credential has been securely stored</string>
+    <string name="attestation_issuer_verified">Issuer verified</string>
+    <string name="attestation_failed_title">Issuance Failed</string>
+    <string name="attestation_scan_qr_instead">Scan QR Instead</string>
+    <string name="attestation_go_back">Go Back</string>
+    <string name="attestation_step_decode">Decode</string>
+    <string name="attestation_step_generate">Generate</string>
+    <string name="attestation_step_send">Send</string>
+    <string name="attestation_step_verify">Verify</string>
+    <string name="attestation_step_store">Store</string>
+    <string name="attestation_step_complete">Complete</string>
+    <string name="accessibility_attestation_encrypted_description">Encrypted attestation being processed</string>
+    <string name="accessibility_attestation_success_description">Success checkmark indicating credential received</string>
+    <string name="accessibility_attestation_error_description">Error icon indicating issuance failed</string>
+    <string name="accessibility_step_complete">Step %1$s complete</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Credential Recipient</string>
+    <string name="attestation_recipient_prompt">This credential is for\u2026</string>
+    <string name="attestation_recipient_me">Me</string>
+    <string name="attestation_recipient_child">A Child</string>
+    <string name="attestation_nickname_title">Child\'s Nickname</string>
+    <string name="attestation_nickname_prompt">Enter a nickname so you can tell credentials apart</string>
+    <string name="attestation_nickname_placeholder">e.g. Alex</string>
+    <string name="attestation_nickname_continue">Continue</string>
+    <string name="attestation_nickname_back">Back</string>
+    <string name="accessibility_attestation_recipient_heading">Choose who this credential is for</string>
+    <string name="accessibility_attestation_nickname_heading">Enter a nickname for the child</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Invalid officer email format</string>
+    <string name="officer_auth_error_challenge_failed">Failed to get YubiKey challenge: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Touch your YubiKey to authenticate</string>
+    <string name="officer_auth_error_touch_timeout">YubiKey touch timed out</string>
+    <string name="officer_auth_error_verify_document_dob">Please verify document and Date of Birth match</string>
+    <string name="officer_auth_error_invalid_date_format">Invalid date format. Use YYYY-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">User must be 18 or older</string>
+    <string name="officer_auth_error_not_authenticated">Not authenticated. Please enter your officer ID first.</string>
+    <string name="officer_auth_error_issue_failed">Failed to issue credential</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Tap to view</string>
+    <string name="gesture_desc_long_press_options">, long press for options</string>
+    <string name="gesture_desc_swipe_left">, swipe left for more actions</string>
+    <string name="gesture_desc_swipe_right">, swipe right for more actions</string>
+    <string name="gesture_desc_tap_to_activate">Tap to activate</string>
+    <string name="gesture_desc_long_press_format">. Long press: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Retry</string>
+    <string name="main_activity_reset_redownload">Reset and Re-download</string>
+    <string name="main_activity_show_debug_info">Show Debug Info</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Accessibility Settings</string>
+    <string name="search_item_accessibility_settings_subtitle">Customize your experience</string>
+    <string name="search_item_large_text_title">Large Text</string>
+    <string name="search_item_large_text_subtitle">Increase text size</string>
+    <string name="search_item_high_contrast_title">High Contrast</string>
+    <string name="search_item_high_contrast_subtitle">Enhance visibility</string>
+    <string name="search_item_voice_input_title">Voice Input</string>
+    <string name="search_item_voice_input_subtitle">Control with voice</string>
+    <string name="search_item_manual_code_entry_title">Manual Code Entry</string>
+    <string name="search_item_manual_code_entry_subtitle">Type codes instead of scanning</string>
+    <string name="search_item_simplified_ui_title">Simplified User Interface</string>
+    <string name="search_item_simplified_ui_subtitle">Reduce visual complexity</string>
+    <string name="search_item_color_blindness_title">Color Blindness Support</string>
+    <string name="search_item_color_blindness_subtitle">Adjust colors for better visibility</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Settings</string>
+    <string name="search_item_settings_subtitle">App configuration</string>
+    <string name="search_item_language_title">Language</string>
+    <string name="search_item_language_subtitle">Change app language</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">My Credentials</string>
+    <string name="search_item_credentials_subtitle">View your credentials</string>
+    <string name="search_item_get_credential_title">Get a Credential</string>
+    <string name="search_item_get_credential_subtitle">Find issuers</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Help</string>
+    <string name="search_item_help_subtitle">Get assistance</string>
+    <string name="search_item_privacy_title">Privacy Protection</string>
+    <string name="search_item_privacy_subtitle">How your data is protected</string>
+    <string name="search_item_verification_title">Age Verification</string>
+    <string name="search_item_verification_subtitle">Prove your age</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Hardcoded fallback registry for sandbox environment</string>
+    <string name="issuer_fallback_production_description">Hardcoded fallback registry for production</string>
+    <string name="issuer_fallback_category_government">Government</string>
+    <string name="issuer_fallback_category_government_description">Government-issued credentials</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii Sandbox Issuer</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Official Provii sandbox issuer for testing</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Visit the sandbox issuer portal</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Official Provii credential issuer</string>
+    <string name="issuer_fallback_production_issuer_instructions">Visit your local DMV office</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">Birth date cannot be in the future</string>
+    <string name="validation_error_invalid_date_format">Invalid date format</string>
+    <string name="validation_error_officer_id_too_short">Officer identification too short</string>
+    <string name="validation_error_invalid_officer_id_format">Invalid Officer identification format</string>
+    <string name="validation_error_empty_qr_code">Empty QR code</string>
+    <string name="validation_error_qr_code_too_large">QR code too large</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">You are now a developer!</string>
+    <string name="sandbox_toast_enabled">Sandbox Mode Enabled\nUsing test environment</string>
+    <string name="sandbox_toast_disabled">Production Mode Enabled\nUsing production environment</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">You are 1 step away from developer mode</string>
+    <string name="sandbox_toast_steps_away">You are %1$d steps away from developer mode</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">No YubiKey connected</string>
+    <string name="yubikey_error_timeout">Timeout waiting for Yubikey touch. Please touch the key when it blinks.</string>
+    <string name="yubikey_error_not_supported">Challenge-response not configured on this Yubikey slot</string>
+    <string name="yubikey_error_no_slot">Slot 2 is not configured for HMAC (Hash-based Message Authentication Code) SHA1 challenge-response</string>
+    <string name="yubikey_error_hmac_failed">HMAC (Hash-based Message Authentication Code) calculation failed: %s</string>
+    <string name="yubikey_error_session_failed">Failed to connect to Yubikey: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">Wallet not initialized</string>
+    <string name="wallet_error_proving_key_not_found">Proving key not found - please re-download</string>
+    <string name="wallet_error_proving_key_not_readable">Cannot read proving key file</string>
+    <string name="wallet_error_out_of_memory">Out of memory - please restart the app</string>
+    <string name="wallet_error_prover_error">Prover error: %s</string>
+    <string name="wallet_error_ffi_error">FFI error: %s</string>
+    <string name="wallet_error_prover_init_failed">Failed to initialize prover: %s</string>
+    <string name="wallet_error_prover_verification_failed">Prover initialization verification failed</string>
+    <string name="wallet_error_verifier_url_update_failed">Failed to update verifier URL (web address)! Expected %1$s but got %2$s</string>
+    <string name="wallet_error_wallet_still_null">Wallet still null after init</string>
+    <string name="wallet_error_credential_not_found">Credential not found</string>
+    <string name="wallet_error_credential_access_failed">Cannot access credential: %s</string>
+    <string name="wallet_error_invalid_format">Invalid format: %s</string>
+    <string name="wallet_error_not_initialized_short">Prover not initialized</string>
+    <string name="wallet_error_proving_key_unavailable">Proving key not available. Setup required.</string>
+    <string name="wallet_error_storage_init_failed">Storage initialization failed</string>
+    <string name="wallet_error_biometric_unavailable">Biometric authentication not available</string>
+    <string name="wallet_error_auth_failed">Authentication failed</string>
+    <string name="wallet_error_sandbox_disabled">Enable sandbox mode to generate test credentials</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Cannot fetch sandbox credentials. Please check internet connection.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Unlock Credential</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Authenticate to generate age proof</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Authenticate to access your credential</string>
+    <string name="keystore_biometric_prompt_cancel">Cancel</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, expanded, showing full license text</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, collapsed, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">None</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Cellular</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Unknown</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">Contrast Levels</string>
+    <string name="help_topic_extra_large_text_title">Extra Large Text</string>
+    <string name="help_topic_reduce_transparency_title">Reduce Transparency</string>
+    <string name="help_topic_color_blind_modes_title">Color Blind Modes</string>
+    <string name="help_topic_line_spacing_title">Line Spacing</string>
+    <string name="help_topic_paragraph_spacing_title">Paragraph Spacing</string>
+    <string name="help_topic_letter_spacing_title">Letter Spacing</string>
+    <string name="help_topic_text_width_title">Text Width</string>
+    <string name="help_topic_touch_targets_title">Larger Touch Targets</string>
+    <string name="help_topic_reduce_motion_title">Reduce Motion</string>
+    <string name="help_topic_timeout_behavior_title">Timeout Behavior</string>
+    <string name="help_topic_simplified_gestures_title">Simplified Gestures</string>
+    <string name="help_topic_haptic_feedback_title">Haptic Feedback</string>
+    <string name="help_topic_data_preservation_title">Data Preservation</string>
+    <string name="help_topic_simplified_ui_title">Simplified User Interface</string>
+    <string name="help_topic_step_indicators_title">Step Indicators</string>
+    <string name="help_topic_verbose_descriptions_title">Detailed Descriptions</string>
+    <string name="help_topic_confirm_actions_title">Confirm Actions</string>
+    <string name="help_topic_reading_level_title">Simplified Reading Level</string>
+    <string name="help_topic_help_system_title">Help System</string>
+    <string name="help_topic_manual_code_entry_title">Manual Code Entry</string>
+    <string name="help_topic_voice_input_title">Voice Input</string>
+    <string name="help_topic_screen_reader_title">Screen Reader Support</string>
+    <string name="help_topic_accessibility_profiles_title">Quick Setup Profiles</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">Control the contrast ratio between text and backgrounds:\n\n• Standard: Default app colors\n• High (AA): 4.5:1 contrast ratio\n• Maximum (AAA): 7:1+ contrast ratio\n\nHigher contrast makes text easier to read, especially in bright environments or for users with low vision.\n\nWCAG AAA compliance requires Maximum contrast.</string>
+    <string name="help_topic_extra_large_text_text">Increases all text sizes by 50% throughout the app.\n\nThis makes text easier to read for users with:\n• Low vision\n• Age-related vision changes\n• Reading difficulties\n\nCombines with system font size settings for maximum flexibility.</string>
+    <string name="help_topic_reduce_transparency_text">Removes transparent overlays and blur effects.\n\nBenefits:\n• Clearer visual hierarchy\n• Better text readability\n• Reduced visual noise\n• Lower cognitive load\n\nRecommended for users with low vision or cognitive difficulties.</string>
+    <string name="help_topic_color_blind_modes_text">Adjusts colors for different types of color blindness:\n\n• Protanopia: Red-blind\n• Deuteranopia: Green-blind\n• Tritanopia: Blue-blind\n• Monochrome: Complete color blindness\n\nEach mode uses carefully selected colors that are distinguishable for that specific type of color vision deficiency.</string>
+    <string name="help_topic_line_spacing_text">Adjusts spacing between lines of text (1.0x - 2.0x).\n\n• Default: 1.0x\n• AAA Compliant: 1.5x or higher\n\nIncreased line spacing:\n• Improves reading comprehension\n• Reduces eye strain\n• Helps users with dyslexia\n• Makes text blocks less overwhelming</string>
+    <string name="help_topic_paragraph_spacing_text">Adjusts spacing between paragraphs (1.0x - 3.0x).\n\n• Default: 1.0x\n• AAA Compliant: 2.0x or higher\n\nIncreased paragraph spacing:\n• Clearly separates ideas\n• Improves visual organisation\n• Reduces cognitive load\n• Helps maintain reading position</string>
+    <string name="help_topic_letter_spacing_text">Adjusts spacing between letters (0.0em - 0.2em).\n\n• Default: 0.0em\n• AAA Compliant: 0.12em or higher\n\nIncreased letter spacing:\n• Makes individual letters more distinct\n• Helps users with dyslexia\n• Improves reading accuracy\n• Reduces letter confusion</string>
+    <string name="help_topic_text_width_text">Limits line length for easier reading:\n\n• Full Width: No limit\n• Comfortable: 80 characters (recommended)\n• Narrow: 60 characters\n\nResearch shows optimal reading occurs at 60-80 characters per line. Shorter lines reduce eye movement and improve comprehension.</string>
+    <string name="help_topic_touch_targets_text">Increases minimum touch target size to 60dp (from 44dp).\n\nBenefits:\n• Easier to tap buttons and controls\n• Reduces accidental taps\n• Helps users with motor impairments\n• Better for one-handed use\n\nWCAG AAA requires 60dp minimum.</string>
+    <string name="help_topic_reduce_motion_text">Removes all animations and transitions.\n\nBenefits:\n• Prevents motion sickness\n• Reduces distraction\n• Lowers cognitive load\n• Improves focus\n\nRecommended for users with:\n• Vestibular disorders\n• Attention difficulties\n• Motion sensitivity</string>
+    <string name="help_topic_timeout_behavior_text">Controls automatic timeout on verification screens:\n\n• No Timeout (AAA): Unlimited time\n• Standard: 30 seconds\n• Extended: 60 seconds\n\nWCAG AAA requires no timeout option for users who need more time to complete tasks.\n\nForm data is automatically saved before timeouts.</string>
+    <string name="help_topic_simplified_gestures_text">Replaces complex gestures with simple alternatives:\n\n• Swipe → Tap button\n• Long press → Regular tap with confirmation\n• Pinch/zoom → Buttons\n\nHelps users with:\n• Motor impairments\n• Tremor\n• Limited dexterity\n• Touchscreen difficulties</string>
+    <string name="help_topic_haptic_feedback_text">Provides vibration feedback for actions.\n\nBenefits:\n• Confirms button presses\n• Indicates errors\n• Provides tactile confirmation\n\nCan be disabled for users who:\n• Find it distracting\n• Have sensory sensitivities\n• Prefer silent operation</string>
+    <string name="help_topic_data_preservation_text">Automatically saves form data before timeouts.\n\nFeatures:\n• Warning 10 seconds before timeout\n• Option to save or discard data\n• Automatic restoration on return\n• 24-hour data retention\n\nEnsures no data loss if you need extra time or experience interruptions.</string>
+    <string name="help_topic_simplified_ui_text">Reduces visual complexity:\n\n• Fewer User Interface elements shown at once\n• Larger, clearer buttons\n• More whitespace\n• Simplified layouts\n\nBenefits:\n• Easier to understand\n• Less overwhelming\n• Better focus\n• Reduced cognitive load</string>
+    <string name="help_topic_step_indicators_text">Shows progress through multi-step processes.\n\nDisplays:\n• Current step number\n• Total number of steps\n• Progress visualization\n\nBenefits:\n• Reduces anxiety\n• Sets clear expectations\n• Helps maintain orientation\n• Shows completion progress</string>
+    <string name="help_topic_verbose_descriptions_text">Provides extra context and explanations:\n\n• Longer button labels\n• More detailed instructions\n• Additional hints\n• Clearer error messages\n\nHelps users:\n• Understand actions before taking them\n• Avoid mistakes\n• Learn app functionality\n• Build confidence</string>
+    <string name="help_topic_confirm_actions_text">Requires confirmation for important actions:\n\n• Deleting credentials\n• Changing settings\n• Clearing data\n\nWCAG AAA requires confirmation for all destructive actions.\n\nBenefits:\n• Prevents accidents\n• Allows review before action\n• Reduces anxiety\n• Provides second chance</string>
+    <string name="help_topic_reading_level_text">Uses simpler language (Grade 7-9 level):\n\n• Shorter sentences\n• Common words instead of jargon\n• Clear, direct language\n• Fewer technical terms\n\nWCAG AAA compliant when enabled.\n\nBenefits:\n• Easier to understand\n• Faster comprehension\n• Better for non-native speakers\n• Reduced cognitive load</string>
+    <string name="help_topic_help_system_text">Context-sensitive help available throughout the app.\n\nFeatures:\n• 27 help topics\n• Searchable help center\n• Related topics navigation\n• Technical glossary\n\nAccess help from:\n• Settings screens\n• Complex features\n• Error messages\n• Anywhere you see a help icon</string>
+    <string name="help_topic_manual_code_entry_text">Enter QR code data manually instead of scanning.\n\nBenefits:\n• Works when camera access is unavailable\n• Helps users with motor difficulties\n• Better in low light\n• No need to hold phone steady\n\nAlternative to camera-based QR scanning.</string>
+    <string name="help_topic_voice_input_text">Use voice to enter text instead of typing.\n\nBenefits:\n• Hands-free input\n• Faster than typing\n• Helps users with motor impairments\n• Reduces repetitive strain\n\nUses your device\'s built-in voice recognition.</string>
+    <string name="help_topic_screen_reader_text">Full support for TalkBack screen reader.\n\nFeatures:\n• All UI elements labeled\n• Proper heading structure\n• Logical navigation order\n• Custom hints for complex actions\n\nThe app automatically enables:\n• Detailed descriptions\n• Enhanced touch targets\n\nwhen TalkBack is detected.</string>
+    <string name="help_topic_accessibility_profiles_text">Pre-configured accessibility profiles:\n\n• Vision Impaired: High contrast, large text, haptics\n• Motor Impaired: Large targets, extended timeouts, confirmations\n• Cognitive: Simplified UI, step indicators, descriptions\n• Elderly: Large text, targets, simplified UI, reduced motion\n• Default: Reset all settings\n\nEach profile enables the most helpful settings for that user group. You can further customize after applying a profile.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">Age Verification</string>
+    <string name="content_age_verification_explanation">Please wait while we securely verify your age using zero knowledge proofs. Your date of birth is never shared with the verifier.</string>
+    <string name="content_age_verification_instructions">Point your camera at the verification QR code. The code will be scanned automatically when detected.</string>
+    <string name="content_age_verification_success">Your age has been verified successfully. The verifier knows you meet their age requirement without learning your actual date of birth.</string>
+    <string name="content_age_verification_failed">Verification failed. Please try scanning the QR code again or use manual code entry.</string>
+    <string name="content_credential_issuance_title">Credential Issuance</string>
+    <string name="content_credential_issuance_explanation">Scan the QR code provided by the authorised issuer to receive your digital age credential.</string>
+    <string name="content_credential_issuance_instructions">Point your camera at the issuance QR code shown by the officer. Your credential will be generated on your device.</string>
+    <string name="content_credential_issuance_success">Credential successfully created. You can now use this credential for age verification.</string>
+    <string name="content_credential_description">A credential is a cryptographically signed proof of your identity that enables privacy preserving verification.</string>
+    <string name="content_zero_knowledge_explanation">Zero-knowledge proofs allow you to prove you meet an age requirement without revealing your actual age.</string>
+    <string name="content_setup_proving_key">Downloading cryptographic proving key required for zero knowledge proof generation</string>
+    <string name="content_processing_challenge">Processing verification challenge</string>
+    <string name="content_creating_proof">Creating zero knowledge age proof</string>
+    <string name="content_submitting_proof">Submitting proof to verifier</string>
+    <string name="content_error_no_credential">No credential available. Please obtain a credential from an authorised issuer first.</string>
+    <string name="content_error_network_failed">Network connection failed. Please check your internet connection and try again.</string>
+    <string name="content_error_invalid_qr">Invalid QR code. Please ensure you\'re scanning the correct verification code.</string>
+    <string name="content_error_verification_failed">Verification failed. The server was unable to validate your proof.</string>
+    <string name="content_officer_authentication_title">Officer Authentication</string>
+    <string name="content_officer_issuance_title">Credential Issuance</string>
+    <string name="content_officer_dob_prompt">Enter the applicant\'s verified date of birth from their official identification document.</string>
+    <string name="content_onboarding_welcome">Welcome to Provii Wallet - your privacy preserving digital age verification solution.</string>
+    <string name="content_onboarding_privacy">Your date of birth is stored securely on your device and never transmitted to verifiers.</string>
+    <string name="content_onboarding_get_started">To get started, visit an authorised issuer to obtain your digital age credential.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">Check Your Age</string>
+    <string name="content_age_verification_explanation_simplified">We\'re checking your age. We won\'t see or share your birthday.</string>
+    <string name="content_age_verification_instructions_simplified">Point your camera at the QR code. It will scan by itself.</string>
+    <string name="content_age_verification_success_simplified">Success! The website knows you\'re old enough. They don\'t know your birthday.</string>
+    <string name="content_age_verification_failed_simplified">That didn\'t work. Try scanning again or type the code instead.</string>
+    <string name="content_credential_issuance_title_simplified">Get Your ID Card</string>
+    <string name="content_credential_issuance_explanation_simplified">Scan the code from the government office to get your digital ID.</string>
+    <string name="content_credential_issuance_instructions_simplified">Point your camera at the code. Your ID will be saved on your phone.</string>
+    <string name="content_credential_issuance_success_simplified">Done! You can now use your digital ID to prove your age.</string>
+    <string name="content_credential_description_simplified">A credential is like a digital ID card that proves who you are without sharing private details.</string>
+    <string name="content_zero_knowledge_explanation_simplified">You can prove you\'re old enough without telling anyone your real age.</string>
+    <string name="content_setup_proving_key_simplified">Downloading security files needed for the app to work</string>
+    <string name="content_processing_challenge_simplified">Reading the age check request</string>
+    <string name="content_creating_proof_simplified">Creating your age proof</string>
+    <string name="content_submitting_proof_simplified">Sending proof to website</string>
+    <string name="content_error_no_credential_simplified">You don\'t have an ID yet. Visit a government office to get one first.</string>
+    <string name="content_error_network_failed_simplified">Can\'t connect to internet. Check your wifi or data and try again.</string>
+    <string name="content_error_invalid_qr_simplified">That code doesn\'t look right. Make sure you\'re scanning the right code.</string>
+    <string name="content_error_verification_failed_simplified">That didn\'t work. The website couldn\'t check your proof. Try again.</string>
+    <string name="content_officer_authentication_title_simplified">Officer Sign In</string>
+    <string name="content_officer_issuance_title_simplified">Create ID Card</string>
+    <string name="content_officer_dob_prompt_simplified">Enter the person\'s birthday from their official identification.</string>
+    <string name="content_onboarding_welcome_simplified">Welcome to Provii Wallet - prove your age privately.</string>
+    <string name="content_onboarding_privacy_simplified">Your birthday stays on your phone. Nobody else can see it.</string>
+    <string name="content_onboarding_get_started_simplified">To start, visit a government office to get your digital ID.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Quick Response (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Personal Identification Number (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">Date of Birth (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Identification (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">User Interface (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Uniform Resource Locator (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Application Programming Interface (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">Pause animations</string>
+    <string name="animation_resume_animations">Resume animations</string>
+    <string name="animation_pause_button_text">Pause</string>
+    <string name="animation_resume_button_text">Resume</string>
+    <string name="animation_toggles_playback_hint">Toggles animation playback</string>
+    <string name="animation_paused_announcement">Animations paused</string>
+    <string name="animation_resumed_announcement">Animations resumed</string>
+    <string name="animation_active_count">%d active animations</string>
+    <string name="animation_loading_default">Loading</string>
+    <string name="animation_please_wait">Please wait while this operation completes</string>
+    <string name="animation_percent_complete">%d percent complete</string>
+    <string name="animation_loading_in_progress">In progress</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">Keyboard Shortcuts</string>
+    <string name="keyboard_shortcuts_done">Done</string>
+    <string name="keyboard_shortcuts_app_section">App Shortcuts</string>
+    <string name="keyboard_shortcuts_navigation_section">Navigation</string>
+    <string name="keyboard_shortcuts_tips_section">Tips</string>
+    <string name="keyboard_shortcuts_navigation_footer">These navigation keys work throughout the app with external keyboards</string>
+    <string name="keyboard_shortcuts_tip_external">External Bluetooth and USB keyboards are fully supported</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Use arrow keys to navigate between items in lists</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Hold Ctrl to see available shortcuts on this screen</string>
+    <string name="keyboard_shortcuts_tip_a11y">All features in this app are accessible via keyboard</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Close keyboard shortcuts</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">Settings</string>
+    <string name="keyboard_shortcut_label_accessibility">Accessibility</string>
+    <string name="keyboard_shortcut_label_help">Help Centre</string>
+    <string name="keyboard_shortcut_label_add_credential">Add Credential</string>
+    <string name="keyboard_shortcut_label_verify">Verify</string>
+    <string name="keyboard_shortcut_label_shortcuts">Shortcuts</string>
+    <string name="keyboard_shortcut_desc_settings">Open Settings</string>
+    <string name="keyboard_shortcut_desc_accessibility">Accessibility Settings</string>
+    <string name="keyboard_shortcut_desc_help">Help Centre</string>
+    <string name="keyboard_shortcut_desc_add_credential">Add Credential</string>
+    <string name="keyboard_shortcut_desc_verify">Start Verification</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Keyboard Shortcuts</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">Go Back / Dismiss</string>
+    <string name="keyboard_shortcut_nav_back_desc">Dismiss the current screen or dialog</string>
+    <string name="keyboard_shortcut_nav_next">Next Field</string>
+    <string name="keyboard_shortcut_nav_next_desc">Move focus to the next interactive element</string>
+    <string name="keyboard_shortcut_nav_prev">Previous Field</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Move focus to the previous interactive element</string>
+    <string name="keyboard_shortcut_nav_submit">Submit / Continue</string>
+    <string name="keyboard_shortcut_nav_submit_desc">Activate the focused button or submit a form</string>
+    <string name="keyboard_shortcut_nav_activate">Activate Button</string>
+    <string name="keyboard_shortcut_nav_activate_desc">Activate the currently focused button or toggle</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">Dialog opened. Press Escape to dismiss, Enter to confirm.</string>
+    <string name="modal_closed_announcement">Dialog closed</string>
+    <string name="modal_button_primary_label">%s (primary action)</string>
+    <string name="modal_button_cancel_label">%s (cancel)</string>
+    <string name="modal_button_destructive_label">%s (destructive action)</string>
+    <string name="modal_button_primary_hint">Double tap to confirm, or press Enter</string>
+    <string name="modal_button_cancel_hint">Double tap to cancel, or press Escape</string>
+    <string name="modal_button_destructive_hint">Double tap to perform destructive action</string>
+    <string name="modal_button_secondary_hint">Double tap to perform action</string>
+    <string name="modal_confirm">Confirm</string>
+    <string name="modal_cancel">Cancel</string>
+    <string name="modal_delete">Delete</string>
+
+    <!-- ==================== PHASE 5: SECURITY GUARD ==================== -->
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">Screen Lock Required</string>
+    <string name="biometric_required_message">This app requires a screen lock (PIN, pattern, or biometric) to securely store credentials. Please set one up in your device security settings before continuing.</string>
+    <string name="biometric_required_open_settings">Open Security Settings</string>
+    <string name="error_screen_lock_required">A screen lock (PIN, pattern, or biometric) is required to securely store credentials. Please set one up in your device settings.</string>
+
+    <!-- ==================== ATTESTATION SCANNER (Phase 1) ==================== -->
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">Scan Attestation</string>
+    <string name="attestation_scan_instruction">Point your camera at the QR code shown by the officer</string>
+    <string name="attestation_scan_invalid_qr">This QR code does not contain attestation data</string>
+    <string name="attestation_scan_error_empty">QR code was empty</string>
+    <string name="accessibility_attestation_scan_back">Go back</string>
+    <string name="attestation_scan_wrong_type_toast">This is a verification QR, not a credential QR</string>
+
+    <!-- ==================== QR TYPE DETECTION (Phase 2) ==================== -->
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">Attestation QR Detected</string>
+    <string name="verification_wrong_qr_type_message">This QR code is for getting a new credential, not for age verification. Would you like to go to the attestation screen instead?</string>
+    <string name="verification_go_to_attestation">Get Credential</string>
+
+    <!-- ==================== PRIMARY CREDENTIAL GUARD (Phase 3) ==================== -->
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">Replace Existing Credential?</string>
+    <string name="attestation_replace_primary_message">You already have a personal credential. Creating a new one will replace it. This cannot be undone.</string>
+    <string name="attestation_replace_confirm">Replace</string>
+
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">Sandbox link detected</string>
+    <string name="deeplink_sandbox_prompt_body">This deep-link will only succeed if you enable sandbox mode in this wallet.</string>
+    <string name="deeplink_sandbox_prompt_primary">Enable sandbox and open</string>
+    <string name="deeplink_sandbox_prompt_secondary">Cancel</string>
+    <string name="deeplink_sandbox_prompt_announcement">Sandbox link detected. Choose whether to enable sandbox mode and open the link.</string>
+
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">Sandbox challenge received</string>
+    <string name="challenge_sandbox_prompt_body">This challenge was issued by a sandbox verifier. It will not succeed unless you enable sandbox mode in this wallet.</string>
+    <string name="challenge_sandbox_prompt_primary">Enable sandbox and continue</string>
+    <string name="challenge_sandbox_prompt_secondary">Reject challenge</string>
+    <string name="challenge_sandbox_prompt_announcement">Sandbox challenge received. Choose whether to enable sandbox mode and continue, or reject the challenge.</string>
+
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">Sandbox mode is now active. The wallet is connected to sandbox servers.</string>
+
+    <!-- Externalised accessibility strings -->
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+
+    <!-- Glossary Terms -->
+    <string name="glossary_term_zero_knowledge_proof">Zero Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+
+    <!-- Glossary Short Definitions -->
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organisation authorised to verify identities and issue credentials.</string>
+
+    <!-- Glossary Full Definitions -->
+    <string name="glossary_full_zero_knowledge_proof">A zero knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organisation authorised to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s licence)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorised a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy preserving means the system is designed from the ground up to minimise data exposure and protect your personal information.\n\nProvii Wallet\'s privacy preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organisation that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string></resources>

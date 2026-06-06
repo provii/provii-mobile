@@ -1,0 +1,1577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Tetapan</string>
+    <string name="title_accessibility">Kebolehcapaian</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Dapatkan Kelayakan</string>
+    <string name="title_scan_verification_qr">Imbas kod QR Pengesahan</string>
+    <string name="title_verifying_age">Mengesahkan Umur</string>
+    <string name="title_age_verified">Umur Disahkan</string>
+    <string name="title_verification_failed">Pengesahan Gagal</string>
+    <string name="title_officer_mode">Mod Pegawai</string>
+    <string name="title_officer_dashboard">Papan Pemuka Pegawai</string>
+    <string name="title_issue_credential">Keluarkan Kelayakan</string>
+    <string name="title_credential_ready">Kelayakan Sedia</string>
+    <string name="title_get_your_credential">Dapatkan Kelayakan Anda</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Selamat datang ke Provii Wallet</string>
+    <string name="welcome_subtitle">Pengesahan umur yang selamat dan mudah</string>
+    <string name="welcome_first_credential">Mulakan dengan menambah kelayakan pengesahan umur pertama anda</string>
+    <string name="welcome_description">Pengesahan umur peribadi menggunakan bukti pengetahuan sifar</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Selamat datang ke Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Pilih pilihan bahasa anda</string>
+    <string name="onboarding_use_english">Gunakan Bahasa Inggeris</string>
+    <string name="onboarding_use_english_description">Teruskan menggunakan Bahasa Inggeris sebagai bahasa aplikasi</string>
+    <string name="onboarding_rotating_button_description">Butang Tukar Bahasa, kini menunjukkan: %1$s. Ketik untuk memilih bahasa lain.</string>
+    <string name="onboarding_change_later">Anda boleh menukar ini kemudian dalam Tetapan</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Kebolehcapaian</string>
+    <string name="onboarding_accessibility_desc">Adakah anda ingin menyesuaikan ciri kebolehcapaian seperti saiz teks, sasaran sentuhan, atau gerakan yang dikurangkan?</string>
+    <string name="onboarding_use_defaults">Gunakan Lalai</string>
+    <string name="onboarding_use_defaults_description">Teruskan dengan tetapan kebolehcapaian standard</string>
+    <string name="onboarding_open_accessibility">Tetapan Kebolehcapaian</string>
+    <string name="onboarding_open_accessibility_description">Buka tetapan kebolehcapaian untuk menyesuaikan aplikasi</string>
+    <string name="onboarding_accessibility_later">Anda boleh menukar ini kemudian dalam Tetapan</string>
+    <string name="onboarding_accessibility_features_title">Ciri yang tersedia termasuk:</string>
+    <string name="onboarding_feature_text_size">Saiz teks yang lebih besar</string>
+    <string name="onboarding_feature_touch_targets">Sasaran sentuhan yang diperbesarkan</string>
+    <string name="onboarding_feature_reduce_motion">Gerakan yang dikurangkan</string>
+    <string name="onboarding_feature_high_contrast">Mod kontras tinggi</string>
+    <string name="onboarding_talkback_detected">TalkBack Dikesan</string>
+    <string name="onboarding_talkback_message">Kami telah mengaktifkan penerangan terperinci untuk membantu anda menavigasi aplikasi.</string>
+    <string name="onboarding_continue_to_setup">Teruskan ke Persediaan</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Persediaan Sekali Sahaja Diperlukan</string>
+    <string name="setup_download_required">Muat Turun Diperlukan</string>
+    <string name="setup_download_description">Aplikasi ini perlu memuat turun komponen keselamatan untuk bukti pengetahuan sifar (lebih kurang 87 MB).</string>
+    <string name="setup_wifi_recommended">Wi-Fi disyorkan</string>
+    <string name="setup_checking_status">Menyemak status persediaan...</string>
+    <string name="setup_already_setup">Sudah Disediakan!</string>
+    <string name="setup_ready_message">Dompet anda sedia untuk pengesahan umur yang selamat</string>
+    <string name="setup_preparing">Menyediakan sistem pengesahan selamat...</string>
+    <string name="setup_checking_components">Menyemak komponen keselamatan...</string>
+    <string name="setup_downloading">Memuat turun komponen keselamatan</string>
+    <string name="setup_download_progress_description">%1$d%% selesai (%2$s MB daripada %3$s MB dimuat turun)</string>
+    <string name="setup_initializing">Memulakan komponen keselamatan...</string>
+    <string name="setup_complete">Persediaan Selesai!</string>
+    <string name="setup_download_info">Ini membolehkan bukti pengetahuan sifar untuk pengesahan umur peribadi</string>
+    <string name="setup_one_time_download">Muat turun sekali sahaja</string>
+    <string name="setup_stuck_message">Ini mengambil masa lebih lama daripada dijangka</string>
+    <string name="setup_stuck_description">Persediaan mungkin terhenti. Cuba mulakan semula.</string>
+    <string name="setup_restart_message">Aplikasi perlu dimulakan semula. Ini kadang-kadang berlaku semasa pelancaran pertama.</string>
+    <string name="setup_storage_full">Storan Penuh</string>
+    <string name="setup_connection_error">Ralat Sambungan</string>
+    <string name="setup_failed">Persediaan Gagal</string>
+    <string name="setup_initialization_error">Ralat Permulaan</string>
+    <string name="error_storage_init_failed">Permulaan storan gagal. Sila mulakan semula aplikasi.</string>
+    <string name="error_storage_init_close_restart">Permulaan storan gagal. Sila tutup dan mulakan semula aplikasi.</string>
+    <string name="setup_free_storage_message">Kosongkan sekurang-kurangnya 65 MB dan cuba lagi</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Privasi Dilindungi</string>
+    <string name="setup_privacy_description">Pengesahan umur anda menggunakan bukti pengetahuan sifar. Tarikh lahir anda tidak pernah dikongsi.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Kelayakan Saya</string>
+    <string name="credentials_empty">Tiada kelayakan disimpan</string>
+    <string name="credential_active">Kelayakan Aktif</string>
+    <string name="credential_expired">Kelayakan Luput</string>
+    <string name="credential_ready_for_verification">Sedia untuk pengesahan</string>
+    <string name="credential_expired_message">Kelayakan anda telah luput dan perlu digantikan</string>
+    <string name="credential_stored_successfully">Kelayakan Berjaya Disimpan</string>
+    <string name="credential_stored_description">Kelayakan umur anda telah disimpan dengan selamat dan sedia untuk digunakan</string>
+    <string name="credential_can_prove_age">Anda kini boleh membuktikan umur anda secara peribadi</string>
+    <string name="credential_returning">Kembali ke kelayakan...</string>
+    <string name="credential_view_credentials">Lihat Kelayakan</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Selesai</string>
+    <string name="action_scan_qr_code">Imbas kod QR</string>
+    <string name="action_find_locations">Cari Lokasi</string>
+    <string name="action_get_credential">Dapatkan kelayakan</string>
+    <string name="action_replace_credential">Gantikan dengan Kelayakan Baharu</string>
+    <string name="action_replace_credential_now">Gantikan Kelayakan Sekarang</string>
+    <string name="action_delete_credential">Padam kelayakan</string>
+    <string name="credential_action_scan_description">Dapatkan kelayakan daripada penerbit yang diberi kuasa</string>
+    <string name="credential_action_find_description">Temukan penerbit berdekatan</string>
+    <string name="credential_remove_description">Buang kelayakan semasa</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Privasi</string>
+    <string name="credential_info_privacy_value">Dilindungi</string>
+    <string name="credential_info_status">Status</string>
+    <string name="credential_info_status_value">Sah</string>
+    <string name="credential_tip_title">Petua Pantas</string>
+    <string name="credential_tip_message">Ketik butang \'Sahkan Umur\' untuk mengimbas kod QR pengesahan di tempat yang mengambil bahagian.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">Imbas kod QR</string>
+    <string name="verification_verify_age">Sahkan Umur</string>
+    <string name="verification_generating_proof">Menjana bukti...</string>
+    <string name="verification_success">Pengesahan berjaya</string>
+    <string name="verification_failed">Pengesahan Gagal</string>
+    <string name="verification_age_verified">Umur Disahkan</string>
+    <string name="verification_age_verified_message">Umur anda telah disahkan secara peribadi</string>
+    <string name="verification_can_return">Anda kini boleh kembali ke laman untuk meneruskan.</string>
+    <string name="verification_returning_browser">Kembali ke pelayar...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">Langkah 1 daripada 2</string>
+    <string name="verification_step_2_of_2">Langkah 2 daripada 2</string>
+    <string name="verification_point_camera">Arahkan kamera ke kod QR pengesahan</string>
+    <string name="verification_hold_steady">Pegang dengan stabil sehingga anda mendengar loceng pengesahan.</string>
+    <string name="verification_reading_request">Membaca permintaan pengesahan...</string>
+    <string name="verification_processing_challenge">Memproses cabaran...</string>
+    <string name="verification_creating_proof">Mencipta bukti umur...</string>
+    <string name="verification_submitting_proof">Menghantar bukti...</string>
+    <string name="verification_processing_message">Ini mungkin mengambil beberapa saat</string>
+    <string name="verification_preparing_proof">Kami sedang menyediakan bukti peribadi menggunakan kelayakan anda yang disimpan.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Membaca permintaan pengesahan...</string>
+    <string name="verification_status_processing_challenge">Memproses cabaran...</string>
+    <string name="verification_status_creating_proof">Mencipta bukti umur...</string>
+    <string name="verification_status_submitting_proof">Menghantar bukti...</string>
+    <string name="verification_status_verified">✔ Umur disahkan</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Tidak dapat menunjukkan gesaan pengesahihan</string>
+    <string name="verification_error_verification_failed">Pengesahan gagal</string>
+    <string name="verification_error_generic">Ralat berlaku</string>
+    <string name="verification_error_failed_to_process_code">Gagal memproses kod</string>
+    <string name="verification_error_failed_to_process_challenge">Gagal memproses cabaran</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Penerbit yang dipercayai di Australia</string>
+    <string name="issuers_loading">Memuatkan penerbit...</string>
+    <string name="issuers_loaded">Penerbit berjaya dimuatkan</string>
+    <string name="issuers_unable_to_load">Tidak dapat memuatkan penerbit</string>
+    <string name="issuers_check_connection">Semak sambungan internet anda dan cuba lagi</string>
+    <string name="issuers_categories_header">KATEGORI</string>
+    <string name="issuers_available_header">PENERBIT TERSEDIA</string>
+    <string name="issuers_found_count">%d ditemukan</string>
+    <string name="issuer_status_coming_soon">Akan Datang</string>
+    <string name="issuer_status_verified">Disahkan</string>
+    <string name="issuer_how_to_get">Cara mendapatkan kelayakan</string>
+    <string name="issuer_service_locations">Lokasi Perkhidmatan</string>
+    <string name="issuer_visit_website">Layari laman web %s</string>
+    <string name="issuer_learn_more">Ketahui lebih lanjut tentang %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Perbankan</string>
+    <string name="category_super_fund">Dana Super</string>
+    <string name="category_government">Kerajaan</string>
+    <string name="category_travel">Pelancongan</string>
+    <string name="category_telco">Telco</string>
+    <string name="category_insurance">Insurans</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Tetapan</string>
+    <string name="settings_section_sandbox">Mod Sandbox</string>
+    <string name="settings_section_general">Umum</string>
+    <string name="settings_section_credentials">Kelayakan</string>
+    <string name="settings_section_advanced">Lanjutan</string>
+    <string name="settings_section_privacy">Privasi</string>
+    <string name="settings_security">Keselamatan</string>
+    <string name="settings_biometric">Gunakan pengesahihan biometrik</string>
+    <string name="settings_environment">Tetapan persekitaran</string>
+    <string name="settings_environment_description">Lihat konfigurasi persekitaran semasa</string>
+    <string name="settings_reset_proving_key">Set semula kunci pembuktian</string>
+    <string name="settings_reset_proving_key_description">Muat turun semula komponen keselamatan (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Terbitkan kelayakan ujian sebagai Penerbit</string>
+    <string name="settings_mint_test_credential_subtitle">Terbitkan kelayakan ujian ke dompet anda supaya anda boleh mengesahkannya dari demo pihak bergantung.</string>
+    <string name="settings_find_trusted_issuers">Cari penerbit yang dipercayai</string>
+    <string name="settings_version">Versi: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Ketik 5x untuk togol</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Bahasa</string>
+    <string name="language_selection_description">Pilih bahasa pilihan anda. Aplikasi akan dimulakan semula untuk menerapkan perubahan.</string>
+    <string name="language_selected">Dipilih</string>
+    <string name="settings_language">Bahasa</string>
+    <string name="settings_language_description">Tukar bahasa aplikasi</string>
+    <string name="settings_licenses">Lesen Sumber Terbuka</string>
+    <string name="settings_licenses_description">Lihat lesen pihak ketiga</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Sahkan Bahasa</string>
+    <string name="language_change_to">Tukar bahasa kepada:</string>
+    <string name="language_restart_notice">Aplikasi akan dimulakan semula untuk menerapkan bahasa ini.</string>
+    <string name="language_apply">Guna</string>
+    <string name="language_cancel">Batal</string>
+    <string name="language_skip_title">Langkau Pemilihan Bahasa?</string>
+    <string name="language_skip_message">Jika anda melangkau, aplikasi akan menggunakan Bahasa Inggeris secara lalai. Anda boleh menukar bahasa kemudian dalam Tetapan.</string>
+    <string name="language_use_english">Gunakan Bahasa Inggeris</string>
+    <string name="language_go_back">Kembali</string>
+    <string name="language_help_title">Bantuan Pemilihan Bahasa</string>
+    <string name="language_help_how_to">Cara memilih bahasa anda:</string>
+    <string name="language_help_step1">1. Gunakan kotak carian untuk mencari bahasa anda</string>
+    <string name="language_help_step2">2. Ketik bahasa pilihan anda</string>
+    <string name="language_help_step3">3. Sahkan pilihan anda</string>
+    <string name="language_help_system_note">Bahasa sistem anda diserlahkan di bahagian atas jika disokong.</string>
+    <string name="language_help_settings_note">Anda boleh menukar ini kemudian dalam Tetapan.</string>
+    <string name="language_got_it">Faham</string>
+    <string name="language_select_title">Pilih Bahasa</string>
+    <string name="language_skip_button">Langkau (Gunakan Bahasa Inggeris)</string>
+    <string name="language_search_placeholder">Cari bahasa...</string>
+    <string name="language_no_results">Tiada bahasa ditemukan</string>
+    <string name="language_try_different">Cuba istilah carian yang berbeza</string>
+    <string name="language_system_badge">Bahasa Sistem</string>
+    <string name="language_count">%d bahasa</string>
+    <string name="language_no_match_announcement">Tiada bahasa ditemukan yang sepadan dengan carian anda</string>
+    <string name="language_found_announcement">%d bahasa ditemukan</string>
+    <string name="language_search_cleared">Carian dikosongkan, menunjukkan semua %d bahasa</string>
+    <string name="language_selected_announcement">Dipilih %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Skrin pemilihan bahasa</string>
+    <string name="language_help_button_description">Bantuan dan maklumat tentang pemilihan bahasa</string>
+    <string name="language_skip_description">Langkau pemilihan bahasa dan gunakan Bahasa Inggeris secara lalai</string>
+    <string name="language_clear_search_description">Kosongkan carian</string>
+    <string name="language_count_description">%d bahasa tersedia</string>
+    <string name="language_apply_description">Guna pemilihan bahasa dan teruskan</string>
+    <string name="language_cancel_description">Batal pemilihan bahasa</string>
+    <string name="language_cancelled_announcement">Pemilihan bahasa dibatalkan</string>
+    <string name="language_selected_description">Bahasa dipilih: %1$s, %2$s</string>
+    <string name="language_item_system">Bahasa sistem: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, kini dipilih</string>
+    <string name="language_item_system_selected">Bahasa sistem: %1$s, %2$s, kini dipilih</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Kembali ke pemilihan bahasa</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Mod Sandbox aktif</string>
+    <string name="sandbox_mode_banner">MOD SANDBOX AKTIF</string>
+    <string name="sandbox_mode_description">Menggunakan persekitaran ujian. Ketik nombor versi lima kali untuk togol.</string>
+    <string name="sandbox_credential_title">Kelayakan Sandbox</string>
+    <string name="sandbox_credential_description">Jana kelayakan Sandbox untuk menguji aliran pengesahan tanpa menyentuh data persekitaran pengeluaran.</string>
+    <string name="sandbox_select_age">Pilih umur</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Tarikh lahir lalai: %s</string>
+    <string name="sandbox_override_dob">Ganti tarikh lahir lalai</string>
+    <string name="sandbox_override_description">Gunakan tarikh tepat sebagai ganti lalai berasaskan umur.</string>
+    <string name="sandbox_date_of_birth">Tarikh lahir</string>
+    <string name="sandbox_generate_credential">Jana kelayakan</string>
+    <string name="sandbox_generating">Menjana…</string>
+    <string name="sandbox_test_credential_saved">Kelayakan ujian disimpan</string>
+    <string name="sandbox_id_prefix">Awalan pengenalan: %s…</string>
+    <string name="sandbox_unable_to_generate">Tidak dapat menjana kelayakan</string>
+    <string name="settings_sandbox_dob_format">Tarikh Lahir: %s</string>
+    <string name="settings_sandbox_age_dob_format">Umur %d+ (Tarikh Lahir: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Konfigurasi persekitaran</string>
+    <string name="environment_current">Semasa: %s</string>
+    <string name="environment_issuer_api">API Penerbit (Antara Muka Pengaturcaraan Aplikasi): %s</string>
+    <string name="environment_verifier_api">API Pengesah (Antara Muka Pengaturcaraan Aplikasi): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Padam kelayakan?</string>
+    <string name="dialog_delete_credential_message">Tindakan ini membuang kelayakan daripada peranti anda. Anda boleh mendapatkannya semula daripada penerbit jika perlu.</string>
+    <string name="dialog_delete_credential_announcement">Dialog dibuka: Padam kelayakan</string>
+    <string name="dialog_reset_proving_key_title">Set semula kunci pembuktian?</string>
+    <string name="dialog_reset_proving_key_message">Kunci pembuktian dan fail sokongan akan dipadam dan dimuat turun semula kali berikutnya anda membuka aplikasi.</string>
+    <string name="dialog_reset_proving_key_announcement">Dialog dibuka: Set semula kunci pembuktian</string>
+    <string name="dialog_environment_info_announcement">Dialog dibuka: Konfigurasi persekitaran</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">Kebolehcapaian</string>
+    <string name="accessibility_service_label">Kebolehcapaian Provii Wallet</string>
+    <string name="accessibility_service_description">Perkhidmatan kebolehcapaian Provii Wallet menyediakan sokongan dipertingkatkan untuk pengguna yang mempunyai keperluan khas. Ini merangkumi pembacaan kelayakan automatik, navigasi berpandu, dan interaksi yang dipermudahkan.</string>
+    <string name="accessibility_personalize">Peribadikan pengalaman anda</string>
+    <string name="accessibility_customize_features">Sesuaikan ciri kebolehcapaian</string>
+    <string name="accessibility_quick_setup">Persediaan pantas</string>
+    <string name="accessibility_features_active">%d ciri aktif</string>
+    <string name="accessibility_customize_experience">Sesuaikan pengalaman anda</string>
+    <string name="accessibility_reset_title">Set semula tetapan kebolehcapaian?</string>
+    <string name="accessibility_reset_message">Semua pilihan kebolehcapaian akan dikembalikan kepada lalainya.</string>
+    <string name="accessibility_reset">Set semula tetapan kebolehcapaian</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Penglihatan</string>
+    <string name="accessibility_category_interaction">Interaksi</string>
+    <string name="accessibility_category_cognitive">Sokongan kognitif</string>
+    <string name="accessibility_category_alternative_input">Input alternatif</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Teks sangat besar</string>
+    <string name="accessibility_extra_large_text_description">Tingkatkan saiz fon asas sebanyak 45%</string>
+    <string name="accessibility_high_contrast">Kontras tinggi</string>
+    <string name="accessibility_high_contrast_description">Gunakan warna kontras tinggi</string>
+    <string name="accessibility_reduce_transparency">Kurangkan ketelusan</string>
+    <string name="accessibility_reduce_transparency_description">Buang kesan kabur dan kaca</string>
+    <string name="accessibility_dyslexia_font">Fon mesra disleksia</string>
+    <string name="accessibility_dyslexia_font_description">Gunakan fon OpenDyslexic untuk kebolehbacaan yang lebih baik</string>
+    <string name="accessibility_color_blind_mode">Mod buta warna</string>
+    <string name="accessibility_color_blind_optimized">Warna dioptimumkan untuk %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Tiada</string>
+    <string name="color_blind_protanopia">Protanopia (Buta merah)</string>
+    <string name="color_blind_deuteranopia">Deuteranopia (Buta hijau)</string>
+    <string name="color_blind_tritanopia">Tritanopia (Buta biru)</string>
+    <string name="color_blind_monochrome">Monokrom</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Sasaran sentuhan yang lebih besar</string>
+    <string name="accessibility_larger_touch_targets_description">Tingkatkan saiz butang dan cip</string>
+    <string name="accessibility_reduce_motion">Kurangkan gerakan</string>
+    <string name="accessibility_reduce_motion_description">Minimumkan animasi dan peralihan</string>
+    <string name="accessibility_extended_timeouts">Tamat masa dilanjutkan</string>
+    <string name="accessibility_extended_timeouts_description">Benarkan lebih masa untuk tindakan berjangka masa</string>
+    <string name="accessibility_simplified_gestures">Isyarat yang dipermudahkan</string>
+    <string name="accessibility_simplified_gestures_description">Kurangkan isyarat berbilang langkah</string>
+    <string name="accessibility_haptic_feedback">Maklum balas haptik</string>
+    <string name="accessibility_haptic_feedback_description">Pengesahan getaran untuk tindakan</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Antara muka yang dipermudahkan</string>
+    <string name="accessibility_simplified_interface_description">Sembunyikan pilihan lanjutan dan kurangkan kekacauan</string>
+    <string name="accessibility_show_step_numbers">Tunjukkan nombor langkah</string>
+    <string name="accessibility_show_step_numbers_description">Paparkan penunjuk kemajuan</string>
+    <string name="accessibility_detailed_descriptions">Penerangan terperinci</string>
+    <string name="accessibility_detailed_descriptions_description">Berikan teks penjelasan tambahan</string>
+    <string name="accessibility_confirm_actions">Sahkan sebelum tindakan</string>
+    <string name="accessibility_confirm_actions_description">Minta pengesahan untuk operasi penting</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Kemasukan kod manual</string>
+    <string name="accessibility_manual_code_entry_description">Benarkan kod QR ditaip dan bukannya diimbas</string>
+    <string name="accessibility_voice_input">Input suara</string>
+    <string name="accessibility_voice_input_description">Aktifkan pengecaman pertuturan untuk medan teks</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Penglihatan</string>
+    <string name="accessibility_profile_motor">Motor</string>
+    <string name="accessibility_profile_cognitive">Kognitif</string>
+    <string name="accessibility_profile_senior">Warga Emas</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Kembali</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Utama</string>
+    <string name="breadcrumb_settings">Tetapan</string>
+    <string name="breadcrumb_accessibility">Kebolehcapaian</string>
+    <string name="breadcrumb_language">Bahasa</string>
+    <string name="breadcrumb_help">Pusat Bantuan</string>
+    <string name="breadcrumb_officer_mode">Mod Pegawai</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Tipografi &amp; Jarak Teks</string>
+    <string name="accessibility_line_spacing">Jarak Baris</string>
+    <string name="accessibility_line_spacing_description">Laraskan jarak antara baris teks</string>
+    <string name="accessibility_paragraph_spacing">Jarak Perenggan</string>
+    <string name="accessibility_paragraph_spacing_description">Laraskan jarak antara perenggan</string>
+    <string name="accessibility_letter_spacing">Jarak Huruf</string>
+    <string name="accessibility_letter_spacing_description">Laraskan jarak antara huruf</string>
+    <string name="accessibility_typography_aaa_note">Cadangan AAA: jarak baris 1.5x, jarak perenggan 2.0x, dan jarak huruf 0.12em.</string>
+    <string name="accessibility_spacing_current">Semasa: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Kelakuan Tamat Masa</string>
+    <string name="accessibility_timeout_no_automatic">Tiada tamat masa automatik untuk pematuhan AAA</string>
+    <string name="accessibility_timeout_auto_advance_30">Maju automatik selepas 30 saat</string>
+    <string name="accessibility_timeout_auto_advance_60">Maju automatik selepas 60 saat</string>
+    <string name="accessibility_timeout_set_announcement">Kelakuan tamat masa ditetapkan kepada %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Tahap Kontras</string>
+    <string name="accessibility_contrast_aaa_ratio">Nisbah kontras 7:1 untuk pematuhan AAA</string>
+    <string name="accessibility_contrast_standard">Kontras standard</string>
+    <string name="accessibility_contrast_aa_ratio">Nisbah kontras 4.5:1 untuk pematuhan AA</string>
+    <string name="accessibility_contrast_set_announcement">Tahap kontras ditetapkan kepada %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Mod buta warna ditetapkan kepada %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">Gelangsar %1$s. Nilai semasa: %2$s. %3$sJulat daripada %4$s hingga %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">Mematuhi AAA. </string>
+    <string name="accessibility_slider_announcement">%1$s ditetapkan kepada %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, mematuhi AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s diaktifkan</string>
+    <string name="accessibility_toggle_disabled">%s dinyahaktifkan</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Maklum Balas Pengesahan</string>
+    <string name="accessibility_sound_enabled">Mainkan bunyi apabila berjaya</string>
+    <string name="accessibility_sound_enabled_description">Mainkan bunyi pengesahan selepas pengesahan berjaya</string>
+    <string name="accessibility_sound_style">Gaya Bunyi</string>
+    <string name="accessibility_sound_preview">Pratonton bunyi</string>
+    <string name="accessibility_sound_preview_preset">Pratonton %s</string>
+    <string name="accessibility_sound_style_set_announcement">Gaya bunyi ditetapkan kepada %s</string>
+    <string name="accessibility_haptic_enabled">Getarkan apabila berjaya</string>
+    <string name="accessibility_haptic_enabled_description">Berikan maklum balas haptik selepas pengesahan berjaya</string>
+    <string name="accessibility_sound_footer">Bunyi mematuhi tetapan mod senyap peranti anda</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Kelantangan</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Pratonton kelantangan semasa</string>
+    <string name="accessibility_volume_set_announcement">Kelantangan ditetapkan kepada %d peratus</string>
+    <string name="accessibility_volume_slider_description">Gelangsar kelantangan. Nilai semasa: %d peratus</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Set Semula Tetapan</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">Mod Pegawai</string>
+    <string name="officer_id">Pengenalan Pegawai (ID)</string>
+    <string name="officer_id_placeholder">cth., OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Masukkan pengenalan pegawai yang ditetapkan kepada anda</string>
+    <string name="officer_yubikey_connected">YubiKey Disambungkan</string>
+    <string name="officer_connect_yubikey">Sambungkan YubiKey</string>
+    <string name="officer_touch_yubikey">Sentuh YubiKey anda untuk mengesahihkan...</string>
+    <string name="officer_authenticate_hmac">Sahkan dengan HMAC (Kod Pengesahihan Mesej Berasaskan Hash)</string>
+    <string name="officer_authentication_process">Proses Pengesahihan:</string>
+    <string name="officer_auth_steps">1. Masukkan pengenalan Pegawai anda\n2. Klik Sahkan\n3. Sentuh YubiKey apabila ia berkelip\n4. Pengesahihan HMAC (Kod Pengesahihan Mesej Berasaskan Hash) mengesahihkan identiti anda</string>
+    <string name="officer_auth_failed">Pengesahihan gagal. Sila sahkan pengenalan Pegawai anda dan cuba lagi.</string>
+    <string name="officer_session_info">Pegawai: %s</string>
+    <string name="officer_station_info">Stesen: %s</string>
+    <string name="officer_issued_today">Dikeluarkan hari ini: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Keluarkan Kelayakan Umur</string>
+    <string name="officer_issue_description">Sahkan identiti pengguna dan keluarkan kelayakan umur digital</string>
+    <string name="officer_start_issuance">Mulakan Pengeluaran Baharu</string>
+    <string name="officer_issuance_process">PROSES PENGELUARAN</string>
+    <string name="officer_issuance_steps">1. Semak dokumen pengenalan fizikal pengguna\n2. Masukkan tarikh lahir mereka\n3. Sahkan maklumat sepadan dengan tepat\n4. Keluarkan kelayakan dengan kod QR perakuan\n5. Pengguna mengimbas kod QR untuk menerima kelayakan</string>
+    <string name="officer_verify_identity">Sahkan Identiti Pengguna</string>
+    <string name="officer_select_dob">Pilih Tarikh Lahir</string>
+    <string name="officer_change_date">Tukar Tarikh</string>
+    <string name="officer_age_years">Umur: %d tahun</string>
+    <string name="officer_under_18_warning">Bawah 18 - Tidak boleh mengeluarkan kelayakan</string>
+    <string name="officer_verification_checklist">SENARAI SEMAK PENGESAHAN</string>
+    <string name="officer_document_verified">Dokumen fizikal disahkan</string>
+    <string name="officer_document_verified_description">Saya telah melihat pengenalan yang sah dikeluarkan oleh kerajaan</string>
+    <string name="officer_dob_matches">Tarikh lahir sepadan dengan tepat</string>
+    <string name="officer_dob_matches_description">Tarikh Lahir pada dokumen fizikal ialah: %s</string>
+    <string name="officer_issue_credential">Keluarkan Kelayakan</string>
+    <string name="officer_user_scanned_successfully">Pengguna Telah Mengimbas dengan Berjaya</string>
+    <string name="officer_return_to_dashboard">Kembali ke Papan Pemuka</string>
+    <string name="officer_go_back">Kembali</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">Pengesahan YubiKey</string>
+    <string name="yubikey_step_format">Langkah %1$d daripada %2$d</string>
+    <string name="yubikey_led_should_blink">LED YubiKey sepatutnya berkelip</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Mengesahkan input...</string>
+    <string name="officer_state_creating_attestation">Mencipta perakuan...</string>
+    <string name="officer_state_computing_commitment">Mengira komitmen kriptografi...</string>
+    <string name="officer_state_creating_session">Mencipta sesi selamat...</string>
+    <string name="officer_state_signing">Menandatangani kelayakan...</string>
+    <string name="officer_state_finalizing">Memuktamadkan kelayakan...</string>
+    <string name="officer_state_storing_attestation">Menyimpan perakuan...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">Sesi Akan Tamat Tidak Lama Lagi</string>
+    <string name="officer_session_expiring_message">Sesi anda akan tamat dalam %d saat. Adakah anda ingin menyimpan kemajuan anda?</string>
+    <string name="officer_session_expiring_announcement">Amaran: Sesi anda akan tamat dalam %d saat</string>
+    <string name="officer_save_and_continue">Simpan dan Teruskan</string>
+    <string name="officer_continue_without_saving">Teruskan Tanpa Menyimpan</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">TARIKH LAHIR</string>
+    <string name="officer_age_format">Umur: %d tahun</string>
+    <string name="officer_under_18_full_warning">Bawah 18 - Tidak boleh mengeluarkan kelayakan. Hanya individu yang berumur 18 tahun ke atas layak mendapat kelayakan pengesahan umur. Sila sahkan tarikh lahir adalah betul.</string>
+    <string name="officer_verification_checklist_header">SENARAI SEMAK PENGESAHAN</string>
+    <string name="officer_physical_document_verified">Dokumen fizikal disahkan</string>
+    <string name="officer_sighted_valid_id">Saya telah melihat pengenalan yang sah dikeluarkan oleh kerajaan</string>
+    <string name="officer_dob_matches_exactly">Tarikh lahir sepadan dengan tepat</string>
+    <string name="officer_dob_on_document">Tarikh Lahir pada dokumen fizikal ialah: %s</string>
+    <string name="officer_error_label">Ralat</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">Imbas kod QR pengeluaran</string>
+    <string name="issuance_downloads_credential">Ini memuat turun kelayakan umur anda.</string>
+    <string name="issuance_center_qr">Pusatkan kod QR dalam bingkai dan pegang dengan stabil.</string>
+    <string name="issuance_enter_code_manually">Masukkan kod secara manual</string>
+    <string name="issuance_processing_qr">Memproses kod QR…</string>
+    <string name="issuance_invalid_data">Data pengeluaran tidak sah</string>
+    <string name="issuance_verification_qr_error">Ini ialah kod QR pengesahan. Sila imbas kod QR pengeluaran kelayakan.</string>
+    <string name="issuance_invalid_qr_format">Format kod QR tidak sah</string>
+    <string name="issuance_failed_to_process">Gagal memproses kod QR: %s</string>
+    <string name="issuance_code">Kod pengeluaran</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">Kemasukan kod manual</string>
+    <string name="manual_entry_enter_code_manually">Masukkan kod secara manual</string>
+    <string name="manual_entry_verification_description">Masukkan kod pengesahan 12 digit yang ditunjukkan pada skrin pengesah.</string>
+    <string name="manual_entry_issuance_description">Taip kod yang ditunjukkan pada skrin penerbit.</string>
+    <string name="manual_entry_verification_code">Kod pengesahan</string>
+    <string name="manual_entry_submit">Hantar kod</string>
+    <string name="manual_entry_please_enter">Sila masukkan kod</string>
+    <string name="manual_entry_please_enter_verification">Sila masukkan kod pengesahan</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Mula mendengar</string>
+    <string name="voice_input_stop_listening">Berhenti mendengar</string>
+    <string name="voice_input_recognized">Dikenal pasti:</string>
+    <string name="content_desc_voice_input_listening">Mendengar input suara</string>
+    <string name="content_desc_voice_input_available">Input suara tersedia</string>
+    <string name="voice_input_permission_title">Kebenaran mikrofon diperlukan</string>
+    <string name="voice_input_permission_message">Input suara memerlukan akses mikrofon. Anda boleh mengaktifkannya daripada tetapan sistem.</string>
+    <string name="voice_input_listening">Mendengar…</string>
+    <string name="voice_input_error">Ralat Input Suara</string>
+    <string name="voice_input_tap_to_speak">Ketik untuk bercakap</string>
+    <string name="voice_input_did_you_say">Adakah anda berkata "%1$s"?</string>
+    <string name="voice_input_confirm">Sahkan</string>
+    <string name="voice_input_retry">Cuba Lagi</string>
+    <string name="voice_input_cancel">Batal</string>
+    <string name="voice_input_button">Input Suara</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">Input suara tidak tersedia pada peranti ini</string>
+    <string name="voice_input_error_audio">Ralat rakaman audio. Semak mikrofon.</string>
+    <string name="voice_input_error_network">Ralat rangkaian. Semak sambungan.</string>
+    <string name="voice_input_error_network_timeout">Tamat masa rangkaian. Cuba lagi.</string>
+    <string name="voice_input_error_no_match">Tiada pertuturan dikesan. Sila cuba lagi.</string>
+    <string name="voice_input_error_recognizer_busy">Input suara sibuk. Sila tunggu.</string>
+    <string name="voice_input_error_server">Ralat pelayan. Cuba lagi kemudian.</string>
+    <string name="voice_input_error_speech_timeout">Tiada pertuturan didengar. Sila bercakap lebih kuat.</string>
+    <string name="voice_input_error_insufficient_permissions">Kebenaran mikrofon ditolak.</string>
+    <string name="voice_input_error_generic">Ralat input suara. Sila cuba lagi.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">Kembali</string>
+    <string name="action_close">Tutup</string>
+    <string name="action_cancel">Batal</string>
+    <string name="action_ok">OK</string>
+    <string name="action_set">Tetapkan</string>
+    <string name="action_change">Tukar</string>
+    <string name="action_delete">Padam</string>
+    <string name="action_reset">Set semula</string>
+    <string name="action_retry">Cuba semula</string>
+    <string name="action_try_again">Cuba Lagi</string>
+    <string name="action_refresh">Muat semula</string>
+    <string name="action_download_now">Muat Turun Sekarang</string>
+    <string name="action_retry_setup">Cuba Semula Persediaan</string>
+    <string name="action_retry_download">Cuba Semula Muat Turun</string>
+    <string name="action_restart_setup">Mulakan Semula Persediaan</string>
+    <string name="action_manage_storage">Urus Storan</string>
+    <string name="action_check_wifi_settings">Semak Tetapan Wi-Fi Dahulu</string>
+    <string name="action_check_wifi_settings_short">Semak Tetapan Wi-Fi</string>
+    <string name="action_grant_permission">Berikan Kebenaran</string>
+    <string name="action_grant_camera_access">Berikan akses kamera</string>
+    <string name="action_return_to_browser">Kembali ke Pelayar</string>
+    <string name="action_show_debug_info">Tunjukkan Maklumat Debug</string>
+    <string name="action_reset_redownload">Set Semula dan Muat Turun Semula</string>
+    <string name="action_end_session">Tamatkan Sesi</string>
+    <string name="action_expand">Kembangkan</string>
+    <string name="action_collapse">Runtuhkan</string>
+    <string name="accessibility_state_expanded">Dikembangkan</string>
+    <string name="accessibility_state_collapsed">Diruntuhkan</string>
+    <string name="accessibility_state_checked">Ditandai</string>
+    <string name="accessibility_state_unchecked">Tidak ditandai</string>
+    <string name="accessibility_state_selected">Dipilih</string>
+    <string name="accessibility_state_not_selected">Tidak dipilih</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">Ralat berlaku</string>
+    <string name="error_camera_permission">Kebenaran kamera diperlukan untuk pengimbasan kod QR</string>
+    <string name="error_camera_access_needed">Akses kamera diperlukan</string>
+    <string name="error_camera_permission_description">Berikan kebenaran kamera untuk mengimbas kod QR atau aktifkan kemasukan manual daripada tetapan kebolehcapaian.</string>
+    <string name="error_camera_permission_required">Kebenaran kamera diperlukan untuk mengimbas kod QR</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">Mengimbas kod QR...</string>
+    <string name="qr_scanner_camera_required">Kebenaran kamera diperlukan</string>
+    <string name="qr_scanner_camera_preview">Pratonton kamera untuk mengimbas kod QR</string>
+    <string name="qr_scanner_status_scanning">Mengimbas kod QR</string>
+    <string name="qr_scanner_requesting_permission">Meminta kebenaran kamera</string>
+    <string name="error_camera_start_failed">Gagal memulakan kamera: %s</string>
+    <string name="error_camera_init_failed">Permulaan kamera gagal: %s</string>
+    <string name="error_biometric_not_available">Pengesahan biometrik tidak tersedia</string>
+    <string name="error_network">Ralat rangkaian berlaku</string>
+    <string name="error_no_credential">Tiada kelayakan tersedia. Sila dapatkan kelayakan dahulu.</string>
+    <string name="credential_picker_title">Pilih Kelayakan</string>
+    <string name="credential_picker_description">Anda mempunyai beberapa kelayakan yang boleh digunakan untuk pengesahan ini. Sila pilih satu.</string>
+    <string name="credential_picker_expired_label">Luput</string>
+    <string name="credential_picker_accessibility_select">Pilih kelayakan: %1$s</string>
+    <string name="error_failed_to_process_challenge">Gagal memproses cabaran</string>
+    <string name="error_failed_to_create_proof">Gagal mencipta bukti</string>
+    <string name="error_verification_failed">Pengesahan gagal</string>
+    <string name="error_occurred_during_verification">Ralat berlaku semasa pengesahan</string>
+    <string name="error_connection_timeout">Sambungan tamat masa. Sila cuba lagi.</string>
+    <string name="error_unable_to_connect">Tidak dapat menyambung. Sila semak sambungan internet anda.</string>
+    <string name="error_secure_connection_failed">Sambungan selamat gagal. Sila cuba lagi.</string>
+    <string name="error_security_verification_failed">Pengesahan keselamatan gagal. Sila cuba lagi.</string>
+    <string name="error_invalid_input">Input tidak sah. Sila semak maklumat anda dan cuba lagi.</string>
+    <string name="error_operation_in_progress">Operasi lain sedang berjalan. Sila tunggu.</string>
+    <string name="error_operation_cancelled">Operasi telah dibatalkan.</string>
+    <string name="error_age_requirement_not_met">Keperluan umur tidak dipenuhi untuk kelayakan ini.</string>
+    <string name="error_biometric_required">Pengesahan biometrik diperlukan untuk meneruskan.</string>
+    <string name="error_wallet_not_initialized">Dompet tidak dimulakan. Sila mulakan semula aplikasi.</string>
+    <string name="error_security">Ralat keselamatan. Sila cuba lagi.</string>
+    <string name="error_connection_timeout_short">Tamat masa sambungan. Sila cuba lagi.</string>
+    <string name="error_invalid_input_provided">Input tidak sah diberikan.</string>
+    <string name="error_invalid_data_format">Format data tidak sah. Sila cuba lagi.</string>
+    <string name="error_storage">Ralat storan. Sila semak storan peranti.</string>
+    <string name="error_network_short">Ralat rangkaian. Sila semak sambungan anda.</string>
+    <string name="error_label">Ralat</string>
+    <string name="error_dismiss">Tutup ralat</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">Memproses...</string>
+    <string name="status_initializing_wallet">Memulakan dompet...</string>
+    <string name="status_loading">Memuatkan...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">Privasi dilindungi</string>
+    <string name="privacy_zk_description">Tarikh lahir anda tidak pernah dikongsi. Pengesah hanya mengetahui sama ada anda memenuhi keperluan umur mereka.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Tetapan Privasi</string>
+    <string name="privacy_settings_description">Kawal pengumpulan data dan urus data anda</string>
+    <string name="privacy_section_data_collection">Pengumpulan Data</string>
+    <string name="privacy_section_your_data">Data Anda</string>
+    <string name="privacy_protection_title">Privasi Anda Dilindungi</string>
+    <string name="privacy_protection_description">Provii Wallet menggunakan bukti pengetahuan sifar untuk mengesahkan umur anda tanpa mendedahkan tarikh lahir anda. Data kelayakan anda disimpan hanya pada peranti anda dan tidak pernah dikongsi dengan sesiapa.</string>
+    <string name="privacy_analytics_title">Analitik</string>
+    <string name="privacy_analytics_description">Bantu penambahbaikan Provii Wallet dengan berkongsi data penggunaan tanpa nama</string>
+    <string name="privacy_analytics_enabled">Analitik diaktifkan</string>
+    <string name="privacy_analytics_disabled">Analitik dinyahaktifkan</string>
+    <string name="privacy_crash_reporting_title">Pelaporan Ranap</string>
+    <string name="privacy_crash_reporting_description">Bantu kami membetulkan pepijat dengan menghantar laporan ranap secara automatik</string>
+    <string name="privacy_crash_reporting_enabled">Pelaporan ranap diaktifkan</string>
+    <string name="privacy_crash_reporting_disabled">Pelaporan ranap dinyahaktifkan</string>
+    <string name="privacy_what_we_collect_title">Data Yang Kami Kumpulkan</string>
+    <string name="privacy_what_we_collect_subtitle">Ketik untuk mengetahui tentang amalan data kami</string>
+    <string name="privacy_data_collection_info_title">Maklumat Pengumpulan Data</string>
+    <string name="privacy_data_we_collect_header">Apa yang kami kumpulkan (jika diaktifkan):</string>
+    <string name="privacy_data_we_collect_list">- Statistik penggunaan aplikasi tanpa nama\n- Laporan ranap dan log ralat\n- Jenis peranti dan versi OS\n- Maklumat versi aplikasi</string>
+    <string name="privacy_data_we_dont_collect_header">Apa yang kami tidak pernah kumpulkan:</string>
+    <string name="privacy_data_we_dont_collect_list">- Tarikh lahir anda\n- Nama atau maklumat peribadi anda\n- Lokasi anda\n- Data kelayakan anda\n- Data biometrik</string>
+    <string name="privacy_data_never_shared_note">Data kelayakan anda tidak pernah dikongsi dengan Provii atau mana-mana pihak ketiga. Ia kekal pada peranti anda.</string>
+    <string name="privacy_policy_title">Dasar Privasi</string>
+    <string name="privacy_policy_subtitle">Baca dasar privasi penuh kami</string>
+    <string name="privacy_delete_my_data_title">Padam Data Saya</string>
+    <string name="privacy_delete_my_data_subtitle">Buang semua kelayakan dan data yang disimpan</string>
+    <string name="privacy_delete_data_dialog_title">Padam Semua Data?</string>
+    <string name="privacy_delete_data_dialog_message">Ini akan memadam semua kelayakan dan data aplikasi anda secara kekal daripada peranti ini. Anda perlu mendapatkan kelayakan baharu untuk menggunakan aplikasi semula.</string>
+    <string name="privacy_delete_data_dialog_warning">Tindakan ini tidak boleh dibuat asal.</string>
+    <string name="privacy_delete_data_confirm">Padam Semua</string>
+    <string name="privacy_footer_note">Anda boleh menukar tetapan ini pada bila-bila masa. Perubahan berkuat kuasa dengan serta-merta.</string>
+    <string name="dialog_delete_data_announcement">Dialog pengesahan padam data dibuka</string>
+    <string name="dialog_data_collection_info_announcement">Dialog maklumat pengumpulan data dibuka</string>
+    <string name="content_desc_privacy_settings">Tetapan privasi, kawal pengumpulan data dan urus data anda</string>
+    <string name="content_desc_data_collection_info">Lihat maklumat pengumpulan data</string>
+    <string name="content_desc_privacy_policy">Lihat dasar privasi</string>
+    <string name="content_desc_opens_external_link">Dibuka dalam pelayar</string>
+    <string name="content_desc_delete_my_data">Padam semua data saya</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">Kembali</string>
+    <string name="content_desc_settings">Tetapan</string>
+    <string name="content_desc_refresh">Muat semula</string>
+    <string name="content_desc_verified">Disahkan</string>
+    <string name="content_desc_expand">Kembangkan</string>
+    <string name="content_desc_collapse">Runtuhkan</string>
+    <string name="content_desc_warning_error">Amaran: Ralat berlaku</string>
+    <string name="content_desc_sandbox_indicator">Penunjuk mod Sandbox</string>
+    <string name="content_desc_success">Berjaya</string>
+    <string name="content_desc_warning">Amaran</string>
+    <string name="content_desc_information">Maklumat</string>
+    <string name="content_desc_error">Ralat</string>
+    <string name="content_desc_sandbox_warning">Amaran Mod Sandbox</string>
+    <string name="content_desc_app_info">Maklumat aplikasi</string>
+    <string name="content_desc_accessibility_settings">Tetapan kebolehcapaian</string>
+    <string name="content_desc_language_settings">Tetapan bahasa</string>
+    <string name="content_desc_licenses">Lesen sumber terbuka</string>
+    <string name="content_desc_select_dob">Pilih tarikh lahir</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Terbitkan kelayakan ujian sebagai Penerbit</string>
+    <string name="content_desc_get_credential">Dapatkan kelayakan</string>
+    <string name="content_desc_delete_credential">Padam kelayakan</string>
+    <string name="content_desc_reset_proving_key">Set semula kunci pembuktian</string>
+    <string name="content_desc_environment_info">Maklumat persekitaran</string>
+    <string name="content_desc_help_support">Bantuan dan sokongan</string>
+    <string name="content_desc_privacy_protected">Privasi Dilindungi</string>
+    <string name="preview_settings_title">Pratonton Tetapan</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">Berjaya</string>
+    <string name="accessibility_verification_error_description">Ralat</string>
+    <string name="accessibility_breadcrumb_location_description">Lokasi: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">kemudian</string>
+    <string name="accessibility_breadcrumb_current_page_description">Halaman semasa: %s</string>
+    <string name="accessibility_settings_navigate_description">Navigasi</string>
+    <string name="accessibility_credentials_settings_description">Tetapan</string>
+    <string name="accessibility_verification_back_description">Kembali</string>
+    <string name="accessibility_officer_back_description">Kembali</string>
+    <string name="accessibility_discovery_back_description">Kembali</string>
+    <string name="accessibility_discovery_refresh_description">Muat semula</string>
+    <string name="accessibility_discovery_verified_description">Disahkan</string>
+    <string name="accessibility_officer_done_description">Selesai</string>
+    <string name="accessibility_officer_attestation_qr_description">Kod QR perakuan untuk diimbas oleh pengguna</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">Langkau ke %s</string>
+    <string name="accessibility_skip_main_content">kandungan utama</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Penglihatan Terjejas</string>
+    <string name="accessibility_profile_motor_impaired">Motor Terjejas</string>
+    <string name="accessibility_profile_cognitive_support">Sokongan Kognitif</string>
+    <string name="accessibility_profile_elderly_support">Sokongan Warga Emas</string>
+    <string name="accessibility_profile_default">Lalai</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Tiada</string>
+    <string name="color_blind_mode_protanopia">Protanopia</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopia</string>
+    <string name="color_blind_mode_tritanopia">Tritanopia</string>
+    <string name="color_blind_mode_monochrome">Monokrom</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Standard</string>
+    <string name="contrast_level_high">Tinggi (AA)</string>
+    <string name="contrast_level_maximum">Maksimum (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Lebar Penuh</string>
+    <string name="text_width_comfortable">Selesa (80 aksara)</string>
+    <string name="text_width_narrow">Sempit (60 aksara)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Tiada Tamat Masa (AAA)</string>
+    <string name="timeout_behavior_standard">Standard (30s)</string>
+    <string name="timeout_behavior_extended">Dilanjutkan (60s)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Standard</string>
+    <string name="reading_level_standard_description">Teks biasa dengan istilah teknikal</string>
+    <string name="reading_level_simplified">Dipermudahkan (Gred 7-9)</string>
+    <string name="reading_level_simplified_description">Perkataan lebih mudah dan ayat lebih pendek (mematuhi AAA)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">Bantuan</string>
+    <string name="help_and_support">Bantuan &amp; Sokongan</string>
+    <string name="help_description">Dapatkan bantuan mengenai ciri aplikasi dan kebolehcapaian</string>
+    <string name="help_center">Pusat Bantuan</string>
+    <string name="help_center_description">Layari topik bantuan dan ketahui tentang ciri aplikasi</string>
+    <string name="help_search">Cari bantuan</string>
+    <string name="help_search_placeholder">Cari topik bantuan...</string>
+    <string name="help_search_active">Carian diaktifkan</string>
+    <string name="help_search_inactive">Carian dinyahaktifkan</string>
+    <string name="help_no_results">Tiada topik bantuan ditemukan yang sepadan dengan carian anda</string>
+    <string name="help_topic_not_found">Topik bantuan tidak ditemukan</string>
+    <string name="help_related_topics">Topik Berkaitan</string>
+    <string name="help_content_heading">Kandungan Bantuan</string>
+    <string name="help_related_topic_position">%1$s, item %2$d daripada %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Penglihatan</string>
+    <string name="help_category_typography">Tipografi</string>
+    <string name="help_category_interaction">Interaksi</string>
+    <string name="help_category_cognitive">Sokongan Kognitif</string>
+    <string name="help_category_alternative_input">Input Alternatif</string>
+    <string name="help_category_features">Ciri</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Mendapatkan Kelayakan</string>
+    <string name="help_topic_getting_credential_summary">Ketahui cara mendapatkan kelayakan pengesahan umur pertama anda</string>
+    <string name="help_topic_getting_credential_content">Untuk mendapatkan kelayakan pengesahan umur anda:\n\n1. Lawati lokasi penerbit yang diberi kuasa\n2. Tunjukkan ID yang dikeluarkan oleh kerajaan\n3. Imbas kod QR yang disediakan\n4. Kelayakan anda akan disimpan dengan selamat\n\nTarikh lahir anda disimpan secara tempatan dan tidak pernah dikongsi.</string>
+
+    <string name="help_topic_verifying_age_title">Mengesahkan Umur Anda</string>
+    <string name="help_topic_verifying_age_summary">Cara membuktikan umur anda tanpa berkongsi maklumat peribadi</string>
+    <string name="help_topic_verifying_age_content">Apabila anda perlu mengesahkan umur anda:\n\n1. Pengesah akan menunjukkan kod QR kepada anda\n2. Imbas dengan aplikasi\n3. Aplikasi mencipta bukti matematik\n4. Hanya jawapan ya/tidak yang dikongsi\n\nTarikh lahir sebenar anda TIDAK PERNAH didedahkan.</string>
+
+    <string name="help_topic_accessibility_title">Ciri Kebolehcapaian</string>
+    <string name="help_topic_accessibility_summary">Sesuaikan aplikasi mengikut keperluan anda</string>
+    <string name="help_topic_accessibility_content">Aplikasi ini merangkumi banyak ciri kebolehcapaian:\n\n- Mod teks besar dan kontras tinggi\n- Sokongan input suara dan pembaca skrin\n- Isyarat dipermudahkan dan antara muka pengguna\n- Pilihan kemasukan kod manual\n- Tamat masa dilanjutkan\n\nAkses ini dalam Tetapan > Kebolehcapaian</string>
+
+    <string name="help_topic_privacy_security_title">Privasi &amp; Keselamatan</string>
+    <string name="help_topic_privacy_security_summary">Cara maklumat anda dilindungi</string>
+    <string name="help_topic_privacy_security_content">Privasi anda adalah keutamaan utama kami:\n\n- Kelayakan disimpan secara tempatan pada peranti anda\n- Bukti pengetahuan sifar melindungi data anda\n- Tiada penjejakan atau analitik\n- Pengesahan biometrik tersedia\n- Data tidak pernah meninggalkan peranti anda tanpa penyulitan</string>
+
+    <string name="help_topic_troubleshooting_title">Penyelesaian Masalah</string>
+    <string name="help_topic_troubleshooting_summary">Masalah biasa dan penyelesaian</string>
+    <string name="help_topic_troubleshooting_content">Masalah biasa dan pembaikan:\n\nPengimbas QR Tidak Berfungsi:\n- Semak kebenaran kamera dalam Tetapan\n- Cuba pilihan kemasukan kod manual\n\nKelayakan Tidak Dimuatkan:\n- Semak sambungan internet anda\n- Cuba set semula kunci pembuktian\n\nPengesahan Gagal:\n- Pastikan kelayakan tidak luput\n- Hubungi pengesah untuk sokongan</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">TARIKH LAHIR</string>
+    <string name="date_of_birth">Tarikh lahir</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">%d tahun</string>
+    <string name="format_step_indicator">Langkah %1$d daripada %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">Kelayakan</string>
+    <string name="tab_settings">Tetapan</string>
+    <string name="tab_help">Bantuan</string>
+    <string name="tab_credentials_description">Lihat kelayakan anda</string>
+    <string name="tab_settings_description">Tetapan aplikasi</string>
+    <string name="tab_help_description">Dapatkan bantuan dan sokongan</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">Cari</string>
+    <string name="search_field_label">Medan carian</string>
+    <string name="search_placeholder">Cari tetapan, bantuan, dan ciri</string>
+    <string name="search_clear">Kosongkan carian</string>
+    <string name="search_popular">Carian Popular</string>
+    <string name="search_results_heading">Keputusan Carian</string>
+    <string name="search_no_results">Tiada Keputusan Ditemukan</string>
+    <string name="search_try_suggestions">Cuba cari:\n• Kebolehcapaian\n• Tetapan\n• Bantuan\n• Bahasa</string>
+    <string name="search_results_announcement_singular">Ditemukan 1 keputusan</string>
+    <string name="search_results_announcement_plural">Ditemukan %d keputusan</string>
+    <string name="search_no_results_announcement">Tiada keputusan ditemukan</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">Akses Pantas</string>
+    <string name="help_topics">Topik Bantuan</string>
+    <string name="help_glossary">Glosari</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">Lesen Sumber Terbuka</string>
+    <string name="licenses_description">Aplikasi ini menggunakan perisian sumber terbuka berikut. Kami berterima kasih kepada pembangun yang mencipta perpustakaan ini.</string>
+    <string name="licenses_tap_to_view">Ketik untuk melihat lesen penuh</string>
+    <string name="licenses_group_header">%1$s (%2$d perpustakaan)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">Tiada sambungan internet. Sila semak rangkaian anda dan cuba lagi.</string>
+    <string name="error_unexpected">Ralat tidak dijangka berlaku. Sila mulakan semula aplikasi.</string>
+    <string name="error_unexpected_try_again">Ralat tidak dijangka berlaku. Sila cuba lagi.</string>
+    <string name="error_storage_detailed">Ralat storan: %s</string>
+    <string name="error_network_detailed">Ralat rangkaian: %s</string>
+    <string name="error_proof_generation_failed">Gagal menjana bukti: %s</string>
+    <string name="error_not_eligible">Tidak layak. Anda tidak memenuhi keperluan untuk pengesahan ini.</string>
+    <string name="error_challenge_expired">Cabaran luput atau tidak ditemukan. Sila minta yang baharu.</string>
+    <string name="error_challenge_expired_scan_new">Cabaran ini telah luput. Sila imbas kod QR baharu.</string>
+    <string name="error_request_out_of_order">Permintaan tidak mengikut urutan. Sila cuba lagi.</string>
+    <string name="error_too_many_requests">Terlalu banyak permintaan. Sila tunggu sebentar dan cuba lagi.</string>
+    <string name="error_server">Ralat pelayan. Sila cuba lagi kemudian.</string>
+    <string name="error_request_failed">Permintaan gagal (%d). Sila cuba lagi.</string>
+    <string name="error_not_eligible_short">Tidak layak untuk pengesahan ini</string>
+    <string name="error_challenge_not_found">Cabaran tidak ditemukan</string>
+    <string name="error_complete_steps_in_order">Sila lengkapkan langkah mengikut urutan</string>
+    <string name="error_challenge_expired_short">Cabaran luput</string>
+    <string name="error_authentication_cancelled">Pengesahihan dibatalkan. Sila sahkan identiti anda untuk melengkapkan pengesahan umur.</string>
+    <string name="error_invalid_data_format_short">Format data tidak sah. Sila cuba lagi.</string>
+    <string name="error_storage_check_device">Ralat storan. Sila semak storan peranti.</string>
+    <string name="error_network_check_connection">Ralat rangkaian. Sila semak sambungan anda.</string>
+    <string name="error_proof_generation_failed_short">Gagal menjana bukti. Sila cuba lagi.</string>
+    <string name="error_operation_in_progress_short">Operasi lain sedang berjalan.</string>
+    <string name="error_no_internet_short">Tiada sambungan internet. Sila semak rangkaian anda.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Imbas QR Pengesahan</string>
+    <string name="verification_verifying_title">Mengesahkan Umur</string>
+    <string name="verification_success_title">Umur Disahkan</string>
+    <string name="verification_failed_title">Pengesahan Gagal</string>
+    <string name="verification_processing_wait">Ini mungkin mengambil beberapa saat</string>
+    <string name="verification_success_message">Umur anda telah disahkan secara peribadi</string>
+    <string name="verification_return_to_site">Anda kini boleh kembali ke laman untuk meneruskan.</string>
+    <string name="verification_please_enter_code">Sila masukkan kod pengesahan. Kod tersebut mestilah sama ada kod pendek 12 digit atau URL pengesahan penuh daripada pengesah.</string>
+    <string name="verification_error_occurred">Ralat berlaku semasa pengesahan</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Memproses...</string>
+    <string name="credential_list_verify_age_button">Sahkan Umur</string>
+    <string name="credential_list_generate_in_person_description">Jana kelayakan secara peribadi</string>
+    <string name="credential_list_scan_qr_title">Imbas kod QR</string>
+    <string name="credential_list_find_locations_title">Cari Lokasi</string>
+    <string name="credential_section_my_credential">Kelayakan Saya</string>
+    <string name="credential_section_managed">Kelayakan Diurus</string>
+    <string name="credential_list_get_credential_button">Dapatkan Kelayakan</string>
+    <string name="credential_list_add_managed_button">Tambah Kelayakan Diurus</string>
+    <string name="credential_section_managed_empty">Tambah kelayakan untuk seseorang yang anda jaga, seperti kanak-kanak.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Butiran Kelayakan</string>
+    <string name="credential_detail_not_found">Kelayakan tidak ditemukan</string>
+    <string name="credential_detail_nickname">Nama gelaran</string>
+    <string name="credential_detail_no_nickname">Tiada nama gelaran ditetapkan</string>
+    <string name="credential_detail_edit_nickname">Edit nama gelaran</string>
+    <string name="credential_detail_status">Status</string>
+    <string name="credential_detail_delete">Padam Kelayakan</string>
+    <string name="credential_detail_delete_title">Padam Kelayakan</string>
+    <string name="credential_detail_delete_message">Adakah anda pasti ingin memadam kelayakan ini? Tindakan ini tidak boleh dibuat asal.</string>
+    <string name="credential_type_primary">Utama</string>
+    <string name="credential_type_managed">Diurus</string>
+    <string name="credential_status_valid">Sah</string>
+    <string name="credential_status_expired">Luput</string>
+    <string name="credential_status_invalid">Tidak sah</string>
+    <string name="action_save">Simpan</string>
+    <string name="credential_slots_full_title">Had Kelayakan Dicapai</string>
+    <string name="credential_slots_full_message">Anda telah mencapai bilangan kelayakan maksimum. Padam kelayakan sedia ada untuk menambah yang baharu.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">Kelayakan diurus</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">Sahkan umur untuk %1$s?</string>
+    <string name="managed_confirm_message">Anda akan mengesahkan umur menggunakan kelayakan diurus %1$s.</string>
+    <string name="managed_confirm_proceed">Sahkan untuk %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Mencipta bukti untuk %1$s</string>
+    <string name="verification_age_verified_for">Umur disahkan untuk %1$s</string>
+    <string name="deeplink_verification_age_verified_for">Umur disahkan untuk %1$s</string>
+    <string name="attestation_managed_credential_received">Kelayakan untuk %1$s diterima!</string>
+    <string name="attestation_managed_credential_stored">Kelayakan kanak-kanak anda telah disimpan dengan selamat.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">Padam kelayakan %1$s?</string>
+    <string name="credential_detail_delete_managed_message">Adakah anda pasti ingin memadam kelayakan diurus ini untuk %1$s? Tindakan ini tidak boleh dibuat asal. Anda perlu melawat penerbit semula untuk menggantikannya.</string>
+    <string name="credential_detail_save_error">Gagal menyimpan nama gelaran</string>
+    <string name="credential_detail_delete_error">Gagal memadam kelayakan</string>
+    <string name="accessibility_saving">Menyimpan...</string>
+    <string name="accessibility_deleting">Memadam...</string>
+    <string name="accessibility_loading">Memuatkan, sila tunggu</string>
+    <string name="accessibility_issuing_credential">Mengeluarkan kelayakan, sila tunggu</string>
+    <string name="dialog_delete_all_credentials_title">Padam semua kelayakan?</string>
+    <string name="dialog_delete_all_credentials_message">Ini akan memadam kelayakan anda dan mana-mana kelayakan diurus untuk kanak-kanak. Tindakan ini tidak boleh dibuat asal.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">Diurus</string>
+    <string name="credential_slots_count">%1$d daripada 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Menyediakan pengesahan...</string>
+    <string name="deeplink_verification_checking_credential">Menyemak kelayakan...</string>
+    <string name="deeplink_verification_processing_challenge">Memproses cabaran...</string>
+    <string name="deeplink_verification_creating_proof">Mencipta bukti selamat...</string>
+    <string name="deeplink_verification_submitting_proof">Menghantar bukti...</string>
+    <string name="deeplink_verification_success">✔ Umur berjaya disahkan</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">Tiada kelayakan ditemukan. Sila sediakan kelayakan anda dahulu.</string>
+    <string name="deeplink_verification_error_failed_challenge">Gagal memproses cabaran pengesahan</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Tidak dapat menunjukkan gesaan pengesahihan</string>
+    <string name="deeplink_verification_error_failed_proof">Gagal mencipta bukti umur</string>
+    <string name="deeplink_verification_error_verification_failed">Pengesahan gagal</string>
+    <string name="deeplink_verification_error_unexpected">Ralat tidak dijangka berlaku</string>
+    <string name="deeplink_verification_error_no_credential_selected">Tiada kelayakan dipilih. Sila cuba lagi.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Pilih Kelayakan</string>
+    <string name="deeplink_verification_select_credential_subtitle">Beberapa kelayakan tersedia. Pilih yang mana hendak digunakan untuk pengesahan ini.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Mengesahkan Umur</string>
+    <string name="deeplink_verification_title_verified">Disahkan</string>
+    <string name="deeplink_verification_title_failed">Pengesahan Gagal</string>
+    <string name="deeplink_verification_please_wait">Sila tunggu...</string>
+    <string name="deeplink_verification_age_verified">Umur Disahkan!</string>
+    <string name="deeplink_verification_under_age_verified">Disahkan Bawah %1$d</string>
+    <string name="deeplink_verification_returning_browser">Kembali ke pelayar...</string>
+    <string name="deeplink_verification_return_to_browser">Kembali ke Pelayar</string>
+    <string name="deeplink_verification_failed_title">Pengesahan Gagal</string>
+    <string name="deeplink_verification_error_occurred">Ralat berlaku semasa pengesahan</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">PROSES PENGELUARAN</string>
+    <string name="officer_issuance_process_steps">1. Semak dokumen pengenalan fizikal pengguna\n2. Masukkan tarikh lahir mereka\n3. Sahkan maklumat sepadan dengan tepat\n4. Keluarkan kelayakan dengan kod QR perakuan\n5. Pengguna mengimbas kod QR untuk menerima kelayakan</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">Gagal menjana kod QR</string>
+    <string name="officer_attestation_ready_title">Perakuan Sedia</string>
+    <string name="officer_attestation_scan_instruction">Pengguna perlu mengimbas kod QR ini dengan aplikasi Provii Wallet mereka</string>
+    <string name="officer_attestation_deeplink_label">PAUTAN DALAM PERAKUAN</string>
+    <string name="officer_wait_for_attestation_scan">Tunggu pengguna mengimbas</string>
+    <string name="officer_attestation_info">Kelayakan akan dijana pada peranti mereka</string>
+    <string name="officer_attestation_complete">Perakuan selesai</string>
+    <string name="officer_user_will_complete_credential">Pengguna akan melengkapkan penjanaan kelayakan pada peranti mereka</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Menyahkod data perakuan...</string>
+    <string name="attestation_generating_randomness">Menjana rawakan selamat...</string>
+    <string name="attestation_sending">Menghantar ke penerbit...</string>
+    <string name="attestation_verifying">Mengesahkan komitmen...</string>
+    <string name="attestation_storing">Menyimpan kelayakan...</string>
+    <string name="attestation_complete">Kelayakan selesai!</string>
+    <string name="attestation_error_invalid_data">Data perakuan tidak sah</string>
+    <string name="attestation_error_expired">Perakuan telah luput</string>
+    <string name="attestation_error_network">Ralat rangkaian - sila semak sambungan anda</string>
+    <string name="attestation_error_unexpected">Ralat tidak dijangka berlaku</string>
+    <string name="attestation_title_processing">Memproses Perakuan</string>
+    <string name="attestation_title_success">Kelayakan Diterima</string>
+    <string name="attestation_title_failed">Pengeluaran Gagal</string>
+    <string name="attestation_secure_issuance">Pengeluaran Selamat</string>
+    <string name="attestation_privacy_preserving">Pengeluaran kelayakan yang memelihara privasi</string>
+    <string name="attestation_may_take_seconds">Ini mungkin mengambil beberapa saat</string>
+    <string name="attestation_keep_app_open">Sila jangan tutup aplikasi</string>
+    <string name="attestation_credential_received">Kelayakan Diterima!</string>
+    <string name="attestation_credential_stored_description">Kelayakan pengesahan umur anda telah disimpan dengan selamat</string>
+    <string name="attestation_issuer_verified">Penerbit disahkan</string>
+    <string name="attestation_failed_title">Pengeluaran Gagal</string>
+    <string name="attestation_scan_qr_instead">Imbas QR Sebagai Gantinya</string>
+    <string name="attestation_go_back">Kembali</string>
+    <string name="attestation_step_decode">Nyahkod</string>
+    <string name="attestation_step_generate">Jana</string>
+    <string name="attestation_step_send">Hantar</string>
+    <string name="attestation_step_verify">Sahkan</string>
+    <string name="attestation_step_store">Simpan</string>
+    <string name="attestation_step_complete">Selesai</string>
+    <string name="accessibility_attestation_encrypted_description">Perakuan disulitkan sedang diproses</string>
+    <string name="accessibility_attestation_success_description">Tanda semak kejayaan menunjukkan kelayakan diterima</string>
+    <string name="accessibility_attestation_error_description">Ikon ralat menunjukkan pengeluaran gagal</string>
+    <string name="accessibility_step_complete">Langkah %1$s selesai</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Penerima Kelayakan</string>
+    <string name="attestation_recipient_prompt">Kelayakan ini adalah untuk\u2026</string>
+    <string name="attestation_recipient_me">Saya</string>
+    <string name="attestation_recipient_child">Seorang Kanak-kanak</string>
+    <string name="attestation_nickname_title">Nama Gelaran Kanak-kanak</string>
+    <string name="attestation_nickname_prompt">Masukkan nama gelaran supaya anda boleh membezakan kelayakan</string>
+    <string name="attestation_nickname_placeholder">cth. Alex</string>
+    <string name="attestation_nickname_continue">Teruskan</string>
+    <string name="attestation_nickname_back">Kembali</string>
+    <string name="accessibility_attestation_recipient_heading">Pilih untuk siapa kelayakan ini</string>
+    <string name="accessibility_attestation_nickname_heading">Masukkan nama gelaran untuk kanak-kanak</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Format ID pegawai tidak sah</string>
+    <string name="officer_auth_error_challenge_failed">Gagal mendapatkan cabaran YubiKey: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Sentuh YubiKey anda untuk mengesahihkan</string>
+    <string name="officer_auth_error_touch_timeout">Tamat masa sentuhan YubiKey</string>
+    <string name="officer_auth_error_verify_document_dob">Sila sahkan dokumen dan Tarikh Lahir sepadan</string>
+    <string name="officer_auth_error_invalid_date_format">Format tarikh tidak sah. Gunakan YYYY-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">Pengguna mesti berumur 18 tahun atau lebih</string>
+    <string name="officer_auth_error_not_authenticated">Tidak disahihkan. Sila masukkan ID pegawai anda dahulu.</string>
+    <string name="officer_auth_error_issue_failed">Gagal mengeluarkan kelayakan</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Ketik untuk melihat</string>
+    <string name="gesture_desc_long_press_options">, tekan lama untuk pilihan</string>
+    <string name="gesture_desc_swipe_left">, leret kiri untuk tindakan lain</string>
+    <string name="gesture_desc_swipe_right">, leret kanan untuk tindakan lain</string>
+    <string name="gesture_desc_tap_to_activate">Ketik untuk mengaktifkan</string>
+    <string name="gesture_desc_long_press_format">. Tekan lama: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Cuba Semula</string>
+    <string name="main_activity_reset_redownload">Set Semula dan Muat Turun Semula</string>
+    <string name="main_activity_show_debug_info">Tunjukkan Maklumat Debug</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Tetapan Kebolehcapaian</string>
+    <string name="search_item_accessibility_settings_subtitle">Sesuaikan pengalaman anda</string>
+    <string name="search_item_large_text_title">Teks Besar</string>
+    <string name="search_item_large_text_subtitle">Tingkatkan saiz teks</string>
+    <string name="search_item_high_contrast_title">Kontras Tinggi</string>
+    <string name="search_item_high_contrast_subtitle">Pertingkatkan keterlihatan</string>
+    <string name="search_item_voice_input_title">Input Suara</string>
+    <string name="search_item_voice_input_subtitle">Kawal dengan suara</string>
+    <string name="search_item_manual_code_entry_title">Kemasukan Kod Manual</string>
+    <string name="search_item_manual_code_entry_subtitle">Taip kod dan bukannya mengimbas</string>
+    <string name="search_item_simplified_ui_title">Antara Muka Pengguna Dipermudahkan</string>
+    <string name="search_item_simplified_ui_subtitle">Kurangkan kerumitan visual</string>
+    <string name="search_item_color_blindness_title">Sokongan Buta Warna</string>
+    <string name="search_item_color_blindness_subtitle">Laraskan warna untuk keterlihatan yang lebih baik</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Tetapan</string>
+    <string name="search_item_settings_subtitle">Konfigurasi aplikasi</string>
+    <string name="search_item_language_title">Bahasa</string>
+    <string name="search_item_language_subtitle">Tukar bahasa aplikasi</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Kelayakan Saya</string>
+    <string name="search_item_credentials_subtitle">Lihat kelayakan anda</string>
+    <string name="search_item_get_credential_title">Dapatkan Kelayakan</string>
+    <string name="search_item_get_credential_subtitle">Cari penerbit</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Bantuan</string>
+    <string name="search_item_help_subtitle">Dapatkan bantuan</string>
+    <string name="search_item_privacy_title">Perlindungan Privasi</string>
+    <string name="search_item_privacy_subtitle">Cara data anda dilindungi</string>
+    <string name="search_item_verification_title">Pengesahan Umur</string>
+    <string name="search_item_verification_subtitle">Buktikan umur anda</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Daftar sandaran berkod keras untuk persekitaran Sandbox</string>
+    <string name="issuer_fallback_production_description">Daftar sandaran berkod keras untuk pengeluaran</string>
+    <string name="issuer_fallback_category_government">Kerajaan</string>
+    <string name="issuer_fallback_category_government_description">Kelayakan yang dikeluarkan oleh kerajaan</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Penerbit Sandbox Provii</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Penerbit Sandbox rasmi Provii untuk ujian</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Lawati portal penerbit Sandbox</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Penerbit kelayakan rasmi Provii</string>
+    <string name="issuer_fallback_production_issuer_instructions">Lawati pejabat DMV tempatan anda</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">Tarikh lahir tidak boleh pada masa hadapan</string>
+    <string name="validation_error_invalid_date_format">Format tarikh tidak sah</string>
+    <string name="validation_error_officer_id_too_short">Pengenalan pegawai terlalu pendek</string>
+    <string name="validation_error_invalid_officer_id_format">Format pengenalan Pegawai tidak sah</string>
+    <string name="validation_error_empty_qr_code">Kod QR kosong</string>
+    <string name="validation_error_qr_code_too_large">Kod QR terlalu besar</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">Anda kini seorang pembangun!</string>
+    <string name="sandbox_toast_enabled">Mod Sandbox Diaktifkan\nMenggunakan persekitaran ujian</string>
+    <string name="sandbox_toast_disabled">Mod Pengeluaran Diaktifkan\nMenggunakan persekitaran pengeluaran</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">Anda hanya 1 langkah lagi daripada mod pembangun</string>
+    <string name="sandbox_toast_steps_away">Anda %1$d langkah lagi daripada mod pembangun</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">Tiada YubiKey disambungkan</string>
+    <string name="yubikey_error_timeout">Tamat masa menunggu sentuhan YubiKey. Sila sentuh kunci apabila ia berkelip.</string>
+    <string name="yubikey_error_not_supported">Respons cabaran tidak dikonfigurasi pada slot YubiKey ini</string>
+    <string name="yubikey_error_no_slot">Slot 2 tidak dikonfigurasi untuk respons cabaran HMAC SHA1</string>
+    <string name="yubikey_error_hmac_failed">Pengiraan HMAC (Kod Pengesahan Mesej Berasaskan Hash) gagal: %s</string>
+    <string name="yubikey_error_session_failed">Gagal menyambung ke YubiKey: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">Dompet tidak dimulakan</string>
+    <string name="wallet_error_proving_key_not_found">Kunci pembuktian tidak ditemukan - sila muat turun semula</string>
+    <string name="wallet_error_proving_key_not_readable">Tidak dapat membaca fail kunci pembuktian</string>
+    <string name="wallet_error_out_of_memory">Kehabisan memori - sila mulakan semula aplikasi</string>
+    <string name="wallet_error_prover_error">Ralat pembuktian: %s</string>
+    <string name="wallet_error_ffi_error">Ralat FFI: %s</string>
+    <string name="wallet_error_prover_init_failed">Gagal memulakan pembuktian: %s</string>
+    <string name="wallet_error_prover_verification_failed">Pengesahan permulaan pembuktian gagal</string>
+    <string name="wallet_error_verifier_url_update_failed">Gagal mengemas kini URL (alamat web) pengesah! Dijangka %1$s tetapi mendapat %2$s</string>
+    <string name="wallet_error_wallet_still_null">Dompet masih null selepas permulaan</string>
+    <string name="wallet_error_credential_not_found">Kelayakan tidak ditemukan</string>
+    <string name="wallet_error_credential_access_failed">Tidak dapat mengakses kelayakan: %s</string>
+    <string name="wallet_error_invalid_format">Format tidak sah: %s</string>
+    <string name="wallet_error_not_initialized_short">Pembuktian tidak dimulakan</string>
+    <string name="wallet_error_proving_key_unavailable">Kunci pembuktian tidak tersedia. Persediaan diperlukan.</string>
+    <string name="wallet_error_storage_init_failed">Permulaan storan gagal</string>
+    <string name="wallet_error_biometric_unavailable">Pengesahan biometrik tidak tersedia</string>
+    <string name="wallet_error_auth_failed">Pengesahan gagal</string>
+    <string name="wallet_error_sandbox_disabled">Aktifkan mod Sandbox untuk menjana kelayakan ujian</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Tidak dapat mendapatkan kelayakan Sandbox. Sila semak sambungan internet.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Pengesahan Diperlukan</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Sahkan identiti anda untuk mencipta bukti umur</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Akses storan selamat</string>
+    <string name="keystore_biometric_prompt_cancel">Batal</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, dikembangkan, menunjukkan teks lesen penuh</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, diruntuhkan, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">Tiada</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Selular</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Tidak diketahui</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">Tahap Kontras</string>
+    <string name="help_topic_extra_large_text_title">Teks Sangat Besar</string>
+    <string name="help_topic_reduce_transparency_title">Kurangkan Ketelusan</string>
+    <string name="help_topic_color_blind_modes_title">Mod Buta Warna</string>
+    <string name="help_topic_line_spacing_title">Jarak Baris</string>
+    <string name="help_topic_paragraph_spacing_title">Jarak Perenggan</string>
+    <string name="help_topic_letter_spacing_title">Jarak Huruf</string>
+    <string name="help_topic_text_width_title">Lebar Teks</string>
+    <string name="help_topic_touch_targets_title">Sasaran Sentuhan Lebih Besar</string>
+    <string name="help_topic_reduce_motion_title">Kurangkan Gerakan</string>
+    <string name="help_topic_timeout_behavior_title">Kelakuan Tamat Masa</string>
+    <string name="help_topic_simplified_gestures_title">Isyarat Dipermudahkan</string>
+    <string name="help_topic_haptic_feedback_title">Maklum Balas Haptik</string>
+    <string name="help_topic_data_preservation_title">Pemeliharaan Data</string>
+    <string name="help_topic_simplified_ui_title">Antara Muka Pengguna Dipermudahkan</string>
+    <string name="help_topic_step_indicators_title">Penunjuk Langkah</string>
+    <string name="help_topic_verbose_descriptions_title">Penerangan Terperinci</string>
+    <string name="help_topic_confirm_actions_title">Sahkan Tindakan</string>
+    <string name="help_topic_reading_level_title">Tahap Bacaan Dipermudahkan</string>
+    <string name="help_topic_help_system_title">Sistem Bantuan</string>
+    <string name="help_topic_manual_code_entry_title">Kemasukan Kod Manual</string>
+    <string name="help_topic_voice_input_title">Input Suara</string>
+    <string name="help_topic_screen_reader_title">Sokongan Pembaca Skrin</string>
+    <string name="help_topic_accessibility_profiles_title">Profil Persediaan Pantas</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">Kawal nisbah kontras antara teks dan latar belakang:\n\n• Standard: Warna aplikasi lalai\n• Tinggi (AA): Nisbah kontras 4.5:1\n• Maksimum (AAA): Nisbah kontras 7:1+\n\nKontras lebih tinggi memudahkan pembacaan teks, terutamanya dalam persekitaran terang atau bagi pengguna yang mempunyai penglihatan lemah.\n\nPematuhan WCAG AAA memerlukan kontras Maksimum.</string>
+    <string name="help_topic_extra_large_text_text">Meningkatkan semua saiz teks sebanyak 50% di seluruh aplikasi.\n\nIni memudahkan pembacaan teks bagi pengguna yang mempunyai:\n• Penglihatan lemah\n• Perubahan penglihatan berkaitan usia\n• Kesukaran membaca\n\nBergabung dengan tetapan saiz fon sistem untuk fleksibiliti maksimum.</string>
+    <string name="help_topic_reduce_transparency_text">Membuang lapisan telus dan kesan kabur.\n\nManfaat:\n• Hierarki visual yang lebih jelas\n• Kebolehbacaan teks yang lebih baik\n• Bunyi visual yang dikurangkan\n• Beban kognitif yang lebih rendah\n\nDisyorkan bagi pengguna yang mempunyai penglihatan lemah atau kesukaran kognitif.</string>
+    <string name="help_topic_color_blind_modes_text">Melaraskan warna untuk pelbagai jenis buta warna:\n\n• Protanopia: Buta merah\n• Deuteranopia: Buta hijau\n• Tritanopia: Buta biru\n• Monokrom: Buta warna sepenuhnya\n\nSetiap mod menggunakan warna yang dipilih dengan teliti yang boleh dibezakan untuk jenis kecacatan penglihatan warna tertentu.</string>
+    <string name="help_topic_line_spacing_text">Melaraskan jarak antara baris teks (1.0x - 2.0x).\n\n• Lalai: 1.0x\n• Mematuhi AAA: 1.5x atau lebih tinggi\n\nJarak baris yang ditingkatkan:\n• Meningkatkan pemahaman bacaan\n• Mengurangkan ketegangan mata\n• Membantu pengguna yang menghidap disleksia\n• Menjadikan blok teks kurang menakutkan</string>
+    <string name="help_topic_paragraph_spacing_text">Melaraskan jarak antara perenggan (1.0x - 3.0x).\n\n• Lalai: 1.0x\n• Mematuhi AAA: 2.0x atau lebih tinggi\n\nJarak perenggan yang ditingkatkan:\n• Memisahkan idea dengan jelas\n• Meningkatkan organisasi visual\n• Mengurangkan beban kognitif\n• Membantu mengekalkan kedudukan membaca</string>
+    <string name="help_topic_letter_spacing_text">Melaraskan jarak antara huruf (0.0em - 0.2em).\n\n• Lalai: 0.0em\n• Mematuhi AAA: 0.12em atau lebih tinggi\n\nJarak huruf yang ditingkatkan:\n• Menjadikan huruf individu lebih ketara\n• Membantu pengguna yang menghidap disleksia\n• Meningkatkan ketepatan membaca\n• Mengurangkan kekeliruan huruf</string>
+    <string name="help_topic_text_width_text">Mengehadkan panjang baris untuk pembacaan yang lebih mudah:\n\n• Lebar Penuh: Tiada had\n• Selesa: 80 aksara (disyorkan)\n• Sempit: 60 aksara\n\nKajian menunjukkan pembacaan optimum berlaku pada 60-80 aksara setiap baris. Baris yang lebih pendek mengurangkan pergerakan mata dan meningkatkan pemahaman.</string>
+    <string name="help_topic_touch_targets_text">Meningkatkan saiz sasaran sentuhan minimum kepada 60dp (daripada 44dp).\n\nManfaat:\n• Lebih mudah mengetik butang dan kawalan\n• Mengurangkan ketikan tidak sengaja\n• Membantu pengguna yang mengalami masalah motor\n• Lebih baik untuk penggunaan satu tangan\n\nWCAG AAA memerlukan minimum 60dp.</string>
+    <string name="help_topic_reduce_motion_text">Membuang semua animasi dan peralihan.\n\nManfaat:\n• Mencegah loya gerakan\n• Mengurangkan gangguan\n• Menurunkan beban kognitif\n• Meningkatkan fokus\n\nDisyorkan bagi pengguna yang mempunyai:\n• Gangguan vestibular\n• Kesukaran tumpuan\n• Kepekaan gerakan</string>
+    <string name="help_topic_timeout_behavior_text">Mengawal tamat masa automatik pada skrin pengesahan:\n\n• Tiada Tamat Masa (AAA): Masa tidak terhad\n• Standard: 30 saat\n• Dilanjutkan: 60 saat\n\nWCAG AAA memerlukan pilihan tanpa tamat masa bagi pengguna yang memerlukan lebih masa untuk melengkapkan tugas.\n\nData borang disimpan secara automatik sebelum tamat masa.</string>
+    <string name="help_topic_simplified_gestures_text">Menggantikan isyarat kompleks dengan alternatif mudah:\n\n• Leret → Ketik butang\n• Tekan lama → Ketik biasa dengan pengesahan\n• Cubit/zum → Butang\n\nMembantu pengguna yang mempunyai:\n• Masalah motor\n• Gegaran\n• Ketangkasan terhad\n• Kesukaran skrin sentuh</string>
+    <string name="help_topic_haptic_feedback_text">Menyediakan maklum balas getaran untuk tindakan.\n\nManfaat:\n• Mengesahkan tekanan butang\n• Menunjukkan ralat\n• Menyediakan pengesahan deria sentuh\n\nBoleh dinyahaktifkan bagi pengguna yang:\n• Mendapatinya mengganggu\n• Mempunyai kepekaan deria\n• Lebih suka operasi senyap</string>
+    <string name="help_topic_data_preservation_text">Menyimpan data borang secara automatik sebelum tamat masa.\n\nCiri:\n• Amaran 10 saat sebelum tamat masa\n• Pilihan untuk menyimpan atau membuang data\n• Pemulihan automatik semasa kembali\n• Penyimpanan data 24 jam\n\nMemastikan tiada kehilangan data jika anda memerlukan masa tambahan atau mengalami gangguan.</string>
+    <string name="help_topic_simplified_ui_text">Mengurangkan kerumitan visual:\n\n• Lebih sedikit elemen UI ditunjukkan pada satu masa\n• Butang yang lebih besar dan lebih jelas\n• Lebih banyak ruang putih\n• Susun atur yang dipermudahkan\n\nManfaat:\n• Lebih mudah difahami\n• Kurang menakutkan\n• Fokus yang lebih baik\n• Beban kognitif yang dikurangkan</string>
+    <string name="help_topic_step_indicators_text">Menunjukkan kemajuan melalui proses berbilang langkah.\n\nMemaparkan:\n• Nombor langkah semasa\n• Jumlah bilangan langkah\n• Visualisasi kemajuan\n\nManfaat:\n• Mengurangkan kebimbangan\n• Menetapkan jangkaan yang jelas\n• Membantu mengekalkan orientasi\n• Menunjukkan kemajuan penyelesaian</string>
+    <string name="help_topic_verbose_descriptions_text">Menyediakan konteks dan penjelasan tambahan:\n\n• Label butang yang lebih panjang\n• Arahan yang lebih terperinci\n• Petunjuk tambahan\n• Mesej ralat yang lebih jelas\n\nMembantu pengguna:\n• Memahami tindakan sebelum mengambilnya\n• Mengelakkan kesilapan\n• Mempelajari fungsi aplikasi\n• Membina keyakinan</string>
+    <string name="help_topic_confirm_actions_text">Memerlukan pengesahan untuk tindakan penting:\n\n• Memadam kelayakan\n• Menukar tetapan\n• Mengosongkan data\n\nWCAG AAA memerlukan pengesahan untuk semua tindakan merosakkan.\n\nManfaat:\n• Mencegah kemalangan\n• Membenarkan semakan sebelum tindakan\n• Mengurangkan kebimbangan\n• Memberi peluang kedua</string>
+    <string name="help_topic_reading_level_text">Menggunakan bahasa yang lebih mudah (tahap Gred 7-9):\n\n• Ayat yang lebih pendek\n• Perkataan biasa dan bukannya jargon\n• Bahasa yang jelas dan langsung\n• Lebih sedikit istilah teknikal\n\nMematuhi WCAG AAA apabila diaktifkan.\n\nManfaat:\n• Lebih mudah difahami\n• Pemahaman yang lebih pantas\n• Lebih baik untuk penutur bukan asli\n• Beban kognitif yang dikurangkan</string>
+    <string name="help_topic_help_system_text">Bantuan sensitif konteks tersedia di seluruh aplikasi.\n\nCiri:\n• 27 topik bantuan\n• Pusat bantuan yang boleh dicari\n• Navigasi topik berkaitan\n• Glosari teknikal\n\nAkses bantuan daripada:\n• Skrin tetapan\n• Ciri kompleks\n• Mesej ralat\n• Di mana sahaja anda melihat ikon bantuan</string>
+    <string name="help_topic_manual_code_entry_text">Masukkan data kod QR secara manual dan bukannya mengimbas.\n\nManfaat:\n• Berfungsi apabila akses kamera tidak tersedia\n• Membantu pengguna yang mengalami masalah motor\n• Lebih baik dalam cahaya redup\n• Tidak perlu memegang telefon dengan stabil\n\nAlternatif kepada pengimbasan QR berasaskan kamera.</string>
+    <string name="help_topic_voice_input_text">Gunakan suara untuk memasukkan teks dan bukannya menaip.\n\nManfaat:\n• Input tanpa tangan\n• Lebih pantas daripada menaip\n• Membantu pengguna yang mengalami masalah motor\n• Mengurangkan kecederaan berulang\n\nMenggunakan pengecaman suara terbina dalam peranti anda.</string>
+    <string name="help_topic_screen_reader_text">Sokongan penuh untuk pembaca skrin TalkBack.\n\nCiri:\n• Semua elemen UI dilabelkan\n• Struktur tajuk yang betul\n• Urutan navigasi yang logik\n• Petunjuk khusus untuk tindakan kompleks\n\nAplikasi mengaktifkan secara automatik:\n• Penerangan terperinci\n• Sasaran sentuhan yang dipertingkatkan\n\napabila TalkBack dikesan.</string>
+    <string name="help_topic_accessibility_profiles_text">Profil kebolehcapaian yang telah dikonfigurasi:\n\n• Penglihatan Terjejas: Kontras tinggi, teks besar, haptik\n• Motor Terjejas: Sasaran besar, tamat masa dilanjutkan, pengesahan\n• Kognitif: UI dipermudahkan, penunjuk langkah, penerangan\n• Warga Emas: Teks besar, sasaran, UI dipermudahkan, gerakan dikurangkan\n• Lalai: Set semula semua tetapan\n\nSetiap profil mengaktifkan tetapan yang paling berguna untuk kumpulan pengguna tersebut. Anda boleh menyesuaikan lagi selepas menerapkan profil.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">Pengesahan Umur</string>
+    <string name="content_age_verification_explanation">Sila tunggu semasa kami mengesahkan umur anda secara selamat menggunakan bukti pengetahuan sifar. Tarikh lahir anda tidak pernah dikongsi dengan pengesah.</string>
+    <string name="content_age_verification_instructions">Arahkan kamera anda ke kod QR pengesahan. Kod akan diimbas secara automatik apabila dikesan.</string>
+    <string name="content_age_verification_success">Umur anda telah berjaya disahkan. Pengesah mengetahui anda memenuhi keperluan umur mereka tanpa mengetahui tarikh lahir sebenar anda.</string>
+    <string name="content_age_verification_failed">Pengesahan gagal. Sila cuba mengimbas kod QR sekali lagi atau gunakan kemasukan kod manual.</string>
+    <string name="content_credential_issuance_title">Pengeluaran Kelayakan</string>
+    <string name="content_credential_issuance_explanation">Imbas kod QR yang disediakan oleh penerbit yang diberi kuasa untuk menerima kelayakan umur digital anda.</string>
+    <string name="content_credential_issuance_instructions">Arahkan kamera anda ke kod QR pengeluaran yang ditunjukkan oleh pegawai. Kelayakan anda akan dijana pada peranti anda.</string>
+    <string name="content_credential_issuance_success">Kelayakan berjaya dicipta. Anda kini boleh menggunakan kelayakan ini untuk pengesahan umur.</string>
+    <string name="content_credential_description">Kelayakan ialah bukti identiti yang ditandatangani secara kriptografi yang membolehkan pengesahan yang memelihara privasi.</string>
+    <string name="content_zero_knowledge_explanation">Bukti pengetahuan sifar membolehkan anda membuktikan bahawa anda memenuhi keperluan umur tanpa mendedahkan umur sebenar anda.</string>
+    <string name="content_setup_proving_key">Memuat turun kunci pembuktian kriptografi yang diperlukan untuk penjanaan bukti pengetahuan sifar</string>
+    <string name="content_processing_challenge">Memproses cabaran pengesahan</string>
+    <string name="content_creating_proof">Mencipta bukti umur pengetahuan sifar</string>
+    <string name="content_submitting_proof">Menghantar bukti kepada pengesah</string>
+    <string name="content_error_no_credential">Tiada kelayakan tersedia. Sila dapatkan kelayakan daripada penerbit yang diberi kuasa dahulu.</string>
+    <string name="content_error_network_failed">Sambungan rangkaian gagal. Sila semak sambungan internet anda dan cuba lagi.</string>
+    <string name="content_error_invalid_qr">Kod QR tidak sah. Sila pastikan anda mengimbas kod pengesahan yang betul.</string>
+    <string name="content_error_verification_failed">Pengesahan gagal. Pelayan tidak dapat mengesahkan bukti anda.</string>
+    <string name="content_officer_authentication_title">Pengesahihan Pegawai</string>
+    <string name="content_officer_issuance_title">Pengeluaran Kelayakan</string>
+    <string name="content_officer_dob_prompt">Masukkan tarikh lahir pemohon yang telah disahkan daripada dokumen pengenalan rasmi mereka.</string>
+    <string name="content_onboarding_welcome">Selamat datang ke Provii Wallet - penyelesaian pengesahan umur digital yang memelihara privasi anda.</string>
+    <string name="content_onboarding_privacy">Tarikh lahir anda disimpan dengan selamat pada peranti anda dan tidak pernah dihantar kepada pengesah.</string>
+    <string name="content_onboarding_get_started">Untuk bermula, lawati penerbit yang diberi kuasa untuk mendapatkan kelayakan umur digital anda.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">Semak Umur Anda</string>
+    <string name="content_age_verification_explanation_simplified">Kami sedang menyemak umur anda. Kami tidak akan melihat atau berkongsi tarikh lahir anda.</string>
+    <string name="content_age_verification_instructions_simplified">Arahkan kamera anda ke kod QR. Ia akan mengimbas sendiri.</string>
+    <string name="content_age_verification_success_simplified">Berjaya! Laman web tahu anda cukup umur. Mereka tidak tahu tarikh lahir anda.</string>
+    <string name="content_age_verification_failed_simplified">Tidak berjaya. Cuba imbas semula atau taip kod sebaliknya.</string>
+    <string name="content_credential_issuance_title_simplified">Dapatkan Kad ID Anda</string>
+    <string name="content_credential_issuance_explanation_simplified">Imbas kod dari pejabat kerajaan untuk mendapatkan ID digital anda.</string>
+    <string name="content_credential_issuance_instructions_simplified">Arahkan kamera anda ke kod. ID anda akan disimpan pada telefon anda.</string>
+    <string name="content_credential_issuance_success_simplified">Selesai! Anda kini boleh menggunakan ID digital anda untuk membuktikan umur anda.</string>
+    <string name="content_credential_description_simplified">Kelayakan adalah seperti kad ID digital yang membuktikan siapa anda tanpa berkongsi maklumat peribadi.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Anda boleh membuktikan anda cukup umur tanpa memberitahu sesiapa umur sebenar anda.</string>
+    <string name="content_setup_proving_key_simplified">Memuat turun fail keselamatan yang diperlukan untuk aplikasi berfungsi</string>
+    <string name="content_processing_challenge_simplified">Membaca permintaan semakan umur</string>
+    <string name="content_creating_proof_simplified">Mencipta bukti umur anda</string>
+    <string name="content_submitting_proof_simplified">Menghantar bukti ke laman web</string>
+    <string name="content_error_no_credential_simplified">Anda belum mempunyai ID. Lawati pejabat kerajaan untuk mendapatkannya dahulu.</string>
+    <string name="content_error_network_failed_simplified">Tidak dapat menyambung ke internet. Semak Wi-Fi atau data anda dan cuba lagi.</string>
+    <string name="content_error_invalid_qr_simplified">Kod itu kelihatan tidak betul. Pastikan anda mengimbas kod yang betul.</string>
+    <string name="content_error_verification_failed_simplified">Tidak berjaya. Laman web tidak dapat menyemak bukti anda. Cuba lagi.</string>
+    <string name="content_officer_authentication_title_simplified">Log Masuk Pegawai</string>
+    <string name="content_officer_issuance_title_simplified">Cipta Kad ID</string>
+    <string name="content_officer_dob_prompt_simplified">Masukkan tarikh lahir orang itu daripada pengenalan rasmi mereka.</string>
+    <string name="content_onboarding_welcome_simplified">Selamat datang ke Provii Wallet - buktikan umur anda secara peribadi.</string>
+    <string name="content_onboarding_privacy_simplified">Tarikh lahir anda kekal pada telefon anda. Tiada orang lain boleh melihatnya.</string>
+    <string name="content_onboarding_get_started_simplified">Untuk bermula, lawati pejabat kerajaan untuk mendapatkan ID digital anda.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Tindak Balas Pantas (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Nombor Pengenalan Peribadi (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">Tarikh Lahir (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Pengenalan (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">Antara Muka Pengguna (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Pengecam Sumber Seragam (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Antara Muka Pengaturcaraan Aplikasi (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">Jeda animasi</string>
+    <string name="animation_resume_animations">Sambung semula animasi</string>
+    <string name="animation_pause_button_text">Jeda</string>
+    <string name="animation_resume_button_text">Sambung Semula</string>
+    <string name="animation_toggles_playback_hint">Togol main balik animasi</string>
+    <string name="animation_paused_announcement">Animasi dijeda</string>
+    <string name="animation_resumed_announcement">Animasi disambung semula</string>
+    <string name="animation_active_count">%d animasi aktif</string>
+    <string name="animation_loading_default">Memuatkan</string>
+    <string name="animation_please_wait">Sila tunggu sementara operasi ini selesai</string>
+    <string name="animation_percent_complete">%d peratus selesai</string>
+    <string name="animation_loading_in_progress">Sedang berjalan</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">Pintasan Papan Kekunci</string>
+    <string name="keyboard_shortcuts_done">Selesai</string>
+    <string name="keyboard_shortcuts_app_section">Pintasan Aplikasi</string>
+    <string name="keyboard_shortcuts_navigation_section">Navigasi</string>
+    <string name="keyboard_shortcuts_tips_section">Petua</string>
+    <string name="keyboard_shortcuts_navigation_footer">Kekunci navigasi ini berfungsi di seluruh aplikasi dengan papan kekunci luaran</string>
+    <string name="keyboard_shortcuts_tip_external">Papan kekunci Bluetooth dan USB luaran disokong sepenuhnya</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Gunakan kekunci anak panah untuk menavigasi antara item dalam senarai</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Tahan Ctrl untuk melihat pintasan yang tersedia pada skrin ini</string>
+    <string name="keyboard_shortcuts_tip_a11y">Semua ciri dalam aplikasi ini boleh diakses melalui papan kekunci</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Tutup pintasan papan kekunci</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">Tetapan</string>
+    <string name="keyboard_shortcut_label_accessibility">Kebolehcapaian</string>
+    <string name="keyboard_shortcut_label_help">Pusat Bantuan</string>
+    <string name="keyboard_shortcut_label_add_credential">Tambah Kelayakan</string>
+    <string name="keyboard_shortcut_label_verify">Sahkan</string>
+    <string name="keyboard_shortcut_label_shortcuts">Pintasan</string>
+    <string name="keyboard_shortcut_desc_settings">Buka Tetapan</string>
+    <string name="keyboard_shortcut_desc_accessibility">Tetapan Kebolehcapaian</string>
+    <string name="keyboard_shortcut_desc_help">Pusat Bantuan</string>
+    <string name="keyboard_shortcut_desc_add_credential">Tambah Kelayakan</string>
+    <string name="keyboard_shortcut_desc_verify">Mulakan Pengesahan</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Pintasan Papan Kekunci</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">Kembali / Tutup</string>
+    <string name="keyboard_shortcut_nav_back_desc">Tutup skrin atau dialog semasa</string>
+    <string name="keyboard_shortcut_nav_next">Medan Seterusnya</string>
+    <string name="keyboard_shortcut_nav_next_desc">Alihkan fokus ke elemen interaktif seterusnya</string>
+    <string name="keyboard_shortcut_nav_prev">Medan Sebelumnya</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Alihkan fokus ke elemen interaktif sebelumnya</string>
+    <string name="keyboard_shortcut_nav_submit">Hantar / Teruskan</string>
+    <string name="keyboard_shortcut_nav_submit_desc">Aktifkan butang yang difokus atau hantar borang</string>
+    <string name="keyboard_shortcut_nav_activate">Aktifkan Butang</string>
+    <string name="keyboard_shortcut_nav_activate_desc">Aktifkan butang atau togol yang sedang difokus</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">Dialog dibuka. Tekan Escape untuk tutup, Enter untuk sahkan.</string>
+    <string name="modal_closed_announcement">Dialog ditutup</string>
+    <string name="modal_button_primary_label">%s (tindakan utama)</string>
+    <string name="modal_button_cancel_label">%s (batal)</string>
+    <string name="modal_button_destructive_label">%s (tindakan merosakkan)</string>
+    <string name="modal_button_primary_hint">Ketik dua kali untuk sahkan, atau tekan Enter</string>
+    <string name="modal_button_cancel_hint">Ketik dua kali untuk batal, atau tekan Escape</string>
+    <string name="modal_button_destructive_hint">Ketik dua kali untuk melakukan tindakan merosakkan</string>
+    <string name="modal_button_secondary_hint">Ketik dua kali untuk melakukan tindakan</string>
+    <string name="modal_confirm">Sahkan</string>
+    <string name="modal_cancel">Batal</string>
+    <string name="modal_delete">Padam</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">Padam %1$s</string>
+    <string name="a11y_edit_nickname_for">Sunting nama panggilan untuk %1$s</string>
+    <string name="accessibility_attestation_scan_back">Kembali</string>
+    <string name="attestation_replace_confirm">Ganti</string>
+    <string name="attestation_replace_primary_message">Anda sudah mempunyai kelayakan peribadi. Mencipta yang baharu akan menggantikannya. Tindakan ini tidak boleh dibatalkan.</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">Ganti Kelayakan Sedia Ada?</string>
+    <string name="attestation_scan_error_empty">Kod QR kosong</string>
+    <string name="attestation_scan_instruction">Arahkan kamera anda ke kod QR yang ditunjukkan oleh pegawai</string>
+    <string name="attestation_scan_invalid_qr">Kod QR ini tidak mengandungi data perakuan</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">Imbas Perakuan</string>
+    <string name="attestation_scan_wrong_type_toast">Ini ialah QR pengesahan, bukan QR kelayakan</string>
+    <string name="biometric_required_message">Aplikasi ini memerlukan kunci skrin (PIN, corak, atau biometrik) untuk menyimpan kelayakan dengan selamat. Sila tetapkan satu dalam tetapan keselamatan peranti anda sebelum meneruskan.</string>
+    <string name="biometric_required_open_settings">Buka Tetapan Keselamatan</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">Kunci Skrin Diperlukan</string>
+    <string name="challenge_sandbox_prompt_announcement">Cabaran sandbox diterima. Pilih sama ada untuk mengaktifkan mod sandbox dan teruskan, atau tolak cabaran tersebut.</string>
+    <string name="challenge_sandbox_prompt_body">Cabaran ini dikeluarkan oleh pengesah sandbox. Ia tidak akan berjaya melainkan anda mengaktifkan mod sandbox dalam dompet ini.</string>
+    <string name="challenge_sandbox_prompt_primary">Aktifkan sandbox dan teruskan</string>
+    <string name="challenge_sandbox_prompt_secondary">Tolak cabaran</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">Cabaran sandbox diterima</string>
+    <string name="credential_detail_nickname_error">Gagal menyimpan nama panggilan</string>
+    <string name="credential_list_managed_count">%1$d daripada %2$d</string>
+    <string name="credential_picker_count_shown">%1$d kelayakan ditunjukkan</string>
+    <string name="credential_picker_filter_clear">Kosongkan penapis</string>
+    <string name="credential_picker_filter_label">Tapis kelayakan mengikut nama</string>
+    <string name="credential_picker_filter_placeholder">Tapis kelayakan</string>
+    <string name="credential_picker_no_results">Tiada kelayakan yang sepadan</string>
+    <string name="credential_picker_section_managed">Kelayakan Terurus</string>
+    <string name="credential_picker_section_me">Saya</string>
+    <string name="credential_picker_subtitle">Pilih siapa yang sedang disahkan.</string>
+    <string name="credential_row_action_delete">Padam</string>
+    <string name="credential_row_action_edit">Sunting Nama Panggilan</string>
+    <string name="credential_row_overflow_menu">Pilihan kelayakan</string>
+    <string name="deeplink_sandbox_prompt_announcement">Pautan sandbox dikesan. Pilih sama ada untuk mengaktifkan mod sandbox dan membuka pautan tersebut.</string>
+    <string name="deeplink_sandbox_prompt_body">Pautan dalam ini hanya akan berjaya jika anda mengaktifkan mod sandbox dalam dompet ini.</string>
+    <string name="deeplink_sandbox_prompt_primary">Aktifkan sandbox dan buka</string>
+    <string name="deeplink_sandbox_prompt_secondary">Batal</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">Pautan sandbox dikesan</string>
+    <string name="empty_credential_option_find_apps_a11y">Cari aplikasi yang mengambil bahagian. Dapatkan kelayakan daripada dana persaraan, bank, syarikat telekomunikasi, penanggung insurans kesihatan anda, atau sesiapa sahaja yang sudah mengetahui umur anda.</string>
+    <string name="empty_credential_option_find_apps_desc">Dapatkan kelayakan daripada dana persaraan, bank, syarikat telekomunikasi, penanggung insurans kesihatan anda, atau sesiapa sahaja yang sudah mengetahui umur anda</string>
+    <string name="empty_credential_option_find_apps_title">Cari aplikasi yang mengambil bahagian</string>
+    <string name="empty_credential_option_find_locations_a11y">Cari lokasi berdekatan anda. Lawati secara peribadi dengan ID anda untuk mendapatkan kelayakan.</string>
+    <string name="empty_credential_option_find_locations_desc">Lawati secara peribadi dengan ID anda untuk mendapatkan kelayakan</string>
+    <string name="empty_credential_option_find_locations_title">Cari lokasi berdekatan anda</string>
+    <string name="empty_credential_option_managed_a11y">Saya menjaga seseorang. Urus kelayakan untuk orang yang anda jaga.</string>
+    <string name="empty_credential_option_managed_desc">Urus kelayakan untuk orang yang anda jaga</string>
+    <string name="empty_credential_option_managed_title">Saya menjaga seseorang</string>
+    <string name="empty_credential_option_scan_a11y">Saya mempunyai kod QR untuk diimbas. Pengesah memberikan anda kod selepas menyemak pengenalan anda.</string>
+    <string name="empty_credential_option_scan_desc">Pengesah memberikan anda kod selepas menyemak pengenalan anda</string>
+    <string name="empty_credential_option_scan_title">Saya mempunyai kod QR untuk diimbas</string>
+    <string name="empty_credential_subtitle">Pilih cara anda ingin mendapatkan kelayakan pertama anda</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">Belum Ada Kelayakan</string>
+    <string name="error_screen_lock_required">Kunci skrin (PIN, corak, atau biometrik) diperlukan untuk menyimpan kelayakan dengan selamat. Sila tetapkan satu dalam tetapan peranti anda.</string>
+    <string name="issuers_no_apps_found_description">Semak semula tidak lama lagi apabila lebih banyak aplikasi menambah sokongan untuk Provii</string>
+    <string name="issuers_no_apps_found">Belum ada aplikasi yang mengambil bahagian</string>
+    <string name="issuers_no_locations_found_description">Semak semula tidak lama lagi apabila lebih banyak lokasi ditambah</string>
+    <string name="issuers_no_locations_found">Tiada lokasi dijumpai</string>
+    <string name="managed_credential_explainer_body">Untuk mendapatkan kelayakan terurus bagi orang yang anda jaga, lawati lokasi yang mengambil bahagian bersama-sama. Pengesah akan menyemak pengenalan mereka. Apabila anda mengimbas kod QR, anda akan ditanya sama ada kelayakan ini untuk anda atau untuk seseorang yang anda urus.</string>
+    <string name="managed_credential_explainer_find_location">Cari lokasi</string>
+    <string name="managed_credential_explainer_have_qr">Saya sudah mempunyai kod QR</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">Kelayakan Terurus</string>
+    <string name="sandbox_credential_type">Jenis kelayakan</string>
+    <string name="sandbox_managed_credential_saved">Kelayakan terurus disimpan (%s)</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">Mod sandbox kini aktif. Dompet disambungkan ke pelayan sandbox.</string>
+    <string name="sandbox_nickname_helper">Berikan kelayakan ini nama supaya anda boleh mengenalinya dalam dompet anda.</string>
+    <string name="sandbox_nickname_label">Nama panggilan</string>
+    <string name="sandbox_nickname_placeholder">cth. Sarah</string>
+    <string name="sandbox_nickname_required">Nama panggilan diperlukan untuk kelayakan terurus</string>
+    <string name="sandbox_type_managed_credential">Kelayakan terurus</string>
+    <string name="sandbox_type_your_credential">Kelayakan anda</string>
+    <string name="title_find_apps">Cari Aplikasi yang Mengambil Bahagian</string>
+    <string name="title_find_locations">Cari Lokasi</string>
+    <string name="verification_go_to_attestation">Dapatkan Kelayakan</string>
+    <string name="verification_wrong_qr_type_message">Kod QR ini adalah untuk mendapatkan kelayakan baharu, bukan untuk pengesahan umur. Adakah anda ingin pergi ke skrin perakuan sebagai gantinya?</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">QR Perakuan Dikesan</string>
+    <string name="walkthrough_back">Kembali</string>
+    <string name="walkthrough_get_started">Mula</string>
+    <string name="walkthrough_next">Seterusnya</string>
+    <string name="walkthrough_page_indicator">Halaman %1$d daripada %2$d</string>
+    <string name="walkthrough_page1_body">Kelayakan anda mengandungi umur anda. Tiada apa-apa lagi. Bukan nama anda, bukan alamat anda, bukan identiti anda.\n\nIa membuktikan anda berumur lebih (atau kurang) daripada umur tertentu tanpa mendedahkan tarikh lahir anda.</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">Apakah itu kelayakan?</string>
+    <string name="walkthrough_page2_body">Anda boleh mendapatkan kelayakan melalui aplikasi daripada syarikat yang sudah mengetahui umur anda. Bank atau dana persaraan anda, contohnya. Memandangkan mereka sudah mengesahkan umur anda, tiada apa-apa perlu dikongsi semula.\n\nSebagai alternatif, lawati lokasi yang mengambil bahagian dengan pengenalan yang membuktikan tarikh lahir anda. Tarikh lahir anda akan disemak, digunakan untuk mencipta kelayakan anda, dan kemudian dilupuskan. Penerbit tidak pernah melihat kelayakan anda. Identiti anda tidak pernah dikaitkan dengannya.</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">Bagaimana anda mendapatkannya?</string>
+    <string name="walkthrough_page3_body">Jika anda menjaga seseorang yang memerlukan kelayakan umur, anda boleh mendapatkannya untuk mereka dan mengurusnya pada peranti anda.\n\nLawati lokasi yang mengambil bahagian bersama-sama dengan pengenalan yang membuktikan tarikh lahir mereka. Apabila anda mengimbas kod QR, anda akan ditanya sama ada kelayakan ini untuk anda atau untuk seseorang yang anda urus.\n\nTambah nama panggilan supaya anda boleh membezakan kelayakan mereka.</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">Tanggungan</string>
+    <string name="walkthrough_page4_body">Aplikasi yang cuba mengesahkan umur anda boleh menghantar cabaran terus ke dompet Provii anda. Anda memilih kelayakan yang hendak digunakan. Setelah pengesahan berjaya, anda akan dibawa kembali ke aplikasi yang meminta dan boleh meneruskan sebagai disahkan.\n\nSebagai alternatif, anda mungkin diberi kod QR pada peranti lain, atau pautan dalam pelayar mudah alih anda yang terus pergi ke dompet anda. Terdapat juga pilihan kod pendek untuk kebolehcapaian.\n\nTiada maklumat peribadi yang pernah dikongsi. Hanya jawapan ya atau tidak sama ada anda memenuhi keperluan umur.</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">Bagaimana pengesahan berfungsi?</string>
+    <string name="walkthrough_page5_body">Langkah pertama anda adalah mendapatkan kelayakan melalui aplikasi yang mengambil bahagian atau di lokasi berdekatan anda.\n\nDari situ, anda boleh mengesahkan umur anda bila-bila masa ia diperlukan, tanpa berkongsi sebarang maklumat peribadi. Anda juga boleh mengurus kelayakan untuk orang yang anda jaga.</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">Anda sudah bersedia</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">Langkau</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

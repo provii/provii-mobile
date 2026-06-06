@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Spanish (es) , Plurals FINAL
+    All 17 plural resources (12 from Batch 10, 5 from Batch 02)
+
+    Reviewed by: Elena Morales (es-batch-10-review.md, 2026-03-21)
+
+    Fixes applied from review:
+      H-06  notifications_unread zero form changed from "Sin notificaciones por leer"
+            to "Sin notificaciones no leídas" to match the "sin leer" pattern used
+            in the one/other forms and to correctly translate "unread" (state) rather
+            than "to be read" (pending action)
+
+    Validation notes:
+      - All 12 Batch 10 plural resources match English source quantity forms (zero/one/other)
+      - Gender agreement verified correct across all noun-adjective pairs
+      - Format specifiers (%d) present in all other forms, absent from one forms where
+        the literal "1" is hardcoded (Batch 10 pattern)
+      - Spanish CLDR categories (one, other) correctly provided; zero used as Android override
+        where English source provides it
+      - 5 Batch 02 plurals carried through unchanged (previously validated)
+-->
+<resources>
+    <!-- Cantidad de credenciales -->
+    <plurals name="credential_count">
+        <item quantity="zero">Sin credenciales</item>
+        <item quantity="one">1 credencial</item>
+        <item quantity="other">%d credenciales</item>
+    </plurals>
+
+    <!-- Cantidad de sesiones -->
+    <plurals name="session_count">
+        <item quantity="one">1 sesión activa</item>
+        <item quantity="other">%d sesiones activas</item>
+    </plurals>
+
+    <!-- Hace días -->
+    <plurals name="days_ago">
+        <item quantity="one">Hace 1 día</item>
+        <item quantity="other">Hace %d días</item>
+    </plurals>
+
+    <!-- Hace horas -->
+    <plurals name="hours_ago">
+        <item quantity="one">Hace 1 hora</item>
+        <item quantity="other">Hace %d horas</item>
+    </plurals>
+
+    <!-- Hace minutos -->
+    <plurals name="minutes_ago">
+        <item quantity="one">Hace 1 minuto</item>
+        <item quantity="other">Hace %d minutos</item>
+    </plurals>
+
+    <!-- Intentos restantes -->
+    <plurals name="attempts_left">
+        <item quantity="one">1 intento restante</item>
+        <item quantity="other">%d intentos restantes</item>
+    </plurals>
+
+    <!-- Documentos subidos -->
+    <plurals name="documents_uploaded">
+        <item quantity="zero">Sin documentos subidos</item>
+        <item quantity="one">1 documento subido</item>
+        <item quantity="other">%d documentos subidos</item>
+    </plurals>
+
+    <!-- Verificaciones restantes -->
+    <plurals name="verifications_remaining">
+        <item quantity="zero">Sin verificaciones restantes</item>
+        <item quantity="one">1 verificación restante</item>
+        <item quantity="other">%d verificaciones restantes</item>
+    </plurals>
+
+    <!-- Elementos seleccionados -->
+    <plurals name="items_selected">
+        <item quantity="one">1 elemento seleccionado</item>
+        <item quantity="other">%d elementos seleccionados</item>
+    </plurals>
+
+    <!-- Notificaciones sin leer -->
+    <!-- H-06: zero form fixed from "por leer" to "no leídas" -->
+    <plurals name="notifications_unread">
+        <item quantity="zero">Sin notificaciones no leídas</item>
+        <item quantity="one">1 notificación sin leer</item>
+        <item quantity="other">%d notificaciones sin leer</item>
+    </plurals>
+
+    <!-- Credenciales emitidas hoy -->
+    <plurals name="credentials_issued_today">
+        <item quantity="zero">Sin credenciales emitidas hoy</item>
+        <item quantity="one">1 credencial emitida hoy</item>
+        <item quantity="other">%d credenciales emitidas hoy</item>
+    </plurals>
+
+    <!-- Personas en espera -->
+    <plurals name="people_waiting">
+        <item quantity="one">1 persona en espera</item>
+        <item quantity="other">%d personas en espera</item>
+    </plurals>
+
+    <!-- Batch 02: Emisores encontrados (C-02) -->
+    <plurals name="issuers_found_count">
+        <item quantity="one">%d encontrado</item>
+        <item quantity="other">%d encontrados</item>
+    </plurals>
+
+    <!-- Batch 02: Idiomas encontrados (C-03) -->
+    <plurals name="language_found_announcement">
+        <item quantity="one">%d idioma encontrado</item>
+        <item quantity="other">%d idiomas encontrados</item>
+    </plurals>
+
+    <!-- Batch 02: Cantidad de idiomas (C-03) -->
+    <plurals name="language_count">
+        <item quantity="one">%d idioma</item>
+        <item quantity="other">%d idiomas</item>
+    </plurals>
+
+    <!-- Batch 02: Idiomas disponibles (C-03) -->
+    <plurals name="language_count_description">
+        <item quantity="one">%d idioma disponible</item>
+        <item quantity="other">%d idiomas disponibles</item>
+    </plurals>
+
+    <!-- Batch 02: Búsqueda borrada (C-03) -->
+    <plurals name="language_search_cleared">
+        <item quantity="one">Búsqueda borrada, mostrando %d idioma</item>
+        <item quantity="other">Búsqueda borrada, mostrando los %d idiomas</item>
+    </plurals>
+</resources>

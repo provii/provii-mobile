@@ -1,0 +1,1577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">הגדרות</string>
+    <string name="title_accessibility">נגישות</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">קבלת אישורים</string>
+    <string name="title_scan_verification_qr">סריקת קוד QR לאימות</string>
+    <string name="title_verifying_age">מאמת גיל</string>
+    <string name="title_age_verified">הגיל אומת</string>
+    <string name="title_verification_failed">האימות נכשל</string>
+    <string name="title_officer_mode">מצב פקיד</string>
+    <string name="title_officer_dashboard">לוח בקרה לפקיד</string>
+    <string name="title_issue_credential">הנפקת אישור</string>
+    <string name="title_credential_ready">האישור מוכן</string>
+    <string name="title_get_your_credential">קבל את האישור שלך</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">ברוך הבא אל Provii Wallet</string>
+    <string name="welcome_subtitle">אימות גיל מאובטח בצורה פשוטה</string>
+    <string name="welcome_first_credential">התחל על ידי הוספת אישור אימות גיל ראשון</string>
+    <string name="welcome_description">אימות גיל פרטי באמצעות הוכחת אפס ידע</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">ברוך הבא אל Provii Wallet</string>
+    <string name="onboarding_language_subtitle">בחר את שפת ההעדפה שלך</string>
+    <string name="onboarding_use_english">השתמש באנגלית</string>
+    <string name="onboarding_use_english_description">המשך להשתמש באנגלית כשפת היישום</string>
+    <string name="onboarding_rotating_button_description">לחצן שינוי שפה, מוצג כעת: \u2068%1$s\u2069. הקש לבחירת שפה אחרת.</string>
+    <string name="onboarding_change_later">ניתן לשנות זאת מאוחר יותר בהגדרות</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">נגישות</string>
+    <string name="onboarding_accessibility_desc">האם ברצונך להתאים אישית תכונות נגישות כגון גודל טקסט, אזורי מגע או תנועה מופחתת?</string>
+    <string name="onboarding_use_defaults">השתמש בברירות המחדל</string>
+    <string name="onboarding_use_defaults_description">המשך עם הגדרות הנגישות הסטנדרטיות</string>
+    <string name="onboarding_open_accessibility">הגדרות נגישות</string>
+    <string name="onboarding_open_accessibility_description">פתח הגדרות נגישות להתאמה אישית של היישום</string>
+    <string name="onboarding_accessibility_later">ניתן לשנות זאת מאוחר יותר בהגדרות</string>
+    <string name="onboarding_accessibility_features_title">תכונות זמינות:</string>
+    <string name="onboarding_feature_text_size">גדלי טקסט גדולים יותר</string>
+    <string name="onboarding_feature_touch_targets">אזורי מגע מוגדלים</string>
+    <string name="onboarding_feature_reduce_motion">תנועה מופחתת</string>
+    <string name="onboarding_feature_high_contrast">מצב ניגודיות גבוהה</string>
+    <string name="onboarding_talkback_detected">TalkBack זוהה</string>
+    <string name="onboarding_talkback_message">הפעלנו תיאורים מפורטים כדי לסייע לך לנווט ביישום.</string>
+    <string name="onboarding_continue_to_setup">המשך להגדרה</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">נדרשת הגדרה חד-פעמית</string>
+    <string name="setup_download_required">נדרשת הורדה</string>
+    <string name="setup_download_description">יישום זה צריך להוריד רכיבי אבטחה עבור הוכחת אפס ידע (כ-\u2068‎87\u2069 MB).</string>
+    <string name="setup_wifi_recommended">Wi-Fi מומלץ</string>
+    <string name="setup_checking_status">בודק מצב הגדרה…</string>
+    <string name="setup_already_setup">כבר הוגדר!</string>
+    <string name="setup_ready_message">הארנק שלך מוכן לאימות גיל מאובטח</string>
+    <string name="setup_preparing">מכין מערכת אימות מאובטחת…</string>
+    <string name="setup_checking_components">בודק רכיבי אבטחה…</string>
+    <string name="setup_downloading">מוריד רכיבי אבטחה</string>
+    <string name="setup_download_progress_description">\u2068%1$d\u2069%% הושלם (\u2068%2$s\u2069 MB מתוך \u2068%3$s\u2069 MB הורדו)</string>
+    <string name="setup_initializing">מאתחל רכיבי אבטחה…</string>
+    <string name="setup_complete">ההגדרה הושלמה!</string>
+    <string name="setup_download_info">זה מאפשר הוכחת אפס ידע לאימות גיל פרטי</string>
+    <string name="setup_one_time_download">הורדה חד-פעמית</string>
+    <string name="setup_stuck_message">זה לוקח יותר זמן מהצפוי</string>
+    <string name="setup_stuck_description">ייתכן שההגדרה תקועה. נסה להפעיל מחדש.</string>
+    <string name="setup_restart_message">היישום צריך להפעיל מחדש. זה קורה לפעמים בהפעלה הראשונה.</string>
+    <string name="setup_storage_full">האחסון מלא</string>
+    <string name="setup_connection_error">שגיאת חיבור</string>
+    <string name="setup_failed">ההגדרה נכשלה</string>
+    <string name="setup_initialization_error">שגיאת אתחול</string>
+    <string name="error_storage_init_failed">אתחול האחסון נכשל. אנא הפעל מחדש את היישום.</string>
+    <string name="error_storage_init_close_restart">אתחול האחסון נכשל. אנא סגור והפעל מחדש את היישום.</string>
+    <string name="setup_free_storage_message">פנה לפחות \u2068‎65\u2069 MB ונסה שנית</string>
+    <string name="setup_progress_format">\u2068%1$d\u2069 MB / \u2068%2$d\u2069 MB</string>
+    <string name="setup_privacy_protected">הפרטיות מוגנת</string>
+    <string name="setup_privacy_description">אימות הגיל שלך משתמש בהוכחת אפס ידע. תאריך הלידה שלך לא נחשף לעולם.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">האישורים שלי</string>
+    <string name="credentials_empty">לא נשמרו אישורים</string>
+    <string name="credential_active">האישור פעיל</string>
+    <string name="credential_expired">האישור פג תוקף</string>
+    <string name="credential_ready_for_verification">מוכן לאימות</string>
+    <string name="credential_expired_message">תוקף האישור שלך פג ויש להחליפו</string>
+    <string name="credential_stored_successfully">האישור נשמר בהצלחה</string>
+    <string name="credential_stored_description">אישור הגיל שלך נשמר בצורה מאובטחת ומוכן לשימוש</string>
+    <string name="credential_can_prove_age">כעת תוכל להוכיח את גילך באופן פרטי</string>
+    <string name="credential_returning">חוזר לאישורים…</string>
+    <string name="credential_view_credentials">הצג אישורים</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">סיום</string>
+    <string name="action_scan_qr_code">סרוק קוד QR</string>
+    <string name="action_find_locations">מצא מיקומים</string>
+    <string name="action_get_credential">קבל אישור</string>
+    <string name="action_replace_credential">החלף באישור חדש</string>
+    <string name="action_replace_credential_now">החלף אישור עכשיו</string>
+    <string name="action_delete_credential">מחק אישור</string>
+    <string name="credential_action_scan_description">קבל אישור ממנפיק מורשה</string>
+    <string name="credential_action_find_description">גלה מנפיקים בסביבה</string>
+    <string name="credential_remove_description">הסר אישור נוכחי</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">פרטיות</string>
+    <string name="credential_info_privacy_value">מוגן</string>
+    <string name="credential_info_status">סטטוס</string>
+    <string name="credential_info_status_value">תקף</string>
+    <string name="credential_tip_title">טיפ מהיר</string>
+    <string name="credential_tip_message">הקש על לחצן \'אמת גיל\' לסריקת קודי \u2068QR (Quick Response)\u2069 לאימות במקומות משתתפים.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">סרוק קוד QR</string>
+    <string name="verification_verify_age">אמת גיל</string>
+    <string name="verification_generating_proof">מייצר הוכחה…</string>
+    <string name="verification_success">האימות הצליח</string>
+    <string name="verification_failed">האימות נכשל</string>
+    <string name="verification_age_verified">הגיל אומת</string>
+    <string name="verification_age_verified_message">גילך אומת באופן פרטי</string>
+    <string name="verification_can_return">כעת תוכל לחזור לאתר להמשיך.</string>
+    <string name="verification_returning_browser">חוזר לדפדפן…</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">שלב \u2068‎1\u2069 מתוך \u2068‎2\u2069</string>
+    <string name="verification_step_2_of_2">שלב \u2068‎2\u2069 מתוך \u2068‎2\u2069</string>
+    <string name="verification_point_camera">כוון את המצלמה אל קוד QR לאימות</string>
+    <string name="verification_hold_steady">החזק יציב עד שתשמע צלצול אישור.</string>
+    <string name="verification_reading_request">קורא בקשת אימות…</string>
+    <string name="verification_processing_challenge">מעבד אתגר…</string>
+    <string name="verification_creating_proof">יוצר הוכחת גיל…</string>
+    <string name="verification_submitting_proof">שולח הוכחה…</string>
+    <string name="verification_processing_message">פעולה זו עשויה להימשך מספר שניות</string>
+    <string name="verification_preparing_proof">אנו מכינים הוכחה פרטית באמצעות האישור השמור שלך.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">קורא בקשת אימות…</string>
+    <string name="verification_status_processing_challenge">מעבד אתגר…</string>
+    <string name="verification_status_creating_proof">יוצר הוכחת גיל…</string>
+    <string name="verification_status_submitting_proof">שולח הוכחה…</string>
+    <string name="verification_status_verified">✔ הגיל אומת</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">אין אפשרות להציג בקשת אימות</string>
+    <string name="verification_error_verification_failed">האימות נכשל</string>
+    <string name="verification_error_generic">אירעה שגיאה</string>
+    <string name="verification_error_failed_to_process_code">עיבוד הקוד נכשל</string>
+    <string name="verification_error_failed_to_process_challenge">עיבוד האתגר נכשל</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">מנפיקים מהימנים באוסטרליה</string>
+    <string name="issuers_loading">טוען מנפיקים…</string>
+    <string name="issuers_loaded">המנפיקים נטענו בהצלחה</string>
+    <string name="issuers_unable_to_load">אין אפשרות לטעון מנפיקים</string>
+    <string name="issuers_check_connection">בדוק את חיבור האינטרנט שלך ונסה שנית</string>
+    <string name="issuers_categories_header">קטגוריות</string>
+    <string name="issuers_available_header">מנפיקים זמינים</string>
+    <string name="issuers_found_count">נמצאו \u2068%d\u2069</string>
+    <string name="issuer_status_coming_soon">בקרוב</string>
+    <string name="issuer_status_verified">מאומת</string>
+    <string name="issuer_how_to_get">כיצד לקבל אישור</string>
+    <string name="issuer_service_locations">מיקומי שירות</string>
+    <string name="issuer_visit_website">בקר באתר \u2068%s\u2069</string>
+    <string name="issuer_learn_more">למד עוד על \u2068%s\u2069</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">בנקאות</string>
+    <string name="category_super_fund">קרן פנסיה</string>
+    <string name="category_government">ממשלה</string>
+    <string name="category_travel">נסיעות</string>
+    <string name="category_telco">תקשורת</string>
+    <string name="category_insurance">ביטוח</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">הגדרות</string>
+    <string name="settings_section_sandbox">מצב Sandbox</string>
+    <string name="settings_section_general">כללי</string>
+    <string name="settings_section_credentials">אישורים</string>
+    <string name="settings_section_advanced">מתקדם</string>
+    <string name="settings_section_privacy">פרטיות</string>
+    <string name="settings_security">אבטחה</string>
+    <string name="settings_biometric">השתמש באימות ביומטרי</string>
+    <string name="settings_environment">הגדרות סביבה</string>
+    <string name="settings_environment_description">הצג את תצורת הסביבה הנוכחית</string>
+    <string name="settings_reset_proving_key">אפס מפתח הוכחה</string>
+    <string name="settings_reset_proving_key_description">הורד מחדש רכיבי אבטחה (Debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">הנפק אישור בדיקה בתור מנפיק</string>
+    <string name="settings_mint_test_credential_subtitle">הנפק אישור בדיקה לארנק שלך כדי שתוכל לאמת אותו ממדגם של צד מסתמך.</string>
+    <string name="settings_find_trusted_issuers">מצא מנפיקים מהימנים</string>
+    <string name="settings_version">גרסה: \u2068‎1.0.0\u2069</string>
+    <string name="settings_tap_5x_toggle">הקש \u2068‎5\u2069 פעמים להחלפה</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">שפה</string>
+    <string name="language_selection_description">בחר את שפת ההעדפה שלך. היישום יופעל מחדש כדי להחיל את השינויים.</string>
+    <string name="language_selected">נבחר</string>
+    <string name="settings_language">שפה</string>
+    <string name="settings_language_description">שנה את שפת היישום</string>
+    <string name="settings_licenses">רישיונות קוד פתוח</string>
+    <string name="settings_licenses_description">הצג רישיונות צד שלישי</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">אשר שפה</string>
+    <string name="language_change_to">שנה שפה ל:</string>
+    <string name="language_restart_notice">היישום יופעל מחדש כדי להחיל שפה זו.</string>
+    <string name="language_apply">החל</string>
+    <string name="language_cancel">ביטול</string>
+    <string name="language_skip_title">לדלג על בחירת שפה?</string>
+    <string name="language_skip_message">אם תדלג, היישום ישתמש באנגלית כברירת מחדל. ניתן לשנות את השפה מאוחר יותר בהגדרות.</string>
+    <string name="language_use_english">השתמש באנגלית</string>
+    <string name="language_go_back">חזור</string>
+    <string name="language_help_title">עזרה בבחירת שפה</string>
+    <string name="language_help_how_to">כיצד לבחור את שפתך:</string>
+    <string name="language_help_step1">\u2068‎1.\u2069 השתמש בתיבת החיפוש כדי למצוא את שפתך</string>
+    <string name="language_help_step2">\u2068‎2.\u2069 הקש על שפת ההעדפה שלך</string>
+    <string name="language_help_step3">\u2068‎3.\u2069 אשר את הבחירה שלך</string>
+    <string name="language_help_system_note">שפת המערכת שלך מודגשת בראש אם נתמכת.</string>
+    <string name="language_help_settings_note">ניתן לשנות זאת מאוחר יותר בהגדרות.</string>
+    <string name="language_got_it">הבנתי</string>
+    <string name="language_select_title">בחר שפה</string>
+    <string name="language_skip_button">דלג (השתמש באנגלית)</string>
+    <string name="language_search_placeholder">חפש שפות…</string>
+    <string name="language_no_results">לא נמצאו שפות</string>
+    <string name="language_try_different">נסה מונח חיפוש אחר</string>
+    <string name="language_system_badge">שפת מערכת</string>
+    <string name="language_count">\u2068%d\u2069 שפות</string>
+    <string name="language_no_match_announcement">לא נמצאו שפות התואמות את החיפוש שלך</string>
+    <string name="language_found_announcement">נמצאו \u2068%d\u2069 שפות</string>
+    <string name="language_search_cleared">החיפוש נוקה, מוצגות כל \u2068%d\u2069 השפות</string>
+    <string name="language_selected_announcement">נבחר \u2068%1$s\u2069, \u2068%2$s\u2069</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">מסך בחירת שפה</string>
+    <string name="language_help_button_description">עזרה ומידע על בחירת שפה</string>
+    <string name="language_skip_description">דלג על בחירת שפה והשתמש באנגלית כברירת מחדל</string>
+    <string name="language_clear_search_description">נקה חיפוש</string>
+    <string name="language_count_description">\u2068%d\u2069 שפות זמינות</string>
+    <string name="language_apply_description">החל את בחירת השפה והמשך</string>
+    <string name="language_cancel_description">בטל את בחירת השפה</string>
+    <string name="language_cancelled_announcement">בחירת השפה בוטלה</string>
+    <string name="language_selected_description">שפה נבחרה: \u2068%1$s\u2069, \u2068%2$s\u2069</string>
+    <string name="language_item_system">שפת מערכת: \u2068%1$s\u2069, \u2068%2$s\u2069</string>
+    <string name="language_item_selected">\u2068%1$s\u2069, \u2068%2$s\u2069, נבחר כעת</string>
+    <string name="language_item_system_selected">שפת מערכת: \u2068%1$s\u2069, \u2068%2$s\u2069, נבחר כעת</string>
+    <string name="language_item_default">\u2068%1$s\u2069, \u2068%2$s\u2069</string>
+    <string name="language_returned_to_selection">חזרת לבחירת שפה</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">מצב Sandbox פעיל</string>
+    <string name="sandbox_mode_banner">מצב SANDBOX פעיל</string>
+    <string name="sandbox_mode_description">משתמש בסביבת הבדיקה. הקש על מספר הגרסה חמש פעמים להחלפה.</string>
+    <string name="sandbox_credential_title">אישור Sandbox</string>
+    <string name="sandbox_credential_description">צור אישור Sandbox כדי לתרגל תהליכי אימות מבלי לגעת בנתוני ייצור.</string>
+    <string name="sandbox_select_age">בחר גיל</string>
+    <string name="sandbox_age_format">\u2068%d\u2069+</string>
+    <string name="sandbox_default_dob">תאריך לידה ברירת מחדל: \u2068%s\u2069</string>
+    <string name="sandbox_override_dob">דרוס תאריך לידה ברירת מחדל</string>
+    <string name="sandbox_override_description">השתמש בתאריך מדויק במקום ברירת המחדל המבוססת על גיל.</string>
+    <string name="sandbox_date_of_birth">תאריך לידה</string>
+    <string name="sandbox_generate_credential">צור אישור</string>
+    <string name="sandbox_generating">יוצר…</string>
+    <string name="sandbox_test_credential_saved">אישור בדיקה נשמר</string>
+    <string name="sandbox_id_prefix">קידומת זיהוי: \u2068%s\u2069…</string>
+    <string name="sandbox_unable_to_generate">אין אפשרות לצור אישור</string>
+    <string name="settings_sandbox_dob_format">תאריך לידה: \u2068%s\u2069</string>
+    <string name="settings_sandbox_age_dob_format">גיל \u2068%d\u2069+ (תאריך לידה: \u2068%s\u2069)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">תצורת סביבה</string>
+    <string name="environment_current">נוכחי: \u2068%s\u2069</string>
+    <string name="environment_issuer_api">API מנפיק (Application Programming Interface): \u2068%s\u2069</string>
+    <string name="environment_verifier_api">API מאמת (Application Programming Interface): \u2068%s\u2069</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">למחוק אישור?</string>
+    <string name="dialog_delete_credential_message">פעולה זו מסירה את האישור מהמכשיר שלך. ניתן לאחזרו שוב מהמנפיק במידת הצורך.</string>
+    <string name="dialog_delete_credential_announcement">דיאלוג נפתח: מחיקת אישור</string>
+    <string name="dialog_reset_proving_key_title">לאפס מפתח הוכחה?</string>
+    <string name="dialog_reset_proving_key_message">מפתח ההוכחה והקבצים הנלווים יימחקו ויורדו מחדש בפעם הבאה שתפתח את היישום.</string>
+    <string name="dialog_reset_proving_key_announcement">דיאלוג נפתח: איפוס מפתח הוכחה</string>
+    <string name="dialog_environment_info_announcement">דיאלוג נפתח: תצורת סביבה</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">נגישות</string>
+    <string name="accessibility_service_label">נגישות Provii Wallet</string>
+    <string name="accessibility_service_description">שירות הנגישות של Provii Wallet מספק תמיכה משופרת למשתמשים עם מוגבלויות. הדבר כולל קריאת אישורים אוטומטית, ניווט מודרך ואינטראקציות פשוטות.</string>
+    <string name="accessibility_personalize">התאם אישית את החוויה שלך</string>
+    <string name="accessibility_customize_features">התאם אישית תכונות נגישות</string>
+    <string name="accessibility_quick_setup">הגדרה מהירה</string>
+    <string name="accessibility_features_active">\u2068%d\u2069 תכונות פעילות</string>
+    <string name="accessibility_customize_experience">התאם אישית את החוויה שלך</string>
+    <string name="accessibility_reset_title">לאפס הגדרות נגישות?</string>
+    <string name="accessibility_reset_message">כל העדפות הנגישות יחזרו לערכי ברירת המחדל שלהן.</string>
+    <string name="accessibility_reset">אפס הגדרות נגישות</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">ראייה</string>
+    <string name="accessibility_category_interaction">אינטראקציה</string>
+    <string name="accessibility_category_cognitive">תמיכה קוגניטיבית</string>
+    <string name="accessibility_category_alternative_input">קלט חלופי</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">טקסט גדול במיוחד</string>
+    <string name="accessibility_extra_large_text_description">הגדל גדלי גופן בסיסיים ב-\u2068‎45\u2069%</string>
+    <string name="accessibility_high_contrast">ניגודיות גבוהה</string>
+    <string name="accessibility_high_contrast_description">השתמש בצבעים בעלי ניגודיות גבוהה</string>
+    <string name="accessibility_reduce_transparency">הפחת שקיפות</string>
+    <string name="accessibility_reduce_transparency_description">הסר אפקטי טשטוש וזכוכית</string>
+    <string name="accessibility_dyslexia_font">גופן ידידותי לדיסלקסיה</string>
+    <string name="accessibility_dyslexia_font_description">השתמש בגופן OpenDyslexic לקריאות משופרת</string>
+    <string name="accessibility_color_blind_mode">מצב עיוורון צבעים</string>
+    <string name="accessibility_color_blind_optimized">צבעים ממוטבים עבור \u2068%s\u2069</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">ללא</string>
+    <string name="color_blind_protanopia">פרוטנופיה (עיוור אדום)</string>
+    <string name="color_blind_deuteranopia">דאוטרנופיה (עיוור ירוק)</string>
+    <string name="color_blind_tritanopia">טריטנופיה (עיוור כחול)</string>
+    <string name="color_blind_monochrome">מונוכרום</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">אזורי מגע גדולים יותר</string>
+    <string name="accessibility_larger_touch_targets_description">הגדל את גודל הלחצנים והרכיבים</string>
+    <string name="accessibility_reduce_motion">הפחת תנועה</string>
+    <string name="accessibility_reduce_motion_description">מזעור אנימציות ומעברים</string>
+    <string name="accessibility_extended_timeouts">פסקי זמן מורחבים</string>
+    <string name="accessibility_extended_timeouts_description">אפשר יותר זמן לפעולות מתוזמנות</string>
+    <string name="accessibility_simplified_gestures">מחוות פשוטות</string>
+    <string name="accessibility_simplified_gestures_description">הפחת מחוות מרובות שלבים</string>
+    <string name="accessibility_haptic_feedback">משוב הפטי</string>
+    <string name="accessibility_haptic_feedback_description">אישור רטט לפעולות</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">ממשק פשוט</string>
+    <string name="accessibility_simplified_interface_description">הסתר אפשרויות מתקדמות והפחת עומס חזותי</string>
+    <string name="accessibility_show_step_numbers">הצג מספרי שלבים</string>
+    <string name="accessibility_show_step_numbers_description">הצג מחווני התקדמות</string>
+    <string name="accessibility_detailed_descriptions">תיאורים מפורטים</string>
+    <string name="accessibility_detailed_descriptions_description">ספק טקסט הסבר נוסף</string>
+    <string name="accessibility_confirm_actions">אשר לפני פעולות</string>
+    <string name="accessibility_confirm_actions_description">בקש אישור על פעולות חשובות</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">הזנת קוד ידנית</string>
+    <string name="accessibility_manual_code_entry_description">אפשר הקלדת קודי \u2068QR (Quick Response)\u2069 במקום סריקתם</string>
+    <string name="accessibility_voice_input">קלט קולי</string>
+    <string name="accessibility_voice_input_description">אפשר זיהוי דיבור לשדות טקסט</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">ראייה</string>
+    <string name="accessibility_profile_motor">מוטורי</string>
+    <string name="accessibility_profile_cognitive">קוגניטיבי</string>
+    <string name="accessibility_profile_senior">מבוגר</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">חזור</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">בית</string>
+    <string name="breadcrumb_settings">הגדרות</string>
+    <string name="breadcrumb_accessibility">נגישות</string>
+    <string name="breadcrumb_language">שפה</string>
+    <string name="breadcrumb_help">מרכז עזרה</string>
+    <string name="breadcrumb_officer_mode">מצב פקיד</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">טיפוגרפיה ומרווחי טקסט</string>
+    <string name="accessibility_line_spacing">מרווח שורות</string>
+    <string name="accessibility_line_spacing_description">כוונן את הרווח בין שורות הטקסט</string>
+    <string name="accessibility_paragraph_spacing">מרווח פסקאות</string>
+    <string name="accessibility_paragraph_spacing_description">כוונן את הרווח בין פסקאות</string>
+    <string name="accessibility_letter_spacing">מרווח אותיות</string>
+    <string name="accessibility_letter_spacing_description">כוונן את הרווח בין אותיות</string>
+    <string name="accessibility_typography_aaa_note">המלצות AAA: מרווח שורות \u2068‎1.5x\u2069, מרווח פסקאות \u2068‎2.0x\u2069, ומרווח אותיות \u2068‎0.12em\u2069.</string>
+    <string name="accessibility_spacing_current">נוכחי: \u2068%s\u2069</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">\u2068%s\u2069 (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">התנהגות פסק זמן</string>
+    <string name="accessibility_timeout_no_automatic">אין פסקי זמן אוטומטיים לציות AAA</string>
+    <string name="accessibility_timeout_auto_advance_30">התקדמות אוטומטית לאחר \u2068‎30\u2069 שניות</string>
+    <string name="accessibility_timeout_auto_advance_60">התקדמות אוטומטית לאחר \u2068‎60\u2069 שניות</string>
+    <string name="accessibility_timeout_set_announcement">התנהגות פסק הזמן הוגדרה ל-\u2068%s\u2069</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">רמת ניגודיות</string>
+    <string name="accessibility_contrast_aaa_ratio">יחס ניגודיות \u2068‎7:1\u2069 לציות AAA</string>
+    <string name="accessibility_contrast_standard">ניגודיות סטנדרטית</string>
+    <string name="accessibility_contrast_aa_ratio">יחס ניגודיות \u2068‎4.5:1\u2069 לציות AA</string>
+    <string name="accessibility_contrast_set_announcement">רמת הניגודיות הוגדרה ל-\u2068%s\u2069</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">מצב עיוורון הצבעים הוגדר ל-\u2068%s\u2069</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">מחוון \u2068%1$s\u2069. ערך נוכחי: \u2068%2$s\u2069. \u2068%3$s\u2069טווח מ-\u2068%4$s\u2069 עד \u2068%5$s\u2069</string>
+    <string name="accessibility_slider_aaa_compliant">תואם AAA. </string>
+    <string name="accessibility_slider_announcement">\u2068%1$s\u2069 הוגדר ל-\u2068%2$s\u2069\u2068%3$s\u2069</string>
+    <string name="accessibility_slider_announcement_aaa">, תואם AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">\u2068%s\u2069 הופעל</string>
+    <string name="accessibility_toggle_disabled">\u2068%s\u2069 הושבת</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">משוב אימות</string>
+    <string name="accessibility_sound_enabled">השמע צליל בהצלחה</string>
+    <string name="accessibility_sound_enabled_description">השמע צליל אישור לאחר אימות מוצלח</string>
+    <string name="accessibility_sound_style">סגנון צליל</string>
+    <string name="accessibility_sound_preview">האזן לתצוגה מקדימה של הצליל</string>
+    <string name="accessibility_sound_preview_preset">תצוגה מקדימה של \u2068%s\u2069</string>
+    <string name="accessibility_sound_style_set_announcement">סגנון הצליל הוגדר ל-\u2068%s\u2069</string>
+    <string name="accessibility_haptic_enabled">רטט בהצלחה</string>
+    <string name="accessibility_haptic_enabled_description">ספק משוב הפטי לאחר אימות מוצלח</string>
+    <string name="accessibility_sound_footer">הצליל מכבד את הגדרות מצב השקט של המכשיר שלך</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">עוצמת קול</string>
+    <string name="accessibility_volume_percent">\u2068%d\u2069%%</string>
+    <string name="accessibility_volume_preview">האזן לעוצמה הנוכחית</string>
+    <string name="accessibility_volume_set_announcement">עוצמת הקול הוגדרה ל-\u2068%d\u2069 אחוז</string>
+    <string name="accessibility_volume_slider_description">מחוון עוצמת קול. ערך נוכחי: \u2068%d\u2069 אחוז</string>
+    <string name="accessibility_volume_min">\u2068‎0%\u2069</string>
+    <string name="accessibility_volume_max">\u2068‎100%\u2069</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">אפס הגדרות</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">מצב פקיד</string>
+    <string name="officer_id">זיהוי פקיד (ID)</string>
+    <string name="officer_id_placeholder">לדוגמה, \u2068OFFICER_WA_ALB_001\u2069</string>
+    <string name="officer_id_hint">הזן את זיהוי הפקיד המוקצה שלך</string>
+    <string name="officer_yubikey_connected">YubiKey מחובר</string>
+    <string name="officer_connect_yubikey">חבר YubiKey</string>
+    <string name="officer_touch_yubikey">גע ב-YubiKey שלך לאימות…</string>
+    <string name="officer_authenticate_hmac">אמת עם HMAC</string>
+    <string name="officer_authentication_process">תהליך האימות:</string>
+    <string name="officer_auth_steps">\u2068‎1.\u2069 הזן את זיהוי הפקיד שלך\n\u2068‎2.\u2069 לחץ על אמת\n\u2068‎3.\u2069 גע ב-YubiKey כשהוא מהבהב\n\u2068‎4.\u2069 אימות HMAC מאמת את זהותך</string>
+    <string name="officer_auth_failed">האימות נכשל. אנא בדוק את זיהוי הפקיד שלך ונסה שנית.</string>
+    <string name="officer_session_info">פקיד: \u2068%s\u2069</string>
+    <string name="officer_station_info">תחנה: \u2068%s\u2069</string>
+    <string name="officer_issued_today">הונפקו היום: \u2068%1$d\u2069 / \u2068‎50\u2069</string>
+    <string name="officer_issue_age_credential">הנפק אישור גיל</string>
+    <string name="officer_issue_description">אמת את זהות המשתמש והנפק אישור גיל דיגיטלי</string>
+    <string name="officer_start_issuance">התחל הנפקה חדשה</string>
+    <string name="officer_issuance_process">תהליך הנפקה</string>
+    <string name="officer_issuance_steps">\u2068‎1.\u2069 בדוק את מסמך הזיהוי הפיזי של המשתמש\n\u2068‎2.\u2069 הזן את תאריך לידתו\n\u2068‎3.\u2069 אמת שהמידע תואם בדיוק\n\u2068‎4.\u2069 הנפק אישור עם קוד \u2068QR (Quick Response)\u2069 להצהרה\n\u2068‎5.\u2069 המשתמש סורק את קוד QR לקבלת האישור</string>
+    <string name="officer_verify_identity">אמת זהות משתמש</string>
+    <string name="officer_select_dob">בחר תאריך לידה</string>
+    <string name="officer_change_date">שנה תאריך</string>
+    <string name="officer_age_years">גיל: \u2068%d\u2069 שנים</string>
+    <string name="officer_under_18_warning">מתחת לגיל \u2068‎18\u2069 , לא ניתן להנפיק אישור</string>
+    <string name="officer_verification_checklist">רשימת בדיקת אימות</string>
+    <string name="officer_document_verified">מסמך פיזי אומת</string>
+    <string name="officer_document_verified_description">ראיתי זיהוי תקף שהונפק על ידי הממשלה</string>
+    <string name="officer_dob_matches">תאריך הלידה תואם בדיוק</string>
+    <string name="officer_dob_matches_description">תאריך הלידה במסמך הפיזי הוא: \u2068%s\u2069</string>
+    <string name="officer_issue_credential">הנפק אישור</string>
+    <string name="officer_user_scanned_successfully">המשתמש סרק בהצלחה</string>
+    <string name="officer_return_to_dashboard">חזור ללוח הבקרה</string>
+    <string name="officer_go_back">חזור</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">אימות YubiKey</string>
+    <string name="yubikey_step_format">שלב \u2068%1$d\u2069 מתוך \u2068%2$d\u2069</string>
+    <string name="yubikey_led_should_blink">נורית ה-YubiKey אמורה להבהב</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">מאמת קלט…</string>
+    <string name="officer_state_creating_attestation">יוצר הצהרה…</string>
+    <string name="officer_state_computing_commitment">מחשב התחייבות קריפטוגרפית…</string>
+    <string name="officer_state_creating_session">יוצר סשן מאובטח…</string>
+    <string name="officer_state_signing">חותם על אישור…</string>
+    <string name="officer_state_finalizing">מסיים אישור…</string>
+    <string name="officer_state_storing_attestation">שומר הצהרה…</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">הסשן עומד לפוג</string>
+    <string name="officer_session_expiring_message">הסשן שלך יפוג בעוד \u2068%d\u2069 שניות. האם ברצונך לשמור את ההתקדמות שלך?</string>
+    <string name="officer_session_expiring_announcement">אזהרה: הסשן שלך יפוג בעוד \u2068%d\u2069 שניות</string>
+    <string name="officer_save_and_continue">שמור והמשך</string>
+    <string name="officer_continue_without_saving">המשך ללא שמירה</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">תאריך לידה</string>
+    <string name="officer_age_format">גיל: \u2068%d\u2069 שנים</string>
+    <string name="officer_under_18_full_warning">מתחת לגיל \u2068‎18\u2069 , לא ניתן להנפיק אישור. רק אנשים בני \u2068‎18\u2069 ומעלה זכאים לאישורי אימות גיל. אנא בדוק שתאריך הלידה נכון.</string>
+    <string name="officer_verification_checklist_header">רשימת בדיקת אימות</string>
+    <string name="officer_physical_document_verified">מסמך פיזי אומת</string>
+    <string name="officer_sighted_valid_id">ראיתי זיהוי תקף שהונפק על ידי הממשלה</string>
+    <string name="officer_dob_matches_exactly">תאריך הלידה תואם בדיוק</string>
+    <string name="officer_dob_on_document">תאריך הלידה במסמך הפיזי הוא: \u2068%s\u2069</string>
+    <string name="officer_error_label">שגיאה</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">סרוק את קוד \u2068QR (Quick Response)\u2069 להנפקה</string>
+    <string name="issuance_downloads_credential">פעולה זו מורידה את אישור הגיל שלך.</string>
+    <string name="issuance_center_qr">מרכז את קוד QR בתוך המסגרת והחזק יציב.</string>
+    <string name="issuance_enter_code_manually">הזן קוד ידנית</string>
+    <string name="issuance_processing_qr">מעבד קוד QR…</string>
+    <string name="issuance_invalid_data">נתוני הנפקה לא תקינים</string>
+    <string name="issuance_verification_qr_error">זהו קוד QR לאימות. אנא סרוק את קוד QR להנפקת אישור.</string>
+    <string name="issuance_invalid_qr_format">פורמט קוד QR לא תקין</string>
+    <string name="issuance_failed_to_process">עיבוד קוד QR נכשל: \u2068%s\u2069</string>
+    <string name="issuance_code">קוד הנפקה</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">הזנת קוד ידנית</string>
+    <string name="manual_entry_enter_code_manually">הזן קוד ידנית</string>
+    <string name="manual_entry_verification_description">הזן את קוד האימות בן \u2068‎12\u2069 הספרות המוצג על מסך המאמת.</string>
+    <string name="manual_entry_issuance_description">הקלד את הקוד המוצג על מסך המנפיק.</string>
+    <string name="manual_entry_verification_code">קוד אימות</string>
+    <string name="manual_entry_submit">שלח קוד</string>
+    <string name="manual_entry_please_enter">אנא הזן קוד</string>
+    <string name="manual_entry_please_enter_verification">אנא הזן קוד אימות</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">התחל האזנה</string>
+    <string name="voice_input_stop_listening">הפסק האזנה</string>
+    <string name="voice_input_recognized">זוהה:</string>
+    <string name="content_desc_voice_input_listening">מאזין לקלט קולי</string>
+    <string name="content_desc_voice_input_available">קלט קולי זמין</string>
+    <string name="voice_input_permission_title">נדרשת הרשאת מיקרופון</string>
+    <string name="voice_input_permission_message">קלט קולי מצריך גישה למיקרופון. ניתן להפעיל זאת מהגדרות המערכת.</string>
+    <string name="voice_input_listening">מאזין…</string>
+    <string name="voice_input_error">שגיאת קלט קולי</string>
+    <string name="voice_input_tap_to_speak">הקש כדי לדבר</string>
+    <string name="voice_input_did_you_say">האם אמרת &quot;\u2068%1$s\u2069&quot;?</string>
+    <string name="voice_input_confirm">אשר</string>
+    <string name="voice_input_retry">נסה שנית</string>
+    <string name="voice_input_cancel">ביטול</string>
+    <string name="voice_input_button">קלט קולי</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">קלט קולי אינו זמין במכשיר זה</string>
+    <string name="voice_input_error_audio">שגיאת הקלטת שמע. בדוק את המיקרופון.</string>
+    <string name="voice_input_error_network">שגיאת רשת. בדוק את החיבור.</string>
+    <string name="voice_input_error_network_timeout">פסק זמן ברשת. נסה שנית.</string>
+    <string name="voice_input_error_no_match">לא זוהה דיבור. אנא נסה שנית.</string>
+    <string name="voice_input_error_recognizer_busy">קלט קולי עסוק. אנא המתן.</string>
+    <string name="voice_input_error_server">שגיאת שרת. נסה שנית מאוחר יותר.</string>
+    <string name="voice_input_error_speech_timeout">לא נשמע דיבור. אנא דבר בקול רם יותר.</string>
+    <string name="voice_input_error_insufficient_permissions">הרשאת מיקרופון נדחתה.</string>
+    <string name="voice_input_error_generic">שגיאת קלט קולי. אנא נסה שנית.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">חזור</string>
+    <string name="action_close">סגור</string>
+    <string name="action_cancel">ביטול</string>
+    <string name="action_ok">אישור</string>
+    <string name="action_set">הגדר</string>
+    <string name="action_change">שנה</string>
+    <string name="action_delete">מחק</string>
+    <string name="action_reset">אפס</string>
+    <string name="action_retry">נסה שנית</string>
+    <string name="action_try_again">נסה שנית</string>
+    <string name="action_refresh">רענן</string>
+    <string name="action_download_now">הורד עכשיו</string>
+    <string name="action_retry_setup">נסה הגדרה שנית</string>
+    <string name="action_retry_download">נסה הורדה שנית</string>
+    <string name="action_restart_setup">הפעל הגדרה מחדש</string>
+    <string name="action_manage_storage">נהל אחסון</string>
+    <string name="action_check_wifi_settings">בדוק הגדרות Wi-Fi תחילה</string>
+    <string name="action_check_wifi_settings_short">בדוק הגדרות Wi-Fi</string>
+    <string name="action_grant_permission">הענק הרשאה</string>
+    <string name="action_grant_camera_access">הענק גישה למצלמה</string>
+    <string name="action_return_to_browser">חזור לדפדפן</string>
+    <string name="action_show_debug_info">הצג מידע Debug</string>
+    <string name="action_reset_redownload">אפס והורד מחדש</string>
+    <string name="action_end_session">סיים סשן</string>
+    <string name="action_expand">הרחב</string>
+    <string name="action_collapse">כווץ</string>
+    <string name="accessibility_state_expanded">מורחב</string>
+    <string name="accessibility_state_collapsed">מכווץ</string>
+    <string name="accessibility_state_checked">מסומן</string>
+    <string name="accessibility_state_unchecked">לא מסומן</string>
+    <string name="accessibility_state_selected">נבחר</string>
+    <string name="accessibility_state_not_selected">לא נבחר</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">אירעה שגיאה</string>
+    <string name="error_camera_permission">נדרשת הרשאת מצלמה לסריקת קוד \u2068QR (Quick Response)\u2069</string>
+    <string name="error_camera_access_needed">נדרשת גישה למצלמה</string>
+    <string name="error_camera_permission_description">הענק הרשאת מצלמה לסריקת קודי QR, או אפשר הזנה ידנית מהגדרות הנגישות.</string>
+    <string name="error_camera_permission_required">נדרשת הרשאת מצלמה לסריקת קודי QR</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">מחפש קוד QR…</string>
+    <string name="qr_scanner_camera_required">נדרשת הרשאת מצלמה</string>
+    <string name="qr_scanner_camera_preview">תצוגה מקדימה של מצלמה לסריקת קודי QR</string>
+    <string name="qr_scanner_status_scanning">מחפש קוד QR</string>
+    <string name="qr_scanner_requesting_permission">מבקש הרשאת מצלמה</string>
+    <string name="error_camera_start_failed">הפעלת המצלמה נכשלה: \u2068%s\u2069</string>
+    <string name="error_camera_init_failed">אתחול המצלמה נכשל: \u2068%s\u2069</string>
+    <string name="error_biometric_not_available">אימות ביומטרי אינו זמין</string>
+    <string name="error_network">אירעה שגיאת רשת</string>
+    <string name="error_no_credential">אין אישור זמין. אנא קבל אישור תחילה.</string>
+    <string name="credential_picker_title">בחר אישור</string>
+    <string name="credential_picker_description">ברשותך מספר אישורים שניתן להשתמש בהם לאימות זה. אנא בחר אחד.</string>
+    <string name="credential_picker_expired_label">פג תוקף</string>
+    <string name="credential_picker_accessibility_select">בחר אישור: \u2068%1$s\u2069</string>
+    <string name="error_failed_to_process_challenge">עיבוד האתגר נכשל</string>
+    <string name="error_failed_to_create_proof">יצירת ההוכחה נכשלה</string>
+    <string name="error_verification_failed">האימות נכשל</string>
+    <string name="error_occurred_during_verification">אירעה שגיאה במהלך האימות</string>
+    <string name="error_connection_timeout">החיבור פג זמן. אנא נסה שנית.</string>
+    <string name="error_unable_to_connect">לא ניתן להתחבר. אנא בדוק את חיבור האינטרנט שלך.</string>
+    <string name="error_secure_connection_failed">החיבור המאובטח נכשל. אנא נסה שנית.</string>
+    <string name="error_security_verification_failed">אימות האבטחה נכשל. אנא נסה שנית.</string>
+    <string name="error_invalid_input">קלט לא תקין. אנא בדוק את המידע שלך ונסה שנית.</string>
+    <string name="error_operation_in_progress">פעולה אחרת מתבצעת. אנא המתן.</string>
+    <string name="error_operation_cancelled">הפעולה בוטלה.</string>
+    <string name="error_age_requirement_not_met">דרישת הגיל לאישור זה לא התקיימה.</string>
+    <string name="error_biometric_required">נדרש אימות ביומטרי להמשך.</string>
+    <string name="error_wallet_not_initialized">הארנק לא אותחל. אנא הפעל מחדש את היישום.</string>
+    <string name="error_security">שגיאת אבטחה. אנא נסה שנית.</string>
+    <string name="error_connection_timeout_short">פסק זמן בחיבור. אנא נסה שנית.</string>
+    <string name="error_invalid_input_provided">קלט לא תקין.</string>
+    <string name="error_invalid_data_format">פורמט נתונים לא תקין. אנא נסה שנית.</string>
+    <string name="error_storage">שגיאת אחסון. אנא בדוק את אחסון המכשיר.</string>
+    <string name="error_network_short">שגיאת רשת. אנא בדוק את החיבור שלך.</string>
+    <string name="error_label">שגיאה</string>
+    <string name="error_dismiss">סגור שגיאה</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">מעבד…</string>
+    <string name="status_initializing_wallet">מאתחל ארנק…</string>
+    <string name="status_loading">טוען…</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">פרטיות מוגנת</string>
+    <string name="privacy_zk_description">תאריך הלידה שלך לא נחשף לעולם. המאמתים לומדים רק אם אתה עומד בדרישת הגיל שלהם.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">הגדרות פרטיות</string>
+    <string name="privacy_settings_description">שלוט באיסוף נתונים ונהל את הנתונים שלך</string>
+    <string name="privacy_section_data_collection">איסוף נתונים</string>
+    <string name="privacy_section_your_data">הנתונים שלך</string>
+    <string name="privacy_protection_title">הפרטיות שלך מוגנת</string>
+    <string name="privacy_protection_description">Provii Wallet משתמש בהוכחת אפס ידע לאימות גילך מבלי לחשוף את תאריך לידתך. נתוני האישור שלך נשמרים רק במכשיר שלך ולא נחשפים לאף אחד.</string>
+    <string name="privacy_analytics_title">אנליטיקה</string>
+    <string name="privacy_analytics_description">עזור לשפר את Provii Wallet על ידי שיתוף נתוני שימוש אנונימיים</string>
+    <string name="privacy_analytics_enabled">אנליטיקה מופעלת</string>
+    <string name="privacy_analytics_disabled">אנליטיקה מושבתת</string>
+    <string name="privacy_crash_reporting_title">דיווח על קריסות</string>
+    <string name="privacy_crash_reporting_description">עזור לנו לתקן באגים על ידי שליחה אוטומטית של דוחות קריסה</string>
+    <string name="privacy_crash_reporting_enabled">דיווח על קריסות מופעל</string>
+    <string name="privacy_crash_reporting_disabled">דיווח על קריסות מושבת</string>
+    <string name="privacy_what_we_collect_title">אילו נתונים אנו אוספים</string>
+    <string name="privacy_what_we_collect_subtitle">הקש כדי ללמוד על נוהלי הנתונים שלנו</string>
+    <string name="privacy_data_collection_info_title">מידע על איסוף נתונים</string>
+    <string name="privacy_data_we_collect_header">מה אנו אוספים (אם מופעל):</string>
+    <string name="privacy_data_we_collect_list">- סטטיסטיקות שימוש אנונימיות ביישום\n- דוחות קריסה ויומני שגיאות\n- סוג מכשיר וגרסת מערכת הפעלה\n- מידע גרסת יישום</string>
+    <string name="privacy_data_we_dont_collect_header">מה אנו לעולם לא אוספים:</string>
+    <string name="privacy_data_we_dont_collect_list">- תאריך הלידה שלך\n- שמך או פרטיך האישיים\n- מיקומך\n- נתוני האישור שלך\n- נתונים ביומטריים</string>
+    <string name="privacy_data_never_shared_note">נתוני האישור שלך לעולם לא נחשפים ל-Provii או לצד שלישי כלשהו. הם נשארים במכשיר שלך.</string>
+    <string name="privacy_policy_title">מדיניות פרטיות</string>
+    <string name="privacy_policy_subtitle">קרא את מדיניות הפרטיות המלאה שלנו</string>
+    <string name="privacy_delete_my_data_title">מחק את הנתונים שלי</string>
+    <string name="privacy_delete_my_data_subtitle">הסר את כל האישורים והנתונים השמורים</string>
+    <string name="privacy_delete_data_dialog_title">למחוק את כל הנתונים?</string>
+    <string name="privacy_delete_data_dialog_message">פעולה זו תמחק לצמיתות את כל האישורים ונתוני היישום שלך ממכשיר זה. יהיה עליך להשיג אישור חדש כדי להשתמש ביישום שוב.</string>
+    <string name="privacy_delete_data_dialog_warning">לא ניתן לבטל פעולה זו.</string>
+    <string name="privacy_delete_data_confirm">מחק הכל</string>
+    <string name="privacy_footer_note">ניתן לשנות הגדרות אלה בכל עת. השינויים נכנסים לתוקף באופן מיידי.</string>
+    <string name="dialog_delete_data_announcement">דיאלוג אישור מחיקת נתונים נפתח</string>
+    <string name="dialog_data_collection_info_announcement">דיאלוג מידע על איסוף נתונים נפתח</string>
+    <string name="content_desc_privacy_settings">הגדרות פרטיות, שלוט באיסוף נתונים ונהל את הנתונים שלך</string>
+    <string name="content_desc_data_collection_info">הצג מידע על איסוף נתונים</string>
+    <string name="content_desc_privacy_policy">הצג מדיניות פרטיות</string>
+    <string name="content_desc_opens_external_link">נפתח בדפדפן</string>
+    <string name="content_desc_delete_my_data">מחק את כל הנתונים שלי</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">חזור</string>
+    <string name="content_desc_settings">הגדרות</string>
+    <string name="content_desc_refresh">רענן</string>
+    <string name="content_desc_verified">מאומת</string>
+    <string name="content_desc_expand">הרחב</string>
+    <string name="content_desc_collapse">כווץ</string>
+    <string name="content_desc_warning_error">אזהרה: אירעה שגיאה</string>
+    <string name="content_desc_sandbox_indicator">מחוון מצב Sandbox</string>
+    <string name="content_desc_success">הצלחה</string>
+    <string name="content_desc_warning">אזהרה</string>
+    <string name="content_desc_information">מידע</string>
+    <string name="content_desc_error">שגיאה</string>
+    <string name="content_desc_sandbox_warning">אזהרת מצב Sandbox</string>
+    <string name="content_desc_app_info">מידע על יישום</string>
+    <string name="content_desc_accessibility_settings">הגדרות נגישות</string>
+    <string name="content_desc_language_settings">הגדרות שפה</string>
+    <string name="content_desc_licenses">רישיונות קוד פתוח</string>
+    <string name="content_desc_select_dob">בחר תאריך לידה</string>
+    <string name="content_desc_mint_test_credential_as_issuer">הנפק אישור בדיקה בתור מנפיק</string>
+    <string name="content_desc_get_credential">קבל אישור</string>
+    <string name="content_desc_delete_credential">מחק אישור</string>
+    <string name="content_desc_reset_proving_key">אפס מפתח הוכחה</string>
+    <string name="content_desc_environment_info">מידע סביבה</string>
+    <string name="content_desc_help_support">עזרה ותמיכה</string>
+    <string name="content_desc_privacy_protected">פרטיות מוגנת</string>
+    <string name="preview_settings_title">תצוגה מקדימה של הגדרות</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">הצלחה</string>
+    <string name="accessibility_verification_error_description">שגיאה</string>
+    <string name="accessibility_breadcrumb_location_description">מיקום: \u2068%s\u2069</string>
+    <string name="accessibility_breadcrumb_separator_description">ואז</string>
+    <string name="accessibility_breadcrumb_current_page_description">דף נוכחי: \u2068%s\u2069</string>
+    <string name="accessibility_settings_navigate_description">נווט</string>
+    <string name="accessibility_credentials_settings_description">הגדרות</string>
+    <string name="accessibility_verification_back_description">חזור</string>
+    <string name="accessibility_officer_back_description">חזור</string>
+    <string name="accessibility_discovery_back_description">חזור</string>
+    <string name="accessibility_discovery_refresh_description">רענן</string>
+    <string name="accessibility_discovery_verified_description">מאומת</string>
+    <string name="accessibility_officer_done_description">סיום</string>
+    <string name="accessibility_officer_attestation_qr_description">קוד QR להצהרה לסריקה על ידי המשתמש</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">דלג אל \u2068%s\u2069</string>
+    <string name="accessibility_skip_main_content">תוכן ראשי</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">לקוי ראייה</string>
+    <string name="accessibility_profile_motor_impaired">לקוי מוטורי</string>
+    <string name="accessibility_profile_cognitive_support">תמיכה קוגניטיבית</string>
+    <string name="accessibility_profile_elderly_support">תמיכה במבוגרים</string>
+    <string name="accessibility_profile_default">ברירת מחדל</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">ללא</string>
+    <string name="color_blind_mode_protanopia">פרוטנופיה</string>
+    <string name="color_blind_mode_deuteranopia">דאוטרנופיה</string>
+    <string name="color_blind_mode_tritanopia">טריטנופיה</string>
+    <string name="color_blind_mode_monochrome">מונוכרום</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">סטנדרטי</string>
+    <string name="contrast_level_high">גבוה (AA)</string>
+    <string name="contrast_level_maximum">מקסימלי (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">רוחב מלא</string>
+    <string name="text_width_comfortable">נוח (\u2068‎80\u2069 תווים)</string>
+    <string name="text_width_narrow">צר (\u2068‎60\u2069 תווים)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">ללא פסק זמן (AAA)</string>
+    <string name="timeout_behavior_standard">סטנדרטי (\u2068‎30\u2069 שניות)</string>
+    <string name="timeout_behavior_extended">מורחב (\u2068‎60\u2069 שניות)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">סטנדרטי</string>
+    <string name="reading_level_standard_description">טקסט רגיל עם מונחים טכניים</string>
+    <string name="reading_level_simplified">מפושט (כיתות \u2068‎7\u2069-\u2068‎9\u2069)</string>
+    <string name="reading_level_simplified_description">מילים פשוטות יותר ומשפטים קצרים יותר (תואם AAA)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">עזרה</string>
+    <string name="help_and_support">עזרה ותמיכה</string>
+    <string name="help_description">קבל עזרה עם תכונות היישום ונגישות</string>
+    <string name="help_center">מרכז עזרה</string>
+    <string name="help_center_description">עיין בנושאי עזרה ולמד על תכונות היישום</string>
+    <string name="help_search">חפש עזרה</string>
+    <string name="help_search_placeholder">חפש נושאי עזרה…</string>
+    <string name="help_search_active">החיפוש הופעל</string>
+    <string name="help_search_inactive">החיפוש הושבת</string>
+    <string name="help_no_results">לא נמצאו נושאי עזרה התואמים את החיפוש שלך</string>
+    <string name="help_topic_not_found">נושא עזרה לא נמצא</string>
+    <string name="help_related_topics">נושאים קשורים</string>
+    <string name="help_content_heading">תוכן עזרה</string>
+    <string name="help_related_topic_position">\u2068%1$s\u2069, פריט \u2068%2$d\u2069 מתוך \u2068%3$d\u2069</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">ראייה</string>
+    <string name="help_category_typography">טיפוגרפיה</string>
+    <string name="help_category_interaction">אינטראקציה</string>
+    <string name="help_category_cognitive">תמיכה קוגניטיבית</string>
+    <string name="help_category_alternative_input">קלט חלופי</string>
+    <string name="help_category_features">תכונות</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">קבלת אישור</string>
+    <string name="help_topic_getting_credential_summary">למד כיצד לקבל את אישור אימות הגיל הראשון שלך</string>
+    <string name="help_topic_getting_credential_content">לקבלת אישור אימות הגיל שלך:\n\n\u2068‎1.\u2069 בקר במיקום מנפיק מורשה\n\u2068‎2.\u2069 הצג את ה-ID שהונפק על ידי הממשלה\n\u2068‎3.\u2069 סרוק את קוד QR שסופק\n\u2068‎4.\u2069 האישור שלך יישמר בצורה מאובטחת\n\nתאריך לידתך נשמר באופן מקומי ולא נחשף לעולם.</string>
+
+    <string name="help_topic_verifying_age_title">אימות גילך</string>
+    <string name="help_topic_verifying_age_summary">כיצד להוכיח את גילך מבלי לשתף מידע אישי</string>
+    <string name="help_topic_verifying_age_content">כאשר עליך לאמת את גילך:\n\n\u2068‎1.\u2069 המאמת יציג לך קוד QR\n\u2068‎2.\u2069 סרוק אותו עם היישום\n\u2068‎3.\u2069 היישום יוצר הוכחה מתמטית\n\u2068‎4.\u2069 רק התשובה כן/לא משותפת\n\nתאריך לידתך בפועל לעולם לא נחשף.</string>
+
+    <string name="help_topic_accessibility_title">תכונות נגישות</string>
+    <string name="help_topic_accessibility_summary">התאם אישית את היישום לצרכיך</string>
+    <string name="help_topic_accessibility_content">היישום כולל תכונות נגישות רבות:\n\n- מצבי טקסט גדול וניגודיות גבוהה\n- קלט קולי ותמיכה בקורא מסך\n- מחוות פשוטות וממשק משתמש פשוט\n- אפשרויות הזנת קוד ידנית\n- פסקי זמן מורחבים\n\nגש לאלה דרך הגדרות > נגישות</string>
+
+    <string name="help_topic_privacy_security_title">פרטיות ואבטחה</string>
+    <string name="help_topic_privacy_security_summary">כיצד המידע שלך מוגן</string>
+    <string name="help_topic_privacy_security_content">הפרטיות שלך היא העדיפות העליונה שלנו:\n\n- אישורים נשמרים באופן מקומי במכשירך\n- הוכחת אפס ידע מגנה על הנתונים שלך\n- ללא מעקב או אנליטיקה\n- אימות ביומטרי זמין\n- נתונים לא יוצאים מהמכשיר שלך ללא הצפנה</string>
+
+    <string name="help_topic_troubleshooting_title">פתרון בעיות</string>
+    <string name="help_topic_troubleshooting_summary">בעיות נפוצות ופתרונות</string>
+    <string name="help_topic_troubleshooting_content">בעיות נפוצות ותיקונים:\n\nסורק QR לא עובד:\n- בדוק הרשאות מצלמה בהגדרות\n- נסה אפשרות הזנת קוד ידנית\n\nאישור לא נטען:\n- בדוק את חיבור האינטרנט שלך\n- נסה לאפס את מפתח ההוכחה\n\nאימות נכשל:\n- ודא שתוקף האישור לא פג\n- פנה למאמת לתמיכה</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">תאריך לידה</string>
+    <string name="date_of_birth">תאריך לידה</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">\u2068%d\u2069 שנים</string>
+    <string name="format_step_indicator">שלב \u2068%1$d\u2069 מתוך \u2068%2$d\u2069</string>
+    <string name="format_mb_downloaded">\u2068%1$.1f\u2069 MB / \u2068%2$.1f\u2069 MB</string>
+    <string name="format_percentage">\u2068%d\u2069%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">אישורים</string>
+    <string name="tab_settings">הגדרות</string>
+    <string name="tab_help">עזרה</string>
+    <string name="tab_credentials_description">הצג את האישורים שלך</string>
+    <string name="tab_settings_description">הגדרות יישום</string>
+    <string name="tab_help_description">קבל עזרה ותמיכה</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">חיפוש</string>
+    <string name="search_field_label">שדה חיפוש</string>
+    <string name="search_placeholder">חפש הגדרות, עזרה ותכונות</string>
+    <string name="search_clear">נקה חיפוש</string>
+    <string name="search_popular">חיפושים פופולריים</string>
+    <string name="search_results_heading">תוצאות חיפוש</string>
+    <string name="search_no_results">לא נמצאו תוצאות</string>
+    <string name="search_try_suggestions">נסה לחפש:\n• נגישות\n• הגדרות\n• עזרה\n• שפה</string>
+    <string name="search_results_announcement_singular">נמצאה תוצאה \u2068‎1\u2069</string>
+    <string name="search_results_announcement_plural">נמצאו \u2068%d\u2069 תוצאות</string>
+    <string name="search_no_results_announcement">לא נמצאו תוצאות</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">גישה מהירה</string>
+    <string name="help_topics">נושאי עזרה</string>
+    <string name="help_glossary">מילון מונחים</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">רישיונות קוד פתוח</string>
+    <string name="licenses_description">יישום זה משתמש בתוכנת קוד פתוח הבאה. אנו אסירי תודה למפתחים שיצרו ספריות אלה.</string>
+    <string name="licenses_tap_to_view">הקש לצפייה ברישיון המלא</string>
+    <string name="licenses_group_header">\u2068%1$s\u2069 (\u2068%2$d\u2069 ספריות)</string>
+    <string name="licenses_version_format">v\u2068%s\u2069</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">אין חיבור לאינטרנט. אנא בדוק את הרשת שלך ונסה שנית.</string>
+    <string name="error_unexpected">אירעה שגיאה בלתי צפויה. אנא הפעל מחדש את היישום.</string>
+    <string name="error_unexpected_try_again">אירעה שגיאה בלתי צפויה. אנא נסה שנית.</string>
+    <string name="error_storage_detailed">שגיאת אחסון: \u2068%s\u2069</string>
+    <string name="error_network_detailed">שגיאת רשת: \u2068%s\u2069</string>
+    <string name="error_proof_generation_failed">יצירת הוכחה נכשלה: \u2068%s\u2069</string>
+    <string name="error_not_eligible">לא עומד בדרישות. אינך עומד בדרישות לאימות זה.</string>
+    <string name="error_challenge_expired">האתגר פג תוקף או לא נמצא. אנא בקש אחד חדש.</string>
+    <string name="error_challenge_expired_scan_new">אתגר זה פג תוקף. אנא סרוק קוד QR חדש.</string>
+    <string name="error_request_out_of_order">הבקשה אינה בסדר הנכון. אנא נסה שנית.</string>
+    <string name="error_too_many_requests">יותר מדי בקשות. אנא המתן רגע ונסה שנית.</string>
+    <string name="error_server">שגיאת שרת. אנא נסה שנית מאוחר יותר.</string>
+    <string name="error_request_failed">הבקשה נכשלה (\u2068%d\u2069). אנא נסה שנית.</string>
+    <string name="error_not_eligible_short">אינך עומד בדרישות לאימות זה</string>
+    <string name="error_challenge_not_found">האתגר לא נמצא</string>
+    <string name="error_complete_steps_in_order">אנא השלם את השלבים לפי הסדר</string>
+    <string name="error_challenge_expired_short">האתגר פג תוקף</string>
+    <string name="error_authentication_cancelled">האימות בוטל. אנא אמת את זהותך כדי להשלים את אימות הגיל.</string>
+    <string name="error_invalid_data_format_short">פורמט נתונים לא תקין. אנא נסה שנית.</string>
+    <string name="error_storage_check_device">שגיאת אחסון. אנא בדוק את אחסון המכשיר.</string>
+    <string name="error_network_check_connection">שגיאת רשת. אנא בדוק את החיבור שלך.</string>
+    <string name="error_proof_generation_failed_short">יצירת הוכחה נכשלה. אנא נסה שנית.</string>
+    <string name="error_operation_in_progress_short">פעולה אחרת מתבצעת.</string>
+    <string name="error_no_internet_short">אין חיבור לאינטרנט. אנא בדוק את הרשת שלך.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">סרוק קוד QR לאימות</string>
+    <string name="verification_verifying_title">מאמת גיל</string>
+    <string name="verification_success_title">הגיל אומת</string>
+    <string name="verification_failed_title">האימות נכשל</string>
+    <string name="verification_processing_wait">פעולה זו עשויה להימשך מספר שניות</string>
+    <string name="verification_success_message">גילך אומת באופן פרטי</string>
+    <string name="verification_return_to_site">כעת תוכל לחזור לאתר להמשיך.</string>
+    <string name="verification_please_enter_code">אנא הזן קוד אימות. הקוד צריך להיות קוד קצר בן \u2068‎12\u2069 ספרות או URL אימות מלא מהמאמת.</string>
+    <string name="verification_error_occurred">אירעה שגיאה במהלך האימות</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">מעבד…</string>
+    <string name="credential_list_verify_age_button">אמת גיל</string>
+    <string name="credential_list_generate_in_person_description">צור אישור פנים אל פנים</string>
+    <string name="credential_list_scan_qr_title">סרוק קוד QR</string>
+    <string name="credential_list_find_locations_title">מצא מיקומים</string>
+    <string name="credential_section_my_credential">האישור שלי</string>
+    <string name="credential_section_managed">אישורים מנוהלים</string>
+    <string name="credential_list_get_credential_button">קבל אישור</string>
+    <string name="credential_list_add_managed_button">הוסף אישור מנוהל</string>
+    <string name="credential_section_managed_empty">הוסף אישור עבור מי שאתה מטפל בו, כגון ילד.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">פרטי אישור</string>
+    <string name="credential_detail_not_found">האישור לא נמצא</string>
+    <string name="credential_detail_nickname">כינוי</string>
+    <string name="credential_detail_no_nickname">לא הוגדר כינוי</string>
+    <string name="credential_detail_edit_nickname">ערוך כינוי</string>
+    <string name="credential_detail_status">סטטוס</string>
+    <string name="credential_detail_delete">מחק אישור</string>
+    <string name="credential_detail_delete_title">מחק אישור</string>
+    <string name="credential_detail_delete_message">האם אתה בטוח שברצונך למחוק אישור זה? לא ניתן לבטל פעולה זו.</string>
+    <string name="credential_type_primary">ראשי</string>
+    <string name="credential_type_managed">מנוהל</string>
+    <string name="credential_status_valid">תקף</string>
+    <string name="credential_status_expired">פג תוקף</string>
+    <string name="credential_status_invalid">לא תקף</string>
+    <string name="action_save">שמור</string>
+    <string name="credential_slots_full_title">הגעת למספר האישורים המרבי</string>
+    <string name="credential_slots_full_message">הגעת למספר האישורים המרבי. מחק אישור קיים כדי להוסיף חדש.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">אישור מנוהל</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">לאמת גיל עבור \u2068%1$s\u2069?</string>
+    <string name="managed_confirm_message">אתה עומד לאמת גיל באמצעות האישור המנוהל של \u2068%1$s\u2069.</string>
+    <string name="managed_confirm_proceed">אמת עבור \u2068%1$s\u2069</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">יוצר הוכחה עבור \u2068%1$s\u2069</string>
+    <string name="verification_age_verified_for">הגיל אומת עבור \u2068%1$s\u2069</string>
+    <string name="deeplink_verification_age_verified_for">הגיל אומת עבור \u2068%1$s\u2069</string>
+    <string name="attestation_managed_credential_received">אישור עבור \u2068%1$s\u2069 התקבל!</string>
+    <string name="attestation_managed_credential_stored">האישור של ילדך נשמר בצורה מאובטחת.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">למחוק את האישור של \u2068%1$s\u2069?</string>
+    <string name="credential_detail_delete_managed_message">האם אתה בטוח שברצונך למחוק אישור מנוהל זה עבור \u2068%1$s\u2069? לא ניתן לבטל פעולה זו. יהיה עליך לבקר שוב אצל מנפיק כדי להחליפו.</string>
+    <string name="credential_detail_save_error">שמירת הכינוי נכשלה</string>
+    <string name="credential_detail_delete_error">מחיקת האישור נכשלה</string>
+    <string name="accessibility_saving">שומר…</string>
+    <string name="accessibility_deleting">מוחק…</string>
+    <string name="accessibility_loading">טוען, אנא המתן</string>
+    <string name="accessibility_issuing_credential">מנפיק אישור, אנא המתן</string>
+    <string name="dialog_delete_all_credentials_title">למחוק את כל האישורים?</string>
+    <string name="dialog_delete_all_credentials_message">פעולה זו תמחק את האישור שלך וכל האישורים המנוהלים עבור ילדים. לא ניתן לבטל פעולה זו.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">מנוהל</string>
+    <string name="credential_slots_count">\u2068%1$d\u2069 מתוך \u2068‎5\u2069</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">מכין אימות…</string>
+    <string name="deeplink_verification_checking_credential">בודק אישור…</string>
+    <string name="deeplink_verification_processing_challenge">מעבד אתגר…</string>
+    <string name="deeplink_verification_creating_proof">יוצר הוכחה מאובטחת…</string>
+    <string name="deeplink_verification_submitting_proof">שולח הוכחה…</string>
+    <string name="deeplink_verification_success">✔ הגיל אומת בהצלחה</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">לא נמצא אישור. אנא הגדר את האישור שלך תחילה.</string>
+    <string name="deeplink_verification_error_failed_challenge">עיבוד אתגר האימות נכשל</string>
+    <string name="deeplink_verification_error_no_auth_prompt">אין אפשרות להציג בקשת אימות</string>
+    <string name="deeplink_verification_error_failed_proof">יצירת הוכחת גיל נכשלה</string>
+    <string name="deeplink_verification_error_verification_failed">האימות נכשל</string>
+    <string name="deeplink_verification_error_unexpected">אירעה שגיאה בלתי צפויה</string>
+    <string name="deeplink_verification_error_no_credential_selected">לא נבחר אישור. אנא נסה שנית.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">בחר אישור</string>
+    <string name="deeplink_verification_select_credential_subtitle">מספר אישורים זמינים. בחר איזה להשתמש לאימות זה.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">מאמת גיל</string>
+    <string name="deeplink_verification_title_verified">מאומת</string>
+    <string name="deeplink_verification_title_failed">האימות נכשל</string>
+    <string name="deeplink_verification_please_wait">אנא המתן…</string>
+    <string name="deeplink_verification_age_verified">הגיל אומת!</string>
+    <string name="deeplink_verification_under_age_verified">אומת מתחת לגיל \u2068%1$d\u2069</string>
+    <string name="deeplink_verification_returning_browser">חוזר לדפדפן…</string>
+    <string name="deeplink_verification_return_to_browser">חזור לדפדפן</string>
+    <string name="deeplink_verification_failed_title">האימות נכשל</string>
+    <string name="deeplink_verification_error_occurred">אירעה שגיאה במהלך האימות</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">תהליך הנפקה</string>
+    <string name="officer_issuance_process_steps">\u2068‎1.\u2069 בדוק את מסמך הזיהוי הפיזי של המשתמש\n\u2068‎2.\u2069 הזן את תאריך לידתו\n\u2068‎3.\u2069 אמת שהמידע תואם בדיוק\n\u2068‎4.\u2069 הנפק אישור עם קוד \u2068QR (Quick Response)\u2069 להצהרה\n\u2068‎5.\u2069 המשתמש סורק את קוד QR לקבלת האישור</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">יצירת קוד QR נכשלה</string>
+    <string name="officer_attestation_ready_title">ההצהרה מוכנה</string>
+    <string name="officer_attestation_scan_instruction">על המשתמש לסרוק קוד QR זה עם יישום Provii Wallet שלו</string>
+    <string name="officer_attestation_deeplink_label">קישור עמוק להצהרה</string>
+    <string name="officer_wait_for_attestation_scan">המתן לסריקה על ידי המשתמש</string>
+    <string name="officer_attestation_info">האישור ייווצר במכשיר שלו</string>
+    <string name="officer_attestation_complete">ההצהרה הושלמה</string>
+    <string name="officer_user_will_complete_credential">המשתמש ישלים את יצירת האישור במכשיר שלו</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">מפענח נתוני הצהרה…</string>
+    <string name="attestation_generating_randomness">מייצר אקראיות מאובטחת…</string>
+    <string name="attestation_sending">שולח למנפיק…</string>
+    <string name="attestation_verifying">מאמת התחייבות…</string>
+    <string name="attestation_storing">שומר אישור…</string>
+    <string name="attestation_complete">האישור הושלם!</string>
+    <string name="attestation_error_invalid_data">נתוני הצהרה לא תקינים</string>
+    <string name="attestation_error_expired">תוקף ההצהרה פג</string>
+    <string name="attestation_error_network">שגיאת רשת , אנא בדוק את החיבור שלך</string>
+    <string name="attestation_error_unexpected">אירעה שגיאה בלתי צפויה</string>
+    <string name="attestation_title_processing">מעבד הצהרה</string>
+    <string name="attestation_title_success">האישור התקבל</string>
+    <string name="attestation_title_failed">ההנפקה נכשלה</string>
+    <string name="attestation_secure_issuance">הנפקה מאובטחת</string>
+    <string name="attestation_privacy_preserving">הנפקת אישור בשמירת פרטיות</string>
+    <string name="attestation_may_take_seconds">פעולה זו עשויה להימשך מספר שניות</string>
+    <string name="attestation_keep_app_open">אנא השאר את היישום פתוח</string>
+    <string name="attestation_credential_received">האישור התקבל!</string>
+    <string name="attestation_credential_stored_description">אישור אימות הגיל שלך נשמר בצורה מאובטחת</string>
+    <string name="attestation_issuer_verified">המנפיק אומת</string>
+    <string name="attestation_failed_title">ההנפקה נכשלה</string>
+    <string name="attestation_scan_qr_instead">סרוק קוד QR במקום זאת</string>
+    <string name="attestation_go_back">חזור</string>
+    <string name="attestation_step_decode">פענח</string>
+    <string name="attestation_step_generate">צור</string>
+    <string name="attestation_step_send">שלח</string>
+    <string name="attestation_step_verify">אמת</string>
+    <string name="attestation_step_store">שמור</string>
+    <string name="attestation_step_complete">הושלם</string>
+    <string name="accessibility_attestation_encrypted_description">הצהרה מוצפנת בעיבוד</string>
+    <string name="accessibility_attestation_success_description">סימן וי המציין קבלת אישור</string>
+    <string name="accessibility_attestation_error_description">סמל שגיאה המציין כישלון בהנפקה</string>
+    <string name="accessibility_step_complete">שלב \u2068%1$s\u2069 הושלם</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">מקבל האישור</string>
+    <string name="attestation_recipient_prompt">אישור זה הוא עבור…</string>
+    <string name="attestation_recipient_me">עבורי</string>
+    <string name="attestation_recipient_child">ילד</string>
+    <string name="attestation_nickname_title">כינוי הילד</string>
+    <string name="attestation_nickname_prompt">הזן כינוי כדי להבדיל בין האישורים</string>
+    <string name="attestation_nickname_placeholder">לדוגמה, \u2068Alex\u2069</string>
+    <string name="attestation_nickname_continue">המשך</string>
+    <string name="attestation_nickname_back">חזור</string>
+    <string name="accessibility_attestation_recipient_heading">בחר עבור מי האישור</string>
+    <string name="accessibility_attestation_nickname_heading">הזן כינוי עבור הילד</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">פורמט ID פקיד לא תקין</string>
+    <string name="officer_auth_error_challenge_failed">אחזור אתגר YubiKey נכשל: \u2068%s\u2069</string>
+    <string name="officer_auth_instruction_touch_yubikey">גע ב-YubiKey שלך לאימות</string>
+    <string name="officer_auth_error_touch_timeout">פסק זמן בנגיעת YubiKey</string>
+    <string name="officer_auth_error_verify_document_dob">אנא אמת שהמסמך ותאריך הלידה תואמים</string>
+    <string name="officer_auth_error_invalid_date_format">פורמט תאריך לא תקין. השתמש ב-\u2068YYYY-MM-DD\u2069</string>
+    <string name="officer_auth_error_must_be_18">המשתמש חייב להיות בן \u2068‎18\u2069 או מבוגר יותר</string>
+    <string name="officer_auth_error_not_authenticated">לא מאומת. אנא הזן את ה-ID של הפקיד תחילה.</string>
+    <string name="officer_auth_error_issue_failed">הנפקת האישור נכשלה</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">הקש לצפייה</string>
+    <string name="gesture_desc_long_press_options">, לחץ לחיצה ארוכה לאפשרויות</string>
+    <string name="gesture_desc_swipe_left">, החלק שמאלה לפעולות נוספות</string>
+    <string name="gesture_desc_swipe_right">, החלק ימינה לפעולות נוספות</string>
+    <string name="gesture_desc_tap_to_activate">הקש להפעלה</string>
+    <string name="gesture_desc_long_press_format">. לחיצה ארוכה: \u2068%s\u2069</string>
+    <string name="gesture_desc_swipe_format">. \u2068%s\u2069</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">נסה שנית</string>
+    <string name="main_activity_reset_redownload">אפס והורד מחדש</string>
+    <string name="main_activity_show_debug_info">הצג מידע Debug</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">הגדרות נגישות</string>
+    <string name="search_item_accessibility_settings_subtitle">התאם אישית את החוויה שלך</string>
+    <string name="search_item_large_text_title">טקסט גדול</string>
+    <string name="search_item_large_text_subtitle">הגדל גודל טקסט</string>
+    <string name="search_item_high_contrast_title">ניגודיות גבוהה</string>
+    <string name="search_item_high_contrast_subtitle">שפר נראות</string>
+    <string name="search_item_voice_input_title">קלט קולי</string>
+    <string name="search_item_voice_input_subtitle">שלוט עם קול</string>
+    <string name="search_item_manual_code_entry_title">הזנת קוד ידנית</string>
+    <string name="search_item_manual_code_entry_subtitle">הקלד קודים במקום סריקה</string>
+    <string name="search_item_simplified_ui_title">ממשק משתמש פשוט</string>
+    <string name="search_item_simplified_ui_subtitle">הפחת מורכבות חזותית</string>
+    <string name="search_item_color_blindness_title">תמיכה בעיוורון צבעים</string>
+    <string name="search_item_color_blindness_subtitle">כוונן צבעים לנראות טובה יותר</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">הגדרות</string>
+    <string name="search_item_settings_subtitle">תצורת יישום</string>
+    <string name="search_item_language_title">שפה</string>
+    <string name="search_item_language_subtitle">שנה שפת יישום</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">האישורים שלי</string>
+    <string name="search_item_credentials_subtitle">הצג את האישורים שלך</string>
+    <string name="search_item_get_credential_title">קבל אישור</string>
+    <string name="search_item_get_credential_subtitle">מצא מנפיקים</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">עזרה</string>
+    <string name="search_item_help_subtitle">קבל סיוע</string>
+    <string name="search_item_privacy_title">הגנת פרטיות</string>
+    <string name="search_item_privacy_subtitle">כיצד הנתונים שלך מוגנים</string>
+    <string name="search_item_verification_title">אימות גיל</string>
+    <string name="search_item_verification_subtitle">הוכח את גילך</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">רישום חירום מקודד עבור סביבת Sandbox</string>
+    <string name="issuer_fallback_production_description">רישום חירום מקודד לייצור</string>
+    <string name="issuer_fallback_category_government">ממשלה</string>
+    <string name="issuer_fallback_category_government_description">אישורים שהונפקו על ידי הממשלה</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii Sandbox Issuer</string>
+    <string name="issuer_fallback_sandbox_issuer_description">מנפיק Sandbox רשמי של Provii לצורכי בדיקה</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">בקר בפורטל מנפיק Sandbox</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">מנפיק אישורים רשמי של Provii</string>
+    <string name="issuer_fallback_production_issuer_instructions">בקר במשרד DMV המקומי שלך</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">תאריך הלידה לא יכול להיות בעתיד</string>
+    <string name="validation_error_invalid_date_format">פורמט תאריך לא תקין</string>
+    <string name="validation_error_officer_id_too_short">זיהוי הפקיד קצר מדי</string>
+    <string name="validation_error_invalid_officer_id_format">פורמט זיהוי פקיד לא תקין</string>
+    <string name="validation_error_empty_qr_code">קוד QR ריק</string>
+    <string name="validation_error_qr_code_too_large">קוד QR גדול מדי</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">אתה מעתה מפתח!</string>
+    <string name="sandbox_toast_enabled">מצב Sandbox הופעל\nמשתמש בסביבת בדיקה</string>
+    <string name="sandbox_toast_disabled">מצב ייצור הופעל\nמשתמש בסביבת ייצור</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">אתה צעד אחד ממצב מפתח</string>
+    <string name="sandbox_toast_steps_away">אתה \u2068%1$d\u2069 צעדים ממצב מפתח</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">לא מחובר YubiKey</string>
+    <string name="yubikey_error_timeout">פסק זמן בהמתנה לנגיעת YubiKey. אנא גע במפתח כשהוא מהבהב.</string>
+    <string name="yubikey_error_not_supported">תגובת אתגר אינה מוגדרת בחריץ YubiKey זה</string>
+    <string name="yubikey_error_no_slot">חריץ \u2068‎2\u2069 אינו מוגדר לתגובת אתגר HMAC SHA1</string>
+    <string name="yubikey_error_hmac_failed">חישוב HMAC נכשל: \u2068%s\u2069</string>
+    <string name="yubikey_error_session_failed">החיבור ל-YubiKey נכשל: \u2068%s\u2069</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">הארנק לא אותחל</string>
+    <string name="wallet_error_proving_key_not_found">מפתח הוכחה לא נמצא , אנא הורד מחדש</string>
+    <string name="wallet_error_proving_key_not_readable">לא ניתן לקרוא את קובץ מפתח ההוכחה</string>
+    <string name="wallet_error_out_of_memory">אין מספיק זיכרון , אנא הפעל מחדש את היישום</string>
+    <string name="wallet_error_prover_error">שגיאת מוכיח: \u2068%s\u2069</string>
+    <string name="wallet_error_ffi_error">שגיאת FFI: \u2068%s\u2069</string>
+    <string name="wallet_error_prover_init_failed">אתחול המוכיח נכשל: \u2068%s\u2069</string>
+    <string name="wallet_error_prover_verification_failed">אימות אתחול המוכיח נכשל</string>
+    <string name="wallet_error_verifier_url_update_failed">עדכון כתובת URL של המאמת נכשל! צפוי \u2068%1$s\u2069 אך התקבל \u2068%2$s\u2069</string>
+    <string name="wallet_error_wallet_still_null">הארנק עדיין ריק לאחר אתחול</string>
+    <string name="wallet_error_credential_not_found">האישור לא נמצא</string>
+    <string name="wallet_error_credential_access_failed">לא ניתן לגשת לאישור: \u2068%s\u2069</string>
+    <string name="wallet_error_invalid_format">פורמט לא תקין: \u2068%s\u2069</string>
+    <string name="wallet_error_not_initialized_short">המוכיח לא אותחל</string>
+    <string name="wallet_error_proving_key_unavailable">מפתח הוכחה אינו זמין. נדרשת הגדרה.</string>
+    <string name="wallet_error_storage_init_failed">אתחול האחסון נכשל</string>
+    <string name="wallet_error_biometric_unavailable">אימות ביומטרי אינו זמין</string>
+    <string name="wallet_error_auth_failed">האימות נכשל</string>
+    <string name="wallet_error_sandbox_disabled">הפעל מצב Sandbox כדי לצור אישורי בדיקה</string>
+    <string name="wallet_error_fetch_sandbox_credentials">לא ניתן לאחזר אישורי Sandbox. אנא בדוק את חיבור האינטרנט.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">נדרש אימות</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">אמת את זהותך ליצירת הוכחת גיל</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">גש לאחסון מאובטח</string>
+    <string name="keystore_biometric_prompt_cancel">ביטול</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">\u2068%1$s\u2069, \u2068%2$s\u2069, מורחב, מציג טקסט רישיון מלא</string>
+    <string name="licenses_accessibility_library_collapsed">\u2068%1$s\u2069, \u2068%2$s\u2069, מכווץ, \u2068%3$s\u2069</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">ללא</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">סלולרי</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">לא ידוע</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">רמות ניגודיות</string>
+    <string name="help_topic_extra_large_text_title">טקסט גדול במיוחד</string>
+    <string name="help_topic_reduce_transparency_title">הפחתת שקיפות</string>
+    <string name="help_topic_color_blind_modes_title">מצבי עיוורון צבעים</string>
+    <string name="help_topic_line_spacing_title">מרווח שורות</string>
+    <string name="help_topic_paragraph_spacing_title">מרווח פסקאות</string>
+    <string name="help_topic_letter_spacing_title">מרווח אותיות</string>
+    <string name="help_topic_text_width_title">רוחב טקסט</string>
+    <string name="help_topic_touch_targets_title">אזורי מגע גדולים יותר</string>
+    <string name="help_topic_reduce_motion_title">הפחתת תנועה</string>
+    <string name="help_topic_timeout_behavior_title">התנהגות פסק זמן</string>
+    <string name="help_topic_simplified_gestures_title">מחוות פשוטות</string>
+    <string name="help_topic_haptic_feedback_title">משוב הפטי</string>
+    <string name="help_topic_data_preservation_title">שמירת נתונים</string>
+    <string name="help_topic_simplified_ui_title">ממשק משתמש פשוט</string>
+    <string name="help_topic_step_indicators_title">מחווני שלבים</string>
+    <string name="help_topic_verbose_descriptions_title">תיאורים מפורטים</string>
+    <string name="help_topic_confirm_actions_title">אישור פעולות</string>
+    <string name="help_topic_reading_level_title">רמת קריאה מפושטת</string>
+    <string name="help_topic_help_system_title">מערכת עזרה</string>
+    <string name="help_topic_manual_code_entry_title">הזנת קוד ידנית</string>
+    <string name="help_topic_voice_input_title">קלט קולי</string>
+    <string name="help_topic_screen_reader_title">תמיכה בקורא מסך</string>
+    <string name="help_topic_accessibility_profiles_title">פרופילי הגדרה מהירה</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">שלוט ביחס הניגודיות בין טקסט לרקעים:\n\n• סטנדרטי: צבעי יישום ברירת מחדל\n• גבוה (AA): יחס ניגודיות \u2068‎4.5:1\u2069\n• מקסימלי (AAA): יחס ניגודיות \u2068‎7:1\u2069 ומעלה\n\nניגודיות גבוהה יותר מקלה על קריאת טקסט, במיוחד בסביבות בהירות או למשתמשים עם ראייה חלשה.\n\nציות WCAG AAA מצריך ניגודיות מקסימלית.</string>
+    <string name="help_topic_extra_large_text_text">מגדיל את כל גדלי הטקסט ב-\u2068‎50\u2069% בכל רחבי היישום.\n\nהדבר מקל על קריאת טקסט עבור משתמשים עם:\n• ראייה חלשה\n• שינויי ראייה הקשורים לגיל\n• קשיי קריאה\n\nמשולב עם הגדרות גודל גופן מערכת לגמישות מרבית.</string>
+    <string name="help_topic_reduce_transparency_text">מסיר שכבות שקופות ואפקטי טשטוש.\n\nיתרונות:\n• היררכיה חזותית ברורה יותר\n• קריאות טקסט טובה יותר\n• רעש חזותי מופחת\n• עומס קוגניטיבי נמוך יותר\n\nמומלץ למשתמשים עם ראייה חלשה או קשיים קוגניטיביים.</string>
+    <string name="help_topic_color_blind_modes_text">מכוונן צבעים לסוגים שונים של עיוורון צבעים:\n\n• פרוטנופיה: עיוורון לאדום\n• דאוטרנופיה: עיוורון לירוק\n• טריטנופיה: עיוורון לכחול\n• מונוכרום: עיוורון צבעים מוחלט\n\nכל מצב משתמש בצבעים שנבחרו בקפידה ואפשר להבדיל ביניהם עבור אותו סוג של ליקוי ראיית צבע.</string>
+    <string name="help_topic_line_spacing_text">מכוונן מרווח בין שורות טקסט (\u2068‎1.0x\u2069 - \u2068‎2.0x\u2069).\n\n• ברירת מחדל: \u2068‎1.0x\u2069\n• תואם AAA: \u2068‎1.5x\u2069 ומעלה\n\nמרווח שורות מוגדל:\n• משפר הבנת הנקרא\n• מפחית עייפות עיניים\n• עוזר למשתמשים עם דיסלקסיה\n• מפחית עמוסות בגושי טקסט</string>
+    <string name="help_topic_paragraph_spacing_text">מכוונן מרווח בין פסקאות (\u2068‎1.0x\u2069 - \u2068‎3.0x\u2069).\n\n• ברירת מחדל: \u2068‎1.0x\u2069\n• תואם AAA: \u2068‎2.0x\u2069 ומעלה\n\nמרווח פסקאות מוגדל:\n• מפריד בין רעיונות בצורה ברורה\n• משפר ארגון חזותי\n• מפחית עומס קוגניטיבי\n• עוזר לשמור על מיקום הקריאה</string>
+    <string name="help_topic_letter_spacing_text">מכוונן מרווח בין אותיות (\u2068‎0.0em\u2069 - \u2068‎0.2em\u2069).\n\n• ברירת מחדל: \u2068‎0.0em\u2069\n• תואם AAA: \u2068‎0.12em\u2069 ומעלה\n\nמרווח אותיות מוגדל:\n• הופך אותיות בודדות לנפרדות יותר\n• עוזר למשתמשים עם דיסלקסיה\n• משפר דיוק בקריאה\n• מפחית בלבול בין אותיות</string>
+    <string name="help_topic_text_width_text">מגביל אורך שורה לקריאה קלה יותר:\n\n• רוחב מלא: ללא מגבלה\n• נוח: \u2068‎80\u2069 תווים (מומלץ)\n• צר: \u2068‎60\u2069 תווים\n\nמחקרים מראים שקריאה אופטימלית מתרחשת ב-\u2068‎60\u2069-\u2068‎80\u2069 תווים לשורה. שורות קצרות יותר מפחיתות תנועת עיניים ומשפרות הבנה.</string>
+    <string name="help_topic_touch_targets_text">מגדיל גודל אזור מגע מינימלי ל-\u2068‎60dp\u2069 (מ-\u2068‎44dp\u2069).\n\nיתרונות:\n• קל יותר להקיש על לחצנים ופקדים\n• מפחית הקשות מקריות\n• עוזר למשתמשים עם ליקויים מוטוריים\n• טוב יותר לשימוש חד-ידי\n\nWCAG AAA מצריך מינימום \u2068‎60dp\u2069.</string>
+    <string name="help_topic_reduce_motion_text">מסיר את כל האנימציות והמעברים.\n\nיתרונות:\n• מונע בחילת תנועה\n• מפחית הסחת דעת\n• מוריד עומס קוגניטיבי\n• משפר מיקוד\n\nמומלץ למשתמשים עם:\n• הפרעות וסטיבולריות\n• קשיי קשב\n• רגישות לתנועה</string>
+    <string name="help_topic_timeout_behavior_text">שולט בפסק זמן אוטומטי במסכי אימות:\n\n• ללא פסק זמן (AAA): זמן בלתי מוגבל\n• סטנדרטי: \u2068‎30\u2069 שניות\n• מורחב: \u2068‎60\u2069 שניות\n\nWCAG AAA מצריך אפשרות ללא פסק זמן למשתמשים הזקוקים ליותר זמן להשלמת משימות.\n\nנתוני טפסים נשמרים אוטומטית לפני פסק הזמן.</string>
+    <string name="help_topic_simplified_gestures_text">מחליף מחוות מורכבות בחלופות פשוטות:\n\n• החלקה ← לחיצה על לחצן\n• לחיצה ארוכה ← הקשה רגילה עם אישור\n• צביטה/זום ← לחצנים\n\nעוזר למשתמשים עם:\n• ליקויים מוטוריים\n• רעד\n• גמישות מוגבלת\n• קשיי מסך מגע</string>
+    <string name="help_topic_haptic_feedback_text">מספק משוב רטט לפעולות.\n\nיתרונות:\n• מאשר לחיצות על לחצנים\n• מציין שגיאות\n• מספק אישור מישושי\n\nניתן להשבית עבור משתמשים שמוצאים זאת מסיח דעת, שיש להם רגישויות חושיות, או שמעדיפים פעולה שקטה.</string>
+    <string name="help_topic_data_preservation_text">שומר אוטומטית נתוני טפסים לפני פסקי זמן.\n\nתכונות:\n• אזהרה \u2068‎10\u2069 שניות לפני פסק הזמן\n• אפשרות לשמור או לבטל נתונים\n• שחזור אוטומטי בחזרה\n• שמירת נתונים ל-\u2068‎24\u2069 שעות\n\nמבטיח שלא יאבדו נתונים אם אתה זקוק לזמן נוסף או חווה הפרעות.</string>
+    <string name="help_topic_simplified_ui_text">מפחית מורכבות חזותית:\n\n• פחות רכיבי UI מוצגים בבת אחת\n• לחצנים גדולים וברורים יותר\n• יותר רווח לבן\n• פריסות פשוטות\n\nיתרונות:\n• קל יותר להבנה\n• פחות מעיק\n• מיקוד טוב יותר\n• עומס קוגניטיבי מופחת</string>
+    <string name="help_topic_step_indicators_text">מציג התקדמות בתהליכים מרובי שלבים.\n\nמציג:\n• מספר שלב נוכחי\n• מספר כולל של שלבים\n• ויזואליזציה של התקדמות\n\nיתרונות:\n• מפחית חרדה\n• מציב ציפיות ברורות\n• עוזר לשמור על אוריינטציה\n• מציג התקדמות לעבר השלמה</string>
+    <string name="help_topic_verbose_descriptions_text">מספק הקשר והסברים נוספים:\n\n• תוויות לחצנים ארוכות יותר\n• הוראות מפורטות יותר\n• רמזים נוספים\n• הודעות שגיאה ברורות יותר\n\nעוזר למשתמשים להבין פעולות לפני ביצוען, להימנע מטעויות, ללמוד את פונקציונליות היישום ולבנות ביטחון עצמי.</string>
+    <string name="help_topic_confirm_actions_text">מצריך אישור לפעולות חשובות:\n\n• מחיקת אישורים\n• שינוי הגדרות\n• ניקוי נתונים\n\nWCAG AAA מצריך אישור לכל הפעולות ההרסניות.\n\nיתרונות:\n• מונע תאונות\n• מאפשר סקירה לפני פעולה\n• מפחית חרדה\n• מספק הזדמנות שנייה</string>
+    <string name="help_topic_reading_level_text">משתמש בשפה פשוטה יותר (רמת כיתות \u2068‎7\u2069-\u2068‎9\u2069):\n\n• משפטים קצרים יותר\n• מילים נפוצות במקום ז\'רגון\n• שפה ברורה וישירה\n• פחות מונחים טכניים\n\nתואם WCAG AAA כאשר מופעל.\n\nיתרונות:\n• קל יותר להבנה\n• הבנה מהירה יותר\n• טוב יותר לדוברים שאינם ילידים\n• עומס קוגניטיבי מופחת</string>
+    <string name="help_topic_help_system_text">עזרה רגישת הקשר זמינה בכל רחבי היישום.\n\nתכונות:\n• \u2068‎27\u2069 נושאי עזרה\n• מרכז עזרה עם יכולת חיפוש\n• ניווט בנושאים קשורים\n• מילון מונחים טכני\n\nגש לעזרה ממסכי הגדרות, תכונות מורכבות, הודעות שגיאה, ומכל מקום שרואים סמל עזרה.</string>
+    <string name="help_topic_manual_code_entry_text">הזן נתוני קוד QR ידנית במקום סריקה.\n\nיתרונות:\n• עובד כאשר גישה למצלמה אינה זמינה\n• עוזר למשתמשים עם קשיים מוטוריים\n• טוב יותר בתאורה חלשה\n• אין צורך להחזיק את הטלפון יציב\n\nחלופה לסריקת QR מבוססת מצלמה.</string>
+    <string name="help_topic_voice_input_text">השתמש בקול להזנת טקסט במקום הקלדה.\n\nיתרונות:\n• קלט ידני-חינם\n• מהיר יותר מהקלדה\n• עוזר למשתמשים עם ליקויים מוטוריים\n• מפחית מאמץ חזרתי\n\nמשתמש בזיהוי הקול המובנה של המכשיר שלך.</string>
+    <string name="help_topic_screen_reader_text">תמיכה מלאה בקורא המסך TalkBack.\n\nתכונות:\n• כל רכיבי UI מסומנים\n• מבנה כותרות תקין\n• סדר ניווט לוגי\n• רמזים מותאמים אישית לפעולות מורכבות\n\nהיישום מפעיל אוטומטית תיאורים מפורטים ואזורי מגע משופרים כאשר TalkBack מזוהה.</string>
+    <string name="help_topic_accessibility_profiles_text">פרופילי נגישות מוגדרים מראש:\n\n• לקוי ראייה: ניגודיות גבוהה, טקסט גדול, רטט\n• לקוי מוטורי: אזורים גדולים, פסקי זמן מורחבים, אישורים\n• קוגניטיבי: UI פשוט, מחווני שלבים, תיאורים\n• מבוגר: טקסט גדול, אזורים גדולים, UI פשוט, תנועה מופחתת\n• ברירת מחדל: אפס את כל ההגדרות\n\nכל פרופיל מפעיל את ההגדרות המועילות ביותר לאותה קבוצת משתמשים. ניתן להמשיך ולהתאים אישית לאחר החלת פרופיל.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">אימות גיל</string>
+    <string name="content_age_verification_explanation">אנא המתן בזמן שאנו מאמתים את גילך באופן מאובטח באמצעות הוכחת אפס ידע. תאריך לידתך לא נחשף לעולם למאמת.</string>
+    <string name="content_age_verification_instructions">כוון את המצלמה אל קוד QR לאימות. הקוד יסרוק אוטומטית כשיזוהה.</string>
+    <string name="content_age_verification_success">גילך אומת בהצלחה. המאמת יודע שאתה עומד בדרישת הגיל שלו מבלי ללמוד את תאריך לידתך בפועל.</string>
+    <string name="content_age_verification_failed">האימות נכשל. נסה לסרוק את קוד QR שנית או השתמש בהזנת קוד ידנית.</string>
+    <string name="content_credential_issuance_title">הנפקת אישור</string>
+    <string name="content_credential_issuance_explanation">סרוק את קוד QR שסיפק המנפיק המורשה לקבלת אישור הגיל הדיגיטלי שלך.</string>
+    <string name="content_credential_issuance_instructions">כוון את המצלמה אל קוד QR להנפקה שמוצג על ידי הפקיד. האישור שלך ייווצר במכשיר שלך.</string>
+    <string name="content_credential_issuance_success">האישור נוצר בהצלחה. כעת תוכל להשתמש באישור זה לאימות גיל.</string>
+    <string name="content_credential_description">אישור הוא הוכחה חתומה קריפטוגרפית של זהותך המאפשרת אימות בשמירת פרטיות.</string>
+    <string name="content_zero_knowledge_explanation">הוכחת אפס ידע מאפשרת לך להוכיח שאתה עומד בדרישת גיל מבלי לחשוף את גילך בפועל.</string>
+    <string name="content_setup_proving_key">מוריד מפתח הוכחה קריפטוגרפי הנדרש ליצירת הוכחת אפס ידע</string>
+    <string name="content_processing_challenge">מעבד אתגר אימות</string>
+    <string name="content_creating_proof">יוצר הוכחת גיל מסוג אפס ידע</string>
+    <string name="content_submitting_proof">שולח הוכחה למאמת</string>
+    <string name="content_error_no_credential">אין אישור זמין. אנא השג אישור ממנפיק מורשה תחילה.</string>
+    <string name="content_error_network_failed">חיבור הרשת נכשל. אנא בדוק את חיבור האינטרנט שלך ונסה שנית.</string>
+    <string name="content_error_invalid_qr">קוד QR לא תקין. אנא ודא שאתה סורק את קוד האימות הנכון.</string>
+    <string name="content_error_verification_failed">האימות נכשל. השרת לא הצליח לאמת את ההוכחה שלך.</string>
+    <string name="content_officer_authentication_title">אימות פקיד</string>
+    <string name="content_officer_issuance_title">הנפקת אישור</string>
+    <string name="content_officer_dob_prompt">הזן את תאריך הלידה המאומת של המבקש מתוך מסמך הזיהוי הרשמי שלו.</string>
+    <string name="content_onboarding_welcome">ברוך הבא אל Provii Wallet , פתרון אימות גיל דיגיטלי בשמירת פרטיות.</string>
+    <string name="content_onboarding_privacy">תאריך לידתך נשמר באופן מאובטח במכשיר שלך ולא מועבר לעולם למאמתים.</string>
+    <string name="content_onboarding_get_started">כדי להתחיל, בקר אצל מנפיק מורשה לקבלת אישור הגיל הדיגיטלי שלך.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">בדוק את גילך</string>
+    <string name="content_age_verification_explanation_simplified">אנחנו בודקים את גילך. לא נראה ולא נחשוף את יום ההולדת שלך.</string>
+    <string name="content_age_verification_instructions_simplified">כוון את המצלמה אל קוד QR. הוא יסרוק לבד.</string>
+    <string name="content_age_verification_success_simplified">הצלחה! האתר יודע שאתה מבוגר מספיק. הם לא יודעים את יום ההולדת שלך.</string>
+    <string name="content_age_verification_failed_simplified">זה לא עבד. נסה לסרוק שוב או הקלד את הקוד במקום זאת.</string>
+    <string name="content_credential_issuance_title_simplified">קבל את תעודת ה-ID שלך</string>
+    <string name="content_credential_issuance_explanation_simplified">סרוק את הקוד ממשרד הממשלה כדי לקבל את ה-ID הדיגיטלי שלך.</string>
+    <string name="content_credential_issuance_instructions_simplified">כוון את המצלמה אל הקוד. ה-ID שלך יישמר בטלפון שלך.</string>
+    <string name="content_credential_issuance_success_simplified">סיימנו! כעת תוכל להשתמש ב-ID הדיגיטלי שלך להוכחת גילך.</string>
+    <string name="content_credential_description_simplified">אישור הוא כמו תעודת ID דיגיטלית שמוכיחה מי אתה מבלי לחשוף פרטים פרטיים.</string>
+    <string name="content_zero_knowledge_explanation_simplified">תוכל להוכיח שאתה מבוגר מספיק מבלי לספר לאף אחד את גילך האמיתי.</string>
+    <string name="content_setup_proving_key_simplified">מוריד קבצי אבטחה הנדרשים לתפקוד היישום</string>
+    <string name="content_processing_challenge_simplified">קורא את בקשת בדיקת הגיל</string>
+    <string name="content_creating_proof_simplified">יוצר את הוכחת הגיל שלך</string>
+    <string name="content_submitting_proof_simplified">שולח הוכחה לאתר</string>
+    <string name="content_error_no_credential_simplified">עדיין אין לך ID. בקר במשרד ממשלתי כדי לקבל אחד תחילה.</string>
+    <string name="content_error_network_failed_simplified">לא ניתן להתחבר לאינטרנט. בדוק את ה-Wi-Fi או הנתונים שלך ונסה שנית.</string>
+    <string name="content_error_invalid_qr_simplified">קוד זה לא נראה נכון. ודא שאתה סורק את הקוד הנכון.</string>
+    <string name="content_error_verification_failed_simplified">זה לא עבד. האתר לא הצליח לבדוק את ההוכחה שלך. נסה שנית.</string>
+    <string name="content_officer_authentication_title_simplified">כניסת פקיד</string>
+    <string name="content_officer_issuance_title_simplified">צור תעודת ID</string>
+    <string name="content_officer_dob_prompt_simplified">הזן את יום ההולדת של האדם מה-ID הרשמי שלו.</string>
+    <string name="content_onboarding_welcome_simplified">ברוך הבא אל Provii Wallet , הוכח את גילך באופן פרטי.</string>
+    <string name="content_onboarding_privacy_simplified">יום ההולדת שלך נשאר בטלפון שלך. אף אחד אחר לא יכול לראות אותו.</string>
+    <string name="content_onboarding_get_started_simplified">כדי להתחיל, בקר במשרד ממשלתי כדי לקבל את ה-ID הדיגיטלי שלך.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">&#x200F;תגובה מהירה (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">&#x200F;מספר זיהוי אישי (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">&#x200F;תאריך לידה (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">&#x200F;זיהוי (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">&#x200F;ממשק משתמש (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">&#x200F;כתובת אינטרנט (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">&#x200F;ממשק תכנות יישומים (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">השהה אנימציות</string>
+    <string name="animation_resume_animations">חדש אנימציות</string>
+    <string name="animation_pause_button_text">השהה</string>
+    <string name="animation_resume_button_text">חדש</string>
+    <string name="animation_toggles_playback_hint">מחליף הפעלת אנימציה</string>
+    <string name="animation_paused_announcement">אנימציות הושהו</string>
+    <string name="animation_resumed_announcement">אנימציות חודשו</string>
+    <string name="animation_active_count">\u2068%d\u2069 אנימציות פעילות</string>
+    <string name="animation_loading_default">טוען</string>
+    <string name="animation_please_wait">אנא המתן עד להשלמת פעולה זו</string>
+    <string name="animation_percent_complete">\u2068%d\u2069 אחוז הושלם</string>
+    <string name="animation_loading_in_progress">בתהליך</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">קיצורי מקלדת</string>
+    <string name="keyboard_shortcuts_done">סיום</string>
+    <string name="keyboard_shortcuts_app_section">קיצורי יישום</string>
+    <string name="keyboard_shortcuts_navigation_section">ניווט</string>
+    <string name="keyboard_shortcuts_tips_section">טיפים</string>
+    <string name="keyboard_shortcuts_navigation_footer">מקשי ניווט אלה פועלים בכל רחבי היישום עם מקלדות חיצוניות</string>
+    <string name="keyboard_shortcuts_tip_external">מקלדות Bluetooth ו-USB חיצוניות נתמכות במלואן</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">השתמש במקשי חצים לניווט בין פריטים ברשימות</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">החזק Ctrl כדי לראות קיצורים זמינים במסך זה</string>
+    <string name="keyboard_shortcuts_tip_a11y">כל התכונות ביישום זה נגישות דרך המקלדת</string>
+    <string name="keyboard_shortcut_description_label">\u2068%1$s\u2069: \u2068%2$s\u2069. \u2068%3$s\u2069</string>
+    <string name="keyboard_shortcuts_dismiss">סגור קיצורי מקלדת</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">הגדרות</string>
+    <string name="keyboard_shortcut_label_accessibility">נגישות</string>
+    <string name="keyboard_shortcut_label_help">מרכז עזרה</string>
+    <string name="keyboard_shortcut_label_add_credential">הוסף אישור</string>
+    <string name="keyboard_shortcut_label_verify">אמת</string>
+    <string name="keyboard_shortcut_label_shortcuts">קיצורים</string>
+    <string name="keyboard_shortcut_desc_settings">פתח הגדרות</string>
+    <string name="keyboard_shortcut_desc_accessibility">הגדרות נגישות</string>
+    <string name="keyboard_shortcut_desc_help">מרכז עזרה</string>
+    <string name="keyboard_shortcut_desc_add_credential">הוסף אישור</string>
+    <string name="keyboard_shortcut_desc_verify">התחל אימות</string>
+    <string name="keyboard_shortcut_desc_shortcuts">קיצורי מקלדת</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">חזור / סגור</string>
+    <string name="keyboard_shortcut_nav_back_desc">סגור את המסך או הדיאלוג הנוכחי</string>
+    <string name="keyboard_shortcut_nav_next">שדה הבא</string>
+    <string name="keyboard_shortcut_nav_next_desc">העבר מיקוד לרכיב האינטראקטיבי הבא</string>
+    <string name="keyboard_shortcut_nav_prev">שדה קודם</string>
+    <string name="keyboard_shortcut_nav_prev_desc">העבר מיקוד לרכיב האינטראקטיבי הקודם</string>
+    <string name="keyboard_shortcut_nav_submit">שלח / המשך</string>
+    <string name="keyboard_shortcut_nav_submit_desc">הפעל את הלחצן הממוקד או שלח טופס</string>
+    <string name="keyboard_shortcut_nav_activate">הפעל לחצן</string>
+    <string name="keyboard_shortcut_nav_activate_desc">הפעל את הלחצן או הבורר הממוקד כעת</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">דיאלוג נפתח. לחץ Escape לסגירה, Enter לאישור.</string>
+    <string name="modal_closed_announcement">דיאלוג נסגר</string>
+    <string name="modal_button_primary_label">\u2068%s\u2069 (פעולה ראשית)</string>
+    <string name="modal_button_cancel_label">\u2068%s\u2069 (ביטול)</string>
+    <string name="modal_button_destructive_label">\u2068%s\u2069 (פעולה הרסנית)</string>
+    <string name="modal_button_primary_hint">הקש פעמיים לאישור, או לחץ Enter</string>
+    <string name="modal_button_cancel_hint">הקש פעמיים לביטול, או לחץ Escape</string>
+    <string name="modal_button_destructive_hint">הקש פעמיים לביצוע פעולה הרסנית</string>
+    <string name="modal_button_secondary_hint">הקש פעמיים לביצוע פעולה</string>
+    <string name="modal_confirm">אשר</string>
+    <string name="modal_cancel">ביטול</string>
+    <string name="modal_delete">מחק</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">מחק את ⁨%1$s⁩</string>
+    <string name="a11y_edit_nickname_for">ערוך כינוי עבור ⁨%1$s⁩</string>
+    <string name="accessibility_attestation_scan_back">חזור</string>
+    <string name="attestation_replace_confirm">החלף</string>
+    <string name="attestation_replace_primary_message">כבר יש לך אישור אישי. יצירת אישור חדש תחליף אותו. לא ניתן לבטל פעולה זו.</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">להחליף את האישור הקיים?</string>
+    <string name="attestation_scan_error_empty">קוד ה-QR היה ריק</string>
+    <string name="attestation_scan_instruction">כוון את המצלמה אל קוד ה-QR שמציג הפקיד</string>
+    <string name="attestation_scan_invalid_qr">קוד QR זה אינו מכיל נתוני אישור</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">סריקת אישור</string>
+    <string name="attestation_scan_wrong_type_toast">זהו קוד QR לאימות, לא קוד QR לאישור</string>
+    <string name="biometric_required_message">היישום דורש נעילת מסך (PIN, תבנית או ביומטרי) כדי לאחסן אישורים בצורה מאובטחת. אנא הגדר אחת בהגדרות האבטחה של המכשיר לפני שתמשיך.</string>
+    <string name="biometric_required_open_settings">פתח את הגדרות האבטחה</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">נדרשת נעילת מסך</string>
+    <string name="challenge_sandbox_prompt_announcement">אתגר ארגז חול התקבל. בחר אם להפעיל את מצב ארגז החול ולהמשיך, או לדחות את האתגר.</string>
+    <string name="challenge_sandbox_prompt_body">אתגר זה הונפק על ידי מאמת בארגז חול. הוא לא יצליח אלא אם תפעיל את מצב ארגז החול בארנק זה.</string>
+    <string name="challenge_sandbox_prompt_primary">הפעל ארגז חול והמשך</string>
+    <string name="challenge_sandbox_prompt_secondary">דחה את האתגר</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">אתגר ארגז חול התקבל</string>
+    <string name="credential_detail_nickname_error">שמירת הכינוי נכשלה</string>
+    <string name="credential_list_managed_count">⁨%1$d⁩ מתוך ⁨%2$d⁩</string>
+    <string name="credential_picker_count_shown">⁨%1$d⁩ אישורים מוצגים</string>
+    <string name="credential_picker_filter_clear">נקה סינון</string>
+    <string name="credential_picker_filter_label">סנן אישורים לפי שם</string>
+    <string name="credential_picker_filter_placeholder">סינון אישורים</string>
+    <string name="credential_picker_no_results">לא נמצאו אישורים תואמים</string>
+    <string name="credential_picker_section_managed">אישורים מנוהלים</string>
+    <string name="credential_picker_section_me">אני</string>
+    <string name="credential_picker_subtitle">בחר את מי מאמתים.</string>
+    <string name="credential_row_action_delete">מחק</string>
+    <string name="credential_row_action_edit">ערוך כינוי</string>
+    <string name="credential_row_overflow_menu">אפשרויות אישור</string>
+    <string name="deeplink_sandbox_prompt_announcement">קישור לארגז חול זוהה. בחר אם להפעיל את מצב ארגז החול ולפתוח את הקישור.</string>
+    <string name="deeplink_sandbox_prompt_body">קישור עומק זה יצליח רק אם תפעיל את מצב ארגז החול בארנק זה.</string>
+    <string name="deeplink_sandbox_prompt_primary">הפעל ארגז חול ופתח</string>
+    <string name="deeplink_sandbox_prompt_secondary">בטל</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">קישור לארגז חול זוהה</string>
+    <string name="empty_credential_option_find_apps_a11y">מצא יישום משתתף. קבל אישור מקופת הגמל, הבנק, חברת הטלקום, חברת הביטוח הרפואי, או מכל גורם שכבר מכיר את גילך.</string>
+    <string name="empty_credential_option_find_apps_desc">קבל אישור מקופת הגמל, הבנק, חברת הטלקום, חברת הביטוח הרפואי, או מכל גורם שכבר מכיר את גילך</string>
+    <string name="empty_credential_option_find_apps_title">מצא יישום משתתף</string>
+    <string name="empty_credential_option_find_locations_a11y">מצא מיקום בקרבתך. בקר באופן אישי עם תעודת זהות כדי לקבל אישור.</string>
+    <string name="empty_credential_option_find_locations_desc">בקר באופן אישי עם תעודת זהות כדי לקבל אישור</string>
+    <string name="empty_credential_option_find_locations_title">מצא מיקום בקרבתך</string>
+    <string name="empty_credential_option_managed_a11y">אני מטפל במישהו. נהל אישורים עבור אנשים שאתה מטפל בהם.</string>
+    <string name="empty_credential_option_managed_desc">נהל אישורים עבור אנשים שאתה מטפל בהם</string>
+    <string name="empty_credential_option_managed_title">אני מטפל במישהו</string>
+    <string name="empty_credential_option_scan_a11y">יש לי קוד QR לסרוק. מאמת מסר לך קוד לאחר שראה את תעודת הזהות שלך.</string>
+    <string name="empty_credential_option_scan_desc">מאמת מסר לך קוד לאחר שראה את תעודת הזהות שלך</string>
+    <string name="empty_credential_option_scan_title">יש לי קוד QR לסרוק</string>
+    <string name="empty_credential_subtitle">בחר כיצד תרצה לקבל את האישור הראשון שלך</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">אין אישורים עדיין</string>
+    <string name="error_screen_lock_required">נעילת מסך (PIN, תבנית או ביומטרי) נדרשת כדי לאחסן אישורים בצורה מאובטחת. אנא הגדר אחת בהגדרות המכשיר.</string>
+    <string name="issuers_no_apps_found_description">בדוק שוב בקרוב, ככל שעוד יישומים יוסיפו תמיכה ב-Provii</string>
+    <string name="issuers_no_apps_found">אין עדיין יישומים משתתפים</string>
+    <string name="issuers_no_locations_found_description">בדוק שוב בקרוב ככל שיתווספו מיקומים נוספים</string>
+    <string name="issuers_no_locations_found">לא נמצאו מיקומים</string>
+    <string name="managed_credential_explainer_body">כדי לקבל אישור מנוהל עבור מישהו שאתה מטפל בו, בקרו יחד במיקום משתתף. המאמת יבדוק את תעודת הזהות שלו. כאשר תסרוק את קוד ה-QR, תישאל אם אישור זה מיועד לך או למישהו שאתה מנהל.</string>
+    <string name="managed_credential_explainer_find_location">מצא מיקום</string>
+    <string name="managed_credential_explainer_have_qr">כבר יש לי קוד QR</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">אישורים מנוהלים</string>
+    <string name="sandbox_credential_type">סוג אישור</string>
+    <string name="sandbox_managed_credential_saved">האישור המנוהל נשמר (⁨%s⁩)</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">מצב ארגז חול פעיל כעת. הארנק מחובר לשרתי ארגז החול.</string>
+    <string name="sandbox_nickname_helper">תן לאישור זה שם כדי שתוכל לזהות אותו בארנק שלך.</string>
+    <string name="sandbox_nickname_label">כינוי</string>
+    <string name="sandbox_nickname_placeholder">למשל, שרה</string>
+    <string name="sandbox_nickname_required">כינוי נדרש עבור אישורים מנוהלים</string>
+    <string name="sandbox_type_managed_credential">אישור מנוהל</string>
+    <string name="sandbox_type_your_credential">האישור שלך</string>
+    <string name="title_find_apps">מצא יישום משתתף</string>
+    <string name="title_find_locations">מצא מיקום</string>
+    <string name="verification_go_to_attestation">קבל אישור</string>
+    <string name="verification_wrong_qr_type_message">קוד QR זה מיועד לקבלת אישור חדש, לא לאימות גיל. האם תרצה לעבור למסך האישור במקום זאת?</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">קוד QR לאישור זוהה</string>
+    <string name="walkthrough_back">חזור</string>
+    <string name="walkthrough_get_started">התחל</string>
+    <string name="walkthrough_next">הבא</string>
+    <string name="walkthrough_page_indicator">עמוד ⁨%1$d⁩ מתוך ⁨%2$d⁩</string>
+    <string name="walkthrough_page1_body">האישור שלך מכיל את גילך. שום דבר אחר. לא את שמך, לא את כתובתך, לא את זהותך.\n\nהוא מוכיח שאתה מעל (או מתחת) לגיל מסוים מבלי לחשוף את תאריך הלידה שלך.</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">מהו אישור?</string>
+    <string name="walkthrough_page2_body">ניתן לקבל אישור באמצעות יישום מחברה שכבר מכירה את גילך. הבנק או קופת הגמל שלך, למשל. מכיוון שהם כבר אימתו את גילך, אין צורך לשתף שום דבר שוב.\n\nלחלופין, בקר במיקום משתתף עם תעודת זהות המוכיחה את תאריך הלידה שלך. תאריך הלידה שלך נצפה, משמש ליצירת האישור, ואז נמחק. המנפיק לעולם אינו רואה את האישור שלך. זהותך לעולם אינה נקשרת אליו.</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">איך מקבלים כזה?</string>
+    <string name="walkthrough_page3_body">אם אתה מטפל במישהו שזקוק לאישור גיל, תוכל לקבל אחד עבורו ולנהל אותו במכשיר שלך.\n\nבקרו יחד במיקום משתתף עם תעודת זהות המוכיחה את תאריך הלידה שלו. כאשר תסרוק את קוד ה-QR, תישאל אם אישור זה מיועד לך או למישהו שאתה מנהל.\n\nהוסף כינוי כדי שתוכל להבחין בין האישורים שלהם.</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">תלויים</string>
+    <string name="walkthrough_page4_body">יישום שמנסה לאמת את גילך יכול לשלוח אתגר ישירות לארנק Provii שלך. אתה בוחר באיזה אישור להשתמש. עם השלמת האימות בהצלחה, תוחזר ליישום המבקש ותוכל להמשיך כמאומת.\n\nלחלופין, ייתכן שיוצג בפניך קוד QR במכשיר אחר, או קישור בדפדפן הנייד שלך שיעביר אותך ישירות לארנק. קיימת גם אפשרות של קוד קצר לצורכי נגישות.\n\nשום מידע אישי אינו משותף לעולם. רק תשובת כן או לא לשאלה אם אתה עומד בדרישת הגיל.</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">איך עובד האימות?</string>
+    <string name="walkthrough_page5_body">הצעד הראשון שלך הוא לקבל אישור באמצעות יישום משתתף או במיקום בקרבתך.\n\nמשם, תוכל לאמת את גילך בכל פעם שיש בכך צורך, מבלי לשתף מידע אישי כלשהו. תוכל גם לנהל אישורים עבור אנשים שאתה מטפל בהם.</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">הכל מוכן</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">דלג</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

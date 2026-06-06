@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Configuració</string>
+    <string name="title_accessibility">Accessibilitat</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Obtenir credencials</string>
+    <string name="title_scan_verification_qr">Escanejar el codi QR de verificació</string>
+    <string name="title_verifying_age">Verificant l\'edat</string>
+    <string name="title_age_verified">Edat verificada</string>
+    <string name="title_verification_failed">Verificació fallida</string>
+    <string name="title_officer_mode">Mode oficial</string>
+    <string name="title_officer_dashboard">Tauler de l\'oficial</string>
+    <string name="title_issue_credential">Emetre credencial</string>
+    <string name="title_credential_ready">Credencial a punt</string>
+    <string name="title_get_your_credential">Obteniu la vostra credencial</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Benvingut a Provii Wallet</string>
+    <string name="welcome_subtitle">Verificació d\'edat segura i senzilla</string>
+    <string name="welcome_first_credential">Comenceu afegint la vostra primera credencial de verificació d\'edat</string>
+    <string name="welcome_description">Verificació d\'edat privada amb proves de coneixement zero</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Benvingut a Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Trieu la vostra preferència d\'idioma</string>
+    <string name="onboarding_use_english">Usar l\'anglès</string>
+    <string name="onboarding_use_english_description">Continuar usant l\'anglès com a idioma de l\'aplicació</string>
+    <string name="onboarding_rotating_button_description">Botó Canviar idioma, que mostra ara: %1$s. Toqueu per seleccionar un idioma diferent.</string>
+    <string name="onboarding_change_later">Podeu canviar-ho més tard a Configuració</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Accessibilitat</string>
+    <string name="onboarding_accessibility_desc">Voleu personalitzar les funcions d\'accessibilitat com ara la mida del text, les àrees tàctils o el moviment reduït?</string>
+    <string name="onboarding_use_defaults">Usar els valors predeterminats</string>
+    <string name="onboarding_use_defaults_description">Continuar amb la configuració d\'accessibilitat estàndard</string>
+    <string name="onboarding_open_accessibility">Configuració d\'accessibilitat</string>
+    <string name="onboarding_open_accessibility_description">Obrir la configuració d\'accessibilitat per personalitzar l\'aplicació</string>
+    <string name="onboarding_accessibility_later">Podeu canviar-ho més tard a Configuració</string>
+    <string name="onboarding_accessibility_features_title">Les funcions disponibles inclouen:</string>
+    <string name="onboarding_feature_text_size">Mides de text més grans</string>
+    <string name="onboarding_feature_touch_targets">Àrees tàctils ampliades</string>
+    <string name="onboarding_feature_reduce_motion">Moviment reduït</string>
+    <string name="onboarding_feature_high_contrast">Mode d\'alt contrast</string>
+    <string name="onboarding_talkback_detected">TalkBack detectat</string>
+    <string name="onboarding_talkback_message">Hem activat les descripcions detallades per ajudar-vos a navegar per l\'aplicació.</string>
+    <string name="onboarding_continue_to_setup">Continuar a la configuració</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Configuració inicial necessària</string>
+    <string name="setup_download_required">Descàrrega necessària</string>
+    <string name="setup_download_description">Aquesta aplicació necessita descarregar components de seguretat per a les proves de coneixement zero (aproximadament 87 MB).</string>
+    <string name="setup_wifi_recommended">Wi-Fi recomanat</string>
+    <string name="setup_checking_status">Comprovant l\'estat de la configuració…</string>
+    <string name="setup_already_setup">Ja configurat!</string>
+    <string name="setup_ready_message">La vostra cartera està a punt per a la verificació d\'edat segura</string>
+    <string name="setup_preparing">Preparant el sistema de verificació segura…</string>
+    <string name="setup_checking_components">Comprovant els components de seguretat…</string>
+    <string name="setup_downloading">Descarregant els components de seguretat</string>
+    <string name="setup_download_progress_description">%1$d%% completat (%2$s MB de %3$s MB descarregats)</string>
+    <string name="setup_initializing">Inicialitzant els components de seguretat…</string>
+    <string name="setup_complete">Configuració completada!</string>
+    <string name="setup_download_info">Això activa les proves de coneixement zero per a la verificació d\'edat privada</string>
+    <string name="setup_one_time_download">Descàrrega única</string>
+    <string name="setup_stuck_message">Això tarda més del previst</string>
+    <string name="setup_stuck_description">Pot ser que la configuració estigui bloquejada. Intenteu reiniciar-la.</string>
+    <string name="setup_restart_message">L\'aplicació necessita reiniciar-se. De vegades passa en el primer inici.</string>
+    <string name="setup_storage_full">Emmagatzematge ple</string>
+    <string name="setup_connection_error">Error de connexió</string>
+    <string name="setup_failed">Configuració fallida</string>
+    <string name="setup_initialization_error">Error d\'inicialització</string>
+    <string name="error_storage_init_failed">Ha fallat la inicialització de l\'emmagatzematge. Reinicieu l\'aplicació.</string>
+    <string name="error_storage_init_close_restart">Ha fallat la inicialització de l\'emmagatzematge. Tanqueu i reinicieu l\'aplicació.</string>
+    <string name="setup_free_storage_message">Allibereu almenys 65 MB i torneu-ho a intentar</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Privadesa protegida</string>
+    <string name="setup_privacy_description">La verificació de la vostra edat utilitza proves de coneixement zero. La vostra data de naixement no es comparteix mai.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Les meves credencials</string>
+    <string name="credentials_empty">No hi ha credencials emmagatzemades</string>
+    <string name="credential_active">Credencial activa</string>
+    <string name="credential_expired">Credencial caducada</string>
+    <string name="credential_ready_for_verification">A punt per a la verificació</string>
+    <string name="credential_expired_message">La vostra credencial ha caducat i s\'ha de substituir</string>
+    <string name="credential_stored_successfully">Credencial emmagatzemada correctament</string>
+    <string name="credential_stored_description">La vostra credencial d\'edat s\'ha emmagatzemat de manera segura i està a punt per usar-se</string>
+    <string name="credential_can_prove_age">Ara podeu demostrar la vostra edat de manera privada</string>
+    <string name="credential_returning">Tornant a les credencials…</string>
+    <string name="credential_view_credentials">Veure les credencials</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Fet</string>
+    <string name="action_scan_qr_code">Escanejar codi QR</string>
+    <string name="action_find_locations">Trobar ubicacions</string>
+    <string name="action_get_credential">Obtenir una credencial</string>
+    <string name="action_replace_credential">Substituir per una credencial nova</string>
+    <string name="action_replace_credential_now">Substituir la credencial ara</string>
+    <string name="action_delete_credential">Eliminar la credencial</string>
+    <string name="credential_action_scan_description">Obtenir la credencial d\'un emissor autoritzat</string>
+    <string name="credential_action_find_description">Descobrir emissors propers</string>
+    <string name="credential_remove_description">Eliminar la credencial actual</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Privadesa</string>
+    <string name="credential_info_privacy_value">Protegida</string>
+    <string name="credential_info_status">Estat</string>
+    <string name="credential_info_status_value">Vàlida</string>
+    <string name="credential_tip_title">Consell ràpid</string>
+    <string name="credential_tip_message">Toqueu el botó «Verificar edat» per escanejar codis QR (Resposta ràpida) de verificació en els establiments participants.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">Escanejar codi QR</string>
+    <string name="verification_verify_age">Verificar edat</string>
+    <string name="verification_generating_proof">Generant la prova…</string>
+    <string name="verification_success">Verificació correcta</string>
+    <string name="verification_failed">Verificació fallida</string>
+    <string name="verification_age_verified">Edat verificada</string>
+    <string name="verification_age_verified_message">La vostra edat s\'ha verificat de manera privada</string>
+    <string name="verification_can_return">Ara podeu tornar al lloc per continuar.</string>
+    <string name="verification_returning_browser">Tornant al navegador…</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">Pas 1 de 2</string>
+    <string name="verification_step_2_of_2">Pas 2 de 2</string>
+    <string name="verification_point_camera">Apunteu la càmera al codi QR de verificació</string>
+    <string name="verification_hold_steady">Manteniu el dispositiu quiet fins que sentiu un so de confirmació.</string>
+    <string name="verification_reading_request">Llegint la sol·licitud de verificació…</string>
+    <string name="verification_processing_challenge">Processant el repte…</string>
+    <string name="verification_creating_proof">Creant la prova d\'edat…</string>
+    <string name="verification_submitting_proof">Enviant la prova…</string>
+    <string name="verification_processing_message">Pot trigar uns segons</string>
+    <string name="verification_preparing_proof">Estem preparant una prova privada amb la vostra credencial desada.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Llegint la sol·licitud de verificació…</string>
+    <string name="verification_status_processing_challenge">Processant el repte…</string>
+    <string name="verification_status_creating_proof">Creant la prova d\'edat…</string>
+    <string name="verification_status_submitting_proof">Enviant la prova…</string>
+    <string name="verification_status_verified">✔ Edat verificada</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">No s\'ha pogut mostrar el missatge d\'autenticació</string>
+    <string name="verification_error_verification_failed">La verificació ha fallat</string>
+    <string name="verification_error_generic">S\'ha produït un error</string>
+    <string name="verification_error_failed_to_process_code">No s\'ha pogut processar el codi</string>
+    <string name="verification_error_failed_to_process_challenge">No s\'ha pogut processar el repte</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Emissors de confiança a Austràlia</string>
+    <string name="issuers_loading">Carregant els emissors…</string>
+    <string name="issuers_loaded">Emissors carregats correctament</string>
+    <string name="issuers_unable_to_load">No s\'han pogut carregar els emissors</string>
+    <string name="issuers_check_connection">Comproveu la connexió a internet i torneu-ho a intentar</string>
+    <string name="issuers_categories_header">CATEGORIES</string>
+    <string name="issuers_available_header">EMISSORS DISPONIBLES</string>
+    <string name="issuers_found_count">%d trobats</string>
+    <string name="issuer_status_coming_soon">Aviat disponible</string>
+    <string name="issuer_status_verified">Verificat</string>
+    <string name="issuer_how_to_get">Com obtenir la credencial</string>
+    <string name="issuer_service_locations">Ubicacions del servei</string>
+    <string name="issuer_visit_website">Visitar el lloc web de %s</string>
+    <string name="issuer_learn_more">Més informació sobre %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Banca</string>
+    <string name="category_super_fund">Fons de pensions</string>
+    <string name="category_government">Govern</string>
+    <string name="category_travel">Viatges</string>
+    <string name="category_telco">Telecomunicacions</string>
+    <string name="category_insurance">Assegurances</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Configuració</string>
+    <string name="settings_section_sandbox">Mode Sandbox</string>
+    <string name="settings_section_general">General</string>
+    <string name="settings_section_credentials">Credencials</string>
+    <string name="settings_section_advanced">Avançat</string>
+    <string name="settings_section_privacy">Privadesa</string>
+    <string name="settings_security">Seguretat</string>
+    <string name="settings_biometric">Usar l\'autenticació biomètrica</string>
+    <string name="settings_environment">Configuració de l\'entorn</string>
+    <string name="settings_environment_description">Veure la configuració actual de l\'entorn</string>
+    <string name="settings_reset_proving_key">Restablir la clau de demostració</string>
+    <string name="settings_reset_proving_key_description">Tornar a descarregar els components de seguretat (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Emet credencial de prova com a Emissor</string>
+    <string name="settings_mint_test_credential_subtitle">Emet una credencial de prova al teu moneder perquè puguis verificar-la des d\'una demostració de part verificadora.</string>
+    <string name="settings_find_trusted_issuers">Trobar emissors de confiança</string>
+    <string name="settings_version">Versió: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Toqueu 5 vegades per activar o desactivar</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Idioma</string>
+    <string name="language_selection_description">Seleccioneu el vostre idioma preferit. L\'aplicació es reiniciarà per aplicar els canvis.</string>
+    <string name="language_selected">Seleccionat</string>
+    <string name="settings_language">Idioma</string>
+    <string name="settings_language_description">Canviar l\'idioma de l\'aplicació</string>
+    <string name="settings_licenses">Llicències de codi obert</string>
+    <string name="settings_licenses_description">Veure llicències de tercers</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Confirmar idioma</string>
+    <string name="language_change_to">Canviar l\'idioma a:</string>
+    <string name="language_restart_notice">L\'aplicació es reiniciarà per aplicar aquest idioma.</string>
+    <string name="language_apply">Aplicar</string>
+    <string name="language_cancel">Cancel·lar</string>
+    <string name="language_skip_title">Saltar la selecció d\'idioma?</string>
+    <string name="language_skip_message">Si ho salteu, l\'aplicació usarà l\'anglès de manera predeterminada. Podeu canviar l\'idioma més tard a Configuració.</string>
+    <string name="language_use_english">Usar l\'anglès</string>
+    <string name="language_go_back">Tornar enrere</string>
+    <string name="language_help_title">Ajuda per a la selecció d\'idioma</string>
+    <string name="language_help_how_to">Com seleccionar el vostre idioma:</string>
+    <string name="language_help_step1">1. Useu el quadre de cerca per trobar el vostre idioma</string>
+    <string name="language_help_step2">2. Toqueu l\'idioma preferit</string>
+    <string name="language_help_step3">3. Confirmeu la selecció</string>
+    <string name="language_help_system_note">L\'idioma del sistema apareix ressaltat a dalt si és compatible.</string>
+    <string name="language_help_settings_note">Podeu canviar-ho més tard a Configuració.</string>
+    <string name="language_got_it">Entès</string>
+    <string name="language_select_title">Seleccionar idioma</string>
+    <string name="language_skip_button">Saltar (usar l\'anglès)</string>
+    <string name="language_search_placeholder">Cercar idiomes…</string>
+    <string name="language_no_results">No s\'ha trobat cap idioma</string>
+    <string name="language_try_different">Proveu un terme de cerca diferent</string>
+    <string name="language_system_badge">Idioma del sistema</string>
+    <string name="language_count">%d idiomes</string>
+    <string name="language_no_match_announcement">No s\'ha trobat cap idioma que coincideixi amb la cerca</string>
+    <string name="language_found_announcement">%d idiomes trobats</string>
+    <string name="language_search_cleared">Cerca esborrada, es mostren tots els %d idiomes</string>
+    <string name="language_selected_announcement">Seleccionat %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Pantalla de selecció d\'idioma</string>
+    <string name="language_help_button_description">Ajuda i informació sobre la selecció d\'idioma</string>
+    <string name="language_skip_description">Saltar la selecció d\'idioma i usar l\'anglès de manera predeterminada</string>
+    <string name="language_clear_search_description">Esborrar la cerca</string>
+    <string name="language_count_description">%d idiomes disponibles</string>
+    <string name="language_apply_description">Aplicar la selecció d\'idioma i continuar</string>
+    <string name="language_cancel_description">Cancel·lar la selecció d\'idioma</string>
+    <string name="language_cancelled_announcement">Selecció d\'idioma cancel·lada</string>
+    <string name="language_selected_description">Idioma seleccionat: %1$s, %2$s</string>
+    <string name="language_item_system">Idioma del sistema: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, seleccionat actualment</string>
+    <string name="language_item_system_selected">Idioma del sistema: %1$s, %2$s, seleccionat actualment</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">S\'ha tornat a la selecció d\'idioma</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Mode Sandbox actiu</string>
+    <string name="sandbox_mode_banner">MODE SANDBOX ACTIU</string>
+    <string name="sandbox_mode_description">S\'està usant l\'entorn de prova. Toqueu el número de versió cinc vegades per activar o desactivar.</string>
+    <string name="sandbox_credential_title">Credencial de Sandbox</string>
+    <string name="sandbox_credential_description">Genereu una credencial de Sandbox per provar els fluxos de verificació sense afectar les dades de producció.</string>
+    <string name="sandbox_select_age">Seleccionar edat</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Data de naixement predeterminada: %s</string>
+    <string name="sandbox_override_dob">Substituir la data de naixement predeterminada</string>
+    <string name="sandbox_override_description">Usar una data exacta en lloc de la predeterminada basada en l\'edat.</string>
+    <string name="sandbox_date_of_birth">Data de naixement</string>
+    <string name="sandbox_generate_credential">Generar credencial</string>
+    <string name="sandbox_generating">Generant…</string>
+    <string name="sandbox_test_credential_saved">Credencial de prova desada</string>
+    <string name="sandbox_id_prefix">Prefix d\'identificació: %s…</string>
+    <string name="sandbox_unable_to_generate">No s\'ha pogut generar la credencial</string>
+    <string name="settings_sandbox_dob_format">Data de naixement: %s</string>
+    <string name="settings_sandbox_age_dob_format">Edat %d+ (data de naixement: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Configuració de l\'entorn</string>
+    <string name="environment_current">Actual: %s</string>
+    <string name="environment_issuer_api">API (Application Programming Interface) de l\'emissor: %s</string>
+    <string name="environment_verifier_api">API (Application Programming Interface) del verificador: %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Eliminar la credencial?</string>
+    <string name="dialog_delete_credential_message">Aquesta acció elimina la credencial del vostre dispositiu. Podeu recuperar-la de l\'emissor si cal.</string>
+    <string name="dialog_delete_credential_announcement">Diàleg obert: Eliminar credencial</string>
+    <string name="dialog_reset_proving_key_title">Restablir la clau de demostració?</string>
+    <string name="dialog_reset_proving_key_message">La clau de demostració i els fitxers de suport s\'eliminaran i es tornaran a descarregar la propera vegada que obriu l\'aplicació.</string>
+    <string name="dialog_reset_proving_key_announcement">Diàleg obert: Restablir la clau de demostració</string>
+    <string name="dialog_environment_info_announcement">Diàleg obert: Configuració de l\'entorn</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">Accessibilitat</string>
+    <string name="accessibility_service_label">Accessibilitat de Provii Wallet</string>
+    <string name="accessibility_service_description">El servei d\'accessibilitat de Provii Wallet ofereix suport millorat per a usuaris amb discapacitats. Inclou la lectura automàtica de credencials, la navegació guiada i les interaccions simplificades.</string>
+    <string name="accessibility_personalize">Personalitzeu la vostra experiència</string>
+    <string name="accessibility_customize_features">Personalitzar les funcions d\'accessibilitat</string>
+    <string name="accessibility_quick_setup">Configuració ràpida</string>
+    <string name="accessibility_features_active">%d funcions actives</string>
+    <string name="accessibility_customize_experience">Personalitzeu la vostra experiència</string>
+    <string name="accessibility_reset_title">Restablir la configuració d\'accessibilitat?</string>
+    <string name="accessibility_reset_message">Totes les preferències d\'accessibilitat tornaran als valors predeterminats.</string>
+    <string name="accessibility_reset">Restablir la configuració d\'accessibilitat</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Visió</string>
+    <string name="accessibility_category_interaction">Interacció</string>
+    <string name="accessibility_category_cognitive">Suport cognitiu</string>
+    <string name="accessibility_category_alternative_input">Entrada alternativa</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Text molt gran</string>
+    <string name="accessibility_extra_large_text_description">Augmentar les mides de la lletra base en un 45%</string>
+    <string name="accessibility_high_contrast">Alt contrast</string>
+    <string name="accessibility_high_contrast_description">Usar colors d\'alt contrast</string>
+    <string name="accessibility_reduce_transparency">Reduir la transparència</string>
+    <string name="accessibility_reduce_transparency_description">Eliminar els efectes de difuminat i vidre</string>
+    <string name="accessibility_dyslexia_font">Tipus de lletra per a la dislèxia</string>
+    <string name="accessibility_dyslexia_font_description">Usar el tipus de lletra OpenDyslexic per millorar la llegibilitat</string>
+    <string name="accessibility_color_blind_mode">Mode per a daltonisme</string>
+    <string name="accessibility_color_blind_optimized">Colors optimitzats per a %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Cap</string>
+    <string name="color_blind_protanopia">Protanopia (ceguesa al vermell)</string>
+    <string name="color_blind_deuteranopia">Deuteranopia (ceguesa al verd)</string>
+    <string name="color_blind_tritanopia">Tritanopia (ceguesa al blau)</string>
+    <string name="color_blind_monochrome">Monocrom</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Àrees tàctils més grans</string>
+    <string name="accessibility_larger_touch_targets_description">Augmentar la mida dels botons i elements</string>
+    <string name="accessibility_reduce_motion">Reduir el moviment</string>
+    <string name="accessibility_reduce_motion_description">Minimitzar les animacions i les transicions</string>
+    <string name="accessibility_extended_timeouts">Temps d\'espera ampliat</string>
+    <string name="accessibility_extended_timeouts_description">Permetre més temps per a les accions temporitzades</string>
+    <string name="accessibility_simplified_gestures">Gestos simplificats</string>
+    <string name="accessibility_simplified_gestures_description">Reduir els gestos de diversos passos</string>
+    <string name="accessibility_haptic_feedback">Retorn hàptic</string>
+    <string name="accessibility_haptic_feedback_description">Confirmació per vibració de les accions</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Interfície simplificada</string>
+    <string name="accessibility_simplified_interface_description">Ocultar les opcions avançades i reduir el desordre visual</string>
+    <string name="accessibility_show_step_numbers">Mostrar els números de pas</string>
+    <string name="accessibility_show_step_numbers_description">Mostrar els indicadors de progrés</string>
+    <string name="accessibility_detailed_descriptions">Descripcions detallades</string>
+    <string name="accessibility_detailed_descriptions_description">Proporcionar text explicatiu addicional</string>
+    <string name="accessibility_confirm_actions">Confirmar abans de les accions</string>
+    <string name="accessibility_confirm_actions_description">Demanar confirmació en les operacions importants</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Entrada manual del codi</string>
+    <string name="accessibility_manual_code_entry_description">Permetre escriure els codis QR (Resposta ràpida) en lloc d\'escanejar-los</string>
+    <string name="accessibility_voice_input">Entrada de veu</string>
+    <string name="accessibility_voice_input_description">Activar el reconeixement de veu per als camps de text</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Visió</string>
+    <string name="accessibility_profile_motor">Motor</string>
+    <string name="accessibility_profile_cognitive">Cognitiu</string>
+    <string name="accessibility_profile_senior">Gent gran</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Enrere</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Inici</string>
+    <string name="breadcrumb_settings">Configuració</string>
+    <string name="breadcrumb_accessibility">Accessibilitat</string>
+    <string name="breadcrumb_language">Idioma</string>
+    <string name="breadcrumb_help">Centre d\'ajuda</string>
+    <string name="breadcrumb_officer_mode">Mode oficial</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Tipografia i espaiat del text</string>
+    <string name="accessibility_line_spacing">Interlineat</string>
+    <string name="accessibility_line_spacing_description">Ajustar l\'espai entre les línies de text</string>
+    <string name="accessibility_paragraph_spacing">Espaiat de paràgraf</string>
+    <string name="accessibility_paragraph_spacing_description">Ajustar l\'espai entre paràgrafs</string>
+    <string name="accessibility_letter_spacing">Espaiat de lletres</string>
+    <string name="accessibility_letter_spacing_description">Ajustar l\'espai entre lletres</string>
+    <string name="accessibility_typography_aaa_note">Recomanacions AAA: interlineat de 1,5x, espaiat de paràgraf de 2,0x i espaiat de lletres de 0,12em.</string>
+    <string name="accessibility_spacing_current">Actual: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Comportament del temps d\'espera</string>
+    <string name="accessibility_timeout_no_automatic">Cap temps d\'espera automàtic per a la conformitat AAA</string>
+    <string name="accessibility_timeout_auto_advance_30">Avançament automàtic als 30 segons</string>
+    <string name="accessibility_timeout_auto_advance_60">Avançament automàtic als 60 segons</string>
+    <string name="accessibility_timeout_set_announcement">Comportament del temps d\'espera establert a %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Nivell de contrast</string>
+    <string name="accessibility_contrast_aaa_ratio">Relació de contrast 7:1 per a la conformitat AAA</string>
+    <string name="accessibility_contrast_standard">Contrast estàndard</string>
+    <string name="accessibility_contrast_aa_ratio">Relació de contrast 4,5:1 per a la conformitat AA</string>
+    <string name="accessibility_contrast_set_announcement">Nivell de contrast establert a %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Mode per a daltonisme establert a %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">Control lliscant de %1$s. Valor actual: %2$s. %3$sRang de %4$s a %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">Conforme amb AAA. </string>
+    <string name="accessibility_slider_announcement">%1$s establert a %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, conforme amb AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s activat</string>
+    <string name="accessibility_toggle_disabled">%s desactivat</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Retorn de la verificació</string>
+    <string name="accessibility_sound_enabled">Reproduir so en cas d\'èxit</string>
+    <string name="accessibility_sound_enabled_description">Reproduir un so de confirmació després d\'una verificació correcta</string>
+    <string name="accessibility_sound_style">Estil del so</string>
+    <string name="accessibility_sound_preview">Previsualitzar el so</string>
+    <string name="accessibility_sound_preview_preset">Previsualitzar %s</string>
+    <string name="accessibility_sound_style_set_announcement">Estil del so establert a %s</string>
+    <string name="accessibility_haptic_enabled">Vibrar en cas d\'èxit</string>
+    <string name="accessibility_haptic_enabled_description">Proporcionar retorn hàptic després d\'una verificació correcta</string>
+    <string name="accessibility_sound_footer">El so respecta la configuració del mode silenciós del dispositiu</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Volum</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Previsualitzar el volum actual</string>
+    <string name="accessibility_volume_set_announcement">Volum establert a %d per cent</string>
+    <string name="accessibility_volume_slider_description">Control lliscant de volum. Valor actual: %d per cent</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Restablir la configuració</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">Mode oficial</string>
+    <string name="officer_id">Identificació (ID) de l\'oficial</string>
+    <string name="officer_id_placeholder">p. ex., OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Introduïu la vostra identificació d\'oficial assignada</string>
+    <string name="officer_yubikey_connected">YubiKey connectat</string>
+    <string name="officer_connect_yubikey">Connectar YubiKey</string>
+    <string name="officer_touch_yubikey">Toqueu el vostre YubiKey per autenticar-vos…</string>
+    <string name="officer_authenticate_hmac">Autenticar-se amb HMAC (codi d\'autenticació de missatge basat en hash)</string>
+    <string name="officer_authentication_process">Procés d\'autenticació:</string>
+    <string name="officer_auth_steps">1. Introduïu la vostra identificació d\'oficial\n2. Feu clic a Autenticar\n3. Toqueu el YubiKey quan parpellegi\n4. L\'autenticació HMAC (codi d\'autenticació de missatge basat en hash) verifica la vostra identitat</string>
+    <string name="officer_auth_failed">L\'autenticació ha fallat. Verifiqueu la vostra identificació d\'oficial i torneu-ho a intentar.</string>
+    <string name="officer_session_info">Oficial: %s</string>
+    <string name="officer_station_info">Estació: %s</string>
+    <string name="officer_issued_today">Emesos avui: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Emetre credencial d\'edat</string>
+    <string name="officer_issue_description">Verifiqueu la identitat de l\'usuari i emeteu una credencial d\'edat digital</string>
+    <string name="officer_start_issuance">Iniciar una nova emissió</string>
+    <string name="officer_issuance_process">PROCÉS D\'EMISSIÓ</string>
+    <string name="officer_issuance_steps">1. Comproveu el document d\'identificació físic de l\'usuari\n2. Introduïu la seva data de naixement\n3. Verifiqueu que la informació coincideix exactament\n4. Emeteu la credencial amb el codi QR (Resposta ràpida) d\'atestació\n5. L\'usuari escaneja el codi QR (Resposta ràpida) per rebre la credencial</string>
+    <string name="officer_verify_identity">Verificar la identitat de l\'usuari</string>
+    <string name="officer_select_dob">Seleccionar la data de naixement</string>
+    <string name="officer_change_date">Canviar la data</string>
+    <string name="officer_age_years">Edat: %d anys</string>
+    <string name="officer_under_18_warning">Menor de 18 anys , no es pot emetre la credencial</string>
+    <string name="officer_verification_checklist">LLISTA DE VERIFICACIÓ</string>
+    <string name="officer_document_verified">Document físic verificat</string>
+    <string name="officer_document_verified_description">He vist una identificació vàlida emesa pel govern</string>
+    <string name="officer_dob_matches">La data de naixement coincideix exactament</string>
+    <string name="officer_dob_matches_description">La data de naixement al document físic és: %s</string>
+    <string name="officer_issue_credential">Emetre credencial</string>
+    <string name="officer_user_scanned_successfully">L\'usuari ha escanejat correctament</string>
+    <string name="officer_return_to_dashboard">Tornar al tauler</string>
+    <string name="officer_go_back">Tornar enrere</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">Autenticació YubiKey</string>
+    <string name="yubikey_step_format">Pas %1$d de %2$d</string>
+    <string name="yubikey_led_should_blink">El LED del YubiKey ha de parpellejar</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Validant l\'entrada…</string>
+    <string name="officer_state_creating_attestation">Creant l\'atestació…</string>
+    <string name="officer_state_computing_commitment">Calculant el compromís criptogràfic…</string>
+    <string name="officer_state_creating_session">Creant una sessió segura…</string>
+    <string name="officer_state_signing">Signant la credencial…</string>
+    <string name="officer_state_finalizing">Finalitzant la credencial…</string>
+    <string name="officer_state_storing_attestation">Emmagatzemant l\'atestació…</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">La sessió expirarà aviat</string>
+    <string name="officer_session_expiring_message">La vostra sessió expirarà en %d segons. Voleu desar el progrés?</string>
+    <string name="officer_session_expiring_announcement">Avís: La vostra sessió expirarà en %d segons</string>
+    <string name="officer_save_and_continue">Desar i continuar</string>
+    <string name="officer_continue_without_saving">Continuar sense desar</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">DATA DE NAIXEMENT</string>
+    <string name="officer_age_format">Edat: %d anys</string>
+    <string name="officer_under_18_full_warning">Menor de 18 anys , no es pot emetre la credencial. Només les persones de 18 anys o més poden obtenir credencials de verificació d\'edat. Verifiqueu que la data de naixement sigui correcta.</string>
+    <string name="officer_verification_checklist_header">LLISTA DE VERIFICACIÓ</string>
+    <string name="officer_physical_document_verified">Document físic verificat</string>
+    <string name="officer_sighted_valid_id">He vist una identificació vàlida emesa pel govern</string>
+    <string name="officer_dob_matches_exactly">La data de naixement coincideix exactament</string>
+    <string name="officer_dob_on_document">La data de naixement al document físic és: %s</string>
+    <string name="officer_error_label">Error</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">Escanejar el codi QR (Resposta ràpida) d\'emissió</string>
+    <string name="issuance_downloads_credential">Això descarrega la vostra credencial d\'edat.</string>
+    <string name="issuance_center_qr">Centreu el codi QR dins del marc i manteniu el dispositiu quiet.</string>
+    <string name="issuance_enter_code_manually">Introduir el codi manualment</string>
+    <string name="issuance_processing_qr">Processant el codi QR…</string>
+    <string name="issuance_invalid_data">Dades d\'emissió no vàlides</string>
+    <string name="issuance_verification_qr_error">Això és un codi QR de verificació. Escanegeu el codi QR d\'emissió de la credencial.</string>
+    <string name="issuance_invalid_qr_format">Format de codi QR no vàlid</string>
+    <string name="issuance_failed_to_process">No s\'ha pogut processar el codi QR: %s</string>
+    <string name="issuance_code">Codi d\'emissió</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">Entrada manual del codi</string>
+    <string name="manual_entry_enter_code_manually">Introduir el codi manualment</string>
+    <string name="manual_entry_verification_description">Introduïu el codi de verificació de 12 dígits que es mostra a la pantalla del verificador.</string>
+    <string name="manual_entry_issuance_description">Escriviu el codi que es mostra a la pantalla de l\'emissor.</string>
+    <string name="manual_entry_verification_code">Codi de verificació</string>
+    <string name="manual_entry_submit">Enviar el codi</string>
+    <string name="manual_entry_please_enter">Introduïu un codi</string>
+    <string name="manual_entry_please_enter_verification">Introduïu un codi de verificació</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Iniciar l\'escolta</string>
+    <string name="voice_input_stop_listening">Aturar l\'escolta</string>
+    <string name="voice_input_recognized">Reconegut:</string>
+    <string name="content_desc_voice_input_listening">Escoltant l\'entrada de veu</string>
+    <string name="content_desc_voice_input_available">Entrada de veu disponible</string>
+    <string name="voice_input_permission_title">Cal el permís del micròfon</string>
+    <string name="voice_input_permission_message">L\'entrada de veu requereix accés al micròfon. Podeu activar-lo des de la configuració del sistema.</string>
+    <string name="voice_input_listening">Escoltant…</string>
+    <string name="voice_input_error">Error d\'entrada de veu</string>
+    <string name="voice_input_tap_to_speak">Toqueu per parlar</string>
+    <string name="voice_input_did_you_say">Heu dit «%1$s»?</string>
+    <string name="voice_input_confirm">Confirmar</string>
+    <string name="voice_input_retry">Tornar-ho a intentar</string>
+    <string name="voice_input_cancel">Cancel·lar</string>
+    <string name="voice_input_button">Entrada de veu</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">L\'entrada de veu no està disponible en aquest dispositiu</string>
+    <string name="voice_input_error_audio">Error en la gravació d\'àudio. Comproveu el micròfon.</string>
+    <string name="voice_input_error_network">Error de xarxa. Comproveu la connexió.</string>
+    <string name="voice_input_error_network_timeout">Temps d\'espera de la xarxa exhaurit. Torneu-ho a intentar.</string>
+    <string name="voice_input_error_no_match">No s\'ha detectat cap discurs. Torneu-ho a intentar.</string>
+    <string name="voice_input_error_recognizer_busy">L\'entrada de veu està ocupada. Espereu.</string>
+    <string name="voice_input_error_server">Error del servidor. Torneu-ho a intentar més tard.</string>
+    <string name="voice_input_error_speech_timeout">No s\'ha sentit cap discurs. Parleu més fort.</string>
+    <string name="voice_input_error_insufficient_permissions">Permís del micròfon denegat.</string>
+    <string name="voice_input_error_generic">Error d\'entrada de veu. Torneu-ho a intentar.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">Enrere</string>
+    <string name="action_close">Tancar</string>
+    <string name="action_cancel">Cancel·lar</string>
+    <string name="action_ok">D\'acord</string>
+    <string name="action_set">Establir</string>
+    <string name="action_change">Canviar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_reset">Restablir</string>
+    <string name="action_retry">Reintentar</string>
+    <string name="action_try_again">Tornar-ho a intentar</string>
+    <string name="action_refresh">Actualitzar</string>
+    <string name="action_download_now">Descarregar ara</string>
+    <string name="action_retry_setup">Reintentar la configuració</string>
+    <string name="action_retry_download">Reintentar la descàrrega</string>
+    <string name="action_restart_setup">Reiniciar la configuració</string>
+    <string name="action_manage_storage">Gestionar l\'emmagatzematge</string>
+    <string name="action_check_wifi_settings">Comprovar primer la configuració de Wi-Fi</string>
+    <string name="action_check_wifi_settings_short">Comprovar la configuració de Wi-Fi</string>
+    <string name="action_grant_permission">Concedir permís</string>
+    <string name="action_grant_camera_access">Concedir accés a la càmera</string>
+    <string name="action_return_to_browser">Tornar al navegador</string>
+    <string name="action_show_debug_info">Mostrar la informació de Debug</string>
+    <string name="action_reset_redownload">Restablir i tornar a descarregar</string>
+    <string name="action_end_session">Finalitzar la sessió</string>
+    <string name="action_expand">Expandir</string>
+    <string name="action_collapse">Reduir</string>
+    <string name="accessibility_state_expanded">Expandit</string>
+    <string name="accessibility_state_collapsed">Reduït</string>
+    <string name="accessibility_state_checked">Marcat</string>
+    <string name="accessibility_state_unchecked">No marcat</string>
+    <string name="accessibility_state_selected">Seleccionat</string>
+    <string name="accessibility_state_not_selected">No seleccionat</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">S\'ha produït un error</string>
+    <string name="error_camera_permission">Cal el permís de la càmera per escanejar codis QR (Resposta ràpida)</string>
+    <string name="error_camera_access_needed">Cal accés a la càmera</string>
+    <string name="error_camera_permission_description">Concediu el permís de la càmera per escanejar codis QR o activeu l\'entrada manual des de la configuració d\'accessibilitat.</string>
+    <string name="error_camera_permission_required">Cal el permís de la càmera per escanejar codis QR</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">Cercant el codi QR…</string>
+    <string name="qr_scanner_camera_required">Cal el permís de la càmera</string>
+    <string name="qr_scanner_camera_preview">Previsualització de la càmera per escanejar codis QR</string>
+    <string name="qr_scanner_status_scanning">Cercant el codi QR</string>
+    <string name="qr_scanner_requesting_permission">Sol·licitant el permís de la càmera</string>
+    <string name="error_camera_start_failed">No s\'ha pogut iniciar la càmera: %s</string>
+    <string name="error_camera_init_failed">Ha fallat la inicialització de la càmera: %s</string>
+    <string name="error_biometric_not_available">L\'autenticació biomètrica no està disponible</string>
+    <string name="error_network">S\'ha produït un error de xarxa</string>
+    <string name="error_no_credential">No hi ha cap credencial disponible. Obteniu primer una credencial.</string>
+    <string name="credential_picker_title">Trieu una credencial</string>
+    <string name="credential_picker_description">Teniu diverses credencials que es poden usar per a aquesta verificació. Seleccioneu-ne una.</string>
+    <string name="credential_picker_expired_label">Caducada</string>
+    <string name="credential_picker_accessibility_select">Seleccionar credencial: %1$s</string>
+    <string name="error_failed_to_process_challenge">No s\'ha pogut processar el repte</string>
+    <string name="error_failed_to_create_proof">No s\'ha pogut crear la prova</string>
+    <string name="error_verification_failed">La verificació ha fallat</string>
+    <string name="error_occurred_during_verification">S\'ha produït un error durant la verificació</string>
+    <string name="error_connection_timeout">La connexió ha expirat. Torneu-ho a intentar.</string>
+    <string name="error_unable_to_connect">No s\'ha pogut connectar. Comproveu la connexió a internet.</string>
+    <string name="error_secure_connection_failed">Ha fallat la connexió segura. Torneu-ho a intentar.</string>
+    <string name="error_security_verification_failed">Ha fallat la verificació de seguretat. Torneu-ho a intentar.</string>
+    <string name="error_invalid_input">Entrada no vàlida. Comproveu la informació i torneu-ho a intentar.</string>
+    <string name="error_operation_in_progress">Hi ha una altra operació en curs. Espereu.</string>
+    <string name="error_operation_cancelled">L\'operació s\'ha cancel·lat.</string>
+    <string name="error_age_requirement_not_met">No es compleix el requisit d\'edat per a aquesta credencial.</string>
+    <string name="error_biometric_required">Cal l\'autenticació biomètrica per continuar.</string>
+    <string name="error_wallet_not_initialized">La cartera no s\'ha inicialitzat. Reinicieu l\'aplicació.</string>
+    <string name="error_security">Error de seguretat. Torneu-ho a intentar.</string>
+    <string name="error_connection_timeout_short">Temps d\'espera de la connexió exhaurit. Torneu-ho a intentar.</string>
+    <string name="error_invalid_input_provided">S\'ha proporcionat una entrada no vàlida.</string>
+    <string name="error_invalid_data_format">Format de dades no vàlid. Torneu-ho a intentar.</string>
+    <string name="error_storage">Error d\'emmagatzematge. Comproveu l\'emmagatzematge del dispositiu.</string>
+    <string name="error_network_short">Error de xarxa. Comproveu la connexió.</string>
+    <string name="error_label">Error</string>
+    <string name="error_dismiss">Descartar l\'error</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">Processant…</string>
+    <string name="status_initializing_wallet">Inicialitzant la cartera…</string>
+    <string name="status_loading">Carregant…</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">Privadesa protegida</string>
+    <string name="privacy_zk_description">La vostra data de naixement no es comparteix mai. Els verificadors només saben si compliu el requisit d\'edat.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Configuració de privadesa</string>
+    <string name="privacy_settings_description">Controlar la recollida de dades i gestionar les vostres dades</string>
+    <string name="privacy_section_data_collection">Recollida de dades</string>
+    <string name="privacy_section_your_data">Les vostres dades</string>
+    <string name="privacy_protection_title">La vostra privadesa està protegida</string>
+    <string name="privacy_protection_description">Provii Wallet usa proves de coneixement zero per verificar la vostra edat sense revelar la vostra data de naixement. Les dades de la credencial s\'emmagatzemen només al vostre dispositiu i no es comparteixen mai amb ningú.</string>
+    <string name="privacy_analytics_title">Analítica</string>
+    <string name="privacy_analytics_description">Ajudeu a millorar Provii Wallet compartint dades d\'ús anònimes</string>
+    <string name="privacy_analytics_enabled">Analítica activada</string>
+    <string name="privacy_analytics_disabled">Analítica desactivada</string>
+    <string name="privacy_crash_reporting_title">Informes de fallades</string>
+    <string name="privacy_crash_reporting_description">Ajudeu-nos a corregir errors enviant automàticament informes de fallades</string>
+    <string name="privacy_crash_reporting_enabled">Informes de fallades activats</string>
+    <string name="privacy_crash_reporting_disabled">Informes de fallades desactivats</string>
+    <string name="privacy_what_we_collect_title">Quines dades recollim</string>
+    <string name="privacy_what_we_collect_subtitle">Toqueu per conèixer les nostres pràctiques de dades</string>
+    <string name="privacy_data_collection_info_title">Informació sobre la recollida de dades</string>
+    <string name="privacy_data_we_collect_header">Allò que recollim (si està activat):</string>
+    <string name="privacy_data_we_collect_list">- Estadístiques d\'ús anònimes de l\'aplicació\n- Informes de fallades i registres d\'errors\n- Tipus de dispositiu i versió del sistema operatiu\n- Informació de la versió de l\'aplicació</string>
+    <string name="privacy_data_we_dont_collect_header">Allò que no recollim mai:</string>
+    <string name="privacy_data_we_dont_collect_list">- La vostra data de naixement\n- El vostre nom o dades personals\n- La vostra ubicació\n- Les dades de la vostra credencial\n- Dades biomètriques</string>
+    <string name="privacy_data_never_shared_note">Les dades de la vostra credencial no es comparteixen mai amb Provii ni amb cap tercer. Romanen al vostre dispositiu.</string>
+    <string name="privacy_policy_title">Política de privadesa</string>
+    <string name="privacy_policy_subtitle">Llegiu la nostra política de privadesa completa</string>
+    <string name="privacy_delete_my_data_title">Eliminar les meves dades</string>
+    <string name="privacy_delete_my_data_subtitle">Eliminar totes les credencials i dades emmagatzemades</string>
+    <string name="privacy_delete_data_dialog_title">Eliminar totes les dades?</string>
+    <string name="privacy_delete_data_dialog_message">Això eliminarà permanentment totes les vostres credencials i dades de l\'aplicació d\'aquest dispositiu. Haureu d\'obtenir una credencial nova per usar l\'aplicació de nou.</string>
+    <string name="privacy_delete_data_dialog_warning">Aquesta acció no es pot desfer.</string>
+    <string name="privacy_delete_data_confirm">Eliminar-ho tot</string>
+    <string name="privacy_footer_note">Podeu canviar aquesta configuració en qualsevol moment. Els canvis s\'apliquen immediatament.</string>
+    <string name="dialog_delete_data_announcement">Diàleg de confirmació d\'eliminació de dades obert</string>
+    <string name="dialog_data_collection_info_announcement">Diàleg d\'informació sobre la recollida de dades obert</string>
+    <string name="content_desc_privacy_settings">Configuració de privadesa, controlar la recollida de dades i gestionar les vostres dades</string>
+    <string name="content_desc_data_collection_info">Veure la informació sobre la recollida de dades</string>
+    <string name="content_desc_privacy_policy">Veure la política de privadesa</string>
+    <string name="content_desc_opens_external_link">S\'obre al navegador</string>
+    <string name="content_desc_delete_my_data">Eliminar totes les meves dades</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">Enrere</string>
+    <string name="content_desc_settings">Configuració</string>
+    <string name="content_desc_refresh">Actualitzar</string>
+    <string name="content_desc_verified">Verificat</string>
+    <string name="content_desc_expand">Expandir</string>
+    <string name="content_desc_collapse">Reduir</string>
+    <string name="content_desc_warning_error">Avís: s\'ha produït un error</string>
+    <string name="content_desc_sandbox_indicator">Indicador del mode Sandbox</string>
+    <string name="content_desc_success">Correcte</string>
+    <string name="content_desc_warning">Avís</string>
+    <string name="content_desc_information">Informació</string>
+    <string name="content_desc_error">Error</string>
+    <string name="content_desc_sandbox_warning">Avís del mode Sandbox</string>
+    <string name="content_desc_app_info">Informació de l\'aplicació</string>
+    <string name="content_desc_accessibility_settings">Configuració d\'accessibilitat</string>
+    <string name="content_desc_language_settings">Configuració d\'idioma</string>
+    <string name="content_desc_licenses">Llicències de codi obert</string>
+    <string name="content_desc_select_dob">Seleccionar la data de naixement</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Emet credencial de prova com a Emissor</string>
+    <string name="content_desc_get_credential">Obtenir credencial</string>
+    <string name="content_desc_delete_credential">Eliminar credencial</string>
+    <string name="content_desc_reset_proving_key">Restablir la clau de demostració</string>
+    <string name="content_desc_environment_info">Informació de l\'entorn</string>
+    <string name="content_desc_help_support">Ajuda i suport</string>
+    <string name="content_desc_privacy_protected">Privadesa protegida</string>
+    <string name="preview_settings_title">Previsualització de la configuració</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">Correcte</string>
+    <string name="accessibility_verification_error_description">Error</string>
+    <string name="accessibility_breadcrumb_location_description">Ubicació: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">i llavors</string>
+    <string name="accessibility_breadcrumb_current_page_description">Pàgina actual: %s</string>
+    <string name="accessibility_settings_navigate_description">Navegar</string>
+    <string name="accessibility_credentials_settings_description">Configuració</string>
+    <string name="accessibility_verification_back_description">Enrere</string>
+    <string name="accessibility_officer_back_description">Enrere</string>
+    <string name="accessibility_discovery_back_description">Enrere</string>
+    <string name="accessibility_discovery_refresh_description">Actualitzar</string>
+    <string name="accessibility_discovery_verified_description">Verificat</string>
+    <string name="accessibility_officer_done_description">Fet</string>
+    <string name="accessibility_officer_attestation_qr_description">Codi QR d\'atestació perquè l\'usuari l\'escanegi</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">Saltar a %s</string>
+    <string name="accessibility_skip_main_content">el contingut principal</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Discapacitat visual</string>
+    <string name="accessibility_profile_motor_impaired">Discapacitat motora</string>
+    <string name="accessibility_profile_cognitive_support">Suport cognitiu</string>
+    <string name="accessibility_profile_elderly_support">Suport per a gent gran</string>
+    <string name="accessibility_profile_default">Predeterminat</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Cap</string>
+    <string name="color_blind_mode_protanopia">Protanopia</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopia</string>
+    <string name="color_blind_mode_tritanopia">Tritanopia</string>
+    <string name="color_blind_mode_monochrome">Monocrom</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Estàndard</string>
+    <string name="contrast_level_high">Alt (AA)</string>
+    <string name="contrast_level_maximum">Màxim (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Amplada completa</string>
+    <string name="text_width_comfortable">Còmode (80 caràcters)</string>
+    <string name="text_width_narrow">Estret (60 caràcters)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Sense temps d\'espera (AAA)</string>
+    <string name="timeout_behavior_standard">Estàndard (30 s)</string>
+    <string name="timeout_behavior_extended">Ampliat (60 s)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Estàndard</string>
+    <string name="reading_level_standard_description">Text normal amb termes tècnics</string>
+    <string name="reading_level_simplified">Simplificat (graus 7–9)</string>
+    <string name="reading_level_simplified_description">Paraules més senzilles i frases més curtes (conforme amb AAA)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">Ajuda</string>
+    <string name="help_and_support">Ajuda i suport</string>
+    <string name="help_description">Obteniu ajuda sobre les funcions de l\'aplicació i l\'accessibilitat</string>
+    <string name="help_center">Centre d\'ajuda</string>
+    <string name="help_center_description">Navegueu pels temes d\'ajuda i apreneu sobre les funcions de l\'aplicació</string>
+    <string name="help_search">Cercar ajuda</string>
+    <string name="help_search_placeholder">Cercar temes d\'ajuda…</string>
+    <string name="help_search_active">Cerca activada</string>
+    <string name="help_search_inactive">Cerca desactivada</string>
+    <string name="help_no_results">No s\'ha trobat cap tema d\'ajuda que coincideixi amb la cerca</string>
+    <string name="help_topic_not_found">Tema d\'ajuda no trobat</string>
+    <string name="help_related_topics">Temes relacionats</string>
+    <string name="help_content_heading">Contingut d\'ajuda</string>
+    <string name="help_related_topic_position">%1$s, element %2$d de %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Visió</string>
+    <string name="help_category_typography">Tipografia</string>
+    <string name="help_category_interaction">Interacció</string>
+    <string name="help_category_cognitive">Suport cognitiu</string>
+    <string name="help_category_alternative_input">Entrada alternativa</string>
+    <string name="help_category_features">Funcions</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Com obtenir una credencial</string>
+    <string name="help_topic_getting_credential_summary">Apreneu a obtenir la primera credencial de verificació d\'edat</string>
+    <string name="help_topic_getting_credential_content">Per obtenir la vostra credencial de verificació d\'edat:\n\n1. Visiteu una ubicació d\'emissor autoritzat\n2. Presenteu la vostra identificació emesa pel govern\n3. Escanegeu el codi QR proporcionat\n4. La vostra credencial es desarà de manera segura\n\nLa vostra data de naixement s\'emmagatzema localment i no es comparteix mai.</string>
+
+    <string name="help_topic_verifying_age_title">Verificar la vostra edat</string>
+    <string name="help_topic_verifying_age_summary">Com demostrar la vostra edat sense compartir informació personal</string>
+    <string name="help_topic_verifying_age_content">Quan hàgiu de verificar la vostra edat:\n\n1. El verificador us mostrarà un codi QR\n2. Escanegeu-lo amb l\'aplicació\n3. L\'aplicació crea una prova matemàtica\n4. Només es comparteix la resposta sí/no\n\nLa vostra data de naixement real no es revela MAI.</string>
+
+    <string name="help_topic_accessibility_title">Funcions d\'accessibilitat</string>
+    <string name="help_topic_accessibility_summary">Personalitzeu l\'aplicació segons les vostres necessitats</string>
+    <string name="help_topic_accessibility_content">L\'aplicació inclou moltes funcions d\'accessibilitat:\n\n- Modes de text gran i alt contrast\n- Entrada de veu i suport per a lectors de pantalla\n- Gestos simplificats i interfície d\'usuari\n- Opcions d\'entrada manual de codis\n- Temps d\'espera ampliats\n\nAccediu-hi a Configuració &gt; Accessibilitat</string>
+
+    <string name="help_topic_privacy_security_title">Privadesa i seguretat</string>
+    <string name="help_topic_privacy_security_summary">Com es protegeix la vostra informació</string>
+    <string name="help_topic_privacy_security_content">La vostra privadesa és la nostra màxima prioritat:\n\n- Les credencials s\'emmagatzemen localment al vostre dispositiu\n- Les proves de coneixement zero protegeixen les vostres dades\n- Sense seguiment ni analítica\n- Autenticació biomètrica disponible\n- Les dades mai surten del vostre dispositiu sense xifrar</string>
+
+    <string name="help_topic_troubleshooting_title">Resolució de problemes</string>
+    <string name="help_topic_troubleshooting_summary">Problemes habituals i solucions</string>
+    <string name="help_topic_troubleshooting_content">Problemes habituals i solucions:\n\nL\'escàner QR no funciona:\n- Comproveu els permisos de la càmera a Configuració\n- Proveu l\'opció d\'entrada manual de codis\n\nLa credencial no es carrega:\n- Comproveu la connexió a internet\n- Intenteu restablir la clau de demostració\n\nLa verificació ha fallat:\n- Assegureu-vos que la credencial no ha caducat\n- Contacteu el verificador per obtenir suport</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">DATA DE NAIXEMENT</string>
+    <string name="date_of_birth">Data de naixement</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">%d anys</string>
+    <string name="format_step_indicator">Pas %1$d de %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">Credencials</string>
+    <string name="tab_settings">Configuració</string>
+    <string name="tab_help">Ajuda</string>
+    <string name="tab_credentials_description">Veure les vostres credencials</string>
+    <string name="tab_settings_description">Configuració de l\'aplicació</string>
+    <string name="tab_help_description">Obtenir ajuda i suport</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">Cerca</string>
+    <string name="search_field_label">Camp de cerca</string>
+    <string name="search_placeholder">Cercar configuració, ajuda i funcions</string>
+    <string name="search_clear">Esborrar la cerca</string>
+    <string name="search_popular">Cerques populars</string>
+    <string name="search_results_heading">Resultats de la cerca</string>
+    <string name="search_no_results">No s\'han trobat resultats</string>
+    <string name="search_try_suggestions">Cerqueu:\n• Accessibilitat\n• Configuració\n• Ajuda\n• Idioma</string>
+    <string name="search_results_announcement_singular">S\'ha trobat 1 resultat</string>
+    <string name="search_results_announcement_plural">S\'han trobat %d resultats</string>
+    <string name="search_no_results_announcement">No s\'han trobat resultats</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">Accés ràpid</string>
+    <string name="help_topics">Temes d\'ajuda</string>
+    <string name="help_glossary">Glossari</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">Llicències de codi obert</string>
+    <string name="licenses_description">Aquesta aplicació usa el programari de codi obert següent. Agraïm als desenvolupadors que han creat aquestes biblioteques.</string>
+    <string name="licenses_tap_to_view">Toqueu per veure la llicència completa</string>
+    <string name="licenses_group_header">%1$s (%2$d biblioteques)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">Sense connexió a internet. Comproveu la xarxa i torneu-ho a intentar.</string>
+    <string name="error_unexpected">S\'ha produït un error inesperat. Reinicieu l\'aplicació.</string>
+    <string name="error_unexpected_try_again">S\'ha produït un error inesperat. Torneu-ho a intentar.</string>
+    <string name="error_storage_detailed">Error d\'emmagatzematge: %s</string>
+    <string name="error_network_detailed">Error de xarxa: %s</string>
+    <string name="error_proof_generation_failed">No s\'ha pogut generar la prova: %s</string>
+    <string name="error_not_eligible">No sou elegible. No compliu els requisits per a aquesta verificació.</string>
+    <string name="error_challenge_expired">El repte ha caducat o no s\'ha trobat. Sol·liciteu-ne un de nou.</string>
+    <string name="error_challenge_expired_scan_new">Aquest repte ha caducat. Escanegeu un codi QR nou.</string>
+    <string name="error_request_out_of_order">Sol·licitud fora d\'ordre. Torneu-ho a intentar.</string>
+    <string name="error_too_many_requests">Massa sol·licituds. Espereu un moment i torneu-ho a intentar.</string>
+    <string name="error_server">Error del servidor. Torneu-ho a intentar més tard.</string>
+    <string name="error_request_failed">La sol·licitud ha fallat (%d). Torneu-ho a intentar.</string>
+    <string name="error_not_eligible_short">No sou elegible per a aquesta verificació</string>
+    <string name="error_challenge_not_found">Repte no trobat</string>
+    <string name="error_complete_steps_in_order">Completeu els passos en ordre</string>
+    <string name="error_challenge_expired_short">El repte ha caducat</string>
+    <string name="error_authentication_cancelled">Autenticació cancel·lada. Verifiqueu la vostra identitat per completar la verificació d\'edat.</string>
+    <string name="error_invalid_data_format_short">Format de dades no vàlid. Torneu-ho a intentar.</string>
+    <string name="error_storage_check_device">Error d\'emmagatzematge. Comproveu l\'emmagatzematge del dispositiu.</string>
+    <string name="error_network_check_connection">Error de xarxa. Comproveu la connexió.</string>
+    <string name="error_proof_generation_failed_short">No s\'ha pogut generar la prova. Torneu-ho a intentar.</string>
+    <string name="error_operation_in_progress_short">Hi ha una altra operació en curs.</string>
+    <string name="error_no_internet_short">Sense connexió a internet. Comproveu la xarxa.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Escanejar el QR de verificació</string>
+    <string name="verification_verifying_title">Verificant l\'edat</string>
+    <string name="verification_success_title">Edat verificada</string>
+    <string name="verification_failed_title">Verificació fallida</string>
+    <string name="verification_processing_wait">Pot trigar uns segons</string>
+    <string name="verification_success_message">La vostra edat s\'ha verificat de manera privada</string>
+    <string name="verification_return_to_site">Ara podeu tornar al lloc per continuar.</string>
+    <string name="verification_please_enter_code">Introduïu un codi de verificació. El codi ha de ser un codi curt de 12 dígits o una URL de verificació completa del verificador.</string>
+    <string name="verification_error_occurred">S\'ha produït un error durant la verificació</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Processant…</string>
+    <string name="credential_list_verify_age_button">Verificar edat</string>
+    <string name="credential_list_generate_in_person_description">Generar la credencial en persona</string>
+    <string name="credential_list_scan_qr_title">Escanejar codi QR</string>
+    <string name="credential_list_find_locations_title">Trobar ubicacions</string>
+    <string name="credential_section_my_credential">La meva credencial</string>
+    <string name="credential_section_managed">Credencials gestionades</string>
+    <string name="credential_list_get_credential_button">Obtenir credencial</string>
+    <string name="credential_list_add_managed_button">Afegir credencial gestionada</string>
+    <string name="credential_section_managed_empty">Afegiu una credencial per a algú que teniu a càrrec, com ara un fill o filla.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Detalls de la credencial</string>
+    <string name="credential_detail_not_found">Credencial no trobada</string>
+    <string name="credential_detail_nickname">Àlies</string>
+    <string name="credential_detail_no_nickname">Cap àlies establert</string>
+    <string name="credential_detail_edit_nickname">Editar l\'àlies</string>
+    <string name="credential_detail_status">Estat</string>
+    <string name="credential_detail_delete">Eliminar credencial</string>
+    <string name="credential_detail_delete_title">Eliminar credencial</string>
+    <string name="credential_detail_delete_message">Esteu segur que voleu eliminar aquesta credencial? Aquesta acció no es pot desfer.</string>
+    <string name="credential_type_primary">Principal</string>
+    <string name="credential_type_managed">Gestionada</string>
+    <string name="credential_status_valid">Vàlida</string>
+    <string name="credential_status_expired">Caducada</string>
+    <string name="credential_status_invalid">No vàlida</string>
+    <string name="action_save">Desar</string>
+    <string name="credential_slots_full_title">Nombre màxim de credencials assolit</string>
+    <string name="credential_slots_full_message">Heu assolit el nombre màxim de credencials. Elimineu una credencial existent per afegir-ne una de nova.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">Credencial gestionada</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">Verificar l\'edat de %1$s?</string>
+    <string name="managed_confirm_message">Esteu a punt de verificar l\'edat usant la credencial gestionada de %1$s.</string>
+    <string name="managed_confirm_proceed">Verificar per a %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Creant la prova per a %1$s</string>
+    <string name="verification_age_verified_for">Edat verificada per a %1$s</string>
+    <string name="deeplink_verification_age_verified_for">Edat verificada per a %1$s</string>
+    <string name="attestation_managed_credential_received">Credencial per a %1$s rebuda!</string>
+    <string name="attestation_managed_credential_stored">La credencial del vostre fill o filla s\'ha emmagatzemat de manera segura.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">Eliminar la credencial de %1$s?</string>
+    <string name="credential_detail_delete_managed_message">Esteu segur que voleu eliminar aquesta credencial gestionada de %1$s? Aquesta acció no es pot desfer. Haureu de visitar de nou un emissor per substituir-la.</string>
+    <string name="credential_detail_save_error">No s\'ha pogut desar l\'àlies</string>
+    <string name="credential_detail_delete_error">No s\'ha pogut eliminar la credencial</string>
+    <string name="accessibility_saving">Desant…</string>
+    <string name="accessibility_deleting">Eliminant…</string>
+    <string name="accessibility_loading">Carregant, espereu</string>
+    <string name="accessibility_issuing_credential">Emetent la credencial, espereu</string>
+    <string name="dialog_delete_all_credentials_title">Eliminar totes les credencials?</string>
+    <string name="dialog_delete_all_credentials_message">Això eliminarà la vostra credencial i qualsevol credencial gestionada per a fills o filles. Aquesta acció no es pot desfer.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">Gestionada</string>
+    <string name="credential_slots_count">%1$d de 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Preparant la verificació…</string>
+    <string name="deeplink_verification_checking_credential">Comprovant la credencial…</string>
+    <string name="deeplink_verification_processing_challenge">Processant el repte…</string>
+    <string name="deeplink_verification_creating_proof">Creant una prova segura…</string>
+    <string name="deeplink_verification_submitting_proof">Enviant la prova…</string>
+    <string name="deeplink_verification_success">✔ Edat verificada correctament</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">No s\'ha trobat cap credencial. Configureu primer la vostra credencial.</string>
+    <string name="deeplink_verification_error_failed_challenge">No s\'ha pogut processar el repte de verificació</string>
+    <string name="deeplink_verification_error_no_auth_prompt">No s\'ha pogut mostrar el missatge d\'autenticació</string>
+    <string name="deeplink_verification_error_failed_proof">No s\'ha pogut crear la prova d\'edat</string>
+    <string name="deeplink_verification_error_verification_failed">La verificació ha fallat</string>
+    <string name="deeplink_verification_error_unexpected">S\'ha produït un error inesperat</string>
+    <string name="deeplink_verification_error_no_credential_selected">No s\'ha seleccionat cap credencial. Torneu-ho a intentar.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Seleccionar una credencial</string>
+    <string name="deeplink_verification_select_credential_subtitle">Hi ha diverses credencials disponibles. Trieu quina voleu usar per a aquesta verificació.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Verificant l\'edat</string>
+    <string name="deeplink_verification_title_verified">Verificat</string>
+    <string name="deeplink_verification_title_failed">Verificació fallida</string>
+    <string name="deeplink_verification_please_wait">Espereu…</string>
+    <string name="deeplink_verification_age_verified">Edat verificada!</string>
+    <string name="deeplink_verification_under_age_verified">Verificat menor de %1$d</string>
+    <string name="deeplink_verification_returning_browser">Tornant al navegador…</string>
+    <string name="deeplink_verification_return_to_browser">Tornar al navegador</string>
+    <string name="deeplink_verification_failed_title">Verificació fallida</string>
+    <string name="deeplink_verification_error_occurred">S\'ha produït un error durant la verificació</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">PROCÉS D\'EMISSIÓ</string>
+    <string name="officer_issuance_process_steps">1. Comproveu el document d\'identificació físic de l\'usuari\n2. Introduïu la seva data de naixement\n3. Verifiqueu que la informació coincideix exactament\n4. Emeteu la credencial amb el codi QR (Resposta ràpida) d\'atestació\n5. L\'usuari escaneja el codi QR (Resposta ràpida) per rebre la credencial</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">No s\'ha pogut generar el codi QR</string>
+    <string name="officer_attestation_ready_title">Atestació a punt</string>
+    <string name="officer_attestation_scan_instruction">L\'usuari ha d\'escanejar aquest codi QR amb la seva aplicació Provii Wallet</string>
+    <string name="officer_attestation_deeplink_label">ENLLAÇ D\'ATESTACIÓ</string>
+    <string name="officer_wait_for_attestation_scan">Espereu que l\'usuari escanegi</string>
+    <string name="officer_attestation_info">La credencial es generarà al dispositiu de l\'usuari</string>
+    <string name="officer_attestation_complete">Atestació completada</string>
+    <string name="officer_user_will_complete_credential">L\'usuari completarà la generació de la credencial al seu dispositiu</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Descodificant les dades d\'atestació…</string>
+    <string name="attestation_generating_randomness">Generant aleatorietat segura…</string>
+    <string name="attestation_sending">Enviant a l\'emissor…</string>
+    <string name="attestation_verifying">Verificant el compromís…</string>
+    <string name="attestation_storing">Emmagatzemant la credencial…</string>
+    <string name="attestation_complete">Credencial completada!</string>
+    <string name="attestation_error_invalid_data">Dades d\'atestació no vàlides</string>
+    <string name="attestation_error_expired">L\'atestació ha caducat</string>
+    <string name="attestation_error_network">Error de xarxa , comproveu la connexió</string>
+    <string name="attestation_error_unexpected">S\'ha produït un error inesperat</string>
+    <string name="attestation_title_processing">Processant l\'atestació</string>
+    <string name="attestation_title_success">Credencial rebuda</string>
+    <string name="attestation_title_failed">Emissió fallida</string>
+    <string name="attestation_secure_issuance">Emissió segura</string>
+    <string name="attestation_privacy_preserving">Emissió de credencials que preserva la privadesa</string>
+    <string name="attestation_may_take_seconds">Pot trigar uns segons</string>
+    <string name="attestation_keep_app_open">Manteniu l\'aplicació oberta</string>
+    <string name="attestation_credential_received">Credencial rebuda!</string>
+    <string name="attestation_credential_stored_description">La vostra credencial de verificació d\'edat s\'ha emmagatzemat de manera segura</string>
+    <string name="attestation_issuer_verified">Emissor verificat</string>
+    <string name="attestation_failed_title">Emissió fallida</string>
+    <string name="attestation_scan_qr_instead">Escanejar codi QR en lloc d\'això</string>
+    <string name="attestation_go_back">Tornar enrere</string>
+    <string name="attestation_step_decode">Descodificar</string>
+    <string name="attestation_step_generate">Generar</string>
+    <string name="attestation_step_send">Enviar</string>
+    <string name="attestation_step_verify">Verificar</string>
+    <string name="attestation_step_store">Emmagatzemar</string>
+    <string name="attestation_step_complete">Completar</string>
+    <string name="accessibility_attestation_encrypted_description">Atestació xifrada en procés</string>
+    <string name="accessibility_attestation_success_description">Marca de verificació indicant que la credencial s\'ha rebut</string>
+    <string name="accessibility_attestation_error_description">Icona d\'error indicant que l\'emissió ha fallat</string>
+    <string name="accessibility_step_complete">Pas %1$s completat</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Destinatari de la credencial</string>
+    <string name="attestation_recipient_prompt">Aquesta credencial és per a\u2026</string>
+    <string name="attestation_recipient_me">Jo</string>
+    <string name="attestation_recipient_child">Un fill o filla</string>
+    <string name="attestation_nickname_title">Àlies del fill o filla</string>
+    <string name="attestation_nickname_prompt">Introduïu un àlies per poder distingir les credencials</string>
+    <string name="attestation_nickname_placeholder">p. ex., Alex</string>
+    <string name="attestation_nickname_continue">Continuar</string>
+    <string name="attestation_nickname_back">Enrere</string>
+    <string name="accessibility_attestation_recipient_heading">Trieu per a qui és aquesta credencial</string>
+    <string name="accessibility_attestation_nickname_heading">Introduïu un àlies per al fill o filla</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Format d\'ID d\'oficial no vàlid</string>
+    <string name="officer_auth_error_challenge_failed">No s\'ha pogut obtenir el repte de YubiKey: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Toqueu el vostre YubiKey per autenticar-vos</string>
+    <string name="officer_auth_error_touch_timeout">S\'ha exhaurit el temps d\'espera del toc del YubiKey</string>
+    <string name="officer_auth_error_verify_document_dob">Verifiqueu que el document i la data de naixement coincideixen</string>
+    <string name="officer_auth_error_invalid_date_format">Format de data no vàlid. Useu AAAA-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">L\'usuari ha de tenir 18 anys o més</string>
+    <string name="officer_auth_error_not_authenticated">No autenticat. Introduïu primer el vostre ID d\'oficial.</string>
+    <string name="officer_auth_error_issue_failed">No s\'ha pogut emetre la credencial</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Toqueu per veure</string>
+    <string name="gesture_desc_long_press_options">, manteniu premut per a més opcions</string>
+    <string name="gesture_desc_swipe_left">, llisqueu a l\'esquerra per a més accions</string>
+    <string name="gesture_desc_swipe_right">, llisqueu a la dreta per a més accions</string>
+    <string name="gesture_desc_tap_to_activate">Toqueu per activar</string>
+    <string name="gesture_desc_long_press_format">. Manteniu premut: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Reintentar</string>
+    <string name="main_activity_reset_redownload">Restablir i tornar a descarregar</string>
+    <string name="main_activity_show_debug_info">Mostrar la informació de Debug</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Configuració d\'accessibilitat</string>
+    <string name="search_item_accessibility_settings_subtitle">Personalitzeu la vostra experiència</string>
+    <string name="search_item_large_text_title">Text gran</string>
+    <string name="search_item_large_text_subtitle">Augmentar la mida del text</string>
+    <string name="search_item_high_contrast_title">Alt contrast</string>
+    <string name="search_item_high_contrast_subtitle">Millorar la visibilitat</string>
+    <string name="search_item_voice_input_title">Entrada de veu</string>
+    <string name="search_item_voice_input_subtitle">Controlar amb la veu</string>
+    <string name="search_item_manual_code_entry_title">Entrada manual de codis</string>
+    <string name="search_item_manual_code_entry_subtitle">Escriure codis en lloc d\'escanejar-los</string>
+    <string name="search_item_simplified_ui_title">Interfície d\'usuari simplificada</string>
+    <string name="search_item_simplified_ui_subtitle">Reduir la complexitat visual</string>
+    <string name="search_item_color_blindness_title">Suport per a daltonisme</string>
+    <string name="search_item_color_blindness_subtitle">Ajustar els colors per millorar la visibilitat</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Configuració</string>
+    <string name="search_item_settings_subtitle">Configuració de l\'aplicació</string>
+    <string name="search_item_language_title">Idioma</string>
+    <string name="search_item_language_subtitle">Canviar l\'idioma de l\'aplicació</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Les meves credencials</string>
+    <string name="search_item_credentials_subtitle">Veure les vostres credencials</string>
+    <string name="search_item_get_credential_title">Obtenir una credencial</string>
+    <string name="search_item_get_credential_subtitle">Trobar emissors</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Ajuda</string>
+    <string name="search_item_help_subtitle">Obtenir assistència</string>
+    <string name="search_item_privacy_title">Protecció de la privadesa</string>
+    <string name="search_item_privacy_subtitle">Com es protegeixen les vostres dades</string>
+    <string name="search_item_verification_title">Verificació d\'edat</string>
+    <string name="search_item_verification_subtitle">Demostrar la vostra edat</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Registre de reserves codificat per a l\'entorn Sandbox</string>
+    <string name="issuer_fallback_production_description">Registre de reserves codificat per a producció</string>
+    <string name="issuer_fallback_category_government">Govern</string>
+    <string name="issuer_fallback_category_government_description">Credencials emeses pel govern</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Emissor Sandbox de Provii</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Emissor Sandbox oficial de Provii per a proves</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Visiteu el portal de l\'emissor Sandbox</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Emissor oficial de credencials de Provii</string>
+    <string name="issuer_fallback_production_issuer_instructions">Visiteu la vostra oficina DMV local</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">La data de naixement no pot ser en el futur</string>
+    <string name="validation_error_invalid_date_format">Format de data no vàlid</string>
+    <string name="validation_error_officer_id_too_short">L\'identificació d\'oficial és massa curta</string>
+    <string name="validation_error_invalid_officer_id_format">Format d\'identificació d\'oficial no vàlid</string>
+    <string name="validation_error_empty_qr_code">Codi QR buit</string>
+    <string name="validation_error_qr_code_too_large">El codi QR és massa gran</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">Ara sou un desenvolupador!</string>
+    <string name="sandbox_toast_enabled">Mode Sandbox activat\nS\'està usant l\'entorn de prova</string>
+    <string name="sandbox_toast_disabled">Mode de producció activat\nS\'està usant l\'entorn de producció</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">Sou a 1 pas del mode de desenvolupador</string>
+    <string name="sandbox_toast_steps_away">Sou a %1$d passos del mode de desenvolupador</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">Cap YubiKey connectat</string>
+    <string name="yubikey_error_timeout">S\'ha exhaurit el temps d\'espera del toc del YubiKey. Toqueu la clau quan parpellegi.</string>
+    <string name="yubikey_error_not_supported">La resposta als reptes no està configurada en aquest ranura del YubiKey</string>
+    <string name="yubikey_error_no_slot">La ranura 2 no està configurada per a la resposta als reptes HMAC (codi d\'autenticació de missatge basat en hash) SHA1</string>
+    <string name="yubikey_error_hmac_failed">Ha fallat el càlcul de HMAC (codi d\'autenticació de missatge basat en hash): %s</string>
+    <string name="yubikey_error_session_failed">No s\'ha pogut connectar al YubiKey: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">La cartera no s\'ha inicialitzat</string>
+    <string name="wallet_error_proving_key_not_found">Clau de demostració no trobada , torneu a descarregar-la</string>
+    <string name="wallet_error_proving_key_not_readable">No es pot llegir el fitxer de la clau de demostració</string>
+    <string name="wallet_error_out_of_memory">Memòria esgotada , reinicieu l\'aplicació</string>
+    <string name="wallet_error_prover_error">Error del demostrador: %s</string>
+    <string name="wallet_error_ffi_error">Error FFI: %s</string>
+    <string name="wallet_error_prover_init_failed">No s\'ha pogut inicialitzar el demostrador: %s</string>
+    <string name="wallet_error_prover_verification_failed">Ha fallat la verificació de la inicialització del demostrador</string>
+    <string name="wallet_error_verifier_url_update_failed">No s\'ha pogut actualitzar la URL (adreça web) del verificador! S\'esperava %1$s però s\'ha obtingut %2$s</string>
+    <string name="wallet_error_wallet_still_null">La cartera segueix sent nul·la després de la inicialització</string>
+    <string name="wallet_error_credential_not_found">Credencial no trobada</string>
+    <string name="wallet_error_credential_access_failed">No es pot accedir a la credencial: %s</string>
+    <string name="wallet_error_invalid_format">Format no vàlid: %s</string>
+    <string name="wallet_error_not_initialized_short">El demostrador no s\'ha inicialitzat</string>
+    <string name="wallet_error_proving_key_unavailable">Clau de demostració no disponible. Cal la configuració.</string>
+    <string name="wallet_error_storage_init_failed">Ha fallat la inicialització de l\'emmagatzematge</string>
+    <string name="wallet_error_biometric_unavailable">L\'autenticació biomètrica no està disponible</string>
+    <string name="wallet_error_auth_failed">L\'autenticació ha fallat</string>
+    <string name="wallet_error_sandbox_disabled">Activeu el mode Sandbox per generar credencials de prova</string>
+    <string name="wallet_error_fetch_sandbox_credentials">No es poden obtenir les credencials de Sandbox. Comproveu la connexió a internet.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Cal autenticació</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Verifiqueu la vostra identitat per crear la prova d\'edat</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Accedir a l\'emmagatzematge segur</string>
+    <string name="keystore_biometric_prompt_cancel">Cancel·lar</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, expandit, mostrant el text complet de la llicència</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, reduït, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">Cap</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Mòbil</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Desconegut</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">Nivells de contrast</string>
+    <string name="help_topic_extra_large_text_title">Text molt gran</string>
+    <string name="help_topic_reduce_transparency_title">Reduir la transparència</string>
+    <string name="help_topic_color_blind_modes_title">Modes per a daltonisme</string>
+    <string name="help_topic_line_spacing_title">Interlineat</string>
+    <string name="help_topic_paragraph_spacing_title">Espaiat de paràgraf</string>
+    <string name="help_topic_letter_spacing_title">Espaiat de lletres</string>
+    <string name="help_topic_text_width_title">Amplada del text</string>
+    <string name="help_topic_touch_targets_title">Àrees tàctils més grans</string>
+    <string name="help_topic_reduce_motion_title">Reduir el moviment</string>
+    <string name="help_topic_timeout_behavior_title">Comportament del temps d\'espera</string>
+    <string name="help_topic_simplified_gestures_title">Gestos simplificats</string>
+    <string name="help_topic_haptic_feedback_title">Retorn hàptic</string>
+    <string name="help_topic_data_preservation_title">Preservació de dades</string>
+    <string name="help_topic_simplified_ui_title">Interfície d\'usuari simplificada</string>
+    <string name="help_topic_step_indicators_title">Indicadors de pas</string>
+    <string name="help_topic_verbose_descriptions_title">Descripcions detallades</string>
+    <string name="help_topic_confirm_actions_title">Confirmar accions</string>
+    <string name="help_topic_reading_level_title">Nivell de lectura simplificat</string>
+    <string name="help_topic_help_system_title">Sistema d\'ajuda</string>
+    <string name="help_topic_manual_code_entry_title">Entrada manual de codis</string>
+    <string name="help_topic_voice_input_title">Entrada de veu</string>
+    <string name="help_topic_screen_reader_title">Suport per a lectors de pantalla</string>
+    <string name="help_topic_accessibility_profiles_title">Perfils de configuració ràpida</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">Controleu la relació de contrast entre el text i els fons:\n\n• Estàndard: colors predeterminats de l\'aplicació\n• Alt (AA): relació de contrast de 4,5:1\n• Màxim (AAA): relació de contrast de 7:1 o superior\n\nUn contrast més alt facilita la lectura del text, especialment en entorns lluminosos o per a usuaris amb baixa visió.\n\nLa conformitat WCAG AAA requereix el contrast màxim.</string>
+    <string name="help_topic_extra_large_text_text">Augmenta totes les mides del text en un 50% a tota l\'aplicació.\n\nFacilita la lectura del text per a usuaris amb:\n• Baixa visió\n• Canvis de visió relacionats amb l\'edat\n• Dificultats de lectura\n\nEs combina amb la configuració de la mida del tipus de lletra del sistema per a la màxima flexibilitat.</string>
+    <string name="help_topic_reduce_transparency_text">Elimina les superposicions transparents i els efectes de difuminat.\n\nAvantatges:\n• Jerarquia visual més clara\n• Millor llegibilitat del text\n• Menys soroll visual\n• Menys càrrega cognitiva\n\nRecomanat per a usuaris amb baixa visió o dificultats cognitives.</string>
+    <string name="help_topic_color_blind_modes_text">Ajusta els colors per als diferents tipus de daltonisme:\n\n• Protanopia: ceguesa al vermell\n• Deuteranopia: ceguesa al verd\n• Tritanopia: ceguesa al blau\n• Monocrom: daltonisme complet\n\nCada mode usa colors seleccionats acuradament que es poden distingir per a aquell tipus específic de deficiència de la visió del color.</string>
+    <string name="help_topic_line_spacing_text">Ajusta l\'espaiat entre línies de text (1,0x , 2,0x).\n\n• Predeterminat: 1,0x\n• Conforme amb AAA: 1,5x o superior\n\nL\'interlineat augmentat:\n• Millora la comprensió lectora\n• Redueix la fatiga ocular\n• Ajuda els usuaris amb dislèxia\n• Fa menys aclaparadors els blocs de text</string>
+    <string name="help_topic_paragraph_spacing_text">Ajusta l\'espaiat entre paràgrafs (1,0x , 3,0x).\n\n• Predeterminat: 1,0x\n• Conforme amb AAA: 2,0x o superior\n\nL\'espaiat de paràgraf augmentat:\n• Separa clarament les idees\n• Millora l\'organització visual\n• Redueix la càrrega cognitiva\n• Ajuda a mantenir la posició de lectura</string>
+    <string name="help_topic_letter_spacing_text">Ajusta l\'espaiat entre lletres (0,0 em , 0,2 em).\n\n• Predeterminat: 0,0 em\n• Conforme amb AAA: 0,12 em o superior\n\nL\'espaiat de lletres augmentat:\n• Fa les lletres individuals més diferenciades\n• Ajuda els usuaris amb dislèxia\n• Millora la precisió de lectura\n• Redueix la confusió entre lletres</string>
+    <string name="help_topic_text_width_text">Limita la longitud de la línia per facilitar la lectura:\n\n• Amplada completa: sense límit\n• Còmode: 80 caràcters (recomanat)\n• Estret: 60 caràcters\n\nLa recerca mostra que la lectura òptima es produeix entre 60 i 80 caràcters per línia. Les línies més curtes redueixen el moviment ocular i milloren la comprensió.</string>
+    <string name="help_topic_touch_targets_text">Augmenta la mida mínima de l\'àrea tàctil a 60 dp (des de 44 dp).\n\nAvantatges:\n• Més fàcil de tocar botons i controls\n• Redueix els tocs accidentals\n• Ajuda els usuaris amb discapacitats motores\n• Millor per a l\'ús amb una sola mà\n\nWCAG AAA requereix un mínim de 60 dp.</string>
+    <string name="help_topic_reduce_motion_text">Elimina totes les animacions i transicions.\n\nAvantatges:\n• Prevé el mareig per moviment\n• Redueix la distracció\n• Disminueix la càrrega cognitiva\n• Millora la concentració\n\nRecomanat per a usuaris amb:\n• Trastorns vestibulars\n• Dificultats d\'atenció\n• Sensibilitat al moviment</string>
+    <string name="help_topic_timeout_behavior_text">Controla el temps d\'espera automàtic a les pantalles de verificació:\n\n• Sense temps d\'espera (AAA): temps il·limitat\n• Estàndard: 30 segons\n• Ampliat: 60 segons\n\nWCAG AAA requereix una opció sense temps d\'espera per als usuaris que necessiten més temps per completar les tasques.\n\nLes dades del formulari es desen automàticament abans que expirin els temps d\'espera.</string>
+    <string name="help_topic_simplified_gestures_text">Substitueix els gestos complexos per alternatives senzilles:\n\n• Lliscar → Tocar el botó\n• Mantenir premut → Toc normal amb confirmació\n• Picar/ampliar → Botons\n\nAjuda els usuaris amb:\n• Discapacitats motores\n• Tremolors\n• Destresa limitada\n• Dificultats amb la pantalla tàctil</string>
+    <string name="help_topic_haptic_feedback_text">Proporciona retorn per vibració de les accions.\n\nAvantatges:\n• Confirma les pulsacions dels botons\n• Indica errors\n• Proporciona confirmació tàctil\n\nEs pot desactivar per a usuaris que:\n• El troben distractor\n• Tenen sensibilitats sensorials\n• Prefereixen el funcionament silenciós</string>
+    <string name="help_topic_data_preservation_text">Desa automàticament les dades del formulari abans que expirin els temps d\'espera.\n\nFuncions:\n• Avís 10 segons abans del temps d\'espera\n• Opció de desar o descartar les dades\n• Restauració automàtica en tornar\n• Retenció de dades durant 24 hores\n\nGaranteix que no es perdin dades si necessiteu temps addicional o experimenteu interrupcions.</string>
+    <string name="help_topic_simplified_ui_text">Redueix la complexitat visual:\n\n• Menys elements d\'UI mostrats alhora\n• Botons més grans i clars\n• Més espai en blanc\n• Dissenys simplificats\n\nAvantatges:\n• Més fàcil d\'entendre\n• Menys aclaparador\n• Millor concentració\n• Menys càrrega cognitiva</string>
+    <string name="help_topic_step_indicators_text">Mostra el progrés a través dels processos de diversos passos.\n\nMostra:\n• Número del pas actual\n• Nombre total de passos\n• Visualització del progrés\n\nAvantatges:\n• Redueix l\'ansietat\n• Estableix expectatives clares\n• Ajuda a mantenir l\'orientació\n• Mostra el progrés de finalització</string>
+    <string name="help_topic_verbose_descriptions_text">Proporciona context i explicacions addicionals:\n\n• Etiquetes de botó més llargues\n• Instruccions més detallades\n• Suggeriments addicionals\n• Missatges d\'error més clars\n\nAjuda els usuaris a:\n• Entendre les accions abans d\'executar-les\n• Evitar errors\n• Aprendre la funcionalitat de l\'aplicació\n• Guanyar confiança</string>
+    <string name="help_topic_confirm_actions_text">Requereix confirmació per a les accions importants:\n\n• Eliminar credencials\n• Canviar la configuració\n• Esborrar dades\n\nWCAG AAA requereix confirmació per a totes les accions destructives.\n\nAvantatges:\n• Prevé accidents\n• Permet revisar abans d\'actuar\n• Redueix l\'ansietat\n• Proporciona una segona oportunitat</string>
+    <string name="help_topic_reading_level_text">Usa un llenguatge més senzill (nivell de graus 7–9):\n\n• Frases més curtes\n• Paraules comunes en lloc d\'argot\n• Llenguatge clar i directe\n• Menys termes tècnics\n\nConforme amb WCAG AAA quan està activat.\n\nAvantatges:\n• Més fàcil d\'entendre\n• Comprensió més ràpida\n• Millor per a parlants no nadius\n• Menys càrrega cognitiva</string>
+    <string name="help_topic_help_system_text">Ajuda sensible al context disponible a tota l\'aplicació.\n\nFuncions:\n• 27 temes d\'ajuda\n• Centre d\'ajuda amb cerca\n• Navegació per temes relacionats\n• Glossari tècnic\n\nAccediu a l\'ajuda des de:\n• Pantalles de configuració\n• Funcions complexes\n• Missatges d\'error\n• On veieu una icona d\'ajuda</string>
+    <string name="help_topic_manual_code_entry_text">Introduïu les dades del codi QR manualment en lloc d\'escanejar-les.\n\nAvantatges:\n• Funciona quan l\'accés a la càmera no és disponible\n• Ajuda els usuaris amb dificultats motores\n• Millor amb poca llum\n• No cal mantenir el telèfon quiet\n\nAlternativa a l\'escaneig QR basat en la càmera.</string>
+    <string name="help_topic_voice_input_text">Useu la veu per introduir text en lloc d\'escriure.\n\nAvantatges:\n• Entrada mans lliures\n• Més ràpid que escriure\n• Ajuda els usuaris amb discapacitats motores\n• Redueix la tensió repetitiva\n\nUsa el reconeixement de veu integrat del dispositiu.</string>
+    <string name="help_topic_screen_reader_text">Compatibilitat completa amb el lector de pantalla TalkBack.\n\nFuncions:\n• Tots els elements d\'UI etiquetats\n• Estructura de capçaleres adequada\n• Ordre de navegació lògic\n• Suggeriments personalitzats per a accions complexes\n\nL\'aplicació activa automàticament:\n• Descripcions detallades\n• Àrees tàctils millorades\n\nquan es detecta TalkBack.</string>
+    <string name="help_topic_accessibility_profiles_text">Perfils d\'accessibilitat preconfigurats:\n\n• Discapacitat visual: alt contrast, text gran, hàptica\n• Discapacitat motora: àrees grans, temps ampliats, confirmacions\n• Cognitiu: UI simplificada, indicadors de pas, descripcions\n• Gent gran: text gran, àrees, UI simplificada, moviment reduït\n• Predeterminat: restablir tota la configuració\n\nCada perfil activa la configuració més útil per a aquell grup d\'usuaris. Podeu personalitzar-la més després d\'aplicar un perfil.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">Verificació d\'edat</string>
+    <string name="content_age_verification_explanation">Espereu mentre verifiquem la vostra edat de manera segura amb proves de coneixement zero. La vostra data de naixement no es comparteix mai amb el verificador.</string>
+    <string name="content_age_verification_instructions">Apunteu la càmera al codi QR de verificació. El codi s\'escanejarà automàticament quan es detecti.</string>
+    <string name="content_age_verification_success">La vostra edat s\'ha verificat correctament. El verificador sap que compliu el requisit d\'edat sense conèixer la vostra data de naixement real.</string>
+    <string name="content_age_verification_failed">La verificació ha fallat. Intenteu escanejar el codi QR de nou o useu l\'entrada manual de codis.</string>
+    <string name="content_credential_issuance_title">Emissió de credencials</string>
+    <string name="content_credential_issuance_explanation">Escanegeu el codi QR proporcionat per l\'emissor autoritzat per rebre la vostra credencial d\'edat digital.</string>
+    <string name="content_credential_issuance_instructions">Apunteu la càmera al codi QR d\'emissió que mostra l\'oficial. La vostra credencial es generarà al vostre dispositiu.</string>
+    <string name="content_credential_issuance_success">Credencial creada correctament. Ara podeu usar aquesta credencial per a la verificació d\'edat.</string>
+    <string name="content_credential_description">Una credencial és una prova d\'identitat signada criptogràficament que permet una verificació que preserva la privadesa.</string>
+    <string name="content_zero_knowledge_explanation">Les proves de coneixement zero us permeten demostrar que compliu un requisit d\'edat sense revelar la vostra edat real.</string>
+    <string name="content_setup_proving_key">Descarregant la clau de demostració criptogràfica necessària per a la generació de proves de coneixement zero</string>
+    <string name="content_processing_challenge">Processant el repte de verificació</string>
+    <string name="content_creating_proof">Creant la prova d\'edat de coneixement zero</string>
+    <string name="content_submitting_proof">Enviant la prova al verificador</string>
+    <string name="content_error_no_credential">No hi ha cap credencial disponible. Obteniu primer una credencial d\'un emissor autoritzat.</string>
+    <string name="content_error_network_failed">Ha fallat la connexió de xarxa. Comproveu la connexió a internet i torneu-ho a intentar.</string>
+    <string name="content_error_invalid_qr">Codi QR no vàlid. Assegureu-vos d\'escanejar el codi de verificació correcte.</string>
+    <string name="content_error_verification_failed">La verificació ha fallat. El servidor no ha pogut validar la vostra prova.</string>
+    <string name="content_officer_authentication_title">Autenticació de l\'oficial</string>
+    <string name="content_officer_issuance_title">Emissió de credencials</string>
+    <string name="content_officer_dob_prompt">Introduïu la data de naixement verificada del sol·licitant del seu document d\'identificació oficial.</string>
+    <string name="content_onboarding_welcome">Benvingut a Provii Wallet, la vostra solució de verificació d\'edat digital que preserva la privadesa.</string>
+    <string name="content_onboarding_privacy">La vostra data de naixement s\'emmagatzema de manera segura al vostre dispositiu i mai es transmet als verificadors.</string>
+    <string name="content_onboarding_get_started">Per començar, visiteu un emissor autoritzat per obtenir la vostra credencial d\'edat digital.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">Comprova la teva edat</string>
+    <string name="content_age_verification_explanation_simplified">Estem comprovant la vostra edat. No veurem ni compartirem el vostre aniversari.</string>
+    <string name="content_age_verification_instructions_simplified">Apunteu la càmera al codi QR. S\'escanejarà sol.</string>
+    <string name="content_age_verification_success_simplified">Correcte! El lloc web sap que sou prou gran. No saben el vostre aniversari.</string>
+    <string name="content_age_verification_failed_simplified">No ha funcionat. Intenteu escanejar de nou o escriviu el codi.</string>
+    <string name="content_credential_issuance_title_simplified">Obtenir la targeta d\'ID</string>
+    <string name="content_credential_issuance_explanation_simplified">Escanegeu el codi de l\'oficina del govern per obtenir la vostra ID digital.</string>
+    <string name="content_credential_issuance_instructions_simplified">Apunteu la càmera al codi. La vostra ID es desarà al telèfon.</string>
+    <string name="content_credential_issuance_success_simplified">Fet! Ara podeu usar la vostra ID digital per demostrar la vostra edat.</string>
+    <string name="content_credential_description_simplified">Una credencial és com una targeta d\'ID digital que demostra qui sou sense compartir dades privades.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Podeu demostrar que sou prou gran sense dir a ningú la vostra edat real.</string>
+    <string name="content_setup_proving_key_simplified">Descarregant els fitxers de seguretat necessaris per al funcionament de l\'aplicació</string>
+    <string name="content_processing_challenge_simplified">Llegint la sol·licitud de verificació d\'edat</string>
+    <string name="content_creating_proof_simplified">Creant la vostra prova d\'edat</string>
+    <string name="content_submitting_proof_simplified">Enviant la prova al lloc web</string>
+    <string name="content_error_no_credential_simplified">Encara no teniu una ID. Visiteu una oficina del govern per obtenir-ne una primer.</string>
+    <string name="content_error_network_failed_simplified">No es pot connectar a internet. Comproveu el Wi-Fi o les dades i torneu-ho a intentar.</string>
+    <string name="content_error_invalid_qr_simplified">Aquest codi no sembla correcte. Assegureu-vos d\'escanejar el codi adequat.</string>
+    <string name="content_error_verification_failed_simplified">No ha funcionat. El lloc web no ha pogut comprovar la vostra prova. Torneu-ho a intentar.</string>
+    <string name="content_officer_authentication_title_simplified">Inici de sessió de l\'oficial</string>
+    <string name="content_officer_issuance_title_simplified">Crear targeta d\'ID</string>
+    <string name="content_officer_dob_prompt_simplified">Introduïu l\'aniversari de la persona de la seva identificació oficial.</string>
+    <string name="content_onboarding_welcome_simplified">Benvingut a Provii Wallet , demostreu la vostra edat de manera privada.</string>
+    <string name="content_onboarding_privacy_simplified">El vostre aniversari queda al telèfon. Ningú més el pot veure.</string>
+    <string name="content_onboarding_get_started_simplified">Per començar, visiteu una oficina del govern per obtenir la vostra ID digital.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Resposta ràpida (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Número d\'identificació personal (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">Data de naixement (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Identificació (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">Interfície d\'usuari (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Localitzador uniforme de recursos (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Interfície de programació d\'aplicacions (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">Pausar les animacions</string>
+    <string name="animation_resume_animations">Reprendre les animacions</string>
+    <string name="animation_pause_button_text">Pausar</string>
+    <string name="animation_resume_button_text">Reprendre</string>
+    <string name="animation_toggles_playback_hint">Activa o desactiva la reproducció d\'animació</string>
+    <string name="animation_paused_announcement">Animacions pausades</string>
+    <string name="animation_resumed_announcement">Animacions reprendes</string>
+    <string name="animation_active_count">%d animacions actives</string>
+    <string name="animation_loading_default">Carregant</string>
+    <string name="animation_please_wait">Espereu mentre s\'acaba aquesta operació</string>
+    <string name="animation_percent_complete">%d per cent completat</string>
+    <string name="animation_loading_in_progress">En curs</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">Dreceres de teclat</string>
+    <string name="keyboard_shortcuts_done">Fet</string>
+    <string name="keyboard_shortcuts_app_section">Dreceres de l\'aplicació</string>
+    <string name="keyboard_shortcuts_navigation_section">Navegació</string>
+    <string name="keyboard_shortcuts_tips_section">Consells</string>
+    <string name="keyboard_shortcuts_navigation_footer">Aquestes tecles de navegació funcionen a tota l\'aplicació amb teclats externs</string>
+    <string name="keyboard_shortcuts_tip_external">Els teclats Bluetooth i USB externs estan totalment admesos</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Useu les tecles de fletxa per navegar entre els elements de les llistes</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Manteniu premuda Ctrl per veure les dreceres disponibles en aquesta pantalla</string>
+    <string name="keyboard_shortcuts_tip_a11y">Totes les funcions d\'aquesta aplicació són accessibles mitjançant el teclat</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Tancar les dreceres de teclat</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">Configuració</string>
+    <string name="keyboard_shortcut_label_accessibility">Accessibilitat</string>
+    <string name="keyboard_shortcut_label_help">Centre d\'ajuda</string>
+    <string name="keyboard_shortcut_label_add_credential">Afegir credencial</string>
+    <string name="keyboard_shortcut_label_verify">Verificar</string>
+    <string name="keyboard_shortcut_label_shortcuts">Dreceres</string>
+    <string name="keyboard_shortcut_desc_settings">Obrir la configuració</string>
+    <string name="keyboard_shortcut_desc_accessibility">Configuració d\'accessibilitat</string>
+    <string name="keyboard_shortcut_desc_help">Centre d\'ajuda</string>
+    <string name="keyboard_shortcut_desc_add_credential">Afegir credencial</string>
+    <string name="keyboard_shortcut_desc_verify">Iniciar la verificació</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Dreceres de teclat</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">Enrere / Descartar</string>
+    <string name="keyboard_shortcut_nav_back_desc">Descartar la pantalla o el diàleg actual</string>
+    <string name="keyboard_shortcut_nav_next">Camp següent</string>
+    <string name="keyboard_shortcut_nav_next_desc">Moure el focus a l\'element interactiu següent</string>
+    <string name="keyboard_shortcut_nav_prev">Camp anterior</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Moure el focus a l\'element interactiu anterior</string>
+    <string name="keyboard_shortcut_nav_submit">Enviar / Continuar</string>
+    <string name="keyboard_shortcut_nav_submit_desc">Activar el botó que té el focus o enviar un formulari</string>
+    <string name="keyboard_shortcut_nav_activate">Activar botó</string>
+    <string name="keyboard_shortcut_nav_activate_desc">Activar el botó o commutador que té el focus</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">Diàleg obert. Premeu Escape per descartar-lo o Intro per confirmar.</string>
+    <string name="modal_closed_announcement">Diàleg tancat</string>
+    <string name="modal_button_primary_label">%s (acció principal)</string>
+    <string name="modal_button_cancel_label">%s (cancel·lar)</string>
+    <string name="modal_button_destructive_label">%s (acció destructiva)</string>
+    <string name="modal_button_primary_hint">Toqueu dos cops per confirmar o premeu Intro</string>
+    <string name="modal_button_cancel_hint">Toqueu dos cops per cancel·lar o premeu Escape</string>
+    <string name="modal_button_destructive_hint">Toqueu dos cops per executar l\'acció destructiva</string>
+    <string name="modal_button_secondary_hint">Toqueu dos cops per executar l\'acció</string>
+    <string name="modal_confirm">Confirmar</string>
+    <string name="modal_cancel">Cancel·lar</string>
+    <string name="modal_delete">Eliminar</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">Eliminar %1$s</string>
+    <string name="a11y_edit_nickname_for">Editar l\'àlies de %1$s</string>
+    <string name="accessibility_attestation_scan_back">Tornar enrere</string>
+    <string name="attestation_replace_confirm">Substituir</string>
+    <string name="attestation_replace_primary_message">Ja teniu una credencial personal. Si en creeu una de nova, se substituirà. Aquesta acció no es pot desfer.</string>
+    <string name="attestation_replace_primary_title">Voleu substituir la credencial existent?</string>
+    <string name="attestation_scan_error_empty">El codi QR estava buit</string>
+    <string name="attestation_scan_instruction">Apunteu la càmera al codi QR que us mostri l\'agent</string>
+    <string name="attestation_scan_invalid_qr">Aquest codi QR no conté dades d\'atestació</string>
+    <string name="attestation_scan_title">Escanejar atestació</string>
+    <string name="attestation_scan_wrong_type_toast">Aquest és un QR de verificació, no de credencial</string>
+    <string name="biometric_required_message">Aquesta aplicació requereix un bloqueig de pantalla (PIN, patró o biometria) per emmagatzemar les credencials de manera segura. Configureu-ne un a la configuració de seguretat del dispositiu abans de continuar.</string>
+    <string name="biometric_required_open_settings">Obrir la configuració de seguretat</string>
+    <string name="biometric_required_title">Cal un bloqueig de pantalla</string>
+    <string name="challenge_sandbox_prompt_announcement">S\'ha rebut un repte de sandbox. Trieu si voleu activar el mode sandbox i continuar, o rebutjar el repte.</string>
+    <string name="challenge_sandbox_prompt_body">Aquest repte ha estat emès per un verificador de sandbox. No prosperarà tret que activeu el mode sandbox en aquesta cartera.</string>
+    <string name="challenge_sandbox_prompt_primary">Activar el sandbox i continuar</string>
+    <string name="challenge_sandbox_prompt_secondary">Rebutjar el repte</string>
+    <string name="challenge_sandbox_prompt_title">Repte de sandbox rebut</string>
+    <string name="credential_detail_nickname_error">No s\'ha pogut desar l\'àlies</string>
+    <string name="credential_list_managed_count">%1$d de %2$d</string>
+    <string name="credential_picker_count_shown">Es mostren %1$d credencials</string>
+    <string name="credential_picker_filter_clear">Esborrar el filtre</string>
+    <string name="credential_picker_filter_label">Filtrar credencials per nom</string>
+    <string name="credential_picker_filter_placeholder">Filtrar credencials</string>
+    <string name="credential_picker_no_results">No hi ha cap credencial que coincideixi</string>
+    <string name="credential_picker_section_managed">Credencials gestionades</string>
+    <string name="credential_picker_section_me">Jo</string>
+    <string name="credential_picker_subtitle">Seleccioneu qui s\'està verificant.</string>
+    <string name="credential_row_action_delete">Eliminar</string>
+    <string name="credential_row_action_edit">Editar l\'àlies</string>
+    <string name="credential_row_overflow_menu">Opcions de la credencial</string>
+    <string name="deeplink_sandbox_prompt_announcement">S\'ha detectat un enllaç de sandbox. Trieu si voleu activar el mode sandbox i obrir l\'enllaç.</string>
+    <string name="deeplink_sandbox_prompt_body">Aquest enllaç directe només prosperarà si activeu el mode sandbox en aquesta cartera.</string>
+    <string name="deeplink_sandbox_prompt_primary">Activar el sandbox i obrir</string>
+    <string name="deeplink_sandbox_prompt_secondary">Cancel·lar</string>
+    <string name="deeplink_sandbox_prompt_title">Enllaç de sandbox detectat</string>
+    <string name="empty_credential_option_find_apps_a11y">Trobar una aplicació participant. Obteniu una credencial del vostre fons de pensions, banc, operadora de telecomunicacions, asseguradora de salut o qualsevol entitat que ja conegui la vostra edat.</string>
+    <string name="empty_credential_option_find_apps_desc">Obteniu una credencial del vostre fons de pensions, banc, operadora de telecomunicacions, asseguradora de salut o qualsevol entitat que ja conegui la vostra edat</string>
+    <string name="empty_credential_option_find_apps_title">Trobar una aplicació participant</string>
+    <string name="empty_credential_option_find_locations_a11y">Trobar una ubicació a prop vostre. Visiteu-la en persona amb la vostra documentació per obtenir una credencial.</string>
+    <string name="empty_credential_option_find_locations_desc">Visiteu-la en persona amb la vostra documentació per obtenir una credencial</string>
+    <string name="empty_credential_option_find_locations_title">Trobar una ubicació a prop vostre</string>
+    <string name="empty_credential_option_managed_a11y">Tinc cura d\'algú. Gestioneu credencials per a les persones de qui teniu cura.</string>
+    <string name="empty_credential_option_managed_desc">Gestioneu credencials per a les persones de qui teniu cura</string>
+    <string name="empty_credential_option_managed_title">Tinc cura d\'algú</string>
+    <string name="empty_credential_option_scan_a11y">Tinc un codi QR per escanejar. Un verificador us ha donat un codi després de comprovar la vostra documentació.</string>
+    <string name="empty_credential_option_scan_desc">Un verificador us ha donat un codi després de comprovar la vostra documentació</string>
+    <string name="empty_credential_option_scan_title">Tinc un codi QR per escanejar</string>
+    <string name="empty_credential_subtitle">Trieu com voleu obtenir la vostra primera credencial</string>
+    <string name="empty_credential_title">Encara no hi ha credencials</string>
+    <string name="error_screen_lock_required">Cal un bloqueig de pantalla (PIN, patró o biometria) per emmagatzemar les credencials de manera segura. Configureu-ne un a la configuració del dispositiu.</string>
+    <string name="issuers_no_apps_found_description">Torneu a comprovar-ho aviat, ja que cada cop hi ha més aplicacions compatibles amb Provii</string>
+    <string name="issuers_no_apps_found">Encara no hi ha aplicacions participants</string>
+    <string name="issuers_no_locations_found_description">Torneu a comprovar-ho aviat, ja que s\'aniran afegint més ubicacions</string>
+    <string name="issuers_no_locations_found">No s\'ha trobat cap ubicació</string>
+    <string name="managed_credential_explainer_body">Per obtenir una credencial gestionada per a algú de qui teniu cura, visiteu junts una ubicació participant. El verificador comprovarà la seva documentació. Quan escanegeu el codi QR, se us preguntarà si aquesta credencial és per a vós o per a algú que gestioneu.</string>
+    <string name="managed_credential_explainer_find_location">Trobar una ubicació</string>
+    <string name="managed_credential_explainer_have_qr">Ja tinc un codi QR</string>
+    <string name="managed_credential_explainer_title">Credencials gestionades</string>
+    <string name="sandbox_credential_type">Tipus de credencial</string>
+    <string name="sandbox_managed_credential_saved">Credencial gestionada desada (%s)</string>
+    <string name="sandbox_mode_enabled_announcement">El mode sandbox és actiu. La cartera està connectada als servidors de sandbox.</string>
+    <string name="sandbox_nickname_helper">Doneu un nom a aquesta credencial per poder identificar-la a la cartera.</string>
+    <string name="sandbox_nickname_label">Àlies</string>
+    <string name="sandbox_nickname_placeholder">p. ex., Sarah</string>
+    <string name="sandbox_nickname_required">Cal un àlies per a les credencials gestionades</string>
+    <string name="sandbox_type_managed_credential">Credencial gestionada</string>
+    <string name="sandbox_type_your_credential">La vostra credencial</string>
+    <string name="title_find_apps">Trobar una aplicació participant</string>
+    <string name="title_find_locations">Trobar una ubicació</string>
+    <string name="verification_go_to_attestation">Obtenir credencial</string>
+    <string name="verification_wrong_qr_type_message">Aquest codi QR és per obtenir una credencial nova, no per verificar l\'edat. Voleu anar a la pantalla d\'atestació en lloc d\'això?</string>
+    <string name="verification_wrong_qr_type_title">QR d\'atestació detectat</string>
+    <string name="walkthrough_back">Enrere</string>
+    <string name="walkthrough_get_started">Començar</string>
+    <string name="walkthrough_next">Següent</string>
+    <string name="walkthrough_page_indicator">Pàgina %1$d de %2$d</string>
+    <string name="walkthrough_page1_body">La vostra credencial conté la vostra edat. Res més. Ni el nom, ni l\'adreça, ni la identitat.\n\nDemostra que sou més grans (o més joves) d\'una determinada edat sense revelar la data de naixement.</string>
+    <string name="walkthrough_page1_heading">Què és una credencial?</string>
+    <string name="walkthrough_page2_body">Podeu obtenir una credencial mitjançant una aplicació d\'una empresa que ja coneix la vostra edat. El vostre banc o fons de pensions, per exemple. Com que ja han verificat la vostra edat, no cal tornar a compartir res.\n\nAlternativament, visiteu una ubicació participant amb documentació que demostri la vostra data de naixement. Es comprova la data, s\'usa per crear la credencial i, tot seguit, es descarta. L\'emissor mai no veu la credencial. La vostra identitat no hi queda mai vinculada.</string>
+    <string name="walkthrough_page2_heading">Com s\'obté?</string>
+    <string name="walkthrough_page3_body">Si teniu cura d\'algú que necessita una credencial d\'edat, en podeu obtenir una per a aquesta persona i gestionar-la al vostre dispositiu.\n\nVisiteu junts una ubicació participant amb documentació que demostri la seva data de naixement. Quan escanegeu el codi QR, se us preguntarà si aquesta credencial és per a vós o per a algú que gestioneu.\n\nAfegiu un àlies per poder distingir les seves credencials.</string>
+    <string name="walkthrough_page3_heading">Persones a càrrec</string>
+    <string name="walkthrough_page4_body">Una aplicació que vulgui verificar la vostra edat pot enviar un repte directament a la vostra cartera Provii. Vós trieu quina credencial usar. En cas de verificació correcta, tornareu a l\'aplicació sol·licitant i podreu continuar com a verificat.\n\nAlternativament, és possible que se us mostri un codi QR en un altre dispositiu, o un enllaç al navegador del mòbil que porti directament a la cartera. També hi ha una opció de codi curt per a l\'accessibilitat.\n\nMai no es comparteix cap dada personal. Només una resposta de sí o no sobre si compliu el requisit d\'edat.</string>
+    <string name="walkthrough_page4_heading">Com funciona la verificació?</string>
+    <string name="walkthrough_page5_body">El primer pas és obtenir una credencial mitjançant una aplicació participant o en una ubicació a prop vostre.\n\nA partir d\'aquí, podreu verificar la vostra edat sempre que calgui, sense compartir cap dada personal. També podreu gestionar credencials per a les persones de qui tingueu cura.</string>
+    <string name="walkthrough_page5_heading">Ja està tot a punt</string>
+    <string name="walkthrough_skip">Saltar</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

@@ -1,0 +1,1587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== BATCH 01 ===== -->
+<!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii 钱包</string>
+    <string name="app_name_debug">Provii 钱包（调试）</string>
+    <string name="app_name_staging">Provii 钱包（预发布）</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">设置</string>
+    <string name="title_accessibility">无障碍</string>
+    <string name="title_provii_wallet">Provii 钱包</string>
+    <string name="title_get_credentials">获取凭证</string>
+    <string name="title_scan_verification_qr">扫描验证 QR 码</string>
+    <string name="title_verifying_age">正在验证年龄</string>
+    <string name="title_age_verified">年龄已验证</string>
+    <string name="title_verification_failed">验证失败</string>
+    <string name="title_officer_mode">工作人员模式</string>
+    <string name="title_officer_dashboard">工作人员控制台</string>
+    <string name="title_issue_credential">签发凭证</string>
+    <string name="title_credential_ready">凭证已就绪</string>
+    <string name="title_get_your_credential">获取您的凭证</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">欢迎使用 Provii 钱包</string>
+    <string name="welcome_subtitle">安全的年龄验证，简单易用</string>
+    <string name="welcome_first_credential">添加您的首个年龄验证凭证，即刻开始使用</string>
+    <string name="welcome_description">基于零知识证明的隐私年龄验证</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">欢迎使用 Provii 钱包</string>
+    <string name="onboarding_language_subtitle">选择您偏好的语言</string>
+    <string name="onboarding_use_english">使用英语</string>
+    <string name="onboarding_use_english_description">继续使用英语作为应用语言</string>
+    <string name="onboarding_rotating_button_description">切换语言按钮，当前显示：%1$s。点按可选择其他语言。</string>
+    <string name="onboarding_change_later">您可以稍后在设置中更改</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">无障碍</string>
+    <string name="onboarding_accessibility_desc">是否需要自定义无障碍功能，如文字大小、触控目标或减少动画？</string>
+    <string name="onboarding_use_defaults">使用默认设置</string>
+    <string name="onboarding_use_defaults_description">继续使用标准无障碍设置</string>
+    <string name="onboarding_open_accessibility">无障碍设置</string>
+    <string name="onboarding_open_accessibility_description">打开无障碍设置以自定义应用</string>
+    <string name="onboarding_accessibility_later">您可以稍后在设置中更改</string>
+    <string name="onboarding_accessibility_features_title">可用功能包括：</string>
+    <string name="onboarding_feature_text_size">更大的文字</string>
+    <string name="onboarding_feature_touch_targets">更大的触控目标</string>
+    <string name="onboarding_feature_reduce_motion">减少动画效果</string>
+    <string name="onboarding_feature_high_contrast">高对比度模式</string>
+    <string name="onboarding_talkback_detected">已检测到 TalkBack</string>
+    <string name="onboarding_talkback_message">已为您启用详细描述，帮助您浏览应用。</string>
+    <string name="onboarding_continue_to_setup">继续设置</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">需要一次性设置</string>
+    <string name="setup_download_required">需要下载</string>
+    <string name="setup_download_description">本应用需要下载零知识证明安全组件（约 87 MB）。</string>
+    <string name="setup_wifi_recommended">建议使用 Wi-Fi</string>
+    <string name="setup_checking_status">正在检查设置状态\u2026</string>
+    <string name="setup_already_setup">已完成设置！</string>
+    <string name="setup_ready_message">您的钱包已准备好进行安全年龄验证</string>
+    <string name="setup_preparing">正在准备安全验证系统\u2026</string>
+    <string name="setup_checking_components">正在检查安全组件\u2026</string>
+    <string name="setup_downloading">正在下载安全组件</string>
+    <string name="setup_download_progress_description">已完成 %1$d%%（已下载 %2$s MB / 共 %3$s MB）</string>
+    <string name="setup_initializing">正在初始化安全组件\u2026</string>
+    <string name="setup_complete">设置完成！</string>
+    <string name="setup_download_info">此下载将启用零知识证明，用于隐私年龄验证</string>
+    <string name="setup_one_time_download">一次性下载</string>
+    <string name="setup_stuck_message">耗时超出预期</string>
+    <string name="setup_stuck_description">设置可能已停滞，请尝试重新启动。</string>
+    <string name="setup_restart_message">应用需要重新启动。首次启动时偶尔会出现此情况。</string>
+    <string name="setup_storage_full">存储空间已满</string>
+    <string name="setup_connection_error">连接错误</string>
+    <string name="setup_failed">设置失败</string>
+    <string name="setup_initialization_error">初始化错误</string>
+    <string name="error_storage_init_failed">存储初始化失败，请重新启动应用。</string>
+    <string name="error_storage_init_close_restart">存储初始化失败，请关闭并重新启动应用。</string>
+    <string name="setup_free_storage_message">请释放至少 65 MB 空间后重试</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">隐私已保护</string>
+    <string name="setup_privacy_description">您的年龄验证使用零知识证明，您的出生日期绝不会被共享。</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">我的凭证</string>
+    <string name="credentials_empty">暂无已存储的凭证</string>
+    <string name="credential_active">凭证活跃</string>
+    <string name="credential_expired">凭证已过期</string>
+    <string name="credential_ready_for_verification">已准备好进行验证</string>
+    <string name="credential_expired_message">您的凭证已过期，需要更换</string>
+    <string name="credential_stored_successfully">凭证已成功存储</string>
+    <string name="credential_stored_description">您的年龄凭证已安全存储，可以使用了</string>
+    <string name="credential_can_prove_age">您现在可以私密地证明年龄</string>
+    <string name="credential_returning">正在返回凭证页面\u2026</string>
+    <string name="credential_view_credentials">查看凭证</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">完成</string>
+    <string name="action_scan_qr_code">扫描 QR 码</string>
+    <string name="action_find_locations">查找地点</string>
+    <string name="action_get_credential">获取凭证</string>
+    <string name="action_replace_credential">更换为新凭证</string>
+    <string name="action_replace_credential_now">立即更换凭证</string>
+    <string name="action_delete_credential">删除凭证</string>
+    <string name="credential_action_scan_description">从授权签发机构获取凭证</string>
+    <string name="credential_action_find_description">发现附近的签发机构</string>
+    <string name="credential_remove_description">移除当前凭证</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">隐私</string>
+    <string name="credential_info_privacy_value">已保护</string>
+    <string name="credential_info_status">状态</string>
+    <string name="credential_info_status_value">有效</string>
+    <string name="credential_tip_title">小贴士</string>
+    <string name="credential_tip_message">点按"验证年龄"按钮，即可在参与场所扫描验证 QR（快速响应）码。</string>
+
+    <!-- ===== BATCH 02 ===== -->
+<!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">扫描 QR 码</string>
+    <string name="verification_verify_age">验证年龄</string>
+    <string name="verification_generating_proof">正在生成证明\u2026</string>
+    <string name="verification_success">验证成功</string>
+    <string name="verification_failed">验证失败</string>
+    <string name="verification_age_verified">年龄已验证</string>
+    <string name="verification_age_verified_message">您的年龄已被私密地验证</string>
+    <string name="verification_can_return">您现在可以返回网站继续操作。</string>
+    <string name="verification_returning_browser">正在返回浏览器\u2026</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">第1步，共2步</string>
+    <string name="verification_step_2_of_2">第2步，共2步</string>
+    <string name="verification_point_camera">将摄像头对准验证 QR 码</string>
+    <string name="verification_hold_steady">请保持稳定，直到听到确认提示音。</string>
+    <string name="verification_reading_request">正在读取验证请求\u2026</string>
+    <string name="verification_processing_challenge">正在处理质询\u2026</string>
+    <string name="verification_creating_proof">正在创建年龄证明\u2026</string>
+    <string name="verification_submitting_proof">正在提交证明\u2026</string>
+    <string name="verification_processing_message">这可能需要几秒钟</string>
+    <string name="verification_preparing_proof">我们正在使用您已保存的凭证准备私密证明。</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">正在读取验证请求\u2026</string>
+    <string name="verification_status_processing_challenge">正在处理质询\u2026</string>
+    <string name="verification_status_creating_proof">正在创建年龄证明\u2026</string>
+    <string name="verification_status_submitting_proof">正在提交证明\u2026</string>
+    <string name="verification_status_verified">✔ 年龄已验证</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">无法显示身份验证提示</string>
+    <string name="verification_error_verification_failed">验证失败</string>
+    <string name="verification_error_generic">发生错误</string>
+    <string name="verification_error_failed_to_process_code">无法处理代码</string>
+    <string name="verification_error_failed_to_process_challenge">无法处理质询</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">澳大利亚受信任的签发机构</string>
+    <string name="issuers_loading">正在加载签发机构\u2026</string>
+    <string name="issuers_loaded">签发机构加载成功</string>
+    <string name="issuers_unable_to_load">无法加载签发机构</string>
+    <string name="issuers_check_connection">请检查您的网络连接，然后重试</string>
+    <string name="issuers_categories_header">分类</string>
+    <string name="issuers_available_header">可用签发机构</string>
+    <string name="issuers_found_count">找到%d个</string>
+    <string name="issuer_status_coming_soon">即将推出</string>
+    <string name="issuer_status_verified">已验证</string>
+    <string name="issuer_how_to_get">如何获取凭证</string>
+    <string name="issuer_service_locations">服务网点</string>
+    <string name="issuer_visit_website">访问%s网站</string>
+    <string name="issuer_learn_more">了解更多关于%s的信息</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">银行</string>
+    <string name="category_super_fund">养老基金</string>
+    <string name="category_government">政府</string>
+    <string name="category_travel">旅行</string>
+    <string name="category_telco">电信</string>
+    <string name="category_insurance">保险</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">设置</string>
+    <string name="settings_section_sandbox">沙盒模式</string>
+    <string name="settings_section_general">通用</string>
+    <string name="settings_section_credentials">凭证</string>
+    <string name="settings_section_advanced">高级</string>
+    <string name="settings_section_privacy">隐私</string>
+    <string name="settings_security">安全</string>
+    <string name="settings_biometric">使用生物识别身份验证</string>
+    <string name="settings_environment">环境设置</string>
+    <string name="settings_environment_description">查看当前环境配置</string>
+    <string name="settings_reset_proving_key">重置证明密钥</string>
+    <string name="settings_reset_proving_key_description">重新下载安全组件（调试）</string>
+    <string name="settings_mint_test_credential_as_issuer">以签发机构身份铸造测试凭证</string>
+    <string name="settings_mint_test_credential_subtitle">向您的钱包签发一份测试凭证,以便您可以从依赖方演示中对其进行验证。</string>
+    <string name="settings_find_trusted_issuers">查找受信任的签发机构</string>
+    <string name="settings_version">版本：1.0.0</string>
+    <string name="settings_tap_5x_toggle">点按5次以切换</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">语言</string>
+    <string name="language_selection_description">选择您的首选语言。应用将重启以应用更改。</string>
+    <string name="language_selected">已选择</string>
+    <string name="settings_language">语言</string>
+    <string name="settings_language_description">更改应用语言</string>
+    <string name="settings_licenses">开源许可</string>
+    <string name="settings_licenses_description">查看第三方许可</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">确认语言</string>
+    <string name="language_change_to">将语言更改为：</string>
+    <string name="language_restart_notice">应用将重启以应用此语言。</string>
+    <string name="language_apply">应用</string>
+    <string name="language_cancel">取消</string>
+    <string name="language_skip_title">跳过语言选择？</string>
+    <string name="language_skip_message">如果跳过，应用将默认使用英语。您稍后可在设置中更改语言。</string>
+    <string name="language_use_english">使用英语</string>
+    <string name="language_go_back">返回</string>
+    <string name="language_help_title">语言选择帮助</string>
+    <string name="language_help_how_to">如何选择您的语言：</string>
+    <string name="language_help_step1">1. 使用搜索框查找您的语言</string>
+    <string name="language_help_step2">2. 点按您的首选语言</string>
+    <string name="language_help_step3">3. 确认您的选择</string>
+    <string name="language_help_system_note">如果支持，您的系统语言将在顶部突出显示。</string>
+    <string name="language_help_settings_note">您稍后可在设置中更改。</string>
+    <string name="language_got_it">知道了</string>
+    <string name="language_select_title">选择语言</string>
+    <string name="language_skip_button">跳过（使用英语）</string>
+    <string name="language_search_placeholder">搜索语言\u2026</string>
+    <string name="language_no_results">未找到语言</string>
+    <string name="language_try_different">请尝试其他搜索词</string>
+    <string name="language_system_badge">系统语言</string>
+    <string name="language_count">%d种语言</string>
+    <string name="language_no_match_announcement">未找到与您搜索匹配的语言</string>
+    <string name="language_found_announcement">找到%d种语言</string>
+    <string name="language_search_cleared">搜索已清除，显示全部%d种语言</string>
+    <string name="language_selected_announcement">已选择%1$s，%2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">语言选择界面</string>
+    <string name="language_help_button_description">语言选择的帮助和信息</string>
+    <string name="language_skip_description">跳过语言选择，默认使用英语</string>
+    <string name="language_clear_search_description">清除搜索</string>
+    <string name="language_count_description">有%d种语言可用</string>
+    <string name="language_apply_description">应用语言选择并继续</string>
+    <string name="language_cancel_description">取消语言选择</string>
+    <string name="language_cancelled_announcement">语言选择已取消</string>
+    <string name="language_selected_description">已选择的语言：%1$s，%2$s</string>
+    <string name="language_item_system">系统语言：%1$s，%2$s</string>
+    <string name="language_item_selected">%1$s，%2$s，当前已选择</string>
+    <string name="language_item_system_selected">系统语言：%1$s，%2$s，当前已选择</string>
+    <string name="language_item_default">%1$s，%2$s</string>
+    <string name="language_returned_to_selection">已返回语言选择</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">沙盒</string>
+    <string name="sandbox_mode_active">沙盒模式已激活</string>
+    <string name="sandbox_mode_banner">沙盒模式已激活</string>
+    <string name="sandbox_mode_description">正在使用测试环境。点按版本号五次以切换。</string>
+    <string name="sandbox_credential_title">沙盒凭证</string>
+    <string name="sandbox_credential_description">生成沙盒凭证以测试验证流程，不会影响生产数据。</string>
+    <string name="sandbox_select_age">选择年龄</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">默认出生日期：%s</string>
+    <string name="sandbox_override_dob">覆盖默认出生日期</string>
+    <string name="sandbox_override_description">使用确切日期替代基于年龄的默认值。</string>
+    <string name="sandbox_date_of_birth">出生日期</string>
+    <string name="sandbox_generate_credential">生成凭证</string>
+    <string name="sandbox_generating">正在生成\u2026</string>
+    <string name="sandbox_test_credential_saved">测试凭证已保存</string>
+    <string name="sandbox_id_prefix">标识前缀：%s\u2026</string>
+    <string name="sandbox_unable_to_generate">无法生成凭证</string>
+    <string name="settings_sandbox_dob_format">出生日期：%s</string>
+    <string name="settings_sandbox_age_dob_format">年龄%d+（出生日期：%s）</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">环境配置</string>
+    <string name="environment_current">当前：%s</string>
+    <string name="environment_issuer_api">签发机构 API（Application Programming Interface）：%s</string>
+    <string name="environment_verifier_api">验证方 API（Application Programming Interface）：%s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">删除凭证？</string>
+    <string name="dialog_delete_credential_message">此操作将从您的设备中删除凭证。如有需要，您可以从签发机构重新获取。</string>
+    <string name="dialog_delete_credential_announcement">对话框已打开：删除凭证</string>
+    <string name="dialog_reset_proving_key_title">重置证明密钥？</string>
+    <string name="dialog_reset_proving_key_message">证明密钥及相关文件将被删除，并在您下次打开应用时重新下载。</string>
+    <string name="dialog_reset_proving_key_announcement">对话框已打开：重置证明密钥</string>
+    <string name="dialog_environment_info_announcement">对话框已打开：环境配置</string>
+
+    <!-- ===== BATCH 03 ===== -->
+<!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">无障碍</string>
+    <string name="accessibility_service_label">Provii 钱包无障碍服务</string>
+    <string name="accessibility_service_description">Provii 钱包无障碍服务为残障用户提供增强支持，包括自动凭证朗读、引导式导航和简化交互。</string>
+    <string name="accessibility_personalize">个性化您的体验</string>
+    <string name="accessibility_customize_features">自定义无障碍功能</string>
+    <string name="accessibility_quick_setup">快速设置</string>
+    <string name="accessibility_features_active">%d项功能已启用</string>
+    <string name="accessibility_customize_experience">自定义您的体验</string>
+    <string name="accessibility_reset_title">重置无障碍设置？</string>
+    <string name="accessibility_reset_message">所有无障碍偏好设置将恢复为默认值。</string>
+    <string name="accessibility_reset">重置无障碍设置</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">视觉</string>
+    <string name="accessibility_category_interaction">交互</string>
+    <string name="accessibility_category_cognitive">认知辅助</string>
+    <string name="accessibility_category_alternative_input">替代输入</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">超大字体</string>
+    <string name="accessibility_extra_large_text_description">将基础字号增大45%</string>
+    <string name="accessibility_high_contrast">高对比度</string>
+    <string name="accessibility_high_contrast_description">使用高对比度颜色</string>
+    <string name="accessibility_reduce_transparency">减少透明效果</string>
+    <string name="accessibility_reduce_transparency_description">移除模糊和玻璃效果</string>
+    <string name="accessibility_dyslexia_font">阅读障碍友好字体</string>
+    <string name="accessibility_dyslexia_font_description">使用 OpenDyslexic 字体提高可读性</string>
+    <string name="accessibility_color_blind_mode">色觉障碍模式</string>
+    <string name="accessibility_color_blind_optimized">已为%s优化颜色</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">无</string>
+    <string name="color_blind_protanopia">红色盲（Protanopia）</string>
+    <string name="color_blind_deuteranopia">绿色盲（Deuteranopia）</string>
+    <string name="color_blind_tritanopia">蓝色盲（Tritanopia）</string>
+    <string name="color_blind_monochrome">全色盲</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">增大触控目标</string>
+    <string name="accessibility_larger_touch_targets_description">增大按钮和标签尺寸</string>
+    <string name="accessibility_reduce_motion">减少动画</string>
+    <string name="accessibility_reduce_motion_description">减少动画和过渡效果</string>
+    <string name="accessibility_extended_timeouts">延长超时时间</string>
+    <string name="accessibility_extended_timeouts_description">为限时操作提供更多时间</string>
+    <string name="accessibility_simplified_gestures">简化手势</string>
+    <string name="accessibility_simplified_gestures_description">减少多步骤手势操作</string>
+    <string name="accessibility_haptic_feedback">触觉反馈</string>
+    <string name="accessibility_haptic_feedback_description">操作时振动确认</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">简化界面</string>
+    <string name="accessibility_simplified_interface_description">隐藏高级选项，减少界面干扰</string>
+    <string name="accessibility_show_step_numbers">显示步骤编号</string>
+    <string name="accessibility_show_step_numbers_description">显示进度指示器</string>
+    <string name="accessibility_detailed_descriptions">详细说明</string>
+    <string name="accessibility_detailed_descriptions_description">提供额外的解释文字</string>
+    <string name="accessibility_confirm_actions">操作前确认</string>
+    <string name="accessibility_confirm_actions_description">执行重要操作前要求确认</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">手动输入代码</string>
+    <string name="accessibility_manual_code_entry_description">允许手动输入 QR（Quick Response）码内容，无需扫描</string>
+    <string name="accessibility_voice_input">语音输入</string>
+    <string name="accessibility_voice_input_description">为文本输入框启用语音识别</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">视觉</string>
+    <string name="accessibility_profile_motor">肢体</string>
+    <string name="accessibility_profile_cognitive">认知</string>
+    <string name="accessibility_profile_senior">长者</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">返回</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">首页</string>
+    <string name="breadcrumb_settings">设置</string>
+    <string name="breadcrumb_accessibility">无障碍</string>
+    <string name="breadcrumb_language">语言</string>
+    <string name="breadcrumb_help">帮助中心</string>
+    <string name="breadcrumb_officer_mode">工作人员模式</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">排版 &amp; 文字间距</string>
+    <string name="accessibility_line_spacing">行距</string>
+    <string name="accessibility_line_spacing_description">调整文本行间距</string>
+    <string name="accessibility_paragraph_spacing">段落间距</string>
+    <string name="accessibility_paragraph_spacing_description">调整段落之间的间距</string>
+    <string name="accessibility_letter_spacing">字间距</string>
+    <string name="accessibility_letter_spacing_description">调整字符之间的间距</string>
+    <string name="accessibility_typography_aaa_note">AAA 建议：1.5倍行距，2.0倍段落间距，0.12em 字间距。</string>
+    <string name="accessibility_spacing_current">当前：%s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s（AAA）</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">超时行为</string>
+    <string name="accessibility_timeout_no_automatic">符合 AAA 标准，不自动超时</string>
+    <string name="accessibility_timeout_auto_advance_30">30秒后自动继续</string>
+    <string name="accessibility_timeout_auto_advance_60">60秒后自动继续</string>
+    <string name="accessibility_timeout_set_announcement">超时行为已设置为%s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">对比度级别</string>
+    <string name="accessibility_contrast_aaa_ratio">7:1 对比度，符合 AAA 标准</string>
+    <string name="accessibility_contrast_standard">标准对比度</string>
+    <string name="accessibility_contrast_aa_ratio">4.5:1 对比度，符合 AA 标准</string>
+    <string name="accessibility_contrast_set_announcement">对比度级别已设置为%s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">色觉障碍模式已设置为%s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">%1$s滑块。当前值：%2$s。%3$s范围：%4$s至%5$s</string>
+    <string name="accessibility_slider_aaa_compliant">符合 AAA 标准。</string>
+    <string name="accessibility_slider_announcement">%1$s已设置为%2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">，符合 AAA 标准</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s已启用</string>
+    <string name="accessibility_toggle_disabled">%s已停用</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">验证反馈</string>
+    <string name="accessibility_sound_enabled">成功时播放提示音</string>
+    <string name="accessibility_sound_enabled_description">验证成功后播放确认提示音</string>
+    <string name="accessibility_sound_style">提示音风格</string>
+    <string name="accessibility_sound_preview">试听提示音</string>
+    <string name="accessibility_sound_preview_preset">试听%s</string>
+    <string name="accessibility_sound_style_set_announcement">提示音风格已设置为%s</string>
+    <string name="accessibility_haptic_enabled">成功时振动</string>
+    <string name="accessibility_haptic_enabled_description">验证成功后提供触觉反馈</string>
+    <string name="accessibility_sound_footer">提示音遵循您设备的静音模式设置</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">音量</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">试听当前音量</string>
+    <string name="accessibility_volume_set_announcement">音量已设置为百分之%d</string>
+    <string name="accessibility_volume_slider_description">音量滑块。当前值：百分之%d</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">重置设置</string>
+
+    <!-- ===== BATCH 04 ===== -->
+<!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">工作人员模式</string>
+    <string name="officer_id">工作人员身份标识（ID）</string>
+    <string name="officer_id_placeholder">例如：OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">请输入您的工作人员身份标识</string>
+    <string name="officer_yubikey_connected">YubiKey 已连接</string>
+    <string name="officer_connect_yubikey">连接 YubiKey</string>
+    <string name="officer_touch_yubikey">请触碰 YubiKey 以进行身份验证\u2026</string>
+    <string name="officer_authenticate_hmac">使用 HMAC（基于哈希的消息认证码）进行身份验证</string>
+    <string name="officer_authentication_process">身份验证流程：</string>
+    <string name="officer_auth_steps">1. 输入您的工作人员身份标识\n2. 点击"身份验证"\n3. YubiKey 闪烁时请触碰\n4. HMAC（基于哈希的消息认证码）身份验证将确认您的身份</string>
+    <string name="officer_auth_failed">身份验证失败。请核实您的工作人员身份标识后重试。</string>
+    <string name="officer_session_info">工作人员：%s</string>
+    <string name="officer_station_info">站点：%s</string>
+    <string name="officer_issued_today">今日已签发：%1$d / 50</string>
+    <string name="officer_issue_age_credential">签发年龄凭证</string>
+    <string name="officer_issue_description">验证用户身份并签发数字年龄凭证</string>
+    <string name="officer_start_issuance">开始新的签发</string>
+    <string name="officer_issuance_process">签发流程</string>
+    <string name="officer_issuance_steps">1. 检查用户的实体身份证件\n2. 输入其出生日期\n3. 确认信息完全一致\n4. 签发附带证明 QR（Quick Response）码的凭证\n5. 用户扫描 QR 码领取凭证</string>
+    <string name="officer_verify_identity">验证用户身份</string>
+    <string name="officer_select_dob">选择出生日期</string>
+    <string name="officer_change_date">更改日期</string>
+    <string name="officer_age_years">年龄：%d岁</string>
+    <string name="officer_under_18_warning">未满18岁，无法签发凭证</string>
+    <string name="officer_verification_checklist">验证核查清单</string>
+    <string name="officer_document_verified">实体证件已核实</string>
+    <string name="officer_document_verified_description">本人已查验有效的政府签发身份证件</string>
+    <string name="officer_dob_matches">出生日期完全一致</string>
+    <string name="officer_dob_matches_description">实体证件上的出生日期为：%s</string>
+    <string name="officer_issue_credential">签发凭证</string>
+    <string name="officer_user_scanned_successfully">用户已成功扫描</string>
+    <string name="officer_return_to_dashboard">返回主控台</string>
+    <string name="officer_go_back">返回</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">YubiKey 身份验证</string>
+    <string name="yubikey_step_format">第%1$d步，共%2$d步</string>
+    <string name="yubikey_led_should_blink">YubiKey 指示灯应正在闪烁</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">正在验证输入\u2026</string>
+    <string name="officer_state_creating_attestation">正在创建证明\u2026</string>
+    <string name="officer_state_computing_commitment">正在计算加密承诺\u2026</string>
+    <string name="officer_state_creating_session">正在创建安全会话\u2026</string>
+    <string name="officer_state_signing">正在签名凭证\u2026</string>
+    <string name="officer_state_finalizing">正在完成凭证处理\u2026</string>
+    <string name="officer_state_storing_attestation">正在存储证明\u2026</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">会话即将过期</string>
+    <string name="officer_session_expiring_message">您的会话将在%d秒后过期。是否保存当前进度？</string>
+    <string name="officer_session_expiring_announcement">警告：您的会话将在%d秒后过期</string>
+    <string name="officer_save_and_continue">保存并继续</string>
+    <string name="officer_continue_without_saving">不保存，继续操作</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">出生日期</string>
+    <string name="officer_age_format">年龄：%d岁</string>
+    <string name="officer_under_18_full_warning">未满18岁，无法签发凭证。只有年满18周岁的个人才有资格获取年龄验证凭证。请确认出生日期是否正确。</string>
+    <string name="officer_verification_checklist_header">验证核查清单</string>
+    <string name="officer_physical_document_verified">实体证件已核实</string>
+    <string name="officer_sighted_valid_id">本人已查验有效的政府签发身份证件</string>
+    <string name="officer_dob_matches_exactly">出生日期完全一致</string>
+    <string name="officer_dob_on_document">实体证件上的出生日期为：%s</string>
+    <string name="officer_error_label">错误</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">扫描签发 QR（Quick Response）码</string>
+    <string name="issuance_downloads_credential">此操作将下载您的年龄凭证。</string>
+    <string name="issuance_center_qr">请将 QR 码对准框内并保持稳定。</string>
+    <string name="issuance_enter_code_manually">手动输入代码</string>
+    <string name="issuance_processing_qr">正在处理 QR 码\u2026</string>
+    <string name="issuance_invalid_data">签发数据无效</string>
+    <string name="issuance_verification_qr_error">这是验证用 QR 码。请扫描凭证签发 QR 码。</string>
+    <string name="issuance_invalid_qr_format">QR 码格式无效</string>
+    <string name="issuance_failed_to_process">QR 码处理失败：%s</string>
+    <string name="issuance_code">签发代码</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">手动输入代码</string>
+    <string name="manual_entry_enter_code_manually">手动输入代码</string>
+    <string name="manual_entry_verification_description">请输入验证方屏幕上显示的12位验证代码。</string>
+    <string name="manual_entry_issuance_description">请输入签发机构屏幕上显示的代码。</string>
+    <string name="manual_entry_verification_code">验证代码</string>
+    <string name="manual_entry_submit">提交代码</string>
+    <string name="manual_entry_please_enter">请输入代码</string>
+    <string name="manual_entry_please_enter_verification">请输入验证代码</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">开始聆听</string>
+    <string name="voice_input_stop_listening">停止聆听</string>
+    <string name="voice_input_recognized">已识别：</string>
+    <string name="content_desc_voice_input_listening">正在聆听语音输入</string>
+    <string name="content_desc_voice_input_available">语音输入可用</string>
+    <string name="voice_input_permission_title">需要麦克风权限</string>
+    <string name="voice_input_permission_message">语音输入需要使用麦克风。您可以在系统设置中开启此权限。</string>
+    <string name="voice_input_listening">正在聆听\u2026</string>
+    <string name="voice_input_error">语音输入错误</string>
+    <string name="voice_input_tap_to_speak">点击说话</string>
+    <string name="voice_input_did_you_say">您是否说了"%1$s"？</string>
+    <string name="voice_input_confirm">确认</string>
+    <string name="voice_input_retry">重试</string>
+    <string name="voice_input_cancel">取消</string>
+    <string name="voice_input_button">语音输入</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">此设备不支持语音输入</string>
+    <string name="voice_input_error_audio">录音出错，请检查麦克风。</string>
+    <string name="voice_input_error_network">网络错误，请检查网络连接。</string>
+    <string name="voice_input_error_network_timeout">网络超时，请重试。</string>
+    <string name="voice_input_error_no_match">未检测到语音，请再试一次。</string>
+    <string name="voice_input_error_recognizer_busy">语音输入繁忙，请稍候。</string>
+    <string name="voice_input_error_server">服务器错误，请稍后重试。</string>
+    <string name="voice_input_error_speech_timeout">未检测到声音，请提高音量。</string>
+    <string name="voice_input_error_insufficient_permissions">麦克风权限被拒绝。</string>
+    <string name="voice_input_error_generic">语音输入出错，请再试一次。</string>
+
+    <!-- ===== BATCH 05 ===== -->
+<!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">返回</string>
+    <string name="action_close">关闭</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_ok">确定</string>
+    <string name="action_set">设置</string>
+    <string name="action_change">更改</string>
+    <string name="action_delete">删除</string>
+    <string name="action_reset">重置</string>
+    <string name="action_retry">重试</string>
+    <string name="action_try_again">再试一次</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_download_now">立即下载</string>
+    <string name="action_retry_setup">重试设置</string>
+    <string name="action_retry_download">重试下载</string>
+    <string name="action_restart_setup">重新设置</string>
+    <string name="action_manage_storage">管理存储</string>
+    <string name="action_check_wifi_settings">请先检查 Wi-Fi 设置</string>
+    <string name="action_check_wifi_settings_short">检查 Wi-Fi 设置</string>
+    <string name="action_grant_permission">授予权限</string>
+    <string name="action_grant_camera_access">授予相机访问权</string>
+    <string name="action_return_to_browser">返回浏览器</string>
+    <string name="action_show_debug_info">显示调试信息</string>
+    <string name="action_reset_redownload">重置并重新下载</string>
+    <string name="action_end_session">结束会话</string>
+    <string name="action_expand">展开</string>
+    <string name="action_collapse">收起</string>
+    <string name="accessibility_state_expanded">已展开</string>
+    <string name="accessibility_state_collapsed">已收起</string>
+    <string name="accessibility_state_checked">已勾选</string>
+    <string name="accessibility_state_unchecked">未勾选</string>
+    <string name="accessibility_state_selected">已选中</string>
+    <string name="accessibility_state_not_selected">未选中</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">发生错误</string>
+    <string name="error_camera_permission">扫描 QR（Quick Response）码需要相机权限</string>
+    <string name="error_camera_access_needed">需要相机权限</string>
+    <string name="error_camera_permission_description">请授予相机权限以扫描 QR 码，或在无障碍设置中启用手动输入。</string>
+    <string name="error_camera_permission_required">扫描 QR 码需要相机权限</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">正在扫描 QR 码\u2026</string>
+    <string name="qr_scanner_camera_required">需要相机权限</string>
+    <string name="qr_scanner_camera_preview">用于扫描 QR 码的相机预览</string>
+    <string name="qr_scanner_status_scanning">正在扫描 QR 码</string>
+    <string name="qr_scanner_requesting_permission">正在请求相机权限</string>
+    <string name="error_camera_start_failed">相机启动失败：%s</string>
+    <string name="error_camera_init_failed">相机初始化失败：%s</string>
+    <string name="error_biometric_not_available">生物识别身份验证不可用</string>
+    <string name="error_biometric_required">需要生物识别身份验证才能继续。</string>
+    <string name="error_network">发生网络错误</string>
+    <string name="error_no_credential">没有可用的凭证。请先获取凭证。</string>
+    <string name="credential_picker_title">选择凭证</string>
+    <string name="credential_picker_description">您有多个凭证可用于此次验证，请选择一个。</string>
+    <string name="credential_picker_expired_label">已过期</string>
+    <string name="credential_picker_accessibility_select">选择凭证：%1$s</string>
+    <string name="error_failed_to_process_challenge">处理质询失败</string>
+    <string name="error_failed_to_create_proof">创建证明失败</string>
+    <string name="error_verification_failed">验证失败</string>
+    <string name="error_occurred_during_verification">验证过程中发生错误</string>
+    <string name="error_connection_timeout">连接超时，请重试。</string>
+    <string name="error_unable_to_connect">无法连接，请检查网络连接。</string>
+    <string name="error_secure_connection_failed">安全连接失败，请重试。</string>
+    <string name="error_security_verification_failed">安全验证失败，请重试。</string>
+    <string name="error_invalid_input">输入无效，请检查信息后重试。</string>
+    <string name="error_operation_in_progress">另一项操作正在进行中，请稍候。</string>
+    <string name="error_operation_cancelled">操作已取消。</string>
+    <string name="error_age_requirement_not_met">此凭证不满足年龄要求。</string>
+    <string name="error_wallet_not_initialized">钱包未初始化，请重启应用。</string>
+    <string name="error_security">安全错误，请重试。</string>
+    <string name="error_connection_timeout_short">连接超时，请重试。</string>
+    <string name="error_invalid_input_provided">输入无效。</string>
+    <string name="error_invalid_data_format">数据格式无效，请重试。</string>
+    <string name="error_storage">存储错误，请检查设备存储空间。</string>
+    <string name="error_network_short">网络错误，请检查连接。</string>
+    <string name="error_label">错误</string>
+    <string name="error_dismiss">关闭错误</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">处理中\u2026</string>
+    <string name="status_initializing_wallet">正在初始化钱包\u2026</string>
+    <string name="status_loading">加载中\u2026</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">隐私已保护</string>
+    <string name="privacy_zk_description">您的出生日期绝不会被分享。验证方只能得知您是否满足其年龄要求。</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">隐私设置</string>
+    <string name="privacy_settings_description">控制数据收集并管理您的数据</string>
+    <string name="privacy_section_data_collection">数据收集</string>
+    <string name="privacy_section_your_data">您的数据</string>
+    <string name="privacy_protection_title">您的隐私已受保护</string>
+    <string name="privacy_protection_description">Provii 钱包使用零知识证明来验证您的年龄，无需透露您的出生日期。您的凭证数据仅存储在您的设备上，不会与任何人分享。</string>
+    <string name="privacy_analytics_title">数据分析</string>
+    <string name="privacy_analytics_description">分享匿名使用数据，帮助改进 Provii 钱包</string>
+    <string name="privacy_analytics_enabled">数据分析已开启</string>
+    <string name="privacy_analytics_disabled">数据分析已关闭</string>
+    <string name="privacy_crash_reporting_title">崩溃报告</string>
+    <string name="privacy_crash_reporting_description">自动发送崩溃报告，帮助我们修复问题</string>
+    <string name="privacy_crash_reporting_enabled">崩溃报告已开启</string>
+    <string name="privacy_crash_reporting_disabled">崩溃报告已关闭</string>
+    <string name="privacy_what_we_collect_title">我们收集哪些数据</string>
+    <string name="privacy_what_we_collect_subtitle">点击了解我们的数据处理方式</string>
+    <string name="privacy_data_collection_info_title">数据收集说明</string>
+    <string name="privacy_data_we_collect_header">我们收集的数据（如已开启）：</string>
+    <string name="privacy_data_we_collect_list">- 匿名应用使用统计\n- 崩溃报告和错误日志\n- 设备类型和操作系统版本\n- 应用版本信息</string>
+    <string name="privacy_data_we_dont_collect_header">我们绝不收集的数据：</string>
+    <string name="privacy_data_we_dont_collect_list">- 您的出生日期\n- 您的姓名或个人信息\n- 您的位置\n- 您的凭证数据\n- 生物识别数据</string>
+    <string name="privacy_data_never_shared_note">您的凭证数据绝不会与 Provii 或任何第三方分享，始终保存在您的设备上。</string>
+    <string name="privacy_policy_title">隐私政策</string>
+    <string name="privacy_policy_subtitle">阅读完整隐私政策</string>
+    <string name="privacy_delete_my_data_title">删除我的数据</string>
+    <string name="privacy_delete_my_data_subtitle">移除所有已存储的凭证和数据</string>
+    <string name="privacy_delete_data_dialog_title">删除全部数据？</string>
+    <string name="privacy_delete_data_dialog_message">此操作将永久删除您设备上的所有凭证和应用数据。如需再次使用本应用，您需要重新获取凭证。</string>
+    <string name="privacy_delete_data_dialog_warning">此操作无法撤销。</string>
+    <string name="privacy_delete_data_confirm">全部删除</string>
+    <string name="privacy_footer_note">您可以随时更改这些设置，更改立即生效。</string>
+    <string name="dialog_delete_data_announcement">已打开删除数据确认对话框</string>
+    <string name="dialog_data_collection_info_announcement">已打开数据收集说明对话框</string>
+    <string name="content_desc_privacy_settings">隐私设置，控制数据收集并管理您的数据</string>
+    <string name="content_desc_data_collection_info">查看数据收集说明</string>
+    <string name="content_desc_privacy_policy">查看隐私政策</string>
+    <string name="content_desc_opens_external_link">在浏览器中打开</string>
+    <string name="content_desc_delete_my_data">删除我的全部数据</string>
+
+    <!-- ===== BATCH 06 ===== -->
+<!-- 翻译说明：以下用于屏幕阅读器和无障碍服务 -->
+    <string name="content_desc_back">返回</string>
+    <string name="content_desc_settings">设置</string>
+    <string name="content_desc_refresh">刷新</string>
+    <string name="content_desc_verified">已验证</string>
+    <string name="content_desc_expand">展开</string>
+    <string name="content_desc_collapse">收起</string>
+    <string name="content_desc_warning_error">警告：发生错误</string>
+    <string name="content_desc_sandbox_indicator">沙盒模式指示器</string>
+    <string name="content_desc_success">成功</string>
+    <string name="content_desc_warning">警告</string>
+    <string name="content_desc_information">信息</string>
+    <string name="content_desc_error">错误</string>
+    <string name="content_desc_sandbox_warning">沙盒模式警告</string>
+    <string name="content_desc_app_info">应用信息</string>
+    <string name="content_desc_accessibility_settings">无障碍设置</string>
+    <string name="content_desc_language_settings">语言设置</string>
+    <string name="content_desc_licenses">开源许可</string>
+    <string name="content_desc_select_dob">选择出生日期</string>
+    <string name="content_desc_mint_test_credential_as_issuer">以签发机构身份铸造测试凭证</string>
+    <string name="content_desc_get_credential">获取凭证</string>
+    <string name="content_desc_delete_credential">删除凭证</string>
+    <string name="content_desc_reset_proving_key">重置证明密钥</string>
+    <string name="content_desc_environment_info">环境信息</string>
+    <string name="content_desc_help_support">帮助与支持</string>
+    <string name="content_desc_privacy_protected">隐私受保护</string>
+    <string name="preview_settings_title">设置预览</string>
+
+    <!-- 无障碍内容描述 - 由 Agent 3 添加 -->
+    <string name="accessibility_verification_success_description">成功</string>
+    <string name="accessibility_verification_error_description">错误</string>
+    <string name="accessibility_breadcrumb_location_description">位置：%s</string>
+    <string name="accessibility_breadcrumb_separator_description">然后</string>
+    <string name="accessibility_breadcrumb_current_page_description">当前页面：%s</string>
+    <string name="accessibility_settings_navigate_description">导航</string>
+    <string name="accessibility_credentials_settings_description">设置</string>
+    <string name="accessibility_verification_back_description">返回</string>
+    <string name="accessibility_officer_back_description">返回</string>
+    <string name="accessibility_discovery_back_description">返回</string>
+    <string name="accessibility_discovery_refresh_description">刷新</string>
+    <string name="accessibility_discovery_verified_description">已验证</string>
+    <string name="accessibility_officer_done_description">完成</string>
+    <string name="accessibility_officer_attestation_qr_description">供用户扫描的证明 QR 码</string>
+
+    <!-- 键盘导航跳转链接（WCAG 2.4.1） -->
+    <string name="accessibility_skip_to">跳转到%s</string>
+    <string name="accessibility_skip_main_content">主要内容</string>
+
+    <!-- 无障碍配置名称 -->
+    <string name="accessibility_profile_vision_impaired">视力障碍</string>
+    <string name="accessibility_profile_motor_impaired">肢体障碍</string>
+    <string name="accessibility_profile_cognitive_support">认知辅助</string>
+    <string name="accessibility_profile_elderly_support">长者辅助</string>
+    <string name="accessibility_profile_default">默认</string>
+
+    <!-- 色觉模式名称 -->
+    <string name="color_blind_mode_none">无</string>
+    <string name="color_blind_mode_protanopia">红色盲</string>
+    <string name="color_blind_mode_deuteranopia">绿色盲</string>
+    <string name="color_blind_mode_tritanopia">蓝色盲</string>
+    <string name="color_blind_mode_monochrome">单色</string>
+
+    <!-- 对比度级别名称 -->
+    <string name="contrast_level_standard">标准</string>
+    <string name="contrast_level_high">高对比度（AA）</string>
+    <string name="contrast_level_maximum">最高对比度（AAA）</string>
+
+    <!-- 文本宽度名称 -->
+    <string name="text_width_full">全宽</string>
+    <string name="text_width_comfortable">舒适宽度（80 字符）</string>
+    <string name="text_width_narrow">窄宽度（60 字符）</string>
+
+    <!-- 超时行为名称 -->
+    <string name="timeout_behavior_none">不超时（AAA）</string>
+    <string name="timeout_behavior_standard">标准（30 秒）</string>
+    <string name="timeout_behavior_extended">延长（60 秒）</string>
+
+    <!-- 阅读级别名称 -->
+    <string name="reading_level_standard">标准</string>
+    <string name="reading_level_standard_description">包含专业术语的常规文本</string>
+    <string name="reading_level_simplified">简化（7 至 9 年级）</string>
+    <string name="reading_level_simplified_description">用词更简单，句子更短（符合 AAA 标准）</string>
+
+    <!-- ==================== 帮助与支持 ==================== -->
+    <!-- 翻译说明：以下字符串用于帮助与支持系统 -->
+    <string name="help_title">帮助</string>
+    <string name="help_and_support">帮助与支持</string>
+    <string name="help_description">获取应用功能和无障碍方面的帮助</string>
+    <string name="help_center">帮助中心</string>
+    <string name="help_center_description">浏览帮助主题，了解应用功能</string>
+    <string name="help_search">搜索帮助</string>
+    <string name="help_search_placeholder">搜索帮助主题\u2026</string>
+    <string name="help_search_active">搜索已启用</string>
+    <string name="help_search_inactive">搜索已关闭</string>
+    <string name="help_no_results">未找到匹配的帮助主题</string>
+    <string name="help_topic_not_found">未找到该帮助主题</string>
+    <string name="help_related_topics">相关主题</string>
+    <string name="help_content_heading">帮助内容</string>
+    <string name="help_related_topic_position">%1$s，第 %2$d 项，共 %3$d 项</string>
+
+    <!-- 帮助分类 -->
+    <string name="help_category_vision">视觉</string>
+    <string name="help_category_typography">字体排版</string>
+    <string name="help_category_interaction">交互</string>
+    <string name="help_category_cognitive">认知辅助</string>
+    <string name="help_category_alternative_input">替代输入</string>
+    <string name="help_category_features">功能</string>
+
+    <!-- 帮助主题（HelpScreen.kt） -->
+    <string name="help_topic_getting_credential_title">获取凭证</string>
+    <string name="help_topic_getting_credential_summary">了解如何获取您的首个年龄验证凭证</string>
+    <string name="help_topic_getting_credential_content">获取年龄验证凭证的步骤：\n\n1. 前往授权签发机构所在地点\n2. 出示您的政府签发证件\n3. 扫描提供的 QR 码\n4. 您的凭证将被安全保存\n\n您的出生日期仅存储在本地，绝不会被分享。</string>
+
+    <string name="help_topic_verifying_age_title">验证您的年龄</string>
+    <string name="help_topic_verifying_age_summary">如何在不透露个人信息的情况下证明您的年龄</string>
+    <string name="help_topic_verifying_age_content">当您需要验证年龄时：\n\n1. 验证方会向您展示一个 QR 码\n2. 使用本应用扫描该 QR 码\n3. 应用会生成一个数学证明\n4. 仅分享是或否的结果\n\n您的实际出生日期绝不会被透露。</string>
+
+    <string name="help_topic_accessibility_title">无障碍功能</string>
+    <string name="help_topic_accessibility_summary">根据您的需求自定义应用</string>
+    <string name="help_topic_accessibility_content">本应用包含多种无障碍功能：\n\n- 大字体和高对比度模式\n- 语音输入和屏幕阅读器支持\n- 简化手势和用户界面\n- 手动输入代码选项\n- 延长超时时间\n\n请前往"设置">"无障碍"进行设置</string>
+
+    <string name="help_topic_privacy_security_title">隐私与安全</string>
+    <string name="help_topic_privacy_security_summary">您的信息如何受到保护</string>
+    <string name="help_topic_privacy_security_content">您的隐私是我们的首要考量：\n\n- 凭证存储在您的设备本地\n- 零知识证明保护您的数据\n- 无跟踪，无数据分析\n- 可使用生物识别认证\n- 数据在未加密状态下绝不会离开您的设备</string>
+
+    <string name="help_topic_troubleshooting_title">故障排除</string>
+    <string name="help_topic_troubleshooting_summary">常见问题及解决方案</string>
+    <string name="help_topic_troubleshooting_content">常见问题及解决方法：\n\nQR 扫描器无法使用：\n- 请在设置中检查相机权限\n- 尝试使用手动输入代码选项\n\n凭证无法加载：\n- 请检查您的网络连接\n- 尝试重置证明密钥\n\n验证失败：\n- 请确认凭证未过期\n- 联系验证方获取支持</string>
+
+    <!-- 帮助文本格式 -->
+    <string name="help_text_ellipsis">\u2026</string>
+
+    <!-- ==================== 日期与时间 ==================== -->
+    <!-- 翻译说明：以下为日期和时间格式字符串 -->
+    <string name="date_label">出生日期</string>
+    <string name="date_of_birth">出生日期</string>
+
+    <!-- ==================== 占位符与格式 ==================== -->
+    <!-- 格式：%s = 字符串，%d = 数字，%1$s = 第一个字符串参数，等等 -->
+    <string name="format_age_years">%d 岁</string>
+    <string name="format_step_indicator">第 %1$d 步，共 %2$d 步</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== 标签导航 ==================== -->
+    <!-- 翻译说明：底部导航栏的标签文字 -->
+    <string name="tab_credentials">凭证</string>
+    <string name="tab_settings">设置</string>
+    <string name="tab_help">帮助</string>
+    <string name="tab_credentials_description">查看您的凭证</string>
+    <string name="tab_settings_description">应用设置</string>
+    <string name="tab_help_description">获取帮助与支持</string>
+
+    <!-- ==================== 搜索 ==================== -->
+    <!-- 翻译说明：搜索功能相关字符串 -->
+    <string name="search_title">搜索</string>
+    <string name="search_field_label">搜索框</string>
+    <string name="search_placeholder">搜索设置、帮助和功能</string>
+    <string name="search_clear">清除搜索</string>
+    <string name="search_popular">热门搜索</string>
+    <string name="search_results_heading">搜索结果</string>
+    <string name="search_no_results">未找到结果</string>
+    <string name="search_try_suggestions">尝试搜索：\n\u2022 无障碍\n\u2022 设置\n\u2022 帮助\n\u2022 语言</string>
+    <string name="search_results_announcement_singular">找到 1 个结果</string>
+    <string name="search_results_announcement_plural">找到 %d 个结果</string>
+    <string name="search_no_results_announcement">未找到结果</string>
+
+    <!-- ==================== 帮助页面 ==================== -->
+    <!-- 翻译说明：帮助与支持内容 -->
+    <string name="help_quick_access">快速访问</string>
+    <string name="help_topics">帮助主题</string>
+    <string name="help_glossary">术语表</string>
+
+    <!-- ==================== 开源许可 ==================== -->
+    <!-- 翻译说明：开源许可页面 -->
+    <string name="licenses_title">开源许可</string>
+    <string name="licenses_description">本应用使用了以下开源软件。我们感谢创建这些库的开发者。</string>
+    <string name="licenses_tap_to_view">点击查看完整许可</string>
+    <string name="licenses_group_header">%1$s（%2$d 个库）</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">\u2022</string>
+
+    <!-- ===== BATCH 07 ===== -->
+<!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">无网络连接，请检查网络后重试。</string>
+    <string name="error_unexpected">发生意外错误，请重启应用。</string>
+    <string name="error_unexpected_try_again">发生意外错误，请重试。</string>
+    <string name="error_storage_detailed">存储错误：%s</string>
+    <string name="error_network_detailed">网络错误：%s</string>
+    <string name="error_proof_generation_failed">证明生成失败：%s</string>
+    <string name="error_not_eligible">不符合条件。您不满足此次验证的要求。</string>
+    <string name="error_challenge_expired">质询已过期或不存在，请重新获取。</string>
+    <string name="error_challenge_expired_scan_new">此质询已过期，请扫描新的 QR 码。</string>
+    <string name="error_request_out_of_order">请求顺序有误，请重试。</string>
+    <string name="error_too_many_requests">请求过于频繁，请稍后再试。</string>
+    <string name="error_server">服务器错误，请稍后再试。</string>
+    <string name="error_request_failed">请求失败（%d），请重试。</string>
+    <string name="error_not_eligible_short">不符合此次验证条件</string>
+    <string name="error_challenge_not_found">未找到质询</string>
+    <string name="error_complete_steps_in_order">请按顺序完成各步骤</string>
+    <string name="error_challenge_expired_short">质询已过期</string>
+    <string name="error_authentication_cancelled">身份验证已取消。请验证您的身份以完成年龄验证。</string>
+    <string name="error_invalid_data_format_short">数据格式无效，请重试。</string>
+    <string name="error_storage_check_device">存储错误，请检查设备存储空间。</string>
+    <string name="error_network_check_connection">网络错误，请检查您的连接。</string>
+    <string name="error_proof_generation_failed_short">证明生成失败，请重试。</string>
+    <string name="error_operation_in_progress_short">另一个操作正在进行中。</string>
+    <string name="error_no_internet_short">无网络连接，请检查网络。</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">扫描验证 QR 码</string>
+    <string name="verification_verifying_title">正在验证年龄</string>
+    <string name="verification_success_title">年龄已验证</string>
+    <string name="verification_failed_title">验证失败</string>
+    <string name="verification_processing_wait">可能需要几秒钟</string>
+    <string name="verification_success_message">您的年龄已被私密地验证</string>
+    <string name="verification_return_to_site">您现在可以返回网站继续操作。</string>
+    <string name="verification_please_enter_code">请输入验证代码。该代码应为12位数字短码或来自验证方的完整验证 URL。</string>
+    <string name="verification_error_occurred">验证过程中发生错误</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">处理中\u2026</string>
+    <string name="credential_list_verify_age_button">验证年龄</string>
+    <string name="credential_list_generate_in_person_description">现场生成凭证</string>
+    <string name="credential_list_scan_qr_title">扫描 QR 码</string>
+    <string name="credential_list_find_locations_title">查找地点</string>
+    <string name="credential_section_my_credential">我的凭证</string>
+    <string name="credential_section_managed">托管凭证</string>
+    <string name="credential_list_get_credential_button">获取凭证</string>
+    <string name="credential_list_add_managed_button">添加托管凭证</string>
+    <string name="credential_section_managed_empty">为您关心的人（如孩子）添加一个凭证。</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">凭证详情</string>
+    <string name="credential_detail_not_found">未找到凭证</string>
+    <string name="credential_detail_nickname">昵称</string>
+    <string name="credential_detail_no_nickname">未设置昵称</string>
+    <string name="credential_detail_edit_nickname">编辑昵称</string>
+    <string name="credential_detail_status">状态</string>
+    <string name="credential_detail_delete">删除凭证</string>
+    <string name="credential_detail_delete_title">删除凭证</string>
+    <string name="credential_detail_delete_message">确定要删除此凭证吗？此操作无法撤销。</string>
+    <string name="credential_type_primary">主要</string>
+    <string name="credential_type_managed">托管</string>
+    <string name="credential_status_valid">有效</string>
+    <string name="credential_status_expired">已过期</string>
+    <string name="credential_status_invalid">无效</string>
+    <string name="action_save">保存</string>
+    <string name="credential_slots_full_title">凭证数量已达上限</string>
+    <string name="credential_slots_full_message">您已达到凭证数量上限。请删除一个现有凭证后再添加新凭证。</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">托管凭证</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">为%1$s验证年龄？</string>
+    <string name="managed_confirm_message">您即将使用%1$s的托管凭证进行年龄验证。</string>
+    <string name="managed_confirm_proceed">为%1$s验证</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">正在为%1$s生成证明</string>
+    <string name="verification_age_verified_for">已为%1$s完成年龄验证</string>
+    <string name="deeplink_verification_age_verified_for">已为%1$s完成年龄验证</string>
+    <string name="attestation_managed_credential_received">已收到%1$s的凭证！</string>
+    <string name="attestation_managed_credential_stored">您孩子的凭证已安全存储。</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">删除%1$s的凭证？</string>
+    <string name="credential_detail_delete_managed_message">确定要删除%1$s的托管凭证吗？此操作无法撤销。您需要重新前往签发机构才能补办。</string>
+    <string name="credential_detail_save_error">昵称保存失败</string>
+    <string name="credential_detail_delete_error">凭证删除失败</string>
+    <string name="accessibility_saving">保存中\u2026</string>
+    <string name="accessibility_deleting">删除中\u2026</string>
+    <string name="accessibility_loading">加载中，请稍候</string>
+    <string name="accessibility_issuing_credential">正在签发凭证，请稍候</string>
+    <string name="dialog_delete_all_credentials_title">删除所有凭证？</string>
+    <string name="dialog_delete_all_credentials_message">此操作将删除您的凭证以及所有为孩子托管的凭证，且无法撤销。</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">托管</string>
+    <string name="credential_slots_count">%1$d / 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">正在准备验证\u2026</string>
+    <string name="deeplink_verification_checking_credential">正在检查凭证\u2026</string>
+    <string name="deeplink_verification_processing_challenge">正在处理质询\u2026</string>
+    <string name="deeplink_verification_creating_proof">正在生成安全证明\u2026</string>
+    <string name="deeplink_verification_submitting_proof">正在提交证明\u2026</string>
+    <string name="deeplink_verification_success">✔ 年龄验证成功</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">未找到凭证，请先设置您的凭证。</string>
+    <string name="deeplink_verification_error_failed_challenge">验证质询处理失败</string>
+    <string name="deeplink_verification_error_no_auth_prompt">无法显示身份验证提示</string>
+    <string name="deeplink_verification_error_failed_proof">年龄证明生成失败</string>
+    <string name="deeplink_verification_error_verification_failed">验证失败</string>
+    <string name="deeplink_verification_error_unexpected">发生意外错误</string>
+    <string name="deeplink_verification_error_no_credential_selected">未选择凭证，请重试。</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">选择凭证</string>
+    <string name="deeplink_verification_select_credential_subtitle">有多个可用凭证，请选择用于此次验证的凭证。</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">正在验证年龄</string>
+    <string name="deeplink_verification_title_verified">已验证</string>
+    <string name="deeplink_verification_title_failed">验证失败</string>
+    <string name="deeplink_verification_please_wait">请稍候\u2026</string>
+    <string name="deeplink_verification_age_verified">年龄已验证！</string>
+    <string name="deeplink_verification_under_age_verified">已验证未满%1$d岁</string>
+    <string name="deeplink_verification_returning_browser">正在返回浏览器\u2026</string>
+    <string name="deeplink_verification_return_to_browser">返回浏览器</string>
+    <string name="deeplink_verification_failed_title">验证失败</string>
+    <string name="deeplink_verification_error_occurred">验证过程中发生错误</string>
+
+    <!-- ===== BATCH 08 ===== -->
+<!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">签发流程</string>
+    <string name="officer_issuance_process_steps">1. 检查用户的实体身份证件\n2. 输入其出生日期\n3. 核实信息完全一致\n4. 签发凭证并生成证明 QR（Quick Response）码\n5. 用户扫描 QR 码以接收凭证</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">QR 码生成失败</string>
+    <string name="officer_attestation_ready_title">证明已就绪</string>
+    <string name="officer_attestation_scan_instruction">用户需使用 Provii 钱包应用扫描此 QR 码</string>
+    <string name="officer_attestation_deeplink_label">证明深度链接</string>
+    <string name="officer_wait_for_attestation_scan">等待用户扫描</string>
+    <string name="officer_attestation_info">凭证将在用户设备上生成</string>
+    <string name="officer_attestation_complete">证明已完成</string>
+    <string name="officer_user_will_complete_credential">用户将在其设备上完成凭证生成</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">正在解码证明数据\u2026</string>
+    <string name="attestation_generating_randomness">正在生成安全随机数\u2026</string>
+    <string name="attestation_sending">正在发送至签发机构\u2026</string>
+    <string name="attestation_verifying">正在验证承诺\u2026</string>
+    <string name="attestation_storing">正在存储凭证\u2026</string>
+    <string name="attestation_complete">凭证已完成！</string>
+    <string name="attestation_error_invalid_data">证明数据无效</string>
+    <string name="attestation_error_expired">证明已过期</string>
+    <string name="attestation_error_network">网络错误，请检查您的连接</string>
+    <string name="attestation_error_unexpected">发生意外错误</string>
+    <string name="attestation_title_processing">正在处理证明</string>
+    <string name="attestation_title_success">凭证已接收</string>
+    <string name="attestation_title_failed">签发失败</string>
+    <string name="attestation_secure_issuance">安全签发</string>
+    <string name="attestation_privacy_preserving">隐私保护凭证签发</string>
+    <string name="attestation_may_take_seconds">可能需要几秒钟</string>
+    <string name="attestation_keep_app_open">请保持应用打开</string>
+    <string name="attestation_credential_received">凭证已接收！</string>
+    <string name="attestation_credential_stored_description">您的年龄验证凭证已安全存储</string>
+    <string name="attestation_issuer_verified">签发机构已验证</string>
+    <string name="attestation_failed_title">签发失败</string>
+    <string name="attestation_scan_qr_instead">改为扫描 QR 码</string>
+    <string name="attestation_go_back">返回</string>
+    <string name="attestation_step_decode">解码</string>
+    <string name="attestation_step_generate">生成</string>
+    <string name="attestation_step_send">发送</string>
+    <string name="attestation_step_verify">验证</string>
+    <string name="attestation_step_store">存储</string>
+    <string name="attestation_step_complete">完成</string>
+    <string name="accessibility_attestation_encrypted_description">正在处理加密证明</string>
+    <string name="accessibility_attestation_success_description">表示凭证已接收的成功勾选标记</string>
+    <string name="accessibility_attestation_error_description">表示签发失败的错误图标</string>
+    <string name="accessibility_step_complete">步骤 %1$s 已完成</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">凭证接收人</string>
+    <string name="attestation_recipient_prompt">此凭证的使用者是\u2026</string>
+    <string name="attestation_recipient_me">本人</string>
+    <string name="attestation_recipient_child">孩子</string>
+    <string name="attestation_nickname_title">孩子的昵称</string>
+    <string name="attestation_nickname_prompt">输入昵称以便区分不同凭证</string>
+    <string name="attestation_nickname_placeholder">例如：小明</string>
+    <string name="attestation_nickname_continue">继续</string>
+    <string name="attestation_nickname_back">返回</string>
+    <string name="accessibility_attestation_recipient_heading">选择此凭证的使用者</string>
+    <string name="accessibility_attestation_nickname_heading">为孩子输入昵称</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">工作人员 ID 格式无效</string>
+    <string name="officer_auth_error_challenge_failed">获取 YubiKey 质询失败：%s</string>
+    <string name="officer_auth_instruction_touch_yubikey">触碰您的 YubiKey 以完成身份验证</string>
+    <string name="officer_auth_error_touch_timeout">YubiKey 触碰已超时</string>
+    <string name="officer_auth_error_verify_document_dob">请核实证件与出生日期是否一致</string>
+    <string name="officer_auth_error_invalid_date_format">日期格式无效，请使用 YYYY-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">用户必须年满 18 岁</string>
+    <string name="officer_auth_error_not_authenticated">未通过身份验证，请先输入您的工作人员 ID。</string>
+    <string name="officer_auth_error_issue_failed">凭证签发失败</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">点击查看</string>
+    <string name="gesture_desc_long_press_options">，长按查看选项</string>
+    <string name="gesture_desc_swipe_left">，向左滑动查看更多操作</string>
+    <string name="gesture_desc_swipe_right">，向右滑动查看更多操作</string>
+    <string name="gesture_desc_tap_to_activate">点击激活</string>
+    <string name="gesture_desc_long_press_format">。长按：%s</string>
+    <string name="gesture_desc_swipe_format">。%s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">重试</string>
+    <string name="main_activity_reset_redownload">重置并重新下载</string>
+    <string name="main_activity_show_debug_info">显示调试信息</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">无障碍设置</string>
+    <string name="search_item_accessibility_settings_subtitle">自定义您的使用体验</string>
+    <string name="search_item_large_text_title">大字体</string>
+    <string name="search_item_large_text_subtitle">增大文字尺寸</string>
+    <string name="search_item_high_contrast_title">高对比度</string>
+    <string name="search_item_high_contrast_subtitle">增强可视性</string>
+    <string name="search_item_voice_input_title">语音输入</string>
+    <string name="search_item_voice_input_subtitle">使用语音控制</string>
+    <string name="search_item_manual_code_entry_title">手动输入代码</string>
+    <string name="search_item_manual_code_entry_subtitle">手动输入代替扫描</string>
+    <string name="search_item_simplified_ui_title">简化界面</string>
+    <string name="search_item_simplified_ui_subtitle">减少视觉复杂度</string>
+    <string name="search_item_color_blindness_title">色盲支持</string>
+    <string name="search_item_color_blindness_subtitle">调整颜色以提高可视性</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">设置</string>
+    <string name="search_item_settings_subtitle">应用配置</string>
+    <string name="search_item_language_title">语言</string>
+    <string name="search_item_language_subtitle">更改应用语言</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">我的凭证</string>
+    <string name="search_item_credentials_subtitle">查看您的凭证</string>
+    <string name="search_item_get_credential_title">获取凭证</string>
+    <string name="search_item_get_credential_subtitle">查找签发机构</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">帮助</string>
+    <string name="search_item_help_subtitle">获取帮助</string>
+    <string name="search_item_privacy_title">隐私保护</string>
+    <string name="search_item_privacy_subtitle">您的数据如何受到保护</string>
+    <string name="search_item_verification_title">年龄验证</string>
+    <string name="search_item_verification_subtitle">证明您的年龄</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">沙盒环境的硬编码后备签发机构列表</string>
+    <string name="issuer_fallback_production_description">生产环境的硬编码后备签发机构列表</string>
+    <string name="issuer_fallback_category_government">政府</string>
+    <string name="issuer_fallback_category_government_description">政府签发的凭证</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii 沙盒签发机构</string>
+    <string name="issuer_fallback_sandbox_issuer_description">用于测试的 Provii 官方沙盒签发机构</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">访问沙盒签发机构门户</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Provii 官方凭证签发机构</string>
+    <string name="issuer_fallback_production_issuer_instructions">前往您当地的 DMV 办事处</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">出生日期不能是未来日期</string>
+    <string name="validation_error_invalid_date_format">日期格式无效</string>
+    <string name="validation_error_officer_id_too_short">工作人员 ID 过短</string>
+    <string name="validation_error_invalid_officer_id_format">工作人员 ID 格式无效</string>
+    <string name="validation_error_empty_qr_code">QR 码为空</string>
+    <string name="validation_error_qr_code_too_large">QR 码过大</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">你已成为开发者！</string>
+    <string name="sandbox_toast_enabled">沙盒模式已启用\n正在使用测试环境</string>
+    <string name="sandbox_toast_disabled">生产模式已启用\n正在使用生产环境</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">再操作 1 步即可进入开发者模式</string>
+    <string name="sandbox_toast_steps_away">再操作 %1$d 步即可进入开发者模式</string>
+
+    <!-- ===== BATCH 09 ===== -->
+<!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">对比度级别</string>
+    <string name="help_topic_extra_large_text_title">超大文字</string>
+    <string name="help_topic_reduce_transparency_title">降低透明度</string>
+    <string name="help_topic_color_blind_modes_title">色盲模式</string>
+    <string name="help_topic_line_spacing_title">行间距</string>
+    <string name="help_topic_paragraph_spacing_title">段间距</string>
+    <string name="help_topic_letter_spacing_title">字间距</string>
+    <string name="help_topic_text_width_title">文本宽度</string>
+    <string name="help_topic_touch_targets_title">增大触控目标</string>
+    <string name="help_topic_reduce_motion_title">减少动效</string>
+    <string name="help_topic_timeout_behavior_title">超时行为</string>
+    <string name="help_topic_simplified_gestures_title">简化手势</string>
+    <string name="help_topic_haptic_feedback_title">触觉反馈</string>
+    <string name="help_topic_data_preservation_title">数据保留</string>
+    <string name="help_topic_simplified_ui_title">简化界面</string>
+    <string name="help_topic_step_indicators_title">步骤指示</string>
+    <string name="help_topic_verbose_descriptions_title">详细描述</string>
+    <string name="help_topic_confirm_actions_title">操作确认</string>
+    <string name="help_topic_reading_level_title">简化阅读级别</string>
+    <string name="help_topic_help_system_title">帮助系统</string>
+    <string name="help_topic_manual_code_entry_title">手动输入代码</string>
+    <string name="help_topic_voice_input_title">语音输入</string>
+    <string name="help_topic_screen_reader_title">屏幕阅读器支持</string>
+    <string name="help_topic_accessibility_profiles_title">快速设置配置</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">控制文字与背景之间的对比度：\n\n• 标准：默认应用配色\n• 高（AA）：4.5:1 对比度\n• 最高（AAA）：7:1+ 对比度\n\n更高的对比度让文字更易阅读，尤其在强光环境下或对视力较弱的用户更有帮助。\n\n达到 WCAG AAA 标准需要使用最高对比度。</string>
+    <string name="help_topic_extra_large_text_text">将应用内所有文字放大 50%。\n\n适合以下用户：\n• 低视力\n• 年龄相关的视力变化\n• 阅读困难\n\n可与系统字体大小设置配合使用，灵活度更高。</string>
+    <string name="help_topic_reduce_transparency_text">移除透明叠层和模糊效果。\n\n好处：\n• 更清晰的视觉层次\n• 文字更容易阅读\n• 减少视觉干扰\n• 降低认知负担\n\n建议视力较弱或有认知困难的用户开启此功能。</string>
+    <string name="help_topic_color_blind_modes_text">针对不同类型的色盲调整配色：\n\n• 红色盲（Protanopia）：无法分辨红色\n• 绿色盲（Deuteranopia）：无法分辨绿色\n• 蓝色盲（Tritanopia）：无法分辨蓝色\n• 全色盲（Monochrome）：完全无法分辨颜色\n\n每种模式都经过精心选色，确保该类型色觉缺陷的用户能够区分。</string>
+    <string name="help_topic_line_spacing_text">调整文本行间距（1.0x - 2.0x）。\n\n• 默认：1.0x\n• AAA 合规：1.5x 及以上\n\n增大行间距可以：\n• 提高阅读理解\n• 减轻眼睛疲劳\n• 帮助阅读障碍用户\n• 让大段文字不那么压迫</string>
+    <string name="help_topic_paragraph_spacing_text">调整段落间距（1.0x - 3.0x）。\n\n• 默认：1.0x\n• AAA 合规：2.0x 及以上\n\n增大段间距可以：\n• 清晰区分不同内容\n• 改善视觉结构\n• 降低认知负担\n• 帮助保持阅读位置</string>
+    <string name="help_topic_letter_spacing_text">调整字符间距（0.0em - 0.2em）。\n\n• 默认：0.0em\n• AAA 合规：0.12em 及以上\n\n增大字符间距可以：\n• 让每个字符更清晰可辨\n• 帮助阅读障碍用户\n• 提高阅读准确性\n• 减少字符混淆</string>
+    <string name="help_topic_text_width_text">限制每行文字长度以方便阅读：\n\n• 全宽：无限制\n• 舒适：80 个字符（推荐）\n• 窄版：60 个字符\n\n研究表明，每行 60 至 80 个字符是最佳阅读宽度。较短的行可以减少眼球移动，提高理解力。</string>
+    <string name="help_topic_touch_targets_text">将最小触控目标尺寸增大至 60dp（原为 44dp）。\n\n好处：\n• 更容易点击按钮和控件\n• 减少误触\n• 方便行动不便的用户\n• 更适合单手操作\n\nWCAG AAA 要求最小 60dp。</string>
+    <string name="help_topic_reduce_motion_text">移除所有动画和过渡效果。\n\n好处：\n• 防止晕动症\n• 减少分心\n• 降低认知负担\n• 提高专注力\n\n建议以下用户开启：\n• 前庭功能障碍\n• 注意力困难\n• 动态敏感</string>
+    <string name="help_topic_timeout_behavior_text">控制验证页面的自动超时：\n\n• 无超时（AAA）：无时间限制\n• 标准：30 秒\n• 延长：60 秒\n\nWCAG AAA 要求为需要更多时间完成操作的用户提供无超时选项。\n\n超时前会自动保存表单数据。</string>
+    <string name="help_topic_simplified_gestures_text">用简单操作替代复杂手势：\n\n• 滑动 → 点击按钮\n• 长按 → 普通点击后确认\n• 双指缩放 → 按钮操作\n\n适合以下用户：\n• 行动不便\n• 手部震颤\n• 灵活性有限\n• 触屏操作困难</string>
+    <string name="help_topic_haptic_feedback_text">提供振动触觉反馈。\n\n好处：\n• 确认按钮按下\n• 提示错误发生\n• 提供触觉确认\n\n以下用户可以关闭此功能：\n• 觉得振动令人分心\n• 有感官敏感问题\n• 偏好静音操作</string>
+    <string name="help_topic_data_preservation_text">超时前自动保存表单数据。\n\n功能：\n• 超时前 10 秒发出提醒\n• 可选择保存或丢弃数据\n• 返回时自动恢复\n• 数据保留 24 小时\n\n确保您在需要额外时间或遇到中断时不会丢失数据。</string>
+    <string name="help_topic_simplified_ui_text">降低视觉复杂度：\n\n• 同时显示更少的界面元素\n• 按钮更大更清晰\n• 更多留白\n• 简化布局\n\n好处：\n• 更容易理解\n• 不会感到压迫\n• 更易集中注意力\n• 降低认知负担</string>
+    <string name="help_topic_step_indicators_text">显示多步骤流程的进度。\n\n显示内容：\n• 当前步骤编号\n• 总步骤数\n• 进度可视化\n\n好处：\n• 减少焦虑感\n• 明确预期\n• 帮助保持方向感\n• 展示完成进度</string>
+    <string name="help_topic_verbose_descriptions_text">提供额外的说明和解释：\n\n• 更完整的按钮标签\n• 更详细的操作指引\n• 更多提示信息\n• 更清晰的错误消息\n\n帮助用户：\n• 在操作前了解功能\n• 避免失误\n• 熟悉应用功能\n• 建立使用信心</string>
+    <string name="help_topic_confirm_actions_text">重要操作需要确认：\n\n• 删除凭证\n• 更改设置\n• 清除数据\n\nWCAG AAA 要求所有破坏性操作都需确认。\n\n好处：\n• 防止误操作\n• 操作前可以再次检查\n• 减少焦虑\n• 给您改正的机会</string>
+    <string name="help_topic_reading_level_text">使用更简单的语言（初中阅读水平）：\n\n• 更短的句子\n• 用常见词代替专业术语\n• 清晰直接的表达\n• 更少的技术用语\n\n启用后符合 WCAG AAA 标准。\n\n好处：\n• 更容易理解\n• 更快速地领会\n• 更适合非母语用户\n• 降低认知负担</string>
+    <string name="help_topic_help_system_text">应用内各处均可获取相关帮助。\n\n功能：\n• 27 个帮助主题\n• 可搜索的帮助中心\n• 相关主题导航\n• 技术术语表\n\n获取帮助的入口：\n• 设置页面\n• 复杂功能处\n• 错误消息中\n• 任何显示帮助图标的位置</string>
+    <string name="help_topic_manual_code_entry_text">手动输入 QR 码数据，无需扫码。\n\n好处：\n• 无法使用相机时也能操作\n• 方便行动不便的用户\n• 光线不足时更好用\n• 无需稳定握持手机\n\n这是相机扫码之外的替代方式。</string>
+    <string name="help_topic_voice_input_text">用语音代替打字来输入文字。\n\n好处：\n• 解放双手\n• 比打字更快\n• 方便行动不便的用户\n• 减少重复性劳损\n\n使用您设备自带的语音识别功能。</string>
+    <string name="help_topic_screen_reader_text">全面支持 TalkBack 屏幕阅读器。\n\n功能：\n• 所有界面元素均有标注\n• 正确的标题层级结构\n• 合理的导航顺序\n• 复杂操作提供自定义提示\n\n检测到 TalkBack 后，应用会自动启用：\n• 详细描述\n• 增大触控目标</string>
+    <string name="help_topic_accessibility_profiles_text">预设的无障碍配置方案：\n\n• 视力障碍：高对比度、大文字、触觉反馈\n• 行动障碍：增大触控目标、延长超时、操作确认\n• 认知障碍：简化界面、步骤指示、详细描述\n• 长者：大文字、大目标、简化界面、减少动效\n• 默认：重置所有设置\n\n每种方案会启用对该类用户最有帮助的设置。应用方案后您还可以进一步自定义。</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">年龄验证</string>
+    <string name="content_age_verification_explanation">正在使用零知识证明安全地验证您的年龄，请稍候。您的出生日期不会被分享给验证方。</string>
+    <string name="content_age_verification_instructions">将相机对准验证 QR 码。检测到 QR 码后会自动扫描。</string>
+    <string name="content_age_verification_success">年龄验证成功。验证方确认您符合年龄要求，但无法得知您的实际出生日期。</string>
+    <string name="content_age_verification_failed">验证失败。请重新扫描 QR 码，或使用手动输入代码。</string>
+    <string name="content_credential_issuance_title">凭证签发</string>
+    <string name="content_credential_issuance_explanation">扫描签发机构提供的 QR 码以获取您的数字年龄凭证。</string>
+    <string name="content_credential_issuance_instructions">将相机对准工作人员出示的签发 QR 码。凭证将在您的设备上生成。</string>
+    <string name="content_credential_issuance_success">凭证创建成功。您现在可以使用此凭证进行年龄验证。</string>
+    <string name="content_credential_description">凭证是一种经过加密签名的身份证明，可实现隐私保护型验证。</string>
+    <string name="content_zero_knowledge_explanation">零知识证明让您可以证明自己符合年龄要求，而无需透露实际年龄。</string>
+    <string name="content_setup_proving_key">正在下载零知识证明生成所需的加密证明密钥</string>
+    <string name="content_processing_challenge">正在处理验证质询</string>
+    <string name="content_creating_proof">正在创建零知识年龄证明</string>
+    <string name="content_submitting_proof">正在向验证方提交证明</string>
+    <string name="content_error_no_credential">无可用凭证。请先前往签发机构获取凭证。</string>
+    <string name="content_error_network_failed">网络连接失败。请检查您的网络连接后重试。</string>
+    <string name="content_error_invalid_qr">QR 码无效。请确认您扫描的是正确的验证码。</string>
+    <string name="content_error_verification_failed">验证失败。服务器无法验证您的证明。</string>
+    <string name="content_officer_authentication_title">工作人员身份认证</string>
+    <string name="content_officer_issuance_title">凭证签发</string>
+    <string name="content_officer_dob_prompt">请输入申请人官方身份证件上的出生日期。</string>
+    <string name="content_onboarding_welcome">欢迎使用 Provii 钱包，您的隐私保护型数字年龄验证方案。</string>
+    <string name="content_onboarding_privacy">您的出生日期安全存储在您的设备上，不会发送给任何验证方。</string>
+    <string name="content_onboarding_get_started">请前往签发机构获取您的数字年龄凭证，即可开始使用。</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">验证年龄</string>
+    <string name="content_age_verification_explanation_simplified">正在验证您的年龄。不会看到或分享您的生日。</string>
+    <string name="content_age_verification_instructions_simplified">把相机对准 QR 码。会自动扫描。</string>
+    <string name="content_age_verification_success_simplified">成功！网站已确认您达到年龄要求，但不知道您的生日。</string>
+    <string name="content_age_verification_failed_simplified">没有成功。请再试一次，或手动输入代码。</string>
+    <string name="content_credential_issuance_title_simplified">领取数字身份卡</string>
+    <string name="content_credential_issuance_explanation_simplified">扫描办事处提供的码，领取您的数字身份卡。</string>
+    <string name="content_credential_issuance_instructions_simplified">把相机对准那个码。身份卡会保存在您的手机上。</string>
+    <string name="content_credential_issuance_success_simplified">完成！您现在可以用数字身份卡来证明年龄了。</string>
+    <string name="content_credential_description_simplified">凭证就像一张数字身份卡，能证明您的身份而不泄露隐私。</string>
+    <string name="content_zero_knowledge_explanation_simplified">您可以证明自己够年龄，而不用告诉别人真实年龄。</string>
+    <string name="content_setup_proving_key_simplified">正在下载应用运行所需的安全文件</string>
+    <string name="content_processing_challenge_simplified">正在读取年龄验证请求</string>
+    <string name="content_creating_proof_simplified">正在生成年龄证明</string>
+    <string name="content_submitting_proof_simplified">正在发送证明到网站</string>
+    <string name="content_error_no_credential_simplified">您还没有身份卡。请先去办事处领取一个。</string>
+    <string name="content_error_network_failed_simplified">无法连接网络。请检查 Wi-Fi 或数据连接后重试。</string>
+    <string name="content_error_invalid_qr_simplified">这个码好像不对。请确认您扫的是正确的码。</string>
+    <string name="content_error_verification_failed_simplified">没有成功。网站无法验证您的证明。请再试一次。</string>
+    <string name="content_officer_authentication_title_simplified">工作人员登录</string>
+    <string name="content_officer_issuance_title_simplified">创建身份卡</string>
+    <string name="content_officer_dob_prompt_simplified">请输入申请人身份证件上的生日。</string>
+    <string name="content_onboarding_welcome_simplified">欢迎使用 Provii 钱包，安全地证明您的年龄。</string>
+    <string name="content_onboarding_privacy_simplified">您的生日只存在手机上。其他人看不到。</string>
+    <string name="content_onboarding_get_started_simplified">请先去办事处领取您的数字身份卡，然后就可以开始了。</string>
+
+    <!-- ===== BATCH 10 ===== -->
+<!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">未连接 YubiKey</string>
+    <string name="yubikey_error_timeout">等待 YubiKey 触摸超时。请在指示灯闪烁时触摸密钥。</string>
+    <string name="yubikey_error_not_supported">此 YubiKey 插槽未配置质询-响应功能</string>
+    <string name="yubikey_error_no_slot">插槽 2 未配置 HMAC（基于哈希的消息认证码）SHA1 质询-响应</string>
+    <string name="yubikey_error_hmac_failed">HMAC（基于哈希的消息认证码）计算失败：%s</string>
+    <string name="yubikey_error_session_failed">无法连接 YubiKey：%s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">钱包未初始化</string>
+    <string name="wallet_error_proving_key_not_found">未找到证明密钥，请重新下载</string>
+    <string name="wallet_error_proving_key_not_readable">无法读取证明密钥文件</string>
+    <string name="wallet_error_out_of_memory">内存不足，请重启应用</string>
+    <string name="wallet_error_prover_error">证明器错误：%s</string>
+    <string name="wallet_error_ffi_error">FFI 错误：%s</string>
+    <string name="wallet_error_prover_init_failed">证明器初始化失败：%s</string>
+    <string name="wallet_error_prover_verification_failed">证明器初始化验证失败</string>
+    <string name="wallet_error_verifier_url_update_failed">验证方 URL（网址）更新失败！预期为 %1$s，实际为 %2$s</string>
+    <string name="wallet_error_wallet_still_null">初始化后钱包仍为空</string>
+    <string name="wallet_error_credential_not_found">未找到凭证</string>
+    <string name="wallet_error_credential_access_failed">无法访问凭证：%s</string>
+    <string name="wallet_error_invalid_format">格式无效：%s</string>
+    <string name="wallet_error_not_initialized_short">证明器未初始化</string>
+    <string name="wallet_error_proving_key_unavailable">证明密钥不可用，需要完成设置。</string>
+    <string name="wallet_error_storage_init_failed">存储初始化失败</string>
+    <string name="wallet_error_biometric_unavailable">生物识别身份验证不可用</string>
+    <string name="wallet_error_auth_failed">身份验证失败</string>
+    <string name="wallet_error_sandbox_disabled">启用沙盒模式以生成测试凭证</string>
+    <string name="wallet_error_fetch_sandbox_credentials">无法获取沙盒凭证，请检查网络连接。</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">需要身份验证</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">验证身份以创建年龄证明</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">访问安全存储</string>
+    <string name="keystore_biometric_prompt_cancel">取消</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s，%2$s，已展开，显示完整许可证文本</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s，%2$s，已折叠，%3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">无</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">移动数据</string>
+    <string name="network_type_ethernet">以太网</string>
+    <string name="network_type_unknown">未知</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">快速响应码（QR）</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">个人识别码（PIN）</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">出生日期（DOB）</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">身份标识（ID）</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">用户界面（UI）</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">统一资源定位符（URL）</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">应用程序编程接口（API）</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">暂停动画</string>
+    <string name="animation_resume_animations">恢复动画</string>
+    <string name="animation_pause_button_text">暂停</string>
+    <string name="animation_resume_button_text">恢复</string>
+    <string name="animation_toggles_playback_hint">切换动画播放</string>
+    <string name="animation_paused_announcement">动画已暂停</string>
+    <string name="animation_resumed_announcement">动画已恢复</string>
+    <string name="animation_active_count">%d 个活跃动画</string>
+    <string name="animation_loading_default">加载中</string>
+    <string name="animation_please_wait">请稍候，操作正在进行</string>
+    <string name="animation_percent_complete">已完成 %d%%</string>
+    <string name="animation_loading_in_progress">进行中</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">键盘快捷键</string>
+    <string name="keyboard_shortcuts_done">完成</string>
+    <string name="keyboard_shortcuts_app_section">应用快捷键</string>
+    <string name="keyboard_shortcuts_navigation_section">导航</string>
+    <string name="keyboard_shortcuts_tips_section">提示</string>
+    <string name="keyboard_shortcuts_navigation_footer">使用外接键盘时，这些导航键在整个应用中均可使用</string>
+    <string name="keyboard_shortcuts_tip_external">完全支持外接 Bluetooth 和 USB 键盘</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">使用方向键在列表项之间导航</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">按住 Ctrl 可查看当前界面的可用快捷键</string>
+    <string name="keyboard_shortcuts_tip_a11y">本应用所有功能均可通过键盘操作</string>
+    <string name="keyboard_shortcut_description_label">%1$s：%2$s。%3$s</string>
+    <string name="keyboard_shortcuts_dismiss">关闭键盘快捷键</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">设置</string>
+    <string name="keyboard_shortcut_label_accessibility">无障碍</string>
+    <string name="keyboard_shortcut_label_help">帮助中心</string>
+    <string name="keyboard_shortcut_label_add_credential">添加凭证</string>
+    <string name="keyboard_shortcut_label_verify">验证</string>
+    <string name="keyboard_shortcut_label_shortcuts">快捷键</string>
+    <string name="keyboard_shortcut_desc_settings">打开设置</string>
+    <string name="keyboard_shortcut_desc_accessibility">无障碍设置</string>
+    <string name="keyboard_shortcut_desc_help">帮助中心</string>
+    <string name="keyboard_shortcut_desc_add_credential">添加凭证</string>
+    <string name="keyboard_shortcut_desc_verify">开始验证</string>
+    <string name="keyboard_shortcut_desc_shortcuts">键盘快捷键</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">返回/关闭</string>
+    <string name="keyboard_shortcut_nav_back_desc">关闭当前界面或对话框</string>
+    <string name="keyboard_shortcut_nav_next">下一栏</string>
+    <string name="keyboard_shortcut_nav_next_desc">将焦点移至下一个交互元素</string>
+    <string name="keyboard_shortcut_nav_prev">上一栏</string>
+    <string name="keyboard_shortcut_nav_prev_desc">将焦点移至上一个交互元素</string>
+    <string name="keyboard_shortcut_nav_submit">提交/继续</string>
+    <string name="keyboard_shortcut_nav_submit_desc">激活当前按钮或提交表单</string>
+    <string name="keyboard_shortcut_nav_activate">激活按钮</string>
+    <string name="keyboard_shortcut_nav_activate_desc">激活当前聚焦的按钮或开关</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">对话框已打开。按 Escape 键关闭，按 Enter 键确认。</string>
+    <string name="modal_closed_announcement">对话框已关闭</string>
+    <string name="modal_button_primary_label">%s（主要操作）</string>
+    <string name="modal_button_cancel_label">%s（取消）</string>
+    <string name="modal_button_destructive_label">%s（危险操作）</string>
+    <string name="modal_button_primary_hint">双击确认，或按 Enter 键</string>
+    <string name="modal_button_cancel_hint">双击取消，或按 Escape 键</string>
+    <string name="modal_button_destructive_hint">双击执行危险操作</string>
+    <string name="modal_button_secondary_hint">双击执行操作</string>
+    <string name="modal_confirm">确认</string>
+    <string name="modal_cancel">取消</string>
+    <string name="modal_delete">删除</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">删除 %1$s</string>
+    <string name="a11y_edit_nickname_for">编辑 %1$s 的昵称</string>
+    <string name="accessibility_attestation_scan_back">返回</string>
+    <string name="attestation_replace_confirm">替换</string>
+    <string name="attestation_replace_primary_message">您已拥有一份个人凭证。创建新凭证将替换现有凭证。此操作无法撤销。</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">替换现有凭证？</string>
+    <string name="attestation_scan_error_empty">QR 码为空</string>
+    <string name="attestation_scan_instruction">请将摄像头对准工作人员出示的 QR 码</string>
+    <string name="attestation_scan_invalid_qr">此 QR 码不包含证明数据</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">扫描证明</string>
+    <string name="attestation_scan_wrong_type_toast">这是验证用 QR 码，并非凭证 QR 码</string>
+    <string name="biometric_required_message">本应用需要屏幕锁定（PIN、图案或生物识别）才能安全存储凭证。请先在设备的安全设置中进行设置后再继续。</string>
+    <string name="biometric_required_open_settings">打开安全设置</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">需要屏幕锁定</string>
+    <string name="challenge_sandbox_prompt_announcement">已收到沙盒挑战。请选择是启用沙盒模式并继续，还是拒绝该挑战。</string>
+    <string name="challenge_sandbox_prompt_body">该挑战由沙盒验证方发起。除非您在本钱包中启用沙盒模式，否则该挑战不会成功。</string>
+    <string name="challenge_sandbox_prompt_primary">启用沙盒并继续</string>
+    <string name="challenge_sandbox_prompt_secondary">拒绝挑战</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">已收到沙盒挑战</string>
+    <string name="credential_detail_nickname_error">保存昵称失败</string>
+    <string name="credential_list_managed_count">%1$d / %2$d</string>
+    <string name="credential_picker_count_shown">显示 %1$d 份凭证</string>
+    <string name="credential_picker_filter_clear">清除筛选</string>
+    <string name="credential_picker_filter_label">按名称筛选凭证</string>
+    <string name="credential_picker_filter_placeholder">筛选凭证</string>
+    <string name="credential_picker_no_results">没有匹配的凭证</string>
+    <string name="credential_picker_section_managed">代管凭证</string>
+    <string name="credential_picker_section_me">本人</string>
+    <string name="credential_picker_subtitle">请选择被验证人。</string>
+    <string name="credential_row_action_delete">删除</string>
+    <string name="credential_row_action_edit">编辑昵称</string>
+    <string name="credential_row_overflow_menu">凭证选项</string>
+    <string name="deeplink_sandbox_prompt_announcement">已检测到沙盒链接。请选择是启用沙盒模式并打开链接，还是取消。</string>
+    <string name="deeplink_sandbox_prompt_body">此深度链接仅在您启用本钱包的沙盒模式后才能成功。</string>
+    <string name="deeplink_sandbox_prompt_primary">启用沙盒并打开</string>
+    <string name="deeplink_sandbox_prompt_secondary">取消</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">已检测到沙盒链接</string>
+    <string name="empty_credential_option_find_apps_a11y">查找参与方应用。可以从养老金、银行、电信运营商、健康保险机构，或其他已知您年龄的机构获取凭证。</string>
+    <string name="empty_credential_option_find_apps_desc">从养老金、银行、电信运营商、健康保险机构，或其他已知您年龄的机构获取凭证</string>
+    <string name="empty_credential_option_find_apps_title">查找参与方应用</string>
+    <string name="empty_credential_option_find_locations_a11y">查找附近的网点。携带身份证件亲自到场办理凭证。</string>
+    <string name="empty_credential_option_find_locations_desc">携带身份证件亲自到场办理凭证</string>
+    <string name="empty_credential_option_find_locations_title">查找附近的网点</string>
+    <string name="empty_credential_option_managed_a11y">我在照护他人。为您所照护的人代管凭证。</string>
+    <string name="empty_credential_option_managed_desc">为您所照护的人代管凭证</string>
+    <string name="empty_credential_option_managed_title">我在照护他人</string>
+    <string name="empty_credential_option_scan_a11y">我有 QR 码可扫描。验证方在核验您的身份证件后给您的代码。</string>
+    <string name="empty_credential_option_scan_desc">验证方在核验您的身份证件后给您的代码</string>
+    <string name="empty_credential_option_scan_title">我有 QR 码可扫描</string>
+    <string name="empty_credential_subtitle">请选择获取首份凭证的方式</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">尚无凭证</string>
+    <string name="error_screen_lock_required">需要屏幕锁定（PIN、图案或生物识别）才能安全存储凭证。请先在设备设置中进行设置。</string>
+    <string name="issuers_no_apps_found_description">支持 Provii 的应用还在不断接入，请稍后再来查看</string>
+    <string name="issuers_no_apps_found">尚无参与方应用</string>
+    <string name="issuers_no_locations_found_description">更多网点正在陆续接入，请稍后再来查看</string>
+    <string name="issuers_no_locations_found">未找到网点</string>
+    <string name="managed_credential_explainer_body">如需为您所照护的人办理代管凭证，请一同前往参与方网点。验证方将核验对方的身份证件。在您扫描 QR 码时，系统会询问该凭证是为您本人还是为您所代管的人办理。</string>
+    <string name="managed_credential_explainer_find_location">查找网点</string>
+    <string name="managed_credential_explainer_have_qr">我已有 QR 码</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">代管凭证</string>
+    <string name="sandbox_credential_type">凭证类型</string>
+    <string name="sandbox_managed_credential_saved">代管凭证已保存（%s）</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">沙盒模式已激活。钱包已连接到沙盒服务器。</string>
+    <string name="sandbox_nickname_helper">为这份凭证设置一个名称，便于在钱包中识别。</string>
+    <string name="sandbox_nickname_label">昵称</string>
+    <string name="sandbox_nickname_placeholder">例如：小雨</string>
+    <string name="sandbox_nickname_required">代管凭证必须填写昵称</string>
+    <string name="sandbox_type_managed_credential">代管凭证</string>
+    <string name="sandbox_type_your_credential">您的凭证</string>
+    <string name="title_find_apps">查找参与方应用</string>
+    <string name="title_find_locations">查找网点</string>
+    <string name="verification_go_to_attestation">获取凭证</string>
+    <string name="verification_wrong_qr_type_message">此 QR 码用于获取新凭证，并非用于年龄验证。是否前往凭证证明页面？</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">检测到证明 QR 码</string>
+    <string name="walkthrough_back">上一步</string>
+    <string name="walkthrough_get_started">开始使用</string>
+    <string name="walkthrough_next">下一步</string>
+    <string name="walkthrough_page_indicator">第 %1$d 页，共 %2$d 页</string>
+    <string name="walkthrough_page1_body">您的凭证仅包含您的年龄信息，不含其他内容。不含姓名，不含地址，不含身份信息。\n\n它能证明您高于（或低于）某个年龄，而无须透露出生日期。</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">什么是凭证？</string>
+    <string name="walkthrough_page2_body">您可以通过已知您年龄的机构所提供的应用来获取凭证，例如银行或养老金机构。由于这些机构已核验过您的年龄，无须再次共享任何信息。\n\n您也可以携带能证明出生日期的身份证件，前往参与方网点办理。出生日期会被现场核验，用于生成凭证后立即销毁。签发机构看不到您的凭证，您的身份也不会与凭证产生关联。</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">如何获取凭证？</string>
+    <string name="walkthrough_page3_body">如果您在照护需要年龄凭证的人，您可以为对方办理凭证，并在自己的设备上代管。\n\n请携带能证明对方出生日期的身份证件，一同前往参与方网点。在您扫描 QR 码时，系统会询问该凭证是为您本人还是为您所代管的人办理。\n\n请添加昵称，以便区分对方的多份凭证。</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">受抚养人</string>
+    <string name="walkthrough_page4_body">需要验证您年龄的应用可以将挑战直接发送至您的 Provii 钱包。您可以选择使用哪份凭证。验证成功后，您将返回至请求方应用，以已验证状态继续操作。\n\n您也可能在另一台设备上看到 QR 码，或在手机浏览器中收到直达钱包的链接。此外还提供短代码方式以便于无障碍使用。\n\n全程不会共享任何个人信息。仅返回是否满足年龄要求的肯定或否定答复。</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">验证如何运作？</string>
+    <string name="walkthrough_page5_body">第一步是通过参与方应用，或在附近的网点获取一份凭证。\n\n之后，您可以随时验证年龄，无须共享任何个人信息。您也可以为所照护的人代管凭证。</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">一切就绪</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">跳过</string>
+
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

@@ -1,0 +1,273 @@
+{
+  "description": "Golden test vectors for HmacSigner. Generated from known HMAC-SHA256 computations. Both platforms must produce identical output for each vector.",
+  "secret_hex": "0102030405060708091011121314151617181920212223242526272829303132",
+  "hmac_sha256_hex": [
+    {
+      "id": "simple_ascii",
+      "data": "hello world",
+      "expected": "fb0dfed768cd9ca40262f2febbd378c9c101cdca3c7cf3e38f4aec186f92bbc4"
+    },
+    {
+      "id": "empty_string",
+      "data": "",
+      "expected": "6270635881765485f11a435381f386f90a5add5d5fcab1d0976f7e6af5021c1f"
+    },
+    {
+      "id": "unicode_chars",
+      "data": "hello \u00e9\u00e0\u00fc\u00f1 world",
+      "expected": "773f0521bd048d135fb205ffc5819b84a4d1483bdf2307ce575ad6445f367883"
+    },
+    {
+      "id": "canonical_format",
+      "data": "1700000000:POST:/v1/issuance/start:{\"actor\":\"officer\"}:abc123",
+      "expected": "5d692a8a4319c76be8e8f1b8c6d80c2964c7eecbfa3f1f3eaf660762114a2c6f"
+    },
+    {
+      "id": "newline_in_data",
+      "data": "hello\nworld",
+      "expected": "7cc0315dcf11a84c55032c3903394afe3b1584239900e1db4be9d17a60716294"
+    }
+  ],
+  "canonicalStartJson": [
+    {
+      "id": "basic_nulls",
+      "actor": "officer",
+      "format": "yubikey",
+      "keyId": "key-001",
+      "ts": 1700000000,
+      "schema": null,
+      "validityDays": null,
+      "kid": null,
+      "expected": "{\"actor\":\"officer\",\"authorizer\":{\"format\":\"yubikey\",\"key_id\":\"key-001\",\"timestamp\":1700000000},\"schema\":null,\"validity_days\":null,\"kid\":null}"
+    },
+    {
+      "id": "all_fields",
+      "actor": "client",
+      "format": "client",
+      "keyId": "key-002",
+      "ts": 1700000001,
+      "schema": "provii.age/1",
+      "validityDays": 365,
+      "kid": "kid-abc",
+      "expected": "{\"actor\":\"client\",\"authorizer\":{\"format\":\"client\",\"key_id\":\"key-002\",\"timestamp\":1700000001},\"schema\":\"provii.age/1\",\"validity_days\":365,\"kid\":\"kid-abc\"}"
+    },
+    {
+      "id": "spaces_in_values",
+      "actor": "test actor",
+      "format": "yubikey",
+      "keyId": "key 003",
+      "ts": 1700000002,
+      "schema": "my schema/1",
+      "validityDays": 30,
+      "kid": "kid with spaces",
+      "expected": "{\"actor\":\"test actor\",\"authorizer\":{\"format\":\"yubikey\",\"key_id\":\"key 003\",\"timestamp\":1700000002},\"schema\":\"my schema/1\",\"validity_days\":30,\"kid\":\"kid with spaces\"}"
+    },
+    {
+      "id": "backslash_in_values",
+      "actor": "actor\\with\\backslash",
+      "format": "yubikey",
+      "keyId": "key\\id",
+      "ts": 1700000003,
+      "schema": null,
+      "validityDays": null,
+      "kid": null,
+      "expected": "{\"actor\":\"actor\\\\with\\\\backslash\",\"authorizer\":{\"format\":\"yubikey\",\"key_id\":\"key\\\\id\",\"timestamp\":1700000003},\"schema\":null,\"validity_days\":null,\"kid\":null}"
+    },
+    {
+      "id": "quotes_in_values",
+      "actor": "actor\"quoted",
+      "format": "yubikey",
+      "keyId": "key\"id",
+      "ts": 1700000004,
+      "schema": null,
+      "validityDays": null,
+      "kid": null,
+      "expected": "{\"actor\":\"actor\\\"quoted\",\"authorizer\":{\"format\":\"yubikey\",\"key_id\":\"key\\\"id\",\"timestamp\":1700000004},\"schema\":null,\"validity_days\":null,\"kid\":null}"
+    }
+  ],
+  "canonicalSignJson": [
+    {
+      "id": "basic",
+      "sessionId": "sess-abc123",
+      "commitmentB64": "dGVzdCBjb21taXRtZW50",
+      "format": "yubikey",
+      "keyId": "key-001",
+      "ts": 1700000000,
+      "expected": "{\"session_id\":\"sess-abc123\",\"commitment\":\"dGVzdCBjb21taXRtZW50\",\"authorizer\":{\"format\":\"yubikey\",\"key_id\":\"key-001\",\"timestamp\":1700000000}}"
+    },
+    {
+      "id": "base64_with_special",
+      "sessionId": "sess-xyz/789+padding==",
+      "commitmentB64": "SGVsbG8gV29ybGQ=",
+      "format": "client",
+      "keyId": "key-002",
+      "ts": 1700000005,
+      "expected": "{\"session_id\":\"sess-xyz/789+padding==\",\"commitment\":\"SGVsbG8gV29ybGQ=\",\"authorizer\":{\"format\":\"client\",\"key_id\":\"key-002\",\"timestamp\":1700000005}}"
+    },
+    {
+      "id": "spaces_in_session_id",
+      "sessionId": "sess with spaces",
+      "commitmentB64": "YWJj",
+      "format": "yubikey",
+      "keyId": "key 003",
+      "ts": 1700000006,
+      "expected": "{\"session_id\":\"sess with spaces\",\"commitment\":\"YWJj\",\"authorizer\":{\"format\":\"yubikey\",\"key_id\":\"key 003\",\"timestamp\":1700000006}}"
+    },
+    {
+      "id": "unicode_commitment",
+      "sessionId": "sess-uni",
+      "commitmentB64": "w6nDoCDDvA==",
+      "format": "client",
+      "keyId": "key-004",
+      "ts": 1700000007,
+      "expected": "{\"session_id\":\"sess-uni\",\"commitment\":\"w6nDoCDDvA==\",\"authorizer\":{\"format\":\"client\",\"key_id\":\"key-004\",\"timestamp\":1700000007}}"
+    }
+  ],
+  "canonicalAttestationJson": [
+    {
+      "id": "basic",
+      "dobDays": 7305,
+      "format": "yubikey",
+      "keyId": "key-001",
+      "ts": 1700000000,
+      "expected": "{\"dob_days\":7305,\"authorizer\":{\"format\":\"yubikey\",\"key_id\":\"key-001\",\"timestamp\":1700000000}}"
+    },
+    {
+      "id": "negative_dob",
+      "dobDays": -365,
+      "format": "client",
+      "keyId": "key-002",
+      "ts": 1700000008,
+      "expected": "{\"dob_days\":-365,\"authorizer\":{\"format\":\"client\",\"key_id\":\"key-002\",\"timestamp\":1700000008}}"
+    },
+    {
+      "id": "zero_dob",
+      "dobDays": 0,
+      "format": "yubikey",
+      "keyId": "key-003",
+      "ts": 1700000009,
+      "expected": "{\"dob_days\":0,\"authorizer\":{\"format\":\"yubikey\",\"key_id\":\"key-003\",\"timestamp\":1700000009}}"
+    },
+    {
+      "id": "spaces_in_key_id",
+      "dobDays": 18000,
+      "format": "client",
+      "keyId": "key with spaces",
+      "ts": 1700000010,
+      "expected": "{\"dob_days\":18000,\"authorizer\":{\"format\":\"client\",\"key_id\":\"key with spaces\",\"timestamp\":1700000010}}"
+    }
+  ],
+  "canonicalMessage": [
+    {
+      "id": "issuance_start",
+      "ts": 1700000000,
+      "method": "POST",
+      "path": "/v1/issuance/start",
+      "jsonWithoutHmac": "{\"actor\":\"officer\",\"authorizer\":{\"format\":\"yubikey\",\"key_id\":\"key-001\",\"timestamp\":1700000000},\"schema\":null,\"validity_days\":null,\"kid\":null}",
+      "nonce": "aaaa1111bbbb2222cccc3333dddd4444eeee5555ffff6666000011112222abcd",
+      "expected": "1700000000:POST:/v1/issuance/start:{\"actor\":\"officer\",\"authorizer\":{\"format\":\"yubikey\",\"key_id\":\"key-001\",\"timestamp\":1700000000},\"schema\":null,\"validity_days\":null,\"kid\":null}:aaaa1111bbbb2222cccc3333dddd4444eeee5555ffff6666000011112222abcd"
+    },
+    {
+      "id": "issuance_blind",
+      "ts": 1700000001,
+      "method": "POST",
+      "path": "/v1/issuance/blind",
+      "jsonWithoutHmac": "{\"session_id\":\"sess-abc123\",\"commitment\":\"dGVzdA==\",\"authorizer\":{\"format\":\"client\",\"key_id\":\"key-002\",\"timestamp\":1700000001}}",
+      "nonce": "1111222233334444555566667777888899990000aaaabbbbccccddddeeeeffff",
+      "expected": "1700000001:POST:/v1/issuance/blind:{\"session_id\":\"sess-abc123\",\"commitment\":\"dGVzdA==\",\"authorizer\":{\"format\":\"client\",\"key_id\":\"key-002\",\"timestamp\":1700000001}}:1111222233334444555566667777888899990000aaaabbbbccccddddeeeeffff"
+    },
+    {
+      "id": "attestation_create",
+      "ts": 1700000002,
+      "method": "POST",
+      "path": "/v1/attestation/create",
+      "jsonWithoutHmac": "{\"dob_days\":7305,\"authorizer\":{\"format\":\"yubikey\",\"key_id\":\"key-001\",\"timestamp\":1700000002}}",
+      "nonce": "abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789",
+      "expected": "1700000002:POST:/v1/attestation/create:{\"dob_days\":7305,\"authorizer\":{\"format\":\"yubikey\",\"key_id\":\"key-001\",\"timestamp\":1700000002}}:abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789"
+    },
+    {
+      "id": "lowercase_method",
+      "ts": 1700000003,
+      "method": "post",
+      "path": "/v1/test",
+      "jsonWithoutHmac": "{}",
+      "nonce": "0000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "1700000003:POST:/v1/test:{}:0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "buildAuthorizerJson": [
+    {
+      "id": "basic",
+      "format": "yubikey",
+      "keyId": "key-001",
+      "timestamp": 1700000000,
+      "hmac": "abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
+      "nonce": "1111222233334444555566667777888899990000aaaabbbbccccddddeeeeffff",
+      "expected": "{\"format\":\"yubikey\",\"keyId\":\"key-001\",\"timestamp\":1700000000,\"hmac\":\"abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890\",\"nonce\":\"1111222233334444555566667777888899990000aaaabbbbccccddddeeeeffff\"}"
+    },
+    {
+      "id": "client_format",
+      "format": "client",
+      "keyId": "key-002",
+      "timestamp": 1700000001,
+      "hmac": "0000000000000000000000000000000000000000000000000000000000000000",
+      "nonce": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "expected": "{\"format\":\"client\",\"keyId\":\"key-002\",\"timestamp\":1700000001,\"hmac\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"nonce\":\"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\"}"
+    },
+    {
+      "id": "spaces_in_key_id",
+      "format": "yubikey",
+      "keyId": "key with spaces",
+      "timestamp": 1700000002,
+      "hmac": "aabb",
+      "nonce": "ccdd",
+      "expected": "{\"format\":\"yubikey\",\"keyId\":\"key with spaces\",\"timestamp\":1700000002,\"hmac\":\"aabb\",\"nonce\":\"ccdd\"}"
+    },
+    {
+      "id": "backslash_in_values",
+      "format": "yubi\\key",
+      "keyId": "key\\001",
+      "timestamp": 1700000003,
+      "hmac": "1234",
+      "nonce": "5678",
+      "expected": "{\"format\":\"yubi\\\\key\",\"keyId\":\"key\\\\001\",\"timestamp\":1700000003,\"hmac\":\"1234\",\"nonce\":\"5678\"}"
+    }
+  ],
+  "endToEnd": [
+    {
+      "id": "attestation_full_flow",
+      "endpoint": "/v1/attestation/create",
+      "method": "POST",
+      "ts": 1700000000,
+      "nonce": "aaaa1111bbbb2222cccc3333dddd4444eeee5555ffff6666000011112222abcd",
+      "params": {
+        "dobDays": 7305,
+        "format": "client",
+        "keyId": "key-001"
+      },
+      "expectedCanonicalJson": "{\"dob_days\":7305,\"authorizer\":{\"format\":\"client\",\"key_id\":\"key-001\",\"timestamp\":1700000000}}",
+      "expectedCanonicalMessage": "1700000000:POST:/v1/attestation/create:{\"dob_days\":7305,\"authorizer\":{\"format\":\"client\",\"key_id\":\"key-001\",\"timestamp\":1700000000}}:aaaa1111bbbb2222cccc3333dddd4444eeee5555ffff6666000011112222abcd",
+      "expectedHmac": "3090917511d4192972ce797974cb7493fa67b8ffe82324e6f49024cd07fd981f",
+      "expectedAuthorizerJson": "{\"format\":\"client\",\"keyId\":\"key-001\",\"timestamp\":1700000000,\"hmac\":\"3090917511d4192972ce797974cb7493fa67b8ffe82324e6f49024cd07fd981f\",\"nonce\":\"aaaa1111bbbb2222cccc3333dddd4444eeee5555ffff6666000011112222abcd\"}"
+    },
+    {
+      "id": "issuance_start_full_flow",
+      "endpoint": "/v1/issuance/start",
+      "method": "POST",
+      "ts": 1700000001,
+      "nonce": "1111222233334444555566667777888899990000aaaabbbbccccddddeeeeffff",
+      "params": {
+        "actor": "officer",
+        "format": "yubikey",
+        "keyId": "key-002",
+        "schema": "provii.age/1",
+        "validityDays": 365,
+        "kid": "kid-abc"
+      },
+      "expectedCanonicalJson": "{\"actor\":\"officer\",\"authorizer\":{\"format\":\"yubikey\",\"key_id\":\"key-002\",\"timestamp\":1700000001},\"schema\":\"provii.age/1\",\"validity_days\":365,\"kid\":\"kid-abc\"}",
+      "expectedCanonicalMessage": "1700000001:POST:/v1/issuance/start:{\"actor\":\"officer\",\"authorizer\":{\"format\":\"yubikey\",\"key_id\":\"key-002\",\"timestamp\":1700000001},\"schema\":\"provii.age/1\",\"validity_days\":365,\"kid\":\"kid-abc\"}:1111222233334444555566667777888899990000aaaabbbbccccddddeeeeffff",
+      "expectedHmac": "31306b0be0425dce85808409f8a0ab6a4959bf728b180eac0088f789b101845f",
+      "expectedAuthorizerJson": "{\"format\":\"yubikey\",\"keyId\":\"key-002\",\"timestamp\":1700000001,\"hmac\":\"31306b0be0425dce85808409f8a0ab6a4959bf728b180eac0088f789b101845f\",\"nonce\":\"1111222233334444555566667777888899990000aaaabbbbccccddddeeeeffff\"}"
+    }
+  ]
+}

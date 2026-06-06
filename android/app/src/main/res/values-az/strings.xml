@@ -1,0 +1,1577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Parametrlər</string>
+    <string name="title_accessibility">Əlçatanlıq</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Etimadnamələr əldə edin</string>
+    <string name="title_scan_verification_qr">Doğrulama QR kodunu skan edin</string>
+    <string name="title_verifying_age">Yaş doğrulanır</string>
+    <string name="title_age_verified">Yaş doğrulandı</string>
+    <string name="title_verification_failed">Doğrulama uğursuz oldu</string>
+    <string name="title_officer_mode">Məmur rejimi</string>
+    <string name="title_officer_dashboard">Məmur idarə paneli</string>
+    <string name="title_issue_credential">Etimadnamə verin</string>
+    <string name="title_credential_ready">Etimadnamə hazırdır</string>
+    <string name="title_get_your_credential">Etimadnamənizi əldə edin</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Provii Wallet-ə xoş gəlmisiniz</string>
+    <string name="welcome_subtitle">Yaş doğrulaması sadə və təhlükəsiz</string>
+    <string name="welcome_first_credential">İlk yaş doğrulama etimadnamənizi əlavə etməklə başlayın</string>
+    <string name="welcome_description">Sıfır bilik sübutu ilə şəxsi yaş doğrulaması</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Provii Wallet-ə xoş gəlmisiniz</string>
+    <string name="onboarding_language_subtitle">Dil seçimini edin</string>
+    <string name="onboarding_use_english">İngiliscədən istifadə edin</string>
+    <string name="onboarding_use_english_description">Tətbiq dili kimi ingiliscəni seçin</string>
+    <string name="onboarding_rotating_button_description">Dil dəyişdir düyməsi, hazırda göstərilir: %1$s. Fərqli dil seçmək üçün toxunun.</string>
+    <string name="onboarding_change_later">Bunu sonra Parametrlərdən dəyişə bilərsiniz</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Əlçatanlıq</string>
+    <string name="onboarding_accessibility_desc">Mətn ölçüsü, toxunma hədəfləri və ya azaldılmış hərəkət kimi əlçatanlıq xüsusiyyətlərini fərdiləşdirmək istəyirsiniz?</string>
+    <string name="onboarding_use_defaults">Standart parametrlərdən istifadə edin</string>
+    <string name="onboarding_use_defaults_description">Standart əlçatanlıq parametrləri ilə davam edin</string>
+    <string name="onboarding_open_accessibility">Əlçatanlıq parametrləri</string>
+    <string name="onboarding_open_accessibility_description">Tətbiqi fərdiləşdirmək üçün əlçatanlıq parametrlərini açın</string>
+    <string name="onboarding_accessibility_later">Bunu sonra Parametrlərdən dəyişə bilərsiniz</string>
+    <string name="onboarding_accessibility_features_title">Mövcud xüsusiyyətlər:</string>
+    <string name="onboarding_feature_text_size">Daha böyük mətn ölçüləri</string>
+    <string name="onboarding_feature_touch_targets">Artırılmış toxunma hədəfləri</string>
+    <string name="onboarding_feature_reduce_motion">Azaldılmış hərəkət</string>
+    <string name="onboarding_feature_high_contrast">Yüksək kontrast rejimi</string>
+    <string name="onboarding_talkback_detected">TalkBack aşkarlandı</string>
+    <string name="onboarding_talkback_message">Tətbiqdə naviqasiyanıza kömək etmək üçün ətraflı açıqlamalar aktivləşdirdik.</string>
+    <string name="onboarding_continue_to_setup">Quraşdırmaya davam edin</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Bir dəfəlik quraşdırma tələb olunur</string>
+    <string name="setup_download_required">Yükləmə tələb olunur</string>
+    <string name="setup_download_description">Bu tətbiq sıfır bilik sübutları üçün təhlükəsizlik komponentlərini yükləməlidir (təxminən 87 MB).</string>
+    <string name="setup_wifi_recommended">Wi-Fi tövsiyə olunur</string>
+    <string name="setup_checking_status">Quraşdırma vəziyyəti yoxlanılır...</string>
+    <string name="setup_already_setup">Artıq quraşdırılıb!</string>
+    <string name="setup_ready_message">Cüzdanınız təhlükəsiz yaş doğrulaması üçün hazırdır</string>
+    <string name="setup_preparing">Təhlükəsiz doğrulama sistemi hazırlanır...</string>
+    <string name="setup_checking_components">Təhlükəsizlik komponentləri yoxlanılır...</string>
+    <string name="setup_downloading">Təhlükəsizlik komponentləri yüklənir</string>
+    <string name="setup_download_progress_description">%1$d%% tamamlandı (%3$s MB-dən %2$s MB yükləndi)</string>
+    <string name="setup_initializing">Təhlükəsizlik komponentləri işə salınır...</string>
+    <string name="setup_complete">Quraşdırma tamamlandı!</string>
+    <string name="setup_download_info">Bu, şəxsi yaş doğrulaması üçün sıfır bilik sübutlarını aktivləşdirir</string>
+    <string name="setup_one_time_download">Bir dəfəlik yükləmə</string>
+    <string name="setup_stuck_message">Bu gözləniləndən uzun çəkir</string>
+    <string name="setup_stuck_description">Quraşdırma ilişib qala bilər. Yenidən başlatmağa cəhd edin.</string>
+    <string name="setup_restart_message">Tətbiqin yenidən başlaması lazımdır. Bu, bəzən ilk işə salındıqda baş verir.</string>
+    <string name="setup_storage_full">Yaddaş doludur</string>
+    <string name="setup_connection_error">Bağlantı xətası</string>
+    <string name="setup_failed">Quraşdırma uğursuz oldu</string>
+    <string name="setup_initialization_error">İşə salınma xətası</string>
+    <string name="error_storage_init_failed">Saxlama işə salınması uğursuz oldu. Zəhmət olmasa tətbiqi yenidən başladın.</string>
+    <string name="error_storage_init_close_restart">Saxlama işə salınması uğursuz oldu. Zəhmət olmasa tətbiqi bağlayıb yenidən başladın.</string>
+    <string name="setup_free_storage_message">Ən azı 65 MB yer açın və yenidən cəhd edin</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Məxfilik qorunur</string>
+    <string name="setup_privacy_description">Yaş doğrulamanız sıfır bilik sübutlarından istifadə edir. Doğum tarixiniz heç vaxt paylaşılmır.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Etimadnamələrim</string>
+    <string name="credentials_empty">Heç bir etimadnamə saxlanılmayıb</string>
+    <string name="credential_active">Etimadnamə aktivdir</string>
+    <string name="credential_expired">Etimadnamənin müddəti bitib</string>
+    <string name="credential_ready_for_verification">Doğrulama üçün hazırdır</string>
+    <string name="credential_expired_message">Etimadnamənizin müddəti bitib, dəyişdirilməsi lazımdır</string>
+    <string name="credential_stored_successfully">Etimadnamə uğurla saxlandı</string>
+    <string name="credential_stored_description">Yaş etimadnaməniz təhlükəsiz saxlanıldı və istifadəyə hazırdır</string>
+    <string name="credential_can_prove_age">İndi yaşınızı şəxsi şəkildə sübut edə bilərsiniz</string>
+    <string name="credential_returning">Etimadnamələrə qayıdılır...</string>
+    <string name="credential_view_credentials">Etimadnamələrə baxın</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Tamamlandı</string>
+    <string name="action_scan_qr_code">QR kodunu skan edin</string>
+    <string name="action_find_locations">Yerləri tapın</string>
+    <string name="action_get_credential">Etimadnamə əldə edin</string>
+    <string name="action_replace_credential">Yeni etimadnamə ilə əvəz edin</string>
+    <string name="action_replace_credential_now">Etimadnaməni indi əvəz edin</string>
+    <string name="action_delete_credential">Etimadnaməni silin</string>
+    <string name="credential_action_scan_description">Səlahiyyətli vericidən etimadnamə əldə edin</string>
+    <string name="credential_action_find_description">Yaxın vericilər tapın</string>
+    <string name="credential_remove_description">Cari etimadnaməni silin</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Məxfilik</string>
+    <string name="credential_info_privacy_value">Qorunur</string>
+    <string name="credential_info_status">Vəziyyət</string>
+    <string name="credential_info_status_value">Etibarlı</string>
+    <string name="credential_tip_title">Sürətli ipucu</string>
+    <string name="credential_tip_message">İştirakçı yerlərdə doğrulama QR (Quick Response) kodlarını skan etmək üçün \'Yaşı doğrula\' düyməsinə toxunun.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">QR kodunu skan edin</string>
+    <string name="verification_verify_age">Yaşı doğrulayın</string>
+    <string name="verification_generating_proof">Sübut yaradılır...</string>
+    <string name="verification_success">Doğrulama uğurlu oldu</string>
+    <string name="verification_failed">Doğrulama uğursuz oldu</string>
+    <string name="verification_age_verified">Yaş doğrulandı</string>
+    <string name="verification_age_verified_message">Yaşınız şəxsi şəkildə doğrulandı</string>
+    <string name="verification_can_return">İndi sayta qayıdıb davam edə bilərsiniz.</string>
+    <string name="verification_returning_browser">Brauzerə qayıdılır...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">Addım 1 / 2</string>
+    <string name="verification_step_2_of_2">Addım 2 / 2</string>
+    <string name="verification_point_camera">Kameranı doğrulama QR koduna yönəldin</string>
+    <string name="verification_hold_steady">Təsdiq siqnalı eşidənə qədər sabit tutun.</string>
+    <string name="verification_reading_request">Doğrulama sorğusu oxunur...</string>
+    <string name="verification_processing_challenge">Çağırış emal edilir...</string>
+    <string name="verification_creating_proof">Yaş sübutu yaradılır...</string>
+    <string name="verification_submitting_proof">Sübut göndərilir...</string>
+    <string name="verification_processing_message">Bu, bir neçə saniyə çəkə bilər</string>
+    <string name="verification_preparing_proof">Saxlanılan etimadnamənizlə şəxsi sübut hazırlanır.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Doğrulama sorğusu oxunur...</string>
+    <string name="verification_status_processing_challenge">Çağırış emal edilir...</string>
+    <string name="verification_status_creating_proof">Yaş sübutu yaradılır...</string>
+    <string name="verification_status_submitting_proof">Sübut göndərilir...</string>
+    <string name="verification_status_verified">✔ Yaş doğrulandı</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Autentifikasiya sorğusu göstərilə bilmir</string>
+    <string name="verification_error_verification_failed">Doğrulama uğursuz oldu</string>
+    <string name="verification_error_generic">Xəta baş verdi</string>
+    <string name="verification_error_failed_to_process_code">Kod emal edilə bilmədi</string>
+    <string name="verification_error_failed_to_process_challenge">Çağırış emal edilə bilmədi</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Avstraliyadakı etibarlı vericilər</string>
+    <string name="issuers_loading">Vericilər yüklənir...</string>
+    <string name="issuers_loaded">Vericilər uğurla yükləndi</string>
+    <string name="issuers_unable_to_load">Vericilər yüklənə bilmir</string>
+    <string name="issuers_check_connection">İnternet bağlantınızı yoxlayın və yenidən cəhd edin</string>
+    <string name="issuers_categories_header">KATEQORİYALAR</string>
+    <string name="issuers_available_header">MÖVCUD VERİCİLƏR</string>
+    <string name="issuers_found_count">%d tapıldı</string>
+    <string name="issuer_status_coming_soon">Tezliklə</string>
+    <string name="issuer_status_verified">Doğrulanmış</string>
+    <string name="issuer_how_to_get">Etimadnaməni necə əldə etmək olar</string>
+    <string name="issuer_service_locations">Xidmət yerləri</string>
+    <string name="issuer_visit_website">%s saytına daxil olun</string>
+    <string name="issuer_learn_more">%s haqqında daha çox öyrənin</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Bankçılıq</string>
+    <string name="category_super_fund">Superannuasiya fondu</string>
+    <string name="category_government">Hökumət</string>
+    <string name="category_travel">Səyahət</string>
+    <string name="category_telco">Telekomunikasiya</string>
+    <string name="category_insurance">Sığorta</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Parametrlər</string>
+    <string name="settings_section_sandbox">Sandbox rejimi</string>
+    <string name="settings_section_general">Ümumi</string>
+    <string name="settings_section_credentials">Etimadnamələr</string>
+    <string name="settings_section_advanced">Qabaqcıl</string>
+    <string name="settings_section_privacy">Məxfilik</string>
+    <string name="settings_security">Təhlükəsizlik</string>
+    <string name="settings_biometric">Biometrik autentifikasiyadan istifadə edin</string>
+    <string name="settings_environment">Mühit parametrləri</string>
+    <string name="settings_environment_description">Cari mühit konfiqurasiyasına baxın</string>
+    <string name="settings_reset_proving_key">Sübut açarını sıfırlayın</string>
+    <string name="settings_reset_proving_key_description">Təhlükəsizlik komponentlərini yenidən yükləyin (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Test etimadnaməsini Verici kimi yarat</string>
+    <string name="settings_mint_test_credential_subtitle">Pulqabınıza test etimadnaməsi verin ki, etibar edən tərəf demosundan onu yoxlaya biləsiniz.</string>
+    <string name="settings_find_trusted_issuers">Etibarlı vericilər tapın</string>
+    <string name="settings_version">Versiya: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Keçid etmək üçün 5 dəfə toxunun</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Dil</string>
+    <string name="language_selection_description">Üstünlük verdiyiniz dili seçin. Dəyişikliklər tətbiq olunmaq üçün tətbiq yenidən başlayacaq.</string>
+    <string name="language_selected">Seçildi</string>
+    <string name="settings_language">Dil</string>
+    <string name="settings_language_description">Tətbiq dilini dəyişin</string>
+    <string name="settings_licenses">Açıq mənbəli lisenziyalar</string>
+    <string name="settings_licenses_description">Üçüncü tərəf lisenziyalarına baxın</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Dili təsdiqləyin</string>
+    <string name="language_change_to">Dili dəyişin:</string>
+    <string name="language_restart_notice">Bu dili tətbiq etmək üçün tətbiq yenidən başlayacaq.</string>
+    <string name="language_apply">Tətbiq edin</string>
+    <string name="language_cancel">Ləğv edin</string>
+    <string name="language_skip_title">Dil seçimi keçilsin?</string>
+    <string name="language_skip_message">Keçərsəniz, tətbiq standart olaraq ingiliscəni istifadə edəcək. Dili sonra Parametrlərdən dəyişə bilərsiniz.</string>
+    <string name="language_use_english">İngiliscədən istifadə edin</string>
+    <string name="language_go_back">Geri qayıdın</string>
+    <string name="language_help_title">Dil seçimi üzrə kömək</string>
+    <string name="language_help_how_to">Dilinizi necə seçmək olar:</string>
+    <string name="language_help_step1">1. Dilinizi tapmaq üçün axtarış qutusundan istifadə edin</string>
+    <string name="language_help_step2">2. Üstünlük verdiyiniz dilə toxunun</string>
+    <string name="language_help_step3">3. Seçiminizi təsdiqləyin</string>
+    <string name="language_help_system_note">Dəstəklənirsə, sistem diliniz yuxarıda vurğulanıb.</string>
+    <string name="language_help_settings_note">Bunu sonra Parametrlərdən dəyişə bilərsiniz.</string>
+    <string name="language_got_it">Başa düşdüm</string>
+    <string name="language_select_title">Dil seçin</string>
+    <string name="language_skip_button">Keç (İngiliscəni istifadə et)</string>
+    <string name="language_search_placeholder">Dilləri axtarın...</string>
+    <string name="language_no_results">Heç bir dil tapılmadı</string>
+    <string name="language_try_different">Fərqli axtarış termini sınayın</string>
+    <string name="language_system_badge">Sistem dili</string>
+    <string name="language_count">%d dil</string>
+    <string name="language_no_match_announcement">Axtarışınıza uyğun heç bir dil tapılmadı</string>
+    <string name="language_found_announcement">%d dil tapıldı</string>
+    <string name="language_search_cleared">Axtarış silindi, bütün %d dil göstərilir</string>
+    <string name="language_selected_announcement">Seçildi %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Dil seçimi ekranı</string>
+    <string name="language_help_button_description">Dil seçimi haqqında kömək və məlumat</string>
+    <string name="language_skip_description">Dil seçimini keçin və standart olaraq ingiliscəni istifadə edin</string>
+    <string name="language_clear_search_description">Axtarışı silin</string>
+    <string name="language_count_description">%d dil mövcuddur</string>
+    <string name="language_apply_description">Dil seçimini tətbiq edin və davam edin</string>
+    <string name="language_cancel_description">Dil seçimini ləğv edin</string>
+    <string name="language_cancelled_announcement">Dil seçimi ləğv edildi</string>
+    <string name="language_selected_description">Seçilmiş dil: %1$s, %2$s</string>
+    <string name="language_item_system">Sistem dili: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, hazırda seçilib</string>
+    <string name="language_item_system_selected">Sistem dili: %1$s, %2$s, hazırda seçilib</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Dil seçiminə qayıdıldı</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Sandbox rejimi aktivdir</string>
+    <string name="sandbox_mode_banner">SANDBOX REJİMİ AKTİVDİR</string>
+    <string name="sandbox_mode_description">Test mühitindən istifadə olunur. Keçid etmək üçün versiya nömrəsinə beş dəfə toxunun.</string>
+    <string name="sandbox_credential_title">Sandbox etimadnaməsi</string>
+    <string name="sandbox_credential_description">İstehsal məlumatlarına toxunmadan doğrulama axınlarını sınamaq üçün Sandbox etimadnaməsi yaradın.</string>
+    <string name="sandbox_select_age">Yaş seçin</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Standart doğum tarixi: %s</string>
+    <string name="sandbox_override_dob">Standart doğum tarixini ləğv edin</string>
+    <string name="sandbox_override_description">Yaşa əsaslı standart əvəzinə dəqiq tarix istifadə edin.</string>
+    <string name="sandbox_date_of_birth">Doğum tarixi</string>
+    <string name="sandbox_generate_credential">Etimadnamə yaradın</string>
+    <string name="sandbox_generating">Yaradılır…</string>
+    <string name="sandbox_test_credential_saved">Test etimadnaməsi saxlandı</string>
+    <string name="sandbox_id_prefix">Kimlik prefiksi: %s…</string>
+    <string name="sandbox_unable_to_generate">Etimadnamə yaradıla bilmir</string>
+    <string name="settings_sandbox_dob_format">Doğum tarixi: %s</string>
+    <string name="settings_sandbox_age_dob_format">%d+ yaş (Doğum tarixi: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Mühit konfiqurasiyası</string>
+    <string name="environment_current">Cari: %s</string>
+    <string name="environment_issuer_api">Verici API (Application Programming Interface): %s</string>
+    <string name="environment_verifier_api">Doğrulayıcı API (Application Programming Interface): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Etimadnamə silinsin?</string>
+    <string name="dialog_delete_credential_message">Bu əməliyyat etimadnaməni cihazınızdan silir. Lazım olduqda verici vasitəsilə yenidən əldə edə bilərsiniz.</string>
+    <string name="dialog_delete_credential_announcement">Dialoq açıldı: Etimadnaməni sil</string>
+    <string name="dialog_reset_proving_key_title">Sübut açarı sıfırlansın?</string>
+    <string name="dialog_reset_proving_key_message">Sübut açarı və dəstəkləyici fayllar silinəcək və tətbiqi növbəti dəfə açdığınızda yenidən yüklənəcək.</string>
+    <string name="dialog_reset_proving_key_announcement">Dialoq açıldı: Sübut açarını sıfırla</string>
+    <string name="dialog_environment_info_announcement">Dialoq açıldı: Mühit konfiqurasiyası</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">Əlçatanlıq</string>
+    <string name="accessibility_service_label">Provii Wallet Əlçatanlıq</string>
+    <string name="accessibility_service_description">Provii Wallet əlçatanlıq xidməti əlilliyi olan istifadəçilər üçün gücləndirilmiş dəstək təqdim edir. Bura avtomatik etimadnamə oxuma, idarəolunan naviqasiya və sadələşdirilmiş qarşılıqlı əlaqə daxildir.</string>
+    <string name="accessibility_personalize">Təcrübənizi fərdiləşdirin</string>
+    <string name="accessibility_customize_features">Əlçatanlıq xüsusiyyətlərini fərdiləşdirin</string>
+    <string name="accessibility_quick_setup">Sürətli quraşdırma</string>
+    <string name="accessibility_features_active">%d xüsusiyyət aktivdir</string>
+    <string name="accessibility_customize_experience">Təcrübənizi fərdiləşdirin</string>
+    <string name="accessibility_reset_title">Əlçatanlıq parametrləri sıfırlansın?</string>
+    <string name="accessibility_reset_message">Bütün əlçatanlıq seçimləri standart dəyərlərinə qayıdacaq.</string>
+    <string name="accessibility_reset">Əlçatanlıq parametrlərini sıfırlayın</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Görmə</string>
+    <string name="accessibility_category_interaction">Qarşılıqlı əlaqə</string>
+    <string name="accessibility_category_cognitive">Koqnitiv dəstək</string>
+    <string name="accessibility_category_alternative_input">Alternativ giriş</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Çox böyük mətn</string>
+    <string name="accessibility_extra_large_text_description">Əsas şrift ölçülərini 45% artırın</string>
+    <string name="accessibility_high_contrast">Yüksək kontrast</string>
+    <string name="accessibility_high_contrast_description">Yüksək kontrast rənglərindən istifadə edin</string>
+    <string name="accessibility_reduce_transparency">Şəffaflığı azaldın</string>
+    <string name="accessibility_reduce_transparency_description">Bulanıqlıq və şüşə effektlərini aradan qaldırın</string>
+    <string name="accessibility_dyslexia_font">Disleksiyaya uyğun şrift</string>
+    <string name="accessibility_dyslexia_font_description">Daha yaxşı oxunuş üçün OpenDyslexic şriftindən istifadə edin</string>
+    <string name="accessibility_color_blind_mode">Rəng korluğu rejimi</string>
+    <string name="accessibility_color_blind_optimized">%s üçün optimallaşdırılmış rənglər</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Yox</string>
+    <string name="color_blind_protanopia">Protanopiya (Qırmızı korluğu)</string>
+    <string name="color_blind_deuteranopia">Deuteranopiya (Yaşıl korluğu)</string>
+    <string name="color_blind_tritanopia">Tritanopiya (Mavi korluğu)</string>
+    <string name="color_blind_monochrome">Monoxrom</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Daha böyük toxunma hədəfləri</string>
+    <string name="accessibility_larger_touch_targets_description">Düymə və çip ölçülərini artırın</string>
+    <string name="accessibility_reduce_motion">Hərəkəti azaldın</string>
+    <string name="accessibility_reduce_motion_description">Animasiyaları və keçidləri minimuma endirin</string>
+    <string name="accessibility_extended_timeouts">Uzadılmış vaxt limitləri</string>
+    <string name="accessibility_extended_timeouts_description">Vaxtlı əməliyyatlar üçün daha çox vaxt ayırın</string>
+    <string name="accessibility_simplified_gestures">Sadələşdirilmiş jestlər</string>
+    <string name="accessibility_simplified_gestures_description">Çox addımlı jestləri azaldın</string>
+    <string name="accessibility_haptic_feedback">Haptik geribildirim</string>
+    <string name="accessibility_haptic_feedback_description">Əməliyyatlar üçün vibrasiya təsdiqi</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Sadələşdirilmiş interfeys</string>
+    <string name="accessibility_simplified_interface_description">Qabaqcıl seçimləri gizlədin və nizamsızlığı azaldın</string>
+    <string name="accessibility_show_step_numbers">Addım nömrələrini göstərin</string>
+    <string name="accessibility_show_step_numbers_description">Tərəqqi göstəricilərini göstərin</string>
+    <string name="accessibility_detailed_descriptions">Ətraflı açıqlamalar</string>
+    <string name="accessibility_detailed_descriptions_description">Əlavə izahlı mətn təqdim edin</string>
+    <string name="accessibility_confirm_actions">Əməliyyatlardan əvvəl təsdiqlə</string>
+    <string name="accessibility_confirm_actions_description">Mühüm əməliyyatlar üçün təsdiq soruşun</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Manual kod daxiletmə</string>
+    <string name="accessibility_manual_code_entry_description">QR (Quick Response) kodlarının skan edilmək əvəzinə yazılmasına imkan verin</string>
+    <string name="accessibility_voice_input">Səs girişi</string>
+    <string name="accessibility_voice_input_description">Mətn sahələri üçün nitq tanımasını aktivləşdirin</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Görmə</string>
+    <string name="accessibility_profile_motor">Motor</string>
+    <string name="accessibility_profile_cognitive">Koqnitiv</string>
+    <string name="accessibility_profile_senior">Yaşlı</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Geri</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Ana səhifə</string>
+    <string name="breadcrumb_settings">Parametrlər</string>
+    <string name="breadcrumb_accessibility">Əlçatanlıq</string>
+    <string name="breadcrumb_language">Dil</string>
+    <string name="breadcrumb_help">Kömək mərkəzi</string>
+    <string name="breadcrumb_officer_mode">Məmur rejimi</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Tipografiya və mətn aralığı</string>
+    <string name="accessibility_line_spacing">Sətir aralığı</string>
+    <string name="accessibility_line_spacing_description">Mətn sətirləri arasındakı boşluğu tənzimləyin</string>
+    <string name="accessibility_paragraph_spacing">Abzas aralığı</string>
+    <string name="accessibility_paragraph_spacing_description">Abzaslar arasındakı boşluğu tənzimləyin</string>
+    <string name="accessibility_letter_spacing">Hərf aralığı</string>
+    <string name="accessibility_letter_spacing_description">Hərflər arasındakı boşluğu tənzimləyin</string>
+    <string name="accessibility_typography_aaa_note">AAA tövsiyələri: 1.5x sətir aralığı, 2.0x abzas aralığı və 0.12em hərf aralığı.</string>
+    <string name="accessibility_spacing_current">Cari: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Vaxt limiti davranışı</string>
+    <string name="accessibility_timeout_no_automatic">AAA uyğunluğu üçün avtomatik vaxt limiti yoxdur</string>
+    <string name="accessibility_timeout_auto_advance_30">30 saniyə sonra avtomatik irəliləyin</string>
+    <string name="accessibility_timeout_auto_advance_60">60 saniyə sonra avtomatik irəliləyin</string>
+    <string name="accessibility_timeout_set_announcement">Vaxt limiti davranışı %s olaraq təyin edildi</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Kontrast səviyyəsi</string>
+    <string name="accessibility_contrast_aaa_ratio">AAA uyğunluğu üçün 7:1 kontrast nisbəti</string>
+    <string name="accessibility_contrast_standard">Standart kontrast</string>
+    <string name="accessibility_contrast_aa_ratio">AA uyğunluğu üçün 4.5:1 kontrast nisbəti</string>
+    <string name="accessibility_contrast_set_announcement">Kontrast səviyyəsi %s olaraq təyin edildi</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Rəng korluğu rejimi %s olaraq təyin edildi</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">%1$s sürüşdürücüsü. Cari dəyər: %2$s. %3$s%4$s-dən %5$s-ə qədər aralıq</string>
+    <string name="accessibility_slider_aaa_compliant">AAA uyğundur. </string>
+    <string name="accessibility_slider_announcement">%1$s, %2$s%3$s olaraq təyin edildi</string>
+    <string name="accessibility_slider_announcement_aaa">, AAA uyğundur</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s aktivləşdirildi</string>
+    <string name="accessibility_toggle_disabled">%s deaktivləşdirildi</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Doğrulama geribildirim</string>
+    <string name="accessibility_sound_enabled">Uğurda səs çalın</string>
+    <string name="accessibility_sound_enabled_description">Uğurlu doğrulamadan sonra təsdiq səsi çalın</string>
+    <string name="accessibility_sound_style">Səs tərzi</string>
+    <string name="accessibility_sound_preview">Səsi önizləyin</string>
+    <string name="accessibility_sound_preview_preset">%s-i önizləyin</string>
+    <string name="accessibility_sound_style_set_announcement">Səs tərzi %s olaraq təyin edildi</string>
+    <string name="accessibility_haptic_enabled">Uğurda vibrasiya edin</string>
+    <string name="accessibility_haptic_enabled_description">Uğurlu doğrulamadan sonra haptik geribildirim verin</string>
+    <string name="accessibility_sound_footer">Səs cihazınızın səssiz rejim parametrlərinə uyğundur</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Səs səviyyəsi</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Cari səs səviyyəsini önizləyin</string>
+    <string name="accessibility_volume_set_announcement">Səs səviyyəsi %d faiz olaraq təyin edildi</string>
+    <string name="accessibility_volume_slider_description">Səs sürüşdürücüsü. Cari dəyər: %d faiz</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Parametrləri sıfırla</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">Məmur rejimi</string>
+    <string name="officer_id">Məmur kimliyi (ID)</string>
+    <string name="officer_id_placeholder">məs., OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Təyin edilmiş məmur kimliyinizi daxil edin</string>
+    <string name="officer_yubikey_connected">YubiKey qoşuldu</string>
+    <string name="officer_connect_yubikey">YubiKey qoşun</string>
+    <string name="officer_touch_yubikey">Autentifikasiya etmək üçün YubiKey-ə toxunun...</string>
+    <string name="officer_authenticate_hmac">HMAC (Hash-based Message Authentication Code) ilə autentifikasiya edin</string>
+    <string name="officer_authentication_process">Autentifikasiya prosesi:</string>
+    <string name="officer_auth_steps">1. Məmur kimliyinizi daxil edin\n2. Autentifikasiyanı klikləyin\n3. Yanıb-sönəndə YubiKey-ə toxunun\n4. HMAC (Hash-based Message Authentication Code) autentifikasiyası kimliyinizi yoxlayır</string>
+    <string name="officer_auth_failed">Autentifikasiya uğursuz oldu. Zəhmət olmasa məmur kimliyinizi yoxlayın və yenidən cəhd edin.</string>
+    <string name="officer_session_info">Məmur: %s</string>
+    <string name="officer_station_info">Stansiya: %s</string>
+    <string name="officer_issued_today">Bu gün verildi: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Yaş etimadnaməsi verin</string>
+    <string name="officer_issue_description">İstifadəçinin kimliyini yoxlayın və rəqəmsal yaş etimadnaməsi verin</string>
+    <string name="officer_start_issuance">Yeni vermə başladın</string>
+    <string name="officer_issuance_process">VERMƏ PROSESİ</string>
+    <string name="officer_issuance_steps">1. İstifadəçinin fiziki kimlik sənədini yoxlayın\n2. Doğum tarixini daxil edin\n3. Məlumatın tam uyğun olduğunu yoxlayın\n4. Attestasiya QR (Quick Response) kodu ilə etimadnamə verin\n5. İstifadəçi etimadnaməni almaq üçün QR kodunu skan edir</string>
+    <string name="officer_verify_identity">İstifadəçi kimliyini yoxlayın</string>
+    <string name="officer_select_dob">Doğum tarixini seçin</string>
+    <string name="officer_change_date">Tarixi dəyişin</string>
+    <string name="officer_age_years">Yaş: %d il</string>
+    <string name="officer_under_18_warning">18 yaşdan kiçik , etimadnamə verilə bilmir</string>
+    <string name="officer_verification_checklist">DOĞRULAMA YOXLAMA SİYAHISI</string>
+    <string name="officer_document_verified">Fiziki sənəd yoxlanıldı</string>
+    <string name="officer_document_verified_description">Etibarlı dövlət tərəfindən verilmiş kimliyi gördüm</string>
+    <string name="officer_dob_matches">Doğum tarixi tam uyğundur</string>
+    <string name="officer_dob_matches_description">Fiziki sənəddəki doğum tarixi: %s</string>
+    <string name="officer_issue_credential">Etimadnamə verin</string>
+    <string name="officer_user_scanned_successfully">İstifadəçi uğurla skan etdi</string>
+    <string name="officer_return_to_dashboard">İdarə panelinə qayıdın</string>
+    <string name="officer_go_back">Geri qayıdın</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">YubiKey autentifikasiyası</string>
+    <string name="yubikey_step_format">Addım %1$d, %2$d-dən</string>
+    <string name="yubikey_led_should_blink">YubiKey LED-i yanıb-sönməlidir</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Giriş yoxlanılır...</string>
+    <string name="officer_state_creating_attestation">Attestasiya yaradılır...</string>
+    <string name="officer_state_computing_commitment">Kriptoqrafik öhdəlik hesablanır...</string>
+    <string name="officer_state_creating_session">Təhlükəsiz sessiya yaradılır...</string>
+    <string name="officer_state_signing">Etimadnamə imzalanır...</string>
+    <string name="officer_state_finalizing">Etimadnamə tamamlanır...</string>
+    <string name="officer_state_storing_attestation">Attestasiya saxlanılır...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">Sessiya tezliklə bitir</string>
+    <string name="officer_session_expiring_message">Sessiyanız %d saniyə sonra bitəcək. Tərəqqinizi saxlamaq istəyirsiniz?</string>
+    <string name="officer_session_expiring_announcement">Xəbərdarlıq: Sessiyanız %d saniyə sonra bitəcək</string>
+    <string name="officer_save_and_continue">Saxlayın və davam edin</string>
+    <string name="officer_continue_without_saving">Saxlamadan davam edin</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">DOĞUM TARİXİ</string>
+    <string name="officer_age_format">Yaş: %d il</string>
+    <string name="officer_under_18_full_warning">18 yaşdan kiçik , etimadnamə verilə bilmir. Yalnız 18 yaş və yuxarı olanlar yaş doğrulama etimadnamələrinə haqq qazanırlar. Zəhmət olmasa doğum tarixinin düzgün olduğunu yoxlayın.</string>
+    <string name="officer_verification_checklist_header">DOĞRULAMA YOXLAMA SİYAHISI</string>
+    <string name="officer_physical_document_verified">Fiziki sənəd yoxlanıldı</string>
+    <string name="officer_sighted_valid_id">Etibarlı dövlət tərəfindən verilmiş kimliyi gördüm</string>
+    <string name="officer_dob_matches_exactly">Doğum tarixi tam uyğundur</string>
+    <string name="officer_dob_on_document">Fiziki sənəddəki doğum tarixi: %s</string>
+    <string name="officer_error_label">Xəta</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">Vermə QR (Quick Response) kodunu skan edin</string>
+    <string name="issuance_downloads_credential">Bu, yaş etimadnamənizi yükləyir.</string>
+    <string name="issuance_center_qr">QR kodunu çərçivənin içinə yerləşdirin və sabit tutun.</string>
+    <string name="issuance_enter_code_manually">Kodu manual daxil edin</string>
+    <string name="issuance_processing_qr">QR kodu emal edilir…</string>
+    <string name="issuance_invalid_data">Etibarsız vermə məlumatları</string>
+    <string name="issuance_verification_qr_error">Bu doğrulama QR kodudur. Zəhmət olmasa etimadnamə vermə QR kodunu skan edin.</string>
+    <string name="issuance_invalid_qr_format">Etibarsız QR kodu formatı</string>
+    <string name="issuance_failed_to_process">QR kodu emal edilə bilmədi: %s</string>
+    <string name="issuance_code">Vermə kodu</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">Manual kod daxiletmə</string>
+    <string name="manual_entry_enter_code_manually">Kodu manual daxil edin</string>
+    <string name="manual_entry_verification_description">Doğrulayıcının ekranında göstərilən 12 rəqəmli doğrulama kodunu daxil edin.</string>
+    <string name="manual_entry_issuance_description">Vericinin ekranında göstərilən kodu yazın.</string>
+    <string name="manual_entry_verification_code">Doğrulama kodu</string>
+    <string name="manual_entry_submit">Kodu göndərin</string>
+    <string name="manual_entry_please_enter">Zəhmət olmasa bir kod daxil edin</string>
+    <string name="manual_entry_please_enter_verification">Zəhmət olmasa doğrulama kodunu daxil edin</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Dinləməyə başlayın</string>
+    <string name="voice_input_stop_listening">Dinləməyi dayandırın</string>
+    <string name="voice_input_recognized">Tanındı:</string>
+    <string name="content_desc_voice_input_listening">Səs girişi dinlənilir</string>
+    <string name="content_desc_voice_input_available">Səs girişi mövcuddur</string>
+    <string name="voice_input_permission_title">Mikrofon icazəsi lazımdır</string>
+    <string name="voice_input_permission_message">Səs girişi üçün mikrofona giriş lazımdır. Sistem parametrlərindən aktivləşdirə bilərsiniz.</string>
+    <string name="voice_input_listening">Dinlənilir…</string>
+    <string name="voice_input_error">Səs girişi xətası</string>
+    <string name="voice_input_tap_to_speak">Danışmaq üçün toxunun</string>
+    <string name="voice_input_did_you_say">"%1$s" dedinizmi?</string>
+    <string name="voice_input_confirm">Təsdiqlə</string>
+    <string name="voice_input_retry">Yenidən cəhd edin</string>
+    <string name="voice_input_cancel">Ləğv edin</string>
+    <string name="voice_input_button">Səs girişi</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">Bu cihazda səs girişi mövcud deyil</string>
+    <string name="voice_input_error_audio">Səs yazma xətası. Mikrofonu yoxlayın.</string>
+    <string name="voice_input_error_network">Şəbəkə xətası. Bağlantını yoxlayın.</string>
+    <string name="voice_input_error_network_timeout">Şəbəkə vaxt limiti keçdi. Yenidən cəhd edin.</string>
+    <string name="voice_input_error_no_match">Danışıq aşkarlanmadı. Yenidən cəhd edin.</string>
+    <string name="voice_input_error_recognizer_busy">Səs girişi məşğuldur. Gözləyin.</string>
+    <string name="voice_input_error_server">Server xətası. Sonra yenidən cəhd edin.</string>
+    <string name="voice_input_error_speech_timeout">Heç bir danışıq eşidilmədi. Daha uca danışın.</string>
+    <string name="voice_input_error_insufficient_permissions">Mikrofon icazəsi rədd edildi.</string>
+    <string name="voice_input_error_generic">Səs girişi xətası. Yenidən cəhd edin.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">Geri</string>
+    <string name="action_close">Bağla</string>
+    <string name="action_cancel">Ləğv et</string>
+    <string name="action_ok">Tamam</string>
+    <string name="action_set">Təyin et</string>
+    <string name="action_change">Dəyiş</string>
+    <string name="action_delete">Sil</string>
+    <string name="action_reset">Sıfırla</string>
+    <string name="action_retry">Yenidən cəhd et</string>
+    <string name="action_try_again">Yenidən cəhd edin</string>
+    <string name="action_refresh">Yenilə</string>
+    <string name="action_download_now">İndi yüklə</string>
+    <string name="action_retry_setup">Quraşdırmanı yenidən cəhd et</string>
+    <string name="action_retry_download">Yükləməni yenidən cəhd et</string>
+    <string name="action_restart_setup">Quraşdırmanı yenidən başlat</string>
+    <string name="action_manage_storage">Yaddaşı idarə et</string>
+    <string name="action_check_wifi_settings">Əvvəlcə Wi-Fi parametrlərini yoxla</string>
+    <string name="action_check_wifi_settings_short">Wi-Fi parametrlərini yoxla</string>
+    <string name="action_grant_permission">İcazə ver</string>
+    <string name="action_grant_camera_access">Kamera girişinə icazə ver</string>
+    <string name="action_return_to_browser">Brauzerə qayıt</string>
+    <string name="action_show_debug_info">Debug məlumatını göstər</string>
+    <string name="action_reset_redownload">Sıfırla və yenidən yüklə</string>
+    <string name="action_end_session">Sessiyanı bitir</string>
+    <string name="action_expand">Genişlət</string>
+    <string name="action_collapse">Büz</string>
+    <string name="accessibility_state_expanded">Genişlənmiş</string>
+    <string name="accessibility_state_collapsed">Büzülmüş</string>
+    <string name="accessibility_state_checked">İşarələnmiş</string>
+    <string name="accessibility_state_unchecked">İşarəsiz</string>
+    <string name="accessibility_state_selected">Seçilmiş</string>
+    <string name="accessibility_state_not_selected">Seçilməmiş</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">Xəta baş verdi</string>
+    <string name="error_camera_permission">QR (Quick Response) skanı üçün kamera icazəsi lazımdır</string>
+    <string name="error_camera_access_needed">Kamera girişi lazımdır</string>
+    <string name="error_camera_permission_description">QR kodlarını skan etmək üçün kamera icazəsi verin və ya əlçatanlıq parametrlərindən manual daxiletməni aktivləşdirin.</string>
+    <string name="error_camera_permission_required">QR kodlarını skan etmək üçün kamera icazəsi lazımdır</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">QR kodu axtarılır...</string>
+    <string name="qr_scanner_camera_required">Kamera icazəsi lazımdır</string>
+    <string name="qr_scanner_camera_preview">QR kodlarını skan etmək üçün kamera önizləmə</string>
+    <string name="qr_scanner_status_scanning">QR kodu skan edilir</string>
+    <string name="qr_scanner_requesting_permission">Kamera icazəsi tələb olunur</string>
+    <string name="error_camera_start_failed">Kamera işə salına bilmədi: %s</string>
+    <string name="error_camera_init_failed">Kamera işə salınması uğursuz oldu: %s</string>
+    <string name="error_biometric_not_available">Biometrik autentifikasiya mövcud deyil</string>
+    <string name="error_network">Şəbəkə xətası baş verdi</string>
+    <string name="error_no_credential">Etimadnamə mövcud deyil. Zəhmət olmasa əvvəlcə etimadnamə əldə edin.</string>
+    <string name="credential_picker_title">Etimadnamə seçin</string>
+    <string name="credential_picker_description">Bu doğrulama üçün istifadə edilə bilən çoxlu etimadnaməniz var. Zəhmət olmasa birini seçin.</string>
+    <string name="credential_picker_expired_label">Müddəti bitib</string>
+    <string name="credential_picker_accessibility_select">Etimadnamə seçin: %1$s</string>
+    <string name="error_failed_to_process_challenge">Çağırış emal edilə bilmədi</string>
+    <string name="error_failed_to_create_proof">Sübut yaradıla bilmədi</string>
+    <string name="error_verification_failed">Doğrulama uğursuz oldu</string>
+    <string name="error_occurred_during_verification">Doğrulama zamanı xəta baş verdi</string>
+    <string name="error_connection_timeout">Bağlantı vaxt limiti keçdi. Yenidən cəhd edin.</string>
+    <string name="error_unable_to_connect">Qoşulmaq mümkün olmadı. İnternet bağlantınızı yoxlayın.</string>
+    <string name="error_secure_connection_failed">Təhlükəsiz bağlantı uğursuz oldu. Yenidən cəhd edin.</string>
+    <string name="error_security_verification_failed">Təhlükəsizlik doğrulaması uğursuz oldu. Yenidən cəhd edin.</string>
+    <string name="error_invalid_input">Etibarsız giriş. Məlumatınızı yoxlayın və yenidən cəhd edin.</string>
+    <string name="error_operation_in_progress">Başqa bir əməliyyat davam edir. Gözləyin.</string>
+    <string name="error_operation_cancelled">Əməliyyat ləğv edildi.</string>
+    <string name="error_age_requirement_not_met">Bu etimadnamə üçün yaş tələbi ödənilmədi.</string>
+    <string name="error_biometric_required">Davam etmək üçün biometrik autentifikasiya tələb olunur.</string>
+    <string name="error_wallet_not_initialized">Cüzdan işə salınmayıb. Tətbiqi yenidən başladın.</string>
+    <string name="error_security">Təhlükəsizlik xətası. Yenidən cəhd edin.</string>
+    <string name="error_connection_timeout_short">Bağlantı vaxt limiti keçdi. Yenidən cəhd edin.</string>
+    <string name="error_invalid_input_provided">Etibarsız giriş təqdim edildi.</string>
+    <string name="error_invalid_data_format">Etibarsız məlumat formatı. Yenidən cəhd edin.</string>
+    <string name="error_storage">Yaddaş xətası. Cihaz yaddaşını yoxlayın.</string>
+    <string name="error_network_short">Şəbəkə xətası. Bağlantınızı yoxlayın.</string>
+    <string name="error_label">Xəta</string>
+    <string name="error_dismiss">Xətanı bağla</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">Emal edilir...</string>
+    <string name="status_initializing_wallet">Cüzdan işə salınır...</string>
+    <string name="status_loading">Yüklənir...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">Məxfilik qorunur</string>
+    <string name="privacy_zk_description">Doğum tarixi heç vaxt paylaşılmır. Doğrulayıcılar yalnız yaş tələbinizi ödəyib-ödəmədiyinizi öyrənir.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Məxfilik parametrləri</string>
+    <string name="privacy_settings_description">Məlumat toplamağa nəzarət edin və məlumatlarınızı idarə edin</string>
+    <string name="privacy_section_data_collection">Məlumat toplanması</string>
+    <string name="privacy_section_your_data">Məlumatlarınız</string>
+    <string name="privacy_protection_title">Məxfiliyiniz qorunur</string>
+    <string name="privacy_protection_description">Provii Wallet doğum tarixi paylaşılmadan yaşınızı doğrulamaq üçün sıfır bilik sübutlarından istifadə edir. Etimadnamə məlumatlarınız yalnız cihazınızda saxlanılır və heç kimlə paylaşılmır.</string>
+    <string name="privacy_analytics_title">Analitika</string>
+    <string name="privacy_analytics_description">Anonim istifadə məlumatlarını paylaşaraq Provii Wallet-in inkişafına kömək edin</string>
+    <string name="privacy_analytics_enabled">Analitika aktivdir</string>
+    <string name="privacy_analytics_disabled">Analitika deaktivdir</string>
+    <string name="privacy_crash_reporting_title">Çöküş hesabatı</string>
+    <string name="privacy_crash_reporting_description">Çöküş hesabatlarını avtomatik göndərərək xətaları düzəltməyimizə kömək edin</string>
+    <string name="privacy_crash_reporting_enabled">Çöküş hesabatı aktivdir</string>
+    <string name="privacy_crash_reporting_disabled">Çöküş hesabatı deaktivdir</string>
+    <string name="privacy_what_we_collect_title">Hansı məlumatları toplayırıq</string>
+    <string name="privacy_what_we_collect_subtitle">Məlumat təcrübəmiz haqqında öyrənmək üçün toxunun</string>
+    <string name="privacy_data_collection_info_title">Məlumat toplanması haqqında məlumat</string>
+    <string name="privacy_data_we_collect_header">Nə toplayırıq (aktivləşdirilmişsə):</string>
+    <string name="privacy_data_we_collect_list">- Anonim tətbiq istifadə statistikası\n- Çöküş hesabatları və xəta jurnalları\n- Cihaz növü və OS versiyası\n- Tətbiq versiya məlumatları</string>
+    <string name="privacy_data_we_dont_collect_header">Heç vaxt nə toplamırıq:</string>
+    <string name="privacy_data_we_dont_collect_list">- Doğum tarixi\n- Ad və ya şəxsi məlumatlar\n- Yer məlumatı\n- Etimadnamə məlumatları\n- Biometrik məlumatlar</string>
+    <string name="privacy_data_never_shared_note">Etimadnamə məlumatlarınız heç vaxt Provii ilə və ya hər hansı üçüncü tərəflə paylaşılmır. Cihazınızda qalır.</string>
+    <string name="privacy_policy_title">Məxfilik siyasəti</string>
+    <string name="privacy_policy_subtitle">Tam məxfilik siyasətimizi oxuyun</string>
+    <string name="privacy_delete_my_data_title">Məlumatlarımı silin</string>
+    <string name="privacy_delete_my_data_subtitle">Saxlanılan bütün etimadnamələri və məlumatları silin</string>
+    <string name="privacy_delete_data_dialog_title">Bütün məlumatlar silinsin?</string>
+    <string name="privacy_delete_data_dialog_message">Bu, bu cihazdan bütün etimadnamələrinizi və tətbiq məlumatlarınızı daimi olaraq silir. Tətbiqdən yenidən istifadə etmək üçün yeni etimadnamə əldə etməlisiniz.</string>
+    <string name="privacy_delete_data_dialog_warning">Bu əməliyyat geri alına bilməz.</string>
+    <string name="privacy_delete_data_confirm">Hər şeyi silin</string>
+    <string name="privacy_footer_note">Bu parametrləri istənilən vaxt dəyişə bilərsiniz. Dəyişikliklər dərhal qüvvəyə minir.</string>
+    <string name="dialog_delete_data_announcement">Məlumatları sil təsdiq dialoqu açıldı</string>
+    <string name="dialog_data_collection_info_announcement">Məlumat toplanması haqqında məlumat dialoqu açıldı</string>
+    <string name="content_desc_privacy_settings">Məxfilik parametrləri, məlumat toplamağa nəzarət edin və məlumatlarınızı idarə edin</string>
+    <string name="content_desc_data_collection_info">Məlumat toplanması haqqında məlumatı göstər</string>
+    <string name="content_desc_privacy_policy">Məxfilik siyasətini göstər</string>
+    <string name="content_desc_opens_external_link">Brauzerdə açılır</string>
+    <string name="content_desc_delete_my_data">Bütün məlumatlarımı sil</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">Geri</string>
+    <string name="content_desc_settings">Parametrlər</string>
+    <string name="content_desc_refresh">Yenilə</string>
+    <string name="content_desc_verified">Doğrulanmış</string>
+    <string name="content_desc_expand">Genişlət</string>
+    <string name="content_desc_collapse">Büz</string>
+    <string name="content_desc_warning_error">Xəbərdarlıq: Xəta baş verdi</string>
+    <string name="content_desc_sandbox_indicator">Sandbox rejimi göstəricisi</string>
+    <string name="content_desc_success">Uğurlu</string>
+    <string name="content_desc_warning">Xəbərdarlıq</string>
+    <string name="content_desc_information">Məlumat</string>
+    <string name="content_desc_error">Xəta</string>
+    <string name="content_desc_sandbox_warning">Sandbox rejimi xəbərdarlığı</string>
+    <string name="content_desc_app_info">Tətbiq məlumatı</string>
+    <string name="content_desc_accessibility_settings">Əlçatanlıq parametrləri</string>
+    <string name="content_desc_language_settings">Dil parametrləri</string>
+    <string name="content_desc_licenses">Açıq mənbəli lisenziyalar</string>
+    <string name="content_desc_select_dob">Doğum tarixini seçin</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Test etimadnaməsini Verici kimi yarat</string>
+    <string name="content_desc_get_credential">Etimadnamə əldə edin</string>
+    <string name="content_desc_delete_credential">Etimadnaməni silin</string>
+    <string name="content_desc_reset_proving_key">Sübut açarını sıfırlayın</string>
+    <string name="content_desc_environment_info">Mühit məlumatı</string>
+    <string name="content_desc_help_support">Kömək və dəstək</string>
+    <string name="content_desc_privacy_protected">Məxfilik qorunur</string>
+    <string name="preview_settings_title">Parametrlər önizləmə</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">Uğurlu</string>
+    <string name="accessibility_verification_error_description">Xəta</string>
+    <string name="accessibility_breadcrumb_location_description">Yer: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">sonra</string>
+    <string name="accessibility_breadcrumb_current_page_description">Cari səhifə: %s</string>
+    <string name="accessibility_settings_navigate_description">Naviqasiya edin</string>
+    <string name="accessibility_credentials_settings_description">Parametrlər</string>
+    <string name="accessibility_verification_back_description">Geri</string>
+    <string name="accessibility_officer_back_description">Geri</string>
+    <string name="accessibility_discovery_back_description">Geri</string>
+    <string name="accessibility_discovery_refresh_description">Yenilə</string>
+    <string name="accessibility_discovery_verified_description">Doğrulanmış</string>
+    <string name="accessibility_officer_done_description">Tamamlandı</string>
+    <string name="accessibility_officer_attestation_qr_description">İstifadəçinin skan etməsi üçün attestasiya QR kodu</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">%s-ə keçin</string>
+    <string name="accessibility_skip_main_content">əsas məzmun</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Görmə qüsurlu</string>
+    <string name="accessibility_profile_motor_impaired">Hərəkət qüsurlu</string>
+    <string name="accessibility_profile_cognitive_support">Koqnitiv dəstək</string>
+    <string name="accessibility_profile_elderly_support">Yaşlılara dəstək</string>
+    <string name="accessibility_profile_default">Standart</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Yox</string>
+    <string name="color_blind_mode_protanopia">Protanopiya</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopiya</string>
+    <string name="color_blind_mode_tritanopia">Tritanopiya</string>
+    <string name="color_blind_mode_monochrome">Monoxrom</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Standart</string>
+    <string name="contrast_level_high">Yüksək (AA)</string>
+    <string name="contrast_level_maximum">Maksimum (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Tam genişlik</string>
+    <string name="text_width_comfortable">Rahat (80 simvol)</string>
+    <string name="text_width_narrow">Dar (60 simvol)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Vaxt limiti yoxdur (AAA)</string>
+    <string name="timeout_behavior_standard">Standart (30s)</string>
+    <string name="timeout_behavior_extended">Uzadılmış (60s)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Standart</string>
+    <string name="reading_level_standard_description">Texniki terminlərlə adi mətn</string>
+    <string name="reading_level_simplified">Sadələşdirilmiş (7-9-cu sinif)</string>
+    <string name="reading_level_simplified_description">Daha sadə sözlər və qısa cümlələr (AAA uyğun)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">Kömək</string>
+    <string name="help_and_support">Kömək və dəstək</string>
+    <string name="help_description">Tətbiq xüsusiyyətləri və əlçatanlıq üzrə kömək əldə edin</string>
+    <string name="help_center">Kömək mərkəzi</string>
+    <string name="help_center_description">Kömək mövzularına baxın və tətbiq xüsusiyyətlərini öyrənin</string>
+    <string name="help_search">Köməyi axtarın</string>
+    <string name="help_search_placeholder">Kömək mövzularını axtarın...</string>
+    <string name="help_search_active">Axtarış aktivləşdirildi</string>
+    <string name="help_search_inactive">Axtarış deaktivləşdirildi</string>
+    <string name="help_no_results">Axtarışınıza uyğun kömək mövzusu tapılmadı</string>
+    <string name="help_topic_not_found">Kömək mövzusu tapılmadı</string>
+    <string name="help_related_topics">Əlaqəli mövzular</string>
+    <string name="help_content_heading">Kömək məzmunu</string>
+    <string name="help_related_topic_position">%1$s, maddə %2$d / %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Görmə</string>
+    <string name="help_category_typography">Tipografiya</string>
+    <string name="help_category_interaction">Qarşılıqlı əlaqə</string>
+    <string name="help_category_cognitive">Koqnitiv dəstək</string>
+    <string name="help_category_alternative_input">Alternativ giriş</string>
+    <string name="help_category_features">Xüsusiyyətlər</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Etimadnamə əldə etmək</string>
+    <string name="help_topic_getting_credential_summary">İlk yaş doğrulama etimadnamənizi necə əldə edəcəyinizi öyrənin</string>
+    <string name="help_topic_getting_credential_content">Yaş doğrulama etimadnamənizi əldə etmək üçün:\n\n1. Səlahiyyətli verici yerinə gedin\n2. Dövlət tərəfindən verilmiş ID-nizi təqdim edin\n3. Verilən QR kodunu skan edin\n4. Etimadnaməniz təhlükəsiz saxlanacaq\n\nDoğum tarixi yerli olaraq saxlanılır və heç vaxt paylaşılmır.</string>
+
+    <string name="help_topic_verifying_age_title">Yaşınızı doğrulamaq</string>
+    <string name="help_topic_verifying_age_summary">Şəxsi məlumat paylaşmadan yaşınızı necə sübut edəcəyiniz</string>
+    <string name="help_topic_verifying_age_content">Yaşınızı doğrulamaq lazım olduqda:\n\n1. Doğrulayıcı sizə QR kodu göstərəcək\n2. Onu tətbiqlə skan edin\n3. Tətbiq riyazi sübut yaradır\n4. Yalnız bəli/xeyr cavabı paylaşılır\n\nReal doğum tarixi HEÇ VAXT açıqlanmır.</string>
+
+    <string name="help_topic_accessibility_title">Əlçatanlıq xüsusiyyətləri</string>
+    <string name="help_topic_accessibility_summary">Tətbiqi ehtiyaclarınıza uyğun fərdiləşdirin</string>
+    <string name="help_topic_accessibility_content">Tətbiq çoxlu əlçatanlıq xüsusiyyətləri ehtiva edir:\n\n- Böyük mətn və yüksək kontrast rejimləri\n- Səs girişi və ekran oxuyucu dəstəyi\n- Sadələşdirilmiş jestlər və istifadəçi interfeysi\n- Manual kod daxiletmə seçimləri\n- Uzadılmış vaxt limitləri\n\nBunlara Parametrlər > Əlçatanlıq bölümündən daxil olun</string>
+
+    <string name="help_topic_privacy_security_title">Məxfilik və təhlükəsizlik</string>
+    <string name="help_topic_privacy_security_summary">Məlumatlarınız necə qorunur</string>
+    <string name="help_topic_privacy_security_content">Məxfiliyiniz əsas prioritetimizdir:\n\n- Etimadnamələr cihazınızda yerli olaraq saxlanılır\n- Sıfır bilik sübutları məlumatlarınızı qoruyur\n- İzləmə və ya analitika yoxdur\n- Biometrik autentifikasiya mövcuddur\n- Məlumatlar heç vaxt cihazınızdan şifrəsiz çıxmır</string>
+
+    <string name="help_topic_troubleshooting_title">Problemlərin həlli</string>
+    <string name="help_topic_troubleshooting_summary">Ümumi problemlər və həlləri</string>
+    <string name="help_topic_troubleshooting_content">Ümumi problemlər və həlləri:\n\nQR Skaneri işləmir:\n- Parametrlərdə kamera icazələrini yoxlayın\n- Manual kod daxiletmə seçimini sınayın\n\nEtimanmə yüklənmir:\n- İnternet bağlantınızı yoxlayın\n- Sübut açarını sıfırlamağa cəhd edin\n\nDoğrulama uğursuz oldu:\n- Etimadnamənin müddətinin bitmədiğini yoxlayın\n- Dəstək üçün doğrulayıcı ilə əlaqə saxlayın</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">DOĞUM TARİXİ</string>
+    <string name="date_of_birth">Doğum tarixi</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">%d il</string>
+    <string name="format_step_indicator">Addım %1$d / %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">Etimadnamələr</string>
+    <string name="tab_settings">Parametrlər</string>
+    <string name="tab_help">Kömək</string>
+    <string name="tab_credentials_description">Etimadnamələrinizə baxın</string>
+    <string name="tab_settings_description">Tətbiq parametrləri</string>
+    <string name="tab_help_description">Kömək və dəstək əldə edin</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">Axtar</string>
+    <string name="search_field_label">Axtarış sahəsi</string>
+    <string name="search_placeholder">Parametrləri, köməyi və xüsusiyyətləri axtarın</string>
+    <string name="search_clear">Axtarışı silin</string>
+    <string name="search_popular">Məşhur axtarışlar</string>
+    <string name="search_results_heading">Axtarış nəticələri</string>
+    <string name="search_no_results">Nəticə tapılmadı</string>
+    <string name="search_try_suggestions">Axtarış etməyə çalışın:\n• Əlçatanlıq\n• Parametrlər\n• Kömək\n• Dil</string>
+    <string name="search_results_announcement_singular">1 nəticə tapıldı</string>
+    <string name="search_results_announcement_plural">%d nəticə tapıldı</string>
+    <string name="search_no_results_announcement">Nəticə tapılmadı</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">Sürətli giriş</string>
+    <string name="help_topics">Kömək mövzuları</string>
+    <string name="help_glossary">Lüğət</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">Açıq mənbəli lisenziyalar</string>
+    <string name="licenses_description">Bu tətbiq aşağıdakı açıq mənbəli proqram təminatından istifadə edir. Bu kitabxanaları yaradan tərtibatçılara minnətdarıq.</string>
+    <string name="licenses_tap_to_view">Tam lisenziyanı görmək üçün toxunun</string>
+    <string name="licenses_group_header">%1$s (%2$d kitabxana)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">İnternet bağlantısı yoxdur. Zəhmət olmasa şəbəkənizi yoxlayın və yenidən cəhd edin.</string>
+    <string name="error_unexpected">Gözlənilməz xəta baş verdi. Tətbiqi yenidən başladın.</string>
+    <string name="error_unexpected_try_again">Gözlənilməz xəta baş verdi. Yenidən cəhd edin.</string>
+    <string name="error_storage_detailed">Yaddaş xətası: %s</string>
+    <string name="error_network_detailed">Şəbəkə xətası: %s</string>
+    <string name="error_proof_generation_failed">Sübut yaradıla bilmədi: %s</string>
+    <string name="error_not_eligible">Haqq qazanılmır. Bu doğrulama üçün tələbləri ödəmirsiniz.</string>
+    <string name="error_challenge_expired">Çağırışın müddəti bitib və ya tapılmadı. Yeni bir tələb edin.</string>
+    <string name="error_challenge_expired_scan_new">Bu çağırışın müddəti bitib. Yeni QR kodu skan edin.</string>
+    <string name="error_request_out_of_order">Sorğu sıra dışındadır. Yenidən cəhd edin.</string>
+    <string name="error_too_many_requests">Çox fazla sorğu. Bir az gözləyin və yenidən cəhd edin.</string>
+    <string name="error_server">Server xətası. Sonra yenidən cəhd edin.</string>
+    <string name="error_request_failed">Sorğu uğursuz oldu (%d). Yenidən cəhd edin.</string>
+    <string name="error_not_eligible_short">Bu doğrulama üçün haqq qazanılmır</string>
+    <string name="error_challenge_not_found">Çağırış tapılmadı</string>
+    <string name="error_complete_steps_in_order">Zəhmət olmasa addımları sıra ilə tamamlayın</string>
+    <string name="error_challenge_expired_short">Çağırışın müddəti bitib</string>
+    <string name="error_authentication_cancelled">Autentifikasiya ləğv edildi. Yaş doğrulamasını tamamlamaq üçün kimliyinizi doğrulayın.</string>
+    <string name="error_invalid_data_format_short">Etibarsız məlumat formatı. Yenidən cəhd edin.</string>
+    <string name="error_storage_check_device">Yaddaş xətası. Cihaz yaddaşını yoxlayın.</string>
+    <string name="error_network_check_connection">Şəbəkə xətası. Bağlantınızı yoxlayın.</string>
+    <string name="error_proof_generation_failed_short">Sübut yaradıla bilmədi. Yenidən cəhd edin.</string>
+    <string name="error_operation_in_progress_short">Başqa bir əməliyyat davam edir.</string>
+    <string name="error_no_internet_short">İnternet bağlantısı yoxdur. Şəbəkənizi yoxlayın.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Doğrulama QR-ini skan edin</string>
+    <string name="verification_verifying_title">Yaş doğrulanır</string>
+    <string name="verification_success_title">Yaş doğrulandı</string>
+    <string name="verification_failed_title">Doğrulama uğursuz oldu</string>
+    <string name="verification_processing_wait">Bu, bir neçə saniyə çəkə bilər</string>
+    <string name="verification_success_message">Yaşınız şəxsi şəkildə doğrulandı</string>
+    <string name="verification_return_to_site">İndi sayta qayıdıb davam edə bilərsiniz.</string>
+    <string name="verification_please_enter_code">Zəhmət olmasa doğrulama kodu daxil edin. Kod ya 12 rəqəmli qısa kod, ya da doğrulayıcıdan tam doğrulama URL-i olmalıdır.</string>
+    <string name="verification_error_occurred">Doğrulama zamanı xəta baş verdi</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Emal edilir...</string>
+    <string name="credential_list_verify_age_button">Yaşı doğrulayın</string>
+    <string name="credential_list_generate_in_person_description">Şəxsən etimadnamə yaradın</string>
+    <string name="credential_list_scan_qr_title">QR kodunu skan edin</string>
+    <string name="credential_list_find_locations_title">Yerləri tapın</string>
+    <string name="credential_section_my_credential">Etimadnamələrim</string>
+    <string name="credential_section_managed">İdarə olunan etimadnamələr</string>
+    <string name="credential_list_get_credential_button">Etimadnamə əldə edin</string>
+    <string name="credential_list_add_managed_button">İdarə olunan etimadnamə əlavə edin</string>
+    <string name="credential_section_managed_empty">Uşaq kimi qayğısını çəkdiyiniz biri üçün etimadnamə əlavə edin.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Etimadnamə təfərrüatları</string>
+    <string name="credential_detail_not_found">Etimadnamə tapılmadı</string>
+    <string name="credential_detail_nickname">Ləqəb</string>
+    <string name="credential_detail_no_nickname">Ləqəb təyin edilməyib</string>
+    <string name="credential_detail_edit_nickname">Ləqəbi redaktə edin</string>
+    <string name="credential_detail_status">Vəziyyət</string>
+    <string name="credential_detail_delete">Etimadnaməni silin</string>
+    <string name="credential_detail_delete_title">Etimadnaməni silin</string>
+    <string name="credential_detail_delete_message">Bu etimadnaməni silmək istədiyinizə əminsiniz? Bu əməliyyat geri alına bilməz.</string>
+    <string name="credential_type_primary">Əsas</string>
+    <string name="credential_type_managed">İdarə olunan</string>
+    <string name="credential_status_valid">Etibarlı</string>
+    <string name="credential_status_expired">Müddəti bitib</string>
+    <string name="credential_status_invalid">Etibarsız</string>
+    <string name="action_save">Saxla</string>
+    <string name="credential_slots_full_title">Maksimum etimadnamə sayına çatıldı</string>
+    <string name="credential_slots_full_message">Maksimum etimadnamə sayına çatdınız. Yeni əlavə etmək üçün mövcud etimadnaməni silin.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">İdarə olunan etimadnamə</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">%1$s üçün yaş doğrulansın?</string>
+    <string name="managed_confirm_message">%1$s-in idarə olunan etimadnaməsindən istifadə edərək yaşı doğrulamaq üzrəsiniz.</string>
+    <string name="managed_confirm_proceed">%1$s üçün doğrulayın</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">%1$s üçün sübut yaradılır</string>
+    <string name="verification_age_verified_for">%1$s üçün yaş doğrulandı</string>
+    <string name="deeplink_verification_age_verified_for">%1$s üçün yaş doğrulandı</string>
+    <string name="attestation_managed_credential_received">%1$s üçün etimadnamə alındı!</string>
+    <string name="attestation_managed_credential_stored">Uşağınızın etimadnaməsi təhlükəsiz saxlandı.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">%1$s-in etimadnaməsi silinsin?</string>
+    <string name="credential_detail_delete_managed_message">%1$s üçün bu idarə olunan etimadnaməni silmək istədiyinizə əminsiniz? Bu əməliyyat geri alına bilməz. Onu əvəz etmək üçün yenidən vericiyə getmək lazım olacaq.</string>
+    <string name="credential_detail_save_error">Ləqəb saxlanıla bilmədi</string>
+    <string name="credential_detail_delete_error">Etimadnamə silinə bilmədi</string>
+    <string name="accessibility_saving">Saxlanılır...</string>
+    <string name="accessibility_deleting">Silinir...</string>
+    <string name="accessibility_loading">Yüklənir, gözləyin</string>
+    <string name="accessibility_issuing_credential">Etimadnamə verilir, gözləyin</string>
+    <string name="dialog_delete_all_credentials_title">Bütün etimadnamələr silinsin?</string>
+    <string name="dialog_delete_all_credentials_message">Bu, etimadnamənizi və uşaqlar üçün idarə olunan etimadnamələri silir. Bu əməliyyat geri alına bilməz.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">İdarə olunan</string>
+    <string name="credential_slots_count">%1$d / 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Doğrulama hazırlanır...</string>
+    <string name="deeplink_verification_checking_credential">Etimadnamə yoxlanılır...</string>
+    <string name="deeplink_verification_processing_challenge">Çağırış emal edilir...</string>
+    <string name="deeplink_verification_creating_proof">Təhlükəsiz sübut yaradılır...</string>
+    <string name="deeplink_verification_submitting_proof">Sübut göndərilir...</string>
+    <string name="deeplink_verification_success">✔ Yaş uğurla doğrulandı</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">Etimadnamə tapılmadı. Zəhmət olmasa əvvəlcə etimadnamənizi qurun.</string>
+    <string name="deeplink_verification_error_failed_challenge">Doğrulama çağırışı emal edilə bilmədi</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Autentifikasiya sorğusu göstərilə bilmir</string>
+    <string name="deeplink_verification_error_failed_proof">Yaş sübutu yaradıla bilmədi</string>
+    <string name="deeplink_verification_error_verification_failed">Doğrulama uğursuz oldu</string>
+    <string name="deeplink_verification_error_unexpected">Gözlənilməz xəta baş verdi</string>
+    <string name="deeplink_verification_error_no_credential_selected">Heç bir etimadnamə seçilmədi. Yenidən cəhd edin.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Etimadnamə seçin</string>
+    <string name="deeplink_verification_select_credential_subtitle">Çoxlu etimadnamə mövcuddur. Bu doğrulama üçün hansını istifadə etmək istədiyinizi seçin.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Yaş doğrulanır</string>
+    <string name="deeplink_verification_title_verified">Doğrulandı</string>
+    <string name="deeplink_verification_title_failed">Doğrulama uğursuz oldu</string>
+    <string name="deeplink_verification_please_wait">Gözləyin...</string>
+    <string name="deeplink_verification_age_verified">Yaş doğrulandı!</string>
+    <string name="deeplink_verification_under_age_verified">%1$d yaşdan kiçik olduğu doğrulandı</string>
+    <string name="deeplink_verification_returning_browser">Brauzerə qayıdılır...</string>
+    <string name="deeplink_verification_return_to_browser">Brauzerə qayıdın</string>
+    <string name="deeplink_verification_failed_title">Doğrulama uğursuz oldu</string>
+    <string name="deeplink_verification_error_occurred">Doğrulama zamanı xəta baş verdi</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">VERMƏ PROSESİ</string>
+    <string name="officer_issuance_process_steps">1. İstifadəçinin fiziki kimlik sənədini yoxlayın\n2. Doğum tarixini daxil edin\n3. Məlumatın tam uyğun olduğunu yoxlayın\n4. Attestasiya QR (Quick Response) kodu ilə etimadnamə verin\n5. İstifadəçi etimadnaməni almaq üçün QR kodunu skan edir</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">QR kodu yaradıla bilmədi</string>
+    <string name="officer_attestation_ready_title">Attestasiya hazırdır</string>
+    <string name="officer_attestation_scan_instruction">İstifadəçi bu QR kodunu Provii Wallet tətbiqi ilə skan etməlidir</string>
+    <string name="officer_attestation_deeplink_label">ATTESTASİYA DƏRİN KEÇİD</string>
+    <string name="officer_wait_for_attestation_scan">İstifadəçinin skan etməsini gözləyin</string>
+    <string name="officer_attestation_info">Etimadnamə onların cihazında yaradılacaq</string>
+    <string name="officer_attestation_complete">Attestasiya tamamlandı</string>
+    <string name="officer_user_will_complete_credential">İstifadəçi etimadnamə yaradılmasını öz cihazında tamamlayacaq</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Attestasiya məlumatları dekodlanır...</string>
+    <string name="attestation_generating_randomness">Təhlükəsiz təsadüflük yaradılır...</string>
+    <string name="attestation_sending">Vericiyə göndərilir...</string>
+    <string name="attestation_verifying">Öhdəlik yoxlanılır...</string>
+    <string name="attestation_storing">Etimadnamə saxlanılır...</string>
+    <string name="attestation_complete">Etimadnamə tamamlandı!</string>
+    <string name="attestation_error_invalid_data">Etibarsız attestasiya məlumatları</string>
+    <string name="attestation_error_expired">Attestasiyanın müddəti bitib</string>
+    <string name="attestation_error_network">Şəbəkə xətası , bağlantınızı yoxlayın</string>
+    <string name="attestation_error_unexpected">Gözlənilməz xəta baş verdi</string>
+    <string name="attestation_title_processing">Attestasiya emal edilir</string>
+    <string name="attestation_title_success">Etimadnamə alındı</string>
+    <string name="attestation_title_failed">Vermə uğursuz oldu</string>
+    <string name="attestation_secure_issuance">Təhlükəsiz vermə</string>
+    <string name="attestation_privacy_preserving">Məxfiliyi qoruyan etimadnamə vermə</string>
+    <string name="attestation_may_take_seconds">Bu, bir neçə saniyə çəkə bilər</string>
+    <string name="attestation_keep_app_open">Tətbiqi açıq saxlayın</string>
+    <string name="attestation_credential_received">Etimadnamə alındı!</string>
+    <string name="attestation_credential_stored_description">Yaş doğrulama etimadnaməniz təhlükəsiz saxlandı</string>
+    <string name="attestation_issuer_verified">Verici doğrulandı</string>
+    <string name="attestation_failed_title">Vermə uğursuz oldu</string>
+    <string name="attestation_scan_qr_instead">Əvəzinə QR kodunu skan edin</string>
+    <string name="attestation_go_back">Geri qayıdın</string>
+    <string name="attestation_step_decode">Dekodla</string>
+    <string name="attestation_step_generate">Yarat</string>
+    <string name="attestation_step_send">Göndər</string>
+    <string name="attestation_step_verify">Doğrula</string>
+    <string name="attestation_step_store">Saxla</string>
+    <string name="attestation_step_complete">Tamamla</string>
+    <string name="accessibility_attestation_encrypted_description">Şifrəli attestasiya emal edilir</string>
+    <string name="accessibility_attestation_success_description">Etimadnamənin alındığını göstərən uğur işarəsi</string>
+    <string name="accessibility_attestation_error_description">Vermenin uğursuz olduğunu göstərən xəta ikonu</string>
+    <string name="accessibility_step_complete">%1$s addımı tamamlandı</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Etimadnamə alıcısı</string>
+    <string name="attestation_recipient_prompt">Bu etimadnamə… üçündür</string>
+    <string name="attestation_recipient_me">Mən</string>
+    <string name="attestation_recipient_child">Uşaq</string>
+    <string name="attestation_nickname_title">Uşağın ləqəbi</string>
+    <string name="attestation_nickname_prompt">Etimadnamələri bir-birindən ayırd etmək üçün ləqəb daxil edin</string>
+    <string name="attestation_nickname_placeholder">məs. Anar</string>
+    <string name="attestation_nickname_continue">Davam edin</string>
+    <string name="attestation_nickname_back">Geri</string>
+    <string name="accessibility_attestation_recipient_heading">Bu etimadnamənin kimin üçün olduğunu seçin</string>
+    <string name="accessibility_attestation_nickname_heading">Uşaq üçün ləqəb daxil edin</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Etibarsız məmur ID formatı</string>
+    <string name="officer_auth_error_challenge_failed">YubiKey çağırışı alına bilmədi: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Autentifikasiya etmək üçün YubiKey-ə toxunun</string>
+    <string name="officer_auth_error_touch_timeout">YubiKey toxunma vaxt limiti keçdi</string>
+    <string name="officer_auth_error_verify_document_dob">Sənəd və Doğum Tarixinin uyğun olduğunu yoxlayın</string>
+    <string name="officer_auth_error_invalid_date_format">Etibarsız tarix formatı. YYYY-MM-DD istifadə edin</string>
+    <string name="officer_auth_error_must_be_18">İstifadəçi 18 yaş və ya daha böyük olmalıdır</string>
+    <string name="officer_auth_error_not_authenticated">Autentifikasiya edilmədi. Zəhmət olmasa əvvəlcə məmur ID-nizi daxil edin.</string>
+    <string name="officer_auth_error_issue_failed">Etimadnamə verilə bilmədi</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Görmək üçün toxunun</string>
+    <string name="gesture_desc_long_press_options">, seçimlər üçün uzun basın</string>
+    <string name="gesture_desc_swipe_left">, daha çox əməliyyat üçün sola sürüşdürün</string>
+    <string name="gesture_desc_swipe_right">, daha çox əməliyyat üçün sağa sürüşdürün</string>
+    <string name="gesture_desc_tap_to_activate">Aktivləşdirmək üçün toxunun</string>
+    <string name="gesture_desc_long_press_format">. Uzun basın: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Yenidən cəhd et</string>
+    <string name="main_activity_reset_redownload">Sıfırla və yenidən yüklə</string>
+    <string name="main_activity_show_debug_info">Debug məlumatını göstər</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Əlçatanlıq parametrləri</string>
+    <string name="search_item_accessibility_settings_subtitle">Təcrübənizi fərdiləşdirin</string>
+    <string name="search_item_large_text_title">Böyük mətn</string>
+    <string name="search_item_large_text_subtitle">Mətn ölçüsünü artırın</string>
+    <string name="search_item_high_contrast_title">Yüksək kontrast</string>
+    <string name="search_item_high_contrast_subtitle">Görünürlüyü artırın</string>
+    <string name="search_item_voice_input_title">Səs girişi</string>
+    <string name="search_item_voice_input_subtitle">Səslə idarə edin</string>
+    <string name="search_item_manual_code_entry_title">Manual kod daxiletmə</string>
+    <string name="search_item_manual_code_entry_subtitle">Skan etmək əvəzinə kodları yazın</string>
+    <string name="search_item_simplified_ui_title">Sadələşdirilmiş istifadəçi interfeysi</string>
+    <string name="search_item_simplified_ui_subtitle">Vizual mürəkkəbliyi azaldın</string>
+    <string name="search_item_color_blindness_title">Rəng korluğu dəstəyi</string>
+    <string name="search_item_color_blindness_subtitle">Daha yaxşı görünmə üçün rəngləri tənzimləyin</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Parametrlər</string>
+    <string name="search_item_settings_subtitle">Tətbiq konfiqurasiyası</string>
+    <string name="search_item_language_title">Dil</string>
+    <string name="search_item_language_subtitle">Tətbiq dilini dəyişin</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Etimadnamələrim</string>
+    <string name="search_item_credentials_subtitle">Etimadnamələrinizə baxın</string>
+    <string name="search_item_get_credential_title">Etimadnamə əldə edin</string>
+    <string name="search_item_get_credential_subtitle">Vericilər tapın</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Kömək</string>
+    <string name="search_item_help_subtitle">Yardım əldə edin</string>
+    <string name="search_item_privacy_title">Məxfilik qorunması</string>
+    <string name="search_item_privacy_subtitle">Məlumatlarınız necə qorunur</string>
+    <string name="search_item_verification_title">Yaş doğrulaması</string>
+    <string name="search_item_verification_subtitle">Yaşınızı sübut edin</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Sandbox mühiti üçün sabit ehtiyat reyestri</string>
+    <string name="issuer_fallback_production_description">İstehsal üçün sabit ehtiyat reyestri</string>
+    <string name="issuer_fallback_category_government">Hökumət</string>
+    <string name="issuer_fallback_category_government_description">Hökumət tərəfindən verilmiş etimadnamələr</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii Sandbox Verici</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Test üçün rəsmi Provii Sandbox vericisi</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Sandbox verici portalına daxil olun</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Rəsmi Provii etimadnamə vericisi</string>
+    <string name="issuer_fallback_production_issuer_instructions">Yerli DMV ofisinizi ziyarət edin</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">Doğum tarixi gələcəkdə ola bilməz</string>
+    <string name="validation_error_invalid_date_format">Etibarsız tarix formatı</string>
+    <string name="validation_error_officer_id_too_short">Məmur kimliyi çox qısadır</string>
+    <string name="validation_error_invalid_officer_id_format">Etibarsız Məmur kimliyi formatı</string>
+    <string name="validation_error_empty_qr_code">Boş QR kodu</string>
+    <string name="validation_error_qr_code_too_large">QR kodu çox böyükdür</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">İndi siz bir tərtibatçısınız!</string>
+    <string name="sandbox_toast_enabled">Sandbox rejimi aktivləşdirildi\nTest mühitindən istifadə olunur</string>
+    <string name="sandbox_toast_disabled">İstehsal rejimi aktivləşdirildi\nİstehsal mühitindən istifadə olunur</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">Tərtibatçı rejiminə 1 addım qalır</string>
+    <string name="sandbox_toast_steps_away">Tərtibatçı rejiminə %1$d addım qalır</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">YubiKey qoşulmayıb</string>
+    <string name="yubikey_error_timeout">YubiKey toxunması gözlənilir vaxt limiti keçdi. Yanıb-sönəndə açara toxunun.</string>
+    <string name="yubikey_error_not_supported">Bu YubiKey slotunda çağırış-cavab konfiqurasiya edilməyib</string>
+    <string name="yubikey_error_no_slot">Slot 2, HMAC (Hash-based Message Authentication Code) SHA1 çağırış-cavabı üçün konfiqurasiya edilməyib</string>
+    <string name="yubikey_error_hmac_failed">HMAC (Hash-based Message Authentication Code) hesablaması uğursuz oldu: %s</string>
+    <string name="yubikey_error_session_failed">YubiKey-ə qoşulmaq uğursuz oldu: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">Cüzdan işə salınmayıb</string>
+    <string name="wallet_error_proving_key_not_found">Sübut açarı tapılmadı , yenidən yükləyin</string>
+    <string name="wallet_error_proving_key_not_readable">Sübut açarı faylı oxunmur</string>
+    <string name="wallet_error_out_of_memory">Yaddaş çatmır , tətbiqi yenidən başladın</string>
+    <string name="wallet_error_prover_error">İsbatçı xətası: %s</string>
+    <string name="wallet_error_ffi_error">FFI xətası: %s</string>
+    <string name="wallet_error_prover_init_failed">İsbatçı işə salına bilmədi: %s</string>
+    <string name="wallet_error_prover_verification_failed">İsbatçı işə salınma doğrulaması uğursuz oldu</string>
+    <string name="wallet_error_verifier_url_update_failed">Doğrulayıcı URL (web ünvanı) yenilənə bilmədi! %1$s gözlənilirdi, lakin %2$s alındı</string>
+    <string name="wallet_error_wallet_still_null">İşə salınmadan sonra cüzdan hələ də boşdur</string>
+    <string name="wallet_error_credential_not_found">Etimadnamə tapılmadı</string>
+    <string name="wallet_error_credential_access_failed">Etimadnaməyə giriş mümkün deyil: %s</string>
+    <string name="wallet_error_invalid_format">Etibarsız format: %s</string>
+    <string name="wallet_error_not_initialized_short">İsbatçı işə salınmayıb</string>
+    <string name="wallet_error_proving_key_unavailable">Sübut açarı mövcud deyil. Quraşdırma tələb olunur.</string>
+    <string name="wallet_error_storage_init_failed">Saxlama işə salınması uğursuz oldu</string>
+    <string name="wallet_error_biometric_unavailable">Biometrik autentifikasiya mövcud deyil</string>
+    <string name="wallet_error_auth_failed">Autentifikasiya uğursuz oldu</string>
+    <string name="wallet_error_sandbox_disabled">Test etimadnaməsi yaratmaq üçün Sandbox rejimini aktivləşdirin</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Sandbox etimadnamələri alına bilmir. İnternet bağlantısını yoxlayın.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Autentifikasiya tələb olunur</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Yaş sübutu yaratmaq üçün kimliyinizi doğrulayın</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Təhlükəsiz yaddaşa daxil olun</string>
+    <string name="keystore_biometric_prompt_cancel">Ləğv et</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, genişlənmiş, tam lisenziya mətni göstərilir</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, büzülmüş, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">Yox</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Mobil şəbəkə</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Naməlum</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">Kontrast səviyyələri</string>
+    <string name="help_topic_extra_large_text_title">Çox böyük mətn</string>
+    <string name="help_topic_reduce_transparency_title">Şəffaflığı azaldın</string>
+    <string name="help_topic_color_blind_modes_title">Rəng korluğu rejimləri</string>
+    <string name="help_topic_line_spacing_title">Sətir aralığı</string>
+    <string name="help_topic_paragraph_spacing_title">Abzas aralığı</string>
+    <string name="help_topic_letter_spacing_title">Hərf aralığı</string>
+    <string name="help_topic_text_width_title">Mətn eni</string>
+    <string name="help_topic_touch_targets_title">Daha böyük toxunma hədəfləri</string>
+    <string name="help_topic_reduce_motion_title">Hərəkəti azaldın</string>
+    <string name="help_topic_timeout_behavior_title">Vaxt limiti davranışı</string>
+    <string name="help_topic_simplified_gestures_title">Sadələşdirilmiş jestlər</string>
+    <string name="help_topic_haptic_feedback_title">Haptik geribildirim</string>
+    <string name="help_topic_data_preservation_title">Məlumatların qorunması</string>
+    <string name="help_topic_simplified_ui_title">Sadələşdirilmiş istifadəçi interfeysi</string>
+    <string name="help_topic_step_indicators_title">Addım göstəriciləri</string>
+    <string name="help_topic_verbose_descriptions_title">Ətraflı açıqlamalar</string>
+    <string name="help_topic_confirm_actions_title">Əməliyyatları təsdiqlə</string>
+    <string name="help_topic_reading_level_title">Sadələşdirilmiş oxu səviyyəsi</string>
+    <string name="help_topic_help_system_title">Kömək sistemi</string>
+    <string name="help_topic_manual_code_entry_title">Manual kod daxiletmə</string>
+    <string name="help_topic_voice_input_title">Səs girişi</string>
+    <string name="help_topic_screen_reader_title">Ekran oxuyucu dəstəyi</string>
+    <string name="help_topic_accessibility_profiles_title">Sürətli quraşdırma profilləri</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">Mətn ilə arxa plan arasındakı kontrast nisbətini idarə edin:\n\n• Standart: Standart tətbiq rəngləri\n• Yüksək (AA): 4.5:1 kontrast nisbəti\n• Maksimum (AAA): 7:1+ kontrast nisbəti\n\nDaha yüksək kontrast, xüsusilə parlaq mühitlərdə və ya aşağı görmə qabiliyyəti olan istifadəçilər üçün mətni oxumağı asanlaşdırır.\n\nWCAG AAA uyğunluğu Maksimum kontrast tələb edir.</string>
+    <string name="help_topic_extra_large_text_text">Tətbiq boyunca bütün mətn ölçülərini 50% artırır.\n\nBu, aşağıdakı istifadəçilər üçün mətni oxumağı asanlaşdırır:\n• Aşağı görmə qabiliyyəti\n• Yaşla bağlı görmə dəyişiklikləri\n• Oxu çətinlikləri\n\nMaksimum çeviklik üçün sistem şrift ölçüsü parametrləri ilə birləşir.</string>
+    <string name="help_topic_reduce_transparency_text">Şəffaf örtükləri və bulanıqlıq effektlərini aradan qaldırır.\n\nFaydaları:\n• Daha aydın vizual iyerarxiya\n• Daha yaxşı mətn oxunuşu\n• Azaldılmış vizual gürültü\n• Aşağı koqnitiv yük\n\nAşağı görmə qabiliyyəti və ya koqnitiv çətinliyi olan istifadəçilər üçün tövsiyə olunur.</string>
+    <string name="help_topic_color_blind_modes_text">Müxtəlif rəng korluğu növləri üçün rəngləri tənzimləyir:\n\n• Protanopiya: Qırmızı korluğu\n• Deuteranopiya: Yaşıl korluğu\n• Tritanopiya: Mavi korluğu\n• Monoxrom: Tam rəng korluğu\n\nHər rejim həmin xüsusi rəng görüşü çatışmazlığı növü üçün seçilə bilən rənglərdən istifadə edir.</string>
+    <string name="help_topic_line_spacing_text">Mətn sətirləri arasındakı aralığı tənzimləyir (1.0x - 2.0x).\n\n• Standart: 1.0x\n• AAA Uyğun: 1.5x və ya daha çox\n\nArtırılmış sətir aralığı:\n• Oxu anlaşıqlığını artırır\n• Göz yorğunluğunu azaldır\n• Disleksiyası olan istifadəçilərə kömək edir\n• Mətn bloklarını daha az bunaldıcı edir</string>
+    <string name="help_topic_paragraph_spacing_text">Abzaslar arasındakı aralığı tənzimləyir (1.0x - 3.0x).\n\n• Standart: 1.0x\n• AAA Uyğun: 2.0x və ya daha çox\n\nArtırılmış abzas aralığı:\n• Fikirləri aydın şəkildə ayırır\n• Vizual təşkilatı yaxşılaşdırır\n• Koqnitiv yükü azaldır\n• Oxu mövqeyini qorumağa kömək edir</string>
+    <string name="help_topic_letter_spacing_text">Hərflər arasındakı aralığı tənzimləyir (0.0em - 0.2em).\n\n• Standart: 0.0em\n• AAA Uyğun: 0.12em və ya daha çox\n\nArtırılmış hərf aralığı:\n• Ayrı-ayrı hərfləri daha fərqli edir\n• Disleksiyası olan istifadəçilərə kömək edir\n• Oxu dəqiqliyini artırır\n• Hərf qarışıqlığını azaldır</string>
+    <string name="help_topic_text_width_text">Daha asan oxumaq üçün sətir uzunluğunu məhdudlaşdırır:\n\n• Tam genişlik: Məhdudiyyət yoxdur\n• Rahat: 80 simvol (tövsiyə olunan)\n• Dar: 60 simvol\n\nTədqiqatlar optimal oxunun sətir başına 60-80 simvolla baş verdiyini göstərir. Qısa sətrlər göz hərəkətini azaldır və anlaşıqlığı artırır.</string>
+    <string name="help_topic_touch_targets_text">Minimum toxunma hədəf ölçüsünü 60dp-ə artırır (44dp-dən).\n\nFaydaları:\n• Düymələrə və idarəetmə elementlərinə toxunmaq asanlaşır\n• Təsadüfi toxunmaları azaldır\n• Motor qüsurlu istifadəçilərə kömək edir\n• Bir əllik istifadə üçün daha yaxşıdır\n\nWCAG AAA minimum 60dp tələb edir.</string>
+    <string name="help_topic_reduce_motion_text">Bütün animasiyaları və keçidləri aradan qaldırır.\n\nFaydaları:\n• Hərəkət tutmasının qarşısını alır\n• Diqqəti dağıtmanı azaldır\n• Koqnitiv yükü azaldır\n• Diqqəti artırır\n\nAşağıdakı istifadəçilər üçün tövsiyə olunur:\n• Vestibulyar pozğunluqlar\n• Diqqət çətinlikləri\n• Hərəkət həssaslığı</string>
+    <string name="help_topic_timeout_behavior_text">Doğrulama ekranlarında avtomatik vaxt limitini idarə edir:\n\n• Vaxt Limiti Yoxdur (AAA): Məhdudiyyətsiz vaxt\n• Standart: 30 saniyə\n• Uzadılmış: 60 saniyə\n\nWCAG AAA, tapşırıqları tamamlamaq üçün daha çox vaxta ehtiyacı olan istifadəçilər üçün vaxt limiti olmayan seçim tələb edir.\n\nForma məlumatları vaxt limitlərindən əvvəl avtomatik saxlanılır.</string>
+    <string name="help_topic_simplified_gestures_text">Mürəkkəb jestləri sadə alternativlərlə əvəz edir:\n\n• Sürüşdürün → Düymə toxun\n• Uzun basın → Təsdiq ilə adi toxunma\n• Sıxın/böyüdün → Düymələr\n\nAşağıdakı istifadəçilərə kömək edir:\n• Motor qüsurları\n• Titrəmə\n• Məhdud çeviklik\n• Toxunma ekranı çətinlikləri</string>
+    <string name="help_topic_haptic_feedback_text">Əməliyyatlar üçün vibrasiya geribildirim verir.\n\nFaydaları:\n• Düymə basmaları təsdiqlənir\n• Xətaları göstərir\n• Taktil təsdiq verir\n\nAşağıdakı istifadəçilər üçün deaktivləşdirilə bilər:\n• Diqqətini dağıdanlar\n• Sensor həssaslığı olanlar\n• Səssiz əməliyyatı üstün tutanlar</string>
+    <string name="help_topic_data_preservation_text">Vaxt limitlərindən əvvəl forma məlumatlarını avtomatik saxlayır.\n\nXüsusiyyətlər:\n• Vaxt limitindən 10 saniyə əvvəl xəbərdarlıq\n• Məlumatları saxlamaq və ya atmaq seçimi\n• Qayıdışda avtomatik bərpa\n• 24 saatlıq məlumat saxlama\n\nƏlavə vaxta ehtiyacınız olduqda və ya fasilə yaşandıqda məlumat itkisini önləyir.</string>
+    <string name="help_topic_simplified_ui_text">Vizual mürəkkəbliyi azaldır:\n\n• Bir anda daha az UI elementi göstərilir\n• Daha böyük, daha aydın düymələr\n• Daha çox boş sahə\n• Sadələşdirilmiş sxemlər\n\nFaydaları:\n• Anlamaq asanlaşır\n• Daha az bunaldıcı\n• Daha yaxşı diqqət\n• Azaldılmış koqnitiv yük</string>
+    <string name="help_topic_step_indicators_text">Çox addımlı proseslərdə tərəqqini göstərir.\n\nGöstərilənlər:\n• Cari addım nömrəsi\n• Ümumi addım sayı\n• Tərəqqi vizuallaşdırması\n\nFaydaları:\n• Narahatlığı azaldır\n• Aydın gözləntiləri müəyyən edir\n• İstiqamətdə qalmağa kömək edir\n• Tamamlanma tərəqqisini göstərir</string>
+    <string name="help_topic_verbose_descriptions_text">Əlavə kontekst və açıqlamalar verir:\n\n• Daha uzun düymə etiketləri\n• Daha ətraflı təlimatlar\n• Əlavə ipuçları\n• Daha aydın xəta mesajları\n\nİstifadəçilərə kömək edir:\n• Əvvəl əməliyyatları başa düşmək\n• Səhvlərin qarşısını almaq\n• Tətbiq funksionallığını öyrənmək\n• Güvən qurmaq</string>
+    <string name="help_topic_confirm_actions_text">Mühüm əməliyyatlar üçün təsdiq tələb edir:\n\n• Etimadnamələri silmək\n• Parametrləri dəyişmək\n• Məlumatları təmizləmək\n\nWCAG AAA bütün dağıdıcı əməliyyatlar üçün təsdiq tələb edir.\n\nFaydaları:\n• Təsadüflərin qarşısını alır\n• Əməliyyatdan əvvəl nəzərdən keçirməyə imkan verir\n• Narahatlığı azaldır\n• İkinci şans verir</string>
+    <string name="help_topic_reading_level_text">Daha sadə dil istifadə edir (7-9-cu sinif səviyyəsi):\n\n• Qısa cümlələr\n• Jarqon əvəzinə adi sözlər\n• Aydın, birbaşa dil\n• Daha az texniki termin\n\nAktivləşdirildikdə WCAG AAA uyğundur.\n\nFaydaları:\n• Anlamaq asanlaşır\n• Daha sürətli anlama\n• Ana dili olmayan danışanlar üçün daha yaxşıdır\n• Azaldılmış koqnitiv yük</string>
+    <string name="help_topic_help_system_text">Tətbiq boyunca kontekstə uyğun kömək mövcuddur.\n\nXüsusiyyətlər:\n• 27 kömək mövzusu\n• Axtarıla bilən kömək mərkəzi\n• Əlaqəli mövzu naviqasiyası\n• Texniki lüğət\n\nKöməyə daxil olun:\n• Parametrlər ekranlarından\n• Mürəkkəb xüsusiyyətlərdən\n• Xəta mesajlarından\n• Kömək ikonu gördüyünüz hər yerdən</string>
+    <string name="help_topic_manual_code_entry_text">QR kodu məlumatlarını skan etmək əvəzinə manual daxil edin.\n\nFaydaları:\n• Kamera girişi mövcud olmadıqda işləyir\n• Motor çətinliyi olan istifadəçilərə kömək edir\n• Aşağı işıqlanmada daha yaxşıdır\n• Telefonu sabit tutmaq lazım deyil\n\nKameraya əsaslanan QR skanlara alternativdir.</string>
+    <string name="help_topic_voice_input_text">Yazmaq əvəzinə mətn daxil etmək üçün səsdən istifadə edin.\n\nFaydaları:\n• Əlsiz giriş\n• Yazmaqdan daha sürətli\n• Motor qüsurlu istifadəçilərə kömək edir\n• Təkrarlanan gərginliyi azaldır\n\nCihazınızın daxili səs tanımasından istifadə edir.</string>
+    <string name="help_topic_screen_reader_text">TalkBack ekran oxuyucu üçün tam dəstək.\n\nXüsusiyyətlər:\n• Bütün UI elementləri etiketlənib\n• Düzgün başlıq strukturu\n• Məntiqi naviqasiya sırası\n• Mürəkkəb əməliyyatlar üçün xüsusi ipuçları\n\nTətbiq avtomatik aktivləşdirir:\n• Ətraflı açıqlamalar\n• Gücləndirilmiş toxunma hədəfləri\n\nTalkBack aşkarlandıqda.</string>
+    <string name="help_topic_accessibility_profiles_text">Əvvəlcədən konfiqurasiya edilmiş əlçatanlıq profilləri:\n\n• Görmə Qüsurlu: Yüksək kontrast, böyük mətn, haptik\n• Hərəkət Qüsurlu: Böyük hədəflər, uzadılmış vaxt limitləri, təsdiqlər\n• Koqnitiv: Sadələşdirilmiş UI, addım göstəriciləri, açıqlamalar\n• Yaşlı: Böyük mətn, hədəflər, sadələşdirilmiş UI, azaldılmış hərəkət\n• Standart: Bütün parametrləri sıfırla\n\nHər profil həmin istifadəçi qrupu üçün ən faydalı parametrləri aktivləşdirir. Profil tətbiq etdikdən sonra əlavə fərdiləşdirə bilərsiniz.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">Yaş doğrulaması</string>
+    <string name="content_age_verification_explanation">Sıfır bilik sübutlarından istifadə edərək yaşınızı təhlükəsiz doğrulaması gözlənilir. Doğum tarixi doğrulayıcı ilə heç vaxt paylaşılmır.</string>
+    <string name="content_age_verification_instructions">Kameranı doğrulama QR koduna yönəldin. Kod aşkarlandıqda avtomatik skan ediləcək.</string>
+    <string name="content_age_verification_success">Yaşınız uğurla doğrulandı. Doğrulayıcı real doğum tarixi olmadan yaş tələbinizi ödəyib-ödəmədiyinizi bilir.</string>
+    <string name="content_age_verification_failed">Doğrulama uğursuz oldu. Zəhmət olmasa QR kodunu yenidən skan etməyə cəhd edin və ya manual kod daxiletmədən istifadə edin.</string>
+    <string name="content_credential_issuance_title">Etimadnamə vermə</string>
+    <string name="content_credential_issuance_explanation">Rəqəmsal yaş etimadnamənizi almaq üçün səlahiyyətli verici tərəfindən verilən QR kodunu skan edin.</string>
+    <string name="content_credential_issuance_instructions">Kameranı məmurun göstərdiyi vermə QR koduna yönəldin. Etimadnaməniz cihazınızda yaradılacaq.</string>
+    <string name="content_credential_issuance_success">Etimadnamə uğurla yaradıldı. İndi bu etimadnaməni yaş doğrulaması üçün istifadə edə bilərsiniz.</string>
+    <string name="content_credential_description">Etimadnamə, məxfiliyi qoruyan doğrulamaya imkan verən kripto-qrafik imzalı kimlik sübutudur.</string>
+    <string name="content_zero_knowledge_explanation">Sıfır bilik sübutları, real yaşınızı açıqlamadan yaş tələbini ödədiyinizi sübut etməyə imkan verir.</string>
+    <string name="content_setup_proving_key">Sıfır bilik sübutu yaratmaq üçün lazım olan kriptoqrafik sübut açarı yüklənir</string>
+    <string name="content_processing_challenge">Doğrulama çağırışı emal edilir</string>
+    <string name="content_creating_proof">Sıfır bilik yaş sübutu yaradılır</string>
+    <string name="content_submitting_proof">Doğrulayıcıya sübut göndərilir</string>
+    <string name="content_error_no_credential">Etimadnamə mövcud deyil. Zəhmət olmasa əvvəlcə səlahiyyətli vericidən etimadnamə əldə edin.</string>
+    <string name="content_error_network_failed">Şəbəkə bağlantısı uğursuz oldu. İnternet bağlantınızı yoxlayın və yenidən cəhd edin.</string>
+    <string name="content_error_invalid_qr">Etibarsız QR kodu. Düzgün doğrulama kodunu skan etdiyinizə əmin olun.</string>
+    <string name="content_error_verification_failed">Doğrulama uğursuz oldu. Server sübutunuzu təsdiqləyə bilmədi.</string>
+    <string name="content_officer_authentication_title">Məmur autentifikasiyası</string>
+    <string name="content_officer_issuance_title">Etimadnamə vermə</string>
+    <string name="content_officer_dob_prompt">Ərizəçinin rəsmi kimlik sənədindən yoxlanılmış doğum tarixini daxil edin.</string>
+    <string name="content_onboarding_welcome">Provii Wallet-ə xoş gəlmisiniz , məxfiliyi qoruyan rəqəmsal yaş doğrulama həlliniz.</string>
+    <string name="content_onboarding_privacy">Doğum tarixi cihazınızda təhlükəsiz saxlanılır və doğrulayıcılara heç vaxt ötürülmür.</string>
+    <string name="content_onboarding_get_started">Başlamaq üçün rəqəmsal yaş etimadnamənizi almaq üzrə səlahiyyətli vericiyə müraciət edin.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">Yaşınızı yoxlayın</string>
+    <string name="content_age_verification_explanation_simplified">Yaşınızı yoxlayırıq. Doğum gününüzü görmək və ya paylaşmayacağıq.</string>
+    <string name="content_age_verification_instructions_simplified">Kameranı QR koduna yönəldin. Öz-özünə skan edəcək.</string>
+    <string name="content_age_verification_success_simplified">Uğurlu! Sayt kifayət qədər böyük olduğunuzu bilir. Doğum günü bilinmir.</string>
+    <string name="content_age_verification_failed_simplified">Alınmadı. Yenidən skan etməyə cəhd edin və ya kodu yazın.</string>
+    <string name="content_credential_issuance_title_simplified">ID kartınızı əldə edin</string>
+    <string name="content_credential_issuance_explanation_simplified">Rəqəmsal ID-nizi almaq üçün dövlət idarəsindəki kodu skan edin.</string>
+    <string name="content_credential_issuance_instructions_simplified">Kameranı koduna yönəldin. ID-niz telefonunuza saxlanacaq.</string>
+    <string name="content_credential_issuance_success_simplified">Hazırdır! İndi yaşınızı sübut etmək üçün rəqəmsal ID-nizdən istifadə edə bilərsiniz.</string>
+    <string name="content_credential_description_simplified">Etimadnamə, şəxsi məlumat paylaşmadan kim olduğunuzu sübut edən rəqəmsal ID kartı kimidir.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Real yaşınızı heç kimə söyləmədən kifayət qədər böyük olduğunuzu sübut edə bilərsiniz.</string>
+    <string name="content_setup_proving_key_simplified">Tətbiqin işləməsi üçün lazım olan təhlükəsizlik faylları yüklənir</string>
+    <string name="content_processing_challenge_simplified">Yaş yoxlama sorğusu oxunur</string>
+    <string name="content_creating_proof_simplified">Yaş sübutunuz yaradılır</string>
+    <string name="content_submitting_proof_simplified">Sayta sübut göndərilir</string>
+    <string name="content_error_no_credential_simplified">Hələ ID-niz yoxdur. Əvvəlcə dövlət idarəsinə müraciət edin.</string>
+    <string name="content_error_network_failed_simplified">İnternetə qoşulmaq mümkün deyil. Wi-Fi ya da məlumat bağlantınızı yoxlayın və yenidən cəhd edin.</string>
+    <string name="content_error_invalid_qr_simplified">O kod düzgün görünmür. Düzgün kodu skan etdiyinizə əmin olun.</string>
+    <string name="content_error_verification_failed_simplified">Alınmadı. Sayt sübutunuzu yoxlaya bilmədi. Yenidən cəhd edin.</string>
+    <string name="content_officer_authentication_title_simplified">Məmur girişi</string>
+    <string name="content_officer_issuance_title_simplified">ID kartı yaradın</string>
+    <string name="content_officer_dob_prompt_simplified">Şəxsin rəsmi kimliyindən doğum günü tarixini daxil edin.</string>
+    <string name="content_onboarding_welcome_simplified">Provii Wallet-ə xoş gəlmisiniz , yaşınızı şəxsi olaraq sübut edin.</string>
+    <string name="content_onboarding_privacy_simplified">Doğum günü telefonunuzda qalır. Başqa heç kim görə bilməz.</string>
+    <string name="content_onboarding_get_started_simplified">Başlamaq üçün rəqəmsal ID-nizi almaq üzrə dövlət idarəsinə müraciət edin.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Quick Response (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Şəxsi Kimlik Nömrəsi (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">Doğum Tarixi (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Kimlik (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">İstifadəçi İnterfeysi (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Vahid Resurs Göstəricisi (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Tətbiq Proqramlaşdırma İnterfeysi (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">Animasiyaları duraklat</string>
+    <string name="animation_resume_animations">Animasiyaları davam etdir</string>
+    <string name="animation_pause_button_text">Duraklat</string>
+    <string name="animation_resume_button_text">Davam et</string>
+    <string name="animation_toggles_playback_hint">Animasiya oynatmanı keçid edir</string>
+    <string name="animation_paused_announcement">Animasiyalar duraklatıldı</string>
+    <string name="animation_resumed_announcement">Animasiyalar davam etdirildi</string>
+    <string name="animation_active_count">%d aktiv animasiya</string>
+    <string name="animation_loading_default">Yüklənir</string>
+    <string name="animation_please_wait">Bu əməliyyat tamamlanana qədər gözləyin</string>
+    <string name="animation_percent_complete">%d faiz tamamlandı</string>
+    <string name="animation_loading_in_progress">Davam edir</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">Klaviatura qısayolları</string>
+    <string name="keyboard_shortcuts_done">Tamamlandı</string>
+    <string name="keyboard_shortcuts_app_section">Tətbiq qısayolları</string>
+    <string name="keyboard_shortcuts_navigation_section">Naviqasiya</string>
+    <string name="keyboard_shortcuts_tips_section">İpuçları</string>
+    <string name="keyboard_shortcuts_navigation_footer">Bu naviqasiya düymələri xarici klaviaturalarla tətbiq boyunca işləyir</string>
+    <string name="keyboard_shortcuts_tip_external">Xarici Bluetooth və USB klaviaturalar tam dəstəklənir</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Siyahılarda maddələr arasında naviqasiya etmək üçün ox düymələrindən istifadə edin</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Bu ekranda mövcud qısayolları görmək üçün Ctrl-u basın</string>
+    <string name="keyboard_shortcuts_tip_a11y">Bu tətbiqdəki bütün xüsusiyyətlər klaviatura vasitəsilə əlçatandır</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Klaviatura qısayollarını bağlayın</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">Parametrlər</string>
+    <string name="keyboard_shortcut_label_accessibility">Əlçatanlıq</string>
+    <string name="keyboard_shortcut_label_help">Kömək mərkəzi</string>
+    <string name="keyboard_shortcut_label_add_credential">Etimadnamə əlavə edin</string>
+    <string name="keyboard_shortcut_label_verify">Doğrulayın</string>
+    <string name="keyboard_shortcut_label_shortcuts">Qısayollar</string>
+    <string name="keyboard_shortcut_desc_settings">Parametrləri açın</string>
+    <string name="keyboard_shortcut_desc_accessibility">Əlçatanlıq parametrləri</string>
+    <string name="keyboard_shortcut_desc_help">Kömək mərkəzi</string>
+    <string name="keyboard_shortcut_desc_add_credential">Etimadnamə əlavə edin</string>
+    <string name="keyboard_shortcut_desc_verify">Doğrulamanı başladın</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Klaviatura qısayolları</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">Geri / Bağla</string>
+    <string name="keyboard_shortcut_nav_back_desc">Cari ekranı və ya dialoqu bağlayın</string>
+    <string name="keyboard_shortcut_nav_next">Növbəti sahə</string>
+    <string name="keyboard_shortcut_nav_next_desc">Diqqəti növbəti interaktiv elementə köçürün</string>
+    <string name="keyboard_shortcut_nav_prev">Əvvəlki sahə</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Diqqəti əvvəlki interaktiv elementə köçürün</string>
+    <string name="keyboard_shortcut_nav_submit">Göndər / Davam et</string>
+    <string name="keyboard_shortcut_nav_submit_desc">Diqqəti olan düyməni aktivləşdirin və ya forma göndərin</string>
+    <string name="keyboard_shortcut_nav_activate">Düyməni aktivləşdirin</string>
+    <string name="keyboard_shortcut_nav_activate_desc">Hazırda diqqəti olan düyməni və ya keçidi aktivləşdirin</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">Dialoq açıldı. Bağlamaq üçün Escape, təsdiqləmək üçün Enter basın.</string>
+    <string name="modal_closed_announcement">Dialoq bağlandı</string>
+    <string name="modal_button_primary_label">%s (əsas əməliyyat)</string>
+    <string name="modal_button_cancel_label">%s (ləğv et)</string>
+    <string name="modal_button_destructive_label">%s (dağıdıcı əməliyyat)</string>
+    <string name="modal_button_primary_hint">Təsdiqləmək üçün iki dəfə toxunun və ya Enter basın</string>
+    <string name="modal_button_cancel_hint">Ləğv etmək üçün iki dəfə toxunun və ya Escape basın</string>
+    <string name="modal_button_destructive_hint">Dağıdıcı əməliyyatı yerinə yetirmək üçün iki dəfə toxunun</string>
+    <string name="modal_button_secondary_hint">Əməliyyatı yerinə yetirmək üçün iki dəfə toxunun</string>
+    <string name="modal_confirm">Təsdiqlə</string>
+    <string name="modal_cancel">Ləğv et</string>
+    <string name="modal_delete">Sil</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">%1$s silin</string>
+    <string name="a11y_edit_nickname_for">%1$s üçün ləqəbi redaktə edin</string>
+    <string name="accessibility_attestation_scan_back">Geri qayıdın</string>
+    <string name="attestation_replace_confirm">Əvəz et</string>
+    <string name="attestation_replace_primary_message">Sizin artıq şəxsi etimadnaməniz var. Yenisini yaratmaq onu əvəz edəcək. Bu əməliyyat geri qaytarıla bilməz.</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">Mövcud etimadnamə əvəz olunsun?</string>
+    <string name="attestation_scan_error_empty">QR kod boş idi</string>
+    <string name="attestation_scan_instruction">Kameranızı məmurun göstərdiyi QR koda yönəldin</string>
+    <string name="attestation_scan_invalid_qr">Bu QR kodda təsdiq məlumatları yoxdur</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">Təsdiqi skan edin</string>
+    <string name="attestation_scan_wrong_type_toast">Bu doğrulama QR-dir, etimadnamə QR-i deyil</string>
+    <string name="biometric_required_message">Bu tətbiq etimadnamələri təhlükəsiz saxlamaq üçün ekran kilidi (PIN, naxış və ya biometrika) tələb edir. Davam etməzdən əvvəl cihaz təhlükəsizlik parametrlərində birini qurun.</string>
+    <string name="biometric_required_open_settings">Təhlükəsizlik parametrlərini açın</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">Ekran kilidi tələb olunur</string>
+    <string name="challenge_sandbox_prompt_announcement">Sandbox sorğusu alındı. Sandbox rejimini aktivləşdirib davam etmək, yoxsa sorğunu rədd etmək seçimini edin.</string>
+    <string name="challenge_sandbox_prompt_body">Bu sorğu sandbox doğrulayıcısı tərəfindən göndərilib. Bu cüzdanda sandbox rejimini aktivləşdirməsəniz, uğurlu olmayacaq.</string>
+    <string name="challenge_sandbox_prompt_primary">Sandbox-u aktivləşdir və davam et</string>
+    <string name="challenge_sandbox_prompt_secondary">Sorğunu rədd et</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">Sandbox sorğusu alındı</string>
+    <string name="credential_detail_nickname_error">Ləqəb yadda saxlanılmadı</string>
+    <string name="credential_list_managed_count">%2$d-dən %1$d</string>
+    <string name="credential_picker_count_shown">%1$d etimadnamə göstərilir</string>
+    <string name="credential_picker_filter_clear">Filtri təmizlə</string>
+    <string name="credential_picker_filter_label">Etimadnamələri ada görə filtrləyin</string>
+    <string name="credential_picker_filter_placeholder">Etimadnamələri filtrləyin</string>
+    <string name="credential_picker_no_results">Uyğun etimadnamə yoxdur</string>
+    <string name="credential_picker_section_managed">İdarə olunan etimadnamələr</string>
+    <string name="credential_picker_section_me">Mən</string>
+    <string name="credential_picker_subtitle">Kimin doğrulandığını seçin.</string>
+    <string name="credential_row_action_delete">Sil</string>
+    <string name="credential_row_action_edit">Ləqəbi redaktə et</string>
+    <string name="credential_row_overflow_menu">Etimadnamə seçimləri</string>
+    <string name="deeplink_sandbox_prompt_announcement">Sandbox keçidi aşkarlandı. Sandbox rejimini aktivləşdirib keçidi açmaq seçimini edin.</string>
+    <string name="deeplink_sandbox_prompt_body">Bu dərin keçid yalnız bu cüzdanda sandbox rejimini aktivləşdirsəniz uğurlu olacaq.</string>
+    <string name="deeplink_sandbox_prompt_primary">Sandbox-u aktivləşdir və aç</string>
+    <string name="deeplink_sandbox_prompt_secondary">Ləğv et</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">Sandbox keçidi aşkarlandı</string>
+    <string name="empty_credential_option_find_apps_a11y">İştirakçı tətbiq tapın. Pensiya fondunuzdan, bankınızdan, telekommunikasiya şirkətinizdən, sağlamlıq sığortaçınızdan və ya yaşınızı artıq bilən hər kəsdən etimadnamə əldə edin.</string>
+    <string name="empty_credential_option_find_apps_desc">Pensiya fondunuzdan, bankınızdan, telekommunikasiya şirkətinizdən, sağlamlıq sığortaçınızdan və ya yaşınızı artıq bilən hər kəsdən etimadnamə əldə edin</string>
+    <string name="empty_credential_option_find_apps_title">İştirakçı tətbiq tapın</string>
+    <string name="empty_credential_option_find_locations_a11y">Yaxınlığınızda yer tapın. Etimadnamə əldə etmək üçün şəxsiyyət vəsiqənizlə şəxsən baş çəkin.</string>
+    <string name="empty_credential_option_find_locations_desc">Etimadnamə əldə etmək üçün şəxsiyyət vəsiqənizlə şəxsən baş çəkin</string>
+    <string name="empty_credential_option_find_locations_title">Yaxınlığınızda yer tapın</string>
+    <string name="empty_credential_option_managed_a11y">Mən kiməsə qulluq edirəm. Qulluq etdiyiniz şəxslər üçün etimadnamələri idarə edin.</string>
+    <string name="empty_credential_option_managed_desc">Qulluq etdiyiniz şəxslər üçün etimadnamələri idarə edin</string>
+    <string name="empty_credential_option_managed_title">Mən kiməsə qulluq edirəm</string>
+    <string name="empty_credential_option_scan_a11y">Skan ediləsi QR kodum var. Doğrulayıcı sizin şəxsiyyətinizi gördükdən sonra sizə kod verdi.</string>
+    <string name="empty_credential_option_scan_desc">Doğrulayıcı sizin şəxsiyyətinizi gördükdən sonra sizə kod verdi</string>
+    <string name="empty_credential_option_scan_title">Skan ediləsi QR kodum var</string>
+    <string name="empty_credential_subtitle">İlk etimadnamənizi necə əldə etmək istədiyinizi seçin</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">Hələ etimadnamə yoxdur</string>
+    <string name="error_screen_lock_required">Etimadnamələri təhlükəsiz saxlamaq üçün ekran kilidi (PIN, naxış və ya biometrika) tələb olunur. Cihaz parametrlərində birini qurun.</string>
+    <string name="issuers_no_apps_found_description">Daha çox tətbiq Provii dəstəyi əlavə etdikcə yenidən yoxlayın</string>
+    <string name="issuers_no_apps_found">Hələ iştirakçı tətbiq yoxdur</string>
+    <string name="issuers_no_locations_found_description">Daha çox yer əlavə olunduqca yenidən yoxlayın</string>
+    <string name="issuers_no_locations_found">Yer tapılmadı</string>
+    <string name="managed_credential_explainer_body">Qulluq etdiyiniz şəxs üçün idarə olunan etimadnamə əldə etmək üçün birlikdə iştirakçı yerə baş çəkin. Doğrulayıcı onların şəxsiyyətini görəcək. QR kodu skan etdiyiniz zaman bu etimadnamənin sizin üçün, yoxsa idarə etdiyiniz şəxs üçün olduğu soruşulacaq.</string>
+    <string name="managed_credential_explainer_find_location">Yer tapın</string>
+    <string name="managed_credential_explainer_have_qr">Artıq QR kodum var</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">İdarə olunan etimadnamələr</string>
+    <string name="sandbox_credential_type">Etimadnamə növü</string>
+    <string name="sandbox_managed_credential_saved">İdarə olunan etimadnamə yadda saxlanıldı (%s)</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">Sandbox rejimi indi aktivdir. Cüzdan sandbox serverlərinə qoşuludur.</string>
+    <string name="sandbox_nickname_helper">Cüzdanınızda tanıya bilməniz üçün bu etimadnaməyə ad verin.</string>
+    <string name="sandbox_nickname_label">Ləqəb</string>
+    <string name="sandbox_nickname_placeholder">məsələn, Sara</string>
+    <string name="sandbox_nickname_required">İdarə olunan etimadnamələr üçün ləqəb tələb olunur</string>
+    <string name="sandbox_type_managed_credential">İdarə olunan etimadnamə</string>
+    <string name="sandbox_type_your_credential">Sizin etimadnaməniz</string>
+    <string name="title_find_apps">İştirakçı tətbiq tapın</string>
+    <string name="title_find_locations">Yer tapın</string>
+    <string name="verification_go_to_attestation">Etimadnamə əldə edin</string>
+    <string name="verification_wrong_qr_type_message">Bu QR kod yeni etimadnamə əldə etmək üçündür, yaş doğrulaması üçün deyil. Bunun əvəzinə təsdiq ekranına keçmək istəyirsiniz?</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">Təsdiq QR-i aşkarlandı</string>
+    <string name="walkthrough_back">Geri</string>
+    <string name="walkthrough_get_started">Başlayın</string>
+    <string name="walkthrough_next">İrəli</string>
+    <string name="walkthrough_page_indicator">%2$d səhifədən %1$d</string>
+    <string name="walkthrough_page1_body">Etimadnamənizdə yaşınız var. Başqa heç nə yoxdur. Adınız yoxdur, ünvanınız yoxdur, kimliyiniz yoxdur.\n\nO, doğum tarixinizi açıqlamadan müəyyən yaşdan böyük (və ya kiçik) olduğunuzu sübut edir.</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">Etimadnamə nədir?</string>
+    <string name="walkthrough_page2_body">Yaşınızı artıq bilən şirkətin tətbiqi vasitəsilə etimadnamə əldə edə bilərsiniz. Məsələn, bankınız və ya pensiya fondunuz. Yaşınızı artıq doğruladıqları üçün heç bir məlumat yenidən paylaşılmalı deyil.\n\nAlternativ olaraq, doğum tarixinizi sübut edən şəxsiyyət vəsiqəsi ilə iştirakçı yerə baş çəkin. Doğum tarixiniz görülür, etimadnamənizi yaratmaq üçün istifadə olunur, sonra silinir. Verən tərəf etimadnamənizi heç vaxt görmür. Kimliyiniz heç vaxt ona bağlanmır.</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">Onu necə əldə edirsiniz?</string>
+    <string name="walkthrough_page3_body">Yaş etimadnaməsinə ehtiyacı olan kiməsə qulluq edirsinizsə, onun üçün etimadnamə əldə edib cihazınızda idarə edə bilərsiniz.\n\nOnların doğum tarixini sübut edən şəxsiyyət vəsiqəsi ilə birlikdə iştirakçı yerə baş çəkin. QR kodu skan etdiyiniz zaman bu etimadnamənin sizin üçün, yoxsa idarə etdiyiniz şəxs üçün olduğu soruşulacaq.\n\nOnların etimadnamələrini bir-birindən ayırd edə bilməniz üçün ləqəb əlavə edin.</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">Asılı şəxslər</string>
+    <string name="walkthrough_page4_body">Yaşınızı doğrulamağa çalışan tətbiq Provii cüzdanınıza birbaşa sorğu göndərə bilər. Hansı etimadnamədən istifadə edəcəyinizi seçirsiniz. Uğurlu doğrulamadan sonra sorğu edən tətbiqə qayıdacaq və doğrulanmış kimi davam edə biləcəksiniz.\n\nAlternativ olaraq, sizə başqa cihazda QR kod, yaxud mobil brauzerinizdə birbaşa cüzdanınıza aparan keçid təqdim oluna bilər. Əlçatanlıq üçün qısa kod seçimi də var.\n\nHeç bir şəxsi məlumat heç vaxt paylaşılmır. Sadəcə yaş tələbinə cavab verib-vermədiyinizə dair bəli və ya xeyr cavabı.</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">Doğrulama necə işləyir?</string>
+    <string name="walkthrough_page5_body">İlk addımınız iştirakçı tətbiq vasitəsilə və ya yaxınlığınızdakı yerdə etimadnamə əldə etməkdir.\n\nBundan sonra, hər hansı şəxsi məlumat paylaşmadan, lazım olduqda yaşınızı doğrulaya bilərsiniz. Qulluq etdiyiniz şəxslər üçün də etimadnamələri idarə edə bilərsiniz.</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">Hər şey hazırdır</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">Keç</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

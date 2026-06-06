@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Vietnamese CLDR plural categories: "other" only (Vietnamese has no grammatical number). -->
+    <!-- quantity="zero" retained where the English source uses a distinct "No X" phrasing. -->
+    <!-- quantity="one" dropped: Vietnamese does not distinguish singular from plural. -->
+
+    <!-- Credential Count -->
+    <plurals name="credential_count">
+        <item quantity="zero">Không có chứng chỉ nào</item>
+        <item quantity="other">%d chứng chỉ</item>
+    </plurals>
+
+    <!-- Session Count -->
+    <plurals name="session_count">
+        <item quantity="other">%d phiên đang hoạt động</item>
+    </plurals>
+
+    <!-- Days Ago -->
+    <plurals name="days_ago">
+        <item quantity="other">%d ngày trước</item>
+    </plurals>
+
+    <!-- Hours Ago -->
+    <plurals name="hours_ago">
+        <item quantity="other">%d giờ trước</item>
+    </plurals>
+
+    <!-- Minutes Ago -->
+    <plurals name="minutes_ago">
+        <item quantity="other">%d phút trước</item>
+    </plurals>
+
+    <!-- Attempts Left -->
+    <plurals name="attempts_left">
+        <item quantity="other">Còn %d lần thử</item>
+    </plurals>
+
+    <!-- Documents Uploaded -->
+    <plurals name="documents_uploaded">
+        <item quantity="zero">Chưa tải lên tài liệu nào</item>
+        <item quantity="other">Đã tải lên %d tài liệu</item>
+    </plurals>
+
+    <!-- Verifications Remaining -->
+    <plurals name="verifications_remaining">
+        <item quantity="zero">Không còn lượt xác minh nào</item>
+        <item quantity="other">Còn %d lượt xác minh</item>
+    </plurals>
+
+    <!-- Items Selected -->
+    <plurals name="items_selected">
+        <item quantity="other">Đã chọn %d mục</item>
+    </plurals>
+
+    <!-- Notifications Unread -->
+    <plurals name="notifications_unread">
+        <item quantity="zero">Không có thông báo chưa đọc</item>
+        <item quantity="other">%d thông báo chưa đọc</item>
+    </plurals>
+
+    <!-- Credentials Issued Today -->
+    <plurals name="credentials_issued_today">
+        <item quantity="zero">Hôm nay chưa phát hành chứng chỉ nào</item>
+        <item quantity="other">Hôm nay đã phát hành %d chứng chỉ</item>
+    </plurals>
+
+    <!-- People Waiting -->
+    <plurals name="people_waiting">
+        <item quantity="other">%d người đang chờ</item>
+    </plurals>
+
+    <!--
+    ============================================================
+    VALIDATION SUMMARY , Vietnamese Plurals
+    ============================================================
+    Date: 2026-03-21
+    Source: values/plurals.xml (12 plural groups)
+    Input: values-vi/plurals.xml
+
+    Plural group count: 12 source, 12 translated. No missing, no extras.
+
+    CHANGES APPLIED: None. All translations correct.
+
+    VIETNAMESE CLDR RULES:
+      Vietnamese has a single plural category: "other".
+      quantity="one" is correctly omitted (Vietnamese does not
+      distinguish singular). quantity="zero" is retained where
+      the English source uses a distinct "No X" phrasing (5 groups:
+      credential_count, documents_uploaded, verifications_remaining,
+      notifications_unread, credentials_issued_today).
+
+    FORMAT SPECIFIER CHECK: ALL PASS
+      All 11 "other" items use %d. No specifier in "zero" items
+      (correct, as zero items use explicit text like "Không có").
+
+    GLOSSARY COMPLIANCE: PASS
+      "chứng chỉ" (credential), "xác minh" (verification),
+      "phát hành" (issued), "tài liệu" (document), "thông báo"
+      (notification) all match established usage.
+
+    TRANSLATION QUALITY NOTES:
+      - "Còn %d lần thử" (attempts_left): Natural Vietnamese
+        word order, fronting "còn" (remaining) before the count.
+      - "Đã tải lên %d tài liệu" (documents_uploaded): Past tense
+        marker "đã" correctly applied.
+      - "Hôm nay đã phát hành %d chứng chỉ" (credentials_issued_today):
+        Time marker "hôm nay" (today) fronted, matching Vietnamese
+        temporal word order preference.
+      - "%d người đang chờ" (people_waiting): "người" used as
+        generic classifier for people, correct for both singular
+        and plural counts in Vietnamese.
+    ============================================================
+    -->
+</resources>

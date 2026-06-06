@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    ============================================================
+    FINAL VALIDATION: Batch 10 Arabic Plurals
+    Validator: Final Validator (2026-03-21)
+    Source review: ar-batch-10-review.md (Yara Hassan)
+    ============================================================
+
+    REVIEW DISPOSITIONS:
+
+    P-01 [CRITICAL then PASS] credential_count dual form
+      PASS , Reviewer self-corrected. "بيانا اعتماد" is correct
+      nominative construct-state dual. No change.
+
+    P-02 [HIGH then PASS] credential_count few/many/other terms
+      PASS , Correct MSA numeral grammar: plural genitive for
+      3-10, accusative singular for 11-99, genitive singular
+      for 100+.
+
+    P-03 [HIGH then PASS] Extra zero forms not in English
+      PASS , Defensive and correct for Arabic CLDR. Android
+      falls back to "other" if zero is missing; having it is
+      better.
+
+    P-04 [MEDIUM] Tanwin in "other" forms
+      REJECT , Unvocalised Arabic is standard for UI text.
+      Translator is consistent across all plural sets. No change.
+
+    P-05 [MEDIUM then PASS] days_ago zero = "today"
+      PASS , Good localisation choice. Natural Arabic.
+
+    P-06 [HIGH then PASS] notifications_unread dual adjective
+      PASS , Consonantal skeleton identical for dual and sound
+      plural in unvocalised text. No change needed.
+
+    P-07 [MEDIUM] Lone fatha diacritic in credentials_issued_today
+      ACCEPT , Removed fatha from "بيانَي" to "بياني" for
+      consistency with unvocalised convention used everywhere else.
+
+    P-08 [LOW] Comment header inaccuracy for "other" category
+      ACCEPT , Fixed comment to accurately describe Arabic CLDR
+      "other" category.
+
+    P-09 [LOW] verifications_remaining dual grammar , PASS.
+    P-10 [MEDIUM] Format specifier pattern , PASS.
+      Follows same pattern as English source.
+    P-11 [MEDIUM] Glossary term usage , PASS.
+    P-12 [HIGH] Potential crash with %d
+      REJECT , Code-level concern, not a translation issue.
+      English source confirms getQuantityString uses format args
+      (English "other" has %d, "one" does not). Same pattern in
+      Arabic is correct.
+
+    COMPLETENESS: All 12 plural names from English source verified.
+    All 6 CLDR categories (zero, one, two, few, many, other)
+    present for every plural item.
+    FORMAT SPECIFIERS: %d present in all few/many/other forms.
+    Zero/one/two forms use natural language (no %d), matching
+    English source pattern.
+    XML VALIDITY: Well-formed.
+    ============================================================
+    -->
+
+    <!-- Batch 10: All Plurals , Arabic requires 6 CLDR plural categories -->
+    <!-- zero (n=0), one (n=1), two (n=2), few (n%100=3..10), many (n%100=11..99), other (n%100=0..2 except n=0..2, i.e., 100, 101, 102, 200, 201...) -->
+
+    <!-- Credential Count -->
+    <plurals name="credential_count">
+        <item quantity="zero">لا توجد بيانات اعتماد</item>
+        <item quantity="one">بيان اعتماد واحد</item>
+        <item quantity="two">بيانا اعتماد</item>
+        <item quantity="few">%d بيانات اعتماد</item>
+        <item quantity="many">%d بيان اعتماد</item>
+        <item quantity="other">%d بيان اعتماد</item>
+    </plurals>
+
+    <!-- Session Count -->
+    <plurals name="session_count">
+        <item quantity="zero">لا توجد جلسات نشطة</item>
+        <item quantity="one">جلسة نشطة واحدة</item>
+        <item quantity="two">جلستان نشطتان</item>
+        <item quantity="few">%d جلسات نشطة</item>
+        <item quantity="many">%d جلسة نشطة</item>
+        <item quantity="other">%d جلسة نشطة</item>
+    </plurals>
+
+    <!-- Days Ago -->
+    <plurals name="days_ago">
+        <item quantity="zero">اليوم</item>
+        <item quantity="one">منذ يوم واحد</item>
+        <item quantity="two">منذ يومين</item>
+        <item quantity="few">منذ %d أيام</item>
+        <item quantity="many">منذ %d يومًا</item>
+        <item quantity="other">منذ %d يوم</item>
+    </plurals>
+
+    <!-- Hours Ago -->
+    <plurals name="hours_ago">
+        <item quantity="zero">الآن</item>
+        <item quantity="one">منذ ساعة واحدة</item>
+        <item quantity="two">منذ ساعتين</item>
+        <item quantity="few">منذ %d ساعات</item>
+        <item quantity="many">منذ %d ساعة</item>
+        <item quantity="other">منذ %d ساعة</item>
+    </plurals>
+
+    <!-- Minutes Ago -->
+    <plurals name="minutes_ago">
+        <item quantity="zero">الآن</item>
+        <item quantity="one">منذ دقيقة واحدة</item>
+        <item quantity="two">منذ دقيقتين</item>
+        <item quantity="few">منذ %d دقائق</item>
+        <item quantity="many">منذ %d دقيقة</item>
+        <item quantity="other">منذ %d دقيقة</item>
+    </plurals>
+
+    <!-- Attempts Left -->
+    <plurals name="attempts_left">
+        <item quantity="zero">لا توجد محاولات متبقية</item>
+        <item quantity="one">محاولة واحدة متبقية</item>
+        <item quantity="two">محاولتان متبقيتان</item>
+        <item quantity="few">%d محاولات متبقية</item>
+        <item quantity="many">%d محاولة متبقية</item>
+        <item quantity="other">%d محاولة متبقية</item>
+    </plurals>
+
+    <!-- Documents Uploaded -->
+    <plurals name="documents_uploaded">
+        <item quantity="zero">لم يتم رفع أي مستند</item>
+        <item quantity="one">تم رفع مستند واحد</item>
+        <item quantity="two">تم رفع مستندين</item>
+        <item quantity="few">تم رفع %d مستندات</item>
+        <item quantity="many">تم رفع %d مستندًا</item>
+        <item quantity="other">تم رفع %d مستند</item>
+    </plurals>
+
+    <!-- Verifications Remaining -->
+    <plurals name="verifications_remaining">
+        <item quantity="zero">لا توجد عمليات تحقق متبقية</item>
+        <item quantity="one">عملية تحقق واحدة متبقية</item>
+        <item quantity="two">عمليتا تحقق متبقيتان</item>
+        <item quantity="few">%d عمليات تحقق متبقية</item>
+        <item quantity="many">%d عملية تحقق متبقية</item>
+        <item quantity="other">%d عملية تحقق متبقية</item>
+    </plurals>
+
+    <!-- Items Selected -->
+    <plurals name="items_selected">
+        <item quantity="zero">لم يتم تحديد أي عنصر</item>
+        <item quantity="one">تم تحديد عنصر واحد</item>
+        <item quantity="two">تم تحديد عنصرين</item>
+        <item quantity="few">تم تحديد %d عناصر</item>
+        <item quantity="many">تم تحديد %d عنصرًا</item>
+        <item quantity="other">تم تحديد %d عنصر</item>
+    </plurals>
+
+    <!-- Notifications Unread -->
+    <plurals name="notifications_unread">
+        <item quantity="zero">لا توجد إشعارات غير مقروءة</item>
+        <item quantity="one">إشعار واحد غير مقروء</item>
+        <item quantity="two">إشعاران غير مقروءين</item>
+        <item quantity="few">%d إشعارات غير مقروءة</item>
+        <item quantity="many">%d إشعارًا غير مقروء</item>
+        <item quantity="other">%d إشعار غير مقروء</item>
+    </plurals>
+
+    <!-- Credentials Issued Today -->
+    <plurals name="credentials_issued_today">
+        <item quantity="zero">لم يتم إصدار أي بيانات اعتماد اليوم</item>
+        <item quantity="one">تم إصدار بيان اعتماد واحد اليوم</item>
+        <item quantity="two">تم إصدار بياني اعتماد اليوم</item>
+        <item quantity="few">تم إصدار %d بيانات اعتماد اليوم</item>
+        <item quantity="many">تم إصدار %d بيان اعتماد اليوم</item>
+        <item quantity="other">تم إصدار %d بيان اعتماد اليوم</item>
+    </plurals>
+
+    <!-- People Waiting -->
+    <plurals name="people_waiting">
+        <item quantity="zero">لا يوجد أشخاص بالانتظار</item>
+        <item quantity="one">شخص واحد بالانتظار</item>
+        <item quantity="two">شخصان بالانتظار</item>
+        <item quantity="few">%d أشخاص بالانتظار</item>
+        <item quantity="many">%d شخصًا بالانتظار</item>
+        <item quantity="other">%d شخص بالانتظار</item>
+    </plurals>
+</resources>

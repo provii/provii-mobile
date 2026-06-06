@@ -1,0 +1,93 @@
+# Fastfile , Provii wallet Android distribution lanes.
+#
+# One lane: `beta`. Builds a signed release AAB, writes auto-generated release
+# notes from the git log since the previous tag (truncated to the 500-character
+# Firebase App Distribution limit), and uploads to FAD with two tester groups:
+# `provii-internal` and `provii-external-beta`.
+#
+# Single-bundle architecture: package id `app.provii.wallet` for everyone.
+#
+# Required environment for the beta lane:
+#   FIREBASE_APP_DISTRIBUTION_CREDENTIALS_JSON  base64-encoded service-account JSON
+#   ANDROID_SIGNING_KEY                          base64-encoded keystore (.jks)
+#   ANDROID_KEY_ALIAS                            keystore alias
+#   ANDROID_KEYSTORE_PASSWORD                    keystore password
+#   ANDROID_KEY_PASSWORD                         key password
+#
+# CI emits the decoded service-account JSON to a temp file and points
+# FIREBASE_APP_DISTRIBUTION_CREDENTIALS_PATH at it before invoking this lane.
+
+default_platform(:android)
+
+ROOT          = File.expand_path("..", __dir__).freeze
+NOTES_FILE    = File.join(ROOT, "fastlane", "release_notes.txt").freeze
+NOTES_LIMIT   = 500
+TESTER_GROUPS = "provii-internal,provii-external-beta".freeze
+
+platform :android do
+  before_all do
+    setup_ci if ENV["CI"]
+  end
+
+  desc "Build a signed release AAB and upload it to Firebase App Distribution."
+  lane :beta do
+    write_release_notes
+
+    gradle(
+      task: "clean bundleRelease",
+      project_dir: ROOT,
+      properties: gradle_signing_properties
+    )
+
+    aab_path = Dir.glob(File.join(ROOT, "app", "build", "outputs", "bundle", "release", "*.aab")).first
+    UI.user_error!("No release AAB produced under app/build/outputs/bundle/release") if aab_path.nil?
+
+    firebase_app_distribution(
+      app: ENV.fetch("FIREBASE_APP_ID"),
+      android_artifact_type: "AAB",
+      android_artifact_path: aab_path,
+      groups: TESTER_GROUPS,
+      release_notes_file: NOTES_FILE,
+      service_credentials_file: ENV.fetch("FIREBASE_APP_DISTRIBUTION_CREDENTIALS_PATH")
+    )
+
+    notify_slack(
+      message: ":robot_face: Firebase App Distribution upload complete for app.provii.wallet (#{File.basename(aab_path)})"
+    )
+  end
+
+  # ---------------------------------------------------------------------------
+  # Helpers
+  # ---------------------------------------------------------------------------
+
+  def write_release_notes
+    notes = sh("git log --pretty=format:'- %s' $(git describe --tags --abbrev=0 2>/dev/null || echo HEAD~10)..HEAD").strip
+    notes = "Routine FAD rebuild." if notes.empty?
+    truncated = notes.length > NOTES_LIMIT ? "#{notes[0, NOTES_LIMIT - 3]}..." : notes
+    File.write(NOTES_FILE, truncated)
+    UI.message("Release notes written to #{NOTES_FILE} (#{truncated.length} chars)")
+  end
+
+  def gradle_signing_properties
+    {
+      "android.injected.signing.store.file"     => ENV["RELEASE_KEYSTORE_PATH"] || "",
+      "android.injected.signing.store.password" => ENV["RELEASE_KEYSTORE_PASSWORD"] || "",
+      "android.injected.signing.key.alias"      => ENV["RELEASE_KEY_ALIAS"] || "",
+      "android.injected.signing.key.password"   => ENV["RELEASE_KEY_PASSWORD"] || ""
+    }.reject { |_, v| v.nil? || v.empty? }
+  end
+
+  def notify_slack(message:)
+    webhook = ENV["SLACK_WEBHOOK_URL"]
+    if webhook.nil? || webhook.empty?
+      UI.message("SLACK_WEBHOOK_URL not set; skipping notification.")
+      return
+    end
+    slack(
+      slack_url: webhook,
+      message: message,
+      success: true,
+      default_payloads: %i[git_branch git_author last_git_commit]
+    )
+  end
+end

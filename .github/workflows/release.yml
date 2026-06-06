@@ -1,0 +1,1060 @@
+name: Release
+
+on:
+  # Store releases are deliberate (they need signing secrets): dispatch-only,
+  # not auto-fired on tags. Dispatch with dry_run=true to exercise the supply
+  # chain without secrets, or dry_run=false + secrets for a real store release.
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release (e.g., 1.2.3)'
+        required: true
+        type: string
+      prerelease:
+        description: 'Mark as pre-release'
+        required: false
+        type: boolean
+        default: false
+      platforms:
+        description: 'Platforms to build'
+        required: true
+        type: choice
+        default: 'both'
+        options:
+          - both
+          - android
+          - ios
+      dry_run:
+        description: 'Test publish: route R2 uploads to <repo>/test/<sha>/, skip latest/ overwrite, and skip GitHub release creation'
+        required: false
+        type: boolean
+        default: true
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+# Wave-8: Top-level permissions removed per James's supply chain review.
+# Each job now declares the minimum permissions it needs. Dropped
+# `packages: write` entirely (no GHCR pushes anywhere in the workflow).
+
+env:
+  JAVA_VERSION: '17'
+  WRANGLER_VERSION: '4.92.0'
+
+jobs:
+  # =============================================================================
+  # Prepare Release
+  # =============================================================================
+  prepare:
+    name: Prepare Release
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      tag: ${{ steps.version.outputs.tag }}
+      prerelease: ${{ steps.version.outputs.prerelease }}
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Guard against pre-rebrand bundle ID
+        run: |
+          # The shipping bundle ID is app.provii.wallet (unchanged by the
+          # rebrand). Fail only if a pre-rebrand com.provii.* identifier has
+          # crept back into the Android or iOS build config.
+          if grep -q 'com\.provii' android/app/build.gradle.kts ios/wallet.xcodeproj/project.pbxproj; then
+            echo "ERROR: Bundle ID still contains com.provii. Rebrand must be complete before release builds."
+            exit 1
+          fi
+
+      - name: Determine version
+        id: version
+        env:
+          INPUT_VERSION: ${{ github.event.inputs.version }}
+          INPUT_PRERELEASE: ${{ github.event.inputs.prerelease }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "${EVENT_NAME}" == "workflow_dispatch" ]; then
+            VERSION="${INPUT_VERSION}"
+            TAG="v${VERSION}"
+            PRERELEASE="${INPUT_PRERELEASE}"
+          else
+            TAG="${GITHUB_REF#refs/tags/}"
+            VERSION="${TAG#v}"
+            # Check if this is a prerelease (contains -alpha, -beta, -rc, etc.)
+            if [[ "$VERSION" == *"-"* ]]; then
+              PRERELEASE="true"
+            else
+              PRERELEASE="false"
+            fi
+          fi
+
+          # Validate version format (semver only, no shell metacharacters)
+          if ! echo "$VERSION" | grep -qE '^[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.]+)?$'; then
+            echo "::error::Invalid version format: $VERSION"
+            exit 1
+          fi
+
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "prerelease=$PRERELEASE" >> $GITHUB_OUTPUT
+
+          echo "## Release Information" >> $GITHUB_STEP_SUMMARY
+          echo "- Version: $VERSION" >> $GITHUB_STEP_SUMMARY
+          echo "- Tag: $TAG" >> $GITHUB_STEP_SUMMARY
+          echo "- Pre-release: $PRERELEASE" >> $GITHUB_STEP_SUMMARY
+
+  # =============================================================================
+  # Build Android Release
+  # =============================================================================
+  android-release:
+    name: Build Android Release
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    needs: [prepare]
+    if: github.event.inputs.platforms != 'ios'
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      # Wave-8: gate the real build+sign chain on non-dry_run dispatches and
+      # tag pushes. dry_run dispatches skip all of these and use the
+      # placeholder step below so the cosign + attest + R2 publish path can
+      # be exercised without binding real Android signing material.
+      - name: Set up JDK ${{ env.JAVA_VERSION }}
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        uses: actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654 # v5.2.0
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+
+      - name: Cache Gradle dependencies
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: gradle-release-${{ runner.os }}-${{ hashFiles('android/**/*.gradle*') }}
+
+      - name: Grant execute permission for gradlew
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        run: chmod +x android/gradlew
+
+      - name: Validate Gradle wrapper
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        uses: gradle/actions/wrapper-validation@50e97c2cd7a37755bbfafc9c5b7cafaece252f6e # v6.1.0
+
+      - name: Download provii-mobile-sdk bundle
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        uses: robinraju/release-downloader@28fc21f50d76778e7023361aa1f863e717d3d56f # v1.13
+        with:
+          repository: provii/provii-mobile-sdk
+          tag: 'v0.1.0'
+          fileName: 'provii-mobile-sdk-bundle.tar.gz'
+          out-file-path: provii-mobile-sdk-artifacts
+          token: ${{ github.token }}
+
+      - name: Extract provii-mobile-sdk
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        run: |
+          mkdir -p android/app/libs
+          tar -xzf provii-mobile-sdk-artifacts/provii-mobile-sdk-bundle.tar.gz
+          cp -r release-artifacts/android/* android/app/libs/
+          cp -r release-artifacts/bindings/kotlin/* android/app/src/main/java/
+          echo "provii-mobile-sdk Android artifacts extracted"
+
+      - name: Compute native library integrity hashes
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        run: |
+          set -euo pipefail
+          HASH_PAIRS=""
+          for so_file in android/app/src/main/jniLibs/*/libprovii_mobile_sdk_ffi.so android/app/libs/jniLibs/*/libprovii_mobile_sdk_ffi.so; do
+            [ -f "$so_file" ] || continue
+            ABI=$(basename "$(dirname "$so_file")")
+            HASH=$(sha256sum "$so_file" | awk '{print $1}')
+            if [ -n "$HASH_PAIRS" ]; then
+              HASH_PAIRS="${HASH_PAIRS};${ABI}=${HASH}"
+            else
+              HASH_PAIRS="${ABI}=${HASH}"
+            fi
+            echo "  ${ABI}: ${HASH}"
+          done
+          if [ -z "$HASH_PAIRS" ]; then
+            echo "::error::No libprovii_mobile_sdk_ffi.so files found for hash computation"
+            exit 1
+          fi
+          echo "NATIVE_LIB_HASHES=${HASH_PAIRS}" >> "$GITHUB_ENV"
+          echo "## Native Library Integrity Hashes" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          echo "$HASH_PAIRS" | tr ';' '\n' >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Update version in build.gradle.kts
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        env:
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+        run: |
+          cd android
+          VERSION="${RELEASE_VERSION}"
+          VERSION_CODE=$(echo "$VERSION" | tr -d '.' | cut -c1-9)
+
+          # Update version in app/build.gradle.kts
+          sed -i "s/versionName = \".*\"/versionName = \"$VERSION\"/" app/build.gradle.kts
+          sed -i "s/versionCode = [0-9]*/versionCode = $VERSION_CODE/" app/build.gradle.kts
+
+      - name: Build Release APK
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        run: |
+          cd android
+          ./gradlew assembleRelease --stacktrace
+
+      - name: Sign Release APK
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        uses: r0adkll/sign-android-release@349ebdef58775b1e0d8099458af0816dc79b6407 # v1.0.4
+        id: sign_apk
+        with:
+          releaseDirectory: android/app/build/outputs/apk/release
+          signingKeyBase64: ${{ secrets.ANDROID_SIGNING_KEY }}
+          alias: ${{ secrets.ANDROID_KEY_ALIAS }}
+          keyStorePassword: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        env:
+          BUILD_TOOLS_VERSION: "34.0.0"
+
+      - name: Build Release AAB
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        run: |
+          cd android
+          ./gradlew bundleRelease --stacktrace
+
+      - name: Sign Release AAB
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        uses: r0adkll/sign-android-release@349ebdef58775b1e0d8099458af0816dc79b6407 # v1.0.4
+        id: sign_bundle
+        with:
+          releaseDirectory: android/app/build/outputs/bundle/release
+          signingKeyBase64: ${{ secrets.ANDROID_SIGNING_KEY }}
+          alias: ${{ secrets.ANDROID_KEY_ALIAS }}
+          keyStorePassword: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        env:
+          BUILD_TOOLS_VERSION: "34.0.0"
+
+      - name: Rename artifacts with version
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        env:
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+          SIGNED_APK_FILE: ${{ steps.sign_apk.outputs.signedReleaseFile }}
+          SIGNED_AAB_FILE: ${{ steps.sign_bundle.outputs.signedReleaseFile }}
+        run: |
+          VERSION="${RELEASE_VERSION}"
+          mkdir -p release-artifacts
+
+          # Copy and rename APK
+          cp "${SIGNED_APK_FILE}" release-artifacts/provii-mobile-${VERSION}.apk
+
+          # Copy and rename AAB
+          cp "${SIGNED_AAB_FILE}" release-artifacts/provii-mobile-${VERSION}.aab
+
+      # Wave-8: dispatch dry_run placeholder. Stage deterministic placeholder
+      # bytes named to match the real version-suffixed schema so the
+      # downstream cosign + SLSA + R2 publish path runs unchanged. The
+      # subject digest signed here covers the placeholder content; that's
+      # the goal: proving the publish path lands real bytes at
+      # provenance.provii.app/provii-mobile/test/<sha>/.
+      - name: Stage placeholder Android artefacts (dispatch dry_run)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == true }}
+        env:
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+        run: |
+          set -euo pipefail
+          VERSION="${RELEASE_VERSION}"
+          mkdir -p release-artifacts
+          printf 'wave8-test-publish-%s-android-apk' "${GITHUB_SHA}" > "release-artifacts/provii-mobile-${VERSION}.apk"
+          printf 'wave8-test-publish-%s-android-aab' "${GITHUB_SHA}" > "release-artifacts/provii-mobile-${VERSION}.aab"
+          ls -lh release-artifacts/
+
+      - name: Generate checksums
+        run: |
+          cd release-artifacts
+          sha256sum * > SHA256SUMS.txt
+          cat SHA256SUMS.txt
+
+      - name: Install Cosign
+        uses: sigstore/cosign-installer@6f9f17788090df1f26f669e9d70d6ae9567deba6 # v4.1.2
+
+      - name: Sign artifacts with Sigstore
+        run: |
+          cd release-artifacts
+          for file in *.apk *.aab; do
+            cosign sign-blob --yes --bundle "${file}.sig" "${file}"
+          done
+
+      - name: Generate Build Provenance Attestation
+        id: attest-android
+        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        with:
+          subject-path: 'release-artifacts/*.apk,release-artifacts/*.aab'
+
+      - name: Warn on attestation failure (Android)
+        if: steps.attest-android.outcome == 'failure'
+        run: echo "::warning::Android build provenance attestation failed. Release continues without attestation."
+
+      - name: Generate Android SBOM
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0.24.0
+        with:
+          path: android/
+          artifact-name: sbom-android-${{ needs.prepare.outputs.version }}.spdx.json
+          output-file: release-artifacts/sbom-android.spdx.json
+
+      - name: Upload Android artifacts
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: android-release-${{ needs.prepare.outputs.version }}
+          path: |
+            release-artifacts/
+          retention-days: 90
+
+  # =============================================================================
+  # Build iOS Release
+  # =============================================================================
+  ios-release:
+    name: Build iOS Release
+    runs-on: macos-latest
+    timeout-minutes: 90
+    needs: [prepare]
+    if: github.event.inputs.platforms != 'android'
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      # Wave-8: gate the real build+sign chain on non-dry_run dispatches and
+      # tag pushes. dry_run dispatches skip all of these and use the
+      # placeholder step below so the cosign + attest + R2 publish path can
+      # be exercised without binding real Apple signing material.
+      - name: Set up Ruby
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        uses: ruby/setup-ruby@c4e5b1316158f92e3d49443a9d58b31d25ac0f8f # v1.306.0
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Cache CocoaPods
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            ios/Pods
+            ~/Library/Caches/CocoaPods
+          key: pods-release-${{ runner.os }}-${{ hashFiles('ios/Podfile.lock') }}
+
+      - name: Select Xcode version
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        run: |
+          sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+          xcodebuild -version
+
+      - name: Install CocoaPods dependencies
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        run: |
+          cd ios
+          pod install --repo-update
+
+      - name: Install xcpretty
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        run: gem install xcpretty
+
+      - name: Update version in Xcode project
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        env:
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+        run: |
+          cd ios
+          VERSION="${RELEASE_VERSION}"
+          PLIST_PATH="ProviiWallet/ProviiWallet/Info.plist"
+
+          if [ ! -f "$PLIST_PATH" ]; then
+            echo "::error::Info.plist not found at $PLIST_PATH"
+            exit 1
+          fi
+
+          # Update Info.plist version
+          /usr/libexec/PlistBuddy -c "Set :CFBundleShortVersionString $VERSION" "$PLIST_PATH"
+
+          # Update build number
+          BUILD_NUMBER=$(date +%Y%m%d%H%M)
+          /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $BUILD_NUMBER" "$PLIST_PATH"
+
+      - name: Install Apple Certificate
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        env:
+          BUILD_CERTIFICATE_BASE64: ${{ secrets.IOS_BUILD_CERTIFICATE_BASE64 }}
+          P12_PASSWORD: ${{ secrets.IOS_P12_PASSWORD }}
+          KEYCHAIN_PASSWORD: ${{ secrets.IOS_KEYCHAIN_PASSWORD }}
+        run: |
+          CERTIFICATE_PATH=$RUNNER_TEMP/build_certificate.p12
+          KEYCHAIN_PATH=$RUNNER_TEMP/app-signing.keychain-db
+
+          echo -n "$BUILD_CERTIFICATE_BASE64" | base64 --decode --output $CERTIFICATE_PATH
+
+          security create-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+          security set-keychain-settings -lut 21600 $KEYCHAIN_PATH
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+
+          security import $CERTIFICATE_PATH -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
+          security list-keychain -d user -s $KEYCHAIN_PATH
+
+      - name: Install Provisioning Profile
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        env:
+          PROVISIONING_PROFILE_BASE64: ${{ secrets.IOS_PROVISIONING_PROFILE_BASE64 }}
+        run: |
+          PP_PATH=$RUNNER_TEMP/build_pp.mobileprovision
+
+          echo -n "$PROVISIONING_PROFILE_BASE64" | base64 --decode --output $PP_PATH
+
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          cp $PP_PATH ~/Library/MobileDevice/Provisioning\ Profiles
+
+      - name: Build Archive
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        env:
+          IOS_TEAM_ID: ${{ secrets.IOS_TEAM_ID }}
+          IOS_PROVISIONING_PROFILE_NAME: ${{ secrets.IOS_PROVISIONING_PROFILE_NAME }}
+        run: |
+          cd ios
+          xcodebuild archive \
+            -workspace wallet.xcworkspace \
+            -scheme wallet \
+            -sdk iphoneos \
+            -configuration Release \
+            -archivePath $RUNNER_TEMP/wallet.xcarchive \
+            DEVELOPMENT_TEAM="${IOS_TEAM_ID}" \
+            CODE_SIGN_STYLE=Manual \
+            PROVISIONING_PROFILE_SPECIFIER="${IOS_PROVISIONING_PROFILE_NAME}" \
+            | xcpretty --color
+
+      - name: Create ExportOptions.plist
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        env:
+          IOS_TEAM_ID: ${{ secrets.IOS_TEAM_ID }}
+        run: |
+          cat > $RUNNER_TEMP/ExportOptions.plist << EOF
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+              <key>method</key>
+              <string>app-store</string>
+              <key>teamID</key>
+              <string>${IOS_TEAM_ID}</string>
+              <key>uploadSymbols</key>
+              <true/>
+              <key>compileBitcode</key>
+              <false/>
+          </dict>
+          </plist>
+          EOF
+
+      - name: Export IPA
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        run: |
+          xcodebuild -exportArchive \
+            -archivePath $RUNNER_TEMP/wallet.xcarchive \
+            -exportOptionsPlist $RUNNER_TEMP/ExportOptions.plist \
+            -exportPath $RUNNER_TEMP/export \
+            | xcpretty --color
+
+      - name: Rename artifacts with version
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
+        env:
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+        run: |
+          VERSION="${RELEASE_VERSION}"
+          mkdir -p release-artifacts
+
+          # Find and rename IPA
+          for ipa in $RUNNER_TEMP/export/*.ipa; do
+            cp "$ipa" "release-artifacts/provii-mobile-${VERSION}.ipa"
+          done
+
+          # Copy dSYMs
+          cp -r $RUNNER_TEMP/wallet.xcarchive/dSYMs release-artifacts/
+
+      # Wave-8: dispatch dry_run placeholder. Stages a placeholder IPA so
+      # cosign sigstore signing + SLSA attestation + R2 publish runs without
+      # binding real Apple signing material. Subject digest covers placeholder
+      # bytes; goal is to prove the publish path lands at
+      # provenance.provii.app/provii-mobile/test/<sha>/.
+      - name: Stage placeholder iOS artefacts (dispatch dry_run)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == true }}
+        env:
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+        run: |
+          set -euo pipefail
+          VERSION="${RELEASE_VERSION}"
+          mkdir -p release-artifacts
+          printf 'wave8-test-publish-%s-ios-ipa' "${GITHUB_SHA}" > "release-artifacts/provii-mobile-${VERSION}.ipa"
+          ls -lh release-artifacts/
+
+      - name: Generate checksums
+        run: |
+          cd release-artifacts
+          shasum -a 256 *.ipa > SHA256SUMS.txt
+          cat SHA256SUMS.txt
+
+      - name: Install Cosign
+        uses: sigstore/cosign-installer@6f9f17788090df1f26f669e9d70d6ae9567deba6 # v4.1.2
+
+      - name: Sign artifacts with Sigstore
+        run: |
+          cd release-artifacts
+          for file in *.ipa; do
+            cosign sign-blob --yes --bundle "${file}.sig" "${file}"
+          done
+
+      - name: Generate Build Provenance Attestation
+        id: attest-ios
+        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        with:
+          subject-path: 'release-artifacts/*.ipa'
+
+      - name: Warn on attestation failure (iOS)
+        if: steps.attest-ios.outcome == 'failure'
+        run: echo "::warning::iOS build provenance attestation failed. Release continues without attestation."
+
+      - name: Generate iOS SBOM
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0.24.0
+        with:
+          path: ios/
+          artifact-name: sbom-ios-${{ needs.prepare.outputs.version }}.spdx.json
+          output-file: release-artifacts/sbom-ios.spdx.json
+
+      - name: Upload iOS artifacts
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: ios-release-${{ needs.prepare.outputs.version }}
+          path: |
+            release-artifacts/
+          retention-days: 90
+
+      - name: Clean up keychain
+        if: always()
+        run: |
+          security delete-keychain $RUNNER_TEMP/app-signing.keychain-db || true
+
+  # =============================================================================
+  # Create GitHub Release
+  # =============================================================================
+  create-release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    needs: [prepare, android-release, ios-release]
+    # Skip GitHub release creation on Wave-8 dry_run so test publishes do
+    # not create real release entries. Tag-triggered runs always create a
+    # release; workflow_dispatch with dry_run=false (deliberate non-test
+    # dispatch) also creates one.
+    if: |
+      always() &&
+      needs.prepare.result == 'success' &&
+      (needs.android-release.result == 'success' || needs.ios-release.result == 'success') &&
+      (github.event_name != 'workflow_dispatch' || inputs.dry_run != true)
+    permissions:
+      contents: write
+    outputs:
+      hashes: ${{ steps.hash.outputs.hashes }}
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Download Android artifacts
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        if: needs.android-release.result == 'success'
+        with:
+          name: android-release-${{ needs.prepare.outputs.version }}
+          path: android-release
+
+      - name: Download iOS artifacts
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        if: needs.ios-release.result == 'success'
+        with:
+          name: ios-release-${{ needs.prepare.outputs.version }}
+          path: ios-release
+
+      - name: Combine checksums
+        env:
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+        run: |
+          mkdir -p release-files
+          VERSION="${RELEASE_VERSION}"
+
+          # Copy Android files
+          if [ -d android-release ]; then
+            for ext in apk aab sig pem; do
+              for f in android-release/*."$ext"; do
+                [ -f "$f" ] && cp "$f" release-files/
+              done
+            done
+            [ -f android-release/sbom-android.spdx.json ] && cp android-release/sbom-android.spdx.json release-files/
+            [ -f android-release/SHA256SUMS.txt ] && cat android-release/SHA256SUMS.txt >> release-files/SHA256SUMS.txt
+          fi
+
+          # Copy iOS files
+          if [ -d ios-release ]; then
+            for ext in ipa sig pem; do
+              for f in ios-release/*."$ext"; do
+                [ -f "$f" ] && cp "$f" release-files/
+              done
+            done
+            [ -f ios-release/sbom-ios.spdx.json ] && cp ios-release/sbom-ios.spdx.json release-files/
+            [ -f ios-release/SHA256SUMS.txt ] && cat ios-release/SHA256SUMS.txt >> release-files/SHA256SUMS.txt
+          fi
+
+          # Show final checksums
+          if [ -f release-files/SHA256SUMS.txt ]; then
+            echo "## Checksums" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            cat release-files/SHA256SUMS.txt >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Compute artifact hashes for SLSA
+        id: hash
+        run: |
+          cd release-files
+          # Hash all release artifacts for SLSA provenance
+          COMBINED=$(sha256sum *.apk *.aab *.ipa 2>/dev/null | base64 -w0)
+          echo "hashes=$COMBINED" >> $GITHUB_OUTPUT
+
+      - name: Generate Release Notes
+        id: release_notes
+        env:
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+          RELEASE_PRERELEASE: ${{ needs.prepare.outputs.prerelease }}
+        run: |
+          VERSION="${RELEASE_VERSION}"
+          PRERELEASE="${RELEASE_PRERELEASE}"
+
+          cat > release-notes.md << EOF
+          ## Provii Wallet ${VERSION}
+
+          ### Downloads
+
+          | Platform | File | Description |
+          |----------|------|-------------|
+          | Android | \`provii-mobile-${VERSION}.apk\` | Universal APK |
+          | Android | \`provii-mobile-${VERSION}.aab\` | App Bundle (Play Store) |
+          | iOS | \`provii-mobile-${VERSION}.ipa\` | iOS App |
+
+          ### Verification
+
+          All release artifacts are signed with [Sigstore](https://www.sigstore.dev/) for transparency and verification.
+
+          To verify signatures:
+          \`\`\`bash
+          cosign verify-blob --signature provii-mobile-${VERSION}.apk.sig \\
+            --certificate provii-mobile-${VERSION}.apk.pem \\
+            provii-mobile-${VERSION}.apk
+          \`\`\`
+
+          ### Checksums
+
+          See \`SHA256SUMS.txt\` for file checksums.
+
+          ### Security
+
+          Report security vulnerabilities to security@provii.app
+          EOF
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@b4309332981a82ec1c5618f44dd2e27cc8bfbfda # v3.0.0
+        with:
+          tag_name: ${{ needs.prepare.outputs.tag }}
+          name: Provii Wallet ${{ needs.prepare.outputs.version }}
+          body_path: release-notes.md
+          draft: false
+          prerelease: ${{ needs.prepare.outputs.prerelease == 'true' }}
+          files: |
+            release-files/*
+          fail_on_unmatched_files: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Wave-8: the legacy S3-compatible R2 step that lived here was removed
+      # because the bucket-scoped access keys returned HTTP 401 on every PUT.
+      # Per-platform provenance triplet uploads now happen in the dedicated
+      # publish-r2-provenance job below using wrangler@latest --remote with
+      # CLOUDFLARE_API_TOKEN, mirroring provii-verifier/publish-openapi.yml.
+
+  # =============================================================================
+  # SLSA Provenance
+  # =============================================================================
+  provenance:
+    name: SLSA Provenance
+    needs: [create-release]
+    if: always() && needs.create-release.result == 'success'
+    permissions:
+      actions: read
+      id-token: write
+      contents: write
+    uses: slsa-framework/slsa-github-generator/.github/workflows/generator_generic_slsa3.yml@v2.1.0
+    with:
+      base64-subjects: "${{ needs.create-release.outputs.hashes }}"
+      upload-assets: true
+      private-repository: true
+      provenance-name: "provii-mobile.intoto.jsonl"
+
+  # =============================================================================
+  # Notify on Release
+  # =============================================================================
+  notify:
+    name: Notify Release
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: [prepare, create-release, provenance]
+    if: always() && needs.create-release.result == 'success'
+    permissions:
+      contents: read
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Post Release Summary
+        env:
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+          RELEASE_TAG: ${{ needs.prepare.outputs.tag }}
+          REPO_NAME: ${{ github.repository }}
+        run: |
+          VERSION="${RELEASE_VERSION}"
+          TAG="${RELEASE_TAG}"
+
+          echo "## Release Published" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Version:** $VERSION" >> $GITHUB_STEP_SUMMARY
+          echo "**Tag:** $TAG" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "[View Release](https://github.com/${REPO_NAME}/releases/tag/$TAG)" >> $GITHUB_STEP_SUMMARY
+
+  # =============================================================================
+  # Publish per-platform provenance triplets to R2 (Wave-8)
+  #
+  # Layout in R2 bucket provii-api-specs:
+  #   provii-mobile/<version>/android/provii-mobile.apk{,.sig,.intoto.jsonl}
+  #   provii-mobile/<version>/ios/provii-mobile.ipa{,.sig,.intoto.jsonl}
+  #   provii-mobile/latest/...                          (mirror, tag triggers only)
+  #   provii-mobile/test/<sha>/...                      (workflow_dispatch dry_run)
+  #
+  # IMPORTANT: what these signatures actually attest:
+  # The provenance triplets here describe the CI-built upload artefacts: the
+  # APK that CI signs with the upload key and ships to Google Play, and the
+  # IPA that CI signs with the App Store distribution profile and ships to
+  # App Store Connect. They are NOT signatures over the bytes a user installs
+  # on their device.
+  #
+  # Google Play re-signs APKs via App Signing by Google Play before serving
+  # them to devices, so the sha256 of an installed APK will not match the
+  # sha256 inside our cosign bundle. TestFlight and the App Store likewise
+  # redistribute IPAs through Apple's signing infrastructure with their own
+  # App Store certificate.
+  #
+  # Verifying these provenance bundles confirms the bytes that ENTERED the
+  # store, not the bytes a user runs on device. Consumers checking on-device
+  # binary integrity must use the platform's own signature verification
+  # (Play Protect, App Store receipt validation), not these bundles.
+  #
+  # Mirrors provii-verifier/.github/workflows/publish-openapi.yml:162-209.
+  # Replaces the legacy S3-API R2 step that returned HTTP 401 on every PUT.
+  # =============================================================================
+  publish-r2-provenance:
+    name: Publish provenance triplets to R2
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    needs: [prepare, android-release, ios-release]
+    if: |
+      always() &&
+      needs.prepare.result == 'success' &&
+      (needs.android-release.result == 'success' || needs.ios-release.result == 'success')
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    env:
+      SERVICE: provii-mobile
+      R2_BUCKET: provii-api-specs
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Resolve version + path prefix
+        id: ctx
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_DRY_RUN: ${{ inputs.dry_run }}
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+          COMMIT_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          if [ "${EVENT_NAME}" = "workflow_dispatch" ]; then
+            DRY_RUN="${INPUT_DRY_RUN}"
+          else
+            DRY_RUN="false"
+          fi
+          VERSION="${RELEASE_VERSION}"
+          if [ "${DRY_RUN}" = "true" ]; then
+            BASE_PREFIX="${SERVICE}/test/${COMMIT_SHA}"
+            PROMOTE_LATEST="false"
+          else
+            BASE_PREFIX="${SERVICE}/${VERSION}"
+            PROMOTE_LATEST="true"
+          fi
+          echo "version=${VERSION}" >> "${GITHUB_OUTPUT}"
+          echo "base_prefix=${BASE_PREFIX}" >> "${GITHUB_OUTPUT}"
+          echo "promote_latest=${PROMOTE_LATEST}" >> "${GITHUB_OUTPUT}"
+
+      - name: Download Android artefacts
+        if: needs.android-release.result == 'success'
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: android-release-${{ needs.prepare.outputs.version }}
+          path: android-release
+
+      - name: Download iOS artefacts
+        if: needs.ios-release.result == 'success'
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: ios-release-${{ needs.prepare.outputs.version }}
+          path: ios-release
+
+      - name: Stage canonical artefacts
+        # Rename the versioned APK/IPA to the brief's canonical schema names
+        # (provii-mobile.apk, provii-mobile.ipa) so consumers fetching from
+        # provenance.provii.app see a stable filename per version.
+        # The original versioned files stay in the artefact bundle for the
+        # GitHub release path.
+        id: stage
+        env:
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+        run: |
+          set -euo pipefail
+          mkdir -p staging/android staging/ios
+          VERSION="${RELEASE_VERSION}"
+          if [ -d android-release ]; then
+            APK_SRC="android-release/provii-mobile-${VERSION}.apk"
+            if [ -f "${APK_SRC}" ]; then
+              cp "${APK_SRC}" staging/android/provii-mobile.apk
+            fi
+          fi
+          if [ -d ios-release ]; then
+            IPA_SRC="ios-release/provii-mobile-${VERSION}.ipa"
+            if [ -f "${IPA_SRC}" ]; then
+              cp "${IPA_SRC}" staging/ios/provii-mobile.ipa
+            fi
+          fi
+          # Use a tmp listing then move into place so the file-list itself is
+          # never an entry in the listing it creates (find races bash redirect).
+          find staging -type f \( -name '*.apk' -o -name '*.ipa' \) | sort > /tmp/file-list.txt
+          mv /tmp/file-list.txt staging/file-list.txt
+          if [ ! -s staging/file-list.txt ]; then
+            echo "::error::no platform artefacts present to publish"
+            exit 1
+          fi
+          cat staging/file-list.txt
+
+      - name: Compute SHA-256 per artefact
+        run: |
+          set -euo pipefail
+          : > staging/digests.txt
+          while IFS= read -r f; do
+            d=$(sha256sum "$f" | awk '{print $1}')
+            echo "${f} ${d}" >> staging/digests.txt
+          done < staging/file-list.txt
+          cat staging/digests.txt
+
+      - name: Install Sigstore cosign
+        uses: sigstore/cosign-installer@6f9f17788090df1f26f669e9d70d6ae9567deba6 # v4.1.2
+        with:
+          cosign-release: 'v2.5.3'
+
+      - name: Sign each artefact (Sigstore bundle, new format)
+        env:
+          COSIGN_EXPERIMENTAL: "1"
+        run: |
+          set -euo pipefail
+          while IFS= read -r f; do
+            cosign sign-blob --yes \
+              --new-bundle-format \
+              --bundle "${f}.sig" \
+              "${f}"
+            python3 -c "import json,sys; b=json.load(open('${f}.sig')); assert b.get('mediaType','').startswith('application/vnd.dev.sigstore.bundle'), b.get('mediaType')"
+          done < staging/file-list.txt
+
+      - name: Attest build provenance for all artefacts (SLSA)
+        # Provenance covers the bytes uploaded to the store, NOT the bytes a
+        # user installs. See the job-level header comment for detail.
+        id: attest
+        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        with:
+          subject-path: |
+            staging/android/provii-mobile.apk
+            staging/ios/provii-mobile.ipa
+
+      - name: Extract per-artefact in-toto JSONL
+        env:
+          ATTEST_BUNDLE_PATH: ${{ steps.attest.outputs.bundle-path }}
+        run: |
+          set -euo pipefail
+          BUNDLE_PATH="${ATTEST_BUNDLE_PATH}"
+          if [ -z "${BUNDLE_PATH}" ] || [ ! -f "${BUNDLE_PATH}" ]; then
+            echo "::error::attest-build-provenance bundle-path output is empty or missing"
+            exit 1
+          fi
+          STATEMENT=$(jq -r '.dsseEnvelope.payload' "${BUNDLE_PATH}" | base64 -d)
+          while IFS= read -r line; do
+            f=$(echo "${line}" | awk '{print $1}')
+            d=$(echo "${line}" | awk '{print $2}')
+            echo "${STATEMENT}" \
+              | jq -c --arg digest "${d}" \
+                  '{_type, predicateType, predicate, subject: [(.subject[] | select(.digest.sha256 == $digest))]}' \
+              > "${f}.intoto.jsonl"
+            STATEMENT_DIGEST=$(jq -r '.subject[0].digest.sha256' "${f}.intoto.jsonl")
+            if [ "${STATEMENT_DIGEST}" != "${d}" ]; then
+              echo "::error::in-toto subject digest ${STATEMENT_DIGEST} does not match ${f} digest ${d}"
+              exit 1
+            fi
+            PREDICATE_TYPE=$(jq -r '.predicateType' "${f}.intoto.jsonl")
+            case "${PREDICATE_TYPE}" in
+              https://slsa.dev/provenance/*) ;;
+              *)
+                echo "::error::unexpected predicateType ${PREDICATE_TYPE} for ${f}"
+                exit 1
+                ;;
+            esac
+          done < staging/digests.txt
+
+      - name: Install Node.js
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v4
+        with:
+          node-version: '22'
+
+      - name: Install Wrangler
+        run: npm install -g wrangler@${{ env.WRANGLER_VERSION }} --ignore-scripts
+
+      - name: Upload triplets to R2 (wrangler)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          BASE_PREFIX: ${{ steps.ctx.outputs.base_prefix }}
+        run: |
+          set -euo pipefail
+          while IFS= read -r f; do
+            REL="${f#staging/}"
+            CT_BIN="application/octet-stream"
+            case "${f}" in
+              *.apk) CT_BIN="application/vnd.android.package-archive" ;;
+              *.ipa) CT_BIN="application/octet-stream" ;;
+            esac
+            wrangler r2 object put \
+              "${R2_BUCKET}/${BASE_PREFIX}/${REL}" \
+              --remote \
+              --file="${f}" \
+              --content-type="${CT_BIN}"
+            wrangler r2 object put \
+              "${R2_BUCKET}/${BASE_PREFIX}/${REL}.sig" \
+              --remote \
+              --file="${f}.sig" \
+              --content-type=application/vnd.dev.sigstore.bundle+json
+            wrangler r2 object put \
+              "${R2_BUCKET}/${BASE_PREFIX}/${REL}.intoto.jsonl" \
+              --remote \
+              --file="${f}.intoto.jsonl" \
+              --content-type=application/vnd.in-toto+json
+          done < staging/file-list.txt
+
+      - name: Promote to <service>/latest/ (tag or non-dry-run dispatch only)
+        if: ${{ steps.ctx.outputs.promote_latest == 'true' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          while IFS= read -r f; do
+            REL="${f#staging/}"
+            CT_BIN="application/octet-stream"
+            case "${f}" in
+              *.apk) CT_BIN="application/vnd.android.package-archive" ;;
+            esac
+            for ext in "" ".sig" ".intoto.jsonl"; do
+              CT="${CT_BIN}"
+              [ "${ext}" = ".sig" ] && CT="application/vnd.dev.sigstore.bundle+json"
+              [ "${ext}" = ".intoto.jsonl" ] && CT="application/vnd.in-toto+json"
+              wrangler r2 object put \
+                "${R2_BUCKET}/${SERVICE}/latest/${REL}${ext}" \
+                --remote \
+                --file="${f}${ext}" \
+                --content-type="${CT}"
+            done
+          done < staging/file-list.txt
+
+      - name: Upload CI artefacts (debug)
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: r2-provenance-${{ github.sha }}
+          path: staging/
+          retention-days: 14

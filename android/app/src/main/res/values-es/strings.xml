@@ -1,0 +1,1684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Configuraci\u00f3n</string>
+    <string name="title_accessibility">Accesibilidad</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Obtener credenciales</string>
+    <string name="title_scan_verification_qr">Escanear c\u00f3digo QR de verificaci\u00f3n</string>
+    <string name="title_verifying_age">Verificando edad</string>
+    <string name="title_age_verified">Edad verificada</string>
+    <string name="title_verification_failed">Error de verificaci\u00f3n</string>
+    <string name="title_officer_mode">Modo funcionario</string>
+    <string name="title_officer_dashboard">Panel de funcionario</string>
+    <string name="title_issue_credential">Emitir credencial</string>
+    <string name="title_credential_ready">Credencial lista</string>
+    <string name="title_get_your_credential">Obtener su credencial</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Le damos la bienvenida a Provii Wallet</string>
+    <string name="welcome_subtitle">Verificaci\u00f3n de edad segura y simple</string>
+    <string name="welcome_first_credential">Comience agregando su primera credencial de verificaci\u00f3n de edad</string>
+    <string name="welcome_description">Verificaci\u00f3n privada de edad con pruebas de conocimiento cero</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Le damos la bienvenida a Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Elija su idioma preferido</string>
+    <string name="onboarding_use_english">Usar ingl\u00e9s</string>
+    <string name="onboarding_use_english_description">Continuar usando ingl\u00e9s como idioma de la app</string>
+    <string name="onboarding_rotating_button_description">Bot\u00f3n para cambiar idioma, mostrando actualmente: %1$s. Toque para seleccionar otro idioma.</string>
+    <string name="onboarding_change_later">Puede cambiarlo despu\u00e9s en Configuraci\u00f3n</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Accesibilidad</string>
+    <string name="onboarding_accessibility_desc">\u00bfDesea ajustar la accesibilidad? Por ejemplo: tama\u00f1o de texto, \u00e1reas t\u00e1ctiles o movimiento reducido.</string>
+    <string name="onboarding_use_defaults">Usar valores predeterminados</string>
+    <string name="onboarding_use_defaults_description">Continuar con la configuraci\u00f3n de accesibilidad est\u00e1ndar</string>
+    <string name="onboarding_open_accessibility">Configuraci\u00f3n de accesibilidad</string>
+    <string name="onboarding_open_accessibility_description">Abrir configuraci\u00f3n de accesibilidad para personalizar la app</string>
+    <string name="onboarding_accessibility_later">Puede cambiarlo despu\u00e9s en Configuraci\u00f3n</string>
+    <string name="onboarding_accessibility_features_title">Funciones disponibles:</string>
+    <string name="onboarding_feature_text_size">Texto m\u00e1s grande</string>
+    <string name="onboarding_feature_touch_targets">\u00c1reas t\u00e1ctiles m\u00e1s grandes</string>
+    <string name="onboarding_feature_reduce_motion">Movimiento reducido</string>
+    <string name="onboarding_feature_high_contrast">Modo de alto contraste</string>
+    <string name="onboarding_talkback_detected">TalkBack detectado</string>
+    <string name="onboarding_talkback_message">Activamos descripciones ampliadas para ayudarle a navegar la app.</string>
+    <string name="onboarding_continue_to_setup">Continuar con la configuraci\u00f3n</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Configuraci\u00f3n inicial requerida</string>
+    <string name="setup_download_required">Descarga requerida</string>
+    <string name="setup_download_description">Esta app necesita descargar componentes de seguridad para pruebas de conocimiento cero (aprox. 87\u00a0MB).</string>
+    <string name="setup_wifi_recommended">Se recomienda Wi-Fi</string>
+    <string name="setup_checking_status">Verificando estado de configuraci\u00f3n\u2026</string>
+    <string name="setup_already_setup">\u00a1Ya est\u00e1 configurada!</string>
+    <string name="setup_ready_message">Su billetera est\u00e1 lista para la verificaci\u00f3n segura de edad</string>
+    <string name="setup_preparing">Preparando sistema de verificaci\u00f3n segura\u2026</string>
+    <string name="setup_checking_components">Verificando componentes de seguridad\u2026</string>
+    <string name="setup_downloading">Descargando componentes de seguridad</string>
+    <string name="setup_download_progress_description">%1$d%% completado (%2$s MB de %3$s MB descargados)</string>
+    <string name="setup_initializing">Inicializando componentes de seguridad\u2026</string>
+    <string name="setup_complete">\u00a1Configuraci\u00f3n completa!</string>
+    <string name="setup_download_info">Esto habilita pruebas de conocimiento cero para la verificaci\u00f3n privada de edad</string>
+    <string name="setup_one_time_download">Descarga \u00fanica</string>
+    <string name="setup_stuck_message">Esto est\u00e1 tardando m\u00e1s de lo esperado</string>
+    <string name="setup_stuck_description">La configuraci\u00f3n puede estar atascada. Intente reiniciar.</string>
+    <string name="setup_restart_message">La app necesita reiniciarse. Esto a veces ocurre en el primer inicio.</string>
+    <string name="setup_storage_full">Almacenamiento lleno</string>
+    <string name="setup_connection_error">Error de conexi\u00f3n</string>
+    <string name="setup_failed">La configuraci\u00f3n fall\u00f3</string>
+    <string name="setup_initialization_error">Error de inicializaci\u00f3n</string>
+    <string name="error_storage_init_failed">Error al inicializar el almacenamiento. Reinicie la app.</string>
+    <string name="error_storage_init_close_restart">Error al inicializar el almacenamiento. Cierre y reinicie la app.</string>
+    <string name="setup_free_storage_message">Libere al menos 65 MB e intente de nuevo</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Privacidad protegida</string>
+    <string name="setup_privacy_description">Su verificaci\u00f3n de edad usa pruebas de conocimiento cero. Su fecha de nacimiento nunca se transmite.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Mis credenciales</string>
+    <string name="credentials_empty">No hay credenciales almacenadas</string>
+    <string name="credential_active">Credencial activa</string>
+    <string name="credential_expired">Credencial vencida</string>
+    <string name="credential_ready_for_verification">Lista para verificaci\u00f3n</string>
+    <string name="credential_expired_message">Su credencial venci\u00f3 y debe reemplazarla</string>
+    <string name="credential_stored_successfully">Credencial almacenada correctamente</string>
+    <string name="credential_stored_description">Su credencial de edad se almacen\u00f3 de forma segura y est\u00e1 lista para usar</string>
+    <string name="credential_can_prove_age">Ahora puede demostrar su edad de forma privada</string>
+    <string name="credential_returning">Volviendo a credenciales\u2026</string>
+    <string name="credential_view_credentials">Ver credenciales</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Listo</string>
+    <string name="action_scan_qr_code">Escanear c\u00f3digo QR</string>
+    <string name="action_find_locations">Buscar ubicaciones</string>
+    <string name="action_get_credential">Obtener una credencial</string>
+    <string name="action_replace_credential">Reemplazar con nueva credencial</string>
+    <string name="action_replace_credential_now">Reemplazar credencial ahora</string>
+    <string name="action_delete_credential">Eliminar credencial</string>
+    <string name="credential_action_scan_description">Obtener credencial de un emisor autorizado</string>
+    <string name="credential_action_find_description">Descubrir emisores cercanos</string>
+    <string name="credential_remove_description">Eliminar credencial actual</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Privacidad</string>
+    <string name="credential_info_privacy_value">Protegida</string>
+    <string name="credential_info_status">Estado</string>
+    <string name="credential_info_status_value">V\u00e1lida</string>
+    <string name="credential_tip_title">Consejo r\u00e1pido</string>
+    <string name="credential_tip_message">Toque el bot\u00f3n \'Verificar edad\' para escanear c\u00f3digos QR (Quick Response) de verificaci\u00f3n en los lugares participantes.</string>
+
+    <!--
+        Validation summary (2026-03-21)
+        Source: values/strings.xml lines 1-118 (93 translatable strings)
+        Review: es-batch-01-review.md (17 findings: 1C, 5H, 7M, 4L)
+
+        All CRITICAL and HIGH issues fixed:
+          C-01  action_get_credential: restored indefinite article ("una credencial")
+          H-01  welcome_title, onboarding_welcome: gender-neutral "Le damos la bienvenida"
+          H-02  credential_can_prove_age: "verificar" corrected to "demostrar" (prover role)
+          H-03  credential_expired_message: active voice "debe reemplazarla"
+          H-04  onboarding_talkback_message: warmer first-person "Activamos descripciones ampliadas"
+          H-05  setup_failed: changed to "La configuracion fallo" (event, not label)
+
+        All MEDIUM issues fixed:
+          M-01  onboarding_accessibility_desc: trimmed with split sentence
+          M-02  setup_download_description: "aproximadamente" abbreviated to "aprox."
+          M-03  setup_privacy_description: "se comparte" changed to "se transmite"
+          M-04  credential_stored_description: reflexive preterite "se almaceno"
+          M-05  title_verification_failed: "Error de verificacion" for consistency
+          M-06  credential_tip_message: "establecimientos" changed to "lugares"
+          M-07  onboarding_rotating_button_description: "de cambiar" to "para cambiar"
+
+        All LOW issues fixed:
+          L-01  setup_already_setup: feminine "configurada" (subject is billetera)
+          L-02  title_credential_ready: confirmed correct, no change
+          L-03  onboarding_feature_touch_targets: "amplias" changed to "grandes"
+          L-04  setup_stuck_description: "detenida" changed to "atascada"
+
+        No rejections. All 17 findings accepted and applied.
+    -->
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">Escanear c\u00f3digo QR</string>
+    <string name="verification_verify_age">Verificar edad</string>
+    <string name="verification_generating_proof">Generando prueba\u2026</string>
+    <string name="verification_success">Verificaci\u00f3n exitosa</string>
+    <string name="verification_failed">Verificaci\u00f3n fallida</string>
+    <string name="verification_age_verified">Edad verificada</string>
+    <string name="verification_age_verified_message">Su edad fue verificada de forma privada</string>
+    <string name="verification_can_return">Ya puede volver al sitio para continuar.</string>
+    <string name="verification_returning_browser">Volviendo al navegador\u2026</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">Paso 1 de 2</string>
+    <string name="verification_step_2_of_2">Paso 2 de 2</string>
+    <string name="verification_point_camera">Apunte la c\u00e1mara al c\u00f3digo QR de verificaci\u00f3n</string>
+    <!-- H-01: Added explicit object "el dispositivo" to incomplete imperative -->
+    <string name="verification_hold_steady">Mantenga el dispositivo firme hasta escuchar el tono de confirmaci\u00f3n.</string>
+    <string name="verification_reading_request">Leyendo solicitud de verificaci\u00f3n\u2026</string>
+    <string name="verification_processing_challenge">Procesando desaf\u00edo\u2026</string>
+    <string name="verification_creating_proof">Creando prueba de edad\u2026</string>
+    <string name="verification_submitting_proof">Enviando prueba\u2026</string>
+    <string name="verification_processing_message">Esto puede tardar unos segundos</string>
+    <string name="verification_preparing_proof">Estamos preparando una prueba privada con su credencial guardada.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Leyendo solicitud de verificaci\u00f3n\u2026</string>
+    <string name="verification_status_processing_challenge">Procesando desaf\u00edo\u2026</string>
+    <string name="verification_status_creating_proof">Creando prueba de edad\u2026</string>
+    <string name="verification_status_submitting_proof">Enviando prueba\u2026</string>
+    <string name="verification_status_verified">\u2714 Edad verificada</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">No se pudo mostrar el aviso de autenticaci\u00f3n</string>
+    <string name="verification_error_verification_failed">La verificaci\u00f3n fall\u00f3</string>
+    <string name="verification_error_generic">Ocurri\u00f3 un error</string>
+    <string name="verification_error_failed_to_process_code">No se pudo procesar el c\u00f3digo</string>
+    <string name="verification_error_failed_to_process_challenge">No se pudo procesar el desaf\u00edo</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Emisores confiables en Australia</string>
+    <string name="issuers_loading">Cargando emisores\u2026</string>
+    <string name="issuers_loaded">Emisores cargados correctamente</string>
+    <string name="issuers_unable_to_load">No se pudieron cargar los emisores</string>
+    <string name="issuers_check_connection">Verifique su conexi\u00f3n a internet e intente de nuevo</string>
+    <string name="issuers_categories_header">CATEGOR\u00cdAS</string>
+    <string name="issuers_available_header">EMISORES DISPONIBLES</string>
+    <!-- C-02: issuers_found_count moved to plurals.xml (singular/plural agreement) -->
+    <string name="issuer_status_coming_soon">Pr\u00f3ximamente</string>
+    <string name="issuer_status_verified">Verificado</string>
+    <string name="issuer_how_to_get">C\u00f3mo obtener la credencial</string>
+    <string name="issuer_service_locations">Ubicaciones de servicio</string>
+    <string name="issuer_visit_website">Visitar sitio web de %s</string>
+    <string name="issuer_learn_more">M\u00e1s informaci\u00f3n sobre %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Banca</string>
+    <string name="category_super_fund">Fondo de jubilaci\u00f3n</string>
+    <string name="category_government">Gobierno</string>
+    <string name="category_travel">Viajes</string>
+    <string name="category_telco">Telecomunicaciones</string>
+    <string name="category_insurance">Seguros</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Configuraci\u00f3n</string>
+    <string name="settings_section_sandbox">Modo sandbox</string>
+    <string name="settings_section_general">General</string>
+    <string name="settings_section_credentials">Credenciales</string>
+    <string name="settings_section_advanced">Avanzado</string>
+    <string name="settings_section_privacy">Privacidad</string>
+    <string name="settings_security">Seguridad</string>
+    <string name="settings_biometric">Usar autenticaci\u00f3n biom\u00e9trica</string>
+    <string name="settings_environment">Configuraci\u00f3n de entorno</string>
+    <string name="settings_environment_description">Ver la configuraci\u00f3n actual del entorno</string>
+    <string name="settings_reset_proving_key">Restablecer clave de prueba</string>
+    <string name="settings_reset_proving_key_description">Descargar de nuevo los componentes de seguridad (depuraci\u00f3n)</string>
+    <string name="settings_mint_test_credential_as_issuer">Emitir credencial de prueba como Emisor</string>
+    <string name="settings_mint_test_credential_subtitle">Emite una credencial de prueba a tu monedero para que puedas verificarla desde una demostración de parte verificadora.</string>
+    <string name="settings_find_trusted_issuers">Buscar emisores confiables</string>
+    <string name="settings_version">Versi\u00f3n: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Toque 5 veces para alternar</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Idioma</string>
+    <string name="language_selection_description">Seleccione su idioma preferido. La app se reiniciar\u00e1 para aplicar los cambios.</string>
+    <string name="language_selected">Seleccionado</string>
+    <string name="settings_language">Idioma</string>
+    <string name="settings_language_description">Cambiar idioma de la app</string>
+    <string name="settings_licenses">Licencias de c\u00f3digo abierto</string>
+    <string name="settings_licenses_description">Ver licencias de terceros</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Confirmar idioma</string>
+    <string name="language_change_to">Cambiar idioma a:</string>
+    <string name="language_restart_notice">La app se reiniciar\u00e1 para aplicar este idioma.</string>
+    <string name="language_apply">Aplicar</string>
+    <string name="language_cancel">Cancelar</string>
+    <string name="language_skip_title">\u00bfOmitir selecci\u00f3n de idioma?</string>
+    <string name="language_skip_message">Si omite este paso, la app usar\u00e1 ingl\u00e9s por defecto. Puede cambiar el idioma luego en Configuraci\u00f3n.</string>
+    <string name="language_use_english">Usar ingl\u00e9s</string>
+    <string name="language_go_back">Volver</string>
+    <string name="language_help_title">Ayuda para selecci\u00f3n de idioma</string>
+    <string name="language_help_how_to">C\u00f3mo seleccionar su idioma:</string>
+    <string name="language_help_step1">1. Use la barra de b\u00fasqueda para encontrar su idioma</string>
+    <string name="language_help_step2">2. Toque su idioma preferido</string>
+    <string name="language_help_step3">3. Confirme su selecci\u00f3n</string>
+    <string name="language_help_system_note">Su idioma del sistema aparece destacado arriba, si es compatible.</string>
+    <string name="language_help_settings_note">Puede cambiar esto luego en Configuraci\u00f3n.</string>
+    <string name="language_got_it">Entendido</string>
+    <string name="language_select_title">Seleccionar idioma</string>
+    <string name="language_skip_button">Omitir (usar ingl\u00e9s)</string>
+    <string name="language_search_placeholder">Buscar idiomas\u2026</string>
+    <string name="language_no_results">No se encontraron idiomas</string>
+    <string name="language_try_different">Intente con otro t\u00e9rmino de b\u00fasqueda</string>
+    <string name="language_system_badge">Idioma del sistema</string>
+    <!-- C-03: language_count moved to plurals.xml (singular/plural agreement) -->
+    <string name="language_no_match_announcement">No se encontraron idiomas que coincidan con su b\u00fasqueda</string>
+    <!-- C-03: language_found_announcement moved to plurals.xml (singular/plural agreement) -->
+    <!-- C-03: language_search_cleared moved to plurals.xml (singular/plural agreement) -->
+    <string name="language_selected_announcement">Seleccionado: %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Pantalla de selecci\u00f3n de idioma</string>
+    <string name="language_help_button_description">Ayuda e informaci\u00f3n sobre la selecci\u00f3n de idioma</string>
+    <string name="language_skip_description">Omitir selecci\u00f3n de idioma y usar ingl\u00e9s por defecto</string>
+    <string name="language_clear_search_description">Borrar b\u00fasqueda</string>
+    <!-- C-03: language_count_description moved to plurals.xml (singular/plural agreement) -->
+    <string name="language_apply_description">Aplicar selecci\u00f3n de idioma y continuar</string>
+    <string name="language_cancel_description">Cancelar selecci\u00f3n de idioma</string>
+    <string name="language_cancelled_announcement">Selecci\u00f3n de idioma cancelada</string>
+    <string name="language_selected_description">Idioma seleccionado: %1$s, %2$s</string>
+    <!-- H-02: All "seleccionado" forms are masculine, correct because "idioma" is masculine -->
+    <string name="language_item_system">Idioma del sistema: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, seleccionado actualmente</string>
+    <string name="language_item_system_selected">Idioma del sistema: %1$s, %2$s, seleccionado actualmente</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Se volvi\u00f3 a la selecci\u00f3n de idioma</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Modo sandbox activo</string>
+    <string name="sandbox_mode_banner">MODO SANDBOX ACTIVO</string>
+    <string name="sandbox_mode_description">Usando el entorno de pruebas. Toque el n\u00famero de versi\u00f3n cinco veces para alternar.</string>
+    <string name="sandbox_credential_title">Credencial sandbox</string>
+    <!-- H-03: Replaced "flujos de verificacion" (calque) with "la verificacion" -->
+    <string name="sandbox_credential_description">Genere una credencial sandbox para probar la verificaci\u00f3n sin afectar datos de producci\u00f3n.</string>
+    <string name="sandbox_select_age">Seleccionar edad</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Fecha de nacimiento por defecto: %s</string>
+    <!-- H-04: Changed "Cambiar" to "Reemplazar" to convey override semantics -->
+    <string name="sandbox_override_dob">Reemplazar la fecha de nacimiento por defecto</string>
+    <string name="sandbox_override_description">Usar una fecha exacta en lugar del valor por defecto basado en edad.</string>
+    <string name="sandbox_date_of_birth">Fecha de nacimiento</string>
+    <string name="sandbox_generate_credential">Generar credencial</string>
+    <string name="sandbox_generating">Generando\u2026</string>
+    <string name="sandbox_test_credential_saved">Credencial de prueba guardada</string>
+    <string name="sandbox_id_prefix">Prefijo de identificaci\u00f3n: %s\u2026</string>
+    <string name="sandbox_unable_to_generate">No se pudo generar la credencial</string>
+    <string name="settings_sandbox_dob_format">Fecha de nacimiento: %s</string>
+    <string name="settings_sandbox_age_dob_format">Edad %d+ (Fecha de nacimiento: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Configuraci\u00f3n de entorno</string>
+    <string name="environment_current">Actual: %s</string>
+    <!-- M-08: Parenthetical expansion translated to Spanish for TalkBack consistency -->
+    <string name="environment_issuer_api">API del emisor (Interfaz de programaci\u00f3n de aplicaciones): %s</string>
+    <string name="environment_verifier_api">API del verificador (Interfaz de programaci\u00f3n de aplicaciones): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">\u00bfEliminar credencial?</string>
+    <string name="dialog_delete_credential_message">Esta acci\u00f3n elimina la credencial de su dispositivo. Puede obtenerla de nuevo del emisor si es necesario.</string>
+    <string name="dialog_delete_credential_announcement">Di\u00e1logo abierto: Eliminar credencial</string>
+    <string name="dialog_reset_proving_key_title">\u00bfRestablecer clave de prueba?</string>
+    <!-- H-05: Changed "archivos de soporte" (false friend) to "archivos auxiliares" -->
+    <string name="dialog_reset_proving_key_message">La clave de prueba y los archivos auxiliares se eliminar\u00e1n y se descargar\u00e1n de nuevo la pr\u00f3xima vez que abra la app.</string>
+    <string name="dialog_reset_proving_key_announcement">Di\u00e1logo abierto: Restablecer clave de prueba</string>
+    <string name="dialog_environment_info_announcement">Di\u00e1logo abierto: Configuraci\u00f3n de entorno</string>
+    <!-- ==================== ACCESIBILIDAD ==================== -->
+    <!-- Nota para traductores: Estas cadenas apoyan a usuarios con discapacidades y funciones de accesibilidad -->
+    <string name="accessibility_title">Accesibilidad</string>
+    <string name="accessibility_service_label">Accesibilidad de Provii Wallet</string>
+    <string name="accessibility_service_description">El servicio de accesibilidad de Provii Wallet ofrece soporte mejorado para usuarios con discapacidades. Incluye lectura automática de credenciales, navegación guiada e interacciones simplificadas.</string>
+    <string name="accessibility_personalize">Personalice su experiencia</string>
+    <string name="accessibility_customize_features">Personalizar funciones de accesibilidad</string>
+    <string name="accessibility_quick_setup">Configuración rápida</string>
+    <string name="accessibility_features_active">%d funciones activas</string>
+    <string name="accessibility_customize_experience">Personalice su experiencia</string>
+    <string name="accessibility_reset_title">¿Restablecer configuración de accesibilidad?</string>
+    <string name="accessibility_reset_message">Todas las preferencias de accesibilidad volverán a sus valores predeterminados.</string>
+    <string name="accessibility_reset">Restablecer configuración de accesibilidad</string>
+
+    <!-- Categorías de accesibilidad -->
+    <string name="accessibility_category_vision">Visión</string>
+    <string name="accessibility_category_interaction">Interacción</string>
+    <string name="accessibility_category_cognitive">Apoyo cognitivo</string>
+    <string name="accessibility_category_alternative_input">Entrada alternativa</string>
+
+    <!-- Funciones de visión -->
+    <string name="accessibility_extra_large_text">Texto extra grande</string>
+    <!-- FIX #2: natural word order, added partitive "un" before percentage -->
+    <string name="accessibility_extra_large_text_description">Aumentar el tamaño de fuente base en un 45%</string>
+    <string name="accessibility_high_contrast">Alto contraste</string>
+    <string name="accessibility_high_contrast_description">Usar colores de alto contraste</string>
+    <string name="accessibility_reduce_transparency">Reducir transparencia</string>
+    <string name="accessibility_reduce_transparency_description">Eliminar efectos de desenfoque y vidrio</string>
+    <string name="accessibility_dyslexia_font">Fuente para dislexia</string>
+    <string name="accessibility_dyslexia_font_description">Usar fuente OpenDyslexic para mejorar la legibilidad</string>
+    <!-- FIX #3: "Modo daltonismo" → "Modo para daltonismo" (daltonismo is a noun, not an adjective) -->
+    <string name="accessibility_color_blind_mode">Modo para daltonismo</string>
+    <string name="accessibility_color_blind_optimized">Colores optimizados para %s</string>
+
+    <!-- Modos de daltonismo -->
+    <string name="color_blind_none">Ninguno</string>
+    <string name="color_blind_protanopia">Protanopía (ceguera al rojo)</string>
+    <string name="color_blind_deuteranopia">Deuteranopía (ceguera al verde)</string>
+    <string name="color_blind_tritanopia">Tritanopía (ceguera al azul)</string>
+    <string name="color_blind_monochrome">Monocromático</string>
+
+    <!-- Funciones de interacción -->
+    <string name="accessibility_larger_touch_targets">Áreas táctiles más grandes</string>
+    <string name="accessibility_larger_touch_targets_description">Aumentar tamaño de botones y chips</string>
+    <string name="accessibility_reduce_motion">Reducir movimiento</string>
+    <string name="accessibility_reduce_motion_description">Minimizar animaciones y transiciones</string>
+    <string name="accessibility_extended_timeouts">Tiempos extendidos</string>
+    <string name="accessibility_extended_timeouts_description">Permitir más tiempo para acciones temporizadas</string>
+    <string name="accessibility_simplified_gestures">Gestos simplificados</string>
+    <string name="accessibility_simplified_gestures_description">Reducir gestos de varios pasos</string>
+    <string name="accessibility_haptic_feedback">Respuesta háptica</string>
+    <string name="accessibility_haptic_feedback_description">Vibración de confirmación para acciones</string>
+
+    <!-- Funciones de apoyo cognitivo -->
+    <string name="accessibility_simplified_interface">Interfaz simplificada</string>
+    <!-- FIX #5: "desorden" → "distracciones" (clearer in UI context) -->
+    <string name="accessibility_simplified_interface_description">Ocultar opciones avanzadas y reducir distracciones</string>
+    <string name="accessibility_show_step_numbers">Mostrar números de paso</string>
+    <string name="accessibility_show_step_numbers_description">Mostrar indicadores de progreso</string>
+    <string name="accessibility_detailed_descriptions">Descripciones detalladas</string>
+    <string name="accessibility_detailed_descriptions_description">Mostrar texto explicativo adicional</string>
+    <string name="accessibility_confirm_actions">Confirmar antes de actuar</string>
+    <string name="accessibility_confirm_actions_description">Solicitar confirmación en operaciones importantes</string>
+
+    <!-- Funciones de entrada alternativa -->
+    <string name="accessibility_manual_code_entry">Ingreso manual de código</string>
+    <!-- FIX #1: rewrote to eliminate object doubling ("escribir codigos QR" → "ingresar codigos QR manualmente") -->
+    <string name="accessibility_manual_code_entry_description">Permitir ingresar códigos QR (Quick Response) manualmente en lugar de escanearlos</string>
+    <string name="accessibility_voice_input">Entrada de voz</string>
+    <string name="accessibility_voice_input_description">Activar reconocimiento de voz para campos de texto</string>
+
+    <!-- Perfiles de configuración rápida -->
+    <string name="accessibility_profile_vision">Visión</string>
+    <string name="accessibility_profile_motor">Motricidad</string>
+    <string name="accessibility_profile_cognitive">Cognitivo</string>
+    <string name="accessibility_profile_senior">Adulto mayor</string>
+
+    <!-- Cadenas adicionales de pantalla de accesibilidad -->
+    <string name="accessibility_back">Atrás</string>
+
+    <!-- Navegación de migas de pan -->
+    <string name="breadcrumb_home">Inicio</string>
+    <string name="breadcrumb_settings">Configuración</string>
+    <string name="breadcrumb_accessibility">Accesibilidad</string>
+    <string name="breadcrumb_language">Idioma</string>
+    <string name="breadcrumb_help">Centro de ayuda</string>
+    <!-- FIX #7: "funcionario" → "verificador" (funcionario connotes civil servant, not age verifier) -->
+    <string name="breadcrumb_officer_mode">Modo verificador</string>
+
+    <!-- Sección de tipografía y espaciado de texto -->
+    <!-- FIX #8+#9: ampersand → "y", dropped mid-title capitalisation per Spanish orthography -->
+    <string name="accessibility_typography_section">Tipografía y espaciado de texto</string>
+    <string name="accessibility_line_spacing">Interlineado</string>
+    <string name="accessibility_line_spacing_description">Ajustar espacio entre líneas de texto</string>
+    <string name="accessibility_paragraph_spacing">Espaciado de párrafos</string>
+    <string name="accessibility_paragraph_spacing_description">Ajustar espacio entre párrafos</string>
+    <string name="accessibility_letter_spacing">Espaciado de letras</string>
+    <string name="accessibility_letter_spacing_description">Ajustar espacio entre letras</string>
+    <string name="accessibility_typography_aaa_note">Recomendaciones AAA: interlineado de 1.5x, espaciado de párrafos de 2.0x y espaciado de letras de 0.12em.</string>
+    <string name="accessibility_spacing_current">Actual: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Comportamiento de tiempo de espera -->
+    <string name="accessibility_timeout_behavior">Comportamiento del tiempo de espera</string>
+    <!-- FIX #10: restored "de espera" , "tiempos automaticos" alone means nothing -->
+    <string name="accessibility_timeout_no_automatic">Sin tiempos de espera automáticos para cumplimiento AAA</string>
+    <string name="accessibility_timeout_auto_advance_30">Avance automático tras 30 segundos</string>
+    <string name="accessibility_timeout_auto_advance_60">Avance automático tras 60 segundos</string>
+    <string name="accessibility_timeout_set_announcement">Tiempo de espera configurado en %s</string>
+
+    <!-- Nivel de contraste -->
+    <string name="accessibility_contrast_level">Nivel de contraste</string>
+    <string name="accessibility_contrast_aaa_ratio">Relación de contraste 7:1 para cumplimiento AAA</string>
+    <string name="accessibility_contrast_standard">Contraste estándar</string>
+    <string name="accessibility_contrast_aa_ratio">Relación de contraste 4.5:1 para cumplimiento AA</string>
+    <string name="accessibility_contrast_set_announcement">Nivel de contraste configurado en %s</string>
+
+    <!-- Modo daltonismo -->
+    <string name="accessibility_color_blind_set_announcement">Modo daltonismo configurado en %s</string>
+
+    <!-- Control deslizante de espaciado de texto -->
+    <string name="accessibility_slider_description">Control deslizante de %1$s. Valor actual: %2$s. %3$sRango de %4$s a %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">Cumple AAA. </string>
+    <string name="accessibility_slider_announcement">%1$s configurado en %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, cumple AAA</string>
+
+    <!-- Anuncios de activación/desactivación -->
+    <!-- FIX #11: reflexive form avoids gender disagreement when TalkBack reads feminine feature names -->
+    <string name="accessibility_toggle_enabled">%s se activó</string>
+    <!-- FIX #12: reflexive form avoids gender disagreement when TalkBack reads feminine feature names -->
+    <string name="accessibility_toggle_disabled">%s se desactivó</string>
+
+    <!-- Sección de retroalimentación de verificación -->
+    <!-- FIX #13: "Retroalimentacion de verificacion" (38 chars, 81% expansion) → "Respuesta de verificacion" (26 chars) -->
+    <string name="accessibility_verification_feedback_section">Respuesta de verificación</string>
+    <string name="accessibility_sound_enabled">Reproducir sonido al completar</string>
+    <string name="accessibility_sound_enabled_description">Reproducir un sonido de confirmación tras una verificación exitosa</string>
+    <string name="accessibility_sound_style">Estilo de sonido</string>
+    <string name="accessibility_sound_preview">Vista previa del sonido</string>
+    <string name="accessibility_sound_preview_preset">Vista previa de %s</string>
+    <string name="accessibility_sound_style_set_announcement">Estilo de sonido configurado en %s</string>
+    <string name="accessibility_haptic_enabled">Vibrar al completar</string>
+    <string name="accessibility_haptic_enabled_description">Respuesta háptica tras una verificación exitosa</string>
+    <!-- FIX #16: trimmed "configuracion de" (redundant) and "su" (implicit possessive) -->
+    <string name="accessibility_sound_footer">El sonido respeta el modo silencioso del dispositivo</string>
+
+    <!-- Control deslizante de volumen -->
+    <string name="accessibility_volume">Volumen</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Vista previa del volumen actual</string>
+    <string name="accessibility_volume_set_announcement">Volumen configurado en %d por ciento</string>
+    <string name="accessibility_volume_slider_description">Control deslizante de volumen. Valor actual: %d por ciento</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Diálogo de restablecimiento -->
+    <string name="accessibility_reset_icon_description">Restablecer configuración</string>
+    <!--
+        Batch 04 FINAL: Officer Mode, Issuance, Manual Entry, Voice Input
+        Reviewed by: Elena Morales (2026-03-21)
+        Validated by: Translation Validator (2026-03-21)
+
+        Fixes applied (CRITICAL/HIGH only):
+          C-01  issuance_center_qr: added explicit object "el dispositivo" to
+                "mantenga firme" (transitive verb required direct object in Spanish)
+          H-01  officer_document_verified_description, officer_sighted_valid_id:
+                changed "He verificado" to "He revisado" to match Australian legal
+                sense of "sighted" (visual inspection, not full verification)
+          H-02  voice_input_error_no_match, voice_input_error_speech_timeout,
+                voice_input_error_generic, voice_input_error_recognizer_busy:
+                added "Por favor, " before bare usted imperatives to restore
+                politeness register matching the English "Please"
+
+        MEDIUM/LOW items (M-01 to M-04, L-01 to L-02) reviewed and accepted
+        as-is. No functional or user-facing risk.
+    -->
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Batch 04: Officer Mode, Issuance, Manual Entry, Voice Input -->
+    <string name="officer_mode">Modo funcionario</string>
+    <string name="officer_id">Identificaci\u00f3n de funcionario (ID)</string>
+    <string name="officer_id_placeholder">ej., OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Ingrese su identificaci\u00f3n de funcionario asignada</string>
+    <string name="officer_yubikey_connected">Yubikey conectada</string>
+    <string name="officer_connect_yubikey">Conectar Yubikey</string>
+    <string name="officer_touch_yubikey">Toque su Yubikey para autenticarse\u2026</string>
+    <string name="officer_authenticate_hmac">Autenticar con HMAC (c\u00f3digo de autenticaci\u00f3n de mensajes basado en hash)</string>
+    <string name="officer_authentication_process">Proceso de autenticaci\u00f3n:</string>
+    <string name="officer_auth_steps">1. Ingrese su identificaci\u00f3n de funcionario\n2. Presione Autenticar\n3. Toque la Yubikey cuando parpadee\n4. La autenticaci\u00f3n HMAC (c\u00f3digo de autenticaci\u00f3n de mensajes basado en hash) verifica su identidad</string>
+    <string name="officer_auth_failed">Error de autenticaci\u00f3n. Verifique su identificaci\u00f3n de funcionario e intente de nuevo.</string>
+    <string name="officer_session_info">Funcionario: %s</string>
+    <string name="officer_station_info">Estaci\u00f3n: %s</string>
+    <string name="officer_issued_today">Emitidas hoy: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Emitir credencial de edad</string>
+    <string name="officer_issue_description">Verifique la identidad del usuario y emita una credencial de edad digital</string>
+    <string name="officer_start_issuance">Iniciar nueva emisi\u00f3n</string>
+    <string name="officer_issuance_process">PROCESO DE EMISI\u00d3N</string>
+    <string name="officer_issuance_steps">1. Revise el documento de identidad f\u00edsico del usuario\n2. Ingrese su fecha de nacimiento\n3. Verifique que la informaci\u00f3n coincida exactamente\n4. Emita la credencial con c\u00f3digo QR (Quick Response) de atestaci\u00f3n\n5. El usuario escanea el c\u00f3digo QR para recibir la credencial</string>
+    <string name="officer_verify_identity">Verificar identidad del usuario</string>
+    <string name="officer_select_dob">Seleccionar fecha de nacimiento</string>
+    <string name="officer_change_date">Cambiar fecha</string>
+    <string name="officer_age_years">Edad: %d a\u00f1os</string>
+    <string name="officer_under_18_warning">Menor de 18 - No se puede emitir credencial</string>
+    <string name="officer_verification_checklist">LISTA DE VERIFICACI\u00d3N</string>
+    <string name="officer_document_verified">Documento f\u00edsico verificado</string>
+    <string name="officer_document_verified_description">He revisado una identificaci\u00f3n v\u00e1lida emitida por el gobierno</string>
+    <string name="officer_dob_matches">La fecha de nacimiento coincide exactamente</string>
+    <string name="officer_dob_matches_description">La fecha de nacimiento en el documento f\u00edsico es: %s</string>
+    <string name="officer_issue_credential">Emitir credencial</string>
+    <string name="officer_user_scanned_successfully">El usuario escane\u00f3 exitosamente</string>
+    <string name="officer_return_to_dashboard">Volver al panel</string>
+    <string name="officer_go_back">Volver</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">Autenticaci\u00f3n Yubikey</string>
+    <string name="yubikey_step_format">Paso %1$d de %2$d</string>
+    <string name="yubikey_led_should_blink">El LED de la Yubikey deber\u00eda estar parpadeando</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Validando datos\u2026</string>
+    <string name="officer_state_creating_attestation">Creando atestaci\u00f3n\u2026</string>
+    <string name="officer_state_computing_commitment">Calculando compromiso criptogr\u00e1fico\u2026</string>
+    <string name="officer_state_creating_session">Creando sesi\u00f3n segura\u2026</string>
+    <string name="officer_state_signing">Firmando credencial\u2026</string>
+    <string name="officer_state_finalizing">Finalizando credencial\u2026</string>
+    <string name="officer_state_storing_attestation">Almacenando atestaci\u00f3n\u2026</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">La sesi\u00f3n expira pronto</string>
+    <string name="officer_session_expiring_message">Su sesi\u00f3n expirar\u00e1 en %d segundos. \u00bfDesea guardar su progreso?</string>
+    <string name="officer_session_expiring_announcement">Aviso: Su sesi\u00f3n expirar\u00e1 en %d segundos</string>
+    <string name="officer_save_and_continue">Guardar y continuar</string>
+    <string name="officer_continue_without_saving">Continuar sin guardar</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">FECHA DE NACIMIENTO</string>
+    <string name="officer_age_format">Edad: %d a\u00f1os</string>
+    <string name="officer_under_18_full_warning">Menor de 18 - No se puede emitir credencial. Solo las personas de 18 a\u00f1os o m\u00e1s son elegibles para credenciales de verificaci\u00f3n de edad. Verifique que la fecha de nacimiento sea correcta.</string>
+    <string name="officer_verification_checklist_header">LISTA DE VERIFICACI\u00d3N</string>
+    <string name="officer_physical_document_verified">Documento f\u00edsico verificado</string>
+    <string name="officer_sighted_valid_id">He revisado una identificaci\u00f3n v\u00e1lida emitida por el gobierno</string>
+    <string name="officer_dob_matches_exactly">La fecha de nacimiento coincide exactamente</string>
+    <string name="officer_dob_on_document">La fecha de nacimiento en el documento f\u00edsico es: %s</string>
+    <string name="officer_error_label">Error</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <string name="issuance_scan_qr">Escanee el c\u00f3digo QR (Quick Response) de emisi\u00f3n</string>
+    <string name="issuance_downloads_credential">Esto descarga su credencial de edad.</string>
+    <string name="issuance_center_qr">Centre el c\u00f3digo QR en el recuadro y mantenga el dispositivo firme.</string>
+    <string name="issuance_enter_code_manually">Ingresar c\u00f3digo manualmente</string>
+    <string name="issuance_processing_qr">Procesando c\u00f3digo QR\u2026</string>
+    <string name="issuance_invalid_data">Datos de emisi\u00f3n no v\u00e1lidos</string>
+    <string name="issuance_verification_qr_error">Este es un c\u00f3digo QR de verificaci\u00f3n. Escanee el c\u00f3digo QR de emisi\u00f3n de credencial.</string>
+    <string name="issuance_invalid_qr_format">Formato de c\u00f3digo QR no v\u00e1lido</string>
+    <string name="issuance_failed_to_process">Error al procesar c\u00f3digo QR: %s</string>
+    <string name="issuance_code">C\u00f3digo de emisi\u00f3n</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <string name="manual_entry_title">Ingreso manual de c\u00f3digo</string>
+    <string name="manual_entry_enter_code_manually">Ingresar c\u00f3digo manualmente</string>
+    <string name="manual_entry_verification_description">Ingrese el c\u00f3digo de verificaci\u00f3n de 12 d\u00edgitos que aparece en la pantalla del verificador.</string>
+    <string name="manual_entry_issuance_description">Escriba el c\u00f3digo que aparece en la pantalla del emisor.</string>
+    <string name="manual_entry_verification_code">C\u00f3digo de verificaci\u00f3n</string>
+    <string name="manual_entry_submit">Enviar c\u00f3digo</string>
+    <string name="manual_entry_please_enter">Ingrese un c\u00f3digo</string>
+    <string name="manual_entry_please_enter_verification">Ingrese un c\u00f3digo de verificaci\u00f3n</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Iniciar escucha</string>
+    <string name="voice_input_stop_listening">Detener escucha</string>
+    <string name="voice_input_recognized">Reconocido:</string>
+    <string name="content_desc_voice_input_listening">Escuchando entrada de voz</string>
+    <string name="content_desc_voice_input_available">Entrada de voz disponible</string>
+    <string name="voice_input_permission_title">Se necesita permiso de micr\u00f3fono</string>
+    <string name="voice_input_permission_message">La entrada de voz requiere acceso al micr\u00f3fono. Puede habilitarlo desde la configuraci\u00f3n del sistema.</string>
+    <string name="voice_input_listening">Escuchando\u2026</string>
+    <string name="voice_input_error">Error de entrada de voz</string>
+    <string name="voice_input_tap_to_speak">Toque para hablar</string>
+    <string name="voice_input_did_you_say">\u00bfDijo \"%1$s\"?</string>
+    <string name="voice_input_confirm">Confirmar</string>
+    <string name="voice_input_retry">Intentar de nuevo</string>
+    <string name="voice_input_cancel">Cancelar</string>
+    <string name="voice_input_button">Entrada de voz</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">La entrada de voz no est\u00e1 disponible en este dispositivo</string>
+    <string name="voice_input_error_audio">Error de grabaci\u00f3n de audio. Revise el micr\u00f3fono.</string>
+    <string name="voice_input_error_network">Error de red. Revise la conexi\u00f3n.</string>
+    <string name="voice_input_error_network_timeout">Tiempo de red agotado. Intente de nuevo.</string>
+    <string name="voice_input_error_no_match">No se detect\u00f3 voz. Por favor, intente de nuevo.</string>
+    <string name="voice_input_error_recognizer_busy">Entrada de voz ocupada. Por favor, espere un momento.</string>
+    <string name="voice_input_error_server">Error del servidor. Intente m\u00e1s tarde.</string>
+    <string name="voice_input_error_speech_timeout">No se escuch\u00f3 voz. Por favor, hable m\u00e1s fuerte.</string>
+    <string name="voice_input_error_insufficient_permissions">Permiso de micr\u00f3fono denegado.</string>
+    <string name="voice_input_error_generic">Error de entrada de voz. Por favor, intente de nuevo.</string>
+
+
+    <!--
+        Spanish (es) Batch 05 , Final
+        Sections: Common Actions, Errors & Validation, QR Scanner, Status Messages, Privacy & Security
+        130 strings. Reviewed against es-batch-05-review.md.
+        Fixes applied: C-01, H-02, H-03, H-04, M-01 through M-07, L-01 through L-05.
+        H-01 (credential_picker_expired_label) confirmed correct: label is only used in
+        CredentialPickerSheet.kt where the referent is "credencial" (feminine), so "Vencida" stands.
+    -->
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <string name="action_back">Atrás</string>
+    <string name="action_close">Cerrar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_ok">OK</string>
+    <string name="action_set">Establecer</string>
+    <string name="action_change">Cambiar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_reset">Restablecer</string>
+    <string name="action_retry">Reintentar</string>
+    <string name="action_try_again">Intentar de nuevo</string>
+    <string name="action_refresh">Actualizar</string>
+    <string name="action_download_now">Descargar ahora</string>
+    <!-- H-02: "inicio" → "configuración" for setup -->
+    <string name="action_retry_setup">Reintentar configuración</string>
+    <string name="action_retry_download">Reintentar descarga</string>
+    <!-- H-02: "inicio" → "configuración" for setup -->
+    <string name="action_restart_setup">Reiniciar configuración</string>
+    <!-- M-01: "Gestionar" → "Administrar" to match register -->
+    <string name="action_manage_storage">Administrar almacenamiento</string>
+    <!-- H-03: restored "ajustes de" so users know to check device settings -->
+    <string name="action_check_wifi_settings">Revisar ajustes de Wi-Fi primero</string>
+    <string name="action_check_wifi_settings_short">Revisar ajustes de Wi-Fi</string>
+    <!-- L-02: "Otorgar" → "Dar"/"Permitir" to match Android system language -->
+    <string name="action_grant_permission">Dar permiso</string>
+    <string name="action_grant_camera_access">Permitir acceso a la cámara</string>
+    <string name="action_return_to_browser">Volver al navegador</string>
+    <!-- M-02: "info" → "información" (full word) -->
+    <string name="action_show_debug_info">Ver información de depuración</string>
+    <!-- L-05: "descargar" → "volver a descargar" to convey re-download -->
+    <string name="action_reset_redownload">Reiniciar y volver a descargar</string>
+    <string name="action_end_session">Finalizar sesión</string>
+    <string name="action_expand">Expandir</string>
+    <string name="action_collapse">Contraer</string>
+    <string name="accessibility_state_expanded">Expandido</string>
+    <string name="accessibility_state_collapsed">Contraído</string>
+    <string name="accessibility_state_checked">Marcado</string>
+    <string name="accessibility_state_unchecked">No marcado</string>
+    <string name="accessibility_state_selected">Seleccionado</string>
+    <string name="accessibility_state_not_selected">No seleccionado</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <string name="error_generic">Ocurrió un error</string>
+    <!-- C-01: restored "(Quick Response)" TalkBack expansion for accessibility -->
+    <string name="error_camera_permission">Se requiere permiso de cámara para escanear códigos QR (Quick Response)</string>
+    <string name="error_camera_access_needed">Se necesita acceso a la cámara</string>
+    <string name="error_camera_permission_description">Otorgue permiso de cámara para escanear códigos QR o active la entrada manual en la configuración de accesibilidad.</string>
+    <string name="error_camera_permission_required">Se requiere permiso de cámara para escanear códigos QR</string>
+
+    <!-- QR Scanner -->
+    <!-- L-01: Unicode ellipsis → ASCII dots to match English source convention -->
+    <string name="qr_scanner_scanning">Escaneando código QR...</string>
+    <string name="qr_scanner_camera_required">Se requiere permiso de cámara</string>
+    <string name="qr_scanner_camera_preview">Vista previa de cámara para escanear códigos QR</string>
+    <string name="qr_scanner_status_scanning">Escaneando código QR</string>
+    <string name="qr_scanner_requesting_permission">Solicitando permiso de cámara</string>
+    <string name="error_camera_start_failed">No se pudo iniciar la cámara: %s</string>
+    <string name="error_camera_init_failed">Error al inicializar la cámara: %s</string>
+    <string name="error_biometric_not_available">Autenticación biométrica no disponible</string>
+    <string name="error_biometric_required">Se requiere autenticación biométrica para continuar.</string>
+    <string name="error_network">Ocurrió un error de red</string>
+    <string name="error_no_credential">No hay credencial disponible. Obtenga una credencial primero.</string>
+    <string name="credential_picker_title">Elegir una credencial</string>
+    <!-- L-04: added "Usted" to disambiguate from third person -->
+    <string name="credential_picker_description">Usted tiene varias credenciales que pueden usarse para esta verificación. Seleccione una.</string>
+    <string name="credential_picker_expired_label">Vencida</string>
+    <string name="credential_picker_accessibility_select">Seleccionar credencial: %1$s</string>
+    <!-- M-03: "desafío" → "solicitud" to avoid false-friend cryptographic jargon -->
+    <string name="error_failed_to_process_challenge">No se pudo procesar la solicitud</string>
+    <string name="error_failed_to_create_proof">No se pudo crear la prueba</string>
+    <string name="error_verification_failed">La verificación falló</string>
+    <string name="error_occurred_during_verification">Ocurrió un error durante la verificación</string>
+    <string name="error_connection_timeout">La conexión expiró. Intente de nuevo.</string>
+    <string name="error_unable_to_connect">No se pudo conectar. Revise su conexión a internet.</string>
+    <string name="error_secure_connection_failed">La conexión segura falló. Intente de nuevo.</string>
+    <string name="error_security_verification_failed">La verificación de seguridad falló. Intente de nuevo.</string>
+    <string name="error_invalid_input">Entrada no válida. Revise su información e intente de nuevo.</string>
+    <string name="error_operation_in_progress">Otra operación está en curso. Espere.</string>
+    <string name="error_operation_cancelled">La operación fue cancelada.</string>
+    <string name="error_age_requirement_not_met">No se cumple el requisito de edad para esta credencial.</string>
+    <string name="error_wallet_not_initialized">Billetera no inicializada. Reinicie la aplicación.</string>
+    <string name="error_security">Error de seguridad. Intente de nuevo.</string>
+    <!-- M-04: aligned with error_connection_timeout for consistency -->
+    <string name="error_connection_timeout_short">La conexión expiró. Intente de nuevo.</string>
+    <string name="error_invalid_input_provided">Se proporcionó una entrada no válida.</string>
+    <string name="error_invalid_data_format">Formato de datos no válido. Intente de nuevo.</string>
+    <string name="error_storage">Error de almacenamiento. Revise el almacenamiento del dispositivo.</string>
+    <string name="error_network_short">Error de red. Revise su conexión.</string>
+    <string name="error_label">Error</string>
+    <string name="error_dismiss">Descartar error</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- L-01: Unicode ellipsis → ASCII dots -->
+    <string name="status_processing">Procesando...</string>
+    <string name="status_initializing_wallet">Inicializando billetera...</string>
+    <string name="status_loading">Cargando...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <string name="privacy_protected">Privacidad protegida</string>
+    <string name="privacy_zk_description">Su fecha de nacimiento nunca se comparte. Los verificadores solo saben si usted cumple con el requisito de edad.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Configuración de privacidad</string>
+    <string name="privacy_settings_description">Controle la recopilación de datos y administre su información</string>
+    <string name="privacy_section_data_collection">Recopilación de datos</string>
+    <string name="privacy_section_your_data">Sus datos</string>
+    <string name="privacy_protection_title">Su privacidad está protegida</string>
+    <string name="privacy_protection_description">Provii Wallet usa pruebas de conocimiento cero para verificar su edad sin revelar su fecha de nacimiento. Los datos de su credencial se almacenan solo en su dispositivo y nunca se comparten con nadie.</string>
+    <!-- M-06: "Analíticas" → "Estadísticas de uso" (not a calque) -->
+    <string name="privacy_analytics_title">Estadísticas de uso</string>
+    <string name="privacy_analytics_description">Ayude a mejorar Provii Wallet compartiendo datos de uso anónimos</string>
+    <string name="privacy_analytics_enabled">Estadísticas de uso activadas</string>
+    <string name="privacy_analytics_disabled">Estadísticas de uso desactivadas</string>
+    <!-- M-05: "Reportes" → "Informes" -->
+    <string name="privacy_crash_reporting_title">Informes de fallos</string>
+    <string name="privacy_crash_reporting_description">Ayúdenos a corregir errores enviando informes de fallos automáticamente</string>
+    <string name="privacy_crash_reporting_enabled">Informes de fallos activados</string>
+    <string name="privacy_crash_reporting_disabled">Informes de fallos desactivados</string>
+    <string name="privacy_what_we_collect_title">Qué datos recopilamos</string>
+    <string name="privacy_what_we_collect_subtitle">Toque para conocer nuestras prácticas de datos</string>
+    <!-- H-04: "Info" → "Información" in dialog title -->
+    <string name="privacy_data_collection_info_title">Información sobre recopilación de datos</string>
+    <string name="privacy_data_we_collect_header">Lo que recopilamos (si está activado):</string>
+    <string name="privacy_data_we_collect_list">- Estadísticas anónimas de uso de la app\n- Informes de fallos y registros de errores\n- Tipo de dispositivo y versión del SO\n- Información de versión de la app</string>
+    <string name="privacy_data_we_dont_collect_header">Lo que nunca recopilamos:</string>
+    <string name="privacy_data_we_dont_collect_list">- Su fecha de nacimiento\n- Su nombre o datos personales\n- Su ubicación\n- Los datos de su credencial\n- Datos biométricos</string>
+    <string name="privacy_data_never_shared_note">Los datos de su credencial nunca se comparten con Provii ni con terceros. Permanecen en su dispositivo.</string>
+    <string name="privacy_policy_title">Política de privacidad</string>
+    <string name="privacy_policy_subtitle">Lea nuestra política de privacidad completa</string>
+    <string name="privacy_delete_my_data_title">Eliminar mis datos</string>
+    <string name="privacy_delete_my_data_subtitle">Eliminar todas las credenciales y datos almacenados</string>
+    <string name="privacy_delete_data_dialog_title">¿Eliminar todos los datos?</string>
+    <string name="privacy_delete_data_dialog_message">Esto eliminará permanentemente todas sus credenciales y datos de la aplicación de este dispositivo. Deberá obtener una nueva credencial para volver a usar la aplicación.</string>
+    <string name="privacy_delete_data_dialog_warning">Esta acción no se puede deshacer.</string>
+    <string name="privacy_delete_data_confirm">Eliminar todo</string>
+    <!-- M-07: "esta configuración" → "estos ajustes" (plural, matching English "these settings") -->
+    <string name="privacy_footer_note">Puede cambiar estos ajustes en cualquier momento. Los cambios se aplican de inmediato.</string>
+    <!-- L-03: TalkBack announcements restructured to front-load state change -->
+    <string name="dialog_delete_data_announcement">Se abrió el diálogo de confirmación para eliminar datos</string>
+    <string name="dialog_data_collection_info_announcement">Se abrió el diálogo de información sobre recopilación de datos</string>
+    <string name="content_desc_privacy_settings">Configuración de privacidad, controle la recopilación de datos y administre su información</string>
+    <string name="content_desc_data_collection_info">Ver información sobre recopilación de datos</string>
+    <string name="content_desc_privacy_policy">Ver política de privacidad</string>
+    <string name="content_desc_opens_external_link">Se abre en el navegador</string>
+    <string name="content_desc_delete_my_data">Eliminar todos mis datos</string>
+
+
+    <!-- ==================== BATCH 06: Content Descriptions, Help, Tabs, Search, Licenses ==================== -->
+    <!-- Translated: 2026-03-21 | Translator: Elena Morales | Register: Neutral Latin American Spanish -->
+    <!-- NOTE (C-02): help_topic_privacy_security_content claims "Sin rastreo ni análisis" but batch 05 contains opt-in analytics/crash toggles. Escalate to content owner to correct the English source. -->
+
+    <!-- Content Descriptions (Screen Reader / TalkBack) -->
+    <string name="content_desc_back">Atrás</string>
+    <string name="content_desc_settings">Configuración</string>
+    <string name="content_desc_refresh">Actualizar</string>
+    <string name="content_desc_verified">Verificado</string>
+    <string name="content_desc_expand">Expandir</string>
+    <string name="content_desc_collapse">Contraer</string>
+    <string name="content_desc_warning_error">Advertencia: ocurrió un error</string>
+    <string name="content_desc_sandbox_indicator">Indicador de modo sandbox</string>
+    <string name="content_desc_success">Exitoso</string>
+    <string name="content_desc_warning">Advertencia</string>
+    <string name="content_desc_information">Información</string>
+    <string name="content_desc_error">Error</string>
+    <string name="content_desc_sandbox_warning">Advertencia de modo sandbox</string>
+    <string name="content_desc_app_info">Información de la app</string>
+    <string name="content_desc_accessibility_settings">Configuración de accesibilidad</string>
+    <string name="content_desc_language_settings">Configuración de idioma</string>
+    <string name="content_desc_licenses">Licencias de código abierto</string>
+    <string name="content_desc_select_dob">Seleccionar fecha de nacimiento</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Emitir credencial de prueba como Emisor</string>
+    <string name="content_desc_get_credential">Obtener credencial</string>
+    <string name="content_desc_delete_credential">Eliminar credencial</string>
+    <string name="content_desc_reset_proving_key">Restablecer clave de prueba</string>
+    <string name="content_desc_environment_info">Información del entorno</string>
+    <string name="content_desc_help_support">Ayuda y soporte</string>
+    <string name="content_desc_privacy_protected">Privacidad protegida</string>
+    <string name="preview_settings_title">Vista previa de configuración</string>
+
+    <!-- Accessibility Content Descriptions -->
+    <string name="accessibility_verification_success_description">Exitoso</string>
+    <string name="accessibility_verification_error_description">Error</string>
+    <string name="accessibility_breadcrumb_location_description">Ubicación: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">luego</string>
+    <string name="accessibility_breadcrumb_current_page_description">Página actual: %s</string>
+    <string name="accessibility_settings_navigate_description">Navegar</string>
+    <string name="accessibility_credentials_settings_description">Configuración</string>
+    <string name="accessibility_verification_back_description">Atrás</string>
+    <string name="accessibility_officer_back_description">Atrás</string>
+    <string name="accessibility_discovery_back_description">Atrás</string>
+    <string name="accessibility_discovery_refresh_description">Actualizar</string>
+    <string name="accessibility_discovery_verified_description">Verificado</string>
+    <string name="accessibility_officer_done_description">Listo</string>
+    <string name="accessibility_officer_attestation_qr_description">Código QR para que el usuario escanee y reciba su credencial</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">Ir a %s</string>
+    <string name="accessibility_skip_main_content">contenido principal</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Discapacidad visual</string>
+    <string name="accessibility_profile_motor_impaired">Discapacidad motora</string>
+    <string name="accessibility_profile_cognitive_support">Apoyo cognitivo</string>
+    <string name="accessibility_profile_elderly_support">Apoyo para adultos mayores</string>
+    <string name="accessibility_profile_default">Predeterminado</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Ninguno</string>
+    <string name="color_blind_mode_protanopia">Protanopía</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopía</string>
+    <string name="color_blind_mode_tritanopia">Tritanopía</string>
+    <string name="color_blind_mode_monochrome">Monocromático</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Estándar</string>
+    <string name="contrast_level_high">Alto (AA)</string>
+    <string name="contrast_level_maximum">Máximo (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Ancho completo</string>
+    <string name="text_width_comfortable">Cómodo (80 caracteres)</string>
+    <string name="text_width_narrow">Estrecho (60 caracteres)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Sin tiempo límite (AAA)</string>
+    <string name="timeout_behavior_standard">Estándar (30s)</string>
+    <string name="timeout_behavior_extended">Extendido (60s)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Estándar</string>
+    <string name="reading_level_standard_description">Texto regular con términos técnicos</string>
+    <string name="reading_level_simplified">Simplificado (Nivel 7-9)</string>
+    <string name="reading_level_simplified_description">Palabras más simples y oraciones más cortas (conforme a AAA)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <string name="help_title">Ayuda</string>
+    <string name="help_and_support">Ayuda y soporte</string>
+    <string name="help_description">Obtenga ayuda con las funciones de la app y accesibilidad</string>
+    <string name="help_center">Centro de ayuda</string>
+    <string name="help_center_description">Explore temas de ayuda y conozca las funciones de la app</string>
+    <string name="help_search">Buscar en ayuda</string>
+    <string name="help_search_placeholder">Buscar temas de ayuda\u2026</string>
+    <string name="help_search_active">Búsqueda activada</string>
+    <string name="help_search_inactive">Búsqueda desactivada</string>
+    <string name="help_no_results">No se encontraron temas de ayuda para su búsqueda</string>
+    <string name="help_topic_not_found">Tema de ayuda no encontrado</string>
+    <string name="help_related_topics">Temas relacionados</string>
+    <string name="help_content_heading">Contenido de ayuda</string>
+    <string name="help_related_topic_position">%1$s, elemento %2$d de %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Visión</string>
+    <string name="help_category_typography">Tipografía</string>
+    <string name="help_category_interaction">Interacción</string>
+    <string name="help_category_cognitive">Apoyo cognitivo</string>
+    <string name="help_category_alternative_input">Entrada alternativa</string>
+    <string name="help_category_features">Funciones</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Obtener una credencial</string>
+    <string name="help_topic_getting_credential_summary">Aprenda cómo obtener su primera credencial de verificación de edad</string>
+    <string name="help_topic_getting_credential_content">Para obtener su credencial de verificación de edad:\n\n1. Visite un lugar de emisión autorizado\n2. Presente su documento de identidad\n3. Escanee el código QR proporcionado\n4. Su credencial se guardará de forma segura\n\nSu fecha de nacimiento se almacena localmente y nunca se comparte.</string>
+
+    <string name="help_topic_verifying_age_title">Verificar su edad</string>
+    <string name="help_topic_verifying_age_summary">Cómo demostrar su edad sin compartir información personal</string>
+    <string name="help_topic_verifying_age_content">Cuando necesite verificar su edad:\n\n1. El verificador le mostrará un código QR\n2. Escanéelo con la app\n3. La app crea una prueba matemática\n4. Solo se comparte la respuesta sí/no\n\nSu fecha de nacimiento real NUNCA se revela.</string>
+
+    <string name="help_topic_accessibility_title">Funciones de accesibilidad</string>
+    <string name="help_topic_accessibility_summary">Personalice la app según sus necesidades</string>
+    <string name="help_topic_accessibility_content">La app incluye muchas funciones de accesibilidad:\n\n- Texto grande y modos de alto contraste\n- Entrada por voz y soporte para lector de pantalla\n- Gestos simplificados e interfaz de usuario\n- Opciones de ingreso manual de código\n- Tiempos de espera extendidos\n\nEncuentre estas opciones en Configuración > Accesibilidad</string>
+
+    <string name="help_topic_privacy_security_title">Privacidad y seguridad</string>
+    <string name="help_topic_privacy_security_summary">Cómo se protege su información</string>
+    <string name="help_topic_privacy_security_content">Su privacidad es nuestra máxima prioridad:\n\n- Credenciales almacenadas localmente en su dispositivo\n- Pruebas de conocimiento cero protegen sus datos\n- Sin rastreo ni análisis\n- Autenticación biométrica disponible\n- Los datos nunca salen de su dispositivo sin cifrar</string>
+
+    <string name="help_topic_troubleshooting_title">Solución de problemas</string>
+    <string name="help_topic_troubleshooting_summary">Problemas comunes y soluciones</string>
+    <string name="help_topic_troubleshooting_content">Problemas comunes y soluciones:\n\nEl escáner QR no funciona:\n- Revise los permisos de cámara en Configuración\n- Pruebe la opción de ingreso manual de código\n\nLa credencial no carga:\n- Revise su conexión a internet\n- Pruebe restablecer la clave de prueba\n\nLa verificación falló:\n- Asegúrese de que la credencial no esté vencida\n- Contacte al verificador para obtener ayuda</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">\u2026</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <string name="date_label">FECHA DE NACIMIENTO</string>
+    <string name="date_of_birth">Fecha de nacimiento</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <string name="format_age_years">%d años</string>
+    <string name="format_step_indicator">Paso %1$d de %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <string name="tab_credentials">Credenciales</string>
+    <string name="tab_settings">Configuración</string>
+    <string name="tab_help">Ayuda</string>
+    <string name="tab_credentials_description">Ver sus credenciales</string>
+    <string name="tab_settings_description">Configuración de la app</string>
+    <string name="tab_help_description">Obtener ayuda y soporte</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <string name="search_title">Buscar</string>
+    <string name="search_field_label">Campo de búsqueda</string>
+    <string name="search_placeholder">Buscar configuración, ayuda y funciones</string>
+    <string name="search_clear">Borrar búsqueda</string>
+    <string name="search_popular">Búsquedas populares</string>
+    <string name="search_results_heading">Resultados de búsqueda</string>
+    <string name="search_no_results">No se encontraron resultados</string>
+    <string name="search_try_suggestions">Pruebe buscar:\n\u2022 Accesibilidad\n\u2022 Configuración\n\u2022 Ayuda\n\u2022 Idioma</string>
+    <string name="search_results_announcement_singular">Se encontró 1 resultado</string>
+    <string name="search_results_announcement_plural">Se encontraron %d resultados</string>
+    <string name="search_no_results_announcement">No se encontraron resultados</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <string name="help_quick_access">Acceso rápido</string>
+    <string name="help_topics">Temas de ayuda</string>
+    <string name="help_glossary">Glosario</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <string name="licenses_title">Licencias de código abierto</string>
+    <string name="licenses_description">Esta app usa el siguiente software de código abierto. Agradecemos a las personas que crearon estas bibliotecas.</string>
+    <string name="licenses_tap_to_view">Toque para ver la licencia completa</string>
+    <string name="licenses_group_header">%1$s (%2$d bibliotecas)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">\u2022</string>
+
+
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">Sin conexión a internet. Revise su red e intente de nuevo.</string>
+    <string name="error_unexpected">Ocurrió un error inesperado. Reinicie la app.</string>
+    <string name="error_unexpected_try_again">Ocurrió un error inesperado. Intente de nuevo.</string>
+    <string name="error_storage_detailed">Error de almacenamiento: %s</string>
+    <string name="error_network_detailed">Error de red: %s</string>
+    <string name="error_proof_generation_failed">No se pudo generar la prueba: %s</string>
+    <string name="error_not_eligible">No elegible. No cumple los requisitos para esta verificación.</string>
+    <string name="error_challenge_expired">Desafío vencido o no encontrado. Solicite uno nuevo.</string>
+    <string name="error_challenge_expired_scan_new">Este desafío ha vencido. Escanee un nuevo código QR.</string>
+    <string name="error_request_out_of_order">Solicitud fuera de orden. Intente de nuevo.</string>
+    <string name="error_too_many_requests">Demasiadas solicitudes. Espere un momento e intente de nuevo.</string>
+    <string name="error_server">Error del servidor. Intente más tarde.</string>
+    <string name="error_request_failed">Solicitud fallida (%d). Intente de nuevo.</string>
+    <string name="error_not_eligible_short">No elegible para esta verificación</string>
+    <string name="error_challenge_not_found">Desafío no encontrado</string>
+    <string name="error_complete_steps_in_order">Complete los pasos en orden</string>
+    <string name="error_challenge_expired_short">Desafío vencido</string>
+    <string name="error_authentication_cancelled">Autenticación cancelada. Verifique su identidad para completar la verificación de edad.</string>
+    <string name="error_invalid_data_format_short">Formato de datos no válido. Intente de nuevo.</string>
+    <string name="error_storage_check_device">Error de almacenamiento. Revise el almacenamiento del dispositivo.</string>
+    <string name="error_network_check_connection">Error de red. Revise su conexión.</string>
+    <string name="error_proof_generation_failed_short">No se pudo generar la prueba. Intente de nuevo.</string>
+    <string name="error_operation_in_progress_short">Otra operación está en curso.</string>
+    <string name="error_no_internet_short">Sin conexión a internet. Revise su red.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Escanear QR de verificación</string>
+    <string name="verification_verifying_title">Verificando edad</string>
+    <string name="verification_success_title">Edad verificada</string>
+    <string name="verification_failed_title">Verificación fallida</string>
+    <string name="verification_processing_wait">Esto puede tomar unos segundos</string>
+    <string name="verification_success_message">Su edad ha sido verificada de forma privada</string>
+    <string name="verification_return_to_site">Ahora puede volver al sitio para continuar.</string>
+    <string name="verification_please_enter_code">Introduzca un código de verificación. El código debe ser un código corto de 12 dígitos o una URL de verificación completa del verificador.</string>
+    <string name="verification_error_occurred">Ocurrió un error durante la verificación</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Procesando\u2026</string>
+    <string name="credential_list_verify_age_button">Verificar edad</string>
+    <string name="credential_list_generate_in_person_description">Generar credencial en persona</string>
+    <string name="credential_list_scan_qr_title">Escanear código QR</string>
+    <string name="credential_list_find_locations_title">Buscar ubicaciones</string>
+    <string name="credential_section_my_credential">Mi credencial</string>
+    <string name="credential_section_managed">Credenciales administradas</string>
+    <string name="credential_list_get_credential_button">Obtener credencial</string>
+    <string name="credential_list_add_managed_button">Agregar credencial administrada</string>
+    <string name="credential_section_managed_empty">Agregue una credencial para alguien que usted cuida, como un hijo o hija.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Detalles de la credencial</string>
+    <string name="credential_detail_not_found">Credencial no encontrada</string>
+    <string name="credential_detail_nickname">Apodo</string>
+    <string name="credential_detail_no_nickname">Sin apodo asignado</string>
+    <string name="credential_detail_edit_nickname">Editar apodo</string>
+    <string name="credential_detail_status">Estado</string>
+    <string name="credential_detail_delete">Eliminar credencial</string>
+    <string name="credential_detail_delete_title">Eliminar credencial</string>
+    <string name="credential_detail_delete_message">¿Está seguro de que desea eliminar esta credencial? Esta acción no se puede deshacer.</string>
+    <string name="credential_type_primary">Principal</string>
+    <string name="credential_type_managed">Administrada</string>
+    <string name="credential_status_valid">Válida</string>
+    <string name="credential_status_expired">Vencida</string>
+    <string name="credential_status_invalid">No válida</string>
+    <string name="action_save">Guardar</string>
+    <string name="credential_slots_full_title">Máximo de credenciales alcanzado</string>
+    <string name="credential_slots_full_message">Ha alcanzado el número máximo de credenciales. Elimine una credencial existente para agregar una nueva.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">Credencial administrada</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">¿Verificar edad de %1$s?</string>
+    <string name="managed_confirm_message">Está a punto de verificar la edad usando la credencial administrada de %1$s.</string>
+    <string name="managed_confirm_proceed">Verificar para %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Creando prueba para %1$s</string>
+    <string name="verification_age_verified_for">Edad verificada para %1$s</string>
+    <string name="deeplink_verification_age_verified_for">Edad verificada para %1$s</string>
+    <string name="attestation_managed_credential_received">¡Credencial de %1$s recibida!</string>
+    <string name="attestation_managed_credential_stored">La credencial de su hijo/a ha sido almacenada de forma segura.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">¿Eliminar la credencial de %1$s?</string>
+    <string name="credential_detail_delete_managed_message">¿Desea eliminar la credencial administrada de %1$s? No se puede deshacer. Para reemplazarla, visite un emisor.</string>
+    <string name="credential_detail_save_error">No se pudo guardar el apodo</string>
+    <string name="credential_detail_delete_error">No se pudo eliminar la credencial</string>
+    <string name="accessibility_saving">Guardando\u2026</string>
+    <string name="accessibility_deleting">Eliminando\u2026</string>
+    <string name="accessibility_loading">Cargando, espere</string>
+    <string name="accessibility_issuing_credential">Emitiendo credencial, espere</string>
+    <string name="dialog_delete_all_credentials_title">¿Eliminar todas las credenciales?</string>
+    <string name="dialog_delete_all_credentials_message">Esto eliminará su credencial y las credenciales administradas para hijos/as. Esta acción no se puede deshacer.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">Administrada</string>
+    <string name="credential_slots_count">%1$d de 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Preparando verificación\u2026</string>
+    <string name="deeplink_verification_checking_credential">Verificando credencial\u2026</string>
+    <string name="deeplink_verification_processing_challenge">Procesando desafío\u2026</string>
+    <string name="deeplink_verification_creating_proof">Creando prueba segura\u2026</string>
+    <string name="deeplink_verification_submitting_proof">Enviando prueba\u2026</string>
+    <string name="deeplink_verification_success">✔ Edad verificada con éxito</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">No se encontró credencial. Configure su credencial primero.</string>
+    <string name="deeplink_verification_error_failed_challenge">No se pudo procesar el desafío de verificación</string>
+    <string name="deeplink_verification_error_no_auth_prompt">No se pudo mostrar la solicitud de autenticación</string>
+    <string name="deeplink_verification_error_failed_proof">No se pudo crear la prueba de edad</string>
+    <string name="deeplink_verification_error_verification_failed">La verificación falló</string>
+    <string name="deeplink_verification_error_unexpected">Ocurrió un error inesperado</string>
+    <string name="deeplink_verification_error_no_credential_selected">No se seleccionó ninguna credencial. Intente de nuevo.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Seleccionar credencial</string>
+    <string name="deeplink_verification_select_credential_subtitle">Hay más de una credencial disponible. Elija cuál usar para esta verificación.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Verificando edad</string>
+    <string name="deeplink_verification_title_verified">Verificado</string>
+    <string name="deeplink_verification_title_failed">Verificación fallida</string>
+    <string name="deeplink_verification_please_wait">Espere\u2026</string>
+    <string name="deeplink_verification_age_verified">¡Edad verificada!</string>
+    <string name="deeplink_verification_under_age_verified">Menor de %1$d verificado</string>
+    <string name="deeplink_verification_returning_browser">Volviendo al navegador\u2026</string>
+    <string name="deeplink_verification_return_to_browser">Volver al navegador</string>
+    <string name="deeplink_verification_failed_title">Verificación fallida</string>
+    <string name="deeplink_verification_error_occurred">Ocurrió un error durante la verificación</string>
+
+
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">PROCESO DE EMISIÓN</string>
+    <string name="officer_issuance_process_steps">1. Revise el documento de identificación física del usuario\n2. Ingrese la fecha de nacimiento del usuario\n3. Verifique que la información coincida exactamente\n4. Emita la credencial con el código QR (Quick Response) de atestación\n5. El usuario escanea el código QR para recibir la credencial</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">No se pudo generar el código QR</string>
+    <string name="officer_attestation_ready_title">Atestación lista</string>
+    <string name="officer_attestation_scan_instruction">El usuario debe escanear este código QR con su app Provii Wallet</string>
+    <string name="officer_attestation_deeplink_label">DEEPLINK DE ATESTACIÓN</string>
+    <string name="officer_wait_for_attestation_scan">Espere a que el usuario escanee</string>
+    <string name="officer_attestation_info">La credencial se generará en su dispositivo</string>
+    <string name="officer_attestation_complete">Atestación completada</string>
+    <string name="officer_user_will_complete_credential">El usuario completará la generación de la credencial en su dispositivo</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Decodificando datos de atestación...</string>
+    <string name="attestation_generating_randomness">Generando aleatoriedad segura...</string>
+    <string name="attestation_sending">Enviando al emisor...</string>
+    <string name="attestation_verifying">Verificando datos...</string>
+    <string name="attestation_storing">Almacenando credencial...</string>
+    <string name="attestation_complete">¡Credencial completa!</string>
+    <string name="attestation_error_invalid_data">Datos de atestación no válidos</string>
+    <string name="attestation_error_expired">La atestación ha expirado</string>
+    <string name="attestation_error_network">Error de red: por favor, verifique su conexión</string>
+    <string name="attestation_error_unexpected">Ocurrió un error inesperado</string>
+    <string name="attestation_title_processing">Procesando atestación</string>
+    <string name="attestation_title_success">Credencial recibida</string>
+    <string name="attestation_title_failed">Emisión fallida</string>
+    <string name="attestation_secure_issuance">Emisión segura</string>
+    <string name="attestation_privacy_preserving">Emisión de credencial con protección de privacidad</string>
+    <string name="attestation_may_take_seconds">Esto puede tardar unos segundos</string>
+    <string name="attestation_keep_app_open">Mantenga la app abierta</string>
+    <string name="attestation_credential_received">¡Credencial recibida!</string>
+    <string name="attestation_credential_stored_description">Su credencial de verificación de edad se almacenó de forma segura</string>
+    <string name="attestation_issuer_verified">Emisor verificado</string>
+    <string name="attestation_failed_title">Emisión fallida</string>
+    <string name="attestation_scan_qr_instead">Escanear QR en su lugar</string>
+    <string name="attestation_go_back">Volver</string>
+    <string name="attestation_step_decode">Decodificar</string>
+    <string name="attestation_step_generate">Generar</string>
+    <string name="attestation_step_send">Enviar</string>
+    <string name="attestation_step_verify">Verificar</string>
+    <string name="attestation_step_store">Almacenar</string>
+    <string name="attestation_step_complete">Completado</string>
+    <string name="accessibility_attestation_encrypted_description">Atestación cifrada en proceso</string>
+    <string name="accessibility_attestation_success_description">Marca de verificación indicando credencial recibida</string>
+    <string name="accessibility_attestation_error_description">Icono de error indicando emisión fallida</string>
+    <string name="accessibility_step_complete">Paso %1$s completado</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Destinatario de la credencial</string>
+    <string name="attestation_recipient_prompt">Esta credencial es para\u2026</string>
+    <string name="attestation_recipient_me">Yo</string>
+    <string name="attestation_recipient_child">Un hijo/a</string>
+    <string name="attestation_nickname_title">Apodo del hijo/a</string>
+    <string name="attestation_nickname_prompt">Ingrese un apodo para distinguir las credenciales</string>
+    <string name="attestation_nickname_placeholder">ej. Alex</string>
+    <string name="attestation_nickname_continue">Continuar</string>
+    <string name="attestation_nickname_back">Volver</string>
+    <string name="accessibility_attestation_recipient_heading">Elija para quién es esta credencial</string>
+    <string name="accessibility_attestation_nickname_heading">Ingrese un apodo para el hijo/a</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Formato de ID de funcionario no válido</string>
+    <string name="officer_auth_error_challenge_failed">No se pudo obtener el desafío de YubiKey: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Toque su YubiKey para autenticarse</string>
+    <string name="officer_auth_error_touch_timeout">Tiempo de espera de YubiKey agotado</string>
+    <string name="officer_auth_error_verify_document_dob">Verifique que el documento y la fecha de nacimiento coincidan</string>
+    <string name="officer_auth_error_invalid_date_format">Formato de fecha no válido. Use YYYY-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">El usuario debe tener 18 años o más</string>
+    <string name="officer_auth_error_not_authenticated">No autenticado. Ingrese su ID de funcionario primero.</string>
+    <string name="officer_auth_error_issue_failed">No se pudo emitir la credencial</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Toque para ver</string>
+    <string name="gesture_desc_long_press_options">, mantenga presionado para opciones</string>
+    <string name="gesture_desc_swipe_left">, deslice a la izquierda para más acciones</string>
+    <string name="gesture_desc_swipe_right">, deslice a la derecha para más acciones</string>
+    <string name="gesture_desc_tap_to_activate">Toque para activar</string>
+    <string name="gesture_desc_long_press_format">. Mantener presionado: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Reintentar</string>
+    <string name="main_activity_reset_redownload">Restablecer y volver a descargar</string>
+    <string name="main_activity_show_debug_info">Mostrar info de depuración</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Configuración de accesibilidad</string>
+    <string name="search_item_accessibility_settings_subtitle">Personalice su experiencia</string>
+    <string name="search_item_large_text_title">Texto grande</string>
+    <string name="search_item_large_text_subtitle">Aumentar tamaño del texto</string>
+    <string name="search_item_high_contrast_title">Alto contraste</string>
+    <string name="search_item_high_contrast_subtitle">Mejorar visibilidad</string>
+    <string name="search_item_voice_input_title">Entrada de voz</string>
+    <string name="search_item_voice_input_subtitle">Controlar con la voz</string>
+    <string name="search_item_manual_code_entry_title">Ingreso manual de código</string>
+    <string name="search_item_manual_code_entry_subtitle">Escribir códigos en vez de escanear</string>
+    <string name="search_item_simplified_ui_title">Interfaz simplificada</string>
+    <string name="search_item_simplified_ui_subtitle">Reducir complejidad visual</string>
+    <string name="search_item_color_blindness_title">Soporte para daltonismo</string>
+    <string name="search_item_color_blindness_subtitle">Ajustar colores para mejor visibilidad</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Configuración</string>
+    <string name="search_item_settings_subtitle">Ajustes de la app</string>
+    <string name="search_item_language_title">Idioma</string>
+    <string name="search_item_language_subtitle">Cambiar idioma de la app</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Mis credenciales</string>
+    <string name="search_item_credentials_subtitle">Ver sus credenciales</string>
+    <string name="search_item_get_credential_title">Obtener credencial</string>
+    <string name="search_item_get_credential_subtitle">Buscar emisores</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Ayuda</string>
+    <string name="search_item_help_subtitle">Obtener asistencia</string>
+    <string name="search_item_privacy_title">Protección de privacidad</string>
+    <string name="search_item_privacy_subtitle">Cómo se protegen sus datos</string>
+    <string name="search_item_verification_title">Verificación de edad</string>
+    <string name="search_item_verification_subtitle">Probar su edad</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Registro de respaldo fijo para entorno sandbox</string>
+    <string name="issuer_fallback_production_description">Registro de respaldo fijo para producción</string>
+    <string name="issuer_fallback_category_government">Gobierno</string>
+    <string name="issuer_fallback_category_government_description">Credenciales emitidas por el gobierno</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Emisor Sandbox de Provii</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Emisor sandbox oficial de Provii para pruebas</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Visite el portal del emisor sandbox</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Emisor oficial de credenciales Provii</string>
+    <string name="issuer_fallback_production_issuer_instructions">Visite su oficina local del DMV</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">La fecha de nacimiento no puede ser futura</string>
+    <string name="validation_error_invalid_date_format">Formato de fecha no válido</string>
+    <string name="validation_error_officer_id_too_short">ID de funcionario demasiado corto</string>
+    <string name="validation_error_invalid_officer_id_format">Formato de ID de funcionario no válido</string>
+    <string name="validation_error_empty_qr_code">Código QR vacío</string>
+    <string name="validation_error_qr_code_too_large">Código QR demasiado grande</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">¡Ya es desarrollador!</string>
+    <string name="sandbox_toast_enabled">Modo Sandbox activado\nUsando entorno de prueba</string>
+    <string name="sandbox_toast_disabled">Modo Producción activado\nUsando entorno de producción</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">Está a 1 paso del modo desarrollador</string>
+    <string name="sandbox_toast_steps_away">Está a %1$d pasos del modo desarrollador</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">No hay YubiKey conectada</string>
+    <string name="yubikey_error_timeout">Tiempo de espera agotado para YubiKey. Toque la llave cuando parpadee.</string>
+    <string name="yubikey_error_not_supported">Desafío-respuesta no configurado en esta ranura de YubiKey</string>
+    <string name="yubikey_error_no_slot">La ranura 2 no está configurada para desafío-respuesta HMAC (Hash-based Message Authentication Code) SHA1</string>
+    <string name="yubikey_error_hmac_failed">Cálculo HMAC (Hash-based Message Authentication Code) fallido: %s</string>
+    <string name="yubikey_error_session_failed">No se pudo conectar a YubiKey: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">Billetera no inicializada</string>
+    <string name="wallet_error_proving_key_not_found">Clave de prueba no encontrada. Vuelva a descargar.</string>
+    <string name="wallet_error_proving_key_not_readable">No se puede leer el archivo de clave de prueba</string>
+    <string name="wallet_error_out_of_memory">Sin memoria. Reinicie la app.</string>
+    <string name="wallet_error_prover_error">Error del prover: %s</string>
+    <string name="wallet_error_ffi_error">Error FFI: %s</string>
+    <string name="wallet_error_prover_init_failed">No se pudo inicializar el prover: %s</string>
+    <string name="wallet_error_prover_verification_failed">La verificación de inicialización del prover falló</string>
+    <string name="wallet_error_verifier_url_update_failed">¡No se pudo actualizar la URL (dirección web) del verificador! Se esperaba %1$s pero se obtuvo %2$s</string>
+    <string name="wallet_error_wallet_still_null">La billetera sigue nula después de inicializar</string>
+    <string name="wallet_error_credential_not_found">Credencial no encontrada</string>
+    <string name="wallet_error_credential_access_failed">No se puede acceder a la credencial: %s</string>
+    <string name="wallet_error_invalid_format">Formato no válido: %s</string>
+    <string name="wallet_error_not_initialized_short">Prover no inicializado</string>
+    <string name="wallet_error_proving_key_unavailable">Clave de prueba no disponible. Se requiere configuración.</string>
+    <string name="wallet_error_storage_init_failed">La inicialización del almacenamiento falló</string>
+    <string name="wallet_error_biometric_unavailable">Autenticación biométrica no disponible</string>
+    <string name="wallet_error_auth_failed">La autenticación falló</string>
+    <string name="wallet_error_sandbox_disabled">Active el modo sandbox para generar credenciales de prueba</string>
+    <string name="wallet_error_fetch_sandbox_credentials">No se pueden obtener credenciales sandbox. Verifique su conexión a internet.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Autenticación requerida</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Verifique su identidad para crear la prueba de edad</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Acceder al almacenamiento seguro</string>
+    <string name="keystore_biometric_prompt_cancel">Cancelar</string>
+
+    <!-- Nota para traductores: Titulos de temas de ayuda para el sistema de accesibilidad -->
+    <string name="help_topic_contrast_levels_title">Niveles de contraste</string>
+    <string name="help_topic_extra_large_text_title">Texto extra grande</string>
+    <string name="help_topic_reduce_transparency_title">Reducir transparencia</string>
+    <string name="help_topic_color_blind_modes_title">Modos para daltonismo</string>
+    <string name="help_topic_line_spacing_title">Interlineado</string>
+    <string name="help_topic_paragraph_spacing_title">Espaciado entre párrafos</string>
+    <string name="help_topic_letter_spacing_title">Espaciado entre letras</string>
+    <string name="help_topic_text_width_title">Ancho del texto</string>
+    <string name="help_topic_touch_targets_title">Áreas táctiles más grandes</string>
+    <string name="help_topic_reduce_motion_title">Reducir movimiento</string>
+    <string name="help_topic_timeout_behavior_title">Tiempo de espera</string>
+    <string name="help_topic_simplified_gestures_title">Gestos simplificados</string>
+    <string name="help_topic_haptic_feedback_title">Respuesta háptica</string>
+    <string name="help_topic_data_preservation_title">Preservación de datos</string>
+    <string name="help_topic_simplified_ui_title">Interfaz de usuario simplificada</string>
+    <string name="help_topic_step_indicators_title">Indicadores de progreso</string>
+    <string name="help_topic_verbose_descriptions_title">Descripciones detalladas</string>
+    <string name="help_topic_confirm_actions_title">Confirmar acciones</string>
+    <string name="help_topic_reading_level_title">Lectura simplificada</string>
+    <string name="help_topic_help_system_title">Sistema de ayuda</string>
+    <string name="help_topic_manual_code_entry_title">Ingreso manual de código</string>
+    <string name="help_topic_voice_input_title">Entrada por voz</string>
+    <string name="help_topic_screen_reader_title">Lector de pantalla</string>
+    <string name="help_topic_accessibility_profiles_title">Perfiles de configuración rápida</string>
+
+    <!-- ==================== SISTEMA DE AYUDA - TEXTO DE AYUDA ==================== -->
+    <!-- Nota para traductores: Texto detallado de ayuda para funciones de accesibilidad -->
+    <string name="help_topic_contrast_levels_text">Controle la relación de contraste entre texto y fondos:\n\n• Estándar: Colores predeterminados de la app\n• Alto (AA): Relación de contraste 4.5:1\n• Máximo (AAA): Relación de contraste 7:1 o superior\n\nUn contraste más alto facilita la lectura, especialmente en ambientes con mucha luz o para personas con baja visión.\n\nEl cumplimiento de WCAG AAA requiere el contraste Máximo.</string>
+    <string name="help_topic_extra_large_text_text">Aumenta todos los tamaños de texto en un 50% en toda la app.\n\nEsto facilita la lectura para personas con:\n• Baja visión\n• Cambios de visión por la edad\n• Dificultades de lectura\n\nSe combina con la configuración de tamaño de fuente del sistema para mayor flexibilidad.</string>
+    <string name="help_topic_reduce_transparency_text">Elimina las capas transparentes y los efectos de desenfoque.\n\nVentajas:\n• Jerarquía visual más clara\n• Mejor legibilidad del texto\n• Menos ruido visual\n• Menor carga cognitiva\n\nRecomendado para personas con baja visión o dificultades cognitivas.</string>
+    <string name="help_topic_color_blind_modes_text">Ajusta los colores para distintos tipos de daltonismo:\n\n• Protanopía: Ceguera al rojo\n• Deuteranopía: Ceguera al verde\n• Tritanopía: Ceguera al azul\n• Monocromático: Ceguera total al color\n\nCada modo usa colores cuidadosamente seleccionados que son distinguibles para ese tipo específico de deficiencia en la visión del color.</string>
+    <string name="help_topic_line_spacing_text">Ajusta el espaciado entre líneas de texto (1.0x - 2.0x).\n\n• Predeterminado: 1.0x\n• Compatible con AAA: 1.5x o superior\n\nUn interlineado mayor:\n• Mejora la comprensión lectora\n• Reduce la fatiga visual\n• Ayuda a personas con dislexia\n• Hace que los bloques de texto resulten menos abrumadores</string>
+    <string name="help_topic_paragraph_spacing_text">Ajusta el espaciado entre párrafos (1.0x - 3.0x).\n\n• Predeterminado: 1.0x\n• Compatible con AAA: 2.0x o superior\n\nUn mayor espaciado entre párrafos:\n• Separa las ideas con claridad\n• Mejora la organización visual\n• Reduce la carga cognitiva\n• Ayuda a mantener la posición de lectura</string>
+    <string name="help_topic_letter_spacing_text">Ajusta el espaciado entre letras (0.0em - 0.2em).\n\n• Predeterminado: 0.0em\n• Compatible con AAA: 0.12em o superior\n\nUn mayor espaciado entre letras:\n• Hace que cada letra sea más distinguible\n• Ayuda a personas con dislexia\n• Mejora la precisión de lectura\n• Reduce la confusión entre letras</string>
+    <string name="help_topic_text_width_text">Limita la longitud de línea para facilitar la lectura:\n\n• Ancho completo: Sin límite\n• Cómodo: 80 caracteres (recomendado)\n• Estrecho: 60 caracteres\n\nLas investigaciones muestran que la lectura óptima ocurre con 60 a 80 caracteres por línea. Las líneas más cortas reducen el movimiento ocular y mejoran la comprensión.</string>
+    <string name="help_topic_touch_targets_text">Aumenta el tamaño mínimo del área táctil a 60dp (desde 44dp).\n\nVentajas:\n• Más fácil tocar botones y controles\n• Reduce los toques accidentales\n• Ayuda a personas con discapacidad motriz\n• Mejor para uso con una sola mano\n\nWCAG AAA requiere un mínimo de 60dp.</string>
+    <string name="help_topic_reduce_motion_text">Elimina todas las animaciones y transiciones.\n\nVentajas:\n• Previene el mareo por movimiento\n• Reduce las distracciones\n• Disminuye la carga cognitiva\n• Mejora la concentración\n\nRecomendado para personas con:\n• Trastornos vestibulares\n• Dificultades de atención\n• Sensibilidad al movimiento</string>
+    <string name="help_topic_timeout_behavior_text">Controla el tiempo de espera en las pantallas de verificación:\n\n• Sin tiempo de espera (AAA): Tiempo ilimitado\n• Estándar: 30 segundos\n• Extendido: 60 segundos\n\nWCAG AAA requiere la opción sin límite de tiempo para quienes necesitan más tiempo para completar tareas.\n\nLos datos del formulario se guardan automáticamente antes de que expire el tiempo.</string>
+    <string name="help_topic_simplified_gestures_text">Reemplaza gestos complejos con alternativas simples:\n\n• Deslizar → Tocar botón\n• Mantener presionado → Toque normal con confirmación\n• Pellizcar/ampliar → Botones\n\nAyuda a personas con:\n• Discapacidad motriz\n• Temblor\n• Destreza limitada\n• Dificultades con la pantalla táctil</string>
+    <string name="help_topic_haptic_feedback_text">Proporciona respuesta por vibración al realizar acciones.\n\nVentajas:\n• Confirma la pulsación de botones\n• Indica errores\n• Ofrece confirmación táctil\n\nSe puede desactivar si usted:\n• Lo encuentra molesto\n• Tiene sensibilidad sensorial\n• Prefiere un funcionamiento silencioso</string>
+    <string name="help_topic_data_preservation_text">Guarda automáticamente los datos del formulario antes de que expire el tiempo.\n\nCaracterísticas:\n• Aviso 10 segundos antes de que expire el tiempo\n• Opción de guardar o descartar los datos\n• Restauración automática al regresar\n• Conservación de datos por 24 horas\n\nAsegura que no pierda datos si necesita más tiempo o sufre interrupciones.</string>
+    <string name="help_topic_simplified_ui_text">Reduce la complejidad visual:\n\n• Menos elementos de la interfaz de usuario visibles a la vez\n• Botones más grandes y claros\n• Más espacio en blanco\n• Diseños simplificados\n\nVentajas:\n• Más fácil de entender\n• Menos abrumador\n• Mejor concentración\n• Menor carga cognitiva</string>
+    <string name="help_topic_step_indicators_text">Muestra el progreso en procesos de varios pasos.\n\nMuestra:\n• Número del paso actual\n• Número total de pasos\n• Visualización del progreso\n\nVentajas:\n• Reduce la ansiedad\n• Establece expectativas claras\n• Ayuda a mantener la orientación\n• Muestra el avance hacia la finalización</string>
+    <string name="help_topic_verbose_descriptions_text">Proporciona contexto y explicaciones adicionales:\n\n• Etiquetas de botones más extensas\n• Instrucciones más detalladas\n• Indicaciones adicionales\n• Mensajes de error más claros\n\nAyuda a las personas a:\n• Entender las acciones antes de realizarlas\n• Evitar errores\n• Conocer las funciones de la app\n• Ganar confianza</string>
+    <string name="help_topic_confirm_actions_text">Requiere confirmación para acciones importantes:\n\n• Eliminar credenciales\n• Cambiar configuración\n• Borrar datos\n\nWCAG AAA requiere confirmación para todas las acciones destructivas.\n\nVentajas:\n• Previene accidentes\n• Permite revisar antes de actuar\n• Reduce la ansiedad\n• Da una segunda oportunidad</string>
+    <string name="help_topic_reading_level_text">Usa un lenguaje más sencillo (nivel de grados 7 a 9):\n\n• Oraciones más cortas\n• Palabras comunes en lugar de jerga\n• Lenguaje claro y directo\n• Menos términos técnicos\n\nCumple con WCAG AAA cuando está activado.\n\nVentajas:\n• Más fácil de entender\n• Comprensión más rápida\n• Mejor para hablantes no nativos\n• Menor carga cognitiva</string>
+    <string name="help_topic_help_system_text">Ayuda contextual disponible en toda la app.\n\nCaracterísticas:\n• 27 temas de ayuda\n• Centro de ayuda con búsqueda\n• Navegación por temas relacionados\n• Glosario técnico\n\nAcceda a la ayuda desde:\n• Pantallas de configuración\n• Funciones complejas\n• Mensajes de error\n• Cualquier lugar donde vea un ícono de ayuda</string>
+    <string name="help_topic_manual_code_entry_text">Ingrese los datos del código QR manualmente en lugar de escanear.\n\nVentajas:\n• Funciona cuando la cámara no está disponible\n• Ayuda a personas con dificultades motrices\n• Mejor en condiciones de poca luz\n• No necesita mantener el teléfono firme\n\nAlternativa al escaneo de QR con la cámara.</string>
+    <string name="help_topic_voice_input_text">Use su voz para ingresar texto en lugar de escribir.\n\nVentajas:\n• Entrada sin usar las manos\n• Más rápido que escribir\n• Ayuda a personas con discapacidad motriz\n• Reduce la tensión repetitiva\n\nUsa el reconocimiento de voz integrado de su dispositivo.</string>
+    <string name="help_topic_screen_reader_text">Soporte completo para el lector de pantalla TalkBack.\n\nCaracterísticas:\n• Todos los elementos de la interfaz etiquetados\n• Estructura de encabezados correcta\n• Orden de navegación lógico\n• Indicaciones personalizadas para acciones complejas\n\nLa app activa automáticamente:\n• Descripciones detalladas\n• Áreas táctiles ampliadas\n\ncuando detecta que TalkBack está activado.</string>
+    <string name="help_topic_accessibility_profiles_text">Perfiles de accesibilidad preconfigurados:\n\n• Discapacidad visual: Alto contraste, texto grande, respuesta háptica\n• Discapacidad motriz: Áreas táctiles grandes, tiempos extendidos, confirmaciones\n• Cognitivo: Interfaz simplificada, indicadores de progreso, descripciones\n• Adulto mayor: Texto grande, áreas táctiles grandes, interfaz simplificada, movimiento reducido\n• Predeterminado: Restablecer toda la configuración\n\nCada perfil activa las opciones más útiles para ese grupo de personas. Puede seguir personalizando después de aplicar un perfil.</string>
+
+    <!-- ==================== CONTENIDO LOCALIZADO - ESTANDAR ==================== -->
+    <!-- Nota para traductores: Contenido de nivel de lectura estandar -->
+    <string name="content_age_verification_title">Verificación de edad</string>
+    <string name="content_age_verification_explanation">Espere mientras verificamos su edad de forma segura usando pruebas de conocimiento cero. Su fecha de nacimiento nunca se comparte con el verificador.</string>
+    <string name="content_age_verification_instructions">Apunte su cámara al código QR de verificación. El código se escaneará automáticamente al ser detectado.</string>
+    <string name="content_age_verification_success">Su edad se verificó correctamente. El verificador sabe que usted cumple con el requisito de edad sin conocer su fecha de nacimiento real.</string>
+    <string name="content_age_verification_failed">La verificación falló. Intente escanear el código QR de nuevo o use el ingreso manual de código.</string>
+    <string name="content_credential_issuance_title">Emisión de credencial</string>
+    <string name="content_credential_issuance_explanation">Escanee el código QR proporcionado por el emisor autorizado para recibir su credencial digital de edad.</string>
+    <string name="content_credential_issuance_instructions">Apunte su cámara al código QR de emisión que le muestra el funcionario. Su credencial se generará en su dispositivo.</string>
+    <string name="content_credential_issuance_success">Credencial creada con éxito. Ahora puede usar esta credencial para verificar su edad.</string>
+    <string name="content_credential_description">Una credencial es una prueba de identidad firmada criptográficamente que permite la verificación con preservación de la privacidad.</string>
+    <string name="content_zero_knowledge_explanation">Las pruebas de conocimiento cero le permiten demostrar que cumple con un requisito de edad sin revelar su edad real.</string>
+    <string name="content_setup_proving_key">Descargando la clave de prueba criptográfica necesaria para generar pruebas de conocimiento cero</string>
+    <string name="content_processing_challenge">Procesando el desafío de verificación</string>
+    <string name="content_creating_proof">Creando prueba de edad de conocimiento cero</string>
+    <string name="content_submitting_proof">Enviando la prueba al verificador</string>
+    <string name="content_error_no_credential">No hay credencial disponible. Obtenga primero una credencial de un emisor autorizado.</string>
+    <string name="content_error_network_failed">La conexión de red falló. Verifique su conexión a internet e intente de nuevo.</string>
+    <string name="content_error_invalid_qr">Código QR no válido. Asegúrese de estar escaneando el código de verificación correcto.</string>
+    <string name="content_error_verification_failed">La verificación falló. El servidor no pudo validar su prueba.</string>
+    <string name="content_officer_authentication_title">Autenticación de funcionario</string>
+    <string name="content_officer_issuance_title">Emisión de credencial</string>
+    <string name="content_officer_dob_prompt">Ingrese la fecha de nacimiento verificada del solicitante a partir de su documento de identificación oficial.</string>
+    <string name="content_onboarding_welcome">Le damos la bienvenida a Provii Wallet, su solución de verificación de edad digital con preservación de la privacidad.</string>
+    <string name="content_onboarding_privacy">Su fecha de nacimiento se almacena de forma segura en su dispositivo y nunca se transmite a los verificadores.</string>
+    <string name="content_onboarding_get_started">Para comenzar, visite un emisor autorizado para obtener su credencial digital de edad.</string>
+
+    <!-- ==================== CONTENIDO LOCALIZADO - SIMPLIFICADO ==================== -->
+    <!-- Nota para traductores: Contenido de nivel de lectura simplificado (Grados 7-9) -->
+    <string name="content_age_verification_title_simplified">Comprobación de edad</string>
+    <string name="content_age_verification_explanation_simplified">Estamos comprobando su edad. No vemos ni compartimos su fecha de nacimiento.</string>
+    <string name="content_age_verification_instructions_simplified">Apunte la cámara al código QR. Se escanea solo.</string>
+    <string name="content_age_verification_success_simplified">¡Listo! El sitio web sabe que tiene la edad necesaria. No sabe su fecha de nacimiento.</string>
+    <string name="content_age_verification_failed_simplified">No funcionó. Intente escanear otra vez o escriba el código.</string>
+    <string name="content_credential_issuance_title_simplified">Obtener su identificación</string>
+    <string name="content_credential_issuance_explanation_simplified">Escanee el código de la oficina para obtener su identificación digital.</string>
+    <string name="content_credential_issuance_instructions_simplified">Apunte la cámara al código. Su identificación se guarda en el teléfono.</string>
+    <string name="content_credential_issuance_success_simplified">¡Listo! Ya puede usar su identificación digital para probar su edad.</string>
+    <string name="content_credential_description_simplified">Una identificación digital es como un documento que prueba quién es usted sin dar datos privados.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Puede probar que tiene la edad necesaria sin decir su edad real.</string>
+    <string name="content_setup_proving_key_simplified">Descargando archivos necesarios para que la app funcione</string>
+    <string name="content_processing_challenge_simplified">Leyendo la solicitud de comprobación de edad</string>
+    <string name="content_creating_proof_simplified">Creando su prueba de edad</string>
+    <string name="content_submitting_proof_simplified">Enviando la prueba al sitio web</string>
+    <string name="content_error_no_credential_simplified">Todavía no tiene identificación. Visite una oficina autorizada para obtener una.</string>
+    <string name="content_error_network_failed_simplified">No hay conexión a internet. Revise su wifi o datos y vuelva a intentar.</string>
+    <string name="content_error_invalid_qr_simplified">Ese código no parece correcto. Asegúrese de escanear el código indicado.</string>
+    <string name="content_error_verification_failed_simplified">No funcionó. El sitio web no pudo comprobar su prueba. Intente de nuevo.</string>
+    <string name="content_officer_authentication_title_simplified">Inicio de sesión del funcionario</string>
+    <string name="content_officer_issuance_title_simplified">Crear identificación</string>
+    <string name="content_officer_dob_prompt_simplified">Escriba el cumpleaños de la persona según su documento de identidad.</string>
+    <string name="content_onboarding_welcome_simplified">Le damos la bienvenida a Provii Wallet. Pruebe su edad de forma privada.</string>
+    <string name="content_onboarding_privacy_simplified">Su fecha de nacimiento queda en su teléfono. Nadie más puede verla.</string>
+    <string name="content_onboarding_get_started_simplified">Para empezar, visite una oficina autorizada para obtener su identificación digital.</string>
+    <!-- ==================== ERRORES DE YUBIKEY ==================== -->
+    <!-- Nota para traductores: Mensajes de error para autenticación con hardware YubiKey.
+         Términos técnicos mantenidos en inglés: YubiKey, HMAC, SHA1, challenge-response, Slot. -->
+    <!-- H-02/M-01: "challenge-response" kept in English; L-01: "Slot" kept in English -->
+    <!-- C-01: HMAC expansion in English; H-02: "challenge-response" in English; L-01: "Slot" in English -->
+    <!-- C-01: HMAC expansion in English -->
+
+    <!-- ==================== ERRORES DEL REPOSITORIO DE BILLETERA ==================== -->
+    <!-- Nota para traductores: Mensajes de error de operaciones del repositorio de billetera.
+         "prover", "null", "FFI" y "sandbox" se mantienen en inglés como términos técnicos. -->
+    <!-- M-02: "prover" kept in English -->
+    <!-- M-02: "prover" kept in English -->
+    <!-- M-02: "prover" kept in English -->
+    <!-- H-03: "null" kept in English -->
+    <!-- M-02: "prover" kept in English -->
+    <!-- M-03: "Compruebe" instead of "Verifique" to avoid collision with verification terminology -->
+
+    <!-- ==================== CADENAS DEL PUENTE DE KEYSTORE ==================== -->
+    <!-- Nota para traductores: Cadenas para keystore y autenticación biométrica -->
+    <!-- H-04: imperative "Acceda" to match register of sibling subtitle above -->
+
+    <!-- ==================== ACCESIBILIDAD DE PANTALLA DE LICENCIAS ==================== -->
+    <!-- Nota para traductores: Descripciones de accesibilidad para la pantalla de licencias -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, expandido, mostrando texto completo de licencia</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, contraído, %3$s</string>
+
+    <!-- ==================== CADENAS DEL ADMINISTRADOR DE RED ==================== -->
+    <!-- Nota para traductores: Etiquetas de tipo de conexión de red.
+         M-04: Feminine forms assume "conexión" as referent. -->
+    <string name="network_type_none">Ninguna</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Datos móviles</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Desconocida</string>
+
+    <!-- ==================== ABREVIATURAS (WCAG 3.1.2) ==================== -->
+    <!-- Nota para traductores: Anuncios del lector de pantalla para abreviaturas en su primer uso por sesión.
+         M-05: Abbreviation expansions kept in English where the English IS the abbreviation origin.
+         H-05: DOB abbreviation may be dead code for es locale -->
+    <string name="abbreviation_qr_short">QR</string>
+    <!-- M-05: English expansion kept; QR stands for "Quick Response" -->
+    <string name="abbreviation_qr_expanded">Quick Response (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Número de identificación personal (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <!-- H-05: verify whether "DOB" appears in Spanish UI -->
+    <string name="abbreviation_dob_expanded">Fecha de nacimiento (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Identificación (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">Interfaz de usuario (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Localizador uniforme de recursos (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Interfaz de programación de aplicaciones (API)</string>
+
+    <!-- ==================== CONTROLES DE ANIMACIÓN (WCAG 2.2.2) ==================== -->
+    <!-- Nota para traductores: Cadenas para controles de pausa y reanudación de animaciones -->
+    <string name="animation_pause_animations">Pausar animaciones</string>
+    <string name="animation_resume_animations">Reanudar animaciones</string>
+    <string name="animation_pause_button_text">Pausar</string>
+    <string name="animation_resume_button_text">Reanudar</string>
+    <string name="animation_toggles_playback_hint">Alterna la reproducción de animaciones</string>
+    <string name="animation_paused_announcement">Animaciones en pausa</string>
+    <string name="animation_resumed_announcement">Animaciones reanudadas</string>
+    <!-- C-02: Reworded to avoid singular/plural agreement failure.
+         Source should be refactored to a <plurals> resource -->
+    <string name="animation_active_count">Animaciones activas: %d</string>
+    <string name="animation_loading_default">Cargando</string>
+    <string name="animation_please_wait">Espere mientras se completa esta operación</string>
+    <string name="animation_percent_complete">%d por ciento completado</string>
+    <string name="animation_loading_in_progress">En curso</string>
+
+    <!-- ==================== ATAJOS DE TECLADO (WCAG 2.1.3) ==================== -->
+    <!-- Nota para traductores: Cadenas para atajos de teclado y navegación.
+         Nombres de teclas (Ctrl, Enter, Escape, Tab) se mantienen en inglés. -->
+    <string name="keyboard_shortcuts_title">Atajos de teclado</string>
+    <string name="keyboard_shortcuts_done">Listo</string>
+    <string name="keyboard_shortcuts_app_section">Atajos de la app</string>
+    <string name="keyboard_shortcuts_navigation_section">Navegación</string>
+    <string name="keyboard_shortcuts_tips_section">Consejos</string>
+    <string name="keyboard_shortcuts_navigation_footer">Estas teclas de navegación funcionan en toda la app con teclados externos</string>
+    <string name="keyboard_shortcuts_tip_external">Los teclados externos Bluetooth y USB son totalmente compatibles</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Use las teclas de flechas para navegar entre elementos en las listas</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Mantenga presionado Ctrl para ver los atajos disponibles en esta pantalla</string>
+    <string name="keyboard_shortcuts_tip_a11y">Todas las funciones de esta app son accesibles por teclado</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Cerrar atajos de teclado</string>
+    <!-- Etiquetas y descripciones de atajos de la app -->
+    <string name="keyboard_shortcut_label_settings">Configuración</string>
+    <string name="keyboard_shortcut_label_accessibility">Accesibilidad</string>
+    <string name="keyboard_shortcut_label_help">Centro de ayuda</string>
+    <string name="keyboard_shortcut_label_add_credential">Agregar credencial</string>
+    <string name="keyboard_shortcut_label_verify">Verificar</string>
+    <string name="keyboard_shortcut_label_shortcuts">Atajos</string>
+    <string name="keyboard_shortcut_desc_settings">Abrir configuración</string>
+    <string name="keyboard_shortcut_desc_accessibility">Configuración de accesibilidad</string>
+    <string name="keyboard_shortcut_desc_help">Centro de ayuda</string>
+    <string name="keyboard_shortcut_desc_add_credential">Agregar credencial</string>
+    <string name="keyboard_shortcut_desc_verify">Iniciar verificación</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Atajos de teclado</string>
+    <!-- Etiquetas y descripciones de atajos de navegación -->
+    <string name="keyboard_shortcut_nav_back">Volver / Cerrar</string>
+    <string name="keyboard_shortcut_nav_back_desc">Cerrar la pantalla o el diálogo actual</string>
+    <string name="keyboard_shortcut_nav_next">Siguiente campo</string>
+    <string name="keyboard_shortcut_nav_next_desc">Mover el foco al siguiente elemento interactivo</string>
+    <string name="keyboard_shortcut_nav_prev">Campo anterior</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Mover el foco al elemento interactivo anterior</string>
+    <string name="keyboard_shortcut_nav_submit">Enviar / Continuar</string>
+    <string name="keyboard_shortcut_nav_submit_desc">Activar el botón enfocado o enviar un formulario</string>
+    <string name="keyboard_shortcut_nav_activate">Activar botón</string>
+    <string name="keyboard_shortcut_nav_activate_desc">Activar el botón o interruptor enfocado actualmente</string>
+
+    <!-- ==================== TRAMPA DE FOCO MODAL (WCAG 2.1.2) ==================== -->
+    <!-- Nota para traductores: Cadenas para accesibilidad de diálogos modales -->
+    <string name="modal_opened_announcement">Diálogo abierto. Presione Escape para cerrar, Enter para confirmar.</string>
+    <string name="modal_closed_announcement">Diálogo cerrado</string>
+    <string name="modal_button_primary_label">%s (acción principal)</string>
+    <string name="modal_button_cancel_label">%s (cancelar)</string>
+    <string name="modal_button_destructive_label">%s (acción destructiva)</string>
+    <string name="modal_button_primary_hint">Toque dos veces para confirmar, o presione Enter</string>
+    <string name="modal_button_cancel_hint">Toque dos veces para cancelar, o presione Escape</string>
+    <string name="modal_button_destructive_hint">Toque dos veces para realizar la acción destructiva</string>
+    <string name="modal_button_secondary_hint">Toque dos veces para realizar la acción</string>
+    <string name="modal_confirm">Confirmar</string>
+    <string name="modal_cancel">Cancelar</string>
+    <string name="modal_delete">Eliminar</string>
+
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">Enlace de sandbox detectado</string>
+    <string name="deeplink_sandbox_prompt_body">Este deep-link solo funcionará si activa el modo sandbox en esta cartera.</string>
+    <string name="deeplink_sandbox_prompt_primary">Activar sandbox y abrir</string>
+    <string name="deeplink_sandbox_prompt_secondary">Cancelar</string>
+    <string name="deeplink_sandbox_prompt_announcement">Enlace de sandbox detectado. Elija si desea activar el modo sandbox y abrir el enlace.</string>
+
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">Desafío de sandbox recibido</string>
+    <string name="challenge_sandbox_prompt_body">Este desafío fue emitido por un verificador de sandbox. No funcionará a menos que active el modo sandbox en esta cartera.</string>
+    <string name="challenge_sandbox_prompt_primary">Activar sandbox y continuar</string>
+    <string name="challenge_sandbox_prompt_secondary">Rechazar desafío</string>
+    <string name="challenge_sandbox_prompt_announcement">Desafío de sandbox recibido. Elija si desea activar el modo sandbox y continuar, o rechazar el desafío.</string>
+
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">El modo sandbox está ahora activo. La cartera está conectada a los servidores de sandbox.</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">Eliminar %1$s</string>
+    <string name="a11y_edit_nickname_for">Editar apodo de %1$s</string>
+    <string name="accessibility_attestation_scan_back">Volver</string>
+    <string name="attestation_replace_confirm">Reemplazar</string>
+    <string name="attestation_replace_primary_message">Ya tiene una credencial personal. Si crea una nueva, la reemplazará. Esta acción no se puede deshacer.</string>
+    <string name="attestation_replace_primary_title">¿Reemplazar credencial existente?</string>
+    <string name="attestation_scan_error_empty">El código QR estaba vacío</string>
+    <string name="attestation_scan_instruction">Apunte la cámara al código QR mostrado por el oficial</string>
+    <string name="attestation_scan_invalid_qr">Este código QR no contiene datos de atestación</string>
+    <string name="attestation_scan_title">Escanear atestación</string>
+    <string name="attestation_scan_wrong_type_toast">Este es un QR de verificación, no un QR de credencial</string>
+    <string name="biometric_required_message">Esta app requiere un bloqueo de pantalla (PIN, patrón o biometría) para almacenar credenciales de forma segura. Configure uno en los ajustes de seguridad de su dispositivo antes de continuar.</string>
+    <string name="biometric_required_open_settings">Abrir ajustes de seguridad</string>
+    <string name="biometric_required_title">Bloqueo de pantalla requerido</string>
+    <string name="credential_detail_nickname_error">No se pudo guardar el apodo</string>
+    <string name="credential_list_managed_count">%1$d de %2$d</string>
+    <string name="credential_picker_count_shown">%1$d credenciales mostradas</string>
+    <string name="credential_picker_filter_clear">Borrar filtro</string>
+    <string name="credential_picker_filter_label">Filtrar credenciales por nombre</string>
+    <string name="credential_picker_filter_placeholder">Filtrar credenciales</string>
+    <string name="credential_picker_no_results">No hay credenciales coincidentes</string>
+    <string name="credential_picker_section_managed">Credenciales administradas</string>
+    <string name="credential_picker_section_me">Yo</string>
+    <string name="credential_picker_subtitle">Seleccione a quién se está verificando.</string>
+    <string name="credential_row_action_delete">Eliminar</string>
+    <string name="credential_row_action_edit">Editar apodo</string>
+    <string name="credential_row_overflow_menu">Opciones de credencial</string>
+    <string name="empty_credential_option_find_apps_a11y">Encontrar una app participante. Obtenga una credencial de su fondo de pensiones, banco, telefónica, aseguradora de salud o cualquiera que ya conozca su edad.</string>
+    <string name="empty_credential_option_find_apps_desc">Obtenga una credencial de su fondo de pensiones, banco, telefónica, aseguradora de salud o cualquiera que ya conozca su edad</string>
+    <string name="empty_credential_option_find_apps_title">Encontrar una app participante</string>
+    <string name="empty_credential_option_find_locations_a11y">Encontrar una ubicación cerca de usted. Visite en persona con su identificación para obtener una credencial.</string>
+    <string name="empty_credential_option_find_locations_desc">Visite en persona con su identificación para obtener una credencial</string>
+    <string name="empty_credential_option_find_locations_title">Encontrar una ubicación cerca de usted</string>
+    <string name="empty_credential_option_managed_a11y">Cuido de alguien. Administre credenciales para personas que están a su cuidado.</string>
+    <string name="empty_credential_option_managed_desc">Administre credenciales para personas que están a su cuidado</string>
+    <string name="empty_credential_option_managed_title">Cuido de alguien</string>
+    <string name="empty_credential_option_scan_a11y">Tengo un código QR para escanear. Un verificador le entregó un código tras revisar su identificación.</string>
+    <string name="empty_credential_option_scan_desc">Un verificador le entregó un código tras revisar su identificación</string>
+    <string name="empty_credential_option_scan_title">Tengo un código QR para escanear</string>
+    <string name="empty_credential_subtitle">Elija cómo desea obtener su primera credencial</string>
+    <string name="empty_credential_title">Aún no hay credenciales</string>
+    <string name="error_screen_lock_required">Se requiere un bloqueo de pantalla (PIN, patrón o biometría) para almacenar credenciales de forma segura. Configure uno en los ajustes de su dispositivo.</string>
+    <string name="issuers_found_count">%1$d emisores encontrados</string>
+    <string name="issuers_no_apps_found_description">Vuelva pronto a medida que más apps agreguen compatibilidad con Provii</string>
+    <string name="issuers_no_apps_found">Aún no hay apps participantes</string>
+    <string name="issuers_no_locations_found_description">Vuelva pronto a medida que se agreguen más ubicaciones</string>
+    <string name="issuers_no_locations_found">No se encontraron ubicaciones</string>
+    <string name="language_count_description">%1$d idiomas disponibles</string>
+    <string name="language_count">%1$d idiomas</string>
+    <string name="language_found_announcement">%1$d idiomas encontrados</string>
+    <string name="language_search_cleared">Búsqueda borrada, mostrando %d idiomas</string>
+    <string name="managed_credential_explainer_body">Para obtener una credencial administrada para alguien que está a su cuidado, visiten juntos una ubicación participante. El verificador revisará su identificación. Cuando escanee el código QR, se le preguntará si esta credencial es para usted o para alguien que administra.</string>
+    <string name="managed_credential_explainer_find_location">Buscar una ubicación</string>
+    <string name="managed_credential_explainer_have_qr">Ya tengo un código QR</string>
+    <string name="managed_credential_explainer_title">Credenciales administradas</string>
+    <string name="sandbox_credential_type">Tipo de credencial</string>
+    <string name="sandbox_managed_credential_saved">Credencial administrada guardada (%s)</string>
+    <string name="sandbox_nickname_helper">Asigne un nombre a esta credencial para identificarla en su cartera.</string>
+    <string name="sandbox_nickname_label">Apodo</string>
+    <string name="sandbox_nickname_placeholder">Ej.: Sara</string>
+    <string name="sandbox_nickname_required">Se requiere un apodo para las credenciales administradas</string>
+    <string name="sandbox_type_managed_credential">Credencial administrada</string>
+    <string name="sandbox_type_your_credential">Su credencial</string>
+    <string name="title_find_apps">Encontrar una app participante</string>
+    <string name="title_find_locations">Encontrar una ubicación</string>
+    <string name="verification_go_to_attestation">Obtener credencial</string>
+    <string name="verification_wrong_qr_type_message">Este código QR sirve para obtener una nueva credencial, no para verificación de edad. ¿Desea ir a la pantalla de atestación?</string>
+    <string name="verification_wrong_qr_type_title">QR de atestación detectado</string>
+    <string name="walkthrough_back">Atrás</string>
+    <string name="walkthrough_get_started">Comenzar</string>
+    <string name="walkthrough_next">Siguiente</string>
+    <string name="walkthrough_page_indicator">Página %1$d de %2$d</string>
+    <string name="walkthrough_page1_body">Su credencial contiene su edad. Nada más. Ni su nombre, ni su dirección, ni su identidad.\n\nPrueba que usted es mayor (o menor) que cierta edad sin revelar su fecha de nacimiento.</string>
+    <string name="walkthrough_page1_heading">¿Qué es una credencial?</string>
+    <string name="walkthrough_page2_body">Puede obtener una credencial a través de una app de una empresa que ya conoce su edad. Su banco o fondo de pensiones, por ejemplo. Como ya verificaron su edad, no es necesario compartir nada de nuevo.\n\nAlternativamente, visite una ubicación participante con identificación que pruebe su fecha de nacimiento. Su fecha de nacimiento se revisa, se usa para crear su credencial y luego se descarta. El emisor nunca ve su credencial. Su identidad nunca queda vinculada a ella.</string>
+    <string name="walkthrough_page2_heading">¿Cómo se obtiene una?</string>
+    <string name="walkthrough_page3_body">Si cuida a alguien que necesita una credencial de edad, puede obtener una para esa persona y administrarla en su dispositivo.\n\nVisiten juntos una ubicación participante con identificación que pruebe la fecha de nacimiento de esa persona. Cuando escanee el código QR, se le preguntará si esta credencial es para usted o para alguien que administra.\n\nAgregue un apodo para distinguir las credenciales.</string>
+    <string name="walkthrough_page3_heading">Personas a su cargo</string>
+    <string name="walkthrough_page4_body">Una app que intente verificar su edad puede enviar un desafío directamente a su cartera Provii. Usted elige qué credencial usar. Tras una verificación exitosa, volverá a la app solicitante y podrá continuar como verificado.\n\nAlternativamente, podría aparecerle un código QR en otro dispositivo, o un enlace en su navegador móvil que abra directamente su cartera. También hay una opción de código corto para mejorar la accesibilidad.\n\nNunca se comparte información personal. Solo una respuesta de sí o no a si cumple con el requisito de edad.</string>
+    <string name="walkthrough_page4_heading">¿Cómo funciona la verificación?</string>
+    <string name="walkthrough_page5_body">Su primer paso es obtener una credencial a través de una app participante o en una ubicación cercana.\n\nDesde ahí, puede verificar su edad cuando lo necesite, sin compartir información personal. También puede administrar credenciales de personas que están a su cuidado.</string>
+    <string name="walkthrough_page5_heading">Todo listo</string>
+    <string name="walkthrough_skip">Omitir</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

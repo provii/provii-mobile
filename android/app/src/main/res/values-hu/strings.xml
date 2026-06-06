@@ -1,0 +1,1533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Beállítások</string>
+    <string name="title_accessibility">Akadálymentesítés</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Hitelesítő adatok beszerzése</string>
+    <string name="title_scan_verification_qr">Ellenőrzési QR-kód beolvasása</string>
+    <string name="title_verifying_age">Életkor ellenőrzése</string>
+    <string name="title_age_verified">Életkor igazolva</string>
+    <string name="title_verification_failed">Az ellenőrzés sikertelen</string>
+    <string name="title_officer_mode">Tisztviselői mód</string>
+    <string name="title_officer_dashboard">Tisztviselői irányítópult</string>
+    <string name="title_issue_credential">Hitelesítő adat kiállítása</string>
+    <string name="title_credential_ready">Hitelesítő adat kész</string>
+    <string name="title_get_your_credential">Szerezze be hitelesítő adatát</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Üdvözöljük a Provii Wallet-ben</string>
+    <string name="welcome_subtitle">Biztonságos életkor-ellenőrzés egyszerűen</string>
+    <string name="welcome_first_credential">Kezdjen hozzá az első életkor-ellenőrzési hitelesítő adat hozzáadásával</string>
+    <string name="welcome_description">Privát életkor-ellenőrzés zéró tudásbizonyíték segítségével</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Üdvözöljük a Provii Wallet-ben</string>
+    <string name="onboarding_language_subtitle">Válassza ki a kívánt nyelvet</string>
+    <string name="onboarding_use_english">Angol használata</string>
+    <string name="onboarding_use_english_description">Az alkalmazás nyelvként az angol használatának folytatása</string>
+    <string name="onboarding_rotating_button_description">Nyelv módosítása gomb, jelenleg: %1$s. Koppintson egy másik nyelv kiválasztásához.</string>
+    <string name="onboarding_change_later">Ezt később a Beállításokban is módosíthatja</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Akadálymentesítés</string>
+    <string name="onboarding_accessibility_desc">Szeretné testreszabni az akadálymentesítési funkciókat, például a szövegméretet, az érintési célokat vagy a csökkentett mozgást?</string>
+    <string name="onboarding_use_defaults">Alapértelmezések használata</string>
+    <string name="onboarding_use_defaults_description">Folytatás a szabványos akadálymentesítési beállításokkal</string>
+    <string name="onboarding_open_accessibility">Akadálymentesítési beállítások</string>
+    <string name="onboarding_open_accessibility_description">Akadálymentesítési beállítások megnyitása az alkalmazás testreszabásához</string>
+    <string name="onboarding_accessibility_later">Ezt később a Beállításokban is módosíthatja</string>
+    <string name="onboarding_accessibility_features_title">Elérhető funkciók:</string>
+    <string name="onboarding_feature_text_size">Nagyobb szövegméret</string>
+    <string name="onboarding_feature_touch_targets">Megnövelt érintési célterületek</string>
+    <string name="onboarding_feature_reduce_motion">Csökkentett mozgás</string>
+    <string name="onboarding_feature_high_contrast">Nagy kontrasztú mód</string>
+    <string name="onboarding_talkback_detected">TalkBack észlelve</string>
+    <string name="onboarding_talkback_message">Engedélyeztük a részletes leírásokat, hogy segítse az alkalmazásban való navigálást.</string>
+    <string name="onboarding_continue_to_setup">Folytatás a beállítással</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Egyszeri beállítás szükséges</string>
+    <string name="setup_download_required">Letöltés szükséges</string>
+    <string name="setup_download_description">Az alkalmazásnak le kell töltenie a biztonsági összetevőket a zéró tudásbizonyítékhoz (körülbelül 87 MB).</string>
+    <string name="setup_wifi_recommended">Wi-Fi ajánlott</string>
+    <string name="setup_checking_status">Beállítási állapot ellenőrzése...</string>
+    <string name="setup_already_setup">Már be van állítva!</string>
+    <string name="setup_ready_message">A tárcája készen áll a biztonságos életkor-ellenőrzésre</string>
+    <string name="setup_preparing">Biztonságos ellenőrzési rendszer előkészítése...</string>
+    <string name="setup_checking_components">Biztonsági összetevők ellenőrzése...</string>
+    <string name="setup_downloading">Biztonsági összetevők letöltése</string>
+    <string name="setup_download_progress_description">%1$d%% kész (%2$s MB / %3$s MB letöltve)</string>
+    <string name="setup_initializing">Biztonsági összetevők inicializálása...</string>
+    <string name="setup_complete">A beállítás kész!</string>
+    <string name="setup_download_info">Ez lehetővé teszi a zéró tudásbizonyítéket a privát életkor-ellenőrzéshez</string>
+    <string name="setup_one_time_download">Egyszeri letöltés</string>
+    <string name="setup_stuck_message">Ez a vártnál tovább tart</string>
+    <string name="setup_stuck_description">A beállítás elakadhatott. Próbálja meg újraindítani.</string>
+    <string name="setup_restart_message">Az alkalmazásnak újra kell indulnia. Ez néha előfordul az első indításkor.</string>
+    <string name="setup_storage_full">A tárhely megtelt</string>
+    <string name="setup_connection_error">Kapcsolódási hiba</string>
+    <string name="setup_failed">A beállítás sikertelen</string>
+    <string name="setup_initialization_error">Inicializálási hiba</string>
+    <string name="error_storage_init_failed">A tárhely inicializálása sikertelen. Kérjük, indítsa újra az alkalmazást.</string>
+    <string name="error_storage_init_close_restart">A tárhely inicializálása sikertelen. Kérjük, zárja be és indítsa újra az alkalmazást.</string>
+    <string name="setup_free_storage_message">Szabadítson fel legalább 65 MB tárhelyet, majd próbálja újra</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Adatvédelem biztosítva</string>
+    <string name="setup_privacy_description">Az életkor-ellenőrzés zéró tudásbizonyítéket használ. A születési dátumát soha nem osztjuk meg.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Hitelesítő adataim</string>
+    <string name="credentials_empty">Nincsenek tárolt hitelesítő adatok</string>
+    <string name="credential_active">Hitelesítő adat aktív</string>
+    <string name="credential_expired">Hitelesítő adat lejárt</string>
+    <string name="credential_ready_for_verification">Ellenőrzésre kész</string>
+    <string name="credential_expired_message">Hitelesítő adata lejárt, és cserére szorul</string>
+    <string name="credential_stored_successfully">A hitelesítő adat sikeresen tárolva</string>
+    <string name="credential_stored_description">Az életkori hitelesítő adata biztonságosan tárolva van, és használatra kész</string>
+    <string name="credential_can_prove_age">Mostantól privát módon igazolhatja életkorát</string>
+    <string name="credential_returning">Visszatérés a hitelesítő adatokhoz...</string>
+    <string name="credential_view_credentials">Hitelesítő adatok megtekintése</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Kész</string>
+    <string name="action_scan_qr_code">QR-kód beolvasása</string>
+    <string name="action_find_locations">Helyszínek keresése</string>
+    <string name="action_get_credential">Hitelesítő adat beszerzése</string>
+    <string name="action_replace_credential">Csere új hitelesítő adattal</string>
+    <string name="action_replace_credential_now">Hitelesítő adat cseréje most</string>
+    <string name="action_delete_credential">Hitelesítő adat törlése</string>
+    <string name="credential_action_scan_description">Hitelesítő adat beszerzése jogosult kibocsátótól</string>
+    <string name="credential_action_find_description">Közeli kibocsátók felderítése</string>
+    <string name="credential_remove_description">Jelenlegi hitelesítő adat eltávolítása</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Adatvédelem</string>
+    <string name="credential_info_privacy_value">Védett</string>
+    <string name="credential_info_status">Állapot</string>
+    <string name="credential_info_status_value">Érvényes</string>
+    <string name="credential_tip_title">Gyors tipp</string>
+    <string name="credential_tip_message">Koppintson a "Életkor igazolása" gombra az ellenőrzési QR (gyors válasz) kódok beolvasásához a résztvevő helyszíneken.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">QR-kód beolvasása</string>
+    <string name="verification_verify_age">Életkor igazolása</string>
+    <string name="verification_generating_proof">Bizonyíték generálása...</string>
+    <string name="verification_success">Az ellenőrzés sikeres</string>
+    <string name="verification_failed">Az ellenőrzés sikertelen</string>
+    <string name="verification_age_verified">Életkor igazolva</string>
+    <string name="verification_age_verified_message">Életkorát privát módon ellenőriztük</string>
+    <string name="verification_can_return">Most visszatérhet a webhelyre a folytatáshoz.</string>
+    <string name="verification_returning_browser">Visszatérés a böngészőhöz...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">1. lépés a 2-ből</string>
+    <string name="verification_step_2_of_2">2. lépés a 2-ből</string>
+    <string name="verification_point_camera">Irányítsa a kamerát az ellenőrzési QR-kódra</string>
+    <string name="verification_hold_steady">Tartsa stabilan, amíg meg nem hall egy megerősítő hangjelzést.</string>
+    <string name="verification_reading_request">Ellenőrzési kérés olvasása...</string>
+    <string name="verification_processing_challenge">Kihívás feldolgozása...</string>
+    <string name="verification_creating_proof">Életkori bizonyíték létrehozása...</string>
+    <string name="verification_submitting_proof">Bizonyíték elküldése...</string>
+    <string name="verification_processing_message">Ez néhány másodpercet vehet igénybe</string>
+    <string name="verification_preparing_proof">Privát bizonyítékot készítünk a mentett hitelesítő adatával.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Ellenőrzési kérés olvasása...</string>
+    <string name="verification_status_processing_challenge">Kihívás feldolgozása...</string>
+    <string name="verification_status_creating_proof">Életkori bizonyíték létrehozása...</string>
+    <string name="verification_status_submitting_proof">Bizonyíték elküldése...</string>
+    <string name="verification_status_verified">✔ Életkor igazolva</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Nem sikerült megjeleníteni a hitelesítési felszólítást</string>
+    <string name="verification_error_verification_failed">Az ellenőrzés sikertelen</string>
+    <string name="verification_error_generic">Hiba történt</string>
+    <string name="verification_error_failed_to_process_code">A kód feldolgozása sikertelen</string>
+    <string name="verification_error_failed_to_process_challenge">A kihívás feldolgozása sikertelen</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Megbízható kibocsátók Ausztráliában</string>
+    <string name="issuers_loading">Kibocsátók betöltése...</string>
+    <string name="issuers_loaded">A kibocsátók sikeresen betöltve</string>
+    <string name="issuers_unable_to_load">Nem sikerült betölteni a kibocsátókat</string>
+    <string name="issuers_check_connection">Ellenőrizze az internetkapcsolatát, és próbálja újra</string>
+    <string name="issuers_categories_header">KATEGÓRIÁK</string>
+    <string name="issuers_available_header">ELÉRHETŐ KIBOCSÁTÓK</string>
+    <string name="issuers_found_count">%d találat</string>
+    <string name="issuer_status_coming_soon">Hamarosan</string>
+    <string name="issuer_status_verified">Ellenőrzött</string>
+    <string name="issuer_how_to_get">Hogyan szerezhető be a hitelesítő adat</string>
+    <string name="issuer_service_locations">Szolgáltatási helyszínek</string>
+    <string name="issuer_visit_website">Látogasson el a(z) %s weboldalára</string>
+    <string name="issuer_learn_more">Tudjon meg többet: %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Banki szolgáltatások</string>
+    <string name="category_super_fund">Nyugdíjalap</string>
+    <string name="category_government">Kormányzat</string>
+    <string name="category_travel">Utazás</string>
+    <string name="category_telco">Telekommunikáció</string>
+    <string name="category_insurance">Biztosítás</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Beállítások</string>
+    <string name="settings_section_sandbox">Sandbox mód</string>
+    <string name="settings_section_general">Általános</string>
+    <string name="settings_section_credentials">Hitelesítő adatok</string>
+    <string name="settings_section_advanced">Speciális</string>
+    <string name="settings_section_privacy">Adatvédelem</string>
+    <string name="settings_security">Biztonság</string>
+    <string name="settings_biometric">Biometrikus hitelesítés használata</string>
+    <string name="settings_environment">Környezeti beállítások</string>
+    <string name="settings_environment_description">Jelenlegi környezeti konfiguráció megtekintése</string>
+    <string name="settings_reset_proving_key">Bizonyítókulcs visszaállítása</string>
+    <string name="settings_reset_proving_key_description">Biztonsági összetevők újbóli letöltése (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Teszt hitelesítő adat kibocsátása Kibocsátóként</string>
+    <string name="settings_mint_test_credential_subtitle">Bocsáss ki egy teszt hitelesítő adatot a tárcádba, hogy egy támaszkodó fél demójából tudd ellenőrizni.</string>
+    <string name="settings_find_trusted_issuers">Megbízható kibocsátók keresése</string>
+    <string name="settings_version">Verzió: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Koppintson 5-ször a váltáshoz</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Nyelv</string>
+    <string name="language_selection_description">Válassza ki a kívánt nyelvet. A módosítások alkalmazásához az alkalmazás újraindul.</string>
+    <string name="language_selected">Kiválasztva</string>
+    <string name="settings_language">Nyelv</string>
+    <string name="settings_language_description">Az alkalmazás nyelvének módosítása</string>
+    <string name="settings_licenses">Nyílt forrású licencek</string>
+    <string name="settings_licenses_description">Harmadik féltől származó licencek megtekintése</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Nyelv megerősítése</string>
+    <string name="language_change_to">Nyelv módosítása erre:</string>
+    <string name="language_restart_notice">Az alkalmazás újraindul, hogy alkalmazza ezt a nyelvet.</string>
+    <string name="language_apply">Alkalmaz</string>
+    <string name="language_cancel">Mégse</string>
+    <string name="language_skip_title">Kihagyja a nyelvválasztást?</string>
+    <string name="language_skip_message">Ha kihagyja, az alkalmazás alapértelmezés szerint angolt fog használni. A nyelvet később a Beállításokban módosíthatja.</string>
+    <string name="language_use_english">Angol használata</string>
+    <string name="language_go_back">Vissza</string>
+    <string name="language_help_title">Súgó a nyelvválasztáshoz</string>
+    <string name="language_help_how_to">A nyelv kiválasztásának módja:</string>
+    <string name="language_help_step1">1. A keresőmező segítségével keresse meg a kívánt nyelvet</string>
+    <string name="language_help_step2">2. Koppintson a kívánt nyelvre</string>
+    <string name="language_help_step3">3. Erősítse meg a kiválasztást</string>
+    <string name="language_help_system_note">A rendszer nyelve kiemelve jelenik meg felül, ha támogatott.</string>
+    <string name="language_help_settings_note">Ezt később a Beállításokban is módosíthatja.</string>
+    <string name="language_got_it">Értettem</string>
+    <string name="language_select_title">Nyelv kiválasztása</string>
+    <string name="language_skip_button">Kihagyás (angol használata)</string>
+    <string name="language_search_placeholder">Nyelvek keresése...</string>
+    <string name="language_no_results">Nem találhatók nyelvek</string>
+    <string name="language_try_different">Próbáljon más keresési kifejezést</string>
+    <string name="language_system_badge">Rendszernyelv</string>
+    <string name="language_count">%d nyelv</string>
+    <string name="language_no_match_announcement">Nem találhatók a keresésének megfelelő nyelvek</string>
+    <string name="language_found_announcement">%d nyelv található</string>
+    <string name="language_search_cleared">Keresés törölve, az összes %d nyelv megjelenítése</string>
+    <string name="language_selected_announcement">%1$s kiválasztva, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Nyelvválasztási képernyő</string>
+    <string name="language_help_button_description">Súgó és információk a nyelvválasztásról</string>
+    <string name="language_skip_description">A nyelvválasztás kihagyása és az angol alapértelmezett használata</string>
+    <string name="language_clear_search_description">Keresés törlése</string>
+    <string name="language_count_description">%d nyelv érhető el</string>
+    <string name="language_apply_description">Nyelvválasztás alkalmazása és továbblépés</string>
+    <string name="language_cancel_description">Nyelvválasztás megszakítása</string>
+    <string name="language_cancelled_announcement">Nyelvválasztás megszakítva</string>
+    <string name="language_selected_description">Kiválasztott nyelv: %1$s, %2$s</string>
+    <string name="language_item_system">Rendszer nyelve: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, jelenleg kiválasztva</string>
+    <string name="language_item_system_selected">Rendszer nyelve: %1$s, %2$s, jelenleg kiválasztva</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Visszatérve a nyelvválasztáshoz</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Sandbox mód aktív</string>
+    <string name="sandbox_mode_banner">SANDBOX MÓD AKTÍV</string>
+    <string name="sandbox_mode_description">Tesztkörnyezet használatban. A verziószámra öt alkalommal koppintva kapcsolható ki és be.</string>
+    <string name="sandbox_credential_title">Sandbox hitelesítő adat</string>
+    <string name="sandbox_credential_description">Generáljon sandbox hitelesítő adatot az ellenőrzési folyamatok teszteléséhez anélkül, hogy az éles adatokat érintené.</string>
+    <string name="sandbox_select_age">Életkor kiválasztása</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Alapértelmezett születési dátum: %s</string>
+    <string name="sandbox_override_dob">Alapértelmezett születési dátum felülírása</string>
+    <string name="sandbox_override_description">Pontos dátum használata a koralapú alapértelmezett helyett.</string>
+    <string name="sandbox_date_of_birth">Születési dátum</string>
+    <string name="sandbox_generate_credential">Hitelesítő adat generálása</string>
+    <string name="sandbox_generating">Generálás folyamatban…</string>
+    <string name="sandbox_test_credential_saved">Teszt hitelesítő adat elmentve</string>
+    <string name="sandbox_id_prefix">Azonosító előtag: %s…</string>
+    <string name="sandbox_unable_to_generate">A hitelesítő adat generálása nem sikerült</string>
+    <string name="settings_sandbox_dob_format">Születési dátum: %s</string>
+    <string name="settings_sandbox_age_dob_format">%d+ éves (Születési dátum: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Környezeti konfiguráció</string>
+    <string name="environment_current">Jelenlegi: %s</string>
+    <string name="environment_issuer_api">Kibocsátói API (Application Programming Interface): %s</string>
+    <string name="environment_verifier_api">Ellenőrzői API (Application Programming Interface): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Törli a hitelesítő adatot?</string>
+    <string name="dialog_delete_credential_message">Ez a művelet eltávolítja a hitelesítő adatot az eszközről. Szükség esetén a kibocsátótól újra igényelhető.</string>
+    <string name="dialog_delete_credential_announcement">Párbeszédablak megnyílt: Hitelesítő adat törlése</string>
+    <string name="dialog_reset_proving_key_title">Visszaállítja a bizonyítókulcsot?</string>
+    <string name="dialog_reset_proving_key_message">A bizonyítókulcs és a kapcsolódó fájlok törlésre kerülnek, és az alkalmazás következő megnyitásakor újra letöltődnek.</string>
+    <string name="dialog_reset_proving_key_announcement">Párbeszédablak megnyílt: Bizonyítókulcs visszaállítása</string>
+    <string name="dialog_environment_info_announcement">Párbeszédablak megnyílt: Környezeti konfiguráció</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <string name="accessibility_title">Akadálymentesítés</string>
+    <string name="accessibility_service_label">Provii Wallet akadálymentesítés</string>
+    <string name="accessibility_service_description">A Provii Wallet akadálymentesítési szolgáltatás fokozott támogatást nyújt a fogyatékossággal élő felhasználóknak. Ez magában foglalja a hitelesítő adatok automatikus felolvasását, az irányított navigációt és az egyszerűsített interakciókat.</string>
+    <string name="accessibility_personalize">Személyre szabhatja az élményt</string>
+    <string name="accessibility_customize_features">Akadálymentesítési funkciók testreszabása</string>
+    <string name="accessibility_quick_setup">Gyors beállítás</string>
+    <string name="accessibility_features_active">%d funkció aktív</string>
+    <string name="accessibility_customize_experience">Személyre szabhatja az élményt</string>
+    <string name="accessibility_reset_title">Visszaállítja az akadálymentesítési beállításokat?</string>
+    <string name="accessibility_reset_message">Minden akadálymentesítési beállítás visszatér az alapértékekhez.</string>
+    <string name="accessibility_reset">Akadálymentesítési beállítások visszaállítása</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Látás</string>
+    <string name="accessibility_category_interaction">Interakció</string>
+    <string name="accessibility_category_cognitive">Kognitív támogatás</string>
+    <string name="accessibility_category_alternative_input">Alternatív bevitel</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Nagyon nagy szöveg</string>
+    <string name="accessibility_extra_large_text_description">Az alapvető betűméretek 45%-os növelése</string>
+    <string name="accessibility_high_contrast">Nagy kontraszt</string>
+    <string name="accessibility_high_contrast_description">Nagy kontrasztú színek használata</string>
+    <string name="accessibility_reduce_transparency">Átlátszóság csökkentése</string>
+    <string name="accessibility_reduce_transparency_description">Elmosódás és üveghatások eltávolítása</string>
+    <string name="accessibility_dyslexia_font">Diszlexia-barát betűtípus</string>
+    <string name="accessibility_dyslexia_font_description">OpenDyslexic betűtípus használata a jobb olvashatóságért</string>
+    <string name="accessibility_color_blind_mode">Színvak mód</string>
+    <string name="accessibility_color_blind_optimized">Optimalizált színek a következőhöz: %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Nincs</string>
+    <string name="color_blind_protanopia">Protanópia (Piros-vak)</string>
+    <string name="color_blind_deuteranopia">Deuteranópia (Zöld-vak)</string>
+    <string name="color_blind_tritanopia">Tritanópia (Kék-vak)</string>
+    <string name="color_blind_monochrome">Monokróm</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Nagyobb érintési célterületek</string>
+    <string name="accessibility_larger_touch_targets_description">Gombok és chipek méretének növelése</string>
+    <string name="accessibility_reduce_motion">Mozgás csökkentése</string>
+    <string name="accessibility_reduce_motion_description">Animációk és átmenetek minimalizálása</string>
+    <string name="accessibility_extended_timeouts">Meghosszabbított időtúllépések</string>
+    <string name="accessibility_extended_timeouts_description">Több idő biztosítása az időzített műveletekhez</string>
+    <string name="accessibility_simplified_gestures">Egyszerűsített kézmozdulatok</string>
+    <string name="accessibility_simplified_gestures_description">Többlépéses kézmozdulatok csökkentése</string>
+    <string name="accessibility_haptic_feedback">Haptikus visszajelzés</string>
+    <string name="accessibility_haptic_feedback_description">Rezgéses visszajelzés a műveletekhez</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Egyszerűsített felület</string>
+    <string name="accessibility_simplified_interface_description">Speciális lehetőségek elrejtése és a rendetlenség csökkentése</string>
+    <string name="accessibility_show_step_numbers">Lépésszámok megjelenítése</string>
+    <string name="accessibility_show_step_numbers_description">Folyamatjelzők megjelenítése</string>
+    <string name="accessibility_detailed_descriptions">Részletes leírások</string>
+    <string name="accessibility_detailed_descriptions_description">További magyarázó szöveg megadása</string>
+    <string name="accessibility_confirm_actions">Megerősítés a műveletek előtt</string>
+    <string name="accessibility_confirm_actions_description">Megerősítés kérése fontos műveleteknél</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Kézi kódbevitel</string>
+    <string name="accessibility_manual_code_entry_description">Lehetővé teszi a QR (Quick Response) kódok begépelését beolvasás helyett</string>
+    <string name="accessibility_voice_input">Hangbevitel</string>
+    <string name="accessibility_voice_input_description">Hangfelismerés engedélyezése szövegmezőkhöz</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Látás</string>
+    <string name="accessibility_profile_motor">Motorikus</string>
+    <string name="accessibility_profile_cognitive">Kognitív</string>
+    <string name="accessibility_profile_senior">Idős</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Vissza</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Főoldal</string>
+    <string name="breadcrumb_settings">Beállítások</string>
+    <string name="breadcrumb_accessibility">Akadálymentesítés</string>
+    <string name="breadcrumb_language">Nyelv</string>
+    <string name="breadcrumb_help">Súgóközpont</string>
+    <string name="breadcrumb_officer_mode">Tisztviselői mód</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Tipográfia és szövegközök</string>
+    <string name="accessibility_line_spacing">Sorköz</string>
+    <string name="accessibility_line_spacing_description">A szövegsorok közötti távolság beállítása</string>
+    <string name="accessibility_paragraph_spacing">Bekezdésköz</string>
+    <string name="accessibility_paragraph_spacing_description">A bekezdések közötti távolság beállítása</string>
+    <string name="accessibility_letter_spacing">Betűköz</string>
+    <string name="accessibility_letter_spacing_description">A betűk közötti távolság beállítása</string>
+    <string name="accessibility_typography_aaa_note">AAA ajánlások: 1,5-szeres sorköz, 2,0-szeres bekezdésköz és 0,12em betűköz.</string>
+    <string name="accessibility_spacing_current">Jelenlegi: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Időtúllépési viselkedés</string>
+    <string name="accessibility_timeout_no_automatic">Nincs automatikus időtúllépés az AAA megfelelőséghez</string>
+    <string name="accessibility_timeout_auto_advance_30">Automatikus továbblépés 30 másodperc után</string>
+    <string name="accessibility_timeout_auto_advance_60">Automatikus továbblépés 60 másodperc után</string>
+    <string name="accessibility_timeout_set_announcement">Az időtúllépési viselkedés beállítva: %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Kontraszt szint</string>
+    <string name="accessibility_contrast_aaa_ratio">7:1 kontrasztarány az AAA megfelelőséghez</string>
+    <string name="accessibility_contrast_standard">Standard kontraszt</string>
+    <string name="accessibility_contrast_aa_ratio">4,5:1 kontrasztarány az AA megfelelőséghez</string>
+    <string name="accessibility_contrast_set_announcement">Kontraszt szint beállítva: %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Színvak mód beállítva: %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">%1$s csúszka. Jelenlegi érték: %2$s. %3$s%4$s és %5$s közötti tartomány</string>
+    <string name="accessibility_slider_aaa_compliant">AAA megfelelő. </string>
+    <string name="accessibility_slider_announcement">%1$s beállítva: %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, AAA megfelelő</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s engedélyezve</string>
+    <string name="accessibility_toggle_disabled">%s letiltva</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Ellenőrzési visszajelzés</string>
+    <string name="accessibility_sound_enabled">Hang lejátszása sikeres ellenőrzésnél</string>
+    <string name="accessibility_sound_enabled_description">Megerősítő hang lejátszása a sikeres ellenőrzés után</string>
+    <string name="accessibility_sound_style">Hangstílus</string>
+    <string name="accessibility_sound_preview">Hang előnézete</string>
+    <string name="accessibility_sound_preview_preset">%s előnézete</string>
+    <string name="accessibility_sound_style_set_announcement">Hangstílus beállítva: %s</string>
+    <string name="accessibility_haptic_enabled">Rezgés sikeres ellenőrzésnél</string>
+    <string name="accessibility_haptic_enabled_description">Haptikus visszajelzés biztosítása a sikeres ellenőrzés után</string>
+    <string name="accessibility_sound_footer">A hang igazodik az eszköz néma módhoz</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Hangerő</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Jelenlegi hangerő előnézete</string>
+    <string name="accessibility_volume_set_announcement">Hangerő beállítva: %d százalék</string>
+    <string name="accessibility_volume_slider_description">Hangerő csúszka. Jelenlegi érték: %d százalék</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Beállítások visszaállítása</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <string name="officer_mode">Tisztviselői mód</string>
+    <string name="officer_id">Tisztviselői azonosító (ID)</string>
+    <string name="officer_id_placeholder">pl. OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Adja meg a kiosztott tisztviselői azonosítót</string>
+    <string name="officer_yubikey_connected">YubiKey csatlakoztatva</string>
+    <string name="officer_connect_yubikey">YubiKey csatlakoztatása</string>
+    <string name="officer_touch_yubikey">Érintse meg a YubiKey-t a hitelesítéshez...</string>
+    <string name="officer_authenticate_hmac">Hitelesítés HMAC-kal (Hash-based Message Authentication Code)</string>
+    <string name="officer_authentication_process">Hitelesítési folyamat:</string>
+    <string name="officer_auth_steps">1. Adja meg a tisztviselői azonosítóját\n2. Koppintson a Hitelesítés gombra\n3. Érintse meg a YubiKey-t, amikor villog\n4. A HMAC (Hash-based Message Authentication Code) hitelesítés ellenőrzi az azonosságát</string>
+    <string name="officer_auth_failed">A hitelesítés sikertelen. Kérjük, ellenőrizze a tisztviselői azonosítót és próbálja újra.</string>
+    <string name="officer_session_info">Tisztviselő: %s</string>
+    <string name="officer_station_info">Állomás: %s</string>
+    <string name="officer_issued_today">Ma kibocsátva: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Életkori hitelesítő adat kibocsátása</string>
+    <string name="officer_issue_description">Ellenőrizze a felhasználó személyazonosságát és bocsásson ki digitális életkori hitelesítő adatot</string>
+    <string name="officer_start_issuance">Új kibocsátás indítása</string>
+    <string name="officer_issuance_process">KIBOCSÁTÁSI FOLYAMAT</string>
+    <string name="officer_issuance_steps">1. Ellenőrizze a felhasználó fizikai azonosítási okmányát\n2. Adja meg a születési dátumát\n3. Ellenőrizze, hogy az adatok pontosan egyeznek\n4. Bocsássa ki a hitelesítő adatot tanúsítási QR (Quick Response) kóddal\n5. A felhasználó beolvassa a QR kódot a hitelesítő adat megkapásához</string>
+    <string name="officer_verify_identity">Felhasználói személyazonosság ellenőrzése</string>
+    <string name="officer_select_dob">Születési dátum kiválasztása</string>
+    <string name="officer_change_date">Dátum módosítása</string>
+    <string name="officer_age_years">Kor: %d év</string>
+    <string name="officer_under_18_warning">18 év alatti – Hitelesítő adat nem adható ki</string>
+    <string name="officer_verification_checklist">ELLENŐRZÉSI LISTA</string>
+    <string name="officer_document_verified">Fizikai okmány ellenőrizve</string>
+    <string name="officer_document_verified_description">Megtekinttem egy érvényes, kormányzati azonosítót</string>
+    <string name="officer_dob_matches">A születési dátum pontosan egyezik</string>
+    <string name="officer_dob_matches_description">A fizikai okmányon szereplő születési dátum: %s</string>
+    <string name="officer_issue_credential">Hitelesítő adat kibocsátása</string>
+    <string name="officer_user_scanned_successfully">A felhasználó sikeresen beolvasta</string>
+    <string name="officer_return_to_dashboard">Visszatérés az irányítópultra</string>
+    <string name="officer_go_back">Vissza</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">YubiKey hitelesítés</string>
+    <string name="yubikey_step_format">%1$d. lépés / %2$d</string>
+    <string name="yubikey_led_should_blink">A YubiKey LED-nek villognia kell</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Bevitel ellenőrzése...</string>
+    <string name="officer_state_creating_attestation">Tanúsítás létrehozása...</string>
+    <string name="officer_state_computing_commitment">Kriptográfiai elkötelezés kiszámítása...</string>
+    <string name="officer_state_creating_session">Biztonságos munkamenet létrehozása...</string>
+    <string name="officer_state_signing">Hitelesítő adat aláírása...</string>
+    <string name="officer_state_finalizing">Hitelesítő adat véglegesítése...</string>
+    <string name="officer_state_storing_attestation">Tanúsítás tárolása...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">A munkamenet hamarosan lejár</string>
+    <string name="officer_session_expiring_message">A munkamenet %d másodperc múlva lejár. Szeretné menteni a folyamatát?</string>
+    <string name="officer_session_expiring_announcement">Figyelmeztetés: A munkamenet %d másodperc múlva lejár</string>
+    <string name="officer_save_and_continue">Mentés és folytatás</string>
+    <string name="officer_continue_without_saving">Folytatás mentés nélkül</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">SZÜLETÉSI DÁTUM</string>
+    <string name="officer_age_format">Kor: %d év</string>
+    <string name="officer_under_18_full_warning">18 év alatti – Hitelesítő adat nem adható ki. Csak a 18 éves vagy annál idősebb személyek jogosultak életkori ellenőrzési hitelesítő adatra. Kérjük, ellenőrizze, hogy a születési dátum helyes-e.</string>
+    <string name="officer_verification_checklist_header">ELLENŐRZÉSI LISTA</string>
+    <string name="officer_physical_document_verified">Fizikai okmány ellenőrizve</string>
+    <string name="officer_sighted_valid_id">Megtekinttem egy érvényes, kormányzati azonosítót</string>
+    <string name="officer_dob_matches_exactly">A születési dátum pontosan egyezik</string>
+    <string name="officer_dob_on_document">A fizikai okmányon szereplő születési dátum: %s</string>
+    <string name="officer_error_label">Hiba</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <string name="issuance_scan_qr">Olvassa be a kibocsátási QR (Quick Response) kódot</string>
+    <string name="issuance_downloads_credential">Ez letölti az életkori hitelesítő adatát.</string>
+    <string name="issuance_center_qr">Helyezze a QR kódot a keret közepébe és tartsa stabilan.</string>
+    <string name="issuance_enter_code_manually">Kód kézi megadása</string>
+    <string name="issuance_processing_qr">QR kód feldolgozása…</string>
+    <string name="issuance_invalid_data">Érvénytelen kibocsátási adatok</string>
+    <string name="issuance_verification_qr_error">Ez egy ellenőrzési QR kód. Kérjük, olvassa be a hitelesítő adat kibocsátási QR kódját.</string>
+    <string name="issuance_invalid_qr_format">Érvénytelen QR kód formátum</string>
+    <string name="issuance_failed_to_process">A QR kód feldolgozása sikertelen: %s</string>
+    <string name="issuance_code">Kibocsátási kód</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <string name="manual_entry_title">Kézi kódbevitel</string>
+    <string name="manual_entry_enter_code_manually">Kód kézi megadása</string>
+    <string name="manual_entry_verification_description">Adja meg az ellenőrző képernyőjén megjelenő 12 jegyű ellenőrzési kódot.</string>
+    <string name="manual_entry_issuance_description">Gépelje be a kibocsátó képernyőjén megjelenő kódot.</string>
+    <string name="manual_entry_verification_code">Ellenőrzési kód</string>
+    <string name="manual_entry_submit">Kód elküldése</string>
+    <string name="manual_entry_please_enter">Kérjük, adjon meg egy kódot</string>
+    <string name="manual_entry_please_enter_verification">Kérjük, adjon meg egy ellenőrzési kódot</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Felvétel indítása</string>
+    <string name="voice_input_stop_listening">Felvétel leállítása</string>
+    <string name="voice_input_recognized">Felismert:</string>
+    <string name="content_desc_voice_input_listening">Hangbevitelre hallgat</string>
+    <string name="content_desc_voice_input_available">Hangbevitel elérhető</string>
+    <string name="voice_input_permission_title">Mikrofon-engedély szükséges</string>
+    <string name="voice_input_permission_message">A hangbevitelhez mikrofon-hozzáférés szükséges. A rendszer beállításaiban engedélyezhető.</string>
+    <string name="voice_input_listening">Hallgat…</string>
+    <string name="voice_input_error">Hangbeviteli hiba</string>
+    <string name="voice_input_tap_to_speak">Koppintson a beszédhez</string>
+    <string name="voice_input_did_you_say">Ezt mondta: „%1$s"?</string>
+    <string name="voice_input_confirm">Megerősítés</string>
+    <string name="voice_input_retry">Próbálja újra</string>
+    <string name="voice_input_cancel">Mégse</string>
+    <string name="voice_input_button">Hangbevitel</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">A hangbevitel nem érhető el ezen az eszközön</string>
+    <string name="voice_input_error_audio">Hangrögzítési hiba. Ellenőrizze a mikrofont.</string>
+    <string name="voice_input_error_network">Hálózati hiba. Ellenőrizze a kapcsolatot.</string>
+    <string name="voice_input_error_network_timeout">Hálózati időtúllépés. Próbálja újra.</string>
+    <string name="voice_input_error_no_match">Nem észlelt beszédet. Kérjük, próbálja újra.</string>
+    <string name="voice_input_error_recognizer_busy">A hangbevitel foglalt. Kérjük, várjon.</string>
+    <string name="voice_input_error_server">Szerveroldali hiba. Próbálja újra később.</string>
+    <string name="voice_input_error_speech_timeout">Nem hallott semmit. Kérjük, hangosabban beszéljen.</string>
+    <string name="voice_input_error_insufficient_permissions">Mikrofon-engedély megtagadva.</string>
+    <string name="voice_input_error_generic">Hangbeviteli hiba. Kérjük, próbálja újra.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <string name="action_back">Vissza</string>
+    <string name="action_close">Bezárás</string>
+    <string name="action_cancel">Mégse</string>
+    <string name="action_ok">OK</string>
+    <string name="action_set">Beállítás</string>
+    <string name="action_change">Módosítás</string>
+    <string name="action_delete">Törlés</string>
+    <string name="action_reset">Visszaállítás</string>
+    <string name="action_retry">Újrapróbálás</string>
+    <string name="action_try_again">Próbálja újra</string>
+    <string name="action_refresh">Frissítés</string>
+    <string name="action_download_now">Letöltés most</string>
+    <string name="action_retry_setup">Beállítás újrapróbálása</string>
+    <string name="action_retry_download">Letöltés újrapróbálása</string>
+    <string name="action_restart_setup">Beállítás újraindítása</string>
+    <string name="action_manage_storage">Tárterület kezelése</string>
+    <string name="action_check_wifi_settings">Először ellenőrizze a Wi-Fi beállításokat</string>
+    <string name="action_check_wifi_settings_short">Wi-Fi beállítások ellenőrzése</string>
+    <string name="action_grant_permission">Engedély megadása</string>
+    <string name="action_grant_camera_access">Kamera-hozzáférés megadása</string>
+    <string name="action_return_to_browser">Visszatérés a böngészőhöz</string>
+    <string name="action_show_debug_info">Hibakeresési adatok megjelenítése</string>
+    <string name="action_reset_redownload">Visszaállítás és újra letöltés</string>
+    <string name="action_end_session">Munkamenet befejezése</string>
+    <string name="action_expand">Kinyitás</string>
+    <string name="action_collapse">Összecsukás</string>
+    <string name="accessibility_state_expanded">Kinyitva</string>
+    <string name="accessibility_state_collapsed">Összecsukva</string>
+    <string name="accessibility_state_checked">Bejelölve</string>
+    <string name="accessibility_state_unchecked">Nincs bejelölve</string>
+    <string name="accessibility_state_selected">Kiválasztva</string>
+    <string name="accessibility_state_not_selected">Nincs kiválasztva</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <string name="error_generic">Hiba történt</string>
+    <string name="error_camera_permission">Kamera-engedély szükséges a QR (Quick Response) beolvasáshoz</string>
+    <string name="error_camera_access_needed">Kamera-hozzáférés szükséges</string>
+    <string name="error_camera_permission_description">Adjon kamera-engedélyt a QR kódok beolvasásához, vagy engedélyezze a kézi bevitelt az akadálymentesítési beállításokban.</string>
+    <string name="error_camera_permission_required">A QR kódok beolvasásához kamera-engedély szükséges</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">QR kód keresése...</string>
+    <string name="qr_scanner_camera_required">Kamera-engedély szükséges</string>
+    <string name="qr_scanner_camera_preview">Kamera előnézete QR kódok beolvasásához</string>
+    <string name="qr_scanner_status_scanning">QR kód keresése</string>
+    <string name="qr_scanner_requesting_permission">Kamera-engedély kérése</string>
+    <string name="error_camera_start_failed">A kamera indítása sikertelen: %s</string>
+    <string name="error_camera_init_failed">A kamera inicializálása sikertelen: %s</string>
+    <string name="error_biometric_not_available">Biometrikus hitelesítés nem érhető el</string>
+    <string name="error_network">Hálózati hiba történt</string>
+    <string name="error_no_credential">Nincs elérhető hitelesítő adat. Kérjük, először szerezzen be egyet.</string>
+    <string name="credential_picker_title">Hitelesítő adat kiválasztása</string>
+    <string name="credential_picker_description">Több hitelesítő adata is van, amelyek felhasználhatók az ellenőrzéshez. Kérjük, válasszon egyet.</string>
+    <string name="credential_picker_expired_label">Lejárt</string>
+    <string name="credential_picker_accessibility_select">Hitelesítő adat kiválasztása: %1$s</string>
+    <string name="error_failed_to_process_challenge">A kihívás feldolgozása sikertelen</string>
+    <string name="error_failed_to_create_proof">A bizonyíték létrehozása sikertelen</string>
+    <string name="error_verification_failed">Az ellenőrzés sikertelen</string>
+    <string name="error_occurred_during_verification">Hiba történt az ellenőrzés során</string>
+    <string name="error_connection_timeout">A kapcsolat időtúllépett. Kérjük, próbálja újra.</string>
+    <string name="error_unable_to_connect">Nem sikerült csatlakozni. Kérjük, ellenőrizze az internetkapcsolatát.</string>
+    <string name="error_secure_connection_failed">A biztonságos kapcsolat sikertelen. Kérjük, próbálja újra.</string>
+    <string name="error_security_verification_failed">A biztonsági ellenőrzés sikertelen. Kérjük, próbálja újra.</string>
+    <string name="error_invalid_input">Érvénytelen bevitel. Kérjük, ellenőrizze adatait és próbálja újra.</string>
+    <string name="error_operation_in_progress">Egy másik művelet folyamatban van. Kérjük, várjon.</string>
+    <string name="error_operation_cancelled">A műveletet megszakítottuk.</string>
+    <string name="error_age_requirement_not_met">Az életkori követelmény nem teljesül ehhez a hitelesítő adathoz.</string>
+    <string name="error_biometric_required">A folytatáshoz biometrikus hitelesítés szükséges.</string>
+    <string name="error_wallet_not_initialized">A tárca nincs inicializálva. Kérjük, indítsa újra az alkalmazást.</string>
+    <string name="error_security">Biztonsági hiba. Kérjük, próbálja újra.</string>
+    <string name="error_connection_timeout_short">Kapcsolati időtúllépés. Kérjük, próbálja újra.</string>
+    <string name="error_invalid_input_provided">Érvénytelen bevitel.</string>
+    <string name="error_invalid_data_format">Érvénytelen adatformátum. Kérjük, próbálja újra.</string>
+    <string name="error_storage">Tárolási hiba. Kérjük, ellenőrizze az eszköz tárhelyét.</string>
+    <string name="error_network_short">Hálózati hiba. Kérjük, ellenőrizze a kapcsolatát.</string>
+    <string name="error_label">Hiba</string>
+    <string name="error_dismiss">Hiba bezárása</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <string name="status_processing">Feldolgozás...</string>
+    <string name="status_initializing_wallet">Tárca inicializálása...</string>
+    <string name="status_loading">Betöltés...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <string name="privacy_protected">Adatvédelem biztosítva</string>
+    <string name="privacy_zk_description">A születési dátuma soha nem kerül megosztásra. Az ellenőrzők csak azt tudják meg, hogy megfelel-e az életkori követelménynek.</string>
+
+    <!-- Privacy Settings Screen -->
+    <string name="privacy_settings_title">Adatvédelmi beállítások</string>
+    <string name="privacy_settings_description">Adatgyűjtés szabályozása és adatok kezelése</string>
+    <string name="privacy_section_data_collection">Adatgyűjtés</string>
+    <string name="privacy_section_your_data">Az Ön adatai</string>
+    <string name="privacy_protection_title">Az Ön adatvédelme biztosítva van</string>
+    <string name="privacy_protection_description">A Provii Wallet zéró tudásbizonyítékokat használ az életkor ellenőrzéséhez anélkül, hogy felfedné a születési dátumát. A hitelesítő adatok csak az eszközén tárolódnak, és soha nem kerülnek megosztásra.</string>
+    <string name="privacy_analytics_title">Analitika</string>
+    <string name="privacy_analytics_description">Segítsen fejleszteni a Provii Wallet-et névtelen használati adatok megosztásával</string>
+    <string name="privacy_analytics_enabled">Analitika engedélyezve</string>
+    <string name="privacy_analytics_disabled">Analitika letiltva</string>
+    <string name="privacy_crash_reporting_title">Összeomlás-jelentés</string>
+    <string name="privacy_crash_reporting_description">Segítsen a hibák javításában összeomlási jelentések automatikus küldésével</string>
+    <string name="privacy_crash_reporting_enabled">Összeomlás-jelentés engedélyezve</string>
+    <string name="privacy_crash_reporting_disabled">Összeomlás-jelentés letiltva</string>
+    <string name="privacy_what_we_collect_title">Milyen adatokat gyűjtünk</string>
+    <string name="privacy_what_we_collect_subtitle">Koppintson az adatkezelési gyakorlatunk megismeréséhez</string>
+    <string name="privacy_data_collection_info_title">Adatgyűjtési tájékoztató</string>
+    <string name="privacy_data_we_collect_header">Mit gyűjtünk (ha engedélyezve van):</string>
+    <string name="privacy_data_we_collect_list">- Névtelen alkalmazás-használati statisztikák\n- Összeomlási és hibajelentések\n- Eszköztípus és operációs rendszer verziója\n- Alkalmazásverzió-adatok</string>
+    <string name="privacy_data_we_dont_collect_header">Mit soha nem gyűjtünk:</string>
+    <string name="privacy_data_we_dont_collect_list">- A születési dátumát\n- A nevét vagy személyes adatait\n- A tartózkodási helyét\n- A hitelesítő adatait\n- Biometrikus adatokat</string>
+    <string name="privacy_data_never_shared_note">A hitelesítő adatait soha nem osztjuk meg a Provii-vel vagy harmadik felekkel. Az eszközén maradnak.</string>
+    <string name="privacy_policy_title">Adatvédelmi irányelvek</string>
+    <string name="privacy_policy_subtitle">Olvassa el a teljes adatvédelmi irányelveinket</string>
+    <string name="privacy_delete_my_data_title">Adataim törlése</string>
+    <string name="privacy_delete_my_data_subtitle">Minden tárolt hitelesítő adat és adat eltávolítása</string>
+    <string name="privacy_delete_data_dialog_title">Törli az összes adatot?</string>
+    <string name="privacy_delete_data_dialog_message">Ez véglegesen törli az összes hitelesítő adatát és alkalmazásadatát erről az eszközről. Új hitelesítő adatra lesz szüksége az alkalmazás újbóli használatához.</string>
+    <string name="privacy_delete_data_dialog_warning">Ez a művelet nem vonható vissza.</string>
+    <string name="privacy_delete_data_confirm">Minden törlése</string>
+    <string name="privacy_footer_note">Ezeket a beállításokat bármikor módosíthatja. A változások azonnal érvénybe lépnek.</string>
+    <string name="dialog_delete_data_announcement">Adattörlési megerősítő párbeszédablak megnyílt</string>
+    <string name="dialog_data_collection_info_announcement">Adatgyűjtési tájékoztató párbeszédablak megnyílt</string>
+    <string name="content_desc_privacy_settings">Adatvédelmi beállítások, adatgyűjtés szabályozása és adatok kezelése</string>
+    <string name="content_desc_data_collection_info">Adatgyűjtési tájékoztató megtekintése</string>
+    <string name="content_desc_privacy_policy">Adatvédelmi irányelvek megtekintése</string>
+    <string name="content_desc_opens_external_link">Böngészőben nyílik meg</string>
+    <string name="content_desc_delete_my_data">Összes adatom törlése</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <string name="content_desc_back">Vissza</string>
+    <string name="content_desc_settings">Beállítások</string>
+    <string name="content_desc_refresh">Frissítés</string>
+    <string name="content_desc_verified">Ellenőrzött</string>
+    <string name="content_desc_expand">Kinyitás</string>
+    <string name="content_desc_collapse">Összecsukás</string>
+    <string name="content_desc_warning_error">Figyelmeztetés: Hiba történt</string>
+    <string name="content_desc_sandbox_indicator">Sandbox mód jelző</string>
+    <string name="content_desc_success">Sikeres</string>
+    <string name="content_desc_warning">Figyelmeztetés</string>
+    <string name="content_desc_information">Tájékoztató</string>
+    <string name="content_desc_error">Hiba</string>
+    <string name="content_desc_sandbox_warning">Sandbox mód figyelmeztetés</string>
+    <string name="content_desc_app_info">Alkalmazás-információ</string>
+    <string name="content_desc_accessibility_settings">Akadálymentesítési beállítások</string>
+    <string name="content_desc_language_settings">Nyelvi beállítások</string>
+    <string name="content_desc_licenses">Nyílt forráskódú licencek</string>
+    <string name="content_desc_select_dob">Születési dátum kiválasztása</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Teszt hitelesítő adat kibocsátása Kibocsátóként</string>
+    <string name="content_desc_get_credential">Hitelesítő adat megszerzése</string>
+    <string name="content_desc_delete_credential">Hitelesítő adat törlése</string>
+    <string name="content_desc_reset_proving_key">Bizonyítókulcs visszaállítása</string>
+    <string name="content_desc_environment_info">Környezeti adatok</string>
+    <string name="content_desc_help_support">Súgó és támogatás</string>
+    <string name="content_desc_privacy_protected">Adatvédelem biztosítva</string>
+    <string name="preview_settings_title">Beállítások előnézete</string>
+
+    <!-- Accessibility Content Descriptions -->
+    <string name="accessibility_verification_success_description">Sikeres</string>
+    <string name="accessibility_verification_error_description">Hiba</string>
+    <string name="accessibility_breadcrumb_location_description">Helyzet: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">majd</string>
+    <string name="accessibility_breadcrumb_current_page_description">Jelenlegi oldal: %s</string>
+    <string name="accessibility_settings_navigate_description">Navigálás</string>
+    <string name="accessibility_credentials_settings_description">Beállítások</string>
+    <string name="accessibility_verification_back_description">Vissza</string>
+    <string name="accessibility_officer_back_description">Vissza</string>
+    <string name="accessibility_discovery_back_description">Vissza</string>
+    <string name="accessibility_discovery_refresh_description">Frissítés</string>
+    <string name="accessibility_discovery_verified_description">Ellenőrzött</string>
+    <string name="accessibility_officer_done_description">Kész</string>
+    <string name="accessibility_officer_attestation_qr_description">Tanúsítási QR kód a felhasználó beolvasásához</string>
+
+    <!-- Skip Links for Keyboard Navigation -->
+    <string name="accessibility_skip_to">Ugrás ide: %s</string>
+    <string name="accessibility_skip_main_content">főtartalom</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Látássérült</string>
+    <string name="accessibility_profile_motor_impaired">Mozgássérült</string>
+    <string name="accessibility_profile_cognitive_support">Kognitív támogatás</string>
+    <string name="accessibility_profile_elderly_support">Idősek támogatása</string>
+    <string name="accessibility_profile_default">Alapértelmezett</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Nincs</string>
+    <string name="color_blind_mode_protanopia">Protanópia</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranópia</string>
+    <string name="color_blind_mode_tritanopia">Tritanópia</string>
+    <string name="color_blind_mode_monochrome">Monokróm</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Standard</string>
+    <string name="contrast_level_high">Magas (AA)</string>
+    <string name="contrast_level_maximum">Maximum (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Teljes szélesség</string>
+    <string name="text_width_comfortable">Kényelmes (80 karakter)</string>
+    <string name="text_width_narrow">Keskeny (60 karakter)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Nincs időtúllépés (AAA)</string>
+    <string name="timeout_behavior_standard">Standard (30s)</string>
+    <string name="timeout_behavior_extended">Kiterjesztett (60s)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Standard</string>
+    <string name="reading_level_standard_description">Hétköznapi szöveg szakszavakkal</string>
+    <string name="reading_level_simplified">Egyszerűsített (7–9. osztály szintje)</string>
+    <string name="reading_level_simplified_description">Egyszerűbb szavak és rövidebb mondatok (AAA megfelelő)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <string name="help_title">Súgó</string>
+    <string name="help_and_support">Súgó és támogatás</string>
+    <string name="help_description">Kérjen segítséget az alkalmazás funkcióival és akadálymentesítésével kapcsolatban</string>
+    <string name="help_center">Súgóközpont</string>
+    <string name="help_center_description">Böngésszen a súgótémák között és ismerje meg az alkalmazás funkcióit</string>
+    <string name="help_search">Keresés a súgóban</string>
+    <string name="help_search_placeholder">Súgótémák keresése...</string>
+    <string name="help_search_active">Keresés aktiválva</string>
+    <string name="help_search_inactive">Keresés deaktiválva</string>
+    <string name="help_no_results">Nem található a keresésnek megfelelő súgótéma</string>
+    <string name="help_topic_not_found">Súgótéma nem található</string>
+    <string name="help_related_topics">Kapcsolódó témák</string>
+    <string name="help_content_heading">Súgó tartalma</string>
+    <string name="help_related_topic_position">%1$s, %2$d. elem a %3$d-ből</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Látás</string>
+    <string name="help_category_typography">Tipográfia</string>
+    <string name="help_category_interaction">Interakció</string>
+    <string name="help_category_cognitive">Kognitív támogatás</string>
+    <string name="help_category_alternative_input">Alternatív bevitel</string>
+    <string name="help_category_features">Funkciók</string>
+
+    <!-- Help Topics -->
+    <string name="help_topic_getting_credential_title">Hitelesítő adat megszerzése</string>
+    <string name="help_topic_getting_credential_summary">Tudja meg, hogyan szerezheti be első életkori ellenőrzési hitelesítő adatát</string>
+    <string name="help_topic_getting_credential_content">Az életkori ellenőrzési hitelesítő adat megszerzéséhez:\n\n1. Látogasson el egy engedélyezett kibocsátó helyszínre\n2. Mutassa be a kormány által kibocsátott azonosítóját\n3. Olvassa be a kapott QR kódot\n4. A hitelesítő adatát biztonságosan menti a rendszer\n\nA születési dátuma helyileg tárolódik és soha nem kerül megosztásra.</string>
+
+    <string name="help_topic_verifying_age_title">Életkor ellenőrzése</string>
+    <string name="help_topic_verifying_age_summary">Hogyan igazolhatja életkorát személyes adatok megosztása nélkül</string>
+    <string name="help_topic_verifying_age_content">Amikor igazolnia kell az életkorát:\n\n1. Az ellenőrző megmutat Önnek egy QR kódot\n2. Olvassa be az alkalmazással\n3. Az alkalmazás matematikai bizonyítékot hoz létre\n4. Csak az igen/nem válasz kerül megosztásra\n\nA tényleges születési dátuma SOHA nem kerül kiadásra.</string>
+
+    <string name="help_topic_accessibility_title">Akadálymentesítési funkciók</string>
+    <string name="help_topic_accessibility_summary">Személyre szabhatja az alkalmazást saját igényei szerint</string>
+    <string name="help_topic_accessibility_content">Az alkalmazás számos akadálymentesítési funkciót tartalmaz:\n\n- Nagy szöveg és nagy kontrasztú módok\n- Hangbevitel és képernyőolvasó támogatás\n- Egyszerűsített kézmozdulatok és UI\n- Kézi kódbeviteli lehetőségek\n- Meghosszabbított időtúllépések\n\nEzek a Beállítások > Akadálymentesítés menüpontban érhetők el</string>
+
+    <string name="help_topic_privacy_security_title">Adatvédelem és biztonság</string>
+    <string name="help_topic_privacy_security_summary">Hogyan védjük az adatait</string>
+    <string name="help_topic_privacy_security_content">Az adatvédelme a legfőbb prioritásunk:\n\n- A hitelesítő adatok helyileg tárolódnak az eszközén\n- A zéró tudásbizonyítékok védik az adatait\n- Nincs nyomon követés vagy analitika\n- Biometrikus hitelesítés elérhető\n- Az adatok titkosítatlanul soha nem hagyják el az eszközét</string>
+
+    <string name="help_topic_troubleshooting_title">Hibaelhárítás</string>
+    <string name="help_topic_troubleshooting_summary">Gyakori problémák és megoldások</string>
+    <string name="help_topic_troubleshooting_content">Gyakori problémák és megoldások:\n\nA QR-beolvasó nem működik:\n- Ellenőrizze a kamera-engedélyeket a Beállításokban\n- Próbálja a kézi kódbevitel lehetőséget\n\nA hitelesítő adat nem töltődik be:\n- Ellenőrizze az internetkapcsolatát\n- Próbálja visszaállítani a bizonyítókulcsot\n\nAz ellenőrzés sikertelen:\n- Győződjön meg, hogy a hitelesítő adat nem járt le\n- Lépjen kapcsolatba az ellenőrzővel a támogatásért</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <string name="date_label">SZÜLETÉSI DÁTUM</string>
+    <string name="date_of_birth">Születési dátum</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <string name="format_age_years">%d év</string>
+    <string name="format_step_indicator">%1$d. lépés / %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <string name="tab_credentials">Hitelesítő adatok</string>
+    <string name="tab_settings">Beállítások</string>
+    <string name="tab_help">Súgó</string>
+    <string name="tab_credentials_description">Hitelesítő adatok megtekintése</string>
+    <string name="tab_settings_description">Alkalmazás beállításai</string>
+    <string name="tab_help_description">Súgó és támogatás</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <string name="search_title">Keresés</string>
+    <string name="search_field_label">Keresőmező</string>
+    <string name="search_placeholder">Beállítások, súgó és funkciók keresése</string>
+    <string name="search_clear">Keresés törlése</string>
+    <string name="search_popular">Népszerű keresések</string>
+    <string name="search_results_heading">Keresési eredmények</string>
+    <string name="search_no_results">Nem található eredmény</string>
+    <string name="search_try_suggestions">Próbálja meg keresni:\n• Akadálymentesítés\n• Beállítások\n• Súgó\n• Nyelv</string>
+    <string name="search_results_announcement_singular">1 eredmény található</string>
+    <string name="search_results_announcement_plural">%d eredmény található</string>
+    <string name="search_no_results_announcement">Nem található eredmény</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <string name="help_quick_access">Gyors elérés</string>
+    <string name="help_topics">Súgótémák</string>
+    <string name="help_glossary">Szójegyzék</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <string name="licenses_title">Nyílt forráskódú licencek</string>
+    <string name="licenses_description">Ez az alkalmazás az alábbi nyílt forráskódú szoftvereket használja. Hálásak vagyunk a fejlesztőknek, akik ezeket a könyvtárakat létrehozták.</string>
+    <string name="licenses_tap_to_view">Koppintson a teljes licenc megtekintéséhez</string>
+    <string name="licenses_group_header">%1$s (%2$d könyvtár)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <string name="error_no_internet">Nincs internetkapcsolat. Kérjük, ellenőrizze a hálózatát és próbálja újra.</string>
+    <string name="error_unexpected">Váratlan hiba történt. Kérjük, indítsa újra az alkalmazást.</string>
+    <string name="error_unexpected_try_again">Váratlan hiba történt. Kérjük, próbálja újra.</string>
+    <string name="error_storage_detailed">Tárolási hiba: %s</string>
+    <string name="error_network_detailed">Hálózati hiba: %s</string>
+    <string name="error_proof_generation_failed">A bizonyíték generálása sikertelen: %s</string>
+    <string name="error_not_eligible">Nem jogosult. Nem felel meg az ellenőrzés követelményeinek.</string>
+    <string name="error_challenge_expired">A kihívás lejárt vagy nem található. Kérjük, kérjen újat.</string>
+    <string name="error_challenge_expired_scan_new">Ez a kihívás lejárt. Kérjük, olvasson be egy új QR kódot.</string>
+    <string name="error_request_out_of_order">A kérés sorrendből kikerült. Kérjük, próbálja újra.</string>
+    <string name="error_too_many_requests">Túl sok kérés. Kérjük, várjon egy kicsit és próbálja újra.</string>
+    <string name="error_server">Szerverhiba. Kérjük, próbálja újra később.</string>
+    <string name="error_request_failed">A kérés sikertelen (%d). Kérjük, próbálja újra.</string>
+    <string name="error_not_eligible_short">Nem jogosult erre az ellenőrzésre</string>
+    <string name="error_challenge_not_found">A kihívás nem található</string>
+    <string name="error_complete_steps_in_order">Kérjük, sorrendben hajtsa végre a lépéseket</string>
+    <string name="error_challenge_expired_short">A kihívás lejárt</string>
+    <string name="error_authentication_cancelled">A hitelesítés megszakítva. Kérjük, igazolja személyazonosságát az életkori ellenőrzés befejezéséhez.</string>
+    <string name="error_invalid_data_format_short">Érvénytelen adatformátum. Kérjük, próbálja újra.</string>
+    <string name="error_storage_check_device">Tárolási hiba. Kérjük, ellenőrizze az eszköz tárhelyét.</string>
+    <string name="error_network_check_connection">Hálózati hiba. Kérjük, ellenőrizze a kapcsolatát.</string>
+    <string name="error_proof_generation_failed_short">A bizonyíték generálása sikertelen. Kérjük, próbálja újra.</string>
+    <string name="error_operation_in_progress_short">Egy másik művelet folyamatban van.</string>
+    <string name="error_no_internet_short">Nincs internetkapcsolat. Kérjük, ellenőrizze a hálózatát.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <string name="verification_scan_title">Ellenőrzési QR beolvasása</string>
+    <string name="verification_verifying_title">Életkor ellenőrzése</string>
+    <string name="verification_success_title">Életkor igazolva</string>
+    <string name="verification_failed_title">Az ellenőrzés sikertelen</string>
+    <string name="verification_processing_wait">Ez néhány másodpercet vehet igénybe</string>
+    <string name="verification_success_message">Az életkorát privát módon igazoltuk</string>
+    <string name="verification_return_to_site">Most visszatérhet az oldalra a folytatáshoz.</string>
+    <string name="verification_please_enter_code">Kérjük, adjon meg egy ellenőrzési kódot. A kódnak 12 jegyű rövid kódnak vagy az ellenőrzőtől kapott teljes ellenőrzési URL-nek kell lennie.</string>
+    <string name="verification_error_occurred">Hiba történt az ellenőrzés során</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <string name="credential_list_processing">Feldolgozás...</string>
+    <string name="credential_list_verify_age_button">Életkor igazolása</string>
+    <string name="credential_list_generate_in_person_description">Hitelesítő adat generálása személyesen</string>
+    <string name="credential_list_scan_qr_title">QR kód beolvasása</string>
+    <string name="credential_list_find_locations_title">Helyszínek keresése</string>
+    <string name="credential_section_my_credential">Saját hitelesítő adatom</string>
+    <string name="credential_section_managed">Kezelt hitelesítő adatok</string>
+    <string name="credential_list_get_credential_button">Hitelesítő adat igénylése</string>
+    <string name="credential_list_add_managed_button">Kezelt hitelesítő adat hozzáadása</string>
+    <string name="credential_section_managed_empty">Adjon hozzá egy hitelesítő adatot valakinek, akiről gondoskodik, például egy gyermeknek.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Hitelesítő adat részletei</string>
+    <string name="credential_detail_not_found">A hitelesítő adat nem található</string>
+    <string name="credential_detail_nickname">Becenév</string>
+    <string name="credential_detail_no_nickname">Nincs becenév megadva</string>
+    <string name="credential_detail_edit_nickname">Becenév szerkesztése</string>
+    <string name="credential_detail_status">Állapot</string>
+    <string name="credential_detail_delete">Hitelesítő adat törlése</string>
+    <string name="credential_detail_delete_title">Hitelesítő adat törlése</string>
+    <string name="credential_detail_delete_message">Biztosan törölni szeretné ezt a hitelesítő adatot? Ez a művelet nem vonható vissza.</string>
+    <string name="credential_type_primary">Elsődleges</string>
+    <string name="credential_type_managed">Kezelt</string>
+    <string name="credential_status_valid">Érvényes</string>
+    <string name="credential_status_expired">Lejárt</string>
+    <string name="credential_status_invalid">Érvénytelen</string>
+    <string name="action_save">Mentés</string>
+    <string name="credential_slots_full_title">Elérte a maximális hitelesítő adat számot</string>
+    <string name="credential_slots_full_message">Elérte a maximálisan tárolható hitelesítő adatok számát. Töröljön egy meglévőt, hogy újat adhasson hozzá.</string>
+    <string name="accessibility_managed_credential">Kezelt hitelesítő adat</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">Ellenőrzi %1$s életkorát?</string>
+    <string name="managed_confirm_message">Ön %1$s kezelt hitelesítő adatát fogja most felhasználni az életkor igazolásához.</string>
+    <string name="managed_confirm_proceed">Ellenőrzés %1$s nevében</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Bizonyíték létrehozása %1$s számára</string>
+    <string name="verification_age_verified_for">%1$s életkora igazolva</string>
+    <string name="deeplink_verification_age_verified_for">%1$s életkora igazolva</string>
+    <string name="attestation_managed_credential_received">%1$s hitelesítő adatát megkapta!</string>
+    <string name="attestation_managed_credential_stored">Gyermeke hitelesítő adatát biztonságosan tároltuk.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">Törli %1$s hitelesítő adatát?</string>
+    <string name="credential_detail_delete_managed_message">Biztosan törölni szeretné %1$s kezelt hitelesítő adatát? Ez a művelet nem vonható vissza. Egy kibocsátónál kell majd újat igényelni.</string>
+    <string name="credential_detail_save_error">A becenév mentése sikertelen</string>
+    <string name="credential_detail_delete_error">A hitelesítő adat törlése sikertelen</string>
+    <string name="accessibility_saving">Mentés...</string>
+    <string name="accessibility_deleting">Törlés...</string>
+    <string name="accessibility_loading">Betöltés, kérjük várjon</string>
+    <string name="accessibility_issuing_credential">Hitelesítő adat kibocsátása, kérjük várjon</string>
+    <string name="dialog_delete_all_credentials_title">Törli az összes hitelesítő adatot?</string>
+    <string name="dialog_delete_all_credentials_message">Ez törli a hitelesítő adatát és a gyermekek kezelt hitelesítő adatait. Ez a művelet nem vonható vissza.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">Kezelt</string>
+    <string name="credential_slots_count">%1$d / 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <string name="deeplink_verification_preparing">Ellenőrzés előkészítése...</string>
+    <string name="deeplink_verification_checking_credential">Hitelesítő adat ellenőrzése...</string>
+    <string name="deeplink_verification_processing_challenge">Kihívás feldolgozása...</string>
+    <string name="deeplink_verification_creating_proof">Biztonságos bizonyíték létrehozása...</string>
+    <string name="deeplink_verification_submitting_proof">Bizonyíték elküldése...</string>
+    <string name="deeplink_verification_success">✔ Életkor sikeresen igazolva</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">Nem található hitelesítő adat. Kérjük, először állítsa be a hitelesítő adatát.</string>
+    <string name="deeplink_verification_error_failed_challenge">Az ellenőrzési kihívás feldolgozása sikertelen</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Nem sikerült megjeleníteni a hitelesítési kérést</string>
+    <string name="deeplink_verification_error_failed_proof">Az életkori bizonyíték létrehozása sikertelen</string>
+    <string name="deeplink_verification_error_verification_failed">Az ellenőrzés sikertelen</string>
+    <string name="deeplink_verification_error_unexpected">Váratlan hiba történt</string>
+    <string name="deeplink_verification_error_no_credential_selected">Nem választott hitelesítő adatot. Kérjük, próbálja újra.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Hitelesítő adat kiválasztása</string>
+    <string name="deeplink_verification_select_credential_subtitle">Több hitelesítő adat is elérhető. Válassza ki, melyiket kívánja használni ehhez az ellenőrzéshez.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Életkor ellenőrzése</string>
+    <string name="deeplink_verification_title_verified">Ellenőrzött</string>
+    <string name="deeplink_verification_title_failed">Az ellenőrzés sikertelen</string>
+    <string name="deeplink_verification_please_wait">Kérjük, várjon...</string>
+    <string name="deeplink_verification_age_verified">Életkor igazolva!</string>
+    <string name="deeplink_verification_under_age_verified">Igazolva: %1$d év alatti</string>
+    <string name="deeplink_verification_returning_browser">Visszatérés a böngészőhöz...</string>
+    <string name="deeplink_verification_return_to_browser">Visszatérés a böngészőhöz</string>
+    <string name="deeplink_verification_failed_title">Az ellenőrzés sikertelen</string>
+    <string name="deeplink_verification_error_occurred">Hiba történt az ellenőrzés során</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <string name="officer_issuance_process_title">KIBOCSÁTÁSI FOLYAMAT</string>
+    <string name="officer_issuance_process_steps">1. Ellenőrizze a felhasználó fizikai azonosítási okmányát\n2. Adja meg a születési dátumát\n3. Ellenőrizze, hogy az adatok pontosan egyeznek\n4. Bocsássa ki a hitelesítő adatot tanúsítási QR (Quick Response) kóddal\n5. A felhasználó beolvassa a QR kódot a hitelesítő adat megkapásához</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">A QR kód generálása sikertelen</string>
+    <string name="officer_attestation_ready_title">Tanúsítás kész</string>
+    <string name="officer_attestation_scan_instruction">A felhasználónak be kell olvasnia ezt a QR kódot a Provii Wallet alkalmazásával</string>
+    <string name="officer_attestation_deeplink_label">TANÚSÍTÁSI HIVATKOZÁS</string>
+    <string name="officer_wait_for_attestation_scan">Várjon, amíg a felhasználó beolvassa</string>
+    <string name="officer_attestation_info">A hitelesítő adat az eszközükön kerül generálásra</string>
+    <string name="officer_attestation_complete">Tanúsítás kész</string>
+    <string name="officer_user_will_complete_credential">A felhasználó az eszközén fejezi be a hitelesítő adat generálását</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <string name="attestation_decoding">Tanúsítási adatok dekódolása...</string>
+    <string name="attestation_generating_randomness">Biztonságos véletlenszerűség generálása...</string>
+    <string name="attestation_sending">Küldés a kibocsátónak...</string>
+    <string name="attestation_verifying">Kriptográfiai elkötelezés ellenőrzése...</string>
+    <string name="attestation_storing">Hitelesítő adat tárolása...</string>
+    <string name="attestation_complete">Hitelesítő adat kész!</string>
+    <string name="attestation_error_invalid_data">Érvénytelen tanúsítási adatok</string>
+    <string name="attestation_error_expired">A tanúsítás lejárt</string>
+    <string name="attestation_error_network">Hálózati hiba – kérjük, ellenőrizze a kapcsolatát</string>
+    <string name="attestation_error_unexpected">Váratlan hiba történt</string>
+    <string name="attestation_title_processing">Tanúsítás feldolgozása</string>
+    <string name="attestation_title_success">Hitelesítő adat megérkezett</string>
+    <string name="attestation_title_failed">Kibocsátás sikertelen</string>
+    <string name="attestation_secure_issuance">Biztonságos kibocsátás</string>
+    <string name="attestation_privacy_preserving">Adatvédelmet megőrző hitelesítő adat kibocsátás</string>
+    <string name="attestation_may_take_seconds">Ez néhány másodpercet vehet igénybe</string>
+    <string name="attestation_keep_app_open">Kérjük, tartsa nyitva az alkalmazást</string>
+    <string name="attestation_credential_received">Hitelesítő adat megérkezett!</string>
+    <string name="attestation_credential_stored_description">Az életkori ellenőrzési hitelesítő adatát biztonságosan tároltuk</string>
+    <string name="attestation_issuer_verified">Kibocsátó ellenőrizve</string>
+    <string name="attestation_failed_title">Kibocsátás sikertelen</string>
+    <string name="attestation_scan_qr_instead">QR kód beolvasása helyette</string>
+    <string name="attestation_go_back">Vissza</string>
+    <string name="attestation_step_decode">Dekódolás</string>
+    <string name="attestation_step_generate">Generálás</string>
+    <string name="attestation_step_send">Küldés</string>
+    <string name="attestation_step_verify">Ellenőrzés</string>
+    <string name="attestation_step_store">Tárolás</string>
+    <string name="attestation_step_complete">Kész</string>
+    <string name="accessibility_attestation_encrypted_description">Titkosított tanúsítás feldolgozása folyamatban</string>
+    <string name="accessibility_attestation_success_description">Sikeres pipa jelzi, hogy a hitelesítő adat megérkezett</string>
+    <string name="accessibility_attestation_error_description">Hibaikon jelzi, hogy a kibocsátás sikertelen</string>
+    <string name="accessibility_step_complete">%1$s. lépés kész</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Hitelesítő adat címzettje</string>
+    <string name="attestation_recipient_prompt">Ez a hitelesítő adat a következőnek szól\u2026</string>
+    <string name="attestation_recipient_me">Nekem</string>
+    <string name="attestation_recipient_child">Egy gyermeknek</string>
+    <string name="attestation_nickname_title">Gyermek beceneve</string>
+    <string name="attestation_nickname_prompt">Adjon meg egy becenevet, hogy megkülönböztesse a hitelesítő adatokat</string>
+    <string name="attestation_nickname_placeholder">pl. Alex</string>
+    <string name="attestation_nickname_continue">Folytatás</string>
+    <string name="attestation_nickname_back">Vissza</string>
+    <string name="accessibility_attestation_recipient_heading">Válassza ki, kinek szól ez a hitelesítő adat</string>
+    <string name="accessibility_attestation_nickname_heading">Adjon meg egy becenevet a gyermeknek</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Érvénytelen tisztviselői ID formátum</string>
+    <string name="officer_auth_error_challenge_failed">Nem sikerült YubiKey kihívást lekérni: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Érintse meg a YubiKey-t a hitelesítéshez</string>
+    <string name="officer_auth_error_touch_timeout">A YubiKey érintési ideje lejárt</string>
+    <string name="officer_auth_error_verify_document_dob">Kérjük, ellenőrizze, hogy az okmány és a születési dátum egyezik-e</string>
+    <string name="officer_auth_error_invalid_date_format">Érvénytelen dátumformátum. Használja az ÉÉÉÉ-HH-NN formátumot</string>
+    <string name="officer_auth_error_must_be_18">A felhasználónak 18 évesnek vagy annál idősebbnek kell lennie</string>
+    <string name="officer_auth_error_not_authenticated">Nincs hitelesítve. Kérjük, először adja meg a tisztviselői azonosítóját.</string>
+    <string name="officer_auth_error_issue_failed">A hitelesítő adat kibocsátása sikertelen</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <string name="gesture_desc_tap_to_view">Koppintson a megtekintéshez</string>
+    <string name="gesture_desc_long_press_options">, hosszan nyomja meg a lehetőségekért</string>
+    <string name="gesture_desc_swipe_left">, húzzon balra a további műveletekért</string>
+    <string name="gesture_desc_swipe_right">, húzzon jobbra a további műveletekért</string>
+    <string name="gesture_desc_tap_to_activate">Koppintson az aktiváláshoz</string>
+    <string name="gesture_desc_long_press_format">. Hosszú nyomás: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <string name="main_activity_retry">Újrapróbálás</string>
+    <string name="main_activity_reset_redownload">Visszaállítás és újra letöltés</string>
+    <string name="main_activity_show_debug_info">Hibakeresési adatok megjelenítése</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <string name="search_item_accessibility_settings_title">Akadálymentesítési beállítások</string>
+    <string name="search_item_accessibility_settings_subtitle">Személyre szabhatja az élményt</string>
+    <string name="search_item_large_text_title">Nagy szöveg</string>
+    <string name="search_item_large_text_subtitle">Szövegméret növelése</string>
+    <string name="search_item_high_contrast_title">Nagy kontraszt</string>
+    <string name="search_item_high_contrast_subtitle">Láthatóság javítása</string>
+    <string name="search_item_voice_input_title">Hangbevitel</string>
+    <string name="search_item_voice_input_subtitle">Hangos vezérlés</string>
+    <string name="search_item_manual_code_entry_title">Kézi kódbevitel</string>
+    <string name="search_item_manual_code_entry_subtitle">Kódok begépelése beolvasás helyett</string>
+    <string name="search_item_simplified_ui_title">Egyszerűsített felhasználói felület</string>
+    <string name="search_item_simplified_ui_subtitle">Vizuális összetettség csökkentése</string>
+    <string name="search_item_color_blindness_title">Színvakság-támogatás</string>
+    <string name="search_item_color_blindness_subtitle">Színek beállítása a jobb láthatóságért</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Beállítások</string>
+    <string name="search_item_settings_subtitle">Alkalmazáskonfiguráció</string>
+    <string name="search_item_language_title">Nyelv</string>
+    <string name="search_item_language_subtitle">Alkalmazás nyelvének módosítása</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Saját hitelesítő adataim</string>
+    <string name="search_item_credentials_subtitle">Hitelesítő adatok megtekintése</string>
+    <string name="search_item_get_credential_title">Hitelesítő adat igénylése</string>
+    <string name="search_item_get_credential_subtitle">Kibocsátók keresése</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Súgó</string>
+    <string name="search_item_help_subtitle">Segítség kérése</string>
+    <string name="search_item_privacy_title">Adatvédelem</string>
+    <string name="search_item_privacy_subtitle">Hogyan védjük az adatait</string>
+    <string name="search_item_verification_title">Életkori ellenőrzés</string>
+    <string name="search_item_verification_subtitle">Igazolja az életkorát</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <string name="issuer_fallback_sandbox_description">Hardcoded tartalék regiszter Sandbox környezethez</string>
+    <string name="issuer_fallback_production_description">Hardcoded tartalék regiszter éles környezethez</string>
+    <string name="issuer_fallback_category_government">Kormányzati</string>
+    <string name="issuer_fallback_category_government_description">Kormány által kibocsátott hitelesítő adatok</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii Sandbox kibocsátó</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Hivatalos Provii sandbox kibocsátó teszteléshez</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Látogassa meg a sandbox kibocsátói portált</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Hivatalos Provii hitelesítő adat kibocsátó</string>
+    <string name="issuer_fallback_production_issuer_instructions">Látogassa meg a helyi DMV irodát</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <string name="validation_error_birth_date_future">A születési dátum nem lehet a jövőben</string>
+    <string name="validation_error_invalid_date_format">Érvénytelen dátumformátum</string>
+    <string name="validation_error_officer_id_too_short">A tisztviselői azonosító túl rövid</string>
+    <string name="validation_error_invalid_officer_id_format">Érvénytelen tisztviselői azonosító formátum</string>
+    <string name="validation_error_empty_qr_code">Üres QR kód</string>
+    <string name="validation_error_qr_code_too_large">A QR kód túl nagy</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <string name="sandbox_toast_developer_mode">Ön most fejlesztő lett!</string>
+    <string name="sandbox_toast_enabled">Sandbox mód engedélyezve\nTesztkörnyezet használatban</string>
+    <string name="sandbox_toast_disabled">Éles mód engedélyezve\nÉles környezet használatban</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">Csak 1 lépésre van a fejlesztői módtól</string>
+    <string name="sandbox_toast_steps_away">%1$d lépésre van a fejlesztői módtól</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <string name="yubikey_error_no_key_connected">Nincs YubiKey csatlakoztatva</string>
+    <string name="yubikey_error_timeout">Időtúllépés a YubiKey érintésére várva. Kérjük, érintse meg a kulcsot, amikor villog.</string>
+    <string name="yubikey_error_not_supported">A kihívás-válasz nincs beállítva ezen a YubiKey sloten</string>
+    <string name="yubikey_error_no_slot">A 2-es slot nincs konfigurálva HMAC (Hash-based Message Authentication Code) SHA1 kihívás-válaszhoz</string>
+    <string name="yubikey_error_hmac_failed">A HMAC (Hash-based Message Authentication Code) számítás sikertelen: %s</string>
+    <string name="yubikey_error_session_failed">Nem sikerült csatlakozni a YubiKey-hez: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <string name="wallet_error_not_initialized">A tárca nincs inicializálva</string>
+    <string name="wallet_error_proving_key_not_found">A bizonyítókulcs nem található – kérjük, töltse le újra</string>
+    <string name="wallet_error_proving_key_not_readable">A bizonyítókulcs fájlja nem olvasható</string>
+    <string name="wallet_error_out_of_memory">Nincs elég memória – kérjük, indítsa újra az alkalmazást</string>
+    <string name="wallet_error_prover_error">Bizonyítóhiba: %s</string>
+    <string name="wallet_error_ffi_error">FFI hiba: %s</string>
+    <string name="wallet_error_prover_init_failed">A bizonyító inicializálása sikertelen: %s</string>
+    <string name="wallet_error_prover_verification_failed">A bizonyító inicializálásának ellenőrzése sikertelen</string>
+    <string name="wallet_error_verifier_url_update_failed">Az ellenőrzői URL (webcím) frissítése sikertelen! %1$s volt várható, de %2$s érkezett</string>
+    <string name="wallet_error_wallet_still_null">A tárca az inicializálás után is null maradt</string>
+    <string name="wallet_error_credential_not_found">A hitelesítő adat nem található</string>
+    <string name="wallet_error_credential_access_failed">A hitelesítő adathoz nem lehet hozzáférni: %s</string>
+    <string name="wallet_error_invalid_format">Érvénytelen formátum: %s</string>
+    <string name="wallet_error_not_initialized_short">A bizonyító nincs inicializálva</string>
+    <string name="wallet_error_proving_key_unavailable">A bizonyítókulcs nem érhető el. Beállítás szükséges.</string>
+    <string name="wallet_error_storage_init_failed">A tároló inicializálása sikertelen</string>
+    <string name="wallet_error_biometric_unavailable">Biometrikus hitelesítés nem érhető el</string>
+    <string name="wallet_error_auth_failed">A hitelesítés sikertelen</string>
+    <string name="wallet_error_sandbox_disabled">Engedélyezze a Sandbox módot teszt hitelesítő adatok generálásához</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Nem sikerült lekérni a Sandbox hitelesítő adatokat. Kérjük, ellenőrizze az internetkapcsolatát.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <string name="keystore_biometric_prompt_title">Hitelesítés szükséges</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Igazolja személyazonosságát az életkori bizonyíték létrehozásához</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Hozzáférés a biztonságos tárolóhoz</string>
+    <string name="keystore_biometric_prompt_cancel">Mégse</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, kinyitva, teljes licencszöveg megjelenítve</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, összecsukva, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <string name="network_type_none">Nincs</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Mobilhálózat</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Ismeretlen</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <string name="help_topic_contrast_levels_title">Kontraszt szintek</string>
+    <string name="help_topic_extra_large_text_title">Nagyon nagy szöveg</string>
+    <string name="help_topic_reduce_transparency_title">Átlátszóság csökkentése</string>
+    <string name="help_topic_color_blind_modes_title">Színvak módok</string>
+    <string name="help_topic_line_spacing_title">Sorköz</string>
+    <string name="help_topic_paragraph_spacing_title">Bekezdésköz</string>
+    <string name="help_topic_letter_spacing_title">Betűköz</string>
+    <string name="help_topic_text_width_title">Szövegszélesség</string>
+    <string name="help_topic_touch_targets_title">Nagyobb érintési célterületek</string>
+    <string name="help_topic_reduce_motion_title">Mozgás csökkentése</string>
+    <string name="help_topic_timeout_behavior_title">Időtúllépési viselkedés</string>
+    <string name="help_topic_simplified_gestures_title">Egyszerűsített kézmozdulatok</string>
+    <string name="help_topic_haptic_feedback_title">Haptikus visszajelzés</string>
+    <string name="help_topic_data_preservation_title">Adatmegőrzés</string>
+    <string name="help_topic_simplified_ui_title">Egyszerűsített felhasználói felület</string>
+    <string name="help_topic_step_indicators_title">Lépésjelzők</string>
+    <string name="help_topic_verbose_descriptions_title">Részletes leírások</string>
+    <string name="help_topic_confirm_actions_title">Műveletek megerősítése</string>
+    <string name="help_topic_reading_level_title">Egyszerűsített olvasási szint</string>
+    <string name="help_topic_help_system_title">Súgórendszer</string>
+    <string name="help_topic_manual_code_entry_title">Kézi kódbevitel</string>
+    <string name="help_topic_voice_input_title">Hangbevitel</string>
+    <string name="help_topic_screen_reader_title">Képernyőolvasó támogatás</string>
+    <string name="help_topic_accessibility_profiles_title">Gyors beállítási profilok</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <string name="help_topic_contrast_levels_text">Szabályozza a szöveg és a háttér kontrasztarányát:\n\n• Standard: Alapértelmezett alkalmazásszínek\n• Magas (AA): 4,5:1 kontrasztarány\n• Maximum (AAA): 7:1+ kontrasztarány\n\nA nagyobb kontraszt megkönnyíti a szöveg olvasását, különösen erős fényben vagy gyengénlátók számára.\n\nA WCAG AAA megfelelőséghez Maximum kontraszt szükséges.</string>
+    <string name="help_topic_extra_large_text_text">Az összes szöveg méretét 50%-kal növeli az egész alkalmazásban.\n\nEz megkönnyíti a szöveg olvasását a következők számára:\n• Gyengénlátók\n• Korral járó látásváltozásban szenvedők\n• Olvasási nehézséggel küzdők\n\nA rendszer betűméret-beállításával kombinálva a legnagyobb rugalmasságot nyújtja.</string>
+    <string name="help_topic_reduce_transparency_text">Eltávolítja az átlátszó rétegeket és az elmosódási effektusokat.\n\nElőnyök:\n• Tisztább vizuális hierarchia\n• Jobb szövegolvashatóság\n• Kevesebb vizuális zaj\n• Kisebb kognitív terhelés\n\nGyengénlátóknak vagy kognitív nehézségekkel küzdőknek ajánlott.</string>
+    <string name="help_topic_color_blind_modes_text">A különböző típusú színvaksághoz igazítja a színeket:\n\n• Protanópia: Piros-vak\n• Deuteranópia: Zöld-vak\n• Tritanópia: Kék-vak\n• Monokróm: Teljes színvakság\n\nMinden mód gondosan kiválasztott színeket használ, amelyek megkülönböztethetők az adott típusú színlátási hiány esetén.</string>
+    <string name="help_topic_line_spacing_text">A szövegsorok közötti távolságot állítja be (1,0x–2,0x).\n\n• Alapértelmezett: 1,0x\n• AAA megfelelő: 1,5x vagy több\n\nNagyobb sorköz esetén:\n• Jobb olvashatóság\n• Kisebb szemterhelés\n• Segít a diszlexiásoknak\n• Kevésbé túlterhelő szövegblokkok</string>
+    <string name="help_topic_paragraph_spacing_text">A bekezdések közötti távolságot állítja be (1,0x–3,0x).\n\n• Alapértelmezett: 1,0x\n• AAA megfelelő: 2,0x vagy több\n\nNagyobb bekezdésköz esetén:\n• Az ötletek egyértelműbb elkülönítése\n• Jobb vizuális rendezettség\n• Kisebb kognitív terhelés\n• Könnyebb az olvasási pozíció megtartása</string>
+    <string name="help_topic_letter_spacing_text">A betűk közötti távolságot állítja be (0,0em–0,2em).\n\n• Alapértelmezett: 0,0em\n• AAA megfelelő: 0,12em vagy több\n\nNagyobb betűköz esetén:\n• Az egyes betűk jobban elkülönülnek\n• Segít a diszlexiásoknak\n• Jobb olvasási pontosság\n• Csökkenti a betűtévesztéseket</string>
+    <string name="help_topic_text_width_text">A sorhoszszt korlátozza a könnyebb olvasásért:\n\n• Teljes szélesség: Korlátlan\n• Kényelmes: 80 karakter (ajánlott)\n• Keskeny: 60 karakter\n\nKutatások szerint az optimális olvasás 60–80 karakteres soroknál valósul meg. A rövidebb sorok csökkentik a szemmozgást és javítják az értési képességet.</string>
+    <string name="help_topic_touch_targets_text">A minimális érintési célterület méretét 60dp-re növeli (a 44dp-ről).\n\nElőnyök:\n• Könnyebben koppinthatók a gombok és vezérlők\n• Kevesebb véletlen érintés\n• Segít mozgáskorlátozott felhasználóknak\n• Jobb egykezes használat\n\nA WCAG AAA legalább 60dp-t ír elő.</string>
+    <string name="help_topic_reduce_motion_text">Eltávolít minden animációt és átmenetet.\n\nElőnyök:\n• Megakadályozza a mozgásbetegséget\n• Csökkenti a figyelemzavaró tényezőket\n• Kisebb kognitív terhelés\n• Jobb koncentráció\n\nAjánlott a következők számára:\n• Vesztibuláris zavarokkal küzdők\n• Figyelmi nehézségekkel élők\n• Mozgásérzékenyek</string>
+    <string name="help_topic_timeout_behavior_text">Szabályozza az automatikus időtúllépést az ellenőrzési képernyőkön:\n\n• Nincs időtúllépés (AAA): Korlátlan idő\n• Standard: 30 másodperc\n• Kiterjesztett: 60 másodperc\n\nA WCAG AAA megköveteli az időtúllépés nélküli lehetőséget azok számára, akiknek több időre van szükségük a feladatok elvégzéséhez.\n\nAz űrlapadatok automatikusan mentésre kerülnek az időtúllépés előtt.</string>
+    <string name="help_topic_simplified_gestures_text">Az összetett kézmozdulatokat egyszerű alternatívákra cseréli:\n\n• Húzás → Gombra koppintás\n• Hosszú nyomás → Normál érintés megerősítéssel\n• Csípés/nagyítás → Gombok\n\nSegít a következők számára:\n• Mozgáskorlátozott felhasználók\n• Remegéssel élők\n• Korlátozott ügyességűek\n• Érintőképernyős nehézségekkel küzdők</string>
+    <string name="help_topic_haptic_feedback_text">Rezgéses visszajelzést biztosít a műveletekhez.\n\nElőnyök:\n• Megerősíti a gombnyomásokat\n• Jelzi a hibákat\n• Tapintásos visszajelzést ad\n\nLetiltható a következők számára, akiknek:\n• Zavaró a rezgés\n• Érzékszervi érzékenységük van\n• Néma működést preferálnak</string>
+    <string name="help_topic_data_preservation_text">Az időtúllépések előtt automatikusan menti az űrlapadatokat.\n\nFunkciók:\n• Figyelmeztetés 10 másodperccel az időtúllépés előtt\n• Lehetőség az adatok mentésére vagy elvetésére\n• Automatikus visszaállítás visszatéréskor\n• 24 órás adatmegőrzés\n\nBiztosítja, hogy ne vesszenek el adatok, ha több időre van szüksége vagy megszakítás történik.</string>
+    <string name="help_topic_simplified_ui_text">Csökkenti a vizuális összetettséget:\n\n• Egyszerre kevesebb UI elem jelenik meg\n• Nagyobb, áttekinthetőbb gombok\n• Több üres tér\n• Egyszerűsített elrendezések\n\nElőnyök:\n• Könnyebb értelmezhetőség\n• Kevésbé túlterhelő\n• Jobb koncentráció\n• Kisebb kognitív terhelés</string>
+    <string name="help_topic_step_indicators_text">Megjeleníti a haladást a többlépéses folyamatokban.\n\nMegjelenít:\n• Jelenlegi lépés száma\n• Lépések teljes száma\n• Haladás vizualizációja\n\nElőnyök:\n• Csökkenti a szorongást\n• Egyértelmű elvárásokat támaszt\n• Segít a tájékozódásban\n• Megmutatja a befejezési haladást</string>
+    <string name="help_topic_verbose_descriptions_text">Extra kontextust és magyarázatokat nyújt:\n\n• Hosszabb gombfeliratok\n• Részletesebb utasítások\n• További tippek\n• Érthetőbb hibaüzenetek\n\nSegíti a felhasználókat:\n• A műveletek megértésében azok elvégzése előtt\n• Hibák elkerülésében\n• Az alkalmazás funkcióinak megtanulásában\n• Magabiztosság kialakításában</string>
+    <string name="help_topic_confirm_actions_text">Megerősítést kér a fontos műveleteknél:\n\n• Hitelesítő adatok törlése\n• Beállítások módosítása\n• Adatok törlése\n\nA WCAG AAA megköveteli a megerősítést minden romboló műveletnél.\n\nElőnyök:\n• Megakadályozza a véletlenszerű műveleteket\n• Lehetővé teszi az áttekintést a végrehajtás előtt\n• Csökkenti a szorongást\n• Második lehetőséget biztosít</string>
+    <string name="help_topic_reading_level_text">Egyszerűbb nyelvet használ (7–9. osztály szintje):\n\n• Rövidebb mondatok\n• Köznapi szavak a szakzsargon helyett\n• Egyértelmű, közvetlen nyelvezet\n• Kevesebb szakkifejezés\n\nAAA megfelelő, ha engedélyezve van.\n\nElőnyök:\n• Könnyebb értelmezhetőség\n• Gyorsabb megértés\n• Jobb nem anyanyelvi beszélők számára\n• Kisebb kognitív terhelés</string>
+    <string name="help_topic_help_system_text">Kontextusfüggő súgó az egész alkalmazásban elérhető.\n\nFunkciók:\n• 27 súgótéma\n• Kereshető súgóközpont\n• Kapcsolódó témák navigálása\n• Műszaki szójegyzék\n\nSúgó elérése:\n• Beállítási képernyőkről\n• Összetett funkcióknál\n• Hibaüzenetekből\n• Bárhonnan, ahol a súgó ikonra koppint</string>
+    <string name="help_topic_manual_code_entry_text">QR kód adatainak kézi bevitele beolvasás helyett.\n\nElőnyök:\n• Működik, ha a kamera-hozzáférés nem érhető el\n• Segít mozgáskorlátozott felhasználóknak\n• Jobb gyenge megvilágítás esetén\n• Nem szükséges stabilan tartani a telefont\n\nAlternatíva a kameraalapú QR beolvasáshoz.</string>
+    <string name="help_topic_voice_input_text">Hang segítségével adhat be szöveget gépelés helyett.\n\nElőnyök:\n• Kéz nélküli bevitel\n• Gyorsabb a gépelésénél\n• Segít mozgáskorlátozott felhasználóknak\n• Csökkenti az ismétlődő terhelést\n\nAz eszköz beépített hangfelismerőjét használja.</string>
+    <string name="help_topic_screen_reader_text">Teljes TalkBack képernyőolvasó támogatás.\n\nFunkciók:\n• Minden UI elem fel van címkézve\n• Megfelelő fejlécszerkezet\n• Logikus navigációs sorrend\n• Egyéni tippek az összetett műveletekhez\n\nAz alkalmazás automatikusan engedélyezi a következőket:\n• Részletes leírások\n• Megnövelt érintési célterületek\n\nha a TalkBack érzékelve van.</string>
+    <string name="help_topic_accessibility_profiles_text">Előre konfigurált akadálymentesítési profilok:\n\n• Látássérült: Nagy kontraszt, nagy szöveg, haptikus visszajelzés\n• Mozgássérült: Nagy célterületek, kiterjesztett időtúllépések, megerősítések\n• Kognitív: Egyszerűsített UI, lépésjelzők, leírások\n• Idős: Nagy szöveg, célterületek, egyszerűsített UI, csökkentett mozgás\n• Alapértelmezett: Összes beállítás visszaállítása\n\nMinden profil a leghasznosabb beállításokat engedélyezi az adott felhasználói csoport számára. A profil alkalmazása után tovább testre szabhat.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <string name="content_age_verification_title">Életkori ellenőrzés</string>
+    <string name="content_age_verification_explanation">Kérjük, várjon, amíg biztonságosan ellenőrizzük az életkorát zéró tudásbizonyítékok segítségével. A születési dátumát soha nem osztjuk meg az ellenőrzővel.</string>
+    <string name="content_age_verification_instructions">Irányítsa a kameráját az ellenőrzési QR kódra. A kód automatikusan beolvasásra kerül, amikor érzékeli.</string>
+    <string name="content_age_verification_success">Az életkorát sikeresen ellenőriztük. Az ellenőrző tudja, hogy megfelel az életkori követelménynek, de nem ismeri meg a tényleges születési dátumát.</string>
+    <string name="content_age_verification_failed">Az ellenőrzés sikertelen. Kérjük, próbálja újra beolvasni a QR kódot, vagy használja a kézi kódbevitelt.</string>
+    <string name="content_credential_issuance_title">Hitelesítő adat kibocsátása</string>
+    <string name="content_credential_issuance_explanation">Olvassa be az engedélyezett kibocsátó által megadott QR kódot a digitális életkori hitelesítő adat megkapásához.</string>
+    <string name="content_credential_issuance_instructions">Irányítsa a kameráját a tisztviselő által mutatott kibocsátási QR kódra. A hitelesítő adat az eszközén kerül generálásra.</string>
+    <string name="content_credential_issuance_success">Hitelesítő adat sikeresen létrehozva. Most már felhasználhatja ezt a hitelesítő adatot életkori ellenőrzéshez.</string>
+    <string name="content_credential_description">A hitelesítő adat egy kriptográfiailag aláírt személyazonossági bizonyíték, amely lehetővé teszi az adatvédelmet megőrző ellenőrzést.</string>
+    <string name="content_zero_knowledge_explanation">A zéró tudásbizonyítékok lehetővé teszik, hogy igazolja az életkori követelmény teljesítését anélkül, hogy felfedné tényleges életkorát.</string>
+    <string name="content_setup_proving_key">A zéró tudásbizonyíték generálásához szükséges kriptográfiai bizonyítókulcs letöltése</string>
+    <string name="content_processing_challenge">Ellenőrzési kihívás feldolgozása</string>
+    <string name="content_creating_proof">Zéró tudásos életkori bizonyíték létrehozása</string>
+    <string name="content_submitting_proof">Bizonyíték elküldése az ellenőrzőnek</string>
+    <string name="content_error_no_credential">Nincs elérhető hitelesítő adat. Kérjük, először szerezzen be egyet egy engedélyezett kibocsátótól.</string>
+    <string name="content_error_network_failed">A hálózati kapcsolat megszakadt. Kérjük, ellenőrizze az internetkapcsolatát és próbálja újra.</string>
+    <string name="content_error_invalid_qr">Érvénytelen QR kód. Kérjük, győződjön meg, hogy a megfelelő ellenőrzési kódot olvassa be.</string>
+    <string name="content_error_verification_failed">Az ellenőrzés sikertelen. A szerver nem tudta érvényesíteni a bizonyítékát.</string>
+    <string name="content_officer_authentication_title">Tisztviselői hitelesítés</string>
+    <string name="content_officer_issuance_title">Hitelesítő adat kibocsátása</string>
+    <string name="content_officer_dob_prompt">Adja meg a kérelmező ellenőrzött születési dátumát a hivatalos azonosítási okmányból.</string>
+    <string name="content_onboarding_welcome">Üdvözöljük a Provii Wallet-ben – az adatvédelmet megőrző digitális életkori ellenőrzési megoldásban.</string>
+    <string name="content_onboarding_privacy">A születési dátuma biztonságosan tárolódik az eszközén, és soha nem kerül továbbításra az ellenőrzőknek.</string>
+    <string name="content_onboarding_get_started">A kezdéshez látogasson el egy engedélyezett kibocsátóhoz a digitális életkori hitelesítő adat megszerzéséhez.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <string name="content_age_verification_title_simplified">Életkor ellenőrzése</string>
+    <string name="content_age_verification_explanation_simplified">Ellenőrizzük az életkorát. Nem látjuk és nem osztjuk meg a születési napját.</string>
+    <string name="content_age_verification_instructions_simplified">Irányítsa a kameráját a QR kódra. Magától beolvassa.</string>
+    <string name="content_age_verification_success_simplified">Siker! A weboldal tudja, hogy elég idős. Nem tudja a születési napját.</string>
+    <string name="content_age_verification_failed_simplified">Ez nem sikerült. Próbálja újra beolvasni, vagy gépelje be a kódot.</string>
+    <string name="content_credential_issuance_title_simplified">Digitális igazolvány igénylése</string>
+    <string name="content_credential_issuance_explanation_simplified">Olvassa be a kormányhivatali kódot a digitális igazolványa megszerzéséhez.</string>
+    <string name="content_credential_issuance_instructions_simplified">Irányítsa a kameráját a kódra. Az igazolványa elmentődik a telefonján.</string>
+    <string name="content_credential_issuance_success_simplified">Kész! Most már használhatja a digitális igazolványát az életkorának igazolásához.</string>
+    <string name="content_credential_description_simplified">A hitelesítő adat olyan, mint egy digitális igazolvány, amely bizonyítja, ki Ön, anélkül hogy magánjellegű adatokat osztana meg.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Igazolhatja, hogy elég idős, anélkül hogy bárki megtudná a tényleges életkorát.</string>
+    <string name="content_setup_proving_key_simplified">Az alkalmazás működéséhez szükséges biztonsági fájlok letöltése</string>
+    <string name="content_processing_challenge_simplified">Az életkori ellenőrzési kérés beolvasása</string>
+    <string name="content_creating_proof_simplified">Életkori bizonyítéka létrehozása</string>
+    <string name="content_submitting_proof_simplified">Bizonyíték elküldése a weboldalnak</string>
+    <string name="content_error_no_credential_simplified">Még nincs igazolványa. Először látogasson el egy kormányhivatalba egynek a megszerzéséhez.</string>
+    <string name="content_error_network_failed_simplified">Nem sikerült csatlakozni az internethez. Ellenőrizze a Wi-Fi-t vagy a mobiladatot és próbálja újra.</string>
+    <string name="content_error_invalid_qr_simplified">Ez a kód nem tűnik helyesnek. Győződjön meg, hogy a megfelelő kódot olvassa be.</string>
+    <string name="content_error_verification_failed_simplified">Ez nem sikerült. A weboldal nem tudta ellenőrizni a bizonyítékát. Próbálja újra.</string>
+    <string name="content_officer_authentication_title_simplified">Tisztviselői bejelentkezés</string>
+    <string name="content_officer_issuance_title_simplified">Igazolvány létrehozása</string>
+    <string name="content_officer_dob_prompt_simplified">Adja meg a személy születési napját a hivatalos azonosítójából.</string>
+    <string name="content_onboarding_welcome_simplified">Üdvözöljük a Provii Wallet-ben – igazolja életkorát privát módon.</string>
+    <string name="content_onboarding_privacy_simplified">A születési napja a telefonján marad. Senki más nem láthatja.</string>
+    <string name="content_onboarding_get_started_simplified">A kezdéshez látogasson el egy kormányhivatalba a digitális igazolványa megszerzéséhez.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Quick Response (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Személyes azonosítószám (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">Születési dátum (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Azonosító (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">Felhasználói felület (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Egységes erőforrás-azonosító (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Alkalmazásprogramozási felület (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <string name="animation_pause_animations">Animációk szüneteltetése</string>
+    <string name="animation_resume_animations">Animációk folytatása</string>
+    <string name="animation_pause_button_text">Szünet</string>
+    <string name="animation_resume_button_text">Folytatás</string>
+    <string name="animation_toggles_playback_hint">Animáció lejátszásának ki-/bekapcsolása</string>
+    <string name="animation_paused_announcement">Animációk szüneteltetve</string>
+    <string name="animation_resumed_announcement">Animációk folytatva</string>
+    <string name="animation_active_count">%d aktív animáció</string>
+    <string name="animation_loading_default">Betöltés</string>
+    <string name="animation_please_wait">Kérjük, várjon, amíg a művelet befejeződik</string>
+    <string name="animation_percent_complete">%d százalék kész</string>
+    <string name="animation_loading_in_progress">Folyamatban</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <string name="keyboard_shortcuts_title">Billentyűparancsok</string>
+    <string name="keyboard_shortcuts_done">Kész</string>
+    <string name="keyboard_shortcuts_app_section">Alkalmazás billentyűparancsok</string>
+    <string name="keyboard_shortcuts_navigation_section">Navigáció</string>
+    <string name="keyboard_shortcuts_tips_section">Tippek</string>
+    <string name="keyboard_shortcuts_navigation_footer">Ezek a navigációs billentyűk az egész alkalmazásban működnek külső billentyűzetekkel</string>
+    <string name="keyboard_shortcuts_tip_external">A külső Bluetooth és USB billentyűzetek teljes mértékben támogatottak</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Használja a nyílbillentyűket a listaelemek közötti navigáláshoz</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Tartsa lenyomva a Ctrl billentyűt az ezen a képernyőn elérhető billentyűparancsok megtekintéséhez</string>
+    <string name="keyboard_shortcuts_tip_a11y">Az alkalmazás összes funkciója elérhető billentyűzettel</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Billentyűparancsok bezárása</string>
+    <string name="keyboard_shortcut_label_settings">Beállítások</string>
+    <string name="keyboard_shortcut_label_accessibility">Akadálymentesítés</string>
+    <string name="keyboard_shortcut_label_help">Súgóközpont</string>
+    <string name="keyboard_shortcut_label_add_credential">Hitelesítő adat hozzáadása</string>
+    <string name="keyboard_shortcut_label_verify">Ellenőrzés</string>
+    <string name="keyboard_shortcut_label_shortcuts">Parancsikonok</string>
+    <string name="keyboard_shortcut_desc_settings">Beállítások megnyitása</string>
+    <string name="keyboard_shortcut_desc_accessibility">Akadálymentesítési beállítások</string>
+    <string name="keyboard_shortcut_desc_help">Súgóközpont</string>
+    <string name="keyboard_shortcut_desc_add_credential">Hitelesítő adat hozzáadása</string>
+    <string name="keyboard_shortcut_desc_verify">Ellenőrzés indítása</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Billentyűparancsok</string>
+    <string name="keyboard_shortcut_nav_back">Vissza / Bezárás</string>
+    <string name="keyboard_shortcut_nav_back_desc">A jelenlegi képernyő vagy párbeszédablak bezárása</string>
+    <string name="keyboard_shortcut_nav_next">Következő mező</string>
+    <string name="keyboard_shortcut_nav_next_desc">Fókusz áthelyezése a következő interaktív elemre</string>
+    <string name="keyboard_shortcut_nav_prev">Előző mező</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Fókusz áthelyezése az előző interaktív elemre</string>
+    <string name="keyboard_shortcut_nav_submit">Elküldés / Folytatás</string>
+    <string name="keyboard_shortcut_nav_submit_desc">A fókuszált gomb aktiválása vagy az űrlap elküldése</string>
+    <string name="keyboard_shortcut_nav_activate">Gomb aktiválása</string>
+    <string name="keyboard_shortcut_nav_activate_desc">A jelenleg fókuszált gomb vagy kapcsoló aktiválása</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <string name="modal_opened_announcement">Párbeszédablak megnyílt. Nyomja meg az Escape billentyűt a bezáráshoz, az Enter billentyűt a megerősítéshez.</string>
+    <string name="modal_closed_announcement">Párbeszédablak bezárva</string>
+    <string name="modal_button_primary_label">%s (elsődleges művelet)</string>
+    <string name="modal_button_cancel_label">%s (mégse)</string>
+    <string name="modal_button_destructive_label">%s (romboló művelet)</string>
+    <string name="modal_button_primary_hint">Dupla koppintással megerősíthető, vagy nyomja meg az Enter billentyűt</string>
+    <string name="modal_button_cancel_hint">Dupla koppintással megszakítható, vagy nyomja meg az Escape billentyűt</string>
+    <string name="modal_button_destructive_hint">Dupla koppintással hajtható végre a romboló művelet</string>
+    <string name="modal_button_secondary_hint">Dupla koppintással hajtható végre a művelet</string>
+    <string name="modal_confirm">Megerősítés</string>
+    <string name="modal_cancel">Mégse</string>
+    <string name="modal_delete">Törlés</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">%1$s törlése</string>
+    <string name="a11y_edit_nickname_for">%1$s becenevének szerkesztése</string>
+    <string name="accessibility_attestation_scan_back">Vissza</string>
+    <string name="attestation_replace_confirm">Csere</string>
+    <string name="attestation_replace_primary_message">Önnek már van személyes hitelesítő adata. Egy új létrehozása felülírja a meglévőt. Ez a művelet nem vonható vissza.</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">Lecseréli a meglévő hitelesítő adatot?</string>
+    <string name="attestation_scan_error_empty">A QR-kód üres volt</string>
+    <string name="attestation_scan_instruction">Irányítsa a kamerát a tisztviselő által megjelenített QR-kódra</string>
+    <string name="attestation_scan_invalid_qr">Ez a QR-kód nem tartalmaz tanúsítási adatokat</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">Tanúsítás beolvasása</string>
+    <string name="attestation_scan_wrong_type_toast">Ez egy ellenőrzési QR, nem hitelesítő adat QR-kód</string>
+    <string name="biometric_required_message">Ehhez az alkalmazáshoz képernyőzár (PIN, minta vagy biometrikus azonosítás) szükséges a hitelesítő adatok biztonságos tárolásához. A folytatás előtt állítson be egyet az eszköz biztonsági beállításaiban.</string>
+    <string name="biometric_required_open_settings">Biztonsági beállítások megnyitása</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">Képernyőzár szükséges</string>
+    <string name="challenge_sandbox_prompt_announcement">Sandbox kihívás érkezett. Válassza ki, hogy bekapcsolja-e a sandbox módot és folytatja, vagy elutasítja a kihívást.</string>
+    <string name="challenge_sandbox_prompt_body">Ezt a kihívást egy sandbox ellenőr küldte. Csak akkor lesz sikeres, ha bekapcsolja a sandbox módot ebben a tárcában.</string>
+    <string name="challenge_sandbox_prompt_primary">Sandbox bekapcsolása és folytatás</string>
+    <string name="challenge_sandbox_prompt_secondary">Kihívás elutasítása</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">Sandbox kihívás érkezett</string>
+    <string name="credential_detail_nickname_error">Nem sikerült menteni a becenevet</string>
+    <string name="credential_list_managed_count">%1$d / %2$d</string>
+    <string name="credential_picker_count_shown">%1$d hitelesítő adat látható</string>
+    <string name="credential_picker_filter_clear">Szűrő törlése</string>
+    <string name="credential_picker_filter_label">Hitelesítő adatok szűrése név szerint</string>
+    <string name="credential_picker_filter_placeholder">Hitelesítő adatok szűrése</string>
+    <string name="credential_picker_no_results">Nincs egyező hitelesítő adat</string>
+    <string name="credential_picker_section_managed">Kezelt hitelesítő adatok</string>
+    <string name="credential_picker_section_me">Én</string>
+    <string name="credential_picker_subtitle">Válassza ki, kit ellenőriznek.</string>
+    <string name="credential_row_action_delete">Törlés</string>
+    <string name="credential_row_action_edit">Becenév szerkesztése</string>
+    <string name="credential_row_overflow_menu">Hitelesítő adat beállításai</string>
+    <string name="deeplink_sandbox_prompt_announcement">Sandbox link észlelve. Válassza ki, hogy bekapcsolja-e a sandbox módot és megnyitja a linket.</string>
+    <string name="deeplink_sandbox_prompt_body">Ez a mélylink csak akkor lesz sikeres, ha bekapcsolja a sandbox módot ebben a tárcában.</string>
+    <string name="deeplink_sandbox_prompt_primary">Sandbox bekapcsolása és megnyitás</string>
+    <string name="deeplink_sandbox_prompt_secondary">Mégse</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">Sandbox link észlelve</string>
+    <string name="empty_credential_option_find_apps_a11y">Résztvevő alkalmazás keresése. Szerezzen hitelesítő adatot a nyugdíjpénztárától, bankjától, telekommunikációs szolgáltatójától, egészségbiztosítójától vagy bárkitől, aki már ismeri az életkorát.</string>
+    <string name="empty_credential_option_find_apps_desc">Szerezzen hitelesítő adatot a nyugdíjpénztárától, bankjától, telekommunikációs szolgáltatójától, egészségbiztosítójától vagy bárkitől, aki már ismeri az életkorát</string>
+    <string name="empty_credential_option_find_apps_title">Résztvevő alkalmazás keresése</string>
+    <string name="empty_credential_option_find_locations_a11y">Helyszín keresése Ön közelében. Látogasson el személyesen igazolványával hitelesítő adat beszerzéséhez.</string>
+    <string name="empty_credential_option_find_locations_desc">Látogasson el személyesen igazolványával hitelesítő adat beszerzéséhez</string>
+    <string name="empty_credential_option_find_locations_title">Helyszín keresése Ön közelében</string>
+    <string name="empty_credential_option_managed_a11y">Gondoskodom valakiről. Kezelje a hitelesítő adatokat azoknak, akikről gondoskodik.</string>
+    <string name="empty_credential_option_managed_desc">Kezelje a hitelesítő adatokat azoknak, akikről gondoskodik</string>
+    <string name="empty_credential_option_managed_title">Gondoskodom valakiről</string>
+    <string name="empty_credential_option_scan_a11y">Van egy beolvasandó QR-kódom. Egy ellenőr adott Önnek egy kódot, miután megtekintette az igazolványát.</string>
+    <string name="empty_credential_option_scan_desc">Egy ellenőr adott Önnek egy kódot, miután megtekintette az igazolványát</string>
+    <string name="empty_credential_option_scan_title">Van egy beolvasandó QR-kódom</string>
+    <string name="empty_credential_subtitle">Válassza ki, hogyan szeretné beszerezni az első hitelesítő adatát</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">Még nincsenek hitelesítő adatok</string>
+    <string name="error_screen_lock_required">A hitelesítő adatok biztonságos tárolásához képernyőzár (PIN, minta vagy biometrikus azonosítás) szükséges. Kérjük, állítson be egyet az eszköz beállításaiban.</string>
+    <string name="issuers_no_apps_found_description">Nézzen vissza hamarosan, ahogy egyre több alkalmazás támogatja a Provii rendszert</string>
+    <string name="issuers_no_apps_found">Még nincsenek résztvevő alkalmazások</string>
+    <string name="issuers_no_locations_found_description">Nézzen vissza hamarosan, ahogy újabb helyszínek kerülnek hozzáadásra</string>
+    <string name="issuers_no_locations_found">Nem található helyszín</string>
+    <string name="managed_credential_explainer_body">Ha kezelt hitelesítő adatot szeretne valakinek, akiről gondoskodik, látogasson el együtt egy résztvevő helyszínre. Az ellenőr megtekinti az igazolványát. Amikor beolvassa a QR-kódot, a rendszer megkérdezi, hogy ez a hitelesítő adat Önnek vagy egy Ön által kezelt személynek szól-e.</string>
+    <string name="managed_credential_explainer_find_location">Helyszín keresése</string>
+    <string name="managed_credential_explainer_have_qr">Már van egy QR-kódom</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">Kezelt hitelesítő adatok</string>
+    <string name="sandbox_credential_type">Hitelesítő adat típusa</string>
+    <string name="sandbox_managed_credential_saved">Kezelt hitelesítő adat elmentve (%s)</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">A sandbox mód mostantól aktív. A tárca a sandbox kiszolgálókhoz csatlakozik.</string>
+    <string name="sandbox_nickname_helper">Adjon nevet ennek a hitelesítő adatnak, hogy könnyen azonosíthassa a tárcájában.</string>
+    <string name="sandbox_nickname_label">Becenév</string>
+    <string name="sandbox_nickname_placeholder">pl. Sára</string>
+    <string name="sandbox_nickname_required">A kezelt hitelesítő adatokhoz becenév megadása kötelező</string>
+    <string name="sandbox_type_managed_credential">Kezelt hitelesítő adat</string>
+    <string name="sandbox_type_your_credential">Az Ön hitelesítő adata</string>
+    <string name="title_find_apps">Résztvevő alkalmazás keresése</string>
+    <string name="title_find_locations">Helyszín keresése</string>
+    <string name="verification_go_to_attestation">Hitelesítő adat beszerzése</string>
+    <string name="verification_wrong_qr_type_message">Ez a QR-kód új hitelesítő adat beszerzésére szolgál, nem életkor-ellenőrzésre. Szeretne inkább a tanúsítási képernyőre lépni?</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">Tanúsítási QR észlelve</string>
+    <string name="walkthrough_back">Vissza</string>
+    <string name="walkthrough_get_started">Kezdés</string>
+    <string name="walkthrough_next">Tovább</string>
+    <string name="walkthrough_page_indicator">%1$d. oldal a %2$d-ből</string>
+    <string name="walkthrough_page1_body">A hitelesítő adata az életkorát tartalmazza. Semmi mást. Sem a nevét, sem a címét, sem a személyazonosságát.\n\nAzt igazolja, hogy Ön egy adott életkor felett (vagy alatt) van, anélkül, hogy felfedné a születési dátumát.</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">Mi az a hitelesítő adat?</string>
+    <string name="walkthrough_page2_body">Hitelesítő adatot szerezhet egy olyan vállalat alkalmazásán keresztül, amely már ismeri az életkorát. Például a bankjától vagy a nyugdíjpénztárától. Mivel ők már ellenőrizték az életkorát, semmit sem kell újból megosztania.\n\nMásik lehetőségként látogasson el egy résztvevő helyszínre olyan igazolvánnyal, amely igazolja a születési dátumát. A születési dátumát megtekintik, felhasználják a hitelesítő adat létrehozásához, majd elvetik. A kibocsátó soha nem látja a hitelesítő adatát. A személyazonossága soha nem kapcsolódik hozzá.</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">Hogyan szerezhet egyet?</string>
+    <string name="walkthrough_page3_body">Ha gondoskodik valakiről, akinek életkori hitelesítő adatra van szüksége, beszerezhet egyet a számára, és kezelheti azt az eszközén.\n\nLátogasson el együtt egy résztvevő helyszínre olyan igazolvánnyal, amely igazolja az ő születési dátumát. Amikor beolvassa a QR-kódot, a rendszer megkérdezi, hogy ez a hitelesítő adat Önnek vagy egy Ön által kezelt személynek szól-e.\n\nAdjon hozzá becenevet, hogy meg tudja különböztetni a hitelesítő adataikat.</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">Eltartottak</string>
+    <string name="walkthrough_page4_body">Egy alkalmazás, amely az életkorát szeretné ellenőrizni, közvetlenül a Provii tárcájába küldhet kihívást. Ön választja ki, melyik hitelesítő adatot használja. Sikeres ellenőrzést követően visszakerül a kérelmező alkalmazásba, és igazoltként folytathatja a műveletet.\n\nMásik lehetőségként megjelenhet egy QR-kód egy másik eszközön, vagy egy hivatkozás a mobil böngészőjében, amely közvetlenül a tárcájába vezet. Akadálymentesség céljából rövid kód is elérhető.\n\nSemmilyen személyes információt nem osztanak meg. Csak egy igen vagy nem válasz arra a kérdésre, hogy megfelel-e az életkori követelménynek.</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">Hogyan működik az ellenőrzés?</string>
+    <string name="walkthrough_page5_body">Az első lépés, hogy szerezzen egy hitelesítő adatot egy résztvevő alkalmazáson keresztül vagy egy Önhöz közeli helyszínen.\n\nInnentől kezdve igazolhatja az életkorát, amikor csak szükséges, anélkül, hogy bármilyen személyes információt megosztana. Hitelesítő adatokat is kezelhet azok számára, akikről gondoskodik.</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">Minden készen áll</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">Kihagyás</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

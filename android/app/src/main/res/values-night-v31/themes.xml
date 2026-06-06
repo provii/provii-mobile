@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Android 12+ (API 31+) Dark Theme Enhancements -->
+    <style name="Theme.ProviiWallet" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorPrimaryContainer">@color/primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/onPrimaryContainer</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
+        <item name="colorSecondaryContainer">@color/secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/onSecondaryContainer</item>
+
+        <!-- Tertiary brand color -->
+        <item name="colorTertiary">@color/tertiary</item>
+        <item name="colorOnTertiary">@color/onTertiary</item>
+        <item name="colorTertiaryContainer">@color/tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/onTertiaryContainer</item>
+
+        <!-- Error color -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/onError</item>
+        <item name="colorErrorContainer">@color/errorContainer</item>
+        <item name="colorOnErrorContainer">@color/onErrorContainer</item>
+
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/onBackground</item>
+
+        <!-- Surface colors -->
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+        <item name="colorSurfaceVariant">@color/surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/onSurfaceVariant</item>
+        <!-- Outline colors -->
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorOutlineVariant">@color/outlineVariant</item>
+
+        <!-- Inverse colors -->
+        <item name="colorSurfaceInverse">@color/inverseSurface</item>
+        <item name="colorOnSurfaceInverse">@color/inverseOnSurface</item>
+        <item name="colorPrimaryInverse">@color/inversePrimary</item>
+
+        <!-- Status bar color for dark mode -->
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Navigation bar color for gesture navigation support -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:enforceNavigationBarContrast">true</item>
+
+        <!-- Splash Screen API (Android 12+) - Dark Mode -->
+        <item name="android:windowSplashScreenBackground">@color/primary</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="android:windowSplashScreenAnimationDuration">500</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/primary</item>
+
+        <!-- For activity transitions after splash screen -->
+        <item name="android:windowBackground">@color/background</item>
+
+        <!-- Gesture navigation: ensure content draws behind navigation bar -->
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+
+    <!-- High Contrast Dark Theme for Maximum Accessibility (WCAG AAA 7:1+ contrast) -->
+    <style name="Theme.ProviiWallet.HighContrast" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary colors with high contrast for dark backgrounds -->
+        <item name="colorPrimary">@color/high_contrast_primary</item>
+        <item name="colorOnPrimary">@color/high_contrast_on_primary</item>
+        <item name="colorPrimaryContainer">@color/high_contrast_primary</item>
+        <item name="colorOnPrimaryContainer">@color/high_contrast_on_primary</item>
+        <item name="colorPrimaryInverse">@color/high_contrast_text</item>
+
+        <!-- Secondary colors with high contrast for dark backgrounds -->
+        <item name="colorSecondary">@color/high_contrast_secondary</item>
+        <item name="colorOnSecondary">@color/high_contrast_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/high_contrast_secondary</item>
+        <item name="colorOnSecondaryContainer">@color/high_contrast_on_secondary</item>
+
+        <!-- Background colors - pure black for maximum contrast -->
+        <item name="android:colorBackground">@color/high_contrast_background</item>
+        <item name="colorSurface">@color/high_contrast_surface</item>
+        <item name="colorOnSurface">@color/high_contrast_text</item>
+        <item name="colorOnBackground">@color/high_contrast_text</item>
+
+        <!-- Error colors with high contrast for dark backgrounds -->
+        <item name="colorError">@color/high_contrast_error</item>
+        <item name="colorOnError">@color/high_contrast_on_error</item>
+        <item name="colorErrorContainer">@color/high_contrast_error</item>
+        <item name="colorOnErrorContainer">@color/high_contrast_on_error</item>
+
+        <!-- Surface variants for clear differentiation -->
+        <item name="colorSurfaceVariant">@color/high_contrast_surface</item>
+        <item name="colorOnSurfaceVariant">@color/high_contrast_text</item>
+
+        <!-- Outline colors for bold borders on interactive elements -->
+        <item name="colorOutline">@color/high_contrast_border</item>
+        <item name="colorOutlineVariant">@color/high_contrast_border</item>
+
+        <!-- Status bar and navigation bar -->
+        <item name="android:statusBarColor">@color/high_contrast_background</item>
+        <item name="android:navigationBarColor">@color/high_contrast_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <!-- Splash Screen API (Android 12+) -->
+        <item name="android:windowSplashScreenBackground">@color/high_contrast_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="android:windowSplashScreenAnimationDuration">500</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/high_contrast_background</item>
+
+        <!-- Window background -->
+        <item name="android:windowBackground">@color/high_contrast_background</item>
+
+        <!-- Disable transparency for maximum clarity -->
+        <item name="android:windowIsTranslucent">false</item>
+
+        <!-- Focus indicator for keyboard navigation -->
+        <item name="colorControlHighlight">@color/high_contrast_focus</item>
+
+        <!-- Gesture navigation support -->
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+</resources>

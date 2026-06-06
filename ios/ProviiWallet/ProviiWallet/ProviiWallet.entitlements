@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- NFC Tag Reading for YubiKey NFC -->
+    <key>com.apple.developer.nfc.readersession.formats</key>
+    <array>
+        <string>TAG</string>
+    </array>
+
+    <!-- Keychain Sharing (if needed for app groups) -->
+    <key>keychain-access-groups</key>
+    <array>
+        <string>$(AppIdentifierPrefix)app.provii.wallet</string>
+    </array>
+
+    <!-- External Accessory for Lightning YubiKey -->
+    <key>com.apple.external-accessory.wireless-configuration</key>
+    <true/>
+
+    <!-- Associated Domains for Universal Links -->
+    <!-- Enables secure HTTPS deep links to prevent hijacking -->
+    <key>com.apple.developer.associated-domains</key>
+    <array>
+        <string>applinks:provii.app</string>
+    </array>
+</dict>
+</plist>

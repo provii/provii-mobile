@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Подешавања</string>
+    <string name="title_accessibility">Приступачност</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Преузмите акредитиве</string>
+    <string name="title_scan_verification_qr">Скенирајте верификациони QR код</string>
+    <string name="title_verifying_age">Верификација старости</string>
+    <string name="title_age_verified">Старост верификована</string>
+    <string name="title_verification_failed">Верификација неуспешна</string>
+    <string name="title_officer_mode">Режим службеника</string>
+    <string name="title_officer_dashboard">Контролна табла службеника</string>
+    <string name="title_issue_credential">Издај акредитив</string>
+    <string name="title_credential_ready">Акредитив је спреман</string>
+    <string name="title_get_your_credential">Преузмите свој акредитив</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Добродошли у Provii Wallet</string>
+    <string name="welcome_subtitle">Безбедна верификација старости , једноставно</string>
+    <string name="welcome_first_credential">Почните додавањем свог првог акредитива за верификацију старости</string>
+    <string name="welcome_description">Приватна верификација старости помоћу доказа нултог знања</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Добродошли у Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Изаберите жељени језик</string>
+    <string name="onboarding_use_english">Користи енглески</string>
+    <string name="onboarding_use_english_description">Наставите са енглеским као језиком апликације</string>
+    <string name="onboarding_rotating_button_description">Дугме за промену језика, тренутно приказује: %1$s. Додирните да бисте изабрали другачији језик.</string>
+    <string name="onboarding_change_later">Ово можете касније променити у Подешавањима</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Приступачност</string>
+    <string name="onboarding_accessibility_desc">Да ли желите да прилагодите функције приступачности попут величине текста, области додира или смањеног кретања?</string>
+    <string name="onboarding_use_defaults">Користи подразумевано</string>
+    <string name="onboarding_use_defaults_description">Наставите са стандардним подешавањима приступачности</string>
+    <string name="onboarding_open_accessibility">Подешавања приступачности</string>
+    <string name="onboarding_open_accessibility_description">Отворите подешавања приступачности да бисте прилагодили апликацију</string>
+    <string name="onboarding_accessibility_later">Ово можете касније променити у Подешавањима</string>
+    <string name="onboarding_accessibility_features_title">Доступне функције укључују:</string>
+    <string name="onboarding_feature_text_size">Веће величине текста</string>
+    <string name="onboarding_feature_touch_targets">Увећане области додира</string>
+    <string name="onboarding_feature_reduce_motion">Смањено кретање</string>
+    <string name="onboarding_feature_high_contrast">Режим високог контраста</string>
+    <string name="onboarding_talkback_detected">TalkBack је откривен</string>
+    <string name="onboarding_talkback_message">Омогућили смо детаљне описе да вам помогнемо у навигацији кроз апликацију.</string>
+    <string name="onboarding_continue_to_setup">Наставите на подешавање</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Потребно је једнократно подешавање</string>
+    <string name="setup_download_required">Преузимање је потребно</string>
+    <string name="setup_download_description">Ова апликација треба да преузме безбедносне компоненте за доказе нултог знања (приближно 87 MB).</string>
+    <string name="setup_wifi_recommended">Wi-Fi је препоручен</string>
+    <string name="setup_checking_status">Провера статуса подешавања...</string>
+    <string name="setup_already_setup">Већ је подешено!</string>
+    <string name="setup_ready_message">Ваш новчаник је спреман за безбедну верификацију старости</string>
+    <string name="setup_preparing">Припрема безбедног система верификације...</string>
+    <string name="setup_checking_components">Провера безбедносних компоненти...</string>
+    <string name="setup_downloading">Преузимање безбедносних компоненти</string>
+    <string name="setup_download_progress_description">%1$d%% завршено (%2$s MB од %3$s MB преузето)</string>
+    <string name="setup_initializing">Иницијализација безбедносних компоненти...</string>
+    <string name="setup_complete">Подешавање завршено!</string>
+    <string name="setup_download_info">Ово омогућава доказе нултог знања за приватну верификацију старости</string>
+    <string name="setup_one_time_download">Једнократно преузимање</string>
+    <string name="setup_stuck_message">Ово траје дуже него очекивано</string>
+    <string name="setup_stuck_description">Подешавање је можда заглављено. Покушајте да поново покренете апликацију.</string>
+    <string name="setup_restart_message">Апликација мора да се поново покрене. Ово се понекад дешава при првом покретању.</string>
+    <string name="setup_storage_full">Меморија је пуна</string>
+    <string name="setup_connection_error">Грешка при повезивању</string>
+    <string name="setup_failed">Подешавање неуспешно</string>
+    <string name="setup_initialization_error">Грешка при иницијализацији</string>
+    <string name="error_storage_init_failed">Иницијализација складишта није успела. Поново покрените апликацију.</string>
+    <string name="error_storage_init_close_restart">Иницијализација складишта није успела. Затворите и поново покрените апликацију.</string>
+    <string name="setup_free_storage_message">Ослободите најмање 65 MB и покушајте поново</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Приватност је заштићена</string>
+    <string name="setup_privacy_description">Ваша верификација старости користи доказе нултог знања. Ваш датум рођења никада се не дели.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Моји акредитиви</string>
+    <string name="credentials_empty">Нема сачуваних акредитива</string>
+    <string name="credential_active">Акредитив је активан</string>
+    <string name="credential_expired">Акредитив је истекао</string>
+    <string name="credential_ready_for_verification">Спреман за верификацију</string>
+    <string name="credential_expired_message">Ваш акредитив је истекао и треба га заменити</string>
+    <string name="credential_stored_successfully">Акредитив је успешно сачуван</string>
+    <string name="credential_stored_description">Ваш акредитив за верификацију старости је безбедно сачуван и спреман за употребу</string>
+    <string name="credential_can_prove_age">Сада можете приватно доказати своју старост</string>
+    <string name="credential_returning">Повратак на акредитиве...</string>
+    <string name="credential_view_credentials">Погледајте акредитиве</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Готово</string>
+    <string name="action_scan_qr_code">Скенирај QR код</string>
+    <string name="action_find_locations">Пронађи локације</string>
+    <string name="action_get_credential">Преузми акредитив</string>
+    <string name="action_replace_credential">Замени новим акредитивом</string>
+    <string name="action_replace_credential_now">Замени акредитив одмах</string>
+    <string name="action_delete_credential">Обриши акредитив</string>
+    <string name="credential_action_scan_description">Преузми акредитив од овлашћеног издаваоца</string>
+    <string name="credential_action_find_description">Откријте оближње издаваоце</string>
+    <string name="credential_remove_description">Уклоните тренутни акредитив</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Приватност</string>
+    <string name="credential_info_privacy_value">Заштићено</string>
+    <string name="credential_info_status">Статус</string>
+    <string name="credential_info_status_value">Важећи</string>
+    <string name="credential_tip_title">Брзи савет</string>
+    <string name="credential_tip_message">Додирните дугме „Верификуј старост" да бисте скенирали верификационе QR кодове на местима која учествују.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">Скенирај QR код</string>
+    <string name="verification_verify_age">Верификуј старост</string>
+    <string name="verification_generating_proof">Генерисање доказа...</string>
+    <string name="verification_success">Верификација успешна</string>
+    <string name="verification_failed">Верификација неуспешна</string>
+    <string name="verification_age_verified">Старост верификована</string>
+    <string name="verification_age_verified_message">Ваша старост је приватно верификована</string>
+    <string name="verification_can_return">Сада можете да се вратите на сајт и наставите.</string>
+    <string name="verification_returning_browser">Повратак у претраживач...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">Корак 1 од 2</string>
+    <string name="verification_step_2_of_2">Корак 2 од 2</string>
+    <string name="verification_point_camera">Усмерите камеру на верификациони QR код</string>
+    <string name="verification_hold_steady">Држите мирно док не чујете звук потврде.</string>
+    <string name="verification_reading_request">Читање захтева за верификацију...</string>
+    <string name="verification_processing_challenge">Обрада изазова...</string>
+    <string name="verification_creating_proof">Креирање доказа о старости...</string>
+    <string name="verification_submitting_proof">Слање доказа...</string>
+    <string name="verification_processing_message">Ово може потрајати неколико секунди</string>
+    <string name="verification_preparing_proof">Припремамо приватни доказ користећи ваш сачувани акредитив.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Читање захтева за верификацију...</string>
+    <string name="verification_status_processing_challenge">Обрада изазова...</string>
+    <string name="verification_status_creating_proof">Креирање доказа о старости...</string>
+    <string name="verification_status_submitting_proof">Слање доказа...</string>
+    <string name="verification_status_verified">✔ Старост верификована</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Није могуће приказати упит за аутентификацију</string>
+    <string name="verification_error_verification_failed">Верификација неуспешна</string>
+    <string name="verification_error_generic">Дошло је до грешке</string>
+    <string name="verification_error_failed_to_process_code">Обрада кода није успела</string>
+    <string name="verification_error_failed_to_process_challenge">Обрада изазова није успела</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Поуздани издаваоци у Аустралији</string>
+    <string name="issuers_loading">Учитавање издавалаца...</string>
+    <string name="issuers_loaded">Издаваоци успешно учитани</string>
+    <string name="issuers_unable_to_load">Није могуће учитати издаваоце</string>
+    <string name="issuers_check_connection">Проверите интернет везу и покушајте поново</string>
+    <string name="issuers_categories_header">КАТЕГОРИЈЕ</string>
+    <string name="issuers_available_header">ДОСТУПНИ ИЗДАВАОЦИ</string>
+    <string name="issuers_found_count">%d пронађено</string>
+    <string name="issuer_status_coming_soon">Ускоро</string>
+    <string name="issuer_status_verified">Верификовано</string>
+    <string name="issuer_how_to_get">Како добити акредитив</string>
+    <string name="issuer_service_locations">Локације услуга</string>
+    <string name="issuer_visit_website">Посетите веб-сајт %s</string>
+    <string name="issuer_learn_more">Сазнајте више о %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Банкарство</string>
+    <string name="category_super_fund">Пензиони фонд</string>
+    <string name="category_government">Влада</string>
+    <string name="category_travel">Путовања</string>
+    <string name="category_telco">Телекомуникације</string>
+    <string name="category_insurance">Осигурање</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Подешавања</string>
+    <string name="settings_section_sandbox">Sandbox режим</string>
+    <string name="settings_section_general">Опште</string>
+    <string name="settings_section_credentials">Акредитиви</string>
+    <string name="settings_section_advanced">Напредно</string>
+    <string name="settings_section_privacy">Приватност</string>
+    <string name="settings_security">Безбедност</string>
+    <string name="settings_biometric">Користи биометријску аутентификацију</string>
+    <string name="settings_environment">Подешавања окружења</string>
+    <string name="settings_environment_description">Погледајте тренутну конфигурацију окружења</string>
+    <string name="settings_reset_proving_key">Ресетовање кључа за доказивање</string>
+    <string name="settings_reset_proving_key_description">Поново преузмите безбедносне компоненте (Debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Издај тест акредитив као Издавалац</string>
+    <string name="settings_mint_test_credential_subtitle">Издајте тест акредитив у свој новчаник како бисте могли да га верификујете из демоа стране ослонца.</string>
+    <string name="settings_find_trusted_issuers">Пронађите поуздане издаваоце</string>
+    <string name="settings_version">Верзија: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Додирните 5 пута за пребацивање</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Језик</string>
+    <string name="language_selection_description">Изаберите жељени језик. Апликација ће се поново покренути да би се промене примениле.</string>
+    <string name="language_selected">Изабрано</string>
+    <string name="settings_language">Језик</string>
+    <string name="settings_language_description">Промените језик апликације</string>
+    <string name="settings_licenses">Лиценце отвореног кода</string>
+    <string name="settings_licenses_description">Погледајте лиценце трећих страна</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Потврдите језик</string>
+    <string name="language_change_to">Промени језик на:</string>
+    <string name="language_restart_notice">Апликација ће се поново покренути да би применила овај језик.</string>
+    <string name="language_apply">Примени</string>
+    <string name="language_cancel">Откажи</string>
+    <string name="language_skip_title">Прескочити избор језика?</string>
+    <string name="language_skip_message">Ако прескочите, апликација ће подразумевано користити енглески. Можете касније променити језик у Подешавањима.</string>
+    <string name="language_use_english">Користи енглески</string>
+    <string name="language_go_back">Иди назад</string>
+    <string name="language_help_title">Помоћ за избор језика</string>
+    <string name="language_help_how_to">Како да изаберете језик:</string>
+    <string name="language_help_step1">1. Користите поље за претрагу да бисте пронашли свој језик</string>
+    <string name="language_help_step2">2. Додирните жељени језик</string>
+    <string name="language_help_step3">3. Потврдите свој избор</string>
+    <string name="language_help_system_note">Ваш системски језик је истакнут на врху ако је подржан.</string>
+    <string name="language_help_settings_note">Ово можете касније променити у Подешавањима.</string>
+    <string name="language_got_it">Разумем</string>
+    <string name="language_select_title">Изаберите језик</string>
+    <string name="language_skip_button">Прескочи (Користи енглески)</string>
+    <string name="language_search_placeholder">Претражите језике...</string>
+    <string name="language_no_results">Нису пронађени језици</string>
+    <string name="language_try_different">Покушајте са другим термином за претрагу</string>
+    <string name="language_system_badge">Системски језик</string>
+    <string name="language_count">%d језика</string>
+    <string name="language_no_match_announcement">Нису пронађени језици који одговарају вашој претрази</string>
+    <string name="language_found_announcement">%d језика пронађено</string>
+    <string name="language_search_cleared">Претрага обрисана, приказује се свих %d језика</string>
+    <string name="language_selected_announcement">Изабрано %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Екран за избор језика</string>
+    <string name="language_help_button_description">Помоћ и информације о избору језика</string>
+    <string name="language_skip_description">Прескочите избор језика и подразумевано користите енглески</string>
+    <string name="language_clear_search_description">Обриши претрагу</string>
+    <string name="language_count_description">%d језика доступно</string>
+    <string name="language_apply_description">Примените избор језика и наставите</string>
+    <string name="language_cancel_description">Откажите избор језика</string>
+    <string name="language_cancelled_announcement">Избор језика отказан</string>
+    <string name="language_selected_description">Изабрани језик: %1$s, %2$s</string>
+    <string name="language_item_system">Системски језик: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, тренутно изабрано</string>
+    <string name="language_item_system_selected">Системски језик: %1$s, %2$s, тренутно изабрано</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Повратак на избор језика</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Sandbox режим је активан</string>
+    <string name="sandbox_mode_banner">SANDBOX РЕЖИМ ЈЕ АКТИВАН</string>
+    <string name="sandbox_mode_description">Коришћење тест окружења. Додирните број верзије пет пута за пребацивање.</string>
+    <string name="sandbox_credential_title">Sandbox акредитив</string>
+    <string name="sandbox_credential_description">Генеришите Sandbox акредитив да бисте тестирали токове верификације без додиривања производних података.</string>
+    <string name="sandbox_select_age">Изаберите старост</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Подразумевани датум рођења: %s</string>
+    <string name="sandbox_override_dob">Измените подразумевани датум рођења</string>
+    <string name="sandbox_override_description">Користите тачан датум уместо подразумеваног на основу старости.</string>
+    <string name="sandbox_date_of_birth">Датум рођења</string>
+    <string name="sandbox_generate_credential">Генериши акредитив</string>
+    <string name="sandbox_generating">Генерисање…</string>
+    <string name="sandbox_test_credential_saved">Тест акредитив сачуван</string>
+    <string name="sandbox_id_prefix">Префикс идентификације: %s…</string>
+    <string name="sandbox_unable_to_generate">Није могуће генерисати акредитив</string>
+    <string name="settings_sandbox_dob_format">Датум рођења: %s</string>
+    <string name="settings_sandbox_age_dob_format">Старост %d+ (Датум рођења: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Конфигурација окружења</string>
+    <string name="environment_current">Тренутно: %s</string>
+    <string name="environment_issuer_api">Издавач API (Application Programming Interface): %s</string>
+    <string name="environment_verifier_api">Верификатор API (Application Programming Interface): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Обрисати акредитив?</string>
+    <string name="dialog_delete_credential_message">Ова радња уклања акредитив са вашег уређаја. По потреби можете га поново преузети од издаваоца.</string>
+    <string name="dialog_delete_credential_announcement">Дијалог отворен: Обриши акредитив</string>
+    <string name="dialog_reset_proving_key_title">Ресетовати кључ за доказивање?</string>
+    <string name="dialog_reset_proving_key_message">Кључ за доказивање и пратећи фајлови биће обрисани и поново преузети следећи пут када отворите апликацију.</string>
+    <string name="dialog_reset_proving_key_announcement">Дијалог отворен: Ресетовање кључа за доказивање</string>
+    <string name="dialog_environment_info_announcement">Дијалог отворен: Конфигурација окружења</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">Приступачност</string>
+    <string name="accessibility_service_label">Приступачност Provii Wallet</string>
+    <string name="accessibility_service_description">Услуга приступачности Provii Wallet пружа побољшану подршку корисницима са инвалидитетом. То укључује аутоматско читање акредитива, вођену навигацију и поједностављене интеракције.</string>
+    <string name="accessibility_personalize">Персонализујте своје искуство</string>
+    <string name="accessibility_customize_features">Прилагодите функције приступачности</string>
+    <string name="accessibility_quick_setup">Брзо подешавање</string>
+    <string name="accessibility_features_active">%d функција активно</string>
+    <string name="accessibility_customize_experience">Прилагодите своје искуство</string>
+    <string name="accessibility_reset_title">Ресетовати подешавања приступачности?</string>
+    <string name="accessibility_reset_message">Сви параметри приступачности биће враћени на подразумеване вредности.</string>
+    <string name="accessibility_reset">Ресетуј подешавања приступачности</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Вид</string>
+    <string name="accessibility_category_interaction">Интеракција</string>
+    <string name="accessibility_category_cognitive">Когнитивна подршка</string>
+    <string name="accessibility_category_alternative_input">Алтернативни унос</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Веома велики текст</string>
+    <string name="accessibility_extra_large_text_description">Повећајте основну величину фонта за 45%</string>
+    <string name="accessibility_high_contrast">Висок контраст</string>
+    <string name="accessibility_high_contrast_description">Користите боје високог контраста</string>
+    <string name="accessibility_reduce_transparency">Смањи провидност</string>
+    <string name="accessibility_reduce_transparency_description">Уклоните ефекте замућења и стакла</string>
+    <string name="accessibility_dyslexia_font">Фонт прилагођен дислексији</string>
+    <string name="accessibility_dyslexia_font_description">Користите OpenDyslexic фонт за побољшану читљивост</string>
+    <string name="accessibility_color_blind_mode">Режим за особе са поремећајем распознавања боја</string>
+    <string name="accessibility_color_blind_optimized">Оптимизоване боје за %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Ниједан</string>
+    <string name="color_blind_protanopia">Протанопија (слепило за црвену)</string>
+    <string name="color_blind_deuteranopia">Деутеранопија (слепило за зелену)</string>
+    <string name="color_blind_tritanopia">Тританопија (слепило за плаву)</string>
+    <string name="color_blind_monochrome">Монохром</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Веће области додира</string>
+    <string name="accessibility_larger_touch_targets_description">Повећајте величину дугмади и чипова</string>
+    <string name="accessibility_reduce_motion">Смањи кретање</string>
+    <string name="accessibility_reduce_motion_description">Смањите анимације и прелазе</string>
+    <string name="accessibility_extended_timeouts">Продужени временски рокови</string>
+    <string name="accessibility_extended_timeouts_description">Дозволите више времена за временски ограничене радње</string>
+    <string name="accessibility_simplified_gestures">Поједностављене гесте</string>
+    <string name="accessibility_simplified_gestures_description">Смањите вишекорачне гесте</string>
+    <string name="accessibility_haptic_feedback">Хаптична повратна информација</string>
+    <string name="accessibility_haptic_feedback_description">Вибрациона потврда за радње</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Поједностављен интерфејс</string>
+    <string name="accessibility_simplified_interface_description">Сакријте напредне опције и смањите нагомилавање</string>
+    <string name="accessibility_show_step_numbers">Прикажи бројеве корака</string>
+    <string name="accessibility_show_step_numbers_description">Приказите индикаторе напретка</string>
+    <string name="accessibility_detailed_descriptions">Детаљни описи</string>
+    <string name="accessibility_detailed_descriptions_description">Пружите додатни објашњавајући текст</string>
+    <string name="accessibility_confirm_actions">Потврди пре радњи</string>
+    <string name="accessibility_confirm_actions_description">Тражите потврду за важне операције</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Ручни унос кода</string>
+    <string name="accessibility_manual_code_entry_description">Омогућите куцање QR кодова уместо скенирања</string>
+    <string name="accessibility_voice_input">Гласовни унос</string>
+    <string name="accessibility_voice_input_description">Омогућите препознавање говора за текстуална поља</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Вид</string>
+    <string name="accessibility_profile_motor">Моторика</string>
+    <string name="accessibility_profile_cognitive">Когниција</string>
+    <string name="accessibility_profile_senior">Старије особе</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Назад</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Почетна</string>
+    <string name="breadcrumb_settings">Подешавања</string>
+    <string name="breadcrumb_accessibility">Приступачност</string>
+    <string name="breadcrumb_language">Језик</string>
+    <string name="breadcrumb_help">Центар за помоћ</string>
+    <string name="breadcrumb_officer_mode">Режим службеника</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Типографија и размак текста</string>
+    <string name="accessibility_line_spacing">Размак редова</string>
+    <string name="accessibility_line_spacing_description">Подесите размак између редова текста</string>
+    <string name="accessibility_paragraph_spacing">Размак пасуса</string>
+    <string name="accessibility_paragraph_spacing_description">Подесите размак између пасуса</string>
+    <string name="accessibility_letter_spacing">Размак слова</string>
+    <string name="accessibility_letter_spacing_description">Подесите размак између слова</string>
+    <string name="accessibility_typography_aaa_note">AAA препоруке: 1,5x размак редова, 2,0x размак пасуса и 0,12em размак слова.</string>
+    <string name="accessibility_spacing_current">Тренутно: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Понашање при истеку времена</string>
+    <string name="accessibility_timeout_no_automatic">Нема аутоматских временских ограничења ради усклађености са AAA</string>
+    <string name="accessibility_timeout_auto_advance_30">Аутоматски напредовање након 30 секунди</string>
+    <string name="accessibility_timeout_auto_advance_60">Аутоматски напредовање након 60 секунди</string>
+    <string name="accessibility_timeout_set_announcement">Понашање при истеку времена постављено на %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Ниво контраста</string>
+    <string name="accessibility_contrast_aaa_ratio">Однос контраста 7:1 ради усклађености са AAA</string>
+    <string name="accessibility_contrast_standard">Стандардни контраст</string>
+    <string name="accessibility_contrast_aa_ratio">Однос контраста 4,5:1 ради усклађености са AA</string>
+    <string name="accessibility_contrast_set_announcement">Ниво контраста постављен на %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Режим за поремећај распознавања боја постављен на %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">Клизач %1$s. Тренутна вредност: %2$s. %3$sОпсег од %4$s до %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">Усклађено са AAA. </string>
+    <string name="accessibility_slider_announcement">%1$s постављено на %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, усклађено са AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s омогућено</string>
+    <string name="accessibility_toggle_disabled">%s онемогућено</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Повратне информације о верификацији</string>
+    <string name="accessibility_sound_enabled">Репродукуј звук при успеху</string>
+    <string name="accessibility_sound_enabled_description">Репродукујте звук потврде после успешне верификације</string>
+    <string name="accessibility_sound_style">Стил звука</string>
+    <string name="accessibility_sound_preview">Прегледај звук</string>
+    <string name="accessibility_sound_preview_preset">Прегледај %s</string>
+    <string name="accessibility_sound_style_set_announcement">Стил звука постављен на %s</string>
+    <string name="accessibility_haptic_enabled">Вибрирај при успеху</string>
+    <string name="accessibility_haptic_enabled_description">Пружите хаптичку повратну информацију после успешне верификације</string>
+    <string name="accessibility_sound_footer">Звук поштује подешавања тихог режима вашег уређаја</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Јачина звука</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Прегледај тренутну јачину звука</string>
+    <string name="accessibility_volume_set_announcement">Јачина звука постављена на %d процената</string>
+    <string name="accessibility_volume_slider_description">Клизач јачине звука. Тренутна вредност: %d процената</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Ресетуј подешавања</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">Режим службеника</string>
+    <string name="officer_id">Идентификација службеника (ID)</string>
+    <string name="officer_id_placeholder">нпр., OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Унесите своју додељену идентификацију службеника</string>
+    <string name="officer_yubikey_connected">YubiKey је повезан</string>
+    <string name="officer_connect_yubikey">Повежите YubiKey</string>
+    <string name="officer_touch_yubikey">Додирните YubiKey да бисте се аутентификовали...</string>
+    <string name="officer_authenticate_hmac">Аутентификуј се помоћу HMAC (Hash-based Message Authentication Code)</string>
+    <string name="officer_authentication_process">Процес аутентификације:</string>
+    <string name="officer_auth_steps">1. Унесите своју идентификацију службеника\n2. Кликните Аутентификуј\n3. Додирните YubiKey када затрепта\n4. HMAC (Hash-based Message Authentication Code) аутентификација верификује ваш идентитет</string>
+    <string name="officer_auth_failed">Аутентификација неуспешна. Верификујте своју идентификацију службеника и покушајте поново.</string>
+    <string name="officer_session_info">Службеник: %s</string>
+    <string name="officer_station_info">Станица: %s</string>
+    <string name="officer_issued_today">Издано данас: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Издај акредитив за верификацију старости</string>
+    <string name="officer_issue_description">Верификујте идентитет корисника и издајте дигитални акредитив за верификацију старости</string>
+    <string name="officer_start_issuance">Почните ново издавање</string>
+    <string name="officer_issuance_process">ПРОЦЕС ИЗДАВАЊА</string>
+    <string name="officer_issuance_steps">1. Проверите физички идентификациони документ корисника\n2. Унесите њихов датум рођења\n3. Верификујте да се информације тачно поклапају\n4. Издајте акредитив са QR кодом за потврду\n5. Корисник скенира QR код да би примио акредитив</string>
+    <string name="officer_verify_identity">Верификуј идентитет корисника</string>
+    <string name="officer_select_dob">Изаберите датум рођења</string>
+    <string name="officer_change_date">Промени датум</string>
+    <string name="officer_age_years">Старост: %d година</string>
+    <string name="officer_under_18_warning">Испод 18 година , не може се издати акредитив</string>
+    <string name="officer_verification_checklist">ЛИСТА ЗА ВЕРИФИКАЦИЈУ</string>
+    <string name="officer_document_verified">Физички документ верификован</string>
+    <string name="officer_document_verified_description">Увидео/увидела сам важећу владину идентификацију</string>
+    <string name="officer_dob_matches">Датум рођења се тачно поклапа</string>
+    <string name="officer_dob_matches_description">Датум рођења на физичком документу је: %s</string>
+    <string name="officer_issue_credential">Издај акредитив</string>
+    <string name="officer_user_scanned_successfully">Корисник је успешно скенирао</string>
+    <string name="officer_return_to_dashboard">Повратак на контролну таблу</string>
+    <string name="officer_go_back">Иди назад</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">YubiKey аутентификација</string>
+    <string name="yubikey_step_format">Корак %1$d од %2$d</string>
+    <string name="yubikey_led_should_blink">YubiKey LED треба да трепери</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Валидација уноса...</string>
+    <string name="officer_state_creating_attestation">Креирање потврде...</string>
+    <string name="officer_state_computing_commitment">Израчунавање криптографске обавезе...</string>
+    <string name="officer_state_creating_session">Креирање безбедне сесије...</string>
+    <string name="officer_state_signing">Потписивање акредитива...</string>
+    <string name="officer_state_finalizing">Финализација акредитива...</string>
+    <string name="officer_state_storing_attestation">Чување потврде...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">Сесија ускоро истиче</string>
+    <string name="officer_session_expiring_message">Ваша сесија истиче за %d секунди. Да ли желите да сачувате напредак?</string>
+    <string name="officer_session_expiring_announcement">Упозорење: Ваша сесија истиче за %d секунди</string>
+    <string name="officer_save_and_continue">Сачувај и настави</string>
+    <string name="officer_continue_without_saving">Настави без чувања</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">ДАТУМ РОЂЕЊА</string>
+    <string name="officer_age_format">Старост: %d година</string>
+    <string name="officer_under_18_full_warning">Испод 18 година , не може се издати акредитив. Само особе старости 18 или више година имају право на акредитиве за верификацију старости. Верификујте да је датум рођења исправан.</string>
+    <string name="officer_verification_checklist_header">ЛИСТА ЗА ВЕРИФИКАЦИЈУ</string>
+    <string name="officer_physical_document_verified">Физички документ верификован</string>
+    <string name="officer_sighted_valid_id">Увидео/увидела сам важећу владину идентификацију</string>
+    <string name="officer_dob_matches_exactly">Датум рођења се тачно поклапа</string>
+    <string name="officer_dob_on_document">Датум рођења на физичком документу је: %s</string>
+    <string name="officer_error_label">Грешка</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">Скенирајте QR код за издавање</string>
+    <string name="issuance_downloads_credential">Ово преузима ваш акредитив за верификацију старости.</string>
+    <string name="issuance_center_qr">Центрирајте QR код у оквиру и држите мирно.</string>
+    <string name="issuance_enter_code_manually">Унесите код ручно</string>
+    <string name="issuance_processing_qr">Обрада QR кода…</string>
+    <string name="issuance_invalid_data">Неважећи подаци за издавање</string>
+    <string name="issuance_verification_qr_error">Ово је верификациони QR код. Скенирајте QR код за издавање акредитива.</string>
+    <string name="issuance_invalid_qr_format">Неважећи формат QR кода</string>
+    <string name="issuance_failed_to_process">Обрада QR кода није успела: %s</string>
+    <string name="issuance_code">Код за издавање</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">Ручни унос кода</string>
+    <string name="manual_entry_enter_code_manually">Унесите код ручно</string>
+    <string name="manual_entry_verification_description">Унесите 12-цифрени верификациони код приказан на екрану верификатора.</string>
+    <string name="manual_entry_issuance_description">Откуцајте код приказан на екрану издаваоца.</string>
+    <string name="manual_entry_verification_code">Верификациони код</string>
+    <string name="manual_entry_submit">Пошаљи код</string>
+    <string name="manual_entry_please_enter">Унесите код</string>
+    <string name="manual_entry_please_enter_verification">Унесите верификациони код</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Почни слушање</string>
+    <string name="voice_input_stop_listening">Заустави слушање</string>
+    <string name="voice_input_recognized">Препознато:</string>
+    <string name="content_desc_voice_input_listening">Слушање гласовног уноса</string>
+    <string name="content_desc_voice_input_available">Гласовни унос је доступан</string>
+    <string name="voice_input_permission_title">Потребна дозвола за микрофон</string>
+    <string name="voice_input_permission_message">Гласовни унос захтева приступ микрофону. Можете га омогућити у системским подешавањима.</string>
+    <string name="voice_input_listening">Слушање…</string>
+    <string name="voice_input_error">Грешка гласовног уноса</string>
+    <string name="voice_input_tap_to_speak">Додирните да говорите</string>
+    <string name="voice_input_did_you_say">Да ли сте рекли/рекла „%1$s"?</string>
+    <string name="voice_input_confirm">Потврди</string>
+    <string name="voice_input_retry">Покушај поново</string>
+    <string name="voice_input_cancel">Откажи</string>
+    <string name="voice_input_button">Гласовни унос</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">Гласовни унос није доступан на овом уређају</string>
+    <string name="voice_input_error_audio">Грешка снимања звука. Проверите микрофон.</string>
+    <string name="voice_input_error_network">Грешка мреже. Проверите везу.</string>
+    <string name="voice_input_error_network_timeout">Мрежни временски рок истекао. Покушајте поново.</string>
+    <string name="voice_input_error_no_match">Говор није откривен. Покушајте поново.</string>
+    <string name="voice_input_error_recognizer_busy">Гласовни унос је заузет. Сачекајте.</string>
+    <string name="voice_input_error_server">Грешка сервера. Покушајте касније.</string>
+    <string name="voice_input_error_speech_timeout">Говор није чут. Говорите гласније.</string>
+    <string name="voice_input_error_insufficient_permissions">Дозвола за микрофон одбијена.</string>
+    <string name="voice_input_error_generic">Грешка гласовног уноса. Покушајте поново.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">Назад</string>
+    <string name="action_close">Затвори</string>
+    <string name="action_cancel">Откажи</string>
+    <string name="action_ok">У реду</string>
+    <string name="action_set">Постави</string>
+    <string name="action_change">Промени</string>
+    <string name="action_delete">Обриши</string>
+    <string name="action_reset">Ресетуј</string>
+    <string name="action_retry">Покушај поново</string>
+    <string name="action_try_again">Покушај поново</string>
+    <string name="action_refresh">Освежи</string>
+    <string name="action_download_now">Преузми одмах</string>
+    <string name="action_retry_setup">Поново покушај подешавање</string>
+    <string name="action_retry_download">Поново покушај преузимање</string>
+    <string name="action_restart_setup">Поново покрени подешавање</string>
+    <string name="action_manage_storage">Управљај меморијом</string>
+    <string name="action_check_wifi_settings">Прво проверите подешавања Wi-Fi мреже</string>
+    <string name="action_check_wifi_settings_short">Проверите подешавања Wi-Fi мреже</string>
+    <string name="action_grant_permission">Дај дозволу</string>
+    <string name="action_grant_camera_access">Дај приступ камери</string>
+    <string name="action_return_to_browser">Повратак у претраживач</string>
+    <string name="action_show_debug_info">Прикажи Debug информације</string>
+    <string name="action_reset_redownload">Ресетуј и поново преузми</string>
+    <string name="action_end_session">Заврши сесију</string>
+    <string name="action_expand">Прошири</string>
+    <string name="action_collapse">Сажми</string>
+    <string name="accessibility_state_expanded">Проширено</string>
+    <string name="accessibility_state_collapsed">Сажето</string>
+    <string name="accessibility_state_checked">Означено</string>
+    <string name="accessibility_state_unchecked">Неозначено</string>
+    <string name="accessibility_state_selected">Изабрано</string>
+    <string name="accessibility_state_not_selected">Није изабрано</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">Дошло је до грешке</string>
+    <string name="error_camera_permission">Дозвола камере је потребна за скенирање QR кодова</string>
+    <string name="error_camera_access_needed">Потребан је приступ камери</string>
+    <string name="error_camera_permission_description">Дајте дозволу камери за скенирање QR кодова или омогућите ручни унос у подешавањима приступачности.</string>
+    <string name="error_camera_permission_required">Дозвола камере је потребна за скенирање QR кодова</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">Скенирање QR кода...</string>
+    <string name="qr_scanner_camera_required">Потребна је дозвола камере</string>
+    <string name="qr_scanner_camera_preview">Преглед камере за скенирање QR кодова</string>
+    <string name="qr_scanner_status_scanning">Скенирање QR кода</string>
+    <string name="qr_scanner_requesting_permission">Захтевање дозволе камере</string>
+    <string name="error_camera_start_failed">Покретање камере није успело: %s</string>
+    <string name="error_camera_init_failed">Иницијализација камере није успела: %s</string>
+    <string name="error_biometric_not_available">Биометријска аутентификација није доступна</string>
+    <string name="error_network">Дошло је до мрежне грешке</string>
+    <string name="error_no_credential">Акредитив није доступан. Прво преузмите акредитив.</string>
+    <string name="credential_picker_title">Изаберите акредитив</string>
+    <string name="credential_picker_description">Имате више акредитива које можете користити за ову верификацију. Изаберите један.</string>
+    <string name="credential_picker_expired_label">Истекло</string>
+    <string name="credential_picker_accessibility_select">Изаберите акредитив: %1$s</string>
+    <string name="error_failed_to_process_challenge">Обрада изазова није успела</string>
+    <string name="error_failed_to_create_proof">Креирање доказа није успело</string>
+    <string name="error_verification_failed">Верификација неуспешна</string>
+    <string name="error_occurred_during_verification">Дошло је до грешке током верификације</string>
+    <string name="error_connection_timeout">Веза је истекла. Покушајте поново.</string>
+    <string name="error_unable_to_connect">Повезивање није могуће. Проверите интернет везу.</string>
+    <string name="error_secure_connection_failed">Безбедна веза није успела. Покушајте поново.</string>
+    <string name="error_security_verification_failed">Безбедносна верификација није успела. Покушајте поново.</string>
+    <string name="error_invalid_input">Неважећи унос. Проверите своје информације и покушајте поново.</string>
+    <string name="error_operation_in_progress">Друга операција је у току. Сачекајте.</string>
+    <string name="error_operation_cancelled">Операција је отказана.</string>
+    <string name="error_age_requirement_not_met">Услов старости за овај акредитив није испуњен.</string>
+    <string name="error_biometric_required">Биометријска аутентификација је потребна за наставак.</string>
+    <string name="error_wallet_not_initialized">Новчаник није иницијализован. Поново покрените апликацију.</string>
+    <string name="error_security">Безбедносна грешка. Покушајте поново.</string>
+    <string name="error_connection_timeout_short">Веза је истекла. Покушајте поново.</string>
+    <string name="error_invalid_input_provided">Неважећи унос је пружен.</string>
+    <string name="error_invalid_data_format">Неважећи формат података. Покушајте поново.</string>
+    <string name="error_storage">Грешка меморије. Проверите меморију уређаја.</string>
+    <string name="error_network_short">Мрежна грешка. Проверите везу.</string>
+    <string name="error_label">Грешка</string>
+    <string name="error_dismiss">Одбаци грешку</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">Обрада...</string>
+    <string name="status_initializing_wallet">Иницијализација новчаника...</string>
+    <string name="status_loading">Учитавање...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">Приватност је заштићена</string>
+    <string name="privacy_zk_description">Ваш датум рођења никада се не дели. Верификатори сазнају само да ли испуњавате њихов услов старости.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Подешавања приватности</string>
+    <string name="privacy_settings_description">Контролишите прикупљање података и управљајте својим подацима</string>
+    <string name="privacy_section_data_collection">Прикупљање података</string>
+    <string name="privacy_section_your_data">Ваши подаци</string>
+    <string name="privacy_protection_title">Ваша приватност је заштићена</string>
+    <string name="privacy_protection_description">Provii Wallet користи доказе нултог знања за верификацију ваше старости без откривања датума рођења. Ваши подаци о акредитиву су сачувани само на вашем уређају и никада нису дељени ни са ким.</string>
+    <string name="privacy_analytics_title">Аналитика</string>
+    <string name="privacy_analytics_description">Помозите побољшању Provii Wallet дељењем анонимних података о употреби</string>
+    <string name="privacy_analytics_enabled">Аналитика омогућена</string>
+    <string name="privacy_analytics_disabled">Аналитика онемогућена</string>
+    <string name="privacy_crash_reporting_title">Извештавање о падовима</string>
+    <string name="privacy_crash_reporting_description">Помозите нам да исправимо грешке аутоматским слањем извештаја о падовима</string>
+    <string name="privacy_crash_reporting_enabled">Извештавање о падовима омогућено</string>
+    <string name="privacy_crash_reporting_disabled">Извештавање о падовима онемогућено</string>
+    <string name="privacy_what_we_collect_title">Које податке прикупљамо</string>
+    <string name="privacy_what_we_collect_subtitle">Додирните да бисте сазнали о нашој пракси у вези са подацима</string>
+    <string name="privacy_data_collection_info_title">Информације о прикупљању података</string>
+    <string name="privacy_data_we_collect_header">Шта прикупљамо (ако је омогућено):</string>
+    <string name="privacy_data_we_collect_list">- Анонимне статистике употребе апликације\n- Извештаји о падовима и евиденције грешака\n- Тип уређаја и верзија оперативног система\n- Информације о верзији апликације</string>
+    <string name="privacy_data_we_dont_collect_header">Шта никада не прикупљамо:</string>
+    <string name="privacy_data_we_dont_collect_list">- Ваш датум рођења\n- Ваше име или личне податке\n- Вашу локацију\n- Ваше податке о акредитиву\n- Биометријске податке</string>
+    <string name="privacy_data_never_shared_note">Ваши подаци о акредитиву никада нису дељени са Provii или трећим странама. Остају на вашем уређају.</string>
+    <string name="privacy_policy_title">Политика приватности</string>
+    <string name="privacy_policy_subtitle">Прочитајте нашу потпуну политику приватности</string>
+    <string name="privacy_delete_my_data_title">Обриши моје податке</string>
+    <string name="privacy_delete_my_data_subtitle">Уклоните све сачуване акредитиве и податке</string>
+    <string name="privacy_delete_data_dialog_title">Обрисати све податке?</string>
+    <string name="privacy_delete_data_dialog_message">Ово ће трајно обрисати све ваше акредитиве и податке апликације са овог уређаја. Мораћете да набавите нови акредитив да бисте поново користили апликацију.</string>
+    <string name="privacy_delete_data_dialog_warning">Ова радња не може бити опозвана.</string>
+    <string name="privacy_delete_data_confirm">Обриши све</string>
+    <string name="privacy_footer_note">Ова подешавања можете променити у свако доба. Промене ступају на снагу одмах.</string>
+    <string name="dialog_delete_data_announcement">Дијалог за потврду брисања података је отворен</string>
+    <string name="dialog_data_collection_info_announcement">Дијалог са информацијама о прикупљању података је отворен</string>
+    <string name="content_desc_privacy_settings">Подешавања приватности, контрола прикупљања података и управљање вашим подацима</string>
+    <string name="content_desc_data_collection_info">Погледајте информације о прикупљању података</string>
+    <string name="content_desc_privacy_policy">Погледајте политику приватности</string>
+    <string name="content_desc_opens_external_link">Отвара се у претраживачу</string>
+    <string name="content_desc_delete_my_data">Обриши све моје податке</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">Назад</string>
+    <string name="content_desc_settings">Подешавања</string>
+    <string name="content_desc_refresh">Освежи</string>
+    <string name="content_desc_verified">Верификовано</string>
+    <string name="content_desc_expand">Прошири</string>
+    <string name="content_desc_collapse">Сажми</string>
+    <string name="content_desc_warning_error">Упозорење: Дошло је до грешке</string>
+    <string name="content_desc_sandbox_indicator">Индикатор Sandbox режима</string>
+    <string name="content_desc_success">Успешно</string>
+    <string name="content_desc_warning">Упозорење</string>
+    <string name="content_desc_information">Информација</string>
+    <string name="content_desc_error">Грешка</string>
+    <string name="content_desc_sandbox_warning">Упозорење о Sandbox режиму</string>
+    <string name="content_desc_app_info">Информације о апликацији</string>
+    <string name="content_desc_accessibility_settings">Подешавања приступачности</string>
+    <string name="content_desc_language_settings">Подешавања језика</string>
+    <string name="content_desc_licenses">Лиценце отвореног кода</string>
+    <string name="content_desc_select_dob">Изаберите датум рођења</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Издај тест акредитив као Издавалац</string>
+    <string name="content_desc_get_credential">Преузми акредитив</string>
+    <string name="content_desc_delete_credential">Обриши акредитив</string>
+    <string name="content_desc_reset_proving_key">Ресетуј кључ за доказивање</string>
+    <string name="content_desc_environment_info">Информације о окружењу</string>
+    <string name="content_desc_help_support">Помоћ и подршка</string>
+    <string name="content_desc_privacy_protected">Приватност је заштићена</string>
+    <string name="preview_settings_title">Преглед подешавања</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">Успешно</string>
+    <string name="accessibility_verification_error_description">Грешка</string>
+    <string name="accessibility_breadcrumb_location_description">Локација: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">затим</string>
+    <string name="accessibility_breadcrumb_current_page_description">Тренутна страница: %s</string>
+    <string name="accessibility_settings_navigate_description">Навигација</string>
+    <string name="accessibility_credentials_settings_description">Подешавања</string>
+    <string name="accessibility_verification_back_description">Назад</string>
+    <string name="accessibility_officer_back_description">Назад</string>
+    <string name="accessibility_discovery_back_description">Назад</string>
+    <string name="accessibility_discovery_refresh_description">Освежи</string>
+    <string name="accessibility_discovery_verified_description">Верификовано</string>
+    <string name="accessibility_officer_done_description">Готово</string>
+    <string name="accessibility_officer_attestation_qr_description">QR код потврде за скенирање корисника</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">Прескочи на %s</string>
+    <string name="accessibility_skip_main_content">главни садржај</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Оштећење вида</string>
+    <string name="accessibility_profile_motor_impaired">Моторичко оштећење</string>
+    <string name="accessibility_profile_cognitive_support">Когнитивна подршка</string>
+    <string name="accessibility_profile_elderly_support">Подршка за старије особе</string>
+    <string name="accessibility_profile_default">Подразумевано</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Ниједан</string>
+    <string name="color_blind_mode_protanopia">Протанопија</string>
+    <string name="color_blind_mode_deuteranopia">Деутеранопија</string>
+    <string name="color_blind_mode_tritanopia">Тританопија</string>
+    <string name="color_blind_mode_monochrome">Монохром</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Стандардно</string>
+    <string name="contrast_level_high">Високо (AA)</string>
+    <string name="contrast_level_maximum">Максимално (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Пуна ширина</string>
+    <string name="text_width_comfortable">Удобно (80 знакова)</string>
+    <string name="text_width_narrow">Уско (60 знакова)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Без временског ограничења (AAA)</string>
+    <string name="timeout_behavior_standard">Стандардно (30с)</string>
+    <string name="timeout_behavior_extended">Продужено (60с)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Стандардно</string>
+    <string name="reading_level_standard_description">Редован текст са техничким терминима</string>
+    <string name="reading_level_simplified">Поједностављено (7–9. разред)</string>
+    <string name="reading_level_simplified_description">Једноставније речи и краће реченице (усклађено са AAA)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">Помоћ</string>
+    <string name="help_and_support">Помоћ и подршка</string>
+    <string name="help_description">Добијте помоћ са функцијама апликације и приступачношћу</string>
+    <string name="help_center">Центар за помоћ</string>
+    <string name="help_center_description">Прегледајте теме помоћи и сазнајте о функцијама апликације</string>
+    <string name="help_search">Претражите помоћ</string>
+    <string name="help_search_placeholder">Претражите теме помоћи...</string>
+    <string name="help_search_active">Претрага активирана</string>
+    <string name="help_search_inactive">Претрага деактивирана</string>
+    <string name="help_no_results">Нису пронађене теме помоћи које одговарају вашој претрази</string>
+    <string name="help_topic_not_found">Тема помоћи није пронађена</string>
+    <string name="help_related_topics">Сродне теме</string>
+    <string name="help_content_heading">Садржај помоћи</string>
+    <string name="help_related_topic_position">%1$s, ставка %2$d од %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Вид</string>
+    <string name="help_category_typography">Типографија</string>
+    <string name="help_category_interaction">Интеракција</string>
+    <string name="help_category_cognitive">Когнитивна подршка</string>
+    <string name="help_category_alternative_input">Алтернативни унос</string>
+    <string name="help_category_features">Функције</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Добијање акредитива</string>
+    <string name="help_topic_getting_credential_summary">Сазнајте како да добијете свој први акредитив за верификацију старости</string>
+    <string name="help_topic_getting_credential_content">Да бисте добили акредитив за верификацију старости:\n\n1. Посетите локацију овлашћеног издаваоца\n2. Представите свој владин ID\n3. Скенирајте пружени QR код\n4. Ваш акредитив ће бити безбедно сачуван\n\nВаш датум рођења је сачуван локално и никада се не дели.</string>
+
+    <string name="help_topic_verifying_age_title">Верификација ваше старости</string>
+    <string name="help_topic_verifying_age_summary">Како да докажете своју старост без дељења личних информација</string>
+    <string name="help_topic_verifying_age_content">Када треба да верификујете своју старост:\n\n1. Верификатор ће вам приказати QR код\n2. Скенирајте га апликацијом\n3. Апликација креира математички доказ\n4. Дели се само одговор да/не\n\nВаш стварни датум рођења НИКАДА није откривен.</string>
+
+    <string name="help_topic_accessibility_title">Функције приступачности</string>
+    <string name="help_topic_accessibility_summary">Прилагодите апликацију вашим потребама</string>
+    <string name="help_topic_accessibility_content">Апликација укључује многе функције приступачности:\n\n- Велики текст и режими високог контраста\n- Гласовни унос и подршка за читач екрана\n- Поједностављене гесте и кориснички интерфејс\n- Опције за ручни унос кода\n- Продужени временски рокови\n\nПриступите им у Подешавања > Приступачност</string>
+
+    <string name="help_topic_privacy_security_title">Приватност и безбедност</string>
+    <string name="help_topic_privacy_security_summary">Как се ваше информације штите</string>
+    <string name="help_topic_privacy_security_content">Ваша приватност нам је приоритет:\n\n- Акредитиви сачувани локално на вашем уређају\n- Докази нултог знања штите ваше податке\n- Без праћења или аналитике\n- Биометријска аутентификација је доступна\n- Подаци никада не напуштају ваш уређај нешифровани</string>
+
+    <string name="help_topic_troubleshooting_title">Решавање проблема</string>
+    <string name="help_topic_troubleshooting_summary">Уобичајени проблеми и решења</string>
+    <string name="help_topic_troubleshooting_content">Уобичајени проблеми и поправке:\n\nQR скенер не ради:\n- Проверите дозволе камере у Подешавањима\n- Покушајте са опцијом ручног уноса кода\n\nАкредитив се не учитава:\n- Проверите своју интернет везу\n- Покушајте са ресетовањем кључа за доказивање\n\nВерификација неуспешна:\n- Уверите се да акредитив није истекао\n- Контактирајте верификатора ради подршке</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">ДАТУМ РОЂЕЊА</string>
+    <string name="date_of_birth">Датум рођења</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">%d година</string>
+    <string name="format_step_indicator">Корак %1$d од %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">Акредитиви</string>
+    <string name="tab_settings">Подешавања</string>
+    <string name="tab_help">Помоћ</string>
+    <string name="tab_credentials_description">Погледајте своје акредитиве</string>
+    <string name="tab_settings_description">Подешавања апликације</string>
+    <string name="tab_help_description">Добијте помоћ и подршку</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">Претрага</string>
+    <string name="search_field_label">Поље за претрагу</string>
+    <string name="search_placeholder">Претражите подешавања, помоћ и функције</string>
+    <string name="search_clear">Обриши претрагу</string>
+    <string name="search_popular">Популарне претраге</string>
+    <string name="search_results_heading">Резултати претраге</string>
+    <string name="search_no_results">Нису пронађени резултати</string>
+    <string name="search_try_suggestions">Покушајте да претражите:\n• Приступачност\n• Подешавања\n• Помоћ\n• Језик</string>
+    <string name="search_results_announcement_singular">Пронађен 1 резултат</string>
+    <string name="search_results_announcement_plural">Пронађено %d резултата</string>
+    <string name="search_no_results_announcement">Нису пронађени резултати</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">Брзи приступ</string>
+    <string name="help_topics">Теме помоћи</string>
+    <string name="help_glossary">Речник</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">Лиценце отвореног кода</string>
+    <string name="licenses_description">Ова апликација користи следећи софтвер отвореног кода. Захвални смо програмерима који су направили ове библиотеке.</string>
+    <string name="licenses_tap_to_view">Додирните да бисте видели пуну лиценцу</string>
+    <string name="licenses_group_header">%1$s (%2$d библиотека)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">Нема интернет везе. Проверите своју мрежу и покушајте поново.</string>
+    <string name="error_unexpected">Дошло је до неочекиване грешке. Поново покрените апликацију.</string>
+    <string name="error_unexpected_try_again">Дошло је до неочекиване грешке. Покушајте поново.</string>
+    <string name="error_storage_detailed">Грешка меморије: %s</string>
+    <string name="error_network_detailed">Мрежна грешка: %s</string>
+    <string name="error_proof_generation_failed">Генерисање доказа није успело: %s</string>
+    <string name="error_not_eligible">Нисте испунили услове. Не испуњавате захтеве за ову верификацију.</string>
+    <string name="error_challenge_expired">Изазов је истекао или није пронађен. Захтевајте нови.</string>
+    <string name="error_challenge_expired_scan_new">Овај изазов је истекао. Скенирајте нови QR код.</string>
+    <string name="error_request_out_of_order">Захтев није у редоследу. Покушајте поново.</string>
+    <string name="error_too_many_requests">Превише захтева. Сачекајте тренутак и покушајте поново.</string>
+    <string name="error_server">Грешка сервера. Покушајте касније.</string>
+    <string name="error_request_failed">Захтев неуспешан (%d). Покушајте поново.</string>
+    <string name="error_not_eligible_short">Нисте испунили услове за ову верификацију</string>
+    <string name="error_challenge_not_found">Изазов није пронађен</string>
+    <string name="error_complete_steps_in_order">Молимо завршите кораке по редоследу</string>
+    <string name="error_challenge_expired_short">Изазов је истекао</string>
+    <string name="error_authentication_cancelled">Аутентификација је отказана. Верификујте свој идентитет да бисте завршили верификацију старости.</string>
+    <string name="error_invalid_data_format_short">Неважећи формат података. Покушајте поново.</string>
+    <string name="error_storage_check_device">Грешка меморије. Проверите меморију уређаја.</string>
+    <string name="error_network_check_connection">Мрежна грешка. Проверите своју везу.</string>
+    <string name="error_proof_generation_failed_short">Генерисање доказа није успело. Покушајте поново.</string>
+    <string name="error_operation_in_progress_short">Друга операција је у току.</string>
+    <string name="error_no_internet_short">Нема интернет везе. Проверите своју мрежу.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Скенирајте верификациони QR код</string>
+    <string name="verification_verifying_title">Верификација старости</string>
+    <string name="verification_success_title">Старост верификована</string>
+    <string name="verification_failed_title">Верификација неуспешна</string>
+    <string name="verification_processing_wait">Ово може потрајати неколико секунди</string>
+    <string name="verification_success_message">Ваша старост је приватно верификована</string>
+    <string name="verification_return_to_site">Сада можете да се вратите на сајт и наставите.</string>
+    <string name="verification_please_enter_code">Унесите верификациони код. Код треба да буде или 12-цифрени кратки код или пуни верификациони URL са верификатора.</string>
+    <string name="verification_error_occurred">Дошло је до грешке током верификације</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Обрада...</string>
+    <string name="credential_list_verify_age_button">Верификуј старост</string>
+    <string name="credential_list_generate_in_person_description">Генеришите акредитив лично</string>
+    <string name="credential_list_scan_qr_title">Скенирај QR код</string>
+    <string name="credential_list_find_locations_title">Пронађи локације</string>
+    <string name="credential_section_my_credential">Мој акредитив</string>
+    <string name="credential_section_managed">Управљани акредитиви</string>
+    <string name="credential_list_get_credential_button">Преузми акредитив</string>
+    <string name="credential_list_add_managed_button">Додај управљани акредитив</string>
+    <string name="credential_section_managed_empty">Додајте акредитив за некога о коме се бринете, попут детета.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Детаљи акредитива</string>
+    <string name="credential_detail_not_found">Акредитив није пронађен</string>
+    <string name="credential_detail_nickname">Надимак</string>
+    <string name="credential_detail_no_nickname">Надимак није постављен</string>
+    <string name="credential_detail_edit_nickname">Измени надимак</string>
+    <string name="credential_detail_status">Статус</string>
+    <string name="credential_detail_delete">Обриши акредитив</string>
+    <string name="credential_detail_delete_title">Обриши акредитив</string>
+    <string name="credential_detail_delete_message">Да ли сте сигурни да желите да обришете овај акредитив? Ова радња не може бити опозвана.</string>
+    <string name="credential_type_primary">Примарни</string>
+    <string name="credential_type_managed">Управљани</string>
+    <string name="credential_status_valid">Важећи</string>
+    <string name="credential_status_expired">Истекао</string>
+    <string name="credential_status_invalid">Неважећи</string>
+    <string name="action_save">Сачувај</string>
+    <string name="credential_slots_full_title">Достигнут максималан број акредитива</string>
+    <string name="credential_slots_full_message">Достигли сте максималан број акредитива. Обришите постојећи акредитив да бисте додали нови.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">Управљани акредитив</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">Верификовати старост за %1$s?</string>
+    <string name="managed_confirm_message">Намеравате да верификујете старост помоћу управљаног акредитива особе %1$s.</string>
+    <string name="managed_confirm_proceed">Верификуј за %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Креирање доказа за %1$s</string>
+    <string name="verification_age_verified_for">Старост верификована за %1$s</string>
+    <string name="deeplink_verification_age_verified_for">Старост верификована за %1$s</string>
+    <string name="attestation_managed_credential_received">Акредитив за %1$s је примљен!</string>
+    <string name="attestation_managed_credential_stored">Акредитив вашег детета је безбедно сачуван.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">Обрисати акредитив особе %1$s?</string>
+    <string name="credential_detail_delete_managed_message">Да ли сте сигурни да желите да обришете овај управљани акредитив за %1$s? Ова радња не може бити опозвана. Мораћете поново да посетите издаваоца да бисте га заменили.</string>
+    <string name="credential_detail_save_error">Чување надимка није успело</string>
+    <string name="credential_detail_delete_error">Брисање акредитива није успело</string>
+    <string name="accessibility_saving">Чување...</string>
+    <string name="accessibility_deleting">Брисање...</string>
+    <string name="accessibility_loading">Учитавање, молимо сачекајте</string>
+    <string name="accessibility_issuing_credential">Издавање акредитива, молимо сачекајте</string>
+    <string name="dialog_delete_all_credentials_title">Обрисати све акредитиве?</string>
+    <string name="dialog_delete_all_credentials_message">Ово ће обрисати ваш акредитив и све управљане акредитиве за децу. Ова радња не може бити опозвана.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">Управљано</string>
+    <string name="credential_slots_count">%1$d од 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Припрема верификације...</string>
+    <string name="deeplink_verification_checking_credential">Провера акредитива...</string>
+    <string name="deeplink_verification_processing_challenge">Обрада изазова...</string>
+    <string name="deeplink_verification_creating_proof">Креирање безбедног доказа...</string>
+    <string name="deeplink_verification_submitting_proof">Слање доказа...</string>
+    <string name="deeplink_verification_success">✔ Старост успешно верификована</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">Акредитив није пронађен. Прво поставите свој акредитив.</string>
+    <string name="deeplink_verification_error_failed_challenge">Обрада верификационог изазова није успела</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Није могуће приказати упит за аутентификацију</string>
+    <string name="deeplink_verification_error_failed_proof">Креирање доказа о старости није успело</string>
+    <string name="deeplink_verification_error_verification_failed">Верификација неуспешна</string>
+    <string name="deeplink_verification_error_unexpected">Дошло је до неочекиване грешке</string>
+    <string name="deeplink_verification_error_no_credential_selected">Акредитив није изабран. Покушајте поново.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Изаберите акредитив</string>
+    <string name="deeplink_verification_select_credential_subtitle">Доступно је више акредитива. Изаберите који желите да користите за ову верификацију.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Верификација старости</string>
+    <string name="deeplink_verification_title_verified">Верификовано</string>
+    <string name="deeplink_verification_title_failed">Верификација неуспешна</string>
+    <string name="deeplink_verification_please_wait">Молимо сачекајте...</string>
+    <string name="deeplink_verification_age_verified">Старост верификована!</string>
+    <string name="deeplink_verification_under_age_verified">Верификовано испод %1$d</string>
+    <string name="deeplink_verification_returning_browser">Повратак у претраживач...</string>
+    <string name="deeplink_verification_return_to_browser">Повратак у претраживач</string>
+    <string name="deeplink_verification_failed_title">Верификација неуспешна</string>
+    <string name="deeplink_verification_error_occurred">Дошло је до грешке током верификације</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">ПРОЦЕС ИЗДАВАЊА</string>
+    <string name="officer_issuance_process_steps">1. Проверите физички идентификациони документ корисника\n2. Унесите њихов датум рођења\n3. Верификујте да се информације тачно поклапају\n4. Издајте акредитив са QR кодом за потврду\n5. Корисник скенира QR код да би примио акредитив</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">Генерисање QR кода није успело</string>
+    <string name="officer_attestation_ready_title">Потврда је спремна</string>
+    <string name="officer_attestation_scan_instruction">Корисник треба да скенира овај QR код апликацијом Provii Wallet</string>
+    <string name="officer_attestation_deeplink_label">ДУБОКА ВЕЗА ПОТВРДЕ</string>
+    <string name="officer_wait_for_attestation_scan">Сачекајте да корисник скенира</string>
+    <string name="officer_attestation_info">Акредитив ће бити генерисан на њиховом уређају</string>
+    <string name="officer_attestation_complete">Потврда је завршена</string>
+    <string name="officer_user_will_complete_credential">Корисник ће завршити генерисање акредитива на свом уређају</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Декодирање података потврде...</string>
+    <string name="attestation_generating_randomness">Генерисање безбедне случајности...</string>
+    <string name="attestation_sending">Слање издаваоцу...</string>
+    <string name="attestation_verifying">Верификација обавезе...</string>
+    <string name="attestation_storing">Чување акредитива...</string>
+    <string name="attestation_complete">Акредитив је завршен!</string>
+    <string name="attestation_error_invalid_data">Неважећи подаци потврде</string>
+    <string name="attestation_error_expired">Потврда је истекла</string>
+    <string name="attestation_error_network">Мрежна грешка , проверите своју везу</string>
+    <string name="attestation_error_unexpected">Дошло је до неочекиване грешке</string>
+    <string name="attestation_title_processing">Обрада потврде</string>
+    <string name="attestation_title_success">Акредитив примљен</string>
+    <string name="attestation_title_failed">Издавање неуспешно</string>
+    <string name="attestation_secure_issuance">Безбедно издавање</string>
+    <string name="attestation_privacy_preserving">Издавање акредитива уз очување приватности</string>
+    <string name="attestation_may_take_seconds">Ово може потрајати неколико секунди</string>
+    <string name="attestation_keep_app_open">Молимо не затварајте апликацију</string>
+    <string name="attestation_credential_received">Акредитив је примљен!</string>
+    <string name="attestation_credential_stored_description">Ваш акредитив за верификацију старости је безбедно сачуван</string>
+    <string name="attestation_issuer_verified">Издавалац верификован</string>
+    <string name="attestation_failed_title">Издавање неуспешно</string>
+    <string name="attestation_scan_qr_instead">Скенирајте QR код уместо тога</string>
+    <string name="attestation_go_back">Иди назад</string>
+    <string name="attestation_step_decode">Декодирај</string>
+    <string name="attestation_step_generate">Генериши</string>
+    <string name="attestation_step_send">Пошаљи</string>
+    <string name="attestation_step_verify">Верификуј</string>
+    <string name="attestation_step_store">Сачувај</string>
+    <string name="attestation_step_complete">Заврши</string>
+    <string name="accessibility_attestation_encrypted_description">Шифрована потврда се обрађује</string>
+    <string name="accessibility_attestation_success_description">Ознака успеха која указује на примљени акредитив</string>
+    <string name="accessibility_attestation_error_description">Икона грешке која указује на неуспело издавање</string>
+    <string name="accessibility_step_complete">Корак %1$s завршен</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Прималац акредитива</string>
+    <string name="attestation_recipient_prompt">Овај акредитив је за\u2026</string>
+    <string name="attestation_recipient_me">Мене</string>
+    <string name="attestation_recipient_child">Дете</string>
+    <string name="attestation_nickname_title">Надимак детета</string>
+    <string name="attestation_nickname_prompt">Унесите надимак да бисте разликовали акредитиве</string>
+    <string name="attestation_nickname_placeholder">нпр. Алекс</string>
+    <string name="attestation_nickname_continue">Настави</string>
+    <string name="attestation_nickname_back">Назад</string>
+    <string name="accessibility_attestation_recipient_heading">Изаберите за кога је овај акредитив</string>
+    <string name="accessibility_attestation_nickname_heading">Унесите надимак за дете</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Неважећи формат ID службеника</string>
+    <string name="officer_auth_error_challenge_failed">Преузимање YubiKey изазова није успело: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Додирните YubiKey да бисте се аутентификовали</string>
+    <string name="officer_auth_error_touch_timeout">YubiKey додир је истекао</string>
+    <string name="officer_auth_error_verify_document_dob">Верификујте да се документ и датум рођења поклапају</string>
+    <string name="officer_auth_error_invalid_date_format">Неважећи формат датума. Користите YYYY-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">Корисник мора имати 18 или више година</string>
+    <string name="officer_auth_error_not_authenticated">Нисте аутентификовани. Прво унесите свој ID службеника.</string>
+    <string name="officer_auth_error_issue_failed">Издавање акредитива није успело</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Додирните за преглед</string>
+    <string name="gesture_desc_long_press_options">, дуго притисните за опције</string>
+    <string name="gesture_desc_swipe_left">, превуците лево за више радњи</string>
+    <string name="gesture_desc_swipe_right">, превуците десно за више радњи</string>
+    <string name="gesture_desc_tap_to_activate">Додирните за активирање</string>
+    <string name="gesture_desc_long_press_format">. Дуго притисните: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Покушај поново</string>
+    <string name="main_activity_reset_redownload">Ресетуј и поново преузми</string>
+    <string name="main_activity_show_debug_info">Прикажи Debug информације</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Подешавања приступачности</string>
+    <string name="search_item_accessibility_settings_subtitle">Прилагодите своје искуство</string>
+    <string name="search_item_large_text_title">Велики текст</string>
+    <string name="search_item_large_text_subtitle">Увећајте величину текста</string>
+    <string name="search_item_high_contrast_title">Висок контраст</string>
+    <string name="search_item_high_contrast_subtitle">Побољшајте видљивост</string>
+    <string name="search_item_voice_input_title">Гласовни унос</string>
+    <string name="search_item_voice_input_subtitle">Управљајте гласом</string>
+    <string name="search_item_manual_code_entry_title">Ручни унос кода</string>
+    <string name="search_item_manual_code_entry_subtitle">Куцајте кодове уместо скенирања</string>
+    <string name="search_item_simplified_ui_title">Поједностављени кориснички интерфејс</string>
+    <string name="search_item_simplified_ui_subtitle">Смањите визуелну сложеност</string>
+    <string name="search_item_color_blindness_title">Подршка за поремећај распознавања боја</string>
+    <string name="search_item_color_blindness_subtitle">Подесите боје за бољу видљивост</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Подешавања</string>
+    <string name="search_item_settings_subtitle">Конфигурација апликације</string>
+    <string name="search_item_language_title">Језик</string>
+    <string name="search_item_language_subtitle">Промените језик апликације</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Моји акредитиви</string>
+    <string name="search_item_credentials_subtitle">Погледајте своје акредитиве</string>
+    <string name="search_item_get_credential_title">Преузми акредитив</string>
+    <string name="search_item_get_credential_subtitle">Пронађите издаваоце</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Помоћ</string>
+    <string name="search_item_help_subtitle">Добијте помоћ</string>
+    <string name="search_item_privacy_title">Заштита приватности</string>
+    <string name="search_item_privacy_subtitle">Како су ваши подаци заштићени</string>
+    <string name="search_item_verification_title">Верификација старости</string>
+    <string name="search_item_verification_subtitle">Докажите своју старост</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Унапред уграђени резервни регистар за Sandbox окружење</string>
+    <string name="issuer_fallback_production_description">Унапред уграђени резервни регистар за производно окружење</string>
+    <string name="issuer_fallback_category_government">Влада</string>
+    <string name="issuer_fallback_category_government_description">Акредитиви које издаје влада</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii Sandbox издавалац</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Званични Provii Sandbox издавалац за тестирање</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Посетите Sandbox портал издаваоца</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Званични Provii издавалац акредитива</string>
+    <string name="issuer_fallback_production_issuer_instructions">Посетите локалну канцеларију DMV</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">Датум рођења не може бити у будућности</string>
+    <string name="validation_error_invalid_date_format">Неважећи формат датума</string>
+    <string name="validation_error_officer_id_too_short">ID службеника је прекратак</string>
+    <string name="validation_error_invalid_officer_id_format">Неважећи формат ID службеника</string>
+    <string name="validation_error_empty_qr_code">Празан QR код</string>
+    <string name="validation_error_qr_code_too_large">QR код је превелик</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">Сада сте програмер!</string>
+    <string name="sandbox_toast_enabled">Sandbox режим омогућен\nКоришћење тест окружења</string>
+    <string name="sandbox_toast_disabled">Производни режим омогућен\nКоришћење производног окружења</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">Само 1 корак недостаје до режима програмера</string>
+    <string name="sandbox_toast_steps_away">Недостаје вам %1$d корака до режима програмера</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">YubiKey није повезан</string>
+    <string name="yubikey_error_timeout">Истекло је чекање на додир YubiKey уређаја. Додирните кључ када затрепта.</string>
+    <string name="yubikey_error_not_supported">Одговор на изазов није конфигурисан на овом слоту YubiKey уређаја</string>
+    <string name="yubikey_error_no_slot">Слот 2 није конфигурисан за HMAC (Hash-based Message Authentication Code) SHA1 одговор на изазов</string>
+    <string name="yubikey_error_hmac_failed">HMAC (Hash-based Message Authentication Code) израчунавање није успело: %s</string>
+    <string name="yubikey_error_session_failed">Повезивање са YubiKey уређајем није успело: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">Новчаник није иницијализован</string>
+    <string name="wallet_error_proving_key_not_found">Кључ за доказивање није пронађен , поново преузмите</string>
+    <string name="wallet_error_proving_key_not_readable">Не може се прочитати датотека кључа за доказивање</string>
+    <string name="wallet_error_out_of_memory">Нема меморије , поново покрените апликацију</string>
+    <string name="wallet_error_prover_error">Грешка доказивача: %s</string>
+    <string name="wallet_error_ffi_error">FFI грешка: %s</string>
+    <string name="wallet_error_prover_init_failed">Иницијализација доказивача није успела: %s</string>
+    <string name="wallet_error_prover_verification_failed">Верификација иницијализације доказивача није успела</string>
+    <string name="wallet_error_verifier_url_update_failed">Ажурирање URL адресе верификатора није успело! Очекивано %1$s, добијено %2$s</string>
+    <string name="wallet_error_wallet_still_null">Новчаник је и даље нул после иницијализације</string>
+    <string name="wallet_error_credential_not_found">Акредитив није пронађен</string>
+    <string name="wallet_error_credential_access_failed">Није могуће приступити акредитиву: %s</string>
+    <string name="wallet_error_invalid_format">Неважећи формат: %s</string>
+    <string name="wallet_error_not_initialized_short">Доказивач није иницијализован</string>
+    <string name="wallet_error_proving_key_unavailable">Кључ за доказивање није доступан. Потребно је подешавање.</string>
+    <string name="wallet_error_storage_init_failed">Иницијализација складишта није успела</string>
+    <string name="wallet_error_biometric_unavailable">Биометријска аутентификација није доступна</string>
+    <string name="wallet_error_auth_failed">Аутентификација неуспешна</string>
+    <string name="wallet_error_sandbox_disabled">Омогућите Sandbox режим да бисте генерисали тест акредитиве</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Није могуће преузети Sandbox акредитиве. Проверите интернет везу.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Потребна је аутентификација</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Верификујте свој идентитет да бисте направили доказ о старости</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Приступите безбедном складишту</string>
+    <string name="keystore_biometric_prompt_cancel">Откажи</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, проширено, приказује пуни текст лиценце</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, сажето, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">Нема</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Мобилна мрежа</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Непознато</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">Нивои контраста</string>
+    <string name="help_topic_extra_large_text_title">Веома велики текст</string>
+    <string name="help_topic_reduce_transparency_title">Смањи провидност</string>
+    <string name="help_topic_color_blind_modes_title">Режими за поремећај распознавања боја</string>
+    <string name="help_topic_line_spacing_title">Размак редова</string>
+    <string name="help_topic_paragraph_spacing_title">Размак пасуса</string>
+    <string name="help_topic_letter_spacing_title">Размак слова</string>
+    <string name="help_topic_text_width_title">Ширина текста</string>
+    <string name="help_topic_touch_targets_title">Веће области додира</string>
+    <string name="help_topic_reduce_motion_title">Смањи кретање</string>
+    <string name="help_topic_timeout_behavior_title">Понашање при истеку времена</string>
+    <string name="help_topic_simplified_gestures_title">Поједностављене гесте</string>
+    <string name="help_topic_haptic_feedback_title">Хаптична повратна информација</string>
+    <string name="help_topic_data_preservation_title">Чување података</string>
+    <string name="help_topic_simplified_ui_title">Поједностављени кориснички интерфејс</string>
+    <string name="help_topic_step_indicators_title">Индикатори корака</string>
+    <string name="help_topic_verbose_descriptions_title">Детаљни описи</string>
+    <string name="help_topic_confirm_actions_title">Потврди радње</string>
+    <string name="help_topic_reading_level_title">Поједностављени ниво читања</string>
+    <string name="help_topic_help_system_title">Систем помоћи</string>
+    <string name="help_topic_manual_code_entry_title">Ручни унос кода</string>
+    <string name="help_topic_voice_input_title">Гласовни унос</string>
+    <string name="help_topic_screen_reader_title">Подршка за читач екрана</string>
+    <string name="help_topic_accessibility_profiles_title">Профили за брзо подешавање</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">Контролишите однос контраста између текста и позадине:\n\n• Стандардно: Подразумеване боје апликације\n• Високо (AA): Однос контраста 4,5:1\n• Максимално (AAA): Однос контраста 7:1+\n\nВећи контраст олакшава читање текста, посебно у светлим окружењима или за кориснике са слабим видом.\n\nУсклађеност са WCAG AAA захтева максимални контраст.</string>
+    <string name="help_topic_extra_large_text_text">Повећава све величине текста за 50% у апликацији.\n\nОво олакшава читање текста за кориснике са:\n• Слабим видом\n• Променама вида везаним за старост\n• Тешкоћама у читању\n\nКомбинује се са системским подешавањима величине фонта за максималну флексибилност.</string>
+    <string name="help_topic_reduce_transparency_text">Уклања прозирне преклапања и ефекте замућења.\n\nПредности:\n• Јаснија визуелна хијерархија\n• Боља читљивост текста\n• Смањена визуелна бука\n• Мање когнитивно оптерећење\n\nПрепоручује се за кориснике са слабим видом или когнитивним тешкоћама.</string>
+    <string name="help_topic_color_blind_modes_text">Подешава боје за различите врсте поремећаја распознавања боја:\n\n• Протанопија: Слепило за црвену\n• Деутеранопија: Слепило за зелену\n• Тританопија: Слепило за плаву\n• Монохром: Потпуно слепило за боје\n\nСваки режим користи пажљиво изабране боје које су препознатљиве за ту специфичну врсту недостатка вида у боји.</string>
+    <string name="help_topic_line_spacing_text">Подешава размак између редова текста (1,0x – 2,0x).\n\n• Подразумевано: 1,0x\n• Усклађено са AAA: 1,5x или веће\n\nПовећани размак редова:\n• Побољшава разумевање при читању\n• Смањује напрезање очију\n• Помаже корисницима са дислексијом\n• Чини блокове текста мање преплављујућим</string>
+    <string name="help_topic_paragraph_spacing_text">Подешава размак између пасуса (1,0x – 3,0x).\n\n• Подразумевано: 1,0x\n• Усклађено са AAA: 2,0x или веће\n\nПовећани размак пасуса:\n• Јасно раздваја идеје\n• Побољшава визуелну организацију\n• Смањује когнитивно оптерећење\n• Помаже у одржавању позиције при читању</string>
+    <string name="help_topic_letter_spacing_text">Подешава размак између слова (0,0em – 0,2em).\n\n• Подразумевано: 0,0em\n• Усклађено са AAA: 0,12em или веће\n\nПовећани размак слова:\n• Чини поједина слова препознатљивијим\n• Помаже корисницима са дислексијом\n• Побољшава тачност читања\n• Смањује забуну слова</string>
+    <string name="help_topic_text_width_text">Ограничава дужину реда ради лакшег читања:\n\n• Пуна ширина: Без ограничења\n• Удобно: 80 знакова (препоручено)\n• Уско: 60 знакова\n\nИстраживања показују да оптимално читање настаје при 60–80 знакова по реду. Краћи редови смањују покрет очију и побољшавају разумевање.</string>
+    <string name="help_topic_touch_targets_text">Повећава минималну величину области додира на 60dp (са 44dp).\n\nПредности:\n• Лакше додиривање дугмади и контрола\n• Смањује случајне додире\n• Помаже корисницима са моторичким оштећењима\n• Боље за употребу једном руком\n\nWCAG AAA захтева минимум 60dp.</string>
+    <string name="help_topic_reduce_motion_text">Уклања све анимације и прелазе.\n\nПредности:\n• Спречава мучнину узроковану кретањем\n• Смањује ометање\n• Смањује когнитивно оптерећење\n• Побољшава фокус\n\nПрепоручује се за кориснике са:\n• Поремећајима вестибуларног апарата\n• Тешкоћама пажње\n• Осетљивошћу на кретање</string>
+    <string name="help_topic_timeout_behavior_text">Контролише аутоматско истицање времена на екранима верификације:\n\n• Без временског ограничења (AAA): Неограничено време\n• Стандардно: 30 секунди\n• Продужено: 60 секунди\n\nWCAG AAA захтева опцију без временског ограничења за кориснике којима је потребно више времена за завршетак задатака.\n\nПодаци из образаца се аутоматски чувају пре истека времена.</string>
+    <string name="help_topic_simplified_gestures_text">Замењује сложене гесте једноставним алтернативама:\n\n• Превлачење → Дугме за додир\n• Дуги притисак → Редован додир са потврдом\n• Стиснути зум → Дугмад\n\nПомаже корисницима са:\n• Моторичким оштећењима\n• Треморима\n• Ограниченом спретношћу прстију\n• Тешкоћама са екраном осетљивим на додир</string>
+    <string name="help_topic_haptic_feedback_text">Пружа вибрациону повратну информацију за радње.\n\nПредности:\n• Потврђује притиске дугмади\n• Означава грешке\n• Пружа тактилну потврду\n\nМоже бити онемогућено за кориснике који:\n• Сматрају га ометајућим\n• Имају сензорну осетљивост\n• Преферирају тихо деловање</string>
+    <string name="help_topic_data_preservation_text">Аутоматски чува податке из образаца пре истека времена.\n\nФункције:\n• Упозорење 10 секунди пре истека времена\n• Опција за чување или одбацивање података\n• Аутоматско враћање по повратку\n• 24-часовно чување података\n\nОсигурава да нема губитка података ако вам треба додатно време или ако искусите прекиде.</string>
+    <string name="help_topic_simplified_ui_text">Смањује визуелну сложеност:\n\n• Мање елемената UI приказано одједном\n• Веће, јасније дугмади\n• Више белог простора\n• Поједностављени изгледи\n\nПредности:\n• Лакше за разумевање\n• Мање преплављујуће\n• Бољи фокус\n• Смањено когнитивно оптерећење</string>
+    <string name="help_topic_step_indicators_text">Приказује напредак кроз процесе са више корака.\n\nПриказује:\n• Број тренутног корака\n• Укупан број корака\n• Визуализација напретка\n\nПредности:\n• Смањује анксиозност\n• Поставља јасна очекивања\n• Помаже у одржавању оријентације\n• Приказује напредак ка завршетку</string>
+    <string name="help_topic_verbose_descriptions_text">Пружа додатни контекст и објашњења:\n\n• Дужи натписи дугмади\n• Детаљнија упутства\n• Додатне напомене\n• Јасније поруке о грешкама\n\nПомаже корисницима:\n• Да разумеју радње пре предузимања\n• Да избегну грешке\n• Да науче функционалност апликације\n• Да изграде самопоуздање</string>
+    <string name="help_topic_confirm_actions_text">Захтева потврду за важне радње:\n\n• Брисање акредитива\n• Промена подешавања\n• Брисање података\n\nWCAG AAA захтева потврду за све деструктивне радње.\n\nПредности:\n• Спречава несреће\n• Омогућава преглед пре радње\n• Смањује анксиозност\n• Пружа другу шансу</string>
+    <string name="help_topic_reading_level_text">Користиједноставнији језик (ниво 7–9. разреда):\n\n• Краће реченице\n• Обичне речи уместо жаргона\n• Јасан, директан језик\n• Мање техничких термина\n\nУсклађено са WCAG AAA када је омогућено.\n\nПредности:\n• Лакше за разумевање\n• Бржа разумљивост\n• Боље за не-изворне говорнике\n• Смањено когнитивно оптерећење</string>
+    <string name="help_topic_help_system_text">Контекстуална помоћ доступна у целој апликацији.\n\nФункције:\n• 27 тема помоћи\n• Центар за помоћ са претрагом\n• Навигација сродним темама\n• Технички речник\n\nПриступите помоћи са:\n• Екрана подешавања\n• Сложених функција\n• Порука о грешкама\n• Свуда где видите икону помоћи</string>
+    <string name="help_topic_manual_code_entry_text">Ручно унесите податке QR кода уместо скенирања.\n\nПредности:\n• Ради када приступ камери није доступан\n• Помаже корисницима са моторичким тешкоћама\n• Боље при слабом осветљењу\n• Нема потребе за мирним држањем телефона\n\nАлтернатива скенирању QR кода путем камере.</string>
+    <string name="help_topic_voice_input_text">Користите глас за унос текста уместо куцања.\n\nПредности:\n• Унос без употребе руку\n• Брже од куцања\n• Помаже корисницима са моторичким оштећењима\n• Смањује напрезање услед понављања\n\nКористи уграђено препознавање гласа вашег уређаја.</string>
+    <string name="help_topic_screen_reader_text">Потпуна подршка за TalkBack читач екрана.\n\nФункције:\n• Сви UI елементи су означени\n• Исправна структура наслова\n• Логички редослед навигације\n• Прилагођене напомене за сложене радње\n\nАпликација аутоматски омогућава:\n• Детаљне описе\n• Увећане области додира\n\nкада је TalkBack откривен.</string>
+    <string name="help_topic_accessibility_profiles_text">Унапред конфигурисани профили приступачности:\n\n• Оштећење вида: Висок контраст, велики текст, хаптика\n• Моторичко оштећење: Велике области, продужена времена, потврде\n• Когниција: Поједностављен UI, индикатори корака, описи\n• Старије особе: Велики текст, области, поједностављен UI, смањено кретање\n• Подразумевано: Ресетуј сва подешавања\n\nСваки профил омогућава најкорисније поставке за ту групу корисника. Можете даље прилагодити након примене профила.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">Верификација старости</string>
+    <string name="content_age_verification_explanation">Молимо сачекајте, безбедно верификујемо вашу старост помоћу доказа нултог знања. Ваш датум рођења никада се не дели са верификатором.</string>
+    <string name="content_age_verification_instructions">Усмерите камеру на верификациони QR код. Код ће бити скениран аутоматски када буде откривен.</string>
+    <string name="content_age_verification_success">Ваша старост је успешно верификована. Верификатор зна да испуњавате њихов услов старости без сазнавања вашег стварног датума рођења.</string>
+    <string name="content_age_verification_failed">Верификација неуспешна. Покушајте поново да скенирате QR код или употребите ручни унос кода.</string>
+    <string name="content_credential_issuance_title">Издавање акредитива</string>
+    <string name="content_credential_issuance_explanation">Скенирајте QR код пружен од стране овлашћеног издаваоца да бисте примили свој дигитални акредитив за верификацију старости.</string>
+    <string name="content_credential_issuance_instructions">Усмерите камеру на QR код за издавање приказан од стране службеника. Ваш акредитив ће бити генерисан на вашем уређају.</string>
+    <string name="content_credential_issuance_success">Акредитив је успешно направљен. Сада можете користити овај акредитив за верификацију старости.</string>
+    <string name="content_credential_description">Акредитив је криптографски потписан доказ вашег идентитета који омогућава верификацију уз очување приватности.</string>
+    <string name="content_zero_knowledge_explanation">Докази нултог знања омогућавају вам да докажете да испуњавате услов старости без откривања стварне старости.</string>
+    <string name="content_setup_proving_key">Преузимање криптографског кључа за доказивање потребног за генерисање доказа нултог знања</string>
+    <string name="content_processing_challenge">Обрада верификационог изазова</string>
+    <string name="content_creating_proof">Креирање доказа нултог знања о старости</string>
+    <string name="content_submitting_proof">Слање доказа верификатору</string>
+    <string name="content_error_no_credential">Акредитив није доступан. Прво набавите акредитив од овлашћеног издаваоца.</string>
+    <string name="content_error_network_failed">Мрежна веза није успела. Проверите своју интернет везу и покушајте поново.</string>
+    <string name="content_error_invalid_qr">Неважећи QR код. Уверите се да скенирате исправни верификациони код.</string>
+    <string name="content_error_verification_failed">Верификација неуспешна. Сервер није могао да потврди ваш доказ.</string>
+    <string name="content_officer_authentication_title">Аутентификација службеника</string>
+    <string name="content_officer_issuance_title">Издавање акредитива</string>
+    <string name="content_officer_dob_prompt">Унесите верификовани датум рођења подносиоца из њиховог службеног идентификационог документа.</string>
+    <string name="content_onboarding_welcome">Добродошли у Provii Wallet , ваше решење за дигиталну верификацију старости уз очување приватности.</string>
+    <string name="content_onboarding_privacy">Ваш датум рођења је безбедно сачуван на вашем уређају и никада се не преноси верификаторима.</string>
+    <string name="content_onboarding_get_started">Да бисте почели, посетите овлашћеног издаваоца да бисте добили свој дигитални акредитив за верификацију старости.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">Провера старости</string>
+    <string name="content_age_verification_explanation_simplified">Проверавамо вашу старост. Нећемо видети нити делити ваш датум рођења.</string>
+    <string name="content_age_verification_instructions_simplified">Усмерите камеру на QR код. Скенираће се сам.</string>
+    <string name="content_age_verification_success_simplified">Успешно! Веб-сајт зна да сте довољно стари. Не знају ваш датум рођења.</string>
+    <string name="content_age_verification_failed_simplified">Ово није успело. Покушајте поново да скенирате или откуцајте код.</string>
+    <string name="content_credential_issuance_title_simplified">Преузмите свој ID</string>
+    <string name="content_credential_issuance_explanation_simplified">Скенирајте код из владине канцеларије да бисте добили свој дигитални ID.</string>
+    <string name="content_credential_issuance_instructions_simplified">Усмерите камеру на код. Ваш ID ће бити сачуван на вашем телефону.</string>
+    <string name="content_credential_issuance_success_simplified">Готово! Сада можете користити свој дигитални ID за доказивање старости.</string>
+    <string name="content_credential_description_simplified">Акредитив је попут дигиталне личне карте која доказује ко сте без дељења приватних података.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Можете доказати да сте довољно стари без говорења ником своју стварну старост.</string>
+    <string name="content_setup_proving_key_simplified">Преузимање безбедносних датотека потребних за рад апликације</string>
+    <string name="content_processing_challenge_simplified">Читање захтева за проверу старости</string>
+    <string name="content_creating_proof_simplified">Креирање вашег доказа о старости</string>
+    <string name="content_submitting_proof_simplified">Слање доказа на веб-сајт</string>
+    <string name="content_error_no_credential_simplified">Немате ID. Прво посетите владину канцеларију да бисте га добили.</string>
+    <string name="content_error_network_failed_simplified">Нема интернет приступа. Проверите Wi-Fi или мобилне податке и покушајте поново.</string>
+    <string name="content_error_invalid_qr_simplified">Тај код не изгледа исправно. Уверите се да скенирате исправни код.</string>
+    <string name="content_error_verification_failed_simplified">Ово није успело. Веб-сајт није могао да провери ваш доказ. Покушајте поново.</string>
+    <string name="content_officer_authentication_title_simplified">Пријава службеника</string>
+    <string name="content_officer_issuance_title_simplified">Направи ID картицу</string>
+    <string name="content_officer_dob_prompt_simplified">Унесите датум рођења особе из њиховог службеног ID документа.</string>
+    <string name="content_onboarding_welcome_simplified">Добродошли у Provii Wallet , докажите своју старост приватно.</string>
+    <string name="content_onboarding_privacy_simplified">Ваш датум рођења остаје на вашем телефону. Нико други га не може видети.</string>
+    <string name="content_onboarding_get_started_simplified">За почетак, посетите владину канцеларију да бисте добили свој дигитални ID.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Quick Response (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Лични идентификациони број (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">Датум рођења (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Идентификација (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">Кориснички интерфејс (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Uniform Resource Locator (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Application Programming Interface (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">Паузирај анимације</string>
+    <string name="animation_resume_animations">Настави анимације</string>
+    <string name="animation_pause_button_text">Пауза</string>
+    <string name="animation_resume_button_text">Настави</string>
+    <string name="animation_toggles_playback_hint">Прекида репродукцију анимације</string>
+    <string name="animation_paused_announcement">Анимације паузиране</string>
+    <string name="animation_resumed_announcement">Анимације настављене</string>
+    <string name="animation_active_count">%d активних анимација</string>
+    <string name="animation_loading_default">Учитавање</string>
+    <string name="animation_please_wait">Молимо сачекајте завршетак ове операције</string>
+    <string name="animation_percent_complete">%d процената завршено</string>
+    <string name="animation_loading_in_progress">У току</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">Пречице на тастатури</string>
+    <string name="keyboard_shortcuts_done">Готово</string>
+    <string name="keyboard_shortcuts_app_section">Пречице апликације</string>
+    <string name="keyboard_shortcuts_navigation_section">Навигација</string>
+    <string name="keyboard_shortcuts_tips_section">Савети</string>
+    <string name="keyboard_shortcuts_navigation_footer">Ови навигациони тастери функционишу у целој апликацији са спољним тастатурама</string>
+    <string name="keyboard_shortcuts_tip_external">Спољне Bluetooth и USB тастатуре су у потпуности подржане</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Користите стрелице за навигацију између ставки у листама</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Задржите Ctrl да бисте видели доступне пречице на овом екрану</string>
+    <string name="keyboard_shortcuts_tip_a11y">Свим функцијама у овој апликацији може се приступити путем тастатуре</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Затвори пречице на тастатури</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">Подешавања</string>
+    <string name="keyboard_shortcut_label_accessibility">Приступачност</string>
+    <string name="keyboard_shortcut_label_help">Центар за помоћ</string>
+    <string name="keyboard_shortcut_label_add_credential">Додај акредитив</string>
+    <string name="keyboard_shortcut_label_verify">Верификуј</string>
+    <string name="keyboard_shortcut_label_shortcuts">Пречице</string>
+    <string name="keyboard_shortcut_desc_settings">Отвори подешавања</string>
+    <string name="keyboard_shortcut_desc_accessibility">Подешавања приступачности</string>
+    <string name="keyboard_shortcut_desc_help">Центар за помоћ</string>
+    <string name="keyboard_shortcut_desc_add_credential">Додај акредитив</string>
+    <string name="keyboard_shortcut_desc_verify">Покрени верификацију</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Пречице на тастатури</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">Иди назад / Одбаци</string>
+    <string name="keyboard_shortcut_nav_back_desc">Одбаците тренутни екран или дијалог</string>
+    <string name="keyboard_shortcut_nav_next">Следеће поље</string>
+    <string name="keyboard_shortcut_nav_next_desc">Преместите фокус на следећи интерактивни елемент</string>
+    <string name="keyboard_shortcut_nav_prev">Претходно поље</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Преместите фокус на претходни интерактивни елемент</string>
+    <string name="keyboard_shortcut_nav_submit">Пошаљи / Настави</string>
+    <string name="keyboard_shortcut_nav_submit_desc">Активирајте фокусирано дугме или пошаљите образац</string>
+    <string name="keyboard_shortcut_nav_activate">Активирај дугме</string>
+    <string name="keyboard_shortcut_nav_activate_desc">Активирајте тренутно фокусирано дугме или прекидач</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">Дијалог отворен. Притисните Escape да бисте одбацили, Enter за потврду.</string>
+    <string name="modal_closed_announcement">Дијалог затворен</string>
+    <string name="modal_button_primary_label">%s (примарна радња)</string>
+    <string name="modal_button_cancel_label">%s (откажи)</string>
+    <string name="modal_button_destructive_label">%s (деструктивна радња)</string>
+    <string name="modal_button_primary_hint">Двоструки додир за потврду или притисните Enter</string>
+    <string name="modal_button_cancel_hint">Двоструки додир за отказивање или притисните Escape</string>
+    <string name="modal_button_destructive_hint">Двоструки додир за извршавање деструктивне радње</string>
+    <string name="modal_button_secondary_hint">Двоструки додир за извршавање радње</string>
+    <string name="modal_confirm">Потврди</string>
+    <string name="modal_cancel">Откажи</string>
+    <string name="modal_delete">Обриши</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">Обриши %1$s</string>
+    <string name="a11y_edit_nickname_for">Измени надимак за %1$s</string>
+    <string name="accessibility_attestation_scan_back">Назад</string>
+    <string name="attestation_replace_confirm">Замени</string>
+    <string name="attestation_replace_primary_message">Већ имате лични акредитив. Креирањем новог биће замењен постојећи. Ова радња се не може опозвати.</string>
+    <string name="attestation_replace_primary_title">Заменити постојећи акредитив?</string>
+    <string name="attestation_scan_error_empty">QR код је био празан</string>
+    <string name="attestation_scan_instruction">Усмерите камеру на QR код који вам је показао службеник</string>
+    <string name="attestation_scan_invalid_qr">Овај QR код не садржи податке потврде</string>
+    <string name="attestation_scan_title">Скенирај потврду</string>
+    <string name="attestation_scan_wrong_type_toast">Ово је верификациони QR код, а не QR код акредитива</string>
+    <string name="biometric_required_message">Ова апликација захтева закључавање екрана (PIN, шаблон или биометрију) ради безбедног чувања акредитива. Подесите га у безбедносним подешавањима уређаја пре наставка.</string>
+    <string name="biometric_required_open_settings">Отвори безбедносна подешавања</string>
+    <string name="biometric_required_title">Потребно је закључавање екрана</string>
+    <string name="challenge_sandbox_prompt_announcement">Примљен је Sandbox изазов. Изаберите да ли желите да омогућите Sandbox режим и наставите, или да одбијете изазов.</string>
+    <string name="challenge_sandbox_prompt_body">Овај изазов је послат од стране Sandbox верификатора. Неће успети уколико не омогућите Sandbox режим у овом новчанику.</string>
+    <string name="challenge_sandbox_prompt_primary">Омогући Sandbox и настави</string>
+    <string name="challenge_sandbox_prompt_secondary">Одбиј изазов</string>
+    <string name="challenge_sandbox_prompt_title">Примљен је Sandbox изазов</string>
+    <string name="credential_detail_nickname_error">Чување надимка није успело</string>
+    <string name="credential_list_managed_count">%1$d од %2$d</string>
+    <string name="credential_picker_count_shown">Приказано акредитива: %1$d</string>
+    <string name="credential_picker_filter_clear">Обриши филтер</string>
+    <string name="credential_picker_filter_label">Филтрирај акредитиве по имену</string>
+    <string name="credential_picker_filter_placeholder">Филтрирај акредитиве</string>
+    <string name="credential_picker_no_results">Нема одговарајућих акредитива</string>
+    <string name="credential_picker_section_managed">Управљани акредитиви</string>
+    <string name="credential_picker_section_me">Ја</string>
+    <string name="credential_picker_subtitle">Изаберите ко се верификује.</string>
+    <string name="credential_row_action_delete">Обриши</string>
+    <string name="credential_row_action_edit">Измени надимак</string>
+    <string name="credential_row_overflow_menu">Опције акредитива</string>
+    <string name="deeplink_sandbox_prompt_announcement">Откривен је Sandbox линк. Изаберите да ли желите да омогућите Sandbox режим и отворите линк.</string>
+    <string name="deeplink_sandbox_prompt_body">Овај дубоки линк ће успети само уколико омогућите Sandbox режим у овом новчанику.</string>
+    <string name="deeplink_sandbox_prompt_primary">Омогући Sandbox и отвори</string>
+    <string name="deeplink_sandbox_prompt_secondary">Откажи</string>
+    <string name="deeplink_sandbox_prompt_title">Откривен је Sandbox линк</string>
+    <string name="empty_credential_option_find_apps_a11y">Пронађите апликацију која учествује. Преузмите акредитив од вашег пензијског фонда, банке, телекома, здравственог осигурања или било кога ко већ зна вашу старост.</string>
+    <string name="empty_credential_option_find_apps_desc">Преузмите акредитив од вашег пензијског фонда, банке, телекома, здравственог осигурања или било кога ко већ зна вашу старост</string>
+    <string name="empty_credential_option_find_apps_title">Пронађите апликацију која учествује</string>
+    <string name="empty_credential_option_find_locations_a11y">Пронађите локацију у близини. Посетите је лично са документом како бисте добили акредитив.</string>
+    <string name="empty_credential_option_find_locations_desc">Посетите локацију лично са документом како бисте добили акредитив</string>
+    <string name="empty_credential_option_find_locations_title">Пронађите локацију у близини</string>
+    <string name="empty_credential_option_managed_a11y">Бринем се о некоме. Управљајте акредитивима за особе о којима се бринете.</string>
+    <string name="empty_credential_option_managed_desc">Управљајте акредитивима за особе о којима се бринете</string>
+    <string name="empty_credential_option_managed_title">Бринем се о некоме</string>
+    <string name="empty_credential_option_scan_a11y">Имам QR код за скенирање. Верификатор вам је дао код након провере вашег документа.</string>
+    <string name="empty_credential_option_scan_desc">Верификатор вам је дао код након провере вашег документа</string>
+    <string name="empty_credential_option_scan_title">Имам QR код за скенирање</string>
+    <string name="empty_credential_subtitle">Изаберите како желите да преузмете свој први акредитив</string>
+    <string name="empty_credential_title">Још нема акредитива</string>
+    <string name="error_screen_lock_required">Закључавање екрана (PIN, шаблон или биометрија) је потребно за безбедно чување акредитива. Подесите га у подешавањима уређаја.</string>
+    <string name="issuers_no_apps_found_description">Свратите ускоро поново, све више апликација додаје подршку за Provii</string>
+    <string name="issuers_no_apps_found">Још нема апликација које учествују</string>
+    <string name="issuers_no_locations_found_description">Свратите ускоро поново, додају се нове локације</string>
+    <string name="issuers_no_locations_found">Нису пронађене локације</string>
+    <string name="managed_credential_explainer_body">Да бисте добили управљани акредитив за особу о којој се бринете, посетите заједно локацију која учествује. Верификатор ће проверити њен документ. Када скенирате QR код, бићете питани да ли је овај акредитив за вас или за неког о коме се старате.</string>
+    <string name="managed_credential_explainer_find_location">Пронађи локацију</string>
+    <string name="managed_credential_explainer_have_qr">Већ имам QR код</string>
+    <string name="managed_credential_explainer_title">Управљани акредитиви</string>
+    <string name="sandbox_credential_type">Тип акредитива</string>
+    <string name="sandbox_managed_credential_saved">Управљани акредитив је сачуван (%s)</string>
+    <string name="sandbox_mode_enabled_announcement">Sandbox режим је сада активан. Новчаник је повезан са Sandbox серверима.</string>
+    <string name="sandbox_nickname_helper">Дајте овом акредитиву име како бисте га препознали у новчанику.</string>
+    <string name="sandbox_nickname_label">Надимак</string>
+    <string name="sandbox_nickname_placeholder">нпр. Сара</string>
+    <string name="sandbox_nickname_required">Надимак је обавезан за управљане акредитиве</string>
+    <string name="sandbox_type_managed_credential">Управљани акредитив</string>
+    <string name="sandbox_type_your_credential">Ваш акредитив</string>
+    <string name="title_find_apps">Пронађите апликацију која учествује</string>
+    <string name="title_find_locations">Пронађите локацију</string>
+    <string name="verification_go_to_attestation">Преузми акредитив</string>
+    <string name="verification_wrong_qr_type_message">Овај QR код служи за преузимање новог акредитива, а не за верификацију старости. Желите ли уместо тога да отворите екран за потврду?</string>
+    <string name="verification_wrong_qr_type_title">Откривен је QR код потврде</string>
+    <string name="walkthrough_back">Назад</string>
+    <string name="walkthrough_get_started">Започни</string>
+    <string name="walkthrough_next">Даље</string>
+    <string name="walkthrough_page_indicator">Страница %1$d од %2$d</string>
+    <string name="walkthrough_page1_body">Ваш акредитив садржи вашу старост. Ништа друго. Не садржи ваше име, ни адресу, ни идентитет.\n\nДоказује да сте старији (или млађи) од одређене границе, без откривања вашег датума рођења.</string>
+    <string name="walkthrough_page1_heading">Шта је акредитив?</string>
+    <string name="walkthrough_page2_body">Акредитив можете преузети преко апликације компаније која већ зна вашу старост. На пример, ваше банке или пензијског фонда. Пошто су они већ верификовали вашу старост, ништа не треба поново делити.\n\nАлтернативно, посетите локацију која учествује са документом који доказује ваш датум рођења. Ваш датум рођења се проверава, користи за креирање акредитива, а затим брише. Издавалац никада не види ваш акредитив. Ваш идентитет никада није везан за њега.</string>
+    <string name="walkthrough_page2_heading">Како га добити?</string>
+    <string name="walkthrough_page3_body">Уколико се бринете о некоме коме је потребан акредитив о старости, можете га добити за ту особу и управљати њиме на свом уређају.\n\nЗаједно посетите локацију која учествује са документом који доказује њен датум рођења. Када скенирате QR код, бићете питани да ли је овај акредитив за вас или за неког о коме се старате.\n\nДодајте надимак како бисте могли да разликујете њихове акредитиве.</string>
+    <string name="walkthrough_page3_heading">Особе о којима се старате</string>
+    <string name="walkthrough_page4_body">Апликација која жели да верификује вашу старост може послати изазов директно у ваш Provii новчаник. Ви бирате који акредитив желите да користите. Након успешне верификације, бићете враћени у апликацију која је тражила верификацију и моћи ћете да наставите као верификовани.\n\nАлтернативно, на другом уређају вам може бити приказан QR код, или линк у мобилном претраживачу који иде директно у новчаник. Постоји и опција кратког кода ради приступачности.\n\nНикакве личне информације се никада не деле. Само одговор да или не на питање да ли испуњавате услов о старости.</string>
+    <string name="walkthrough_page4_heading">Како функционише верификација?</string>
+    <string name="walkthrough_page5_body">Ваш први корак је да преузмете акредитив преко апликације која учествује или на локацији у близини.\n\nОдатле можете верификовати своју старост кад год је то потребно, без дељења било каквих личних информација. Такође можете управљати акредитивима за особе о којима се бринете.</string>
+    <string name="walkthrough_page5_heading">Све је спремно</string>
+    <string name="walkthrough_skip">Прескочи</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

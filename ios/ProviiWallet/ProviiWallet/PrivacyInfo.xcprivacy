@@ -1,0 +1,50 @@
+<!-- NOTE: This file must be added to the ProviiWallet target via Xcode UI.
+     Select this file in the Project Navigator, then in the File Inspector
+     check the ProviiWallet target under "Target Membership". -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSPrivacyTracking</key>
+    <false/>
+
+    <key>NSPrivacyTrackingDomains</key>
+    <array/>
+
+    <key>NSPrivacyCollectedDataTypes</key>
+    <array/>
+
+    <key>NSPrivacyAccessedAPITypes</key>
+    <array>
+        <!-- UserDefaults: used for feature flags and non-sensitive settings -->
+        <dict>
+            <key>NSPrivacyAccessedAPIType</key>
+            <string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+            <key>NSPrivacyAccessedAPITypeReasons</key>
+            <array>
+                <string>CA92.1</string>
+            </array>
+        </dict>
+
+        <!-- ProcessInfo.systemUptime: used by RateLimiter for monotonic timing -->
+        <dict>
+            <key>NSPrivacyAccessedAPIType</key>
+            <string>NSPrivacyAccessedAPICategorySystemBootTime</string>
+            <key>NSPrivacyAccessedAPITypeReasons</key>
+            <array>
+                <string>35F9.1</string>
+            </array>
+        </dict>
+
+        <!-- Disk space queries: used by WalletRepository and StorageHelper -->
+        <dict>
+            <key>NSPrivacyAccessedAPIType</key>
+            <string>NSPrivacyAccessedAPICategoryDiskSpace</string>
+            <key>NSPrivacyAccessedAPITypeReasons</key>
+            <array>
+                <string>E174.1</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>

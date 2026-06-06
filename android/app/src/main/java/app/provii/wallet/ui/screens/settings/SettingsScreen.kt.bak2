@@ -1,0 +1,1023 @@
+package app.provii.wallet.ui.screens.settings
+
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.Help
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.automirrored.filled.Accessible
+import androidx.compose.material.icons.filled.*
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.AssistChip
+import androidx.compose.material3.AssistChipDefaults
+import androidx.compose.material3.Badge
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.SelectableDates
+import androidx.compose.material3.rememberModalBottomSheetState
+import androidx.compose.material3.rememberDatePickerState
+import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.DatePickerDialog
+import androidx.compose.material3.DatePicker
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Button
+import androidx.compose.material3.Divider
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.ListItem
+import androidx.compose.material3.ListItemDefaults
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Switch
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.TopAppBar
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.role
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.hapticfeedback.HapticFeedbackType
+import androidx.compose.ui.platform.LocalHapticFeedback
+import app.provii.wallet.R
+import java.time.Instant
+import java.time.LocalDate
+import java.time.ZoneOffset
+import java.time.format.DateTimeFormatter
+import kotlin.ranges.IntRange
+import androidx.navigation.NavController
+import app.provii.wallet.LocalWalletRepository
+import app.provii.wallet.config.EnvironmentManager
+import app.provii.wallet.navigation.Screen
+import app.provii.wallet.data.WalletRepository
+import app.provii.wallet.ui.accessibility.AccessibilityProfile
+import app.provii.wallet.ui.accessibility.AccessibilitySettings
+import app.provii.wallet.ui.accessibility.ColorBlindMode
+import app.provii.wallet.ui.accessibility.LocalAccessibilityManager
+import app.provii.wallet.ui.accessibility.LocalAccessibilityUiState
+import app.provii.wallet.ui.components.accessibility.AccessibleAlertDialog
+import app.provii.wallet.ui.components.accessibility.AccessibleCard
+import app.provii.wallet.ui.components.accessibility.AccessibleIconButton
+import app.provii.wallet.ui.components.accessibility.AccessibleModalBottomSheet
+import app.provii.wallet.ui.components.accessibility.AccessibleSecondaryButton
+import app.provii.wallet.ui.components.accessibility.AccessibleStepBadge
+import app.provii.wallet.ui.components.accessibility.AdvancedFeature
+import app.provii.wallet.ui.components.accessibility.FocusManager
+import app.provii.wallet.ui.components.accessibility.initialFocus
+import app.provii.wallet.ui.components.accessibility.ProgressiveContent
+import app.provii.wallet.ui.settings.SandboxToggleHandler
+import app.provii.wallet.ui.theme.buttonFocusIndicator
+import kotlinx.coroutines.launch
+import androidx.compose.material3.Surface
+import androidx.compose.ui.tooling.preview.Preview
+import app.provii.wallet.ui.preview.LocalePreviews
+import app.provii.wallet.ui.theme.ProviiWalletTheme
+
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
+@Composable
+fun SettingsScreen(navController: NavController) {
+    val walletRepository = LocalWalletRepository.current
+    val accessibilityManager = LocalAccessibilityManager.current
+    val accessibilityUiState = LocalAccessibilityUiState.current
+    val accessibilitySettings = accessibilityUiState.settings
+    val coroutineScope = rememberCoroutineScope()
+    val context = LocalContext.current
+    val haptic = LocalHapticFeedback.current
+
+    val initialFocusRequester = FocusManager.rememberInitialFocus()
+
+    val sandboxToggleHandler = remember { SandboxToggleHandler() }
+    var showSandboxGenerator by remember { mutableStateOf(false) }
+
+
+    var showClearProvingKeyDialog by remember { mutableStateOf(false) }
+    var showDeleteCredentialDialog by remember { mutableStateOf(false) }
+    var showSandboxModeInfo by remember { mutableStateOf(false) }
+
+    val isSandboxMode by remember { mutableStateOf(EnvironmentManager.isSandboxEnabled()) }
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Text(
+                            stringResource(R.string.title_settings),
+                            modifier = Modifier.semantics { heading() }
+                        )
+                        if (isSandboxMode) {
+                            Spacer(modifier = Modifier.width(8.dp))
+                            Badge(
+                                containerColor = MaterialTheme.colorScheme.error
+                            ) {
+                                Text(stringResource(R.string.sandbox_mode_badge), style = MaterialTheme.typography.labelSmall)
+                            }
+                        }
+                    }
+                },
+                navigationIcon = {
+                    AccessibleIconButton(
+                        onClick = { navController.popBackStack() },
+                        modifier = Modifier.initialFocus(initialFocusRequester)
+                    ) {
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(R.string.content_desc_back))
+                    }
+                },
+                actions = {
+                    IconButton(
+                        onClick = { navController.navigate(Screen.Search.route) }
+                    ) {
+                        Icon(
+                            Icons.Default.Search,
+                            contentDescription = stringResource(R.string.search_title)
+                        )
+                    }
+                }
+            )
+        }
+    ) { paddingValues ->
+        LazyColumn(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(paddingValues),
+            verticalArrangement = Arrangement.spacedBy(16.dp),
+            contentPadding = PaddingValues(16.dp)
+        ) {
+            if (isSandboxMode) {
+                item { AdvancedFeature { SandboxInfoCard() } }
+                item { AdvancedFeature { SandboxGeneratorCard(onClick = {
+                    if (accessibilitySettings.hapticFeedback) {
+                        haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+                    }
+                    showSandboxGenerator = true
+                }) } }
+            }
+
+            item {
+                AppInfoCard(onTap = {
+                    val toggled = sandboxToggleHandler.onSettingsTap(context)
+                    if (toggled == false) {
+                        coroutineScope.launch { walletRepository.deleteSandboxCredentials() }
+                    }
+                })
+            }
+
+            item {
+                AccessibilityNavigationCard(
+                    activeFeatures = countActiveAccessibilityFeatures(accessibilitySettings),
+                    onClick = {
+                        if (accessibilitySettings.hapticFeedback) {
+                            haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+                        }
+                        navController.navigate(Screen.AccessibilitySettings.route)
+                    }
+                )
+            }
+
+            item {
+                LanguageNavigationCard(
+                    onClick = {
+                        if (accessibilitySettings.hapticFeedback) {
+                            haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+                        }
+                        navController.navigate(Screen.LanguageSelection.route)
+                    }
+                )
+            }
+
+            item {
+                LicensesNavigationCard(
+                    onClick = {
+                        if (accessibilitySettings.hapticFeedback) {
+                            haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+                        }
+                        navController.navigate(Screen.Licenses.route)
+                    }
+                )
+            }
+
+            item {
+                HelpSupportCard(
+                    onClick = {
+                        if (accessibilitySettings.hapticFeedback) {
+                            haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+                        }
+                        navController.navigate(Screen.HelpCenter.route)
+                    }
+                )
+            }
+
+            item {
+                GetCredentialCard(onClick = {
+                    if (accessibilitySettings.hapticFeedback) {
+                        haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+                    }
+                    navController.navigate(Screen.WhereToGetCredentials.route)
+                })
+            }
+
+            item {
+                DeleteCredentialCard(onClick = {
+                    if (accessibilitySettings.hapticFeedback) {
+                        haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+                    }
+                    if (accessibilitySettings.confirmBeforeActions) {
+                        showDeleteCredentialDialog = true
+                    } else {
+                        coroutineScope.launch { walletRepository.deleteCredential() }
+                    }
+                })
+            }
+
+            item { ProgressiveContent {
+                ResetProvingKeyCard(onClick = {
+                    if (accessibilitySettings.hapticFeedback) {
+                        haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+                    }
+                    if (accessibilitySettings.confirmBeforeActions) {
+                        showClearProvingKeyDialog = true
+                    } else {
+                        coroutineScope.launch { walletRepository.clearProvingKey() }
+                    }
+                })
+            } }
+
+            if (EnvironmentManager.getCurrentEnvironment() != "production") {
+                item { AdvancedFeature {
+                    EnvironmentInfoCard(onClick = {
+                        if (accessibilitySettings.hapticFeedback) {
+                            haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+                        }
+                        showSandboxModeInfo = true
+                    })
+                } }
+            }
+
+            item { PrivacyCard() }
+        }
+    }
+
+    if (showSandboxGenerator) {
+        val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+        AccessibleModalBottomSheet(
+            onDismissRequest = { showSandboxGenerator = false },
+            sheetState = sheetState
+        ) {
+            SandboxCredentialSheetContent(
+                walletRepository = walletRepository,
+                onDismiss = { showSandboxGenerator = false }
+            )
+        }
+    }
+
+    if (showDeleteCredentialDialog) {
+        AccessibleAlertDialog(
+            onDismissRequest = { showDeleteCredentialDialog = false },
+            icon = { Icon(Icons.Default.Warning, contentDescription = stringResource(R.string.content_desc_warning)) },
+            title = { Text(stringResource(R.string.dialog_delete_credential_title)) },
+            text = { Text(stringResource(R.string.dialog_delete_credential_message)) },
+            dismissButton = {
+                TextButton(onClick = { showDeleteCredentialDialog = false }) { Text(stringResource(R.string.action_cancel)) }
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        showDeleteCredentialDialog = false
+                        coroutineScope.launch { walletRepository.deleteCredential() }
+                    },
+                    colors = ButtonDefaults.textButtonColors(
+                        contentColor = MaterialTheme.colorScheme.error
+                    )
+                ) {
+                    Text(stringResource(R.string.action_delete))
+                }
+            }
+        )
+    }
+
+    if (showClearProvingKeyDialog) {
+        AccessibleAlertDialog(
+            onDismissRequest = { showClearProvingKeyDialog = false },
+            icon = { Icon(Icons.Default.Refresh, contentDescription = stringResource(R.string.content_desc_refresh)) },
+            title = { Text(stringResource(R.string.dialog_reset_proving_key_title)) },
+            text = { Text(stringResource(R.string.dialog_reset_proving_key_message)) },
+            dismissButton = {
+                TextButton(
+                    onClick = { showClearProvingKeyDialog = false },
+                    modifier = Modifier.heightIn(min = accessibilityUiState.minTouchTarget)
+                ) {
+                    Text(stringResource(R.string.action_cancel))
+                }
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        showClearProvingKeyDialog = false
+                        coroutineScope.launch { walletRepository.clearProvingKey() }
+                    },
+                    modifier = Modifier.heightIn(min = accessibilityUiState.minTouchTarget)
+                ) {
+                    Text(stringResource(R.string.action_reset))
+                }
+            }
+        )
+    }
+
+    if (showSandboxModeInfo) {
+        AccessibleAlertDialog(
+            onDismissRequest = { showSandboxModeInfo = false },
+            icon = { Icon(Icons.Default.Info, contentDescription = stringResource(R.string.content_desc_information)) },
+            title = { Text(stringResource(R.string.environment_configuration)) },
+            text = {
+                Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Text(stringResource(R.string.environment_current, EnvironmentManager.getCurrentEnvironment()))
+                    Text(stringResource(R.string.environment_issuer_api, EnvironmentManager.getIssuerApi()))
+                    Text(stringResource(R.string.environment_verifier_api, EnvironmentManager.getVerifierApi()))
+                }
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = { showSandboxModeInfo = false },
+                    modifier = Modifier.heightIn(min = accessibilityUiState.minTouchTarget)
+                ) {
+                    Text(stringResource(R.string.action_ok))
+                }
+            }
+        )
+    }
+
+}
+
+// MARK: - Helper Functions
+
+private fun countActiveAccessibilityFeatures(settings: AccessibilitySettings): Int {
+    var count = 0
+    if (settings.useExtraLargeText) count++
+    if (settings.useHighContrast) count++
+    if (settings.reduceTransparency) count++
+    if (settings.colorBlindMode != ColorBlindMode.NONE) count++
+    if (settings.increaseTouchTargets) count++
+    if (settings.reduceMotion) count++
+    if (settings.extendedTimeouts) count++
+    if (settings.simplifiedGestures) count++
+    if (settings.hapticFeedback) count++
+    if (settings.simplifiedUI) count++
+    if (settings.showStepNumbers) count++
+    if (settings.verboseDescriptions) count++
+    if (settings.confirmBeforeActions) count++
+    if (settings.enableManualCodeEntry) count++
+    if (settings.enableVoiceInput) count++
+    return count
+}
+
+@Composable
+private fun SandboxInfoCard() {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(Icons.Default.Warning, contentDescription = stringResource(R.string.content_desc_sandbox_warning), tint = MaterialTheme.colorScheme.onErrorContainer)
+            Spacer(modifier = Modifier.width(12.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(stringResource(R.string.sandbox_mode_active), style = MaterialTheme.typography.titleSmall, fontWeight = FontWeight.Bold)
+                Text(stringResource(R.string.sandbox_mode_description), style = MaterialTheme.typography.bodySmall)
+            }
+        }
+    }
+}
+
+@Composable
+private fun AppInfoCard(onTap: () -> Unit) {
+    AccessibleCard(
+        modifier = Modifier.fillMaxWidth(),
+        onClick = onTap,
+        contentDescription = stringResource(R.string.content_desc_app_info)
+    ) {
+        Column(modifier = Modifier.padding(16.dp)) {
+            Text(stringResource(R.string.title_provii_wallet), style = MaterialTheme.typography.titleMedium)
+            Spacer(modifier = Modifier.height(8.dp))
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Text(stringResource(R.string.settings_version), style = MaterialTheme.typography.bodyMedium)
+                Text(stringResource(R.string.settings_tap_5x_toggle), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.6f))
+            }
+            Text(stringResource(R.string.welcome_description), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            AdvancedFeature {
+                if (EnvironmentManager.getCurrentEnvironment() != "production") {
+                    Spacer(modifier = Modifier.height(4.dp))
+                    Text(stringResource(R.string.environment_current, EnvironmentManager.getCurrentEnvironment()), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun AccessibilityNavigationCard(
+    activeFeatures: Int,
+    onClick: () -> Unit
+) {
+    AccessibleCard(
+        modifier = Modifier.fillMaxWidth(),
+        onClick = onClick,
+        contentDescription = stringResource(R.string.content_desc_accessibility_settings)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(
+                Icons.Default.AccessibilityNew,
+                contentDescription = null, // Decorative - parent Card has onClick
+                tint = MaterialTheme.colorScheme.primary
+            )
+            Spacer(modifier = Modifier.width(16.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(stringResource(R.string.title_accessibility), style = MaterialTheme.typography.bodyLarge)
+                Text(
+                    if (activeFeatures > 0) stringResource(R.string.accessibility_features_active, activeFeatures) else stringResource(R.string.accessibility_customize_experience),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = stringResource(R.string.accessibility_settings_navigate_description))
+        }
+    }
+}
+
+@Composable
+private fun LanguageNavigationCard(onClick: () -> Unit) {
+    AccessibleCard(
+        modifier = Modifier.fillMaxWidth(),
+        onClick = onClick,
+        contentDescription = stringResource(R.string.content_desc_language_settings)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(
+                Icons.Default.Language,
+                contentDescription = null, // Decorative - parent Card has onClick with description
+                tint = MaterialTheme.colorScheme.primary
+            )
+            Spacer(modifier = Modifier.width(16.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(stringResource(R.string.settings_language), style = MaterialTheme.typography.bodyLarge)
+                Text(
+                    stringResource(R.string.settings_language_description),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = stringResource(R.string.accessibility_settings_navigate_description))
+        }
+    }
+}
+
+@Composable
+private fun LicensesNavigationCard(onClick: () -> Unit) {
+    AccessibleCard(
+        modifier = Modifier.fillMaxWidth(),
+        onClick = onClick,
+        contentDescription = stringResource(R.string.content_desc_licenses)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(
+                Icons.Default.Description,
+                contentDescription = null, // Decorative - parent Card has onClick
+                tint = MaterialTheme.colorScheme.primary
+            )
+            Spacer(modifier = Modifier.width(16.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(stringResource(R.string.settings_licenses), style = MaterialTheme.typography.bodyLarge)
+                Text(
+                    stringResource(R.string.settings_licenses_description),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = stringResource(R.string.accessibility_settings_navigate_description))
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
+@Composable
+private fun SandboxCredentialSheetContent(
+    walletRepository: WalletRepository,
+    onDismiss: () -> Unit
+) {
+    val accessibilityUiState = LocalAccessibilityUiState.current
+    val coroutineScope = rememberCoroutineScope()
+    val context = LocalContext.current
+    val ageOptions = listOf(13, 16, 18, 21, 25)
+    val today = remember { LocalDate.now(ZoneOffset.UTC) }
+    fun suggestedDob(age: Int): LocalDate = today.minusYears(age.toLong())
+
+    var selectedAge by remember { mutableStateOf(18) }
+    var useCustomDob by remember { mutableStateOf(false) }
+    var customDob by remember { mutableStateOf(suggestedDob(18)) }
+    var isGenerating by remember { mutableStateOf(false) }
+    var successMessage by remember { mutableStateOf<String?>(null) }
+    var credentialId by remember { mutableStateOf<String?>(null) }
+    var errorMessage by remember { mutableStateOf<String?>(null) }
+    var showDatePicker by remember { mutableStateOf(false) }
+
+    val defaultDob = remember(selectedAge) { suggestedDob(selectedAge) }
+
+    LaunchedEffect(selectedAge, useCustomDob) {
+        if (!useCustomDob) {
+            customDob = defaultDob
+        }
+    }
+    LaunchedEffect(useCustomDob) {
+        if (useCustomDob) {
+            customDob = defaultDob
+        }
+    }
+
+    val minDate = remember { today.minusYears(120) }
+    val minMillis = remember { minDate.atStartOfDay(ZoneOffset.UTC).toInstant().toEpochMilli() }
+    val maxMillis = remember { today.atStartOfDay(ZoneOffset.UTC).toInstant().toEpochMilli() }
+    val formatter = remember { DateTimeFormatter.ISO_DATE }
+    val selectableDates = remember {
+        object : SelectableDates {
+            override fun isSelectableDate(utcTimeMillis: Long): Boolean {
+                return utcTimeMillis in minMillis..maxMillis
+            }
+
+            override fun isSelectableYear(year: Int): Boolean {
+                return year in (today.year - 120)..today.year
+            }
+        }
+    }
+
+
+    if (showDatePicker) {
+        val datePickerState = rememberDatePickerState(
+            initialSelectedDateMillis = customDob.atStartOfDay(ZoneOffset.UTC).toInstant().toEpochMilli(),
+            selectableDates = selectableDates
+        )
+        DatePickerDialog(
+            onDismissRequest = { showDatePicker = false },
+            dismissButton = {
+                TextButton(
+                    onClick = { showDatePicker = false },
+                    modifier = Modifier.heightIn(min = accessibilityUiState.minTouchTarget)
+                ) {
+                    Text(stringResource(R.string.action_cancel))
+                }
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        datePickerState.selectedDateMillis?.let { millis ->
+                            val selected = Instant.ofEpochMilli(millis).atZone(ZoneOffset.UTC).toLocalDate()
+                            customDob = selected
+                        }
+                        showDatePicker = false
+                    },
+                    modifier = Modifier.heightIn(min = accessibilityUiState.minTouchTarget)
+                ) {
+                    Text(stringResource(R.string.action_set))
+                }
+            }
+        ) {
+            DatePicker(
+                state = datePickerState
+            )
+        }
+    }
+
+    Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 24.dp, vertical = 16.dp),
+            verticalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Text(stringResource(R.string.sandbox_credential_title), style = MaterialTheme.typography.headlineSmall)
+            Text(
+                stringResource(R.string.sandbox_credential_description),
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+
+            Text(stringResource(R.string.sandbox_select_age), style = MaterialTheme.typography.titleMedium)
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                ageOptions.forEach { age ->
+                    val selected = age == selectedAge
+                    AssistChip(
+                        onClick = { selectedAge = age },
+                        label = { Text(stringResource(R.string.sandbox_age_format, age)) },
+                        colors = AssistChipDefaults.assistChipColors(
+                            containerColor = if (selected) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surface,
+                            labelColor = if (selected) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurface
+                        )
+                    )
+                }
+            }
+
+            if (!useCustomDob) {
+                Text(
+                    stringResource(R.string.sandbox_default_dob, formatter.format(defaultDob)),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(stringResource(R.string.sandbox_override_dob), style = MaterialTheme.typography.bodyLarge)
+                    Text(
+                        stringResource(R.string.sandbox_override_description),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                Switch(checked = useCustomDob, onCheckedChange = { checked -> useCustomDob = checked })
+            }
+
+            if (useCustomDob) {
+                AccessibleCard(
+                    modifier = Modifier.fillMaxWidth(),
+                    onClick = { showDatePicker = true },
+                    contentDescription = stringResource(R.string.content_desc_select_dob)
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Icon(Icons.Default.Event, contentDescription = null, tint = MaterialTheme.colorScheme.primary) // Decorative - parent Card has onClick
+                        Spacer(modifier = Modifier.width(16.dp))
+                        Column(modifier = Modifier.weight(1f)) {
+                            Text(stringResource(R.string.sandbox_date_of_birth), style = MaterialTheme.typography.bodyLarge)
+                            Text(
+                                formatter.format(customDob),
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                        TextButton(
+                            onClick = { showDatePicker = true },
+                            modifier = Modifier.heightIn(min = accessibilityUiState.minTouchTarget)
+                        ) {
+                            Text(stringResource(R.string.action_change))
+                        }
+                    }
+                }
+            }
+
+            Button(
+                onClick = {
+                    isGenerating = true
+                    successMessage = null
+                    credentialId = null
+                    errorMessage = null
+                    coroutineScope.launch {
+                        val result = walletRepository.generateSandboxCredential(
+                            ageYears = selectedAge,
+                            dateOfBirth = if (useCustomDob) customDob else null
+                        )
+                        isGenerating = false
+                        result.onSuccess { id ->
+                            credentialId = id
+                            val summary = if (useCustomDob) {
+                                context.getString(R.string.settings_sandbox_dob_format, formatter.format(customDob))
+                            } else {
+                                context.getString(R.string.settings_sandbox_age_dob_format, selectedAge, formatter.format(defaultDob))
+                            }
+                            successMessage = summary
+                        }.onFailure { throwable ->
+                            errorMessage = throwable.message ?: context.getString(R.string.sandbox_unable_to_generate)
+                        }
+                    }
+                },
+                enabled = !isGenerating,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .heightIn(min = accessibilityUiState.minTouchTarget)
+                    .buttonFocusIndicator()
+            ) {
+                if (isGenerating) {
+                    CircularProgressIndicator(
+                        modifier = Modifier
+                            .size(18.dp)
+                    )
+                    Spacer(modifier = Modifier.width(12.dp))
+                    Text(stringResource(R.string.sandbox_generating))
+                } else {
+                    Text(stringResource(R.string.sandbox_generate_credential))
+                }
+            }
+
+            if (successMessage != null && credentialId != null) {
+                Card(
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer)
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Icon(Icons.Default.CheckCircle, contentDescription = stringResource(R.string.content_desc_success), tint = MaterialTheme.colorScheme.onTertiaryContainer)
+                        Spacer(modifier = Modifier.width(12.dp))
+                        Column {
+                            Text(stringResource(R.string.sandbox_test_credential_saved), style = MaterialTheme.typography.bodyLarge)
+                            Text(
+                                successMessage!!,
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onTertiaryContainer
+                            )
+                            Text(
+                                stringResource(R.string.sandbox_id_prefix, credentialId!!.take(8)),
+                                style = MaterialTheme.typography.labelMedium,
+                                color = MaterialTheme.colorScheme.onTertiaryContainer
+                            )
+                        }
+                    }
+                }
+            }
+
+            if (errorMessage != null) {
+                Card(
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer)
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Icon(Icons.Default.Error, contentDescription = stringResource(R.string.content_desc_error), tint = MaterialTheme.colorScheme.error)
+                        Spacer(modifier = Modifier.width(12.dp))
+                        Text(
+                            errorMessage!!,
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onErrorContainer
+                        )
+                    }
+                }
+            }
+
+            OutlinedButton(
+                onClick = onDismiss,
+                modifier = Modifier
+                    .align(Alignment.End)
+                    .heightIn(min = accessibilityUiState.minTouchTarget)
+            ) {
+                Text(stringResource(R.string.action_close))
+            }
+        }
+    }
+
+
+@Composable
+private fun SandboxGeneratorCard(onClick: () -> Unit) {
+    AccessibleCard(
+        modifier = Modifier.fillMaxWidth(),
+        onClick = onClick,
+        contentDescription = stringResource(R.string.content_desc_generate_test_credential)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(Icons.Default.Science, contentDescription = null, tint = MaterialTheme.colorScheme.primary) // Decorative - parent Card has onClick
+            Spacer(modifier = Modifier.width(16.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(stringResource(R.string.settings_generate_test_credential), style = MaterialTheme.typography.bodyLarge)
+                Text(
+                    stringResource(R.string.settings_generate_test_description),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = stringResource(R.string.accessibility_settings_navigate_description))
+        }
+    }
+}
+
+@Composable
+private fun GetCredentialCard(onClick: () -> Unit) {
+    AccessibleCard(
+        modifier = Modifier.fillMaxWidth(),
+        onClick = onClick,
+        contentDescription = stringResource(R.string.content_desc_get_credential)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(Icons.Default.Add, contentDescription = null, tint = MaterialTheme.colorScheme.primary) // Decorative - parent Card has onClick
+            Spacer(modifier = Modifier.width(16.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(stringResource(R.string.action_get_credential), style = MaterialTheme.typography.bodyLarge)
+                Text(stringResource(R.string.settings_find_trusted_issuers), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = stringResource(R.string.accessibility_settings_navigate_description))
+        }
+    }
+}
+
+@Composable
+private fun DeleteCredentialCard(onClick: () -> Unit) {
+    AccessibleCard(
+        modifier = Modifier.fillMaxWidth(),
+        onClick = onClick,
+        contentDescription = stringResource(R.string.content_desc_delete_credential)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(Icons.Default.Delete, contentDescription = null, tint = MaterialTheme.colorScheme.error) // Decorative - parent Card has onClick
+            Spacer(modifier = Modifier.width(16.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(stringResource(R.string.action_delete_credential), style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.error)
+                Text(stringResource(R.string.credential_remove_description), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+        }
+    }
+}
+
+@Composable
+private fun ResetProvingKeyCard(onClick: () -> Unit) {
+    AccessibleCard(
+        modifier = Modifier.fillMaxWidth(),
+        onClick = onClick,
+        contentDescription = stringResource(R.string.content_desc_reset_proving_key)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(Icons.Default.Refresh, contentDescription = null) // Decorative - parent Card has onClick
+            Spacer(modifier = Modifier.width(16.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(stringResource(R.string.settings_reset_proving_key), style = MaterialTheme.typography.bodyLarge)
+                Text(stringResource(R.string.settings_reset_proving_key_description), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+        }
+    }
+}
+
+@Composable
+private fun EnvironmentInfoCard(onClick: () -> Unit) {
+    AccessibleCard(
+        modifier = Modifier.fillMaxWidth(),
+        onClick = onClick,
+        contentDescription = stringResource(R.string.content_desc_environment_info)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(Icons.Default.Info, contentDescription = null, tint = MaterialTheme.colorScheme.primary) // Decorative - parent Card has onClick
+            Spacer(modifier = Modifier.width(16.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(stringResource(R.string.settings_environment), style = MaterialTheme.typography.bodyLarge)
+                Text(stringResource(R.string.settings_environment_description), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+        }
+    }
+}
+
+@Composable
+private fun HelpSupportCard(onClick: () -> Unit) {
+    AccessibleCard(
+        modifier = Modifier.fillMaxWidth(),
+        onClick = onClick,
+        contentDescription = stringResource(R.string.content_desc_help_support)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(
+                Icons.AutoMirrored.Filled.Help,
+                contentDescription = null, // Decorative - parent Card has onClick
+                tint = MaterialTheme.colorScheme.primary
+            )
+            Spacer(modifier = Modifier.width(16.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(stringResource(R.string.help_and_support), style = MaterialTheme.typography.bodyLarge)
+                Text(
+                    stringResource(R.string.help_description),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = stringResource(R.string.accessibility_settings_navigate_description))
+        }
+    }
+}
+
+@Composable
+private fun PrivacyCard() {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)
+    ) {
+        Column(modifier = Modifier.padding(16.dp)) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Icon(Icons.Default.Lock, contentDescription = stringResource(R.string.content_desc_privacy_protected), modifier = Modifier.size(20.dp))
+                Spacer(modifier = Modifier.width(8.dp))
+                Text(stringResource(R.string.privacy_protected), style = MaterialTheme.typography.labelLarge)
+            }
+            Spacer(modifier = Modifier.height(8.dp))
+            Text(stringResource(R.string.privacy_zk_description), style = MaterialTheme.typography.bodySmall)
+        }
+    }
+}
+
+// MARK: - Previews
+
+@LocalePreviews
+@Composable
+private fun SettingsScreenPreview() {
+    ProviiWalletTheme {
+        Surface {
+            Column(
+                modifier = Modifier.padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+                Text(stringResource(R.string.preview_settings_title), style = MaterialTheme.typography.headlineMedium)
+                LanguageNavigationCard(onClick = {})
+                AccessibilityNavigationCard(activeFeatures = 3, onClick = {})
+                PrivacyCard()
+            }
+        }
+    }
+}

@@ -1,0 +1,1541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">تنظیمات</string>
+    <string name="title_accessibility">دسترس‌پذیری</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">دریافت مدارک</string>
+    <string name="title_scan_verification_qr">اسکن کد QR تأیید</string>
+    <string name="title_verifying_age">در حال تأیید سن</string>
+    <string name="title_age_verified">سن تأیید شد</string>
+    <string name="title_verification_failed">تأیید ناموفق بود</string>
+    <string name="title_officer_mode">حالت مسئول</string>
+    <string name="title_officer_dashboard">داشبورد مسئول</string>
+    <string name="title_issue_credential">صدور مدرک</string>
+    <string name="title_credential_ready">مدرک آماده است</string>
+    <string name="title_get_your_credential">مدرک خود را دریافت کنید</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">به Provii Wallet خوش آمدید</string>
+    <string name="welcome_subtitle">تأیید سن ایمن، ساده شد</string>
+    <string name="welcome_first_credential">با افزودن اولین مدرک تأیید سن خود شروع کنید</string>
+    <string name="welcome_description">تأیید سن خصوصی با استفاده از اثبات دانش صفر</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">به Provii Wallet خوش آمدید</string>
+    <string name="onboarding_language_subtitle">زبان مورد نظر خود را انتخاب کنید</string>
+    <string name="onboarding_use_english">استفاده از انگلیسی</string>
+    <string name="onboarding_use_english_description">ادامه با زبان انگلیسی به عنوان زبان برنامه</string>
+    <string name="onboarding_rotating_button_description">دکمه تغییر زبان، در حال نمایش: ⁨%1$s⁩. برای انتخاب زبان دیگری ضربه بزنید.</string>
+    <string name="onboarding_change_later">می‌توانید این را بعداً در تنظیمات تغییر دهید</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">دسترس‌پذیری</string>
+    <string name="onboarding_accessibility_desc">آیا می‌خواهید ویژگی‌های دسترس‌پذیری مانند اندازه متن، اهداف لمسی، یا حرکت کاهش‌یافته را سفارشی کنید؟</string>
+    <string name="onboarding_use_defaults">استفاده از پیش‌فرض‌ها</string>
+    <string name="onboarding_use_defaults_description">ادامه با تنظیمات دسترس‌پذیری استاندارد</string>
+    <string name="onboarding_open_accessibility">تنظیمات دسترس‌پذیری</string>
+    <string name="onboarding_open_accessibility_description">باز کردن تنظیمات دسترس‌پذیری برای سفارشی‌سازی برنامه</string>
+    <string name="onboarding_accessibility_later">می‌توانید این را بعداً در تنظیمات تغییر دهید</string>
+    <string name="onboarding_accessibility_features_title">ویژگی‌های موجود عبارتند از:</string>
+    <string name="onboarding_feature_text_size">اندازه‌های متن بزرگ‌تر</string>
+    <string name="onboarding_feature_touch_targets">اهداف لمسی بزرگ‌تر</string>
+    <string name="onboarding_feature_reduce_motion">حرکت کاهش‌یافته</string>
+    <string name="onboarding_feature_high_contrast">حالت کنتراست بالا</string>
+    <string name="onboarding_talkback_detected">TalkBack شناسایی شد</string>
+    <string name="onboarding_talkback_message">توضیحات دقیق را برای کمک به پیمایش در برنامه فعال کرده‌ایم.</string>
+    <string name="onboarding_continue_to_setup">ادامه به راه‌اندازی</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">راه‌اندازی یک‌باره لازم است</string>
+    <string name="setup_download_required">دانلود لازم است</string>
+    <string name="setup_download_description">این برنامه باید اجزای امنیتی برای اثبات دانش صفر را دانلود کند (تقریباً ⁨87 MB⁩).</string>
+    <string name="setup_wifi_recommended">Wi-Fi توصیه می‌شود</string>
+    <string name="setup_checking_status">در حال بررسی وضعیت راه‌اندازی...</string>
+    <string name="setup_already_setup">قبلاً راه‌اندازی شده است!</string>
+    <string name="setup_ready_message">کیف پول شما برای تأیید سن ایمن آماده است</string>
+    <string name="setup_preparing">در حال آماده‌سازی سیستم تأیید ایمن...</string>
+    <string name="setup_checking_components">در حال بررسی اجزای امنیتی...</string>
+    <string name="setup_downloading">در حال دانلود اجزای امنیتی</string>
+    <string name="setup_download_progress_description">⁨%1$d%%⁩ کامل شد (⁨%2$s MB⁩ از ⁨%3$s MB⁩ دانلود شد)</string>
+    <string name="setup_initializing">در حال راه‌اندازی اجزای امنیتی...</string>
+    <string name="setup_complete">راه‌اندازی کامل شد!</string>
+    <string name="setup_download_info">این اثبات دانش صفر را برای تأیید سن خصوصی فعال می‌کند</string>
+    <string name="setup_one_time_download">دانلود یک‌باره</string>
+    <string name="setup_stuck_message">این بیشتر از حد انتظار طول می‌کشد</string>
+    <string name="setup_stuck_description">ممکن است راه‌اندازی گیر کرده باشد. راه‌اندازی مجدد را امتحان کنید.</string>
+    <string name="setup_restart_message">برنامه باید راه‌اندازی مجدد شود. این گاهی در اولین اجرا اتفاق می‌افتد.</string>
+    <string name="setup_storage_full">فضای ذخیره‌سازی پر است</string>
+    <string name="setup_connection_error">خطای اتصال</string>
+    <string name="setup_failed">راه‌اندازی ناموفق بود</string>
+    <string name="setup_initialization_error">خطای مقداردهی اولیه</string>
+    <string name="error_storage_init_failed">مقداردهی اولیه فضای ذخیره‌سازی ناموفق بود. لطفاً برنامه را راه‌اندازی مجدد کنید.</string>
+    <string name="error_storage_init_close_restart">مقداردهی اولیه فضای ذخیره‌سازی ناموفق بود. لطفاً برنامه را ببندید و دوباره باز کنید.</string>
+    <string name="setup_free_storage_message">حداقل ⁨65 MB⁩ را آزاد کنید و دوباره امتحان کنید</string>
+    <string name="setup_progress_format">⁨%1$d MB⁩ / ⁨%2$d MB⁩</string>
+    <string name="setup_privacy_protected">حریم خصوصی محافظت شده</string>
+    <string name="setup_privacy_description">تأیید سن شما از اثبات دانش صفر استفاده می‌کند. تاریخ تولد شما هرگز به اشتراک گذاشته نمی‌شود.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">مدارک من</string>
+    <string name="credentials_empty">هیچ مدرکی ذخیره نشده است</string>
+    <string name="credential_active">مدرک فعال</string>
+    <string name="credential_expired">مدرک منقضی شده</string>
+    <string name="credential_ready_for_verification">آماده برای تأیید</string>
+    <string name="credential_expired_message">مدرک شما منقضی شده و باید جایگزین شود</string>
+    <string name="credential_stored_successfully">مدرک با موفقیت ذخیره شد</string>
+    <string name="credential_stored_description">مدرک سنی شما به صورت ایمن ذخیره شده و آماده استفاده است</string>
+    <string name="credential_can_prove_age">اکنون می‌توانید سن خود را به صورت خصوصی اثبات کنید</string>
+    <string name="credential_returning">در حال بازگشت به مدارک...</string>
+    <string name="credential_view_credentials">مشاهده مدارک</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">انجام شد</string>
+    <string name="action_scan_qr_code">اسکن کد QR</string>
+    <string name="action_find_locations">یافتن مکان‌ها</string>
+    <string name="action_get_credential">دریافت مدرک</string>
+    <string name="action_replace_credential">جایگزینی با مدرک جدید</string>
+    <string name="action_replace_credential_now">جایگزینی مدرک اکنون</string>
+    <string name="action_delete_credential">حذف مدرک</string>
+    <string name="credential_action_scan_description">دریافت مدرک از صادرکننده مجاز</string>
+    <string name="credential_action_find_description">یافتن صادرکنندگان نزدیک</string>
+    <string name="credential_remove_description">حذف مدرک فعلی</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">حریم خصوصی</string>
+    <string name="credential_info_privacy_value">محافظت شده</string>
+    <string name="credential_info_status">وضعیت</string>
+    <string name="credential_info_status_value">معتبر</string>
+    <string name="credential_tip_title">نکته سریع</string>
+    <string name="credential_tip_message">برای اسکن کدهای QR (پاسخ سریع) تأیید در مکان‌های شرکت‌کننده، دکمه «تأیید سن» را لمس کنید.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">اسکن کد QR</string>
+    <string name="verification_verify_age">تأیید سن</string>
+    <string name="verification_generating_proof">در حال تولید اثبات...</string>
+    <string name="verification_success">تأیید موفقیت‌آمیز بود</string>
+    <string name="verification_failed">تأیید ناموفق بود</string>
+    <string name="verification_age_verified">سن تأیید شد</string>
+    <string name="verification_age_verified_message">سن شما به صورت خصوصی تأیید شده است</string>
+    <string name="verification_can_return">اکنون می‌توانید به سایت بازگردید و ادامه دهید.</string>
+    <string name="verification_returning_browser">در حال بازگشت به مرورگر...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">مرحله ۱ از ۲</string>
+    <string name="verification_step_2_of_2">مرحله ۲ از ۲</string>
+    <string name="verification_point_camera">دوربین را به سمت کد QR تأیید بگیرید</string>
+    <string name="verification_hold_steady">ثابت نگه دارید تا صدای تأیید را بشنوید.</string>
+    <string name="verification_reading_request">در حال خواندن درخواست تأیید...</string>
+    <string name="verification_processing_challenge">در حال پردازش چالش...</string>
+    <string name="verification_creating_proof">در حال ایجاد اثبات سن...</string>
+    <string name="verification_submitting_proof">در حال ارسال اثبات...</string>
+    <string name="verification_processing_message">این ممکن است چند ثانیه طول بکشد</string>
+    <string name="verification_preparing_proof">ما با استفاده از مدرک ذخیره‌شده شما یک اثبات خصوصی آماده می‌کنیم.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">در حال خواندن درخواست تأیید...</string>
+    <string name="verification_status_processing_challenge">در حال پردازش چالش...</string>
+    <string name="verification_status_creating_proof">در حال ایجاد اثبات سن...</string>
+    <string name="verification_status_submitting_proof">در حال ارسال اثبات...</string>
+    <string name="verification_status_verified">✔ سن تأیید شد</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">نمایش درخواست احراز هویت امکان‌پذیر نیست</string>
+    <string name="verification_error_verification_failed">تأیید ناموفق بود</string>
+    <string name="verification_error_generic">خطایی رخ داد</string>
+    <string name="verification_error_failed_to_process_code">پردازش کد ناموفق بود</string>
+    <string name="verification_error_failed_to_process_challenge">پردازش چالش ناموفق بود</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">صادرکنندگان مورد اعتماد در استرالیا</string>
+    <string name="issuers_loading">در حال بارگذاری صادرکنندگان...</string>
+    <string name="issuers_loaded">صادرکنندگان با موفقیت بارگذاری شدند</string>
+    <string name="issuers_unable_to_load">بارگذاری صادرکنندگان امکان‌پذیر نیست</string>
+    <string name="issuers_check_connection">اتصال اینترنت خود را بررسی کنید و دوباره امتحان کنید</string>
+    <string name="issuers_categories_header">دسته‌بندی‌ها</string>
+    <string name="issuers_available_header">صادرکنندگان موجود</string>
+    <string name="issuers_found_count">⁨%d⁩ مورد یافت شد</string>
+    <string name="issuer_status_coming_soon">به زودی</string>
+    <string name="issuer_status_verified">تأیید شده</string>
+    <string name="issuer_how_to_get">نحوه دریافت مدرک</string>
+    <string name="issuer_service_locations">مکان‌های ارائه خدمات</string>
+    <string name="issuer_visit_website">بازدید از وب‌سایت ⁨%s⁩</string>
+    <string name="issuer_learn_more">اطلاعات بیشتر درباره ⁨%s⁩</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">بانکداری</string>
+    <string name="category_super_fund">صندوق بازنشستگی</string>
+    <string name="category_government">دولت</string>
+    <string name="category_travel">سفر</string>
+    <string name="category_telco">مخابرات</string>
+    <string name="category_insurance">بیمه</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">تنظیمات</string>
+    <string name="settings_section_sandbox">حالت Sandbox</string>
+    <string name="settings_section_general">عمومی</string>
+    <string name="settings_section_credentials">مدارک</string>
+    <string name="settings_section_advanced">پیشرفته</string>
+    <string name="settings_section_privacy">حریم خصوصی</string>
+    <string name="settings_security">امنیت</string>
+    <string name="settings_biometric">استفاده از احراز هویت بیومتریک</string>
+    <string name="settings_environment">تنظیمات محیط</string>
+    <string name="settings_environment_description">مشاهده پیکربندی محیط فعلی</string>
+    <string name="settings_reset_proving_key">بازنشانی کلید اثبات</string>
+    <string name="settings_reset_proving_key_description">دانلود مجدد اجزای امنیتی (Debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">صدور مدرک آزمایشی به عنوان صادرکننده</string>
+    <string name="settings_mint_test_credential_subtitle">یک مدرک آزمایشی را به کیف پول خود صادر کنید تا بتوانید آن را از طریق یک نسخه نمایشی طرف اعتمادکننده تأیید کنید.</string>
+    <string name="settings_find_trusted_issuers">یافتن صادرکنندگان مورد اعتماد</string>
+    <string name="settings_version">نسخه: ⁨1.0.0⁩</string>
+    <string name="settings_tap_5x_toggle">۵ بار ضربه بزنید تا تغییر وضعیت دهد</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">زبان</string>
+    <string name="language_selection_description">زبان مورد نظر خود را انتخاب کنید. برنامه برای اعمال تغییرات راه‌اندازی مجدد می‌شود.</string>
+    <string name="language_selected">انتخاب شد</string>
+    <string name="settings_language">زبان</string>
+    <string name="settings_language_description">تغییر زبان برنامه</string>
+    <string name="settings_licenses">مجوزهای متن‌باز</string>
+    <string name="settings_licenses_description">مشاهده مجوزهای شخص ثالث</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">تأیید زبان</string>
+    <string name="language_change_to">تغییر زبان به:</string>
+    <string name="language_restart_notice">برنامه برای اعمال این زبان راه‌اندازی مجدد می‌شود.</string>
+    <string name="language_apply">اعمال</string>
+    <string name="language_cancel">لغو</string>
+    <string name="language_skip_title">از انتخاب زبان صرف نظر شود؟</string>
+    <string name="language_skip_message">اگر از این مرحله عبور کنید، برنامه به طور پیش‌فرض از زبان انگلیسی استفاده می‌کند. می‌توانید زبان را بعداً در تنظیمات تغییر دهید.</string>
+    <string name="language_use_english">استفاده از انگلیسی</string>
+    <string name="language_go_back">بازگشت</string>
+    <string name="language_help_title">راهنمای انتخاب زبان</string>
+    <string name="language_help_how_to">نحوه انتخاب زبان:</string>
+    <string name="language_help_step1">۱. از کادر جستجو برای یافتن زبان خود استفاده کنید</string>
+    <string name="language_help_step2">۲. روی زبان مورد نظر خود ضربه بزنید</string>
+    <string name="language_help_step3">۳. انتخاب خود را تأیید کنید</string>
+    <string name="language_help_system_note">زبان سیستم شما در بالا برجسته می‌شود، در صورت پشتیبانی.</string>
+    <string name="language_help_settings_note">می‌توانید این را بعداً در تنظیمات تغییر دهید.</string>
+    <string name="language_got_it">متوجه شدم</string>
+    <string name="language_select_title">انتخاب زبان</string>
+    <string name="language_skip_button">عبور (استفاده از انگلیسی)</string>
+    <string name="language_search_placeholder">جستجوی زبان‌ها...</string>
+    <string name="language_no_results">هیچ زبانی یافت نشد</string>
+    <string name="language_try_different">عبارت جستجوی دیگری را امتحان کنید</string>
+    <string name="language_system_badge">زبان سیستم</string>
+    <string name="language_count">⁨%d⁩ زبان</string>
+    <string name="language_no_match_announcement">هیچ زبانی مطابق با جستجوی شما یافت نشد</string>
+    <string name="language_found_announcement">⁨%d⁩ زبان یافت شد</string>
+    <string name="language_search_cleared">جستجو پاک شد، نمایش همه ⁨%d⁩ زبان</string>
+    <string name="language_selected_announcement">⁨%1$s⁩ انتخاب شد، ⁨%2$s⁩</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">صفحه انتخاب زبان</string>
+    <string name="language_help_button_description">راهنما و اطلاعات درباره انتخاب زبان</string>
+    <string name="language_skip_description">از انتخاب زبان صرف نظر کنید و به طور پیش‌فرض از انگلیسی استفاده کنید</string>
+    <string name="language_clear_search_description">پاک کردن جستجو</string>
+    <string name="language_count_description">⁨%d⁩ زبان موجود</string>
+    <string name="language_apply_description">اعمال انتخاب زبان و ادامه</string>
+    <string name="language_cancel_description">لغو انتخاب زبان</string>
+    <string name="language_cancelled_announcement">انتخاب زبان لغو شد</string>
+    <string name="language_selected_description">زبان انتخاب‌شده: ⁨%1$s⁩، ⁨%2$s⁩</string>
+    <string name="language_item_system">زبان سیستم: ⁨%1$s⁩، ⁨%2$s⁩</string>
+    <string name="language_item_selected">⁨%1$s⁩، ⁨%2$s⁩، در حال حاضر انتخاب شده</string>
+    <string name="language_item_system_selected">زبان سیستم: ⁨%1$s⁩، ⁨%2$s⁩، در حال حاضر انتخاب شده</string>
+    <string name="language_item_default">⁨%1$s⁩، ⁨%2$s⁩</string>
+    <string name="language_returned_to_selection">بازگشت به انتخاب زبان</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">Sandbox</string>
+    <string name="sandbox_mode_active">حالت Sandbox فعال است</string>
+    <string name="sandbox_mode_banner">حالت Sandbox فعال است</string>
+    <string name="sandbox_mode_description">در حال استفاده از محیط آزمایشی. پنج بار روی شماره نسخه ضربه بزنید تا تغییر کند.</string>
+    <string name="sandbox_credential_title">مدرک Sandbox</string>
+    <string name="sandbox_credential_description">یک مدرک Sandbox بسازید تا جریان‌های تأیید را بدون لمس داده‌های واقعی آزمایش کنید.</string>
+    <string name="sandbox_select_age">انتخاب سن</string>
+    <string name="sandbox_age_format">⁨%d⁩+</string>
+    <string name="sandbox_default_dob">تاریخ تولد پیش‌فرض: ⁨%s⁩</string>
+    <string name="sandbox_override_dob">جایگزینی تاریخ تولد پیش‌فرض</string>
+    <string name="sandbox_override_description">به‌جای پیش‌فرض مبتنی بر سن، یک تاریخ دقیق وارد کنید.</string>
+    <string name="sandbox_date_of_birth">تاریخ تولد</string>
+    <string name="sandbox_generate_credential">ساخت مدرک</string>
+    <string name="sandbox_generating">در حال ساخت…</string>
+    <string name="sandbox_test_credential_saved">مدرک آزمایشی ذخیره شد</string>
+    <string name="sandbox_id_prefix">پیشوند شناسه: ⁨%s⁩…</string>
+    <string name="sandbox_unable_to_generate">ساخت مدرک ممکن نیست</string>
+    <string name="settings_sandbox_dob_format">تاریخ تولد: ⁨%s⁩</string>
+    <string name="settings_sandbox_age_dob_format">سن ⁨%d⁩+ (تاریخ تولد: ⁨%s⁩)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">پیکربندی محیط</string>
+    <string name="environment_current">فعلی: ⁨%s⁩</string>
+    <string name="environment_issuer_api">‏Issuer API: ⁨%s⁩</string>
+    <string name="environment_verifier_api">‏Verifier API: ⁨%s⁩</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">حذف مدرک؟</string>
+    <string name="dialog_delete_credential_message">این عملیات مدرک را از دستگاه شما حذف می‌کند. در صورت نیاز می‌توانید دوباره آن را از صادرکننده دریافت کنید.</string>
+    <string name="dialog_delete_credential_announcement">کادر گفتگو باز شد: حذف مدرک</string>
+    <string name="dialog_reset_proving_key_title">بازنشانی کلید اثبات؟</string>
+    <string name="dialog_reset_proving_key_message">کلید اثبات و فایل‌های پشتیبان حذف شده و دفعه بعد که برنامه را باز کنید دوباره دانلود می‌شوند.</string>
+    <string name="dialog_reset_proving_key_announcement">کادر گفتگو باز شد: بازنشانی کلید اثبات</string>
+    <string name="dialog_environment_info_announcement">کادر گفتگو باز شد: پیکربندی محیط</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <string name="accessibility_title">دسترس‌پذیری</string>
+    <string name="accessibility_service_label">دسترس‌پذیری Provii Wallet</string>
+    <string name="accessibility_service_description">سرویس دسترس‌پذیری Provii Wallet پشتیبانی پیشرفته‌ای برای کاربران دارای معلولیت فراهم می‌کند. این شامل خواندن خودکار مدارک، ناوبری راهنما و تعاملات ساده‌شده می‌شود.</string>
+    <string name="accessibility_personalize">تجربه خود را شخصی‌سازی کنید</string>
+    <string name="accessibility_customize_features">سفارشی‌سازی ویژگی‌های دسترس‌پذیری</string>
+    <string name="accessibility_quick_setup">راه‌اندازی سریع</string>
+    <string name="accessibility_features_active">⁨%d⁩ ویژگی فعال</string>
+    <string name="accessibility_customize_experience">تجربه خود را سفارشی کنید</string>
+    <string name="accessibility_reset_title">بازنشانی تنظیمات دسترس‌پذیری؟</string>
+    <string name="accessibility_reset_message">همه ترجیحات دسترس‌پذیری به مقادیر پیش‌فرض بازمی‌گردند.</string>
+    <string name="accessibility_reset">بازنشانی تنظیمات دسترس‌پذیری</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">بینایی</string>
+    <string name="accessibility_category_interaction">تعامل</string>
+    <string name="accessibility_category_cognitive">پشتیبانی شناختی</string>
+    <string name="accessibility_category_alternative_input">ورودی جایگزین</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">متن بسیار بزرگ</string>
+    <string name="accessibility_extra_large_text_description">افزایش اندازه پایه فونت به میزان ۴۵٪</string>
+    <string name="accessibility_high_contrast">کنتراست بالا</string>
+    <string name="accessibility_high_contrast_description">استفاده از رنگ‌های با کنتراست بالا</string>
+    <string name="accessibility_reduce_transparency">کاهش شفافیت</string>
+    <string name="accessibility_reduce_transparency_description">حذف جلوه‌های تار و شیشه‌ای</string>
+    <string name="accessibility_color_blind_mode">حالت کوررنگی</string>
+    <string name="accessibility_color_blind_optimized">رنگ‌های بهینه‌شده برای ⁨%s⁩</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">هیچ</string>
+    <string name="color_blind_protanopia">پروتانوپیا (کوررنگی قرمز)</string>
+    <string name="color_blind_deuteranopia">دوترانوپیا (کوررنگی سبز)</string>
+    <string name="color_blind_tritanopia">تریتانوپیا (کوررنگی آبی)</string>
+    <string name="color_blind_monochrome">تک‌رنگ</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">اهداف لمسی بزرگ‌تر</string>
+    <string name="accessibility_larger_touch_targets_description">افزایش اندازه دکمه‌ها و تراشه‌ها</string>
+    <string name="accessibility_reduce_motion">کاهش حرکت</string>
+    <string name="accessibility_reduce_motion_description">به حداقل رساندن انیمیشن‌ها و انتقال‌ها</string>
+    <string name="accessibility_extended_timeouts">مهلت‌های زمانی طولانی‌تر</string>
+    <string name="accessibility_extended_timeouts_description">زمان بیشتری برای اقدامات زمان‌بندی‌شده</string>
+    <string name="accessibility_simplified_gestures">ژست‌های ساده‌شده</string>
+    <string name="accessibility_simplified_gestures_description">کاهش ژست‌های چندمرحله‌ای</string>
+    <string name="accessibility_haptic_feedback">بازخورد لمسی</string>
+    <string name="accessibility_haptic_feedback_description">تأیید لرزشی برای اقدامات</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">رابط ساده‌شده</string>
+    <string name="accessibility_simplified_interface_description">پنهان کردن گزینه‌های پیشرفته و کاهش شلوغی</string>
+    <string name="accessibility_show_step_numbers">نمایش شماره مراحل</string>
+    <string name="accessibility_show_step_numbers_description">نمایش نشانگرهای پیشرفت</string>
+    <string name="accessibility_detailed_descriptions">توضیحات مفصل</string>
+    <string name="accessibility_detailed_descriptions_description">ارائه متن توضیحی اضافی</string>
+    <string name="accessibility_confirm_actions">تأیید قبل از اقدام</string>
+    <string name="accessibility_confirm_actions_description">درخواست تأیید برای عملیات مهم</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">ورود دستی کد</string>
+    <string name="accessibility_manual_code_entry_description">امکان تایپ کردن کدهای QR به‌جای اسکن کردن</string>
+    <string name="accessibility_voice_input">ورودی صوتی</string>
+    <string name="accessibility_voice_input_description">فعال‌سازی تشخیص گفتار برای فیلدهای متنی</string>
+
+
+
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">بینایی</string>
+    <string name="accessibility_profile_motor">حرکتی</string>
+    <string name="accessibility_profile_cognitive">شناختی</string>
+    <string name="accessibility_profile_senior">سالمند</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">بازگشت</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">خانه</string>
+    <string name="breadcrumb_settings">تنظیمات</string>
+    <string name="breadcrumb_accessibility">دسترس‌پذیری</string>
+    <string name="breadcrumb_language">زبان</string>
+    <string name="breadcrumb_help">مرکز راهنما</string>
+    <string name="breadcrumb_officer_mode">حالت مسئول</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">تایپوگرافی و فاصله متن</string>
+    <string name="accessibility_line_spacing">فاصله خطوط</string>
+    <string name="accessibility_line_spacing_description">تنظیم فاصله بین خطوط متن</string>
+    <string name="accessibility_paragraph_spacing">فاصله پاراگراف</string>
+    <string name="accessibility_paragraph_spacing_description">تنظیم فاصله بین پاراگراف‌ها</string>
+    <string name="accessibility_letter_spacing">فاصله حروف</string>
+    <string name="accessibility_letter_spacing_description">تنظیم فاصله بین حروف</string>
+    <string name="accessibility_typography_aaa_note">توصیه‌های AAA: فاصله خطوط ۱.۵ برابر، فاصله پاراگراف ۲.۰ برابر و فاصله حروف ⁨‏0.12em⁩.</string>
+    <string name="accessibility_spacing_current">فعلی: ⁨%s⁩</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">⁨%s⁩ (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">رفتار مهلت زمانی</string>
+    <string name="accessibility_timeout_no_automatic">بدون مهلت زمانی خودکار برای انطباق با AAA</string>
+    <string name="accessibility_timeout_auto_advance_30">پیشروی خودکار پس از ۳۰ ثانیه</string>
+    <string name="accessibility_timeout_auto_advance_60">پیشروی خودکار پس از ۶۰ ثانیه</string>
+    <string name="accessibility_timeout_set_announcement">رفتار مهلت زمانی روی ⁨%s⁩ تنظیم شد</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">سطح کنتراست</string>
+    <string name="accessibility_contrast_aaa_ratio">نسبت کنتراست ۷:۱ برای انطباق با AAA</string>
+    <string name="accessibility_contrast_standard">کنتراست استاندارد</string>
+    <string name="accessibility_contrast_aa_ratio">نسبت کنتراست ۴.۵:۱ برای انطباق با AA</string>
+    <string name="accessibility_contrast_set_announcement">سطح کنتراست روی ⁨%s⁩ تنظیم شد</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">حالت کوررنگی روی ⁨%s⁩ تنظیم شد</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">لغزنده ⁨%1$s⁩. مقدار فعلی: ⁨%2$s⁩. ⁨%3$s⁩محدوده از ⁨%4$s⁩ تا ⁨%5$s⁩</string>
+    <string name="accessibility_slider_aaa_compliant">مطابق با AAA. </string>
+    <string name="accessibility_slider_announcement">⁨%1$s⁩ روی ⁨%2$s⁩⁨%3$s⁩ تنظیم شد</string>
+    <string name="accessibility_slider_announcement_aaa">، مطابق با AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">⁨%s⁩ فعال شد</string>
+    <string name="accessibility_toggle_disabled">⁨%s⁩ غیرفعال شد</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">بازخورد تأیید</string>
+    <string name="accessibility_sound_enabled">پخش صدا در صورت موفقیت</string>
+    <string name="accessibility_sound_enabled_description">پخش یک صدای تأیید پس از تأیید موفق</string>
+    <string name="accessibility_sound_style">سبک صدا</string>
+    <string name="accessibility_sound_preview">پیش‌نمایش صدا</string>
+    <string name="accessibility_sound_preview_preset">پیش‌نمایش ⁨%s⁩</string>
+    <string name="accessibility_sound_style_set_announcement">سبک صدا روی ⁨%s⁩ تنظیم شد</string>
+    <string name="accessibility_haptic_enabled">لرزش در صورت موفقیت</string>
+    <string name="accessibility_haptic_enabled_description">ارائه بازخورد لمسی پس از تأیید موفق</string>
+    <string name="accessibility_sound_footer">صدا از تنظیمات حالت بی‌صدای دستگاه شما پیروی می‌کند</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">بلندی صدا</string>
+    <string name="accessibility_volume_percent">‏%d%%</string>
+    <string name="accessibility_volume_preview">پیش‌نمایش بلندی صدای فعلی</string>
+    <string name="accessibility_volume_set_announcement">بلندی صدا روی ⁨%d⁩ درصد تنظیم شد</string>
+    <string name="accessibility_volume_slider_description">لغزنده بلندی صدا. مقدار فعلی: ⁨%d⁩ درصد</string>
+    <string name="accessibility_volume_min">‏0%</string>
+    <string name="accessibility_volume_max">‏100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">بازنشانی تنظیمات</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <string name="officer_mode">حالت مسئول</string>
+    <string name="officer_id">شناسه مسئول</string>
+    <string name="officer_id_placeholder">مثال: ⁨OFFICER_WA_ALB_001⁩</string>
+    <string name="officer_id_hint">شناسه مسئول اختصاص‌یافته خود را وارد کنید</string>
+    <string name="officer_yubikey_connected">YubiKey متصل شد</string>
+    <string name="officer_connect_yubikey">اتصال YubiKey</string>
+    <string name="officer_touch_yubikey">برای احراز هویت YubiKey خود را لمس کنید…</string>
+    <string name="officer_authenticate_hmac">احراز هویت با HMAC</string>
+    <string name="officer_authentication_process">فرآیند احراز هویت:</string>
+    <string name="officer_auth_steps">۱. شناسه مسئول خود را وارد کنید\n۲. روی احراز هویت کلیک کنید\n۳. وقتی YubiKey چشمک زد آن را لمس کنید\n۴. احراز هویت HMAC هویت شما را تأیید می‌کند</string>
+    <string name="officer_auth_failed">احراز هویت ناموفق بود. لطفاً شناسه مسئول خود را بررسی کرده و دوباره امتحان کنید.</string>
+    <string name="officer_session_info">مسئول: ⁨%s⁩</string>
+    <string name="officer_station_info">ایستگاه: ⁨%s⁩</string>
+    <string name="officer_issued_today">صادرشده امروز: ⁨%1$d⁩ / ⁨50⁩</string>
+    <string name="officer_issue_age_credential">صدور مدرک سنی</string>
+    <string name="officer_issue_description">هویت کاربر را تأیید کرده و یک مدرک سنی دیجیتال صادر کنید</string>
+    <string name="officer_start_issuance">شروع صدور جدید</string>
+    <string name="officer_issuance_process">فرآیند صدور</string>
+    <string name="officer_issuance_steps">۱. مدرک شناسایی فیزیکی کاربر را بررسی کنید\n۲. تاریخ تولد او را وارد کنید\n۳. اطمینان حاصل کنید اطلاعات کاملاً مطابقت دارند\n۴. مدرک را با کد QR گواهی صادر کنید\n۵. کاربر کد QR را اسکن می‌کند تا مدرک دریافت کند</string>
+    <string name="officer_verify_identity">تأیید هویت کاربر</string>
+    <string name="officer_select_dob">انتخاب تاریخ تولد</string>
+    <string name="officer_change_date">تغییر تاریخ</string>
+    <string name="officer_age_years">سن: ⁨%d⁩ سال</string>
+    <string name="officer_under_18_warning">زیر ۱۸ سال - صدور مدرک ممکن نیست</string>
+    <string name="officer_verification_checklist">فهرست تأیید</string>
+    <string name="officer_document_verified">مدرک فیزیکی تأیید شد</string>
+    <string name="officer_document_verified_description">من یک مدرک شناسایی معتبر دولتی را رؤیت کرده‌ام</string>
+    <string name="officer_dob_matches">تاریخ تولد کاملاً مطابقت دارد</string>
+    <string name="officer_dob_matches_description">تاریخ تولد روی مدرک فیزیکی: ⁨%s⁩</string>
+    <string name="officer_issue_credential">صدور مدرک</string>
+    <string name="officer_user_scanned_successfully">کاربر با موفقیت اسکن کرد</string>
+    <string name="officer_return_to_dashboard">بازگشت به داشبورد</string>
+    <string name="officer_go_back">بازگشت</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">احراز هویت YubiKey</string>
+    <string name="yubikey_step_format">مرحله ⁨%1$d⁩ از ⁨%2$d⁩</string>
+    <string name="yubikey_led_should_blink">چراغ YubiKey باید چشمک بزند</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">در حال اعتبارسنجی ورودی…</string>
+    <string name="officer_state_creating_attestation">در حال ایجاد تأییدیه…</string>
+    <string name="officer_state_computing_commitment">در حال محاسبه تعهد رمزنگاری…</string>
+    <string name="officer_state_creating_session">در حال ایجاد جلسه امن…</string>
+    <string name="officer_state_signing">در حال امضای مدرک…</string>
+    <string name="officer_state_finalizing">در حال نهایی‌سازی مدرک…</string>
+    <string name="officer_state_storing_attestation">در حال ذخیره تأییدیه…</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">جلسه به زودی منقضی می‌شود</string>
+    <string name="officer_session_expiring_message">جلسه شما در ⁨%d⁩ ثانیه دیگر منقضی می‌شود. آیا می‌خواهید پیشرفت خود را ذخیره کنید؟</string>
+    <string name="officer_session_expiring_announcement">هشدار: جلسه شما در ⁨%d⁩ ثانیه دیگر منقضی می‌شود</string>
+    <string name="officer_save_and_continue">ذخیره و ادامه</string>
+    <string name="officer_continue_without_saving">ادامه بدون ذخیره</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">تاریخ تولد</string>
+    <string name="officer_age_format">سن: ⁨%d⁩ سال</string>
+    <string name="officer_under_18_full_warning">زیر ۱۸ سال - صدور مدرک ممکن نیست. فقط افراد ۱۸ سال یا بالاتر واجد شرایط مدارک تأیید سنی هستند. لطفاً تاریخ تولد را بررسی کنید.</string>
+    <string name="officer_verification_checklist_header">فهرست تأیید</string>
+    <string name="officer_physical_document_verified">مدرک فیزیکی تأیید شد</string>
+    <string name="officer_sighted_valid_id">من یک مدرک شناسایی معتبر دولتی را رؤیت کرده‌ام</string>
+    <string name="officer_dob_matches_exactly">تاریخ تولد کاملاً مطابقت دارد</string>
+    <string name="officer_dob_on_document">تاریخ تولد روی مدرک فیزیکی: ⁨%s⁩</string>
+    <string name="officer_error_label">خطا</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <string name="issuance_scan_qr">کد QR صدور را اسکن کنید</string>
+    <string name="issuance_downloads_credential">این عملیات مدرک سنی شما را دانلود می‌کند.</string>
+    <string name="issuance_center_qr">کد QR را در مرکز کادر قرار داده و ثابت نگه دارید.</string>
+    <string name="issuance_enter_code_manually">ورود دستی کد</string>
+    <string name="issuance_processing_qr">در حال پردازش کد QR…</string>
+    <string name="issuance_invalid_data">داده‌های صدور نامعتبر است</string>
+    <string name="issuance_verification_qr_error">این یک کد QR تأیید است. لطفاً کد QR صدور مدرک را اسکن کنید.</string>
+    <string name="issuance_invalid_qr_format">فرمت کد QR نامعتبر است</string>
+    <string name="issuance_failed_to_process">پردازش کد QR ناموفق بود: ⁨%s⁩</string>
+    <string name="issuance_code">کد صدور</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <string name="manual_entry_title">ورود دستی کد</string>
+    <string name="manual_entry_enter_code_manually">ورود دستی کد</string>
+    <string name="manual_entry_verification_description">کد تأیید ۱۲ رقمی نمایش داده‌شده روی صفحه تأییدکننده را وارد کنید.</string>
+    <string name="manual_entry_issuance_description">کد نمایش داده‌شده روی صفحه صادرکننده را تایپ کنید.</string>
+    <string name="manual_entry_verification_code">کد تأیید</string>
+    <string name="manual_entry_submit">ارسال کد</string>
+    <string name="manual_entry_please_enter">لطفاً یک کد وارد کنید</string>
+    <string name="manual_entry_please_enter_verification">لطفاً یک کد تأیید وارد کنید</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">شروع گوش دادن</string>
+    <string name="voice_input_stop_listening">توقف گوش دادن</string>
+    <string name="voice_input_recognized">تشخیص داده شد:</string>
+    <string name="content_desc_voice_input_listening">در حال گوش دادن به ورودی صوتی</string>
+    <string name="content_desc_voice_input_available">ورودی صوتی در دسترس است</string>
+    <string name="voice_input_permission_title">دسترسی به میکروفون لازم است</string>
+    <string name="voice_input_permission_message">ورودی صوتی به دسترسی به میکروفون نیاز دارد. می‌توانید آن را از تنظیمات سیستم فعال کنید.</string>
+    <string name="voice_input_listening">در حال گوش دادن…</string>
+    <string name="voice_input_error">خطای ورودی صوتی</string>
+    <string name="voice_input_tap_to_speak">برای صحبت کردن ضربه بزنید</string>
+    <string name="voice_input_did_you_say">آیا گفتید «⁨%1$s⁩»؟</string>
+    <string name="voice_input_confirm">تأیید</string>
+    <string name="voice_input_retry">دوباره امتحان کنید</string>
+    <string name="voice_input_cancel">لغو</string>
+    <string name="voice_input_button">ورودی صوتی</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">ورودی صوتی در این دستگاه در دسترس نیست</string>
+    <string name="voice_input_error_audio">خطای ضبط صدا. میکروفون را بررسی کنید.</string>
+    <string name="voice_input_error_network">خطای شبکه. اتصال را بررسی کنید.</string>
+    <string name="voice_input_error_network_timeout">مهلت زمانی شبکه. دوباره امتحان کنید.</string>
+    <string name="voice_input_error_no_match">صدایی شناسایی نشد. لطفاً دوباره امتحان کنید.</string>
+    <string name="voice_input_error_recognizer_busy">ورودی صوتی مشغول است. لطفاً صبر کنید.</string>
+    <string name="voice_input_error_server">خطای سرور. بعداً دوباره امتحان کنید.</string>
+    <string name="voice_input_error_speech_timeout">صدایی شنیده نشد. لطفاً بلندتر صحبت کنید.</string>
+    <string name="voice_input_error_insufficient_permissions">دسترسی به میکروفون رد شد.</string>
+    <string name="voice_input_error_generic">خطای ورودی صوتی. لطفاً دوباره امتحان کنید.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <string name="action_back">بازگشت</string>
+    <string name="action_close">بستن</string>
+    <string name="action_cancel">لغو</string>
+    <string name="action_ok">تأیید</string>
+    <string name="action_set">تنظیم</string>
+    <string name="action_change">تغییر</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_reset">بازنشانی</string>
+    <string name="action_retry">تلاش مجدد</string>
+    <string name="action_try_again">دوباره امتحان کنید</string>
+    <string name="action_refresh">بارگذاری مجدد</string>
+    <string name="action_download_now">اکنون دانلود کنید</string>
+    <string name="action_retry_setup">تلاش مجدد راه‌اندازی</string>
+    <string name="action_retry_download">تلاش مجدد دانلود</string>
+    <string name="action_restart_setup">راه‌اندازی مجدد</string>
+    <string name="action_manage_storage">مدیریت فضای ذخیره‌سازی</string>
+    <string name="action_check_wifi_settings">ابتدا تنظیمات Wi-Fi را بررسی کنید</string>
+    <string name="action_check_wifi_settings_short">بررسی تنظیمات Wi-Fi</string>
+    <string name="action_grant_permission">اعطای دسترسی</string>
+    <string name="action_grant_camera_access">اعطای دسترسی به دوربین</string>
+    <string name="action_return_to_browser">بازگشت به مرورگر</string>
+    <string name="action_show_debug_info">نمایش اطلاعات اشکال‌زدایی</string>
+    <string name="action_reset_redownload">بازنشانی و دانلود مجدد</string>
+    <string name="action_end_session">پایان جلسه</string>
+    <string name="action_expand">گسترش</string>
+    <string name="action_collapse">جمع کردن</string>
+    <string name="accessibility_state_expanded">گسترش‌یافته</string>
+    <string name="accessibility_state_collapsed">جمع‌شده</string>
+    <string name="accessibility_state_checked">علامت‌گذاری شده</string>
+    <string name="accessibility_state_unchecked">علامت‌گذاری نشده</string>
+    <string name="accessibility_state_selected">انتخاب شده</string>
+    <string name="accessibility_state_not_selected">انتخاب نشده</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <string name="error_generic">خطایی رخ داد</string>
+    <string name="error_camera_permission">برای اسکن QR دسترسی به دوربین لازم است</string>
+    <string name="error_camera_access_needed">دسترسی به دوربین لازم است</string>
+    <string name="error_camera_permission_description">برای اسکن کدهای QR دسترسی به دوربین را اعطا کنید یا ورود دستی را از تنظیمات دسترس‌پذیری فعال کنید.</string>
+    <string name="error_camera_permission_required">برای اسکن کدهای QR دسترسی به دوربین الزامی است</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">در حال جستجو برای کد QR…</string>
+    <string name="qr_scanner_camera_required">دسترسی به دوربین لازم است</string>
+    <string name="qr_scanner_camera_preview">پیش‌نمایش دوربین برای اسکن کدهای QR</string>
+    <string name="qr_scanner_status_scanning">در حال جستجو برای کد QR</string>
+    <string name="qr_scanner_requesting_permission">درخواست دسترسی به دوربین</string>
+    <string name="error_camera_start_failed">راه‌اندازی دوربین ناموفق بود: ⁨%s⁩</string>
+    <string name="error_camera_init_failed">مقداردهی اولیه دوربین ناموفق بود: ⁨%s⁩</string>
+    <string name="error_biometric_not_available">احراز هویت بیومتریک در دسترس نیست</string>
+    <string name="error_network">خطای شبکه رخ داد</string>
+    <string name="error_no_credential">هیچ مدرکی در دسترس نیست. لطفاً ابتدا یک مدرک دریافت کنید.</string>
+    <string name="credential_picker_title">انتخاب مدرک</string>
+    <string name="credential_picker_description">شما چندین مدرک دارید که می‌توان برای این تأیید استفاده کرد. لطفاً یکی را انتخاب کنید.</string>
+    <string name="credential_picker_expired_label">منقضی‌شده</string>
+    <string name="credential_picker_accessibility_select">انتخاب مدرک: ⁨%1$s⁩</string>
+    <string name="error_failed_to_process_challenge">پردازش چالش ناموفق بود</string>
+    <string name="error_failed_to_create_proof">ایجاد اثبات ناموفق بود</string>
+    <string name="error_verification_failed">تأیید ناموفق بود</string>
+    <string name="error_occurred_during_verification">خطایی در حین تأیید رخ داد</string>
+    <string name="error_connection_timeout">اتصال به پایان رسید. لطفاً دوباره امتحان کنید.</string>
+    <string name="error_unable_to_connect">اتصال ممکن نیست. لطفاً اتصال اینترنت خود را بررسی کنید.</string>
+    <string name="error_secure_connection_failed">اتصال امن ناموفق بود. لطفاً دوباره امتحان کنید.</string>
+    <string name="error_security_verification_failed">تأیید امنیتی ناموفق بود. لطفاً دوباره امتحان کنید.</string>
+    <string name="error_invalid_input">ورودی نامعتبر. لطفاً اطلاعات خود را بررسی کرده و دوباره امتحان کنید.</string>
+    <string name="error_operation_in_progress">عملیات دیگری در حال انجام است. لطفاً صبر کنید.</string>
+    <string name="error_operation_cancelled">عملیات لغو شد.</string>
+    <string name="error_age_requirement_not_met">شرط سنی این مدرک برآورده نشده است.</string>
+    <string name="error_wallet_not_initialized">کیف پول مقداردهی نشده. لطفاً برنامه را مجدداً راه‌اندازی کنید.</string>
+    <string name="error_security">خطای امنیتی. لطفاً دوباره امتحان کنید.</string>
+    <string name="error_connection_timeout_short">مهلت اتصال. لطفاً دوباره امتحان کنید.</string>
+    <string name="error_invalid_input_provided">ورودی نامعتبر ارائه شده.</string>
+    <string name="error_invalid_data_format">فرمت داده نامعتبر. لطفاً دوباره امتحان کنید.</string>
+    <string name="error_storage">خطای ذخیره‌سازی. لطفاً فضای ذخیره‌سازی دستگاه را بررسی کنید.</string>
+    <string name="error_network_short">خطای شبکه. لطفاً اتصال خود را بررسی کنید.</string>
+    <string name="error_label">خطا</string>
+    <string name="error_dismiss">رد کردن خطا</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <string name="status_processing">در حال پردازش…</string>
+    <string name="status_initializing_wallet">در حال مقداردهی اولیه کیف پول…</string>
+    <string name="status_loading">در حال بارگذاری…</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <string name="privacy_protected">حریم خصوصی محافظت شده</string>
+    <string name="privacy_zk_description">تاریخ تولد شما هرگز به اشتراک گذاشته نمی‌شود. تأییدکنندگان فقط می‌فهمند که آیا شما شرط سنی آن‌ها را برآورده می‌کنید یا خیر.</string>
+
+    <!-- Privacy Settings Screen -->
+    <string name="privacy_settings_title">تنظیمات حریم خصوصی</string>
+    <string name="privacy_settings_description">کنترل جمع‌آوری داده و مدیریت اطلاعات شما</string>
+    <string name="privacy_section_data_collection">جمع‌آوری داده</string>
+    <string name="privacy_section_your_data">داده‌های شما</string>
+    <string name="privacy_protection_title">حریم خصوصی شما محافظت شده است</string>
+    <string name="privacy_protection_description">Provii Wallet از اثبات‌های دانش‌صفر برای تأیید سن شما بدون افشای تاریخ تولدتان استفاده می‌کند. داده‌های مدرک شما فقط روی دستگاهتان ذخیره شده و هرگز با کسی به اشتراک گذاشته نمی‌شود.</string>
+    <string name="privacy_analytics_title">آمار استفاده</string>
+    <string name="privacy_analytics_description">با به اشتراک‌گذاری داده‌های استفاده ناشناس به بهبود Provii Wallet کمک کنید</string>
+    <string name="privacy_analytics_enabled">آمار استفاده فعال است</string>
+    <string name="privacy_analytics_disabled">آمار استفاده غیرفعال است</string>
+    <string name="privacy_crash_reporting_title">گزارش خرابی</string>
+    <string name="privacy_crash_reporting_description">با ارسال خودکار گزارش‌های خرابی به رفع اشکالات کمک کنید</string>
+    <string name="privacy_crash_reporting_enabled">گزارش خرابی فعال است</string>
+    <string name="privacy_crash_reporting_disabled">گزارش خرابی غیرفعال است</string>
+    <string name="privacy_what_we_collect_title">چه داده‌هایی جمع‌آوری می‌کنیم</string>
+    <string name="privacy_what_we_collect_subtitle">برای آشنایی با شیوه‌های داده‌ای ما ضربه بزنید</string>
+    <string name="privacy_data_collection_info_title">اطلاعات جمع‌آوری داده</string>
+    <string name="privacy_data_we_collect_header">آنچه جمع‌آوری می‌کنیم (در صورت فعال بودن):</string>
+    <string name="privacy_data_we_collect_list">- آمار ناشناس استفاده از برنامه\n- گزارش‌های خرابی و لاگ‌های خطا\n- نوع دستگاه و نسخه سیستم‌عامل\n- اطلاعات نسخه برنامه</string>
+    <string name="privacy_data_we_dont_collect_header">آنچه هرگز جمع‌آوری نمی‌کنیم:</string>
+    <string name="privacy_data_we_dont_collect_list">- تاریخ تولد شما\n- نام یا اطلاعات شخصی شما\n- موقعیت مکانی شما\n- داده‌های مدرک شما\n- داده‌های بیومتریک</string>
+    <string name="privacy_data_never_shared_note">داده‌های مدرک شما هرگز با Provii یا هیچ طرف ثالثی به اشتراک گذاشته نمی‌شود. روی دستگاه شما باقی می‌ماند.</string>
+    <string name="privacy_policy_title">سیاست حریم خصوصی</string>
+    <string name="privacy_policy_subtitle">سیاست حریم خصوصی کامل ما را بخوانید</string>
+    <string name="privacy_delete_my_data_title">حذف داده‌های من</string>
+    <string name="privacy_delete_my_data_subtitle">حذف همه مدارک و داده‌های ذخیره‌شده</string>
+    <string name="privacy_delete_data_dialog_title">حذف همه داده‌ها؟</string>
+    <string name="privacy_delete_data_dialog_message">این عملیات همه مدارک و داده‌های برنامه شما را به‌طور دائمی از این دستگاه حذف می‌کند. برای استفاده مجدد از برنامه باید یک مدرک جدید دریافت کنید.</string>
+    <string name="privacy_delete_data_dialog_warning">این عملیات قابل بازگشت نیست.</string>
+    <string name="accessibility_officer_back_description">بازگشت</string>
+    <string name="accessibility_discovery_back_description">بازگشت</string>
+    <string name="accessibility_discovery_refresh_description">بارگذاری مجدد</string>
+    <string name="accessibility_discovery_verified_description">تأیید شده</string>
+    <string name="accessibility_officer_done_description">انجام شد</string>
+    <string name="accessibility_officer_attestation_qr_description">کد QR گواهی برای اسکن توسط کاربر</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">رفتن به %s</string>
+    <string name="accessibility_skip_main_content">محتوای اصلی</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">دارای آسیب بینایی</string>
+    <string name="accessibility_profile_motor_impaired">دارای آسیب حرکتی</string>
+    <string name="accessibility_profile_cognitive_support">پشتیبانی شناختی</string>
+    <string name="accessibility_profile_elderly_support">پشتیبانی سالمندان</string>
+    <string name="accessibility_profile_default">پیش‌فرض</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">هیچ‌کدام</string>
+    <string name="color_blind_mode_protanopia">پروتانوپیا</string>
+    <string name="color_blind_mode_deuteranopia">دوترانوپیا</string>
+    <string name="color_blind_mode_tritanopia">تریتانوپیا</string>
+    <string name="color_blind_mode_monochrome">تک‌رنگ</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">استاندارد</string>
+    <string name="contrast_level_high">بالا (AA)</string>
+    <string name="contrast_level_maximum">حداکثر (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">عرض کامل</string>
+    <string name="text_width_comfortable">راحت (۸۰ کاراکتر)</string>
+    <string name="text_width_narrow">باریک (۶۰ کاراکتر)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">بدون زمان‌بندی (AAA)</string>
+    <string name="timeout_behavior_standard">استاندارد (۳۰ ثانیه)</string>
+    <string name="timeout_behavior_extended">طولانی (۶۰ ثانیه)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">استاندارد</string>
+    <string name="reading_level_standard_description">متن معمولی با اصطلاحات فنی</string>
+    <string name="reading_level_simplified">ساده‌شده (پایه ۷-۹)</string>
+    <string name="reading_level_simplified_description">کلمات ساده‌تر و جملات کوتاه‌تر (مطابق AAA)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <string name="help_title">راهنما</string>
+    <string name="help_and_support">راهنما و پشتیبانی</string>
+    <string name="help_description">راهنمایی درباره ویژگی‌های برنامه و دسترس‌پذیری دریافت کنید</string>
+    <string name="help_center">مرکز راهنما</string>
+    <string name="help_center_description">موضوعات راهنما را مرور کنید و درباره ویژگی‌های برنامه بیاموزید</string>
+    <string name="help_search">جستجوی راهنما</string>
+    <string name="help_search_placeholder">جستجوی موضوعات راهنما…</string>
+    <string name="help_search_active">جستجو فعال شد</string>
+    <string name="help_search_inactive">جستجو غیرفعال شد</string>
+    <string name="help_no_results">هیچ موضوع راهنمایی مطابق جستجوی شما یافت نشد</string>
+    <string name="help_topic_not_found">موضوع راهنما یافت نشد</string>
+    <string name="help_related_topics">موضوعات مرتبط</string>
+    <string name="help_content_heading">محتوای راهنما</string>
+    <string name="help_related_topic_position">%1$s، آیتم %2$d از %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">بینایی</string>
+    <string name="help_category_typography">تایپوگرافی</string>
+    <string name="help_category_interaction">تعامل</string>
+    <string name="help_category_cognitive">پشتیبانی شناختی</string>
+    <string name="help_category_alternative_input">ورودی جایگزین</string>
+    <string name="help_category_features">ویژگی‌ها</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">دریافت مدرک</string>
+    <string name="help_topic_getting_credential_summary">یاد بگیرید چگونه اولین مدرک تأیید سن خود را دریافت کنید</string>
+    <string name="help_topic_getting_credential_content">برای دریافت مدرک تأیید سن:\n\n۱. به یک مرکز صدور مجاز مراجعه کنید\n۲. ID صادرشده توسط دولت خود را ارائه دهید\n۳. کد QR ارائه‌شده را اسکن کنید\n۴. مدرک شما به‌طور ایمن ذخیره خواهد شد\n\nتاریخ تولد شما به‌صورت محلی ذخیره می‌شود و هرگز به اشتراک گذاشته نمی‌شود.</string>
+
+    <string name="help_topic_verifying_age_title">تأیید سن</string>
+    <string name="help_topic_verifying_age_summary">چگونه بدون اشتراک‌گذاری اطلاعات شخصی، سن خود را ثابت کنید</string>
+    <string name="help_topic_verifying_age_content">وقتی نیاز به تأیید سن دارید:\n\n۱. تأییدکننده یک کد QR به شما نشان می‌دهد\n۲. آن را با برنامه اسکن کنید\n۳. برنامه یک اثبات ریاضی ایجاد می‌کند\n۴. فقط پاسخ بله/خیر به اشتراک گذاشته می‌شود\n\nتاریخ تولد واقعی شما هرگز فاش نمی‌شود.</string>
+
+    <string name="help_topic_accessibility_title">ویژگی‌های دسترس‌پذیری</string>
+    <string name="help_topic_accessibility_summary">برنامه را برای نیازهای خود سفارشی کنید</string>
+    <string name="help_topic_accessibility_content">برنامه شامل ویژگی‌های دسترس‌پذیری متعددی است:\n\n- متن بزرگ و حالت‌های کنتراست بالا\n- پشتیبانی از ورودی صوتی و صفحه‌خوان\n- حرکات ساده‌شده و رابط کاربری\n- گزینه‌های ورود کد دستی\n- تمدید زمان‌بندی\n\nبه اینها از طریق تنظیمات > دسترس‌پذیری دسترسی داشته باشید</string>
+
+    <string name="help_topic_privacy_security_title">حریم خصوصی و امنیت</string>
+    <string name="help_topic_privacy_security_summary">چگونه اطلاعات شما محافظت می‌شود</string>
+    <string name="help_topic_privacy_security_content">حریم خصوصی شما اولویت اول ماست:\n\n- مدارک به‌صورت محلی روی دستگاه شما ذخیره می‌شوند\n- اثبات‌های دانش صفر از داده‌های شما محافظت می‌کنند\n- بدون ردیابی یا تحلیل‌گر\n- احراز هویت بیومتریک در دسترس است\n- داده‌ها هرگز رمزنگاری‌نشده از دستگاه شما خارج نمی‌شوند</string>
+
+    <string name="help_topic_troubleshooting_title">عیب‌یابی</string>
+    <string name="help_topic_troubleshooting_summary">مشکلات رایج و راه‌حل‌ها</string>
+    <string name="help_topic_troubleshooting_content">مشکلات و راه‌حل‌های رایج:\n\nاسکنر QR کار نمی‌کند:\n- مجوزهای دوربین را در تنظیمات بررسی کنید\n- گزینه ورود کد دستی را امتحان کنید\n\nمدرک بارگذاری نمی‌شود:\n- اتصال اینترنت خود را بررسی کنید\n- بازنشانی کلید اثبات را امتحان کنید\n\nتأیید ناموفق بود:\n- مطمئن شوید مدرک منقضی نشده است\n- برای پشتیبانی با تأییدکننده تماس بگیرید</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <string name="date_label">تاریخ تولد</string>
+    <string name="date_of_birth">تاریخ تولد</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <string name="format_age_years">%d سال</string>
+    <string name="format_step_indicator">مرحله %1$d از %2$d</string>
+    <string name="format_mb_downloaded">⁨%1$.1f مگابایت⁩ / ⁨%2$.1f مگابایت⁩</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <string name="tab_credentials">مدارک</string>
+    <string name="tab_settings">تنظیمات</string>
+    <string name="tab_help">راهنما</string>
+    <string name="tab_credentials_description">مدارک خود را مشاهده کنید</string>
+    <string name="tab_settings_description">تنظیمات برنامه</string>
+    <string name="tab_help_description">راهنما و پشتیبانی دریافت کنید</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <string name="search_title">جستجو</string>
+    <string name="search_field_label">فیلد جستجو</string>
+    <string name="search_placeholder">جستجو در تنظیمات، راهنما و ویژگی‌ها</string>
+    <string name="search_clear">پاک کردن جستجو</string>
+    <string name="search_popular">جستجوهای محبوب</string>
+    <string name="search_results_heading">نتایج جستجو</string>
+    <string name="search_no_results">نتیجه‌ای یافت نشد</string>
+    <string name="search_try_suggestions">موارد زیر را جستجو کنید:\n• دسترس‌پذیری\n• تنظیمات\n• راهنما\n• زبان</string>
+    <string name="search_results_announcement_singular">۱ نتیجه یافت شد</string>
+    <string name="search_results_announcement_plural">%d نتیجه یافت شد</string>
+    <string name="search_no_results_announcement">نتیجه‌ای یافت نشد</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <string name="help_quick_access">دسترسی سریع</string>
+    <string name="help_topics">موضوعات راهنما</string>
+    <string name="help_glossary">واژه‌نامه</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <string name="licenses_title">مجوزهای متن‌باز</string>
+    <string name="licenses_description">این برنامه از نرم‌افزارهای متن‌باز زیر استفاده می‌کند. از توسعه‌دهندگانی که این کتابخانه‌ها را ایجاد کرده‌اند سپاسگزاریم.</string>
+    <string name="licenses_tap_to_view">برای مشاهده مجوز کامل ضربه بزنید</string>
+    <string name="licenses_group_header">%1$s (%2$d کتابخانه)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <string name="error_no_internet">اتصال اینترنت وجود ندارد. لطفاً شبکه خود را بررسی کرده و دوباره امتحان کنید.</string>
+    <string name="error_unexpected">یک خطای غیرمنتظره رخ داده است. لطفاً برنامه را مجدداً راه‌اندازی کنید.</string>
+    <string name="error_unexpected_try_again">یک خطای غیرمنتظره رخ داده است. لطفاً دوباره امتحان کنید.</string>
+    <string name="error_storage_detailed">خطای ذخیره‌سازی: %s</string>
+    <string name="error_network_detailed">خطای شبکه: %s</string>
+    <string name="error_proof_generation_failed">ایجاد اثبات ناموفق بود: %s</string>
+    <string name="error_not_eligible">واجد شرایط نیستید. شما الزامات این تأیید را برآورده نمی‌کنید.</string>
+    <string name="error_challenge_expired">چالش منقضی شده یا یافت نشد. لطفاً یک چالش جدید درخواست کنید.</string>
+    <string name="error_challenge_expired_scan_new">این چالش منقضی شده است. لطفاً یک کد QR جدید اسکن کنید.</string>
+    <string name="error_request_out_of_order">درخواست خارج از ترتیب است. لطفاً دوباره امتحان کنید.</string>
+    <string name="error_too_many_requests">درخواست‌های زیادی ارسال شده است. لطفاً لحظه‌ای صبر کرده و دوباره امتحان کنید.</string>
+    <string name="error_server">خطای سرور. لطفاً بعداً دوباره امتحان کنید.</string>
+    <string name="error_request_failed">درخواست ناموفق بود (%d). لطفاً دوباره امتحان کنید.</string>
+    <string name="error_not_eligible_short">واجد شرایط این تأیید نیستید</string>
+    <string name="error_challenge_not_found">چالش یافت نشد</string>
+    <string name="error_complete_steps_in_order">لطفاً مراحل را به ترتیب کامل کنید</string>
+    <string name="error_challenge_expired_short">چالش منقضی شده است</string>
+    <string name="error_authentication_cancelled">احراز هویت لغو شد. لطفاً هویت خود را برای تکمیل تأیید سن تأیید کنید.</string>
+    <string name="error_invalid_data_format_short">فرمت داده نامعتبر است. لطفاً دوباره امتحان کنید.</string>
+    <string name="error_storage_check_device">خطای ذخیره‌سازی. لطفاً فضای ذخیره‌سازی دستگاه را بررسی کنید.</string>
+    <string name="error_network_check_connection">خطای شبکه. لطفاً اتصال خود را بررسی کنید.</string>
+    <string name="error_proof_generation_failed_short">ایجاد اثبات ناموفق بود. لطفاً دوباره امتحان کنید.</string>
+    <string name="error_operation_in_progress_short">عملیات دیگری در حال انجام است.</string>
+    <string name="error_no_internet_short">اتصال اینترنت وجود ندارد. لطفاً شبکه خود را بررسی کنید.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <string name="verification_scan_title">اسکن QR تأیید</string>
+    <string name="verification_verifying_title">در حال تأیید سن</string>
+    <string name="verification_success_title">سن تأیید شد</string>
+    <string name="verification_failed_title">تأیید ناموفق بود</string>
+    <string name="verification_processing_wait">این ممکن است چند ثانیه طول بکشد</string>
+    <string name="verification_success_message">سن شما به‌صورت خصوصی تأیید شد</string>
+    <string name="verification_return_to_site">اکنون می‌توانید به سایت بازگردید تا ادامه دهید.</string>
+    <string name="verification_please_enter_code">لطفاً یک کد تأیید وارد کنید. کد باید یا یک کد کوتاه ۱۲ رقمی یا یک URL تأیید کامل از تأییدکننده باشد.</string>
+    <string name="verification_error_occurred">خطایی در حین تأیید رخ داد</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <string name="credential_list_processing">در حال پردازش…</string>
+    <string name="credential_list_verify_age_button">تأیید سن</string>
+    <string name="credential_list_generate_in_person_description">ایجاد مدرک به‌صورت حضوری</string>
+    <string name="credential_list_scan_qr_title">اسکن کد QR</string>
+    <string name="credential_list_find_locations_title">یافتن مکان‌ها</string>
+    <string name="credential_section_my_credential">مدرک من</string>
+    <string name="credential_section_managed">مدارک مدیریت‌شده</string>
+    <string name="credential_list_get_credential_button">دریافت مدرک</string>
+    <string name="credential_list_add_managed_button">افزودن مدرک مدیریت‌شده</string>
+    <string name="credential_section_managed_empty">یک مدرک برای کسی که از او مراقبت می‌کنید، مانند یک کودک، اضافه کنید.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">جزئیات مدرک</string>
+    <string name="credential_detail_not_found">مدرک یافت نشد</string>
+    <string name="credential_detail_nickname">نام مستعار</string>
+    <string name="credential_detail_no_nickname">نام مستعاری تنظیم نشده است</string>
+    <string name="credential_detail_edit_nickname">ویرایش نام مستعار</string>
+    <string name="credential_detail_status">وضعیت</string>
+    <string name="credential_detail_delete">حذف مدرک</string>
+    <string name="credential_detail_delete_title">حذف مدرک</string>
+    <string name="credential_detail_delete_message">آیا مطمئن هستید که می‌خواهید این مدرک را حذف کنید؟ این عمل قابل بازگشت نیست.</string>
+    <string name="credential_type_primary">اصلی</string>
+    <string name="credential_type_managed">مدیریت‌شده</string>
+    <string name="credential_status_valid">معتبر</string>
+    <string name="credential_status_expired">منقضی شده</string>
+    <string name="credential_status_invalid">نامعتبر</string>
+    <string name="action_save">ذخیره</string>
+    <string name="credential_slots_full_title">حداکثر تعداد مدارک رسیده است</string>
+    <string name="credential_slots_full_message">به حداکثر تعداد مدارک رسیده‌اید. یک مدرک موجود را حذف کنید تا بتوانید یک مدرک جدید اضافه کنید.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">مدرک مدیریت‌شده</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">تأیید سن برای ⁨%1$s⁩؟</string>
+    <string name="managed_confirm_message">شما می‌خواهید سن را با استفاده از مدرک مدیریت‌شده ⁨%1$s⁩ تأیید کنید.</string>
+    <string name="managed_confirm_proceed">تأیید برای ⁨%1$s⁩</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">در حال ایجاد اثبات برای ⁨%1$s⁩</string>
+    <string name="verification_age_verified_for">سن تأیید شد برای ⁨%1$s⁩</string>
+    <string name="deeplink_verification_age_verified_for">سن تأیید شد برای ⁨%1$s⁩</string>
+    <string name="attestation_managed_credential_received">مدرک برای ⁨%1$s⁩ دریافت شد!</string>
+    <string name="attestation_managed_credential_stored">مدرک فرزند شما به‌طور ایمن ذخیره شده است.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">حذف مدرک ⁨%1$s⁩؟</string>
+    <string name="credential_detail_delete_managed_message">آیا مطمئن هستید که می‌خواهید این مدرک مدیریت‌شده برای ⁨%1$s⁩ را حذف کنید؟ این عمل قابل بازگشت نیست. برای جایگزینی آن باید مجدداً به یک صادرکننده مراجعه کنید.</string>
+    <string name="credential_detail_save_error">ذخیره نام مستعار ناموفق بود</string>
+    <string name="credential_detail_delete_error">حذف مدرک ناموفق بود</string>
+    <string name="accessibility_saving">در حال ذخیره…</string>
+    <string name="accessibility_deleting">در حال حذف…</string>
+    <string name="accessibility_loading">در حال بارگذاری، لطفاً صبر کنید</string>
+    <string name="accessibility_issuing_credential">در حال صدور مدرک، لطفاً صبر کنید</string>
+    <string name="dialog_delete_all_credentials_title">حذف همه مدارک؟</string>
+    <string name="dialog_delete_all_credentials_message">این عمل مدرک شما و تمام مدارک مدیریت‌شده برای کودکان را حذف خواهد کرد. این عمل قابل بازگشت نیست.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">مدیریت‌شده</string>
+    <string name="credential_slots_count">%1$d از ۵</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">در حال آماده‌سازی تأیید…</string>
+    <string name="deeplink_verification_checking_credential">در حال بررسی مدرک…</string>
+    <string name="deeplink_verification_processing_challenge">در حال پردازش چالش…</string>
+    <string name="deeplink_verification_creating_proof">در حال ایجاد اثبات ایمن…</string>
+    <string name="deeplink_verification_submitting_proof">در حال ارسال اثبات…</string>
+    <string name="deeplink_verification_success">✔ سن با موفقیت تأیید شد</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">هیچ مدرکی یافت نشد. لطفاً ابتدا مدرک خود را تنظیم کنید.</string>
+    <string name="deeplink_verification_error_failed_challenge">پردازش چالش تأیید ناموفق بود</string>
+    <string name="deeplink_verification_error_no_auth_prompt">نمایش درخواست احراز هویت امکان‌پذیر نیست</string>
+    <string name="deeplink_verification_error_failed_proof">ایجاد اثبات سن ناموفق بود</string>
+    <string name="deeplink_verification_error_verification_failed">تأیید ناموفق بود</string>
+    <string name="deeplink_verification_error_unexpected">یک خطای غیرمنتظره رخ داده است</string>
+    <string name="deeplink_verification_error_no_credential_selected">هیچ مدرکی انتخاب نشد. لطفاً دوباره امتحان کنید.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">انتخاب مدرک</string>
+    <string name="deeplink_verification_select_credential_subtitle">چندین مدرک در دسترس است. انتخاب کنید از کدام یک برای این تأیید استفاده شود.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">در حال تأیید سن</string>
+    <string name="deeplink_verification_title_verified">تأیید شد</string>
+    <string name="deeplink_verification_title_failed">تأیید ناموفق بود</string>
+    <string name="deeplink_verification_please_wait">لطفاً صبر کنید…</string>
+    <string name="deeplink_verification_age_verified">سن تأیید شد!</string>
+    <string name="deeplink_verification_under_age_verified">زیر %1$d سال تأیید شد</string>
+    <string name="deeplink_verification_returning_browser">در حال بازگشت به مرورگر…</string>
+    <string name="deeplink_verification_return_to_browser">بازگشت به مرورگر</string>
+    <string name="deeplink_verification_failed_title">تأیید ناموفق بود</string>
+    <string name="deeplink_verification_error_occurred">خطایی در حین تأیید رخ داد</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">فرآیند صدور</string>
+    <string name="officer_issuance_process_steps">۱. سند شناسایی فیزیکی کاربر را بررسی کنید\n۲. تاریخ تولد آن‌ها را وارد کنید\n۳. تأیید کنید که اطلاعات دقیقاً مطابقت دارد\n۴. مدرک را با کد QR گواهی صادر کنید\n۵. کاربر کد QR را اسکن می‌کند تا مدرک را دریافت کند</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">ایجاد کد QR ناموفق بود</string>
+    <string name="officer_attestation_ready_title">گواهی آماده است</string>
+    <string name="officer_attestation_scan_instruction">کاربر باید این کد QR را با برنامه Provii Wallet خود اسکن کند</string>
+    <string name="officer_attestation_deeplink_label">پیوند عمیق گواهی</string>
+    <string name="officer_wait_for_attestation_scan">منتظر اسکن توسط کاربر بمانید</string>
+    <string name="officer_attestation_info">مدرک روی دستگاه آن‌ها ایجاد خواهد شد</string>
+    <string name="officer_attestation_complete">گواهی کامل شد</string>
+    <string name="officer_user_will_complete_credential">کاربر ایجاد مدرک را روی دستگاه خود تکمیل خواهد کرد</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <string name="attestation_decoding">در حال رمزگشایی داده‌های گواهی…</string>
+    <string name="attestation_generating_randomness">در حال ایجاد تصادف‌سازی ایمن…</string>
+    <string name="attestation_sending">در حال ارسال به صادرکننده…</string>
+    <string name="attestation_verifying">در حال تأیید تعهد…</string>
+    <string name="attestation_storing">در حال ذخیره مدرک…</string>
+    <string name="attestation_complete">مدرک کامل شد!</string>
+    <string name="attestation_error_invalid_data">داده‌های گواهی نامعتبر است</string>
+    <string name="attestation_error_expired">گواهی منقضی شده است</string>
+    <string name="attestation_error_network">خطای شبکه - لطفاً اتصال خود را بررسی کنید</string>
+    <string name="attestation_error_unexpected">یک خطای غیرمنتظره رخ داده است</string>
+    <string name="attestation_title_processing">در حال پردازش گواهی</string>
+    <string name="attestation_title_success">مدرک دریافت شد</string>
+    <string name="attestation_title_failed">صدور ناموفق بود</string>
+    <string name="attestation_secure_issuance">صدور ایمن</string>
+    <string name="attestation_privacy_preserving">صدور مدرک حفظ‌کننده حریم خصوصی</string>
+    <string name="attestation_may_take_seconds">این ممکن است چند ثانیه طول بکشد</string>
+    <string name="attestation_keep_app_open">لطفاً برنامه را باز نگه دارید</string>
+    <string name="attestation_credential_received">مدرک دریافت شد!</string>
+    <string name="attestation_credential_stored_description">مدرک تأیید سن شما به‌طور ایمن ذخیره شده است</string>
+    <string name="attestation_issuer_verified">صادرکننده تأیید شد</string>
+    <string name="attestation_failed_title">صدور ناموفق بود</string>
+    <string name="attestation_scan_qr_instead">به جای آن QR اسکن کنید</string>
+    <string name="attestation_go_back">بازگشت</string>
+    <string name="attestation_step_decode">رمزگشایی</string>
+    <string name="attestation_step_generate">ایجاد</string>
+    <string name="attestation_step_send">ارسال</string>
+    <string name="attestation_step_verify">تأیید</string>
+    <string name="attestation_step_store">ذخیره</string>
+    <string name="attestation_step_complete">تکمیل</string>
+    <string name="accessibility_attestation_encrypted_description">گواهی رمزنگاری‌شده در حال پردازش است</string>
+    <string name="accessibility_attestation_success_description">علامت موفقیت نشان‌دهنده دریافت مدرک</string>
+    <string name="accessibility_attestation_error_description">آیکون خطا نشان‌دهنده ناموفق بودن صدور</string>
+    <string name="accessibility_step_complete">مرحله %1$s کامل شد</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">دریافت‌کننده مدرک</string>
+    <string name="attestation_recipient_prompt">این مدرک برای…</string>
+    <string name="attestation_recipient_me">من</string>
+    <string name="attestation_recipient_child">یک کودک</string>
+    <string name="attestation_nickname_title">نام مستعار کودک</string>
+    <string name="attestation_nickname_prompt">یک نام مستعار وارد کنید تا بتوانید مدارک را از هم تشخیص دهید</string>
+    <string name="attestation_nickname_placeholder">مثلاً علی</string>
+    <string name="attestation_nickname_continue">ادامه</string>
+    <string name="attestation_nickname_back">بازگشت</string>
+    <string name="accessibility_attestation_recipient_heading">انتخاب کنید این مدرک برای چه کسی است</string>
+    <string name="accessibility_attestation_nickname_heading">یک نام مستعار برای کودک وارد کنید</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">فرمت ⁨ID⁩ مسئول نامعتبر است</string>
+    <string name="officer_auth_error_challenge_failed">دریافت چالش YubiKey ناموفق بود: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">برای احراز هویت YubiKey خود را لمس کنید</string>
+    <string name="officer_auth_error_touch_timeout">زمان لمس YubiKey به پایان رسید</string>
+    <string name="officer_auth_error_verify_document_dob">لطفاً تأیید کنید که سند و تاریخ تولد مطابقت دارند</string>
+    <string name="officer_auth_error_invalid_date_format">فرمت تاریخ نامعتبر است. از ⁨YYYY-MM-DD⁩ استفاده کنید</string>
+    <string name="officer_auth_error_must_be_18">کاربر باید ۱۸ سال یا بیشتر داشته باشد</string>
+    <string name="officer_auth_error_not_authenticated">احراز هویت نشده است. لطفاً ابتدا ⁨ID⁩ مسئول خود را وارد کنید.</string>
+    <string name="officer_auth_error_issue_failed">صدور مدرک ناموفق بود</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <string name="gesture_desc_tap_to_view">برای مشاهده ضربه بزنید</string>
+    <string name="gesture_desc_long_press_options">، برای گزینه‌ها نگه دارید</string>
+    <string name="gesture_desc_swipe_left">، برای اقدامات بیشتر به چپ بکشید</string>
+    <string name="gesture_desc_swipe_right">، برای اقدامات بیشتر به راست بکشید</string>
+    <string name="gesture_desc_tap_to_activate">برای فعال‌سازی ضربه بزنید</string>
+    <string name="gesture_desc_long_press_format">. نگه داشتن: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <string name="main_activity_retry">تلاش مجدد</string>
+    <string name="main_activity_reset_redownload">بازنشانی و دانلود مجدد</string>
+    <string name="main_activity_show_debug_info">نمایش اطلاعات اشکال‌زدایی</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">تنظیمات دسترس‌پذیری</string>
+    <string name="search_item_accessibility_settings_subtitle">تجربه خود را سفارشی کنید</string>
+    <string name="search_item_large_text_title">متن بزرگ</string>
+    <string name="search_item_large_text_subtitle">اندازه متن را افزایش دهید</string>
+    <string name="search_item_high_contrast_title">کنتراست بالا</string>
+    <string name="search_item_high_contrast_subtitle">دید را بهبود بخشید</string>
+    <string name="search_item_voice_input_title">ورودی صوتی</string>
+    <string name="search_item_voice_input_subtitle">با صدا کنترل کنید</string>
+    <string name="search_item_manual_code_entry_title">ورود کد دستی</string>
+    <string name="search_item_manual_code_entry_subtitle">به جای اسکن، کدها را تایپ کنید</string>
+    <string name="search_item_simplified_ui_title">رابط کاربری ساده‌شده</string>
+    <string name="search_item_simplified_ui_subtitle">پیچیدگی بصری را کاهش دهید</string>
+    <string name="search_item_color_blindness_title">پشتیبانی از کوررنگی</string>
+    <string name="search_item_color_blindness_subtitle">رنگ‌ها را برای دید بهتر تنظیم کنید</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">تنظیمات</string>
+    <string name="search_item_settings_subtitle">پیکربندی برنامه</string>
+    <string name="search_item_language_title">زبان</string>
+    <string name="search_item_language_subtitle">زبان برنامه را تغییر دهید</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">مدارک من</string>
+    <string name="search_item_credentials_subtitle">مدارک خود را مشاهده کنید</string>
+    <string name="search_item_get_credential_title">دریافت مدرک</string>
+    <string name="search_item_get_credential_subtitle">صادرکنندگان را بیابید</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">راهنما</string>
+    <string name="search_item_help_subtitle">راهنمایی بگیرید</string>
+    <string name="search_item_privacy_title">حفاظت از حریم خصوصی</string>
+    <string name="search_item_privacy_subtitle">چگونه داده‌های شما محافظت می‌شود</string>
+    <string name="search_item_verification_title">تأیید سن</string>
+    <string name="search_item_verification_subtitle">سن خود را ثابت کنید</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <string name="issuer_fallback_sandbox_description">رجیستری پشتیبان ثابت‌شده برای محیط sandbox</string>
+    <string name="issuer_fallback_production_description">رجیستری پشتیبان ثابت‌شده برای محیط تولید</string>
+    <string name="issuer_fallback_category_government">دولتی</string>
+    <string name="issuer_fallback_category_government_description">مدارک صادرشده توسط دولت</string>
+    <string name="issuer_fallback_sandbox_issuer_name">صادرکننده Sandbox Provii</string>
+    <string name="issuer_fallback_sandbox_issuer_description">صادرکننده رسمی sandbox Provii برای آزمایش</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">به پورتال صادرکننده sandbox مراجعه کنید</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">صادرکننده رسمی مدرک Provii</string>
+    <string name="issuer_fallback_production_issuer_instructions">به دفتر محلی DMV مراجعه کنید</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <string name="validation_error_birth_date_future">تاریخ تولد نمی‌تواند در آینده باشد</string>
+    <string name="validation_error_invalid_date_format">فرمت تاریخ نامعتبر است</string>
+    <string name="validation_error_officer_id_too_short">ID مسئول خیلی کوتاه است</string>
+    <string name="validation_error_invalid_officer_id_format">فرمت ID مسئول نامعتبر است</string>
+    <string name="validation_error_empty_qr_code">کد QR خالی است</string>
+    <string name="validation_error_qr_code_too_large">کد QR خیلی بزرگ است</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <string name="sandbox_toast_developer_mode">شما اکنون یک توسعه‌دهنده هستید!</string>
+    <string name="sandbox_toast_enabled">حالت Sandbox فعال شد\nاستفاده از محیط آزمایشی</string>
+    <string name="sandbox_toast_disabled">حالت تولید فعال شد\nاستفاده از محیط تولید</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">یک قدم تا حالت توسعه‌دهنده فاصله دارید</string>
+    <string name="sandbox_toast_steps_away">⁨%1$d⁩ قدم تا حالت توسعه‌دهنده فاصله دارید</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <string name="yubikey_error_no_key_connected">هیچ YubiKey متصلی وجود ندارد</string>
+    <string name="yubikey_error_timeout">زمان انتظار برای لمس YubiKey به پایان رسید. لطفاً وقتی چشمک می‌زند کلید را لمس کنید.</string>
+    <string name="yubikey_error_not_supported">پاسخ به چالش روی این اسلات YubiKey پیکربندی نشده است</string>
+    <string name="yubikey_error_no_slot">اسلات ۲ برای HMAC (کد احراز هویت پیام مبتنی بر هش) پاسخ به چالش SHA1 پیکربندی نشده است</string>
+    <string name="yubikey_error_hmac_failed">محاسبه HMAC (کد احراز هویت پیام مبتنی بر هش) ناموفق بود: %s</string>
+    <string name="yubikey_error_session_failed">اتصال به YubiKey ناموفق بود: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <string name="wallet_error_not_initialized">کیف پول مقداردهی اولیه نشده است</string>
+    <string name="wallet_error_proving_key_not_found">کلید اثبات یافت نشد - لطفاً مجدداً دانلود کنید</string>
+    <string name="wallet_error_proving_key_not_readable">خواندن فایل کلید اثبات امکان‌پذیر نیست</string>
+    <string name="wallet_error_out_of_memory">حافظه ناکافی است - لطفاً برنامه را مجدداً راه‌اندازی کنید</string>
+    <string name="wallet_error_prover_error">خطای اثبات‌گر: %s</string>
+    <string name="wallet_error_ffi_error">خطای FFI: %s</string>
+    <string name="wallet_error_prover_init_failed">مقداردهی اولیه اثبات‌گر ناموفق بود: %s</string>
+    <string name="wallet_error_prover_verification_failed">تأیید مقداردهی اولیه اثبات‌گر ناموفق بود</string>
+    <string name="wallet_error_verifier_url_update_failed">به‌روزرسانی URL تأییدکننده (آدرس وب) ناموفق بود! انتظار ⁨%1$s⁩ بود اما ⁨%2$s⁩ دریافت شد</string>
+    <string name="wallet_error_wallet_still_null">کیف پول پس از مقداردهی اولیه همچنان خالی است</string>
+    <string name="wallet_error_credential_not_found">مدرک یافت نشد</string>
+    <string name="wallet_error_credential_access_failed">دسترسی به مدرک امکان‌پذیر نیست: %s</string>
+    <string name="wallet_error_invalid_format">فرمت نامعتبر: %s</string>
+    <string name="wallet_error_not_initialized_short">اثبات‌گر مقداردهی اولیه نشده است</string>
+    <string name="wallet_error_proving_key_unavailable">کلید اثبات در دسترس نیست. راه‌اندازی لازم است.</string>
+    <string name="wallet_error_storage_init_failed">مقداردهی اولیه ذخیره‌سازی ناموفق بود</string>
+    <string name="wallet_error_biometric_unavailable">احراز هویت بیومتریک در دسترس نیست</string>
+    <string name="wallet_error_auth_failed">احراز هویت ناموفق بود</string>
+    <string name="wallet_error_sandbox_disabled">برای ایجاد مدارک آزمایشی، حالت sandbox را فعال کنید</string>
+    <string name="wallet_error_fetch_sandbox_credentials">دریافت مدارک sandbox امکان‌پذیر نیست. لطفاً اتصال اینترنت را بررسی کنید.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <string name="keystore_biometric_prompt_title">احراز هویت لازم است</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">هویت خود را برای ایجاد اثبات سن تأیید کنید</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">دسترسی به فضای ذخیره‌سازی ایمن</string>
+    <string name="keystore_biometric_prompt_cancel">لغو</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <string name="licenses_accessibility_library_expanded">%1$s، %2$s، باز شده، نمایش متن کامل مجوز</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s، %2$s، بسته شده، %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <string name="network_type_none">هیچ‌کدام</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">سلولی</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">نامشخص</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <string name="help_topic_contrast_levels_title">سطوح کنتراست</string>
+    <string name="help_topic_extra_large_text_title">متن بسیار بزرگ</string>
+    <string name="help_topic_reduce_transparency_title">کاهش شفافیت</string>
+    <string name="help_topic_color_blind_modes_title">حالت‌های کوررنگی</string>
+    <string name="help_topic_line_spacing_title">فاصله بین سطرها</string>
+    <string name="help_topic_paragraph_spacing_title">فاصله بین پاراگراف‌ها</string>
+    <string name="help_topic_letter_spacing_title">فاصله بین حروف</string>
+    <string name="help_topic_text_width_title">عرض متن</string>
+    <string name="help_topic_touch_targets_title">اهداف لمسی بزرگ‌تر</string>
+    <string name="help_topic_reduce_motion_title">کاهش انیمیشن</string>
+    <string name="help_topic_timeout_behavior_title">رفتار زمان‌بندی</string>
+    <string name="help_topic_simplified_gestures_title">حرکات ساده‌شده</string>
+    <string name="help_topic_haptic_feedback_title">بازخورد لرزشی</string>
+    <string name="help_topic_data_preservation_title">حفظ داده</string>
+    <string name="help_topic_simplified_ui_title">رابط کاربری ساده‌شده</string>
+    <string name="help_topic_step_indicators_title">شاخص‌های مرحله</string>
+    <string name="help_topic_verbose_descriptions_title">توضیحات تفصیلی</string>
+    <string name="help_topic_confirm_actions_title">تأیید اقدامات</string>
+    <string name="help_topic_reading_level_title">سطح خواندن ساده‌شده</string>
+    <string name="help_topic_help_system_title">سیستم راهنما</string>
+    <string name="help_topic_manual_code_entry_title">ورود کد دستی</string>
+    <string name="help_topic_voice_input_title">ورودی صوتی</string>
+    <string name="help_topic_screen_reader_title">پشتیبانی از صفحه‌خوان</string>
+    <string name="help_topic_accessibility_profiles_title">پروفایل‌های راه‌اندازی سریع</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <string name="help_topic_contrast_levels_text">نسبت کنتراست بین متن و پس‌زمینه را کنترل کنید:\n\n• استاندارد: رنگ‌های پیش‌فرض برنامه\n• بالا (AA): نسبت کنتراست ۴٫۵:۱\n• حداکثر (AAA): نسبت کنتراست ۷:۱ یا بیشتر\n\nکنتراست بالاتر متن را راحت‌تر خواند، به‌ویژه در محیط‌های روشن یا برای کاربران با بینایی ضعیف.\n\nمطابقت WCAG AAA نیاز به کنتراست حداکثر دارد.</string>
+    <string name="help_topic_extra_large_text_text">تمام اندازه‌های متن را در سراسر برنامه ۵۰٪ افزایش می‌دهد.\n\nاین متن را برای کاربران زیر راحت‌تر می‌خواند:\n• بینایی ضعیف\n• تغییرات بینایی مرتبط با سن\n• مشکلات خواندن\n\nبا تنظیمات اندازه فونت سیستم برای حداکثر انعطاف‌پذیری ترکیب می‌شود.</string>
+    <string name="help_topic_reduce_transparency_text">لایه‌های شفاف و افکت‌های تار را حذف می‌کند.\n\nمزایا:\n• سلسله‌مراتب بصری واضح‌تر\n• خوانایی متن بهتر\n• کاهش آشفتگی بصری\n• بار شناختی کمتر\n\nبرای کاربران با بینایی ضعیف یا مشکلات شناختی توصیه می‌شود.</string>
+    <string name="help_topic_color_blind_modes_text">رنگ‌ها را برای انواع مختلف کوررنگی تنظیم می‌کند:\n\n• پروتانوپیا: نابینای قرمز\n• دوترانوپیا: نابینای سبز\n• تریتانوپیا: نابینای آبی\n• تک‌رنگ: کوررنگی کامل\n\nهر حالت از رنگ‌هایی استفاده می‌کند که برای آن نوع خاص از نقص بینایی رنگی قابل تشخیص هستند.</string>
+    <string name="help_topic_line_spacing_text">فاصله بین سطرهای متن را تنظیم می‌کند (۱٫۰ تا ۲٫۰ برابر).\n\n• پیش‌فرض: ۱٫۰ برابر\n• مطابق AAA: ۱٫۵ برابر یا بیشتر\n\nافزایش فاصله سطر:\n• درک خواندن را بهبود می‌بخشد\n• خستگی چشم را کاهش می‌دهد\n• به کاربران دیسلکسیک کمک می‌کند\n• بلوک‌های متن را کمتر طاقت‌فرسا می‌کند</string>
+    <string name="help_topic_paragraph_spacing_text">فاصله بین پاراگراف‌ها را تنظیم می‌کند (۱٫۰ تا ۳٫۰ برابر).\n\n• پیش‌فرض: ۱٫۰ برابر\n• مطابق AAA: ۲٫۰ برابر یا بیشتر\n\nافزایش فاصله پاراگراف:\n• ایده‌ها را به‌وضوح جدا می‌کند\n• سازماندهی بصری را بهبود می‌بخشد\n• بار شناختی را کاهش می‌دهد\n• به حفظ موقعیت خواندن کمک می‌کند</string>
+    <string name="help_topic_letter_spacing_text">فاصله بین حروف را تنظیم می‌کند (۰٫۰ تا ۰٫۲ em).\n\n• پیش‌فرض: ۰٫۰ em\n• مطابق AAA: ۰٫۱۲ em یا بیشتر\n\nافزایش فاصله حرف:\n• حروف منفرد را متمایزتر می‌کند\n• به کاربران دیسلکسیک کمک می‌کند\n• دقت خواندن را بهبود می‌بخشد\n• اشتباه گرفتن حروف را کاهش می‌دهد</string>
+    <string name="help_topic_text_width_text">طول سطر را برای خواندن راحت‌تر محدود می‌کند:\n\n• عرض کامل: بدون محدودیت\n• راحت: ۸۰ کاراکتر (توصیه‌شده)\n• باریک: ۶۰ کاراکتر\n\nتحقیقات نشان می‌دهد خواندن بهینه در ۶۰ تا ۸۰ کاراکتر در هر سطر اتفاق می‌افتد. سطرهای کوتاه‌تر حرکت چشم را کاهش داده و درک را بهبود می‌بخشند.</string>
+    <string name="help_topic_touch_targets_text">حداقل اندازه هدف لمسی را به ۶۰ dp افزایش می‌دهد (از ۴۴ dp).\n\nمزایا:\n• ضربه زدن به دکمه‌ها و کنترل‌ها راحت‌تر است\n• ضربه‌های تصادفی را کاهش می‌دهد\n• به کاربران با اختلالات حرکتی کمک می‌کند\n• برای استفاده با یک دست بهتر است\n\nWCAG AAA حداقل ۶۰ dp را الزامی می‌داند.</string>
+    <string name="help_topic_reduce_motion_text">تمام انیمیشن‌ها و انتقال‌ها را حذف می‌کند.\n\nمزایا:\n• از حرکت‌بیماری جلوگیری می‌کند\n• حواس‌پرتی را کاهش می‌دهد\n• بار شناختی را کاهش می‌دهد\n• تمرکز را بهبود می‌بخشد\n\nبرای کاربران زیر توصیه می‌شود:\n• اختلالات دهلیزی\n• مشکلات توجه\n• حساسیت به حرکت</string>
+    <string name="help_topic_timeout_behavior_text">زمان‌بندی خودکار در صفحات تأیید را کنترل می‌کند:\n\n• بدون زمان‌بندی (AAA): زمان نامحدود\n• استاندارد: ۳۰ ثانیه\n• طولانی: ۶۰ ثانیه\n\nWCAG AAA نیاز به گزینه بدون زمان‌بندی برای کاربرانی دارد که زمان بیشتری برای انجام وظایف نیاز دارند.\n\nداده‌های فرم قبل از زمان‌بندی به‌طور خودکار ذخیره می‌شوند.</string>
+    <string name="help_topic_simplified_gestures_text">حرکات پیچیده را با گزینه‌های ساده جایگزین می‌کند:\n\n• کشیدن → ضربه زدن به دکمه\n• نگه داشتن → ضربه معمولی با تأیید\n• کشیدن/زوم → دکمه‌ها\n\nبه کاربران زیر کمک می‌کند:\n• اختلالات حرکتی\n• لرزش\n• مهارت محدود\n• مشکلات صفحه لمسی</string>
+    <string name="help_topic_haptic_feedback_text">بازخورد ارتعاشی برای اقدامات ارائه می‌دهد.\n\nمزایا:\n• فشار دکمه را تأیید می‌کند\n• خطاها را نشان می‌دهد\n• تأیید لمسی ارائه می‌دهد\n\nمی‌توان برای کاربران زیر غیرفعال کرد:\n• کسانی که آن را حواس‌پرت‌کننده می‌یابند\n• حساسیت‌های حسی\n• عملکرد بی‌صدا</string>
+    <string name="help_topic_data_preservation_text">داده‌های فرم را قبل از زمان‌بندی به‌طور خودکار ذخیره می‌کند.\n\nویژگی‌ها:\n• هشدار ۱۰ ثانیه قبل از زمان‌بندی\n• گزینه ذخیره یا دور انداختن داده\n• بازیابی خودکار پس از بازگشت\n• نگهداری داده به مدت ۲۴ ساعت\n\nتضمین می‌کند در صورت نیاز به زمان اضافی یا وقفه، هیچ داده‌ای از دست نرود.</string>
+    <string name="help_topic_simplified_ui_text">پیچیدگی بصری را کاهش می‌دهد:\n\n• عناصر UI کمتری همزمان نشان داده می‌شوند\n• دکمه‌های بزرگ‌تر و واضح‌تر\n• فضای سفید بیشتر\n• چیدمان‌های ساده‌شده\n\nمزایا:\n• فهمیدن آسان‌تر\n• کمتر طاقت‌فرسا\n• تمرکز بهتر\n• بار شناختی کمتر</string>
+    <string name="help_topic_step_indicators_text">پیشرفت از طریق فرایندهای چندمرحله‌ای را نشان می‌دهد.\n\nنمایش می‌دهد:\n• شماره مرحله فعلی\n• تعداد کل مراحل\n• تجسم پیشرفت\n\nمزایا:\n• اضطراب را کاهش می‌دهد\n• انتظارات روشنی تعیین می‌کند\n• کمک به حفظ جهت‌یابی\n• پیشرفت تکمیل را نشان می‌دهد</string>
+    <string name="help_topic_verbose_descriptions_text">زمینه و توضیحات اضافی ارائه می‌دهد:\n\n• برچسب‌های دکمه طولانی‌تر\n• دستورالعمل‌های تفصیلی‌تر\n• راهنمایی‌های اضافی\n• پیام‌های خطای واضح‌تر\n\nبه کاربران کمک می‌کند:\n• اقدامات را قبل از انجام دادن بفهمند\n• از اشتباهات اجتناب کنند\n• عملکرد برنامه را بیاموزند\n• اعتماد به نفس کسب کنند</string>
+    <string name="help_topic_confirm_actions_text">برای اقدامات مهم تأیید می‌خواهد:\n\n• حذف مدارک\n• تغییر تنظیمات\n• پاک کردن داده\n\nWCAG AAA تأیید برای همه اقدامات مخرب را الزامی می‌داند.\n\nمزایا:\n• از تصادف‌ها جلوگیری می‌کند\n• امکان بررسی قبل از اقدام را می‌دهد\n• اضطراب را کاهش می‌دهد\n• فرصت دوم فراهم می‌کند</string>
+    <string name="help_topic_reading_level_text">از زبان ساده‌تر (سطح پایه ۷ تا ۹) استفاده می‌کند:\n\n• جملات کوتاه‌تر\n• کلمات رایج به جای اصطلاحات فنی\n• زبان واضح و مستقیم\n• اصطلاحات فنی کمتر\n\nوقتی فعال باشد با WCAG AAA مطابقت دارد.\n\nمزایا:\n• فهمیدن آسان‌تر\n• درک سریع‌تر\n• برای غیربومی‌زبانان بهتر است\n• بار شناختی کمتر</string>
+    <string name="help_topic_help_system_text">راهنمای حساس به زمینه در سراسر برنامه در دسترس است.\n\nویژگی‌ها:\n• ۲۷ موضوع راهنما\n• مرکز راهنمای قابل جستجو\n• پیمایش موضوعات مرتبط\n• واژه‌نامه فنی\n\nاز موارد زیر به راهنما دسترسی داشته باشید:\n• صفحات تنظیمات\n• ویژگی‌های پیچیده\n• پیام‌های خطا\n• هر جایی که آیکون راهنما می‌بینید</string>
+    <string name="help_topic_manual_code_entry_text">داده‌های کد QR را به جای اسکن، دستی وارد کنید.\n\nمزایا:\n• وقتی دسترسی به دوربین در دسترس نیست کار می‌کند\n• به کاربران با مشکلات حرکتی کمک می‌کند\n• در نور کم بهتر کار می‌کند\n• نیازی به نگه داشتن ثابت گوشی نیست\n\nگزینه‌ای برای اسکن QR مبتنی بر دوربین.</string>
+    <string name="help_topic_voice_input_text">به جای تایپ کردن، از صدا برای ورود متن استفاده کنید.\n\nمزایا:\n• ورودی بدون دست\n• سریع‌تر از تایپ\n• به کاربران با اختلالات حرکتی کمک می‌کند\n• فشار تکراری را کاهش می‌دهد\n\nاز تشخیص صدای داخلی دستگاه شما استفاده می‌کند.</string>
+    <string name="help_topic_screen_reader_text">پشتیبانی کامل از صفحه‌خوان TalkBack.\n\nویژگی‌ها:\n• تمام عناصر UI برچسب‌گذاری شده‌اند\n• ساختار عنوان مناسب\n• ترتیب پیمایش منطقی\n• راهنمایی‌های سفارشی برای اقدامات پیچیده\n\nبرنامه به‌طور خودکار فعال می‌کند:\n• توضیحات تفصیلی\n• اهداف لمسی پیشرفته\n\nوقتی TalkBack تشخیص داده می‌شود.</string>
+    <string name="help_topic_accessibility_profiles_text">پروفایل‌های دسترس‌پذیری از پیش تنظیم‌شده:\n\n• آسیب بینایی: کنتراست بالا، متن بزرگ، لرزش\n• آسیب حرکتی: اهداف بزرگ، زمان‌بندی طولانی، تأییدیه‌ها\n• شناختی: UI ساده‌شده، شاخص‌های مرحله، توضیحات\n• سالمندان: متن بزرگ، اهداف، UI ساده‌شده، کاهش انیمیشن\n• پیش‌فرض: بازنشانی همه تنظیمات\n\nهر پروفایل مفیدترین تنظیمات را برای آن گروه کاربری فعال می‌کند. پس از اعمال یک پروفایل می‌توانید بیشتر سفارشی کنید.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <string name="content_age_verification_title">تأیید سن</string>
+    <string name="content_age_verification_explanation">لطفاً صبر کنید تا سن شما با استفاده از اثبات‌های دانش صفر به‌طور ایمن تأیید شود. تاریخ تولد شما هرگز با تأییدکننده به اشتراک گذاشته نمی‌شود.</string>
+    <string name="content_age_verification_instructions">دوربین خود را به سمت کد QR تأیید بگیرید. کد پس از تشخیص به‌طور خودکار اسکن می‌شود.</string>
+    <string name="content_age_verification_success">سن شما با موفقیت تأیید شد. تأییدکننده می‌داند که شما الزامات سنی آن‌ها را برآورده می‌کنید بدون اینکه تاریخ تولد واقعی شما را بداند.</string>
+    <string name="content_age_verification_failed">تأیید ناموفق بود. لطفاً دوباره کد QR را اسکن کنید یا از ورود کد دستی استفاده کنید.</string>
+    <string name="content_credential_issuance_title">صدور مدرک</string>
+    <string name="content_credential_issuance_explanation">کد QR ارائه‌شده توسط صادرکننده مجاز را اسکن کنید تا مدرک سنی دیجیتال خود را دریافت کنید.</string>
+    <string name="content_credential_issuance_instructions">دوربین خود را به سمت کد QR صدور که توسط مسئول نشان داده می‌شود بگیرید. مدرک شما روی دستگاهتان ایجاد خواهد شد.</string>
+    <string name="content_credential_issuance_success">مدرک با موفقیت ایجاد شد. اکنون می‌توانید از این مدرک برای تأیید سن استفاده کنید.</string>
+    <string name="content_credential_description">یک مدرک یک اثبات رمزنگاری‌شده امضاشده از هویت شماست که تأیید حفظ‌کننده حریم خصوصی را ممکن می‌سازد.</string>
+    <string name="content_zero_knowledge_explanation">اثبات‌های دانش صفر به شما اجازه می‌دهند ثابت کنید که یک الزام سنی را برآورده می‌کنید بدون اینکه سن واقعی خود را فاش کنید.</string>
+    <string name="content_setup_proving_key">در حال دانلود کلید اثبات رمزنگاری مورد نیاز برای ایجاد اثبات دانش صفر</string>
+    <string name="content_processing_challenge">در حال پردازش چالش تأیید</string>
+    <string name="content_creating_proof">در حال ایجاد اثبات سن دانش صفر</string>
+    <string name="content_submitting_proof">در حال ارسال اثبات به تأییدکننده</string>
+    <string name="content_error_no_credential">هیچ مدرکی در دسترس نیست. لطفاً ابتدا یک مدرک از یک صادرکننده مجاز دریافت کنید.</string>
+    <string name="content_error_network_failed">اتصال شبکه ناموفق بود. لطفاً اتصال اینترنت خود را بررسی کرده و دوباره امتحان کنید.</string>
+    <string name="content_error_invalid_qr">کد QR نامعتبر است. لطفاً مطمئن شوید کد تأیید صحیح را اسکن می‌کنید.</string>
+    <string name="content_error_verification_failed">تأیید ناموفق بود. سرور نتوانست اثبات شما را تأیید کند.</string>
+    <string name="content_officer_authentication_title">احراز هویت مسئول</string>
+    <string name="content_officer_issuance_title">صدور مدرک</string>
+    <string name="content_officer_dob_prompt">تاریخ تولد تأیید‌شده متقاضی را از سند شناسایی رسمی آن‌ها وارد کنید.</string>
+    <string name="content_onboarding_welcome">به Provii Wallet خوش آمدید - راه‌حل تأیید سن دیجیتال حفظ‌کننده حریم خصوصی شما.</string>
+    <string name="content_onboarding_privacy">تاریخ تولد شما به‌طور ایمن روی دستگاهتان ذخیره می‌شود و هرگز به تأییدکنندگان منتقل نمی‌شود.</string>
+    <string name="content_onboarding_get_started">برای شروع، به یک صادرکننده مجاز مراجعه کنید تا مدرک سنی دیجیتال خود را دریافت کنید.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <string name="content_age_verification_title_simplified">بررسی سن شما</string>
+    <string name="content_age_verification_explanation_simplified">داریم سن شما را بررسی می‌کنیم. تاریخ تولد شما را نمی‌بینیم یا به اشتراک نمی‌گذاریم.</string>
+    <string name="content_age_verification_instructions_simplified">دوربین خود را به سمت کد QR بگیرید. خودش اسکن می‌کند.</string>
+    <string name="content_age_verification_success_simplified">موفق! وب‌سایت می‌داند که به اندازه کافی بزرگ هستید. تولد شما را نمی‌داند.</string>
+    <string name="content_age_verification_failed_simplified">این کار نکرد. دوباره اسکن کنید یا به جای آن کد را تایپ کنید.</string>
+    <string name="content_credential_issuance_title_simplified">دریافت کارت ID شما</string>
+    <string name="content_credential_issuance_explanation_simplified">کد را از اداره دولتی اسکن کنید تا ID دیجیتال خود را دریافت کنید.</string>
+    <string name="content_credential_issuance_instructions_simplified">دوربین خود را به سمت کد بگیرید. ID شما روی گوشی‌تان ذخیره خواهد شد.</string>
+    <string name="content_credential_issuance_success_simplified">انجام شد! اکنون می‌توانید از ID دیجیتال خود برای اثبات سن استفاده کنید.</string>
+    <string name="content_credential_description_simplified">یک مدرک مانند یک کارت ID دیجیتال است که بدون اشتراک‌گذاری جزئیات خصوصی ثابت می‌کند شما کی هستید.</string>
+    <string name="content_zero_knowledge_explanation_simplified">می‌توانید ثابت کنید که به اندازه کافی بزرگ هستید بدون اینکه سن واقعی خود را به کسی بگویید.</string>
+    <string name="content_setup_proving_key_simplified">در حال دانلود فایل‌های امنیتی مورد نیاز برای کارکرد برنامه</string>
+    <string name="content_processing_challenge_simplified">در حال خواندن درخواست بررسی سن</string>
+    <string name="content_creating_proof_simplified">در حال ایجاد اثبات سن شما</string>
+    <string name="content_submitting_proof_simplified">در حال ارسال اثبات به وب‌سایت</string>
+    <string name="content_error_no_credential_simplified">هنوز ID ندارید. ابتدا به یک اداره دولتی مراجعه کنید تا یک ID دریافت کنید.</string>
+    <string name="content_error_network_failed_simplified">نمی‌توان به اینترنت متصل شد. wifi یا داده خود را بررسی کرده و دوباره امتحان کنید.</string>
+    <string name="content_error_invalid_qr_simplified">آن کد درست به نظر نمی‌رسد. مطمئن شوید کد درست را اسکن می‌کنید.</string>
+    <string name="content_error_verification_failed_simplified">این کار نکرد. وب‌سایت نتوانست اثبات شما را بررسی کند. دوباره امتحان کنید.</string>
+    <string name="content_officer_authentication_title_simplified">ورود مسئول</string>
+    <string name="content_officer_issuance_title_simplified">ایجاد کارت ID</string>
+    <string name="content_officer_dob_prompt_simplified">تاریخ تولد شخص را از شناسایی رسمی آن‌ها وارد کنید.</string>
+    <string name="content_onboarding_welcome_simplified">به Provii Wallet خوش آمدید - سن خود را به‌صورت خصوصی ثابت کنید.</string>
+    <string name="content_onboarding_privacy_simplified">تاریخ تولد شما روی گوشی شما می‌ماند. هیچ‌کس دیگری نمی‌تواند آن را ببیند.</string>
+    <string name="content_onboarding_get_started_simplified">برای شروع، به یک اداره دولتی مراجعه کنید تا ID دیجیتال خود را دریافت کنید.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">پاسخ سریع (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">شماره شناسایی شخصی (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">تاریخ تولد (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">شناسایی (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">رابط کاربری (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">نشانی یکسان منبع (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">رابط برنامه‌نویسی کاربردی (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <string name="animation_pause_animations">توقف انیمیشن‌ها</string>
+    <string name="animation_resume_animations">از سرگیری انیمیشن‌ها</string>
+    <string name="animation_pause_button_text">توقف</string>
+    <string name="animation_resume_button_text">از سرگیری</string>
+    <string name="animation_toggles_playback_hint">پخش انیمیشن را روشن/خاموش می‌کند</string>
+    <string name="animation_paused_announcement">انیمیشن‌ها متوقف شدند</string>
+    <string name="animation_resumed_announcement">انیمیشن‌ها از سر گرفته شدند</string>
+    <string name="animation_active_count">%d انیمیشن فعال</string>
+    <string name="animation_loading_default">در حال بارگذاری</string>
+    <string name="animation_please_wait">لطفاً صبر کنید تا این عملیات تکمیل شود</string>
+    <string name="animation_percent_complete">%d درصد کامل شده</string>
+    <string name="animation_loading_in_progress">در حال انجام</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <string name="keyboard_shortcuts_title">میانبرهای صفحه‌کلید</string>
+    <string name="keyboard_shortcuts_done">انجام شد</string>
+    <string name="keyboard_shortcuts_app_section">میانبرهای برنامه</string>
+    <string name="keyboard_shortcuts_navigation_section">پیمایش</string>
+    <string name="keyboard_shortcuts_tips_section">نکات</string>
+    <string name="keyboard_shortcuts_navigation_footer">این کلیدهای پیمایش در سراسر برنامه با صفحه‌کلیدهای خارجی کار می‌کنند</string>
+    <string name="keyboard_shortcuts_tip_external">صفحه‌کلیدهای Bluetooth و USB خارجی به‌طور کامل پشتیبانی می‌شوند</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">از کلیدهای جهتی برای پیمایش بین آیتم‌های لیست استفاده کنید</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Ctrl را نگه دارید تا میانبرهای موجود در این صفحه را ببینید</string>
+    <string name="keyboard_shortcuts_tip_a11y">تمام ویژگی‌های این برنامه از طریق صفحه‌کلید قابل دسترسی هستند</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">بستن میانبرهای صفحه‌کلید</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">تنظیمات</string>
+    <string name="keyboard_shortcut_label_accessibility">دسترس‌پذیری</string>
+    <string name="keyboard_shortcut_label_help">مرکز راهنما</string>
+    <string name="keyboard_shortcut_label_add_credential">افزودن مدرک</string>
+    <string name="keyboard_shortcut_label_verify">تأیید</string>
+    <string name="keyboard_shortcut_label_shortcuts">میانبرها</string>
+    <string name="keyboard_shortcut_desc_settings">باز کردن تنظیمات</string>
+    <string name="keyboard_shortcut_desc_accessibility">تنظیمات دسترس‌پذیری</string>
+    <string name="keyboard_shortcut_desc_help">مرکز راهنما</string>
+    <string name="keyboard_shortcut_desc_add_credential">افزودن مدرک</string>
+    <string name="keyboard_shortcut_desc_verify">شروع تأیید</string>
+    <string name="keyboard_shortcut_desc_shortcuts">میانبرهای صفحه‌کلید</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">بازگشت / بستن</string>
+    <string name="keyboard_shortcut_nav_back_desc">بستن صفحه یا دیالوگ فعلی</string>
+    <string name="keyboard_shortcut_nav_next">فیلد بعدی</string>
+    <string name="keyboard_shortcut_nav_next_desc">انتقال فوکوس به عنصر تعاملی بعدی</string>
+    <string name="keyboard_shortcut_nav_prev">فیلد قبلی</string>
+    <string name="keyboard_shortcut_nav_prev_desc">انتقال فوکوس به عنصر تعاملی قبلی</string>
+    <string name="keyboard_shortcut_nav_submit">ارسال / ادامه</string>
+    <string name="keyboard_shortcut_nav_submit_desc">فعال کردن دکمه فوکوس‌یافته یا ارسال فرم</string>
+    <string name="keyboard_shortcut_nav_activate">فعال کردن دکمه</string>
+    <string name="keyboard_shortcut_nav_activate_desc">فعال کردن دکمه یا تاگل فوکوس‌یافته فعلی</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <string name="modal_opened_announcement">دیالوگ باز شد. برای بستن Escape، برای تأیید Enter را فشار دهید.</string>
+    <string name="modal_closed_announcement">دیالوگ بسته شد</string>
+    <string name="modal_button_primary_label">%s (اقدام اصلی)</string>
+    <string name="modal_button_cancel_label">%s (لغو)</string>
+    <string name="modal_button_destructive_label">%s (اقدام مخرب)</string>
+    <string name="modal_button_primary_hint">برای تأیید دوبار ضربه بزنید، یا Enter را فشار دهید</string>
+    <string name="modal_button_cancel_hint">برای لغو دوبار ضربه بزنید، یا Escape را فشار دهید</string>
+    <string name="modal_button_destructive_hint">برای انجام اقدام مخرب دوبار ضربه بزنید</string>
+    <string name="modal_button_secondary_hint">برای انجام اقدام دوبار ضربه بزنید</string>
+    <string name="modal_confirm">تأیید</string>
+    <string name="modal_cancel">لغو</string>
+    <string name="modal_delete">حذف</string>
+
+    <!-- Accessibility Content Descriptions -->
+    <string name="accessibility_verification_success_description">موفقیت</string>
+    <string name="accessibility_verification_error_description">خطا</string>
+    <string name="accessibility_breadcrumb_location_description">مکان: ⁨%s⁩</string>
+    <string name="accessibility_breadcrumb_separator_description">سپس</string>
+    <string name="accessibility_breadcrumb_current_page_description">صفحه فعلی: ⁨%s⁩</string>
+    <string name="accessibility_settings_navigate_description">پیمایش</string>
+    <string name="accessibility_credentials_settings_description">تنظیمات</string>
+    <string name="accessibility_verification_back_description">بازگشت</string>
+    <string name="accessibility_dyslexia_font">فونت مناسب دیسلکسی</string>
+    <string name="accessibility_dyslexia_font_description">استفاده از فونت ⁨OpenDyslexic⁩ برای خوانایی بهتر</string>
+    <!-- Content Descriptions -->
+    <string name="content_desc_back">بازگشت</string>
+    <string name="content_desc_settings">تنظیمات</string>
+    <string name="content_desc_refresh">بارگذاری مجدد</string>
+    <string name="content_desc_verified">تأیید شده</string>
+    <string name="content_desc_expand">گسترش</string>
+    <string name="content_desc_collapse">جمع کردن</string>
+    <string name="content_desc_warning_error">هشدار: خطایی رخ داد</string>
+    <string name="content_desc_sandbox_indicator">نشانگر حالت ⁨Sandbox⁩</string>
+    <string name="content_desc_success">موفقیت</string>
+    <string name="content_desc_warning">هشدار</string>
+    <string name="content_desc_information">اطلاعات</string>
+    <string name="content_desc_error">خطا</string>
+    <string name="content_desc_sandbox_warning">هشدار حالت ⁨Sandbox⁩</string>
+    <string name="content_desc_app_info">اطلاعات برنامه</string>
+    <string name="content_desc_accessibility_settings">تنظیمات دسترس‌پذیری</string>
+    <string name="content_desc_language_settings">تنظیمات زبان</string>
+    <string name="content_desc_licenses">مجوزهای متن‌باز</string>
+    <string name="content_desc_select_dob">انتخاب تاریخ تولد</string>
+    <string name="content_desc_mint_test_credential_as_issuer">صدور مدرک آزمایشی به عنوان صادرکننده</string>
+    <string name="content_desc_get_credential">دریافت مدرک</string>
+    <string name="content_desc_delete_credential">حذف مدرک</string>
+    <string name="content_desc_reset_proving_key">بازنشانی کلید اثبات</string>
+    <string name="content_desc_environment_info">اطلاعات محیط</string>
+    <string name="content_desc_help_support">راهنما و پشتیبانی</string>
+    <string name="content_desc_privacy_protected">حریم خصوصی محافظت شده</string>
+    <string name="content_desc_privacy_settings">تنظیمات حریم خصوصی، کنترل جمع‌آوری داده و مدیریت اطلاعات شما</string>
+    <string name="content_desc_data_collection_info">مشاهده اطلاعات جمع‌آوری داده</string>
+    <string name="content_desc_privacy_policy">مشاهده سیاست حریم خصوصی</string>
+    <string name="content_desc_opens_external_link">در مرورگر باز می‌شود</string>
+    <string name="content_desc_delete_my_data">حذف همه داده‌های من</string>
+    <string name="privacy_delete_data_confirm">حذف همه چیز</string>
+    <string name="privacy_footer_note">می‌توانید هر زمان این تنظیمات را تغییر دهید. تغییرات فوراً اعمال می‌شوند.</string>
+    <string name="dialog_delete_data_announcement">کادر گفتگوی تأیید حذف داده باز شد</string>
+    <string name="dialog_data_collection_info_announcement">کادر گفتگوی اطلاعات جمع‌آوری داده باز شد</string>
+    <string name="error_biometric_required">برای ادامه احراز هویت بیومتریک لازم است.</string>
+    <string name="preview_settings_title">پیش‌نمایش تنظیمات</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">حذف ⁨%1$s⁩</string>
+    <string name="a11y_edit_nickname_for">ویرایش نام مستعار برای ⁨%1$s⁩</string>
+    <string name="accessibility_attestation_scan_back">بازگشت</string>
+    <string name="attestation_replace_confirm">جایگزینی</string>
+    <string name="attestation_replace_primary_message">شما در حال حاضر یک مدرک شخصی دارید. ساختن مدرک جدید آن را جایگزین می‌کند. این عمل قابل بازگشت نیست.</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">جایگزینی مدرک موجود؟</string>
+    <string name="attestation_scan_error_empty">کد QR خالی بود</string>
+    <string name="attestation_scan_instruction">دوربین خود را به سمت کد QR نمایش‌داده‌شده توسط مسئول بگیرید</string>
+    <string name="attestation_scan_invalid_qr">این کد QR حاوی داده‌های گواهی نیست</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">اسکن گواهی</string>
+    <string name="attestation_scan_wrong_type_toast">این یک کد QR تأیید است، نه کد QR مدرک</string>
+    <string name="biometric_required_message">این برنامه برای ذخیره‌سازی ایمن مدارک به یک قفل صفحه (PIN، الگو یا بیومتریک) نیاز دارد. لطفاً پیش از ادامه، در تنظیمات امنیتی دستگاه خود یکی را تنظیم کنید.</string>
+    <string name="biometric_required_open_settings">باز کردن تنظیمات امنیتی</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">قفل صفحه لازم است</string>
+    <string name="challenge_sandbox_prompt_announcement">چالش Sandbox دریافت شد. انتخاب کنید که حالت Sandbox را فعال کرده و ادامه دهید یا چالش را رد کنید.</string>
+    <string name="challenge_sandbox_prompt_body">این چالش توسط یک تأییدکننده Sandbox صادر شده است. تنها در صورتی موفق خواهد بود که حالت Sandbox را در این کیف پول فعال کنید.</string>
+    <string name="challenge_sandbox_prompt_primary">فعال‌سازی Sandbox و ادامه</string>
+    <string name="challenge_sandbox_prompt_secondary">رد چالش</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">چالش Sandbox دریافت شد</string>
+    <string name="credential_detail_nickname_error">ذخیره نام مستعار ناموفق بود</string>
+    <string name="credential_list_managed_count">⁨%1$d⁩ از ⁨%2$d⁩</string>
+    <string name="credential_picker_count_shown">⁨%1$d⁩ مدرک نمایش داده شد</string>
+    <string name="credential_picker_filter_clear">پاک کردن فیلتر</string>
+    <string name="credential_picker_filter_label">فیلتر مدارک بر اساس نام</string>
+    <string name="credential_picker_filter_placeholder">فیلتر مدارک</string>
+    <string name="credential_picker_no_results">مدرک منطبقی یافت نشد</string>
+    <string name="credential_picker_section_managed">مدارک مدیریت‌شده</string>
+    <string name="credential_picker_section_me">من</string>
+    <string name="credential_picker_subtitle">انتخاب کنید چه کسی در حال تأیید شدن است.</string>
+    <string name="credential_row_action_delete">حذف</string>
+    <string name="credential_row_action_edit">ویرایش نام مستعار</string>
+    <string name="credential_row_overflow_menu">گزینه‌های مدرک</string>
+    <string name="deeplink_sandbox_prompt_announcement">پیوند Sandbox شناسایی شد. انتخاب کنید که حالت Sandbox را فعال کرده و پیوند را باز کنید.</string>
+    <string name="deeplink_sandbox_prompt_body">این پیوند عمیق فقط در صورتی موفق خواهد بود که حالت Sandbox را در این کیف پول فعال کنید.</string>
+    <string name="deeplink_sandbox_prompt_primary">فعال‌سازی Sandbox و باز کردن</string>
+    <string name="deeplink_sandbox_prompt_secondary">لغو</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">پیوند Sandbox شناسایی شد</string>
+    <string name="empty_credential_option_find_apps_a11y">یافتن یک برنامه شرکت‌کننده. مدرکی از سوپرانیویشن، بانک، اپراتور مخابراتی، بیمه‌گر سلامت یا هر کسی که از قبل سن شما را می‌داند دریافت کنید.</string>
+    <string name="empty_credential_option_find_apps_desc">مدرکی از سوپرانیویشن، بانک، اپراتور مخابراتی، بیمه‌گر سلامت یا هر کسی که از قبل سن شما را می‌داند دریافت کنید</string>
+    <string name="empty_credential_option_find_apps_title">یافتن یک برنامه شرکت‌کننده</string>
+    <string name="empty_credential_option_find_locations_a11y">یافتن یک مکان نزدیک به شما. به همراه مدرک شناسایی خود حضوری مراجعه کنید تا مدرکی دریافت کنید.</string>
+    <string name="empty_credential_option_find_locations_desc">به همراه مدرک شناسایی خود حضوری مراجعه کنید تا مدرکی دریافت کنید</string>
+    <string name="empty_credential_option_find_locations_title">یافتن یک مکان نزدیک به شما</string>
+    <string name="empty_credential_option_managed_a11y">من از کسی مراقبت می‌کنم. مدارک افرادی را که از آن‌ها مراقبت می‌کنید مدیریت کنید.</string>
+    <string name="empty_credential_option_managed_desc">مدارک افرادی را که از آن‌ها مراقبت می‌کنید مدیریت کنید</string>
+    <string name="empty_credential_option_managed_title">من از کسی مراقبت می‌کنم</string>
+    <string name="empty_credential_option_scan_a11y">من یک کد QR برای اسکن دارم. یک تأییدکننده پس از مشاهده مدارک شناسایی شما کدی به شما داده است.</string>
+    <string name="empty_credential_option_scan_desc">یک تأییدکننده پس از مشاهده مدارک شناسایی شما کدی به شما داده است</string>
+    <string name="empty_credential_option_scan_title">من یک کد QR برای اسکن دارم</string>
+    <string name="empty_credential_subtitle">انتخاب کنید چگونه می‌خواهید اولین مدرک خود را دریافت کنید</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">هنوز مدرکی وجود ندارد</string>
+    <string name="error_screen_lock_required">برای ذخیره‌سازی ایمن مدارک، یک قفل صفحه (PIN، الگو یا بیومتریک) لازم است. لطفاً در تنظیمات دستگاه خود یکی را تنظیم کنید.</string>
+    <string name="issuers_no_apps_found_description">به‌زودی دوباره سر بزنید چرا که برنامه‌های بیشتری از Provii پشتیبانی خواهند کرد</string>
+    <string name="issuers_no_apps_found">هنوز برنامه شرکت‌کننده‌ای وجود ندارد</string>
+    <string name="issuers_no_locations_found_description">به‌زودی دوباره سر بزنید چرا که مکان‌های بیشتری اضافه می‌شوند</string>
+    <string name="issuers_no_locations_found">هیچ مکانی یافت نشد</string>
+    <string name="managed_credential_explainer_body">برای دریافت یک مدرک مدیریت‌شده برای کسی که از او مراقبت می‌کنید، با هم به یک مکان شرکت‌کننده مراجعه کنید. تأییدکننده مدارک شناسایی او را مشاهده خواهد کرد. هنگام اسکن کد QR، از شما پرسیده می‌شود که این مدرک برای خود شماست یا برای فردی که مدیریت می‌کنید.</string>
+    <string name="managed_credential_explainer_find_location">یافتن یک مکان</string>
+    <string name="managed_credential_explainer_have_qr">من از قبل یک کد QR دارم</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">مدارک مدیریت‌شده</string>
+    <string name="sandbox_credential_type">نوع مدرک</string>
+    <string name="sandbox_managed_credential_saved">مدرک مدیریت‌شده ذخیره شد (⁨%s⁩)</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">حالت Sandbox اکنون فعال است. کیف پول به سرورهای Sandbox متصل است.</string>
+    <string name="sandbox_nickname_helper">به این مدرک نامی بدهید تا بتوانید آن را در کیف پول خود شناسایی کنید.</string>
+    <string name="sandbox_nickname_label">نام مستعار</string>
+    <string name="sandbox_nickname_placeholder">مثلاً سارا</string>
+    <string name="sandbox_nickname_required">برای مدارک مدیریت‌شده، نام مستعار لازم است</string>
+    <string name="sandbox_type_managed_credential">مدرک مدیریت‌شده</string>
+    <string name="sandbox_type_your_credential">مدرک شما</string>
+    <string name="title_find_apps">یافتن یک برنامه شرکت‌کننده</string>
+    <string name="title_find_locations">یافتن یک مکان</string>
+    <string name="verification_go_to_attestation">دریافت مدرک</string>
+    <string name="verification_wrong_qr_type_message">این کد QR برای دریافت مدرک جدید است، نه برای تأیید سن. آیا می‌خواهید به‌جای آن به صفحه گواهی بروید؟</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">کد QR گواهی شناسایی شد</string>
+    <string name="walkthrough_back">بازگشت</string>
+    <string name="walkthrough_get_started">شروع کنید</string>
+    <string name="walkthrough_next">بعدی</string>
+    <string name="walkthrough_page_indicator">صفحه ⁨%1$d⁩ از ⁨%2$d⁩</string>
+    <string name="walkthrough_page1_body">مدرک شما حاوی سن شماست. هیچ‌چیز دیگری. نه نام شما، نه نشانی شما، نه هویت شما.\n\nاثبات می‌کند که شما بالای (یا زیر) سن مشخصی هستید بدون آنکه تاریخ تولد شما فاش شود.</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">مدرک چیست؟</string>
+    <string name="walkthrough_page2_body">می‌توانید مدرکی را از طریق یک برنامه از شرکتی دریافت کنید که از قبل سن شما را می‌داند. مثلاً بانک یا صندوق بازنشستگی شما. چون آن‌ها قبلاً سن شما را تأیید کرده‌اند، چیزی نیاز به اشتراک‌گذاری مجدد ندارد.\n\nهمچنین می‌توانید با مدارک شناسایی که تاریخ تولد شما را اثبات می‌کند به یک مکان شرکت‌کننده مراجعه کنید. تاریخ تولد شما مشاهده می‌شود، برای ساخت مدرک شما استفاده می‌شود و سپس دور انداخته می‌شود. صادرکننده هرگز مدرک شما را نمی‌بیند. هویت شما هرگز به آن گره نمی‌خورد.</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">چگونه آن را به دست می‌آورید؟</string>
+    <string name="walkthrough_page3_body">اگر از کسی مراقبت می‌کنید که به یک مدرک سنی نیاز دارد، می‌توانید برای او یکی دریافت کرده و آن را روی دستگاه خود مدیریت کنید.\n\nبا هم به یک مکان شرکت‌کننده با مدارک شناسایی که تاریخ تولد او را اثبات می‌کند مراجعه کنید. هنگام اسکن کد QR، از شما پرسیده می‌شود که این مدرک برای خود شماست یا برای فردی که مدیریت می‌کنید.\n\nنام مستعاری اضافه کنید تا بتوانید مدارک آن‌ها را از هم تشخیص دهید.</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">وابستگان</string>
+    <string name="walkthrough_page4_body">برنامه‌ای که در حال تلاش برای تأیید سن شماست می‌تواند چالشی را مستقیماً به کیف پول Provii شما ارسال کند. شما انتخاب می‌کنید از کدام مدرک استفاده شود. پس از تأیید موفق، به برنامه درخواست‌کننده بازگردانده می‌شوید و خواهید توانست به‌عنوان فرد تأیید‌شده ادامه دهید.\n\nهمچنین ممکن است یک کد QR روی دستگاه دیگری به شما نشان داده شود، یا پیوندی در مرورگر موبایل خود ببینید که مستقیماً به کیف پول شما می‌رود. یک گزینه کد کوتاه نیز برای دسترس‌پذیری وجود دارد.\n\nهیچ اطلاعات شخصی هرگز به اشتراک گذاشته نمی‌شود. فقط یک پاسخ بله یا خیر به این پرسش که آیا الزام سنی را برآورده می‌کنید.</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">تأیید چگونه کار می‌کند؟</string>
+    <string name="walkthrough_page5_body">اولین گام شما این است که از طریق یک برنامه شرکت‌کننده یا در مکانی نزدیک به خود، یک مدرک دریافت کنید.\n\nاز آنجا، می‌توانید سن خود را هر زمان که لازم بود تأیید کنید، بدون آنکه اطلاعات شخصی به اشتراک گذاشته شود. همچنین می‌توانید مدارک افرادی را که از آن‌ها مراقبت می‌کنید مدیریت کنید.</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">همه‌چیز آماده است</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">رد کردن</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>
