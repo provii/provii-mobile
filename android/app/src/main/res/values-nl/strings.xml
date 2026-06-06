@@ -1,0 +1,1683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Instellingen</string>
+    <string name="title_accessibility">Toegankelijkheid</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Legitimatiebewijzen ophalen</string>
+    <string name="title_scan_verification_qr">Verificatie-QR-code scannen</string>
+    <string name="title_verifying_age">Leeftijd verifiëren</string>
+    <string name="title_age_verified">Leeftijd geverifieerd</string>
+    <string name="title_verification_failed">Verificatie mislukt</string>
+    <string name="title_officer_mode">Functionarismodus</string>
+    <string name="title_officer_dashboard">Functionarisoverzicht</string>
+    <string name="title_issue_credential">Legitimatiebewijs uitgeven</string>
+    <string name="title_credential_ready">Legitimatiebewijs klaar</string>
+    <string name="title_get_your_credential">Uw legitimatiebewijs ophalen</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Welkom bij Provii Wallet</string>
+    <string name="welcome_subtitle">Veilige leeftijdsverificatie, eenvoudig gemaakt</string>
+    <string name="welcome_first_credential">Begin door uw eerste leeftijdsverificatie-legitimatiebewijs toe te voegen</string>
+    <string name="welcome_description">Privéleeftijdsverificatie met behulp van zero-knowledge bewijzen</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Welkom bij Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Kies uw taalvoorkeur</string>
+    <string name="onboarding_use_english">Engels gebruiken</string>
+    <string name="onboarding_use_english_description">Doorgaan met Engels als app-taal</string>
+    <string name="onboarding_rotating_button_description">Knop Taal wijzigen, toont momenteel: %1$s. Tik om een andere taal te selecteren.</string>
+    <string name="onboarding_change_later">U kunt dit later wijzigen in Instellingen</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Toegankelijkheid</string>
+    <string name="onboarding_accessibility_desc">Wilt u toegankelijkheidsfuncties aanpassen, zoals tekstgrootte, aanraakgebieden of verminderde animatie?</string>
+    <string name="onboarding_use_defaults">Standaardwaarden gebruiken</string>
+    <string name="onboarding_use_defaults_description">Doorgaan met standaard toegankelijkheidsinstellingen</string>
+    <string name="onboarding_open_accessibility">Toegankelijkheidsinstellingen</string>
+    <string name="onboarding_open_accessibility_description">Toegankelijkheidsinstellingen openen om de app aan te passen</string>
+    <string name="onboarding_accessibility_later">U kunt dit later wijzigen in Instellingen</string>
+    <string name="onboarding_accessibility_features_title">Beschikbare functies zijn:</string>
+    <string name="onboarding_feature_text_size">Grotere tekstformaten</string>
+    <string name="onboarding_feature_touch_targets">Vergroot aanraakgebied</string>
+    <string name="onboarding_feature_reduce_motion">Verminderde animatie</string>
+    <string name="onboarding_feature_high_contrast">Hoog-contrastmodus</string>
+    <string name="onboarding_talkback_detected">TalkBack gedetecteerd</string>
+    <string name="onboarding_talkback_message">We hebben uitgebreide beschrijvingen ingeschakeld om u door de app te helpen navigeren.</string>
+    <string name="onboarding_continue_to_setup">Doorgaan naar installatie</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Eenmalige installatie vereist</string>
+    <string name="setup_download_required">Download vereist</string>
+    <string name="setup_download_description">Deze app moet beveiligingscomponenten downloaden voor zero-knowledge bewijzen (ongeveer 87 MB).</string>
+    <string name="setup_wifi_recommended">Wi-Fi aanbevolen</string>
+    <string name="setup_checking_status">Installatiestatus controleren...</string>
+    <string name="setup_already_setup">Al ingesteld!</string>
+    <string name="setup_ready_message">Uw wallet is klaar voor veilige leeftijdsverificatie</string>
+    <string name="setup_preparing">Beveiligd verificatiesysteem voorbereiden...</string>
+    <string name="setup_checking_components">Beveiligingscomponenten controleren...</string>
+    <string name="setup_downloading">Beveiligingscomponenten downloaden</string>
+    <string name="setup_download_progress_description">%1$d%% voltooid (%2$s MB van %3$s MB gedownload)</string>
+    <string name="setup_initializing">Beveiligingscomponenten initialiseren...</string>
+    <string name="setup_complete">Installatie voltooid!</string>
+    <string name="setup_download_info">Dit maakt zero-knowledge bewijzen mogelijk voor privéleeftijdsverificatie</string>
+    <string name="setup_one_time_download">Eenmalige download</string>
+    <string name="setup_stuck_message">Dit duurt langer dan verwacht</string>
+    <string name="setup_stuck_description">De installatie is mogelijk vastgelopen. Probeer opnieuw op te starten.</string>
+    <string name="setup_restart_message">De app moet opnieuw worden gestart. Dit gebeurt soms bij de eerste keer opstarten.</string>
+    <string name="setup_storage_full">Opslag vol</string>
+    <string name="setup_connection_error">Verbindingsfout</string>
+    <string name="setup_failed">Installatie mislukt</string>
+    <string name="setup_initialization_error">Initialisatiefout</string>
+    <string name="error_storage_init_failed">Opslag-initialisatie mislukt. Start de app opnieuw op.</string>
+    <string name="error_storage_init_close_restart">Opslag-initialisatie mislukt. Sluit de app en start deze opnieuw op.</string>
+    <string name="setup_free_storage_message">Maak minimaal 65 MB vrij en probeer het opnieuw</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Privacy beschermd</string>
+    <string name="setup_privacy_description">Uw leeftijdsverificatie maakt gebruik van zero-knowledge bewijzen. Uw geboortedatum wordt nooit gedeeld.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Mijn legitimatiebewijzen</string>
+    <string name="credentials_empty">Geen legitimatiebewijzen opgeslagen</string>
+    <string name="credential_active">Legitimatiebewijs actief</string>
+    <string name="credential_expired">Legitimatiebewijs verlopen</string>
+    <string name="credential_ready_for_verification">Klaar voor verificatie</string>
+    <string name="credential_expired_message">Uw legitimatiebewijs is verlopen en moet worden vervangen</string>
+    <string name="credential_stored_successfully">Legitimatiebewijs succesvol opgeslagen</string>
+    <string name="credential_stored_description">Uw leeftijdslegitimatiebewijs is veilig opgeslagen en klaar voor gebruik</string>
+    <string name="credential_can_prove_age">U kunt uw leeftijd nu privé aantonen</string>
+    <string name="credential_returning">Terugkeren naar legitimatiebewijzen...</string>
+    <string name="credential_view_credentials">Legitimatiebewijzen bekijken</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Gereed</string>
+    <string name="action_scan_qr_code">QR-code scannen</string>
+    <string name="action_find_locations">Locaties zoeken</string>
+    <string name="action_get_credential">Een legitimatiebewijs ophalen</string>
+    <string name="action_replace_credential">Vervangen door nieuw legitimatiebewijs</string>
+    <string name="action_replace_credential_now">Legitimatiebewijs nu vervangen</string>
+    <string name="action_delete_credential">Legitimatiebewijs verwijderen</string>
+    <string name="credential_action_scan_description">Legitimatiebewijs ophalen bij bevoegde uitgever</string>
+    <string name="credential_action_find_description">Uitgevers in de buurt ontdekken</string>
+    <string name="credential_remove_description">Huidig legitimatiebewijs verwijderen</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Privacy</string>
+    <string name="credential_info_privacy_value">Beschermd</string>
+    <string name="credential_info_status">Status</string>
+    <string name="credential_info_status_value">Geldig</string>
+    <string name="credential_tip_title">Snelle tip</string>
+    <string name="credential_tip_message">Tik op de knop \'Leeftijd verifiëren\' om verificatie-QR-codes (Quick Response) te scannen bij deelnemende locaties.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">QR-code scannen</string>
+    <string name="verification_verify_age">Leeftijd verifiëren</string>
+    <string name="verification_generating_proof">Bewijs genereren...</string>
+    <string name="verification_success">Verificatie geslaagd</string>
+    <string name="verification_failed">Verificatie mislukt</string>
+    <string name="verification_age_verified">Leeftijd geverifieerd</string>
+    <string name="verification_age_verified_message">Uw leeftijd is privé geverifieerd</string>
+    <string name="verification_can_return">U kunt nu terugkeren naar de site om verder te gaan.</string>
+    <string name="verification_returning_browser">Terugkeren naar browser...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">Stap 1 van 2</string>
+    <string name="verification_step_2_of_2">Stap 2 van 2</string>
+    <string name="verification_point_camera">Richt de camera op de verificatie-QR-code</string>
+    <string name="verification_hold_steady">Houd stil totdat u een bevestigingstoon hoort.</string>
+    <string name="verification_reading_request">Verificatieverzoek lezen...</string>
+    <string name="verification_processing_challenge">Uitdaging verwerken...</string>
+    <string name="verification_creating_proof">Leeftijdsbewijs aanmaken...</string>
+    <string name="verification_submitting_proof">Bewijs indienen...</string>
+    <string name="verification_processing_message">Dit kan enkele seconden duren</string>
+    <string name="verification_preparing_proof">We bereiden een privébewijs voor op basis van uw opgeslagen legitimatiebewijs.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Verificatieverzoek lezen...</string>
+    <string name="verification_status_processing_challenge">Uitdaging verwerken...</string>
+    <string name="verification_status_creating_proof">Leeftijdsbewijs aanmaken...</string>
+    <string name="verification_status_submitting_proof">Bewijs indienen...</string>
+    <string name="verification_status_verified">✔ Leeftijd geverifieerd</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Kan verificatieprompt niet weergeven</string>
+    <string name="verification_error_verification_failed">Verificatie mislukt</string>
+    <string name="verification_error_generic">Er is een fout opgetreden</string>
+    <string name="verification_error_failed_to_process_code">Code verwerken mislukt</string>
+    <string name="verification_error_failed_to_process_challenge">Uitdaging verwerken mislukt</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Vertrouwde uitgevers in Australië</string>
+    <string name="issuers_loading">Uitgevers laden...</string>
+    <string name="issuers_loaded">Uitgevers succesvol geladen</string>
+    <string name="issuers_unable_to_load">Kan uitgevers niet laden</string>
+    <string name="issuers_check_connection">Controleer uw internetverbinding en probeer het opnieuw</string>
+    <string name="issuers_categories_header">CATEGORIEËN</string>
+    <string name="issuers_available_header">BESCHIKBARE UITGEVERS</string>
+    <string name="issuers_found_count">%d gevonden</string>
+    <string name="issuer_status_coming_soon">Binnenkort beschikbaar</string>
+    <string name="issuer_status_verified">Geverifieerd</string>
+    <string name="issuer_how_to_get">Hoe u een legitimatiebewijs kunt verkrijgen</string>
+    <string name="issuer_service_locations">Servicelocaties</string>
+    <string name="issuer_visit_website">Website van %s bezoeken</string>
+    <string name="issuer_learn_more">Meer informatie over %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Bankieren</string>
+    <string name="category_super_fund">Pensioenfonds</string>
+    <string name="category_government">Overheid</string>
+    <string name="category_travel">Reizen</string>
+    <string name="category_telco">Telecom</string>
+    <string name="category_insurance">Verzekering</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Instellingen</string>
+    <string name="settings_section_sandbox">Sandbox-modus</string>
+    <string name="settings_section_general">Algemeen</string>
+    <string name="settings_section_credentials">Legitimatiebewijzen</string>
+    <string name="settings_section_advanced">Geavanceerd</string>
+    <string name="settings_section_privacy">Privacy</string>
+    <string name="settings_security">Beveiliging</string>
+    <string name="settings_biometric">Biometrische verificatie gebruiken</string>
+    <string name="settings_environment">Omgevingsinstellingen</string>
+    <string name="settings_environment_description">Huidige omgevingsconfiguratie bekijken</string>
+    <string name="settings_reset_proving_key">Bewijssleutel opnieuw instellen</string>
+    <string name="settings_reset_proving_key_description">Beveiligingscomponenten opnieuw downloaden (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Test legitimatiebewijs uitgeven als Uitgever</string>
+    <string name="settings_mint_test_credential_subtitle">Geef een testlegitimatiebewijs uit aan je wallet zodat je het kunt verifiëren vanuit een relying party-demo.</string>
+    <string name="settings_find_trusted_issuers">Vertrouwde uitgevers zoeken</string>
+    <string name="settings_version">Versie: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">5× tikken om te schakelen</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Taal</string>
+    <string name="language_selection_description">Selecteer uw voorkeurstaal. De app wordt opnieuw gestart om de wijzigingen toe te passen.</string>
+    <string name="language_selected">Geselecteerd</string>
+    <string name="settings_language">Taal</string>
+    <string name="settings_language_description">App-taal wijzigen</string>
+    <string name="settings_licenses">Open-sourcelicenties</string>
+    <string name="settings_licenses_description">Licenties van derden bekijken</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Taal bevestigen</string>
+    <string name="language_change_to">Taal wijzigen naar:</string>
+    <string name="language_restart_notice">De app wordt opnieuw gestart om deze taal toe te passen.</string>
+    <string name="language_apply">Toepassen</string>
+    <string name="language_cancel">Annuleren</string>
+    <string name="language_skip_title">Taalselectie overslaan?</string>
+    <string name="language_skip_message">Als u overslaat, gebruikt de app standaard Engels. U kunt de taal later wijzigen in Instellingen.</string>
+    <string name="language_use_english">Engels gebruiken</string>
+    <string name="language_go_back">Terug</string>
+    <string name="language_help_title">Help bij taalselectie</string>
+    <string name="language_help_how_to">Hoe u uw taal kunt selecteren:</string>
+    <string name="language_help_step1">1. Gebruik het zoekvak om uw taal te vinden</string>
+    <string name="language_help_step2">2. Tik op uw voorkeurstaal</string>
+    <string name="language_help_step3">3. Bevestig uw selectie</string>
+    <string name="language_help_system_note">Uw systeemtaal wordt bovenaan gemarkeerd weergegeven als deze wordt ondersteund.</string>
+    <string name="language_help_settings_note">U kunt dit later wijzigen in Instellingen.</string>
+    <string name="language_got_it">Begrepen</string>
+    <string name="language_select_title">Taal selecteren</string>
+    <string name="language_skip_button">Overslaan (Engels gebruiken)</string>
+    <string name="language_search_placeholder">Talen zoeken...</string>
+    <string name="language_no_results">Geen talen gevonden</string>
+    <string name="language_try_different">Probeer een andere zoekterm</string>
+    <string name="language_system_badge">Systeemtaal</string>
+    <string name="language_count">%d talen</string>
+    <string name="language_no_match_announcement">Geen talen gevonden die overeenkomen met uw zoekopdracht</string>
+    <string name="language_found_announcement">%d talen gevonden</string>
+    <string name="language_search_cleared">Zoekopdracht gewist, alle %d talen worden weergegeven</string>
+    <string name="language_selected_announcement">%1$s geselecteerd, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Taalselectiescherm</string>
+    <string name="language_help_button_description">Hulp en informatie over taalselectie</string>
+    <string name="language_skip_description">Taalselectie overslaan en standaard Engels gebruiken</string>
+    <string name="language_clear_search_description">Zoekopdracht wissen</string>
+    <string name="language_count_description">%d talen beschikbaar</string>
+    <string name="language_apply_description">Taalkeuze toepassen en doorgaan</string>
+    <string name="language_cancel_description">Taalkeuze annuleren</string>
+    <string name="language_cancelled_announcement">Taalkeuze geannuleerd</string>
+    <string name="language_selected_description">Geselecteerde taal: %1$s, %2$s</string>
+    <string name="language_item_system">Systeemtaal: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, momenteel geselecteerd</string>
+    <string name="language_item_system_selected">Systeemtaal: %1$s, %2$s, momenteel geselecteerd</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Teruggekeerd naar taalkeuze</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Sandbox-modus actief</string>
+    <string name="sandbox_mode_banner">SANDBOX-MODUS ACTIEF</string>
+    <string name="sandbox_mode_description">De testomgeving is in gebruik. Tik vijf keer op het versienummer om te wisselen.</string>
+    <string name="sandbox_credential_title">Sandbox-legitimatiebewijs</string>
+    <string name="sandbox_credential_description">Genereer een Sandbox-legitimatiebewijs om verificatiestromen te doorlopen zonder productiegegevens te gebruiken.</string>
+    <string name="sandbox_select_age">Leeftijd selecteren</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Standaard geboortedatum: %s</string>
+    <string name="sandbox_override_dob">Standaard geboortedatum overschrijven</string>
+    <string name="sandbox_override_description">Gebruik een exacte datum in plaats van de op leeftijd gebaseerde standaard.</string>
+    <string name="sandbox_date_of_birth">Geboortedatum</string>
+    <string name="sandbox_generate_credential">Legitimatiebewijs genereren</string>
+    <string name="sandbox_generating">Bezig met genereren…</string>
+    <string name="sandbox_test_credential_saved">Testlegitimatiebewijs opgeslagen</string>
+    <string name="sandbox_id_prefix">Identificatievoorvoegsel: %s…</string>
+    <string name="sandbox_unable_to_generate">Kan legitimatiebewijs niet genereren</string>
+    <string name="settings_sandbox_dob_format">Geboortedatum: %s</string>
+    <string name="settings_sandbox_age_dob_format">Leeftijd %d+ (Geboortedatum: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Omgevingsconfiguratie</string>
+    <string name="environment_current">Huidig: %s</string>
+    <string name="environment_issuer_api">Uitgever-API (Application Programming Interface): %s</string>
+    <string name="environment_verifier_api">Verificateur-API (Application Programming Interface): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Legitimatiebewijs verwijderen?</string>
+    <string name="dialog_delete_credential_message">Met deze actie wordt het legitimatiebewijs van uw apparaat verwijderd. U kunt het opnieuw ophalen bij de uitgever indien nodig.</string>
+    <string name="dialog_delete_credential_announcement">Dialoogvenster geopend: Legitimatiebewijs verwijderen</string>
+    <string name="dialog_reset_proving_key_title">Bewijssleutel opnieuw instellen?</string>
+    <string name="dialog_reset_proving_key_message">De bewijssleutel en ondersteunende bestanden worden verwijderd en de volgende keer dat u de app opent opnieuw gedownload.</string>
+    <string name="dialog_reset_proving_key_announcement">Dialoogvenster geopend: Bewijssleutel opnieuw instellen</string>
+    <string name="dialog_environment_info_announcement">Dialoogvenster geopend: Omgevingsconfiguratie</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">Toegankelijkheid</string>
+    <string name="accessibility_service_label">Provii Wallet-toegankelijkheid</string>
+    <string name="accessibility_service_description">De toegankelijkheidsservice van Provii Wallet biedt verbeterde ondersteuning voor gebruikers met een beperking. Dit omvat automatisch lezen van legitimatiebewijzen, begeleide navigatie en vereenvoudigde interacties.</string>
+    <string name="accessibility_personalize">Uw ervaring personaliseren</string>
+    <string name="accessibility_customize_features">Toegankelijkheidsfuncties aanpassen</string>
+    <string name="accessibility_quick_setup">Snelle instelling</string>
+    <string name="accessibility_features_active">%d functies actief</string>
+    <string name="accessibility_customize_experience">Uw ervaring aanpassen</string>
+    <string name="accessibility_reset_title">Toegankelijkheidsinstellingen opnieuw instellen?</string>
+    <string name="accessibility_reset_message">Alle toegankelijkheidsvoorkeuren worden teruggezet naar hun standaardwaarden.</string>
+    <string name="accessibility_reset">Toegankelijkheidsinstellingen opnieuw instellen</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Zicht</string>
+    <string name="accessibility_category_interaction">Interactie</string>
+    <string name="accessibility_category_cognitive">Cognitieve ondersteuning</string>
+    <string name="accessibility_category_alternative_input">Alternatieve invoer</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Extra grote tekst</string>
+    <string name="accessibility_extra_large_text_description">Basislettergroottes met 45% vergroten</string>
+    <string name="accessibility_high_contrast">Hoog contrast</string>
+    <string name="accessibility_high_contrast_description">Kleuren met hoog contrast gebruiken</string>
+    <string name="accessibility_reduce_transparency">Transparantie verminderen</string>
+    <string name="accessibility_reduce_transparency_description">Vervagings- en glaseffecten verwijderen</string>
+    <string name="accessibility_dyslexia_font">Dyslexievriendelijk lettertype</string>
+    <string name="accessibility_dyslexia_font_description">OpenDyslexic-lettertype gebruiken voor betere leesbaarheid</string>
+    <string name="accessibility_color_blind_mode">Kleurenblindmodus</string>
+    <string name="accessibility_color_blind_optimized">Geoptimaliseerde kleuren voor %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Geen</string>
+    <string name="color_blind_protanopia">Protanopie (Roodblind)</string>
+    <string name="color_blind_deuteranopia">Deuteranopie (Groenblind)</string>
+    <string name="color_blind_tritanopia">Tritanopie (Blauwblind)</string>
+    <string name="color_blind_monochrome">Monochroom</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Grotere aanraakdoelen</string>
+    <string name="accessibility_larger_touch_targets_description">Knop- en chipformaten vergroten</string>
+    <string name="accessibility_reduce_motion">Beweging verminderen</string>
+    <string name="accessibility_reduce_motion_description">Animaties en overgangen minimaliseren</string>
+    <string name="accessibility_extended_timeouts">Verlengde time-outs</string>
+    <string name="accessibility_extended_timeouts_description">Meer tijd geven voor getimede acties</string>
+    <string name="accessibility_simplified_gestures">Vereenvoudigde gebaren</string>
+    <string name="accessibility_simplified_gestures_description">Meerstapsgebaren verminderen</string>
+    <string name="accessibility_haptic_feedback">Haptische terugkoppeling</string>
+    <string name="accessibility_haptic_feedback_description">Trilbevestiging voor acties</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Vereenvoudigde interface</string>
+    <string name="accessibility_simplified_interface_description">Geavanceerde opties verbergen en rommel verminderen</string>
+    <string name="accessibility_show_step_numbers">Stapnummers weergeven</string>
+    <string name="accessibility_show_step_numbers_description">Voortgangsindicatoren tonen</string>
+    <string name="accessibility_detailed_descriptions">Gedetailleerde beschrijvingen</string>
+    <string name="accessibility_detailed_descriptions_description">Aanvullende verklarende tekst bieden</string>
+    <string name="accessibility_confirm_actions">Bevestigen vóór acties</string>
+    <string name="accessibility_confirm_actions_description">Om bevestiging vragen bij belangrijke bewerkingen</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Handmatige code-invoer</string>
+    <string name="accessibility_manual_code_entry_description">QR-codes (Quick Response) typen in plaats van scannen toestaan</string>
+    <string name="accessibility_voice_input">Spraakinvoer</string>
+    <string name="accessibility_voice_input_description">Spraakherkenning inschakelen voor tekstvelden</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Zicht</string>
+    <string name="accessibility_profile_motor">Motoriek</string>
+    <string name="accessibility_profile_cognitive">Cognitief</string>
+    <string name="accessibility_profile_senior">Senior</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Terug</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Startpagina</string>
+    <string name="breadcrumb_settings">Instellingen</string>
+    <string name="breadcrumb_accessibility">Toegankelijkheid</string>
+    <string name="breadcrumb_language">Taal</string>
+    <string name="breadcrumb_help">Helpcentrum</string>
+    <string name="breadcrumb_officer_mode">Functionarismodus</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Typografie &amp; Tekstafstand</string>
+    <string name="accessibility_line_spacing">Regelafstand</string>
+    <string name="accessibility_line_spacing_description">Ruimte tussen tekstregels aanpassen</string>
+    <string name="accessibility_paragraph_spacing">Alinea-afstand</string>
+    <string name="accessibility_paragraph_spacing_description">Ruimte tussen alinea\'s aanpassen</string>
+    <string name="accessibility_letter_spacing">Letterafstand</string>
+    <string name="accessibility_letter_spacing_description">Ruimte tussen letters aanpassen</string>
+    <string name="accessibility_typography_aaa_note">AAA-aanbevelingen: 1,5x regelafstand, 2,0x alinea-afstand en 0,12em letterafstand.</string>
+    <string name="accessibility_spacing_current">Huidig: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Time-outgedrag</string>
+    <string name="accessibility_timeout_no_automatic">Geen automatische time-outs voor AAA-naleving</string>
+    <string name="accessibility_timeout_auto_advance_30">Automatisch doorgaan na 30 seconden</string>
+    <string name="accessibility_timeout_auto_advance_60">Automatisch doorgaan na 60 seconden</string>
+    <string name="accessibility_timeout_set_announcement">Time-outgedrag ingesteld op %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Contrastniveau</string>
+    <string name="accessibility_contrast_aaa_ratio">7:1-contrastverhouding voor AAA-naleving</string>
+    <string name="accessibility_contrast_standard">Standaardcontrast</string>
+    <string name="accessibility_contrast_aa_ratio">4,5:1-contrastverhouding voor AA-naleving</string>
+    <string name="accessibility_contrast_set_announcement">Contrastniveau ingesteld op %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Kleurenblindmodus ingesteld op %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">%1$s-schuifregelaar. Huidige waarde: %2$s. %3$sBereik van %4$s tot %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">AAA-conform. </string>
+    <string name="accessibility_slider_announcement">%1$s ingesteld op %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, AAA-conform</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s ingeschakeld</string>
+    <string name="accessibility_toggle_disabled">%s uitgeschakeld</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Verificatieterugkoppeling</string>
+    <string name="accessibility_sound_enabled">Geluid afspelen bij succes</string>
+    <string name="accessibility_sound_enabled_description">Een bevestigingsgeluid afspelen na succesvolle verificatie</string>
+    <string name="accessibility_sound_style">Geluidsstijl</string>
+    <string name="accessibility_sound_preview">Geluid voorbeluisteren</string>
+    <string name="accessibility_sound_preview_preset">%s voorbeluisteren</string>
+    <string name="accessibility_sound_style_set_announcement">Geluidsstijl ingesteld op %s</string>
+    <string name="accessibility_haptic_enabled">Trillen bij succes</string>
+    <string name="accessibility_haptic_enabled_description">Haptische terugkoppeling geven na succesvolle verificatie</string>
+    <string name="accessibility_sound_footer">Geluid respecteert de stille-modus-instellingen van uw apparaat</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Volume</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Huidig volume voorbeluisteren</string>
+    <string name="accessibility_volume_set_announcement">Volume ingesteld op %d procent</string>
+    <string name="accessibility_volume_slider_description">Volumeschuifregelaar. Huidige waarde: %d procent</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Instellingen opnieuw instellen</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">Functionarismodus</string>
+    <string name="officer_id">Identificatie (ID) functionaris</string>
+    <string name="officer_id_placeholder">bijv. OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Voer uw toegewezen functionarisidentificatie in</string>
+    <string name="officer_yubikey_connected">YubiKey verbonden</string>
+    <string name="officer_connect_yubikey">YubiKey verbinden</string>
+    <string name="officer_touch_yubikey">Raak uw YubiKey aan om te verifiëren...</string>
+    <string name="officer_authenticate_hmac">Verifiëren met HMAC (Hash-based Message Authentication Code)</string>
+    <string name="officer_authentication_process">Verificatieproces:</string>
+    <string name="officer_auth_steps">1. Voer uw functionarisidentificatie in\n2. Klik op Verifiëren\n3. Raak YubiKey aan wanneer deze knippert\n4. HMAC (Hash-based Message Authentication Code)-verificatie bevestigt uw identiteit</string>
+    <string name="officer_auth_failed">Verificatie mislukt. Controleer uw functionarisidentificatie en probeer het opnieuw.</string>
+    <string name="officer_session_info">Functionaris: %s</string>
+    <string name="officer_station_info">Station: %s</string>
+    <string name="officer_issued_today">Vandaag uitgegeven: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Leeftijdslegitimatiebewijs uitreiken</string>
+    <string name="officer_issue_description">Identiteit van gebruiker verifiëren en een digitaal leeftijdslegitimatiebewijs uitreiken</string>
+    <string name="officer_start_issuance">Nieuwe uitreiking starten</string>
+    <string name="officer_issuance_process">UITREIKINGSPROCES</string>
+    <string name="officer_issuance_steps">1. Controleer het fysieke identiteitsdocument van de gebruiker\n2. Voer hun geboortedatum in\n3. Controleer of de gegevens exact overeenkomen\n4. Legitimatiebewijs uitreiken met attestatie-QR-code (Quick Response)\n5. Gebruiker scant QR-code om legitimatiebewijs te ontvangen</string>
+    <string name="officer_verify_identity">Gebruikersidentiteit verifiëren</string>
+    <string name="officer_select_dob">Geboortedatum selecteren</string>
+    <string name="officer_change_date">Datum wijzigen</string>
+    <string name="officer_age_years">Leeftijd: %d jaar</string>
+    <string name="officer_under_18_warning">Onder 18 jaar - Kan geen legitimatiebewijs uitreiken</string>
+    <string name="officer_verification_checklist">VERIFICATIECHECKLIST</string>
+    <string name="officer_document_verified">Fysiek document geverifieerd</string>
+    <string name="officer_document_verified_description">Ik heb een geldig door de overheid uitgegeven legitimatiebewijs ingezien</string>
+    <string name="officer_dob_matches">Geboortedatum komt exact overeen</string>
+    <string name="officer_dob_matches_description">De geboortedatum op het fysieke document is: %s</string>
+    <string name="officer_issue_credential">Legitimatiebewijs uitreiken</string>
+    <string name="officer_user_scanned_successfully">Gebruiker heeft succesvol gescand</string>
+    <string name="officer_return_to_dashboard">Terug naar dashboard</string>
+    <string name="officer_go_back">Terug</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">YubiKey-verificatie</string>
+    <string name="yubikey_step_format">Stap %1$d van %2$d</string>
+    <string name="yubikey_led_should_blink">De YubiKey-LED moet knipperen</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Invoer valideren...</string>
+    <string name="officer_state_creating_attestation">Attestatie aanmaken...</string>
+    <string name="officer_state_computing_commitment">Cryptografische verbintenis berekenen...</string>
+    <string name="officer_state_creating_session">Beveiligde sessie aanmaken...</string>
+    <string name="officer_state_signing">Legitimatiebewijs ondertekenen...</string>
+    <string name="officer_state_finalizing">Legitimatiebewijs afronden...</string>
+    <string name="officer_state_storing_attestation">Attestatie opslaan...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">Sessie verloopt binnenkort</string>
+    <string name="officer_session_expiring_message">Uw sessie verloopt over %d seconden. Wilt u uw voortgang opslaan?</string>
+    <string name="officer_session_expiring_announcement">Waarschuwing: Uw sessie verloopt over %d seconden</string>
+    <string name="officer_save_and_continue">Opslaan en doorgaan</string>
+    <string name="officer_continue_without_saving">Doorgaan zonder opslaan</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">GEBOORTEDATUM</string>
+    <string name="officer_age_format">Leeftijd: %d jaar</string>
+    <string name="officer_under_18_full_warning">Onder 18 jaar - Kan geen legitimatiebewijs uitreiken. Alleen personen van 18 jaar of ouder komen in aanmerking voor leeftijdsverificatielegitimatiebewijs. Controleer of de geboortedatum correct is.</string>
+    <string name="officer_verification_checklist_header">VERIFICATIECHECKLIST</string>
+    <string name="officer_physical_document_verified">Fysiek document geverifieerd</string>
+    <string name="officer_sighted_valid_id">Ik heb een geldig door de overheid uitgegeven legitimatiebewijs ingezien</string>
+    <string name="officer_dob_matches_exactly">Geboortedatum komt exact overeen</string>
+    <string name="officer_dob_on_document">De geboortedatum op het fysieke document is: %s</string>
+    <string name="officer_error_label">Fout</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">Scan de uitreiking-QR-code (Quick Response)</string>
+    <string name="issuance_downloads_credential">Dit downloadt uw leeftijdslegitimatiebewijs.</string>
+    <string name="issuance_center_qr">Centreer de QR-code in het kader en houd het apparaat stil.</string>
+    <string name="issuance_enter_code_manually">Code handmatig invoeren</string>
+    <string name="issuance_processing_qr">QR-code verwerken…</string>
+    <string name="issuance_invalid_data">Ongeldige uitreikingsgegevens</string>
+    <string name="issuance_verification_qr_error">Dit is een verificatie-QR-code. Scan de QR-code voor uitreiking van het legitimatiebewijs.</string>
+    <string name="issuance_invalid_qr_format">Ongeldig QR-codeformaat</string>
+    <string name="issuance_failed_to_process">Kon QR-code niet verwerken: %s</string>
+    <string name="issuance_code">Uitreikingscode</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">Handmatige code-invoer</string>
+    <string name="manual_entry_enter_code_manually">Code handmatig invoeren</string>
+    <string name="manual_entry_verification_description">Voer de 12-cijferige verificatiecode in die op het scherm van de verificateur wordt weergegeven.</string>
+    <string name="manual_entry_issuance_description">Typ de code die op het scherm van de uitgever wordt weergegeven.</string>
+    <string name="manual_entry_verification_code">Verificatiecode</string>
+    <string name="manual_entry_submit">Code indienen</string>
+    <string name="manual_entry_please_enter">Voer een code in</string>
+    <string name="manual_entry_please_enter_verification">Voer een verificatiecode in</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Beginnen met luisteren</string>
+    <string name="voice_input_stop_listening">Stoppen met luisteren</string>
+    <string name="voice_input_recognized">Herkend:</string>
+    <string name="content_desc_voice_input_listening">Luisteren naar spraakinvoer</string>
+    <string name="content_desc_voice_input_available">Spraakinvoer beschikbaar</string>
+    <string name="voice_input_permission_title">Microfoontoestemming vereist</string>
+    <string name="voice_input_permission_message">Spraakinvoer vereist toegang tot de microfoon. U kunt dit inschakelen via de systeeminstellingen.</string>
+    <string name="voice_input_listening">Luisteren…</string>
+    <string name="voice_input_error">Fout bij spraakinvoer</string>
+    <string name="voice_input_tap_to_speak">Tik om te spreken</string>
+    <string name="voice_input_did_you_say">Zei u "%1$s"?</string>
+    <string name="voice_input_confirm">Bevestigen</string>
+    <string name="voice_input_retry">Opnieuw proberen</string>
+    <string name="voice_input_cancel">Annuleren</string>
+    <string name="voice_input_button">Spraakinvoer</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">Spraakinvoer is niet beschikbaar op dit apparaat</string>
+    <string name="voice_input_error_audio">Fout bij geluidsopname. Controleer de microfoon.</string>
+    <string name="voice_input_error_network">Netwerkfout. Controleer de verbinding.</string>
+    <string name="voice_input_error_network_timeout">Time-out netwerk. Probeer het opnieuw.</string>
+    <string name="voice_input_error_no_match">Geen spraak gedetecteerd. Probeer het opnieuw.</string>
+    <string name="voice_input_error_recognizer_busy">Spraakinvoer bezet. Wacht even.</string>
+    <string name="voice_input_error_server">Serverfout. Probeer het later opnieuw.</string>
+    <string name="voice_input_error_speech_timeout">Geen spraak gehoord. Spreek luider.</string>
+    <string name="voice_input_error_insufficient_permissions">Microfoontoestemming geweigerd.</string>
+    <string name="voice_input_error_generic">Fout bij spraakinvoer. Probeer het opnieuw.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">Terug</string>
+    <string name="action_close">Sluiten</string>
+    <string name="action_cancel">Annuleren</string>
+    <string name="action_ok">OK</string>
+    <string name="action_set">Instellen</string>
+    <string name="action_change">Wijzigen</string>
+    <string name="action_delete">Verwijderen</string>
+    <string name="action_reset">Opnieuw instellen</string>
+    <string name="action_retry">Opnieuw proberen</string>
+    <string name="action_try_again">Opnieuw proberen</string>
+    <string name="action_refresh">Vernieuwen</string>
+    <string name="action_download_now">Nu downloaden</string>
+    <string name="action_retry_setup">Installatie opnieuw proberen</string>
+    <string name="action_retry_download">Download opnieuw proberen</string>
+    <string name="action_restart_setup">Installatie opnieuw starten</string>
+    <string name="action_manage_storage">Opslag beheren</string>
+    <string name="action_check_wifi_settings">Eerst Wi-Fi-instellingen controleren</string>
+    <string name="action_check_wifi_settings_short">Wi-Fi-instellingen controleren</string>
+    <string name="action_grant_permission">Toestemming verlenen</string>
+    <string name="action_grant_camera_access">Cameratoegang verlenen</string>
+    <string name="action_return_to_browser">Terug naar browser</string>
+    <string name="action_show_debug_info">Foutopsporingsinformatie weergeven</string>
+    <string name="action_reset_redownload">Opnieuw instellen en opnieuw downloaden</string>
+    <string name="action_end_session">Sessie beëindigen</string>
+    <string name="action_expand">Uitvouwen</string>
+    <string name="action_collapse">Samenvouwen</string>
+    <string name="accessibility_state_expanded">Uitgevouwen</string>
+    <string name="accessibility_state_collapsed">Samengevouwen</string>
+    <string name="accessibility_state_checked">Aangevinkt</string>
+    <string name="accessibility_state_unchecked">Niet aangevinkt</string>
+    <string name="accessibility_state_selected">Geselecteerd</string>
+    <string name="accessibility_state_not_selected">Niet geselecteerd</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">Er is een fout opgetreden</string>
+    <string name="error_camera_permission">Cameramachtiging vereist voor QR-scannen (Quick Response)</string>
+    <string name="error_camera_access_needed">Cameratoegang vereist</string>
+    <string name="error_camera_permission_description">Verleen cameramachtiging om QR-codes te scannen of schakel handmatige invoer in via de toegankelijkheidsinstellingen.</string>
+    <string name="error_camera_permission_required">Cameramachtiging is vereist om QR-codes te scannen</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">Zoeken naar QR-code...</string>
+    <string name="qr_scanner_camera_required">Cameramachtiging vereist</string>
+    <string name="qr_scanner_camera_preview">Cameravoorbeeld voor het scannen van QR-codes</string>
+    <string name="qr_scanner_status_scanning">Zoeken naar QR-code</string>
+    <string name="qr_scanner_requesting_permission">Cameramachtiging aanvragen</string>
+    <string name="error_camera_start_failed">Kan camera niet starten: %s</string>
+    <string name="error_camera_init_failed">Camera-initialisatie mislukt: %s</string>
+    <string name="error_biometric_not_available">Biometrische verificatie niet beschikbaar</string>
+    <string name="error_network">Er is een netwerkfout opgetreden</string>
+    <string name="error_no_credential">Geen legitimatiebewijs beschikbaar. Zorg eerst voor een legitimatiebewijs.</string>
+    <string name="credential_picker_title">Een legitimatiebewijs kiezen</string>
+    <string name="credential_picker_description">U heeft meerdere legitimatiebewijzen die voor deze verificatie kunnen worden gebruikt. Selecteer er een.</string>
+    <string name="credential_picker_expired_label">Verlopen</string>
+    <string name="credential_picker_accessibility_select">Legitimatiebewijs selecteren: %1$s</string>
+    <string name="error_failed_to_process_challenge">Kon uitdaging niet verwerken</string>
+    <string name="error_failed_to_create_proof">Kon bewijs niet aanmaken</string>
+    <string name="error_verification_failed">Verificatie mislukt</string>
+    <string name="error_occurred_during_verification">Er is een fout opgetreden tijdens de verificatie</string>
+    <string name="error_connection_timeout">Verbinding verlopen. Probeer het opnieuw.</string>
+    <string name="error_unable_to_connect">Kan geen verbinding maken. Controleer uw internetverbinding.</string>
+    <string name="error_secure_connection_failed">Beveiligde verbinding mislukt. Probeer het opnieuw.</string>
+    <string name="error_security_verification_failed">Beveiligingsverificatie mislukt. Probeer het opnieuw.</string>
+    <string name="error_invalid_input">Ongeldige invoer. Controleer uw gegevens en probeer het opnieuw.</string>
+    <string name="error_operation_in_progress">Een andere bewerking is bezig. Wacht even.</string>
+    <string name="error_operation_cancelled">Bewerking is geannuleerd.</string>
+    <string name="error_age_requirement_not_met">Niet voldaan aan leeftijdsvereiste voor dit legitimatiebewijs.</string>
+    <string name="error_biometric_required">Biometrische verificatie is vereist om door te gaan.</string>
+    <string name="error_wallet_not_initialized">Wallet niet geïnitialiseerd. Start de app opnieuw.</string>
+    <string name="error_security">Beveiligingsfout. Probeer het opnieuw.</string>
+    <string name="error_connection_timeout_short">Verbinding verlopen. Probeer het opnieuw.</string>
+    <string name="error_invalid_input_provided">Ongeldige invoer opgegeven.</string>
+    <string name="error_invalid_data_format">Ongeldig gegevensformaat. Probeer het opnieuw.</string>
+    <string name="error_storage">Opslagfout. Controleer de apparaatopslag.</string>
+    <string name="error_network_short">Netwerkfout. Controleer uw verbinding.</string>
+    <string name="error_label">Fout</string>
+    <string name="error_dismiss">Fout sluiten</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">Verwerken...</string>
+    <string name="status_initializing_wallet">Wallet initialiseren...</string>
+    <string name="status_loading">Laden...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">Privacy beschermd</string>
+    <string name="privacy_zk_description">Uw geboortedatum wordt nooit gedeeld. Verificateurs leren alleen of u aan hun leeftijdsvereiste voldoet.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Privacyinstellingen</string>
+    <string name="privacy_settings_description">Gegevensverzameling beheren en uw gegevens beheren</string>
+    <string name="privacy_section_data_collection">Gegevensverzameling</string>
+    <string name="privacy_section_your_data">Uw gegevens</string>
+    <string name="privacy_protection_title">Uw privacy is beschermd</string>
+    <string name="privacy_protection_description">Provii Wallet gebruikt zero-knowledge bewijzen om uw leeftijd te verifiëren zonder uw geboortedatum te onthullen. Uw legitimatiebewijsgegevens worden alleen op uw apparaat opgeslagen en nooit met iemand gedeeld.</string>
+    <string name="privacy_analytics_title">Analyses</string>
+    <string name="privacy_analytics_description">Help Provii Wallet te verbeteren door anonieme gebruiksgegevens te delen</string>
+    <string name="privacy_analytics_enabled">Analyses ingeschakeld</string>
+    <string name="privacy_analytics_disabled">Analyses uitgeschakeld</string>
+    <string name="privacy_crash_reporting_title">Crashrapportage</string>
+    <string name="privacy_crash_reporting_description">Help ons bugs op te lossen door automatisch crashrapporten te verzenden</string>
+    <string name="privacy_crash_reporting_enabled">Crashrapportage ingeschakeld</string>
+    <string name="privacy_crash_reporting_disabled">Crashrapportage uitgeschakeld</string>
+    <string name="privacy_what_we_collect_title">Welke gegevens wij verzamelen</string>
+    <string name="privacy_what_we_collect_subtitle">Tik om meer te weten over onze gegevenspraktijken</string>
+    <string name="privacy_data_collection_info_title">Informatie over gegevensverzameling</string>
+    <string name="privacy_data_we_collect_header">Wat wij verzamelen (indien ingeschakeld):</string>
+    <string name="privacy_data_we_collect_list">- Anonieme app-gebruiksstatistieken\n- Crashrapporten en foutenlogboeken\n- Apparaattype en versie besturingssysteem\n- Informatie over de app-versie</string>
+    <string name="privacy_data_we_dont_collect_header">Wat wij nooit verzamelen:</string>
+    <string name="privacy_data_we_dont_collect_list">- Uw geboortedatum\n- Uw naam of persoonlijke gegevens\n- Uw locatie\n- Uw legitimatiebewijsgegevens\n- Biometrische gegevens</string>
+    <string name="privacy_data_never_shared_note">Uw legitimatiebewijsgegevens worden nooit gedeeld met Provii of een derde partij. Ze blijven op uw apparaat.</string>
+    <string name="privacy_policy_title">Privacybeleid</string>
+    <string name="privacy_policy_subtitle">Lees ons volledige privacybeleid</string>
+    <string name="privacy_delete_my_data_title">Mijn gegevens verwijderen</string>
+    <string name="privacy_delete_my_data_subtitle">Alle opgeslagen legitimatiebewijzen en gegevens verwijderen</string>
+    <string name="privacy_delete_data_dialog_title">Alle gegevens verwijderen?</string>
+    <string name="privacy_delete_data_dialog_message">Dit verwijdert permanent alle legitimatiebewijzen en app-gegevens van dit apparaat. U heeft een nieuw legitimatiebewijs nodig om de app opnieuw te gebruiken.</string>
+    <string name="privacy_delete_data_dialog_warning">Deze actie kan niet ongedaan worden gemaakt.</string>
+    <string name="privacy_delete_data_confirm">Alles verwijderen</string>
+    <string name="privacy_footer_note">U kunt deze instellingen op elk moment wijzigen. Wijzigingen worden onmiddellijk van kracht.</string>
+    <string name="dialog_delete_data_announcement">Dialoogvenster voor bevestiging van gegevensverwijdering geopend</string>
+    <string name="dialog_data_collection_info_announcement">Dialoogvenster met informatie over gegevensverzameling geopend</string>
+    <string name="content_desc_privacy_settings">Privacy-instellingen, beheer gegevensverzameling en uw gegevens</string>
+    <string name="content_desc_data_collection_info">Informatie over gegevensverzameling bekijken</string>
+    <string name="content_desc_privacy_policy">Privacybeleid bekijken</string>
+    <string name="content_desc_opens_external_link">Opent in browser</string>
+    <string name="content_desc_delete_my_data">Al mijn gegevens verwijderen</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">Terug</string>
+    <string name="content_desc_settings">Instellingen</string>
+    <string name="content_desc_refresh">Vernieuwen</string>
+    <string name="content_desc_verified">Geverifieerd</string>
+    <string name="content_desc_expand">Uitvouwen</string>
+    <string name="content_desc_collapse">Samenvouwen</string>
+    <string name="content_desc_warning_error">Waarschuwing: Er is een fout opgetreden</string>
+    <string name="content_desc_sandbox_indicator">Sandbox-modus-indicator</string>
+    <string name="content_desc_success">Geslaagd</string>
+    <string name="content_desc_warning">Waarschuwing</string>
+    <string name="content_desc_information">Informatie</string>
+    <string name="content_desc_error">Fout</string>
+    <string name="content_desc_sandbox_warning">Waarschuwing sandbox-modus</string>
+    <string name="content_desc_app_info">App-informatie</string>
+    <string name="content_desc_accessibility_settings">Toegankelijkheidsinstellingen</string>
+    <string name="content_desc_language_settings">Taalinstellingen</string>
+    <string name="content_desc_licenses">Open source-licenties</string>
+    <string name="content_desc_select_dob">Geboortedatum selecteren</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Test legitimatiebewijs uitgeven als Uitgever</string>
+    <string name="content_desc_get_credential">Legitimatiebewijs ophalen</string>
+    <string name="content_desc_delete_credential">Legitimatiebewijs verwijderen</string>
+    <string name="content_desc_reset_proving_key">Bewijssleutel opnieuw instellen</string>
+    <string name="content_desc_environment_info">Omgevingsinformatie</string>
+    <string name="content_desc_help_support">Hulp en ondersteuning</string>
+    <string name="content_desc_privacy_protected">Privacy beschermd</string>
+    <string name="preview_settings_title">Instellingenvoorvertoning</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">Geslaagd</string>
+    <string name="accessibility_verification_error_description">Fout</string>
+    <string name="accessibility_breadcrumb_location_description">Locatie: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">vervolgens</string>
+    <string name="accessibility_breadcrumb_current_page_description">Huidige pagina: %s</string>
+    <string name="accessibility_settings_navigate_description">Navigeren</string>
+    <string name="accessibility_credentials_settings_description">Instellingen</string>
+    <string name="accessibility_verification_back_description">Terug</string>
+    <string name="accessibility_officer_back_description">Terug</string>
+    <string name="accessibility_discovery_back_description">Terug</string>
+    <string name="accessibility_discovery_refresh_description">Vernieuwen</string>
+    <string name="accessibility_discovery_verified_description">Geverifieerd</string>
+    <string name="accessibility_officer_done_description">Gereed</string>
+    <string name="accessibility_officer_attestation_qr_description">Attestatie-QR-code voor de gebruiker om te scannen</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">Overslaan naar %s</string>
+    <string name="accessibility_skip_main_content">hoofdinhoud</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Visuele beperking</string>
+    <string name="accessibility_profile_motor_impaired">Motorische beperking</string>
+    <string name="accessibility_profile_cognitive_support">Cognitieve ondersteuning</string>
+    <string name="accessibility_profile_elderly_support">Ondersteuning voor ouderen</string>
+    <string name="accessibility_profile_default">Standaard</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Geen</string>
+    <string name="color_blind_mode_protanopia">Protanopie</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopie</string>
+    <string name="color_blind_mode_tritanopia">Tritanopie</string>
+    <string name="color_blind_mode_monochrome">Monochroom</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Standaard</string>
+    <string name="contrast_level_high">Hoog (AA)</string>
+    <string name="contrast_level_maximum">Maximaal (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Volledige breedte</string>
+    <string name="text_width_comfortable">Comfortabel (80 tekens)</string>
+    <string name="text_width_narrow">Smal (60 tekens)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Geen time-out (AAA)</string>
+    <string name="timeout_behavior_standard">Standaard (30s)</string>
+    <string name="timeout_behavior_extended">Uitgebreid (60s)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Standaard</string>
+    <string name="reading_level_standard_description">Gewone tekst met technische termen</string>
+    <string name="reading_level_simplified">Vereenvoudigd (groep 7-9)</string>
+    <string name="reading_level_simplified_description">Eenvoudigere woorden en kortere zinnen (AAA-conform)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">Hulp</string>
+    <string name="help_and_support">Hulp &amp; Ondersteuning</string>
+    <string name="help_description">Hulp bij app-functies en toegankelijkheid</string>
+    <string name="help_center">Hulpcentrum</string>
+    <string name="help_center_description">Hulponderwerpen bekijken en meer leren over app-functies</string>
+    <string name="help_search">Hulp zoeken</string>
+    <string name="help_search_placeholder">Hulponderwerpen zoeken...</string>
+    <string name="help_search_active">Zoeken geactiveerd</string>
+    <string name="help_search_inactive">Zoeken gedeactiveerd</string>
+    <string name="help_no_results">Geen hulponderwerpen gevonden die overeenkomen met uw zoekopdracht</string>
+    <string name="help_topic_not_found">Hulponderwerp niet gevonden</string>
+    <string name="help_related_topics">Gerelateerde onderwerpen</string>
+    <string name="help_content_heading">Hulpinhoud</string>
+    <string name="help_related_topic_position">%1$s, item %2$d van %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Zicht</string>
+    <string name="help_category_typography">Typografie</string>
+    <string name="help_category_interaction">Interactie</string>
+    <string name="help_category_cognitive">Cognitieve ondersteuning</string>
+    <string name="help_category_alternative_input">Alternatieve invoer</string>
+    <string name="help_category_features">Functies</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Een legitimatiebewijs ophalen</string>
+    <string name="help_topic_getting_credential_summary">Leer hoe u uw eerste leeftijdsverificatie-legitimatiebewijs kunt verkrijgen</string>
+    <string name="help_topic_getting_credential_content">Zo haalt u uw leeftijdsverificatie-legitimatiebewijs op:\n\n1. Bezoek een geautoriseerde uitgevende locatie\n2. Toon uw door de overheid uitgegeven ID\n3. Scan de aangeboden QR-code\n4. Uw legitimatiebewijs wordt veilig opgeslagen\n\nUw geboortedatum wordt lokaal opgeslagen en nooit gedeeld.</string>
+
+    <string name="help_topic_verifying_age_title">Uw leeftijd verifiëren</string>
+    <string name="help_topic_verifying_age_summary">Hoe u uw leeftijd kunt bewijzen zonder persoonlijke informatie te delen</string>
+    <string name="help_topic_verifying_age_content">Wanneer u uw leeftijd moet verifiëren:\n\n1. De verificateur toont u een QR-code\n2. Scan deze met de app\n3. De app maakt een wiskundig bewijs\n4. Alleen het ja/nee-antwoord wordt gedeeld\n\nUw werkelijke geboortedatum wordt NOOIT onthuld.</string>
+
+    <string name="help_topic_accessibility_title">Toegankelijkheidsfuncties</string>
+    <string name="help_topic_accessibility_summary">Pas de app aan uw behoeften aan</string>
+    <string name="help_topic_accessibility_content">De app bevat vele toegankelijkheidsfuncties:\n\n- Grote tekst en hoog contrastmodi\n- Spraakinvoer en schermlezerondersteuning\n- Vereenvoudigde gebaren en gebruikersinterface\n- Handmatige codeinvoer-opties\n- Verlengde time-outs\n\nToegang via Instellingen > Toegankelijkheid</string>
+
+    <string name="help_topic_privacy_security_title">Privacy &amp; Beveiliging</string>
+    <string name="help_topic_privacy_security_summary">Hoe uw informatie wordt beschermd</string>
+    <string name="help_topic_privacy_security_content">Uw privacy heeft onze hoogste prioriteit:\n\n- Legitimatiebewijzen worden lokaal op uw apparaat opgeslagen\n- Zero-knowledge bewijzen beschermen uw gegevens\n- Geen tracking of analyses\n- Biometrische authenticatie beschikbaar\n- Gegevens verlaten uw apparaat nooit onversleuteld</string>
+
+    <string name="help_topic_troubleshooting_title">Problemen oplossen</string>
+    <string name="help_topic_troubleshooting_summary">Veelvoorkomende problemen en oplossingen</string>
+    <string name="help_topic_troubleshooting_content">Veelvoorkomende problemen en oplossingen:\n\nQR-scanner werkt niet:\n- Controleer camerapermissies in Instellingen\n- Probeer de handmatige codeinvoer-optie\n\nLegitimatiebewijs laadt niet:\n- Controleer uw internetverbinding\n- Probeer de bewijssleutel opnieuw in te stellen\n\nVerificatie mislukt:\n- Zorg ervoor dat het legitimatiebewijs niet verlopen is\n- Neem contact op met de verificateur voor ondersteuning</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">GEBOORTEDATUM</string>
+    <string name="date_of_birth">Geboortedatum</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">%d jaar</string>
+    <string name="format_step_indicator">Stap %1$d van %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">Legitimatiebewijzen</string>
+    <string name="tab_settings">Instellingen</string>
+    <string name="tab_help">Hulp</string>
+    <string name="tab_credentials_description">Uw legitimatiebewijzen bekijken</string>
+    <string name="tab_settings_description">App-instellingen</string>
+    <string name="tab_help_description">Hulp en ondersteuning</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">Zoeken</string>
+    <string name="search_field_label">Zoekveld</string>
+    <string name="search_placeholder">Instellingen, hulp en functies zoeken</string>
+    <string name="search_clear">Zoekopdracht wissen</string>
+    <string name="search_popular">Populaire zoekopdrachten</string>
+    <string name="search_results_heading">Zoekresultaten</string>
+    <string name="search_no_results">Geen resultaten gevonden</string>
+    <string name="search_try_suggestions">Probeer te zoeken op:\n• Toegankelijkheid\n• Instellingen\n• Hulp\n• Taal</string>
+    <string name="search_results_announcement_singular">1 resultaat gevonden</string>
+    <string name="search_results_announcement_plural">%d resultaten gevonden</string>
+    <string name="search_no_results_announcement">Geen resultaten gevonden</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">Snelle toegang</string>
+    <string name="help_topics">Hulponderwerpen</string>
+    <string name="help_glossary">Woordenlijst</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">Open source-licenties</string>
+    <string name="licenses_description">Deze app maakt gebruik van de volgende open source-software. Wij zijn de ontwikkelaars die deze bibliotheken hebben gemaakt dankbaar.</string>
+    <string name="licenses_tap_to_view">Tik om de volledige licentie te bekijken</string>
+    <string name="licenses_group_header">%1$s (%2$d bibliotheken)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">Geen internetverbinding. Controleer uw netwerk en probeer het opnieuw.</string>
+    <string name="error_unexpected">Er is een onverwachte fout opgetreden. Start de app opnieuw op.</string>
+    <string name="error_unexpected_try_again">Er is een onverwachte fout opgetreden. Probeer het opnieuw.</string>
+    <string name="error_storage_detailed">Opslagfout: %s</string>
+    <string name="error_network_detailed">Netwerkfout: %s</string>
+    <string name="error_proof_generation_failed">Genereren van bewijs mislukt: %s</string>
+    <string name="error_not_eligible">Niet in aanmerking komend. U voldoet niet aan de vereisten voor deze verificatie.</string>
+    <string name="error_challenge_expired">Uitdaging verlopen of niet gevonden. Vraag een nieuwe aan.</string>
+    <string name="error_challenge_expired_scan_new">Deze uitdaging is verlopen. Scan een nieuwe QR-code.</string>
+    <string name="error_request_out_of_order">Verzoek niet in de juiste volgorde. Probeer het opnieuw.</string>
+    <string name="error_too_many_requests">Te veel verzoeken. Wacht even en probeer het opnieuw.</string>
+    <string name="error_server">Serverfout. Probeer het later opnieuw.</string>
+    <string name="error_request_failed">Verzoek mislukt (%d). Probeer het opnieuw.</string>
+    <string name="error_not_eligible_short">Niet in aanmerking voor deze verificatie</string>
+    <string name="error_challenge_not_found">Uitdaging niet gevonden</string>
+    <string name="error_complete_steps_in_order">Voltooi de stappen in de juiste volgorde</string>
+    <string name="error_challenge_expired_short">Uitdaging verlopen</string>
+    <string name="error_authentication_cancelled">Authenticatie geannuleerd. Verifieer uw identiteit om leeftijdsverificatie te voltooien.</string>
+    <string name="error_invalid_data_format_short">Ongeldig gegevensformaat. Probeer het opnieuw.</string>
+    <string name="error_storage_check_device">Opslagfout. Controleer de apparaatopslag.</string>
+    <string name="error_network_check_connection">Netwerkfout. Controleer uw verbinding.</string>
+    <string name="error_proof_generation_failed_short">Genereren van bewijs mislukt. Probeer het opnieuw.</string>
+    <string name="error_operation_in_progress_short">Er is een andere bewerking bezig.</string>
+    <string name="error_no_internet_short">Geen internetverbinding. Controleer uw netwerk.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Verificatie-QR scannen</string>
+    <string name="verification_verifying_title">Leeftijd verifiëren</string>
+    <string name="verification_success_title">Leeftijd geverifieerd</string>
+    <string name="verification_failed_title">Verificatie mislukt</string>
+    <string name="verification_processing_wait">Dit kan een paar seconden duren</string>
+    <string name="verification_success_message">Uw leeftijd is privé geverifieerd</string>
+    <string name="verification_return_to_site">U kunt nu terugkeren naar de site om verder te gaan.</string>
+    <string name="verification_please_enter_code">Voer een verificatiecode in. De code moet een 12-cijferige korte code of een volledige verificatie-URL van de verificateur zijn.</string>
+    <string name="verification_error_occurred">Er is een fout opgetreden tijdens verificatie</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Verwerken...</string>
+    <string name="credential_list_verify_age_button">Leeftijd verifiëren</string>
+    <string name="credential_list_generate_in_person_description">Legitimatiebewijs persoonlijk aanmaken</string>
+    <string name="credential_list_scan_qr_title">QR-code scannen</string>
+    <string name="credential_list_find_locations_title">Locaties zoeken</string>
+    <string name="credential_section_my_credential">Mijn legitimatiebewijs</string>
+    <string name="credential_section_managed">Beheerde legitimatiebewijzen</string>
+    <string name="credential_list_get_credential_button">Legitimatiebewijs ophalen</string>
+    <string name="credential_list_add_managed_button">Beheerd legitimatiebewijs toevoegen</string>
+    <string name="credential_section_managed_empty">Voeg een legitimatiebewijs toe voor iemand die u verzorgt, zoals een kind.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Details legitimatiebewijs</string>
+    <string name="credential_detail_not_found">Legitimatiebewijs niet gevonden</string>
+    <string name="credential_detail_nickname">Bijnaam</string>
+    <string name="credential_detail_no_nickname">Geen bijnaam ingesteld</string>
+    <string name="credential_detail_edit_nickname">Bijnaam bewerken</string>
+    <string name="credential_detail_status">Status</string>
+    <string name="credential_detail_delete">Legitimatiebewijs verwijderen</string>
+    <string name="credential_detail_delete_title">Legitimatiebewijs verwijderen</string>
+    <string name="credential_detail_delete_message">Weet u zeker dat u dit legitimatiebewijs wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.</string>
+    <string name="credential_type_primary">Primair</string>
+    <string name="credential_type_managed">Beheerd</string>
+    <string name="credential_status_valid">Geldig</string>
+    <string name="credential_status_expired">Verlopen</string>
+    <string name="credential_status_invalid">Ongeldig</string>
+    <string name="action_save">Opslaan</string>
+    <string name="credential_slots_full_title">Maximum aantal legitimatiebewijzen bereikt</string>
+    <string name="credential_slots_full_message">U heeft het maximale aantal legitimatiebewijzen bereikt. Verwijder een bestaand legitimatiebewijs om een nieuw toe te voegen.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">Beheerd legitimatiebewijs</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">Leeftijd verifiëren voor %1$s?</string>
+    <string name="managed_confirm_message">U staat op het punt de leeftijd te verifiëren met het beheerde legitimatiebewijs van %1$s.</string>
+    <string name="managed_confirm_proceed">Verifiëren voor %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Bewijs aanmaken voor %1$s</string>
+    <string name="verification_age_verified_for">Leeftijd geverifieerd voor %1$s</string>
+    <string name="deeplink_verification_age_verified_for">Leeftijd geverifieerd voor %1$s</string>
+    <string name="attestation_managed_credential_received">Legitimatiebewijs voor %1$s ontvangen!</string>
+    <string name="attestation_managed_credential_stored">Het legitimatiebewijs van uw kind is veilig opgeslagen.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">Legitimatiebewijs van %1$s verwijderen?</string>
+    <string name="credential_detail_delete_managed_message">Weet u zeker dat u dit beheerde legitimatiebewijs voor %1$s wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt. U moet een uitgever opnieuw bezoeken om het te vervangen.</string>
+    <string name="credential_detail_save_error">Opslaan van bijnaam mislukt</string>
+    <string name="credential_detail_delete_error">Verwijderen van legitimatiebewijs mislukt</string>
+    <string name="accessibility_saving">Opslaan...</string>
+    <string name="accessibility_deleting">Verwijderen...</string>
+    <string name="accessibility_loading">Laden, even geduld</string>
+    <string name="accessibility_issuing_credential">Legitimatiebewijs uitreiken, even geduld</string>
+    <string name="dialog_delete_all_credentials_title">Alle legitimatiebewijzen verwijderen?</string>
+    <string name="dialog_delete_all_credentials_message">Dit verwijdert uw legitimatiebewijs en eventuele beheerde legitimatiebewijzen voor kinderen. Deze actie kan niet ongedaan worden gemaakt.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">Beheerd</string>
+    <string name="credential_slots_count">%1$d van 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Verificatie voorbereiden...</string>
+    <string name="deeplink_verification_checking_credential">Legitimatiebewijs controleren...</string>
+    <string name="deeplink_verification_processing_challenge">Uitdaging verwerken...</string>
+    <string name="deeplink_verification_creating_proof">Veilig bewijs aanmaken...</string>
+    <string name="deeplink_verification_submitting_proof">Bewijs indienen...</string>
+    <string name="deeplink_verification_success">✔ Leeftijd succesvol geverifieerd</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">Geen legitimatiebewijs gevonden. Stel eerst uw legitimatiebewijs in.</string>
+    <string name="deeplink_verification_error_failed_challenge">Verwerken van verificatie-uitdaging mislukt</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Kan authenticatieprompt niet weergeven</string>
+    <string name="deeplink_verification_error_failed_proof">Aanmaken van leeftijdsbewijs mislukt</string>
+    <string name="deeplink_verification_error_verification_failed">Verificatie mislukt</string>
+    <string name="deeplink_verification_error_unexpected">Er is een onverwachte fout opgetreden</string>
+    <string name="deeplink_verification_error_no_credential_selected">Er is geen legitimatiebewijs geselecteerd. Probeer het opnieuw.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Selecteer een legitimatiebewijs</string>
+    <string name="deeplink_verification_select_credential_subtitle">Er zijn meerdere legitimatiebewijzen beschikbaar. Kies welke u wilt gebruiken voor deze verificatie.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Leeftijd verifiëren</string>
+    <string name="deeplink_verification_title_verified">Geverifieerd</string>
+    <string name="deeplink_verification_title_failed">Verificatie mislukt</string>
+    <string name="deeplink_verification_please_wait">Even geduld...</string>
+    <string name="deeplink_verification_age_verified">Leeftijd geverifieerd!</string>
+    <string name="deeplink_verification_under_age_verified">Geverifieerd onder %1$d</string>
+    <string name="deeplink_verification_returning_browser">Terug naar browser...</string>
+    <string name="deeplink_verification_return_to_browser">Terug naar browser</string>
+    <string name="deeplink_verification_failed_title">Verificatie mislukt</string>
+    <string name="deeplink_verification_error_occurred">Er is een fout opgetreden tijdens verificatie</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">UITGIFTEPROCES</string>
+    <string name="officer_issuance_process_steps">1. Controleer het fysieke identificatiedocument van de gebruiker\n2. Voer hun geboortedatum in\n3. Controleer of de informatie exact overeenkomt\n4. Geef legitimatiebewijs uit met attestatie-QR-code (Quick Response)\n5. Gebruiker scant QR-code om legitimatiebewijs te ontvangen</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">Genereren van QR-code mislukt</string>
+    <string name="officer_attestation_ready_title">Attestatie gereed</string>
+    <string name="officer_attestation_scan_instruction">Gebruiker moet deze QR-code scannen met hun Provii Wallet-app</string>
+    <string name="officer_attestation_deeplink_label">ATTESTATIE-DEEPLINK</string>
+    <string name="officer_wait_for_attestation_scan">Wachten tot gebruiker scant</string>
+    <string name="officer_attestation_info">Het legitimatiebewijs wordt aangemaakt op hun apparaat</string>
+    <string name="officer_attestation_complete">Attestatie voltooid</string>
+    <string name="officer_user_will_complete_credential">Gebruiker voltooit het aanmaken van het legitimatiebewijs op hun apparaat</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Attestatiegegevens decoderen...</string>
+    <string name="attestation_generating_randomness">Veilige willekeurigheid genereren...</string>
+    <string name="attestation_sending">Verzenden naar uitgever...</string>
+    <string name="attestation_verifying">Verbintenis verifiëren...</string>
+    <string name="attestation_storing">Legitimatiebewijs opslaan...</string>
+    <string name="attestation_complete">Legitimatiebewijs voltooid!</string>
+    <string name="attestation_error_invalid_data">Ongeldige attestatiegegevens</string>
+    <string name="attestation_error_expired">Attestatie is verlopen</string>
+    <string name="attestation_error_network">Netwerkfout - controleer uw verbinding</string>
+    <string name="attestation_error_unexpected">Er is een onverwachte fout opgetreden</string>
+    <string name="attestation_title_processing">Attestatie verwerken</string>
+    <string name="attestation_title_success">Legitimatiebewijs ontvangen</string>
+    <string name="attestation_title_failed">Uitgifte mislukt</string>
+    <string name="attestation_secure_issuance">Veilige uitgifte</string>
+    <string name="attestation_privacy_preserving">Privacy-beschermende uitgifte van legitimatiebewijzen</string>
+    <string name="attestation_may_take_seconds">Dit kan een paar seconden duren</string>
+    <string name="attestation_keep_app_open">Houd de app open</string>
+    <string name="attestation_credential_received">Legitimatiebewijs ontvangen!</string>
+    <string name="attestation_credential_stored_description">Uw leeftijdsverificatie-legitimatiebewijs is veilig opgeslagen</string>
+    <string name="attestation_issuer_verified">Uitgever geverifieerd</string>
+    <string name="attestation_failed_title">Uitgifte mislukt</string>
+    <string name="attestation_scan_qr_instead">QR scannen in plaats daarvan</string>
+    <string name="attestation_go_back">Terug</string>
+    <string name="attestation_step_decode">Decoderen</string>
+    <string name="attestation_step_generate">Genereren</string>
+    <string name="attestation_step_send">Verzenden</string>
+    <string name="attestation_step_verify">Verifiëren</string>
+    <string name="attestation_step_store">Opslaan</string>
+    <string name="attestation_step_complete">Voltooien</string>
+    <string name="accessibility_attestation_encrypted_description">Versleutelde attestatie wordt verwerkt</string>
+    <string name="accessibility_attestation_success_description">Vinkje ter indicatie dat legitimatiebewijs is ontvangen</string>
+    <string name="accessibility_attestation_error_description">Foutpictogram ter indicatie dat uitgifte is mislukt</string>
+    <string name="accessibility_step_complete">Stap %1$s voltooid</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Ontvanger van legitimatiebewijs</string>
+    <string name="attestation_recipient_prompt">Dit legitimatiebewijs is voor\u2026</string>
+    <string name="attestation_recipient_me">Mij</string>
+    <string name="attestation_recipient_child">Een kind</string>
+    <string name="attestation_nickname_title">Bijnaam van het kind</string>
+    <string name="attestation_nickname_prompt">Voer een bijnaam in zodat u legitimatiebewijzen uit elkaar kunt houden</string>
+    <string name="attestation_nickname_placeholder">bijv. Alex</string>
+    <string name="attestation_nickname_continue">Doorgaan</string>
+    <string name="attestation_nickname_back">Terug</string>
+    <string name="accessibility_attestation_recipient_heading">Kies voor wie dit legitimatiebewijs is</string>
+    <string name="accessibility_attestation_nickname_heading">Voer een bijnaam in voor het kind</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Ongeldig functionarisidentificatie-formaat</string>
+    <string name="officer_auth_error_challenge_failed">Ophalen van YubiKey-uitdaging mislukt: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Raak uw YubiKey aan om te authenticeren</string>
+    <string name="officer_auth_error_touch_timeout">YubiKey-aanraking heeft time-out bereikt</string>
+    <string name="officer_auth_error_verify_document_dob">Controleer of document en geboortedatum overeenkomen</string>
+    <string name="officer_auth_error_invalid_date_format">Ongeldig datumformaat. Gebruik YYYY-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">Gebruiker moet 18 jaar of ouder zijn</string>
+    <string name="officer_auth_error_not_authenticated">Niet geverifieerd. Voer eerst uw functionaris-ID in.</string>
+    <string name="officer_auth_error_issue_failed">Uitgifte van legitimatiebewijs mislukt</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Tik om te bekijken</string>
+    <string name="gesture_desc_long_press_options">, lang indrukken voor opties</string>
+    <string name="gesture_desc_swipe_left">, veeg naar links voor meer acties</string>
+    <string name="gesture_desc_swipe_right">, veeg naar rechts voor meer acties</string>
+    <string name="gesture_desc_tap_to_activate">Tik om te activeren</string>
+    <string name="gesture_desc_long_press_format">. Lang indrukken: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Opnieuw proberen</string>
+    <string name="main_activity_reset_redownload">Opnieuw instellen en opnieuw downloaden</string>
+    <string name="main_activity_show_debug_info">Foutopsporingsinformatie weergeven</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Toegankelijkheidsinstellingen</string>
+    <string name="search_item_accessibility_settings_subtitle">Pas uw ervaring aan</string>
+    <string name="search_item_large_text_title">Grote tekst</string>
+    <string name="search_item_large_text_subtitle">Tekstgrootte vergroten</string>
+    <string name="search_item_high_contrast_title">Hoog contrast</string>
+    <string name="search_item_high_contrast_subtitle">Zichtbaarheid verbeteren</string>
+    <string name="search_item_voice_input_title">Spraakinvoer</string>
+    <string name="search_item_voice_input_subtitle">Bedienen met stem</string>
+    <string name="search_item_manual_code_entry_title">Handmatige codeinvoer</string>
+    <string name="search_item_manual_code_entry_subtitle">Codes typen in plaats van scannen</string>
+    <string name="search_item_simplified_ui_title">Vereenvoudigde gebruikersinterface</string>
+    <string name="search_item_simplified_ui_subtitle">Visuele complexiteit verminderen</string>
+    <string name="search_item_color_blindness_title">Ondersteuning voor kleurenblindheid</string>
+    <string name="search_item_color_blindness_subtitle">Kleuren aanpassen voor betere zichtbaarheid</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Instellingen</string>
+    <string name="search_item_settings_subtitle">App-configuratie</string>
+    <string name="search_item_language_title">Taal</string>
+    <string name="search_item_language_subtitle">App-taal wijzigen</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Mijn legitimatiebewijzen</string>
+    <string name="search_item_credentials_subtitle">Uw legitimatiebewijzen bekijken</string>
+    <string name="search_item_get_credential_title">Een legitimatiebewijs ophalen</string>
+    <string name="search_item_get_credential_subtitle">Uitgevers zoeken</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Hulp</string>
+    <string name="search_item_help_subtitle">Hulp krijgen</string>
+    <string name="search_item_privacy_title">Privacybescherming</string>
+    <string name="search_item_privacy_subtitle">Hoe uw gegevens worden beschermd</string>
+    <string name="search_item_verification_title">Leeftijdsverificatie</string>
+    <string name="search_item_verification_subtitle">Bewijs uw leeftijd</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Hardgecodeerd noodregister voor sandbox-omgeving</string>
+    <string name="issuer_fallback_production_description">Hardgecodeerd noodregister voor productie</string>
+    <string name="issuer_fallback_category_government">Overheid</string>
+    <string name="issuer_fallback_category_government_description">Door de overheid uitgegeven legitimatiebewijzen</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii Sandbox Issuer</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Officiële Provii sandbox-uitgever voor testen</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Bezoek het sandbox-uitgeversportaal</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Officiële Provii-legitimatiebewijs-uitgever</string>
+    <string name="issuer_fallback_production_issuer_instructions">Bezoek uw plaatselijk DMV-kantoor</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">Geboortedatum kan niet in de toekomst liggen</string>
+    <string name="validation_error_invalid_date_format">Ongeldig datumformaat</string>
+    <string name="validation_error_officer_id_too_short">Functionarisidentificatie te kort</string>
+    <string name="validation_error_invalid_officer_id_format">Ongeldig functionarisidentificatie-formaat</string>
+    <string name="validation_error_empty_qr_code">Lege QR-code</string>
+    <string name="validation_error_qr_code_too_large">QR-code te groot</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">U bent nu een ontwikkelaar!</string>
+    <string name="sandbox_toast_enabled">Sandbox-modus ingeschakeld\nTestomgeving wordt gebruikt</string>
+    <string name="sandbox_toast_disabled">Productiemodus ingeschakeld\nProductieomgeving wordt gebruikt</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">U bent 1 stap verwijderd van de ontwikkelaarsmodus</string>
+    <string name="sandbox_toast_steps_away">U bent %1$d stappen verwijderd van de ontwikkelaarsmodus</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">Geen YubiKey verbonden</string>
+    <string name="yubikey_error_timeout">Time-out bij wachten op YubiKey-aanraking. Raak de sleutel aan wanneer deze knippert.</string>
+    <string name="yubikey_error_not_supported">Challenge-response niet geconfigureerd op dit YubiKey-slot</string>
+    <string name="yubikey_error_no_slot">Slot 2 is niet geconfigureerd voor HMAC (Hash-based Message Authentication Code) SHA1 challenge-response</string>
+    <string name="yubikey_error_hmac_failed">HMAC (Hash-based Message Authentication Code) berekening mislukt: %s</string>
+    <string name="yubikey_error_session_failed">Verbinding met YubiKey mislukt: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">Portemonnee niet geïnitialiseerd</string>
+    <string name="wallet_error_proving_key_not_found">Bewijssleutel niet gevonden - download opnieuw</string>
+    <string name="wallet_error_proving_key_not_readable">Kan bewijssleutelbestand niet lezen</string>
+    <string name="wallet_error_out_of_memory">Onvoldoende geheugen - start de app opnieuw op</string>
+    <string name="wallet_error_prover_error">Bewijs-fout: %s</string>
+    <string name="wallet_error_ffi_error">FFI-fout: %s</string>
+    <string name="wallet_error_prover_init_failed">Initialiseren van bewijzer mislukt: %s</string>
+    <string name="wallet_error_prover_verification_failed">Verificatie van bewijzer-initialisatie mislukt</string>
+    <string name="wallet_error_verifier_url_update_failed">Bijwerken van verificateur-URL (webadres) mislukt! Verwacht %1$s maar ontvangen %2$s</string>
+    <string name="wallet_error_wallet_still_null">Portemonnee nog steeds leeg na initialisatie</string>
+    <string name="wallet_error_credential_not_found">Legitimatiebewijs niet gevonden</string>
+    <string name="wallet_error_credential_access_failed">Kan legitimatiebewijs niet openen: %s</string>
+    <string name="wallet_error_invalid_format">Ongeldig formaat: %s</string>
+    <string name="wallet_error_not_initialized_short">Bewijzer niet geïnitialiseerd</string>
+    <string name="wallet_error_proving_key_unavailable">Bewijssleutel niet beschikbaar. Instelling vereist.</string>
+    <string name="wallet_error_storage_init_failed">Initialisatie van opslag mislukt</string>
+    <string name="wallet_error_biometric_unavailable">Biometrische authenticatie niet beschikbaar</string>
+    <string name="wallet_error_auth_failed">Authenticatie mislukt</string>
+    <string name="wallet_error_sandbox_disabled">Schakel sandbox-modus in om testlegitimatiebewijzen aan te maken</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Kan sandbox-legitimatiebewijzen niet ophalen. Controleer uw internetverbinding.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Authenticatie vereist</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Verifieer uw identiteit om een leeftijdsbewijs aan te maken</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Toegang tot veilige opslag</string>
+    <string name="keystore_biometric_prompt_cancel">Annuleren</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, uitgevouwen, volledige licentietekst weergegeven</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, samengevouwen, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">Geen</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Mobiel</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Onbekend</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">Contrastniveaus</string>
+    <string name="help_topic_extra_large_text_title">Extra grote tekst</string>
+    <string name="help_topic_reduce_transparency_title">Transparantie verminderen</string>
+    <string name="help_topic_color_blind_modes_title">Kleurenblindheid-modi</string>
+    <string name="help_topic_line_spacing_title">Regelafstand</string>
+    <string name="help_topic_paragraph_spacing_title">Alinea-afstand</string>
+    <string name="help_topic_letter_spacing_title">Letterafstand</string>
+    <string name="help_topic_text_width_title">Tekstbreedte</string>
+    <string name="help_topic_touch_targets_title">Grotere aanraakdoelen</string>
+    <string name="help_topic_reduce_motion_title">Animatie verminderen</string>
+    <string name="help_topic_timeout_behavior_title">Time-outgedrag</string>
+    <string name="help_topic_simplified_gestures_title">Vereenvoudigde gebaren</string>
+    <string name="help_topic_haptic_feedback_title">Haptische terugkoppeling</string>
+    <string name="help_topic_data_preservation_title">Gegevensbehoud</string>
+    <string name="help_topic_simplified_ui_title">Vereenvoudigde gebruikersinterface</string>
+    <string name="help_topic_step_indicators_title">Stapindicatoren</string>
+    <string name="help_topic_verbose_descriptions_title">Gedetailleerde beschrijvingen</string>
+    <string name="help_topic_confirm_actions_title">Acties bevestigen</string>
+    <string name="help_topic_reading_level_title">Vereenvoudigd leesbaarheidsniveau</string>
+    <string name="help_topic_help_system_title">Hulpsysteem</string>
+    <string name="help_topic_manual_code_entry_title">Handmatige codeinvoer</string>
+    <string name="help_topic_voice_input_title">Spraakinvoer</string>
+    <string name="help_topic_screen_reader_title">Schermlezerondersteuning</string>
+    <string name="help_topic_accessibility_profiles_title">Snelle installatieprofielen</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">Beheer de contrastverhouding tussen tekst en achtergronden:\n\n• Standaard: Standaard app-kleuren\n• Hoog (AA): 4,5:1 contrastverhouding\n• Maximaal (AAA): 7:1+ contrastverhouding\n\nHoger contrast maakt tekst gemakkelijker leesbaar, vooral in heldere omgevingen of voor gebruikers met een slechtziendheid.\n\nWCAG AAA-conformiteit vereist maximaal contrast.</string>
+    <string name="help_topic_extra_large_text_text">Vergroot alle tekstgroottes met 50% in de hele app.\n\nDit maakt tekst gemakkelijker leesbaar voor gebruikers met:\n• Slechtziendheid\n• Leeftijdsgerelateerde visusveranderingen\n• Leesproblematiek\n\nCombineert met systeemlettertype-instellingen voor maximale flexibiliteit.</string>
+    <string name="help_topic_reduce_transparency_text">Verwijdert transparante overlays en vervaagde effecten.\n\nVoordelen:\n• Duidelijkere visuele hiërarchie\n• Betere leesbaarheid van tekst\n• Minder visuele ruis\n• Lagere cognitieve belasting\n\nAanbevolen voor gebruikers met een slechtziendheid of cognitieve moeilijkheden.</string>
+    <string name="help_topic_color_blind_modes_text">Past kleuren aan voor verschillende typen kleurenblindheid:\n\n• Protanopie: Rood-blind\n• Deuteranopie: Groen-blind\n• Tritanopie: Blauw-blind\n• Monochroom: Volledig kleurenblind\n\nElke modus gebruikt zorgvuldig geselecteerde kleuren die onderscheidbaar zijn voor dat specifieke type kleurvisiegebrek.</string>
+    <string name="help_topic_line_spacing_text">Past de afstand tussen tekstregels aan (1,0x - 2,0x).\n\n• Standaard: 1,0x\n• AAA-conform: 1,5x of hoger\n\nVergroot regelafstand:\n• Verbetert leesbegrip\n• Vermindert vermoeide ogen\n• Helpt gebruikers met dyslexie\n• Maakt tekstblokken minder overweldigend</string>
+    <string name="help_topic_paragraph_spacing_text">Past de afstand tussen alinea\'s aan (1,0x - 3,0x).\n\n• Standaard: 1,0x\n• AAA-conform: 2,0x of hoger\n\nVergroot alinea-afstand:\n• Scheidt ideeën duidelijk\n• Verbetert visuele organisatie\n• Vermindert cognitieve belasting\n• Helpt de leespositie te bewaren</string>
+    <string name="help_topic_letter_spacing_text">Past de afstand tussen letters aan (0,0em - 0,2em).\n\n• Standaard: 0,0em\n• AAA-conform: 0,12em of hoger\n\nVergroot letterafstand:\n• Maakt individuele letters onderscheidbaander\n• Helpt gebruikers met dyslexie\n• Verbetert lees-nauwkeurigheid\n• Vermindert letterverwarring</string>
+    <string name="help_topic_text_width_text">Beperkt regellengte voor gemakkelijker lezen:\n\n• Volledige breedte: Geen beperking\n• Comfortabel: 80 tekens (aanbevolen)\n• Smal: 60 tekens\n\nOnderzoek toont aan dat optimaal lezen plaatsvindt bij 60-80 tekens per regel. Kortere regels verminderen oogbewegingen en verbeteren begrip.</string>
+    <string name="help_topic_touch_targets_text">Vergroot minimale aanraakdoelgrootte naar 60dp (van 44dp).\n\nVoordelen:\n• Gemakkelijker op knoppen en bedieningselementen tikken\n• Vermindert onbedoeld tikken\n• Helpt gebruikers met motorische beperkingen\n• Beter voor eenhandig gebruik\n\nWCAG AAA vereist minimaal 60dp.</string>
+    <string name="help_topic_reduce_motion_text">Verwijdert alle animaties en overgangen.\n\nVoordelen:\n• Voorkomt bewegingsziekte\n• Vermindert afleiding\n• Verlaagt cognitieve belasting\n• Verbetert focus\n\nAanbevolen voor gebruikers met:\n• Vestibulaarstoornissen\n• Aandachtsmoeilijkheden\n• Bewegingsgevoeligheid</string>
+    <string name="help_topic_timeout_behavior_text">Beheert automatische time-out op verificatieschermen:\n\n• Geen time-out (AAA): Onbeperkte tijd\n• Standaard: 30 seconden\n• Uitgebreid: 60 seconden\n\nWCAG AAA vereist een optie zonder time-out voor gebruikers die meer tijd nodig hebben om taken te voltooien.\n\nFormuliergegevens worden automatisch opgeslagen voor time-outs.</string>
+    <string name="help_topic_simplified_gestures_text">Vervangt complexe gebaren door eenvoudige alternatieven:\n\n• Vegen → Tik op knop\n• Lang indrukken → Gewoon tikken met bevestiging\n• Knijpen/zoomen → Knoppen\n\nHelpt gebruikers met:\n• Motorische beperkingen\n• Tremor\n• Beperkte behendigheid\n• Touchscreen-moeilijkheden</string>
+    <string name="help_topic_haptic_feedback_text">Geeft trillingsterugkoppeling voor acties.\n\nVoordelen:\n• Bevestigt knopaanslagen\n• Geeft fouten aan\n• Biedt tastbare bevestiging\n\nKan worden uitgeschakeld voor gebruikers die:\n• Het afleidend vinden\n• Sensorische gevoeligheid hebben\n• De voorkeur geven aan stille werking</string>
+    <string name="help_topic_data_preservation_text">Slaat formuliergegevens automatisch op voor time-outs.\n\nFuncties:\n• Waarschuwing 10 seconden voor time-out\n• Optie om gegevens op te slaan of te verwijderen\n• Automatisch herstel bij terugkeer\n• Gegevensbewaring gedurende 24 uur\n\nZorgt ervoor dat er geen gegevens verloren gaan als u meer tijd nodig heeft of onderbrekingen ervaart.</string>
+    <string name="help_topic_simplified_ui_text">Vermindert visuele complexiteit:
+
+• Minder gebruikersinterface-elementen tegelijk zichtbaar
+• Grotere, duidelijkere knoppen
+• Meer witruimte
+• Vereenvoudigde lay-outs
+
+Voordelen:
+• Gemakkelijker te begrijpen
+• Minder overweldigend
+• Betere focus
+• Verminderde cognitieve belasting</string>
+    <string name="help_topic_step_indicators_text">Toont voortgang door meerstapsprocessen.
+
+Weergeeft:
+• Huidig stapnummer
+• Totaal aantal stappen
+• Voortgangsvisualisatie
+
+Voordelen:
+• Vermindert angst
+• Stelt duidelijke verwachtingen
+• Helpt de oriëntatie te bewaren
+• Toont voltooiingsvoortgang</string>
+    <string name="help_topic_verbose_descriptions_text">Biedt extra context en uitleg:
+
+• Langere knoplabels
+• Meer gedetailleerde instructies
+• Aanvullende hints
+• Duidelijkere foutmeldingen
+
+Helpt gebruikers:
+• Acties begrijpen voordat ze worden ondernomen
+• Fouten vermijden
+• App-functionaliteit leren
+• Vertrouwen opbouwen</string>
+    <string name="help_topic_confirm_actions_text">Vereist bevestiging voor belangrijke acties:
+
+• Legitimatiebewijzen verwijderen
+• Instellingen wijzigen
+• Gegevens wissen
+
+WCAG AAA vereist bevestiging voor alle destructieve acties.
+
+Voordelen:
+• Voorkomt ongelukken
+• Maakt beoordeling voor actie mogelijk
+• Vermindert angst
+• Biedt een tweede kans</string>
+    <string name="help_topic_reading_level_text">Gebruikt eenvoudigere taal (niveau groep 7-9):
+
+• Kortere zinnen
+• Gewone woorden in plaats van jargon
+• Duidelijke, directe taal
+• Minder technische termen
+
+WCAG AAA-conform indien ingeschakeld.
+
+Voordelen:
+• Gemakkelijker te begrijpen
+• Sneller begrip
+• Beter voor niet-moedertaalsprekers
+• Verminderde cognitieve belasting</string>
+    <string name="help_topic_help_system_text">Contextgevoelige hulp beschikbaar in de hele app.
+
+Functies:
+• 27 hulponderwerpen
+• Doorzoekbaar hulpcentrum
+• Navigatie door gerelateerde onderwerpen
+• Technische woordenlijst
+
+Toegang tot hulp via:
+• Instellingenschermen
+• Complexe functies
+• Foutmeldingen
+• Overal waar u een hulppictogram ziet</string>
+    <string name="help_topic_manual_code_entry_text">Voer QR-codegegevens handmatig in in plaats van te scannen.
+
+Voordelen:
+• Werkt wanneer cameratoegang niet beschikbaar is
+• Helpt gebruikers met motorische moeilijkheden
+• Beter bij weinig licht
+• Geen noodzaak om telefoon stil te houden
+
+Alternatief voor op camera gebaseerd QR-scannen.</string>
+    <string name="help_topic_voice_input_text">Gebruik stem om tekst in te voeren in plaats van typen.
+
+Voordelen:
+• Handvrije invoer
+• Sneller dan typen
+• Helpt gebruikers met motorische beperkingen
+• Vermindert repetitieve belasting
+
+Gebruikt de ingebouwde spraakherkenning van uw apparaat.</string>
+    <string name="help_topic_screen_reader_text">Volledige ondersteuning voor TalkBack-schermlezer.
+
+Functies:
+• Alle gebruikersinterface-elementen gelabeld
+• Juiste kopstructuur
+• Logische navigatievolgorde
+• Aangepaste hints voor complexe acties
+
+De app schakelt automatisch in:
+• Gedetailleerde beschrijvingen
+• Verbeterde aanraakdoelen
+
+wanneer TalkBack wordt gedetecteerd.</string>
+    <string name="help_topic_accessibility_profiles_text">Vooraf geconfigureerde toegankelijkheidsprofielen:
+
+• Visuele beperking: Hoog contrast, grote tekst, haptiek
+• Motorische beperking: Grote doelen, verlengde time-outs, bevestigingen
+• Cognitief: Vereenvoudigde interface, stapindicatoren, beschrijvingen
+• Ouderen: Grote tekst, doelen, vereenvoudigde interface, verminderde animatie
+• Standaard: Alle instellingen opnieuw instellen
+
+Elk profiel schakelt de meest nuttige instellingen in voor die gebruikersgroep. U kunt verder aanpassen na het toepassen van een profiel.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">Leeftijdsverificatie</string>
+    <string name="content_age_verification_explanation">Even geduld terwijl uw leeftijd veilig wordt geverifieerd met behulp van zero-knowledge bewijzen. Uw geboortedatum wordt nooit gedeeld met de verificateur.</string>
+    <string name="content_age_verification_instructions">Richt uw camera op de verificatie-QR-code. De code wordt automatisch gescand wanneer hij wordt gedetecteerd.</string>
+    <string name="content_age_verification_success">Uw leeftijd is succesvol geverifieerd. De verificateur weet dat u aan de leeftijdsvereiste voldoet zonder uw werkelijke geboortedatum te kennen.</string>
+    <string name="content_age_verification_failed">Verificatie mislukt. Probeer de QR-code opnieuw te scannen of gebruik handmatige code-invoer.</string>
+    <string name="content_credential_issuance_title">Uitgifte legitimatiebewijs</string>
+    <string name="content_credential_issuance_explanation">Scan de QR-code die door de bevoegde uitgever is verstrekt om uw digitale leeftijdslegitimatiebewijs te ontvangen.</string>
+    <string name="content_credential_issuance_instructions">Richt uw camera op de uitgifte-QR-code die door de functionaris wordt getoond. Uw legitimatiebewijs wordt op uw apparaat aangemaakt.</string>
+    <string name="content_credential_issuance_success">Legitimatiebewijs succesvol aangemaakt. U kunt dit legitimatiebewijs nu gebruiken voor leeftijdsverificatie.</string>
+    <string name="content_credential_description">Een legitimatiebewijs is een cryptografisch ondertekend bewijs van uw identiteit dat privacy-beschermende verificatie mogelijk maakt.</string>
+    <string name="content_zero_knowledge_explanation">Zero-knowledge bewijzen stellen u in staat te bewijzen dat u aan een leeftijdsvereiste voldoet zonder uw werkelijke leeftijd te onthullen.</string>
+    <string name="content_setup_proving_key">Cryptografische bewijssleutel downloaden die vereist is voor het genereren van zero-knowledge bewijzen</string>
+    <string name="content_processing_challenge">Verificatie-uitdaging verwerken</string>
+    <string name="content_creating_proof">Zero-knowledge leeftijdsbewijs aanmaken</string>
+    <string name="content_submitting_proof">Bewijs indienen bij verificateur</string>
+    <string name="content_error_no_credential">Geen legitimatiebewijs beschikbaar. Verkrijg eerst een legitimatiebewijs bij een bevoegde uitgever.</string>
+    <string name="content_error_network_failed">Netwerkverbinding mislukt. Controleer uw internetverbinding en probeer het opnieuw.</string>
+    <string name="content_error_invalid_qr">Ongeldige QR-code. Zorg ervoor dat u de juiste verificatiecode scant.</string>
+    <string name="content_error_verification_failed">Verificatie mislukt. De server kon uw bewijs niet valideren.</string>
+    <string name="content_officer_authentication_title">Ambtenaarverificatie</string>
+    <string name="content_officer_issuance_title">Uitgifte legitimatiebewijs</string>
+    <string name="content_officer_dob_prompt">Voer de geverifieerde geboortedatum van de aanvrager in vanuit hun officiële identiteitsdocument.</string>
+    <string name="content_onboarding_welcome">Welkom bij Provii Wallet - uw privacy-beschermende digitale leeftijdsverificatieoplossing.</string>
+    <string name="content_onboarding_privacy">Uw geboortedatum wordt veilig opgeslagen op uw apparaat en nooit verzonden naar verificateurs.</string>
+    <string name="content_onboarding_get_started">Om te beginnen, bezoek een bevoegde uitgever om uw digitale leeftijdslegitimatiebewijs te verkrijgen.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">Uw leeftijd controleren</string>
+    <string name="content_age_verification_explanation_simplified">We controleren uw leeftijd. We zullen uw verjaardag niet zien of delen.</string>
+    <string name="content_age_verification_instructions_simplified">Richt uw camera op de QR-code. De code wordt vanzelf gescand.</string>
+    <string name="content_age_verification_success_simplified">Geslaagd! De website weet dat u oud genoeg bent. Ze kennen uw verjaardag niet.</string>
+    <string name="content_age_verification_failed_simplified">Dat is niet gelukt. Probeer opnieuw te scannen of typ de code in.</string>
+    <string name="content_credential_issuance_title_simplified">Uw ID-kaart ophalen</string>
+    <string name="content_credential_issuance_explanation_simplified">Scan de code van het overheidskantoor om uw digitale ID te ontvangen.</string>
+    <string name="content_credential_issuance_instructions_simplified">Richt uw camera op de code. Uw ID wordt opgeslagen op uw telefoon.</string>
+    <string name="content_credential_issuance_success_simplified">Klaar! U kunt nu uw digitale ID gebruiken om uw leeftijd te bewijzen.</string>
+    <string name="content_credential_description_simplified">Een legitimatiebewijs is als een digitale ID-kaart die bewijst wie u bent zonder privégegevens te delen.</string>
+    <string name="content_zero_knowledge_explanation_simplified">U kunt bewijzen dat u oud genoeg bent zonder iemand uw werkelijke leeftijd te vertellen.</string>
+    <string name="content_setup_proving_key_simplified">Beveiligingsbestanden downloaden die nodig zijn voor de werking van de app</string>
+    <string name="content_processing_challenge_simplified">De leeftijdscontroleopdracht lezen</string>
+    <string name="content_creating_proof_simplified">Uw leeftijdsbewijs aanmaken</string>
+    <string name="content_submitting_proof_simplified">Bewijs naar website verzenden</string>
+    <string name="content_error_no_credential_simplified">U heeft nog geen ID. Bezoek eerst een overheidskantoor.</string>
+    <string name="content_error_network_failed_simplified">Kan geen verbinding maken met internet. Controleer uw wifi of data en probeer het opnieuw.</string>
+    <string name="content_error_invalid_qr_simplified">Die code ziet er niet goed uit. Zorg ervoor dat u de juiste code scant.</string>
+    <string name="content_error_verification_failed_simplified">Dat is niet gelukt. De website kon uw bewijs niet controleren. Probeer het opnieuw.</string>
+    <string name="content_officer_authentication_title_simplified">Ambtenaar aanmelden</string>
+    <string name="content_officer_issuance_title_simplified">ID-kaart aanmaken</string>
+    <string name="content_officer_dob_prompt_simplified">Voer de verjaardag van de persoon in vanuit hun officiële legitimatie.</string>
+    <string name="content_onboarding_welcome_simplified">Welkom bij Provii Wallet - bewijs uw leeftijd privé.</string>
+    <string name="content_onboarding_privacy_simplified">Uw verjaardag blijft op uw telefoon. Niemand anders kan het zien.</string>
+    <string name="content_onboarding_get_started_simplified">Om te beginnen, bezoek een overheidskantoor om uw digitale ID te ontvangen.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Snelle reactiecode (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Persoonlijk Identificatienummer (PIN)</string>
+    <string name="abbreviation_dob_short">GD</string>
+    <string name="abbreviation_dob_expanded">Geboortedatum (GD)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Identificatie (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">Gebruikersinterface (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Uniform resource locator (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Applicatieprogramma-interface (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">Animaties pauzeren</string>
+    <string name="animation_resume_animations">Animaties hervatten</string>
+    <string name="animation_pause_button_text">Pauzeren</string>
+    <string name="animation_resume_button_text">Hervatten</string>
+    <string name="animation_toggles_playback_hint">Schakelt het afspelen van animaties</string>
+    <string name="animation_paused_announcement">Animaties gepauzeerd</string>
+    <string name="animation_resumed_announcement">Animaties hervat</string>
+    <string name="animation_active_count">%d actieve animaties</string>
+    <string name="animation_loading_default">Laden</string>
+    <string name="animation_please_wait">Even geduld terwijl deze bewerking wordt voltooid</string>
+    <string name="animation_percent_complete">%d procent voltooid</string>
+    <string name="animation_loading_in_progress">Bezig</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">Sneltoetsen</string>
+    <string name="keyboard_shortcuts_done">Gereed</string>
+    <string name="keyboard_shortcuts_app_section">App-sneltoetsen</string>
+    <string name="keyboard_shortcuts_navigation_section">Navigatie</string>
+    <string name="keyboard_shortcuts_tips_section">Tips</string>
+    <string name="keyboard_shortcuts_navigation_footer">Deze navigatietoetsen werken in de hele app met externe toetsenborden</string>
+    <string name="keyboard_shortcuts_tip_external">Externe Bluetooth- en USB-toetsenborden worden volledig ondersteund</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Gebruik pijltoetsen om tussen items in lijsten te navigeren</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Houd Ctrl ingedrukt om beschikbare sneltoetsen op dit scherm te zien</string>
+    <string name="keyboard_shortcuts_tip_a11y">Alle functies in deze app zijn toegankelijk via toetsenbord</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Sneltoetsen sluiten</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">Instellingen</string>
+    <string name="keyboard_shortcut_label_accessibility">Toegankelijkheid</string>
+    <string name="keyboard_shortcut_label_help">Hulpcentrum</string>
+    <string name="keyboard_shortcut_label_add_credential">Legitimatiebewijs toevoegen</string>
+    <string name="keyboard_shortcut_label_verify">Verifiëren</string>
+    <string name="keyboard_shortcut_label_shortcuts">Sneltoetsen</string>
+    <string name="keyboard_shortcut_desc_settings">Instellingen openen</string>
+    <string name="keyboard_shortcut_desc_accessibility">Toegankelijkheidsinstellingen</string>
+    <string name="keyboard_shortcut_desc_help">Hulpcentrum</string>
+    <string name="keyboard_shortcut_desc_add_credential">Legitimatiebewijs toevoegen</string>
+    <string name="keyboard_shortcut_desc_verify">Verificatie starten</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Sneltoetsen</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">Terug / Sluiten</string>
+    <string name="keyboard_shortcut_nav_back_desc">Huidig scherm of dialoogvenster sluiten</string>
+    <string name="keyboard_shortcut_nav_next">Volgend veld</string>
+    <string name="keyboard_shortcut_nav_next_desc">Focus verplaatsen naar het volgende interactieve element</string>
+    <string name="keyboard_shortcut_nav_prev">Vorig veld</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Focus verplaatsen naar het vorige interactieve element</string>
+    <string name="keyboard_shortcut_nav_submit">Indienen / Doorgaan</string>
+    <string name="keyboard_shortcut_nav_submit_desc">De gefocuste knop activeren of een formulier indienen</string>
+    <string name="keyboard_shortcut_nav_activate">Knop activeren</string>
+    <string name="keyboard_shortcut_nav_activate_desc">De huidige gefocuste knop of schakelaar activeren</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">Dialoogvenster geopend. Druk op Escape om te sluiten, Enter om te bevestigen.</string>
+    <string name="modal_closed_announcement">Dialoogvenster gesloten</string>
+    <string name="modal_button_primary_label">%s (primaire actie)</string>
+    <string name="modal_button_cancel_label">%s (annuleren)</string>
+    <string name="modal_button_destructive_label">%s (destructieve actie)</string>
+    <string name="modal_button_primary_hint">Dubbel tikken om te bevestigen, of druk op Enter</string>
+    <string name="modal_button_cancel_hint">Dubbel tikken om te annuleren, of druk op Escape</string>
+    <string name="modal_button_destructive_hint">Dubbel tikken om destructieve actie uit te voeren</string>
+    <string name="modal_button_secondary_hint">Dubbel tikken om actie uit te voeren</string>
+    <string name="modal_confirm">Bevestigen</string>
+    <string name="modal_cancel">Annuleren</string>
+    <string name="modal_delete">Verwijderen</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">%1$s verwijderen</string>
+    <string name="a11y_edit_nickname_for">Bijnaam bewerken voor %1$s</string>
+    <string name="accessibility_attestation_scan_back">Terug</string>
+    <string name="attestation_replace_confirm">Vervangen</string>
+    <string name="attestation_replace_primary_message">U heeft al een persoonlijk legitimatiebewijs. Door een nieuw legitimatiebewijs aan te maken, wordt het bestaande vervangen. Dit kan niet ongedaan worden gemaakt.</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">Bestaand legitimatiebewijs vervangen?</string>
+    <string name="attestation_scan_error_empty">QR-code was leeg</string>
+    <string name="attestation_scan_instruction">Richt uw camera op de QR-code die door de functionaris wordt getoond</string>
+    <string name="attestation_scan_invalid_qr">Deze QR-code bevat geen attestatiegegevens</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">Attestatie scannen</string>
+    <string name="attestation_scan_wrong_type_toast">Dit is een verificatie-QR, geen legitimatiebewijs-QR</string>
+    <string name="biometric_required_message">Deze app vereist een schermvergrendeling (pincode, patroon of biometrie) om legitimatiebewijzen veilig op te slaan. Stel er een in via de beveiligingsinstellingen van uw apparaat voordat u doorgaat.</string>
+    <string name="biometric_required_open_settings">Beveiligingsinstellingen openen</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">Schermvergrendeling vereist</string>
+    <string name="challenge_sandbox_prompt_announcement">Sandbox-uitdaging ontvangen. Kies of u de sandbox-modus wilt inschakelen en doorgaan, of de uitdaging wilt afwijzen.</string>
+    <string name="challenge_sandbox_prompt_body">Deze uitdaging is uitgegeven door een sandbox-verificateur. De uitdaging slaagt alleen als u de sandbox-modus in deze wallet inschakelt.</string>
+    <string name="challenge_sandbox_prompt_primary">Sandbox inschakelen en doorgaan</string>
+    <string name="challenge_sandbox_prompt_secondary">Uitdaging afwijzen</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">Sandbox-uitdaging ontvangen</string>
+    <string name="credential_detail_nickname_error">Opslaan van bijnaam mislukt</string>
+    <string name="credential_list_managed_count">%1$d van %2$d</string>
+    <string name="credential_picker_count_shown">%1$d legitimatiebewijzen weergegeven</string>
+    <string name="credential_picker_filter_clear">Filter wissen</string>
+    <string name="credential_picker_filter_label">Legitimatiebewijzen filteren op naam</string>
+    <string name="credential_picker_filter_placeholder">Legitimatiebewijzen filteren</string>
+    <string name="credential_picker_no_results">Geen overeenkomende legitimatiebewijzen</string>
+    <string name="credential_picker_section_managed">Beheerde legitimatiebewijzen</string>
+    <string name="credential_picker_section_me">Ik</string>
+    <string name="credential_picker_subtitle">Selecteer wie er wordt geverifieerd.</string>
+    <string name="credential_row_action_delete">Verwijderen</string>
+    <string name="credential_row_action_edit">Bijnaam bewerken</string>
+    <string name="credential_row_overflow_menu">Legitimatiebewijs-opties</string>
+    <string name="deeplink_sandbox_prompt_announcement">Sandbox-koppeling gedetecteerd. Kies of u de sandbox-modus wilt inschakelen en de koppeling wilt openen.</string>
+    <string name="deeplink_sandbox_prompt_body">Deze deeplink slaagt alleen als u de sandbox-modus in deze wallet inschakelt.</string>
+    <string name="deeplink_sandbox_prompt_primary">Sandbox inschakelen en openen</string>
+    <string name="deeplink_sandbox_prompt_secondary">Annuleren</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">Sandbox-koppeling gedetecteerd</string>
+    <string name="empty_credential_option_find_apps_a11y">Een deelnemende app vinden. Verkrijg een legitimatiebewijs via uw pensioenfonds, bank, telecomaanbieder, zorgverzekeraar of iedereen die uw leeftijd al kent.</string>
+    <string name="empty_credential_option_find_apps_desc">Verkrijg een legitimatiebewijs via uw pensioenfonds, bank, telecomaanbieder, zorgverzekeraar of iedereen die uw leeftijd al kent</string>
+    <string name="empty_credential_option_find_apps_title">Een deelnemende app vinden</string>
+    <string name="empty_credential_option_find_locations_a11y">Een locatie bij u in de buurt vinden. Bezoek persoonlijk met uw identiteitsbewijs om een legitimatiebewijs te ontvangen.</string>
+    <string name="empty_credential_option_find_locations_desc">Bezoek persoonlijk met uw identiteitsbewijs om een legitimatiebewijs te ontvangen</string>
+    <string name="empty_credential_option_find_locations_title">Een locatie bij u in de buurt vinden</string>
+    <string name="empty_credential_option_managed_a11y">Ik verzorg iemand. Beheer legitimatiebewijzen voor mensen die u verzorgt.</string>
+    <string name="empty_credential_option_managed_desc">Beheer legitimatiebewijzen voor mensen die u verzorgt</string>
+    <string name="empty_credential_option_managed_title">Ik verzorg iemand</string>
+    <string name="empty_credential_option_scan_a11y">Ik heb een QR-code om te scannen. Een verificateur heeft u een code gegeven nadat uw identificatie is gecontroleerd.</string>
+    <string name="empty_credential_option_scan_desc">Een verificateur heeft u een code gegeven nadat uw identificatie is gecontroleerd</string>
+    <string name="empty_credential_option_scan_title">Ik heb een QR-code om te scannen</string>
+    <string name="empty_credential_subtitle">Kies hoe u uw eerste legitimatiebewijs wilt verkrijgen</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">Nog geen legitimatiebewijzen</string>
+    <string name="error_screen_lock_required">Een schermvergrendeling (pincode, patroon of biometrie) is vereist om legitimatiebewijzen veilig op te slaan. Stel er een in via de instellingen van uw apparaat.</string>
+    <string name="issuers_no_apps_found_description">Kom binnenkort terug, want steeds meer apps ondersteunen Provii</string>
+    <string name="issuers_no_apps_found">Nog geen deelnemende apps</string>
+    <string name="issuers_no_locations_found_description">Kom binnenkort terug, want er worden steeds meer locaties toegevoegd</string>
+    <string name="issuers_no_locations_found">Geen locaties gevonden</string>
+    <string name="managed_credential_explainer_body">Om een beheerd legitimatiebewijs te krijgen voor iemand die u verzorgt, bezoekt u samen een deelnemende locatie. De verificateur controleert hun identiteitsbewijs. Wanneer u de QR-code scant, wordt u gevraagd of dit legitimatiebewijs voor uzelf is of voor iemand die u beheert.</string>
+    <string name="managed_credential_explainer_find_location">Een locatie zoeken</string>
+    <string name="managed_credential_explainer_have_qr">Ik heb al een QR-code</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">Beheerde legitimatiebewijzen</string>
+    <string name="sandbox_credential_type">Type legitimatiebewijs</string>
+    <string name="sandbox_managed_credential_saved">Beheerd legitimatiebewijs opgeslagen (%s)</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">Sandbox-modus is nu actief. De wallet is verbonden met sandboxservers.</string>
+    <string name="sandbox_nickname_helper">Geef dit legitimatiebewijs een naam zodat u het in uw wallet kunt herkennen.</string>
+    <string name="sandbox_nickname_label">Bijnaam</string>
+    <string name="sandbox_nickname_placeholder">bijv. Sarah</string>
+    <string name="sandbox_nickname_required">Een bijnaam is vereist voor beheerde legitimatiebewijzen</string>
+    <string name="sandbox_type_managed_credential">Beheerd legitimatiebewijs</string>
+    <string name="sandbox_type_your_credential">Uw legitimatiebewijs</string>
+    <string name="title_find_apps">Een deelnemende app vinden</string>
+    <string name="title_find_locations">Een locatie zoeken</string>
+    <string name="verification_go_to_attestation">Legitimatiebewijs ophalen</string>
+    <string name="verification_wrong_qr_type_message">Deze QR-code is bedoeld om een nieuw legitimatiebewijs op te halen, niet voor leeftijdsverificatie. Wilt u in plaats daarvan naar het attestatiescherm gaan?</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">Attestatie-QR gedetecteerd</string>
+    <string name="walkthrough_back">Terug</string>
+    <string name="walkthrough_get_started">Aan de slag</string>
+    <string name="walkthrough_next">Volgende</string>
+    <string name="walkthrough_page_indicator">Pagina %1$d van %2$d</string>
+    <string name="walkthrough_page1_body">Uw legitimatiebewijs bevat uw leeftijd. Verder niets. Niet uw naam, niet uw adres, niet uw identiteit.\n\nHet bewijst dat u boven (of onder) een bepaalde leeftijd bent zonder uw geboortedatum prijs te geven.</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">Wat is een legitimatiebewijs?</string>
+    <string name="walkthrough_page2_body">U kunt een legitimatiebewijs ophalen via een app van een bedrijf dat uw leeftijd al kent. Bijvoorbeeld uw bank of pensioenfonds. Omdat zij uw leeftijd al hebben geverifieerd, hoeft er niets opnieuw te worden gedeeld.\n\nU kunt ook een deelnemende locatie bezoeken met een identiteitsbewijs waarop uw geboortedatum staat. Uw geboortedatum wordt gecontroleerd, gebruikt om uw legitimatiebewijs aan te maken, en daarna verwijderd. De uitgever ziet uw legitimatiebewijs nooit. Uw identiteit wordt er nooit aan gekoppeld.</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">Hoe verkrijgt u er een?</string>
+    <string name="walkthrough_page3_body">Als u zorgt voor iemand die een leeftijdslegitimatiebewijs nodig heeft, kunt u er een voor diegene verkrijgen en op uw apparaat beheren.\n\nBezoek samen een deelnemende locatie met een identiteitsbewijs waarop hun geboortedatum staat. Wanneer u de QR-code scant, wordt u gevraagd of dit legitimatiebewijs voor uzelf is of voor iemand die u beheert.\n\nVoeg een bijnaam toe zodat u hun legitimatiebewijzen uit elkaar kunt houden.</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">Personen onder uw hoede</string>
+    <string name="walkthrough_page4_body">Een app die uw leeftijd wil verifiëren, kan rechtstreeks een uitdaging naar uw Provii-wallet sturen. U kiest welk legitimatiebewijs u wilt gebruiken. Na een geslaagde verificatie keert u terug naar de aanvragende app en kunt u verder als geverifieerd.\n\nU kunt ook een QR-code op een ander apparaat te zien krijgen, of een koppeling in uw mobiele browser die direct naar uw wallet gaat. Voor toegankelijkheid is er ook een korte-code-optie.\n\nEr worden nooit persoonlijke gegevens gedeeld. Alleen een ja of nee op de vraag of u aan de leeftijdseis voldoet.</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">Hoe werkt verificatie?</string>
+    <string name="walkthrough_page5_body">Uw eerste stap is een legitimatiebewijs ophalen via een deelnemende app of bij een locatie bij u in de buurt.\n\nVanaf dat moment kunt u uw leeftijd verifiëren wanneer dat nodig is, zonder persoonlijke gegevens te delen. U kunt ook legitimatiebewijzen beheren voor mensen die u verzorgt.</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">U bent helemaal klaar</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">Overslaan</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

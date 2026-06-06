@@ -1,0 +1,1577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Iestatījumi</string>
+    <string name="title_accessibility">Pieejamība</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Iegūt akreditācijas datus</string>
+    <string name="title_scan_verification_qr">Skenēt verifikācijas QR kodu</string>
+    <string name="title_verifying_age">Vecuma pārbaude</string>
+    <string name="title_age_verified">Vecums apstiprināts</string>
+    <string name="title_verification_failed">Verifikācija neizdevās</string>
+    <string name="title_officer_mode">Amatpersonas režīms</string>
+    <string name="title_officer_dashboard">Amatpersonas panelis</string>
+    <string name="title_issue_credential">Izsniegt akreditācijas datus</string>
+    <string name="title_credential_ready">Akreditācijas dati ir gatavi</string>
+    <string name="title_get_your_credential">Iegūstiet savus akreditācijas datus</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Laipni lūgti Provii Wallet</string>
+    <string name="welcome_subtitle">Droša vecuma pārbaude , vienkārši</string>
+    <string name="welcome_first_credential">Sāciet, pievienojot savus pirmos vecuma verifikācijas akreditācijas datus</string>
+    <string name="welcome_description">Privāta vecuma pārbaude, izmantojot nulles zināšanu pierādījumus</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Laipni lūgti Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Izvēlieties vēlamo valodu</string>
+    <string name="onboarding_use_english">Lietot angļu valodu</string>
+    <string name="onboarding_use_english_description">Turpināt lietot angļu valodu kā lietotnes valodu</string>
+    <string name="onboarding_rotating_button_description">Poga „Mainīt valodu", pašlaik rāda: %1$s. Pieskarieties, lai izvēlētos citu valodu.</string>
+    <string name="onboarding_change_later">To var mainīt vēlāk sadaļā Iestatījumi</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Pieejamība</string>
+    <string name="onboarding_accessibility_desc">Vai vēlaties pielāgot pieejamības funkcijas, piemēram, teksta izmēru, skāriena mērķus vai samazinātu kustību?</string>
+    <string name="onboarding_use_defaults">Lietot noklusējuma iestatījumus</string>
+    <string name="onboarding_use_defaults_description">Turpināt ar standarta pieejamības iestatījumiem</string>
+    <string name="onboarding_open_accessibility">Pieejamības iestatījumi</string>
+    <string name="onboarding_open_accessibility_description">Atveriet pieejamības iestatījumus, lai pielāgotu lietotni</string>
+    <string name="onboarding_accessibility_later">To var mainīt vēlāk sadaļā Iestatījumi</string>
+    <string name="onboarding_accessibility_features_title">Pieejamās funkcijas:</string>
+    <string name="onboarding_feature_text_size">Lielāki teksta izmēri</string>
+    <string name="onboarding_feature_touch_targets">Palielināti skāriena mērķi</string>
+    <string name="onboarding_feature_reduce_motion">Samazināta kustība</string>
+    <string name="onboarding_feature_high_contrast">Augsta kontrasta režīms</string>
+    <string name="onboarding_talkback_detected">TalkBack atklāts</string>
+    <string name="onboarding_talkback_message">Mēs esam iespējojuši detalizētus aprakstus, lai palīdzētu Jums pārvietoties lietotnē.</string>
+    <string name="onboarding_continue_to_setup">Turpināt iestatīšanu</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Nepieciešama vienreizēja iestatīšana</string>
+    <string name="setup_download_required">Nepieciešama lejupielāde</string>
+    <string name="setup_download_description">Šai lietotnei jālejupielādē drošības komponenti nulles zināšanu pierādījumiem (aptuveni 87 MB).</string>
+    <string name="setup_wifi_recommended">Wi-Fi ieteicams</string>
+    <string name="setup_checking_status">Pārbauda iestatīšanas statusu...</string>
+    <string name="setup_already_setup">Jau iestatīts!</string>
+    <string name="setup_ready_message">Jūsu maks ir gatavs drošai vecuma pārbaudei</string>
+    <string name="setup_preparing">Sagatavo drošas verifikācijas sistēmu...</string>
+    <string name="setup_checking_components">Pārbauda drošības komponentus...</string>
+    <string name="setup_downloading">Lejupielādē drošības komponentus</string>
+    <string name="setup_download_progress_description">%1$d%% pabeigts (%2$s MB no %3$s MB lejupielādēts)</string>
+    <string name="setup_initializing">Inicializē drošības komponentus...</string>
+    <string name="setup_complete">Iestatīšana pabeigta!</string>
+    <string name="setup_download_info">Tas iespējo nulles zināšanu pierādījumus privātai vecuma pārbaudei</string>
+    <string name="setup_one_time_download">Vienreizēja lejupielāde</string>
+    <string name="setup_stuck_message">Tas aizņem ilgāk nekā gaidīts</string>
+    <string name="setup_stuck_description">Iestatīšana var būt iestrēgusi. Mēģiniet restartēt.</string>
+    <string name="setup_restart_message">Lietotnei jārestartējas. Tas dažreiz notiek pirmajā palaišanas reizē.</string>
+    <string name="setup_storage_full">Atmiņa pilna</string>
+    <string name="setup_connection_error">Savienojuma kļūda</string>
+    <string name="setup_failed">Iestatīšana neizdevās</string>
+    <string name="setup_initialization_error">Inicializācijas kļūda</string>
+    <string name="error_storage_init_failed">Krātuves inicializācija neizdevās. Lūdzu, restartējiet lietotni.</string>
+    <string name="error_storage_init_close_restart">Krātuves inicializācija neizdevās. Lūdzu, aizveriet un restartējiet lietotni.</string>
+    <string name="setup_free_storage_message">Atbrīvojiet vismaz 65 MB un mēģiniet vēlreiz</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Privātums aizsargāts</string>
+    <string name="setup_privacy_description">Jūsu vecuma pārbaude izmanto nulles zināšanu pierādījumus. Jūsu dzimšanas datums nekad netiek kopīgots.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Mani akreditācijas dati</string>
+    <string name="credentials_empty">Nav saglabātu akreditācijas datu</string>
+    <string name="credential_active">Akreditācijas dati aktīvi</string>
+    <string name="credential_expired">Akreditācijas dati beiguši derīgumu</string>
+    <string name="credential_ready_for_verification">Gatavs verifikācijai</string>
+    <string name="credential_expired_message">Jūsu akreditācijas dati ir beiguši derīgumu un ir jānomaina</string>
+    <string name="credential_stored_successfully">Akreditācijas dati veiksmīgi saglabāti</string>
+    <string name="credential_stored_description">Jūsu vecuma akreditācijas dati ir droši saglabāti un gatavi lietošanai</string>
+    <string name="credential_can_prove_age">Tagad varat privāti pierādīt savu vecumu</string>
+    <string name="credential_returning">Atgriežas pie akreditācijas datiem...</string>
+    <string name="credential_view_credentials">Skatīt akreditācijas datus</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Gatavs</string>
+    <string name="action_scan_qr_code">Skenēt QR kodu</string>
+    <string name="action_find_locations">Atrast atrašanās vietas</string>
+    <string name="action_get_credential">Iegūt akreditācijas datus</string>
+    <string name="action_replace_credential">Aizstāt ar jauniem akreditācijas datiem</string>
+    <string name="action_replace_credential_now">Aizstāt akreditācijas datus tagad</string>
+    <string name="action_delete_credential">Dzēst akreditācijas datus</string>
+    <string name="credential_action_scan_description">Iegūt akreditācijas datus no pilnvarota izsniedzēja</string>
+    <string name="credential_action_find_description">Atklāt tuvumā esošos izsniedzējus</string>
+    <string name="credential_remove_description">Noņemt pašreizējos akreditācijas datus</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Privātums</string>
+    <string name="credential_info_privacy_value">Aizsargāts</string>
+    <string name="credential_info_status">Statuss</string>
+    <string name="credential_info_status_value">Derīgs</string>
+    <string name="credential_tip_title">Ātrais padoms</string>
+    <string name="credential_tip_message">Pieskarieties pogai „Pārbaudīt vecumu", lai skenētu verifikācijas QR (ātrās atbildes) kodus piedalošajās vietās.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">Skenēt QR kodu</string>
+    <string name="verification_verify_age">Pārbaudīt vecumu</string>
+    <string name="verification_generating_proof">Ģenerē pierādījumu...</string>
+    <string name="verification_success">Verifikācija veiksmīga</string>
+    <string name="verification_failed">Verifikācija neizdevās</string>
+    <string name="verification_age_verified">Vecums apstiprināts</string>
+    <string name="verification_age_verified_message">Jūsu vecums ir privāti apstiprināts</string>
+    <string name="verification_can_return">Tagad varat atgriezties vietnē, lai turpinātu.</string>
+    <string name="verification_returning_browser">Atgriežas pārlūkprogrammā...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">1. solis no 2</string>
+    <string name="verification_step_2_of_2">2. solis no 2</string>
+    <string name="verification_point_camera">Pavērsiet kameru uz verifikācijas QR kodu</string>
+    <string name="verification_hold_steady">Turiet mierīgi, līdz dzirdat apstiprinājuma signālu.</string>
+    <string name="verification_reading_request">Nolasa verifikācijas pieprasījumu...</string>
+    <string name="verification_processing_challenge">Apstrādā izaicinājumu...</string>
+    <string name="verification_creating_proof">Veido vecuma pierādījumu...</string>
+    <string name="verification_submitting_proof">Iesniedz pierādījumu...</string>
+    <string name="verification_processing_message">Tas var aizņemt dažas sekundes</string>
+    <string name="verification_preparing_proof">Mēs sagatavojam privātu pierādījumu, izmantojot Jūsu saglabātos akreditācijas datus.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Nolasa verifikācijas pieprasījumu...</string>
+    <string name="verification_status_processing_challenge">Apstrādā izaicinājumu...</string>
+    <string name="verification_status_creating_proof">Veido vecuma pierādījumu...</string>
+    <string name="verification_status_submitting_proof">Iesniedz pierādījumu...</string>
+    <string name="verification_status_verified">✔ Vecums apstiprināts</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Nevar parādīt autentifikācijas uzvedni</string>
+    <string name="verification_error_verification_failed">Verifikācija neizdevās</string>
+    <string name="verification_error_generic">Radās kļūda</string>
+    <string name="verification_error_failed_to_process_code">Neizdevās apstrādāt kodu</string>
+    <string name="verification_error_failed_to_process_challenge">Neizdevās apstrādāt izaicinājumu</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Uzticami izsniedzēji Austrālijā</string>
+    <string name="issuers_loading">Ielādē izsniedzējus...</string>
+    <string name="issuers_loaded">Izsniedzēji veiksmīgi ielādēti</string>
+    <string name="issuers_unable_to_load">Nevar ielādēt izsniedzējus</string>
+    <string name="issuers_check_connection">Pārbaudiet interneta savienojumu un mēģiniet vēlreiz</string>
+    <string name="issuers_categories_header">KATEGORIJAS</string>
+    <string name="issuers_available_header">PIEEJAMIE IZSNIEDZĒJI</string>
+    <string name="issuers_found_count">%d atrasts</string>
+    <string name="issuer_status_coming_soon">Drīzumā</string>
+    <string name="issuer_status_verified">Pārbaudīts</string>
+    <string name="issuer_how_to_get">Kā iegūt akreditācijas datus</string>
+    <string name="issuer_service_locations">Pakalpojumu atrašanās vietas</string>
+    <string name="issuer_visit_website">Apmeklēt %s vietni</string>
+    <string name="issuer_learn_more">Uzzināt vairāk par %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Banku pakalpojumi</string>
+    <string name="category_super_fund">Super fonds</string>
+    <string name="category_government">Valsts pārvalde</string>
+    <string name="category_travel">Ceļojumi</string>
+    <string name="category_telco">Telekomunikācijas</string>
+    <string name="category_insurance">Apdrošināšana</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Iestatījumi</string>
+    <string name="settings_section_sandbox">Sandbox režīms</string>
+    <string name="settings_section_general">Vispārīgi</string>
+    <string name="settings_section_credentials">Akreditācijas dati</string>
+    <string name="settings_section_advanced">Papildu iestatījumi</string>
+    <string name="settings_section_privacy">Privātums</string>
+    <string name="settings_security">Drošība</string>
+    <string name="settings_biometric">Izmantot biometrisko autentifikāciju</string>
+    <string name="settings_environment">Vides iestatījumi</string>
+    <string name="settings_environment_description">Skatīt pašreizējo vides konfigurāciju</string>
+    <string name="settings_reset_proving_key">Atiestatīt pierādīšanas atslēgu</string>
+    <string name="settings_reset_proving_key_description">Atkārtoti lejupielādēt drošības komponentus (Debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Izsniedz testa akreditācijas datus kā Izsniedzējs</string>
+    <string name="settings_mint_test_credential_subtitle">Izsniedz testa akreditācijas datus savā makā, lai tos varētu pārbaudīt no paļaujošās puses demo.</string>
+    <string name="settings_find_trusted_issuers">Atrast uzticamus izsniedzējus</string>
+    <string name="settings_version">Versija: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Pieskarieties 5 reizes, lai pārslēgtu</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Valoda</string>
+    <string name="language_selection_description">Izvēlieties vēlamo valodu. Lietotne tiks restartēta, lai piemērotu izmaiņas.</string>
+    <string name="language_selected">Izvēlēts</string>
+    <string name="settings_language">Valoda</string>
+    <string name="settings_language_description">Mainīt lietotnes valodu</string>
+    <string name="settings_licenses">Atvērtā pirmkoda licences</string>
+    <string name="settings_licenses_description">Skatīt trešo pušu licences</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Apstiprināt valodu</string>
+    <string name="language_change_to">Mainīt valodu uz:</string>
+    <string name="language_restart_notice">Lietotne tiks restartēta, lai piemērotu šo valodu.</string>
+    <string name="language_apply">Piemērot</string>
+    <string name="language_cancel">Atcelt</string>
+    <string name="language_skip_title">Izlaist valodas izvēli?</string>
+    <string name="language_skip_message">Ja izlaidīsiet, lietotne pēc noklusējuma izmantos angļu valodu. Valodu var mainīt vēlāk sadaļā Iestatījumi.</string>
+    <string name="language_use_english">Lietot angļu valodu</string>
+    <string name="language_go_back">Atgriezties</string>
+    <string name="language_help_title">Palīdzība valodas izvēlē</string>
+    <string name="language_help_how_to">Kā izvēlēties valodu:</string>
+    <string name="language_help_step1">1. Izmantojiet meklēšanas lodziņu, lai atrastu savu valodu</string>
+    <string name="language_help_step2">2. Pieskarieties vēlamajai valodai</string>
+    <string name="language_help_step3">3. Apstipriniet savu izvēli</string>
+    <string name="language_help_system_note">Jūsu sistēmas valoda ir izceltas augšpusē, ja tā tiek atbalstīta.</string>
+    <string name="language_help_settings_note">To var mainīt vēlāk sadaļā Iestatījumi.</string>
+    <string name="language_got_it">Sapratu</string>
+    <string name="language_select_title">Izvēlēties valodu</string>
+    <string name="language_skip_button">Izlaist (lietot angļu valodu)</string>
+    <string name="language_search_placeholder">Meklēt valodas...</string>
+    <string name="language_no_results">Valodas nav atrastas</string>
+    <string name="language_try_different">Mēģiniet citu meklēšanas terminu</string>
+    <string name="language_system_badge">Sistēmas valoda</string>
+    <string name="language_count">%d valodas</string>
+    <string name="language_no_match_announcement">Nav atrastas valodas, kas atbilstu Jūsu meklēšanai</string>
+    <string name="language_found_announcement">%d valodas atrastas</string>
+    <string name="language_search_cleared">Meklēšana notīrīta, rāda visas %d valodas</string>
+    <string name="language_selected_announcement">Izvēlēts %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Valodas izvēles ekrāns</string>
+    <string name="language_help_button_description">Palīdzība un informācija par valodas izvēli</string>
+    <string name="language_skip_description">Izlaist valodas izvēli un pēc noklusējuma izmantot angļu valodu</string>
+    <string name="language_clear_search_description">Notīrīt meklēšanu</string>
+    <string name="language_count_description">%d valodas pieejamas</string>
+    <string name="language_apply_description">Piemērot valodas izvēli un turpināt</string>
+    <string name="language_cancel_description">Atcelt valodas izvēli</string>
+    <string name="language_cancelled_announcement">Valodas izvēle atcelta</string>
+    <string name="language_selected_description">Izvēlētā valoda: %1$s, %2$s</string>
+    <string name="language_item_system">Sistēmas valoda: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, pašlaik izvēlēts</string>
+    <string name="language_item_system_selected">Sistēmas valoda: %1$s, %2$s, pašlaik izvēlēts</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Atgriezās pie valodas izvēles</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Sandbox režīms aktīvs</string>
+    <string name="sandbox_mode_banner">SANDBOX REŽĪMS AKTĪVS</string>
+    <string name="sandbox_mode_description">Izmanto testa vidi. Pieskarieties versijas numuram piecas reizes, lai pārslēgtu.</string>
+    <string name="sandbox_credential_title">Sandbox akreditācijas dati</string>
+    <string name="sandbox_credential_description">Ģenerējiet Sandbox akreditācijas datus, lai pārbaudītu verifikācijas plūsmas, neskarot ražošanas datus.</string>
+    <string name="sandbox_select_age">Izvēlēties vecumu</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Noklusējuma dzimšanas datums: %s</string>
+    <string name="sandbox_override_dob">Ignorēt noklusējuma dzimšanas datumu</string>
+    <string name="sandbox_override_description">Izmantot precīzu datumu, nevis vecumam atbilstošo noklusējumu.</string>
+    <string name="sandbox_date_of_birth">Dzimšanas datums</string>
+    <string name="sandbox_generate_credential">Ģenerēt akreditācijas datus</string>
+    <string name="sandbox_generating">Ģenerē…</string>
+    <string name="sandbox_test_credential_saved">Testa akreditācijas dati saglabāti</string>
+    <string name="sandbox_id_prefix">Identifikācijas prefikss: %s…</string>
+    <string name="sandbox_unable_to_generate">Nevar ģenerēt akreditācijas datus</string>
+    <string name="settings_sandbox_dob_format">Dzimšanas datums: %s</string>
+    <string name="settings_sandbox_age_dob_format">Vecums %d+ (dzimšanas datums: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Vides konfigurācija</string>
+    <string name="environment_current">Pašreizējā: %s</string>
+    <string name="environment_issuer_api">Izsniedzēja API (lietojumprogrammu saskarne): %s</string>
+    <string name="environment_verifier_api">Verificētāja API (lietojumprogrammu saskarne): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Dzēst akreditācijas datus?</string>
+    <string name="dialog_delete_credential_message">Šī darbība noņem akreditācijas datus no Jūsu ierīces. Ja nepieciešams, tos var atkal iegūt no izsniedzēja.</string>
+    <string name="dialog_delete_credential_announcement">Dialoglodziņš atvērts: akreditācijas datu dzēšana</string>
+    <string name="dialog_reset_proving_key_title">Atiestatīt pierādīšanas atslēgu?</string>
+    <string name="dialog_reset_proving_key_message">Pierādīšanas atslēga un palīgfaili tiks dzēsti un lejupielādēti no jauna nākamreiz, kad atvērsiet lietotni.</string>
+    <string name="dialog_reset_proving_key_announcement">Dialoglodziņš atvērts: pierādīšanas atslēgas atiestatīšana</string>
+    <string name="dialog_environment_info_announcement">Dialoglodziņš atvērts: vides konfigurācija</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">Pieejamība</string>
+    <string name="accessibility_service_label">Provii Wallet pieejamība</string>
+    <string name="accessibility_service_description">Provii Wallet pieejamības pakalpojums nodrošina uzlabotu atbalstu lietotājiem ar invaliditāti. Tas ietver automātisku akreditācijas datu nolasīšanu, vadītu navigāciju un vienkāršotas mijiedarbības.</string>
+    <string name="accessibility_personalize">Personalizējiet savu pieredzi</string>
+    <string name="accessibility_customize_features">Pielāgot pieejamības funkcijas</string>
+    <string name="accessibility_quick_setup">Ātrā iestatīšana</string>
+    <string name="accessibility_features_active">%d funkcijas aktīvas</string>
+    <string name="accessibility_customize_experience">Pielāgojiet savu pieredzi</string>
+    <string name="accessibility_reset_title">Atiestatīt pieejamības iestatījumus?</string>
+    <string name="accessibility_reset_message">Visas pieejamības preferences atgriezīsies uz noklusējuma vērtībām.</string>
+    <string name="accessibility_reset">Atiestatīt pieejamības iestatījumus</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Redze</string>
+    <string name="accessibility_category_interaction">Mijiedarbība</string>
+    <string name="accessibility_category_cognitive">Kognitīvais atbalsts</string>
+    <string name="accessibility_category_alternative_input">Alternatīvā ievade</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Ļoti liels teksts</string>
+    <string name="accessibility_extra_large_text_description">Palielināt pamata fontu izmērus par 45%</string>
+    <string name="accessibility_high_contrast">Augsts kontrasts</string>
+    <string name="accessibility_high_contrast_description">Izmantot augstas kontrastivitātes krāsas</string>
+    <string name="accessibility_reduce_transparency">Samazināt caurspīdīgumu</string>
+    <string name="accessibility_reduce_transparency_description">Noņemt izplūšanas un stikla efektus</string>
+    <string name="accessibility_dyslexia_font">Disleksijai draudzīgs fonts</string>
+    <string name="accessibility_dyslexia_font_description">Izmantot OpenDyslexic fontu uzlabotai lasāmībai</string>
+    <string name="accessibility_color_blind_mode">Krāsu akluma režīms</string>
+    <string name="accessibility_color_blind_optimized">Krāsas optimizētas %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Nav</string>
+    <string name="color_blind_protanopia">Protanopija (sarkanās krāsas aklums)</string>
+    <string name="color_blind_deuteranopia">Deuteranopija (zaļās krāsas aklums)</string>
+    <string name="color_blind_tritanopia">Tritanopija (zilās krāsas aklums)</string>
+    <string name="color_blind_monochrome">Monohromātisks</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Lielāki skāriena mērķi</string>
+    <string name="accessibility_larger_touch_targets_description">Palielināt pogu un elementu izmērus</string>
+    <string name="accessibility_reduce_motion">Samazināt kustību</string>
+    <string name="accessibility_reduce_motion_description">Samazināt animācijas un pārejas</string>
+    <string name="accessibility_extended_timeouts">Pagarināti taimeri</string>
+    <string name="accessibility_extended_timeouts_description">Atļaut vairāk laika ierobežota laika darbībām</string>
+    <string name="accessibility_simplified_gestures">Vienkāršoti žesti</string>
+    <string name="accessibility_simplified_gestures_description">Samazināt daudzpakāpju žestus</string>
+    <string name="accessibility_haptic_feedback">Haptiskā atgriezeniskā saite</string>
+    <string name="accessibility_haptic_feedback_description">Vibrācijas apstiprinājums darbībām</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Vienkāršota saskarne</string>
+    <string name="accessibility_simplified_interface_description">Paslēpt papildu opcijas un samazināt jucekli</string>
+    <string name="accessibility_show_step_numbers">Rādīt soļu numurus</string>
+    <string name="accessibility_show_step_numbers_description">Parādīt progresa indikatorus</string>
+    <string name="accessibility_detailed_descriptions">Detalizēti apraksti</string>
+    <string name="accessibility_detailed_descriptions_description">Nodrošināt papildu skaidrojošu tekstu</string>
+    <string name="accessibility_confirm_actions">Apstiprināt pirms darbībām</string>
+    <string name="accessibility_confirm_actions_description">Lūgt apstiprinājumu svarīgām operācijām</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Manuāla koda ievade</string>
+    <string name="accessibility_manual_code_entry_description">Atļaut QR (ātrās atbildes) kodus ievadīt manuāli, nevis skenēt</string>
+    <string name="accessibility_voice_input">Balss ievade</string>
+    <string name="accessibility_voice_input_description">Iespējot runas atpazīšanu teksta laukiem</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Redze</string>
+    <string name="accessibility_profile_motor">Motorika</string>
+    <string name="accessibility_profile_cognitive">Kognitīvā</string>
+    <string name="accessibility_profile_senior">Vecākā paaudze</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Atpakaļ</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Sākums</string>
+    <string name="breadcrumb_settings">Iestatījumi</string>
+    <string name="breadcrumb_accessibility">Pieejamība</string>
+    <string name="breadcrumb_language">Valoda</string>
+    <string name="breadcrumb_help">Palīdzības centrs</string>
+    <string name="breadcrumb_officer_mode">Amatpersonas režīms</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Tipogrāfija un teksta atstarpes</string>
+    <string name="accessibility_line_spacing">Rindu atstatums</string>
+    <string name="accessibility_line_spacing_description">Pielāgot atstarpi starp teksta rindām</string>
+    <string name="accessibility_paragraph_spacing">Rindkopu atstatums</string>
+    <string name="accessibility_paragraph_spacing_description">Pielāgot atstarpi starp rindkopām</string>
+    <string name="accessibility_letter_spacing">Burtu atstatums</string>
+    <string name="accessibility_letter_spacing_description">Pielāgot atstarpi starp burtiem</string>
+    <string name="accessibility_typography_aaa_note">AAA ieteikumi: 1,5x rindu atstatums, 2,0x rindkopu atstatums un 0,12em burtu atstatums.</string>
+    <string name="accessibility_spacing_current">Pašreizējā: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Taimera darbība</string>
+    <string name="accessibility_timeout_no_automatic">Bez automātiskiem taimeriem AAA atbilstībai</string>
+    <string name="accessibility_timeout_auto_advance_30">Automātiska pāreja pēc 30 sekundēm</string>
+    <string name="accessibility_timeout_auto_advance_60">Automātiska pāreja pēc 60 sekundēm</string>
+    <string name="accessibility_timeout_set_announcement">Taimera darbība iestatīta uz %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Kontrasta līmenis</string>
+    <string name="accessibility_contrast_aaa_ratio">7:1 kontrasta attiecība AAA atbilstībai</string>
+    <string name="accessibility_contrast_standard">Standarta kontrasts</string>
+    <string name="accessibility_contrast_aa_ratio">4,5:1 kontrasta attiecība AA atbilstībai</string>
+    <string name="accessibility_contrast_set_announcement">Kontrasta līmenis iestatīts uz %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Krāsu akluma režīms iestatīts uz %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">%1$s slīdnis. Pašreizējā vērtība: %2$s. %3$sDiapazons no %4$s līdz %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">Atbilst AAA. </string>
+    <string name="accessibility_slider_announcement">%1$s iestatīts uz %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, atbilst AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s iespējots</string>
+    <string name="accessibility_toggle_disabled">%s atspējots</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Verifikācijas atgriezeniskā saite</string>
+    <string name="accessibility_sound_enabled">Atskaņot skaņu pēc veiksmīgas darbības</string>
+    <string name="accessibility_sound_enabled_description">Atskaņot apstiprinājuma skaņu pēc veiksmīgas verifikācijas</string>
+    <string name="accessibility_sound_style">Skaņas stils</string>
+    <string name="accessibility_sound_preview">Priekšskatīt skaņu</string>
+    <string name="accessibility_sound_preview_preset">Priekšskatīt %s</string>
+    <string name="accessibility_sound_style_set_announcement">Skaņas stils iestatīts uz %s</string>
+    <string name="accessibility_haptic_enabled">Vibrēt pēc veiksmīgas darbības</string>
+    <string name="accessibility_haptic_enabled_description">Nodrošināt haptisku atgriezenisko saiti pēc veiksmīgas verifikācijas</string>
+    <string name="accessibility_sound_footer">Skaņa ievēro Jūsu ierīces klusuma režīma iestatījumus</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Skaļums</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Priekšskatīt pašreizējo skaļumu</string>
+    <string name="accessibility_volume_set_announcement">Skaļums iestatīts uz %d procentiem</string>
+    <string name="accessibility_volume_slider_description">Skaļuma slīdnis. Pašreizējā vērtība: %d procenti</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Atiestatīt iestatījumus</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">Amatpersonas režīms</string>
+    <string name="officer_id">Amatpersonas identifikācija (ID)</string>
+    <string name="officer_id_placeholder">piem., OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Ievadiet Jūsu piešķirto amatpersonas identifikāciju</string>
+    <string name="officer_yubikey_connected">YubiKey pievienots</string>
+    <string name="officer_connect_yubikey">Pievienot YubiKey</string>
+    <string name="officer_touch_yubikey">Pieskarieties savam YubiKey, lai autentificētos...</string>
+    <string name="officer_authenticate_hmac">Autentificēties ar HMAC (jauktkoda ziņojuma autentifikācijas kods)</string>
+    <string name="officer_authentication_process">Autentifikācijas process:</string>
+    <string name="officer_auth_steps">1. Ievadiet savu amatpersonas identifikāciju\n2. Noklikšķiniet uz Autentificēties\n3. Pieskarieties YubiKey, kad tas mirgo\n4. HMAC (jauktkoda ziņojuma autentifikācijas kods) autentifikācija pārbauda Jūsu identitāti</string>
+    <string name="officer_auth_failed">Autentifikācija neizdevās. Lūdzu, pārbaudiet savu amatpersonas identifikāciju un mēģiniet vēlreiz.</string>
+    <string name="officer_session_info">Amatpersona: %s</string>
+    <string name="officer_station_info">Stacija: %s</string>
+    <string name="officer_issued_today">Šodien izsniegts: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Izsniegt vecuma akreditācijas datus</string>
+    <string name="officer_issue_description">Pārbaudīt lietotāja identitāti un izsniegt digitālos vecuma akreditācijas datus</string>
+    <string name="officer_start_issuance">Sākt jaunu izsniegšanu</string>
+    <string name="officer_issuance_process">IZSNIEGŠANAS PROCESS</string>
+    <string name="officer_issuance_steps">1. Pārbaudiet lietotāja fizisko identifikācijas dokumentu\n2. Ievadiet viņu dzimšanas datumu\n3. Pārbaudiet, vai informācija precīzi atbilst\n4. Izsniediet akreditācijas datus ar apliecinājuma QR (ātrās atbildes) kodu\n5. Lietotājs skenē QR kodu, lai saņemtu akreditācijas datus</string>
+    <string name="officer_verify_identity">Pārbaudīt lietotāja identitāti</string>
+    <string name="officer_select_dob">Izvēlēties dzimšanas datumu</string>
+    <string name="officer_change_date">Mainīt datumu</string>
+    <string name="officer_age_years">Vecums: %d gadi</string>
+    <string name="officer_under_18_warning">Jaunāks par 18 gadiem , nevar izsniegt akreditācijas datus</string>
+    <string name="officer_verification_checklist">VERIFIKĀCIJAS KONTROLSARAKSTS</string>
+    <string name="officer_document_verified">Fiziskais dokuments pārbaudīts</string>
+    <string name="officer_document_verified_description">Esmu aplūkojis derīgu valdības izsniegtu identifikāciju</string>
+    <string name="officer_dob_matches">Dzimšanas datums precīzi atbilst</string>
+    <string name="officer_dob_matches_description">Dzimšanas datums fiziskajā dokumentā ir: %s</string>
+    <string name="officer_issue_credential">Izsniegt akreditācijas datus</string>
+    <string name="officer_user_scanned_successfully">Lietotājs veiksmīgi skenēja</string>
+    <string name="officer_return_to_dashboard">Atgriezties uz paneli</string>
+    <string name="officer_go_back">Atgriezties</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">YubiKey autentifikācija</string>
+    <string name="yubikey_step_format">%1$d. solis no %2$d</string>
+    <string name="yubikey_led_should_blink">YubiKey LED indikatoram jāmirgo</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Pārbauda ievadi...</string>
+    <string name="officer_state_creating_attestation">Veido apliecinājumu...</string>
+    <string name="officer_state_computing_commitment">Aprēķina kriptogrāfisko saistību...</string>
+    <string name="officer_state_creating_session">Veido drošu sesiju...</string>
+    <string name="officer_state_signing">Paraksta akreditācijas datus...</string>
+    <string name="officer_state_finalizing">Pabeidz akreditācijas datus...</string>
+    <string name="officer_state_storing_attestation">Saglabā apliecinājumu...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">Sesija drīz beigsies</string>
+    <string name="officer_session_expiring_message">Jūsu sesija beigsies pēc %d sekundēm. Vai vēlaties saglabāt progresu?</string>
+    <string name="officer_session_expiring_announcement">Brīdinājums: Jūsu sesija beigsies pēc %d sekundēm</string>
+    <string name="officer_save_and_continue">Saglabāt un turpināt</string>
+    <string name="officer_continue_without_saving">Turpināt bez saglabāšanas</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">DZIMŠANAS DATUMS</string>
+    <string name="officer_age_format">Vecums: %d gadi</string>
+    <string name="officer_under_18_full_warning">Jaunāks par 18 gadiem , nevar izsniegt akreditācijas datus. Tikai personas, kas ir 18 gadus vecas vai vecākas, ir tiesīgas saņemt vecuma verifikācijas akreditācijas datus. Lūdzu, pārbaudiet, vai dzimšanas datums ir pareizs.</string>
+    <string name="officer_verification_checklist_header">VERIFIKĀCIJAS KONTROLSARAKSTS</string>
+    <string name="officer_physical_document_verified">Fiziskais dokuments pārbaudīts</string>
+    <string name="officer_sighted_valid_id">Esmu aplūkojis derīgu valdības izsniegtu identifikāciju</string>
+    <string name="officer_dob_matches_exactly">Dzimšanas datums precīzi atbilst</string>
+    <string name="officer_dob_on_document">Dzimšanas datums fiziskajā dokumentā ir: %s</string>
+    <string name="officer_error_label">Kļūda</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">Skenēt izsniegšanas QR (ātrās atbildes) kodu</string>
+    <string name="issuance_downloads_credential">Tas lejupielādē Jūsu vecuma akreditācijas datus.</string>
+    <string name="issuance_center_qr">Centrējiet QR kodu rāmī un turiet mierīgi.</string>
+    <string name="issuance_enter_code_manually">Ievadīt kodu manuāli</string>
+    <string name="issuance_processing_qr">Apstrādā QR kodu…</string>
+    <string name="issuance_invalid_data">Nederīgi izsniegšanas dati</string>
+    <string name="issuance_verification_qr_error">Šis ir verifikācijas QR kods. Lūdzu, skenējiet akreditācijas datu izsniegšanas QR kodu.</string>
+    <string name="issuance_invalid_qr_format">Nederīgs QR koda formāts</string>
+    <string name="issuance_failed_to_process">Neizdevās apstrādāt QR kodu: %s</string>
+    <string name="issuance_code">Izsniegšanas kods</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">Manuāla koda ievade</string>
+    <string name="manual_entry_enter_code_manually">Ievadīt kodu manuāli</string>
+    <string name="manual_entry_verification_description">Ievadiet 12 ciparu verifikācijas kodu, kas redzams verificētāja ekrānā.</string>
+    <string name="manual_entry_issuance_description">Ierakstiet kodu, kas redzams izsniedzēja ekrānā.</string>
+    <string name="manual_entry_verification_code">Verifikācijas kods</string>
+    <string name="manual_entry_submit">Iesniegt kodu</string>
+    <string name="manual_entry_please_enter">Lūdzu, ievadiet kodu</string>
+    <string name="manual_entry_please_enter_verification">Lūdzu, ievadiet verifikācijas kodu</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Sākt klausīties</string>
+    <string name="voice_input_stop_listening">Pārtraukt klausīties</string>
+    <string name="voice_input_recognized">Atpazīts:</string>
+    <string name="content_desc_voice_input_listening">Klausās balss ievadi</string>
+    <string name="content_desc_voice_input_available">Balss ievade pieejama</string>
+    <string name="voice_input_permission_title">Nepieciešama mikrofona atļauja</string>
+    <string name="voice_input_permission_message">Balss ievadei nepieciešama piekļuve mikrofonam. To var iespējot sistēmas iestatījumos.</string>
+    <string name="voice_input_listening">Klausās…</string>
+    <string name="voice_input_error">Balss ievades kļūda</string>
+    <string name="voice_input_tap_to_speak">Pieskarieties, lai runātu</string>
+    <string name="voice_input_did_you_say">Vai Jūs teicāt "%1$s"?</string>
+    <string name="voice_input_confirm">Apstiprināt</string>
+    <string name="voice_input_retry">Mēģināt vēlreiz</string>
+    <string name="voice_input_cancel">Atcelt</string>
+    <string name="voice_input_button">Balss ievade</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">Balss ievade nav pieejama šajā ierīcē</string>
+    <string name="voice_input_error_audio">Audio ierakstīšanas kļūda. Pārbaudiet mikrofonu.</string>
+    <string name="voice_input_error_network">Tīkla kļūda. Pārbaudiet savienojumu.</string>
+    <string name="voice_input_error_network_timeout">Tīkla taimauts. Mēģiniet vēlreiz.</string>
+    <string name="voice_input_error_no_match">Runa nav atklāta. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="voice_input_error_recognizer_busy">Balss ievade aizņemta. Lūdzu, uzgaidiet.</string>
+    <string name="voice_input_error_server">Servera kļūda. Mēģiniet vēlāk.</string>
+    <string name="voice_input_error_speech_timeout">Runa nav dzirdēta. Lūdzu, runājiet skaļāk.</string>
+    <string name="voice_input_error_insufficient_permissions">Mikrofona atļauja liegta.</string>
+    <string name="voice_input_error_generic">Balss ievades kļūda. Lūdzu, mēģiniet vēlreiz.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">Atpakaļ</string>
+    <string name="action_close">Aizvērt</string>
+    <string name="action_cancel">Atcelt</string>
+    <string name="action_ok">Labi</string>
+    <string name="action_set">Iestatīt</string>
+    <string name="action_change">Mainīt</string>
+    <string name="action_delete">Dzēst</string>
+    <string name="action_reset">Atiestatīt</string>
+    <string name="action_retry">Atkārtot</string>
+    <string name="action_try_again">Mēģināt vēlreiz</string>
+    <string name="action_refresh">Atsvaidzināt</string>
+    <string name="action_download_now">Lejupielādēt tagad</string>
+    <string name="action_retry_setup">Atkārtot iestatīšanu</string>
+    <string name="action_retry_download">Atkārtot lejupielādi</string>
+    <string name="action_restart_setup">Restartēt iestatīšanu</string>
+    <string name="action_manage_storage">Pārvaldīt krātuvi</string>
+    <string name="action_check_wifi_settings">Vispirms pārbaudīt Wi-Fi iestatījumus</string>
+    <string name="action_check_wifi_settings_short">Pārbaudīt Wi-Fi iestatījumus</string>
+    <string name="action_grant_permission">Piešķirt atļauju</string>
+    <string name="action_grant_camera_access">Piešķirt kameras piekļuvi</string>
+    <string name="action_return_to_browser">Atgriezties pārlūkprogrammā</string>
+    <string name="action_show_debug_info">Rādīt Debug informāciju</string>
+    <string name="action_reset_redownload">Atiestatīt un atkārtoti lejupielādēt</string>
+    <string name="action_end_session">Beigt sesiju</string>
+    <string name="action_expand">Izvērst</string>
+    <string name="action_collapse">Sakļaut</string>
+    <string name="accessibility_state_expanded">Izvērsts</string>
+    <string name="accessibility_state_collapsed">Sakļauts</string>
+    <string name="accessibility_state_checked">Atzīmēts</string>
+    <string name="accessibility_state_unchecked">Neatzīmēts</string>
+    <string name="accessibility_state_selected">Izvēlēts</string>
+    <string name="accessibility_state_not_selected">Nav izvēlēts</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">Radās kļūda</string>
+    <string name="error_camera_permission">Kameras atļauja nepieciešama QR (ātrās atbildes) skenēšanai</string>
+    <string name="error_camera_access_needed">Nepieciešama piekļuve kamerai</string>
+    <string name="error_camera_permission_description">Piešķiriet kameras atļauju, lai skenētu QR kodus, vai iespējojiet manuālo ievadi pieejamības iestatījumos.</string>
+    <string name="error_camera_permission_required">Kameras atļauja ir nepieciešama, lai skenētu QR kodus</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">Meklē QR kodu...</string>
+    <string name="qr_scanner_camera_required">Nepieciešama kameras atļauja</string>
+    <string name="qr_scanner_camera_preview">Kameras priekšskatījums QR kodu skenēšanai</string>
+    <string name="qr_scanner_status_scanning">Meklē QR kodu</string>
+    <string name="qr_scanner_requesting_permission">Pieprasa kameras atļauju</string>
+    <string name="error_camera_start_failed">Neizdevās palaist kameru: %s</string>
+    <string name="error_camera_init_failed">Kameras inicializācija neizdevās: %s</string>
+    <string name="error_biometric_not_available">Biometriskā autentifikācija nav pieejama</string>
+    <string name="error_network">Radās tīkla kļūda</string>
+    <string name="error_no_credential">Nav pieejamu akreditācijas datu. Lūdzu, vispirms iegūstiet akreditācijas datus.</string>
+    <string name="credential_picker_title">Izvēlēties akreditācijas datus</string>
+    <string name="credential_picker_description">Jums ir vairāki akreditācijas dati, ko var izmantot šai verifikācijai. Lūdzu, izvēlieties vienu.</string>
+    <string name="credential_picker_expired_label">Derīgums beidzies</string>
+    <string name="credential_picker_accessibility_select">Izvēlēties akreditācijas datus: %1$s</string>
+    <string name="error_failed_to_process_challenge">Neizdevās apstrādāt izaicinājumu</string>
+    <string name="error_failed_to_create_proof">Neizdevās izveidot pierādījumu</string>
+    <string name="error_verification_failed">Verifikācija neizdevās</string>
+    <string name="error_occurred_during_verification">Verifikācijas laikā radās kļūda</string>
+    <string name="error_connection_timeout">Savienojuma laiks beidzās. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="error_unable_to_connect">Nevar izveidot savienojumu. Lūdzu, pārbaudiet interneta savienojumu.</string>
+    <string name="error_secure_connection_failed">Drošā savienojuma izveide neizdevās. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="error_security_verification_failed">Drošības pārbaude neizdevās. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="error_invalid_input">Nederīga ievade. Lūdzu, pārbaudiet informāciju un mēģiniet vēlreiz.</string>
+    <string name="error_operation_in_progress">Notiek cita operācija. Lūdzu, uzgaidiet.</string>
+    <string name="error_operation_cancelled">Operācija tika atcelta.</string>
+    <string name="error_age_requirement_not_met">Vecuma prasība šiem akreditācijas datiem nav izpildīta.</string>
+    <string name="error_biometric_required">Lai turpinātu, nepieciešama biometriskā autentifikācija.</string>
+    <string name="error_wallet_not_initialized">Maks nav inicializēts. Lūdzu, restartējiet lietotni.</string>
+    <string name="error_security">Drošības kļūda. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="error_connection_timeout_short">Savienojuma taimauts. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="error_invalid_input_provided">Sniegta nederīga ievade.</string>
+    <string name="error_invalid_data_format">Nederīgs datu formāts. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="error_storage">Krātuves kļūda. Lūdzu, pārbaudiet ierīces krātuvi.</string>
+    <string name="error_network_short">Tīkla kļūda. Lūdzu, pārbaudiet savienojumu.</string>
+    <string name="error_label">Kļūda</string>
+    <string name="error_dismiss">Noraidīt kļūdu</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">Apstrādā...</string>
+    <string name="status_initializing_wallet">Inicializē maku...</string>
+    <string name="status_loading">Ielādē...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">Privātums aizsargāts</string>
+    <string name="privacy_zk_description">Jūsu dzimšanas datums nekad netiek kopīgots. Verificētāji uzzina tikai to, vai Jūs atbilstat viņu vecuma prasībai.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Privātuma iestatījumi</string>
+    <string name="privacy_settings_description">Kontrolēt datu vākšanu un pārvaldīt savus datus</string>
+    <string name="privacy_section_data_collection">Datu vākšana</string>
+    <string name="privacy_section_your_data">Jūsu dati</string>
+    <string name="privacy_protection_title">Jūsu privātums ir aizsargāts</string>
+    <string name="privacy_protection_description">Provii Wallet izmanto nulles zināšanu pierādījumus, lai pārbaudītu Jūsu vecumu, neatklājot dzimšanas datumu. Jūsu akreditācijas dati tiek glabāti tikai Jūsu ierīcē un nekad netiek kopīgoti ar nevienu.</string>
+    <string name="privacy_analytics_title">Analītika</string>
+    <string name="privacy_analytics_description">Palīdzēt uzlabot Provii Wallet, kopīgojot anonīmus lietošanas datus</string>
+    <string name="privacy_analytics_enabled">Analītika iespējota</string>
+    <string name="privacy_analytics_disabled">Analītika atspējota</string>
+    <string name="privacy_crash_reporting_title">Avāriju ziņojumi</string>
+    <string name="privacy_crash_reporting_description">Palīdzēt mums novērst kļūdas, automātiski sūtot avāriju ziņojumus</string>
+    <string name="privacy_crash_reporting_enabled">Avāriju ziņojumi iespējoti</string>
+    <string name="privacy_crash_reporting_disabled">Avāriju ziņojumi atspējoti</string>
+    <string name="privacy_what_we_collect_title">Kādus datus mēs vācam</string>
+    <string name="privacy_what_we_collect_subtitle">Pieskarieties, lai uzzinātu par mūsu datu praksi</string>
+    <string name="privacy_data_collection_info_title">Informācija par datu vākšanu</string>
+    <string name="privacy_data_we_collect_header">Ko mēs vācam (ja iespējots):</string>
+    <string name="privacy_data_we_collect_list">- Anonīma lietotnes lietošanas statistika\n- Avāriju ziņojumi un kļūdu žurnāli\n- Ierīces tips un OS versija\n- Lietotnes versijas informācija</string>
+    <string name="privacy_data_we_dont_collect_header">Ko mēs nekad nevācam:</string>
+    <string name="privacy_data_we_dont_collect_list">- Jūsu dzimšanas datumu\n- Jūsu vārdu vai personas datus\n- Jūsu atrašanās vietu\n- Jūsu akreditācijas datus\n- Biometriskos datus</string>
+    <string name="privacy_data_never_shared_note">Jūsu akreditācijas dati nekad netiek kopīgoti ar Provii vai jebkuru trešo pusi. Tie paliek Jūsu ierīcē.</string>
+    <string name="privacy_policy_title">Privātuma politika</string>
+    <string name="privacy_policy_subtitle">Lasīt mūsu pilno privātuma politiku</string>
+    <string name="privacy_delete_my_data_title">Dzēst manus datus</string>
+    <string name="privacy_delete_my_data_subtitle">Noņemt visus saglabātos akreditācijas datus un datus</string>
+    <string name="privacy_delete_data_dialog_title">Dzēst visus datus?</string>
+    <string name="privacy_delete_data_dialog_message">Tas neatgriezeniski izdzēsīs visus Jūsu akreditācijas datus un lietotnes datus no šīs ierīces. Jums būs jāiegūst jauni akreditācijas dati, lai atkal lietotu lietotni.</string>
+    <string name="privacy_delete_data_dialog_warning">Šo darbību nevar atsaukt.</string>
+    <string name="privacy_delete_data_confirm">Dzēst visu</string>
+    <string name="privacy_footer_note">Šos iestatījumus var mainīt jebkurā laikā. Izmaiņas stājas spēkā nekavējoties.</string>
+    <string name="dialog_delete_data_announcement">Datu dzēšanas apstiprinājuma dialoglodziņš atvērts</string>
+    <string name="dialog_data_collection_info_announcement">Datu vākšanas informācijas dialoglodziņš atvērts</string>
+    <string name="content_desc_privacy_settings">Privātuma iestatījumi, kontrolē datu vākšanu un pārvalda Jūsu datus</string>
+    <string name="content_desc_data_collection_info">Skatīt informāciju par datu vākšanu</string>
+    <string name="content_desc_privacy_policy">Skatīt privātuma politiku</string>
+    <string name="content_desc_opens_external_link">Atveras pārlūkprogrammā</string>
+    <string name="content_desc_delete_my_data">Dzēst visus manus datus</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">Atpakaļ</string>
+    <string name="content_desc_settings">Iestatījumi</string>
+    <string name="content_desc_refresh">Atsvaidzināt</string>
+    <string name="content_desc_verified">Pārbaudīts</string>
+    <string name="content_desc_expand">Izvērst</string>
+    <string name="content_desc_collapse">Sakļaut</string>
+    <string name="content_desc_warning_error">Brīdinājums: radās kļūda</string>
+    <string name="content_desc_sandbox_indicator">Sandbox režīma indikators</string>
+    <string name="content_desc_success">Veiksmīgi</string>
+    <string name="content_desc_warning">Brīdinājums</string>
+    <string name="content_desc_information">Informācija</string>
+    <string name="content_desc_error">Kļūda</string>
+    <string name="content_desc_sandbox_warning">Sandbox režīma brīdinājums</string>
+    <string name="content_desc_app_info">Lietotnes informācija</string>
+    <string name="content_desc_accessibility_settings">Pieejamības iestatījumi</string>
+    <string name="content_desc_language_settings">Valodas iestatījumi</string>
+    <string name="content_desc_licenses">Atvērtā pirmkoda licences</string>
+    <string name="content_desc_select_dob">Izvēlēties dzimšanas datumu</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Izsniedz testa akreditācijas datus kā Izsniedzējs</string>
+    <string name="content_desc_get_credential">Iegūt akreditācijas datus</string>
+    <string name="content_desc_delete_credential">Dzēst akreditācijas datus</string>
+    <string name="content_desc_reset_proving_key">Atiestatīt pierādīšanas atslēgu</string>
+    <string name="content_desc_environment_info">Vides informācija</string>
+    <string name="content_desc_help_support">Palīdzība un atbalsts</string>
+    <string name="content_desc_privacy_protected">Privātums aizsargāts</string>
+    <string name="preview_settings_title">Iestatījumu priekšskatījums</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">Veiksmīgi</string>
+    <string name="accessibility_verification_error_description">Kļūda</string>
+    <string name="accessibility_breadcrumb_location_description">Atrašanās vieta: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">tad</string>
+    <string name="accessibility_breadcrumb_current_page_description">Pašreizējā lapa: %s</string>
+    <string name="accessibility_settings_navigate_description">Navigēt</string>
+    <string name="accessibility_credentials_settings_description">Iestatījumi</string>
+    <string name="accessibility_verification_back_description">Atpakaļ</string>
+    <string name="accessibility_officer_back_description">Atpakaļ</string>
+    <string name="accessibility_discovery_back_description">Atpakaļ</string>
+    <string name="accessibility_discovery_refresh_description">Atsvaidzināt</string>
+    <string name="accessibility_discovery_verified_description">Pārbaudīts</string>
+    <string name="accessibility_officer_done_description">Gatavs</string>
+    <string name="accessibility_officer_attestation_qr_description">Apliecinājuma QR kods lietotājam skenēšanai</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">Pāriet uz %s</string>
+    <string name="accessibility_skip_main_content">galveno saturu</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Redzes traucējumi</string>
+    <string name="accessibility_profile_motor_impaired">Kustību traucējumi</string>
+    <string name="accessibility_profile_cognitive_support">Kognitīvais atbalsts</string>
+    <string name="accessibility_profile_elderly_support">Atbalsts vecāka gadagājuma cilvēkiem</string>
+    <string name="accessibility_profile_default">Noklusējums</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Nav</string>
+    <string name="color_blind_mode_protanopia">Protanopija</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopija</string>
+    <string name="color_blind_mode_tritanopia">Tritanopija</string>
+    <string name="color_blind_mode_monochrome">Monohromātisks</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Standarta</string>
+    <string name="contrast_level_high">Augsts (AA)</string>
+    <string name="contrast_level_maximum">Maksimāls (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Pilns platums</string>
+    <string name="text_width_comfortable">Ērts (80 rakstzīmes)</string>
+    <string name="text_width_narrow">Šaurs (60 rakstzīmes)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Bez taimauta (AAA)</string>
+    <string name="timeout_behavior_standard">Standarta (30 s)</string>
+    <string name="timeout_behavior_extended">Pagarināts (60 s)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Standarta</string>
+    <string name="reading_level_standard_description">Parasts teksts ar tehniskiem terminiem</string>
+    <string name="reading_level_simplified">Vienkāršots (7.–9. klase)</string>
+    <string name="reading_level_simplified_description">Vienkāršāki vārdi un īsāki teikumi (atbilst AAA)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">Palīdzība</string>
+    <string name="help_and_support">Palīdzība un atbalsts</string>
+    <string name="help_description">Saņemiet palīdzību par lietotnes funkcijām un pieejamību</string>
+    <string name="help_center">Palīdzības centrs</string>
+    <string name="help_center_description">Pārlūkot palīdzības tēmas un uzzināt par lietotnes funkcijām</string>
+    <string name="help_search">Meklēt palīdzībā</string>
+    <string name="help_search_placeholder">Meklēt palīdzības tēmas...</string>
+    <string name="help_search_active">Meklēšana aktivizēta</string>
+    <string name="help_search_inactive">Meklēšana deaktivizēta</string>
+    <string name="help_no_results">Nav atrasto palīdzības tēmu, kas atbilstu Jūsu meklēšanai</string>
+    <string name="help_topic_not_found">Palīdzības tēma nav atrasta</string>
+    <string name="help_related_topics">Saistītās tēmas</string>
+    <string name="help_content_heading">Palīdzības saturs</string>
+    <string name="help_related_topic_position">%1$s, %2$d. elements no %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Redze</string>
+    <string name="help_category_typography">Tipogrāfija</string>
+    <string name="help_category_interaction">Mijiedarbība</string>
+    <string name="help_category_cognitive">Kognitīvais atbalsts</string>
+    <string name="help_category_alternative_input">Alternatīvā ievade</string>
+    <string name="help_category_features">Funkcijas</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Akreditācijas datu iegūšana</string>
+    <string name="help_topic_getting_credential_summary">Uzziniet, kā iegūt savus pirmos vecuma verifikācijas akreditācijas datus</string>
+    <string name="help_topic_getting_credential_content">Lai iegūtu vecuma verifikācijas akreditācijas datus:\n\n1. Apmeklējiet pilnvarota izsniedzēja atrašanās vietu\n2. Uzrādiet savu valdības izsniegto ID\n3. Skenējiet sniegto QR kodu\n4. Jūsu akreditācijas dati tiks droši saglabāti\n\nJūsu dzimšanas datums tiek glabāts lokāli un nekad netiek kopīgots.</string>
+
+    <string name="help_topic_verifying_age_title">Vecuma pārbaude</string>
+    <string name="help_topic_verifying_age_summary">Kā pierādīt savu vecumu, neatklājot personisko informāciju</string>
+    <string name="help_topic_verifying_age_content">Kad nepieciešams pārbaudīt savu vecumu:\n\n1. Verificētājs Jums parādīs QR kodu\n2. Skenējiet to ar lietotni\n3. Lietotne izveido matemātisku pierādījumu\n4. Tiek kopīgota tikai atbilde jā/nē\n\nJūsu faktiskais dzimšanas datums NEKAD netiek atklāts.</string>
+
+    <string name="help_topic_accessibility_title">Pieejamības funkcijas</string>
+    <string name="help_topic_accessibility_summary">Pielāgojiet lietotni savām vajadzībām</string>
+    <string name="help_topic_accessibility_content">Lietotnē ir daudz pieejamības funkciju:\n\n- Liels teksts un augsta kontrasta režīmi\n- Balss ievade un ekrāna lasītāja atbalsts\n- Vienkāršoti žesti un lietotāja saskarne\n- Manuālas koda ievades iespējas\n- Pagarināti taimeri\n\nPiekļūstiet tiem sadaļā Iestatījumi > Pieejamība</string>
+
+    <string name="help_topic_privacy_security_title">Privātums un drošība</string>
+    <string name="help_topic_privacy_security_summary">Kā tiek aizsargāta Jūsu informācija</string>
+    <string name="help_topic_privacy_security_content">Jūsu privātums ir mūsu galvenā prioritāte:\n\n- Akreditācijas dati glabājas lokāli Jūsu ierīcē\n- Nulles zināšanu pierādījumi aizsargā Jūsu datus\n- Nav izsekošanas vai analītikas\n- Biometriskā autentifikācija pieejama\n- Dati nekad neatstāj Jūsu ierīci nešifrēti</string>
+
+    <string name="help_topic_troubleshooting_title">Problēmu novēršana</string>
+    <string name="help_topic_troubleshooting_summary">Biežākās problēmas un risinājumi</string>
+    <string name="help_topic_troubleshooting_content">Biežākās problēmas un labojumi:\n\nQR skeneris nedarbojas:\n- Pārbaudiet kameras atļaujas sadaļā Iestatījumi\n- Mēģiniet manuālās koda ievades iespēju\n\nAkreditācijas dati netiek ielādēti:\n- Pārbaudiet interneta savienojumu\n- Mēģiniet atiestatīt pierādīšanas atslēgu\n\nVerifikācija neizdevās:\n- Pārliecinieties, ka akreditācijas datiem nav beidzies derīgums\n- Sazinieties ar verificētāju, lai saņemtu atbalstu</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">DZIMŠANAS DATUMS</string>
+    <string name="date_of_birth">Dzimšanas datums</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">%d gadi</string>
+    <string name="format_step_indicator">%1$d. solis no %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">Akreditācijas dati</string>
+    <string name="tab_settings">Iestatījumi</string>
+    <string name="tab_help">Palīdzība</string>
+    <string name="tab_credentials_description">Skatīt savus akreditācijas datus</string>
+    <string name="tab_settings_description">Lietotnes iestatījumi</string>
+    <string name="tab_help_description">Saņemt palīdzību un atbalstu</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">Meklēšana</string>
+    <string name="search_field_label">Meklēšanas lauks</string>
+    <string name="search_placeholder">Meklēt iestatījumus, palīdzību un funkcijas</string>
+    <string name="search_clear">Notīrīt meklēšanu</string>
+    <string name="search_popular">Populārākās meklēšanas</string>
+    <string name="search_results_heading">Meklēšanas rezultāti</string>
+    <string name="search_no_results">Rezultāti nav atrasti</string>
+    <string name="search_try_suggestions">Mēģiniet meklēt:\n• Pieejamība\n• Iestatījumi\n• Palīdzība\n• Valoda</string>
+    <string name="search_results_announcement_singular">Atrasts 1 rezultāts</string>
+    <string name="search_results_announcement_plural">Atrasti %d rezultāti</string>
+    <string name="search_no_results_announcement">Rezultāti nav atrasti</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">Ātrā piekļuve</string>
+    <string name="help_topics">Palīdzības tēmas</string>
+    <string name="help_glossary">Vārdnīca</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">Atvērtā pirmkoda licences</string>
+    <string name="licenses_description">Šī lietotne izmanto šādu atvērtā pirmkoda programmatūru. Esam pateicīgi izstrādātājiem, kuri izveidoja šīs bibliotēkas.</string>
+    <string name="licenses_tap_to_view">Pieskarieties, lai skatītu pilno licenci</string>
+    <string name="licenses_group_header">%1$s (%2$d bibliotēkas)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">Nav interneta savienojuma. Lūdzu, pārbaudiet tīklu un mēģiniet vēlreiz.</string>
+    <string name="error_unexpected">Radās neparedzēta kļūda. Lūdzu, restartējiet lietotni.</string>
+    <string name="error_unexpected_try_again">Radās neparedzēta kļūda. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="error_storage_detailed">Krātuves kļūda: %s</string>
+    <string name="error_network_detailed">Tīkla kļūda: %s</string>
+    <string name="error_proof_generation_failed">Neizdevās ģenerēt pierādījumu: %s</string>
+    <string name="error_not_eligible">Nav tiesīgs. Jūs neatbilstat šīs verifikācijas prasībām.</string>
+    <string name="error_challenge_expired">Izaicinājuma derīgums beidzies vai tas nav atrasts. Lūdzu, pieprasiet jaunu.</string>
+    <string name="error_challenge_expired_scan_new">Šī izaicinājuma derīgums ir beidzies. Lūdzu, skenējiet jaunu QR kodu.</string>
+    <string name="error_request_out_of_order">Pieprasījums nav kārtībā. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="error_too_many_requests">Pārāk daudz pieprasījumu. Lūdzu, uzgaidiet brīdi un mēģiniet vēlreiz.</string>
+    <string name="error_server">Servera kļūda. Lūdzu, mēģiniet vēlāk.</string>
+    <string name="error_request_failed">Pieprasījums neizdevās (%d). Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="error_not_eligible_short">Nav tiesīgs šai verifikācijai</string>
+    <string name="error_challenge_not_found">Izaicinājums nav atrasts</string>
+    <string name="error_complete_steps_in_order">Lūdzu, izpildiet soļus secībā</string>
+    <string name="error_challenge_expired_short">Izaicinājuma derīgums beidzies</string>
+    <string name="error_authentication_cancelled">Autentifikācija atcelta. Lūdzu, apstipriniet savu identitāti, lai pabeigtu vecuma pārbaudi.</string>
+    <string name="error_invalid_data_format_short">Nederīgs datu formāts. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="error_storage_check_device">Krātuves kļūda. Lūdzu, pārbaudiet ierīces krātuvi.</string>
+    <string name="error_network_check_connection">Tīkla kļūda. Lūdzu, pārbaudiet savienojumu.</string>
+    <string name="error_proof_generation_failed_short">Neizdevās ģenerēt pierādījumu. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="error_operation_in_progress_short">Notiek cita operācija.</string>
+    <string name="error_no_internet_short">Nav interneta savienojuma. Lūdzu, pārbaudiet tīklu.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Skenēt verifikācijas QR kodu</string>
+    <string name="verification_verifying_title">Vecuma pārbaude</string>
+    <string name="verification_success_title">Vecums apstiprināts</string>
+    <string name="verification_failed_title">Verifikācija neizdevās</string>
+    <string name="verification_processing_wait">Tas var aizņemt dažas sekundes</string>
+    <string name="verification_success_message">Jūsu vecums ir privāti apstiprināts</string>
+    <string name="verification_return_to_site">Tagad varat atgriezties vietnē, lai turpinātu.</string>
+    <string name="verification_please_enter_code">Lūdzu, ievadiet verifikācijas kodu. Kodam jābūt vai nu 12 ciparu īskodam, vai pilnam verifikācijas URL no verificētāja.</string>
+    <string name="verification_error_occurred">Verifikācijas laikā radās kļūda</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Apstrādā...</string>
+    <string name="credential_list_verify_age_button">Pārbaudīt vecumu</string>
+    <string name="credential_list_generate_in_person_description">Ģenerēt akreditācijas datus klātienē</string>
+    <string name="credential_list_scan_qr_title">Skenēt QR kodu</string>
+    <string name="credential_list_find_locations_title">Atrast atrašanās vietas</string>
+    <string name="credential_section_my_credential">Mans akreditācijas dokuments</string>
+    <string name="credential_section_managed">Pārvaldītie akreditācijas dati</string>
+    <string name="credential_list_get_credential_button">Iegūt akreditācijas datus</string>
+    <string name="credential_list_add_managed_button">Pievienot pārvaldītos akreditācijas datus</string>
+    <string name="credential_section_managed_empty">Pievienojiet akreditācijas datus kādam, par ko rūpējaties, piemēram, bērnam.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Akreditācijas datu detaļas</string>
+    <string name="credential_detail_not_found">Akreditācijas dati nav atrasti</string>
+    <string name="credential_detail_nickname">Segvārds</string>
+    <string name="credential_detail_no_nickname">Nav iestatīts segvārds</string>
+    <string name="credential_detail_edit_nickname">Rediģēt segvārdu</string>
+    <string name="credential_detail_status">Statuss</string>
+    <string name="credential_detail_delete">Dzēst akreditācijas datus</string>
+    <string name="credential_detail_delete_title">Dzēst akreditācijas datus</string>
+    <string name="credential_detail_delete_message">Vai tiešām vēlaties dzēst šos akreditācijas datus? Šo darbību nevar atsaukt.</string>
+    <string name="credential_type_primary">Primārie</string>
+    <string name="credential_type_managed">Pārvaldītie</string>
+    <string name="credential_status_valid">Derīgs</string>
+    <string name="credential_status_expired">Derīgums beidzies</string>
+    <string name="credential_status_invalid">Nederīgs</string>
+    <string name="action_save">Saglabāt</string>
+    <string name="credential_slots_full_title">Sasniegts maksimālais akreditācijas datu skaits</string>
+    <string name="credential_slots_full_message">Jūs esat sasniedzis maksimālo akreditācijas datu skaitu. Dzēsiet esošos akreditācijas datus, lai pievienotu jaunus.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">Pārvaldītie akreditācijas dati</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">Pārbaudīt %1$s vecumu?</string>
+    <string name="managed_confirm_message">Jūs gatavojaties pārbaudīt vecumu, izmantojot %1$s pārvaldītos akreditācijas datus.</string>
+    <string name="managed_confirm_proceed">Pārbaudīt %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Veido pierādījumu %1$s</string>
+    <string name="verification_age_verified_for">%1$s vecums apstiprināts</string>
+    <string name="deeplink_verification_age_verified_for">%1$s vecums apstiprināts</string>
+    <string name="attestation_managed_credential_received">%1$s akreditācijas dati saņemti!</string>
+    <string name="attestation_managed_credential_stored">Jūsu bērna akreditācijas dati ir droši saglabāti.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">Dzēst %1$s akreditācijas datus?</string>
+    <string name="credential_detail_delete_managed_message">Vai tiešām vēlaties dzēst šos pārvaldītos akreditācijas datus %1$s? Šo darbību nevar atsaukt. Jums vajadzēs vēlreiz apmeklēt izsniedzēju, lai tos aizstātu.</string>
+    <string name="credential_detail_save_error">Neizdevās saglabāt segvārdu</string>
+    <string name="credential_detail_delete_error">Neizdevās dzēst akreditācijas datus</string>
+    <string name="accessibility_saving">Saglabā...</string>
+    <string name="accessibility_deleting">Dzēš...</string>
+    <string name="accessibility_loading">Ielādē, lūdzu uzgaidiet</string>
+    <string name="accessibility_issuing_credential">Izsniedz akreditācijas datus, lūdzu uzgaidiet</string>
+    <string name="dialog_delete_all_credentials_title">Dzēst visus akreditācijas datus?</string>
+    <string name="dialog_delete_all_credentials_message">Tiks dzēsti Jūsu akreditācijas dati un visi bērniem pārvaldītie akreditācijas dati. Šo darbību nevar atsaukt.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">Pārvaldīts</string>
+    <string name="credential_slots_count">%1$d no 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Sagatavo verifikāciju...</string>
+    <string name="deeplink_verification_checking_credential">Pārbauda akreditācijas datus...</string>
+    <string name="deeplink_verification_processing_challenge">Apstrādā izaicinājumu...</string>
+    <string name="deeplink_verification_creating_proof">Veido drošu pierādījumu...</string>
+    <string name="deeplink_verification_submitting_proof">Iesniedz pierādījumu...</string>
+    <string name="deeplink_verification_success">✔ Vecums veiksmīgi apstiprināts</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">Akreditācijas dati nav atrasti. Lūdzu, vispirms iestatiet savus akreditācijas datus.</string>
+    <string name="deeplink_verification_error_failed_challenge">Neizdevās apstrādāt verifikācijas izaicinājumu</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Nevar parādīt autentifikācijas uzvedni</string>
+    <string name="deeplink_verification_error_failed_proof">Neizdevās izveidot vecuma pierādījumu</string>
+    <string name="deeplink_verification_error_verification_failed">Verifikācija neizdevās</string>
+    <string name="deeplink_verification_error_unexpected">Radās neparedzēta kļūda</string>
+    <string name="deeplink_verification_error_no_credential_selected">Nav izvēlēti akreditācijas dati. Lūdzu, mēģiniet vēlreiz.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Izvēlēties akreditācijas datus</string>
+    <string name="deeplink_verification_select_credential_subtitle">Pieejami vairāki akreditācijas dati. Izvēlieties, kurus izmantot šai verifikācijai.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Vecuma pārbaude</string>
+    <string name="deeplink_verification_title_verified">Apstiprināts</string>
+    <string name="deeplink_verification_title_failed">Verifikācija neizdevās</string>
+    <string name="deeplink_verification_please_wait">Lūdzu, uzgaidiet...</string>
+    <string name="deeplink_verification_age_verified">Vecums apstiprināts!</string>
+    <string name="deeplink_verification_under_age_verified">Apstiprināts: jaunāks par %1$d</string>
+    <string name="deeplink_verification_returning_browser">Atgriežas pārlūkprogrammā...</string>
+    <string name="deeplink_verification_return_to_browser">Atgriezties pārlūkprogrammā</string>
+    <string name="deeplink_verification_failed_title">Verifikācija neizdevās</string>
+    <string name="deeplink_verification_error_occurred">Verifikācijas laikā radās kļūda</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">IZSNIEGŠANAS PROCESS</string>
+    <string name="officer_issuance_process_steps">1. Pārbaudiet lietotāja fizisko identifikācijas dokumentu\n2. Ievadiet viņu dzimšanas datumu\n3. Pārbaudiet, vai informācija precīzi atbilst\n4. Izsniediet akreditācijas datus ar apliecinājuma QR (ātrās atbildes) kodu\n5. Lietotājs skenē QR kodu, lai saņemtu akreditācijas datus</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">Neizdevās ģenerēt QR kodu</string>
+    <string name="officer_attestation_ready_title">Apliecinājums gatavs</string>
+    <string name="officer_attestation_scan_instruction">Lietotājam jāskenē šis QR kods ar savu Provii Wallet lietotni</string>
+    <string name="officer_attestation_deeplink_label">APLIECINĀJUMA DEEPLINK</string>
+    <string name="officer_wait_for_attestation_scan">Uzgaidiet, kamēr lietotājs skenē</string>
+    <string name="officer_attestation_info">Akreditācijas dati tiks ģenerēti viņu ierīcē</string>
+    <string name="officer_attestation_complete">Apliecinājums pabeigts</string>
+    <string name="officer_user_will_complete_credential">Lietotājs pabeidz akreditācijas datu ģenerēšanu savā ierīcē</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Atšifrē apliecinājuma datus...</string>
+    <string name="attestation_generating_randomness">Ģenerē drošu nejauši atlasītu skaitli...</string>
+    <string name="attestation_sending">Nosūta izsniedzējam...</string>
+    <string name="attestation_verifying">Pārbauda saistību...</string>
+    <string name="attestation_storing">Saglabā akreditācijas datus...</string>
+    <string name="attestation_complete">Akreditācijas dati pabeigti!</string>
+    <string name="attestation_error_invalid_data">Nederīgi apliecinājuma dati</string>
+    <string name="attestation_error_expired">Apliecinājuma derīgums beidzies</string>
+    <string name="attestation_error_network">Tīkla kļūda , lūdzu, pārbaudiet savienojumu</string>
+    <string name="attestation_error_unexpected">Radās neparedzēta kļūda</string>
+    <string name="attestation_title_processing">Apstrādā apliecinājumu</string>
+    <string name="attestation_title_success">Akreditācijas dati saņemti</string>
+    <string name="attestation_title_failed">Izsniegšana neizdevās</string>
+    <string name="attestation_secure_issuance">Droša izsniegšana</string>
+    <string name="attestation_privacy_preserving">Privātumu saglabājoša akreditācijas datu izsniegšana</string>
+    <string name="attestation_may_take_seconds">Tas var aizņemt dažas sekundes</string>
+    <string name="attestation_keep_app_open">Lūdzu, neaizveriet lietotni</string>
+    <string name="attestation_credential_received">Akreditācijas dati saņemti!</string>
+    <string name="attestation_credential_stored_description">Jūsu vecuma verifikācijas akreditācijas dati ir droši saglabāti</string>
+    <string name="attestation_issuer_verified">Izsniedzējs pārbaudīts</string>
+    <string name="attestation_failed_title">Izsniegšana neizdevās</string>
+    <string name="attestation_scan_qr_instead">Skenēt QR kodu</string>
+    <string name="attestation_go_back">Atgriezties</string>
+    <string name="attestation_step_decode">Atšifrēt</string>
+    <string name="attestation_step_generate">Ģenerēt</string>
+    <string name="attestation_step_send">Nosūtīt</string>
+    <string name="attestation_step_verify">Pārbaudīt</string>
+    <string name="attestation_step_store">Saglabāt</string>
+    <string name="attestation_step_complete">Pabeigts</string>
+    <string name="accessibility_attestation_encrypted_description">Šifrēts apliecinājums tiek apstrādāts</string>
+    <string name="accessibility_attestation_success_description">Atzīme, kas norāda uz saņemtiem akreditācijas datiem</string>
+    <string name="accessibility_attestation_error_description">Kļūdas ikona, kas norāda uz izsniegšanas neveiksmi</string>
+    <string name="accessibility_step_complete">%1$s. solis pabeigts</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Akreditācijas datu saņēmējs</string>
+    <string name="attestation_recipient_prompt">Šie akreditācijas dati ir paredzēti\u2026</string>
+    <string name="attestation_recipient_me">Man</string>
+    <string name="attestation_recipient_child">Bērnam</string>
+    <string name="attestation_nickname_title">Bērna segvārds</string>
+    <string name="attestation_nickname_prompt">Ievadiet segvārdu, lai varētu atšķirt akreditācijas datus</string>
+    <string name="attestation_nickname_placeholder">piem., Alex</string>
+    <string name="attestation_nickname_continue">Turpināt</string>
+    <string name="attestation_nickname_back">Atpakaļ</string>
+    <string name="accessibility_attestation_recipient_heading">Izvēlieties, kam paredzēti šie akreditācijas dati</string>
+    <string name="accessibility_attestation_nickname_heading">Ievadiet bērna segvārdu</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Nepareizs amatpersonas ID formāts</string>
+    <string name="officer_auth_error_challenge_failed">Neizdevās iegūt YubiKey izaicinājumu: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Pieskarieties savam YubiKey, lai autentificētos</string>
+    <string name="officer_auth_error_touch_timeout">YubiKey pieskāriena laiks beidzās</string>
+    <string name="officer_auth_error_verify_document_dob">Lūdzu, pārbaudiet, vai dokuments un dzimšanas datums atbilst</string>
+    <string name="officer_auth_error_invalid_date_format">Nepareizs datuma formāts. Izmantojiet YYYY-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">Lietotājam jābūt vismaz 18 gadus vecam</string>
+    <string name="officer_auth_error_not_authenticated">Nav autentificēts. Lūdzu, vispirms ievadiet savu amatpersonas ID.</string>
+    <string name="officer_auth_error_issue_failed">Neizdevās izsniegt akreditācijas datus</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Pieskarieties, lai skatītu</string>
+    <string name="gesture_desc_long_press_options">, ilgi nospiediet, lai skatītu opcijas</string>
+    <string name="gesture_desc_swipe_left">, velciet pa kreisi, lai redzētu vairāk darbību</string>
+    <string name="gesture_desc_swipe_right">, velciet pa labi, lai redzētu vairāk darbību</string>
+    <string name="gesture_desc_tap_to_activate">Pieskarieties, lai aktivizētu</string>
+    <string name="gesture_desc_long_press_format">. Ilgi spiediet: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Atkārtot</string>
+    <string name="main_activity_reset_redownload">Atiestatīt un atkārtoti lejupielādēt</string>
+    <string name="main_activity_show_debug_info">Rādīt Debug informāciju</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Pieejamības iestatījumi</string>
+    <string name="search_item_accessibility_settings_subtitle">Pielāgojiet savu pieredzi</string>
+    <string name="search_item_large_text_title">Liels teksts</string>
+    <string name="search_item_large_text_subtitle">Palielināt teksta izmēru</string>
+    <string name="search_item_high_contrast_title">Augsts kontrasts</string>
+    <string name="search_item_high_contrast_subtitle">Uzlabot redzamību</string>
+    <string name="search_item_voice_input_title">Balss ievade</string>
+    <string name="search_item_voice_input_subtitle">Vadīt ar balsi</string>
+    <string name="search_item_manual_code_entry_title">Manuāla koda ievade</string>
+    <string name="search_item_manual_code_entry_subtitle">Ievadīt kodus, nevis skenēt</string>
+    <string name="search_item_simplified_ui_title">Vienkāršota lietotāja saskarne</string>
+    <string name="search_item_simplified_ui_subtitle">Samazināt vizuālo sarežģītību</string>
+    <string name="search_item_color_blindness_title">Krāsu akluma atbalsts</string>
+    <string name="search_item_color_blindness_subtitle">Pielāgot krāsas labākai redzamībai</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Iestatījumi</string>
+    <string name="search_item_settings_subtitle">Lietotnes konfigurācija</string>
+    <string name="search_item_language_title">Valoda</string>
+    <string name="search_item_language_subtitle">Mainīt lietotnes valodu</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Mani akreditācijas dati</string>
+    <string name="search_item_credentials_subtitle">Skatīt savus akreditācijas datus</string>
+    <string name="search_item_get_credential_title">Iegūt akreditācijas datus</string>
+    <string name="search_item_get_credential_subtitle">Atrast izsniedzējus</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Palīdzība</string>
+    <string name="search_item_help_subtitle">Saņemt palīdzību</string>
+    <string name="search_item_privacy_title">Privātuma aizsardzība</string>
+    <string name="search_item_privacy_subtitle">Kā tiek aizsargāti Jūsu dati</string>
+    <string name="search_item_verification_title">Vecuma pārbaude</string>
+    <string name="search_item_verification_subtitle">Pierādīt savu vecumu</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Stingri kodēts rezerves reģistrs Sandbox videi</string>
+    <string name="issuer_fallback_production_description">Stingri kodēts rezerves reģistrs ražošanai</string>
+    <string name="issuer_fallback_category_government">Valsts pārvalde</string>
+    <string name="issuer_fallback_category_government_description">Valdības izsniegt akreditācijas dati</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii Sandbox izsniedzējs</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Oficiālais Provii Sandbox izsniedzējs testēšanai</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Apmeklējiet Sandbox izsniedzēja portālu</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Oficiālais Provii akreditācijas datu izsniedzējs</string>
+    <string name="issuer_fallback_production_issuer_instructions">Apmeklējiet vietējo DMV biroju</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">Dzimšanas datums nevar būt nākotnē</string>
+    <string name="validation_error_invalid_date_format">Nepareizs datuma formāts</string>
+    <string name="validation_error_officer_id_too_short">Amatpersonas identifikācija ir pārāk īsa</string>
+    <string name="validation_error_invalid_officer_id_format">Nepareizs amatpersonas identifikācijas formāts</string>
+    <string name="validation_error_empty_qr_code">Tukšs QR kods</string>
+    <string name="validation_error_qr_code_too_large">QR kods ir pārāk liels</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">Jūs tagad esat izstrādātājs!</string>
+    <string name="sandbox_toast_enabled">Sandbox režīms iespējots\nTiek izmantota testa vide</string>
+    <string name="sandbox_toast_disabled">Ražošanas režīms iespējots\nTiek izmantota ražošanas vide</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">Jūs esat 1 soli no izstrādātāja režīma</string>
+    <string name="sandbox_toast_steps_away">Jūs esat %1$d soļus no izstrādātāja režīma</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">Nav pievienots YubiKey</string>
+    <string name="yubikey_error_timeout">YubiKey pieskāriena gaidīšanas laiks beidzās. Lūdzu, pieskarieties atslēgai, kad tā mirgo.</string>
+    <string name="yubikey_error_not_supported">Šajā YubiKey slotā nav konfigurēta izaicinājuma-atbildes funkcija</string>
+    <string name="yubikey_error_no_slot">2. slots nav konfigurēts HMAC (jauktkoda ziņojuma autentifikācijas koda) SHA1 izaicinājuma-atbildes funkcijai</string>
+    <string name="yubikey_error_hmac_failed">HMAC (jauktkoda ziņojuma autentifikācijas koda) aprēķins neizdevās: %s</string>
+    <string name="yubikey_error_session_failed">Neizdevās izveidot savienojumu ar YubiKey: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">Maks nav inicializēts</string>
+    <string name="wallet_error_proving_key_not_found">Pierādīšanas atslēga nav atrasta , lūdzu, atkārtoti lejupielādējiet</string>
+    <string name="wallet_error_proving_key_not_readable">Nevar nolasīt pierādīšanas atslēgas failu</string>
+    <string name="wallet_error_out_of_memory">Nepietiek atmiņas , lūdzu, restartējiet lietotni</string>
+    <string name="wallet_error_prover_error">Pierādītāja kļūda: %s</string>
+    <string name="wallet_error_ffi_error">FFI kļūda: %s</string>
+    <string name="wallet_error_prover_init_failed">Neizdevās inicializēt pierādītāju: %s</string>
+    <string name="wallet_error_prover_verification_failed">Pierādītāja inicializācijas pārbaude neizdevās</string>
+    <string name="wallet_error_verifier_url_update_failed">Neizdevās atjaunināt verificētāja URL (tīmekļa adresi)! Gaidīts %1$s, bet saņemts %2$s</string>
+    <string name="wallet_error_wallet_still_null">Maks joprojām ir null pēc inicializācijas</string>
+    <string name="wallet_error_credential_not_found">Akreditācijas dati nav atrasti</string>
+    <string name="wallet_error_credential_access_failed">Nevar piekļūt akreditācijas datiem: %s</string>
+    <string name="wallet_error_invalid_format">Nepareizs formāts: %s</string>
+    <string name="wallet_error_not_initialized_short">Pierādītājs nav inicializēts</string>
+    <string name="wallet_error_proving_key_unavailable">Pierādīšanas atslēga nav pieejama. Nepieciešama iestatīšana.</string>
+    <string name="wallet_error_storage_init_failed">Krātuves inicializācija neizdevās</string>
+    <string name="wallet_error_biometric_unavailable">Biometriskā autentifikācija nav pieejama</string>
+    <string name="wallet_error_auth_failed">Autentifikācija neizdevās</string>
+    <string name="wallet_error_sandbox_disabled">Iespējojiet Sandbox režīmu, lai ģenerētu testa akreditācijas datus</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Nevar iegūt Sandbox akreditācijas datus. Lūdzu, pārbaudiet interneta savienojumu.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Nepieciešama autentifikācija</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Apstipriniet identitāti, lai izveidotu vecuma pierādījumu</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Piekļūt drošajai krātuvei</string>
+    <string name="keystore_biometric_prompt_cancel">Atcelt</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, izvērsts, rāda pilnu licences tekstu</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, sakļauts, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">Nav</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Mobilais tīkls</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Nezināms</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">Kontrasta līmeņi</string>
+    <string name="help_topic_extra_large_text_title">Ļoti liels teksts</string>
+    <string name="help_topic_reduce_transparency_title">Samazināt caurspīdīgumu</string>
+    <string name="help_topic_color_blind_modes_title">Krāsu akluma režīmi</string>
+    <string name="help_topic_line_spacing_title">Rindu atstatums</string>
+    <string name="help_topic_paragraph_spacing_title">Rindkopu atstatums</string>
+    <string name="help_topic_letter_spacing_title">Burtu atstatums</string>
+    <string name="help_topic_text_width_title">Teksta platums</string>
+    <string name="help_topic_touch_targets_title">Lielāki skāriena mērķi</string>
+    <string name="help_topic_reduce_motion_title">Samazināt kustību</string>
+    <string name="help_topic_timeout_behavior_title">Taimera darbība</string>
+    <string name="help_topic_simplified_gestures_title">Vienkāršoti žesti</string>
+    <string name="help_topic_haptic_feedback_title">Haptiskā atgriezeniskā saite</string>
+    <string name="help_topic_data_preservation_title">Datu saglabāšana</string>
+    <string name="help_topic_simplified_ui_title">Vienkāršota lietotāja saskarne</string>
+    <string name="help_topic_step_indicators_title">Soļu indikatori</string>
+    <string name="help_topic_verbose_descriptions_title">Detalizēti apraksti</string>
+    <string name="help_topic_confirm_actions_title">Darbību apstiprināšana</string>
+    <string name="help_topic_reading_level_title">Vienkāršots lasīšanas līmenis</string>
+    <string name="help_topic_help_system_title">Palīdzības sistēma</string>
+    <string name="help_topic_manual_code_entry_title">Manuāla koda ievade</string>
+    <string name="help_topic_voice_input_title">Balss ievade</string>
+    <string name="help_topic_screen_reader_title">Ekrāna lasītāja atbalsts</string>
+    <string name="help_topic_accessibility_profiles_title">Ātrās iestatīšanas profili</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">Kontrolēt kontrasta attiecību starp tekstu un foniem:\n\n• Standarta: noklusējuma lietotnes krāsas\n• Augsts (AA): 4,5:1 kontrasta attiecība\n• Maksimāls (AAA): 7:1+ kontrasta attiecība\n\nAugstāks kontrasts atvieglo teksta lasīšanu, īpaši gaišā vidē vai lietotājiem ar vāju redzi.\n\nWCAG AAA atbilstībai nepieciešams maksimālais kontrasts.</string>
+    <string name="help_topic_extra_large_text_text">Palielina visus teksta izmērus visā lietotnē par 50%.\n\nTas atvieglo teksta lasīšanu lietotājiem ar:\n• Vāju redzi\n• Ar vecumu saistītām redzes izmaiņām\n• Lasīšanas grūtībām\n\nKombinējas ar sistēmas fonta izmēra iestatījumiem maksimālai elastībai.</string>
+    <string name="help_topic_reduce_transparency_text">Noņem caurspīdīgos slāņus un izplūšanas efektus.\n\nIeguvumi:\n• Skaidrāka vizuālā hierarhija\n• Labāka teksta lasāmība\n• Mazāks vizuālais troksnis\n• Mazāka kognitīvā slodze\n\nIeteicams lietotājiem ar vāju redzi vai kognitīvām grūtībām.</string>
+    <string name="help_topic_color_blind_modes_text">Pielāgo krāsas dažādiem krāsu akluma veidiem:\n\n• Protanopija: sarkanās krāsas aklums\n• Deuteranopija: zaļās krāsas aklums\n• Tritanopija: zilās krāsas aklums\n• Monohromātisks: pilnīgs krāsu aklums\n\nKatrs režīms izmanto rūpīgi atlasītas krāsas, kas ir atšķiramas konkrētajam krāsu redzes trūkuma veidam.</string>
+    <string name="help_topic_line_spacing_text">Pielāgo atstarpi starp teksta rindām (1,0x – 2,0x).\n\n• Noklusējums: 1,0x\n• Atbilst AAA: 1,5x vai vairāk\n\nPalielināts rindu atstatums:\n• Uzlabo lasīšanas izpratni\n• Samazina acu nogurumu\n• Palīdz lietotājiem ar disleksiju\n• Padara teksta blokus mazāk apgrūtinošus</string>
+    <string name="help_topic_paragraph_spacing_text">Pielāgo atstarpi starp rindkopām (1,0x – 3,0x).\n\n• Noklusējums: 1,0x\n• Atbilst AAA: 2,0x vai vairāk\n\nPalielināts rindkopu atstatums:\n• Skaidri atdala idejas\n• Uzlabo vizuālo organizāciju\n• Samazina kognitīvo slodzi\n• Palīdz saglabāt lasīšanas pozīciju</string>
+    <string name="help_topic_letter_spacing_text">Pielāgo atstarpi starp burtiem (0,0em – 0,2em).\n\n• Noklusējums: 0,0em\n• Atbilst AAA: 0,12em vai vairāk\n\nPalielināts burtu atstatums:\n• Padara atsevišķus burtus izteiktākus\n• Palīdz lietotājiem ar disleksiju\n• Uzlabo lasīšanas precizitāti\n• Samazina burtu sajaukšanu</string>
+    <string name="help_topic_text_width_text">Ierobežo rindas garumu ērtākai lasīšanai:\n\n• Pilns platums: bez ierobežojuma\n• Ērts: 80 rakstzīmes (ieteicams)\n• Šaurs: 60 rakstzīmes\n\nPētījumi rāda, ka optimāla lasīšana notiek pie 60–80 rakstzīmēm rindā. Īsākas rindas samazina acu kustību un uzlabo izpratni.</string>
+    <string name="help_topic_touch_targets_text">Palielina minimālo skāriena mērķa izmēru līdz 60dp (no 44dp).\n\nIeguvumi:\n• Vieglāk pieskarties pogām un vadīklām\n• Samazina nejaušus pieskārienus\n• Palīdz lietotājiem ar motoriskiem traucējumiem\n• Labāk lietojams ar vienu roku\n\nWCAG AAA prasa minimāli 60dp.</string>
+    <string name="help_topic_reduce_motion_text">Noņem visas animācijas un pārejas.\n\nIeguvumi:\n• Novērš kustības slimību\n• Samazina novēršanos\n• Mazina kognitīvo slodzi\n• Uzlabo koncentrēšanos\n\nIeteicams lietotājiem ar:\n• Vestibulāriem traucējumiem\n• Uzmanības grūtībām\n• Jutīgumu pret kustību</string>
+    <string name="help_topic_timeout_behavior_text">Kontrolē automātisko taimautu verifikācijas ekrānos:\n\n• Bez taimauta (AAA): neierobežots laiks\n• Standarta: 30 sekundes\n• Pagarināts: 60 sekundes\n\nWCAG AAA prasa taimauta neesamības iespēju lietotājiem, kuriem nepieciešams vairāk laika uzdevumu izpildei.\n\nVeidlapas dati tiek automātiski saglabāti pirms taimautiem.</string>
+    <string name="help_topic_simplified_gestures_text">Aizstāj sarežģītus žestus ar vienkāršām alternatīvām:\n\n• Vilkšana → Pogas pieskāriens\n• Ilgs spiediens → Parasts pieskāriens ar apstiprinājumu\n• Šķipt/tālummaiņa → Pogas\n\nPalīdz lietotājiem ar:\n• Motoriskiem traucējumiem\n• Drebuļiem\n• Ierobežotu veiklību\n• Skārienekrāna grūtībām</string>
+    <string name="help_topic_haptic_feedback_text">Nodrošina vibrācijas atgriezenisko saiti darbībām.\n\nIeguvumi:\n• Apstiprina pogu pieskārienus\n• Norāda kļūdas\n• Nodrošina taktilo apstiprinājumu\n\nVar atspējot lietotājiem, kuri:\n• Uzskata to par traucējošu\n• Ir jutīgi pret sensoro ievadi\n• Dod priekšroku klusai darbībai</string>
+    <string name="help_topic_data_preservation_text">Automātiski saglabā veidlapas datus pirms taimautiem.\n\nFunkcijas:\n• Brīdinājums 10 sekundes pirms taimauta\n• Iespēja saglabāt vai atmest datus\n• Automātiska atjaunošana pēc atgriešanās\n• 24 stundu datu saglabāšana\n\nNodrošina, ka dati netiek zaudēti, ja nepieciešams papildu laiks vai rodas pārtraukumi.</string>
+    <string name="help_topic_simplified_ui_text">Samazina vizuālo sarežģītību:\n\n• Vienlaikus rāda mazāk lietotāja saskarnes elementu\n• Lielākas, skaidrākas pogas\n• Vairāk baltās telpas\n• Vienkāršoti izkārtojumi\n\nIeguvumi:\n• Vieglāk saprast\n• Mazāk apgrūtinoši\n• Labāka koncentrēšanās\n• Samazināta kognitīvā slodze</string>
+    <string name="help_topic_step_indicators_text">Rāda progresu daudzpakāpju procesos.\n\nAttēlo:\n• Pašreizējā soļa numuru\n• Kopējo soļu skaitu\n• Progresa vizualizāciju\n\nIeguvumi:\n• Samazina trauksmi\n• Nosaka skaidras cerības\n• Palīdz saglabāt orientāciju\n• Rāda izpildes progresu</string>
+    <string name="help_topic_verbose_descriptions_text">Nodrošina papildu kontekstu un paskaidrojumus:\n\n• Garākas pogu etiķetes\n• Detalizētāki norādījumi\n• Papildu mājienes\n• Skaidrāki kļūdu paziņojumi\n\nPalīdz lietotājiem:\n• Saprast darbības pirms to veikšanas\n• Izvairīties no kļūdām\n• Apgūt lietotnes funkcionalitāti\n• Veidot pārliecību</string>
+    <string name="help_topic_confirm_actions_text">Prasa apstiprinājumu svarīgām darbībām:\n\n• Akreditācijas datu dzēšana\n• Iestatījumu maiņa\n• Datu dzēšana\n\nWCAG AAA prasa apstiprinājumu visām destruktīvām darbībām.\n\nIeguvumi:\n• Novērš nejaušas kļūdas\n• Ļauj pārskatīt pirms darbības\n• Samazina trauksmi\n• Dod otro iespēju</string>
+    <string name="help_topic_reading_level_text">Izmanto vienkāršāku valodu (7.–9. klases līmenis):\n\n• Īsāki teikumi\n• Biežāk lietoti vārdi, nevis žargons\n• Skaidra, tieša valoda\n• Mazāk tehnisku terminu\n\nAtbilst WCAG AAA, ja iespējots.\n\nIeguvumi:\n• Vieglāk saprast\n• Ātrāka izpratne\n• Labāk ne dzimtās valodas runātājiem\n• Samazināta kognitīvā slodze</string>
+    <string name="help_topic_help_system_text">Kontekstuāla palīdzība pieejama visā lietotnē.\n\nFunkcijas:\n• 27 palīdzības tēmas\n• Meklējams palīdzības centrs\n• Saistīto tēmu navigācija\n• Tehniskā vārdnīca\n\nPiekļūstiet palīdzībai no:\n• Iestatījumu ekrāniem\n• Sarežģītām funkcijām\n• Kļūdu paziņojumiem\n• Jebkuras vietas, kur redzat palīdzības ikonu</string>
+    <string name="help_topic_manual_code_entry_text">Ievadiet QR koda datus manuāli, nevis skenējot.\n\nIeguvumi:\n• Darbojas, kad kameras piekļuve nav pieejama\n• Palīdz lietotājiem ar motoriskiem traucējumiem\n• Labāk mazas gaismas apstākļos\n• Nav jātur tālrunis mierīgi\n\nAlternatīva kameras QR skenēšanai.</string>
+    <string name="help_topic_voice_input_text">Izmantojiet balsi teksta ievadīšanai, nevis rakstot.\n\nIeguvumi:\n• Brīvroku ievade\n• Ātrāk nekā rakstīt\n• Palīdz lietotājiem ar motoriskiem traucējumiem\n• Samazina atkārtotus spriegojumus\n\nIzmanto Jūsu ierīces iebūvēto runas atpazīšanu.</string>
+    <string name="help_topic_screen_reader_text">Pilns TalkBack ekrāna lasītāja atbalsts.\n\nFunkcijas:\n• Visi lietotāja saskarnes elementi ir apzīmēti\n• Pareiza virsrakstu struktūra\n• Loģiska navigācijas secība\n• Pielāgoti mājienes sarežģītām darbībām\n\nLietotne automātiski iespējo:\n• Detalizētus aprakstus\n• Uzlabotus skāriena mērķus\n\nkad tiek atklāts TalkBack.</string>
+    <string name="help_topic_accessibility_profiles_text">Iepriekš konfigurēti pieejamības profili:\n\n• Redzes traucējumi: augsts kontrasts, liels teksts, haptika\n• Kustību traucējumi: lieli mērķi, pagarināti taimeri, apstiprinājumi\n• Kognitīvā: vienkāršota saskarne, soļu indikatori, apraksti\n• Vecākā paaudze: liels teksts, mērķi, vienkāršota saskarne, samazināta kustība\n• Noklusējums: atiestatīt visus iestatījumus\n\nKatrs profils iespējo visnoderīgākos iestatījumus attiecīgajai lietotāju grupai. Pēc profila lietošanas var veikt papildu pielāgojumus.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">Vecuma pārbaude</string>
+    <string name="content_age_verification_explanation">Lūdzu, uzgaidiet, kamēr mēs droši pārbaudām Jūsu vecumu, izmantojot nulles zināšanu pierādījumus. Jūsu dzimšanas datums nekad netiek kopīgots ar verificētāju.</string>
+    <string name="content_age_verification_instructions">Pavērsiet kameru uz verifikācijas QR kodu. Kods tiks skenēts automātiski, kad tiks atklāts.</string>
+    <string name="content_age_verification_success">Jūsu vecums ir veiksmīgi apstiprināts. Verificētājs zina, ka Jūs atbilstat viņu vecuma prasībai, neuzzinot Jūsu faktisko dzimšanas datumu.</string>
+    <string name="content_age_verification_failed">Verifikācija neizdevās. Lūdzu, mēģiniet vēlreiz skenēt QR kodu vai izmantojiet manuālo koda ievadi.</string>
+    <string name="content_credential_issuance_title">Akreditācijas datu izsniegšana</string>
+    <string name="content_credential_issuance_explanation">Skenējiet QR kodu, ko nodrošina pilnvarots izsniedzējs, lai saņemtu savus digitālos vecuma akreditācijas datus.</string>
+    <string name="content_credential_issuance_instructions">Pavērsiet kameru uz amatpersonas rādīto izsniegšanas QR kodu. Jūsu akreditācijas dati tiks ģenerēti Jūsu ierīcē.</string>
+    <string name="content_credential_issuance_success">Akreditācijas dati veiksmīgi izveidoti. Tagad šos akreditācijas datus var izmantot vecuma pārbaudei.</string>
+    <string name="content_credential_description">Akreditācijas dati ir kriptogrāfiski parakstīts Jūsu identitātes pierādījums, kas iespējo privātumu saglabājošu verifikāciju.</string>
+    <string name="content_zero_knowledge_explanation">Nulles zināšanu pierādījumi ļauj Jums pierādīt, ka atbilstat vecuma prasībai, neatklājot faktisko vecumu.</string>
+    <string name="content_setup_proving_key">Lejupielādē kriptogrāfisko pierādīšanas atslēgu, kas nepieciešama nulles zināšanu pierādījumu ģenerēšanai</string>
+    <string name="content_processing_challenge">Apstrādā verifikācijas izaicinājumu</string>
+    <string name="content_creating_proof">Veido nulles zināšanu vecuma pierādījumu</string>
+    <string name="content_submitting_proof">Iesniedz pierādījumu verificētājam</string>
+    <string name="content_error_no_credential">Nav pieejamu akreditācijas datu. Lūdzu, vispirms iegūstiet akreditācijas datus no pilnvarota izsniedzēja.</string>
+    <string name="content_error_network_failed">Tīkla savienojums neizdevās. Lūdzu, pārbaudiet interneta savienojumu un mēģiniet vēlreiz.</string>
+    <string name="content_error_invalid_qr">Nederīgs QR kods. Lūdzu, pārliecinieties, ka skenējat pareizo verifikācijas kodu.</string>
+    <string name="content_error_verification_failed">Verifikācija neizdevās. Serveris nevarēja apstiprināt Jūsu pierādījumu.</string>
+    <string name="content_officer_authentication_title">Amatpersonas autentifikācija</string>
+    <string name="content_officer_issuance_title">Akreditācijas datu izsniegšana</string>
+    <string name="content_officer_dob_prompt">Ievadiet pretendenta apstiprināto dzimšanas datumu no viņa oficiālā identifikācijas dokumenta.</string>
+    <string name="content_onboarding_welcome">Laipni lūgti Provii Wallet , Jūsu privātumu saglabājošajā digitālās vecuma pārbaudes risinājumā.</string>
+    <string name="content_onboarding_privacy">Jūsu dzimšanas datums ir droši saglabāts Jūsu ierīcē un nekad netiek pārsūtīts verificētājiem.</string>
+    <string name="content_onboarding_get_started">Lai sāktu, apmeklējiet pilnvarotu izsniedzēju, lai iegūtu savus digitālos vecuma akreditācijas datus.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">Pārbaudīt vecumu</string>
+    <string name="content_age_verification_explanation_simplified">Mēs pārbaudām Jūsu vecumu. Jūsu dzimšanas datumu mēs neredzēsim un nekopīgosim.</string>
+    <string name="content_age_verification_instructions_simplified">Pavērsiet kameru uz QR kodu. Tas pats skenēsies.</string>
+    <string name="content_age_verification_success_simplified">Veiksmīgi! Vietne zina, ka esat pietiekami vecs. Tā nezina Jūsu dzimšanas datumu.</string>
+    <string name="content_age_verification_failed_simplified">Tas neizdevās. Mēģiniet skenēt vēlreiz vai ievadiet kodu manuāli.</string>
+    <string name="content_credential_issuance_title_simplified">Iegūt savu ID karti</string>
+    <string name="content_credential_issuance_explanation_simplified">Skenējiet kodu no valdības biroja, lai iegūtu savu digitālo ID.</string>
+    <string name="content_credential_issuance_instructions_simplified">Pavērsiet kameru uz kodu. Jūsu ID tiks saglabāts Jūsu tālrunī.</string>
+    <string name="content_credential_issuance_success_simplified">Gatavs! Tagad varat izmantot savu digitālo ID, lai pierādītu vecumu.</string>
+    <string name="content_credential_description_simplified">Akreditācijas dati ir kā digitāla ID karte, kas pierāda, kas Jūs esat, neatklājot privātās detaļas.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Jūs varat pierādīt, ka esat pietiekami vecs, neizstāstot nevienam savu faktisko vecumu.</string>
+    <string name="content_setup_proving_key_simplified">Lejupielādē drošības failus, kas nepieciešami lietotnes darbībai</string>
+    <string name="content_processing_challenge_simplified">Nolasa vecuma pārbaudes pieprasījumu</string>
+    <string name="content_creating_proof_simplified">Veido Jūsu vecuma pierādījumu</string>
+    <string name="content_submitting_proof_simplified">Sūta pierādījumu uz vietni</string>
+    <string name="content_error_no_credential_simplified">Jums vēl nav ID. Vispirms apmeklējiet valdības biroju, lai to iegūtu.</string>
+    <string name="content_error_network_failed_simplified">Nevar izveidot savienojumu ar internetu. Pārbaudiet Wi-Fi vai datu savienojumu un mēģiniet vēlreiz.</string>
+    <string name="content_error_invalid_qr_simplified">Šis kods neizskatās pareizs. Pārliecinieties, ka skenējat pareizo kodu.</string>
+    <string name="content_error_verification_failed_simplified">Tas neizdevās. Vietne nevarēja pārbaudīt Jūsu pierādījumu. Mēģiniet vēlreiz.</string>
+    <string name="content_officer_authentication_title_simplified">Amatpersonas pieteikšanās</string>
+    <string name="content_officer_issuance_title_simplified">Izveidot ID karti</string>
+    <string name="content_officer_dob_prompt_simplified">Ievadiet personas dzimšanas datumu no viņu oficiālās identifikācijas.</string>
+    <string name="content_onboarding_welcome_simplified">Laipni lūgti Provii Wallet , privāti pierādiet savu vecumu.</string>
+    <string name="content_onboarding_privacy_simplified">Jūsu dzimšanas datums paliek Jūsu tālrunī. Neviens cits to nevar redzēt.</string>
+    <string name="content_onboarding_get_started_simplified">Lai sāktu, apmeklējiet valdības biroju, lai iegūtu savu digitālo ID.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Ātrā atbilde (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Personīgais identifikācijas numurs (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">Dzimšanas datums (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Identifikācija (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">Lietotāja saskarne (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Vienotais resursu vietrādis (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Lietojumprogrammu saskarne (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">Apturēt animācijas</string>
+    <string name="animation_resume_animations">Atsākt animācijas</string>
+    <string name="animation_pause_button_text">Apturēt</string>
+    <string name="animation_resume_button_text">Atsākt</string>
+    <string name="animation_toggles_playback_hint">Pārslēdz animācijas atskaņošanu</string>
+    <string name="animation_paused_announcement">Animācijas apturētas</string>
+    <string name="animation_resumed_announcement">Animācijas atsāktas</string>
+    <string name="animation_active_count">%d aktīvas animācijas</string>
+    <string name="animation_loading_default">Ielādē</string>
+    <string name="animation_please_wait">Lūdzu, uzgaidiet, kamēr šī operācija tiek pabeigta</string>
+    <string name="animation_percent_complete">%d procenti pabeigti</string>
+    <string name="animation_loading_in_progress">Notiek</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">Tastatūras saīsnes</string>
+    <string name="keyboard_shortcuts_done">Gatavs</string>
+    <string name="keyboard_shortcuts_app_section">Lietotnes saīsnes</string>
+    <string name="keyboard_shortcuts_navigation_section">Navigācija</string>
+    <string name="keyboard_shortcuts_tips_section">Padomi</string>
+    <string name="keyboard_shortcuts_navigation_footer">Šīs navigācijas taustiņus var izmantot visā lietotnē ar ārējām tastatūrām</string>
+    <string name="keyboard_shortcuts_tip_external">Ārējās Bluetooth un USB tastatūras tiek pilnībā atbalstītas</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Izmantojiet bulttaustiņus, lai pārvietotos starp sarakstu elementiem</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Turiet Ctrl, lai redzētu pieejamās saīsnes šajā ekrānā</string>
+    <string name="keyboard_shortcuts_tip_a11y">Visas šīs lietotnes funkcijas ir pieejamas ar tastatūru</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Aizvērt tastatūras saīsnes</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">Iestatījumi</string>
+    <string name="keyboard_shortcut_label_accessibility">Pieejamība</string>
+    <string name="keyboard_shortcut_label_help">Palīdzības centrs</string>
+    <string name="keyboard_shortcut_label_add_credential">Pievienot akreditācijas datus</string>
+    <string name="keyboard_shortcut_label_verify">Pārbaudīt</string>
+    <string name="keyboard_shortcut_label_shortcuts">Saīsnes</string>
+    <string name="keyboard_shortcut_desc_settings">Atvērt iestatījumus</string>
+    <string name="keyboard_shortcut_desc_accessibility">Pieejamības iestatījumi</string>
+    <string name="keyboard_shortcut_desc_help">Palīdzības centrs</string>
+    <string name="keyboard_shortcut_desc_add_credential">Pievienot akreditācijas datus</string>
+    <string name="keyboard_shortcut_desc_verify">Sākt verifikāciju</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Tastatūras saīsnes</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">Atgriezties / Noraidīt</string>
+    <string name="keyboard_shortcut_nav_back_desc">Noraidīt pašreizējo ekrānu vai dialoglodziņu</string>
+    <string name="keyboard_shortcut_nav_next">Nākamais lauks</string>
+    <string name="keyboard_shortcut_nav_next_desc">Pārvietot fokusu uz nākamo interaktīvo elementu</string>
+    <string name="keyboard_shortcut_nav_prev">Iepriekšējais lauks</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Pārvietot fokusu uz iepriekšējo interaktīvo elementu</string>
+    <string name="keyboard_shortcut_nav_submit">Iesniegt / Turpināt</string>
+    <string name="keyboard_shortcut_nav_submit_desc">Aktivizēt fokusēto pogu vai iesniegt veidlapu</string>
+    <string name="keyboard_shortcut_nav_activate">Aktivizēt pogu</string>
+    <string name="keyboard_shortcut_nav_activate_desc">Aktivizēt pašlaik fokusēto pogu vai slēdzi</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">Dialoglodziņš atvērts. Nospiediet Escape, lai noraidītu, vai Enter, lai apstiprinātu.</string>
+    <string name="modal_closed_announcement">Dialoglodziņš aizvērts</string>
+    <string name="modal_button_primary_label">%s (galvenā darbība)</string>
+    <string name="modal_button_cancel_label">%s (atcelt)</string>
+    <string name="modal_button_destructive_label">%s (destruktīva darbība)</string>
+    <string name="modal_button_primary_hint">Divreiz pieskarieties, lai apstiprinātu, vai nospiediet Enter</string>
+    <string name="modal_button_cancel_hint">Divreiz pieskarieties, lai atceltu, vai nospiediet Escape</string>
+    <string name="modal_button_destructive_hint">Divreiz pieskarieties, lai veiktu destruktīvu darbību</string>
+    <string name="modal_button_secondary_hint">Divreiz pieskarieties, lai veiktu darbību</string>
+    <string name="modal_confirm">Apstiprināt</string>
+    <string name="modal_cancel">Atcelt</string>
+    <string name="modal_delete">Dzēst</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">Dzēst %1$s</string>
+    <string name="a11y_edit_nickname_for">Rediģēt iesauku akreditācijas datiem %1$s</string>
+    <string name="accessibility_attestation_scan_back">Atgriezties</string>
+    <string name="attestation_replace_confirm">Aizstāt</string>
+    <string name="attestation_replace_primary_message">Jums jau ir personīgie akreditācijas dati. Izveidojot jaunus, esošie tiks aizstāti. Šo darbību nevar atsaukt.</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">Aizstāt esošos akreditācijas datus?</string>
+    <string name="attestation_scan_error_empty">QR kods bija tukšs</string>
+    <string name="attestation_scan_instruction">Vērsiet kameru pret QR kodu, ko parāda amatpersona</string>
+    <string name="attestation_scan_invalid_qr">Šis QR kods nesatur apliecinājuma datus</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">Skenēt apliecinājumu</string>
+    <string name="attestation_scan_wrong_type_toast">Šis ir verifikācijas QR kods, nevis akreditācijas datu QR kods</string>
+    <string name="biometric_required_message">Šai lietotnei nepieciešama ekrāna bloķēšana (PIN, raksts vai biometrija), lai droši saglabātu akreditācijas datus. Lūdzu, iestatiet to ierīces drošības iestatījumos pirms turpināšanas.</string>
+    <string name="biometric_required_open_settings">Atvērt drošības iestatījumus</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">Nepieciešama ekrāna bloķēšana</string>
+    <string name="challenge_sandbox_prompt_announcement">Saņemts smilšu kastes izaicinājums. Izvēlieties, vai iespējot smilšu kastes režīmu un turpināt, vai noraidīt izaicinājumu.</string>
+    <string name="challenge_sandbox_prompt_body">Šo izaicinājumu izsniedza smilšu kastes verificētājs. Tas izdosies tikai tad, ja Jūs šajā makā iespējosiet smilšu kastes režīmu.</string>
+    <string name="challenge_sandbox_prompt_primary">Iespējot smilšu kasti un turpināt</string>
+    <string name="challenge_sandbox_prompt_secondary">Noraidīt izaicinājumu</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">Saņemts smilšu kastes izaicinājums</string>
+    <string name="credential_detail_nickname_error">Neizdevās saglabāt iesauku</string>
+    <string name="credential_list_managed_count">%1$d no %2$d</string>
+    <string name="credential_picker_count_shown">Parādīti %1$d akreditācijas dati</string>
+    <string name="credential_picker_filter_clear">Notīrīt filtru</string>
+    <string name="credential_picker_filter_label">Filtrēt akreditācijas datus pēc nosaukuma</string>
+    <string name="credential_picker_filter_placeholder">Filtrēt akreditācijas datus</string>
+    <string name="credential_picker_no_results">Nav atbilstošu akreditācijas datu</string>
+    <string name="credential_picker_section_managed">Pārvaldītie akreditācijas dati</string>
+    <string name="credential_picker_section_me">Es</string>
+    <string name="credential_picker_subtitle">Izvēlieties, kura persona tiek verificēta.</string>
+    <string name="credential_row_action_delete">Dzēst</string>
+    <string name="credential_row_action_edit">Rediģēt iesauku</string>
+    <string name="credential_row_overflow_menu">Akreditācijas datu opcijas</string>
+    <string name="deeplink_sandbox_prompt_announcement">Atklāta smilšu kastes saite. Izvēlieties, vai iespējot smilšu kastes režīmu un atvērt saiti.</string>
+    <string name="deeplink_sandbox_prompt_body">Šī dziļā saite izdosies tikai tad, ja Jūs šajā makā iespējosiet smilšu kastes režīmu.</string>
+    <string name="deeplink_sandbox_prompt_primary">Iespējot smilšu kasti un atvērt</string>
+    <string name="deeplink_sandbox_prompt_secondary">Atcelt</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">Atklāta smilšu kastes saite</string>
+    <string name="empty_credential_option_find_apps_a11y">Atrodiet iesaistīto lietotni. Iegūstiet akreditācijas datus no sava pensiju fonda, bankas, telekomunikāciju operatora, veselības apdrošinātāja vai jebkuras puses, kas jau zina Jūsu vecumu.</string>
+    <string name="empty_credential_option_find_apps_desc">Iegūstiet akreditācijas datus no sava pensiju fonda, bankas, telekomunikāciju operatora, veselības apdrošinātāja vai jebkuras puses, kas jau zina Jūsu vecumu</string>
+    <string name="empty_credential_option_find_apps_title">Atrodiet iesaistīto lietotni</string>
+    <string name="empty_credential_option_find_locations_a11y">Atrodiet vietu Jūsu tuvumā. Apmeklējiet to klātienē ar identifikācijas dokumentu, lai iegūtu akreditācijas datus.</string>
+    <string name="empty_credential_option_find_locations_desc">Apmeklējiet to klātienē ar identifikācijas dokumentu, lai iegūtu akreditācijas datus</string>
+    <string name="empty_credential_option_find_locations_title">Atrodiet vietu Jūsu tuvumā</string>
+    <string name="empty_credential_option_managed_a11y">Es rūpējos par citu personu. Pārvaldiet akreditācijas datus personām, par kurām rūpējaties.</string>
+    <string name="empty_credential_option_managed_desc">Pārvaldiet akreditācijas datus personām, par kurām rūpējaties</string>
+    <string name="empty_credential_option_managed_title">Es rūpējos par citu personu</string>
+    <string name="empty_credential_option_scan_a11y">Man ir QR kods, ko skenēt. Verificētājs Jums iedeva kodu pēc Jūsu identifikācijas dokumenta apskates.</string>
+    <string name="empty_credential_option_scan_desc">Verificētājs Jums iedeva kodu pēc Jūsu identifikācijas dokumenta apskates</string>
+    <string name="empty_credential_option_scan_title">Man ir QR kods, ko skenēt</string>
+    <string name="empty_credential_subtitle">Izvēlieties, kā vēlaties iegūt savus pirmos akreditācijas datus</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">Vēl nav akreditācijas datu</string>
+    <string name="error_screen_lock_required">Lai droši saglabātu akreditācijas datus, nepieciešama ekrāna bloķēšana (PIN, raksts vai biometrija). Lūdzu, iestatiet to ierīces iestatījumos.</string>
+    <string name="issuers_no_apps_found_description">Apskatiet drīzumā, jo arvien vairāk lietotņu pievieno Provii atbalstu</string>
+    <string name="issuers_no_apps_found">Pagaidām nav iesaistītu lietotņu</string>
+    <string name="issuers_no_locations_found_description">Apskatiet drīzumā, jo tiek pievienotas vairāk vietu</string>
+    <string name="issuers_no_locations_found">Vietas nav atrastas</string>
+    <string name="managed_credential_explainer_body">Lai iegūtu pārvaldītos akreditācijas datus personai, par kuru rūpējaties, kopā apmeklējiet iesaistīto vietu. Verificētājs apskatīs viņu identifikācijas dokumentu. Skenējot QR kodu, Jums tiks jautāts, vai šie akreditācijas dati ir paredzēti Jums vai personai, kuru pārvaldāt.</string>
+    <string name="managed_credential_explainer_find_location">Atrast vietu</string>
+    <string name="managed_credential_explainer_have_qr">Man jau ir QR kods</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">Pārvaldītie akreditācijas dati</string>
+    <string name="sandbox_credential_type">Akreditācijas datu veids</string>
+    <string name="sandbox_managed_credential_saved">Pārvaldītie akreditācijas dati saglabāti (%s)</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">Smilšu kastes režīms tagad ir aktīvs. Maks ir savienots ar smilšu kastes serveriem.</string>
+    <string name="sandbox_nickname_helper">Piešķiriet šiem akreditācijas datiem nosaukumu, lai Jūs varētu tos atpazīt savā makā.</string>
+    <string name="sandbox_nickname_label">Iesauka</string>
+    <string name="sandbox_nickname_placeholder">piem., Sāra</string>
+    <string name="sandbox_nickname_required">Pārvaldītajiem akreditācijas datiem nepieciešama iesauka</string>
+    <string name="sandbox_type_managed_credential">Pārvaldītie akreditācijas dati</string>
+    <string name="sandbox_type_your_credential">Jūsu akreditācijas dati</string>
+    <string name="title_find_apps">Atrast iesaistīto lietotni</string>
+    <string name="title_find_locations">Atrast vietu</string>
+    <string name="verification_go_to_attestation">Iegūt akreditācijas datus</string>
+    <string name="verification_wrong_qr_type_message">Šis QR kods ir paredzēts jaunu akreditācijas datu iegūšanai, nevis vecuma verifikācijai. Vai vēlaties pāriet uz apliecinājuma ekrānu?</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">Atklāts apliecinājuma QR kods</string>
+    <string name="walkthrough_back">Atpakaļ</string>
+    <string name="walkthrough_get_started">Sākt darbu</string>
+    <string name="walkthrough_next">Tālāk</string>
+    <string name="walkthrough_page_indicator">%1$d. lapa no %2$d</string>
+    <string name="walkthrough_page1_body">Jūsu akreditācijas dati satur Jūsu vecumu. Neko vairāk. Ne Jūsu vārdu, ne adresi, ne identitāti.\n\nTie pierāda, ka esat vecāks (vai jaunāks) par noteiktu vecumu, neatklājot Jūsu dzimšanas datumu.</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">Kas ir akreditācijas dati?</string>
+    <string name="walkthrough_page2_body">Akreditācijas datus var iegūt, izmantojot lietotni no uzņēmuma, kas jau zina Jūsu vecumu. Piemēram, no Jūsu bankas vai pensiju fonda. Tā kā tie jau ir verificējuši Jūsu vecumu, neko vairāk nav nepieciešams kopīgot.\n\nVar arī apmeklēt iesaistīto vietu ar identifikācijas dokumentu, kas apliecina dzimšanas datumu. Jūsu dzimšanas datumu apskata, izmanto akreditācijas datu izveidei un pēc tam izmet. Izsniedzējs nekad neredz Jūsu akreditācijas datus. Jūsu identitāte ar tiem nekad netiek saistīta.</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">Kā tos iegūt?</string>
+    <string name="walkthrough_page3_body">Ja rūpējaties par personu, kurai nepieciešami vecuma akreditācijas dati, varat tos iegūt un pārvaldīt savā ierīcē.\n\nKopā apmeklējiet iesaistīto vietu ar identifikācijas dokumentu, kas apliecina viņu dzimšanas datumu. Skenējot QR kodu, Jums tiks jautāts, vai šie akreditācijas dati ir paredzēti Jums vai personai, kuru pārvaldāt.\n\nPievienojiet iesauku, lai varētu atšķirt viņu akreditācijas datus.</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">Apgādājamie</string>
+    <string name="walkthrough_page4_body">Lietotne, kas mēģina verificēt Jūsu vecumu, var nosūtīt izaicinājumu tieši Jūsu Provii makam. Jūs izvēlaties, kurus akreditācijas datus izmantot. Pēc veiksmīgas verifikācijas Jūs tiksiet aizvests atpakaļ uz pieprasošo lietotni un varēsiet turpināt kā verificēts lietotājs.\n\nJums var arī parādīt QR kodu citā ierīcē vai saiti mobilajā pārlūkprogrammā, kas ved tieši uz Jūsu maku. Pieejamības nolūkos pastāv arī īsā koda opcija.\n\nNekāda personīgā informācija nekad netiek kopīgota. Tikai jā vai nē atbilde uz to, vai atbilstat vecuma prasībai.</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">Kā darbojas verifikācija?</string>
+    <string name="walkthrough_page5_body">Jūsu pirmais solis ir iegūt akreditācijas datus, izmantojot iesaistīto lietotni vai vietā Jūsu tuvumā.\n\nNo turienes Jūs varat verificēt savu vecumu jebkurā brīdī, kad tas nepieciešams, nekopīgojot personīgu informāciju. Jūs varat arī pārvaldīt akreditācijas datus personām, par kurām rūpējaties.</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">Viss ir sagatavots</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">Izlaist</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

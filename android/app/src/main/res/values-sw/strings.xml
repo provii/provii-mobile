@@ -1,0 +1,1577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Mipangilio</string>
+    <string name="title_accessibility">Ufikivu</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Pata Vitambulisho</string>
+    <string name="title_scan_verification_qr">Changanua Msimbo wa QR wa Uthibitisho</string>
+    <string name="title_verifying_age">Inathibitisha Umri</string>
+    <string name="title_age_verified">Umri Umethibitishwa</string>
+    <string name="title_verification_failed">Uthibitisho Umeshindwa</string>
+    <string name="title_officer_mode">Hali ya Afisa</string>
+    <string name="title_officer_dashboard">Dashibodi ya Afisa</string>
+    <string name="title_issue_credential">Toa Kitambulisho</string>
+    <string name="title_credential_ready">Kitambulisho Kiko Tayari</string>
+    <string name="title_get_your_credential">Pata Kitambulisho Chako</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Karibu kwenye Provii Wallet</string>
+    <string name="welcome_subtitle">Uthibitisho salama wa umri uliofanywa rahisi</string>
+    <string name="welcome_first_credential">Anza kwa kuongeza kitambulisho chako cha kwanza cha uthibitisho wa umri</string>
+    <string name="welcome_description">Uthibitisho wa faragha wa umri kwa kutumia uthibitisho wa maarifa sifuri</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Karibu kwenye Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Chagua upendeleo wako wa lugha</string>
+    <string name="onboarding_use_english">Tumia Kiingereza</string>
+    <string name="onboarding_use_english_description">Endelea kutumia Kiingereza kama lugha ya programu</string>
+    <string name="onboarding_rotating_button_description">Kitufe cha Badilisha Lugha, sasa kinaonyesha: %1$s. Gonga ili kuchagua lugha tofauti.</string>
+    <string name="onboarding_change_later">Unaweza kubadilisha hili baadaye katika Mipangilio</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Ufikivu</string>
+    <string name="onboarding_accessibility_desc">Je, ungependa kubinafsisha vipengele vya ufikivu kama vile ukubwa wa maandishi, malengo ya kugusa, au mwendo uliopunguzwa?</string>
+    <string name="onboarding_use_defaults">Tumia Mipangilio ya Kawaida</string>
+    <string name="onboarding_use_defaults_description">Endelea na mipangilio ya kawaida ya ufikivu</string>
+    <string name="onboarding_open_accessibility">Mipangilio ya Ufikivu</string>
+    <string name="onboarding_open_accessibility_description">Fungua mipangilio ya ufikivu ili kubinafsisha programu</string>
+    <string name="onboarding_accessibility_later">Unaweza kubadilisha hili baadaye katika Mipangilio</string>
+    <string name="onboarding_accessibility_features_title">Vipengele vinavyopatikana ni pamoja na:</string>
+    <string name="onboarding_feature_text_size">Ukubwa mkubwa wa maandishi</string>
+    <string name="onboarding_feature_touch_targets">Malengo ya kugusa yaliyoongezwa</string>
+    <string name="onboarding_feature_reduce_motion">Mwendo uliopunguzwa</string>
+    <string name="onboarding_feature_high_contrast">Hali ya tofauti ya juu</string>
+    <string name="onboarding_talkback_detected">TalkBack Imegunduliwa</string>
+    <string name="onboarding_talkback_message">Tumewasha maelezo ya kina ili kukusaidia kutafuta njia kwenye programu.</string>
+    <string name="onboarding_continue_to_setup">Endelea na Usanidi</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Usanidi wa Mara Moja Unahitajika</string>
+    <string name="setup_download_required">Upakuaji Unahitajika</string>
+    <string name="setup_download_description">Programu hii inahitaji kupakua vipengele vya usalama kwa uthibitisho wa maarifa sifuri (takriban MB 87).</string>
+    <string name="setup_wifi_recommended">Wi-Fi inapendekezwa</string>
+    <string name="setup_checking_status">Inakagua hali ya usanidi...</string>
+    <string name="setup_already_setup">Tayari Imesanidiwa!</string>
+    <string name="setup_ready_message">Mkoba wako uko tayari kwa uthibitisho salama wa umri</string>
+    <string name="setup_preparing">Inaandaa mfumo salama wa uthibitisho...</string>
+    <string name="setup_checking_components">Inakagua vipengele vya usalama...</string>
+    <string name="setup_downloading">Inakopa vipengele vya usalama</string>
+    <string name="setup_download_progress_description">%1$d%% imekamilika (%2$s MB ya %3$s MB zimepakiwa)</string>
+    <string name="setup_initializing">Inafungua vipengele vya usalama...</string>
+    <string name="setup_complete">Usanidi Umekamilika!</string>
+    <string name="setup_download_info">Hii inawasha uthibitisho wa maarifa sifuri kwa uthibitisho wa faragha wa umri</string>
+    <string name="setup_one_time_download">Upakuaji wa mara moja</string>
+    <string name="setup_stuck_message">Hii inachukua muda mrefu kuliko ilivyotarajiwa</string>
+    <string name="setup_stuck_description">Usanidi unaweza kushikamana. Jaribu kuanza upya.</string>
+    <string name="setup_restart_message">Programu inahitaji kuanza upya. Hii wakati mwingine hutokea kwenye uzinduzi wa kwanza.</string>
+    <string name="setup_storage_full">Hifadhi Imejaa</string>
+    <string name="setup_connection_error">Hitilafu ya Muunganisho</string>
+    <string name="setup_failed">Usanidi Umeshindwa</string>
+    <string name="setup_initialization_error">Hitilafu ya Uanzishaji</string>
+    <string name="error_storage_init_failed">Uanzishaji wa hifadhi umeshindwa. Tafadhali anzisha upya programu.</string>
+    <string name="error_storage_init_close_restart">Uanzishaji wa hifadhi umeshindwa. Tafadhali funga na uanzishe upya programu.</string>
+    <string name="setup_free_storage_message">Futa angalau MB 65 na ujaribu tena</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Faragha Imelindwa</string>
+    <string name="setup_privacy_description">Uthibitisho wako wa umri unatumia uthibitisho wa maarifa sifuri. Tarehe yako ya kuzaliwa haishirikishwi kamwe.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Vitambulisho Vyangu</string>
+    <string name="credentials_empty">Hakuna vitambulisho vilivyohifadhiwa</string>
+    <string name="credential_active">Kitambulisho Kinatumika</string>
+    <string name="credential_expired">Kitambulisho Kimeisha Muda</string>
+    <string name="credential_ready_for_verification">Kiko tayari kwa uthibitisho</string>
+    <string name="credential_expired_message">Kitambulisho chako kimeisha muda na kinahitaji kubadilishwa</string>
+    <string name="credential_stored_successfully">Kitambulisho Kimehifadhiwa kwa Mafanikio</string>
+    <string name="credential_stored_description">Kitambulisho chako cha umri kimehifadhiwa kwa usalama na kiko tayari kutumika</string>
+    <string name="credential_can_prove_age">Unaweza sasa kuthibitisha umri wako kwa faragha</string>
+    <string name="credential_returning">Inarudi kwenye vitambulisho...</string>
+    <string name="credential_view_credentials">Angalia Vitambulisho</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Imekamilika</string>
+    <string name="action_scan_qr_code">Changanua Msimbo wa QR</string>
+    <string name="action_find_locations">Tafuta Maeneo</string>
+    <string name="action_get_credential">Pata kitambulisho</string>
+    <string name="action_replace_credential">Badilisha na Kitambulisho Kipya</string>
+    <string name="action_replace_credential_now">Badilisha Kitambulisho Sasa</string>
+    <string name="action_delete_credential">Futa kitambulisho</string>
+    <string name="credential_action_scan_description">Pata kitambulisho kutoka kwa mtoa anayeidhinishwa</string>
+    <string name="credential_action_find_description">Gundua watoa wa karibu</string>
+    <string name="credential_remove_description">Ondoa kitambulisho cha sasa</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Faragha</string>
+    <string name="credential_info_privacy_value">Imelindwa</string>
+    <string name="credential_info_status">Hali</string>
+    <string name="credential_info_status_value">Halali</string>
+    <string name="credential_tip_title">Kidokezo cha Haraka</string>
+    <string name="credential_tip_message">Gonga kitufe cha \'Thibitisha Umri\' ili kupiga picha ya misimbo ya QR (Quick Response) ya uthibitisho katika maeneo yanayoshiriki.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">Changanua Msimbo wa QR</string>
+    <string name="verification_verify_age">Thibitisha Umri</string>
+    <string name="verification_generating_proof">Inazalisha uthibitisho...</string>
+    <string name="verification_success">Uthibitisho umefanikiwa</string>
+    <string name="verification_failed">Uthibitisho Umeshindwa</string>
+    <string name="verification_age_verified">Umri Umethibitishwa</string>
+    <string name="verification_age_verified_message">Umri wako umethibitishwa kwa faragha</string>
+    <string name="verification_can_return">Unaweza sasa kurudi kwenye tovuti ili kuendelea.</string>
+    <string name="verification_returning_browser">Inarudi kwenye kivinjari...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">Hatua ya 1 kati ya 2</string>
+    <string name="verification_step_2_of_2">Hatua ya 2 kati ya 2</string>
+    <string name="verification_point_camera">Elekeza kamera kwenye msimbo wa QR wa uthibitisho</string>
+    <string name="verification_hold_steady">Shikilia imara hadi usikia mlio wa uthibitisho.</string>
+    <string name="verification_reading_request">Inasoma ombi la uthibitisho...</string>
+    <string name="verification_processing_challenge">Inashughulikia changamoto...</string>
+    <string name="verification_creating_proof">Inatengeneza uthibitisho wa umri...</string>
+    <string name="verification_submitting_proof">Inatuma uthibitisho...</string>
+    <string name="verification_processing_message">Hii inaweza kuchukua sekunde chache</string>
+    <string name="verification_preparing_proof">Tunaandaa uthibitisho wa faragha kwa kutumia kitambulisho chako kilichohifadhiwa.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Inasoma ombi la uthibitisho...</string>
+    <string name="verification_status_processing_challenge">Inashughulikia changamoto...</string>
+    <string name="verification_status_creating_proof">Inatengeneza uthibitisho wa umri...</string>
+    <string name="verification_status_submitting_proof">Inatuma uthibitisho...</string>
+    <string name="verification_status_verified">✔ Umri umethibitishwa</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Haiwezi kuonyesha kidokezo cha uthibitisho</string>
+    <string name="verification_error_verification_failed">Uthibitisho umeshindwa</string>
+    <string name="verification_error_generic">Hitilafu imetokea</string>
+    <string name="verification_error_failed_to_process_code">Imeshindwa kushughulikia msimbo</string>
+    <string name="verification_error_failed_to_process_challenge">Imeshindwa kushughulikia changamoto</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Watoa wanaotegemewa nchini Australia</string>
+    <string name="issuers_loading">Inapakia watoa...</string>
+    <string name="issuers_loaded">Watoa wamepakiwa kwa mafanikio</string>
+    <string name="issuers_unable_to_load">Haiwezi kupakia watoa</string>
+    <string name="issuers_check_connection">Angalia muunganisho wako wa intaneti na ujaribu tena</string>
+    <string name="issuers_categories_header">KATEGORIA</string>
+    <string name="issuers_available_header">WATOA WANAOPATIKANA</string>
+    <string name="issuers_found_count">%d wamepatikana</string>
+    <string name="issuer_status_coming_soon">Inakuja Hivi Karibuni</string>
+    <string name="issuer_status_verified">Imethibitishwa</string>
+    <string name="issuer_how_to_get">Jinsi ya kupata kitambulisho</string>
+    <string name="issuer_service_locations">Maeneo ya Huduma</string>
+    <string name="issuer_visit_website">Tembelea tovuti ya %s</string>
+    <string name="issuer_learn_more">Jifunze zaidi kuhusu %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Benki</string>
+    <string name="category_super_fund">Mfuko wa Akiba</string>
+    <string name="category_government">Serikali</string>
+    <string name="category_travel">Usafiri</string>
+    <string name="category_telco">Mawasiliano</string>
+    <string name="category_insurance">Bima</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Mipangilio</string>
+    <string name="settings_section_sandbox">Hali ya Sandbox</string>
+    <string name="settings_section_general">Jumla</string>
+    <string name="settings_section_credentials">Vitambulisho</string>
+    <string name="settings_section_advanced">Ya Juu</string>
+    <string name="settings_section_privacy">Faragha</string>
+    <string name="settings_security">Usalama</string>
+    <string name="settings_biometric">Tumia uthibitisho wa kibiolojia</string>
+    <string name="settings_environment">Mipangilio ya mazingira</string>
+    <string name="settings_environment_description">Angalia usanidi wa mazingira ya sasa</string>
+    <string name="settings_reset_proving_key">Weka upya ufunguo wa ushahidi</string>
+    <string name="settings_reset_proving_key_description">Pakua tena vipengele vya usalama (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Toa kitambulisho cha majaribio ukiwa Mtoa</string>
+    <string name="settings_mint_test_credential_subtitle">Toa kitambulisho cha majaribio kwenye pochi yako ili uweze kukithibitisha kutoka kwa onyesho la mhusika anayetegemea.</string>
+    <string name="settings_find_trusted_issuers">Tafuta watoa wanaotegemewa</string>
+    <string name="settings_version">Toleo: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Gonga mara 5 ili kubadili</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Lugha</string>
+    <string name="language_selection_description">Chagua lugha unayoipendelea. Programu itaanza upya ili kutumia mabadiliko.</string>
+    <string name="language_selected">Imechaguliwa</string>
+    <string name="settings_language">Lugha</string>
+    <string name="settings_language_description">Badilisha lugha ya programu</string>
+    <string name="settings_licenses">Leseni za Chanzo Wazi</string>
+    <string name="settings_licenses_description">Angalia leseni za watu wengine</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Thibitisha Lugha</string>
+    <string name="language_change_to">Badilisha lugha kuwa:</string>
+    <string name="language_restart_notice">Programu itaanza upya ili kutumia lugha hii.</string>
+    <string name="language_apply">Tumia</string>
+    <string name="language_cancel">Ghairi</string>
+    <string name="language_skip_title">Ruka Uchaguzi wa Lugha?</string>
+    <string name="language_skip_message">Ukiruka, programu itatumia Kiingereza kwa chaguo-msingi. Unaweza kubadilisha lugha baadaye katika Mipangilio.</string>
+    <string name="language_use_english">Tumia Kiingereza</string>
+    <string name="language_go_back">Rudi Nyuma</string>
+    <string name="language_help_title">Msaada wa Uchaguzi wa Lugha</string>
+    <string name="language_help_how_to">Jinsi ya kuchagua lugha yako:</string>
+    <string name="language_help_step1">1. Tumia kisanduku cha utafutaji kupata lugha yako</string>
+    <string name="language_help_step2">2. Gonga lugha unayoipendelea</string>
+    <string name="language_help_step3">3. Thibitisha uchaguzi wako</string>
+    <string name="language_help_system_note">Lugha yako ya mfumo inaonyeshwa juu ikiwa inasaidiwa.</string>
+    <string name="language_help_settings_note">Unaweza kubadilisha hili baadaye katika Mipangilio.</string>
+    <string name="language_got_it">Nimeelewa</string>
+    <string name="language_select_title">Chagua Lugha</string>
+    <string name="language_skip_button">Ruka (Tumia Kiingereza)</string>
+    <string name="language_search_placeholder">Tafuta lugha...</string>
+    <string name="language_no_results">Hakuna lugha zilizopatikana</string>
+    <string name="language_try_different">Jaribu neno tofauti la utafutaji</string>
+    <string name="language_system_badge">Lugha ya Mfumo</string>
+    <string name="language_count">Lugha %d</string>
+    <string name="language_no_match_announcement">Hakuna lugha zilizopatikana zinazofanana na utafutaji wako</string>
+    <string name="language_found_announcement">Lugha %d zimepatikana</string>
+    <string name="language_search_cleared">Utafutaji umefutwa, unaonyesha lugha zote %d</string>
+    <string name="language_selected_announcement">%1$s imechaguliwa, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Skrini ya uchaguzi wa lugha</string>
+    <string name="language_help_button_description">Msaada na maelezo kuhusu uchaguzi wa lugha</string>
+    <string name="language_skip_description">Ruka uchaguzi wa lugha na utumie Kiingereza kwa chaguo-msingi</string>
+    <string name="language_clear_search_description">Futa utafutaji</string>
+    <string name="language_count_description">Lugha %d zinapatikana</string>
+    <string name="language_apply_description">Tumia uchaguzi wa lugha na uendelee</string>
+    <string name="language_cancel_description">Ghairi uchaguzi wa lugha</string>
+    <string name="language_cancelled_announcement">Uchaguzi wa lugha umeghairiwa</string>
+    <string name="language_selected_description">Lugha iliyochaguliwa: %1$s, %2$s</string>
+    <string name="language_item_system">Lugha ya mfumo: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, imechaguliwa sasa</string>
+    <string name="language_item_system_selected">Lugha ya mfumo: %1$s, %2$s, imechaguliwa sasa</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Imerudi kwenye uchaguzi wa lugha</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Hali ya Sandbox inafanya kazi</string>
+    <string name="sandbox_mode_banner">HALI YA SANDBOX INAFANYA KAZI</string>
+    <string name="sandbox_mode_description">Inatumia mazingira ya majaribio. Gonga nambari ya toleo mara tano ili kubadili.</string>
+    <string name="sandbox_credential_title">Kitambulisho cha Sandbox</string>
+    <string name="sandbox_credential_description">Zalisha kitambulisho cha Sandbox ili kufanya mazoezi ya mtiririko wa uthibitisho bila kugusa data ya uzalishaji.</string>
+    <string name="sandbox_select_age">Chagua umri</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Tarehe ya chaguo-msingi ya kuzaliwa: %s</string>
+    <string name="sandbox_override_dob">Batilisha tarehe ya chaguo-msingi ya kuzaliwa</string>
+    <string name="sandbox_override_description">Tumia tarehe halisi badala ya chaguo-msingi kulingana na umri.</string>
+    <string name="sandbox_date_of_birth">Tarehe ya kuzaliwa</string>
+    <string name="sandbox_generate_credential">Zalisha kitambulisho</string>
+    <string name="sandbox_generating">Inazalisha...</string>
+    <string name="sandbox_test_credential_saved">Kitambulisho cha majaribio kimehifadhiwa</string>
+    <string name="sandbox_id_prefix">Kiambishi awali cha utambulisho: %s...</string>
+    <string name="sandbox_unable_to_generate">Haiwezi kuzalisha kitambulisho</string>
+    <string name="settings_sandbox_dob_format">Tarehe ya Kuzaliwa: %s</string>
+    <string name="settings_sandbox_age_dob_format">Umri %d+ (Tarehe ya Kuzaliwa: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Usanidi wa mazingira</string>
+    <string name="environment_current">Ya Sasa: %s</string>
+    <string name="environment_issuer_api">API ya Mtoa (Kiolesura cha Programu ya Maombi): %s</string>
+    <string name="environment_verifier_api">API ya Mthibitishaji (Kiolesura cha Programu ya Maombi): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Futa kitambulisho?</string>
+    <string name="dialog_delete_credential_message">Kitendo hiki kinaondoa kitambulisho kutoka kwa kifaa chako. Unaweza kukipata tena kutoka kwa mtoa ikiwa inahitajika.</string>
+    <string name="dialog_delete_credential_announcement">Kidirisha cha mazungumzo kimefunguliwa: Futa kitambulisho</string>
+    <string name="dialog_reset_proving_key_title">Weka upya ufunguo wa ushahidi?</string>
+    <string name="dialog_reset_proving_key_message">Ufunguo wa ushahidi na faili zinazounga mkono zitafutwa na kupakuliwa tena mara ya pili utakapofungua programu.</string>
+    <string name="dialog_reset_proving_key_announcement">Kidirisha cha mazungumzo kimefunguliwa: Weka upya ufunguo wa ushahidi</string>
+    <string name="dialog_environment_info_announcement">Kidirisha cha mazungumzo kimefunguliwa: Usanidi wa mazingira</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">Ufikivu</string>
+    <string name="accessibility_service_label">Ufikivu wa Provii Wallet</string>
+    <string name="accessibility_service_description">Huduma ya ufikivu ya Provii Wallet inatoa msaada ulioboreshwa kwa watumiaji wenye ulemavu. Hii inajumuisha usomaji wa kiotomatiki wa vitambulisho, urambazaji uliongozwa, na mwingiliano uliofanywa rahisi.</string>
+    <string name="accessibility_personalize">Binafsisha uzoefu wako</string>
+    <string name="accessibility_customize_features">Binafsisha vipengele vya ufikivu</string>
+    <string name="accessibility_quick_setup">Usanidi wa haraka</string>
+    <string name="accessibility_features_active">Vipengele %d vinavyofanya kazi</string>
+    <string name="accessibility_customize_experience">Binafsisha uzoefu wako</string>
+    <string name="accessibility_reset_title">Weka upya mipangilio ya ufikivu?</string>
+    <string name="accessibility_reset_message">Mapendeleo yote ya ufikivu yatarudishwa kwa chaguo-msingi yake.</string>
+    <string name="accessibility_reset">Weka upya mipangilio ya ufikivu</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Maono</string>
+    <string name="accessibility_category_interaction">Mwingiliano</string>
+    <string name="accessibility_category_cognitive">Msaada wa kiakili</string>
+    <string name="accessibility_category_alternative_input">Ingizo mbadala</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Maandishi makubwa sana</string>
+    <string name="accessibility_extra_large_text_description">Ongeza ukubwa wa fonti wa msingi kwa 45%</string>
+    <string name="accessibility_high_contrast">Tofauti ya juu</string>
+    <string name="accessibility_high_contrast_description">Tumia rangi zenye tofauti ya juu</string>
+    <string name="accessibility_reduce_transparency">Punguza uwazi</string>
+    <string name="accessibility_reduce_transparency_description">Ondoa ufifu na athari za kioo</string>
+    <string name="accessibility_dyslexia_font">Fonti rafiki kwa dyslexia</string>
+    <string name="accessibility_dyslexia_font_description">Tumia fonti ya OpenDyslexic kwa usomaji bora</string>
+    <string name="accessibility_color_blind_mode">Hali ya upofu wa rangi</string>
+    <string name="accessibility_color_blind_optimized">Rangi zilizoimarishwa kwa %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Hakuna</string>
+    <string name="color_blind_protanopia">Protanopia (Upofu wa Nyekundu)</string>
+    <string name="color_blind_deuteranopia">Deuteranopia (Upofu wa Kijani)</string>
+    <string name="color_blind_tritanopia">Tritanopia (Upofu wa Bluu)</string>
+    <string name="color_blind_monochrome">Monokromi</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Malengo makubwa ya kugusa</string>
+    <string name="accessibility_larger_touch_targets_description">Ongeza ukubwa wa vitufe na chips</string>
+    <string name="accessibility_reduce_motion">Punguza mwendo</string>
+    <string name="accessibility_reduce_motion_description">Punguza uhuishaji na mabadiliko</string>
+    <string name="accessibility_extended_timeouts">Muda wa kusubiri uliopanuliwa</string>
+    <string name="accessibility_extended_timeouts_description">Ruhusu muda zaidi kwa vitendo vya muda</string>
+    <string name="accessibility_simplified_gestures">Ishara zilizofanywa rahisi</string>
+    <string name="accessibility_simplified_gestures_description">Punguza ishara za hatua nyingi</string>
+    <string name="accessibility_haptic_feedback">Maoni ya msisimko</string>
+    <string name="accessibility_haptic_feedback_description">Uthibitisho wa mtetemo kwa vitendo</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Kiolesura kilichofanywa rahisi</string>
+    <string name="accessibility_simplified_interface_description">Ficha chaguzi za juu na upunguze msongamano</string>
+    <string name="accessibility_show_step_numbers">Onyesha nambari za hatua</string>
+    <string name="accessibility_show_step_numbers_description">Onyesha viashiria vya maendeleo</string>
+    <string name="accessibility_detailed_descriptions">Maelezo ya kina</string>
+    <string name="accessibility_detailed_descriptions_description">Toa maandishi ya ziada ya ufafanuzi</string>
+    <string name="accessibility_confirm_actions">Thibitisha kabla ya vitendo</string>
+    <string name="accessibility_confirm_actions_description">Omba uthibitisho kwa shughuli muhimu</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Uingizaji wa msimbo wa mkono</string>
+    <string name="accessibility_manual_code_entry_description">Ruhusu misimbo ya QR (Quick Response) kuandikwa badala ya kuchanganuliwa</string>
+    <string name="accessibility_voice_input">Ingizo la sauti</string>
+    <string name="accessibility_voice_input_description">Washa utambuzi wa hotuba kwa sehemu za maandishi</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Maono</string>
+    <string name="accessibility_profile_motor">Mwendo</string>
+    <string name="accessibility_profile_cognitive">Kiakili</string>
+    <string name="accessibility_profile_senior">Mzee</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Rudi</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Nyumbani</string>
+    <string name="breadcrumb_settings">Mipangilio</string>
+    <string name="breadcrumb_accessibility">Ufikivu</string>
+    <string name="breadcrumb_language">Lugha</string>
+    <string name="breadcrumb_help">Kituo cha Msaada</string>
+    <string name="breadcrumb_officer_mode">Hali ya Afisa</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Taipografia &amp; Nafasi ya Maandishi</string>
+    <string name="accessibility_line_spacing">Nafasi ya Mstari</string>
+    <string name="accessibility_line_spacing_description">Rekebisha nafasi kati ya mistari ya maandishi</string>
+    <string name="accessibility_paragraph_spacing">Nafasi ya Aya</string>
+    <string name="accessibility_paragraph_spacing_description">Rekebisha nafasi kati ya aya</string>
+    <string name="accessibility_letter_spacing">Nafasi ya Herufi</string>
+    <string name="accessibility_letter_spacing_description">Rekebisha nafasi kati ya herufi</string>
+    <string name="accessibility_typography_aaa_note">Mapendekezo ya AAA: nafasi ya mstari ya 1.5x, nafasi ya aya ya 2.0x, na nafasi ya herufi ya 0.12em.</string>
+    <string name="accessibility_spacing_current">Ya Sasa: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Tabia ya Muda wa Kusubiri</string>
+    <string name="accessibility_timeout_no_automatic">Hakuna muda wa kusubiri wa kiotomatiki kwa uzingatiaji wa AAA</string>
+    <string name="accessibility_timeout_auto_advance_30">Iendelee kiotomatiki baada ya sekunde 30</string>
+    <string name="accessibility_timeout_auto_advance_60">Iendelee kiotomatiki baada ya sekunde 60</string>
+    <string name="accessibility_timeout_set_announcement">Tabia ya muda wa kusubiri imewekwa kwa %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Kiwango cha Tofauti</string>
+    <string name="accessibility_contrast_aaa_ratio">Uwiano wa tofauti wa 7:1 kwa uzingatiaji wa AAA</string>
+    <string name="accessibility_contrast_standard">Tofauti ya kawaida</string>
+    <string name="accessibility_contrast_aa_ratio">Uwiano wa tofauti wa 4.5:1 kwa uzingatiaji wa AA</string>
+    <string name="accessibility_contrast_set_announcement">Kiwango cha tofauti kimewekwa kwa %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Hali ya upofu wa rangi imewekwa kwa %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">%1$s kitelezi. Thamani ya sasa: %2$s. %3$sKiwango kutoka %4$s hadi %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">Inazingatia AAA. </string>
+    <string name="accessibility_slider_announcement">%1$s imewekwa kwa %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, inazingatia AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s imewashwa</string>
+    <string name="accessibility_toggle_disabled">%s imezimwa</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Maoni ya Uthibitisho</string>
+    <string name="accessibility_sound_enabled">Cheza sauti wakati wa mafanikio</string>
+    <string name="accessibility_sound_enabled_description">Cheza sauti ya uthibitisho baada ya uthibitisho uliofanikiwa</string>
+    <string name="accessibility_sound_style">Mtindo wa Sauti</string>
+    <string name="accessibility_sound_preview">Hakiki sauti</string>
+    <string name="accessibility_sound_preview_preset">Hakiki %s</string>
+    <string name="accessibility_sound_style_set_announcement">Mtindo wa sauti umewekwa kwa %s</string>
+    <string name="accessibility_haptic_enabled">Tetema wakati wa mafanikio</string>
+    <string name="accessibility_haptic_enabled_description">Toa maoni ya msisimko baada ya uthibitisho uliofanikiwa</string>
+    <string name="accessibility_sound_footer">Sauti inazingatia mipangilio ya hali ya ukimya ya kifaa chako</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Sauti</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Hakiki sauti ya sasa</string>
+    <string name="accessibility_volume_set_announcement">Sauti imewekwa kwa asilimia %d</string>
+    <string name="accessibility_volume_slider_description">Kitelezi cha sauti. Thamani ya sasa: asilimia %d</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Weka Upya Mipangilio</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">Hali ya Afisa</string>
+    <string name="officer_id">Utambulisho (ID) wa Afisa</string>
+    <string name="officer_id_placeholder">mfano, OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Ingiza utambulisho wako wa afisa uliogawiwa</string>
+    <string name="officer_yubikey_connected">YubiKey Imeunganishwa</string>
+    <string name="officer_connect_yubikey">Unganisha YubiKey</string>
+    <string name="officer_touch_yubikey">Gusa YubiKey yako ili kuthibitisha...</string>
+    <string name="officer_authenticate_hmac">Thibitisha kwa HMAC (Msimbo wa Uthibitisho wa Ujumbe Unaotegemea Hash)</string>
+    <string name="officer_authentication_process">Mchakato wa Uthibitisho:</string>
+    <string name="officer_auth_steps">1. Ingiza utambulisho wako wa Afisa\n2. Bonyeza Thibitisha\n3. Gusa YubiKey inapowaka\n4. HMAC (Msimbo wa Uthibitisho wa Ujumbe Unaotegemea Hash) inathibitisha utambulisho wako</string>
+    <string name="officer_auth_failed">Uthibitisho umeshindwa. Tafadhali thibitisha utambulisho wako wa Afisa na ujaribu tena.</string>
+    <string name="officer_session_info">Afisa: %s</string>
+    <string name="officer_station_info">Kituo: %s</string>
+    <string name="officer_issued_today">Imetolewa leo: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Toa Kitambulisho cha Umri</string>
+    <string name="officer_issue_description">Thibitisha utambulisho wa mtumiaji na utoe kitambulisho cha umri cha kidijitali</string>
+    <string name="officer_start_issuance">Anza Utoaji Mpya</string>
+    <string name="officer_issuance_process">MCHAKATO WA UTOAJI</string>
+    <string name="officer_issuance_steps">1. Angalia hati ya utambulisho ya kimwili ya mtumiaji\n2. Ingiza tarehe yao ya kuzaliwa\n3. Thibitisha kwamba taarifa zinafanana hasa\n4. Toa kitambulisho chenye msimbo wa QR (Quick Response) wa ushuhuda\n5. Mtumiaji anachunguza msimbo wa QR ili kupokea kitambulisho</string>
+    <string name="officer_verify_identity">Thibitisha Utambulisho wa Mtumiaji</string>
+    <string name="officer_select_dob">Chagua Tarehe ya Kuzaliwa</string>
+    <string name="officer_change_date">Badilisha Tarehe</string>
+    <string name="officer_age_years">Umri: Miaka %d</string>
+    <string name="officer_under_18_warning">Chini ya miaka 18 - Haiwezi kutoa kitambulisho</string>
+    <string name="officer_verification_checklist">ORODHA YA UKAGUZI WA UTHIBITISHO</string>
+    <string name="officer_document_verified">Hati ya kimwili imethibitishwa</string>
+    <string name="officer_document_verified_description">Nimeshuhudia kitambulisho halali kilichotolewa na serikali</string>
+    <string name="officer_dob_matches">Tarehe ya kuzaliwa inafanana hasa</string>
+    <string name="officer_dob_matches_description">Tarehe ya Kuzaliwa kwenye hati ya kimwili ni: %s</string>
+    <string name="officer_issue_credential">Toa Kitambulisho</string>
+    <string name="officer_user_scanned_successfully">Mtumiaji Amefanikiwa Kuchanganua</string>
+    <string name="officer_return_to_dashboard">Rudi kwenye Dashibodi</string>
+    <string name="officer_go_back">Rudi Nyuma</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">Uthibitisho wa YubiKey</string>
+    <string name="yubikey_step_format">Hatua %1$d ya %2$d</string>
+    <string name="yubikey_led_should_blink">Taa ya YubiKey inapaswa kuwaka</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Inathibitisha ingizo...</string>
+    <string name="officer_state_creating_attestation">Inaunda ushuhuda...</string>
+    <string name="officer_state_computing_commitment">Inakokotoa ahadi ya kriptografia...</string>
+    <string name="officer_state_creating_session">Inaunda kipindi salama...</string>
+    <string name="officer_state_signing">Inasaini kitambulisho...</string>
+    <string name="officer_state_finalizing">Inakamilisha kitambulisho...</string>
+    <string name="officer_state_storing_attestation">Inahifadhi ushuhuda...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">Kipindi Kinakwisha Hivi Karibuni</string>
+    <string name="officer_session_expiring_message">Kipindi chako kitaisha katika sekunde %d. Je, ungependa kuhifadhi maendeleo yako?</string>
+    <string name="officer_session_expiring_announcement">Onyo: Kipindi chako kitaisha katika sekunde %d</string>
+    <string name="officer_save_and_continue">Hifadhi na Uendelee</string>
+    <string name="officer_continue_without_saving">Endelea Bila Kuhifadhi</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">TAREHE YA KUZALIWA</string>
+    <string name="officer_age_format">Umri: Miaka %d</string>
+    <string name="officer_under_18_full_warning">Chini ya miaka 18 - Haiwezi kutoa kitambulisho. Ni watu wenye umri wa miaka 18 au zaidi tu wanaostahili vitambulisho vya uthibitisho wa umri. Tafadhali thibitisha kwamba tarehe ya kuzaliwa ni sahihi.</string>
+    <string name="officer_verification_checklist_header">ORODHA YA UKAGUZI WA UTHIBITISHO</string>
+    <string name="officer_physical_document_verified">Hati ya kimwili imethibitishwa</string>
+    <string name="officer_sighted_valid_id">Nimeshuhudia kitambulisho halali kilichotolewa na serikali</string>
+    <string name="officer_dob_matches_exactly">Tarehe ya kuzaliwa inafanana hasa</string>
+    <string name="officer_dob_on_document">Tarehe ya Kuzaliwa kwenye hati ya kimwili ni: %s</string>
+    <string name="officer_error_label">Hitilafu</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">Changanua msimbo wa QR (Quick Response) wa utoaji</string>
+    <string name="issuance_downloads_credential">Hii inapakua kitambulisho chako cha umri.</string>
+    <string name="issuance_center_qr">Weka msimbo wa QR katikati ya fremu na ushikilie imara.</string>
+    <string name="issuance_enter_code_manually">Ingiza msimbo kwa mkono</string>
+    <string name="issuance_processing_qr">Inashughulikia msimbo wa QR...</string>
+    <string name="issuance_invalid_data">Data batili ya utoaji</string>
+    <string name="issuance_verification_qr_error">Huu ni msimbo wa QR wa uthibitisho. Tafadhali changanua msimbo wa QR wa utoaji wa kitambulisho.</string>
+    <string name="issuance_invalid_qr_format">Umbizo batili la msimbo wa QR</string>
+    <string name="issuance_failed_to_process">Imeshindwa kushughulikia msimbo wa QR: %s</string>
+    <string name="issuance_code">Msimbo wa utoaji</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">Uingizaji wa msimbo wa mkono</string>
+    <string name="manual_entry_enter_code_manually">Ingiza msimbo kwa mkono</string>
+    <string name="manual_entry_verification_description">Ingiza msimbo wa uthibitisho wa tarakimu 12 unaoonyeshwa kwenye skrini ya mthibitishaji.</string>
+    <string name="manual_entry_issuance_description">Andika msimbo unaoonyeshwa kwenye skrini ya mtoa.</string>
+    <string name="manual_entry_verification_code">Msimbo wa uthibitisho</string>
+    <string name="manual_entry_submit">Tuma msimbo</string>
+    <string name="manual_entry_please_enter">Tafadhali ingiza msimbo</string>
+    <string name="manual_entry_please_enter_verification">Tafadhali ingiza msimbo wa uthibitisho</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Anza kusikiliza</string>
+    <string name="voice_input_stop_listening">Acha kusikiliza</string>
+    <string name="voice_input_recognized">Imetambuliwa:</string>
+    <string name="content_desc_voice_input_listening">Inasikia ingizo la sauti</string>
+    <string name="content_desc_voice_input_available">Ingizo la sauti linapatikana</string>
+    <string name="voice_input_permission_title">Ruhusa ya kipaza sauti inahitajika</string>
+    <string name="voice_input_permission_message">Ingizo la sauti linahitaji ufikiaji wa kipaza sauti. Unaweza kuiwezesha kutoka kwa mipangilio ya mfumo.</string>
+    <string name="voice_input_listening">Inasikia...</string>
+    <string name="voice_input_error">Hitilafu ya Ingizo la Sauti</string>
+    <string name="voice_input_tap_to_speak">Gonga ili kuzungumza</string>
+    <string name="voice_input_did_you_say">Je, ulisema "%1$s"?</string>
+    <string name="voice_input_confirm">Thibitisha</string>
+    <string name="voice_input_retry">Jaribu Tena</string>
+    <string name="voice_input_cancel">Ghairi</string>
+    <string name="voice_input_button">Ingizo la Sauti</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">Ingizo la sauti halipatikani kwenye kifaa hiki</string>
+    <string name="voice_input_error_audio">Hitilafu ya kurekodi sauti. Angalia kipaza sauti.</string>
+    <string name="voice_input_error_network">Hitilafu ya mtandao. Angalia muunganisho.</string>
+    <string name="voice_input_error_network_timeout">Mtandao umechukua muda mrefu. Jaribu tena.</string>
+    <string name="voice_input_error_no_match">Hakuna usemi uliogunduliwa. Tafadhali jaribu tena.</string>
+    <string name="voice_input_error_recognizer_busy">Ingizo la sauti linafanya kazi. Tafadhali subiri.</string>
+    <string name="voice_input_error_server">Hitilafu ya seva. Jaribu tena baadaye.</string>
+    <string name="voice_input_error_speech_timeout">Hakuna usemi uliosikika. Tafadhali ongea kwa sauti kubwa zaidi.</string>
+    <string name="voice_input_error_insufficient_permissions">Ruhusa ya kipaza sauti imekatazwa.</string>
+    <string name="voice_input_error_generic">Hitilafu ya ingizo la sauti. Tafadhali jaribu tena.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">Rudi</string>
+    <string name="action_close">Funga</string>
+    <string name="action_cancel">Ghairi</string>
+    <string name="action_ok">Sawa</string>
+    <string name="action_set">Weka</string>
+    <string name="action_change">Badilisha</string>
+    <string name="action_delete">Futa</string>
+    <string name="action_reset">Weka Upya</string>
+    <string name="action_retry">Jaribu Tena</string>
+    <string name="action_try_again">Jaribu Tena</string>
+    <string name="action_refresh">Onyesha Upya</string>
+    <string name="action_download_now">Pakua Sasa</string>
+    <string name="action_retry_setup">Jaribu Tena Usanidi</string>
+    <string name="action_retry_download">Jaribu Tena Upakuaji</string>
+    <string name="action_restart_setup">Anzisha Upya Usanidi</string>
+    <string name="action_manage_storage">Simamia Hifadhi</string>
+    <string name="action_check_wifi_settings">Angalia Mipangilio ya Wi-Fi Kwanza</string>
+    <string name="action_check_wifi_settings_short">Angalia Mipangilio ya Wi-Fi</string>
+    <string name="action_grant_permission">Toa Ruhusa</string>
+    <string name="action_grant_camera_access">Toa ufikiaji wa kamera</string>
+    <string name="action_return_to_browser">Rudi kwa Kivinjari</string>
+    <string name="action_show_debug_info">Onyesha Taarifa za Debug</string>
+    <string name="action_reset_redownload">Weka Upya na Pakua Tena</string>
+    <string name="action_end_session">Maliza Kipindi</string>
+    <string name="action_expand">Panua</string>
+    <string name="action_collapse">Kunja</string>
+    <string name="accessibility_state_expanded">Imepanuliwa</string>
+    <string name="accessibility_state_collapsed">Imekunjwa</string>
+    <string name="accessibility_state_checked">Imechaguliwa</string>
+    <string name="accessibility_state_unchecked">Haijachaguliwa</string>
+    <string name="accessibility_state_selected">Imechaguliwa</string>
+    <string name="accessibility_state_not_selected">Haijachaguliwa</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">Hitilafu imetokea</string>
+    <string name="error_camera_permission">Ruhusa ya kamera inahitajika kwa uchanganuzi wa QR (Quick Response)</string>
+    <string name="error_camera_access_needed">Ufikiaji wa kamera unahitajika</string>
+    <string name="error_camera_permission_description">Toa ruhusa ya kamera ili kuchanganua misimbo ya QR au uwashe uingizaji wa mkono kutoka kwa mipangilio ya ufikivu.</string>
+    <string name="error_camera_permission_required">Ruhusa ya kamera inahitajika ili kuchanganua misimbo ya QR</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">Inachunguza msimbo wa QR...</string>
+    <string name="qr_scanner_camera_required">Ruhusa ya kamera inahitajika</string>
+    <string name="qr_scanner_camera_preview">Hakiki ya kamera kwa uchanganuzi wa misimbo ya QR</string>
+    <string name="qr_scanner_status_scanning">Inachunguza msimbo wa QR</string>
+    <string name="qr_scanner_requesting_permission">Inaomba ruhusa ya kamera</string>
+    <string name="error_camera_start_failed">Imeshindwa kuanzisha kamera: %s</string>
+    <string name="error_camera_init_failed">Uanzishaji wa kamera umeshindwa: %s</string>
+    <string name="error_biometric_not_available">Uthibitisho wa kibiolojia haupatikani</string>
+    <string name="error_network">Hitilafu ya mtandao imetokea</string>
+    <string name="error_no_credential">Hakuna kitambulisho kinachopatikana. Tafadhali pata kitambulisho kwanza.</string>
+    <string name="credential_picker_title">Chagua Kitambulisho</string>
+    <string name="credential_picker_description">Una vitambulisho vingi vinavyoweza kutumika kwa uthibitisho huu. Tafadhali chagua kimoja.</string>
+    <string name="credential_picker_expired_label">Kimeisha Muda</string>
+    <string name="credential_picker_accessibility_select">Chagua kitambulisho: %1$s</string>
+    <string name="error_failed_to_process_challenge">Imeshindwa kushughulikia changamoto</string>
+    <string name="error_failed_to_create_proof">Imeshindwa kuunda uthibitisho</string>
+    <string name="error_verification_failed">Uthibitisho umeshindwa</string>
+    <string name="error_occurred_during_verification">Hitilafu imetokea wakati wa uthibitisho</string>
+    <string name="error_connection_timeout">Muunganisho umechukua muda mrefu. Tafadhali jaribu tena.</string>
+    <string name="error_unable_to_connect">Haiwezi kuunganika. Tafadhali angalia muunganisho wako wa intaneti.</string>
+    <string name="error_secure_connection_failed">Muunganisho salama umeshindwa. Tafadhali jaribu tena.</string>
+    <string name="error_security_verification_failed">Uthibitisho wa usalama umeshindwa. Tafadhali jaribu tena.</string>
+    <string name="error_invalid_input">Ingizo batili. Tafadhali angalia taarifa zako na ujaribu tena.</string>
+    <string name="error_operation_in_progress">Shughuli nyingine inaendelea. Tafadhali subiri.</string>
+    <string name="error_operation_cancelled">Shughuli ilighairiwa.</string>
+    <string name="error_age_requirement_not_met">Sharti la umri halikutimizwa kwa kitambulisho hiki.</string>
+    <string name="error_biometric_required">Uthibitisho wa kibiolojia unahitajika ili kuendelea.</string>
+    <string name="error_wallet_not_initialized">Mkoba haujawekwa. Tafadhali anzisha upya programu.</string>
+    <string name="error_security">Hitilafu ya usalama. Tafadhali jaribu tena.</string>
+    <string name="error_connection_timeout_short">Muunganisho ulichukua muda mrefu. Tafadhali jaribu tena.</string>
+    <string name="error_invalid_input_provided">Ingizo batili limetolewa.</string>
+    <string name="error_invalid_data_format">Umbizo batili la data. Tafadhali jaribu tena.</string>
+    <string name="error_storage">Hitilafu ya hifadhi. Tafadhali angalia hifadhi ya kifaa.</string>
+    <string name="error_network_short">Hitilafu ya mtandao. Tafadhali angalia muunganisho wako.</string>
+    <string name="error_label">Hitilafu</string>
+    <string name="error_dismiss">Funga hitilafu</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">Inashughulikia...</string>
+    <string name="status_initializing_wallet">Inaweka mkoba...</string>
+    <string name="status_loading">Inapakia...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">Faragha imelindwa</string>
+    <string name="privacy_zk_description">Tarehe yako ya kuzaliwa haishirikishwi kamwe. Wathibitishaji wanajua tu kama unakidhi sharti lao la umri.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Mipangilio ya Faragha</string>
+    <string name="privacy_settings_description">Dhibiti ukusanyaji wa data na usimamie data yako</string>
+    <string name="privacy_section_data_collection">Ukusanyaji wa Data</string>
+    <string name="privacy_section_your_data">Data Yako</string>
+    <string name="privacy_protection_title">Faragha Yako Imelindwa</string>
+    <string name="privacy_protection_description">Provii Wallet inatumia uthibitisho wa maarifa sifuri kuthibitisha umri wako bila kufichua tarehe yako ya kuzaliwa. Data ya kitambulisho chako imehifadhiwa kwenye kifaa chako peke yake na haishirikishwi na mtu yeyote.</string>
+    <string name="privacy_analytics_title">Takwimu</string>
+    <string name="privacy_analytics_description">Saidia kuboresha Provii Wallet kwa kushiriki data ya matumizi isiyojulikana</string>
+    <string name="privacy_analytics_enabled">Takwimu zimewashwa</string>
+    <string name="privacy_analytics_disabled">Takwimu zimezimwa</string>
+    <string name="privacy_crash_reporting_title">Ripoti za Kuanguka</string>
+    <string name="privacy_crash_reporting_description">Tusaidie kurekebisha hitilafu kwa kutuma ripoti za kuanguka kiotomatiki</string>
+    <string name="privacy_crash_reporting_enabled">Ripoti za kuanguka zimewashwa</string>
+    <string name="privacy_crash_reporting_disabled">Ripoti za kuanguka zimezimwa</string>
+    <string name="privacy_what_we_collect_title">Data Tunayokusanya</string>
+    <string name="privacy_what_we_collect_subtitle">Gonga ili kujifunza kuhusu mazoea yetu ya data</string>
+    <string name="privacy_data_collection_info_title">Taarifa za Ukusanyaji wa Data</string>
+    <string name="privacy_data_we_collect_header">Tunachokusanya (ikiwa kimewashwa):</string>
+    <string name="privacy_data_we_collect_list">- Takwimu za matumizi ya programu zisizojulikana\n- Ripoti za kuanguka na kumbukumbu za hitilafu\n- Aina ya kifaa na toleo la mfumo\n- Taarifa ya toleo la programu</string>
+    <string name="privacy_data_we_dont_collect_header">Tunachokusanya kamwe:</string>
+    <string name="privacy_data_we_dont_collect_list">- Tarehe yako ya kuzaliwa\n- Jina lako au maelezo ya kibinafsi\n- Mahali ulipo\n- Data yako ya kitambulisho\n- Data ya kibiolojia</string>
+    <string name="privacy_data_never_shared_note">Data yako ya kitambulisho haishirikishwi kamwe na Provii au mtu mwingine yeyote. Inabaki kwenye kifaa chako.</string>
+    <string name="privacy_policy_title">Sera ya Faragha</string>
+    <string name="privacy_policy_subtitle">Soma sera yetu kamili ya faragha</string>
+    <string name="privacy_delete_my_data_title">Futa Data Yangu</string>
+    <string name="privacy_delete_my_data_subtitle">Ondoa vitambulisho vyote vilivyohifadhiwa na data</string>
+    <string name="privacy_delete_data_dialog_title">Futa Data Yote?</string>
+    <string name="privacy_delete_data_dialog_message">Hii itafuta kudumu vitambulisho vyako vyote na data ya programu kutoka kwa kifaa hiki. Utahitaji kupata kitambulisho kipya ili kutumia programu tena.</string>
+    <string name="privacy_delete_data_dialog_warning">Kitendo hiki hakiwezi kutenduliwa.</string>
+    <string name="privacy_delete_data_confirm">Futa Kila Kitu</string>
+    <string name="privacy_footer_note">Unaweza kubadilisha mipangilio hii wakati wowote. Mabadiliko yanaanza mara moja.</string>
+    <string name="dialog_delete_data_announcement">Kidirisha cha mazungumzo cha uthibitisho wa kufuta data kimefunguliwa</string>
+    <string name="dialog_data_collection_info_announcement">Kidirisha cha mazungumzo cha taarifa za ukusanyaji wa data kimefunguliwa</string>
+    <string name="content_desc_privacy_settings">Mipangilio ya faragha, dhibiti ukusanyaji wa data na usimamie data yako</string>
+    <string name="content_desc_data_collection_info">Angalia taarifa za ukusanyaji wa data</string>
+    <string name="content_desc_privacy_policy">Angalia sera ya faragha</string>
+    <string name="content_desc_opens_external_link">Inafunguliwa kwenye kivinjari</string>
+    <string name="content_desc_delete_my_data">Futa data yangu yote</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">Rudi</string>
+    <string name="content_desc_settings">Mipangilio</string>
+    <string name="content_desc_refresh">Onyesha Upya</string>
+    <string name="content_desc_verified">Imethibitishwa</string>
+    <string name="content_desc_expand">Panua</string>
+    <string name="content_desc_collapse">Kunja</string>
+    <string name="content_desc_warning_error">Onyo: Hitilafu imetokea</string>
+    <string name="content_desc_sandbox_indicator">Kiashiria cha hali ya Sandbox</string>
+    <string name="content_desc_success">Mafanikio</string>
+    <string name="content_desc_warning">Onyo</string>
+    <string name="content_desc_information">Taarifa</string>
+    <string name="content_desc_error">Hitilafu</string>
+    <string name="content_desc_sandbox_warning">Onyo la Hali ya Sandbox</string>
+    <string name="content_desc_app_info">Taarifa ya programu</string>
+    <string name="content_desc_accessibility_settings">Mipangilio ya ufikivu</string>
+    <string name="content_desc_language_settings">Mipangilio ya lugha</string>
+    <string name="content_desc_licenses">Leseni za chanzo wazi</string>
+    <string name="content_desc_select_dob">Chagua tarehe ya kuzaliwa</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Toa kitambulisho cha majaribio ukiwa Mtoa</string>
+    <string name="content_desc_get_credential">Pata kitambulisho</string>
+    <string name="content_desc_delete_credential">Futa kitambulisho</string>
+    <string name="content_desc_reset_proving_key">Weka upya ufunguo wa ushahidi</string>
+    <string name="content_desc_environment_info">Taarifa ya mazingira</string>
+    <string name="content_desc_help_support">Msaada na usaidizi</string>
+    <string name="content_desc_privacy_protected">Faragha Imelindwa</string>
+    <string name="preview_settings_title">Hakiki ya Mipangilio</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">Mafanikio</string>
+    <string name="accessibility_verification_error_description">Hitilafu</string>
+    <string name="accessibility_breadcrumb_location_description">Mahali: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">kisha</string>
+    <string name="accessibility_breadcrumb_current_page_description">Ukurasa wa sasa: %s</string>
+    <string name="accessibility_settings_navigate_description">Nenda</string>
+    <string name="accessibility_credentials_settings_description">Mipangilio</string>
+    <string name="accessibility_verification_back_description">Rudi</string>
+    <string name="accessibility_officer_back_description">Rudi</string>
+    <string name="accessibility_discovery_back_description">Rudi</string>
+    <string name="accessibility_discovery_refresh_description">Onyesha Upya</string>
+    <string name="accessibility_discovery_verified_description">Imethibitishwa</string>
+    <string name="accessibility_officer_done_description">Imekamilika</string>
+    <string name="accessibility_officer_attestation_qr_description">Msimbo wa QR wa ushuhuda kwa mtumiaji kuchanganua</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">Ruka hadi %s</string>
+    <string name="accessibility_skip_main_content">maudhui makuu</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Ulemavu wa Maono</string>
+    <string name="accessibility_profile_motor_impaired">Ulemavu wa Mwendo</string>
+    <string name="accessibility_profile_cognitive_support">Msaada wa Kiakili</string>
+    <string name="accessibility_profile_elderly_support">Msaada kwa Wazee</string>
+    <string name="accessibility_profile_default">Chaguo-Msingi</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Hakuna</string>
+    <string name="color_blind_mode_protanopia">Protanopia</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopia</string>
+    <string name="color_blind_mode_tritanopia">Tritanopia</string>
+    <string name="color_blind_mode_monochrome">Monokromi</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Kawaida</string>
+    <string name="contrast_level_high">Juu (AA)</string>
+    <string name="contrast_level_maximum">Juu Zaidi (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Upana Kamili</string>
+    <string name="text_width_comfortable">Starehe (herufi 80)</string>
+    <string name="text_width_narrow">Nyembamba (herufi 60)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Hakuna Muda wa Kusubiri (AAA)</string>
+    <string name="timeout_behavior_standard">Kawaida (sekunde 30)</string>
+    <string name="timeout_behavior_extended">Uliopanuliwa (sekunde 60)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Kawaida</string>
+    <string name="reading_level_standard_description">Maandishi ya kawaida yenye istilahi za kiufundi</string>
+    <string name="reading_level_simplified">Iliyofanywa Rahisi (Darasa la 7-9)</string>
+    <string name="reading_level_simplified_description">Maneno rahisi na sentensi fupi (inazingatia AAA)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">Msaada</string>
+    <string name="help_and_support">Msaada &amp; Usaidizi</string>
+    <string name="help_description">Pata msaada na vipengele vya programu na ufikivu</string>
+    <string name="help_center">Kituo cha Msaada</string>
+    <string name="help_center_description">Pitia mada za msaada na ujifunze kuhusu vipengele vya programu</string>
+    <string name="help_search">Tafuta msaada</string>
+    <string name="help_search_placeholder">Tafuta mada za msaada...</string>
+    <string name="help_search_active">Utafutaji umewashwa</string>
+    <string name="help_search_inactive">Utafutaji umezimwa</string>
+    <string name="help_no_results">Hakuna mada za msaada zilizopatikana zinazofanana na utafutaji wako</string>
+    <string name="help_topic_not_found">Mada ya msaada haikupatikana</string>
+    <string name="help_related_topics">Mada Zinazohusiana</string>
+    <string name="help_content_heading">Maudhui ya Msaada</string>
+    <string name="help_related_topic_position">%1$s, kipengee %2$d cha %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Maono</string>
+    <string name="help_category_typography">Taipografia</string>
+    <string name="help_category_interaction">Mwingiliano</string>
+    <string name="help_category_cognitive">Msaada wa Kiakili</string>
+    <string name="help_category_alternative_input">Ingizo Mbadala</string>
+    <string name="help_category_features">Vipengele</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Kupata Kitambulisho</string>
+    <string name="help_topic_getting_credential_summary">Jifunze jinsi ya kupata kitambulisho chako cha kwanza cha uthibitisho wa umri</string>
+    <string name="help_topic_getting_credential_content">Ili kupata kitambulisho chako cha uthibitisho wa umri:\n\n1. Tembelea eneo la mtoa aliyeidhinishwa\n2. Wasilisha ID yako iliyotolewa na serikali\n3. Changanua msimbo wa QR uliotolea\n4. Kitambulisho chako kitahifadhiwa kwa usalama\n\nTarehe yako ya kuzaliwa imehifadhiwa ndani na haishirikishwi kamwe.</string>
+
+    <string name="help_topic_verifying_age_title">Kuthibitisha Umri Wako</string>
+    <string name="help_topic_verifying_age_summary">Jinsi ya kuthibitisha umri wako bila kushiriki taarifa za kibinafsi</string>
+    <string name="help_topic_verifying_age_content">Unapohitaji kuthibitisha umri wako:\n\n1. Mthibitishaji atakuonyesha msimbo wa QR\n2. Uchanganue kwa programu\n3. Programu inaunda uthibitisho wa kihisabati\n4. Jibu la ndiyo/hapana peke yake linashirikishwa\n\nTarehe yako halisi ya kuzaliwa HAIFICHULWI KAMWE.</string>
+
+    <string name="help_topic_accessibility_title">Vipengele vya Ufikivu</string>
+    <string name="help_topic_accessibility_summary">Binafsisha programu kwa mahitaji yako</string>
+    <string name="help_topic_accessibility_content">Programu inajumuisha vipengele vingi vya ufikivu:\n\n- Maandishi makubwa na hali za tofauti ya juu\n- Ingizo la sauti na msaada wa kisomaji cha skrini\n- Ishara zilizofanywa rahisi na kiolesura cha mtumiaji\n- Chaguzi za uingizaji wa msimbo kwa mkono\n- Muda wa kusubiri uliopanuliwa\n\nFikia hizi katika Mipangilio > Ufikivu</string>
+
+    <string name="help_topic_privacy_security_title">Faragha &amp; Usalama</string>
+    <string name="help_topic_privacy_security_summary">Jinsi taarifa zako zinalindwa</string>
+    <string name="help_topic_privacy_security_content">Faragha yako ni kipaumbele chetu cha kwanza:\n\n- Vitambulisho vimehifadhiwa ndani kwenye kifaa chako\n- Uthibitisho wa maarifa sifuri unalinda data yako\n- Hakuna ufuatiliaji au takwimu\n- Uthibitisho wa kibiolojia unapatikana\n- Data haiacha kifaa chako bila kusimbwa kwa njia ya fiche</string>
+
+    <string name="help_topic_troubleshooting_title">Utatuzi wa Matatizo</string>
+    <string name="help_topic_troubleshooting_summary">Matatizo ya kawaida na suluhu</string>
+    <string name="help_topic_troubleshooting_content">Matatizo ya kawaida na marekebisho:\n\nKichanganuzi cha QR Hakifanyi Kazi:\n- Angalia ruhusa za kamera katika Mipangilio\n- Jaribu chaguo la uingizaji wa msimbo kwa mkono\n\nKitambulisho Hakipakii:\n- Angalia muunganisho wako wa intaneti\n- Jaribu kuweka upya ufunguo wa ushahidi\n\nUthibitisho Umeshindwa:\n- Hakikisha kitambulisho hakijaisha muda\n- Wasiliana na mthibitishaji kwa usaidizi</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">TAREHE YA KUZALIWA</string>
+    <string name="date_of_birth">Tarehe ya kuzaliwa</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">Miaka %d</string>
+    <string name="format_step_indicator">Hatua %1$d ya %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">Vitambulisho</string>
+    <string name="tab_settings">Mipangilio</string>
+    <string name="tab_help">Msaada</string>
+    <string name="tab_credentials_description">Angalia vitambulisho vyako</string>
+    <string name="tab_settings_description">Mipangilio ya programu</string>
+    <string name="tab_help_description">Pata msaada na usaidizi</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">Tafuta</string>
+    <string name="search_field_label">Sehemu ya utafutaji</string>
+    <string name="search_placeholder">Tafuta mipangilio, msaada, na vipengele</string>
+    <string name="search_clear">Futa utafutaji</string>
+    <string name="search_popular">Utafutaji Maarufu</string>
+    <string name="search_results_heading">Matokeo ya Utafutaji</string>
+    <string name="search_no_results">Hakuna Matokeo Yaliyopatikana</string>
+    <string name="search_try_suggestions">Jaribu kutafuta:\n• Ufikivu\n• Mipangilio\n• Msaada\n• Lugha</string>
+    <string name="search_results_announcement_singular">Matokeo 1 yamepatikana</string>
+    <string name="search_results_announcement_plural">Matokeo %d yamepatikana</string>
+    <string name="search_no_results_announcement">Hakuna matokeo yaliyopatikana</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">Ufikiaji wa Haraka</string>
+    <string name="help_topics">Mada za Msaada</string>
+    <string name="help_glossary">Orodha ya Maneno</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">Leseni za Chanzo Wazi</string>
+    <string name="licenses_description">Programu hii inatumia programu za chanzo wazi zifuatazo. Tuna shukrani kwa wasanidi waliozunda maktaba hizi.</string>
+    <string name="licenses_tap_to_view">Gonga ili kuona leseni kamili</string>
+    <string name="licenses_group_header">%1$s (maktaba %2$d)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">Hakuna muunganisho wa intaneti. Tafadhali angalia mtandao wako na ujaribu tena.</string>
+    <string name="error_unexpected">Hitilafu isiyotarajiwa imetokea. Tafadhali anzisha upya programu.</string>
+    <string name="error_unexpected_try_again">Hitilafu isiyotarajiwa imetokea. Tafadhali jaribu tena.</string>
+    <string name="error_storage_detailed">Hitilafu ya hifadhi: %s</string>
+    <string name="error_network_detailed">Hitilafu ya mtandao: %s</string>
+    <string name="error_proof_generation_failed">Imeshindwa kuzalisha uthibitisho: %s</string>
+    <string name="error_not_eligible">Hukustahili. Hukidhi mahitaji ya uthibitisho huu.</string>
+    <string name="error_challenge_expired">Changamoto imeisha muda au haikupatikana. Tafadhali omba mpya.</string>
+    <string name="error_challenge_expired_scan_new">Changamoto hii imeisha muda. Tafadhali changanua msimbo mpya wa QR.</string>
+    <string name="error_request_out_of_order">Ombi liko nje ya mpangilio. Tafadhali jaribu tena.</string>
+    <string name="error_too_many_requests">Maombi mengi sana. Tafadhali subiri kidogo na ujaribu tena.</string>
+    <string name="error_server">Hitilafu ya seva. Tafadhali jaribu tena baadaye.</string>
+    <string name="error_request_failed">Ombi limeshindwa (%d). Tafadhali jaribu tena.</string>
+    <string name="error_not_eligible_short">Hukustahili kwa uthibitisho huu</string>
+    <string name="error_challenge_not_found">Changamoto haikupatikana</string>
+    <string name="error_complete_steps_in_order">Tafadhali kamilisha hatua kwa mpangilio</string>
+    <string name="error_challenge_expired_short">Changamoto imeisha muda</string>
+    <string name="error_authentication_cancelled">Uthibitisho ulighairiwa. Tafadhali thibitisha utambulisho wako ili kukamilisha uthibitisho wa umri.</string>
+    <string name="error_invalid_data_format_short">Umbizo batili la data. Tafadhali jaribu tena.</string>
+    <string name="error_storage_check_device">Hitilafu ya hifadhi. Tafadhali angalia hifadhi ya kifaa.</string>
+    <string name="error_network_check_connection">Hitilafu ya mtandao. Tafadhali angalia muunganisho wako.</string>
+    <string name="error_proof_generation_failed_short">Imeshindwa kuzalisha uthibitisho. Tafadhali jaribu tena.</string>
+    <string name="error_operation_in_progress_short">Shughuli nyingine inaendelea.</string>
+    <string name="error_no_internet_short">Hakuna muunganisho wa intaneti. Tafadhali angalia mtandao wako.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Changanua QR ya Uthibitisho</string>
+    <string name="verification_verifying_title">Inathibitisha Umri</string>
+    <string name="verification_success_title">Umri Umethibitishwa</string>
+    <string name="verification_failed_title">Uthibitisho Umeshindwa</string>
+    <string name="verification_processing_wait">Hii inaweza kuchukua sekunde chache</string>
+    <string name="verification_success_message">Umri wako umethibitishwa kwa faragha</string>
+    <string name="verification_return_to_site">Unaweza sasa kurudi kwenye tovuti ili kuendelea.</string>
+    <string name="verification_please_enter_code">Tafadhali ingiza msimbo wa uthibitisho. Msimbo unapaswa kuwa msimbo mfupi wa tarakimu 12 au URL kamili ya uthibitisho kutoka kwa mthibitishaji.</string>
+    <string name="verification_error_occurred">Hitilafu imetokea wakati wa uthibitisho</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Inashughulikia...</string>
+    <string name="credential_list_verify_age_button">Thibitisha Umri</string>
+    <string name="credential_list_generate_in_person_description">Zalisha kitambulisho ana kwa ana</string>
+    <string name="credential_list_scan_qr_title">Changanua Msimbo wa QR</string>
+    <string name="credential_list_find_locations_title">Tafuta Maeneo</string>
+    <string name="credential_section_my_credential">Kitambulisho Changu</string>
+    <string name="credential_section_managed">Vitambulisho Vinavyosimamiwa</string>
+    <string name="credential_list_get_credential_button">Pata Kitambulisho</string>
+    <string name="credential_list_add_managed_button">Ongeza Kitambulisho Kinachosimamishwa</string>
+    <string name="credential_section_managed_empty">Ongeza kitambulisho kwa mtu unayemhudumia, kama vile mtoto.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Maelezo ya Kitambulisho</string>
+    <string name="credential_detail_not_found">Kitambulisho hakikupatikana</string>
+    <string name="credential_detail_nickname">Jina la Utani</string>
+    <string name="credential_detail_no_nickname">Hakuna jina la utani lililowekwa</string>
+    <string name="credential_detail_edit_nickname">Hariri jina la utani</string>
+    <string name="credential_detail_status">Hali</string>
+    <string name="credential_detail_delete">Futa Kitambulisho</string>
+    <string name="credential_detail_delete_title">Futa Kitambulisho</string>
+    <string name="credential_detail_delete_message">Je, una uhakika unataka kufuta kitambulisho hiki? Kitendo hiki hakiwezi kutenduliwa.</string>
+    <string name="credential_type_primary">Msingi</string>
+    <string name="credential_type_managed">Inayosimamiwa</string>
+    <string name="credential_status_valid">Halali</string>
+    <string name="credential_status_expired">Imeisha Muda</string>
+    <string name="credential_status_invalid">Batili</string>
+    <string name="action_save">Hifadhi</string>
+    <string name="credential_slots_full_title">Idadi ya Juu ya Vitambulisho Imefikiwa</string>
+    <string name="credential_slots_full_message">Umefika idadi ya juu ya vitambulisho. Futa kitambulisho kilichopo ili kuongeza kipya.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">Kitambulisho kinachosimamishwa</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">Thibitisha umri wa %1$s?</string>
+    <string name="managed_confirm_message">Unakaribia kuthibitisha umri kwa kutumia kitambulisho kinachosimamishwa cha %1$s.</string>
+    <string name="managed_confirm_proceed">Thibitisha kwa %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Inatengeneza uthibitisho kwa %1$s</string>
+    <string name="verification_age_verified_for">Umri umethibitishwa kwa %1$s</string>
+    <string name="deeplink_verification_age_verified_for">Umri umethibitishwa kwa %1$s</string>
+    <string name="attestation_managed_credential_received">Kitambulisho cha %1$s kimepokelewa!</string>
+    <string name="attestation_managed_credential_stored">Kitambulisho cha mtoto wako kimehifadhiwa kwa usalama.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">Futa kitambulisho cha %1$s?</string>
+    <string name="credential_detail_delete_managed_message">Je, una uhakika unataka kufuta kitambulisho hiki kinachosimamishwa cha %1$s? Kitendo hiki hakiwezi kutenduliwa. Utahitaji kutembelea mtoa tena ili kukibadilisha.</string>
+    <string name="credential_detail_save_error">Imeshindwa kuhifadhi jina la utani</string>
+    <string name="credential_detail_delete_error">Imeshindwa kufuta kitambulisho</string>
+    <string name="accessibility_saving">Inahifadhi...</string>
+    <string name="accessibility_deleting">Inafuta...</string>
+    <string name="accessibility_loading">Inapakia, tafadhali subiri</string>
+    <string name="accessibility_issuing_credential">Inatoa kitambulisho, tafadhali subiri</string>
+    <string name="dialog_delete_all_credentials_title">Futa vitambulisho vyote?</string>
+    <string name="dialog_delete_all_credentials_message">Hii itafuta kitambulisho chako na vitambulisho vyovyote vinavyosimamiwa kwa watoto. Kitendo hiki hakiwezi kutenduliwa.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">Inayosimamiwa</string>
+    <string name="credential_slots_count">%1$d ya 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Inaandaa uthibitisho...</string>
+    <string name="deeplink_verification_checking_credential">Inakagua kitambulisho...</string>
+    <string name="deeplink_verification_processing_challenge">Inashughulikia changamoto...</string>
+    <string name="deeplink_verification_creating_proof">Inaunda uthibitisho salama...</string>
+    <string name="deeplink_verification_submitting_proof">Inatuma uthibitisho...</string>
+    <string name="deeplink_verification_success">✔ Umri umethibitishwa kwa mafanikio</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">Hakuna kitambulisho kilichopatikana. Tafadhali sanidi kitambulisho chako kwanza.</string>
+    <string name="deeplink_verification_error_failed_challenge">Imeshindwa kushughulikia changamoto ya uthibitisho</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Haiwezi kuonyesha kidokezo cha uthibitisho</string>
+    <string name="deeplink_verification_error_failed_proof">Imeshindwa kuunda uthibitisho wa umri</string>
+    <string name="deeplink_verification_error_verification_failed">Uthibitisho umeshindwa</string>
+    <string name="deeplink_verification_error_unexpected">Hitilafu isiyotarajiwa imetokea</string>
+    <string name="deeplink_verification_error_no_credential_selected">Hakuna kitambulisho kilichochaguliwa. Tafadhali jaribu tena.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Chagua Kitambulisho</string>
+    <string name="deeplink_verification_select_credential_subtitle">Vitambulisho vingi vinapatikana. Chagua utakachotumia kwa uthibitisho huu.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Inathibitisha Umri</string>
+    <string name="deeplink_verification_title_verified">Imethibitishwa</string>
+    <string name="deeplink_verification_title_failed">Uthibitisho Umeshindwa</string>
+    <string name="deeplink_verification_please_wait">Tafadhali subiri...</string>
+    <string name="deeplink_verification_age_verified">Umri Umethibitishwa!</string>
+    <string name="deeplink_verification_under_age_verified">Imethibitishwa Chini ya Umri %1$d</string>
+    <string name="deeplink_verification_returning_browser">Inarudi kwenye kivinjari...</string>
+    <string name="deeplink_verification_return_to_browser">Rudi kwa Kivinjari</string>
+    <string name="deeplink_verification_failed_title">Uthibitisho Umeshindwa</string>
+    <string name="deeplink_verification_error_occurred">Hitilafu imetokea wakati wa uthibitisho</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">MCHAKATO WA UTOAJI</string>
+    <string name="officer_issuance_process_steps">1. Angalia hati ya utambulisho ya kimwili ya mtumiaji\n2. Ingiza tarehe yao ya kuzaliwa\n3. Thibitisha kwamba taarifa zinafanana hasa\n4. Toa kitambulisho chenye msimbo wa QR (Quick Response) wa ushuhuda\n5. Mtumiaji anachunguza msimbo wa QR ili kupokea kitambulisho</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">Imeshindwa kuzalisha msimbo wa QR</string>
+    <string name="officer_attestation_ready_title">Ushuhuda Uko Tayari</string>
+    <string name="officer_attestation_scan_instruction">Mtumiaji anapaswa kuchanganua msimbo huu wa QR kwa programu yake ya Provii Wallet</string>
+    <string name="officer_attestation_deeplink_label">KIUNGO CHA KINA CHA USHUHUDA</string>
+    <string name="officer_wait_for_attestation_scan">Subiri mtumiaji achanganue</string>
+    <string name="officer_attestation_info">Kitambulisho kitazalishwa kwenye kifaa chao</string>
+    <string name="officer_attestation_complete">Ushuhuda umekamilika</string>
+    <string name="officer_user_will_complete_credential">Mtumiaji atakamilisha uzalishaji wa kitambulisho kwenye kifaa chake</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Inasimbua data ya ushuhuda...</string>
+    <string name="attestation_generating_randomness">Inazalisha nasibu salama...</string>
+    <string name="attestation_sending">Inatuma kwa mtoa...</string>
+    <string name="attestation_verifying">Inathibitisha ahadi...</string>
+    <string name="attestation_storing">Inahifadhi kitambulisho...</string>
+    <string name="attestation_complete">Kitambulisho kimekamilika!</string>
+    <string name="attestation_error_invalid_data">Data batili ya ushuhuda</string>
+    <string name="attestation_error_expired">Ushuhuda umeisha muda</string>
+    <string name="attestation_error_network">Hitilafu ya mtandao - tafadhali angalia muunganisho wako</string>
+    <string name="attestation_error_unexpected">Hitilafu isiyotarajiwa imetokea</string>
+    <string name="attestation_title_processing">Inashughulikia Ushuhuda</string>
+    <string name="attestation_title_success">Kitambulisho Kimepokelewa</string>
+    <string name="attestation_title_failed">Utoaji Umeshindwa</string>
+    <string name="attestation_secure_issuance">Utoaji Salama</string>
+    <string name="attestation_privacy_preserving">Utoaji wa kitambulisho unaohifadhi faragha</string>
+    <string name="attestation_may_take_seconds">Hii inaweza kuchukua sekunde chache</string>
+    <string name="attestation_keep_app_open">Tafadhali acha programu wazi</string>
+    <string name="attestation_credential_received">Kitambulisho Kimepokelewa!</string>
+    <string name="attestation_credential_stored_description">Kitambulisho chako cha uthibitisho wa umri kimehifadhiwa kwa usalama</string>
+    <string name="attestation_issuer_verified">Mtoa amethibitishwa</string>
+    <string name="attestation_failed_title">Utoaji Umeshindwa</string>
+    <string name="attestation_scan_qr_instead">Changanua QR Badala Yake</string>
+    <string name="attestation_go_back">Rudi Nyuma</string>
+    <string name="attestation_step_decode">Simbua</string>
+    <string name="attestation_step_generate">Zalisha</string>
+    <string name="attestation_step_send">Tuma</string>
+    <string name="attestation_step_verify">Thibitisha</string>
+    <string name="attestation_step_store">Hifadhi</string>
+    <string name="attestation_step_complete">Kamilisha</string>
+    <string name="accessibility_attestation_encrypted_description">Ushuhuda uliosimbwa kwa njia ya fiche unashughulikiwa</string>
+    <string name="accessibility_attestation_success_description">Alama ya mafanikio inayoonyesha kitambulisho kimepokelewa</string>
+    <string name="accessibility_attestation_error_description">Ikoni ya hitilafu inayoonyesha utoaji umeshindwa</string>
+    <string name="accessibility_step_complete">Hatua %1$s imekamilika</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Mpokeaji wa Kitambulisho</string>
+    <string name="attestation_recipient_prompt">Kitambulisho hiki ni kwa ajili ya...</string>
+    <string name="attestation_recipient_me">Mimi</string>
+    <string name="attestation_recipient_child">Mtoto</string>
+    <string name="attestation_nickname_title">Jina la Utani la Mtoto</string>
+    <string name="attestation_nickname_prompt">Ingiza jina la utani ili uweze kutofautisha vitambulisho</string>
+    <string name="attestation_nickname_placeholder">mfano, Alex</string>
+    <string name="attestation_nickname_continue">Endelea</string>
+    <string name="attestation_nickname_back">Rudi</string>
+    <string name="accessibility_attestation_recipient_heading">Chagua kitambulisho hiki ni kwa nani</string>
+    <string name="accessibility_attestation_nickname_heading">Ingiza jina la utani la mtoto</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Umbizo batili la ID ya afisa</string>
+    <string name="officer_auth_error_challenge_failed">Imeshindwa kupata changamoto ya YubiKey: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Gusa YubiKey yako ili kuthibitisha</string>
+    <string name="officer_auth_error_touch_timeout">YubiKey haikuguswa kwa wakati</string>
+    <string name="officer_auth_error_verify_document_dob">Tafadhali thibitisha hati na Tarehe ya Kuzaliwa zinafanana</string>
+    <string name="officer_auth_error_invalid_date_format">Umbizo batili la tarehe. Tumia YYYY-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">Mtumiaji lazima awe na umri wa miaka 18 au zaidi</string>
+    <string name="officer_auth_error_not_authenticated">Haujathibitishwa. Tafadhali ingiza ID yako ya afisa kwanza.</string>
+    <string name="officer_auth_error_issue_failed">Imeshindwa kutoa kitambulisho</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Gonga ili kuona</string>
+    <string name="gesture_desc_long_press_options">, bonyeza kwa muda kwa chaguzi</string>
+    <string name="gesture_desc_swipe_left">, telezesha kushoto kwa vitendo zaidi</string>
+    <string name="gesture_desc_swipe_right">, telezesha kulia kwa vitendo zaidi</string>
+    <string name="gesture_desc_tap_to_activate">Gonga ili kuwasha</string>
+    <string name="gesture_desc_long_press_format">. Bonyeza kwa muda: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Jaribu Tena</string>
+    <string name="main_activity_reset_redownload">Weka Upya na Pakua Tena</string>
+    <string name="main_activity_show_debug_info">Onyesha Taarifa za Debug</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Mipangilio ya Ufikivu</string>
+    <string name="search_item_accessibility_settings_subtitle">Binafsisha uzoefu wako</string>
+    <string name="search_item_large_text_title">Maandishi Makubwa</string>
+    <string name="search_item_large_text_subtitle">Ongeza ukubwa wa maandishi</string>
+    <string name="search_item_high_contrast_title">Tofauti ya Juu</string>
+    <string name="search_item_high_contrast_subtitle">Boresha uonekano</string>
+    <string name="search_item_voice_input_title">Ingizo la Sauti</string>
+    <string name="search_item_voice_input_subtitle">Dhibiti kwa sauti</string>
+    <string name="search_item_manual_code_entry_title">Uingizaji wa Msimbo kwa Mkono</string>
+    <string name="search_item_manual_code_entry_subtitle">Andika misimbo badala ya kuchanganua</string>
+    <string name="search_item_simplified_ui_title">Kiolesura cha Mtumiaji Kilichofanywa Rahisi</string>
+    <string name="search_item_simplified_ui_subtitle">Punguza ugumu wa kuona</string>
+    <string name="search_item_color_blindness_title">Msaada wa Upofu wa Rangi</string>
+    <string name="search_item_color_blindness_subtitle">Rekebisha rangi kwa uonekano bora</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Mipangilio</string>
+    <string name="search_item_settings_subtitle">Usanidi wa programu</string>
+    <string name="search_item_language_title">Lugha</string>
+    <string name="search_item_language_subtitle">Badilisha lugha ya programu</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Vitambulisho Vyangu</string>
+    <string name="search_item_credentials_subtitle">Angalia vitambulisho vyako</string>
+    <string name="search_item_get_credential_title">Pata Kitambulisho</string>
+    <string name="search_item_get_credential_subtitle">Tafuta watoa</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Msaada</string>
+    <string name="search_item_help_subtitle">Pata usaidizi</string>
+    <string name="search_item_privacy_title">Ulinzi wa Faragha</string>
+    <string name="search_item_privacy_subtitle">Jinsi data yako inalindwa</string>
+    <string name="search_item_verification_title">Uthibitisho wa Umri</string>
+    <string name="search_item_verification_subtitle">Thibitisha umri wako</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Rejesta ya akiba ngumu kwa mazingira ya Sandbox</string>
+    <string name="issuer_fallback_production_description">Rejesta ya akiba ngumu kwa uzalishaji</string>
+    <string name="issuer_fallback_category_government">Serikali</string>
+    <string name="issuer_fallback_category_government_description">Vitambulisho vilivyotolewa na serikali</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Mtoa wa Provii Sandbox</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Mtoa rasmi wa Provii Sandbox kwa majaribio</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Tembelea tovuti ya mtoa wa Sandbox</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Mtoa rasmi wa vitambulisho vya Provii</string>
+    <string name="issuer_fallback_production_issuer_instructions">Tembelea ofisi yako ya karibu ya DMV</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">Tarehe ya kuzaliwa haiwezi kuwa siku zijazo</string>
+    <string name="validation_error_invalid_date_format">Umbizo batili la tarehe</string>
+    <string name="validation_error_officer_id_too_short">Utambulisho wa afisa ni mfupi mno</string>
+    <string name="validation_error_invalid_officer_id_format">Umbizo batili la utambulisho wa Afisa</string>
+    <string name="validation_error_empty_qr_code">Msimbo wa QR ni tupu</string>
+    <string name="validation_error_qr_code_too_large">Msimbo wa QR ni mkubwa mno</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">Sasa wewe ni msanidi programu!</string>
+    <string name="sandbox_toast_enabled">Hali ya Sandbox Imewashwa\nInatumia mazingira ya majaribio</string>
+    <string name="sandbox_toast_disabled">Hali ya Uzalishaji Imewashwa\nInatumia mazingira ya uzalishaji</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">Uko hatua 1 kutoka kwa hali ya msanidi programu</string>
+    <string name="sandbox_toast_steps_away">Uko hatua %1$d kutoka kwa hali ya msanidi programu</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">Hakuna YubiKey iliyounganishwa</string>
+    <string name="yubikey_error_timeout">Kusubiri kwa kugusa YubiKey kumechukua muda mrefu. Tafadhali gusa ufunguo unapowaka.</string>
+    <string name="yubikey_error_not_supported">Mwitikio wa changamoto haujasanidiwa kwenye nafasi hii ya YubiKey</string>
+    <string name="yubikey_error_no_slot">Nafasi ya 2 haijasanidiwa kwa HMAC (Msimbo wa Uthibitisho wa Ujumbe Unaotegemea Hash) SHA1 mwitikio wa changamoto</string>
+    <string name="yubikey_error_hmac_failed">Hesabu ya HMAC (Msimbo wa Uthibitisho wa Ujumbe Unaotegemea Hash) imeshindwa: %s</string>
+    <string name="yubikey_error_session_failed">Imeshindwa kuunganika na YubiKey: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">Mkoba haujawekwa</string>
+    <string name="wallet_error_proving_key_not_found">Ufunguo wa ushahidi haujapatikana - tafadhali pakua tena</string>
+    <string name="wallet_error_proving_key_not_readable">Haiwezi kusoma faili ya ufunguo wa ushahidi</string>
+    <string name="wallet_error_out_of_memory">Kumbukumbu imeisha - tafadhali anzisha upya programu</string>
+    <string name="wallet_error_prover_error">Hitilafu ya mthibitishaji: %s</string>
+    <string name="wallet_error_ffi_error">Hitilafu ya FFI: %s</string>
+    <string name="wallet_error_prover_init_failed">Imeshindwa kuanzisha mthibitishaji: %s</string>
+    <string name="wallet_error_prover_verification_failed">Uthibitisho wa uanzishaji wa mthibitishaji umeshindwa</string>
+    <string name="wallet_error_verifier_url_update_failed">Imeshindwa kusasisha URL (anwani ya tovuti) ya mthibitishaji! Ilitarajiwa %1$s lakini ilipata %2$s</string>
+    <string name="wallet_error_wallet_still_null">Mkoba bado una thamani ya null baada ya uanzishaji</string>
+    <string name="wallet_error_credential_not_found">Kitambulisho hakikupatikana</string>
+    <string name="wallet_error_credential_access_failed">Haiwezi kufikia kitambulisho: %s</string>
+    <string name="wallet_error_invalid_format">Umbizo batili: %s</string>
+    <string name="wallet_error_not_initialized_short">Mthibitishaji haujawekwa</string>
+    <string name="wallet_error_proving_key_unavailable">Ufunguo wa ushahidi haupatikani. Usanidi unahitajika.</string>
+    <string name="wallet_error_storage_init_failed">Uanzishaji wa hifadhi umeshindwa</string>
+    <string name="wallet_error_biometric_unavailable">Uthibitisho wa kibiolojia haupatikani</string>
+    <string name="wallet_error_auth_failed">Uthibitisho umeshindwa</string>
+    <string name="wallet_error_sandbox_disabled">Washa hali ya Sandbox ili kuzalisha vitambulisho vya majaribio</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Haiwezi kupata vitambulisho vya Sandbox. Tafadhali angalia muunganisho wa intaneti.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Uthibitisho Unahitajika</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Thibitisha utambulisho wako ili kuunda uthibitisho wa umri</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Fikia hifadhi salama</string>
+    <string name="keystore_biometric_prompt_cancel">Ghairi</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, imepanuliwa, inaonyesha maandishi kamili ya leseni</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, imekunjwa, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">Hakuna</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Simu ya Mkononi</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Haijulikani</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">Viwango vya Tofauti</string>
+    <string name="help_topic_extra_large_text_title">Maandishi Makubwa Sana</string>
+    <string name="help_topic_reduce_transparency_title">Punguza Uwazi</string>
+    <string name="help_topic_color_blind_modes_title">Hali za Upofu wa Rangi</string>
+    <string name="help_topic_line_spacing_title">Nafasi ya Mstari</string>
+    <string name="help_topic_paragraph_spacing_title">Nafasi ya Aya</string>
+    <string name="help_topic_letter_spacing_title">Nafasi ya Herufi</string>
+    <string name="help_topic_text_width_title">Upana wa Maandishi</string>
+    <string name="help_topic_touch_targets_title">Malengo Makubwa ya Kugusa</string>
+    <string name="help_topic_reduce_motion_title">Punguza Mwendo</string>
+    <string name="help_topic_timeout_behavior_title">Tabia ya Muda wa Kusubiri</string>
+    <string name="help_topic_simplified_gestures_title">Ishara Zilizofanywa Rahisi</string>
+    <string name="help_topic_haptic_feedback_title">Maoni ya Msisimko</string>
+    <string name="help_topic_data_preservation_title">Uhifadhi wa Data</string>
+    <string name="help_topic_simplified_ui_title">Kiolesura cha Mtumiaji Kilichofanywa Rahisi</string>
+    <string name="help_topic_step_indicators_title">Viashiria vya Hatua</string>
+    <string name="help_topic_verbose_descriptions_title">Maelezo ya Kina</string>
+    <string name="help_topic_confirm_actions_title">Thibitisha Vitendo</string>
+    <string name="help_topic_reading_level_title">Kiwango Kilichofanywa Rahisi cha Usomaji</string>
+    <string name="help_topic_help_system_title">Mfumo wa Msaada</string>
+    <string name="help_topic_manual_code_entry_title">Uingizaji wa Msimbo kwa Mkono</string>
+    <string name="help_topic_voice_input_title">Ingizo la Sauti</string>
+    <string name="help_topic_screen_reader_title">Msaada wa Kisomaji cha Skrini</string>
+    <string name="help_topic_accessibility_profiles_title">Wasifu wa Usanidi wa Haraka</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">Dhibiti uwiano wa tofauti kati ya maandishi na mandhari nyuma:\n\n• Kawaida: Rangi za chaguo-msingi za programu\n• Juu (AA): Uwiano wa tofauti wa 4.5:1\n• Juu Zaidi (AAA): Uwiano wa tofauti wa 7:1+\n\nTofauti ya juu inafanya maandishi kuwa rahisi kusoma, hasa katika mazingira yenye mwanga mkali au kwa watumiaji wenye uono hafifu.\n\nUzingatiaji wa WCAG AAA unahitaji tofauti ya Juu Zaidi.</string>
+    <string name="help_topic_extra_large_text_text">Inaongeza ukubwa wote wa maandishi kwa 50% katika programu nzima.\n\nHii inafanya maandishi kuwa rahisi kusoma kwa watumiaji wenye:\n• Uono hafifu\n• Mabadiliko ya uono yanayohusiana na umri\n• Matatizo ya kusoma\n\nInaunganishwa na mipangilio ya ukubwa wa fonti ya mfumo kwa kubadilika zaidi.</string>
+    <string name="help_topic_reduce_transparency_text">Inaondoa matabaka ya uwazi na athari za ufifu.\n\nFaida:\n• Mfululizo wa kuona ulio wazi zaidi\n• Usomaji bora wa maandishi\n• Kelele za kuona zilizopunguzwa\n• Mzigo wa kiakili uliopunguzwa\n\nInapendekezwa kwa watumiaji wenye uono hafifu au matatizo ya kiakili.</string>
+    <string name="help_topic_color_blind_modes_text">Inarekebisha rangi kwa aina tofauti za upofu wa rangi:\n\n• Protanopia: Upofu wa Nyekundu\n• Deuteranopia: Upofu wa Kijani\n• Tritanopia: Upofu wa Bluu\n• Monokromi: Upofu kamili wa rangi\n\nKila hali inatumia rangi zilizochaguliwa kwa makini ambazo zinaweza kutofautishwa kwa aina hiyo maalum ya upungufu wa uono wa rangi.</string>
+    <string name="help_topic_line_spacing_text">Inarekebisha nafasi kati ya mistari ya maandishi (1.0x - 2.0x).\n\n• Chaguo-Msingi: 1.0x\n• Inazingatia AAA: 1.5x au zaidi\n\nNafasi ya mstari iliyoongezwa:\n• Inaboresha uelewa wa kusoma\n• Inapunguza mchafuko wa macho\n• Inasaidia watumiaji wenye dyslexia\n• Inafanya vitalu vya maandishi kuwa visivyo na msongamano</string>
+    <string name="help_topic_paragraph_spacing_text">Inarekebisha nafasi kati ya aya (1.0x - 3.0x).\n\n• Chaguo-Msingi: 1.0x\n• Inazingatia AAA: 2.0x au zaidi\n\nNafasi ya aya iliyoongezwa:\n• Inatenganisha mawazo wazi\n• Inaboresha mpangilio wa kuona\n• Inapunguza mzigo wa kiakili\n• Inasaidia kudumisha nafasi ya kusoma</string>
+    <string name="help_topic_letter_spacing_text">Inarekebisha nafasi kati ya herufi (0.0em - 0.2em).\n\n• Chaguo-Msingi: 0.0em\n• Inazingatia AAA: 0.12em au zaidi\n\nNafasi ya herufi iliyoongezwa:\n• Inafanya herufi za mtu binafsi kuwa tofauti zaidi\n• Inasaidia watumiaji wenye dyslexia\n• Inaboresha usahihi wa kusoma\n• Inapunguza kuchanganyikiwa kwa herufi</string>
+    <string name="help_topic_text_width_text">Inazuia urefu wa mstari kwa usomaji rahisi:\n\n• Upana Kamili: Hakuna kikomo\n• Starehe: Herufi 80 (inayopendekezwa)\n• Nyembamba: Herufi 60\n\nUtafiti unaonyesha usomaji bora hutokea kwa herufi 60-80 kwa mstari. Mistari mifupi inapunguza harakati za macho na kuboresha uelewa.</string>
+    <string name="help_topic_touch_targets_text">Inaongeza ukubwa wa chini wa lengo la kugusa hadi 60dp (kutoka 44dp).\n\nFaida:\n• Ni rahisi kugonga vitufe na vidhibiti\n• Inapunguza kugonga kwa bahati mbaya\n• Inasaidia watumiaji wenye ulemavu wa magari\n• Bora kwa matumizi kwa mkono mmoja\n\nWCAG AAA inahitaji kiwango cha chini cha 60dp.</string>
+    <string name="help_topic_reduce_motion_text">Inaondoa uhuishaji na mabadiliko yote.\n\nFaida:\n• Inazuia ugonjwa wa mwendo\n• Inapunguza usumbufu\n• Inapunguza mzigo wa kiakili\n• Inaboresha mkusanyiko\n\nInapendekezwa kwa watumiaji wenye:\n• Matatizo ya ngome\n• Matatizo ya mkusanyiko\n• Unyeti wa mwendo</string>
+    <string name="help_topic_timeout_behavior_text">Inadhibiti muda wa kusubiri wa kiotomatiki kwenye skrini za uthibitisho:\n\n• Hakuna Muda wa Kusubiri (AAA): Muda usio na kikomo\n• Kawaida: Sekunde 30\n• Uliopanuliwa: Sekunde 60\n\nWCAG AAA inahitaji chaguo la kutokuwa na muda wa kusubiri kwa watumiaji wanaohitaji muda zaidi kukamilisha kazi.\n\nData ya fomu imehifadhiwa kiotomatiki kabla ya muda wa kusubiri.</string>
+    <string name="help_topic_simplified_gestures_text">Inabadilisha ishara ngumu na mbadala rahisi:\n\n• Telezesha → Gonga kitufe\n• Bonyeza kwa muda → Gonga la kawaida na uthibitisho\n• Pinch/zoom → Vitufe\n\nInasaidia watumiaji wenye:\n• Ulemavu wa magari\n• Mtetemeko\n• Ustadi mdogo\n• Matatizo ya skrini ya kugusa</string>
+    <string name="help_topic_haptic_feedback_text">Inatoa maoni ya mtetemo kwa vitendo.\n\nFaida:\n• Inathibitisha kushinikiza kwa vitufe\n• Inaonyesha hitilafu\n• Inatoa uthibitisho wa kugusa\n\nInaweza kuzimwa kwa watumiaji ambao:\n• Wanaona ni usumbufu\n• Wana unyeti wa hisia\n• Wanapendelea uendeshaji wa kimya</string>
+    <string name="help_topic_data_preservation_text">Inahifadhi kiotomatiki data ya fomu kabla ya muda wa kusubiri.\n\nVipengele:\n• Onyo sekunde 10 kabla ya muda wa kusubiri\n• Chaguo la kuhifadhi au kutupilia mbali data\n• Urejeshaji wa kiotomatiki ukirejesha\n• Uhifadhi wa data kwa saa 24\n\nInahakikisha kutopotea kwa data ikiwa unahitaji muda wa ziada au kupata usumbufu.</string>
+    <string name="help_topic_simplified_ui_text">Inapunguza ugumu wa kuona:\n\n• Vipengele vichache vya UI vinavyoonyeshwa kwa wakati mmoja\n• Vitufe vikubwa na wazi zaidi\n• Nafasi nyingi zaidi\n• Mipangilio iliyofanywa rahisi\n\nFaida:\n• Rahisi kuelewa\n• Isiyosumbua zaidi\n• Mkusanyiko bora\n• Mzigo wa kiakili uliopunguzwa</string>
+    <string name="help_topic_step_indicators_text">Inaonyesha maendeleo kupitia michakato ya hatua nyingi.\n\nInaonyesha:\n• Nambari ya hatua ya sasa\n• Jumla ya idadi ya hatua\n• Taswira ya maendeleo\n\nFaida:\n• Inapunguza wasiwasi\n• Inaweka matarajio wazi\n• Inasaidia kudumisha mwelekeo\n• Inaonyesha maendeleo ya kukamilika</string>
+    <string name="help_topic_verbose_descriptions_text">Inatoa muktadha na maelezo ya ziada:\n\n• Lebo ndefu zaidi za vitufe\n• Maelekezo ya kina zaidi\n• Vidokezo vya ziada\n• Ujumbe wa hitilafu ulio wazi zaidi\n\nInasaidia watumiaji:\n• Kuelewa vitendo kabla ya kuvifanya\n• Kuepuka makosa\n• Kujifunza utendaji wa programu\n• Kujenga ujasiri</string>
+    <string name="help_topic_confirm_actions_text">Inahitaji uthibitisho kwa vitendo muhimu:\n\n• Kufuta vitambulisho\n• Kubadilisha mipangilio\n• Kufuta data\n\nWCAG AAA inahitaji uthibitisho kwa vitendo vyote vya uharibifu.\n\nFaida:\n• Inazuia ajali\n• Inaruhusu kukagua kabla ya kitendo\n• Inapunguza wasiwasi\n• Inatoa nafasi ya pili</string>
+    <string name="help_topic_reading_level_text">Inatumia lugha rahisi zaidi (kiwango cha Darasa la 7-9):\n\n• Sentensi fupi\n• Maneno ya kawaida badala ya istilahi\n• Lugha wazi na ya moja kwa moja\n• Istilahi za kiufundi chache\n\nInazingatia WCAG AAA inapowashwa.\n\nFaida:\n• Rahisi kuelewa\n• Uelewa wa haraka zaidi\n• Bora kwa wasemaji wasio wa asili\n• Mzigo wa kiakili uliopunguzwa</string>
+    <string name="help_topic_help_system_text">Msaada wa muktadha unapatikana katika programu nzima.\n\nVipengele:\n• Mada 27 za msaada\n• Kituo cha msaada kinachoweza kutafutwa\n• Urambazaji wa mada zinazohusiana\n• Orodha ya maneno ya kiufundi\n\nFikia msaada kutoka:\n• Skrini za mipangilio\n• Vipengele ngumu\n• Ujumbe wa hitilafu\n• Popote unapoona ikoni ya msaada</string>
+    <string name="help_topic_manual_code_entry_text">Ingiza data ya msimbo wa QR kwa mkono badala ya kuchanganua.\n\nFaida:\n• Inafanya kazi kama ufikiaji wa kamera haupatikani\n• Inasaidia watumiaji wenye matatizo ya magari\n• Bora katika mwanga mdogo\n• Hakuna haja ya kushikilia simu imara\n\nMbadala wa uchanganuzi wa QR unaotegemea kamera.</string>
+    <string name="help_topic_voice_input_text">Tumia sauti kuingiza maandishi badala ya kuandika.\n\nFaida:\n• Ingizo bila mikono\n• Haraka kuliko kuandika\n• Inasaidia watumiaji wenye ulemavu wa magari\n• Inapunguza maumivu ya kurudia\n\nInatumia utambuzi wa sauti uliojengwa ndani ya kifaa chako.</string>
+    <string name="help_topic_screen_reader_text">Msaada kamili kwa kisomaji cha skrini cha TalkBack.\n\nVipengele:\n• Vipengele vyote vya UI vina lebo\n• Muundo sahihi wa vichwa\n• Mpangilio wa mantiki wa urambazaji\n• Vidokezo maalum kwa vitendo ngumu\n\nProgramu inawasha kiotomatiki:\n• Maelezo ya kina\n• Malengo ya kugusa yaliyoimarishwa\n\ninapogundua TalkBack.</string>
+    <string name="help_topic_accessibility_profiles_text">Wasifu wa ufikivu uliosanidiwa awali:\n\n• Ulemavu wa Maono: Tofauti ya juu, maandishi makubwa, msisimko\n• Ulemavu wa Magari: Malengo makubwa, muda wa kusubiri uliopanuliwa, uthibitisho\n• Kiakili: UI iliyofanywa rahisi, viashiria vya hatua, maelezo\n• Mzee: Maandishi makubwa, malengo, UI iliyofanywa rahisi, mwendo uliopunguzwa\n• Chaguo-Msingi: Weka upya mipangilio yote\n\nKila wasifu unawasha mipangilio inayofaa zaidi kwa kundi hilo la watumiaji. Unaweza kubinafsisha zaidi baada ya kutumia wasifu.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">Uthibitisho wa Umri</string>
+    <string name="content_age_verification_explanation">Tafadhali subiri huku tunathibitisha umri wako kwa usalama kwa kutumia uthibitisho wa maarifa sifuri. Tarehe yako ya kuzaliwa haishirikishwi kamwe na mthibitishaji.</string>
+    <string name="content_age_verification_instructions">Elekeza kamera yako kwenye msimbo wa QR wa uthibitisho. Msimbo utachanganuliwa kiotomatiki unapogunduliwa.</string>
+    <string name="content_age_verification_success">Umri wako umethibitishwa kwa mafanikio. Mthibitishaji anajua unakidhi sharti lao la umri bila kujua tarehe yako halisi ya kuzaliwa.</string>
+    <string name="content_age_verification_failed">Uthibitisho umeshindwa. Tafadhali jaribu kuchanganua tena msimbo wa QR au tumia uingizaji wa msimbo kwa mkono.</string>
+    <string name="content_credential_issuance_title">Utoaji wa Kitambulisho</string>
+    <string name="content_credential_issuance_explanation">Changanua msimbo wa QR uliotolewa na mtoa aliyeidhinishwa ili kupokea kitambulisho chako cha umri cha kidijitali.</string>
+    <string name="content_credential_issuance_instructions">Elekeza kamera yako kwenye msimbo wa QR wa utoaji unaoonyeshwa na afisa. Kitambulisho chako kitazalishwa kwenye kifaa chako.</string>
+    <string name="content_credential_issuance_success">Kitambulisho kimeundwa kwa mafanikio. Sasa unaweza kutumia kitambulisho hiki kwa uthibitisho wa umri.</string>
+    <string name="content_credential_description">Kitambulisho ni uthibitisho uliosainiwa kwa kriptografia wa utambulisho wako ambao unaiwezesha uthibitisho unaohifadhi faragha.</string>
+    <string name="content_zero_knowledge_explanation">Uthibitisho wa maarifa sifuri unakuruhusu kuthibitisha kwamba unakidhi sharti la umri bila kufichua umri wako halisi.</string>
+    <string name="content_setup_proving_key">Inapakua ufunguo wa kriptografia wa ushahidi unaohitajika kwa uzalishaji wa uthibitisho wa maarifa sifuri</string>
+    <string name="content_processing_challenge">Inashughulikia changamoto ya uthibitisho</string>
+    <string name="content_creating_proof">Inaunda uthibitisho wa umri wa maarifa sifuri</string>
+    <string name="content_submitting_proof">Inatuma uthibitisho kwa mthibitishaji</string>
+    <string name="content_error_no_credential">Hakuna kitambulisho kinachopatikana. Tafadhali pata kitambulisho kutoka kwa mtoa aliyeidhinishwa kwanza.</string>
+    <string name="content_error_network_failed">Muunganisho wa mtandao umeshindwa. Tafadhali angalia muunganisho wako wa intaneti na ujaribu tena.</string>
+    <string name="content_error_invalid_qr">Msimbo batili wa QR. Tafadhali hakikisha unachanganua msimbo sahihi wa uthibitisho.</string>
+    <string name="content_error_verification_failed">Uthibitisho umeshindwa. Seva haikuweza kuthibitisha uthibitisho wako.</string>
+    <string name="content_officer_authentication_title">Uthibitisho wa Afisa</string>
+    <string name="content_officer_issuance_title">Utoaji wa Kitambulisho</string>
+    <string name="content_officer_dob_prompt">Ingiza tarehe ya kuzaliwa ya mwombaji iliyothibitishwa kutoka kwa hati yake rasmi ya utambulisho.</string>
+    <string name="content_onboarding_welcome">Karibu kwenye Provii Wallet - suluhisho lako la uthibitisho wa umri wa kidijitali unaohifadhi faragha.</string>
+    <string name="content_onboarding_privacy">Tarehe yako ya kuzaliwa imehifadhiwa kwa usalama kwenye kifaa chako na haipelekwi kamwe kwa wathibitishaji.</string>
+    <string name="content_onboarding_get_started">Ili kuanza, tembelea mtoa aliyeidhinishwa kupata kitambulisho chako cha umri cha kidijitali.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">Angalia Umri Wako</string>
+    <string name="content_age_verification_explanation_simplified">Tunakagua umri wako. Hatutaona au kushiriki siku yako ya kuzaliwa.</string>
+    <string name="content_age_verification_instructions_simplified">Elekeza kamera yako kwenye msimbo wa QR. Itachanganua yenyewe.</string>
+    <string name="content_age_verification_success_simplified">Umefanikiwa! Tovuti inajua una umri wa kutosha. Hawajui siku yako ya kuzaliwa.</string>
+    <string name="content_age_verification_failed_simplified">Halikufanya kazi. Jaribu kuchanganua tena au andika msimbo badala yake.</string>
+    <string name="content_credential_issuance_title_simplified">Pata Kitambulisho Chako</string>
+    <string name="content_credential_issuance_explanation_simplified">Changanua msimbo kutoka kwa ofisi ya serikali ili kupata ID yako ya kidijitali.</string>
+    <string name="content_credential_issuance_instructions_simplified">Elekeza kamera yako kwenye msimbo. ID yako itahifadhiwa kwenye simu yako.</string>
+    <string name="content_credential_issuance_success_simplified">Imekamilika! Sasa unaweza kutumia ID yako ya kidijitali kuthibitisha umri wako.</string>
+    <string name="content_credential_description_simplified">Kitambulisho ni kama kadi ya ID ya kidijitali inayothibitisha wewe ni nani bila kushiriki maelezo ya siri.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Unaweza kuthibitisha una umri wa kutosha bila kumwambia mtu yeyote umri wako halisi.</string>
+    <string name="content_setup_proving_key_simplified">Inapakua faili za usalama zinazohitajika kwa programu kufanya kazi</string>
+    <string name="content_processing_challenge_simplified">Inasoma ombi la ukaguzi wa umri</string>
+    <string name="content_creating_proof_simplified">Inaunda uthibitisho wako wa umri</string>
+    <string name="content_submitting_proof_simplified">Inatuma uthibitisho kwa tovuti</string>
+    <string name="content_error_no_credential_simplified">Bado huna ID. Tembelea ofisi ya serikali kupata moja kwanza.</string>
+    <string name="content_error_network_failed_simplified">Haiwezi kuunganika na intaneti. Angalia wifi au data yako na ujaribu tena.</string>
+    <string name="content_error_invalid_qr_simplified">Msimbo huo hauonekani sahihi. Hakikisha unachanganua msimbo sahihi.</string>
+    <string name="content_error_verification_failed_simplified">Halikufanya kazi. Tovuti haikuweza kukagua uthibitisho wako. Jaribu tena.</string>
+    <string name="content_officer_authentication_title_simplified">Afisa Ingia</string>
+    <string name="content_officer_issuance_title_simplified">Tengeneza Kadi ya ID</string>
+    <string name="content_officer_dob_prompt_simplified">Ingiza siku ya kuzaliwa ya mtu kutoka kwa kitambulisho chake rasmi.</string>
+    <string name="content_onboarding_welcome_simplified">Karibu kwenye Provii Wallet - thibitisha umri wako kwa faragha.</string>
+    <string name="content_onboarding_privacy_simplified">Siku yako ya kuzaliwa inabaki kwenye simu yako. Hakuna mtu mwingine anayeweza kuiona.</string>
+    <string name="content_onboarding_get_started_simplified">Ili kuanza, tembelea ofisi ya serikali kupata ID yako ya kidijitali.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Quick Response (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Nambari ya Utambulisho Binafsi (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">Tarehe ya Kuzaliwa (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Utambulisho (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">Kiolesura cha Mtumiaji (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Kivunzi Sanifu cha Rasilimali (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Kiolesura cha Programu ya Maombi (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">Simamisha uhuishaji</string>
+    <string name="animation_resume_animations">Endelea na uhuishaji</string>
+    <string name="animation_pause_button_text">Simamisha</string>
+    <string name="animation_resume_button_text">Endelea</string>
+    <string name="animation_toggles_playback_hint">Inabadili uchezaji wa uhuishaji</string>
+    <string name="animation_paused_announcement">Uhuishaji umesimamishwa</string>
+    <string name="animation_resumed_announcement">Uhuishaji umeendelezwa</string>
+    <string name="animation_active_count">Uhuishaji %d unaofanya kazi</string>
+    <string name="animation_loading_default">Inapakia</string>
+    <string name="animation_please_wait">Tafadhali subiri huku shughuli hii inakamilika</string>
+    <string name="animation_percent_complete">Asilimia %d imekamilika</string>
+    <string name="animation_loading_in_progress">Inaendelea</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">Njia za Mkato za Kibodi</string>
+    <string name="keyboard_shortcuts_done">Imekamilika</string>
+    <string name="keyboard_shortcuts_app_section">Njia za Mkato za Programu</string>
+    <string name="keyboard_shortcuts_navigation_section">Urambazaji</string>
+    <string name="keyboard_shortcuts_tips_section">Vidokezo</string>
+    <string name="keyboard_shortcuts_navigation_footer">Vitufe hivi vya urambazaji vinafanya kazi katika programu nzima na kibodi za nje</string>
+    <string name="keyboard_shortcuts_tip_external">Kibodi za nje za Bluetooth na USB zinasaidiwa kikamilifu</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Tumia vitufe vya mshale kupitia vitu kwenye orodha</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Shikilia Ctrl ili kuona njia za mkato zinazopatikana kwenye skrini hii</string>
+    <string name="keyboard_shortcuts_tip_a11y">Vipengele vyote katika programu hii vinapatikana kupitia kibodi</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Funga njia za mkato za kibodi</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">Mipangilio</string>
+    <string name="keyboard_shortcut_label_accessibility">Ufikivu</string>
+    <string name="keyboard_shortcut_label_help">Kituo cha Msaada</string>
+    <string name="keyboard_shortcut_label_add_credential">Ongeza Kitambulisho</string>
+    <string name="keyboard_shortcut_label_verify">Thibitisha</string>
+    <string name="keyboard_shortcut_label_shortcuts">Njia za Mkato</string>
+    <string name="keyboard_shortcut_desc_settings">Fungua Mipangilio</string>
+    <string name="keyboard_shortcut_desc_accessibility">Mipangilio ya Ufikivu</string>
+    <string name="keyboard_shortcut_desc_help">Kituo cha Msaada</string>
+    <string name="keyboard_shortcut_desc_add_credential">Ongeza Kitambulisho</string>
+    <string name="keyboard_shortcut_desc_verify">Anza Uthibitisho</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Njia za Mkato za Kibodi</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">Rudi / Funga</string>
+    <string name="keyboard_shortcut_nav_back_desc">Funga skrini ya sasa au kidirisha cha mazungumzo</string>
+    <string name="keyboard_shortcut_nav_next">Sehemu Inayofuata</string>
+    <string name="keyboard_shortcut_nav_next_desc">Hamisha fokasi hadi kipengele kinachofuata cha mwingiliano</string>
+    <string name="keyboard_shortcut_nav_prev">Sehemu Iliyotangulia</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Hamisha fokasi hadi kipengele kilichotangulia cha mwingiliano</string>
+    <string name="keyboard_shortcut_nav_submit">Wasilisha / Endelea</string>
+    <string name="keyboard_shortcut_nav_submit_desc">Washa kitufe kilichopata fokasi au wasilisha fomu</string>
+    <string name="keyboard_shortcut_nav_activate">Washa Kitufe</string>
+    <string name="keyboard_shortcut_nav_activate_desc">Washa kitufe au kibadiliko kilichopata fokasi sasa</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">Kidirisha cha mazungumzo kimefunguliwa. Bonyeza Escape ili kufunga, au Enter ili kuthibitisha.</string>
+    <string name="modal_closed_announcement">Kidirisha cha mazungumzo kimefungwa</string>
+    <string name="modal_button_primary_label">%s (kitendo cha msingi)</string>
+    <string name="modal_button_cancel_label">%s (ghairi)</string>
+    <string name="modal_button_destructive_label">%s (kitendo cha uharibifu)</string>
+    <string name="modal_button_primary_hint">Gonga mara mbili ili kuthibitisha, au bonyeza Enter</string>
+    <string name="modal_button_cancel_hint">Gonga mara mbili ili kughairi, au bonyeza Escape</string>
+    <string name="modal_button_destructive_hint">Gonga mara mbili ili kutekeleza kitendo cha uharibifu</string>
+    <string name="modal_button_secondary_hint">Gonga mara mbili ili kutekeleza kitendo</string>
+    <string name="modal_confirm">Thibitisha</string>
+    <string name="modal_cancel">Ghairi</string>
+    <string name="modal_delete">Futa</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">Futa %1$s</string>
+    <string name="a11y_edit_nickname_for">Hariri jina la utani la %1$s</string>
+    <string name="accessibility_attestation_scan_back">Rudi nyuma</string>
+    <string name="attestation_replace_confirm">Badilisha</string>
+    <string name="attestation_replace_primary_message">Tayari una kitambulisho cha kibinafsi. Kuunda kipya kutakibadilisha. Hili haliwezi kutenduliwa.</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">Badilisha Kitambulisho Kilichopo?</string>
+    <string name="attestation_scan_error_empty">Msimbo wa QR ulikuwa tupu</string>
+    <string name="attestation_scan_instruction">Elekeza kamera yako kwenye msimbo wa QR ulioonyeshwa na afisa</string>
+    <string name="attestation_scan_invalid_qr">Msimbo huu wa QR hauna data ya ushuhuda</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">Changanua Ushuhuda</string>
+    <string name="attestation_scan_wrong_type_toast">Huu ni QR wa uthibitisho, si QR wa kitambulisho</string>
+    <string name="biometric_required_message">Programu hii inahitaji kufuli ya skrini (PIN, mchoro, au kibiolojia) ili kuhifadhi vitambulisho kwa usalama. Tafadhali iweke katika mipangilio ya usalama wa kifaa chako kabla ya kuendelea.</string>
+    <string name="biometric_required_open_settings">Fungua Mipangilio ya Usalama</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">Kufuli ya Skrini Inahitajika</string>
+    <string name="challenge_sandbox_prompt_announcement">Changamoto ya sandbox imepokelewa. Chagua iwapo ungependa kuwasha hali ya sandbox na kuendelea, au kukataa changamoto.</string>
+    <string name="challenge_sandbox_prompt_body">Changamoto hii ilitolewa na mthibitishaji wa sandbox. Haitafanikiwa isipokuwa uwashe hali ya sandbox katika pochi hii.</string>
+    <string name="challenge_sandbox_prompt_primary">Washa sandbox na uendelee</string>
+    <string name="challenge_sandbox_prompt_secondary">Kataa changamoto</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">Changamoto ya sandbox imepokelewa</string>
+    <string name="credential_detail_nickname_error">Imeshindwa kuhifadhi jina la utani</string>
+    <string name="credential_list_managed_count">%1$d kati ya %2$d</string>
+    <string name="credential_picker_count_shown">Vitambulisho %1$d vimeonyeshwa</string>
+    <string name="credential_picker_filter_clear">Futa kichujio</string>
+    <string name="credential_picker_filter_label">Chuja vitambulisho kwa jina</string>
+    <string name="credential_picker_filter_placeholder">Chuja vitambulisho</string>
+    <string name="credential_picker_no_results">Hakuna vitambulisho vinavyolingana</string>
+    <string name="credential_picker_section_managed">Vitambulisho Vinavyosimamiwa</string>
+    <string name="credential_picker_section_me">Mimi</string>
+    <string name="credential_picker_subtitle">Chagua ni nani anayethibitishwa.</string>
+    <string name="credential_row_action_delete">Futa</string>
+    <string name="credential_row_action_edit">Hariri Jina la Utani</string>
+    <string name="credential_row_overflow_menu">Chaguo za kitambulisho</string>
+    <string name="deeplink_sandbox_prompt_announcement">Kiungo cha sandbox kimegunduliwa. Chagua iwapo ungependa kuwasha hali ya sandbox na kufungua kiungo.</string>
+    <string name="deeplink_sandbox_prompt_body">Kiungo hiki cha kina kitafanikiwa tu ukiwasha hali ya sandbox katika pochi hii.</string>
+    <string name="deeplink_sandbox_prompt_primary">Washa sandbox na ufungue</string>
+    <string name="deeplink_sandbox_prompt_secondary">Ghairi</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">Kiungo cha sandbox kimegunduliwa</string>
+    <string name="empty_credential_option_find_apps_a11y">Tafuta programu inayoshiriki. Pata kitambulisho kutoka kwa mfuko wako wa hifadhi, benki, kampuni ya simu, bima ya afya, au yeyote anayejua tayari umri wako.</string>
+    <string name="empty_credential_option_find_apps_desc">Pata kitambulisho kutoka kwa mfuko wako wa hifadhi, benki, kampuni ya simu, bima ya afya, au yeyote anayejua tayari umri wako</string>
+    <string name="empty_credential_option_find_apps_title">Tafuta programu inayoshiriki</string>
+    <string name="empty_credential_option_find_locations_a11y">Tafuta eneo karibu nawe. Tembelea ana kwa ana ukiwa na kitambulisho chako ili kupata kitambulisho.</string>
+    <string name="empty_credential_option_find_locations_desc">Tembelea ana kwa ana ukiwa na kitambulisho chako ili kupata kitambulisho</string>
+    <string name="empty_credential_option_find_locations_title">Tafuta eneo karibu nawe</string>
+    <string name="empty_credential_option_managed_a11y">Ninamhudumia mtu. Simamia vitambulisho vya watu unaowahudumia.</string>
+    <string name="empty_credential_option_managed_desc">Simamia vitambulisho vya watu unaowahudumia</string>
+    <string name="empty_credential_option_managed_title">Ninamhudumia mtu</string>
+    <string name="empty_credential_option_scan_a11y">Nina msimbo wa QR wa kuchanganua. Mthibitishaji alikupa msimbo baada ya kuona utambulisho wako.</string>
+    <string name="empty_credential_option_scan_desc">Mthibitishaji alikupa msimbo baada ya kuona utambulisho wako</string>
+    <string name="empty_credential_option_scan_title">Nina msimbo wa QR wa kuchanganua</string>
+    <string name="empty_credential_subtitle">Chagua jinsi ungependa kupata kitambulisho chako cha kwanza</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">Bado Hakuna Vitambulisho</string>
+    <string name="error_screen_lock_required">Kufuli ya skrini (PIN, mchoro, au kibiolojia) inahitajika ili kuhifadhi vitambulisho kwa usalama. Tafadhali iweke katika mipangilio ya kifaa chako.</string>
+    <string name="issuers_no_apps_found_description">Angalia tena hivi karibuni programu zaidi zinapoongeza usaidizi wa Provii</string>
+    <string name="issuers_no_apps_found">Bado hakuna programu zinazoshiriki</string>
+    <string name="issuers_no_locations_found_description">Angalia tena hivi karibuni maeneo zaidi yanapoongezwa</string>
+    <string name="issuers_no_locations_found">Hakuna maeneo yaliyopatikana</string>
+    <string name="managed_credential_explainer_body">Ili kupata kitambulisho kinachosimamiwa kwa mtu unayemhudumia, tembeleeni eneo linaloshiriki pamoja. Mthibitishaji ataona utambulisho wao. Unapochanganua msimbo wa QR, utaulizwa iwapo kitambulisho hiki ni chako au kwa mtu unayemsimamia.</string>
+    <string name="managed_credential_explainer_find_location">Tafuta eneo</string>
+    <string name="managed_credential_explainer_have_qr">Tayari nina msimbo wa QR</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">Vitambulisho Vinavyosimamiwa</string>
+    <string name="sandbox_credential_type">Aina ya kitambulisho</string>
+    <string name="sandbox_managed_credential_saved">Kitambulisho kinachosimamiwa kimehifadhiwa (%s)</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">Hali ya sandbox sasa inafanya kazi. Pochi imeunganishwa kwenye seva za sandbox.</string>
+    <string name="sandbox_nickname_helper">Kipe kitambulisho hiki jina ili uweze kukitambua katika pochi yako.</string>
+    <string name="sandbox_nickname_label">Jina la utani</string>
+    <string name="sandbox_nickname_placeholder">k.m. Sarah</string>
+    <string name="sandbox_nickname_required">Jina la utani linahitajika kwa vitambulisho vinavyosimamiwa</string>
+    <string name="sandbox_type_managed_credential">Kitambulisho kinachosimamiwa</string>
+    <string name="sandbox_type_your_credential">Kitambulisho chako</string>
+    <string name="title_find_apps">Tafuta Programu Inayoshiriki</string>
+    <string name="title_find_locations">Tafuta Eneo</string>
+    <string name="verification_go_to_attestation">Pata Kitambulisho</string>
+    <string name="verification_wrong_qr_type_message">Msimbo huu wa QR ni wa kupata kitambulisho kipya, si wa uthibitisho wa umri. Je, ungependa kwenda kwenye skrini ya ushuhuda badala yake?</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">QR ya Ushuhuda Imegunduliwa</string>
+    <string name="walkthrough_back">Rudi</string>
+    <string name="walkthrough_get_started">Anza</string>
+    <string name="walkthrough_next">Endelea</string>
+    <string name="walkthrough_page_indicator">Ukurasa %1$d kati ya %2$d</string>
+    <string name="walkthrough_page1_body">Kitambulisho chako kina umri wako. Hakuna kingine. Si jina lako, si anwani yako, si utambulisho wako.\n\nKinathibitisha kuwa una zaidi (au chini) ya umri fulani bila kufichua tarehe yako ya kuzaliwa.</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">Kitambulisho ni nini?</string>
+    <string name="walkthrough_page2_body">Unaweza kupata kitambulisho kupitia programu kutoka kwa kampuni inayojua tayari umri wako. Benki yako au mfuko wa hifadhi, kwa mfano. Kwa sababu wamethibitisha tayari umri wako, hakuna kinachohitaji kushirikiwa tena.\n\nVinginevyo, tembelea eneo linaloshiriki ukiwa na kitambulisho kinachothibitisha tarehe yako ya kuzaliwa. Tarehe yako ya kuzaliwa inaonwa, inatumika kuunda kitambulisho chako, kisha inatupwa. Mtoaji haoni kamwe kitambulisho chako. Utambulisho wako haufungwi nacho kamwe.</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">Unapataje?</string>
+    <string name="walkthrough_page3_body">Ikiwa unamhudumia mtu anayehitaji kitambulisho cha umri, unaweza kumpatia na kukisimamia kwenye kifaa chako.\n\nTembeleeni eneo linaloshiriki pamoja mkiwa na kitambulisho kinachothibitisha tarehe yake ya kuzaliwa. Unapochanganua msimbo wa QR, utaulizwa iwapo kitambulisho hiki ni chako au kwa mtu unayemsimamia.\n\nOngeza jina la utani ili uweze kutofautisha vitambulisho vyao.</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">Wategemezi</string>
+    <string name="walkthrough_page4_body">Programu inayojaribu kuthibitisha umri wako inaweza kutuma changamoto moja kwa moja kwenye pochi yako ya Provii. Unachagua kitambulisho cha kutumia. Baada ya uthibitisho wenye mafanikio, utarudishwa kwenye programu iliyoomba na utaweza kuendelea ukiwa umethibitishwa.\n\nVinginevyo, unaweza kuonyeshwa msimbo wa QR kwenye kifaa kingine, au kiungo katika kivinjari chako cha simu kinachoenda moja kwa moja kwenye pochi yako. Pia kuna chaguo la msimbo mfupi kwa ufikivu.\n\nHakuna taarifa za kibinafsi zinazoshirikiwa kamwe. Ni jibu la ndio au hapana tu kuhusu iwapo unakidhi sharti la umri.</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">Uthibitisho hufanyaje kazi?</string>
+    <string name="walkthrough_page5_body">Hatua yako ya kwanza ni kupata kitambulisho kupitia programu inayoshiriki au katika eneo karibu nawe.\n\nKuanzia hapo, unaweza kuthibitisha umri wako wakati wowote unapohitajika, bila kushiriki taarifa zozote za kibinafsi. Unaweza pia kusimamia vitambulisho vya watu unaowahudumia.</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">Uko tayari kabisa</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">Ruka</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

@@ -1,0 +1,1577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Настройки</string>
+    <string name="title_accessibility">Достъпност</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Получаване на удостоверения</string>
+    <string name="title_scan_verification_qr">Сканиране на QR код за верификация</string>
+    <string name="title_verifying_age">Верификация на възраст</string>
+    <string name="title_age_verified">Възрастта е потвърдена</string>
+    <string name="title_verification_failed">Верификацията е неуспешна</string>
+    <string name="title_officer_mode">Режим на служител</string>
+    <string name="title_officer_dashboard">Табло на служителя</string>
+    <string name="title_issue_credential">Издаване на удостоверение</string>
+    <string name="title_credential_ready">Удостоверението е готово</string>
+    <string name="title_get_your_credential">Получете Вашето удостоверение</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Добре дошли в Provii Wallet</string>
+    <string name="welcome_subtitle">Сигурна верификация на възраст, направена просто</string>
+    <string name="welcome_first_credential">Започнете, като добавите първото си удостоверение за верификация на възраст</string>
+    <string name="welcome_description">Поверителна верификация на възраст чрез доказателства с нулево знание</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Добре дошли в Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Изберете предпочитания от Вас език</string>
+    <string name="onboarding_use_english">Използване на английски</string>
+    <string name="onboarding_use_english_description">Продължете с английски като език на приложението</string>
+    <string name="onboarding_rotating_button_description">Бутон за смяна на езика, в момента показва: %1$s. Докоснете, за да изберете друг език.</string>
+    <string name="onboarding_change_later">Можете да промените това по-късно в Настройки</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Достъпност</string>
+    <string name="onboarding_accessibility_desc">Желаете ли да персонализирате функциите за достъпност, като размер на текста, зони за докосване или намалено движение?</string>
+    <string name="onboarding_use_defaults">Използване на стандартните настройки</string>
+    <string name="onboarding_use_defaults_description">Продължете със стандартните настройки за достъпност</string>
+    <string name="onboarding_open_accessibility">Настройки за достъпност</string>
+    <string name="onboarding_open_accessibility_description">Отворете настройките за достъпност, за да персонализирате приложението</string>
+    <string name="onboarding_accessibility_later">Можете да промените това по-късно в Настройки</string>
+    <string name="onboarding_accessibility_features_title">Наличните функции включват:</string>
+    <string name="onboarding_feature_text_size">По-големи размери на текста</string>
+    <string name="onboarding_feature_touch_targets">Увеличени зони за докосване</string>
+    <string name="onboarding_feature_reduce_motion">Намалено движение</string>
+    <string name="onboarding_feature_high_contrast">Режим на висок контраст</string>
+    <string name="onboarding_talkback_detected">Открит TalkBack</string>
+    <string name="onboarding_talkback_message">Активирахме подробни описания, за да Ви помогнем да навигирате в приложението.</string>
+    <string name="onboarding_continue_to_setup">Продължете към настройката</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Необходима е еднократна настройка</string>
+    <string name="setup_download_required">Необходимо е изтегляне</string>
+    <string name="setup_download_description">Това приложение трябва да изтегли компоненти за сигурност за доказателства с нулево знание (приблизително 87 MB).</string>
+    <string name="setup_wifi_recommended">Препоръчва се Wi-Fi</string>
+    <string name="setup_checking_status">Проверка на статуса на настройката…</string>
+    <string name="setup_already_setup">Вече е настроено!</string>
+    <string name="setup_ready_message">Вашият портфейл е готов за сигурна верификация на възраст</string>
+    <string name="setup_preparing">Подготовка на системата за сигурна верификация…</string>
+    <string name="setup_checking_components">Проверка на компонентите за сигурност…</string>
+    <string name="setup_downloading">Изтегляне на компоненти за сигурност</string>
+    <string name="setup_download_progress_description">%1$d%% завършено (%2$s MB от %3$s MB изтеглени)</string>
+    <string name="setup_initializing">Инициализиране на компонентите за сигурност…</string>
+    <string name="setup_complete">Настройката е завършена!</string>
+    <string name="setup_download_info">Това активира доказателства с нулево знание за поверителна верификация на възраст</string>
+    <string name="setup_one_time_download">Еднократно изтегляне</string>
+    <string name="setup_stuck_message">Това отнема по-дълго от очакваното</string>
+    <string name="setup_stuck_description">Настройката може да е заседнала. Опитайте да рестартирате.</string>
+    <string name="setup_restart_message">Приложението трябва да се рестартира. Това понякога се случва при първото стартиране.</string>
+    <string name="setup_storage_full">Хранилището е пълно</string>
+    <string name="setup_connection_error">Грешка при свързване</string>
+    <string name="setup_failed">Настройката е неуспешна</string>
+    <string name="setup_initialization_error">Грешка при инициализация</string>
+    <string name="error_storage_init_failed">Инициализацията на хранилището е неуспешна. Моля, рестартирайте приложението.</string>
+    <string name="error_storage_init_close_restart">Инициализацията на хранилището е неуспешна. Моля, затворете и рестартирайте приложението.</string>
+    <string name="setup_free_storage_message">Освободете поне 65 MB и опитайте отново</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Поверителността е защитена</string>
+    <string name="setup_privacy_description">Верификацията на Вашата възраст използва доказателства с нулево знание. Вашата дата на раждане никога не се споделя.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Моите удостоверения</string>
+    <string name="credentials_empty">Няма съхранени удостоверения</string>
+    <string name="credential_active">Удостоверението е активно</string>
+    <string name="credential_expired">Удостоверението е изтекло</string>
+    <string name="credential_ready_for_verification">Готово за верификация</string>
+    <string name="credential_expired_message">Вашето удостоверение е изтекло и трябва да бъде подменено</string>
+    <string name="credential_stored_successfully">Удостоверението е съхранено успешно</string>
+    <string name="credential_stored_description">Вашето удостоверение за възраст е съхранено сигурно и е готово за употреба</string>
+    <string name="credential_can_prove_age">Вече можете да докажете Вашата възраст поверително</string>
+    <string name="credential_returning">Връщане към удостоверенията…</string>
+    <string name="credential_view_credentials">Преглед на удостоверенията</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Готово</string>
+    <string name="action_scan_qr_code">Сканиране на QR код</string>
+    <string name="action_find_locations">Намиране на места</string>
+    <string name="action_get_credential">Получаване на удостоверение</string>
+    <string name="action_replace_credential">Замяна с ново удостоверение</string>
+    <string name="action_replace_credential_now">Замяна на удостоверението сега</string>
+    <string name="action_delete_credential">Изтриване на удостоверение</string>
+    <string name="credential_action_scan_description">Получаване на удостоверение от оторизиран издател</string>
+    <string name="credential_action_find_description">Намиране на близки издатели</string>
+    <string name="credential_remove_description">Премахване на текущото удостоверение</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Поверителност</string>
+    <string name="credential_info_privacy_value">Защитена</string>
+    <string name="credential_info_status">Статус</string>
+    <string name="credential_info_status_value">Валидно</string>
+    <string name="credential_tip_title">Бърз съвет</string>
+    <string name="credential_tip_message">Докоснете бутона „Верификация на възраст", за да сканирате QR (Quick Response) кодове за верификация в участващи заведения.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">Сканиране на QR код</string>
+    <string name="verification_verify_age">Верификация на възраст</string>
+    <string name="verification_generating_proof">Генериране на доказателство…</string>
+    <string name="verification_success">Верификацията е успешна</string>
+    <string name="verification_failed">Верификацията е неуспешна</string>
+    <string name="verification_age_verified">Възрастта е потвърдена</string>
+    <string name="verification_age_verified_message">Вашата възраст беше потвърдена поверително</string>
+    <string name="verification_can_return">Вече можете да се върнете в сайта, за да продължите.</string>
+    <string name="verification_returning_browser">Връщане към браузъра…</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">Стъпка 1 от 2</string>
+    <string name="verification_step_2_of_2">Стъпка 2 от 2</string>
+    <string name="verification_point_camera">Насочете камерата към QR кода за верификация</string>
+    <string name="verification_hold_steady">Дръжте стабилно, докато чуете звук за потвърждение.</string>
+    <string name="verification_reading_request">Четене на заявката за верификация…</string>
+    <string name="verification_processing_challenge">Обработване на предизвикателството…</string>
+    <string name="verification_creating_proof">Създаване на доказателство за възраст…</string>
+    <string name="verification_submitting_proof">Изпращане на доказателството…</string>
+    <string name="verification_processing_message">Това може да отнеме няколко секунди</string>
+    <string name="verification_preparing_proof">Подготвяме поверително доказателство с помощта на Вашето запазено удостоверение.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Четене на заявката за верификация…</string>
+    <string name="verification_status_processing_challenge">Обработване на предизвикателството…</string>
+    <string name="verification_status_creating_proof">Създаване на доказателство за възраст…</string>
+    <string name="verification_status_submitting_proof">Изпращане на доказателството…</string>
+    <string name="verification_status_verified">✔ Възрастта е потвърдена</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Не може да се покаже подканата за удостоверяване</string>
+    <string name="verification_error_verification_failed">Верификацията е неуспешна</string>
+    <string name="verification_error_generic">Възникна грешка</string>
+    <string name="verification_error_failed_to_process_code">Неуспешна обработка на кода</string>
+    <string name="verification_error_failed_to_process_challenge">Неуспешна обработка на предизвикателството</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Доверени издатели в Австралия</string>
+    <string name="issuers_loading">Зареждане на издатели…</string>
+    <string name="issuers_loaded">Издателите са заредени успешно</string>
+    <string name="issuers_unable_to_load">Неуспешно зареждане на издатели</string>
+    <string name="issuers_check_connection">Проверете интернет връзката си и опитайте отново</string>
+    <string name="issuers_categories_header">КАТЕГОРИИ</string>
+    <string name="issuers_available_header">НАЛИЧНИ ИЗДАТЕЛИ</string>
+    <string name="issuers_found_count">%d намерени</string>
+    <string name="issuer_status_coming_soon">Очаква се скоро</string>
+    <string name="issuer_status_verified">Верифициран</string>
+    <string name="issuer_how_to_get">Как да получите удостоверение</string>
+    <string name="issuer_service_locations">Места за обслужване</string>
+    <string name="issuer_visit_website">Посетете уебсайта на %s</string>
+    <string name="issuer_learn_more">Научете повече за %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Банкиране</string>
+    <string name="category_super_fund">Пенсионен фонд</string>
+    <string name="category_government">Правителство</string>
+    <string name="category_travel">Пътувания</string>
+    <string name="category_telco">Телекомуникации</string>
+    <string name="category_insurance">Застраховане</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_section_sandbox">Режим Sandbox</string>
+    <string name="settings_section_general">Общи</string>
+    <string name="settings_section_credentials">Удостоверения</string>
+    <string name="settings_section_advanced">Разширени</string>
+    <string name="settings_section_privacy">Поверителност</string>
+    <string name="settings_security">Сигурност</string>
+    <string name="settings_biometric">Използване на биометрично удостоверяване</string>
+    <string name="settings_environment">Настройки на средата</string>
+    <string name="settings_environment_description">Преглед на текущата конфигурация на средата</string>
+    <string name="settings_reset_proving_key">Нулиране на ключа за доказване</string>
+    <string name="settings_reset_proving_key_description">Повторно изтегляне на компонентите за сигурност (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Издай тестово удостоверение като Издател</string>
+    <string name="settings_mint_test_credential_subtitle">Издайте тестово удостоверение към портфейла си, за да можете да го верифицирате чрез демо на разчитаща страна.</string>
+    <string name="settings_find_trusted_issuers">Намиране на доверени издатели</string>
+    <string name="settings_version">Версия: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Докоснете 5 пъти, за да превключите</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Език</string>
+    <string name="language_selection_description">Изберете предпочитания от Вас език. Приложението ще се рестартира, за да приложи промените.</string>
+    <string name="language_selected">Избран</string>
+    <string name="settings_language">Език</string>
+    <string name="settings_language_description">Промяна на езика на приложението</string>
+    <string name="settings_licenses">Лицензи с отворен код</string>
+    <string name="settings_licenses_description">Преглед на лицензите на трети страни</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Потвърждаване на езика</string>
+    <string name="language_change_to">Смяна на езика на:</string>
+    <string name="language_restart_notice">Приложението ще се рестартира, за да приложи този език.</string>
+    <string name="language_apply">Прилагане</string>
+    <string name="language_cancel">Отказ</string>
+    <string name="language_skip_title">Пропускане на избора на език?</string>
+    <string name="language_skip_message">Ако пропуснете, приложението ще използва английски по подразбиране. Можете да промените езика по-късно в Настройки.</string>
+    <string name="language_use_english">Използване на английски</string>
+    <string name="language_go_back">Назад</string>
+    <string name="language_help_title">Помощ за избор на език</string>
+    <string name="language_help_how_to">Как да изберете Вашия език:</string>
+    <string name="language_help_step1">1. Използвайте полето за търсене, за да намерите Вашия език</string>
+    <string name="language_help_step2">2. Докоснете предпочитания от Вас език</string>
+    <string name="language_help_step3">3. Потвърдете избора си</string>
+    <string name="language_help_system_note">Системният Ви език е откроен в горната част, ако се поддържа.</string>
+    <string name="language_help_settings_note">Можете да промените това по-късно в Настройки.</string>
+    <string name="language_got_it">Разбрах</string>
+    <string name="language_select_title">Избор на език</string>
+    <string name="language_skip_button">Пропускане (Използване на английски)</string>
+    <string name="language_search_placeholder">Търсене на езици…</string>
+    <string name="language_no_results">Не са намерени езици</string>
+    <string name="language_try_different">Опитайте с друг термин за търсене</string>
+    <string name="language_system_badge">Системен език</string>
+    <string name="language_count">%d езика</string>
+    <string name="language_no_match_announcement">Не са намерени езици, съответстващи на Вашето търсене</string>
+    <string name="language_found_announcement">%d намерени езика</string>
+    <string name="language_search_cleared">Търсенето е изчистено, показват се всички %d езика</string>
+    <string name="language_selected_announcement">Избран %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Екран за избор на език</string>
+    <string name="language_help_button_description">Помощ и информация за избор на език</string>
+    <string name="language_skip_description">Пропускане на избора на език и използване на английски по подразбиране</string>
+    <string name="language_clear_search_description">Изчистване на търсенето</string>
+    <string name="language_count_description">%d налични езика</string>
+    <string name="language_apply_description">Прилагане на избора на език и продължаване</string>
+    <string name="language_cancel_description">Отказ от избора на език</string>
+    <string name="language_cancelled_announcement">Изборът на език е отменен</string>
+    <string name="language_selected_description">Избран език: %1$s, %2$s</string>
+    <string name="language_item_system">Системен език: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, в момента избран</string>
+    <string name="language_item_system_selected">Системен език: %1$s, %2$s, в момента избран</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Върнахте се към избора на език</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Режимът Sandbox е активен</string>
+    <string name="sandbox_mode_banner">РЕЖИМЪТ SANDBOX Е АКТИВЕН</string>
+    <string name="sandbox_mode_description">Използване на тестова среда. Докоснете номера на версията пет пъти, за да превключите.</string>
+    <string name="sandbox_credential_title">Sandbox удостоверение</string>
+    <string name="sandbox_credential_description">Генерирайте Sandbox удостоверение, за да изпробвате потоците за верификация, без да засягате производствените данни.</string>
+    <string name="sandbox_select_age">Избор на възраст</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Дата на раждане по подразбиране: %s</string>
+    <string name="sandbox_override_dob">Замяна на датата на раждане по подразбиране</string>
+    <string name="sandbox_override_description">Използвайте точна дата вместо стандартната по подразбиране, базирана на възраст.</string>
+    <string name="sandbox_date_of_birth">Дата на раждане</string>
+    <string name="sandbox_generate_credential">Генериране на удостоверение</string>
+    <string name="sandbox_generating">Генериране…</string>
+    <string name="sandbox_test_credential_saved">Тестовото удостоверение е запазено</string>
+    <string name="sandbox_id_prefix">Префикс за идентификация: %s…</string>
+    <string name="sandbox_unable_to_generate">Неуспешно генериране на удостоверение</string>
+    <string name="settings_sandbox_dob_format">Дата на раждане: %s</string>
+    <string name="settings_sandbox_age_dob_format">Възраст %d+ (Дата на раждане: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Конфигурация на средата</string>
+    <string name="environment_current">Текуща: %s</string>
+    <string name="environment_issuer_api">Издател API (Application Programming Interface): %s</string>
+    <string name="environment_verifier_api">Верификатор API (Application Programming Interface): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Изтриване на удостоверение?</string>
+    <string name="dialog_delete_credential_message">Това действие премахва удостоверението от Вашето устройство. Можете да го получите отново от издателя, ако е необходимо.</string>
+    <string name="dialog_delete_credential_announcement">Отворен диалогов прозорец: Изтриване на удостоверение</string>
+    <string name="dialog_reset_proving_key_title">Нулиране на ключа за доказване?</string>
+    <string name="dialog_reset_proving_key_message">Ключът за доказване и поддържащите файлове ще бъдат изтрити и изтеглени отново следващия път, когато отворите приложението.</string>
+    <string name="dialog_reset_proving_key_announcement">Отворен диалогов прозорец: Нулиране на ключа за доказване</string>
+    <string name="dialog_environment_info_announcement">Отворен диалогов прозорец: Конфигурация на средата</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">Достъпност</string>
+    <string name="accessibility_service_label">Достъпност на Provii Wallet</string>
+    <string name="accessibility_service_description">Услугата за достъпност на Provii Wallet осигурява разширена поддръжка за потребители с увреждания. Включва автоматично четене на удостоверения, ръководена навигация и опростени взаимодействия.</string>
+    <string name="accessibility_personalize">Персонализирайте Вашето изживяване</string>
+    <string name="accessibility_customize_features">Персонализиране на функциите за достъпност</string>
+    <string name="accessibility_quick_setup">Бърза настройка</string>
+    <string name="accessibility_features_active">%d активни функции</string>
+    <string name="accessibility_customize_experience">Персонализирайте Вашето изживяване</string>
+    <string name="accessibility_reset_title">Нулиране на настройките за достъпност?</string>
+    <string name="accessibility_reset_message">Всички предпочитания за достъпност ще се върнат към стойностите по подразбиране.</string>
+    <string name="accessibility_reset">Нулиране на настройките за достъпност</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Зрение</string>
+    <string name="accessibility_category_interaction">Взаимодействие</string>
+    <string name="accessibility_category_cognitive">Когнитивна поддръжка</string>
+    <string name="accessibility_category_alternative_input">Алтернативно въвеждане</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Много голям текст</string>
+    <string name="accessibility_extra_large_text_description">Увеличаване на базовите размери на шрифта с 45%</string>
+    <string name="accessibility_high_contrast">Висок контраст</string>
+    <string name="accessibility_high_contrast_description">Използване на цветове с висок контраст</string>
+    <string name="accessibility_reduce_transparency">Намаляване на прозрачността</string>
+    <string name="accessibility_reduce_transparency_description">Премахване на ефектите на размазване и стъкло</string>
+    <string name="accessibility_dyslexia_font">Шрифт, подходящ за дислексия</string>
+    <string name="accessibility_dyslexia_font_description">Използване на шрифта OpenDyslexic за подобрена четимост</string>
+    <string name="accessibility_color_blind_mode">Режим за цветна слепота</string>
+    <string name="accessibility_color_blind_optimized">Оптимизирани цветове за %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Без</string>
+    <string name="color_blind_protanopia">Протанопия (Червена слепота)</string>
+    <string name="color_blind_deuteranopia">Дейтеранопия (Зелена слепота)</string>
+    <string name="color_blind_tritanopia">Тританопия (Синя слепота)</string>
+    <string name="color_blind_monochrome">Монохромна</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">По-големи зони за докосване</string>
+    <string name="accessibility_larger_touch_targets_description">Увеличаване на размерите на бутоните и елементите</string>
+    <string name="accessibility_reduce_motion">Намаляване на движението</string>
+    <string name="accessibility_reduce_motion_description">Минимизиране на анимациите и преходите</string>
+    <string name="accessibility_extended_timeouts">Удължени изчаквания</string>
+    <string name="accessibility_extended_timeouts_description">Разрешаване на повече време за действия с ограничено време</string>
+    <string name="accessibility_simplified_gestures">Опростени жестове</string>
+    <string name="accessibility_simplified_gestures_description">Намаляване на жестовете с множество стъпки</string>
+    <string name="accessibility_haptic_feedback">Тактилна обратна връзка</string>
+    <string name="accessibility_haptic_feedback_description">Вибрационно потвърждение за действия</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Опростен интерфейс</string>
+    <string name="accessibility_simplified_interface_description">Скриване на разширени опции и намаляване на претрупаността</string>
+    <string name="accessibility_show_step_numbers">Показване на номерата на стъпките</string>
+    <string name="accessibility_show_step_numbers_description">Показване на индикатори за напредък</string>
+    <string name="accessibility_detailed_descriptions">Подробни описания</string>
+    <string name="accessibility_detailed_descriptions_description">Предоставяне на допълнителен обяснителен текст</string>
+    <string name="accessibility_confirm_actions">Потвърждение преди действия</string>
+    <string name="accessibility_confirm_actions_description">Искане на потвърждение при важни операции</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Ръчно въвеждане на код</string>
+    <string name="accessibility_manual_code_entry_description">Позволяване на QR (Quick Response) кодове да се въвеждат ръчно вместо да се сканират</string>
+    <string name="accessibility_voice_input">Гласово въвеждане</string>
+    <string name="accessibility_voice_input_description">Активиране на разпознаване на реч за текстови полета</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Зрение</string>
+    <string name="accessibility_profile_motor">Двигателни функции</string>
+    <string name="accessibility_profile_cognitive">Когнитивна</string>
+    <string name="accessibility_profile_senior">Старши</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Назад</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Начало</string>
+    <string name="breadcrumb_settings">Настройки</string>
+    <string name="breadcrumb_accessibility">Достъпност</string>
+    <string name="breadcrumb_language">Език</string>
+    <string name="breadcrumb_help">Помощен център</string>
+    <string name="breadcrumb_officer_mode">Режим на служител</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Типография и разстояния между текста</string>
+    <string name="accessibility_line_spacing">Разстояние между редовете</string>
+    <string name="accessibility_line_spacing_description">Регулиране на разстоянието между редовете текст</string>
+    <string name="accessibility_paragraph_spacing">Разстояние между абзаците</string>
+    <string name="accessibility_paragraph_spacing_description">Регулиране на разстоянието между абзаците</string>
+    <string name="accessibility_letter_spacing">Разстояние между буквите</string>
+    <string name="accessibility_letter_spacing_description">Регулиране на разстоянието между буквите</string>
+    <string name="accessibility_typography_aaa_note">Препоръки AAA: 1.5x разстояние между редовете, 2.0x разстояние между абзаците и 0.12em разстояние между буквите.</string>
+    <string name="accessibility_spacing_current">Текущо: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Поведение при изчакване</string>
+    <string name="accessibility_timeout_no_automatic">Без автоматични изчаквания за съответствие с AAA</string>
+    <string name="accessibility_timeout_auto_advance_30">Автоматично продължаване след 30 секунди</string>
+    <string name="accessibility_timeout_auto_advance_60">Автоматично продължаване след 60 секунди</string>
+    <string name="accessibility_timeout_set_announcement">Поведението при изчакване е зададено на %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Ниво на контраст</string>
+    <string name="accessibility_contrast_aaa_ratio">Контрастно съотношение 7:1 за съответствие с AAA</string>
+    <string name="accessibility_contrast_standard">Стандартен контраст</string>
+    <string name="accessibility_contrast_aa_ratio">Контрастно съотношение 4.5:1 за съответствие с AA</string>
+    <string name="accessibility_contrast_set_announcement">Нивото на контраст е зададено на %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Режимът за цветна слепота е зададен на %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">Плъзгач %1$s. Текуща стойност: %2$s. %3$sДиапазон от %4$s до %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">Съответства на AAA. </string>
+    <string name="accessibility_slider_announcement">%1$s е зададено на %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, съответства на AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s е активирано</string>
+    <string name="accessibility_toggle_disabled">%s е деактивирано</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Обратна връзка при верификация</string>
+    <string name="accessibility_sound_enabled">Възпроизвеждане на звук при успех</string>
+    <string name="accessibility_sound_enabled_description">Възпроизвеждане на потвърдителен звук след успешна верификация</string>
+    <string name="accessibility_sound_style">Стил на звука</string>
+    <string name="accessibility_sound_preview">Преглед на звука</string>
+    <string name="accessibility_sound_preview_preset">Преглед на %s</string>
+    <string name="accessibility_sound_style_set_announcement">Стилът на звука е зададен на %s</string>
+    <string name="accessibility_haptic_enabled">Вибрация при успех</string>
+    <string name="accessibility_haptic_enabled_description">Тактилна обратна връзка след успешна верификация</string>
+    <string name="accessibility_sound_footer">Звукът зачита настройките за безшумен режим на Вашето устройство</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Сила на звука</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Преглед на текущата сила на звука</string>
+    <string name="accessibility_volume_set_announcement">Силата на звука е зададена на %d процента</string>
+    <string name="accessibility_volume_slider_description">Плъзгач за сила на звука. Текуща стойност: %d процента</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Нулиране на настройките</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">Режим на служител</string>
+    <string name="officer_id">Идентификация на служителя (ID)</string>
+    <string name="officer_id_placeholder">напр. OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Въведете Вашата назначена идентификация на служителя</string>
+    <string name="officer_yubikey_connected">YubiKey е свързан</string>
+    <string name="officer_connect_yubikey">Свързване на YubiKey</string>
+    <string name="officer_touch_yubikey">Докоснете Вашия YubiKey за удостоверяване…</string>
+    <string name="officer_authenticate_hmac">Удостоверяване с HMAC (Hash-based Message Authentication Code)</string>
+    <string name="officer_authentication_process">Процес на удостоверяване:</string>
+    <string name="officer_auth_steps">1. Въведете Вашата идентификация на служителя\n2. Кликнете Удостоверяване\n3. Докоснете YubiKey, когато мига\n4. HMAC (Hash-based Message Authentication Code) удостоверяването потвърждава Вашата самоличност</string>
+    <string name="officer_auth_failed">Удостоверяването е неуспешно. Моля, проверете Вашата идентификация на служителя и опитайте отново.</string>
+    <string name="officer_session_info">Служител: %s</string>
+    <string name="officer_station_info">Станция: %s</string>
+    <string name="officer_issued_today">Издадени днес: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Издаване на удостоверение за възраст</string>
+    <string name="officer_issue_description">Проверете самоличността на потребителя и издайте цифрово удостоверение за възраст</string>
+    <string name="officer_start_issuance">Започване на ново издаване</string>
+    <string name="officer_issuance_process">ПРОЦЕС НА ИЗДАВАНЕ</string>
+    <string name="officer_issuance_steps">1. Проверете физическия документ за самоличност на потребителя\n2. Въведете датата им на раждане\n3. Проверете дали информацията съвпада точно\n4. Издайте удостоверение с QR (Quick Response) код за атестация\n5. Потребителят сканира QR кода, за да получи удостоверението</string>
+    <string name="officer_verify_identity">Проверка на самоличността на потребителя</string>
+    <string name="officer_select_dob">Избор на дата на раждане</string>
+    <string name="officer_change_date">Промяна на датата</string>
+    <string name="officer_age_years">Възраст: %d години</string>
+    <string name="officer_under_18_warning">Под 18 години – не може да се издаде удостоверение</string>
+    <string name="officer_verification_checklist">КОНТРОЛЕН СПИСЪК ЗА ВЕРИФИКАЦИЯ</string>
+    <string name="officer_document_verified">Физическият документ е проверен</string>
+    <string name="officer_document_verified_description">Видях валидна идентификация, издадена от правителството</string>
+    <string name="officer_dob_matches">Датата на раждане съвпада точно</string>
+    <string name="officer_dob_matches_description">Датата на раждане на физическия документ е: %s</string>
+    <string name="officer_issue_credential">Издаване на удостоверение</string>
+    <string name="officer_user_scanned_successfully">Потребителят е сканирал успешно</string>
+    <string name="officer_return_to_dashboard">Връщане към таблото</string>
+    <string name="officer_go_back">Назад</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">Удостоверяване с YubiKey</string>
+    <string name="yubikey_step_format">Стъпка %1$d от %2$d</string>
+    <string name="yubikey_led_should_blink">Светодиодът на YubiKey трябва да мига</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Валидиране на входните данни…</string>
+    <string name="officer_state_creating_attestation">Създаване на атестация…</string>
+    <string name="officer_state_computing_commitment">Изчисляване на криптографски ангажимент…</string>
+    <string name="officer_state_creating_session">Създаване на сигурна сесия…</string>
+    <string name="officer_state_signing">Подписване на удостоверение…</string>
+    <string name="officer_state_finalizing">Финализиране на удостоверение…</string>
+    <string name="officer_state_storing_attestation">Съхраняване на атестация…</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">Сесията изтича скоро</string>
+    <string name="officer_session_expiring_message">Вашата сесия ще изтече след %d секунди. Желаете ли да запазите напредъка си?</string>
+    <string name="officer_session_expiring_announcement">Предупреждение: Вашата сесия ще изтече след %d секунди</string>
+    <string name="officer_save_and_continue">Запазване и продължаване</string>
+    <string name="officer_continue_without_saving">Продължаване без запазване</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">ДАТА НА РАЖДАНЕ</string>
+    <string name="officer_age_format">Възраст: %d години</string>
+    <string name="officer_under_18_full_warning">Под 18 години – не може да се издаде удостоверение. Само лица на 18 или повече години имат право на удостоверения за верификация на възраст. Моля, проверете дали датата на раждане е правилна.</string>
+    <string name="officer_verification_checklist_header">КОНТРОЛЕН СПИСЪК ЗА ВЕРИФИКАЦИЯ</string>
+    <string name="officer_physical_document_verified">Физическият документ е проверен</string>
+    <string name="officer_sighted_valid_id">Видях валидна идентификация, издадена от правителството</string>
+    <string name="officer_dob_matches_exactly">Датата на раждане съвпада точно</string>
+    <string name="officer_dob_on_document">Датата на раждане на физическия документ е: %s</string>
+    <string name="officer_error_label">Грешка</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">Сканирайте QR (Quick Response) кода за издаване</string>
+    <string name="issuance_downloads_credential">Това изтегля Вашето удостоверение за възраст.</string>
+    <string name="issuance_center_qr">Центрирайте QR кода в рамката и дръжте стабилно.</string>
+    <string name="issuance_enter_code_manually">Ръчно въвеждане на код</string>
+    <string name="issuance_processing_qr">Обработване на QR код…</string>
+    <string name="issuance_invalid_data">Невалидни данни за издаване</string>
+    <string name="issuance_verification_qr_error">Това е QR код за верификация. Моля, сканирайте QR кода за издаване на удостоверение.</string>
+    <string name="issuance_invalid_qr_format">Невалиден формат на QR код</string>
+    <string name="issuance_failed_to_process">Неуспешна обработка на QR кода: %s</string>
+    <string name="issuance_code">Код за издаване</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">Ръчно въвеждане на код</string>
+    <string name="manual_entry_enter_code_manually">Ръчно въвеждане на код</string>
+    <string name="manual_entry_verification_description">Въведете 12-цифрения код за верификация, показан на екрана на верификатора.</string>
+    <string name="manual_entry_issuance_description">Въведете кода, показан на екрана на издателя.</string>
+    <string name="manual_entry_verification_code">Код за верификация</string>
+    <string name="manual_entry_submit">Изпращане на кода</string>
+    <string name="manual_entry_please_enter">Моля, въведете код</string>
+    <string name="manual_entry_please_enter_verification">Моля, въведете код за верификация</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Започване на слушане</string>
+    <string name="voice_input_stop_listening">Спиране на слушане</string>
+    <string name="voice_input_recognized">Разпознато:</string>
+    <string name="content_desc_voice_input_listening">Слушане за гласово въвеждане</string>
+    <string name="content_desc_voice_input_available">Гласовото въвеждане е налично</string>
+    <string name="voice_input_permission_title">Необходимо е разрешение за микрофон</string>
+    <string name="voice_input_permission_message">Гласовото въвеждане изисква достъп до микрофона. Можете да го активирате от системните настройки.</string>
+    <string name="voice_input_listening">Слушане…</string>
+    <string name="voice_input_error">Грешка при гласово въвеждане</string>
+    <string name="voice_input_tap_to_speak">Докоснете, за да говорите</string>
+    <string name="voice_input_did_you_say">Казахте ли „%1$s"?</string>
+    <string name="voice_input_confirm">Потвърждение</string>
+    <string name="voice_input_retry">Опитайте отново</string>
+    <string name="voice_input_cancel">Отказ</string>
+    <string name="voice_input_button">Гласово въвеждане</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">Гласовото въвеждане не е налично на това устройство</string>
+    <string name="voice_input_error_audio">Грешка при запис на звук. Проверете микрофона.</string>
+    <string name="voice_input_error_network">Мрежова грешка. Проверете връзката.</string>
+    <string name="voice_input_error_network_timeout">Изчакването на мрежата изтече. Опитайте отново.</string>
+    <string name="voice_input_error_no_match">Не е открита реч. Моля, опитайте отново.</string>
+    <string name="voice_input_error_recognizer_busy">Гласовото въвеждане е заето. Моля, изчакайте.</string>
+    <string name="voice_input_error_server">Грешка на сървъра. Опитайте отново по-късно.</string>
+    <string name="voice_input_error_speech_timeout">Не е чута реч. Моля, говорете по-силно.</string>
+    <string name="voice_input_error_insufficient_permissions">Разрешението за микрофон е отказано.</string>
+    <string name="voice_input_error_generic">Грешка при гласово въвеждане. Моля, опитайте отново.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">Назад</string>
+    <string name="action_close">Затваряне</string>
+    <string name="action_cancel">Отказ</string>
+    <string name="action_ok">OK</string>
+    <string name="action_set">Задаване</string>
+    <string name="action_change">Промяна</string>
+    <string name="action_delete">Изтриване</string>
+    <string name="action_reset">Нулиране</string>
+    <string name="action_retry">Повторен опит</string>
+    <string name="action_try_again">Опитайте отново</string>
+    <string name="action_refresh">Обновяване</string>
+    <string name="action_download_now">Изтегляне сега</string>
+    <string name="action_retry_setup">Повторен опит за настройка</string>
+    <string name="action_retry_download">Повторен опит за изтегляне</string>
+    <string name="action_restart_setup">Рестартиране на настройката</string>
+    <string name="action_manage_storage">Управление на хранилището</string>
+    <string name="action_check_wifi_settings">Първо проверете настройките на Wi-Fi</string>
+    <string name="action_check_wifi_settings_short">Проверка на настройките на Wi-Fi</string>
+    <string name="action_grant_permission">Предоставяне на разрешение</string>
+    <string name="action_grant_camera_access">Предоставяне на достъп до камерата</string>
+    <string name="action_return_to_browser">Връщане към браузъра</string>
+    <string name="action_show_debug_info">Показване на Debug информация</string>
+    <string name="action_reset_redownload">Нулиране и повторно изтегляне</string>
+    <string name="action_end_session">Приключване на сесията</string>
+    <string name="action_expand">Разгъване</string>
+    <string name="action_collapse">Свиване</string>
+    <string name="accessibility_state_expanded">Разгънато</string>
+    <string name="accessibility_state_collapsed">Свито</string>
+    <string name="accessibility_state_checked">Отметнато</string>
+    <string name="accessibility_state_unchecked">Неотметнато</string>
+    <string name="accessibility_state_selected">Избрано</string>
+    <string name="accessibility_state_not_selected">Неизбрано</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">Възникна грешка</string>
+    <string name="error_camera_permission">Необходимо е разрешение за камерата за сканиране на QR (Quick Response)</string>
+    <string name="error_camera_access_needed">Необходим е достъп до камерата</string>
+    <string name="error_camera_permission_description">Предоставете разрешение за камерата, за да сканирате QR кодове или активирайте ръчното въвеждане от настройките за достъпност.</string>
+    <string name="error_camera_permission_required">Необходимо е разрешение за камерата за сканиране на QR кодове</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">Търсене на QR код…</string>
+    <string name="qr_scanner_camera_required">Необходимо е разрешение за камерата</string>
+    <string name="qr_scanner_camera_preview">Преглед от камерата за сканиране на QR кодове</string>
+    <string name="qr_scanner_status_scanning">Сканиране за QR код</string>
+    <string name="qr_scanner_requesting_permission">Заявяване на разрешение за камерата</string>
+    <string name="error_camera_start_failed">Неуспешно стартиране на камерата: %s</string>
+    <string name="error_camera_init_failed">Инициализацията на камерата е неуспешна: %s</string>
+    <string name="error_biometric_not_available">Биометричното удостоверяване не е налично</string>
+    <string name="error_network">Възникна мрежова грешка</string>
+    <string name="error_no_credential">Няма налично удостоверение. Моля, първо получете удостоверение.</string>
+    <string name="credential_picker_title">Избор на удостоверение</string>
+    <string name="credential_picker_description">Имате няколко удостоверения, които могат да се използват за тази верификация. Моля, изберете едно.</string>
+    <string name="credential_picker_expired_label">Изтекло</string>
+    <string name="credential_picker_accessibility_select">Избор на удостоверение: %1$s</string>
+    <string name="error_failed_to_process_challenge">Неуспешна обработка на предизвикателството</string>
+    <string name="error_failed_to_create_proof">Неуспешно създаване на доказателство</string>
+    <string name="error_verification_failed">Верификацията е неуспешна</string>
+    <string name="error_occurred_during_verification">Възникна грешка по време на верификацията</string>
+    <string name="error_connection_timeout">Времето за изчакване на връзката изтече. Моля, опитайте отново.</string>
+    <string name="error_unable_to_connect">Неуспешно свързване. Моля, проверете интернет връзката си.</string>
+    <string name="error_secure_connection_failed">Сигурната връзка е неуспешна. Моля, опитайте отново.</string>
+    <string name="error_security_verification_failed">Верификацията за сигурност е неуспешна. Моля, опитайте отново.</string>
+    <string name="error_invalid_input">Невалидни входни данни. Моля, проверете информацията си и опитайте отново.</string>
+    <string name="error_operation_in_progress">Изпълнява се друга операция. Моля, изчакайте.</string>
+    <string name="error_operation_cancelled">Операцията е отменена.</string>
+    <string name="error_age_requirement_not_met">Изискването за възраст не е изпълнено за това удостоверение.</string>
+    <string name="error_biometric_required">Необходимо е биометрично удостоверяване, за да продължите.</string>
+    <string name="error_wallet_not_initialized">Портфейлът не е инициализиран. Моля, рестартирайте приложението.</string>
+    <string name="error_security">Грешка в сигурността. Моля, опитайте отново.</string>
+    <string name="error_connection_timeout_short">Времето за изчакване на връзката изтече. Моля, опитайте отново.</string>
+    <string name="error_invalid_input_provided">Предоставени са невалидни входни данни.</string>
+    <string name="error_invalid_data_format">Невалиден формат на данните. Моля, опитайте отново.</string>
+    <string name="error_storage">Грешка в хранилището. Моля, проверете хранилището на устройството.</string>
+    <string name="error_network_short">Мрежова грешка. Моля, проверете връзката си.</string>
+    <string name="error_label">Грешка</string>
+    <string name="error_dismiss">Затваряне на грешката</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">Обработване…</string>
+    <string name="status_initializing_wallet">Инициализиране на портфейла…</string>
+    <string name="status_loading">Зареждане…</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">Поверителността е защитена</string>
+    <string name="privacy_zk_description">Вашата дата на раждане никога не се споделя. Верификаторите научават само дали отговаряте на тяхното изискване за възраст.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Настройки за поверителност</string>
+    <string name="privacy_settings_description">Контролиране на събирането на данни и управление на Вашите данни</string>
+    <string name="privacy_section_data_collection">Събиране на данни</string>
+    <string name="privacy_section_your_data">Вашите данни</string>
+    <string name="privacy_protection_title">Вашата поверителност е защитена</string>
+    <string name="privacy_protection_description">Provii Wallet използва доказателства с нулево знание, за да потвърди Вашата възраст, без да разкрива датата Ви на раждане. Данните от удостоверението Ви се съхраняват само на Вашето устройство и никога не се споделят с никого.</string>
+    <string name="privacy_analytics_title">Аналитика</string>
+    <string name="privacy_analytics_description">Помогнете за подобряването на Provii Wallet, като споделяте анонимни данни за употребата</string>
+    <string name="privacy_analytics_enabled">Аналитиката е активирана</string>
+    <string name="privacy_analytics_disabled">Аналитиката е деактивирана</string>
+    <string name="privacy_crash_reporting_title">Отчитане на сривове</string>
+    <string name="privacy_crash_reporting_description">Помогнете ни да поправяме грешки, като автоматично изпращате отчети за сривове</string>
+    <string name="privacy_crash_reporting_enabled">Отчитането на сривове е активирано</string>
+    <string name="privacy_crash_reporting_disabled">Отчитането на сривове е деактивирано</string>
+    <string name="privacy_what_we_collect_title">Какви данни събираме</string>
+    <string name="privacy_what_we_collect_subtitle">Докоснете, за да научите за нашите практики за данни</string>
+    <string name="privacy_data_collection_info_title">Информация за събирането на данни</string>
+    <string name="privacy_data_we_collect_header">Какво събираме (ако е активирано):</string>
+    <string name="privacy_data_we_collect_list">- Анонимна статистика за употребата на приложението\n- Отчети за сривове и журнали с грешки\n- Тип устройство и версия на операционната система\n- Информация за версията на приложението</string>
+    <string name="privacy_data_we_dont_collect_header">Какво никога не събираме:</string>
+    <string name="privacy_data_we_dont_collect_list">- Вашата дата на раждане\n- Вашето име или лични данни\n- Вашето местоположение\n- Данните от Вашето удостоверение\n- Биометрични данни</string>
+    <string name="privacy_data_never_shared_note">Данните от Вашето удостоверение никога не се споделят с Provii или трета страна. Те остават на Вашето устройство.</string>
+    <string name="privacy_policy_title">Политика за поверителност</string>
+    <string name="privacy_policy_subtitle">Прочетете пълната ни политика за поверителност</string>
+    <string name="privacy_delete_my_data_title">Изтриване на моите данни</string>
+    <string name="privacy_delete_my_data_subtitle">Премахване на всички съхранени удостоверения и данни</string>
+    <string name="privacy_delete_data_dialog_title">Изтриване на всички данни?</string>
+    <string name="privacy_delete_data_dialog_message">Това ще изтрие окончателно всички Ваши удостоверения и данни от приложението на това устройство. Ще трябва да получите ново удостоверение, за да използвате приложението отново.</string>
+    <string name="privacy_delete_data_dialog_warning">Това действие не може да бъде отменено.</string>
+    <string name="privacy_delete_data_confirm">Изтриване на всичко</string>
+    <string name="privacy_footer_note">Можете да промените тези настройки по всяко време. Промените влизат в сила незабавно.</string>
+    <string name="dialog_delete_data_announcement">Отворен диалогов прозорец за потвърждение на изтриването на данни</string>
+    <string name="dialog_data_collection_info_announcement">Отворен диалогов прозорец с информация за събирането на данни</string>
+    <string name="content_desc_privacy_settings">Настройки за поверителност, контролиране на събирането на данни и управление на Вашите данни</string>
+    <string name="content_desc_data_collection_info">Преглед на информацията за събирането на данни</string>
+    <string name="content_desc_privacy_policy">Преглед на политиката за поверителност</string>
+    <string name="content_desc_opens_external_link">Отваря се в браузъра</string>
+    <string name="content_desc_delete_my_data">Изтриване на всички мои данни</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">Назад</string>
+    <string name="content_desc_settings">Настройки</string>
+    <string name="content_desc_refresh">Обновяване</string>
+    <string name="content_desc_verified">Верифициран</string>
+    <string name="content_desc_expand">Разгъване</string>
+    <string name="content_desc_collapse">Свиване</string>
+    <string name="content_desc_warning_error">Предупреждение: Възникна грешка</string>
+    <string name="content_desc_sandbox_indicator">Индикатор за режим Sandbox</string>
+    <string name="content_desc_success">Успех</string>
+    <string name="content_desc_warning">Предупреждение</string>
+    <string name="content_desc_information">Информация</string>
+    <string name="content_desc_error">Грешка</string>
+    <string name="content_desc_sandbox_warning">Предупреждение за режим Sandbox</string>
+    <string name="content_desc_app_info">Информация за приложението</string>
+    <string name="content_desc_accessibility_settings">Настройки за достъпност</string>
+    <string name="content_desc_language_settings">Настройки на езика</string>
+    <string name="content_desc_licenses">Лицензи с отворен код</string>
+    <string name="content_desc_select_dob">Избор на дата на раждане</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Издай тестово удостоверение като Издател</string>
+    <string name="content_desc_get_credential">Получаване на удостоверение</string>
+    <string name="content_desc_delete_credential">Изтриване на удостоверение</string>
+    <string name="content_desc_reset_proving_key">Нулиране на ключа за доказване</string>
+    <string name="content_desc_environment_info">Информация за средата</string>
+    <string name="content_desc_help_support">Помощ и поддръжка</string>
+    <string name="content_desc_privacy_protected">Поверителността е защитена</string>
+    <string name="preview_settings_title">Преглед на настройките</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">Успех</string>
+    <string name="accessibility_verification_error_description">Грешка</string>
+    <string name="accessibility_breadcrumb_location_description">Местоположение: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">след това</string>
+    <string name="accessibility_breadcrumb_current_page_description">Текуща страница: %s</string>
+    <string name="accessibility_settings_navigate_description">Навигация</string>
+    <string name="accessibility_credentials_settings_description">Настройки</string>
+    <string name="accessibility_verification_back_description">Назад</string>
+    <string name="accessibility_officer_back_description">Назад</string>
+    <string name="accessibility_discovery_back_description">Назад</string>
+    <string name="accessibility_discovery_refresh_description">Обновяване</string>
+    <string name="accessibility_discovery_verified_description">Верифициран</string>
+    <string name="accessibility_officer_done_description">Готово</string>
+    <string name="accessibility_officer_attestation_qr_description">QR код за атестация за сканиране от потребителя</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">Прескачане към %s</string>
+    <string name="accessibility_skip_main_content">основното съдържание</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Нарушено зрение</string>
+    <string name="accessibility_profile_motor_impaired">Нарушени двигателни функции</string>
+    <string name="accessibility_profile_cognitive_support">Когнитивна поддръжка</string>
+    <string name="accessibility_profile_elderly_support">Поддръжка за възрастни</string>
+    <string name="accessibility_profile_default">По подразбиране</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Без</string>
+    <string name="color_blind_mode_protanopia">Протанопия</string>
+    <string name="color_blind_mode_deuteranopia">Дейтеранопия</string>
+    <string name="color_blind_mode_tritanopia">Тританопия</string>
+    <string name="color_blind_mode_monochrome">Монохромна</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Стандартен</string>
+    <string name="contrast_level_high">Висок (AA)</string>
+    <string name="contrast_level_maximum">Максимален (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Пълна ширина</string>
+    <string name="text_width_comfortable">Удобна (80 знака)</string>
+    <string name="text_width_narrow">Тясна (60 знака)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Без изчакване (AAA)</string>
+    <string name="timeout_behavior_standard">Стандартно (30 с)</string>
+    <string name="timeout_behavior_extended">Удължено (60 с)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Стандартно</string>
+    <string name="reading_level_standard_description">Стандартен текст с технически термини</string>
+    <string name="reading_level_simplified">Опростено (7–9 клас)</string>
+    <string name="reading_level_simplified_description">По-прости думи и по-кратки изречения (отговаря на AAA)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">Помощ</string>
+    <string name="help_and_support">Помощ и поддръжка</string>
+    <string name="help_description">Получете помощ с функциите на приложението и достъпността</string>
+    <string name="help_center">Помощен център</string>
+    <string name="help_center_description">Разглеждайте теми за помощ и научете за функциите на приложението</string>
+    <string name="help_search">Търсене в помощта</string>
+    <string name="help_search_placeholder">Търсене на теми за помощ…</string>
+    <string name="help_search_active">Търсенето е активирано</string>
+    <string name="help_search_inactive">Търсенето е деактивирано</string>
+    <string name="help_no_results">Не са намерени теми за помощ, съответстващи на Вашето търсене</string>
+    <string name="help_topic_not_found">Темата за помощ не е намерена</string>
+    <string name="help_related_topics">Свързани теми</string>
+    <string name="help_content_heading">Съдържание на помощта</string>
+    <string name="help_related_topic_position">%1$s, елемент %2$d от %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Зрение</string>
+    <string name="help_category_typography">Типография</string>
+    <string name="help_category_interaction">Взаимодействие</string>
+    <string name="help_category_cognitive">Когнитивна поддръжка</string>
+    <string name="help_category_alternative_input">Алтернативно въвеждане</string>
+    <string name="help_category_features">Функции</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Получаване на удостоверение</string>
+    <string name="help_topic_getting_credential_summary">Научете как да получите първото си удостоверение за верификация на възраст</string>
+    <string name="help_topic_getting_credential_content">За да получите Вашето удостоверение за верификация на възраст:\n\n1. Посетете оторизиран издател\n2. Представете Вашата издадена от правителството лична карта\n3. Сканирайте предоставения QR код\n4. Вашето удостоверение ще бъде запазено сигурно\n\nВашата дата на раждане се съхранява локално и никога не се споделя.</string>
+
+    <string name="help_topic_verifying_age_title">Верификация на Вашата възраст</string>
+    <string name="help_topic_verifying_age_summary">Как да докажете Вашата възраст, без да споделяте лична информация</string>
+    <string name="help_topic_verifying_age_content">Когато трябва да верифицирате Вашата възраст:\n\n1. Верификаторът ще Ви покаже QR код\n2. Сканирайте го с приложението\n3. Приложението създава математическо доказателство\n4. Споделя се само отговорът да/не\n\nВашата реална дата на раждане НИКОГА не се разкрива.</string>
+
+    <string name="help_topic_accessibility_title">Функции за достъпност</string>
+    <string name="help_topic_accessibility_summary">Персонализирайте приложението според Вашите нужди</string>
+    <string name="help_topic_accessibility_content">Приложението включва много функции за достъпност:\n\n- Режими за голям текст и висок контраст\n- Гласово въвеждане и поддръжка за четец на екрана\n- Опростени жестове и потребителски интерфейс\n- Опции за ръчно въвеждане на код\n- Удължени изчаквания\n\nДостъп до тях в Настройки > Достъпност</string>
+
+    <string name="help_topic_privacy_security_title">Поверителност и сигурност</string>
+    <string name="help_topic_privacy_security_summary">Как е защитена Вашата информация</string>
+    <string name="help_topic_privacy_security_content">Вашата поверителност е наш основен приоритет:\n\n- Удостоверенията се съхраняват локално на Вашето устройство\n- Доказателствата с нулево знание защитават Вашите данни\n- Без проследяване или аналитика\n- Налично биометрично удостоверяване\n- Данните никога не напускат Вашето устройство некриптирани</string>
+
+    <string name="help_topic_troubleshooting_title">Отстраняване на проблеми</string>
+    <string name="help_topic_troubleshooting_summary">Чести проблеми и решения</string>
+    <string name="help_topic_troubleshooting_content">Чести проблеми и решения:\n\nQR скенерът не работи:\n- Проверете разрешенията за камерата в Настройки\n- Опитайте опцията за ръчно въвеждане на код\n\nУдостоверението не се зарежда:\n- Проверете интернет връзката си\n- Опитайте да нулирате ключа за доказване\n\nВерификацията е неуспешна:\n- Уверете се, че удостоверението не е изтекло\n- Свържете се с верификатора за поддръжка</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">ДАТА НА РАЖДАНЕ</string>
+    <string name="date_of_birth">Дата на раждане</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">%d години</string>
+    <string name="format_step_indicator">Стъпка %1$d от %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">Удостоверения</string>
+    <string name="tab_settings">Настройки</string>
+    <string name="tab_help">Помощ</string>
+    <string name="tab_credentials_description">Преглед на Вашите удостоверения</string>
+    <string name="tab_settings_description">Настройки на приложението</string>
+    <string name="tab_help_description">Получете помощ и поддръжка</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">Търсене</string>
+    <string name="search_field_label">Поле за търсене</string>
+    <string name="search_placeholder">Търсене на настройки, помощ и функции</string>
+    <string name="search_clear">Изчистване на търсенето</string>
+    <string name="search_popular">Популярни търсения</string>
+    <string name="search_results_heading">Резултати от търсенето</string>
+    <string name="search_no_results">Не са намерени резултати</string>
+    <string name="search_try_suggestions">Опитайте търсене с:\n• Достъпност\n• Настройки\n• Помощ\n• Език</string>
+    <string name="search_results_announcement_singular">Намерен 1 резултат</string>
+    <string name="search_results_announcement_plural">Намерени %d резултата</string>
+    <string name="search_no_results_announcement">Не са намерени резултати</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">Бърз достъп</string>
+    <string name="help_topics">Теми за помощ</string>
+    <string name="help_glossary">Речник</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">Лицензи с отворен код</string>
+    <string name="licenses_description">Това приложение използва следния софтуер с отворен код. Благодарни сме на разработчиците, които са създали тези библиотеки.</string>
+    <string name="licenses_tap_to_view">Докоснете, за да видите пълния лиценз</string>
+    <string name="licenses_group_header">%1$s (%2$d библиотеки)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">Няма интернет връзка. Моля, проверете мрежата си и опитайте отново.</string>
+    <string name="error_unexpected">Възникна неочаквана грешка. Моля, рестартирайте приложението.</string>
+    <string name="error_unexpected_try_again">Възникна неочаквана грешка. Моля, опитайте отново.</string>
+    <string name="error_storage_detailed">Грешка в хранилището: %s</string>
+    <string name="error_network_detailed">Мрежова грешка: %s</string>
+    <string name="error_proof_generation_failed">Неуспешно генериране на доказателство: %s</string>
+    <string name="error_not_eligible">Не отговаряте на условията. Не отговаряте на изискванията за тази верификация.</string>
+    <string name="error_challenge_expired">Предизвикателството е изтекло или не е намерено. Моля, поискайте ново.</string>
+    <string name="error_challenge_expired_scan_new">Това предизвикателство е изтекло. Моля, сканирайте нов QR код.</string>
+    <string name="error_request_out_of_order">Заявката е извън ред. Моля, опитайте отново.</string>
+    <string name="error_too_many_requests">Твърде много заявки. Моля, изчакайте малко и опитайте отново.</string>
+    <string name="error_server">Грешка на сървъра. Моля, опитайте отново по-късно.</string>
+    <string name="error_request_failed">Заявката е неуспешна (%d). Моля, опитайте отново.</string>
+    <string name="error_not_eligible_short">Не отговаряте на условията за тази верификация</string>
+    <string name="error_challenge_not_found">Предизвикателството не е намерено</string>
+    <string name="error_complete_steps_in_order">Моля, изпълнете стъпките по ред</string>
+    <string name="error_challenge_expired_short">Предизвикателството е изтекло</string>
+    <string name="error_authentication_cancelled">Удостоверяването е отменено. Моля, потвърдете самоличността си, за да завършите верификацията на възраст.</string>
+    <string name="error_invalid_data_format_short">Невалиден формат на данните. Моля, опитайте отново.</string>
+    <string name="error_storage_check_device">Грешка в хранилището. Моля, проверете хранилището на устройството.</string>
+    <string name="error_network_check_connection">Мрежова грешка. Моля, проверете връзката си.</string>
+    <string name="error_proof_generation_failed_short">Неуспешно генериране на доказателство. Моля, опитайте отново.</string>
+    <string name="error_operation_in_progress_short">Изпълнява се друга операция.</string>
+    <string name="error_no_internet_short">Няма интернет връзка. Моля, проверете мрежата си.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Сканиране на QR за верификация</string>
+    <string name="verification_verifying_title">Верификация на възраст</string>
+    <string name="verification_success_title">Възрастта е потвърдена</string>
+    <string name="verification_failed_title">Верификацията е неуспешна</string>
+    <string name="verification_processing_wait">Това може да отнеме няколко секунди</string>
+    <string name="verification_success_message">Вашата възраст беше потвърдена поверително</string>
+    <string name="verification_return_to_site">Вече можете да се върнете в сайта, за да продължите.</string>
+    <string name="verification_please_enter_code">Моля, въведете код за верификация. Кодът трябва да бъде или 12-цифрен кратък код, или пълен URL за верификация от верификатора.</string>
+    <string name="verification_error_occurred">Възникна грешка по време на верификацията</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Обработване…</string>
+    <string name="credential_list_verify_age_button">Верификация на възраст</string>
+    <string name="credential_list_generate_in_person_description">Генериране на удостоверение лично</string>
+    <string name="credential_list_scan_qr_title">Сканиране на QR код</string>
+    <string name="credential_list_find_locations_title">Намиране на места</string>
+    <string name="credential_section_my_credential">Моето удостоверение</string>
+    <string name="credential_section_managed">Управлявани удостоверения</string>
+    <string name="credential_list_get_credential_button">Получаване на удостоверение</string>
+    <string name="credential_list_add_managed_button">Добавяне на управлявано удостоверение</string>
+    <string name="credential_section_managed_empty">Добавете удостоверение за лице, за което се грижите, като например дете.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Детайли на удостоверението</string>
+    <string name="credential_detail_not_found">Удостоверението не е намерено</string>
+    <string name="credential_detail_nickname">Прякор</string>
+    <string name="credential_detail_no_nickname">Не е зададен прякор</string>
+    <string name="credential_detail_edit_nickname">Редактиране на прякора</string>
+    <string name="credential_detail_status">Статус</string>
+    <string name="credential_detail_delete">Изтриване на удостоверение</string>
+    <string name="credential_detail_delete_title">Изтриване на удостоверение</string>
+    <string name="credential_detail_delete_message">Сигурни ли сте, че искате да изтриете това удостоверение? Това действие не може да бъде отменено.</string>
+    <string name="credential_type_primary">Основно</string>
+    <string name="credential_type_managed">Управлявано</string>
+    <string name="credential_status_valid">Валидно</string>
+    <string name="credential_status_expired">Изтекло</string>
+    <string name="credential_status_invalid">Невалидно</string>
+    <string name="action_save">Запазване</string>
+    <string name="credential_slots_full_title">Достигнат е максималният брой удостоверения</string>
+    <string name="credential_slots_full_message">Достигнали сте максималния брой удостоверения. Изтрийте съществуващо удостоверение, за да добавите ново.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">Управлявано удостоверение</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">Верификация на възраст за %1$s?</string>
+    <string name="managed_confirm_message">Предстои да верифицирате възрастта чрез управляваното удостоверение на %1$s.</string>
+    <string name="managed_confirm_proceed">Верификация за %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Създаване на доказателство за %1$s</string>
+    <string name="verification_age_verified_for">Възрастта на %1$s е потвърдена</string>
+    <string name="deeplink_verification_age_verified_for">Възрастта на %1$s е потвърдена</string>
+    <string name="attestation_managed_credential_received">Удостоверението за %1$s е получено!</string>
+    <string name="attestation_managed_credential_stored">Удостоверението на Вашето дете е съхранено сигурно.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">Изтриване на удостоверението на %1$s?</string>
+    <string name="credential_detail_delete_managed_message">Сигурни ли сте, че искате да изтриете това управлявано удостоверение за %1$s? Това действие не може да бъде отменено. Ще трябва да посетите отново издател, за да го замените.</string>
+    <string name="credential_detail_save_error">Неуспешно запазване на прякора</string>
+    <string name="credential_detail_delete_error">Неуспешно изтриване на удостоверението</string>
+    <string name="accessibility_saving">Запазване…</string>
+    <string name="accessibility_deleting">Изтриване…</string>
+    <string name="accessibility_loading">Зареждане, моля изчакайте</string>
+    <string name="accessibility_issuing_credential">Издаване на удостоверение, моля изчакайте</string>
+    <string name="dialog_delete_all_credentials_title">Изтриване на всички удостоверения?</string>
+    <string name="dialog_delete_all_credentials_message">Това ще изтрие Вашето удостоверение и всички управлявани удостоверения за деца. Това действие не може да бъде отменено.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">Управлявано</string>
+    <string name="credential_slots_count">%1$d от 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Подготовка на верификацията…</string>
+    <string name="deeplink_verification_checking_credential">Проверка на удостоверението…</string>
+    <string name="deeplink_verification_processing_challenge">Обработване на предизвикателството…</string>
+    <string name="deeplink_verification_creating_proof">Създаване на сигурно доказателство…</string>
+    <string name="deeplink_verification_submitting_proof">Изпращане на доказателството…</string>
+    <string name="deeplink_verification_success">✔ Възрастта е потвърдена успешно</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">Удостоверението не е намерено. Моля, първо настройте Вашето удостоверение.</string>
+    <string name="deeplink_verification_error_failed_challenge">Неуспешна обработка на предизвикателството за верификация</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Не може да се покаже подканата за удостоверяване</string>
+    <string name="deeplink_verification_error_failed_proof">Неуспешно създаване на доказателство за възраст</string>
+    <string name="deeplink_verification_error_verification_failed">Верификацията е неуспешна</string>
+    <string name="deeplink_verification_error_unexpected">Възникна неочаквана грешка</string>
+    <string name="deeplink_verification_error_no_credential_selected">Не е избрано удостоверение. Моля, опитайте отново.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Избор на удостоверение</string>
+    <string name="deeplink_verification_select_credential_subtitle">Налични са няколко удостоверения. Изберете кое да използвате за тази верификация.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Верификация на възраст</string>
+    <string name="deeplink_verification_title_verified">Потвърдено</string>
+    <string name="deeplink_verification_title_failed">Верификацията е неуспешна</string>
+    <string name="deeplink_verification_please_wait">Моля, изчакайте…</string>
+    <string name="deeplink_verification_age_verified">Възрастта е потвърдена!</string>
+    <string name="deeplink_verification_under_age_verified">Потвърдено под %1$d</string>
+    <string name="deeplink_verification_returning_browser">Връщане към браузъра…</string>
+    <string name="deeplink_verification_return_to_browser">Връщане към браузъра</string>
+    <string name="deeplink_verification_failed_title">Верификацията е неуспешна</string>
+    <string name="deeplink_verification_error_occurred">Възникна грешка по време на верификацията</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">ПРОЦЕС НА ИЗДАВАНЕ</string>
+    <string name="officer_issuance_process_steps">1. Проверете физическия документ за самоличност на потребителя\n2. Въведете датата им на раждане\n3. Проверете дали информацията съвпада точно\n4. Издайте удостоверение с QR (Quick Response) код за атестация\n5. Потребителят сканира QR кода, за да получи удостоверението</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">Неуспешно генериране на QR код</string>
+    <string name="officer_attestation_ready_title">Атестацията е готова</string>
+    <string name="officer_attestation_scan_instruction">Потребителят трябва да сканира този QR код с приложението Provii Wallet</string>
+    <string name="officer_attestation_deeplink_label">DEEPLINK ЗА АТЕСТАЦИЯ</string>
+    <string name="officer_wait_for_attestation_scan">Изчакайте потребителят да сканира</string>
+    <string name="officer_attestation_info">Удостоверението ще бъде генерирано на тяхното устройство</string>
+    <string name="officer_attestation_complete">Атестацията е завършена</string>
+    <string name="officer_user_will_complete_credential">Потребителят ще завърши генерирането на удостоверението на своето устройство</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Декодиране на данните за атестация…</string>
+    <string name="attestation_generating_randomness">Генериране на сигурна случайност…</string>
+    <string name="attestation_sending">Изпращане до издателя…</string>
+    <string name="attestation_verifying">Верификация на ангажимента…</string>
+    <string name="attestation_storing">Съхраняване на удостоверението…</string>
+    <string name="attestation_complete">Удостоверението е завършено!</string>
+    <string name="attestation_error_invalid_data">Невалидни данни за атестация</string>
+    <string name="attestation_error_expired">Атестацията е изтекла</string>
+    <string name="attestation_error_network">Мрежова грешка – моля, проверете връзката си</string>
+    <string name="attestation_error_unexpected">Възникна неочаквана грешка</string>
+    <string name="attestation_title_processing">Обработване на атестация</string>
+    <string name="attestation_title_success">Удостоверението е получено</string>
+    <string name="attestation_title_failed">Издаването е неуспешно</string>
+    <string name="attestation_secure_issuance">Сигурно издаване</string>
+    <string name="attestation_privacy_preserving">Издаване на удостоверение, запазващо поверителността</string>
+    <string name="attestation_may_take_seconds">Това може да отнеме няколко секунди</string>
+    <string name="attestation_keep_app_open">Моля, дръжте приложението отворено</string>
+    <string name="attestation_credential_received">Удостоверението е получено!</string>
+    <string name="attestation_credential_stored_description">Вашето удостоверение за верификация на възраст е съхранено сигурно</string>
+    <string name="attestation_issuer_verified">Издателят е верифициран</string>
+    <string name="attestation_failed_title">Издаването е неуспешно</string>
+    <string name="attestation_scan_qr_instead">Сканиране на QR код вместо това</string>
+    <string name="attestation_go_back">Назад</string>
+    <string name="attestation_step_decode">Декодиране</string>
+    <string name="attestation_step_generate">Генериране</string>
+    <string name="attestation_step_send">Изпращане</string>
+    <string name="attestation_step_verify">Верификация</string>
+    <string name="attestation_step_store">Съхраняване</string>
+    <string name="attestation_step_complete">Завършване</string>
+    <string name="accessibility_attestation_encrypted_description">Криптирана атестация се обработва</string>
+    <string name="accessibility_attestation_success_description">Отметка за успех, показваща, че удостоверението е получено</string>
+    <string name="accessibility_attestation_error_description">Икона за грешка, показваща, че издаването е неуспешно</string>
+    <string name="accessibility_step_complete">Стъпка %1$s е завършена</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Получател на удостоверението</string>
+    <string name="attestation_recipient_prompt">Това удостоверение е за\u2026</string>
+    <string name="attestation_recipient_me">Мен</string>
+    <string name="attestation_recipient_child">Дете</string>
+    <string name="attestation_nickname_title">Прякор на детето</string>
+    <string name="attestation_nickname_prompt">Въведете прякор, за да различавате удостоверенията</string>
+    <string name="attestation_nickname_placeholder">напр. Алекс</string>
+    <string name="attestation_nickname_continue">Продължаване</string>
+    <string name="attestation_nickname_back">Назад</string>
+    <string name="accessibility_attestation_recipient_heading">Изберете за кого е това удостоверение</string>
+    <string name="accessibility_attestation_nickname_heading">Въведете прякор за детето</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Невалиден формат на ID на служителя</string>
+    <string name="officer_auth_error_challenge_failed">Неуспешно получаване на предизвикателство за YubiKey: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Докоснете Вашия YubiKey за удостоверяване</string>
+    <string name="officer_auth_error_touch_timeout">Времето за изчакване на докосването на YubiKey изтече</string>
+    <string name="officer_auth_error_verify_document_dob">Моля, проверете дали документът и датата на раждане съвпадат</string>
+    <string name="officer_auth_error_invalid_date_format">Невалиден формат на дата. Използвайте YYYY-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">Потребителят трябва да е на 18 или повече години</string>
+    <string name="officer_auth_error_not_authenticated">Не е удостоверен. Моля, първо въведете Вашия ID на служителя.</string>
+    <string name="officer_auth_error_issue_failed">Неуспешно издаване на удостоверение</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Докоснете, за да прегледате</string>
+    <string name="gesture_desc_long_press_options">, задръжте натиснато за опции</string>
+    <string name="gesture_desc_swipe_left">, плъзнете наляво за повече действия</string>
+    <string name="gesture_desc_swipe_right">, плъзнете надясно за повече действия</string>
+    <string name="gesture_desc_tap_to_activate">Докоснете, за да активирате</string>
+    <string name="gesture_desc_long_press_format">. Задържане: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Повторен опит</string>
+    <string name="main_activity_reset_redownload">Нулиране и повторно изтегляне</string>
+    <string name="main_activity_show_debug_info">Показване на Debug информация</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Настройки за достъпност</string>
+    <string name="search_item_accessibility_settings_subtitle">Персонализирайте Вашето изживяване</string>
+    <string name="search_item_large_text_title">Голям текст</string>
+    <string name="search_item_large_text_subtitle">Увеличаване на размера на текста</string>
+    <string name="search_item_high_contrast_title">Висок контраст</string>
+    <string name="search_item_high_contrast_subtitle">Подобряване на видимостта</string>
+    <string name="search_item_voice_input_title">Гласово въвеждане</string>
+    <string name="search_item_voice_input_subtitle">Управление с глас</string>
+    <string name="search_item_manual_code_entry_title">Ръчно въвеждане на код</string>
+    <string name="search_item_manual_code_entry_subtitle">Въвеждане на кодове вместо сканиране</string>
+    <string name="search_item_simplified_ui_title">Опростен потребителски интерфейс</string>
+    <string name="search_item_simplified_ui_subtitle">Намаляване на визуалната сложност</string>
+    <string name="search_item_color_blindness_title">Поддръжка за цветна слепота</string>
+    <string name="search_item_color_blindness_subtitle">Регулиране на цветовете за по-добра видимост</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Настройки</string>
+    <string name="search_item_settings_subtitle">Конфигурация на приложението</string>
+    <string name="search_item_language_title">Език</string>
+    <string name="search_item_language_subtitle">Промяна на езика на приложението</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Моите удостоверения</string>
+    <string name="search_item_credentials_subtitle">Преглед на Вашите удостоверения</string>
+    <string name="search_item_get_credential_title">Получаване на удостоверение</string>
+    <string name="search_item_get_credential_subtitle">Намиране на издатели</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Помощ</string>
+    <string name="search_item_help_subtitle">Получаване на съдействие</string>
+    <string name="search_item_privacy_title">Защита на поверителността</string>
+    <string name="search_item_privacy_subtitle">Как Вашите данни са защитени</string>
+    <string name="search_item_verification_title">Верификация на възраст</string>
+    <string name="search_item_verification_subtitle">Доказване на Вашата възраст</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Твърдо кодиран резервен регистър за Sandbox среда</string>
+    <string name="issuer_fallback_production_description">Твърдо кодиран резервен регистър за производство</string>
+    <string name="issuer_fallback_category_government">Правителство</string>
+    <string name="issuer_fallback_category_government_description">Удостоверения, издадени от правителството</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii Sandbox Issuer</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Официален Provii Sandbox издател за тестване</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Посетете портала на Sandbox издателя</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Официален Provii издател на удостоверения</string>
+    <string name="issuer_fallback_production_issuer_instructions">Посетете местния Ви DMV офис</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">Датата на раждане не може да бъде в бъдещето</string>
+    <string name="validation_error_invalid_date_format">Невалиден формат на дата</string>
+    <string name="validation_error_officer_id_too_short">ID на служителя е твърде кратко</string>
+    <string name="validation_error_invalid_officer_id_format">Невалиден формат на ID на служителя</string>
+    <string name="validation_error_empty_qr_code">Празен QR код</string>
+    <string name="validation_error_qr_code_too_large">QR кодът е твърде голям</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">Вече сте разработчик!</string>
+    <string name="sandbox_toast_enabled">Режимът Sandbox е активиран\nИзползва се тестова среда</string>
+    <string name="sandbox_toast_disabled">Производственият режим е активиран\nИзползва се производствена среда</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">На 1 стъпка сте от режима за разработчици</string>
+    <string name="sandbox_toast_steps_away">На %1$d стъпки сте от режима за разработчици</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">Няма свързан YubiKey</string>
+    <string name="yubikey_error_timeout">Изчакването за докосване на YubiKey изтече. Моля, докоснете ключа, когато мига.</string>
+    <string name="yubikey_error_not_supported">На този слот на YubiKey не е конфигуриран отговор на предизвикателство</string>
+    <string name="yubikey_error_no_slot">Слот 2 не е конфигуриран за HMAC (Hash-based Message Authentication Code) SHA1 отговор на предизвикателство</string>
+    <string name="yubikey_error_hmac_failed">Изчислението на HMAC (Hash-based Message Authentication Code) е неуспешно: %s</string>
+    <string name="yubikey_error_session_failed">Неуспешно свързване с YubiKey: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">Портфейлът не е инициализиран</string>
+    <string name="wallet_error_proving_key_not_found">Ключът за доказване не е намерен – моля, изтеглете го отново</string>
+    <string name="wallet_error_proving_key_not_readable">Не може да се прочете файлът с ключа за доказване</string>
+    <string name="wallet_error_out_of_memory">Недостатъчно памет – моля, рестартирайте приложението</string>
+    <string name="wallet_error_prover_error">Грешка в доказателя: %s</string>
+    <string name="wallet_error_ffi_error">FFI грешка: %s</string>
+    <string name="wallet_error_prover_init_failed">Неуспешна инициализация на доказателя: %s</string>
+    <string name="wallet_error_prover_verification_failed">Верификацията на инициализацията на доказателя е неуспешна</string>
+    <string name="wallet_error_verifier_url_update_failed">Неуспешно актуализиране на URL (web address) на верификатора! Очаквано %1$s, но получено %2$s</string>
+    <string name="wallet_error_wallet_still_null">Портфейлът е все още null след инициализацията</string>
+    <string name="wallet_error_credential_not_found">Удостоверението не е намерено</string>
+    <string name="wallet_error_credential_access_failed">Не може да се получи достъп до удостоверението: %s</string>
+    <string name="wallet_error_invalid_format">Невалиден формат: %s</string>
+    <string name="wallet_error_not_initialized_short">Доказателят не е инициализиран</string>
+    <string name="wallet_error_proving_key_unavailable">Ключът за доказване не е наличен. Необходима е настройка.</string>
+    <string name="wallet_error_storage_init_failed">Инициализацията на хранилището е неуспешна</string>
+    <string name="wallet_error_biometric_unavailable">Биометричното удостоверяване не е налично</string>
+    <string name="wallet_error_auth_failed">Удостоверяването е неуспешно</string>
+    <string name="wallet_error_sandbox_disabled">Активирайте режима Sandbox, за да генерирате тестови удостоверения</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Не може да се извлекат Sandbox удостоверения. Моля, проверете интернет връзката.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Необходимо е удостоверяване</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Потвърдете самоличността си, за да създадете доказателство за възраст</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Достъп до сигурното хранилище</string>
+    <string name="keystore_biometric_prompt_cancel">Отказ</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, разгънато, показва се пълен текст на лиценза</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, свито, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">Без</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Мобилна мрежа</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Неизвестна</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">Нива на контраст</string>
+    <string name="help_topic_extra_large_text_title">Много голям текст</string>
+    <string name="help_topic_reduce_transparency_title">Намаляване на прозрачността</string>
+    <string name="help_topic_color_blind_modes_title">Режими за цветна слепота</string>
+    <string name="help_topic_line_spacing_title">Разстояние между редовете</string>
+    <string name="help_topic_paragraph_spacing_title">Разстояние между абзаците</string>
+    <string name="help_topic_letter_spacing_title">Разстояние между буквите</string>
+    <string name="help_topic_text_width_title">Ширина на текста</string>
+    <string name="help_topic_touch_targets_title">По-големи зони за докосване</string>
+    <string name="help_topic_reduce_motion_title">Намаляване на движението</string>
+    <string name="help_topic_timeout_behavior_title">Поведение при изчакване</string>
+    <string name="help_topic_simplified_gestures_title">Опростени жестове</string>
+    <string name="help_topic_haptic_feedback_title">Тактилна обратна връзка</string>
+    <string name="help_topic_data_preservation_title">Запазване на данни</string>
+    <string name="help_topic_simplified_ui_title">Опростен потребителски интерфейс</string>
+    <string name="help_topic_step_indicators_title">Индикатори за стъпки</string>
+    <string name="help_topic_verbose_descriptions_title">Подробни описания</string>
+    <string name="help_topic_confirm_actions_title">Потвърждаване на действия</string>
+    <string name="help_topic_reading_level_title">Опростено ниво на четене</string>
+    <string name="help_topic_help_system_title">Система за помощ</string>
+    <string name="help_topic_manual_code_entry_title">Ръчно въвеждане на код</string>
+    <string name="help_topic_voice_input_title">Гласово въвеждане</string>
+    <string name="help_topic_screen_reader_title">Поддръжка за четец на екрана</string>
+    <string name="help_topic_accessibility_profiles_title">Профили за бърза настройка</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">Контролирайте съотношението на контраст между текст и фон:\n\n• Стандартен: Цветовете по подразбиране на приложението\n• Висок (AA): Контрастно съотношение 4.5:1\n• Максимален (AAA): Контрастно съотношение 7:1+\n\nПо-висок контраст прави текста по-лесен за четене, особено в ярка среда или за потребители с намалено зрение.\n\nСъответствието с WCAG AAA изисква максимален контраст.</string>
+    <string name="help_topic_extra_large_text_text">Увеличава всички размери на текста с 50% в цялото приложение.\n\nТова прави текста по-лесен за четене за потребители с:\n• Намалено зрение\n• Свързани с възрастта промени в зрението\n• Затруднения при четене\n\nКомбинира се с настройките за размер на системния шрифт за максимална гъвкавост.</string>
+    <string name="help_topic_reduce_transparency_text">Премахва прозрачните наслагвания и ефектите на размазване.\n\nПредимства:\n• По-ясна визуална йерархия\n• По-добра четимост на текста\n• Намален визуален шум\n• По-малко когнитивно натоварване\n\nПрепоръчително за потребители с намалено зрение или когнитивни затруднения.</string>
+    <string name="help_topic_color_blind_modes_text">Регулира цветовете за различни видове цветна слепота:\n\n• Протанопия: Червена слепота\n• Дейтеранопия: Зелена слепота\n• Тританопия: Синя слепота\n• Монохромна: Пълна цветна слепота\n\nВсеки режим използва внимателно подбрани цветове, различими за конкретния тип нарушение в цветното зрение.</string>
+    <string name="help_topic_line_spacing_text">Регулира разстоянието между редовете текст (1.0x – 2.0x).\n\n• По подразбиране: 1.0x\n• Съответства на AAA: 1.5x или повече\n\nУвеличеното разстояние между редовете:\n• Подобрява разбирането при четене\n• Намалява умората на очите\n• Помага на потребители с дислексия\n• Прави блоковете текст по-малко затрупани</string>
+    <string name="help_topic_paragraph_spacing_text">Регулира разстоянието между абзаците (1.0x – 3.0x).\n\n• По подразбиране: 1.0x\n• Съответства на AAA: 2.0x или повече\n\nУвеличеното разстояние между абзаците:\n• Ясно разделя идеите\n• Подобрява визуалната организация\n• Намалява когнитивното натоварване\n• Помага за поддържане на позицията при четене</string>
+    <string name="help_topic_letter_spacing_text">Регулира разстоянието между буквите (0.0em – 0.2em).\n\n• По подразбиране: 0.0em\n• Съответства на AAA: 0.12em или повече\n\nУвеличеното разстояние между буквите:\n• Прави отделните букви по-различими\n• Помага на потребители с дислексия\n• Подобрява точността при четене\n• Намалява объркването на букви</string>
+    <string name="help_topic_text_width_text">Ограничава дължината на реда за по-лесно четене:\n\n• Пълна ширина: Без ограничение\n• Удобна: 80 знака (препоръчителна)\n• Тясна: 60 знака\n\nИзследванията показват, че оптималното четене се постига при 60–80 знака на ред. По-късите редове намаляват движението на очите и подобряват разбирането.</string>
+    <string name="help_topic_touch_targets_text">Увеличава минималния размер на зоната за докосване до 60dp (от 44dp).\n\nПредимства:\n• По-лесно докосване на бутони и контроли\n• Намаляване на случайните докосвания\n• Помага на потребители с двигателни увреждания\n• По-добро използване с една ръка\n\nWCAG AAA изисква минимум 60dp.</string>
+    <string name="help_topic_reduce_motion_text">Премахва всички анимации и преходи.\n\nПредимства:\n• Предотвратява гадене от движение\n• Намалява разсейването\n• Намалява когнитивното натоварване\n• Подобрява фокуса\n\nПрепоръчително за потребители с:\n• Вестибуларни нарушения\n• Затруднения с вниманието\n• Чувствителност към движение</string>
+    <string name="help_topic_timeout_behavior_text">Контролира автоматичното изчакване на екраните за верификация:\n\n• Без изчакване (AAA): Неограничено време\n• Стандартно: 30 секунди\n• Удължено: 60 секунди\n\nWCAG AAA изисква опция без изчакване за потребители, на които е необходимо повече време за изпълнение на задачи.\n\nДанните от формуляри се запазват автоматично преди изчакванията.</string>
+    <string name="help_topic_simplified_gestures_text">Заменя сложните жестове с прости алтернативи:\n\n• Плъзгане → Докосване на бутон\n• Задържане → Обикновено докосване с потвърждение\n• Сближаване/разтваряне → Бутони\n\nПомага на потребители с:\n• Двигателни увреждания\n• Тремор\n• Ограничена сръчност\n• Затруднения с тъчскрийн</string>
+    <string name="help_topic_haptic_feedback_text">Осигурява вибрационна обратна връзка за действия.\n\nПредимства:\n• Потвърждава натисканията на бутони\n• Указва грешки\n• Осигурява тактилно потвърждение\n\nМоже да бъде деактивирана за потребители, които:\n• Намират я за разсейваща\n• Имат сензорни чувствителности\n• Предпочитат тихо работа</string>
+    <string name="help_topic_data_preservation_text">Автоматично запазва данните от формуляри преди изчакванията.\n\nФункции:\n• Предупреждение 10 секунди преди изчакване\n• Опция за запазване или изхвърляне на данните\n• Автоматично възстановяване при връщане\n• 24-часово задържане на данни\n\nОсигурява, че не се губят данни, ако Ви е необходимо допълнително време или преживявате прекъсвания.</string>
+    <string name="help_topic_simplified_ui_text">Намалява визуалната сложност:\n\n• По-малко елементи на потребителския интерфейс показвани едновременно\n• По-големи и по-ясни бутони\n• Повече бяло пространство\n• Опростени оформления\n\nПредимства:\n• По-лесно за разбиране\n• По-малко затрупване\n• По-добър фокус\n• Намалено когнитивно натоварване</string>
+    <string name="help_topic_step_indicators_text">Показва напредъка в процесите с множество стъпки.\n\nПоказва:\n• Номер на текущата стъпка\n• Общ брой стъпки\n• Визуализация на напредъка\n\nПредимства:\n• Намалява тревожността\n• Поставя ясни очаквания\n• Помага за поддържане на ориентацията\n• Показва напредъка до завършване</string>
+    <string name="help_topic_verbose_descriptions_text">Осигурява допълнителен контекст и обяснения:\n\n• По-дълги надписи на бутони\n• По-подробни инструкции\n• Допълнителни подсказки\n• По-ясни съобщения за грешки\n\nПомага на потребителите:\n• Да разберат действията, преди да ги предприемат\n• Да избягват грешки\n• Да научат функционалността на приложението\n• Да изградят увереност</string>
+    <string name="help_topic_confirm_actions_text">Изисква потвърждение за важни действия:\n\n• Изтриване на удостоверения\n• Промяна на настройки\n• Изчистване на данни\n\nWCAG AAA изисква потвърждение за всички деструктивни действия.\n\nПредимства:\n• Предотвратява случайни действия\n• Позволява преглед преди действие\n• Намалява тревожността\n• Дава втори шанс</string>
+    <string name="help_topic_reading_level_text">Използва по-прост език (ниво 7–9 клас):\n\n• По-кратки изречения\n• Обикновени думи вместо жаргон\n• Ясен, директен език\n• По-малко технически термини\n\nСъответства на WCAG AAA, когато е активирано.\n\nПредимства:\n• По-лесно за разбиране\n• По-бързо разбиране\n• По-добро за говорещи езика като чужд\n• Намалено когнитивно натоварване</string>
+    <string name="help_topic_help_system_text">Контекстно-зависима помощ, достъпна в цялото приложение.\n\nФункции:\n• 27 теми за помощ\n• Претърсваем помощен център\n• Навигация до свързани теми\n• Технически речник\n\nДостъп до помощта от:\n• Екрани с настройки\n• Сложни функции\n• Съобщения за грешки\n• Навсякъде, където видите икона за помощ</string>
+    <string name="help_topic_manual_code_entry_text">Въвеждане на данните от QR кода ръчно вместо сканиране.\n\nПредимства:\n• Работи, когато достъпът до камерата е недостъпен\n• Помага на потребители с двигателни затруднения\n• По-добре при слаба светлина\n• Не е необходимо да държите телефона неподвижен\n\nАлтернатива на базираното на камера QR сканиране.</string>
+    <string name="help_topic_voice_input_text">Използвайте глас за въвеждане на текст вместо писане.\n\nПредимства:\n• Въвеждане без ръце\n• По-бързо от писане\n• Помага на потребители с двигателни увреждания\n• Намалява повторителното натоварване\n\nИзползва вграденото в устройството Ви разпознаване на реч.</string>
+    <string name="help_topic_screen_reader_text">Пълна поддръжка за четеца на екрана TalkBack.\n\nФункции:\n• Всички елементи на потребителския интерфейс са обозначени\n• Правилна структура на заглавията\n• Логичен ред на навигация\n• Персонализирани подсказки за сложни действия\n\nПриложението автоматично активира:\n• Подробни описания\n• Подобрени зони за докосване\n\nкогато TalkBack е открит.</string>
+    <string name="help_topic_accessibility_profiles_text">Предварително конфигурирани профили за достъпност:\n\n• Нарушено зрение: Висок контраст, голям текст, тактилна обратна връзка\n• Нарушени двигателни функции: Големи зони, удължени изчаквания, потвърждения\n• Когнитивна: Опростен потребителски интерфейс, индикатори за стъпки, описания\n• Старши: Голям текст, зони, опростен потребителски интерфейс, намалено движение\n• По подразбиране: Нулиране на всички настройки\n\nВсеки профил активира най-полезните настройки за тази група потребители. Можете да персонализирате допълнително след прилагане на профил.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">Верификация на възраст</string>
+    <string name="content_age_verification_explanation">Моля, изчакайте, докато сигурно верифицираме Вашата възраст чрез доказателства с нулево знание. Вашата дата на раждане никога не се споделя с верификатора.</string>
+    <string name="content_age_verification_instructions">Насочете камерата си към QR кода за верификация. Кодът ще бъде сканиран автоматично при разпознаване.</string>
+    <string name="content_age_verification_success">Вашата възраст беше потвърдена успешно. Верификаторът знае, че отговаряте на тяхното изискване за възраст, без да научи реалната Ви дата на раждане.</string>
+    <string name="content_age_verification_failed">Верификацията е неуспешна. Моля, опитайте да сканирате QR кода отново или използвайте ръчното въвеждане на код.</string>
+    <string name="content_credential_issuance_title">Издаване на удостоверение</string>
+    <string name="content_credential_issuance_explanation">Сканирайте QR кода, предоставен от оторизирания издател, за да получите Вашето цифрово удостоверение за възраст.</string>
+    <string name="content_credential_issuance_instructions">Насочете камерата си към QR кода за издаване, показан от служителя. Вашето удостоверение ще бъде генерирано на Вашето устройство.</string>
+    <string name="content_credential_issuance_success">Удостоверението е създадено успешно. Вече можете да използвате това удостоверение за верификация на възраст.</string>
+    <string name="content_credential_description">Удостоверението е криптографски подписано доказателство за Вашата самоличност, което позволява верификация, запазваща поверителността.</string>
+    <string name="content_zero_knowledge_explanation">Доказателствата с нулево знание Ви позволяват да докажете, че отговаряте на изискване за възраст, без да разкривате действителната си възраст.</string>
+    <string name="content_setup_proving_key">Изтегляне на криптографски ключ за доказване, необходим за генериране на доказателства с нулево знание</string>
+    <string name="content_processing_challenge">Обработване на предизвикателство за верификация</string>
+    <string name="content_creating_proof">Създаване на доказателство за възраст с нулево знание</string>
+    <string name="content_submitting_proof">Изпращане на доказателството до верификатора</string>
+    <string name="content_error_no_credential">Няма налично удостоверение. Моля, първо получете удостоверение от оторизиран издател.</string>
+    <string name="content_error_network_failed">Мрежовата връзка е неуспешна. Моля, проверете интернет връзката си и опитайте отново.</string>
+    <string name="content_error_invalid_qr">Невалиден QR код. Моля, уверете се, че сканирате правилния код за верификация.</string>
+    <string name="content_error_verification_failed">Верификацията е неуспешна. Сървърът не можа да валидира Вашето доказателство.</string>
+    <string name="content_officer_authentication_title">Удостоверяване на служителя</string>
+    <string name="content_officer_issuance_title">Издаване на удостоверение</string>
+    <string name="content_officer_dob_prompt">Въведете верифицираната дата на раждане на кандидата от официалния му документ за самоличност.</string>
+    <string name="content_onboarding_welcome">Добре дошли в Provii Wallet – Вашето решение за цифрова верификация на възраст, запазваща поверителността.</string>
+    <string name="content_onboarding_privacy">Вашата дата на раждане се съхранява сигурно на Вашето устройство и никога не се предава на верификатори.</string>
+    <string name="content_onboarding_get_started">За да започнете, посетете оторизиран издател, за да получите Вашето цифрово удостоверение за възраст.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">Проверка на Вашата възраст</string>
+    <string name="content_age_verification_explanation_simplified">Проверяваме Вашата възраст. Няма да видим или споделим рождения Ви ден.</string>
+    <string name="content_age_verification_instructions_simplified">Насочете камерата си към QR кода. Той ще се сканира сам.</string>
+    <string name="content_age_verification_success_simplified">Успех! Сайтът знае, че сте достатъчно на възраст. Те не знаят рождения Ви ден.</string>
+    <string name="content_age_verification_failed_simplified">Не проработи. Опитайте да сканирате отново или въведете кода ръчно.</string>
+    <string name="content_credential_issuance_title_simplified">Получаване на Вашата лична карта</string>
+    <string name="content_credential_issuance_explanation_simplified">Сканирайте кода от правителствения офис, за да получите Вашата цифрова лична карта.</string>
+    <string name="content_credential_issuance_instructions_simplified">Насочете камерата си към кода. Вашата лична карта ще бъде запазена на телефона Ви.</string>
+    <string name="content_credential_issuance_success_simplified">Готово! Вече можете да използвате Вашата цифрова лична карта, за да докажете Вашата възраст.</string>
+    <string name="content_credential_description_simplified">Удостоверението е като цифрова лична карта, която доказва кой сте, без да споделя лични данни.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Можете да докажете, че сте достатъчно на възраст, без да казвате на никого реалната Ви възраст.</string>
+    <string name="content_setup_proving_key_simplified">Изтегляне на файлове за сигурност, необходими за работата на приложението</string>
+    <string name="content_processing_challenge_simplified">Четене на заявката за проверка на възраст</string>
+    <string name="content_creating_proof_simplified">Създаване на Вашето доказателство за възраст</string>
+    <string name="content_submitting_proof_simplified">Изпращане на доказателството до сайта</string>
+    <string name="content_error_no_credential_simplified">Нямате лична карта все още. Посетете правителствен офис, за да получите такава.</string>
+    <string name="content_error_network_failed_simplified">Не може да се свърже с интернет. Проверете Wi-Fi или данните си и опитайте отново.</string>
+    <string name="content_error_invalid_qr_simplified">Кодът не изглежда правилен. Уверете се, че сканирате правилния код.</string>
+    <string name="content_error_verification_failed_simplified">Не проработи. Сайтът не можа да провери Вашето доказателство. Опитайте отново.</string>
+    <string name="content_officer_authentication_title_simplified">Вход за служители</string>
+    <string name="content_officer_issuance_title_simplified">Създаване на лична карта</string>
+    <string name="content_officer_dob_prompt_simplified">Въведете рождения ден на лицето от официалната му лична карта.</string>
+    <string name="content_onboarding_welcome_simplified">Добре дошли в Provii Wallet – доказвайте Вашата възраст поверително.</string>
+    <string name="content_onboarding_privacy_simplified">Вашият рожден ден остава на телефона Ви. Никой друг не може да го вижда.</string>
+    <string name="content_onboarding_get_started_simplified">За да започнете, посетете правителствен офис, за да получите Вашата цифрова лична карта.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Бърз отговор (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Личен идентификационен номер (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">Дата на раждане (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Идентификация (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">Потребителски интерфейс (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Унифициран локатор на ресурси (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Интерфейс за приложно програмиране (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">Пауза на анимациите</string>
+    <string name="animation_resume_animations">Възобновяване на анимациите</string>
+    <string name="animation_pause_button_text">Пауза</string>
+    <string name="animation_resume_button_text">Продължаване</string>
+    <string name="animation_toggles_playback_hint">Превключване на възпроизвеждането на анимацията</string>
+    <string name="animation_paused_announcement">Анимациите са на пауза</string>
+    <string name="animation_resumed_announcement">Анимациите са възобновени</string>
+    <string name="animation_active_count">%d активни анимации</string>
+    <string name="animation_loading_default">Зареждане</string>
+    <string name="animation_please_wait">Моля, изчакайте, докато тази операция завърши</string>
+    <string name="animation_percent_complete">%d процента завършени</string>
+    <string name="animation_loading_in_progress">В процес на изпълнение</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">Бързи клавиши</string>
+    <string name="keyboard_shortcuts_done">Готово</string>
+    <string name="keyboard_shortcuts_app_section">Бързи клавиши на приложението</string>
+    <string name="keyboard_shortcuts_navigation_section">Навигация</string>
+    <string name="keyboard_shortcuts_tips_section">Съвети</string>
+    <string name="keyboard_shortcuts_navigation_footer">Тези навигационни клавиши работят в цялото приложение с външни клавиатури</string>
+    <string name="keyboard_shortcuts_tip_external">Поддържат се напълно външни Bluetooth и USB клавиатури</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Използвайте клавишите със стрелки за навигация между елементи в списъци</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Задръжте Ctrl, за да видите наличните бързи клавиши на този екран</string>
+    <string name="keyboard_shortcuts_tip_a11y">Всички функции в това приложение са достъпни чрез клавиатура</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Затваряне на бързи клавиши</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">Настройки</string>
+    <string name="keyboard_shortcut_label_accessibility">Достъпност</string>
+    <string name="keyboard_shortcut_label_help">Помощен център</string>
+    <string name="keyboard_shortcut_label_add_credential">Добавяне на удостоверение</string>
+    <string name="keyboard_shortcut_label_verify">Верификация</string>
+    <string name="keyboard_shortcut_label_shortcuts">Бързи клавиши</string>
+    <string name="keyboard_shortcut_desc_settings">Отваряне на Настройки</string>
+    <string name="keyboard_shortcut_desc_accessibility">Настройки за достъпност</string>
+    <string name="keyboard_shortcut_desc_help">Помощен център</string>
+    <string name="keyboard_shortcut_desc_add_credential">Добавяне на удостоверение</string>
+    <string name="keyboard_shortcut_desc_verify">Започване на верификация</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Бързи клавиши</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">Назад / Затваряне</string>
+    <string name="keyboard_shortcut_nav_back_desc">Затваряне на текущия екран или диалогов прозорец</string>
+    <string name="keyboard_shortcut_nav_next">Следващо поле</string>
+    <string name="keyboard_shortcut_nav_next_desc">Преместване на фокуса към следващия интерактивен елемент</string>
+    <string name="keyboard_shortcut_nav_prev">Предишно поле</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Преместване на фокуса към предишния интерактивен елемент</string>
+    <string name="keyboard_shortcut_nav_submit">Изпращане / Продължаване</string>
+    <string name="keyboard_shortcut_nav_submit_desc">Активиране на фокусирания бутон или изпращане на формуляр</string>
+    <string name="keyboard_shortcut_nav_activate">Активиране на бутон</string>
+    <string name="keyboard_shortcut_nav_activate_desc">Активиране на текущо фокусирания бутон или превключвател</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">Диалоговият прозорец е отворен. Натиснете Escape за затваряне, Enter за потвърждение.</string>
+    <string name="modal_closed_announcement">Диалоговият прозорец е затворен</string>
+    <string name="modal_button_primary_label">%s (основно действие)</string>
+    <string name="modal_button_cancel_label">%s (отказ)</string>
+    <string name="modal_button_destructive_label">%s (деструктивно действие)</string>
+    <string name="modal_button_primary_hint">Докоснете двукратно за потвърждение или натиснете Enter</string>
+    <string name="modal_button_cancel_hint">Докоснете двукратно за отказ или натиснете Escape</string>
+    <string name="modal_button_destructive_hint">Докоснете двукратно за деструктивно действие</string>
+    <string name="modal_button_secondary_hint">Докоснете двукратно за извършване на действие</string>
+    <string name="modal_confirm">Потвърждение</string>
+    <string name="modal_cancel">Отказ</string>
+    <string name="modal_delete">Изтриване</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">Изтриване на %1$s</string>
+    <string name="a11y_edit_nickname_for">Редактиране на псевдонима за %1$s</string>
+    <string name="accessibility_attestation_scan_back">Назад</string>
+    <string name="attestation_replace_confirm">Замяна</string>
+    <string name="attestation_replace_primary_message">Вече имате лично удостоверение. Създаването на ново ще го замени. Това действие не може да бъде отменено.</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">Да се замени ли съществуващото удостоверение?</string>
+    <string name="attestation_scan_error_empty">QR кодът беше празен</string>
+    <string name="attestation_scan_instruction">Насочете камерата си към QR кода, показан от служителя</string>
+    <string name="attestation_scan_invalid_qr">Този QR код не съдържа данни за атестация</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">Сканиране на атестация</string>
+    <string name="attestation_scan_wrong_type_toast">Това е QR код за верификация, а не QR код за удостоверение</string>
+    <string name="biometric_required_message">Това приложение изисква заключване на екрана (PIN, шаблон или биометрия), за да съхранява сигурно удостоверенията. Моля, настройте такова в настройките за сигурност на устройството, преди да продължите.</string>
+    <string name="biometric_required_open_settings">Отваряне на настройките за сигурност</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">Изисква се заключване на екрана</string>
+    <string name="challenge_sandbox_prompt_announcement">Получено е Sandbox предизвикателство. Изберете дали да активирате режим Sandbox и да продължите, или да отхвърлите предизвикателството.</string>
+    <string name="challenge_sandbox_prompt_body">Това предизвикателство е издадено от Sandbox верификатор. То няма да успее, освен ако не активирате режим Sandbox в този портфейл.</string>
+    <string name="challenge_sandbox_prompt_primary">Активиране на Sandbox и продължаване</string>
+    <string name="challenge_sandbox_prompt_secondary">Отхвърляне на предизвикателството</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">Получено е Sandbox предизвикателство</string>
+    <string name="credential_detail_nickname_error">Неуспешно запазване на псевдонима</string>
+    <string name="credential_list_managed_count">%1$d от %2$d</string>
+    <string name="credential_picker_count_shown">Показани са %1$d удостоверения</string>
+    <string name="credential_picker_filter_clear">Изчистване на филтъра</string>
+    <string name="credential_picker_filter_label">Филтриране на удостоверенията по име</string>
+    <string name="credential_picker_filter_placeholder">Филтриране на удостоверения</string>
+    <string name="credential_picker_no_results">Няма съответстващи удостоверения</string>
+    <string name="credential_picker_section_managed">Управлявани удостоверения</string>
+    <string name="credential_picker_section_me">Аз</string>
+    <string name="credential_picker_subtitle">Изберете кой се верифицира.</string>
+    <string name="credential_row_action_delete">Изтриване</string>
+    <string name="credential_row_action_edit">Редактиране на псевдоним</string>
+    <string name="credential_row_overflow_menu">Опции на удостоверението</string>
+    <string name="deeplink_sandbox_prompt_announcement">Открита е Sandbox връзка. Изберете дали да активирате режим Sandbox и да отворите връзката.</string>
+    <string name="deeplink_sandbox_prompt_body">Тази дълбока връзка ще успее само ако активирате режим Sandbox в този портфейл.</string>
+    <string name="deeplink_sandbox_prompt_primary">Активиране на Sandbox и отваряне</string>
+    <string name="deeplink_sandbox_prompt_secondary">Отказ</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">Открита е Sandbox връзка</string>
+    <string name="empty_credential_option_find_apps_a11y">Намерете участващо приложение. Получете удостоверение от Вашата пенсионна каса, банка, телеком, здравен застраховател или от всеки, който вече знае възрастта Ви.</string>
+    <string name="empty_credential_option_find_apps_desc">Получете удостоверение от Вашата пенсионна каса, банка, телеком, здравен застраховател или от всеки, който вече знае възрастта Ви</string>
+    <string name="empty_credential_option_find_apps_title">Намиране на участващо приложение</string>
+    <string name="empty_credential_option_find_locations_a11y">Намерете местоположение близо до Вас. Посетете лично с документ за самоличност, за да получите удостоверение.</string>
+    <string name="empty_credential_option_find_locations_desc">Посетете лично с документ за самоличност, за да получите удостоверение</string>
+    <string name="empty_credential_option_find_locations_title">Намиране на местоположение близо до Вас</string>
+    <string name="empty_credential_option_managed_a11y">Грижа се за някого. Управлявайте удостоверения за хора, за които се грижите.</string>
+    <string name="empty_credential_option_managed_desc">Управлявайте удостоверения за хора, за които се грижите</string>
+    <string name="empty_credential_option_managed_title">Грижа се за някого</string>
+    <string name="empty_credential_option_scan_a11y">Имам QR код за сканиране. Верификатор Ви е дал код, след като е проверил Вашата самоличност.</string>
+    <string name="empty_credential_option_scan_desc">Верификатор Ви е дал код, след като е проверил Вашата самоличност</string>
+    <string name="empty_credential_option_scan_title">Имам QR код за сканиране</string>
+    <string name="empty_credential_subtitle">Изберете как искате да получите първото си удостоверение</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">Все още няма удостоверения</string>
+    <string name="error_screen_lock_required">За сигурно съхранение на удостоверенията се изисква заключване на екрана (PIN, шаблон или биометрия). Моля, настройте такова в настройките на устройството.</string>
+    <string name="issuers_no_apps_found_description">Проверете отново скоро, тъй като все повече приложения добавят поддръжка за Provii</string>
+    <string name="issuers_no_apps_found">Все още няма участващи приложения</string>
+    <string name="issuers_no_locations_found_description">Проверете отново скоро, тъй като се добавят още местоположения</string>
+    <string name="issuers_no_locations_found">Не са намерени местоположения</string>
+    <string name="managed_credential_explainer_body">За да получите управлявано удостоверение за някого, за когото се грижите, посетете заедно участващо местоположение. Верификаторът ще провери документа му за самоличност. Когато сканирате QR кода, ще бъдете попитани дали това удостоверение е за Вас или за някого, когото управлявате.</string>
+    <string name="managed_credential_explainer_find_location">Намиране на местоположение</string>
+    <string name="managed_credential_explainer_have_qr">Вече имам QR код</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">Управлявани удостоверения</string>
+    <string name="sandbox_credential_type">Тип удостоверение</string>
+    <string name="sandbox_managed_credential_saved">Управляваното удостоверение е запазено (%s)</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">Режимът Sandbox вече е активен. Портфейлът е свързан със Sandbox сървърите.</string>
+    <string name="sandbox_nickname_helper">Дайте на това удостоверение име, за да можете да го разпознавате във Вашия портфейл.</string>
+    <string name="sandbox_nickname_label">Псевдоним</string>
+    <string name="sandbox_nickname_placeholder">напр. Сара</string>
+    <string name="sandbox_nickname_required">За управляваните удостоверения е необходим псевдоним</string>
+    <string name="sandbox_type_managed_credential">Управлявано удостоверение</string>
+    <string name="sandbox_type_your_credential">Вашето удостоверение</string>
+    <string name="title_find_apps">Намиране на участващо приложение</string>
+    <string name="title_find_locations">Намиране на местоположение</string>
+    <string name="verification_go_to_attestation">Получаване на удостоверение</string>
+    <string name="verification_wrong_qr_type_message">Този QR код е за получаване на ново удостоверение, а не за верификация на възраст. Желаете ли вместо това да отидете на екрана за атестация?</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">Открит е QR код за атестация</string>
+    <string name="walkthrough_back">Назад</string>
+    <string name="walkthrough_get_started">Започване</string>
+    <string name="walkthrough_next">Напред</string>
+    <string name="walkthrough_page_indicator">Страница %1$d от %2$d</string>
+    <string name="walkthrough_page1_body">Вашето удостоверение съдържа Вашата възраст. Нищо друго. Не Вашето име, не Вашия адрес, не Вашата самоличност.\n\nТо доказва, че сте над (или под) определена възраст, без да разкрива датата Ви на раждане.</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">Какво е удостоверение?</string>
+    <string name="walkthrough_page2_body">Можете да получите удостоверение чрез приложение от компания, която вече знае Вашата възраст. Например Вашата банка или пенсионна каса. Тъй като те вече са верифицирали Вашата възраст, нищо не трябва да се споделя отново.\n\nКато алтернатива, посетете участващо местоположение с документ за самоличност, доказващ датата Ви на раждане. Датата Ви на раждане се проверява, използва се за създаване на Вашето удостоверение и след това се изхвърля. Издателят никога не вижда Вашето удостоверение. Вашата самоличност никога не е свързана с него.</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">Как се получава?</string>
+    <string name="walkthrough_page3_body">Ако се грижите за някого, който се нуждае от удостоверение за възраст, можете да получите такова за него и да го управлявате на Вашето устройство.\n\nПосетете заедно участващо местоположение с документ за самоличност, доказващ датата му на раждане. Когато сканирате QR кода, ще бъдете попитани дали това удостоверение е за Вас или за някого, когото управлявате.\n\nДобавете псевдоним, за да можете да различавате удостоверенията им.</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">Зависими лица</string>
+    <string name="walkthrough_page4_body">Приложение, което се опитва да верифицира Вашата възраст, може да изпрати предизвикателство директно на Вашия Provii портфейл. Вие избирате кое удостоверение да използвате. След успешна верификация ще бъдете върнати в заявяващото приложение и ще можете да продължите като верифицирани.\n\nКато алтернатива, може да Ви бъде представен QR код на друго устройство или връзка във Вашия мобилен браузър, която води директно към портфейла Ви. Има и опция с кратък код за достъпност.\n\nНикаква лична информация никога не се споделя. Само отговор „да“ или „не“ дали отговаряте на изискването за възраст.</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">Как работи верификацията?</string>
+    <string name="walkthrough_page5_body">Първата Ви стъпка е да получите удостоверение чрез участващо приложение или на местоположение близо до Вас.\n\nОт там можете да верифицирате Вашата възраст, когато е необходимо, без да споделяте лична информация. Можете също така да управлявате удостоверения за хора, за които се грижите.</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">Всичко е готово</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">Пропускане</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

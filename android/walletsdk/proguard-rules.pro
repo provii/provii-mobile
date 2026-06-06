@@ -1,0 +1,1 @@
+-keep class uniffi.provii_mobile_sdk_ffi.** { *; }

@@ -1,0 +1,1576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Nustatymai</string>
+    <string name="title_accessibility">Prieinamumas</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Gauti kredencialus</string>
+    <string name="title_scan_verification_qr">Nuskaityti verifikavimo QR kodą</string>
+    <string name="title_verifying_age">Tikrinamas amžius</string>
+    <string name="title_age_verified">Amžius patvirtintas</string>
+    <string name="title_verification_failed">Verifikavimas nepavyko</string>
+    <string name="title_officer_mode">Pareigūno režimas</string>
+    <string name="title_officer_dashboard">Pareigūno valdymo skydelis</string>
+    <string name="title_issue_credential">Išduoti kredencialą</string>
+    <string name="title_credential_ready">Kredencialas paruoštas</string>
+    <string name="title_get_your_credential">Gaukite savo kredencialą</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Sveiki atvykę į Provii Wallet</string>
+    <string name="welcome_subtitle">Saugus amžiaus verifikavimas – paprastai ir greitai</string>
+    <string name="welcome_first_credential">Pradėkite pridėdami pirmąjį amžiaus verifikavimo kredencialą</string>
+    <string name="welcome_description">Privatus amžiaus verifikavimas naudojant nulinių žinių įrodymus</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Sveiki atvykę į Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Pasirinkite pageidaujamą kalbą</string>
+    <string name="onboarding_use_english">Naudoti anglų kalbą</string>
+    <string name="onboarding_use_english_description">Tęsti naudojant anglų kalbą kaip programėlės kalbą</string>
+    <string name="onboarding_rotating_button_description">Mygtukus „Keisti kalbą", šiuo metu rodoma: %1$s. Palieskite, kad pasirinktumėte kitą kalbą.</string>
+    <string name="onboarding_change_later">Tai galite pakeisti vėliau skiltyje „Nustatymai"</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Prieinamumas</string>
+    <string name="onboarding_accessibility_desc">Ar norėtumėte pritaikyti prieinamumo funkcijas, pvz., teksto dydį, lietimo taikinius ar sumažintą judėjimą?</string>
+    <string name="onboarding_use_defaults">Naudoti numatytuosius nustatymus</string>
+    <string name="onboarding_use_defaults_description">Tęsti su standartiniais prieinamumo nustatymais</string>
+    <string name="onboarding_open_accessibility">Prieinamumo nustatymai</string>
+    <string name="onboarding_open_accessibility_description">Atidaryti prieinamumo nustatymus programėlei pritaikyti</string>
+    <string name="onboarding_accessibility_later">Tai galite pakeisti vėliau skiltyje „Nustatymai"</string>
+    <string name="onboarding_accessibility_features_title">Galimos funkcijos:</string>
+    <string name="onboarding_feature_text_size">Didesni teksto dydžiai</string>
+    <string name="onboarding_feature_touch_targets">Padidinti lietimo taikiniai</string>
+    <string name="onboarding_feature_reduce_motion">Sumažintas judėjimas</string>
+    <string name="onboarding_feature_high_contrast">Didelio kontrasto režimas</string>
+    <string name="onboarding_talkback_detected">TalkBack aptiktas</string>
+    <string name="onboarding_talkback_message">Įjungėme išsamius aprašymus, kurie padės Jums naršyti programėlėje.</string>
+    <string name="onboarding_continue_to_setup">Tęsti sąranką</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Būtina vienkartinė sąranka</string>
+    <string name="setup_download_required">Būtinas atsisiuntimas</string>
+    <string name="setup_download_description">Ši programėlė turi atsisiųsti saugos komponentus nulinių žinių įrodymams (apytiksliai 87 MB).</string>
+    <string name="setup_wifi_recommended">Rekomenduojama Wi-Fi</string>
+    <string name="setup_checking_status">Tikrinama sąrankos būsena...</string>
+    <string name="setup_already_setup">Jau nustatyta!</string>
+    <string name="setup_ready_message">Jūsų piniginė paruošta saugiam amžiaus verifikavimui</string>
+    <string name="setup_preparing">Ruošiama saugi verifikavimo sistema...</string>
+    <string name="setup_checking_components">Tikrinami saugos komponentai...</string>
+    <string name="setup_downloading">Atsiunčiami saugos komponentai</string>
+    <string name="setup_download_progress_description">%1$d%% atlikta (%2$s MB iš %3$s MB atsisiųsta)</string>
+    <string name="setup_initializing">Inicijuojami saugos komponentai...</string>
+    <string name="setup_complete">Sąranka baigta!</string>
+    <string name="setup_download_info">Tai įgalina nulinių žinių įrodymus privačiam amžiaus verifikavimui</string>
+    <string name="setup_one_time_download">Vienkartinis atsisiuntimas</string>
+    <string name="setup_stuck_message">Tai užtrunka ilgiau nei tikėtasi</string>
+    <string name="setup_stuck_description">Sąranka gali būti sustojusi. Pabandykite iš naujo paleisti programėlę.</string>
+    <string name="setup_restart_message">Programėlę reikia paleisti iš naujo. Tai kartais nutinka pirmą kartą paleidžiant.</string>
+    <string name="setup_storage_full">Atmintis pilna</string>
+    <string name="setup_connection_error">Ryšio klaida</string>
+    <string name="setup_failed">Sąranka nepavyko</string>
+    <string name="setup_initialization_error">Inicijavimo klaida</string>
+    <string name="error_storage_init_failed">Atminties inicijavimas nepavyko. Paleiskite programėlę iš naujo.</string>
+    <string name="error_storage_init_close_restart">Atminties inicijavimas nepavyko. Uždarykite ir paleiskite programėlę iš naujo.</string>
+    <string name="setup_free_storage_message">Atlaisvinkite bent 65 MB ir bandykite dar kartą</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Privatumas apsaugotas</string>
+    <string name="setup_privacy_description">Jūsų amžiaus verifikavimui naudojami nulinių žinių įrodymai. Jūsų gimimo data niekada nėra dalijamasi.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Mano kredencialai</string>
+    <string name="credentials_empty">Kredencialų nėra</string>
+    <string name="credential_active">Kredencialas aktyvus</string>
+    <string name="credential_expired">Kredencialas pasibaigęs</string>
+    <string name="credential_ready_for_verification">Paruošta verifikavimui</string>
+    <string name="credential_expired_message">Jūsų kredencialas pasibaigė ir jį reikia pakeisti</string>
+    <string name="credential_stored_successfully">Kredencialas sėkmingai išsaugotas</string>
+    <string name="credential_stored_description">Jūsų amžiaus kredencialas saugiai išsaugotas ir paruoštas naudoti</string>
+    <string name="credential_can_prove_age">Dabar galite privačiai įrodyti savo amžių</string>
+    <string name="credential_returning">Grįžtama į kredencialus...</string>
+    <string name="credential_view_credentials">Peržiūrėti kredencialus</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Atlikta</string>
+    <string name="action_scan_qr_code">Nuskaityti QR kodą</string>
+    <string name="action_find_locations">Rasti vietas</string>
+    <string name="action_get_credential">Gauti kredencialą</string>
+    <string name="action_replace_credential">Pakeisti nauju kredencialu</string>
+    <string name="action_replace_credential_now">Pakeisti kredencialą dabar</string>
+    <string name="action_delete_credential">Ištrinti kredencialą</string>
+    <string name="credential_action_scan_description">Gauti kredencialą iš įgalioto išdavėjo</string>
+    <string name="credential_action_find_description">Atrasti netoliese esančius išdavėjus</string>
+    <string name="credential_remove_description">Pašalinti esamą kredencialą</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Privatumas</string>
+    <string name="credential_info_privacy_value">Apsaugotas</string>
+    <string name="credential_info_status">Būsena</string>
+    <string name="credential_info_status_value">Galiojantis</string>
+    <string name="credential_tip_title">Greitas patarimas</string>
+    <string name="credential_tip_message">Palieskite mygtuką „Patvirtinti amžių", kad nuskaitytumėte verifikavimo QR (greito atsakymo) kodus dalyvaujančiose vietose.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">Nuskaityti QR kodą</string>
+    <string name="verification_verify_age">Patvirtinti amžių</string>
+    <string name="verification_generating_proof">Generuojamas įrodymas...</string>
+    <string name="verification_success">Verifikavimas sėkmingas</string>
+    <string name="verification_failed">Verifikavimas nepavyko</string>
+    <string name="verification_age_verified">Amžius patvirtintas</string>
+    <string name="verification_age_verified_message">Jūsų amžius buvo patvirtintas privačiai</string>
+    <string name="verification_can_return">Dabar galite grįžti į svetainę ir tęsti.</string>
+    <string name="verification_returning_browser">Grįžtama į naršyklę...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">1 žingsnis iš 2</string>
+    <string name="verification_step_2_of_2">2 žingsnis iš 2</string>
+    <string name="verification_point_camera">Nukreipkite kamerą į verifikavimo QR kodą</string>
+    <string name="verification_hold_steady">Laikykite ramiai, kol išgirsite patvirtinimo signalą.</string>
+    <string name="verification_reading_request">Skaitoma verifikavimo užklausa...</string>
+    <string name="verification_processing_challenge">Apdorojamas iššūkis...</string>
+    <string name="verification_creating_proof">Kuriamas amžiaus įrodymas...</string>
+    <string name="verification_submitting_proof">Pateikiamas įrodymas...</string>
+    <string name="verification_processing_message">Tai gali užtrukti kelias sekundes</string>
+    <string name="verification_preparing_proof">Ruošiamas privatus įrodymas naudojant išsaugotą kredencialą.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Skaitoma verifikavimo užklausa...</string>
+    <string name="verification_status_processing_challenge">Apdorojamas iššūkis...</string>
+    <string name="verification_status_creating_proof">Kuriamas amžiaus įrodymas...</string>
+    <string name="verification_status_submitting_proof">Pateikiamas įrodymas...</string>
+    <string name="verification_status_verified">✔ Amžius patvirtintas</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Nepavyksta rodyti autentifikavimo raginimo</string>
+    <string name="verification_error_verification_failed">Verifikavimas nepavyko</string>
+    <string name="verification_error_generic">Įvyko klaida</string>
+    <string name="verification_error_failed_to_process_code">Nepavyko apdoroti kodo</string>
+    <string name="verification_error_failed_to_process_challenge">Nepavyko apdoroti iššūkio</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Patikimi išdavėjai Australijoje</string>
+    <string name="issuers_loading">Kraunami išdavėjai...</string>
+    <string name="issuers_loaded">Išdavėjai sėkmingai užkrauti</string>
+    <string name="issuers_unable_to_load">Nepavyksta užkrauti išdavėjų</string>
+    <string name="issuers_check_connection">Patikrinkite interneto ryšį ir bandykite dar kartą</string>
+    <string name="issuers_categories_header">KATEGORIJOS</string>
+    <string name="issuers_available_header">GALIMI IŠDAVĖJAI</string>
+    <string name="issuers_found_count">Rasta: %d</string>
+    <string name="issuer_status_coming_soon">Greitai</string>
+    <string name="issuer_status_verified">Patvirtintas</string>
+    <string name="issuer_how_to_get">Kaip gauti kredencialą</string>
+    <string name="issuer_service_locations">Aptarnavimo vietos</string>
+    <string name="issuer_visit_website">Apsilankyti %s svetainėje</string>
+    <string name="issuer_learn_more">Sužinoti daugiau apie %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Bankininkystė</string>
+    <string name="category_super_fund">Pensijų fondas</string>
+    <string name="category_government">Valdžios institucija</string>
+    <string name="category_travel">Kelionės</string>
+    <string name="category_telco">Telekomunikacijos</string>
+    <string name="category_insurance">Draudimas</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Nustatymai</string>
+    <string name="settings_section_sandbox">Sandbox režimas</string>
+    <string name="settings_section_general">Bendrieji</string>
+    <string name="settings_section_credentials">Kredencialai</string>
+    <string name="settings_section_advanced">Išplėstiniai</string>
+    <string name="settings_section_privacy">Privatumas</string>
+    <string name="settings_security">Sauga</string>
+    <string name="settings_biometric">Naudoti biometrinį autentifikavimą</string>
+    <string name="settings_environment">Aplinkos nustatymai</string>
+    <string name="settings_environment_description">Peržiūrėti esamą aplinkos konfigūraciją</string>
+    <string name="settings_reset_proving_key">Atstatyti įrodymo raktą</string>
+    <string name="settings_reset_proving_key_description">Iš naujo atsisiųsti saugos komponentus (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Išduoti bandomąjį kredencialą kaip Išdavėjas</string>
+    <string name="settings_mint_test_credential_subtitle">Išduokite bandomąjį kredencialą į savo piniginę, kad galėtumėte jį patikrinti iš pasitikinčios šalies demonstracijos.</string>
+    <string name="settings_find_trusted_issuers">Rasti patikimus išdavėjus</string>
+    <string name="settings_version">Versija: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Palieskite 5 kartus, kad įjungtumėte / išjungtumėte</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Kalba</string>
+    <string name="language_selection_description">Pasirinkite pageidaujamą kalbą. Programėlė bus paleista iš naujo, kad pakeitimai įsigaliotų.</string>
+    <string name="language_selected">Pasirinkta</string>
+    <string name="settings_language">Kalba</string>
+    <string name="settings_language_description">Keisti programėlės kalbą</string>
+    <string name="settings_licenses">Atvirojo kodo licencijos</string>
+    <string name="settings_licenses_description">Peržiūrėti trečiųjų šalių licencijas</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Patvirtinti kalbą</string>
+    <string name="language_change_to">Pakeisti kalbą į:</string>
+    <string name="language_restart_notice">Programėlė bus paleista iš naujo, kad pritaikytų šią kalbą.</string>
+    <string name="language_apply">Taikyti</string>
+    <string name="language_cancel">Atšaukti</string>
+    <string name="language_skip_title">Praleisti kalbos pasirinkimą?</string>
+    <string name="language_skip_message">Jei praleistumėte, programėlė pagal numatytuosius nustatymus naudos anglų kalbą. Kalbą galėsite pakeisti vėliau nustatymuose.</string>
+    <string name="language_use_english">Naudoti anglų kalbą</string>
+    <string name="language_go_back">Grįžti atgal</string>
+    <string name="language_help_title">Pagalba dėl kalbos pasirinkimo</string>
+    <string name="language_help_how_to">Kaip pasirinkti kalbą:</string>
+    <string name="language_help_step1">1. Naudokite paieškos laukelį, kad rastumėte savo kalbą</string>
+    <string name="language_help_step2">2. Palieskite pageidaujamą kalbą</string>
+    <string name="language_help_step3">3. Patvirtinkite savo pasirinkimą</string>
+    <string name="language_help_system_note">Jūsų sistemos kalba paryškinta viršuje, jei palaikoma.</string>
+    <string name="language_help_settings_note">Tai galite pakeisti vėliau nustatymuose.</string>
+    <string name="language_got_it">Supratau</string>
+    <string name="language_select_title">Pasirinkti kalbą</string>
+    <string name="language_skip_button">Praleisti (naudoti anglų kalbą)</string>
+    <string name="language_search_placeholder">Ieškoti kalbų...</string>
+    <string name="language_no_results">Kalbų nerasta</string>
+    <string name="language_try_different">Pabandykite kitą paieškos terminą</string>
+    <string name="language_system_badge">Sistemos kalba</string>
+    <string name="language_count">%d kalbos</string>
+    <string name="language_no_match_announcement">Nerasta kalbų, atitinkančių Jūsų paiešką</string>
+    <string name="language_found_announcement">Rastos %d kalbos</string>
+    <string name="language_search_cleared">Paieška išvalyta, rodomos visos %d kalbos</string>
+    <string name="language_selected_announcement">Pasirinkta %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Kalbos pasirinkimo ekranas</string>
+    <string name="language_help_button_description">Pagalba ir informacija apie kalbos pasirinkimą</string>
+    <string name="language_skip_description">Praleisti kalbos pasirinkimą ir pagal numatytuosius nustatymus naudoti anglų kalbą</string>
+    <string name="language_clear_search_description">Išvalyti paiešką</string>
+    <string name="language_count_description">Galimos %d kalbos</string>
+    <string name="language_apply_description">Taikyti kalbos pasirinkimą ir tęsti</string>
+    <string name="language_cancel_description">Atšaukti kalbos pasirinkimą</string>
+    <string name="language_cancelled_announcement">Kalbos pasirinkimas atšauktas</string>
+    <string name="language_selected_description">Pasirinkta kalba: %1$s, %2$s</string>
+    <string name="language_item_system">Sistemos kalba: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, šiuo metu pasirinkta</string>
+    <string name="language_item_system_selected">Sistemos kalba: %1$s, %2$s, šiuo metu pasirinkta</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Grįžta į kalbos pasirinkimą</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Sandbox režimas aktyvus</string>
+    <string name="sandbox_mode_banner">SANDBOX REŽIMAS AKTYVUS</string>
+    <string name="sandbox_mode_description">Naudojama bandomoji aplinka. Palieskite versijos numerį penkis kartus, kad įjungtumėte / išjungtumėte.</string>
+    <string name="sandbox_credential_title">Sandbox kredencialas</string>
+    <string name="sandbox_credential_description">Generuokite Sandbox kredencialą verifikavimo eigai tikrinti nekeičiant gamybinių duomenų.</string>
+    <string name="sandbox_select_age">Pasirinkti amžių</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Numatytoji gimimo data: %s</string>
+    <string name="sandbox_override_dob">Nepaisyti numatytosios gimimo datos</string>
+    <string name="sandbox_override_description">Naudokite tikslią datą vietoje amžiumi pagrįstos numatytosios reikšmės.</string>
+    <string name="sandbox_date_of_birth">Gimimo data</string>
+    <string name="sandbox_generate_credential">Generuoti kredencialą</string>
+    <string name="sandbox_generating">Generuojama…</string>
+    <string name="sandbox_test_credential_saved">Bandomasis kredencialas išsaugotas</string>
+    <string name="sandbox_id_prefix">Identifikavimo priešdėlis: %s…</string>
+    <string name="sandbox_unable_to_generate">Nepavyksta sugeneruoti kredencialo</string>
+    <string name="settings_sandbox_dob_format">Gimimo data: %s</string>
+    <string name="settings_sandbox_age_dob_format">Amžius %d+ (gimimo data: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Aplinkos konfigūracija</string>
+    <string name="environment_current">Dabartinė: %s</string>
+    <string name="environment_issuer_api">Išdavėjo API (programų programavimo sąsaja): %s</string>
+    <string name="environment_verifier_api">Tikrintojo API (programų programavimo sąsaja): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Ištrinti kredencialą?</string>
+    <string name="dialog_delete_credential_message">Šis veiksmas pašalins kredencialą iš Jūsų įrenginio. Prireikus galėsite jį gauti iš išdavėjo.</string>
+    <string name="dialog_delete_credential_announcement">Atidarytas dialogas: Ištrinti kredencialą</string>
+    <string name="dialog_reset_proving_key_title">Atstatyti įrodymo raktą?</string>
+    <string name="dialog_reset_proving_key_message">Įrodymo raktas ir papildomi failai bus ištrinti ir atsisiųsti iš naujo kitą kartą atidarant programėlę.</string>
+    <string name="dialog_reset_proving_key_announcement">Atidarytas dialogas: Atstatyti įrodymo raktą</string>
+    <string name="dialog_environment_info_announcement">Atidarytas dialogas: Aplinkos konfigūracija</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">Prieinamumas</string>
+    <string name="accessibility_service_label">Provii Wallet prieinamumas</string>
+    <string name="accessibility_service_description">Provii Wallet prieinamumo tarnyba teikia patobulintą pagalbą negalią turintiems naudotojams. Ji apima automatinį kredencialų skaitymą, valdomą naršymą ir supaprastintus veiksmus.</string>
+    <string name="accessibility_personalize">Individualizuokite savo patirtį</string>
+    <string name="accessibility_customize_features">Tinkinkite prieinamumo funkcijas</string>
+    <string name="accessibility_quick_setup">Greita sąranka</string>
+    <string name="accessibility_features_active">Aktyvios %d funkcijos</string>
+    <string name="accessibility_customize_experience">Tinkinkite savo patirtį</string>
+    <string name="accessibility_reset_title">Atstatyti prieinamumo nustatymus?</string>
+    <string name="accessibility_reset_message">Visi prieinamumo nustatymai grįš į numatytąsias reikšmes.</string>
+    <string name="accessibility_reset">Atstatyti prieinamumo nustatymus</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Regėjimas</string>
+    <string name="accessibility_category_interaction">Sąveika</string>
+    <string name="accessibility_category_cognitive">Kognityvinė pagalba</string>
+    <string name="accessibility_category_alternative_input">Alternatyvi įvestis</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Labai didelis tekstas</string>
+    <string name="accessibility_extra_large_text_description">Padidinti bazinį šriftų dydį 45 %</string>
+    <string name="accessibility_high_contrast">Didelis kontrastas</string>
+    <string name="accessibility_high_contrast_description">Naudoti didelio kontrasto spalvas</string>
+    <string name="accessibility_reduce_transparency">Sumažinti skaidrumą</string>
+    <string name="accessibility_reduce_transparency_description">Pašalinti suliejimo ir stiklo efektus</string>
+    <string name="accessibility_dyslexia_font">Disleksikai pritaikytas šriftas</string>
+    <string name="accessibility_dyslexia_font_description">Naudoti OpenDyslexic šriftą geresniems skaitymui</string>
+    <string name="accessibility_color_blind_mode">Spalvų aklumo režimas</string>
+    <string name="accessibility_color_blind_optimized">Spalvos optimizuotos: %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Nėra</string>
+    <string name="color_blind_protanopia">Protanopija (raudono spalvų aklumas)</string>
+    <string name="color_blind_deuteranopia">Deuteranopija (žalio spalvų aklumas)</string>
+    <string name="color_blind_tritanopia">Tritanopija (mėlyno spalvų aklumas)</string>
+    <string name="color_blind_monochrome">Monochromas</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Didesni lietimo taikiniai</string>
+    <string name="accessibility_larger_touch_targets_description">Padidinti mygtukų ir elementų dydžius</string>
+    <string name="accessibility_reduce_motion">Sumažinti judėjimą</string>
+    <string name="accessibility_reduce_motion_description">Sumažinti animacijas ir perėjimus</string>
+    <string name="accessibility_extended_timeouts">Prailginti laiko limitai</string>
+    <string name="accessibility_extended_timeouts_description">Leisti daugiau laiko veiksmams su laiko limitu</string>
+    <string name="accessibility_simplified_gestures">Supaprastinti gestai</string>
+    <string name="accessibility_simplified_gestures_description">Sumažinti kelių žingsnių gestus</string>
+    <string name="accessibility_haptic_feedback">Haptinis atsakas</string>
+    <string name="accessibility_haptic_feedback_description">Vibracijos patvirtinimas veiksmams</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Supaprastinta sąsaja</string>
+    <string name="accessibility_simplified_interface_description">Slėpti išplėstines parinktis ir sumažinti perkrovą</string>
+    <string name="accessibility_show_step_numbers">Rodyti žingsnių numerius</string>
+    <string name="accessibility_show_step_numbers_description">Rodyti pažangos indikatorius</string>
+    <string name="accessibility_detailed_descriptions">Išsamūs aprašymai</string>
+    <string name="accessibility_detailed_descriptions_description">Pateikti papildomą aiškinamąjį tekstą</string>
+    <string name="accessibility_confirm_actions">Patvirtinti prieš veiksmus</string>
+    <string name="accessibility_confirm_actions_description">Prašyti patvirtinimo svarbių operacijų metu</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Rankinis kodo įvedimas</string>
+    <string name="accessibility_manual_code_entry_description">Leisti QR (greito atsakymo) kodus įvesti ranka, o ne nuskaityti</string>
+    <string name="accessibility_voice_input">Balso įvestis</string>
+    <string name="accessibility_voice_input_description">Įgalinti kalbos atpažinimą teksto laukams</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Regėjimas</string>
+    <string name="accessibility_profile_motor">Motorika</string>
+    <string name="accessibility_profile_cognitive">Kognityvinis</string>
+    <string name="accessibility_profile_senior">Vyresnio amžiaus</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Atgal</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Pradžia</string>
+    <string name="breadcrumb_settings">Nustatymai</string>
+    <string name="breadcrumb_accessibility">Prieinamumas</string>
+    <string name="breadcrumb_language">Kalba</string>
+    <string name="breadcrumb_help">Pagalbos centras</string>
+    <string name="breadcrumb_officer_mode">Pareigūno režimas</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Tipografija ir teksto tarpai</string>
+    <string name="accessibility_line_spacing">Eilučių tarpai</string>
+    <string name="accessibility_line_spacing_description">Reguliuoti tarpus tarp teksto eilučių</string>
+    <string name="accessibility_paragraph_spacing">Pastraipų tarpai</string>
+    <string name="accessibility_paragraph_spacing_description">Reguliuoti tarpus tarp pastraipų</string>
+    <string name="accessibility_letter_spacing">Raidžių tarpai</string>
+    <string name="accessibility_letter_spacing_description">Reguliuoti tarpus tarp raidžių</string>
+    <string name="accessibility_typography_aaa_note">AAA rekomendacijos: 1,5x eilučių tarpai, 2,0x pastraipų tarpai ir 0,12em raidžių tarpai.</string>
+    <string name="accessibility_spacing_current">Dabartinis: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Laiko limito elgsena</string>
+    <string name="accessibility_timeout_no_automatic">Jokių automatinių laiko limitų AAA atitikčiai</string>
+    <string name="accessibility_timeout_auto_advance_30">Automatiškai tęsti po 30 sekundžių</string>
+    <string name="accessibility_timeout_auto_advance_60">Automatiškai tęsti po 60 sekundžių</string>
+    <string name="accessibility_timeout_set_announcement">Laiko limito elgsena nustatyta: %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Kontrasto lygis</string>
+    <string name="accessibility_contrast_aaa_ratio">7:1 kontrasto santykis AAA atitikčiai</string>
+    <string name="accessibility_contrast_standard">Standartinis kontrastas</string>
+    <string name="accessibility_contrast_aa_ratio">4,5:1 kontrasto santykis AA atitikčiai</string>
+    <string name="accessibility_contrast_set_announcement">Kontrasto lygis nustatytas: %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Spalvų aklumo režimas nustatytas: %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">%1$s slankiklis. Dabartinė reikšmė: %2$s. %3$sDiapazonas nuo %4$s iki %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">Atitinka AAA. </string>
+    <string name="accessibility_slider_announcement">%1$s nustatyta: %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, atitinka AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s įjungta</string>
+    <string name="accessibility_toggle_disabled">%s išjungta</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Verifikavimo atsakas</string>
+    <string name="accessibility_sound_enabled">Groti garsą sėkmės atveju</string>
+    <string name="accessibility_sound_enabled_description">Groti patvirtinimo garsą po sėkmingo verifikavimo</string>
+    <string name="accessibility_sound_style">Garso stilius</string>
+    <string name="accessibility_sound_preview">Peržiūrėti garsą</string>
+    <string name="accessibility_sound_preview_preset">Peržiūrėti %s</string>
+    <string name="accessibility_sound_style_set_announcement">Garso stilius nustatytas: %s</string>
+    <string name="accessibility_haptic_enabled">Vibruoti sėkmės atveju</string>
+    <string name="accessibility_haptic_enabled_description">Teikti haptinį atsaką po sėkmingo verifikavimo</string>
+    <string name="accessibility_sound_footer">Garsas atitinka Jūsų įrenginio tylos režimo nustatymus</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Garsumas</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Peržiūrėti dabartinį garsumą</string>
+    <string name="accessibility_volume_set_announcement">Garsumas nustatytas: %d procentų</string>
+    <string name="accessibility_volume_slider_description">Garsumo slankiklis. Dabartinė reikšmė: %d procentų</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Atstatyti nustatymus</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">Pareigūno režimas</string>
+    <string name="officer_id">Pareigūno identifikavimas (ID)</string>
+    <string name="officer_id_placeholder">pvz., OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Įveskite Jums priskirtą pareigūno identifikavimo numerį</string>
+    <string name="officer_yubikey_connected">YubiKey prijungtas</string>
+    <string name="officer_connect_yubikey">Prijungti YubiKey</string>
+    <string name="officer_touch_yubikey">Palieskite YubiKey autentifikavimui...</string>
+    <string name="officer_authenticate_hmac">Autentifikuotis naudojant HMAC (maišos pagrindu veikiantį pranešimų autentifikavimo kodą)</string>
+    <string name="officer_authentication_process">Autentifikavimo procesas:</string>
+    <string name="officer_auth_steps">1. Įveskite savo pareigūno identifikavimo numerį\n2. Spustelėkite „Autentifikuotis"\n3. Palieskite YubiKey, kai jis mirksi\n4. HMAC (maišos pagrindu veikiantis pranešimų autentifikavimo kodas) autentifikavimas patvirtina Jūsų tapatybę</string>
+    <string name="officer_auth_failed">Autentifikavimas nepavyko. Patikrinkite savo pareigūno identifikavimo numerį ir bandykite dar kartą.</string>
+    <string name="officer_session_info">Pareigūnas: %s</string>
+    <string name="officer_station_info">Stotis: %s</string>
+    <string name="officer_issued_today">Išduota šiandien: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Išduoti amžiaus kredencialą</string>
+    <string name="officer_issue_description">Patvirtinkite naudotojo tapatybę ir išduokite skaitmeninį amžiaus kredencialą</string>
+    <string name="officer_start_issuance">Pradėti naują išdavimą</string>
+    <string name="officer_issuance_process">IŠDAVIMO PROCESAS</string>
+    <string name="officer_issuance_steps">1. Patikrinkite naudotojo fizinį asmens tapatybę patvirtinantį dokumentą\n2. Įveskite jo gimimo datą\n3. Patikrinkite, ar informacija tiksliai sutampa\n4. Išduokite kredencialą su patvirtinimo QR (greito atsakymo) kodu\n5. Naudotojas nuskaito QR kodą ir gauna kredencialą</string>
+    <string name="officer_verify_identity">Patvirtinti naudotojo tapatybę</string>
+    <string name="officer_select_dob">Pasirinkti gimimo datą</string>
+    <string name="officer_change_date">Keisti datą</string>
+    <string name="officer_age_years">Amžius: %d metai</string>
+    <string name="officer_under_18_warning">Jaunesnis nei 18 metų – kredencialo išduoti negalima</string>
+    <string name="officer_verification_checklist">TIKRINIMO SĄRAŠAS</string>
+    <string name="officer_document_verified">Fizinis dokumentas patikrintas</string>
+    <string name="officer_document_verified_description">Peržiūrėjau galiojantį valstybės išduotą asmens tapatybę patvirtinantį dokumentą</string>
+    <string name="officer_dob_matches">Gimimo data tiksliai sutampa</string>
+    <string name="officer_dob_matches_description">Gimimo data fiziniame dokumente yra: %s</string>
+    <string name="officer_issue_credential">Išduoti kredencialą</string>
+    <string name="officer_user_scanned_successfully">Naudotojas sėkmingai nuskaitė</string>
+    <string name="officer_return_to_dashboard">Grįžti į valdymo skydelį</string>
+    <string name="officer_go_back">Grįžti atgal</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">YubiKey autentifikavimas</string>
+    <string name="yubikey_step_format">%1$d žingsnis iš %2$d</string>
+    <string name="yubikey_led_should_blink">YubiKey LED lemputė turėtų mirksėti</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Tikrinamas įvestis...</string>
+    <string name="officer_state_creating_attestation">Kuriamas patvirtinimas...</string>
+    <string name="officer_state_computing_commitment">Skaičiuojamas kriptografinis įsipareigojimas...</string>
+    <string name="officer_state_creating_session">Kuriama saugi sesija...</string>
+    <string name="officer_state_signing">Pasirašomas kredencialas...</string>
+    <string name="officer_state_finalizing">Baigiamas kredencialas...</string>
+    <string name="officer_state_storing_attestation">Išsaugomas patvirtinimas...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">Sesija greitai baigsis</string>
+    <string name="officer_session_expiring_message">Jūsų sesija baigsis po %d sekundžių. Ar norėtumėte išsaugoti pažangą?</string>
+    <string name="officer_session_expiring_announcement">Įspėjimas: Jūsų sesija baigsis po %d sekundžių</string>
+    <string name="officer_save_and_continue">Išsaugoti ir tęsti</string>
+    <string name="officer_continue_without_saving">Tęsti neišsaugant</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">GIMIMO DATA</string>
+    <string name="officer_age_format">Amžius: %d metai</string>
+    <string name="officer_under_18_full_warning">Jaunesnis nei 18 metų – kredencialo išduoti negalima. Amžiaus verifikavimo kredencialai išduodami tik 18 metų ar vyresniems asmenims. Patikrinkite, ar gimimo data teisinga.</string>
+    <string name="officer_verification_checklist_header">TIKRINIMO SĄRAŠAS</string>
+    <string name="officer_physical_document_verified">Fizinis dokumentas patikrintas</string>
+    <string name="officer_sighted_valid_id">Peržiūrėjau galiojantį valstybės išduotą asmens tapatybę patvirtinantį dokumentą</string>
+    <string name="officer_dob_matches_exactly">Gimimo data tiksliai sutampa</string>
+    <string name="officer_dob_on_document">Gimimo data fiziniame dokumente yra: %s</string>
+    <string name="officer_error_label">Klaida</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">Nuskaityti išdavimo QR (greito atsakymo) kodą</string>
+    <string name="issuance_downloads_credential">Tai atsisiunčia Jūsų amžiaus kredencialą.</string>
+    <string name="issuance_center_qr">Centruokite QR kodą kadre ir laikykite ramiai.</string>
+    <string name="issuance_enter_code_manually">Įvesti kodą rankiniu būdu</string>
+    <string name="issuance_processing_qr">Apdorojamas QR kodas…</string>
+    <string name="issuance_invalid_data">Netinkami išdavimo duomenys</string>
+    <string name="issuance_verification_qr_error">Tai yra verifikavimo QR kodas. Nuskaitykite kredencialo išdavimo QR kodą.</string>
+    <string name="issuance_invalid_qr_format">Netinkamas QR kodo formatas</string>
+    <string name="issuance_failed_to_process">Nepavyko apdoroti QR kodo: %s</string>
+    <string name="issuance_code">Išdavimo kodas</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">Rankinis kodo įvedimas</string>
+    <string name="manual_entry_enter_code_manually">Įvesti kodą rankiniu būdu</string>
+    <string name="manual_entry_verification_description">Įveskite 12 skaitmenų verifikavimo kodą, rodomą tikrintojo ekrane.</string>
+    <string name="manual_entry_issuance_description">Įveskite kodą, rodomą išdavėjo ekrane.</string>
+    <string name="manual_entry_verification_code">Verifikavimo kodas</string>
+    <string name="manual_entry_submit">Pateikti kodą</string>
+    <string name="manual_entry_please_enter">Įveskite kodą</string>
+    <string name="manual_entry_please_enter_verification">Įveskite verifikavimo kodą</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Pradėti klausymą</string>
+    <string name="voice_input_stop_listening">Sustabdyti klausymą</string>
+    <string name="voice_input_recognized">Atpažinta:</string>
+    <string name="content_desc_voice_input_listening">Klausomasi balso įvesties</string>
+    <string name="content_desc_voice_input_available">Balso įvestis galima</string>
+    <string name="voice_input_permission_title">Reikalingas mikrofono leidimas</string>
+    <string name="voice_input_permission_message">Balso įvestis reikalauja prieigos prie mikrofono. Galite ją įjungti sistemos nustatymuose.</string>
+    <string name="voice_input_listening">Klausomasi…</string>
+    <string name="voice_input_error">Balso įvesties klaida</string>
+    <string name="voice_input_tap_to_speak">Palieskite, kad kalbėtumėte</string>
+    <string name="voice_input_did_you_say">Ar sakėte „%1$s"?</string>
+    <string name="voice_input_confirm">Patvirtinti</string>
+    <string name="voice_input_retry">Bandyti dar kartą</string>
+    <string name="voice_input_cancel">Atšaukti</string>
+    <string name="voice_input_button">Balso įvestis</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">Balso įvestis šiame įrenginyje nepalaikoma</string>
+    <string name="voice_input_error_audio">Garso įrašymo klaida. Patikrinkite mikrofoną.</string>
+    <string name="voice_input_error_network">Tinklo klaida. Patikrinkite ryšį.</string>
+    <string name="voice_input_error_network_timeout">Tinklo skirtasis laikas. Bandykite dar kartą.</string>
+    <string name="voice_input_error_no_match">Kalbos neaptikta. Bandykite dar kartą.</string>
+    <string name="voice_input_error_recognizer_busy">Balso įvestis užimta. Palaukite.</string>
+    <string name="voice_input_error_server">Serverio klaida. Bandykite vėliau.</string>
+    <string name="voice_input_error_speech_timeout">Kalbos negirdėjo. Kalbėkite garsiau.</string>
+    <string name="voice_input_error_insufficient_permissions">Mikrofono leidimas atmestas.</string>
+    <string name="voice_input_error_generic">Balso įvesties klaida. Bandykite dar kartą.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">Atgal</string>
+    <string name="action_close">Uždaryti</string>
+    <string name="action_cancel">Atšaukti</string>
+    <string name="action_ok">Gerai</string>
+    <string name="action_set">Nustatyti</string>
+    <string name="action_change">Keisti</string>
+    <string name="action_delete">Ištrinti</string>
+    <string name="action_reset">Atstatyti</string>
+    <string name="action_retry">Kartoti</string>
+    <string name="action_try_again">Bandyti dar kartą</string>
+    <string name="action_refresh">Atnaujinti</string>
+    <string name="action_download_now">Atsisiųsti dabar</string>
+    <string name="action_retry_setup">Kartoti sąranką</string>
+    <string name="action_retry_download">Kartoti atsisiuntimą</string>
+    <string name="action_restart_setup">Paleisti sąranką iš naujo</string>
+    <string name="action_manage_storage">Tvarkyti atmintį</string>
+    <string name="action_check_wifi_settings">Pirmiausia patikrinti Wi-Fi nustatymus</string>
+    <string name="action_check_wifi_settings_short">Patikrinti Wi-Fi nustatymus</string>
+    <string name="action_grant_permission">Suteikti leidimą</string>
+    <string name="action_grant_camera_access">Suteikti prieigą prie kameros</string>
+    <string name="action_return_to_browser">Grįžti į naršyklę</string>
+    <string name="action_show_debug_info">Rodyti Debug informaciją</string>
+    <string name="action_reset_redownload">Atstatyti ir atsisiųsti iš naujo</string>
+    <string name="action_end_session">Baigti sesiją</string>
+    <string name="action_expand">Išplėsti</string>
+    <string name="action_collapse">Sutraukti</string>
+    <string name="accessibility_state_expanded">Išplėsta</string>
+    <string name="accessibility_state_collapsed">Sutraukta</string>
+    <string name="accessibility_state_checked">Pažymėta</string>
+    <string name="accessibility_state_unchecked">Nepažymėta</string>
+    <string name="accessibility_state_selected">Pasirinkta</string>
+    <string name="accessibility_state_not_selected">Nepasirinkta</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">Įvyko klaida</string>
+    <string name="error_camera_permission">Norint nuskaityti QR (greito atsakymo) kodus, reikalingas kameros leidimas</string>
+    <string name="error_camera_access_needed">Reikalinga prieiga prie kameros</string>
+    <string name="error_camera_permission_description">Suteikite kameros leidimą QR kodams nuskaityti arba įjunkite rankinį įvedimą prieinamumo nustatymuose.</string>
+    <string name="error_camera_permission_required">Norint nuskaityti QR kodus, reikalingas kameros leidimas</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">Ieškoma QR kodo...</string>
+    <string name="qr_scanner_camera_required">Reikalingas kameros leidimas</string>
+    <string name="qr_scanner_camera_preview">Kameros peržiūra QR kodams nuskaityti</string>
+    <string name="qr_scanner_status_scanning">Ieškoma QR kodo</string>
+    <string name="qr_scanner_requesting_permission">Prašoma kameros leidimo</string>
+    <string name="error_camera_start_failed">Nepavyko paleisti kameros: %s</string>
+    <string name="error_camera_init_failed">Kameros inicijavimas nepavyko: %s</string>
+    <string name="error_biometric_not_available">Biometrinis autentifikavimas negalimas</string>
+    <string name="error_network">Įvyko tinklo klaida</string>
+    <string name="error_no_credential">Kredencialo nėra. Pirmiausia gaukite kredencialą.</string>
+    <string name="credential_picker_title">Pasirinkti kredencialą</string>
+    <string name="credential_picker_description">Turite kelis kredencialus, kurie gali būti naudojami šiam verifikavimui. Pasirinkite vieną.</string>
+    <string name="credential_picker_expired_label">Pasibaigęs</string>
+    <string name="credential_picker_accessibility_select">Pasirinkti kredencialą: %1$s</string>
+    <string name="error_failed_to_process_challenge">Nepavyko apdoroti iššūkio</string>
+    <string name="error_failed_to_create_proof">Nepavyko sukurti įrodymo</string>
+    <string name="error_verification_failed">Verifikavimas nepavyko</string>
+    <string name="error_occurred_during_verification">Verifikavimo metu įvyko klaida</string>
+    <string name="error_connection_timeout">Ryšio skirtasis laikas. Bandykite dar kartą.</string>
+    <string name="error_unable_to_connect">Nepavyksta prisijungti. Patikrinkite interneto ryšį.</string>
+    <string name="error_secure_connection_failed">Saugus ryšys nepavyko. Bandykite dar kartą.</string>
+    <string name="error_security_verification_failed">Saugumo verifikavimas nepavyko. Bandykite dar kartą.</string>
+    <string name="error_invalid_input">Neteisinga įvestis. Patikrinkite informaciją ir bandykite dar kartą.</string>
+    <string name="error_operation_in_progress">Vykdoma kita operacija. Palaukite.</string>
+    <string name="error_operation_cancelled">Operacija atšaukta.</string>
+    <string name="error_age_requirement_not_met">Šiam kredencialui neatitinkamas amžiaus reikalavimas.</string>
+    <string name="error_biometric_required">Norint tęsti, reikalingas biometrinis autentifikavimas.</string>
+    <string name="error_wallet_not_initialized">Piniginė neinicijuota. Paleiskite programėlę iš naujo.</string>
+    <string name="error_security">Saugumo klaida. Bandykite dar kartą.</string>
+    <string name="error_connection_timeout_short">Ryšio skirtasis laikas. Bandykite dar kartą.</string>
+    <string name="error_invalid_input_provided">Pateikta neteisinga įvestis.</string>
+    <string name="error_invalid_data_format">Netinkamas duomenų formatas. Bandykite dar kartą.</string>
+    <string name="error_storage">Atminties klaida. Patikrinkite įrenginio atmintį.</string>
+    <string name="error_network_short">Tinklo klaida. Patikrinkite ryšį.</string>
+    <string name="error_label">Klaida</string>
+    <string name="error_dismiss">Atmesti klaidą</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">Apdorojama...</string>
+    <string name="status_initializing_wallet">Inicijuojama piniginė...</string>
+    <string name="status_loading">Kraunama...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">Privatumas apsaugotas</string>
+    <string name="privacy_zk_description">Jūsų gimimo data niekada nėra dalijamasi. Tikrintojai sužino tik tai, ar atitinkate jų amžiaus reikalavimą.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Privatumo nustatymai</string>
+    <string name="privacy_settings_description">Valdykite duomenų rinkimą ir tvarkykite savo duomenis</string>
+    <string name="privacy_section_data_collection">Duomenų rinkimas</string>
+    <string name="privacy_section_your_data">Jūsų duomenys</string>
+    <string name="privacy_protection_title">Jūsų privatumas apsaugotas</string>
+    <string name="privacy_protection_description">Provii Wallet naudoja nulinių žinių įrodymus Jūsų amžiui patvirtinti neatskleidžiant gimimo datos. Kredencialų duomenys saugomi tik Jūsų įrenginyje ir niekada nėra dalijamasi su niekuo.</string>
+    <string name="privacy_analytics_title">Analizė</string>
+    <string name="privacy_analytics_description">Padėkite tobulinti Provii Wallet dalijantis anoniminiais naudojimo duomenimis</string>
+    <string name="privacy_analytics_enabled">Analizė įjungta</string>
+    <string name="privacy_analytics_disabled">Analizė išjungta</string>
+    <string name="privacy_crash_reporting_title">Gedimų ataskaitos</string>
+    <string name="privacy_crash_reporting_description">Padėkite mums taisyti klaidas automatiškai siunčiant gedimų ataskaitas</string>
+    <string name="privacy_crash_reporting_enabled">Gedimų ataskaitos įjungtos</string>
+    <string name="privacy_crash_reporting_disabled">Gedimų ataskaitos išjungtos</string>
+    <string name="privacy_what_we_collect_title">Kokius duomenis renkame</string>
+    <string name="privacy_what_we_collect_subtitle">Palieskite, kad sužinotumėte apie mūsų duomenų tvarkymo praktiką</string>
+    <string name="privacy_data_collection_info_title">Informacija apie duomenų rinkimą</string>
+    <string name="privacy_data_we_collect_header">Ką renkame (jei įjungta):</string>
+    <string name="privacy_data_we_collect_list">- Anoniminė programėlės naudojimo statistika\n- Gedimų ataskaitos ir klaidų žurnalai\n- Įrenginio tipas ir OS versija\n- Programėlės versijos informacija</string>
+    <string name="privacy_data_we_dont_collect_header">Ko niekada nerenkame:</string>
+    <string name="privacy_data_we_dont_collect_list">- Jūsų gimimo datos\n- Jūsų vardo ar asmens duomenų\n- Jūsų buvimo vietos\n- Jūsų kredencialų duomenų\n- Biometrinių duomenų</string>
+    <string name="privacy_data_never_shared_note">Jūsų kredencialų duomenys niekada nėra dalijamasi su Provii ar bet kuria trečiąja šalimi. Jie lieka Jūsų įrenginyje.</string>
+    <string name="privacy_policy_title">Privatumo politika</string>
+    <string name="privacy_policy_subtitle">Skaityti mūsų išsamią privatumo politiką</string>
+    <string name="privacy_delete_my_data_title">Ištrinti mano duomenis</string>
+    <string name="privacy_delete_my_data_subtitle">Pašalinti visus išsaugotus kredencialus ir duomenis</string>
+    <string name="privacy_delete_data_dialog_title">Ištrinti visus duomenis?</string>
+    <string name="privacy_delete_data_dialog_message">Tai visam laikui ištrins visus Jūsų kredencialus ir programėlės duomenis iš šio įrenginio. Norint vėl naudotis programėle, reikės gauti naują kredencialą.</string>
+    <string name="privacy_delete_data_dialog_warning">Šio veiksmo atšaukti negalima.</string>
+    <string name="privacy_delete_data_confirm">Ištrinti viską</string>
+    <string name="privacy_footer_note">Šiuos nustatymus galite bet kada pakeisti. Pakeitimai įsigalioja nedelsiant.</string>
+    <string name="dialog_delete_data_announcement">Atidarytas duomenų ištrynimo patvirtinimo dialogas</string>
+    <string name="dialog_data_collection_info_announcement">Atidarytas duomenų rinkimo informacijos dialogas</string>
+    <string name="content_desc_privacy_settings">Privatumo nustatymai, valdykite duomenų rinkimą ir tvarkykite savo duomenis</string>
+    <string name="content_desc_data_collection_info">Peržiūrėti informaciją apie duomenų rinkimą</string>
+    <string name="content_desc_privacy_policy">Peržiūrėti privatumo politiką</string>
+    <string name="content_desc_opens_external_link">Atidaroma naršyklėje</string>
+    <string name="content_desc_delete_my_data">Ištrinti visus mano duomenis</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">Atgal</string>
+    <string name="content_desc_settings">Nustatymai</string>
+    <string name="content_desc_refresh">Atnaujinti</string>
+    <string name="content_desc_verified">Patvirtinta</string>
+    <string name="content_desc_expand">Išplėsti</string>
+    <string name="content_desc_collapse">Sutraukti</string>
+    <string name="content_desc_warning_error">Įspėjimas: įvyko klaida</string>
+    <string name="content_desc_sandbox_indicator">Sandbox režimo indikatorius</string>
+    <string name="content_desc_success">Sėkmė</string>
+    <string name="content_desc_warning">Įspėjimas</string>
+    <string name="content_desc_information">Informacija</string>
+    <string name="content_desc_error">Klaida</string>
+    <string name="content_desc_sandbox_warning">Sandbox režimo įspėjimas</string>
+    <string name="content_desc_app_info">Programėlės informacija</string>
+    <string name="content_desc_accessibility_settings">Prieinamumo nustatymai</string>
+    <string name="content_desc_language_settings">Kalbos nustatymai</string>
+    <string name="content_desc_licenses">Atvirojo kodo licencijos</string>
+    <string name="content_desc_select_dob">Pasirinkti gimimo datą</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Išduoti bandomąjį kredencialą kaip Išdavėjas</string>
+    <string name="content_desc_get_credential">Gauti kredencialą</string>
+    <string name="content_desc_delete_credential">Ištrinti kredencialą</string>
+    <string name="content_desc_reset_proving_key">Atstatyti įrodymo raktą</string>
+    <string name="content_desc_environment_info">Aplinkos informacija</string>
+    <string name="content_desc_help_support">Pagalba ir palaikymas</string>
+    <string name="content_desc_privacy_protected">Privatumas apsaugotas</string>
+    <string name="preview_settings_title">Nustatymų peržiūra</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">Sėkmė</string>
+    <string name="accessibility_verification_error_description">Klaida</string>
+    <string name="accessibility_breadcrumb_location_description">Vieta: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">tada</string>
+    <string name="accessibility_breadcrumb_current_page_description">Dabartinis puslapis: %s</string>
+    <string name="accessibility_settings_navigate_description">Naršyti</string>
+    <string name="accessibility_credentials_settings_description">Nustatymai</string>
+    <string name="accessibility_verification_back_description">Atgal</string>
+    <string name="accessibility_officer_back_description">Atgal</string>
+    <string name="accessibility_discovery_back_description">Atgal</string>
+    <string name="accessibility_discovery_refresh_description">Atnaujinti</string>
+    <string name="accessibility_discovery_verified_description">Patvirtinta</string>
+    <string name="accessibility_officer_done_description">Atlikta</string>
+    <string name="accessibility_officer_attestation_qr_description">Patvirtinimo QR kodas naudotojui nuskaityti</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">Pereiti prie %s</string>
+    <string name="accessibility_skip_main_content">pagrindinio turinio</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Regėjimo negalia</string>
+    <string name="accessibility_profile_motor_impaired">Motorikos negalia</string>
+    <string name="accessibility_profile_cognitive_support">Kognityvinė pagalba</string>
+    <string name="accessibility_profile_elderly_support">Pagalba vyresnio amžiaus asmenims</string>
+    <string name="accessibility_profile_default">Numatytasis</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Nėra</string>
+    <string name="color_blind_mode_protanopia">Protanopija</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopija</string>
+    <string name="color_blind_mode_tritanopia">Tritanopija</string>
+    <string name="color_blind_mode_monochrome">Monochromas</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Standartinis</string>
+    <string name="contrast_level_high">Didelis (AA)</string>
+    <string name="contrast_level_maximum">Maksimalus (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Visas plotis</string>
+    <string name="text_width_comfortable">Patogus (80 simbolių)</string>
+    <string name="text_width_narrow">Siauras (60 simbolių)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Be laiko limito (AAA)</string>
+    <string name="timeout_behavior_standard">Standartinis (30 s)</string>
+    <string name="timeout_behavior_extended">Prailgintas (60 s)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Standartinis</string>
+    <string name="reading_level_standard_description">Įprastas tekstas su techniniais terminais</string>
+    <string name="reading_level_simplified">Supaprastintas (7–9 klasė)</string>
+    <string name="reading_level_simplified_description">Paprastesni žodžiai ir trumpesni sakiniai (atitinka AAA)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">Pagalba</string>
+    <string name="help_and_support">Pagalba ir palaikymas</string>
+    <string name="help_description">Gaukite pagalbą dėl programėlės funkcijų ir prieinamumo</string>
+    <string name="help_center">Pagalbos centras</string>
+    <string name="help_center_description">Naršykite pagalbos temas ir sužinokite apie programėlės funkcijas</string>
+    <string name="help_search">Ieškoti pagalbos</string>
+    <string name="help_search_placeholder">Ieškoti pagalbos temų...</string>
+    <string name="help_search_active">Paieška suaktyvinta</string>
+    <string name="help_search_inactive">Paieška išjungta</string>
+    <string name="help_no_results">Nerasta pagalbos temų, atitinkančių Jūsų paiešką</string>
+    <string name="help_topic_not_found">Pagalbos tema nerasta</string>
+    <string name="help_related_topics">Susijusios temos</string>
+    <string name="help_content_heading">Pagalbos turinys</string>
+    <string name="help_related_topic_position">%1$s, elementas %2$d iš %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Regėjimas</string>
+    <string name="help_category_typography">Tipografija</string>
+    <string name="help_category_interaction">Sąveika</string>
+    <string name="help_category_cognitive">Kognityvinė pagalba</string>
+    <string name="help_category_alternative_input">Alternatyvi įvestis</string>
+    <string name="help_category_features">Funkcijos</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Kaip gauti kredencialą</string>
+    <string name="help_topic_getting_credential_summary">Sužinokite, kaip gauti pirmąjį amžiaus verifikavimo kredencialą</string>
+    <string name="help_topic_getting_credential_content">Kaip gauti amžiaus verifikavimo kredencialą:\n\n1. Apsilankykite įgalioto išdavėjo vietoje\n2. Pateikite valstybės išduotą asmens tapatybę patvirtinantį dokumentą\n3. Nuskaitykite pateiktą QR kodą\n4. Jūsų kredencialas bus saugiai išsaugotas\n\nJūsų gimimo data saugoma vietoje ir niekada nėra dalijamasi.</string>
+
+    <string name="help_topic_verifying_age_title">Amžiaus patvirtinimas</string>
+    <string name="help_topic_verifying_age_summary">Kaip įrodyti savo amžių nesidalijant asmenine informacija</string>
+    <string name="help_topic_verifying_age_content">Kai reikia patvirtinti amžių:\n\n1. Tikrintojas parodys Jums QR kodą\n2. Nuskaitykite jį programėle\n3. Programėlė sukuria matematinį įrodymą\n4. Dalijamasi tik atsakymu „taip" / „ne"\n\nJūsų tikroji gimimo data NIEKADA neatskleidžiama.</string>
+
+    <string name="help_topic_accessibility_title">Prieinamumo funkcijos</string>
+    <string name="help_topic_accessibility_summary">Pritaikykite programėlę pagal savo poreikius</string>
+    <string name="help_topic_accessibility_content">Programėlė turi daug prieinamumo funkcijų:\n\n- Didelio teksto ir didelio kontrasto režimai\n- Balso įvestis ir ekrano skaitytuvo palaikymas\n- Supaprastinti gestai ir naudotojo sąsaja\n- Rankinio kodo įvedimo parinktys\n- Prailginti laiko limitai\n\nPasiekite juos skiltyje „Nustatymai" > „Prieinamumas"</string>
+
+    <string name="help_topic_privacy_security_title">Privatumas ir sauga</string>
+    <string name="help_topic_privacy_security_summary">Kaip apsaugoma Jūsų informacija</string>
+    <string name="help_topic_privacy_security_content">Jūsų privatumas yra mūsų prioritetas:\n\n- Kredencialai saugomi vietoje Jūsų įrenginyje\n- Nulinių žinių įrodymai apsaugo Jūsų duomenis\n- Joks sekimas ar analizė\n- Galimas biometrinis autentifikavimas\n- Duomenys neiškeliauja iš Jūsų įrenginio neužšifruoti</string>
+
+    <string name="help_topic_troubleshooting_title">Trikčių šalinimas</string>
+    <string name="help_topic_troubleshooting_summary">Dažniausios problemos ir sprendimai</string>
+    <string name="help_topic_troubleshooting_content">Dažniausios problemos ir sprendimai:\n\nQR skaitytuvas neveikia:\n- Patikrinkite kameros leidimus nustatymuose\n- Išbandykite rankinio kodo įvedimo parinktį\n\nKredencialas neįkeliamas:\n- Patikrinkite interneto ryšį\n- Pabandykite atstatyti įrodymo raktą\n\nVerifikavimas nepavyko:\n- Įsitikinkite, kad kredencialas nėra pasibaigęs\n- Kreipkitės į tikrintoją dėl pagalbos</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">GIMIMO DATA</string>
+    <string name="date_of_birth">Gimimo data</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">%d metai</string>
+    <string name="format_step_indicator">%1$d žingsnis iš %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">Kredencialai</string>
+    <string name="tab_settings">Nustatymai</string>
+    <string name="tab_help">Pagalba</string>
+    <string name="tab_credentials_description">Peržiūrėti savo kredencialus</string>
+    <string name="tab_settings_description">Programėlės nustatymai</string>
+    <string name="tab_help_description">Gauti pagalbą ir palaikymą</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">Paieška</string>
+    <string name="search_field_label">Paieškos laukelis</string>
+    <string name="search_placeholder">Ieškoti nustatymų, pagalbos ir funkcijų</string>
+    <string name="search_clear">Išvalyti paiešką</string>
+    <string name="search_popular">Populiarios paieškos</string>
+    <string name="search_results_heading">Paieškos rezultatai</string>
+    <string name="search_no_results">Rezultatų nerasta</string>
+    <string name="search_try_suggestions">Ieškokite:\n• Prieinamumas\n• Nustatymai\n• Pagalba\n• Kalba</string>
+    <string name="search_results_announcement_singular">Rastas 1 rezultatas</string>
+    <string name="search_results_announcement_plural">Rasta %d rezultatų</string>
+    <string name="search_no_results_announcement">Rezultatų nerasta</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">Greita prieiga</string>
+    <string name="help_topics">Pagalbos temos</string>
+    <string name="help_glossary">Žodynas</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">Atvirojo kodo licencijos</string>
+    <string name="licenses_description">Ši programėlė naudoja toliau nurodytą atvirojo kodo programinę įrangą. Esame dėkingi kūrėjams, sukūrusiems šias bibliotekas.</string>
+    <string name="licenses_tap_to_view">Palieskite, kad peržiūrėtumėte visą licenciją</string>
+    <string name="licenses_group_header">%1$s (%2$d bibliotekos)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">Nėra interneto ryšio. Patikrinkite tinklą ir bandykite dar kartą.</string>
+    <string name="error_unexpected">Įvyko netikėta klaida. Paleiskite programėlę iš naujo.</string>
+    <string name="error_unexpected_try_again">Įvyko netikėta klaida. Bandykite dar kartą.</string>
+    <string name="error_storage_detailed">Atminties klaida: %s</string>
+    <string name="error_network_detailed">Tinklo klaida: %s</string>
+    <string name="error_proof_generation_failed">Nepavyko sugeneruoti įrodymo: %s</string>
+    <string name="error_not_eligible">Neatitinkate šio verifikavimo reikalavimų.</string>
+    <string name="error_challenge_expired">Iššūkis pasibaigė arba nerastas. Pateikite naują užklausą.</string>
+    <string name="error_challenge_expired_scan_new">Šis iššūkis pasibaigė. Nuskaitykite naują QR kodą.</string>
+    <string name="error_request_out_of_order">Užklausa ne eilės tvarka. Bandykite dar kartą.</string>
+    <string name="error_too_many_requests">Per daug užklausų. Palaukite ir bandykite dar kartą.</string>
+    <string name="error_server">Serverio klaida. Bandykite vėliau.</string>
+    <string name="error_request_failed">Užklausa nepavyko (%d). Bandykite dar kartą.</string>
+    <string name="error_not_eligible_short">Neatitinkate šio verifikavimo reikalavimų</string>
+    <string name="error_challenge_not_found">Iššūkis nerastas</string>
+    <string name="error_complete_steps_in_order">Atlikite žingsnius nurodyta tvarka</string>
+    <string name="error_challenge_expired_short">Iššūkis pasibaigė</string>
+    <string name="error_authentication_cancelled">Autentifikavimas atšauktas. Patvirtinkite savo tapatybę, kad užbaigtumėte amžiaus verifikavimą.</string>
+    <string name="error_invalid_data_format_short">Netinkamas duomenų formatas. Bandykite dar kartą.</string>
+    <string name="error_storage_check_device">Atminties klaida. Patikrinkite įrenginio atmintį.</string>
+    <string name="error_network_check_connection">Tinklo klaida. Patikrinkite ryšį.</string>
+    <string name="error_proof_generation_failed_short">Nepavyko sugeneruoti įrodymo. Bandykite dar kartą.</string>
+    <string name="error_operation_in_progress_short">Vykdoma kita operacija.</string>
+    <string name="error_no_internet_short">Nėra interneto ryšio. Patikrinkite tinklą.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Nuskaityti verifikavimo QR kodą</string>
+    <string name="verification_verifying_title">Tikrinamas amžius</string>
+    <string name="verification_success_title">Amžius patvirtintas</string>
+    <string name="verification_failed_title">Verifikavimas nepavyko</string>
+    <string name="verification_processing_wait">Tai gali užtrukti kelias sekundes</string>
+    <string name="verification_success_message">Jūsų amžius buvo patvirtintas privačiai</string>
+    <string name="verification_return_to_site">Dabar galite grįžti į svetainę ir tęsti.</string>
+    <string name="verification_please_enter_code">Įveskite verifikavimo kodą. Kodas turi būti 12 skaitmenų trumpasis kodas arba visas verifikavimo URL iš tikrintojo.</string>
+    <string name="verification_error_occurred">Verifikavimo metu įvyko klaida</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Apdorojama...</string>
+    <string name="credential_list_verify_age_button">Patvirtinti amžių</string>
+    <string name="credential_list_generate_in_person_description">Generuoti kredencialą asmeniškai</string>
+    <string name="credential_list_scan_qr_title">Nuskaityti QR kodą</string>
+    <string name="credential_list_find_locations_title">Rasti vietas</string>
+    <string name="credential_section_my_credential">Mano kredencialas</string>
+    <string name="credential_section_managed">Valdomi kredencialai</string>
+    <string name="credential_list_get_credential_button">Gauti kredencialą</string>
+    <string name="credential_list_add_managed_button">Pridėti valdomą kredencialą</string>
+    <string name="credential_section_managed_empty">Pridėkite kredencialą asmeniui, kuriuo rūpinatės, pvz., vaikui.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Kredencialo informacija</string>
+    <string name="credential_detail_not_found">Kredencialas nerastas</string>
+    <string name="credential_detail_nickname">Slapyvardis</string>
+    <string name="credential_detail_no_nickname">Slapyvardis nenustatytas</string>
+    <string name="credential_detail_edit_nickname">Redaguoti slapyvardį</string>
+    <string name="credential_detail_status">Būsena</string>
+    <string name="credential_detail_delete">Ištrinti kredencialą</string>
+    <string name="credential_detail_delete_title">Ištrinti kredencialą</string>
+    <string name="credential_detail_delete_message">Ar tikrai norite ištrinti šį kredencialą? Šio veiksmo atšaukti negalima.</string>
+    <string name="credential_type_primary">Pagrindinis</string>
+    <string name="credential_type_managed">Valdomas</string>
+    <string name="credential_status_valid">Galiojantis</string>
+    <string name="credential_status_expired">Pasibaigęs</string>
+    <string name="credential_status_invalid">Negaliojantis</string>
+    <string name="action_save">Išsaugoti</string>
+    <string name="credential_slots_full_title">Pasiektas maksimalus kredencialų skaičius</string>
+    <string name="credential_slots_full_message">Pasiekėte maksimalų kredencialų skaičių. Ištrinkite esamą kredencialą, kad galėtumėte pridėti naują.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">Valdomas kredencialas</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">Patvirtinti amžių %1$s?</string>
+    <string name="managed_confirm_message">Ketinate patvirtinti amžių naudodami %1$s valdomą kredencialą.</string>
+    <string name="managed_confirm_proceed">Patvirtinti %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Kuriamas įrodymas: %1$s</string>
+    <string name="verification_age_verified_for">Amžius patvirtintas: %1$s</string>
+    <string name="deeplink_verification_age_verified_for">Amžius patvirtintas: %1$s</string>
+    <string name="attestation_managed_credential_received">%1$s kredencialas gautas!</string>
+    <string name="attestation_managed_credential_stored">Jūsų vaiko kredencialas saugiai išsaugotas.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">Ištrinti %1$s kredencialą?</string>
+    <string name="credential_detail_delete_managed_message">Ar tikrai norite ištrinti šį %1$s valdomą kredencialą? Šio veiksmo atšaukti negalima. Norėdami jį pakeisti, turėsite vėl apsilankyti pas išdavėją.</string>
+    <string name="credential_detail_save_error">Nepavyko išsaugoti slapyvardžio</string>
+    <string name="credential_detail_delete_error">Nepavyko ištrinti kredencialo</string>
+    <string name="accessibility_saving">Išsaugoma...</string>
+    <string name="accessibility_deleting">Ištrinama...</string>
+    <string name="accessibility_loading">Kraunama, palaukite</string>
+    <string name="accessibility_issuing_credential">Išduodamas kredencialas, palaukite</string>
+    <string name="dialog_delete_all_credentials_title">Ištrinti visus kredencialus?</string>
+    <string name="dialog_delete_all_credentials_message">Tai ištrins Jūsų kredencialą ir visus vaikų valdomus kredencialus. Šio veiksmo atšaukti negalima.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">Valdomas</string>
+    <string name="credential_slots_count">%1$d iš 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Ruošiamas verifikavimas...</string>
+    <string name="deeplink_verification_checking_credential">Tikrinamas kredencialas...</string>
+    <string name="deeplink_verification_processing_challenge">Apdorojamas iššūkis...</string>
+    <string name="deeplink_verification_creating_proof">Kuriamas saugus įrodymas...</string>
+    <string name="deeplink_verification_submitting_proof">Pateikiamas įrodymas...</string>
+    <string name="deeplink_verification_success">✔ Amžius sėkmingai patvirtintas</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">Kredencialas nerastas. Pirmiausia nustatykite savo kredencialą.</string>
+    <string name="deeplink_verification_error_failed_challenge">Nepavyko apdoroti verifikavimo iššūkio</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Nepavyksta rodyti autentifikavimo raginimo</string>
+    <string name="deeplink_verification_error_failed_proof">Nepavyko sukurti amžiaus įrodymo</string>
+    <string name="deeplink_verification_error_verification_failed">Verifikavimas nepavyko</string>
+    <string name="deeplink_verification_error_unexpected">Įvyko netikėta klaida</string>
+    <string name="deeplink_verification_error_no_credential_selected">Kredencialas nepasirinktas. Bandykite dar kartą.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Pasirinkti kredencialą</string>
+    <string name="deeplink_verification_select_credential_subtitle">Galimi keli kredencialai. Pasirinkite, kurį naudoti šiam verifikavimui.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Tikrinamas amžius</string>
+    <string name="deeplink_verification_title_verified">Patvirtinta</string>
+    <string name="deeplink_verification_title_failed">Verifikavimas nepavyko</string>
+    <string name="deeplink_verification_please_wait">Palaukite...</string>
+    <string name="deeplink_verification_age_verified">Amžius patvirtintas!</string>
+    <string name="deeplink_verification_under_age_verified">Patvirtinta: jaunesnis nei %1$d</string>
+    <string name="deeplink_verification_returning_browser">Grįžtama į naršyklę...</string>
+    <string name="deeplink_verification_return_to_browser">Grįžti į naršyklę</string>
+    <string name="deeplink_verification_failed_title">Verifikavimas nepavyko</string>
+    <string name="deeplink_verification_error_occurred">Verifikavimo metu įvyko klaida</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">IŠDAVIMO PROCESAS</string>
+    <string name="officer_issuance_process_steps">1. Patikrinkite naudotojo fizinį asmens tapatybę patvirtinantį dokumentą\n2. Įveskite jo gimimo datą\n3. Patikrinkite, ar informacija tiksliai sutampa\n4. Išduokite kredencialą su patvirtinimo QR (greito atsakymo) kodu\n5. Naudotojas nuskaito QR kodą ir gauna kredencialą</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">Nepavyko sugeneruoti QR kodo</string>
+    <string name="officer_attestation_ready_title">Patvirtinimas paruoštas</string>
+    <string name="officer_attestation_scan_instruction">Naudotojas turėtų nuskaityti šį QR kodą savo Provii Wallet programėle</string>
+    <string name="officer_attestation_deeplink_label">PATVIRTINIMO GILIOJI NUORODA</string>
+    <string name="officer_wait_for_attestation_scan">Palaukite, kol naudotojas nuskaitys</string>
+    <string name="officer_attestation_info">Kredencialas bus sugeneruotas jų įrenginyje</string>
+    <string name="officer_attestation_complete">Patvirtinimas baigtas</string>
+    <string name="officer_user_will_complete_credential">Naudotojas užbaigs kredencialo generavimą savo įrenginyje</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Dekoduojami patvirtinimo duomenys...</string>
+    <string name="attestation_generating_randomness">Generuojamas saugus atsitiktinumas...</string>
+    <string name="attestation_sending">Siunčiama išdavėjui...</string>
+    <string name="attestation_verifying">Tikrinamas įsipareigojimas...</string>
+    <string name="attestation_storing">Išsaugomas kredencialas...</string>
+    <string name="attestation_complete">Kredencialas baigtas!</string>
+    <string name="attestation_error_invalid_data">Netinkami patvirtinimo duomenys</string>
+    <string name="attestation_error_expired">Patvirtinimo laikas baigėsi</string>
+    <string name="attestation_error_network">Tinklo klaida – patikrinkite ryšį</string>
+    <string name="attestation_error_unexpected">Įvyko netikėta klaida</string>
+    <string name="attestation_title_processing">Apdorojamas patvirtinimas</string>
+    <string name="attestation_title_success">Kredencialas gautas</string>
+    <string name="attestation_title_failed">Išdavimas nepavyko</string>
+    <string name="attestation_secure_issuance">Saugus išdavimas</string>
+    <string name="attestation_privacy_preserving">Kredencialo išdavimas išsaugant privatumą</string>
+    <string name="attestation_may_take_seconds">Tai gali užtrukti kelias sekundes</string>
+    <string name="attestation_keep_app_open">Neuždarykite programėlės</string>
+    <string name="attestation_credential_received">Kredencialas gautas!</string>
+    <string name="attestation_credential_stored_description">Jūsų amžiaus verifikavimo kredencialas saugiai išsaugotas</string>
+    <string name="attestation_issuer_verified">Išdavėjas patvirtintas</string>
+    <string name="attestation_failed_title">Išdavimas nepavyko</string>
+    <string name="attestation_scan_qr_instead">Nuskaityti QR kodą</string>
+    <string name="attestation_go_back">Grįžti atgal</string>
+    <string name="attestation_step_decode">Dekoduoti</string>
+    <string name="attestation_step_generate">Generuoti</string>
+    <string name="attestation_step_send">Siųsti</string>
+    <string name="attestation_step_verify">Tikrinti</string>
+    <string name="attestation_step_store">Išsaugoti</string>
+    <string name="attestation_step_complete">Baigta</string>
+    <string name="accessibility_attestation_encrypted_description">Apdorojamas užšifruotas patvirtinimas</string>
+    <string name="accessibility_attestation_success_description">Sėkmės varnelė, nurodanti, kad kredencialas gautas</string>
+    <string name="accessibility_attestation_error_description">Klaidos piktograma, nurodanti, kad išdavimas nepavyko</string>
+    <string name="accessibility_step_complete">%1$s žingsnis baigtas</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Kredencialo gavėjas</string>
+    <string name="attestation_recipient_prompt">Šis kredencialas skirtas\u2026</string>
+    <string name="attestation_recipient_me">Man</string>
+    <string name="attestation_recipient_child">Vaikui</string>
+    <string name="attestation_nickname_title">Vaiko slapyvardis</string>
+    <string name="attestation_nickname_prompt">Įveskite slapyvardį, kad galėtumėte atskirti kredencialus</string>
+    <string name="attestation_nickname_placeholder">pvz., Aleksas</string>
+    <string name="attestation_nickname_continue">Tęsti</string>
+    <string name="attestation_nickname_back">Atgal</string>
+    <string name="accessibility_attestation_recipient_heading">Pasirinkite, kam skirtas šis kredencialas</string>
+    <string name="accessibility_attestation_nickname_heading">Įveskite vaiko slapyvardį</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Netinkamas pareigūno ID formatas</string>
+    <string name="officer_auth_error_challenge_failed">Nepavyko gauti YubiKey iššūkio: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Palieskite YubiKey autentifikavimui</string>
+    <string name="officer_auth_error_touch_timeout">YubiKey palietimo skirtasis laikas</string>
+    <string name="officer_auth_error_verify_document_dob">Patikrinkite, ar dokumentas ir gimimo data sutampa</string>
+    <string name="officer_auth_error_invalid_date_format">Netinkamas datos formatas. Naudokite YYYY-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">Naudotojas turi būti 18 metų ar vyresnis</string>
+    <string name="officer_auth_error_not_authenticated">Neautentifikuota. Pirmiausia įveskite savo pareigūno ID.</string>
+    <string name="officer_auth_error_issue_failed">Nepavyko išduoti kredencialo</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Palieskite, kad peržiūrėtumėte</string>
+    <string name="gesture_desc_long_press_options">, ilgai spauskite, kad pamatytumėte parinktis</string>
+    <string name="gesture_desc_swipe_left">, braukite kairėn, kad matytumėte daugiau veiksmų</string>
+    <string name="gesture_desc_swipe_right">, braukite dešinėn, kad matytumėte daugiau veiksmų</string>
+    <string name="gesture_desc_tap_to_activate">Palieskite, kad suaktyvintumėte</string>
+    <string name="gesture_desc_long_press_format">. Ilgas paspaudimas: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Kartoti</string>
+    <string name="main_activity_reset_redownload">Atstatyti ir atsisiųsti iš naujo</string>
+    <string name="main_activity_show_debug_info">Rodyti Debug informaciją</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Prieinamumo nustatymai</string>
+    <string name="search_item_accessibility_settings_subtitle">Tinkinkite savo patirtį</string>
+    <string name="search_item_large_text_title">Didelis tekstas</string>
+    <string name="search_item_large_text_subtitle">Padidinti teksto dydį</string>
+    <string name="search_item_high_contrast_title">Didelis kontrastas</string>
+    <string name="search_item_high_contrast_subtitle">Pagerinti matomumą</string>
+    <string name="search_item_voice_input_title">Balso įvestis</string>
+    <string name="search_item_voice_input_subtitle">Valdyti balsu</string>
+    <string name="search_item_manual_code_entry_title">Rankinis kodo įvedimas</string>
+    <string name="search_item_manual_code_entry_subtitle">Įvesti kodus vietoje nuskaitymo</string>
+    <string name="search_item_simplified_ui_title">Supaprastinta naudotojo sąsaja</string>
+    <string name="search_item_simplified_ui_subtitle">Sumažinti vizualinį sudėtingumą</string>
+    <string name="search_item_color_blindness_title">Spalvų aklumo palaikymas</string>
+    <string name="search_item_color_blindness_subtitle">Koreguoti spalvas geresniam matomumui</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Nustatymai</string>
+    <string name="search_item_settings_subtitle">Programėlės konfigūracija</string>
+    <string name="search_item_language_title">Kalba</string>
+    <string name="search_item_language_subtitle">Keisti programėlės kalbą</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Mano kredencialai</string>
+    <string name="search_item_credentials_subtitle">Peržiūrėti savo kredencialus</string>
+    <string name="search_item_get_credential_title">Gauti kredencialą</string>
+    <string name="search_item_get_credential_subtitle">Rasti išdavėjus</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Pagalba</string>
+    <string name="search_item_help_subtitle">Gauti pagalbą</string>
+    <string name="search_item_privacy_title">Privatumo apsauga</string>
+    <string name="search_item_privacy_subtitle">Kaip apsaugomi Jūsų duomenys</string>
+    <string name="search_item_verification_title">Amžiaus verifikavimas</string>
+    <string name="search_item_verification_subtitle">Įrodyti savo amžių</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Koduotas atsarginis registras Sandbox aplinkai</string>
+    <string name="issuer_fallback_production_description">Koduotas atsarginis registras gamybinei aplinkai</string>
+    <string name="issuer_fallback_category_government">Valdžios institucija</string>
+    <string name="issuer_fallback_category_government_description">Valdžios institucijų išduoti kredencialai</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii Sandbox išdavėjas</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Oficialus Provii Sandbox išdavėjas testavimui</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Apsilankyti Sandbox išdavėjo portale</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Oficialus Provii kredencialų išdavėjas</string>
+    <string name="issuer_fallback_production_issuer_instructions">Apsilankyti vietos DMV skyriuje</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">Gimimo data negali būti ateityje</string>
+    <string name="validation_error_invalid_date_format">Netinkamas datos formatas</string>
+    <string name="validation_error_officer_id_too_short">Per trumpas pareigūno identifikavimo numeris</string>
+    <string name="validation_error_invalid_officer_id_format">Netinkamas pareigūno identifikavimo numerio formatas</string>
+    <string name="validation_error_empty_qr_code">Tuščias QR kodas</string>
+    <string name="validation_error_qr_code_too_large">QR kodas per didelis</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">Dabar esate kūrėjas!</string>
+    <string name="sandbox_toast_enabled">Sandbox režimas įjungtas\nNaudojama bandomoji aplinka</string>
+    <string name="sandbox_toast_disabled">Gamybinis režimas įjungtas\nNaudojama gamybinė aplinka</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">Liko 1 žingsnis iki kūrėjo režimo</string>
+    <string name="sandbox_toast_steps_away">Liko %1$d žingsniai iki kūrėjo režimo</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">YubiKey neprijungtas</string>
+    <string name="yubikey_error_timeout">Skirtasis YubiKey palietimo laikas. Palieskite raktą, kai jis mirksi.</string>
+    <string name="yubikey_error_not_supported">Iššūkio-atsako funkcija niekonfigūruota šiame YubiKey lizdas</string>
+    <string name="yubikey_error_no_slot">2 lizde nesukonfigūruotas HMAC (maišos pagrindu veikiantis pranešimų autentifikavimo kodas) SHA1 iššūkis-atsakas</string>
+    <string name="yubikey_error_hmac_failed">HMAC (maišos pagrindu veikiantis pranešimų autentifikavimo kodas) skaičiavimas nepavyko: %s</string>
+    <string name="yubikey_error_session_failed">Nepavyko prisijungti prie YubiKey: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">Piniginė neinicijuota</string>
+    <string name="wallet_error_proving_key_not_found">Įrodymo raktas nerastas – atsisiųskite iš naujo</string>
+    <string name="wallet_error_proving_key_not_readable">Negalima perskaityti įrodymo rakto failo</string>
+    <string name="wallet_error_out_of_memory">Nepakanka atminties – paleiskite programėlę iš naujo</string>
+    <string name="wallet_error_prover_error">Įrodymo klaida: %s</string>
+    <string name="wallet_error_ffi_error">FFI klaida: %s</string>
+    <string name="wallet_error_prover_init_failed">Nepavyko inicijuoti įrodymo priemonės: %s</string>
+    <string name="wallet_error_prover_verification_failed">Įrodymo priemonės inicijavimo tikrinimas nepavyko</string>
+    <string name="wallet_error_verifier_url_update_failed">Nepavyko atnaujinti tikrintojo URL (žiniatinklio adreso)! Tikėtasi %1$s, bet gauta %2$s</string>
+    <string name="wallet_error_wallet_still_null">Piniginė vis dar tuščia po inicijavimo</string>
+    <string name="wallet_error_credential_not_found">Kredencialas nerastas</string>
+    <string name="wallet_error_credential_access_failed">Negalima pasiekti kredencialo: %s</string>
+    <string name="wallet_error_invalid_format">Netinkamas formatas: %s</string>
+    <string name="wallet_error_not_initialized_short">Įrodymo priemonė neinicijuota</string>
+    <string name="wallet_error_proving_key_unavailable">Įrodymo raktas nepasiekiamas. Būtina sąranka.</string>
+    <string name="wallet_error_storage_init_failed">Atminties inicijavimas nepavyko</string>
+    <string name="wallet_error_biometric_unavailable">Biometrinis autentifikavimas negalimas</string>
+    <string name="wallet_error_auth_failed">Autentifikavimas nepavyko</string>
+    <string name="wallet_error_sandbox_disabled">Įjunkite Sandbox režimą, kad galėtumėte generuoti bandomuosius kredencialus</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Negalima gauti Sandbox kredencialų. Patikrinkite interneto ryšį.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Reikalingas autentifikavimas</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Patvirtinkite tapatybę amžiaus įrodymui sukurti</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Pasiekti saugią atmintį</string>
+    <string name="keystore_biometric_prompt_cancel">Atšaukti</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, išplėsta, rodomas visas licencijos tekstas</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, sutraukta, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">Nėra</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Mobilusis ryšys</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Nežinoma</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">Kontrasto lygiai</string>
+    <string name="help_topic_extra_large_text_title">Labai didelis tekstas</string>
+    <string name="help_topic_reduce_transparency_title">Sumažinti skaidrumą</string>
+    <string name="help_topic_color_blind_modes_title">Spalvų aklumo režimai</string>
+    <string name="help_topic_line_spacing_title">Eilučių tarpai</string>
+    <string name="help_topic_paragraph_spacing_title">Pastraipų tarpai</string>
+    <string name="help_topic_letter_spacing_title">Raidžių tarpai</string>
+    <string name="help_topic_text_width_title">Teksto plotis</string>
+    <string name="help_topic_touch_targets_title">Didesni lietimo taikiniai</string>
+    <string name="help_topic_reduce_motion_title">Sumažinti judėjimą</string>
+    <string name="help_topic_timeout_behavior_title">Laiko limito elgsena</string>
+    <string name="help_topic_simplified_gestures_title">Supaprastinti gestai</string>
+    <string name="help_topic_haptic_feedback_title">Haptinis atsakas</string>
+    <string name="help_topic_data_preservation_title">Duomenų išsaugojimas</string>
+    <string name="help_topic_simplified_ui_title">Supaprastinta naudotojo sąsaja</string>
+    <string name="help_topic_step_indicators_title">Žingsnių indikatoriai</string>
+    <string name="help_topic_verbose_descriptions_title">Išsamūs aprašymai</string>
+    <string name="help_topic_confirm_actions_title">Patvirtinti veiksmus</string>
+    <string name="help_topic_reading_level_title">Supaprastintas skaitymo lygis</string>
+    <string name="help_topic_help_system_title">Pagalbos sistema</string>
+    <string name="help_topic_manual_code_entry_title">Rankinis kodo įvedimas</string>
+    <string name="help_topic_voice_input_title">Balso įvestis</string>
+    <string name="help_topic_screen_reader_title">Ekrano skaitytuvo palaikymas</string>
+    <string name="help_topic_accessibility_profiles_title">Greitos sąrankos profiliai</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">Valdykite kontrasto santykį tarp teksto ir fono:\n\n• Standartinis: numatytosios programėlės spalvos\n• Didelis (AA): 4,5:1 kontrasto santykis\n• Maksimalus (AAA): 7:1+ kontrasto santykis\n\nDidesnis kontrastas palengvina teksto skaitymą, ypač ryškioje aplinkoje ar naudotojams su silpnu regėjimu.\n\nWCAG AAA atitikčiai reikalingas maksimalus kontrastas.</string>
+    <string name="help_topic_extra_large_text_text">Padidina visų teksto dydžių 50 % visoje programėlėje.\n\nTai palengvina teksto skaitymą naudotojams su:\n• Silpnu regėjimu\n• Su amžiumi susijusiais regėjimo pokyčiais\n• Skaitymo sunkumais\n\nDerinama su sistemos šrifto dydžio nustatymais didžiausiam lankstumui.</string>
+    <string name="help_topic_reduce_transparency_text">Pašalina permatomas perdangas ir suliejimo efektus.\n\nNauda:\n• Aiškesnė vizualinė hierarchija\n• Geresnis teksto skaitomumas\n• Mažiau vizualinio triukšmo\n• Mažesnė kognityvinė apkrova\n\nRekomenduojama naudotojams su silpnu regėjimu ar kognityviniais sunkumais.</string>
+    <string name="help_topic_color_blind_modes_text">Koreguoja spalvas skirtingų tipų spalvų aklumui:\n\n• Protanopija: raudono spalvų aklumas\n• Deuteranopija: žalio spalvų aklumas\n• Tritanopija: mėlyno spalvų aklumas\n• Monochromas: visiškas spalvų aklumas\n\nKiekvienas režimas naudoja atidžiai parinktas spalvas, atskiriamas esant konkrečiam spalvų regėjimo sutrikimui.</string>
+    <string name="help_topic_line_spacing_text">Reguliuoja tarpus tarp teksto eilučių (1,0x – 2,0x).\n\n• Numatytasis: 1,0x\n• Atitinka AAA: 1,5x ar daugiau\n\nPadidintas eilučių tarpas:\n• Pagerina skaitymo supratimą\n• Mažina akių nuovargį\n• Padeda naudotojams su disleksija\n• Mažina teksto blokų perkrovą</string>
+    <string name="help_topic_paragraph_spacing_text">Reguliuoja tarpus tarp pastraipų (1,0x – 3,0x).\n\n• Numatytasis: 1,0x\n• Atitinka AAA: 2,0x ar daugiau\n\nPadidintas pastraipų tarpas:\n• Aiškiai atskiria mintis\n• Pagerina vizualinį organizavimą\n• Mažina kognityvinę apkrovą\n• Padeda išlaikyti skaitymo poziciją</string>
+    <string name="help_topic_letter_spacing_text">Reguliuoja tarpus tarp raidžių (0,0 em – 0,2 em).\n\n• Numatytasis: 0,0 em\n• Atitinka AAA: 0,12 em ar daugiau\n\nPadidintas raidžių tarpas:\n• Aiškiau atskiria atskiras raides\n• Padeda naudotojams su disleksija\n• Pagerina skaitymo tikslumą\n• Sumažina raidžių painiojimą</string>
+    <string name="help_topic_text_width_text">Apriboja eilutės ilgį lengvesniam skaitymui:\n\n• Visas plotis: be apribojimo\n• Patogus: 80 simbolių (rekomenduojama)\n• Siauras: 60 simbolių\n\nTyrimai rodo, kad optimalus skaitymas vyksta esant 60–80 simbolių eilutėje. Trumpesnės eilutės mažina akių judėjimą ir pagerina supratimą.</string>
+    <string name="help_topic_touch_targets_text">Padidina minimalų lietimo taikinio dydį iki 60 dp (nuo 44 dp).\n\nNauda:\n• Lengviau paspausti mygtukus ir valdiklius\n• Mažiau atsitiktinių paspaudimų\n• Padeda naudotojams su motorikos sutrikimais\n• Geriau naudojant viena ranka\n\nWCAG AAA reikalauja minimaliai 60 dp.</string>
+    <string name="help_topic_reduce_motion_text">Pašalina visas animacijas ir perėjimus.\n\nNauda:\n• Apsaugo nuo judėjimo ligos\n• Mažina blaškymąsi\n• Mažina kognityvinę apkrovą\n• Gerina koncentraciją\n\nRekomenduojama naudotojams su:\n• Vestibuliniais sutrikimais\n• Dėmesio sunkumais\n• Jautrumu judėjimui</string>
+    <string name="help_topic_timeout_behavior_text">Valdo automatinį laiko limitą verifikavimo ekranuose:\n\n• Be laiko limito (AAA): neribojamas laikas\n• Standartinis: 30 sekundžių\n• Prailgintas: 60 sekundžių\n\nWCAG AAA reikalauja galimybės be laiko limito naudotojams, kuriems reikia daugiau laiko užduotims atlikti.\n\nFormų duomenys automatiškai išsaugomi prieš laiko limitą.</string>
+    <string name="help_topic_simplified_gestures_text">Sudėtingus gestus keičia paprastomis alternatyvomis:\n\n• Braukimas → mygtuko paspaudimas\n• Ilgas paspaudimas → įprastas paspaudimas su patvirtinimu\n• Suspaudimas / didinimas → mygtukai\n\nPadeda naudotojams su:\n• Motorikos sutrikimais\n• Tremoru\n• Ribotos rankų judesių amplitudės\n• Jutiklinio ekrano sunkumais</string>
+    <string name="help_topic_haptic_feedback_text">Teikia vibracijos atsaką veiksmams.\n\nNauda:\n• Patvirtina mygtukų paspaudimus\n• Nurodo klaidas\n• Teikia lytėjimo patvirtinimą\n\nGali būti išjungtas naudotojams, kurie:\n• Jį laiko blaškančiu\n• Turi jutiminį jautrumą\n• Teikia pirmenybę tyliam veikimui</string>
+    <string name="help_topic_data_preservation_text">Automatiškai išsaugo formų duomenis prieš laiko limitą.\n\nFunkcijos:\n• Įspėjimas prieš 10 sekundžių iki laiko limito\n• Galimybė išsaugoti ar atmesti duomenis\n• Automatinis atkūrimas grįžus\n• 24 valandų duomenų išlaikymas\n\nUžtikrina, kad duomenys neprarandami, jei reikia daugiau laiko ar kyla trukdžių.</string>
+    <string name="help_topic_simplified_ui_text">Sumažina vizualinį sudėtingumą:\n\n• Vienu metu rodoma mažiau UI elementų\n• Didesni, aiškesni mygtukai\n• Daugiau tuščios erdvės\n• Supaprastinti išdėstymai\n\nNauda:\n• Lengviau suprasti\n• Mažiau perkrauna\n• Geresnis susitelkimas\n• Mažesnė kognityvinė apkrova</string>
+    <string name="help_topic_step_indicators_text">Rodo pažangą kelių žingsnių procesuose.\n\nRodoma:\n• Dabartinio žingsnio numeris\n• Bendras žingsnių skaičius\n• Pažangos vizualizacija\n\nNauda:\n• Mažina nerimą\n• Nustato aiškius lūkesčius\n• Padeda išlaikyti orientaciją\n• Rodo baigimo pažangą</string>
+    <string name="help_topic_verbose_descriptions_text">Teikia papildomą kontekstą ir paaiškinimus:\n\n• Ilgesni mygtukų žymekliai\n• Išsamesnės instrukcijos\n• Papildomos užuominos\n• Aiškesni klaidų pranešimai\n\nPadeda naudotojams:\n• Suprasti veiksmus prieš juos atliekant\n• Vengti klaidų\n• Išmokti programėlės funkcijas\n• Įgyti pasitikėjimą</string>
+    <string name="help_topic_confirm_actions_text">Reikalauja patvirtinimo svarbių veiksmų:\n\n• Kredencialų ištrynimas\n• Nustatymų keitimas\n• Duomenų valymas\n\nWCAG AAA reikalauja patvirtinimo visiems ardomiesiems veiksmams.\n\nNauda:\n• Apsaugo nuo atsitiktinių klaidų\n• Leidžia peržiūrėti prieš veiksmą\n• Mažina nerimą\n• Suteikia antrą galimybę</string>
+    <string name="help_topic_reading_level_text">Naudoja paprastesnę kalbą (7–9 klasės lygis):\n\n• Trumpesni sakiniai\n• Įprasti žodžiai vietoje žargono\n• Aiški, tiesioginė kalba\n• Mažiau techninių terminų\n\nAtitinka WCAG AAA, kai įjungta.\n\nNauda:\n• Lengviau suprasti\n• Greitesnis suvokimas\n• Geriau ne gimtakalbiams\n• Mažesnė kognityvinė apkrova</string>
+    <string name="help_topic_help_system_text">Kontekstinė pagalba prieinama visoje programėlėje.\n\nFunkcijos:\n• 27 pagalbos temos\n• Ieškomas pagalbos centras\n• Susijusių temų naršymas\n• Techninis žodynas\n\nGaukite pagalbą iš:\n• Nustatymų ekranų\n• Sudėtingų funkcijų\n• Klaidų pranešimų\n• Bet kur, kur matote pagalbos piktogramą</string>
+    <string name="help_topic_manual_code_entry_text">Įveskite QR kodo duomenis rankiniu būdu, o ne nuskaitykite.\n\nNauda:\n• Veikia, kai prieiga prie kameros negalima\n• Padeda naudotojams su motorikos sunkumais\n• Geriau prastoje apšvietime\n• Nereikia laikyti telefono ramiai\n\nAlternatyva kamera pagrįstam QR nuskaitymui.</string>
+    <string name="help_topic_voice_input_text">Naudokite balsą tekstui įvesti vietoje rinkimo.\n\nNauda:\n• Laisvų rankų įvestis\n• Greitesnė nei rinkimas\n• Padeda naudotojams su motorikos sutrikimais\n• Mažina pasikartojančią įtampą\n\nNaudoja įrenginio integruotą kalbos atpažinimą.</string>
+    <string name="help_topic_screen_reader_text">Visiškas TalkBack ekrano skaitytuvo palaikymas.\n\nFunkcijos:\n• Visi UI elementai pažymėti\n• Tinkama antraščių struktūra\n• Logine naršymo tvarka\n• Pasirinktinės užuominos sudėtingiems veiksmams\n\nProgramėlė automatiškai įjungia:\n• Išsamius aprašymus\n• Patobulintos lietimo taikinius\n\nkai aptinkamas TalkBack.</string>
+    <string name="help_topic_accessibility_profiles_text">Iš anksto sukonfigūruoti prieinamumo profiliai:\n\n• Regėjimo negalia: didelis kontrastas, didelis tekstas, haptinis atsakas\n• Motorikos negalia: dideli taikiniai, prailginti laiko limitai, patvirtinimai\n• Kognityvinis: supaprastinta sąsaja, žingsnių indikatoriai, aprašymai\n• Vyresnio amžiaus: didelis tekstas, taikiniai, supaprastinta sąsaja, sumažintas judėjimas\n• Numatytasis: atstatyti visus nustatymus\n\nKiekvienas profilis įjungia naudingiausius nustatymus tai naudotojų grupei. Po profilio pritaikymo galite toliau tinkinti.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">Amžiaus verifikavimas</string>
+    <string name="content_age_verification_explanation">Palaukite, kol saugiai patvirtinsime Jūsų amžių naudodami nulinių žinių įrodymus. Jūsų gimimo data niekada nėra dalijamasi su tikrintoju.</string>
+    <string name="content_age_verification_instructions">Nukreipkite kamerą į verifikavimo QR kodą. Kodas bus nuskaitytas automatiškai, kai aptiktas.</string>
+    <string name="content_age_verification_success">Jūsų amžius sėkmingai patvirtintas. Tikrintojas žino, kad atitinkate jo amžiaus reikalavimą, nesužinodamas Jūsų tikrosios gimimo datos.</string>
+    <string name="content_age_verification_failed">Verifikavimas nepavyko. Pabandykite nuskaityti QR kodą dar kartą arba naudokite rankinį kodo įvedimą.</string>
+    <string name="content_credential_issuance_title">Kredencialo išdavimas</string>
+    <string name="content_credential_issuance_explanation">Nuskaitykite įgalioto išdavėjo pateiktą QR kodą, kad gautumėte savo skaitmeninį amžiaus kredencialą.</string>
+    <string name="content_credential_issuance_instructions">Nukreipkite kamerą į pareigūno rodomą išdavimo QR kodą. Jūsų kredencialas bus sugeneruotas Jūsų įrenginyje.</string>
+    <string name="content_credential_issuance_success">Kredencialas sėkmingai sukurtas. Dabar galite naudoti šį kredencialą amžiaus verifikavimui.</string>
+    <string name="content_credential_description">Kredencialas yra kriptografiškai pasirašytas Jūsų tapatybės įrodymas, įgalinantis privatumo apsaugojantį verifikavimą.</string>
+    <string name="content_zero_knowledge_explanation">Nulinių žinių įrodymai leidžia įrodyti, kad atitinkate amžiaus reikalavimą, neatskleidžiant tikrojo amžiaus.</string>
+    <string name="content_setup_proving_key">Atsiunčiamas kriptografinis įrodymo raktas, reikalingas nulinių žinių įrodymams generuoti</string>
+    <string name="content_processing_challenge">Apdorojama verifikavimo iššūkis</string>
+    <string name="content_creating_proof">Kuriamas nulinių žinių amžiaus įrodymas</string>
+    <string name="content_submitting_proof">Pateikiamas įrodymas tikrintojui</string>
+    <string name="content_error_no_credential">Kredencialo nėra. Pirmiausia gaukite kredencialą iš įgalioto išdavėjo.</string>
+    <string name="content_error_network_failed">Tinklo ryšys nepavyko. Patikrinkite interneto ryšį ir bandykite dar kartą.</string>
+    <string name="content_error_invalid_qr">Netinkamas QR kodas. Įsitikinkite, kad nuskaitote teisingą verifikavimo kodą.</string>
+    <string name="content_error_verification_failed">Verifikavimas nepavyko. Serveris negalėjo patvirtinti Jūsų įrodymo.</string>
+    <string name="content_officer_authentication_title">Pareigūno autentifikavimas</string>
+    <string name="content_officer_issuance_title">Kredencialo išdavimas</string>
+    <string name="content_officer_dob_prompt">Įveskite pareiškėjo patvirtintą gimimo datą iš oficialaus asmens tapatybę patvirtinančio dokumento.</string>
+    <string name="content_onboarding_welcome">Sveiki atvykę į Provii Wallet – privatumo apsaugojantį skaitmeninį amžiaus verifikavimo sprendimą.</string>
+    <string name="content_onboarding_privacy">Jūsų gimimo data saugoma saugiai Jūsų įrenginyje ir niekada nėra perduodama tikrintojams.</string>
+    <string name="content_onboarding_get_started">Norėdami pradėti, apsilankykite pas įgaliotą išdavėją, kad gautumėte savo skaitmeninį amžiaus kredencialą.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">Patikrinkite savo amžių</string>
+    <string name="content_age_verification_explanation_simplified">Tikriname Jūsų amžių. Nematysime ir nesidalysime Jūsų gimimo diena.</string>
+    <string name="content_age_verification_instructions_simplified">Nukreipkite kamerą į QR kodą. Ji nuskaitys pati.</string>
+    <string name="content_age_verification_success_simplified">Puiku! Svetainė žino, kad esate pakankamai senas. Ji nežino Jūsų gimimo dienos.</string>
+    <string name="content_age_verification_failed_simplified">Nepavyko. Bandykite nuskaityti dar kartą arba vietoje to įveskite kodą.</string>
+    <string name="content_credential_issuance_title_simplified">Gauti savo asmens tapatybės kortelę</string>
+    <string name="content_credential_issuance_explanation_simplified">Nuskaitykite kodą iš valdžios įstaigos, kad gautumėte skaitmeninę asmens tapatybę.</string>
+    <string name="content_credential_issuance_instructions_simplified">Nukreipkite kamerą į kodą. Jūsų asmens tapatybė bus išsaugota telefone.</string>
+    <string name="content_credential_issuance_success_simplified">Atlikta! Dabar galite naudoti savo skaitmeninę asmens tapatybę amžiui įrodyti.</string>
+    <string name="content_credential_description_simplified">Kredencialas yra tarsi skaitmeninė asmens tapatybės kortelė, kuri įrodo, kas Jūs esate, nesidalijant privačia informacija.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Galite įrodyti, kad esate pakankamai senas, nesakydami niekam tikrojo amžiaus.</string>
+    <string name="content_setup_proving_key_simplified">Atsiunčiami saugos failai, reikalingi programėlei veikti</string>
+    <string name="content_processing_challenge_simplified">Skaitoma amžiaus tikrinimo užklausa</string>
+    <string name="content_creating_proof_simplified">Kuriamas Jūsų amžiaus įrodymas</string>
+    <string name="content_submitting_proof_simplified">Siunčiamas įrodymas svetainei</string>
+    <string name="content_error_no_credential_simplified">Dar neturite asmens tapatybės. Pirmiausia apsilankykite valdžios įstaigoje, kad ją gautumėte.</string>
+    <string name="content_error_network_failed_simplified">Nepavyksta prisijungti prie interneto. Patikrinkite Wi-Fi ar duomenis ir bandykite dar kartą.</string>
+    <string name="content_error_invalid_qr_simplified">Kodas atrodo netinkamas. Įsitikinkite, kad nuskaitote teisingą kodą.</string>
+    <string name="content_error_verification_failed_simplified">Nepavyko. Svetainė negalėjo patikrinti Jūsų įrodymo. Bandykite dar kartą.</string>
+    <string name="content_officer_authentication_title_simplified">Pareigūno prisijungimas</string>
+    <string name="content_officer_issuance_title_simplified">Sukurti asmens tapatybės kortelę</string>
+    <string name="content_officer_dob_prompt_simplified">Įveskite asmens gimimo dieną iš jo oficialios asmens tapatybės.</string>
+    <string name="content_onboarding_welcome_simplified">Sveiki atvykę į Provii Wallet – įrodykite amžių privačiai.</string>
+    <string name="content_onboarding_privacy_simplified">Jūsų gimimo diena lieka telefone. Niekas kitas jos negali matyti.</string>
+    <string name="content_onboarding_get_started_simplified">Norėdami pradėti, apsilankykite valdžios įstaigoje, kad gautumėte skaitmeninę asmens tapatybę.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Greitas atsakas (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Asmeninis identifikavimo numeris (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">Gimimo data (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Identifikavimas (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">Naudotojo sąsaja (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Universalus išteklių adresatorius (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Programų programavimo sąsaja (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">Pristabdyti animacijas</string>
+    <string name="animation_resume_animations">Tęsti animacijas</string>
+    <string name="animation_pause_button_text">Pristabdyti</string>
+    <string name="animation_resume_button_text">Tęsti</string>
+    <string name="animation_toggles_playback_hint">Perjungia animacijos atkūrimą</string>
+    <string name="animation_paused_announcement">Animacijos pristabdytos</string>
+    <string name="animation_resumed_announcement">Animacijos atnaujintos</string>
+    <string name="animation_active_count">%d aktyvios animacijos</string>
+    <string name="animation_loading_default">Kraunama</string>
+    <string name="animation_please_wait">Palaukite, kol ši operacija baigsis</string>
+    <string name="animation_percent_complete">%d procentų baigta</string>
+    <string name="animation_loading_in_progress">Vykdoma</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">Spartieji klavišai</string>
+    <string name="keyboard_shortcuts_done">Atlikta</string>
+    <string name="keyboard_shortcuts_app_section">Programėlės spartieji klavišai</string>
+    <string name="keyboard_shortcuts_navigation_section">Naršymas</string>
+    <string name="keyboard_shortcuts_tips_section">Patarimai</string>
+    <string name="keyboard_shortcuts_navigation_footer">Šie naršymo klavišai veikia visoje programėlėje su išorinėmis klaviatūromis</string>
+    <string name="keyboard_shortcuts_tip_external">Visiškai palaikomos išorinės Bluetooth ir USB klaviatūros</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Naudokite rodyklių klavišus naršymui tarp elementų sąrašuose</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Laikykite Ctrl, kad pamatytumėte galimus sparčiuosius klavišus šiame ekrane</string>
+    <string name="keyboard_shortcuts_tip_a11y">Visos šios programėlės funkcijos pasiekiamos per klaviatūrą</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Uždaryti sparčiuosius klavišus</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">Nustatymai</string>
+    <string name="keyboard_shortcut_label_accessibility">Prieinamumas</string>
+    <string name="keyboard_shortcut_label_help">Pagalbos centras</string>
+    <string name="keyboard_shortcut_label_add_credential">Pridėti kredencialą</string>
+    <string name="keyboard_shortcut_label_verify">Patvirtinti</string>
+    <string name="keyboard_shortcut_label_shortcuts">Spartieji klavišai</string>
+    <string name="keyboard_shortcut_desc_settings">Atidaryti nustatymus</string>
+    <string name="keyboard_shortcut_desc_accessibility">Prieinamumo nustatymai</string>
+    <string name="keyboard_shortcut_desc_help">Pagalbos centras</string>
+    <string name="keyboard_shortcut_desc_add_credential">Pridėti kredencialą</string>
+    <string name="keyboard_shortcut_desc_verify">Pradėti verifikavimą</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Spartieji klavišai</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">Grįžti atgal / Atmesti</string>
+    <string name="keyboard_shortcut_nav_back_desc">Atmesti dabartinį ekraną arba dialogą</string>
+    <string name="keyboard_shortcut_nav_next">Kitas laukelis</string>
+    <string name="keyboard_shortcut_nav_next_desc">Perkelti fokusą į kitą interaktyvų elementą</string>
+    <string name="keyboard_shortcut_nav_prev">Ankstesnis laukelis</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Perkelti fokusą į ankstesnį interaktyvų elementą</string>
+    <string name="keyboard_shortcut_nav_submit">Pateikti / Tęsti</string>
+    <string name="keyboard_shortcut_nav_submit_desc">Suaktyvinti fokusavimo mygtuką arba pateikti formą</string>
+    <string name="keyboard_shortcut_nav_activate">Suaktyvinti mygtuką</string>
+    <string name="keyboard_shortcut_nav_activate_desc">Suaktyvinti šiuo metu fokusavimo mygtuką arba perjungiklį</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">Dialogas atidarytas. Paspauskite Escape, kad atmestumėte, arba Enter, kad patvirtintumėte.</string>
+    <string name="modal_closed_announcement">Dialogas uždarytas</string>
+    <string name="modal_button_primary_label">%s (pagrindinis veiksmas)</string>
+    <string name="modal_button_cancel_label">%s (atšaukti)</string>
+    <string name="modal_button_destructive_label">%s (ardomas veiksmas)</string>
+    <string name="modal_button_primary_hint">Du kartus palieskite, kad patvirtintumėte, arba paspauskite Enter</string>
+    <string name="modal_button_cancel_hint">Du kartus palieskite, kad atšauktumėte, arba paspauskite Escape</string>
+    <string name="modal_button_destructive_hint">Du kartus palieskite, kad atliktumėte ardantį veiksmą</string>
+    <string name="modal_button_secondary_hint">Du kartus palieskite, kad atliktumėte veiksmą</string>
+    <string name="modal_confirm">Patvirtinti</string>
+    <string name="modal_cancel">Atšaukti</string>
+    <string name="modal_delete">Ištrinti</string>
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">Ištrinti %1$s</string>
+    <string name="a11y_edit_nickname_for">Redaguoti %1$s slapyvardį</string>
+    <string name="accessibility_attestation_scan_back">Grįžti</string>
+    <string name="attestation_replace_confirm">Pakeisti</string>
+    <string name="attestation_replace_primary_message">Jau turite asmeninį kredencialą. Sukūrus naują, jis bus pakeistas. Šio veiksmo atšaukti negalima.</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">Pakeisti esamą kredencialą?</string>
+    <string name="attestation_scan_error_empty">QR kodas buvo tuščias</string>
+    <string name="attestation_scan_instruction">Nukreipkite kamerą į pareigūno rodomą QR kodą</string>
+    <string name="attestation_scan_invalid_qr">Šiame QR kode nėra patvirtinimo duomenų</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">Nuskaityti patvirtinimą</string>
+    <string name="attestation_scan_wrong_type_toast">Tai verifikavimo QR kodas, o ne kredencialo QR kodas</string>
+    <string name="biometric_required_message">Šiai programėlei reikia ekrano užrakto (PIN kodo, rakto piešinio ar biometrinio duomens), kad kredencialai būtų saugiai išsaugoti. Prieš tęsdami nustatykite jį įrenginio saugos nustatymuose.</string>
+    <string name="biometric_required_open_settings">Atidaryti saugos nustatymus</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">Reikalingas ekrano užraktas</string>
+    <string name="challenge_sandbox_prompt_announcement">Gautas sandbox iššūkis. Pasirinkite, ar įjungti sandbox režimą ir tęsti, ar atmesti iššūkį.</string>
+    <string name="challenge_sandbox_prompt_body">Šį iššūkį pateikė sandbox tikrintojas. Jis pavyks tik tada, jei šioje piniginėje įjungsite sandbox režimą.</string>
+    <string name="challenge_sandbox_prompt_primary">Įjungti sandbox ir tęsti</string>
+    <string name="challenge_sandbox_prompt_secondary">Atmesti iššūkį</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">Gautas sandbox iššūkis</string>
+    <string name="credential_detail_nickname_error">Nepavyko išsaugoti slapyvardžio</string>
+    <string name="credential_list_managed_count">%1$d iš %2$d</string>
+    <string name="credential_picker_count_shown">Rodoma kredencialų: %1$d</string>
+    <string name="credential_picker_filter_clear">Išvalyti filtrą</string>
+    <string name="credential_picker_filter_label">Filtruoti kredencialus pagal pavadinimą</string>
+    <string name="credential_picker_filter_placeholder">Filtruoti kredencialus</string>
+    <string name="credential_picker_no_results">Atitinkančių kredencialų nėra</string>
+    <string name="credential_picker_section_managed">Valdomi kredencialai</string>
+    <string name="credential_picker_section_me">Aš</string>
+    <string name="credential_picker_subtitle">Pasirinkite, kieno amžius tikrinamas.</string>
+    <string name="credential_row_action_delete">Ištrinti</string>
+    <string name="credential_row_action_edit">Redaguoti slapyvardį</string>
+    <string name="credential_row_overflow_menu">Kredencialo parinktys</string>
+    <string name="deeplink_sandbox_prompt_announcement">Aptikta sandbox nuoroda. Pasirinkite, ar įjungti sandbox režimą ir atidaryti nuorodą.</string>
+    <string name="deeplink_sandbox_prompt_body">Ši gilioji nuoroda pavyks tik tada, jei šioje piniginėje įjungsite sandbox režimą.</string>
+    <string name="deeplink_sandbox_prompt_primary">Įjungti sandbox ir atidaryti</string>
+    <string name="deeplink_sandbox_prompt_secondary">Atšaukti</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">Aptikta sandbox nuoroda</string>
+    <string name="empty_credential_option_find_apps_a11y">Raskite dalyvaujančią programėlę. Gaukite kredencialą iš savo pensijų fondo, banko, telekomunikacijų operatoriaus, sveikatos draudiko ar bet kurio kito subjekto, kuris jau žino Jūsų amžių.</string>
+    <string name="empty_credential_option_find_apps_desc">Gaukite kredencialą iš savo pensijų fondo, banko, telekomunikacijų operatoriaus, sveikatos draudiko ar bet kurio kito subjekto, kuris jau žino Jūsų amžių</string>
+    <string name="empty_credential_option_find_apps_title">Raskite dalyvaujančią programėlę</string>
+    <string name="empty_credential_option_find_locations_a11y">Raskite vietą netoli savęs. Apsilankykite asmeniškai su asmens dokumentu, kad gautumėte kredencialą.</string>
+    <string name="empty_credential_option_find_locations_desc">Apsilankykite asmeniškai su asmens dokumentu, kad gautumėte kredencialą</string>
+    <string name="empty_credential_option_find_locations_title">Raskite vietą netoli savęs</string>
+    <string name="empty_credential_option_managed_a11y">Aš rūpinuosi kitu asmeniu. Valdykite kredencialus žmonėms, kuriais rūpinatės.</string>
+    <string name="empty_credential_option_managed_desc">Valdykite kredencialus žmonėms, kuriais rūpinatės</string>
+    <string name="empty_credential_option_managed_title">Aš rūpinuosi kitu asmeniu</string>
+    <string name="empty_credential_option_scan_a11y">Turiu QR kodą nuskaityti. Tikrintojas davė Jums kodą po to, kai apžiūrėjo Jūsų asmens dokumentą.</string>
+    <string name="empty_credential_option_scan_desc">Tikrintojas davė Jums kodą po to, kai apžiūrėjo Jūsų asmens dokumentą</string>
+    <string name="empty_credential_option_scan_title">Turiu QR kodą nuskaityti</string>
+    <string name="empty_credential_subtitle">Pasirinkite, kaip norite gauti pirmąjį kredencialą</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">Kredencialų dar nėra</string>
+    <string name="error_screen_lock_required">Kad kredencialai būtų saugiai išsaugoti, reikalingas ekrano užraktas (PIN kodas, rakto piešinys ar biometrinis duomuo). Nustatykite jį įrenginio nustatymuose.</string>
+    <string name="issuers_no_apps_found_description">Patikrinkite vėliau, nes vis daugiau programėlių pradeda palaikyti Provii</string>
+    <string name="issuers_no_apps_found">Dalyvaujančių programėlių dar nėra</string>
+    <string name="issuers_no_locations_found_description">Patikrinkite vėliau, nes pridedama vis daugiau vietų</string>
+    <string name="issuers_no_locations_found">Vietų nerasta</string>
+    <string name="managed_credential_explainer_body">Norėdami gauti valdomą kredencialą asmeniui, kuriuo rūpinatės, kartu apsilankykite dalyvaujančioje vietoje. Tikrintojas apžiūrės jo asmens dokumentą. Nuskaitydami QR kodą būsite paklausti, ar šis kredencialas skirtas Jums, ar asmeniui, kurį valdote.</string>
+    <string name="managed_credential_explainer_find_location">Rasti vietą</string>
+    <string name="managed_credential_explainer_have_qr">Jau turiu QR kodą</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">Valdomi kredencialai</string>
+    <string name="sandbox_credential_type">Kredencialo tipas</string>
+    <string name="sandbox_managed_credential_saved">Valdomas kredencialas išsaugotas (%s)</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">Sandbox režimas dabar aktyvus. Piniginė prijungta prie sandbox serverių.</string>
+    <string name="sandbox_nickname_helper">Suteikite šiam kredencialui pavadinimą, kad galėtumėte jį atpažinti savo piniginėje.</string>
+    <string name="sandbox_nickname_label">Slapyvardis</string>
+    <string name="sandbox_nickname_placeholder">pvz., Sara</string>
+    <string name="sandbox_nickname_required">Valdomiems kredencialams būtinas slapyvardis</string>
+    <string name="sandbox_type_managed_credential">Valdomas kredencialas</string>
+    <string name="sandbox_type_your_credential">Jūsų kredencialas</string>
+    <string name="title_find_apps">Rasti dalyvaujančią programėlę</string>
+    <string name="title_find_locations">Rasti vietą</string>
+    <string name="verification_go_to_attestation">Gauti kredencialą</string>
+    <string name="verification_wrong_qr_type_message">Šis QR kodas skirtas naujam kredencialui gauti, o ne amžiui patvirtinti. Ar norite vietoj to pereiti į patvirtinimo ekraną?</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">Aptiktas patvirtinimo QR kodas</string>
+    <string name="walkthrough_back">Atgal</string>
+    <string name="walkthrough_get_started">Pradėti</string>
+    <string name="walkthrough_next">Toliau</string>
+    <string name="walkthrough_page_indicator">%1$d puslapis iš %2$d</string>
+    <string name="walkthrough_page1_body">Jūsų kredenciale nurodytas tik amžius. Daugiau nieko. Nei vardas, nei adresas, nei tapatybė.\n\nJis įrodo, kad esate vyresnis (arba jaunesnis) nei tam tikras amžius, neatskleisdamas Jūsų gimimo datos.</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">Kas yra kredencialas?</string>
+    <string name="walkthrough_page2_body">Kredencialą galite gauti per programėlę iš įmonės, kuri jau žino Jūsų amžių. Pavyzdžiui, iš banko ar pensijų fondo. Kadangi jie jau patikrino Jūsų amžių, nieko dar kartą bendrinti nereikia.\n\nKitas variantas – apsilankyti dalyvaujančioje vietoje su asmens dokumentu, įrodančiu Jūsų gimimo datą. Jūsų gimimo data apžiūrima, panaudojama kredencialui sukurti ir tada atmetama. Išdavėjas niekada nemato Jūsų kredencialo. Jūsų tapatybė su juo niekada nesiejama.</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">Kaip jį gauti?</string>
+    <string name="walkthrough_page3_body">Jei rūpinatės asmeniu, kuriam reikia amžiaus kredencialo, galite jį gauti ir valdyti savo įrenginyje.\n\nKartu apsilankykite dalyvaujančioje vietoje su asmens dokumentu, įrodančiu jo gimimo datą. Nuskaitydami QR kodą būsite paklausti, ar šis kredencialas skirtas Jums, ar asmeniui, kurį valdote.\n\nPridėkite slapyvardį, kad galėtumėte atskirti jų kredencialus.</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">Globotiniai</string>
+    <string name="walkthrough_page4_body">Programėlė, bandanti patvirtinti Jūsų amžių, gali siųsti iššūkį tiesiogiai į Jūsų Provii piniginę. Jūs pasirenkate, kurį kredencialą naudoti. Sėkmingai patvirtinus, būsite grąžinti į užklausiančią programėlę ir galėsite tęsti kaip patvirtintas naudotojas.\n\nKitas variantas – Jums gali būti pateiktas QR kodas kitame įrenginyje arba nuoroda mobiliojoje naršyklėje, vedanti tiesiai į Jūsų piniginę. Yra ir trumpojo kodo variantas, skirtas prieinamumui.\n\nJokia asmeninė informacija niekada nebendrinama. Tik atsakymas „taip" arba „ne", ar atitinkate amžiaus reikalavimą.</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">Kaip vyksta verifikavimas?</string>
+    <string name="walkthrough_page5_body">Pirmasis žingsnis – gauti kredencialą per dalyvaujančią programėlę arba netoli Jūsų esančioje vietoje.\n\nNuo tada galėsite patvirtinti savo amžių, kai tik prireiks, nesidalydami jokia asmenine informacija. Taip pat galėsite valdyti kredencialus žmonėms, kuriais rūpinatės.</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">Viskas paruošta</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">Praleisti</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

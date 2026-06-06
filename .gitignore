@@ -1,0 +1,83 @@
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Android
+android/**/build/
+android/.gradle/
+android/local.properties
+android/*.apk
+android/*.aab
+android/app/src/main/jniLibs/  # Generated native libraries from provii-mobile-sdk
+android/ktlint
+
+# iOS
+ios/build/
+ios/DerivedData/
+ios/*.xcworkspace/xcuserdata/
+ios/*.xcodeproj/xcuserdata/
+ios/Pods/
+ios/Frameworks/
+ios/WalletSDK/
+ios/Podfile.lock
+ios/*.ipa
+
+# Translation scratch (one-off helpers at ios/ top level). Legitimate
+# validation tooling lives under ios/scripts/, which is not affected.
+ios/*.py
+ios/*.sed
+ios/*_translations.txt
+ios/*_translation_summary.txt
+ios/AUDIT_SUMMARY.txt
+ios/TRANSLATION_COMPLETE.txt
+ios/GREEK_TRANSLATIONS_REMAINING.txt
+ios/untranslated.json
+ios/sq_translations_updated.strings
+
+# Fastlane (iOS + Android)
+ios/fastlane/report.xml
+ios/fastlane/Preview.html
+ios/fastlane/screenshots/
+ios/fastlane/test_output/
+ios/fastlane/certs/
+ios/Gemfile.lock
+android/fastlane/report.xml
+android/fastlane/Preview.html
+android/fastlane/screenshots/
+android/fastlane/test_output/
+android/fastlane/release_notes.txt
+android/Gemfile.lock
+
+# Rust
+target/
+Cargo.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Generated files
+*.generated.*
+**/generated/
+
+# Temporary files
+tmp/
+temp/
+
+server-files/
+jniLibs/
+

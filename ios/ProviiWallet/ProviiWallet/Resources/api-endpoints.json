@@ -1,0 +1,71 @@
+{
+  "environments": {
+    "production": {
+      "issuer": {
+        "api": "https://issuer.provii.app",
+        "example": "https://api.issuer.example"
+      },
+      "verifier": {
+        "api": "https://verify.provii.app",
+        "verify": "https://verify.provii.app/v1/verify"
+      },
+      "registry": {
+        "issuers": "https://cdn.provii.app/v1/issuers.json"
+      },
+      "cdn": {
+        "provingKey": "https://cdn.provii.app"
+      }
+    },
+    "sandbox": {
+      "issuer": {
+        "api": "https://sandbox-issuer.provii.app",
+        "example": "https://sandbox-api.issuer.example"
+      },
+      "verifier": {
+        "api": "https://sandbox-verify.provii.app",
+        "verify": "https://sandbox-verify.provii.app/v1/verify"
+      },
+      "registry": {
+        "issuers": "https://sandbox-cdn.provii.app/v1/issuers.json"
+      },
+      "cdn": {
+        "provingKey": "https://cdn.provii.app"
+      },
+      "config": {
+        "api": "https://playground.provii.app"
+      }
+    },
+    "staging": {
+      "issuer": {
+        "api": "https://staging-issuer.provii.app",
+        "example": "https://staging-api.issuer.example"
+      },
+      "verifier": {
+        "api": "https://staging-verify.provii.app",
+        "verify": "https://staging-verify.provii.app/v1/verify"
+      },
+      "registry": {
+        "issuers": "https://staging-cdn.provii.app/v1/issuers.json"
+      },
+      "cdn": {
+        "provingKey": "https://staging-cdn.provii.app"
+      }
+    },
+    "development": {
+      "issuer": {
+        "api": "https://dev-issuer.provii.app",
+        "example": "https://dev-api.issuer.example"
+      },
+      "verifier": {
+        "api": "https://dev-verify.provii.app",
+        "verify": "https://dev-verify.provii.app/v1/verify"
+      },
+      "registry": {
+        "issuers": "https://dev-cdn.provii.app/v1/issuers.json"
+      },
+      "cdn": {
+        "provingKey": "https://dev-cdn.provii.app"
+      }
+    }
+  }
+}

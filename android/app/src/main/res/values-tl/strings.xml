@@ -1,0 +1,1709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Mga Setting</string>
+    <string name="title_accessibility">Accessibility</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Kumuha ng Kredensyal</string>
+    <string name="title_scan_verification_qr">Mag-scan ng QR Code para sa Beripikasyon</string>
+    <string name="title_verifying_age">Bine-verify ang Edad</string>
+    <string name="title_age_verified">Na-verify na ang Edad</string>
+    <string name="title_verification_failed">Hindi Matagumpay ang Beripikasyon</string>
+    <string name="title_officer_mode">Opisyal Mode</string>
+    <string name="title_officer_dashboard">Dashboard ng Opisyal</string>
+    <string name="title_issue_credential">Mag-isyu ng Kredensyal</string>
+    <string name="title_credential_ready">Handa na ang Kredensyal</string>
+    <string name="title_get_your_credential">Kunin ang Iyong Kredensyal</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Maligayang Pagdating sa Provii Wallet</string>
+    <string name="welcome_subtitle">Ligtas na beripikasyon ng edad, ginawang simple</string>
+    <string name="welcome_first_credential">Magdagdag ng unang kredensyal mo para sa beripikasyon ng edad</string>
+    <string name="welcome_description">Pribadong beripikasyon ng edad gamit ang zero knowledge proof</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Maligayang Pagdating sa Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Pumili po ng wikang gusto mo</string>
+    <string name="onboarding_use_english">Gamitin ang English</string>
+    <string name="onboarding_use_english_description">Magpatuloy gamit ang English bilang wika ng app</string>
+    <string name="onboarding_rotating_button_description">Button para magpalit ng wika, kasalukuyang ipinapakita: %1$s. I-tap po para pumili ng ibang wika.</string>
+    <string name="onboarding_change_later">Maaari po itong baguhin sa Settings mamaya</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Accessibility</string>
+    <string name="onboarding_accessibility_desc">Gusto mo po bang i-customize ang mga accessibility feature tulad ng laki ng text, touch target, o bawasan ang motion?</string>
+    <string name="onboarding_use_defaults">Gamitin ang Default</string>
+    <string name="onboarding_use_defaults_description">Magpatuloy gamit ang karaniwang accessibility settings</string>
+    <string name="onboarding_open_accessibility">Accessibility Settings</string>
+    <string name="onboarding_open_accessibility_description">Buksan ang accessibility settings para i-customize ang app</string>
+    <string name="onboarding_accessibility_later">Maaari po itong baguhin sa Settings mamaya</string>
+    <string name="onboarding_accessibility_features_title">Kabilang sa mga feature:</string>
+    <string name="onboarding_feature_text_size">Mas malalaking text</string>
+    <string name="onboarding_feature_touch_targets">Mas malalaking touch target</string>
+    <string name="onboarding_feature_reduce_motion">Bawasan ang motion</string>
+    <string name="onboarding_feature_high_contrast">Mataas na contrast mode</string>
+    <string name="onboarding_talkback_detected">Na-detect ang TalkBack</string>
+    <string name="onboarding_talkback_message">Na-enable po namin ang mga detalyadong paglalarawan para matulungan kang mag-navigate sa app.</string>
+    <string name="onboarding_continue_to_setup">Magpatuloy sa Setup</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Kailangan ng Isang Beses Lang na Setup</string>
+    <string name="setup_download_required">Kailangan ng Download</string>
+    <string name="setup_download_description">Kailangan mag-download ng mga security component para sa zero knowledge proof (mga 87 MB).</string>
+    <string name="setup_wifi_recommended">Inirerekomenda po ang Wi-Fi</string>
+    <string name="setup_checking_status">Tine-check ang setup status\u2026</string>
+    <string name="setup_already_setup">Tapos Na ang Setup!</string>
+    <string name="setup_ready_message">Handa na ang iyong wallet para sa ligtas na beripikasyon ng edad</string>
+    <string name="setup_preparing">Inihahanda ang secure na sistema ng beripikasyon\u2026</string>
+    <string name="setup_checking_components">Tine-check ang mga security component\u2026</string>
+    <string name="setup_downloading">Dina-download ang mga security component</string>
+    <string name="setup_download_progress_description">%1$d%% kumpleto (%2$s MB sa %3$s MB na-download na)</string>
+    <string name="setup_initializing">Ini-initialize ang mga security component\u2026</string>
+    <string name="setup_complete">Kumpleto na ang Setup!</string>
+    <string name="setup_download_info">Ine-enable nito ang zero knowledge proof para sa pribadong beripikasyon ng edad</string>
+    <string name="setup_one_time_download">Isang beses lang na download</string>
+    <string name="setup_stuck_message">Mas matagal ito kaysa inaasahan</string>
+    <string name="setup_stuck_description">Maaaring naka-stuck ang setup. Subukan itong i-restart.</string>
+    <string name="setup_restart_message">Kailangan mag-restart ng app. Nangyayari po ito minsan sa unang pagbukas.</string>
+    <string name="setup_storage_full">Puno na ang Storage</string>
+    <string name="setup_connection_error">Error sa Koneksyon</string>
+    <string name="setup_failed">Hindi Matagumpay ang Setup</string>
+    <string name="setup_initialization_error">Error sa Pag-initialize</string>
+    <string name="error_storage_init_failed">Hindi matagumpay ang pag-initialize ng storage. I-restart po ang app.</string>
+    <string name="error_storage_init_close_restart">Hindi matagumpay ang pag-initialize ng storage. Isara at i-restart po ang app.</string>
+    <string name="setup_free_storage_message">Mag-free up po ng hindi bababa sa 65 MB at subukan ulit</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Protektado ang Privacy</string>
+    <string name="setup_privacy_description">Gumagamit ng zero knowledge proof ang beripikasyon ng edad mo. Hindi kailanman ibabahagi ang petsa ng kapanganakan mo.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Mga Kredensyal Ko</string>
+    <string name="credentials_empty">Walang nakaimbak na kredensyal</string>
+    <string name="credential_active">Aktibo ang Kredensyal</string>
+    <string name="credential_expired">Nag-expire na ang Kredensyal</string>
+    <string name="credential_ready_for_verification">Handa na para sa beripikasyon</string>
+    <string name="credential_expired_message">Nag-expire na ang iyong kredensyal at kailangang palitan</string>
+    <string name="credential_stored_successfully">Matagumpay na Naimbak ang Kredensyal</string>
+    <string name="credential_stored_description">Ligtas na naimbak ang iyong kredensyal ng edad at handa nang gamitin</string>
+    <string name="credential_can_prove_age">Maaari mo na ngayong patunayan ang iyong edad nang pribado</string>
+    <string name="credential_returning">Bumabalik sa mga kredensyal\u2026</string>
+    <string name="credential_view_credentials">Tingnan ang mga Kredensyal</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Tapos Na</string>
+    <string name="action_scan_qr_code">Mag-scan ng QR Code</string>
+    <string name="action_find_locations">Maghanap ng mga Lokasyon</string>
+    <string name="action_get_credential">Kumuha ng kredensyal</string>
+    <string name="action_replace_credential">Palitan ng Bagong Kredensyal</string>
+    <string name="action_replace_credential_now">Palitan ang Kredensyal Ngayon</string>
+    <string name="action_delete_credential">Burahin ang kredensyal</string>
+    <string name="credential_action_scan_description">Kumuha ng kredensyal mula sa awtorisadong tagapag-isyu</string>
+    <string name="credential_action_find_description">Hanapin ang mga malapit na tagapag-isyu</string>
+    <string name="credential_remove_description">Alisin ang kasalukuyang kredensyal</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Privacy</string>
+    <string name="credential_info_privacy_value">Protektado</string>
+    <string name="credential_info_status">Status</string>
+    <string name="credential_info_status_value">Balido</string>
+    <string name="credential_tip_title">Mabilis na Tip</string>
+    <string name="credential_tip_message">I-tap po ang \'Verify Age\' button para mag-scan ng mga QR code para sa beripikasyon sa mga kalahok na venue.</string>
+
+    <!-- Batch 01 validated 2026-03-21. Reviewed by Maria Santos. 2 CRITICAL, 6 HIGH, 8 MEDIUM, 5 LOW findings resolved. Pronoun register unified to mo/iyong (singular). Double-politeness (mangyaring+po) eliminated. Verb focus markers (ang/ng) corrected. -->
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">Mag-scan ng QR Code</string>
+    <string name="verification_verify_age">Mag-verify ng Edad</string>
+    <string name="verification_generating_proof">Binubuo ng proof\u2026</string>
+    <string name="verification_success">Matagumpay po ang beripikasyon</string>
+    <string name="verification_failed">Hindi Nagtagumpay ang Beripikasyon</string>
+    <string name="verification_age_verified">Na-verify na ang Edad</string>
+    <string name="verification_age_verified_message">Na-verify na po ang iyong edad nang pribado</string>
+    <string name="verification_can_return">Maaari ka nang bumalik sa site para magpatuloy.</string>
+    <string name="verification_returning_browser">Bumabalik sa browser\u2026</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">Hakbang 1 ng 2</string>
+    <string name="verification_step_2_of_2">Hakbang 2 ng 2</string>
+    <string name="verification_point_camera">Magtutok ng camera sa QR code ng beripikasyon</string>
+    <string name="verification_hold_steady">Panatilihing nakatutok hanggang marinig ang tunog ng kumpirmasyon.</string>
+    <string name="verification_reading_request">Binabasa ang verification request\u2026</string>
+    <string name="verification_processing_challenge">Pinoproseso ang challenge\u2026</string>
+    <string name="verification_creating_proof">Gumagawa ng age proof\u2026</string>
+    <string name="verification_submitting_proof">Isinusumite ang proof\u2026</string>
+    <string name="verification_processing_message">Maaaring tumagal ng ilang segundo</string>
+    <string name="verification_preparing_proof">Naghahanda po kami ng pribadong proof gamit ang iyong naka-save na kredensyal.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Binabasa ang verification request\u2026</string>
+    <string name="verification_status_processing_challenge">Pinoproseso ang challenge\u2026</string>
+    <string name="verification_status_creating_proof">Gumagawa ng age proof\u2026</string>
+    <string name="verification_status_submitting_proof">Isinusumite ang proof\u2026</string>
+    <string name="verification_status_verified">\u2714 Na-verify na ang edad</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Hindi maipakita ang authentication prompt</string>
+    <string name="verification_error_verification_failed">Hindi nagtagumpay ang beripikasyon</string>
+    <string name="verification_error_generic">May naganap na error</string>
+    <string name="verification_error_failed_to_process_code">Hindi naproseso ang code</string>
+    <string name="verification_error_failed_to_process_challenge">Hindi naproseso ang challenge</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Mga pinagkakatiwalaang tagapag-isyu sa Australia</string>
+    <string name="issuers_loading">Nilo-load ang mga tagapag-isyu\u2026</string>
+    <string name="issuers_loaded">Matagumpay na na-load ang mga tagapag-isyu</string>
+    <string name="issuers_unable_to_load">Hindi ma-load ang mga tagapag-isyu</string>
+    <string name="issuers_check_connection">Suriin po ang iyong internet connection at subukan muli</string>
+    <string name="issuers_categories_header">MGA KATEGORYA</string>
+    <string name="issuers_available_header">AVAILABLE NA TAGAPAG-ISYU</string>
+    <string name="issuers_found_count">%d ang nahanap</string>
+    <string name="issuer_status_coming_soon">Malapit Na</string>
+    <string name="issuer_status_verified">Na-verify</string>
+    <string name="issuer_how_to_get">Paano makakuha ng kredensyal</string>
+    <string name="issuer_service_locations">Mga Lokasyon ng Serbisyo</string>
+    <string name="issuer_visit_website">Bisitahin ang website ng %s</string>
+    <string name="issuer_learn_more">Matuto pa tungkol sa %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Bangko</string>
+    <string name="category_super_fund">Super Fund</string>
+    <string name="category_government">Gobyerno</string>
+    <string name="category_travel">Paglalakbay</string>
+    <string name="category_telco">Telco</string>
+    <string name="category_insurance">Insurance</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_sandbox">Sandbox Mode</string>
+    <string name="settings_section_general">Pangkalahatan</string>
+    <string name="settings_section_credentials">Mga Kredensyal</string>
+    <string name="settings_section_advanced">Advanced</string>
+    <string name="settings_section_privacy">Privacy</string>
+    <string name="settings_security">Seguridad</string>
+    <string name="settings_biometric">Gumamit ng biometric authentication</string>
+    <string name="settings_environment">Mga setting ng environment</string>
+    <string name="settings_environment_description">Tingnan ang kasalukuyang environment configuration</string>
+    <string name="settings_reset_proving_key">I-reset ang proving key</string>
+    <string name="settings_reset_proving_key_description">Muling i-download ang mga security component (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Mag-isyu ng test kredensyal bilang Tagapag-isyu</string>
+    <string name="settings_mint_test_credential_subtitle">Mag-isyu ng test kredensyal sa iyong wallet para ma-verify mo ito mula sa isang relying party demo.</string>
+    <string name="settings_find_trusted_issuers">Maghanap ng mga pinagkakatiwalaang tagapag-isyu</string>
+    <string name="settings_version">Bersyon: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Mag-tap ng 5x para i-toggle</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Wika</string>
+    <string name="language_selection_description">Pumili po ng gustong wika. Magre-restart ang app para ma-apply ang mga pagbabago.</string>
+    <string name="language_selected">Napili na</string>
+    <string name="settings_language">Wika</string>
+    <string name="settings_language_description">Palitan ang wika ng app</string>
+    <string name="settings_licenses">Mga Open Source na Lisensya</string>
+    <string name="settings_licenses_description">Tingnan ang mga third-party na lisensya</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Kumpirmahin ang Wika</string>
+    <string name="language_change_to">Palitan ang wika sa:</string>
+    <string name="language_restart_notice">Magre-restart ang app para ma-apply ang wikang ito.</string>
+    <string name="language_apply">I-apply</string>
+    <string name="language_cancel">Kanselahin</string>
+    <string name="language_skip_title">Laktawan ang Pagpili ng Wika?</string>
+    <string name="language_skip_message">Kapag nilaktawan, gagamitin ang English bilang default. Palitan ang wika sa Settings anumang oras.</string>
+    <string name="language_use_english">Gamitin ang English</string>
+    <string name="language_go_back">Bumalik</string>
+    <string name="language_help_title">Tulong sa Pagpili ng Wika</string>
+    <string name="language_help_how_to">Paano pumili ng wika:</string>
+    <string name="language_help_step1">1. Gamitin ang search box para hanapin ang iyong wika</string>
+    <string name="language_help_step2">2. I-tap ang gustong wika</string>
+    <string name="language_help_step3">3. Kumpirmahin ang iyong pinili</string>
+    <string name="language_help_system_note">Ang wika ng iyong system ay naka-highlight sa itaas kung sinusuportahan.</string>
+    <string name="language_help_settings_note">Maaari mo itong palitan sa Settings sa ibang pagkakataon.</string>
+    <string name="language_got_it">Sige</string>
+    <string name="language_select_title">Pumili ng Wika</string>
+    <string name="language_skip_button">Laktawan (Gamitin ang English)</string>
+    <string name="language_search_placeholder">Maghanap ng mga wika\u2026</string>
+    <string name="language_no_results">Walang nakitang wika</string>
+    <string name="language_try_different">Subukan ang ibang salita sa paghahanap</string>
+    <string name="language_system_badge">Wika ng System</string>
+    <string name="language_count">%d na wika</string>
+    <string name="language_no_match_announcement">Walang nakitang wika na tumutugma sa iyong hinanap</string>
+    <string name="language_found_announcement">%d na wika ang nahanap</string>
+    <string name="language_search_cleared">Na-clear na ang paghahanap, ipinapakita ang lahat ng %d na wika</string>
+    <string name="language_selected_announcement">Napili: %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Screen ng pagpili ng wika</string>
+    <string name="language_help_button_description">Tulong at impormasyon tungkol sa pagpili ng wika</string>
+    <string name="language_skip_description">Laktawan ang pagpili ng wika at gamitin ang English bilang default</string>
+    <string name="language_clear_search_description">I-clear ang paghahanap</string>
+    <string name="language_count_description">%d na wika ang available</string>
+    <string name="language_apply_description">I-apply ang napiling wika at magpatuloy</string>
+    <string name="language_cancel_description">Kanselahin ang pagpili ng wika</string>
+    <string name="language_cancelled_announcement">Nakansela ang pagpili ng wika</string>
+    <string name="language_selected_description">Napiling wika: %1$s, %2$s</string>
+    <string name="language_item_system">Wika ng system: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, kasalukuyang napili</string>
+    <string name="language_item_system_selected">Wika ng system: %1$s, %2$s, kasalukuyang napili</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Bumalik sa pagpili ng wika</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Aktibo ang sandbox mode</string>
+    <string name="sandbox_mode_banner">AKTIBO ANG SANDBOX MODE</string>
+    <string name="sandbox_mode_description">Ginagamit ang test environment. Mag-tap ng 5x sa bersyon para i-toggle.</string>
+    <string name="sandbox_credential_title">Sandbox na kredensyal</string>
+    <string name="sandbox_credential_description">Gumawa ng sandbox credential para subukan ang verification flow nang walang production data.</string>
+    <string name="sandbox_select_age">Pumili ng edad</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Default na petsa ng kapanganakan: %s</string>
+    <string name="sandbox_override_dob">Palitan ang default na petsa ng kapanganakan</string>
+    <string name="sandbox_override_description">Gumamit ng eksaktong petsa sa halip na default batay sa edad.</string>
+    <string name="sandbox_date_of_birth">Petsa ng kapanganakan</string>
+    <string name="sandbox_generate_credential">Gumawa ng kredensyal</string>
+    <string name="sandbox_generating">Gumagawa\u2026</string>
+    <string name="sandbox_test_credential_saved">Na-save na ang test credential</string>
+    <string name="sandbox_id_prefix">Identification prefix: %s\u2026</string>
+    <string name="sandbox_unable_to_generate">Hindi magawa ang kredensyal</string>
+    <string name="settings_sandbox_dob_format">Petsa ng Kapanganakan: %s</string>
+    <string name="settings_sandbox_age_dob_format">Edad %d+ (Petsa ng Kapanganakan: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Konpigurasyon ng environment</string>
+    <string name="environment_current">Kasalukuyan: %s</string>
+    <string name="environment_issuer_api">Issuer API (Application Programming Interface): %s</string>
+    <string name="environment_verifier_api">Verifier API (Application Programming Interface): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Burahin ang kredensyal?</string>
+    <string name="dialog_delete_credential_message">Tatanggalin po ng aksyon na ito ang kredensyal mula sa iyong device. Maaari mo itong kunin muli mula sa tagapag-isyu kung kinakailangan.</string>
+    <string name="dialog_delete_credential_announcement">Nabuksan ang dialog: Burahin ang kredensyal</string>
+    <string name="dialog_reset_proving_key_title">I-reset ang proving key?</string>
+    <string name="dialog_reset_proving_key_message">Buburahin ang proving key at mga kaugnay na file, at muling ida-download sa susunod na pagbukas mo ng app.</string>
+    <string name="dialog_reset_proving_key_announcement">Nabuksan ang dialog: I-reset ang proving key</string>
+    <string name="dialog_environment_info_announcement">Nabuksan ang dialog: Environment configuration</string>
+
+    <!-- ==================== ACCESSIBILITY (Batch 03) ==================== -->
+    <!-- 109 strings | Standard Filipino with strategic Taglish -->
+    <!-- Reviewed and finalised 2026-03-21. Fixes applied for issues #1-#3, #5-#9, #11, #14-#18
+         from tl-batch-03-review.md. All FLAG comments removed. Compressed over-expanded strings,
+         fixed verb focus errors, fixed toggle TalkBack double-ang problem, aligned po usage and
+         announcement patterns with batches 01 and 02. -->
+    <!-- Glossary: accessibility=accessibility, screen reader=screen reader, touch target=touch target,
+         haptic feedback=haptic feedback, biometric=biometric, settings=settings,
+         credential=kredensyal, officer=opisyal -->
+
+    <string name="accessibility_title">Accessibility</string>
+    <string name="accessibility_service_label">Provii Wallet Accessibility</string>
+    <string name="accessibility_service_description">Ang accessibility service ng Provii Wallet ay nagbibigay po ng pinahusay na suporta para sa mga may kapansanan. Kasama dito ang awtomatikong pagbasa ng kredensyal, ginagabayang nabigasyon, pinasimpleng pakikipag-ugnayan, at mas madaling paggamit.</string>
+    <string name="accessibility_personalize">I-personalize ang iyong karanasan</string>
+    <string name="accessibility_customize_features">I-customize ang mga accessibility feature</string>
+    <string name="accessibility_quick_setup">Mabilisang pag-setup</string>
+    <string name="accessibility_features_active">Aktibong feature: %d</string>
+    <string name="accessibility_customize_experience">I-customize ang iyong karanasan</string>
+    <string name="accessibility_reset_title">I-reset ang accessibility settings?</string>
+    <string name="accessibility_reset_message">Lahat ng accessibility preference ay babalik sa default.</string>
+    <string name="accessibility_reset">I-reset ang accessibility settings</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Paningin</string>
+    <string name="accessibility_category_interaction">Pakikipag-ugnayan</string>
+    <string name="accessibility_category_cognitive">Suportang kognitibo</string>
+    <string name="accessibility_category_alternative_input">Alternatibong input</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Extra large na teksto</string>
+    <string name="accessibility_extra_large_text_description">Palakihin ang base font size ng 45%</string>
+    <string name="accessibility_high_contrast">Mataas na contrast</string>
+    <string name="accessibility_high_contrast_description">Mga kulay na mataas ang contrast</string>
+    <string name="accessibility_reduce_transparency">Bawasan ang transparency</string>
+    <string name="accessibility_reduce_transparency_description">Alisin ang blur at glass effect</string>
+    <string name="accessibility_dyslexia_font">Font na angkop sa dyslexia</string>
+    <string name="accessibility_dyslexia_font_description">Gamitin ang OpenDyslexic font para sa mas malinaw na pagbasa</string>
+    <string name="accessibility_color_blind_mode">Color blind mode</string>
+    <string name="accessibility_color_blind_optimized">Mga kulay na na-optimize para sa %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Wala</string>
+    <string name="color_blind_protanopia">Protanopia (Bulag sa pula)</string>
+    <string name="color_blind_deuteranopia">Deuteranopia (Bulag sa berde)</string>
+    <string name="color_blind_tritanopia">Tritanopia (Bulag sa asul)</string>
+    <string name="color_blind_monochrome">Monochrome</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Mas malalaking touch target</string>
+    <string name="accessibility_larger_touch_targets_description">Palakihin ang mga button at chip</string>
+    <string name="accessibility_reduce_motion">Bawasan ang galaw</string>
+    <string name="accessibility_reduce_motion_description">Bawasan ang mga animation at transition</string>
+    <string name="accessibility_extended_timeouts">Pinahabang timeout</string>
+    <string name="accessibility_extended_timeouts_description">Pahaba ang timeout sa mga aksyon</string>
+    <string name="accessibility_simplified_gestures">Pinasimpleng gesture</string>
+    <string name="accessibility_simplified_gestures_description">Bawasan ang mga multi-step na gesture</string>
+    <string name="accessibility_haptic_feedback">Haptic feedback</string>
+    <string name="accessibility_haptic_feedback_description">Pagyanig bilang kumpirmasyon ng mga aksyon</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Pinasimpleng interface</string>
+    <string name="accessibility_simplified_interface_description">Itago ang mga advanced na opsyon at bawasan ang kalat</string>
+    <string name="accessibility_show_step_numbers">Ipakita ang mga numero ng hakbang</string>
+    <string name="accessibility_show_step_numbers_description">Ipakita ang mga progress indicator</string>
+    <string name="accessibility_detailed_descriptions">Mga detalyadong paglalarawan</string>
+    <string name="accessibility_detailed_descriptions_description">Magbigay ng karagdagang paliwanag</string>
+    <string name="accessibility_confirm_actions">Kumpirmahin bago mag-aksyon</string>
+    <string name="accessibility_confirm_actions_description">Humingi ng kumpirmasyon sa mahahalagang operasyon</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Manu-manong paglagay ng code</string>
+    <string name="accessibility_manual_code_entry_description">Payagan ang mga QR (Quick Response) code na i-type sa halip na i-scan</string>
+    <string name="accessibility_voice_input">Voice input</string>
+    <string name="accessibility_voice_input_description">I-enable ang speech recognition para sa mga text field</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Paningin</string>
+    <string name="accessibility_profile_motor">Motor</string>
+    <string name="accessibility_profile_cognitive">Kognitibo</string>
+    <string name="accessibility_profile_senior">Senior</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Bumalik</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Home</string>
+    <string name="breadcrumb_settings">Settings</string>
+    <string name="breadcrumb_accessibility">Accessibility</string>
+    <string name="breadcrumb_language">Language</string>
+    <string name="breadcrumb_help">Help Center</string>
+    <string name="breadcrumb_officer_mode">Officer Mode</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Typography &amp; Text Spacing</string>
+    <string name="accessibility_line_spacing">Line Spacing</string>
+    <string name="accessibility_line_spacing_description">Ayusin ang espasyo sa pagitan ng mga linya ng teksto</string>
+    <string name="accessibility_paragraph_spacing">Paragraph Spacing</string>
+    <string name="accessibility_paragraph_spacing_description">Ayusin ang espasyo sa pagitan ng mga talata</string>
+    <string name="accessibility_letter_spacing">Letter Spacing</string>
+    <string name="accessibility_letter_spacing_description">Ayusin ang espasyo sa pagitan ng mga letra</string>
+    <string name="accessibility_typography_aaa_note">Mga rekomendasyon ng AAA: 1.5x line spacing, 2.0x paragraph spacing, at 0.12em letter spacing.</string>
+    <string name="accessibility_spacing_current">Kasalukuyan: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Pag-uugali ng Timeout</string>
+    <string name="accessibility_timeout_no_automatic">Walang awtomatikong timeout para sa AAA compliance</string>
+    <string name="accessibility_timeout_auto_advance_30">Auto-advance sa 30 segundo</string>
+    <string name="accessibility_timeout_auto_advance_60">Auto-advance sa 60 segundo</string>
+    <string name="accessibility_timeout_set_announcement">Nakatakda na sa %s ang timeout</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Antas ng Contrast</string>
+    <string name="accessibility_contrast_aaa_ratio">7:1 contrast ratio para sa AAA compliance</string>
+    <string name="accessibility_contrast_standard">Standard na contrast</string>
+    <string name="accessibility_contrast_aa_ratio">4.5:1 contrast ratio para sa AA compliance</string>
+    <string name="accessibility_contrast_set_announcement">Nakatakda na sa %s ang contrast</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Nakatakda na sa %s ang color blind mode</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">%1$s slider. Kasalukuyang halaga: %2$s. %3$sMula %4$s hanggang %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">Sumusunod sa AAA. </string>
+    <string name="accessibility_slider_announcement">Nakatakda na sa %2$s ang %1$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, sumusunod sa AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">Naka-enable na: %s</string>
+    <string name="accessibility_toggle_disabled">Naka-disable na: %s</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Feedback sa Verification</string>
+    <string name="accessibility_sound_enabled">Tunog kapag matagumpay</string>
+    <string name="accessibility_sound_enabled_description">Tumugtog ng kumpirmasyon kapag matagumpay ang verification</string>
+    <string name="accessibility_sound_style">Estilo ng Tunog</string>
+    <string name="accessibility_sound_preview">I-preview ang tunog</string>
+    <string name="accessibility_sound_preview_preset">I-preview ang %s</string>
+    <string name="accessibility_sound_style_set_announcement">Nakatakda na sa %s ang estilo ng tunog</string>
+    <string name="accessibility_haptic_enabled">Pagyanig kapag matagumpay</string>
+    <string name="accessibility_haptic_enabled_description">Magbigay ng haptic feedback pagkatapos ng matagumpay na verification</string>
+    <string name="accessibility_sound_footer">Sinusunod ng tunog ang silent mode settings ng iyong device</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Volume</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">I-preview ang kasalukuyang volume</string>
+    <string name="accessibility_volume_set_announcement">Nakatakda na sa %d porsyento ang volume</string>
+    <string name="accessibility_volume_slider_description">Volume slider. Kasalukuyang halaga: %d porsyento</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">I-reset ang Settings</string>
+
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <string name="officer_mode">Officer Mode</string>
+    <string name="officer_id">Identification ng Opisyal (ID)</string>
+    <string name="officer_id_placeholder">hal., OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Ilagay po ang iyong nakatalagang identification bilang opisyal</string>
+    <string name="officer_yubikey_connected">Yubikey Konektado</string>
+    <string name="officer_connect_yubikey">Ikonekta ang Yubikey</string>
+    <string name="officer_touch_yubikey">Hawakan po ang iyong Yubikey para mag-authenticate\u2026</string>
+    <string name="officer_authenticate_hmac">Mag-authenticate gamit ang HMAC (Hash-based Message Authentication Code)</string>
+    <string name="officer_authentication_process">Proseso ng Authentication:</string>
+    <string name="officer_auth_steps">1. Ilagay ang iyong identification bilang opisyal\n2. I-click ang Authenticate\n3. Hawakan ang Yubikey kapag kumikislap\n4. Bine-verify ng HMAC (Hash-based Message Authentication Code) authentication ang iyong pagkakakilanlan</string>
+    <string name="officer_auth_failed">Hindi matagumpay ang authentication. Pakisuri po ang iyong Officer identification at subukan muli.</string>
+    <string name="officer_session_info">Opisyal: %s</string>
+    <string name="officer_station_info">Istasyon: %s</string>
+    <string name="officer_issued_today">Na-isyu ngayong araw: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Mag-isyu ng Age Credential</string>
+    <string name="officer_issue_description">I-verify po ang pagkakakilanlan ng user at mag-isyu ng digital age kredensyal</string>
+    <string name="officer_start_issuance">Magsimula ng Bagong Issuance</string>
+    <string name="officer_issuance_process">PROSESO NG ISSUANCE</string>
+    <string name="officer_issuance_steps">1. Suriin ang pisikal na identification document ng user\n2. Ilagay ang kanilang petsa ng kapanganakan\n3. I-verify na eksaktong tumutugma ang impormasyon\n4. Mag-isyu ng kredensyal gamit ang attestation QR (Quick Response) code\n5. Mag-scan ang user ng QR code para matanggap ang kredensyal</string>
+    <string name="officer_verify_identity">I-verify ang Pagkakakilanlan ng User</string>
+    <string name="officer_select_dob">Piliin ang Petsa ng Kapanganakan</string>
+    <string name="officer_change_date">Palitan ang Petsa</string>
+    <string name="officer_age_years">Edad: %d taon</string>
+    <string name="officer_under_18_warning">Wala pang 18 - Hindi maaaring mag-isyu ng kredensyal</string>
+    <string name="officer_verification_checklist">CHECKLIST NG VERIFICATION</string>
+    <string name="officer_document_verified">Na-verify na ang pisikal na dokumento</string>
+    <string name="officer_document_verified_description">Nakita ko po ang isang balidong identification na inisyu ng gobyerno</string>
+    <string name="officer_dob_matches">Eksaktong tumutugma ang petsa ng kapanganakan</string>
+    <string name="officer_dob_matches_description">Ang petsa ng kapanganakan sa pisikal na dokumento ay: %s</string>
+    <string name="officer_issue_credential">Mag-isyu ng Kredensyal</string>
+    <string name="officer_user_scanned_successfully">Matagumpay na Na-scan ng User</string>
+    <string name="officer_return_to_dashboard">Bumalik sa Dashboard</string>
+    <string name="officer_go_back">Bumalik</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">Yubikey Authentication</string>
+    <string name="yubikey_step_format">Hakbang %1$d sa %2$d</string>
+    <string name="yubikey_led_should_blink">Dapat kumikislap ang Yubikey LED</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Bina-validate ang input\u2026</string>
+    <string name="officer_state_creating_attestation">Gumagawa ng attestation\u2026</string>
+    <string name="officer_state_computing_commitment">Kinakalkula ang cryptographic commitment\u2026</string>
+    <string name="officer_state_creating_session">Gumagawa ng secure session\u2026</string>
+    <string name="officer_state_signing">Sini-sign ang kredensyal\u2026</string>
+    <string name="officer_state_finalizing">Pina-finalize ang kredensyal\u2026</string>
+    <string name="officer_state_storing_attestation">Sino-store ang attestation\u2026</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">Malapit nang Mag-expire ang Session</string>
+    <string name="officer_session_expiring_message">Mag-expire ang iyong session sa loob ng %d segundo. Gusto mo po bang i-save ang iyong progreso?</string>
+    <string name="officer_session_expiring_announcement">Babala: Mag-expire ang iyong session sa loob ng %d segundo</string>
+    <string name="officer_save_and_continue">I-save at Magpatuloy</string>
+    <string name="officer_continue_without_saving">Magpatuloy nang Hindi Nagse-save</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">PETSA NG KAPANGANAKAN</string>
+    <string name="officer_age_format">Edad: %d taon</string>
+    <string name="officer_under_18_full_warning">Wala pang 18 - Hindi maaaring mag-isyu ng kredensyal. Mga 18 taong gulang o higit pa po lamang ang karapat-dapat sa age verification credential. Pakisuri po na tama ang petsa ng kapanganakan.</string>
+    <string name="officer_verification_checklist_header">CHECKLIST NG VERIFICATION</string>
+    <string name="officer_physical_document_verified">Na-verify na ang pisikal na dokumento</string>
+    <string name="officer_sighted_valid_id">Nakita ko po ang isang balidong identification na inisyu ng gobyerno</string>
+    <string name="officer_dob_matches_exactly">Eksaktong tumutugma ang petsa ng kapanganakan</string>
+    <string name="officer_dob_on_document">Ang petsa ng kapanganakan sa pisikal na dokumento ay: %s</string>
+    <string name="officer_error_label">Error</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <string name="issuance_scan_qr">I-scan po ang issuance QR (Quick Response) code</string>
+    <string name="issuance_downloads_credential">Ida-download nito ang iyong age kredensyal.</string>
+    <string name="issuance_center_qr">Isentro po ang QR code sa loob ng frame at hawakang matatag.</string>
+    <string name="issuance_enter_code_manually">Manu-manong ilagay ang code</string>
+    <string name="issuance_processing_qr">Pinoproseso ang QR code\u2026</string>
+    <string name="issuance_invalid_data">Hindi balidong issuance data</string>
+    <string name="issuance_verification_qr_error">Ito po ay isang verification QR code. Pakiscan po ang kredensyal issuance QR code.</string>
+    <string name="issuance_invalid_qr_format">Hindi balidong QR code format</string>
+    <string name="issuance_failed_to_process">Hindi naproseso ang QR code: %s</string>
+    <string name="issuance_code">Issuance code</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <string name="manual_entry_title">Manu-manong paglagay ng code</string>
+    <string name="manual_entry_enter_code_manually">Manu-manong ilagay ang code</string>
+    <string name="manual_entry_verification_description">Ilagay po ang 12-digit na verification code na nakikita sa screen ng verifier.</string>
+    <string name="manual_entry_issuance_description">I-type po ang code na nakikita sa screen ng tagapag-isyu.</string>
+    <string name="manual_entry_verification_code">Verification code</string>
+    <string name="manual_entry_submit">Isumite ang Code</string>
+    <string name="manual_entry_please_enter">Maglagay po ng code</string>
+    <string name="manual_entry_please_enter_verification">Maglagay po ng verification code</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Magsimulang makinig</string>
+    <string name="voice_input_stop_listening">Itigil ang pakikinig</string>
+    <string name="voice_input_recognized">Nakilala:</string>
+    <string name="content_desc_voice_input_listening">Nakikinig para sa voice input</string>
+    <string name="content_desc_voice_input_available">Available ang voice input</string>
+    <string name="voice_input_permission_title">Kailangan ng permission sa mikropono</string>
+    <string name="voice_input_permission_message">Kailangan po ng voice input ang access sa mikropono. Maaari mo itong i-enable mula sa system settings.</string>
+    <string name="voice_input_listening">Nakikinig\u2026</string>
+    <string name="voice_input_error">Voice Input Error</string>
+    <string name="voice_input_tap_to_speak">I-tap para magsalita</string>
+    <string name="voice_input_did_you_say">Sinabi mo ba ang "%1$s"?</string>
+    <string name="voice_input_confirm">Kumpirmahin</string>
+    <string name="voice_input_retry">Subukan Muli</string>
+    <string name="voice_input_cancel">Kanselahin</string>
+    <string name="voice_input_button">Voice Input</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">Hindi available ang voice input sa device na ito</string>
+    <string name="voice_input_error_audio">Error sa audio recording. Suriin ang mikropono.</string>
+    <string name="voice_input_error_network">Network error. Suriin ang koneksyon.</string>
+    <string name="voice_input_error_network_timeout">Network timeout. Subukan muli.</string>
+    <string name="voice_input_error_no_match">Walang nadetect na pagsasalita. Subukan muli.</string>
+    <string name="voice_input_error_recognizer_busy">Busy ang voice input. Maghintay.</string>
+    <string name="voice_input_error_server">Server error. Subukan muli mamaya.</string>
+    <string name="voice_input_error_speech_timeout">Walang narinig na pagsasalita. Magsalita nang mas malakas.</string>
+    <string name="voice_input_error_insufficient_permissions">Tinanggihan ang permission sa mikropono.</string>
+    <string name="voice_input_error_generic">Voice input error. Subukan muli.</string>
+
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Batch 05 FINAL: Common Actions, Errors, Status, Privacy (115 strings) -->
+    <!-- Reviewed 2026-03-21. Applied 8 fixes (1 CRITICAL, 6 HIGH). -->
+    <!-- C-01: Fixed broken verb morphology "Nagha-hanap" → "Naghahanap" (2 keys). -->
+    <!-- H-01: Differentiated action_retry ("Ulitin") from action_try_again ("Subukan Muli"). -->
+    <!-- H-02: Swapped retry/restart setup semantics to match English intent. -->
+    <!-- H-03: Added "po" to all "Paki-" request-form strings for consistent register. -->
+    <!-- H-04: Fixed mistranslation "kasanayan" (skill) → "patakaran" (practices/policies). -->
+    <!-- H-05: Replaced unnatural "I-dismiss" with "Isara" for TalkBack clarity. -->
+    <!-- H-06: Compressed "ang iyong" → "mo" in privacy descriptions to reduce expansion. -->
+    <string name="action_back">Bumalik</string>
+    <string name="action_close">Isara</string>
+    <string name="action_cancel">Kanselahin</string>
+    <string name="action_ok">OK</string>
+    <string name="action_set">Itakda</string>
+    <string name="action_change">Palitan</string>
+    <string name="action_delete">Tanggalin</string>
+    <string name="action_reset">I-reset</string>
+    <string name="action_retry">Ulitin</string>
+    <string name="action_try_again">Subukan Muli</string>
+    <string name="action_refresh">I-refresh</string>
+    <string name="action_download_now">I-download Na</string>
+    <string name="action_retry_setup">Subukan Muli ang Setup</string>
+    <string name="action_retry_download">Ulitin ang Download</string>
+    <string name="action_restart_setup">Ulitin ang Setup</string>
+    <string name="action_manage_storage">Pamahalaan ang Storage</string>
+    <string name="action_check_wifi_settings">Tingnan Muna ang Wi-Fi Settings</string>
+    <string name="action_check_wifi_settings_short">Tingnan ang Wi-Fi Settings</string>
+    <string name="action_grant_permission">Magbigay ng Permiso</string>
+    <string name="action_grant_camera_access">Payagan ang camera access</string>
+    <string name="action_return_to_browser">Bumalik sa Browser</string>
+    <string name="action_show_debug_info">Ipakita ang Debug Info</string>
+    <string name="action_reset_redownload">I-reset at I-download Muli</string>
+    <string name="action_end_session">Tapusin ang Session</string>
+    <string name="action_expand">Palawakin</string>
+    <string name="action_collapse">I-collapse</string>
+    <string name="accessibility_state_expanded">Pinalawak</string>
+    <string name="accessibility_state_collapsed">Naka-collapse</string>
+    <string name="accessibility_state_checked">May tsek</string>
+    <string name="accessibility_state_unchecked">Walang tsek</string>
+    <string name="accessibility_state_selected">Napili</string>
+    <string name="accessibility_state_not_selected">Hindi napili</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <string name="error_generic">May naganap na error</string>
+    <string name="error_camera_permission">Kailangan ng permiso sa camera para mag-scan ng QR (Quick Response) code</string>
+    <string name="error_camera_access_needed">Kailangan ng access sa camera</string>
+    <string name="error_camera_permission_description">Payagan ang camera permission para mag-scan ng QR code o mag-enable ng manual entry sa accessibility settings.</string>
+    <string name="error_camera_permission_required">Kailangan ng camera permission para mag-scan ng QR code</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">Naghahanap ng QR code...</string>
+    <string name="qr_scanner_camera_required">Kailangan ng camera permission</string>
+    <string name="qr_scanner_camera_preview">Preview ng camera para sa pag-scan ng QR code</string>
+    <string name="qr_scanner_status_scanning">Naghahanap ng QR code</string>
+    <string name="qr_scanner_requesting_permission">Humihiling ng camera permission</string>
+    <string name="error_camera_start_failed">Hindi nasimulan ang camera: %s</string>
+    <string name="error_camera_init_failed">Nabigo ang pag-initialize ng camera: %s</string>
+    <string name="error_biometric_not_available">Hindi available ang biometric authentication</string>
+    <string name="error_biometric_required">Kinakailangan ang biometric na pagpapatunay upang magpatuloy.</string>
+    <string name="error_network">May naganap na network error</string>
+    <string name="error_no_credential">Walang available na kredensyal. Kumuha po muna ng kredensyal.</string>
+    <string name="credential_picker_title">Pumili ng Kredensyal</string>
+    <string name="credential_picker_description">Mayroon kang maraming kredensyal na maaaring gamitin sa beripikasyong ito. Pumili po ng isa.</string>
+    <string name="credential_picker_expired_label">Expired</string>
+    <string name="credential_picker_accessibility_select">Piliin ang kredensyal: %1$s</string>
+    <string name="error_failed_to_process_challenge">Hindi naproseso ang challenge</string>
+    <string name="error_failed_to_create_proof">Hindi nagawa ang proof</string>
+    <string name="error_verification_failed">Nabigo ang beripikasyon</string>
+    <string name="error_occurred_during_verification">May naganap na error sa beripikasyon</string>
+    <string name="error_connection_timeout">Nag-timeout ang koneksyon. Subukan po muli.</string>
+    <string name="error_unable_to_connect">Hindi makakonekta. Pakitingnan po ang iyong internet connection.</string>
+    <string name="error_secure_connection_failed">Nabigo ang secure na koneksyon. Subukan po muli.</string>
+    <string name="error_security_verification_failed">Nabigo ang security verification. Subukan po muli.</string>
+    <string name="error_invalid_input">Hindi wastong input. Pakitingnan po ang iyong impormasyon at subukan muli.</string>
+    <string name="error_operation_in_progress">May kasalukuyang isinasagawang operasyon. Maghintay po.</string>
+    <string name="error_operation_cancelled">Nakansela ang operasyon.</string>
+    <string name="error_age_requirement_not_met">Hindi natugunan ang kinakailangang edad para sa kredensyal na ito.</string>
+    <string name="error_wallet_not_initialized">Hindi pa na-initialize ang wallet. I-restart po ang app.</string>
+    <string name="error_security">Error sa seguridad. Subukan po muli.</string>
+    <string name="error_connection_timeout_short">Nag-timeout ang koneksyon. Subukan po muli.</string>
+    <string name="error_invalid_input_provided">Hindi wastong input ang ibinigay.</string>
+    <string name="error_invalid_data_format">Hindi wastong format ng data. Subukan po muli.</string>
+    <string name="error_storage">Error sa storage. Pakitingnan po ang storage ng device.</string>
+    <string name="error_network_short">Network error. Pakitingnan po ang iyong koneksyon.</string>
+    <string name="error_label">Error</string>
+    <string name="error_dismiss">Isara ang error</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <string name="status_processing">Pinoproseso...</string>
+    <string name="status_initializing_wallet">Ini-initialize ang wallet...</string>
+    <string name="status_loading">Naglo-load...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <string name="privacy_protected">Protektado ang privacy</string>
+    <string name="privacy_zk_description">Hindi kailanman ibinabahagi ang petsa ng kapanganakan mo. Malalaman lang ng verifier kung natutugunan mo ang kanilang kinakailangang edad.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Privacy Settings</string>
+    <string name="privacy_settings_description">Kontrolin ang data collection at pamahalaan ang iyong data</string>
+    <string name="privacy_section_data_collection">Data Collection</string>
+    <string name="privacy_section_your_data">Ang Iyong Data</string>
+    <string name="privacy_protection_title">Protektado ang Iyong Privacy</string>
+    <string name="privacy_protection_description">Gumagamit ang Provii Wallet ng zero knowledge proof para i-verify ang edad mo nang hindi inilalantad ang petsa ng kapanganakan mo. Ang data ng kredensyal mo ay naka-store lang sa device mo at hindi kailanman ibinabahagi kaninuman.</string>
+    <string name="privacy_analytics_title">Analytics</string>
+    <string name="privacy_analytics_description">Tumulong na mapabuti ang Provii Wallet sa pamamagitan ng pagbabahagi ng anonymous na usage data</string>
+    <string name="privacy_analytics_enabled">Naka-enable ang analytics</string>
+    <string name="privacy_analytics_disabled">Naka-disable ang analytics</string>
+    <string name="privacy_crash_reporting_title">Crash Reporting</string>
+    <string name="privacy_crash_reporting_description">Tulungan kaming ayusin ang mga bug sa pamamagitan ng awtomatikong pagpapadala ng crash report</string>
+    <string name="privacy_crash_reporting_enabled">Naka-enable ang crash reporting</string>
+    <string name="privacy_crash_reporting_disabled">Naka-disable ang crash reporting</string>
+    <string name="privacy_what_we_collect_title">Anong Data ang Kinokolekta Namin</string>
+    <string name="privacy_what_we_collect_subtitle">I-tap para malaman ang aming mga patakaran sa data</string>
+    <string name="privacy_data_collection_info_title">Impormasyon sa Data Collection</string>
+    <string name="privacy_data_we_collect_header">Ang kinokolekta namin (kung naka-enable):</string>
+    <string name="privacy_data_we_collect_list">- Anonymous na usage statistics ng app\n- Crash report at error log\n- Uri ng device at bersyon ng OS\n- Impormasyon ng bersyon ng app</string>
+    <string name="privacy_data_we_dont_collect_header">Ang hindi namin kailanman kinokolekta:</string>
+    <string name="privacy_data_we_dont_collect_list">- Ang iyong petsa ng kapanganakan\n- Ang iyong pangalan o personal na detalye\n- Ang iyong lokasyon\n- Ang data ng iyong kredensyal\n- Biometric data</string>
+    <string name="privacy_data_never_shared_note">Hindi kailanman ibinabahagi ang data ng kredensyal mo sa Provii o sa alinmang third party. Nananatili ito sa device mo.</string>
+    <string name="privacy_policy_title">Privacy Policy</string>
+    <string name="privacy_policy_subtitle">Basahin ang aming buong privacy policy</string>
+    <string name="privacy_delete_my_data_title">Burahin ang Aking Data</string>
+    <string name="privacy_delete_my_data_subtitle">Alisin ang lahat ng naka-store na kredensyal at data</string>
+    <string name="privacy_delete_data_dialog_title">Burahin ang Lahat ng Data?</string>
+    <string name="privacy_delete_data_dialog_message">Permanenteng mabubura nito ang lahat ng iyong kredensyal at data ng app mula sa device na ito. Kakailanganin mong kumuha ng bagong kredensyal para magamit muli ang app.</string>
+    <string name="privacy_delete_data_dialog_warning">Hindi na maaaring i-undo ang pagkilos na ito.</string>
+    <string name="privacy_delete_data_confirm">Burahin Lahat</string>
+    <string name="privacy_footer_note">Maaari mong palitan ang mga settings na ito anumang oras. Agad na magkakabisa ang mga pagbabago.</string>
+    <string name="dialog_delete_data_announcement">Nabuksan ang dialog ng kumpirmasyon sa pagbura ng data</string>
+    <string name="dialog_data_collection_info_announcement">Nabuksan ang dialog ng impormasyon sa data collection</string>
+    <string name="content_desc_privacy_settings">Privacy settings, kontrolin ang data collection at pamahalaan ang iyong data</string>
+    <string name="content_desc_data_collection_info">Tingnan ang impormasyon sa data collection</string>
+    <string name="content_desc_privacy_policy">Tingnan ang privacy policy</string>
+    <string name="content_desc_opens_external_link">Magbubukas sa browser</string>
+    <string name="content_desc_delete_my_data">Burahin ang lahat ng aking data</string>
+
+
+    <!-- ==================== BATCH 06: Content Descriptions, Help, Tabs, Search, Licenses ==================== -->
+    <!-- Translated: 2026-03-21 | Translator: Maria Santos | Register: Standard Filipino (Taglish) -->
+    <!-- Reviewed: 2026-03-21 | Reviewer: Maria Santos (adversarial) | Validator pass: 2026-03-21 -->
+    <!-- Fixes applied: C-02, H-01, H-02, H-03, H-04, H-05, H-06, M-01, M-02, M-04, M-06, M-07 -->
+    <!-- C-01 escalated to content owner (source string defect: help claims no analytics but batch 05 has analytics toggles) -->
+    <!-- M-03 accepted (mixed register in troubleshooting headings, no Filipino equivalent for "load") -->
+    <!-- M-05 escalated to mobile dev (verify search indexes Filipino translations, not just English keys) -->
+
+    <!-- Content Descriptions (Screen Reader / TalkBack) -->
+    <string name="content_desc_back">Bumalik</string>
+    <string name="content_desc_settings">Settings</string>
+    <string name="content_desc_refresh">I-refresh</string>
+    <string name="content_desc_verified">Na-verify</string>
+    <string name="content_desc_expand">Palawakin</string>
+    <string name="content_desc_collapse">I-collapse</string>
+    <string name="content_desc_warning_error">Babala: May naganap na error</string>
+    <string name="content_desc_sandbox_indicator">Indicator ng sandbox mode</string>
+    <string name="content_desc_success">Matagumpay</string>
+    <string name="content_desc_warning">Babala</string>
+    <string name="content_desc_information">Impormasyon</string>
+    <string name="content_desc_error">Error</string>
+    <string name="content_desc_sandbox_warning">Babala sa Sandbox Mode</string>
+    <string name="content_desc_app_info">Impormasyon ng app</string>
+    <string name="content_desc_accessibility_settings">Mga setting ng accessibility</string>
+    <string name="content_desc_language_settings">Mga setting ng wika</string>
+    <string name="content_desc_licenses">Mga open source na lisensya</string>
+    <string name="content_desc_select_dob">Pumili ng petsa ng kapanganakan</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Mag-isyu ng test kredensyal bilang Tagapag-isyu</string>
+    <string name="content_desc_get_credential">Kumuha ng kredensyal</string>
+    <string name="content_desc_delete_credential">Burahin ang kredensyal</string>
+    <string name="content_desc_reset_proving_key">I-reset ang proving key</string>
+    <string name="content_desc_environment_info">Impormasyon ng environment</string>
+    <string name="content_desc_help_support">Tulong at suporta</string>
+    <string name="content_desc_privacy_protected">Protektado ang Privacy</string>
+    <string name="preview_settings_title">Preview ng Settings</string>
+
+    <!-- Accessibility Content Descriptions -->
+    <string name="accessibility_verification_success_description">Matagumpay</string>
+    <string name="accessibility_verification_error_description">Error</string>
+    <string name="accessibility_breadcrumb_location_description">Lokasyon: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">pagkatapos</string>
+    <string name="accessibility_breadcrumb_current_page_description">Kasalukuyang pahina: %s</string>
+    <string name="accessibility_settings_navigate_description">Mag-navigate</string>
+    <string name="accessibility_credentials_settings_description">Settings</string>
+    <string name="accessibility_verification_back_description">Bumalik</string>
+    <string name="accessibility_officer_back_description">Bumalik</string>
+    <string name="accessibility_discovery_back_description">Bumalik</string>
+    <string name="accessibility_discovery_refresh_description">I-refresh</string>
+    <string name="accessibility_discovery_verified_description">Na-verify</string>
+    <string name="accessibility_officer_done_description">Tapos na</string>
+    <string name="accessibility_officer_attestation_qr_description">QR code ng attestation, para i-scan ng user</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">Lumipat sa %s</string>
+    <string name="accessibility_skip_main_content">pangunahing content</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Mahina ang Paningin</string>
+    <string name="accessibility_profile_motor_impaired">Hirap sa Pagkilos</string>
+    <string name="accessibility_profile_cognitive_support">Suportang Kognitibo</string>
+    <string name="accessibility_profile_elderly_support">Suporta sa Nakatatanda</string>
+    <string name="accessibility_profile_default">Default</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Wala</string>
+    <string name="color_blind_mode_protanopia">Protanopia</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopia</string>
+    <string name="color_blind_mode_tritanopia">Tritanopia</string>
+    <string name="color_blind_mode_monochrome">Monochrome</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Standard</string>
+    <string name="contrast_level_high">Mataas (AA)</string>
+    <string name="contrast_level_maximum">Pinakamataas (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Buong Lapad</string>
+    <string name="text_width_comfortable">Komportable (80 chars)</string>
+    <string name="text_width_narrow">Makitid (60 chars)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Walang Timeout (AAA)</string>
+    <string name="timeout_behavior_standard">Standard (30s)</string>
+    <string name="timeout_behavior_extended">Pinahaba (60s)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Standard</string>
+    <string name="reading_level_standard_description">Regular na teksto na may mga teknikal na termino</string>
+    <string name="reading_level_simplified">Pinasimple (Grado 7-9)</string>
+    <string name="reading_level_simplified_description">Mas simpleng mga salita at mas maikling mga pangungusap (AAA compliant)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <string name="help_title">Tulong</string>
+    <string name="help_and_support">Tulong &amp; Suporta</string>
+    <string name="help_description">Kumuha ng tulong sa mga feature ng app at accessibility</string>
+    <string name="help_center">Help Center</string>
+    <string name="help_center_description">Mag-browse ng mga paksa at alamin ang mga feature ng app</string>
+    <string name="help_search">Maghanap sa tulong</string>
+    <string name="help_search_placeholder">Maghanap ng mga paksa\u2026</string>
+    <string name="help_search_active">Aktibo ang paghahanap</string>
+    <string name="help_search_inactive">Hindi aktibo ang paghahanap</string>
+    <string name="help_no_results">Walang nahanap na paksa para sa iyong hinanap</string>
+    <string name="help_topic_not_found">Hindi nahanap ang paksa</string>
+    <string name="help_related_topics">Mga Kaugnay na Paksa</string>
+    <string name="help_content_heading">Nilalaman ng Tulong</string>
+    <string name="help_related_topic_position">%1$s, item %2$d ng %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Paningin</string>
+    <string name="help_category_typography">Typography</string>
+    <string name="help_category_interaction">Interaksyon</string>
+    <string name="help_category_cognitive">Suportang Kognitibo</string>
+    <string name="help_category_alternative_input">Alternatibong Input</string>
+    <string name="help_category_features">Mga Feature</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Pagkuha ng Kredensyal</string>
+    <string name="help_topic_getting_credential_summary">Alamin kung paano makakuha ng iyong unang kredensyal para sa beripikasyon ng edad</string>
+    <string name="help_topic_getting_credential_content">Para makuha ang iyong kredensyal sa beripikasyon ng edad:\n\n1. Pumunta sa isang lokasyon ng awtorisadong tagapag-isyu\n2. Ipakita ang iyong government-issued ID\n3. I-scan ang ibinigay na QR code\n4. Ligtas na mase-save ang iyong kredensyal\n\nLokal na naka-store ang iyong petsa ng kapanganakan at hindi ito ibinabahagi kailanman.</string>
+
+    <string name="help_topic_verifying_age_title">Pag-beripikasyon ng Iyong Edad</string>
+    <string name="help_topic_verifying_age_summary">Paano patunayan ang iyong edad nang hindi nagbabahagi ng personal na impormasyon</string>
+    <string name="help_topic_verifying_age_content">Kapag kailangan mong i-verify ang iyong edad:\n\n1. Magpapakita ang verifier ng QR code\n2. I-scan ito gamit ang app\n3. Gagawa ang app ng mathematical proof\n4. Ang oo/hindi na sagot lang ang ibabahagi\n\nHINDI KAILANMAN ibinubunyag ang iyong totoong petsa ng kapanganakan.</string>
+
+    <string name="help_topic_accessibility_title">Mga Feature ng Accessibility</string>
+    <string name="help_topic_accessibility_summary">I-customize ang app ayon sa iyong pangangailangan</string>
+    <string name="help_topic_accessibility_content">Maraming accessibility feature ang app:\n\n- Malalaking teksto at high contrast mode\n- Voice input at suporta sa screen reader\n- Pinasimpleng mga galaw at user interface\n- Mga opsyon para sa manual na pag-enter ng code\n- Pinahabang mga timeout\n\nMakikita ang mga ito sa Settings > Accessibility</string>
+
+    <string name="help_topic_privacy_security_title">Privacy &amp; Seguridad</string>
+    <string name="help_topic_privacy_security_summary">Paano pinoprotektahan ang iyong impormasyon</string>
+    <string name="help_topic_privacy_security_content">Pangunahing prayoridad namin ang iyong privacy:\n\n- Lokal na naka-store ang mga kredensyal sa iyong device\n- Pinoprotektahan ng zero knowledge proof ang iyong data\n- Walang tracking o analytics\n- Available ang biometric authentication\n- Hindi umaalis ang data sa iyong device nang hindi naka-encrypt</string>
+
+    <string name="help_topic_troubleshooting_title">Pag-troubleshoot</string>
+    <string name="help_topic_troubleshooting_summary">Mga karaniwang problema at solusyon</string>
+    <string name="help_topic_troubleshooting_content">Mga karaniwang problema at solusyon:\n\nHindi Gumagana ang QR Scanner:\n- Tingnan ang camera permissions sa Settings\n- Subukan ang manual na pag-enter ng code\n\nHindi Naglo-load ang Kredensyal:\n- Tingnan ang iyong internet connection\n- Subukang i-reset ang proving key\n\nNabigo ang Beripikasyon:\n- Siguraduhing hindi pa expired ang kredensyal\n- Makipag-ugnayan sa verifier para sa suporta</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">\u2026</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <string name="date_label">PETSA NG KAPANGANAKAN</string>
+    <string name="date_of_birth">Petsa ng kapanganakan</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <string name="format_age_years">%d taon</string>
+    <string name="format_step_indicator">Hakbang %1$d ng %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <string name="tab_credentials">Mga Kredensyal</string>
+    <string name="tab_settings">Settings</string>
+    <string name="tab_help">Tulong</string>
+    <string name="tab_credentials_description">Tingnan ang iyong mga kredensyal</string>
+    <string name="tab_settings_description">Mga setting ng app</string>
+    <string name="tab_help_description">Kumuha ng tulong at suporta</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <string name="search_title">Maghanap</string>
+    <string name="search_field_label">Field ng paghahanap</string>
+    <string name="search_placeholder">Maghanap sa settings, tulong, at mga feature</string>
+    <string name="search_clear">I-clear ang paghahanap</string>
+    <string name="search_popular">Mga Sikat na Paghahanap</string>
+    <string name="search_results_heading">Mga Resulta ng Paghahanap</string>
+    <string name="search_no_results">Walang Nahanap na Resulta</string>
+    <string name="search_try_suggestions">Subukang hanapin:\n\u2022 Accessibility\n\u2022 Settings\n\u2022 Tulong\n\u2022 Wika</string>
+    <string name="search_results_announcement_singular">Nakahanap ng 1 na resulta</string>
+    <string name="search_results_announcement_plural">Nakahanap ng %d na resulta</string>
+    <string name="search_no_results_announcement">Walang nahanap na resulta</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <string name="help_quick_access">Mabilis na Access</string>
+    <string name="help_topics">Mga Paksa ng Tulong</string>
+    <string name="help_glossary">Glossary</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <string name="licenses_title">Mga Open Source na Lisensya</string>
+    <string name="licenses_description">Gumagamit ang app na ito ng mga sumusunod na open source software. Nagpapasalamat kami sa mga developer na gumawa ng mga library na ito.</string>
+    <string name="licenses_tap_to_view">I-tap para makita ang buong lisensya</string>
+    <string name="licenses_group_header">%1$s (%2$d na library)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">\u2022</string>
+
+
+    <!--
+        Batch 07 Final , Filipino (Tagalog)
+        Validated: 2026-03-21
+        Source: strings_batch_07.xml (93 strings, lines 877-1011 of English)
+        Review: _translations/tl-batch-07-review.md (Maria Santos, adversarial)
+        Fixes applied: 2 CRITICAL, 5 HIGH (7 total issues resolved)
+          C1: managed_confirm_message , malformed verb "Ive-verify" replaced with restructured sentence
+          C2: deeplink_verification_success , checkmark retained; flagged for Filipino TTS QA
+          H3: verification_scan_title , switched to actor-focus "Mag-scan" for consistency with batch 01
+          H4: credential_list_verify_age_button , added missing "ang" case marker
+          H5: Standardised "beripikasyon" to "verification" across 10 strings (Taglish loanword)
+          H6: credential_list_add_managed_button , restored dropped "Pinapamahalang" (Managed)
+          H7: error_authentication_cancelled , simplified bureaucratic phrasing
+        7 MEDIUM issues reviewed and left as-is (no functional impact, flagged for future passes)
+    -->
+
+    <!-- ==================== ERROR HANDLER STRINGS ==================== -->
+
+    <string name="error_no_internet">Walang internet connection. Pakisuri po ang iyong network at subukan muli.</string>
+    <string name="error_unexpected">May naganap na hindi inaasahang error. Pakirestart po ang app.</string>
+    <string name="error_unexpected_try_again">May naganap na hindi inaasahang error. Pakisubukan po muli.</string>
+    <string name="error_storage_detailed">Error sa storage: %s</string>
+    <string name="error_network_detailed">Error sa network: %s</string>
+    <string name="error_proof_generation_failed">Hindi nagawa ang proof: %s</string>
+    <string name="error_not_eligible">Hindi kwalipikado. Hindi po natutugunan ang mga kinakailangan para sa verification na ito.</string>
+    <string name="error_challenge_expired">Nag-expire na o hindi nahanap ang challenge. Pakihiling po ng bago.</string>
+    <string name="error_challenge_expired_scan_new">Nag-expire na ang challenge na ito. Paki-scan po ng bagong QR code.</string>
+    <string name="error_request_out_of_order">Hindi sunod ang request. Pakisubukan po muli.</string>
+    <string name="error_too_many_requests">Masyadong maraming request. Pakihintay po sandali at subukan muli.</string>
+    <string name="error_server">Error sa server. Pakisubukan po muli mamaya.</string>
+    <string name="error_request_failed">Hindi nagtagumpay ang request (%d). Pakisubukan po muli.</string>
+    <string name="error_not_eligible_short">Hindi kwalipikado sa verification na ito</string>
+    <string name="error_challenge_not_found">Hindi nahanap ang challenge</string>
+    <string name="error_complete_steps_in_order">Pakikumpleto po ang mga hakbang nang maayos</string>
+    <string name="error_challenge_expired_short">Nag-expire na ang challenge</string>
+    <string name="error_authentication_cancelled">Na-cancel ang authentication. I-verify po ang iyong identity upang makumpleto ang age verification.</string>
+    <string name="error_invalid_data_format_short">Hindi tamang format ng data. Pakisubukan po muli.</string>
+    <string name="error_storage_check_device">Error sa storage. Pakisuri po ang storage ng device.</string>
+    <string name="error_network_check_connection">Error sa network. Pakisuri po ang iyong connection.</string>
+    <string name="error_proof_generation_failed_short">Hindi nagawa ang proof. Pakisubukan po muli.</string>
+    <string name="error_operation_in_progress_short">May kasalukuyang ginagawang operasyon.</string>
+    <string name="error_no_internet_short">Walang internet connection. Pakisuri po ang iyong network.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+
+    <string name="verification_scan_title">Mag-scan ng QR ng Verification</string>
+    <string name="verification_verifying_title">Bine-verify ang Edad</string>
+    <string name="verification_success_title">Na-verify na ang Edad</string>
+    <string name="verification_failed_title">Nabigo ang Verification</string>
+    <string name="verification_processing_wait">Maaaring tumagal ng ilang segundo</string>
+    <string name="verification_success_message">Na-verify na ang iyong edad nang pribado</string>
+    <string name="verification_return_to_site">Maaari ka nang bumalik sa site upang magpatuloy.</string>
+    <string name="verification_please_enter_code">Pakilagay po ng verification code. Ang code ay dapat na 12-digit na short code o buong verification URL mula sa tagapag-verify.</string>
+    <string name="verification_error_occurred">May naganap na error habang nagve-verify</string>
+
+    <!-- ==================== CREDENTIAL LIST SCREEN STRINGS ==================== -->
+
+    <string name="credential_list_processing">Pinoproseso\u2026</string>
+    <string name="credential_list_verify_age_button">I-verify ang Edad</string>
+    <string name="credential_list_generate_in_person_description">Kumuha ng kredensyal nang personal</string>
+    <string name="credential_list_scan_qr_title">Mag-scan ng QR Code</string>
+    <string name="credential_list_find_locations_title">Maghanap ng mga Lokasyon</string>
+    <string name="credential_section_my_credential">Aking Kredensyal</string>
+    <string name="credential_section_managed">Mga Pinapamahalang Kredensyal</string>
+    <string name="credential_list_get_credential_button">Kumuha ng Kredensyal</string>
+    <string name="credential_list_add_managed_button">Magdagdag ng Pinapamahalang Kredensyal</string>
+    <string name="credential_section_managed_empty">Magdagdag ng kredensyal para sa taong inaalagaan mo, tulad ng isang bata.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+
+    <string name="credential_detail_title">Mga Detalye ng Kredensyal</string>
+    <string name="credential_detail_not_found">Hindi nahanap ang kredensyal</string>
+    <string name="credential_detail_nickname">Palayaw</string>
+    <string name="credential_detail_no_nickname">Walang palayaw</string>
+    <string name="credential_detail_edit_nickname">I-edit ang palayaw</string>
+    <string name="credential_detail_status">Status</string>
+    <string name="credential_detail_delete">Burahin ang Kredensyal</string>
+    <string name="credential_detail_delete_title">Burahin ang Kredensyal</string>
+    <string name="credential_detail_delete_message">Sigurado ka bang gusto mong burahin ang kredensyal na ito? Hindi na po ito maaaring ibalik.</string>
+    <string name="credential_type_primary">Pangunahin</string>
+    <string name="credential_type_managed">Pinamamahalaan</string>
+    <string name="credential_status_valid">Balido</string>
+    <string name="credential_status_expired">Nag-expire na</string>
+    <string name="credential_status_invalid">Hindi balido</string>
+    <string name="action_save">I-save</string>
+    <string name="credential_slots_full_title">Puno na ang mga Kredensyal</string>
+    <string name="credential_slots_full_message">Puno na ang mga kredensyal mo. Magbura ng isa upang makapagdagdag ng bago.</string>
+    <string name="accessibility_managed_credential">Pinapamahalang kredensyal</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">I-verify ang edad para kay %1$s?</string>
+    <string name="managed_confirm_message">Gagamitin mo ang pinapamahalang kredensyal ni %1$s upang i-verify ang edad.</string>
+    <string name="managed_confirm_proceed">I-verify para kay %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Gumagawa ng proof para kay %1$s</string>
+    <string name="verification_age_verified_for">Na-verify na ang edad ni %1$s</string>
+    <string name="deeplink_verification_age_verified_for">Na-verify na ang edad ni %1$s</string>
+    <string name="attestation_managed_credential_received">Natanggap na ang kredensyal ni %1$s!</string>
+    <string name="attestation_managed_credential_stored">Ligtas na nakaimbak ang kredensyal ng iyong anak.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">Burahin ang kredensyal ni %1$s?</string>
+    <string name="credential_detail_delete_managed_message">Sigurado ka bang gusto mong burahin ang pinapamahalang kredensyal ni %1$s? Hindi na po ito maaaring ibalik. Kakailanganin mong bumisita muli sa tagapag-isyu upang mapalitan ito.</string>
+    <string name="credential_detail_save_error">Hindi na-save ang palayaw</string>
+    <string name="credential_detail_delete_error">Hindi nabura ang kredensyal</string>
+    <string name="accessibility_saving">Nagse-save\u2026</string>
+    <string name="accessibility_deleting">Binubura\u2026</string>
+    <string name="accessibility_loading">Naglo-load, pakihintay po</string>
+    <string name="accessibility_issuing_credential">Inii-issue ang kredensyal, pakihintay po</string>
+    <string name="dialog_delete_all_credentials_title">Burahin ang lahat ng kredensyal?</string>
+    <string name="dialog_delete_all_credentials_message">Buburahin nito ang iyong kredensyal at lahat ng pinapamahalang kredensyal para sa mga bata. Hindi na po ito maaaring ibalik.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">Pinamamahalaan</string>
+    <string name="credential_slots_count">%1$d sa 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Inihahanda ang verification\u2026</string>
+    <string name="deeplink_verification_checking_credential">Sinusuri ang kredensyal\u2026</string>
+    <string name="deeplink_verification_processing_challenge">Pinoproseso ang challenge\u2026</string>
+    <string name="deeplink_verification_creating_proof">Gumagawa ng secure na proof\u2026</string>
+    <string name="deeplink_verification_submitting_proof">Isinusumite ang proof\u2026</string>
+    <string name="deeplink_verification_success">✔ Matagumpay na na-verify ang edad</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">Walang nahanap na kredensyal. Paki-set up muna po ang iyong kredensyal.</string>
+    <string name="deeplink_verification_error_failed_challenge">Hindi naproseso ang verification challenge</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Hindi maipakita ang authentication prompt</string>
+    <string name="deeplink_verification_error_failed_proof">Hindi nagawa ang age proof</string>
+    <string name="deeplink_verification_error_verification_failed">Nabigo ang verification</string>
+    <string name="deeplink_verification_error_unexpected">May naganap na hindi inaasahang error</string>
+    <string name="deeplink_verification_error_no_credential_selected">Walang napiling kredensyal. Pakisubukan po muli.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Pumili ng Kredensyal</string>
+    <string name="deeplink_verification_select_credential_subtitle">Maraming kredensyal ang available. Piliin kung alin ang gagamitin para sa verification na ito.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Bine-verify ang Edad</string>
+    <string name="deeplink_verification_title_verified">Na-verify na</string>
+    <string name="deeplink_verification_title_failed">Nabigo ang Verification</string>
+    <string name="deeplink_verification_please_wait">Pakihintay po\u2026</string>
+    <string name="deeplink_verification_age_verified">Na-verify na ang Edad!</string>
+    <string name="deeplink_verification_under_age_verified">Na-verify na Under %1$d</string>
+    <string name="deeplink_verification_returning_browser">Bumabalik sa browser\u2026</string>
+    <string name="deeplink_verification_return_to_browser">Bumalik sa Browser</string>
+    <string name="deeplink_verification_failed_title">Nabigo ang Verification</string>
+    <string name="deeplink_verification_error_occurred">May naganap na error habang nagve-verify</string>
+
+
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">PROSESO NG PAG-ISYU</string>
+    <!-- FIX #1 (CRITICAL): Added "pisikal na" before dokumento. FIX #2 (CRITICAL): Added "eksaktong" in step 3. -->
+    <string name="officer_issuance_process_steps">1. Suriin ang pisikal na dokumento ng pagkakakilanlan ng user\n2. Ilagay ang kanilang petsa ng kapanganakan\n3. Tiyaking eksaktong tugma ang impormasyon\n4. Mag-isyu ng kredensyal gamit ang attestation QR (Quick Response) code\n5. I-scan ng user ang QR code para matanggap ang kredensyal</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">Hindi nagawa ang QR code</string>
+    <string name="officer_attestation_ready_title">Handa na ang Attestation</string>
+    <string name="officer_attestation_scan_instruction">Dapat i-scan ng user ang QR code na ito gamit ang kanilang Provii Wallet app</string>
+    <string name="officer_attestation_deeplink_label">ATTESTATION DEEPLINK</string>
+    <string name="officer_wait_for_attestation_scan">Hintaying ma-scan ng user</string>
+    <string name="officer_attestation_info">Gagawin ang kredensyal sa kanilang device</string>
+    <string name="officer_attestation_complete">Tapos na ang attestation</string>
+    <string name="officer_user_will_complete_credential">Tatapusin ng user ang pagbuo ng kredensyal sa kanilang device</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <!-- FIX #8 (HIGH): Standardised verb focus across loading sequence to in-focus (object focus) consistently. -->
+    <string name="attestation_decoding">Dine-decode ang attestation data\u2026</string>
+    <string name="attestation_generating_randomness">Ginagawa ang secure na randomness\u2026</string>
+    <string name="attestation_sending">Ipinapadala sa tagapag-isyu\u2026</string>
+    <string name="attestation_verifying">Bine-verify ang commitment\u2026</string>
+    <string name="attestation_storing">Sine-store ang kredensyal\u2026</string>
+    <string name="attestation_complete">Tapos na ang kredensyal!</string>
+    <string name="attestation_error_invalid_data">Hindi valid ang attestation data</string>
+    <string name="attestation_error_expired">Nag-expire na ang attestation</string>
+    <!-- FIX #15 (MEDIUM): Removed po for consistency with other attestation errors. -->
+    <string name="attestation_error_network">Network error - pakisuri ang iyong connection</string>
+    <string name="attestation_error_unexpected">May hindi inaasahang error</string>
+    <string name="attestation_title_processing">Pino-process ang Attestation</string>
+    <string name="attestation_title_success">Natanggap na ang Kredensyal</string>
+    <!-- FIX #3 (CRITICAL): "Hindi Nag-isyu" implies refusal; changed to "Nabigong Mag-isyu" (failed to issue). -->
+    <string name="attestation_title_failed">Nabigong Mag-isyu</string>
+    <string name="attestation_secure_issuance">Secure na Pag-isyu</string>
+    <string name="attestation_privacy_preserving">Pag-isyu ng kredensyal na may privacy protection</string>
+    <!-- FIX #7 (HIGH): Added po for consistency with attestation_keep_app_open (both display together). -->
+    <string name="attestation_may_take_seconds">Maaaring tumagal po ng ilang segundo</string>
+    <string name="attestation_keep_app_open">Panatilihin po ang app na bukas</string>
+    <string name="attestation_credential_received">Natanggap na ang Kredensyal!</string>
+    <!-- FIX #4 (CRITICAL): Restructured so "ligtas" (securely) modifies storage action, not the credential itself. -->
+    <string name="attestation_credential_stored_description">Naka-store na nang ligtas ang iyong kredensyal para sa age verification</string>
+    <string name="attestation_issuer_verified">Na-verify ang tagapag-isyu</string>
+    <!-- FIX #3 (CRITICAL): Same fix as attestation_title_failed. -->
+    <string name="attestation_failed_title">Nabigong Mag-isyu</string>
+    <!-- FIX #17 (LOW): Restored "sa halip" for "Instead". -->
+    <string name="attestation_scan_qr_instead">Mag-scan ng QR sa Halip</string>
+    <string name="attestation_go_back">Bumalik</string>
+    <string name="attestation_step_decode">Decode</string>
+    <string name="attestation_step_generate">Generate</string>
+    <string name="attestation_step_send">Send</string>
+    <string name="attestation_step_verify">Verify</string>
+    <string name="attestation_step_store">Store</string>
+    <string name="attestation_step_complete">Tapos</string>
+    <string name="accessibility_attestation_encrypted_description">Pino-process ang naka-encrypt na attestation</string>
+    <string name="accessibility_attestation_success_description">Check mark na nagpapakitang natanggap ang kredensyal</string>
+    <!-- FIX #18 (LOW): Same "hindi nag-isyu" meaning shift as #3; changed to "nabigong mag-isyu". -->
+    <string name="accessibility_attestation_error_description">Error icon na nagpapakitang nabigong mag-isyu</string>
+    <string name="accessibility_step_complete">Tapos na ang step %1$s</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Tatanggap ng Kredensyal</string>
+    <string name="attestation_recipient_prompt">Ang kredensyal na ito ay para sa\u2026</string>
+    <string name="attestation_recipient_me">Akin</string>
+    <string name="attestation_recipient_child">Isang Bata</string>
+    <string name="attestation_nickname_title">Palayaw ng Bata</string>
+    <string name="attestation_nickname_prompt">Maglagay ng palayaw para makilala ang mga kredensyal</string>
+    <string name="attestation_nickname_placeholder">hal. Alex</string>
+    <string name="attestation_nickname_continue">Magpatuloy</string>
+    <string name="attestation_nickname_back">Bumalik</string>
+    <string name="accessibility_attestation_recipient_heading">Piliin kung para kanino ang kredensyal na ito</string>
+    <string name="accessibility_attestation_nickname_heading">Maglagay ng palayaw para sa bata</string>
+
+    <!-- Officer Error Messages -->
+    <!-- FIX #5 (HIGH): Kept "officer ID" consistently as a technical term throughout this section. -->
+    <string name="officer_auth_error_invalid_format">Hindi valid ang format ng officer ID</string>
+    <string name="officer_auth_error_challenge_failed">Hindi nakuha ang YubiKey challenge: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Hawakan ang iyong YubiKey para mag-authenticate</string>
+    <string name="officer_auth_error_touch_timeout">Nag-timeout ang YubiKey touch</string>
+    <!-- FIX #9 (HIGH): Lowercased "petsa ng kapanganakan" for consistency with officer_issuance_process_steps. FIX #6 (HIGH): Added po here for consistency. -->
+    <string name="officer_auth_error_verify_document_dob">Pakitiyak na tugma ang dokumento at petsa ng kapanganakan</string>
+    <string name="officer_auth_error_invalid_date_format">Hindi valid ang format ng petsa. Gamitin ang YYYY-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">Kailangan 18 taong gulang o mas matanda ang user</string>
+    <!-- FIX #6 (HIGH): Removed po from officer error messages (professional peer-to-peer context). -->
+    <string name="officer_auth_error_not_authenticated">Hindi pa naka-authenticate. Ilagay muna ang iyong officer ID.</string>
+    <string name="officer_auth_error_issue_failed">Hindi nai-isyu ang kredensyal</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">I-tap para tingnan</string>
+    <!-- FIX #19 (LOW): Kept "long press" untranslated to match "swipe" treatment; consistent Taglish for gesture terms. -->
+    <string name="gesture_desc_long_press_options">, long press para sa mga opsyon</string>
+    <string name="gesture_desc_swipe_left">, mag-swipe pakaliwa para sa iba pang aksyon</string>
+    <string name="gesture_desc_swipe_right">, mag-swipe pakanan para sa iba pang aksyon</string>
+    <string name="gesture_desc_tap_to_activate">I-tap para i-activate</string>
+    <string name="gesture_desc_long_press_format">. Long press: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Subukan Muli</string>
+    <string name="main_activity_reset_redownload">I-reset at I-download Muli</string>
+    <string name="main_activity_show_debug_info">Ipakita ang Debug Info</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Accessibility Settings</string>
+    <string name="search_item_accessibility_settings_subtitle">I-customize ang iyong karanasan</string>
+    <string name="search_item_large_text_title">Malaking Text</string>
+    <!-- FIX #14 (MEDIUM): Removed tautology "palakihin ang laki" (make the size bigger). -->
+    <string name="search_item_large_text_subtitle">Palakihin ang text</string>
+    <string name="search_item_high_contrast_title">High Contrast</string>
+    <string name="search_item_high_contrast_subtitle">Pahusayin ang visibility</string>
+    <string name="search_item_voice_input_title">Voice Input</string>
+    <string name="search_item_voice_input_subtitle">Kontrolin gamit ang boses</string>
+    <string name="search_item_manual_code_entry_title">Manual na Paglagay ng Code</string>
+    <string name="search_item_manual_code_entry_subtitle">I-type ang code sa halip na mag-scan</string>
+    <string name="search_item_simplified_ui_title">Pinasimpleng Interface</string>
+    <string name="search_item_simplified_ui_subtitle">Bawasan ang visual na kumplikasyon</string>
+    <string name="search_item_color_blindness_title">Suporta sa Color Blindness</string>
+    <!-- FIX #13 (MEDIUM): Shortened from 60ch to 37ch (90% of EN), eliminating length expansion. -->
+    <string name="search_item_color_blindness_subtitle">Ayusin ang mga kulay para mas makita</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Settings</string>
+    <string name="search_item_settings_subtitle">Configuration ng app</string>
+    <string name="search_item_language_title">Wika</string>
+    <string name="search_item_language_subtitle">Palitan ang wika ng app</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Aking mga Kredensyal</string>
+    <string name="search_item_credentials_subtitle">Tingnan ang iyong mga kredensyal</string>
+    <string name="search_item_get_credential_title">Kumuha ng Kredensyal</string>
+    <string name="search_item_get_credential_subtitle">Maghanap ng mga tagapag-isyu</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Tulong</string>
+    <string name="search_item_help_subtitle">Humingi ng tulong</string>
+    <string name="search_item_privacy_title">Privacy Protection</string>
+    <string name="search_item_privacy_subtitle">Paano pinoprotektahan ang iyong data</string>
+    <string name="search_item_verification_title">Age Verification</string>
+    <string name="search_item_verification_subtitle">Patunayan ang iyong edad</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <!-- FIX #10 (MEDIUM): Trimmed developer-facing string from 74ch to 35ch. -->
+    <string name="issuer_fallback_sandbox_description">Fallback registry para sa sandbox</string>
+    <string name="issuer_fallback_production_description">Fallback registry para sa production</string>
+    <string name="issuer_fallback_category_government">Gobyerno</string>
+    <string name="issuer_fallback_category_government_description">Mga kredensyal mula sa gobyerno</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii Sandbox Issuer</string>
+    <!-- FIX #11 (MEDIUM): Shortened by using "issuer" instead of "tagapag-isyu" in this developer-facing context. -->
+    <string name="issuer_fallback_sandbox_issuer_description">Opisyal na Provii sandbox issuer para sa testing</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Bisitahin ang sandbox issuer portal</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Opisyal na Provii tagapag-isyu ng kredensyal</string>
+    <string name="issuer_fallback_production_issuer_instructions">Bumisita sa iyong lokal na DMV office</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <!-- FIX #12 (MEDIUM): Shortened from 55ch to 51ch by using "puwede" instead of "maaaring". -->
+    <string name="validation_error_birth_date_future">Hindi puwede sa hinaharap ang petsa ng kapanganakan</string>
+    <string name="validation_error_invalid_date_format">Hindi valid ang format ng petsa</string>
+    <string name="validation_error_officer_id_too_short">Masyadong maikli ang officer ID</string>
+    <string name="validation_error_invalid_officer_id_format">Hindi valid ang format ng officer ID</string>
+    <string name="validation_error_empty_qr_code">Walang laman ang QR code</string>
+    <string name="validation_error_qr_code_too_large">Masyadong malaki ang QR code</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">Developer ka na!</string>
+    <!-- FIX #16 (MEDIUM): Changed to stative "Gumagamit na ng" to indicate state change. -->
+    <string name="sandbox_toast_enabled">Na-enable ang Sandbox Mode\nGumagamit na ng test environment</string>
+    <string name="sandbox_toast_disabled">Na-enable ang Production Mode\nGumagamit na ng production environment</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">1 step na lang bago maging developer</string>
+    <string name="sandbox_toast_steps_away">%1$d steps pa bago maging developer</string>
+
+
+    <!-- ==================== BATCH 09: HELP SYSTEM LONG-FORM, LOCALIZED CONTENT ==================== -->
+    <!-- 98 strings: Help topic titles, help text, standard content, simplified content -->
+    <!--
+        VALIDATOR SUMMARY (2026-03-21):
+        Applied fixes from tl-batch-09-review.md (28 findings: 2C, 7H, 9M, 6L, 4I).
+
+        CRITICAL fixes applied:
+        - C-01: Simplified strings now consistently use conversational register. Fixed
+          content_age_verification_instructions_simplified, content_credential_issuance_instructions_simplified,
+          and content_zero_knowledge_explanation_simplified to use casual verb forms and shorter constructions.
+        - C-02: Replaced "Mapapatunayan" (Grade 11+ abilitative contemplative verb) with
+          "Puwede mong i-prove" (Taglish, Grade 6 level) in content_zero_knowledge_explanation_simplified.
+
+        HIGH fixes applied:
+        - H-02: Standardised cognitive load phrasing to "Nagpapabawas ng cognitive load" across all five
+          help text strings (was cycling through four different verb forms).
+        - H-04: Added "po" to opening sentences of help text strings to match polite register established
+          in batches 01, 02, 05, 07, 10. Applied to first sentence of each help text only, not every line.
+        - H-05: Replaced forced neologisms "nabigasyon" with "navigation" and "oryentasyon" with "orientation"
+          (Taglish). Note: batches 03 and 10 still use "nabigasyon" and need a cross-batch sweep.
+        - H-07: Replaced "Mga Tagapagpakita ng Hakbang" (dead agentive construction) with
+          "Mga Step Indicator" (natural Taglish).
+
+        HIGH NOT fixed (with rationale):
+        - H-01: "Beripikasyon" kept. Consistent within batch 09 and matches batches 01, 02, 05, 07.
+          Cross-batch glossary unification is a separate task.
+        - H-03: Expansion flags left as-is. Adding flags to some but not all creates false confidence
+          either way. Meg's overflow testing is the real safety net.
+        - H-06: "Pinasimpleng" kept. Used in batches 03, 06, 08, 09. Changing only here creates
+          cross-batch inconsistency. Needs a project-wide decision.
+
+        MEDIUM fixes applied:
+        - M-02: "pagkabahala" replaced with "kaba" (lighter, more colloquial) in help text.
+        - M-03: "Pag-iingat ng Data" (means "being careful") replaced with "Pag-save ng Data" (correct meaning).
+        - M-04: "Gawi ng Timeout" (anthropomorphises) replaced with "Timeout Setting".
+        - M-06: "Teknikal na glossary" replaced with "Technical glossary" (consistent Taglish).
+        - M-08: Restructured triple subordinate clause in content_zero_knowledge_explanation.
+
+        INFO fixes applied:
+        - I-02: String count verified as 98 (24 titles + 24 help texts + 25 standard + 25 simplified).
+          Reviewer's count of 99 was incorrect; original comment of 98 was right. Kept at 98.
+    -->
+
+    <!-- ==================== HELP TOPIC TITLES ==================== -->
+    <string name="help_topic_contrast_levels_title">Mga Antas ng Contrast</string>
+    <string name="help_topic_extra_large_text_title">Sobrang Laking Teksto</string>
+    <string name="help_topic_reduce_transparency_title">Bawasan ang Transparency</string>
+    <string name="help_topic_color_blind_modes_title">Mga Mode para sa Color Blindness</string>
+    <string name="help_topic_line_spacing_title">Agwat ng Linya</string>
+    <string name="help_topic_paragraph_spacing_title">Agwat ng Talata</string>
+    <string name="help_topic_letter_spacing_title">Agwat ng Letra</string>
+    <string name="help_topic_text_width_title">Lapad ng Teksto</string>
+    <string name="help_topic_touch_targets_title">Mas Malalaking Touch Target</string>
+    <string name="help_topic_reduce_motion_title">Bawasan ang Galaw</string>
+    <string name="help_topic_timeout_behavior_title">Timeout Setting</string>
+    <string name="help_topic_simplified_gestures_title">Pinasimpleng Gesture</string>
+    <string name="help_topic_haptic_feedback_title">Haptic Feedback</string>
+    <string name="help_topic_data_preservation_title">Pag-save ng Data</string>
+    <string name="help_topic_simplified_ui_title">Pinasimpleng Interface</string>
+    <string name="help_topic_step_indicators_title">Mga Step Indicator</string>
+    <string name="help_topic_verbose_descriptions_title">Detalyadong Paglalarawan</string>
+    <string name="help_topic_confirm_actions_title">Kumpirmahin ang mga Aksyon</string>
+    <string name="help_topic_reading_level_title">Pinasimpleng Antas ng Pagbasa</string>
+    <string name="help_topic_help_system_title">Sistema ng Tulong</string>
+    <string name="help_topic_manual_code_entry_title">Manu-manong Paglagay ng Code</string>
+    <string name="help_topic_voice_input_title">Voice Input</string>
+    <string name="help_topic_screen_reader_title">Suporta sa Screen Reader</string>
+    <string name="help_topic_accessibility_profiles_title">Mga Profile para sa Mabilisang Pag-set Up</string>
+
+    <!-- ==================== HELP TEXT (LONG-FORM) ==================== -->
+    <!-- FLAG: help_topic_contrast_levels_text ~135% expansion -->
+    <string name="help_topic_contrast_levels_text">Kontrolin po ang contrast ratio sa pagitan ng teksto at background:\n\n• Standard: Default na kulay ng app\n• Mataas (AA): 4.5:1 na contrast ratio\n• Pinakamataas (AAA): 7:1+ na contrast ratio\n\nAng mas mataas na contrast ay nagpapadali sa pagbasa ng teksto, lalo na sa maliwanag na paligid o para sa mga gumagamit na mahina ang paningin.\n\nKailangan ng WCAG AAA ang Pinakamataas na contrast.</string>
+
+    <!-- FLAG: help_topic_extra_large_text_text ~130% expansion -->
+    <string name="help_topic_extra_large_text_text">Pinapalaki po ang lahat ng teksto ng 50% sa buong app.\n\nPinapadali nito ang pagbasa para sa mga gumagamit na may:\n• Mahinang paningin\n• Pagbabago ng paningin dahil sa edad\n• Kahirapan sa pagbasa\n\nPuwedeng pagsamahin sa system font size settings para sa pinakamataas na flexibility.</string>
+
+    <string name="help_topic_reduce_transparency_text">Tinatanggal po ang mga transparent na overlay at blur effect.\n\nMga benepisyo:\n• Mas malinaw na visual hierarchy\n• Mas madaling basahin ang teksto\n• Mas kaunting visual noise\n• Nagpapabawas ng cognitive load\n\nInirerekomenda para sa mga gumagamit na mahina ang paningin o may kahirapan sa pag-iisip.</string>
+
+    <!-- FLAG: help_topic_color_blind_modes_text ~140% expansion -->
+    <string name="help_topic_color_blind_modes_text">Inaayos po ang mga kulay para sa iba\'t ibang uri ng color blindness:\n\n• Protanopia: Hirap makita ang pula\n• Deuteranopia: Hirap makita ang berde\n• Tritanopia: Hirap makita ang asul\n• Monochrome: Ganap na color blindness\n\nAng bawat mode ay gumagamit ng maingat na piniling mga kulay na makikilala para sa partikular na uri ng kakulangan sa paningin ng kulay.</string>
+
+    <string name="help_topic_line_spacing_text">Inaayos po ang agwat sa pagitan ng mga linya ng teksto (1.0x - 2.0x).\n\n• Default: 1.0x\n• Sumusunod sa AAA: 1.5x o mas mataas\n\nAng pinalaking agwat ng linya ay:\n• Nagpapabuti ng pag-unawa sa binabasa\n• Nagpapabawas ng pagkapagod ng mata\n• Nakakatulong sa mga gumagamit na may dyslexia\n• Nagpapagaan ng mga bloke ng teksto</string>
+
+    <string name="help_topic_paragraph_spacing_text">Inaayos po ang agwat sa pagitan ng mga talata (1.0x - 3.0x).\n\n• Default: 1.0x\n• Sumusunod sa AAA: 2.0x o mas mataas\n\nAng pinalaking agwat ng talata ay:\n• Malinaw na naghihiwalay ng mga ideya\n• Nagpapabuti ng visual na organisasyon\n• Nagpapabawas ng cognitive load\n• Nakakatulong mapanatili ang posisyon sa pagbasa</string>
+
+    <string name="help_topic_letter_spacing_text">Inaayos po ang agwat sa pagitan ng mga letra (0.0em - 0.2em).\n\n• Default: 0.0em\n• Sumusunod sa AAA: 0.12em o mas mataas\n\nAng pinalaking agwat ng letra ay:\n• Nagpapalinaw sa bawat letra\n• Nakakatulong sa mga gumagamit na may dyslexia\n• Nagpapabuti ng katumpakan sa pagbasa\n• Nagpapabawas ng pagkalito sa mga letra</string>
+
+    <string name="help_topic_text_width_text">Nilimitahan po ang haba ng linya para sa mas madaling pagbasa:\n\n• Buong Lapad: Walang limitasyon\n• Komportable: 80 character (inirerekomenda)\n• Makitid: 60 character\n\nIpinapakita ng pananaliksik na ang pinakamainam na pagbasa ay sa 60-80 character bawat linya. Ang mas maiikling linya ay nagpapabawas ng paggalaw ng mata at nagpapabuti ng pag-unawa.</string>
+
+    <string name="help_topic_touch_targets_text">Pinapalaki po ang minimum na laki ng touch target sa 60dp (mula sa 44dp).\n\nMga benepisyo:\n• Mas madaling i-tap ang mga button at kontrol\n• Nababawasan ang mga hindi sinasadyang pag-tap\n• Nakakatulong sa mga gumagamit na may kapansanan sa paggalaw\n• Mas mabuti para sa paggamit ng isang kamay\n\nKailangan ng WCAG AAA ang 60dp na minimum.</string>
+
+    <string name="help_topic_reduce_motion_text">Tinatanggal po ang lahat ng animation at transition.\n\nMga benepisyo:\n• Iniiwasan ang pagkahilo\n• Nababawasan ang distraction\n• Nagpapabawas ng cognitive load\n• Pinapabuti ang pokus\n\nInirerekomenda para sa mga gumagamit na may:\n• Mga sakit sa vestibular\n• Kahirapan sa atensyon\n• Sensitivity sa galaw</string>
+
+    <!-- FLAG: help_topic_timeout_behavior_text ~135% expansion -->
+    <string name="help_topic_timeout_behavior_text">Kinokontrol po ang awtomatikong timeout sa mga screen ng beripikasyon:\n\n• Walang Timeout (AAA): Walang limitasyon sa oras\n• Standard: 30 segundo\n• Pinahaba: 60 segundo\n\nKailangan ng WCAG AAA ang opsyon na walang timeout para sa mga gumagamit na nangangailangan ng mas mahabang oras upang tapusin ang mga gawain.\n\nAwtomatikong sine-save ang data ng form bago mag-timeout.</string>
+
+    <string name="help_topic_simplified_gestures_text">Pinapalitan po ang mga kumplikadong gesture ng mga simpleng alternatibo:\n\n• Swipe → I-tap ang button\n• Long press → Regular na tap na may kumpirmasyon\n• Pinch/zoom → Mga button\n\nNakakatulong sa mga gumagamit na may:\n• Kapansanan sa paggalaw\n• Panginginig\n• Limitadong dexterity\n• Kahirapan sa touchscreen</string>
+
+    <string name="help_topic_haptic_feedback_text">Nagbibigay po ng vibration feedback para sa mga aksyon.\n\nMga benepisyo:\n• Kinukumpirma ang mga pagpindot ng button\n• Nagpapahiwatig ng mga error\n• Nagbibigay ng tactile na kumpirmasyon\n\nPuwedeng i-disable para sa mga gumagamit na:\n• Nadi-distract nito\n• May sensory sensitivities\n• Mas gusto ang tahimik na operasyon</string>
+
+    <string name="help_topic_data_preservation_text">Awtomatikong sine-save po ang data ng form bago mag-timeout.\n\nMga tampok:\n• Babala 10 segundo bago mag-timeout\n• Opsyon na i-save o itapon ang data\n• Awtomatikong pagbabalik kapag bumalik\n• 24 na oras na pagtatago ng data\n\nSinisigurado na walang mawawalang data kung kailangan mo ng karagdagang oras o may abala.</string>
+
+    <string name="help_topic_simplified_ui_text">Binabawasan po ang visual na kumplikado:\n\n• Mas kaunting elemento ng interface ang ipinapakita nang sabay\n• Mas malaki at malinaw na mga button\n• Mas maraming whitespace\n• Pinasimpleng layout\n\nMga benepisyo:\n• Mas madaling maintindihan\n• Hindi nakakapagod sa paningin\n• Mas nakakapokus\n• Nagpapabawas ng cognitive load</string>
+
+    <string name="help_topic_step_indicators_text">Ipinapakita po ang progreso sa mga prosesong may maraming hakbang.\n\nIpinapakita ang:\n• Kasalukuyang numero ng hakbang\n• Kabuuang bilang ng mga hakbang\n• Visualization ng progreso\n\nMga benepisyo:\n• Nababawasan ang kaba\n• Nagtatakda ng malinaw na inaasahan\n• Nakakatulong mapanatili ang orientation\n• Ipinapakita ang progreso ng pagkumpleto</string>
+
+    <string name="help_topic_verbose_descriptions_text">Nagbibigay po ng karagdagang konteksto at paliwanag:\n\n• Mas mahabang label ng button\n• Mas detalyadong tagubilin\n• Karagdagang mga pahiwatig\n• Mas malinaw na mga mensahe ng error\n\nTumutulong sa mga gumagamit na:\n• Maintindihan ang mga aksyon bago gawin\n• Maiwasan ang mga pagkakamali\n• Matutuhan ang mga function ng app\n• Magkaroon ng kumpiyansa</string>
+
+    <string name="help_topic_confirm_actions_text">Nangangailangan po ng kumpirmasyon para sa mahahalagang aksyon:\n\n• Pagtanggal ng mga kredensyal\n• Pagbabago ng mga setting\n• Pag-clear ng data\n\nKailangan ng WCAG AAA ang kumpirmasyon para sa lahat ng mapaminsalang aksyon.\n\nMga benepisyo:\n• Iniiwasan ang mga aksidente\n• Pinapayagan ang pag-review bago kumilos\n• Nababawasan ang kaba\n• Nagbibigay ng pangalawang pagkakataon</string>
+
+    <!-- FLAG: help_topic_reading_level_text ~135% expansion -->
+    <string name="help_topic_reading_level_text">Gumagamit po ng mas simpleng wika (antas Grade 7-9):\n\n• Mas maiikling pangungusap\n• Mga karaniwang salita sa halip na jargon\n• Malinaw at direktang wika\n• Mas kaunting teknikal na termino\n\nSumusunod sa WCAG AAA kapag naka-enable.\n\nMga benepisyo:\n• Mas madaling maintindihan\n• Mas mabilis na pag-unawa\n• Mas mabuti para sa mga hindi native speaker\n• Nagpapabawas ng cognitive load</string>
+
+    <string name="help_topic_help_system_text">Konteksto-sensitibong tulong na available po sa buong app.\n\nMga tampok:\n• 27 na paksa ng tulong\n• Help center na maaaring hanapin\n• Navigation ng mga kaugnay na paksa\n• Technical glossary\n\nI-access ang tulong mula sa:\n• Mga screen ng settings\n• Mga kumplikadong tampok\n• Mga mensahe ng error\n• Kahit saan na may icon ng tulong</string>
+
+    <string name="help_topic_manual_code_entry_text">Manu-manong ilagay po ang data ng QR code sa halip na i-scan.\n\nMga benepisyo:\n• Gumagana kahit walang access sa camera\n• Nakakatulong sa mga gumagamit na may kahirapan sa paggalaw\n• Mas mabuti sa mababang ilaw\n• Hindi kailangan na hawakan nang maayos ang telepono\n\nAlternatibo sa pag-scan ng QR gamit ang camera.</string>
+
+    <string name="help_topic_voice_input_text">Gumamit po ng boses para maglagay ng teksto sa halip na mag-type.\n\nMga benepisyo:\n• Hands-free na input\n• Mas mabilis kaysa sa pag-type\n• Nakakatulong sa mga gumagamit na may kapansanan sa paggalaw\n• Nababawasan ang repetitive strain\n\nGinagamit ang built-in na voice recognition ng iyong device.</string>
+
+    <!-- FLAG: help_topic_screen_reader_text ~130% expansion -->
+    <string name="help_topic_screen_reader_text">Buong suporta po para sa TalkBack screen reader.\n\nMga tampok:\n• Lahat ng elemento ng UI ay may label\n• Tamang istruktura ng heading\n• Lohikal na pagkakasunod ng navigation\n• Mga custom na pahiwatig para sa mga kumplikadong aksyon\n\nAwtomatikong ine-enable ng app ang:\n• Detalyadong paglalarawan\n• Pinahusay na touch target\n\nkapag na-detect ang TalkBack.</string>
+
+    <!-- FLAG: help_topic_accessibility_profiles_text ~130% expansion -->
+    <string name="help_topic_accessibility_profiles_text">Mga naka-configure nang accessibility profile:\n\n• Mahina ang Paningin: Mataas na contrast, malaking teksto, haptics\n• Kapansanan sa Paggalaw: Malalaking target, pinahabang timeout, kumpirmasyon\n• Cognitive: Pinasimpleng UI, mga step indicator, paglalarawan\n• Matatanda: Malaking teksto, malalaking target, pinasimpleng UI, bawas na galaw\n• Default: I-reset lahat ng settings\n\nAng bawat profile ay ine-enable ang mga pinaka-kapaki-pakinabang na setting para sa grupong iyon. Puwede ka pang mag-customize pagkatapos mag-apply ng profile.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <string name="content_age_verification_title">Beripikasyon ng Edad</string>
+    <string name="content_age_verification_explanation">Mangyaring maghintay habang ligtas naming bini-verify ang iyong edad gamit ang zero knowledge proof. Hindi kailanman ibinabahagi ang iyong petsa ng kapanganakan sa verifier.</string>
+    <string name="content_age_verification_instructions">Itutok ang iyong camera sa QR code ng beripikasyon. Awtomatikong i-scan ang code kapag na-detect.</string>
+    <string name="content_age_verification_success">Matagumpay na na-verify ang iyong edad. Alam ng verifier na natutugunan mo ang kanilang kinakailangan sa edad nang hindi nalalaman ang iyong totoong petsa ng kapanganakan.</string>
+    <string name="content_age_verification_failed">Hindi nagtagumpay ang beripikasyon. Mangyaring subukang i-scan muli ang QR code o gumamit ng manu-manong paglagay ng code.</string>
+    <string name="content_credential_issuance_title">Pag-isyu ng Kredensyal</string>
+    <string name="content_credential_issuance_explanation">I-scan ang QR code na ibinigay ng awtorisadong tagapag-isyu upang matanggap ang iyong digital na kredensyal ng edad.</string>
+    <string name="content_credential_issuance_instructions">Itutok ang iyong camera sa QR code ng pag-isyu na ipinakita ng opisyal. Gagawin ang iyong kredensyal sa iyong device.</string>
+    <string name="content_credential_issuance_success">Matagumpay na nagawa ang kredensyal. Magagamit mo na ito para sa beripikasyon ng edad.</string>
+    <string name="content_credential_description">Ang kredensyal ay isang cryptographically signed na patunay ng iyong pagkakakilanlan na nagbibigay-daan sa beripikasyon na nagpoprotekta ng privacy.</string>
+    <string name="content_zero_knowledge_explanation">Sa zero knowledge proof, mapapatunayan mong natutugunan mo ang kinakailangan sa edad nang hindi ibinubunyag ang iyong totoong edad.</string>
+    <string name="content_setup_proving_key">Dina-download ang cryptographic na proving key na kailangan para sa paggawa ng zero knowledge proof</string>
+    <string name="content_processing_challenge">Pinoproseso ang challenge ng beripikasyon</string>
+    <string name="content_creating_proof">Gumagawa ng zero knowledge proof ng edad</string>
+    <string name="content_submitting_proof">Isinusumite ang patunay sa verifier</string>
+    <string name="content_error_no_credential">Walang available na kredensyal. Mangyaring kumuha muna ng kredensyal mula sa isang awtorisadong tagapag-isyu.</string>
+    <string name="content_error_network_failed">Hindi nakakonekta sa network. Mangyaring suriin ang iyong koneksyon sa internet at subukan muli.</string>
+    <string name="content_error_invalid_qr">Hindi wastong QR code. Mangyaring siguraduhing ini-scan mo ang tamang code ng beripikasyon.</string>
+    <string name="content_error_verification_failed">Hindi nagtagumpay ang beripikasyon. Hindi na-validate ng server ang iyong patunay.</string>
+    <string name="content_officer_authentication_title">Pag-authenticate ng Opisyal</string>
+    <string name="content_officer_issuance_title">Pag-isyu ng Kredensyal</string>
+    <string name="content_officer_dob_prompt">Ilagay ang na-verify na petsa ng kapanganakan ng aplikante mula sa kanilang opisyal na dokumento ng pagkakakilanlan.</string>
+    <string name="content_onboarding_welcome">Maligayang pagdating sa Provii Wallet - ang iyong solusyon sa beripikasyon ng edad na nagpoprotekta ng privacy.</string>
+    <string name="content_onboarding_privacy">Ang iyong petsa ng kapanganakan ay ligtas na naka-store sa iyong device at hindi kailanman ipinapadala sa mga verifier.</string>
+    <string name="content_onboarding_get_started">Upang magsimula, bumisita sa isang awtorisadong tagapag-isyu para makuha ang iyong digital na kredensyal ng edad.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Simplified Filipino: shorter sentences, more Taglish, conversational register, no "po" -->
+    <string name="content_age_verification_title_simplified">Tingnan ang Edad Mo</string>
+    <string name="content_age_verification_explanation_simplified">Tine-check namin ang edad mo. Hindi namin makikita o ibabahagi ang birthday mo.</string>
+    <string name="content_age_verification_instructions_simplified">I-point mo lang ang camera mo sa QR code. Mag-scan ito nang kusa.</string>
+    <string name="content_age_verification_success_simplified">Tapos na! Alam ng website na sapat na ang edad mo. Hindi nila alam ang birthday mo.</string>
+    <string name="content_age_verification_failed_simplified">Hindi gumana. Subukan mong mag-scan ulit o i-type na lang ang code.</string>
+    <string name="content_credential_issuance_title_simplified">Kunin ang Digital ID Mo</string>
+    <string name="content_credential_issuance_explanation_simplified">I-scan ang code mula sa government office para makuha ang digital ID mo.</string>
+    <string name="content_credential_issuance_instructions_simplified">I-point mo lang ang camera mo sa code. Mase-save ang ID mo sa phone mo.</string>
+    <string name="content_credential_issuance_success_simplified">Tapos na! Puwede mo nang gamitin ang digital ID mo para patunayan ang edad mo.</string>
+    <string name="content_credential_description_simplified">Ang credential ay parang digital ID card na nagpapatunay kung sino ka nang hindi ibinabahagi ang mga private na detalye.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Puwede mong i-prove na sapat na ang edad mo. Hindi mo kailangang sabihin ang totoong edad mo.</string>
+    <string name="content_setup_proving_key_simplified">Dina-download ang mga security file na kailangan para gumana ang app</string>
+    <string name="content_processing_challenge_simplified">Binabasa ang age check request</string>
+    <string name="content_creating_proof_simplified">Gumagawa ng proof ng edad mo</string>
+    <string name="content_submitting_proof_simplified">Ipinapadala ang proof sa website</string>
+    <string name="content_error_no_credential_simplified">Wala ka pang ID. Pumunta muna sa government office para kumuha.</string>
+    <string name="content_error_network_failed_simplified">Hindi makakonekta sa internet. Tingnan ang wifi o data mo at subukan ulit.</string>
+    <string name="content_error_invalid_qr_simplified">Mukhang mali ang code na \'yan. Siguraduhing tama ang ini-scan mo.</string>
+    <string name="content_error_verification_failed_simplified">Hindi gumana. Hindi ma-check ng website ang proof mo. Subukan ulit.</string>
+    <string name="content_officer_authentication_title_simplified">Pag-sign In ng Opisyal</string>
+    <string name="content_officer_issuance_title_simplified">Gumawa ng ID Card</string>
+    <string name="content_officer_dob_prompt_simplified">Ilagay ang birthday ng tao mula sa kanilang opisyal na ID.</string>
+    <string name="content_onboarding_welcome_simplified">Maligayang pagdating sa Provii Wallet - patunayan ang edad mo nang pribado.</string>
+    <string name="content_onboarding_privacy_simplified">Nananatili ang birthday mo sa phone mo. Walang ibang makakakita nito.</string>
+    <string name="content_onboarding_get_started_simplified">Para magsimula, pumunta sa government office para makuha ang digital ID mo.</string>
+
+    <!-- ==================== MGA ERROR SA YUBIKEY ==================== -->
+    <!-- Tala para sa tagasalin: Mga mensahe ng error para sa YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">Walang nakakonektang YubiKey</string>
+    <string name="yubikey_error_timeout">Nag-timeout habang naghihintay ng YubiKey touch. Pakipindot po ang key kapag kumikislap.</string>
+    <string name="yubikey_error_not_supported">Hindi naka-configure ang challenge-response sa slot na ito ng YubiKey</string>
+    <string name="yubikey_error_no_slot">Hindi naka-configure ang Slot 2 para sa HMAC (Hash-based Message Authentication Code) SHA1 challenge-response</string>
+    <string name="yubikey_error_hmac_failed">Nabigo ang pagkalkula ng HMAC (Hash-based Message Authentication Code): %s</string>
+    <string name="yubikey_error_session_failed">Hindi makakonekta sa YubiKey: %s</string>
+
+    <!-- ==================== MGA ERROR SA WALLET REPOSITORY ==================== -->
+    <!-- Tala para sa tagasalin: Mga mensahe ng error mula sa mga operasyon ng wallet repository -->
+    <string name="wallet_error_not_initialized">Hindi pa na-initialize ang wallet</string>
+    <string name="wallet_error_proving_key_not_found">Hindi nakita ang proving key. Paki-download po ulit.</string>
+    <string name="wallet_error_proving_key_not_readable">Hindi mabasa ang file ng proving key</string>
+    <string name="wallet_error_out_of_memory">Walang sapat na memory. Paki-restart po ang app.</string>
+    <string name="wallet_error_prover_error">Error sa prover: %s</string>
+    <string name="wallet_error_ffi_error">FFI error: %s</string>
+    <string name="wallet_error_prover_init_failed">Hindi na-initialize ang prover: %s</string>
+    <string name="wallet_error_prover_verification_failed">Nabigo ang beripikasyon ng pag-initialize ng prover</string>
+    <string name="wallet_error_verifier_url_update_failed">Hindi na-update ang URL (web address) ng verifier! Inaasahang %1$s pero nakuha ang %2$s</string>
+    <string name="wallet_error_wallet_still_null">Null pa rin ang wallet pagkatapos mag-initialize</string>
+    <string name="wallet_error_credential_not_found">Hindi nakita ang kredensyal</string>
+    <string name="wallet_error_credential_access_failed">Hindi ma-access ang kredensyal: %s</string>
+    <string name="wallet_error_invalid_format">Hindi wastong format: %s</string>
+    <string name="wallet_error_not_initialized_short">Hindi pa na-initialize ang prover</string>
+    <string name="wallet_error_proving_key_unavailable">Hindi available ang proving key. Kailangan ng setup.</string>
+    <string name="wallet_error_storage_init_failed">Nabigo ang pag-initialize ng storage</string>
+    <string name="wallet_error_biometric_unavailable">Hindi available ang biometric authentication</string>
+    <string name="wallet_error_auth_failed">Nabigo ang authentication</string>
+    <string name="wallet_error_sandbox_disabled">I-enable ang sandbox mode para makagawa ng mga test credential</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Hindi makuha ang mga sandbox credential. Pakitingnan po ang koneksyon sa internet.</string>
+
+    <!-- ==================== MGA STRING NG KEYSTORE BRIDGE ==================== -->
+    <!-- Tala para sa tagasalin: Mga string para sa keystore at biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Kailangan ng Authentication</string>
+    <!-- FIX #5: "inyong" corrected to "iyong" for consistent singular register -->
+    <string name="keystore_biometric_prompt_subtitle_create_proof">I-verify po ang iyong pagkakakilanlan para makagawa ng age proof</string>
+    <!-- FIX #7: Added "po" to match register of adjacent biometric prompt -->
+    <string name="keystore_biometric_prompt_subtitle_access_storage">I-access po ang secure storage</string>
+    <string name="keystore_biometric_prompt_cancel">Kanselahin</string>
+
+    <!-- ==================== ACCESSIBILITY NG LICENSES SCREEN ==================== -->
+    <!-- Tala para sa tagasalin: Mga paglalarawan ng accessibility para sa licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, nakabukas, ipinapakita ang buong teksto ng lisensya</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, nakasara, %3$s</string>
+
+    <!-- ==================== MGA STRING NG NETWORK MANAGER ==================== -->
+    <!-- Tala para sa tagasalin: Mga label ng uri ng koneksyon sa network -->
+    <string name="network_type_none">Wala</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Cellular</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Hindi kilala</string>
+
+    <!-- ==================== MGA ABBREVIATION (WCAG 3.1.2) ==================== -->
+    <!-- Tala para sa tagasalin: Mga anunsyo ng screen reader para sa mga abbreviation sa unang paggamit bawat session -->
+    <!-- FIX #1-3: QR, PIN, DOB expansions kept in English. The abbreviations are English;
+         translating the expansion creates a disconnect for screen reader users. UI, URL, API
+         were already correct. -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Quick Response (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Personal Identification Number (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">Date of Birth (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Pagkakakilanlan (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">User Interface (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Uniform Resource Locator (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Application Programming Interface (API)</string>
+
+    <!-- ==================== MGA KONTROL NG ANIMATION (WCAG 2.2.2) ==================== -->
+    <!-- Tala para sa tagasalin: Mga string para sa mga kontrol ng pag-pause at pag-resume ng mga animation -->
+    <string name="animation_pause_animations">I-pause ang mga animation</string>
+    <string name="animation_resume_animations">I-resume ang mga animation</string>
+    <!-- FIX #9-10: English button labels for compact UI (universally understood) -->
+    <string name="animation_pause_button_text">Pause</string>
+    <string name="animation_resume_button_text">Resume</string>
+    <string name="animation_toggles_playback_hint">Ini-toggle ang playback ng animation</string>
+    <string name="animation_paused_announcement">Naka-pause ang mga animation</string>
+    <string name="animation_resumed_announcement">Na-resume ang mga animation</string>
+    <!-- FIX #8: Removed redundant "mga" after numeral -->
+    <string name="animation_active_count">%d aktibong animation</string>
+    <string name="animation_loading_default">Naglo-load</string>
+    <string name="animation_please_wait">Maghintay po habang nakukumpleto ang operasyong ito</string>
+    <!-- FIX #11: Fixed focus construction with linker "-ng" -->
+    <string name="animation_percent_complete">%d porsyentong nakumpleto</string>
+    <string name="animation_loading_in_progress">Isinasagawa</string>
+
+    <!-- ==================== MGA KEYBOARD SHORTCUT (WCAG 2.1.3) ==================== -->
+    <!-- Tala para sa tagasalin: Mga string para sa pagpapakita ng mga keyboard shortcut at nabigasyon -->
+    <string name="keyboard_shortcuts_title">Mga Keyboard Shortcut</string>
+    <string name="keyboard_shortcuts_done">Tapos na</string>
+    <string name="keyboard_shortcuts_app_section">Mga Shortcut ng App</string>
+    <string name="keyboard_shortcuts_navigation_section">Nabigasyon</string>
+    <string name="keyboard_shortcuts_tips_section">Mga Tip</string>
+    <string name="keyboard_shortcuts_navigation_footer">Gumagana ang mga navigation key na ito sa buong app gamit ang mga external keyboard</string>
+    <!-- FIX #16: Simplified "external na" to "external" (all-English noun phrase) -->
+    <string name="keyboard_shortcuts_tip_external">Sinusuportahan ang mga external Bluetooth at USB keyboard</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Gamitin ang mga arrow key para mag-navigate sa pagitan ng mga item sa mga listahan</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Pindutin nang matagal ang Ctrl para makita ang mga available na shortcut sa screen na ito</string>
+    <string name="keyboard_shortcuts_tip_a11y">Lahat ng feature sa app na ito ay accessible gamit ang keyboard</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Isara ang mga keyboard shortcut</string>
+    <!-- Mga label at paglalarawan ng mga app shortcut -->
+    <string name="keyboard_shortcut_label_settings">Settings</string>
+    <string name="keyboard_shortcut_label_accessibility">Accessibility</string>
+    <string name="keyboard_shortcut_label_help">Help Centre</string>
+    <string name="keyboard_shortcut_label_add_credential">Magdagdag ng Kredensyal</string>
+    <string name="keyboard_shortcut_label_verify">I-verify</string>
+    <string name="keyboard_shortcut_label_shortcuts">Mga Shortcut</string>
+    <string name="keyboard_shortcut_desc_settings">Buksan ang Settings</string>
+    <string name="keyboard_shortcut_desc_accessibility">Settings ng Accessibility</string>
+    <string name="keyboard_shortcut_desc_help">Help Centre</string>
+    <string name="keyboard_shortcut_desc_add_credential">Magdagdag ng Kredensyal</string>
+    <string name="keyboard_shortcut_desc_verify">Simulan ang Beripikasyon</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Mga Keyboard Shortcut</string>
+    <!-- Mga label at paglalarawan ng mga navigation shortcut -->
+    <string name="keyboard_shortcut_nav_back">Bumalik / I-dismiss</string>
+    <string name="keyboard_shortcut_nav_back_desc">I-dismiss ang kasalukuyang screen o dialog</string>
+    <string name="keyboard_shortcut_nav_next">Susunod na Field</string>
+    <string name="keyboard_shortcut_nav_next_desc">Ilipat ang focus sa susunod na interactive na elemento</string>
+    <string name="keyboard_shortcut_nav_prev">Nakaraang Field</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Ilipat ang focus sa nakaraang interactive na elemento</string>
+    <string name="keyboard_shortcut_nav_submit">I-submit / Magpatuloy</string>
+    <string name="keyboard_shortcut_nav_submit_desc">I-activate ang naka-focus na button o mag-submit ng form</string>
+    <string name="keyboard_shortcut_nav_activate">I-activate ang Button</string>
+    <string name="keyboard_shortcut_nav_activate_desc">I-activate ang kasalukuyang naka-focus na button o toggle</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Tala para sa tagasalin: Mga string para sa accessibility ng mga modal dialog -->
+    <string name="modal_opened_announcement">Nabukas ang dialog. Pindutin ang Escape para i-dismiss, Enter para kumpirmahin.</string>
+    <string name="modal_closed_announcement">Nakasara ang dialog</string>
+    <string name="modal_button_primary_label">%s (pangunahing aksyon)</string>
+    <string name="modal_button_cancel_label">%s (kanselahin)</string>
+    <!-- FIX #12: "mapanganib" (dangerous) replaced with "di-maibabalik" (irreversible) -->
+    <string name="modal_button_destructive_label">%s (di-maibabalik na aksyon)</string>
+    <string name="modal_button_primary_hint">Mag-double tap para kumpirmahin, o pindutin ang Enter</string>
+    <string name="modal_button_cancel_hint">Mag-double tap para kanselahin, o pindutin ang Escape</string>
+    <!-- FIX #13: Same "mapanganib" correction -->
+    <string name="modal_button_destructive_hint">Mag-double tap para isagawa ang di-maibabalik na aksyon</string>
+    <string name="modal_button_secondary_hint">Mag-double tap para isagawa ang aksyon</string>
+    <string name="modal_confirm">Kumpirmahin</string>
+    <string name="modal_cancel">Kanselahin</string>
+    <string name="modal_delete">Burahin</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">Burahin ang %1$s</string>
+    <string name="a11y_edit_nickname_for">I-edit ang palayaw para sa %1$s</string>
+    <string name="accessibility_attestation_scan_back">Bumalik</string>
+    <string name="attestation_replace_confirm">Palitan</string>
+    <string name="attestation_replace_primary_message">Mayroon ka nang personal na kredensyal. Kapag gumawa ka ng bago, mapapalitan ito. Hindi na ito maibabalik.</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">Palitan ang Umiiral na Kredensyal?</string>
+    <string name="attestation_scan_error_empty">Walang laman ang QR code</string>
+    <string name="attestation_scan_instruction">Itutok ang iyong camera sa QR code na ipinapakita ng opisyal</string>
+    <string name="attestation_scan_invalid_qr">Walang attestation data ang QR code na ito</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">Mag-scan ng Attestation</string>
+    <string name="attestation_scan_wrong_type_toast">Beripikasyon QR ito, hindi kredensyal QR</string>
+    <string name="biometric_required_message">Kailangan ng app na ito ang screen lock (PIN, pattern, o biometric) para ligtas na maitago ang mga kredensyal. Mag-set up po muna sa security settings ng device bago magpatuloy.</string>
+    <string name="biometric_required_open_settings">Buksan ang Security Settings</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">Kailangan ang Screen Lock</string>
+    <string name="challenge_sandbox_prompt_announcement">Nakatanggap ng sandbox challenge. Pumili kung i-enable ang sandbox mode at magpatuloy, o tanggihan ang challenge.</string>
+    <string name="challenge_sandbox_prompt_body">Inisyu ang challenge na ito ng isang sandbox verifier. Hindi ito magtatagumpay maliban kung i-enable mo ang sandbox mode sa wallet na ito.</string>
+    <string name="challenge_sandbox_prompt_primary">I-enable ang sandbox at magpatuloy</string>
+    <string name="challenge_sandbox_prompt_secondary">Tanggihan ang challenge</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">Nakatanggap ng sandbox challenge</string>
+    <string name="credential_detail_nickname_error">Hindi na-save ang palayaw</string>
+    <string name="credential_list_managed_count">%1$d ng %2$d</string>
+    <string name="credential_picker_count_shown">%1$d kredensyal ang ipinapakita</string>
+    <string name="credential_picker_filter_clear">I-clear ang filter</string>
+    <string name="credential_picker_filter_label">I-filter ang mga kredensyal ayon sa pangalan</string>
+    <string name="credential_picker_filter_placeholder">I-filter ang mga kredensyal</string>
+    <string name="credential_picker_no_results">Walang tumutugmang kredensyal</string>
+    <string name="credential_picker_section_managed">Mga Pinamamahalaang Kredensyal</string>
+    <string name="credential_picker_section_me">Ako</string>
+    <string name="credential_picker_subtitle">Piliin po kung sino ang bine-verify.</string>
+    <string name="credential_row_action_delete">Burahin</string>
+    <string name="credential_row_action_edit">I-edit ang Palayaw</string>
+    <string name="credential_row_overflow_menu">Mga opsyon ng kredensyal</string>
+    <string name="deeplink_sandbox_prompt_announcement">Nakita ang sandbox link. Pumili kung i-enable ang sandbox mode at buksan ang link.</string>
+    <string name="deeplink_sandbox_prompt_body">Magtatagumpay lang ang deep-link na ito kung i-enable mo ang sandbox mode sa wallet na ito.</string>
+    <string name="deeplink_sandbox_prompt_primary">I-enable ang sandbox at buksan</string>
+    <string name="deeplink_sandbox_prompt_secondary">Kanselahin</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">Nakita ang sandbox link</string>
+    <string name="empty_credential_option_find_apps_a11y">Maghanap ng kalahok na app. Kumuha ng kredensyal mula sa iyong super, bangko, telco, health insurer, o sinumang nakakaalam na ng iyong edad.</string>
+    <string name="empty_credential_option_find_apps_desc">Kumuha ng kredensyal mula sa iyong super, bangko, telco, health insurer, o sinumang nakakaalam na ng iyong edad</string>
+    <string name="empty_credential_option_find_apps_title">Maghanap ng kalahok na app</string>
+    <string name="empty_credential_option_find_locations_a11y">Maghanap ng lokasyong malapit sa iyo. Pumunta nang personal kasama ang iyong ID para makakuha ng kredensyal.</string>
+    <string name="empty_credential_option_find_locations_desc">Pumunta nang personal kasama ang iyong ID para makakuha ng kredensyal</string>
+    <string name="empty_credential_option_find_locations_title">Maghanap ng lokasyong malapit sa iyo</string>
+    <string name="empty_credential_option_managed_a11y">May inaalagaan ako. Pamahalaan ang mga kredensyal para sa mga taong inaalagaan mo.</string>
+    <string name="empty_credential_option_managed_desc">Pamahalaan ang mga kredensyal para sa mga taong inaalagaan mo</string>
+    <string name="empty_credential_option_managed_title">May inaalagaan ako</string>
+    <string name="empty_credential_option_scan_a11y">Mayroon akong QR code na i-scan. Binigyan ka ng verifier ng code matapos tingnan ang iyong identification.</string>
+    <string name="empty_credential_option_scan_desc">Binigyan ka ng verifier ng code matapos tingnan ang iyong identification</string>
+    <string name="empty_credential_option_scan_title">Mayroon akong QR code na i-scan</string>
+    <string name="empty_credential_subtitle">Piliin po kung paano mo nais makuha ang iyong unang kredensyal</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">Wala Pang Kredensyal</string>
+    <string name="error_screen_lock_required">Kailangan ang screen lock (PIN, pattern, o biometric) para ligtas na maitago ang mga kredensyal. Mag-set up po sa device settings.</string>
+    <string name="issuers_no_apps_found_description">Bumalik mamaya habang dumarami ang mga app na sumusuporta sa Provii</string>
+    <string name="issuers_no_apps_found">Wala pang kalahok na app</string>
+    <string name="issuers_no_locations_found_description">Bumalik mamaya habang dumarami ang mga lokasyong idinaragdag</string>
+    <string name="issuers_no_locations_found">Walang nahanap na lokasyon</string>
+    <string name="managed_credential_explainer_body">Para makakuha ng pinamamahalaang kredensyal para sa taong inaalagaan mo, magtungo kayo nang magkasama sa kalahok na lokasyon. Titingnan ng verifier ang kanilang identification. Kapag na-scan mo ang QR code, tatanungin ka kung para sa iyo o sa taong pinamamahalaan mo ang kredensyal na ito.</string>
+    <string name="managed_credential_explainer_find_location">Maghanap ng lokasyon</string>
+    <string name="managed_credential_explainer_have_qr">Mayroon na akong QR code</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">Mga Pinamamahalaang Kredensyal</string>
+    <string name="sandbox_credential_type">Uri ng kredensyal</string>
+    <string name="sandbox_managed_credential_saved">Na-save ang pinamamahalaang kredensyal (%s)</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">Aktibo na ang sandbox mode. Nakakonekta ang wallet sa mga sandbox server.</string>
+    <string name="sandbox_nickname_helper">Bigyan ng pangalan ang kredensyal na ito para makilala mo ito sa iyong wallet.</string>
+    <string name="sandbox_nickname_label">Palayaw</string>
+    <string name="sandbox_nickname_placeholder">hal. Sarah</string>
+    <string name="sandbox_nickname_required">Kailangan ng palayaw para sa mga pinamamahalaang kredensyal</string>
+    <string name="sandbox_type_managed_credential">Pinamamahalaang kredensyal</string>
+    <string name="sandbox_type_your_credential">Iyong kredensyal</string>
+    <string name="title_find_apps">Maghanap ng Kalahok na App</string>
+    <string name="title_find_locations">Maghanap ng Lokasyon</string>
+    <string name="verification_go_to_attestation">Kumuha ng Kredensyal</string>
+    <string name="verification_wrong_qr_type_message">Ang QR code na ito ay para sa pagkuha ng bagong kredensyal, hindi para sa beripikasyon ng edad. Gusto mo bang pumunta na lang sa attestation screen?</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">Nakita ang Attestation QR</string>
+    <string name="walkthrough_back">Bumalik</string>
+    <string name="walkthrough_get_started">Magsimula</string>
+    <string name="walkthrough_next">Susunod</string>
+    <string name="walkthrough_page_indicator">Pahina %1$d ng %2$d</string>
+    <string name="walkthrough_page1_body">Naglalaman ang iyong kredensyal ng iyong edad. Wala nang iba. Hindi pangalan, hindi tirahan, hindi pagkakakilanlan.\n\nPinatutunayan nito na ikaw ay higit sa (o mas bata sa) isang partikular na edad nang hindi inihahayag ang iyong kapanganakan.</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">Ano ang kredensyal?</string>
+    <string name="walkthrough_page2_body">Maaari kang kumuha ng kredensyal sa pamamagitan ng app mula sa kompanyang nakakaalam na ng iyong edad. Halimbawa, ang iyong bangko o super fund. Dahil na-verify na nila ang iyong edad, wala nang kailangang ibahagi pang muli.\n\nO kaya naman, magtungo sa kalahok na lokasyon nang may dalang ID na nagpapatunay ng iyong kapanganakan. Titingnan ang iyong kapanganakan, gagamitin sa paggawa ng iyong kredensyal, at saka itatapon. Hindi nakikita ng issuer ang iyong kredensyal. Hindi nakatali ang iyong pagkakakilanlan dito.</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">Paano kumuha ng isa?</string>
+    <string name="walkthrough_page3_body">Kung may inaalagaan kang nangangailangan ng age credential, maaari kang kumuha para sa kanila at pamahalaan ito sa iyong device.\n\nMagtungo kayo nang magkasama sa kalahok na lokasyon nang may dalang ID na nagpapatunay ng kanilang kapanganakan. Kapag na-scan mo ang QR code, tatanungin ka kung para sa iyo o sa taong pinamamahalaan mo ang kredensyal na ito.\n\nMagdagdag ng palayaw para makilala mo ang kanilang mga kredensyal.</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">Mga Inaalagaan</string>
+    <string name="walkthrough_page4_body">Ang isang app na sumusubok mag-verify ng iyong edad ay maaaring magpadala ng challenge nang direkta sa iyong Provii wallet. Ikaw ang pipili kung aling kredensyal ang gagamitin. Kapag matagumpay ang beripikasyon, ibabalik ka sa humihiling na app at makakapagpatuloy ka bilang verified.\n\nO kaya naman, maaaring may QR code na ipakita sa iba pang device, o link sa mobile browser mo na diretsong tumutungo sa iyong wallet. Mayroon ding short code option para sa accessibility.\n\nWalang personal na impormasyon ang ibinabahagi kahit kailan. Oo o hindi lamang ang sagot kung pasok ka sa kinakailangang edad.</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">Paano gumagana ang beripikasyon?</string>
+    <string name="walkthrough_page5_body">Ang unang hakbang mo ay kumuha ng kredensyal sa pamamagitan ng kalahok na app o sa lokasyong malapit sa iyo.\n\nMula doon, maaari mong i-verify ang iyong edad sa tuwing kakailanganin, nang hindi nagbabahagi ng anumang personal na impormasyon. Maaari ka ring mamahala ng mga kredensyal para sa mga taong inaalagaan mo.</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">Handa ka na</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">Laktawan</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

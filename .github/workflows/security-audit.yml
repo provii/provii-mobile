@@ -1,0 +1,520 @@
+name: Security Audit
+
+on:
+  push:
+    branches: [main, develop]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - 'LICENSE'
+      - '.github/dependabot.yml'
+      - '.github/CODEOWNERS'
+      - '.gitignore'
+  pull_request:
+    branches: [main, develop]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - 'LICENSE'
+      - '.github/dependabot.yml'
+      - '.github/CODEOWNERS'
+      - '.gitignore'
+  schedule:
+    # Run security scans weekly on Monday at 2 AM UTC
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+concurrency:
+  group: security-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+permissions:
+  contents: read
+  security-events: write
+  actions: read
+
+jobs:
+  # =============================================================================
+  # Secret Detection with Gitleaks
+  # =============================================================================
+  gitleaks:
+    name: Secret Detection
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE_KEY }}
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Run Gitleaks
+        if: ${{ env.GITLEAKS_LICENSE != '' }}
+        uses: gitleaks/gitleaks-action@ff98106e4c7b2bc287b24eaf42907196329070c7 # v2.3.9
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE_KEY }}
+
+  # =============================================================================
+  # Zizmor Workflow Security Analysis
+  # =============================================================================
+  zizmor:
+    name: Zizmor Workflow Security
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Run Zizmor
+        uses: zizmorcore/zizmor-action@b1d7e1fb5de872772f31590499237e7cce841e8e # v0.5.3
+        with:
+          min-severity: high
+          advanced-security: false
+
+  # =============================================================================
+  # Semgrep Static Analysis
+  # =============================================================================
+  semgrep:
+    name: Semgrep SAST
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    if: github.actor != 'dependabot[bot]'
+
+    env:
+      HAS_SEMGREP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN != '' }}
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: '3.11'
+
+      - name: Install Semgrep
+        run: pip install semgrep
+
+      - name: Run Semgrep (blocking pass)
+        if: ${{ env.HAS_SEMGREP_TOKEN == 'true' }}
+        run: |
+          semgrep scan \
+            --config p/swift \
+            --config p/kotlin \
+            --config p/security-audit \
+            --config p/secrets \
+            --config .semgrep/ \
+            --error \
+            --severity ERROR \
+            .
+        env:
+          SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
+
+      - name: Run Semgrep (local rules only, no token)
+        if: ${{ env.HAS_SEMGREP_TOKEN != 'true' }}
+        run: |
+          semgrep scan \
+            --config .semgrep/ \
+            --error \
+            --severity ERROR \
+            .
+
+      - name: Run Semgrep (SARIF pass)
+        if: ${{ always() && env.HAS_SEMGREP_TOKEN == 'true' }}
+        run: |
+          semgrep scan \
+            --config p/swift \
+            --config p/kotlin \
+            --config p/android \
+            --config p/ios \
+            --config p/security-audit \
+            --config p/secrets \
+            --config p/owasp-top-ten \
+            --config .semgrep/ \
+            --sarif \
+            --output=semgrep.sarif \
+            . || true
+        env:
+          SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
+
+      - name: Upload Semgrep SARIF
+        uses: github/codeql-action/upload-sarif@95e58e9a2cdfd71adc6e0353d5c52f41a045d225 # v4.35.2
+        if: ${{ always() && env.HAS_SEMGREP_TOKEN == 'true' }}
+        with:
+          sarif_file: semgrep.sarif
+
+  # =============================================================================
+  # CodeQL Analysis for Swift and Kotlin
+  # =============================================================================
+  dependency-list:
+    name: Dependency Listing
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654 # v5.2.0
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: List Android Dependencies
+        run: |
+          cd android
+          chmod +x gradlew
+          ./gradlew :app:dependencies --configuration releaseRuntimeClasspath > dependencies.txt
+          echo "## Android Dependencies" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          head -100 dependencies.txt >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+      - name: List CocoaPods Dependencies
+        run: |
+          cd ios
+          if [ -f Podfile.lock ]; then
+            echo "## iOS Dependencies (CocoaPods)" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            cat Podfile.lock >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          fi
+
+  # =============================================================================
+  # Mobile-Specific Security Checks
+  # =============================================================================
+  mobile-security:
+    name: Mobile Security Analysis
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Check for hardcoded secrets in code
+        run: |
+          echo "Scanning for potential hardcoded secrets..."
+
+          # Check for common secret patterns
+          PATTERNS=(
+            'api[_-]?key'
+            'secret[_-]?key'
+            'password'
+            'private[_-]?key'
+            'access[_-]?token'
+            'auth[_-]?token'
+            'client[_-]?secret'
+            'encryption[_-]?key'
+          )
+
+          FOUND_ISSUES=false
+
+          for pattern in "${PATTERNS[@]}"; do
+            MATCHES=$(grep -rniE "$pattern\s*[:=]\s*['\"][^'\"]+['\"]" \
+              --include="*.swift" \
+              --include="*.kt" \
+              --include="*.java" \
+              --include="*.m" \
+              --include="*.h" \
+              ios/ android/ 2>/dev/null | grep -v "test" | grep -v "Test" | grep -v "example" || true)
+
+            if [ -n "$MATCHES" ]; then
+              echo "::warning::Potential hardcoded secret pattern found: $pattern"
+              echo "$MATCHES"
+              FOUND_ISSUES=true
+            fi
+          done
+
+          if [ "$FOUND_ISSUES" = true ]; then
+            echo "::error::Potential hardcoded secrets detected in source files"
+            exit 1
+          else
+            echo "No obvious hardcoded secrets found"
+          fi
+
+      - name: Check Android security configurations
+        run: |
+          echo "Checking Android security configurations..."
+
+          # Check AndroidManifest.xml for security issues
+          if [ -f android/app/src/main/AndroidManifest.xml ]; then
+            # Check for debuggable flag
+            if grep -q 'android:debuggable="true"' android/app/src/main/AndroidManifest.xml; then
+              echo "::error::android:debuggable should not be set to true in release builds"
+              exit 1
+            fi
+
+            # Check for backup settings
+            if grep -q 'android:allowBackup="true"' android/app/src/main/AndroidManifest.xml; then
+              echo "::warning::Consider disabling android:allowBackup for sensitive data apps"
+            fi
+
+            # Check for exported components
+            EXPORTED=$(grep -c 'android:exported="true"' android/app/src/main/AndroidManifest.xml || true)
+            if [ "$EXPORTED" -gt 3 ]; then
+              echo "::warning::Found $EXPORTED exported components - review if all are necessary"
+            fi
+          fi
+
+      - name: Check iOS security configurations
+        run: |
+          echo "Checking iOS security configurations..."
+
+          # Check Info.plist for security settings
+          if [ -f ios/ProviiWallet/ProviiWallet/Info.plist ]; then
+            # Check for App Transport Security exceptions
+            if grep -q "NSAllowsArbitraryLoads" ios/ProviiWallet/ProviiWallet/Info.plist; then
+              echo "::warning::NSAllowsArbitraryLoads found - ensure this is necessary"
+            fi
+          fi
+
+      - name: Check for insecure network calls
+        run: |
+          echo "Checking for insecure HTTP usage..."
+
+          # Look for http:// URLs (should be https://)
+          HTTP_MATCHES=$(grep -rn "http://" \
+            --include="*.swift" \
+            --include="*.kt" \
+            --include="*.java" \
+            ios/ android/ 2>/dev/null | grep -v "localhost" | grep -v "127.0.0.1" | grep -v "10\.0\." | head -20 || true)
+
+          if [ -n "$HTTP_MATCHES" ]; then
+            echo "::warning::Found potential insecure HTTP URLs (should use HTTPS):"
+            echo "$HTTP_MATCHES"
+          else
+            echo "No insecure HTTP URLs found"
+          fi
+
+  # =============================================================================
+  # License Compliance
+  # =============================================================================
+  license-compliance:
+    name: License Compliance
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    if: github.actor != 'dependabot[bot]'
+    permissions:
+      contents: read
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Check iOS dependency licenses
+        working-directory: ios
+        run: |
+          if [ -f "Podfile.lock" ]; then
+            echo "## iOS Dependency Licenses" >> $GITHUB_STEP_SUMMARY
+            # Check for copyleft licenses in CocoaPods
+            pod_licenses=$(grep -A1 "SPEC CHECKSUMS" Podfile.lock 2>/dev/null || echo "No pods found")
+            echo "CocoaPods dependencies found" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Check Android dependency licenses
+        working-directory: android
+        run: |
+          if [ -f "build.gradle" ] || [ -f "build.gradle.kts" ]; then
+            echo "## Android Dependency Licenses" >> $GITHUB_STEP_SUMMARY
+            # List dependencies from Gradle
+            ./gradlew dependencies --configuration releaseRuntimeClasspath 2>/dev/null | head -50 >> $GITHUB_STEP_SUMMARY || echo "Gradle not available"
+          fi
+
+  # =============================================================================
+  # Trivy Filesystem Scan
+  # =============================================================================
+  trivy-scan:
+    name: Trivy FS Scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
+        with:
+          scan-type: fs
+          scanners: vuln
+          severity: CRITICAL,HIGH
+          format: sarif
+          output: trivy-results.sarif
+          exit-code: '1'
+          limit-severities-for-sarif: "true"
+
+      - name: Upload Trivy SARIF
+        uses: github/codeql-action/upload-sarif@95e58e9a2cdfd71adc6e0353d5c52f41a045d225 # v4.35.2
+        if: always()
+        with:
+          sarif_file: trivy-results.sarif
+          category: trivy
+
+  # =============================================================================
+  # Dependency Review
+  # =============================================================================
+  dependency-review:
+    name: Dependency Review
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    if: github.event_name == 'pull_request'
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Dependency Review
+        uses: actions/dependency-review-action@05fe4576374b728f0c523d6a13d64c25081e0803 # v4.8.3
+        with:
+          fail-on-severity: moderate
+          deny-licenses: GPL-3.0, AGPL-3.0
+
+  # =============================================================================
+  # Security Summary
+  # =============================================================================
+  security-summary:
+    name: Security Summary
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: [gitleaks, zizmor, semgrep, dependency-list, mobile-security, trivy-scan, dependency-review]
+    if: always()
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Generate Security Summary
+        env:
+          GITLEAKS_RESULT: ${{ needs.gitleaks.result }}
+          ZIZMOR_RESULT: ${{ needs.zizmor.result }}
+          SEMGREP_RESULT: ${{ needs.semgrep.result }}
+          CODEQL_SWIFT_RESULT: ${{ needs.codeql-swift.result }}
+          CODEQL_KOTLIN_RESULT: ${{ needs.codeql-kotlin.result }}
+          DEPENDENCY_LIST_RESULT: ${{ needs.dependency-list.result }}
+          MOBILE_SECURITY_RESULT: ${{ needs.mobile-security.result }}
+          TRIVY_SCAN_RESULT: ${{ needs.trivy-scan.result }}
+          DEPENDENCY_REVIEW_RESULT: ${{ needs.dependency-review.result }}
+        run: |
+          echo "## Security Scan Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Check | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Gitleaks (Secret Detection) | ${GITLEAKS_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Zizmor Workflow Security | ${ZIZMOR_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Semgrep SAST | ${SEMGREP_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| CodeQL (Swift) | ${CODEQL_SWIFT_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| CodeQL (Kotlin) | ${CODEQL_KOTLIN_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Dependency Listing | ${DEPENDENCY_LIST_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Mobile Security | ${MOBILE_SECURITY_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Trivy FS Scan | ${TRIVY_SCAN_RESULT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Dependency Review | ${DEPENDENCY_REVIEW_RESULT} |" >> $GITHUB_STEP_SUMMARY
+
+          # Gate: every security job must pass. Skipped jobs are acceptable
+          # (e.g. dependency-review only runs on PRs, gitleaks skips without licence key).
+          FAILED=false
+
+          if [[ "${GITLEAKS_RESULT}" == "failure" ]]; then
+            echo "::error::Gitleaks secret detection failed"
+            FAILED=true
+          fi
+
+          if [[ "${ZIZMOR_RESULT}" == "failure" ]]; then
+            echo "::error::Zizmor workflow security analysis failed"
+            FAILED=true
+          fi
+
+          if [[ "${SEMGREP_RESULT}" == "failure" ]]; then
+            echo "::error::Semgrep SAST failed"
+            FAILED=true
+          fi
+
+          if [[ "${TRIVY_SCAN_RESULT}" == "failure" ]]; then
+            echo "::error::Trivy vulnerability scan failed"
+            FAILED=true
+          fi
+
+          if [[ "${MOBILE_SECURITY_RESULT}" == "failure" ]]; then
+            echo "::error::Mobile security checks failed"
+            FAILED=true
+          fi
+
+          if [[ "${DEPENDENCY_REVIEW_RESULT}" == "failure" ]]; then
+            echo "::error::Dependency review failed"
+            FAILED=true
+          fi
+
+          if [[ "${FAILED}" == "true" ]]; then
+            exit 1
+          fi

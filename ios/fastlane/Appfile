@@ -1,0 +1,20 @@
+# Appfile , fastlane app metadata for the Provii wallet iOS app.
+#
+# Single-bundle architecture (Phase 4 Decisions 6 + 9): one identifier
+# `app.provii.wallet` for in-person issuers, sandbox developers, and
+# end users alike. Environment selection happens at runtime inside the
+# app, not via a sandbox bundle suffix.
+#
+# Tim must fill the placeholders below before the beta lane can run.
+# These values are pulled from the App Store Connect membership page:
+#   https://developer.apple.com/account
+#
+# `apple_id` is the Apple Developer account email. `itc_team_id` is the
+# numeric App Store Connect team id (different from the Apple Developer
+# `team_id`, which is the alphanumeric ten-character one already wired
+# into the Xcode project as DEVELOPMENT_TEAM = FD5A2PXL3W).
+
+app_identifier("app.provii.wallet")
+apple_id(ENV["APPLE_ID"] || "FILL_IN_APPLE_ACCOUNT_EMAIL")
+team_id("FD5A2PXL3W")
+itc_team_id(ENV["ITC_TEAM_ID"] || "FILL_IN_APP_STORE_CONNECT_NUMERIC_TEAM_ID")

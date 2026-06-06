@@ -1,0 +1,1512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">設定</string>
+    <string name="title_accessibility">アクセシビリティ</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">資格証明を取得</string>
+    <string name="title_scan_verification_qr">検証QRコードをスキャン</string>
+    <string name="title_verifying_age">年齢を検証中</string>
+    <string name="title_age_verified">年齢検証完了</string>
+    <string name="title_verification_failed">検証失敗</string>
+    <string name="title_officer_mode">担当者モード</string>
+    <string name="title_officer_dashboard">担当者ダッシュボード</string>
+    <string name="title_issue_credential">資格証明を発行</string>
+    <string name="title_credential_ready">資格証明の準備完了</string>
+    <string name="title_get_your_credential">資格証明を取得する</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Provii Walletへようこそ</string>
+    <string name="welcome_subtitle">安全な年齢検証をシンプルに</string>
+    <string name="welcome_first_credential">最初の年齢検証の資格証明を追加して始めましょう</string>
+    <string name="welcome_description">ゼロ知識証明によるプライベートな年齢検証</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Provii Walletへようこそ</string>
+    <string name="onboarding_language_subtitle">ご希望の言語を選択してください</string>
+    <string name="onboarding_use_english">英語を使用する</string>
+    <string name="onboarding_use_english_description">アプリの言語として英語を続けて使用します</string>
+    <string name="onboarding_rotating_button_description">言語変更ボタン。現在の表示: %1$s。別の言語を選択するにはタップしてください。</string>
+    <string name="onboarding_change_later">この設定は後から設定で変更できます</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">アクセシビリティ</string>
+    <string name="onboarding_accessibility_desc">文字サイズ、タッチ範囲、モーション軽減などのアクセシビリティ機能をカスタマイズしますか？</string>
+    <string name="onboarding_use_defaults">デフォルトを使用する</string>
+    <string name="onboarding_use_defaults_description">標準のアクセシビリティ設定で続けます</string>
+    <string name="onboarding_open_accessibility">アクセシビリティ設定</string>
+    <string name="onboarding_open_accessibility_description">アクセシビリティ設定を開いてアプリをカスタマイズします</string>
+    <string name="onboarding_accessibility_later">この設定は後から設定で変更できます</string>
+    <string name="onboarding_accessibility_features_title">利用可能な機能:</string>
+    <string name="onboarding_feature_text_size">文字サイズの拡大</string>
+    <string name="onboarding_feature_touch_targets">タッチ範囲の拡大</string>
+    <string name="onboarding_feature_reduce_motion">モーションの軽減</string>
+    <string name="onboarding_feature_high_contrast">ハイコントラストモード</string>
+    <string name="onboarding_talkback_detected">TalkBackを検出しました</string>
+    <string name="onboarding_talkback_message">アプリのナビゲーションを支援するため、詳細な説明を有効にしました。</string>
+    <string name="onboarding_continue_to_setup">セットアップに進む</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">初回セットアップが必要です</string>
+    <string name="setup_download_required">ダウンロードが必要です</string>
+    <string name="setup_download_description">このアプリはゼロ知識証明のセキュリティコンポーネントをダウンロードする必要があります（約87 MB）。</string>
+    <string name="setup_wifi_recommended">Wi-Fi推奨</string>
+    <string name="setup_checking_status">セットアップ状況を確認中...</string>
+    <string name="setup_already_setup">セットアップ済みです！</string>
+    <string name="setup_ready_message">ウォレットは安全な年齢検証の準備ができています</string>
+    <string name="setup_preparing">安全な検証システムを準備中...</string>
+    <string name="setup_checking_components">セキュリティコンポーネントを確認中...</string>
+    <string name="setup_downloading">セキュリティコンポーネントをダウンロード中</string>
+    <string name="setup_download_progress_description">%1$d%% 完了（%2$s MB / %3$s MB ダウンロード済み）</string>
+    <string name="setup_initializing">セキュリティコンポーネントを初期化中...</string>
+    <string name="setup_complete">セットアップ完了！</string>
+    <string name="setup_download_info">これによりプライベートな年齢検証のためのゼロ知識証明が有効になります</string>
+    <string name="setup_one_time_download">初回のみのダウンロード</string>
+    <string name="setup_stuck_message">予想より時間がかかっています</string>
+    <string name="setup_stuck_description">セットアップが止まっている可能性があります。再起動をお試しください。</string>
+    <string name="setup_restart_message">アプリを再起動する必要があります。初回起動時に発生することがあります。</string>
+    <string name="setup_storage_full">ストレージが満杯です</string>
+    <string name="setup_connection_error">接続エラー</string>
+    <string name="setup_failed">セットアップに失敗しました</string>
+    <string name="setup_initialization_error">初期化エラー</string>
+    <string name="error_storage_init_failed">ストレージの初期化に失敗しました。アプリを再起動してください。</string>
+    <string name="error_storage_init_close_restart">ストレージの初期化に失敗しました。アプリを閉じて再起動してください。</string>
+    <string name="setup_free_storage_message">65 MB以上の空き容量を確保してから再試行してください</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">プライバシー保護済み</string>
+    <string name="setup_privacy_description">年齢検証にはゼロ知識証明を使用します。生年月日は共有されません。</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">マイ資格証明</string>
+    <string name="credentials_empty">資格証明が保存されていません</string>
+    <string name="credential_active">資格証明は有効です</string>
+    <string name="credential_expired">資格証明の有効期限切れ</string>
+    <string name="credential_ready_for_verification">検証の準備ができています</string>
+    <string name="credential_expired_message">資格証明の有効期限が切れました。新しい資格証明が必要です。</string>
+    <string name="credential_stored_successfully">資格証明を保存しました</string>
+    <string name="credential_stored_description">年齢資格証明が安全に保存され、使用できる状態です</string>
+    <string name="credential_can_prove_age">プライベートに年齢を証明できるようになりました</string>
+    <string name="credential_returning">資格証明画面に戻っています...</string>
+    <string name="credential_view_credentials">資格証明を表示</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">完了</string>
+    <string name="action_scan_qr_code">QRコードをスキャン</string>
+    <string name="action_find_locations">場所を探す</string>
+    <string name="action_get_credential">資格証明を取得する</string>
+    <string name="action_replace_credential">新しい資格証明に置き換える</string>
+    <string name="action_replace_credential_now">今すぐ資格証明を置き換える</string>
+    <string name="action_delete_credential">資格証明を削除する</string>
+    <string name="credential_action_scan_description">認定発行者から資格証明を取得</string>
+    <string name="credential_action_find_description">近くの発行者を探す</string>
+    <string name="credential_remove_description">現在の資格証明を削除する</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">プライバシー</string>
+    <string name="credential_info_privacy_value">保護済み</string>
+    <string name="credential_info_status">ステータス</string>
+    <string name="credential_info_status_value">有効</string>
+    <string name="credential_tip_title">ヒント</string>
+    <string name="credential_tip_message">「年齢を検証する」ボタンをタップして、参加店舗にある検証QR（クイックレスポンス）コードをスキャンしてください。</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">QRコードをスキャン</string>
+    <string name="verification_verify_age">年齢を検証する</string>
+    <string name="verification_generating_proof">証明を生成中...</string>
+    <string name="verification_success">検証に成功しました</string>
+    <string name="verification_failed">検証失敗</string>
+    <string name="verification_age_verified">年齢検証完了</string>
+    <string name="verification_age_verified_message">年齢がプライバシーを守った状態で検証されました</string>
+    <string name="verification_can_return">サイトに戻って続けることができます。</string>
+    <string name="verification_returning_browser">ブラウザに戻っています...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">ステップ 1 / 2</string>
+    <string name="verification_step_2_of_2">ステップ 2 / 2</string>
+    <string name="verification_point_camera">検証QRコードにカメラを向けてください</string>
+    <string name="verification_hold_steady">確認音が鳴るまでカメラを動かさないでください。</string>
+    <string name="verification_reading_request">検証リクエストを読み取り中...</string>
+    <string name="verification_processing_challenge">チャレンジを処理中...</string>
+    <string name="verification_creating_proof">年齢証明を作成中...</string>
+    <string name="verification_submitting_proof">証明を送信中...</string>
+    <string name="verification_processing_message">数秒かかる場合があります</string>
+    <string name="verification_preparing_proof">保存された資格証明を使用してプライベートな証明を準備しています。</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">検証リクエストを読み取り中...</string>
+    <string name="verification_status_processing_challenge">チャレンジを処理中...</string>
+    <string name="verification_status_creating_proof">年齢証明を作成中...</string>
+    <string name="verification_status_submitting_proof">証明を送信中...</string>
+    <string name="verification_status_verified">✔ 年齢検証完了</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">認証プロンプトを表示できません</string>
+    <string name="verification_error_verification_failed">検証に失敗しました</string>
+    <string name="verification_error_generic">エラーが発生しました</string>
+    <string name="verification_error_failed_to_process_code">コードの処理に失敗しました</string>
+    <string name="verification_error_failed_to_process_challenge">チャレンジの処理に失敗しました</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">オーストラリアの信頼された発行者</string>
+    <string name="issuers_loading">発行者を読み込み中...</string>
+    <string name="issuers_loaded">発行者の読み込みが完了しました</string>
+    <string name="issuers_unable_to_load">発行者を読み込めません</string>
+    <string name="issuers_check_connection">インターネット接続を確認して再試行してください</string>
+    <string name="issuers_categories_header">カテゴリー</string>
+    <string name="issuers_available_header">利用可能な発行者</string>
+    <string name="issuers_found_count">%d 件見つかりました</string>
+    <string name="issuer_status_coming_soon">近日公開</string>
+    <string name="issuer_status_verified">検証済み</string>
+    <string name="issuer_how_to_get">資格証明の取得方法</string>
+    <string name="issuer_service_locations">サービス拠点</string>
+    <string name="issuer_visit_website">%sのウェブサイトを見る</string>
+    <string name="issuer_learn_more">%sについて詳しく見る</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">銀行</string>
+    <string name="category_super_fund">退職年金基金</string>
+    <string name="category_government">政府機関</string>
+    <string name="category_travel">旅行</string>
+    <string name="category_telco">通信</string>
+    <string name="category_insurance">保険</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">設定</string>
+    <string name="settings_section_sandbox">Sandboxモード</string>
+    <string name="settings_section_general">一般</string>
+    <string name="settings_section_credentials">資格証明</string>
+    <string name="settings_section_advanced">詳細設定</string>
+    <string name="settings_section_privacy">プライバシー</string>
+    <string name="settings_security">セキュリティ</string>
+    <string name="settings_biometric">生体認証を使用する</string>
+    <string name="settings_environment">環境設定</string>
+    <string name="settings_environment_description">現在の環境設定を表示します</string>
+    <string name="settings_reset_proving_key">証明鍵をリセット</string>
+    <string name="settings_reset_proving_key_description">セキュリティコンポーネントを再ダウンロードします（Debug）</string>
+    <string name="settings_mint_test_credential_as_issuer">発行者としてテスト資格証明を発行</string>
+    <string name="settings_mint_test_credential_subtitle">テスト資格証明をウォレットに発行して、検証当事者のデモから検証できるようにします。</string>
+    <string name="settings_find_trusted_issuers">信頼された発行者を探す</string>
+    <string name="settings_version">バージョン: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">5回タップで切り替え</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">言語</string>
+    <string name="language_selection_description">ご希望の言語を選択してください。変更を適用するためにアプリが再起動します。</string>
+    <string name="language_selected">選択中</string>
+    <string name="settings_language">言語</string>
+    <string name="settings_language_description">アプリの言語を変更する</string>
+    <string name="settings_licenses">オープンソースライセンス</string>
+    <string name="settings_licenses_description">サードパーティのライセンスを表示する</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">言語の確認</string>
+    <string name="language_change_to">変更する言語:</string>
+    <string name="language_restart_notice">この言語を適用するためにアプリが再起動します。</string>
+    <string name="language_apply">適用</string>
+    <string name="language_cancel">キャンセル</string>
+    <string name="language_skip_title">言語選択をスキップしますか？</string>
+    <string name="language_skip_message">スキップすると、アプリはデフォルトで英語を使用します。言語は後から設定で変更できます。</string>
+    <string name="language_use_english">英語を使用する</string>
+    <string name="language_go_back">戻る</string>
+    <string name="language_help_title">言語選択のヘルプ</string>
+    <string name="language_help_how_to">言語の選び方:</string>
+    <string name="language_help_step1">1. 検索ボックスで言語を検索してください</string>
+    <string name="language_help_step2">2. ご希望の言語をタップしてください</string>
+    <string name="language_help_step3">3. 選択を確認してください</string>
+    <string name="language_help_system_note">対応している場合、システム言語が先頭にハイライト表示されます。</string>
+    <string name="language_help_settings_note">この設定は後から設定で変更できます。</string>
+    <string name="language_got_it">わかりました</string>
+    <string name="language_select_title">言語を選択</string>
+    <string name="language_skip_button">スキップ（英語を使用）</string>
+    <string name="language_search_placeholder">言語を検索...</string>
+    <string name="language_no_results">言語が見つかりません</string>
+    <string name="language_try_different">別の検索キーワードをお試しください</string>
+    <string name="language_system_badge">システム言語</string>
+    <string name="language_count">%d 言語</string>
+    <string name="language_no_match_announcement">検索に一致する言語が見つかりません</string>
+    <string name="language_found_announcement">%d 言語が見つかりました</string>
+    <string name="language_search_cleared">検索をクリアしました。全%d言語を表示しています</string>
+    <string name="language_selected_announcement">%1$s、%2$sを選択しました</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">言語選択画面</string>
+    <string name="language_help_button_description">言語選択に関するヘルプと情報</string>
+    <string name="language_skip_description">言語選択をスキップしてデフォルトの英語を使用する</string>
+    <string name="language_clear_search_description">検索をクリア</string>
+    <string name="language_count_description">%d言語が利用可能です</string>
+    <string name="language_apply_description">言語の選択を適用して続行</string>
+    <string name="language_cancel_description">言語の選択をキャンセル</string>
+    <string name="language_cancelled_announcement">言語の選択がキャンセルされました</string>
+    <string name="language_selected_description">選択した言語: %1$s、%2$s</string>
+    <string name="language_item_system">システム言語: %1$s、%2$s</string>
+    <string name="language_item_selected">%1$s、%2$s、現在選択中</string>
+    <string name="language_item_system_selected">システム言語: %1$s、%2$s、現在選択中</string>
+    <string name="language_item_default">%1$s、%2$s</string>
+    <string name="language_returned_to_selection">言語選択に戻りました</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">Sandbox</string>
+    <string name="sandbox_mode_active">Sandboxモードが有効です</string>
+    <string name="sandbox_mode_banner">SANDBOXモード有効</string>
+    <string name="sandbox_mode_description">テスト環境を使用中です。バージョン番号を5回タップして切り替えます。</string>
+    <string name="sandbox_credential_title">Sandbox資格証明</string>
+    <string name="sandbox_credential_description">本番データに触れずに検証フローを試すためのSandbox資格証明を生成します。</string>
+    <string name="sandbox_select_age">年齢を選択</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">デフォルトの生年月日: %s</string>
+    <string name="sandbox_override_dob">デフォルトの生年月日を上書き</string>
+    <string name="sandbox_override_description">年齢ベースのデフォルト値の代わりに正確な日付を使用します。</string>
+    <string name="sandbox_date_of_birth">生年月日</string>
+    <string name="sandbox_generate_credential">資格証明を生成</string>
+    <string name="sandbox_generating">生成中…</string>
+    <string name="sandbox_test_credential_saved">テスト資格証明を保存しました</string>
+    <string name="sandbox_id_prefix">識別プレフィックス: %s…</string>
+    <string name="sandbox_unable_to_generate">資格証明を生成できません</string>
+    <string name="settings_sandbox_dob_format">生年月日: %s</string>
+    <string name="settings_sandbox_age_dob_format">%d歳以上（生年月日: %s）</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">環境設定</string>
+    <string name="environment_current">現在: %s</string>
+    <string name="environment_issuer_api">発行者API: %s</string>
+    <string name="environment_verifier_api">検証者API: %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">資格証明を削除しますか？</string>
+    <string name="dialog_delete_credential_message">この操作により、資格証明がデバイスから削除されます。必要な場合は発行者から再取得できます。</string>
+    <string name="dialog_delete_credential_announcement">ダイアログを開きました: 資格証明の削除</string>
+    <string name="dialog_reset_proving_key_title">証明鍵をリセットしますか？</string>
+    <string name="dialog_reset_proving_key_message">証明鍵と関連ファイルが削除され、次回アプリを開いたときに再ダウンロードされます。</string>
+    <string name="dialog_reset_proving_key_announcement">ダイアログを開きました: 証明鍵のリセット</string>
+    <string name="dialog_environment_info_announcement">ダイアログを開きました: 環境設定</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">アクセシビリティ</string>
+    <string name="accessibility_service_label">Provii Wallet アクセシビリティ</string>
+    <string name="accessibility_service_description">Provii Walletアクセシビリティサービスは、障害のあるユーザーに対して強化されたサポートを提供します。自動資格証明読み上げ、ガイド付きナビゲーション、簡易操作が含まれます。</string>
+    <string name="accessibility_personalize">使用環境をパーソナライズ</string>
+    <string name="accessibility_customize_features">アクセシビリティ機能のカスタマイズ</string>
+    <string name="accessibility_quick_setup">クイックセットアップ</string>
+    <string name="accessibility_features_active">%d個の機能が有効</string>
+    <string name="accessibility_customize_experience">使用環境をカスタマイズ</string>
+    <string name="accessibility_reset_title">アクセシビリティ設定をリセットしますか？</string>
+    <string name="accessibility_reset_message">すべてのアクセシビリティ設定がデフォルトに戻ります。</string>
+    <string name="accessibility_reset">アクセシビリティ設定をリセット</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">視覚</string>
+    <string name="accessibility_category_interaction">操作</string>
+    <string name="accessibility_category_cognitive">認知サポート</string>
+    <string name="accessibility_category_alternative_input">代替入力</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">特大テキスト</string>
+    <string name="accessibility_extra_large_text_description">基本フォントサイズを45%拡大します</string>
+    <string name="accessibility_high_contrast">ハイコントラスト</string>
+    <string name="accessibility_high_contrast_description">ハイコントラストカラーを使用します</string>
+    <string name="accessibility_reduce_transparency">透明度を下げる</string>
+    <string name="accessibility_reduce_transparency_description">ぼかし効果とガラス効果を除去します</string>
+    <string name="accessibility_dyslexia_font">ディスレクシア対応フォント</string>
+    <string name="accessibility_dyslexia_font_description">読みやすさを向上させるOpenDyslexicフォントを使用します</string>
+    <string name="accessibility_color_blind_mode">色覚サポートモード</string>
+    <string name="accessibility_color_blind_optimized">%s向けに最適化された色</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">なし</string>
+    <string name="color_blind_protanopia">1型2色覚（赤色盲）</string>
+    <string name="color_blind_deuteranopia">2型2色覚（緑色盲）</string>
+    <string name="color_blind_tritanopia">3型2色覚（青色盲）</string>
+    <string name="color_blind_monochrome">モノクロ</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">タッチターゲットを拡大</string>
+    <string name="accessibility_larger_touch_targets_description">ボタンとチップのサイズを拡大します</string>
+    <string name="accessibility_reduce_motion">モーションを減らす</string>
+    <string name="accessibility_reduce_motion_description">アニメーションとトランジションを最小化します</string>
+    <string name="accessibility_extended_timeouts">タイムアウトの延長</string>
+    <string name="accessibility_extended_timeouts_description">時間制限のある操作に余裕をもたせます</string>
+    <string name="accessibility_simplified_gestures">ジェスチャーの簡略化</string>
+    <string name="accessibility_simplified_gestures_description">複数ステップのジェスチャーを減らします</string>
+    <string name="accessibility_haptic_feedback">触覚フィードバック</string>
+    <string name="accessibility_haptic_feedback_description">操作時の振動による確認</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">インターフェースの簡略化</string>
+    <string name="accessibility_simplified_interface_description">高度なオプションを非表示にし、表示をすっきりさせます</string>
+    <string name="accessibility_show_step_numbers">ステップ番号を表示</string>
+    <string name="accessibility_show_step_numbers_description">進行状況インジケーターを表示します</string>
+    <string name="accessibility_detailed_descriptions">詳細な説明</string>
+    <string name="accessibility_detailed_descriptions_description">追加の説明テキストを表示します</string>
+    <string name="accessibility_confirm_actions">操作前に確認</string>
+    <string name="accessibility_confirm_actions_description">重要な操作の前に確認を求めます</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">コードの手動入力</string>
+    <string name="accessibility_manual_code_entry_description">QRコードをスキャンする代わりに手動入力できます</string>
+    <string name="accessibility_voice_input">音声入力</string>
+    <string name="accessibility_voice_input_description">テキストフィールドの音声認識を有効にします</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">視覚</string>
+    <string name="accessibility_profile_motor">運動機能</string>
+    <string name="accessibility_profile_cognitive">認知機能</string>
+    <string name="accessibility_profile_senior">シニア</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">戻る</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">ホーム</string>
+    <string name="breadcrumb_settings">設定</string>
+    <string name="breadcrumb_accessibility">アクセシビリティ</string>
+    <string name="breadcrumb_language">言語</string>
+    <string name="breadcrumb_help">ヘルプセンター</string>
+    <string name="breadcrumb_officer_mode">担当者モード</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">タイポグラフィ &amp; テキスト間隔</string>
+    <string name="accessibility_line_spacing">行間隔</string>
+    <string name="accessibility_line_spacing_description">テキストの行間を調整します</string>
+    <string name="accessibility_paragraph_spacing">段落間隔</string>
+    <string name="accessibility_paragraph_spacing_description">段落間のスペースを調整します</string>
+    <string name="accessibility_letter_spacing">字間隔</string>
+    <string name="accessibility_letter_spacing_description">文字間のスペースを調整します</string>
+    <string name="accessibility_typography_aaa_note">AAA推奨値: 行間隔1.5倍、段落間隔2.0倍、字間隔0.12em。</string>
+    <string name="accessibility_spacing_current">現在の値: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s（AAA）</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">タイムアウトの動作</string>
+    <string name="accessibility_timeout_no_automatic">AAA準拠のため自動タイムアウトなし</string>
+    <string name="accessibility_timeout_auto_advance_30">30秒後に自動的に進む</string>
+    <string name="accessibility_timeout_auto_advance_60">60秒後に自動的に進む</string>
+    <string name="accessibility_timeout_set_announcement">タイムアウトの動作を%sに設定しました</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">コントラストレベル</string>
+    <string name="accessibility_contrast_aaa_ratio">AAA準拠のコントラスト比7:1</string>
+    <string name="accessibility_contrast_standard">標準コントラスト</string>
+    <string name="accessibility_contrast_aa_ratio">AA準拠のコントラスト比4.5:1</string>
+    <string name="accessibility_contrast_set_announcement">コントラストレベルを%sに設定しました</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">色覚サポートモードを%sに設定しました</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">%1$sスライダー。現在の値: %2$s。%3$s範囲: %4$s〜%5$s</string>
+    <string name="accessibility_slider_aaa_compliant">AAA準拠。</string>
+    <string name="accessibility_slider_announcement">%1$sを%2$s%3$sに設定しました</string>
+    <string name="accessibility_slider_announcement_aaa">、AAA準拠</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%sが有効になりました</string>
+    <string name="accessibility_toggle_disabled">%sが無効になりました</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">検証フィードバック</string>
+    <string name="accessibility_sound_enabled">成功時にサウンドを再生</string>
+    <string name="accessibility_sound_enabled_description">検証成功後に確認音を再生します</string>
+    <string name="accessibility_sound_style">サウンドスタイル</string>
+    <string name="accessibility_sound_preview">サウンドをプレビュー</string>
+    <string name="accessibility_sound_preview_preset">%sをプレビュー</string>
+    <string name="accessibility_sound_style_set_announcement">サウンドスタイルを%sに設定しました</string>
+    <string name="accessibility_haptic_enabled">成功時に振動</string>
+    <string name="accessibility_haptic_enabled_description">検証成功後に触覚フィードバックを提供します</string>
+    <string name="accessibility_sound_footer">サウンドはデバイスのサイレントモード設定に従います</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">音量</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">現在の音量をプレビュー</string>
+    <string name="accessibility_volume_set_announcement">音量を%dパーセントに設定しました</string>
+    <string name="accessibility_volume_slider_description">音量スライダー。現在の値: %dパーセント</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">設定をリセット</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">担当者モード</string>
+    <string name="officer_id">担当者ID</string>
+    <string name="officer_id_placeholder">例: OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">割り当てられた担当者IDを入力してください</string>
+    <string name="officer_yubikey_connected">Yubikey接続済み</string>
+    <string name="officer_connect_yubikey">Yubikeyを接続</string>
+    <string name="officer_touch_yubikey">Yubikeyに触れて認証してください...</string>
+    <string name="officer_authenticate_hmac">HMACで認証</string>
+    <string name="officer_authentication_process">認証プロセス:</string>
+    <string name="officer_auth_steps">1. 担当者IDを入力\n2. 「認証」をタップ\n3. Yubikeyが点滅したら触れる\n4. HMAC認証により、あなたの身元が確認されます</string>
+    <string name="officer_auth_failed">認証に失敗しました。担当者IDを確認の上、再度お試しください。</string>
+    <string name="officer_session_info">担当者: %s</string>
+    <string name="officer_station_info">ステーション: %s</string>
+    <string name="officer_issued_today">本日の発行数: %1$d / 50</string>
+    <string name="officer_issue_age_credential">年齢資格証明を発行</string>
+    <string name="officer_issue_description">ユーザーの身元を確認し、デジタル年齢資格証明を発行します</string>
+    <string name="officer_start_issuance">新規発行を開始</string>
+    <string name="officer_issuance_process">発行プロセス</string>
+    <string name="officer_issuance_steps">1. ユーザーの物理的な身分証明書を確認\n2. 生年月日を入力\n3. 情報が正確に一致することを確認\n4. 証明QRコードで資格証明を発行\n5. ユーザーがQRコードをスキャンして資格証明を受け取る</string>
+    <string name="officer_verify_identity">ユーザーの身元を確認</string>
+    <string name="officer_select_dob">生年月日を選択</string>
+    <string name="officer_change_date">日付を変更</string>
+    <string name="officer_age_years">年齢: %d歳</string>
+    <string name="officer_under_18_warning">18歳未満 - 資格証明を発行できません</string>
+    <string name="officer_verification_checklist">検証チェックリスト</string>
+    <string name="officer_document_verified">物理的書類の確認済み</string>
+    <string name="officer_document_verified_description">有効な政府発行の身分証明書を確認しました</string>
+    <string name="officer_dob_matches">生年月日が一致</string>
+    <string name="officer_dob_matches_description">物理的書類に記載された生年月日: %s</string>
+    <string name="officer_issue_credential">資格証明を発行</string>
+    <string name="officer_user_scanned_successfully">ユーザーのスキャンが完了しました</string>
+    <string name="officer_return_to_dashboard">ダッシュボードに戻る</string>
+    <string name="officer_go_back">戻る</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">Yubikey認証</string>
+    <string name="yubikey_step_format">ステップ %1$d / %2$d</string>
+    <string name="yubikey_led_should_blink">YubikeyのLEDが点滅しているはずです</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">入力を検証中...</string>
+    <string name="officer_state_creating_attestation">証明を作成中...</string>
+    <string name="officer_state_computing_commitment">暗号コミットメントを計算中...</string>
+    <string name="officer_state_creating_session">セキュアセッションを作成中...</string>
+    <string name="officer_state_signing">資格証明に署名中...</string>
+    <string name="officer_state_finalizing">資格証明を確定中...</string>
+    <string name="officer_state_storing_attestation">証明を保存中...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">セッションまもなく期限切れ</string>
+    <string name="officer_session_expiring_message">セッションが%d秒後に期限切れになります。進行状況を保存しますか？</string>
+    <string name="officer_session_expiring_announcement">警告: セッションが%d秒後に期限切れになります</string>
+    <string name="officer_save_and_continue">保存して続行</string>
+    <string name="officer_continue_without_saving">保存せずに続行</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">生年月日</string>
+    <string name="officer_age_format">年齢: %d歳</string>
+    <string name="officer_under_18_full_warning">18歳未満 - 資格証明を発行できません。年齢検証の資格証明を受け取る資格があるのは、18歳以上の方のみです。生年月日が正しいことをご確認ください。</string>
+    <string name="officer_verification_checklist_header">検証チェックリスト</string>
+    <string name="officer_physical_document_verified">物理的な書類を確認済み</string>
+    <string name="officer_sighted_valid_id">有効な政府発行の身分証明書を確認しました</string>
+    <string name="officer_dob_matches_exactly">生年月日が正確に一致しています</string>
+    <string name="officer_dob_on_document">物理的な書類に記載された生年月日：%s</string>
+    <string name="officer_error_label">エラー</string>
+
+    <string name="issuance_scan_qr">発行QRコードをスキャンしてください</string>
+    <string name="issuance_downloads_credential">これにより年齢の資格証明がダウンロードされます。</string>
+    <string name="issuance_center_qr">QRコードを枠内中央に合わせて、静止した状態で保持してください。</string>
+    <string name="issuance_enter_code_manually">コードを手動で入力する</string>
+    <string name="issuance_processing_qr">QRコードを処理中…</string>
+    <string name="issuance_invalid_data">発行データが無効です</string>
+    <string name="issuance_verification_qr_error">これは検証用のQRコードです。資格証明発行用のQRコードをスキャンしてください。</string>
+    <string name="issuance_invalid_qr_format">QRコードの形式が無効です</string>
+    <string name="issuance_failed_to_process">QRコードの処理に失敗しました：%s</string>
+    <string name="issuance_code">発行コード</string>
+
+    <string name="manual_entry_title">コードの手動入力</string>
+    <string name="manual_entry_enter_code_manually">コードを手動で入力する</string>
+    <string name="manual_entry_verification_description">検証担当者の画面に表示されている12桁の検証コードを入力してください。</string>
+    <string name="manual_entry_issuance_description">発行担当者の画面に表示されているコードを入力してください。</string>
+    <string name="manual_entry_verification_code">検証コード</string>
+    <string name="manual_entry_submit">コードを送信する</string>
+    <string name="manual_entry_please_enter">コードを入力してください</string>
+    <string name="manual_entry_please_enter_verification">検証コードを入力してください</string>
+
+    <string name="voice_input_start_listening">音声入力を開始する</string>
+    <string name="voice_input_stop_listening">音声入力を停止する</string>
+    <string name="voice_input_recognized">認識済み：</string>
+    <string name="content_desc_voice_input_listening">音声入力を聞き取り中</string>
+    <string name="content_desc_voice_input_available">音声入力が利用可能です</string>
+    <string name="voice_input_permission_title">マイクの許可が必要です</string>
+    <string name="voice_input_permission_message">音声入力にはマイクへのアクセスが必要です。システム設定から有効にすることができます。</string>
+    <string name="voice_input_listening">聞き取り中…</string>
+    <string name="voice_input_error">音声入力エラー</string>
+    <string name="voice_input_tap_to_speak">タップして話す</string>
+    <string name="voice_input_did_you_say">「%1$s」とおっしゃいましたか？</string>
+    <string name="voice_input_confirm">確認</string>
+    <string name="voice_input_retry">再試行する</string>
+    <string name="voice_input_cancel">キャンセル</string>
+    <string name="voice_input_button">音声入力</string>
+
+    <string name="voice_input_error_not_available">このデバイスでは音声入力をご利用いただけません</string>
+    <string name="voice_input_error_audio">音声録音エラーです。マイクを確認してください。</string>
+    <string name="voice_input_error_network">ネットワークエラーです。接続を確認してください。</string>
+    <string name="voice_input_error_network_timeout">ネットワークがタイムアウトしました。再試行してください。</string>
+    <string name="voice_input_error_no_match">音声が検出されませんでした。もう一度お試しください。</string>
+    <string name="voice_input_error_recognizer_busy">音声入力がビジー状態です。しばらくお待ちください。</string>
+    <string name="voice_input_error_server">サーバーエラーです。しばらくしてから再試行してください。</string>
+    <string name="voice_input_error_speech_timeout">音声が聞こえませんでした。もっと大きな声でお話しください。</string>
+    <string name="voice_input_error_insufficient_permissions">マイクの許可が拒否されました。</string>
+    <string name="voice_input_error_generic">音声入力エラーです。再試行してください。</string>
+
+    <string name="action_back">戻る</string>
+    <string name="action_close">閉じる</string>
+    <string name="action_cancel">キャンセル</string>
+    <string name="action_ok">OK</string>
+    <string name="action_set">設定する</string>
+    <string name="action_change">変更する</string>
+    <string name="action_delete">削除する</string>
+    <string name="action_reset">リセットする</string>
+    <string name="action_retry">再試行する</string>
+    <string name="action_try_again">再試行する</string>
+    <string name="action_refresh">更新する</string>
+    <string name="action_download_now">今すぐダウンロードする</string>
+    <string name="action_retry_setup">セットアップを再試行する</string>
+    <string name="action_retry_download">ダウンロードを再試行する</string>
+    <string name="action_restart_setup">セットアップをやり直す</string>
+    <string name="action_manage_storage">ストレージを管理する</string>
+    <string name="action_check_wifi_settings">先にWi-Fi設定を確認する</string>
+    <string name="action_check_wifi_settings_short">Wi-Fi設定を確認する</string>
+    <string name="action_grant_permission">許可を付与する</string>
+    <string name="action_grant_camera_access">カメラへのアクセスを許可する</string>
+    <string name="action_return_to_browser">ブラウザに戻る</string>
+    <string name="action_show_debug_info">デバッグ情報を表示する</string>
+    <string name="action_reset_redownload">リセットして再ダウンロードする</string>
+    <string name="action_end_session">セッションを終了する</string>
+    <string name="action_expand">展開する</string>
+    <string name="action_collapse">折りたたむ</string>
+    <string name="accessibility_state_expanded">展開済み</string>
+    <string name="accessibility_state_collapsed">折りたたみ済み</string>
+    <string name="accessibility_state_checked">チェック済み</string>
+    <string name="accessibility_state_unchecked">未チェック</string>
+    <string name="accessibility_state_selected">選択済み</string>
+    <string name="accessibility_state_not_selected">未選択</string>
+
+    <string name="error_generic">エラーが発生しました</string>
+    <string name="error_camera_permission">QRスキャンにはカメラの許可が必要です</string>
+    <string name="error_camera_access_needed">カメラへのアクセスが必要です</string>
+    <string name="error_camera_permission_description">QRコードをスキャンするにはカメラの許可を付与するか、アクセシビリティ設定から手動入力を有効にしてください。</string>
+    <string name="error_camera_permission_required">QRコードをスキャンするにはカメラの許可が必要です</string>
+
+    <string name="qr_scanner_scanning">QRコードをスキャン中...</string>
+    <string name="qr_scanner_camera_required">カメラの許可が必要です</string>
+    <string name="qr_scanner_camera_preview">QRコードをスキャンするためのカメラプレビュー</string>
+    <string name="qr_scanner_status_scanning">QRコードをスキャン中</string>
+    <string name="qr_scanner_requesting_permission">カメラの許可をリクエスト中</string>
+    <string name="error_camera_start_failed">カメラの起動に失敗しました：%s</string>
+    <string name="error_camera_init_failed">カメラの初期化に失敗しました：%s</string>
+    <string name="error_biometric_not_available">生体認証をご利用いただけません</string>
+    <string name="error_network">ネットワークエラーが発生しました</string>
+    <string name="error_no_credential">資格証明がありません。まず資格証明を取得してください。</string>
+    <string name="credential_picker_title">資格証明を選択する</string>
+    <string name="credential_picker_description">この検証に使用できる資格証明が複数あります。1つ選択してください。</string>
+    <string name="credential_picker_expired_label">期限切れ</string>
+    <string name="credential_picker_accessibility_select">資格証明を選択：%1$s</string>
+    <string name="error_failed_to_process_challenge">チャレンジの処理に失敗しました</string>
+    <string name="error_failed_to_create_proof">証明の作成に失敗しました</string>
+    <string name="error_verification_failed">検証に失敗しました</string>
+    <string name="error_occurred_during_verification">検証中にエラーが発生しました</string>
+    <string name="error_connection_timeout">接続がタイムアウトしました。再試行してください。</string>
+    <string name="error_unable_to_connect">接続できません。インターネット接続を確認してください。</string>
+    <string name="error_secure_connection_failed">セキュアな接続に失敗しました。再試行してください。</string>
+    <string name="error_security_verification_failed">セキュリティ検証に失敗しました。再試行してください。</string>
+    <string name="error_invalid_input">入力が無効です。情報を確認して再試行してください。</string>
+    <string name="error_operation_in_progress">別の操作が進行中です。しばらくお待ちください。</string>
+    <string name="error_operation_cancelled">操作がキャンセルされました。</string>
+    <string name="error_age_requirement_not_met">この資格証明の年齢要件を満たしていません。</string>
+    <string name="error_biometric_required">続行するには生体認証が必要です。</string>
+    <string name="error_wallet_not_initialized">ウォレットが初期化されていません。アプリを再起動してください。</string>
+    <string name="error_security">セキュリティエラーです。再試行してください。</string>
+    <string name="error_connection_timeout_short">接続タイムアウトです。再試行してください。</string>
+    <string name="error_invalid_input_provided">無効な入力が指定されました。</string>
+    <string name="error_invalid_data_format">データ形式が無効です。再試行してください。</string>
+    <string name="error_storage">ストレージエラーです。デバイスのストレージを確認してください。</string>
+    <string name="error_network_short">ネットワークエラーです。接続を確認してください。</string>
+    <string name="error_label">エラー</string>
+    <string name="error_dismiss">エラーを閉じる</string>
+
+    <string name="status_processing">処理中...</string>
+    <string name="status_initializing_wallet">ウォレットを初期化中...</string>
+    <string name="status_loading">読み込み中...</string>
+
+    <string name="privacy_protected">プライバシーが保護されています</string>
+    <string name="privacy_zk_description">生年月日は共有されません。検証担当者は年齢要件を満たしているかどうかのみ確認できます。</string>
+
+    <string name="privacy_settings_title">プライバシー設定</string>
+    <string name="privacy_settings_description">データ収集を管理し、あなたのデータを管理する</string>
+    <string name="privacy_section_data_collection">データ収集</string>
+    <string name="privacy_section_your_data">あなたのデータ</string>
+    <string name="privacy_protection_title">あなたのプライバシーは保護されています</string>
+    <string name="privacy_protection_description">Provii Walletはゼロ知識証明を使用して、生年月日を開示せずに年齢を検証します。資格証明データはデバイス上にのみ保存され、誰とも共有されません。</string>
+    <string name="privacy_analytics_title">分析情報</string>
+    <string name="privacy_analytics_description">匿名の使用データを共有してProvii Walletの改善にご協力ください</string>
+    <string name="privacy_analytics_enabled">分析情報が有効です</string>
+    <string name="privacy_analytics_disabled">分析情報が無効です</string>
+    <string name="privacy_crash_reporting_title">クラッシュレポート</string>
+    <string name="privacy_crash_reporting_description">クラッシュレポートを自動送信してバグの修正にご協力ください</string>
+    <string name="privacy_crash_reporting_enabled">クラッシュレポートが有効です</string>
+    <string name="privacy_crash_reporting_disabled">クラッシュレポートが無効です</string>
+    <string name="privacy_what_we_collect_title">収集するデータ</string>
+    <string name="privacy_what_we_collect_subtitle">タップしてデータの取り扱いについて確認する</string>
+    <string name="privacy_data_collection_info_title">データ収集に関する情報</string>
+    <string name="privacy_data_we_collect_header">収集するデータ（有効時）：</string>
+    <string name="privacy_data_we_collect_list">- 匿名のアプリ使用統計\n- クラッシュレポートとエラーログ\n- デバイスの種類とOSバージョン\n- アプリのバージョン情報</string>
+    <string name="privacy_data_we_dont_collect_header">収集しないデータ：</string>
+    <string name="privacy_data_we_dont_collect_list">- 生年月日\n- 氏名または個人情報\n- 位置情報\n- 資格証明データ\n- 生体認証データ</string>
+    <string name="privacy_data_never_shared_note">資格証明データはProviiや第三者と共有されることはありません。データはデバイス上に保存されます。</string>
+    <string name="privacy_policy_title">プライバシーポリシー</string>
+    <string name="privacy_policy_subtitle">プライバシーポリシー全文を読む</string>
+    <string name="privacy_delete_my_data_title">データを削除する</string>
+    <string name="privacy_delete_my_data_subtitle">保存されているすべての資格証明とデータを削除する</string>
+    <string name="privacy_delete_data_dialog_title">すべてのデータを削除しますか？</string>
+    <string name="privacy_delete_data_dialog_message">このデバイスからすべての資格証明とアプリデータが完全に削除されます。再びアプリを使用するには、新しい資格証明を取得する必要があります。</string>
+    <string name="privacy_delete_data_dialog_warning">この操作は取り消すことができません。</string>
+    <string name="privacy_delete_data_confirm">すべて削除する</string>
+    <string name="privacy_footer_note">これらの設定はいつでも変更できます。変更は即時に反映されます。</string>
+    <string name="dialog_delete_data_announcement">データ削除の確認ダイアログが開きました</string>
+    <string name="dialog_data_collection_info_announcement">データ収集情報ダイアログが開きました</string>
+    <string name="content_desc_privacy_settings">プライバシー設定、データ収集を管理してあなたのデータを管理する</string>
+    <string name="content_desc_data_collection_info">データ収集情報を表示する</string>
+    <string name="content_desc_privacy_policy">プライバシーポリシーを表示する</string>
+    <string name="content_desc_opens_external_link">ブラウザで開く</string>
+    <string name="content_desc_delete_my_data">すべてのデータを削除する</string>
+
+    <string name="content_desc_back">戻る</string>
+    <string name="content_desc_settings">設定</string>
+    <string name="content_desc_refresh">更新する</string>
+    <string name="content_desc_verified">検証済み</string>
+    <string name="content_desc_expand">展開する</string>
+    <string name="content_desc_collapse">折りたたむ</string>
+    <string name="content_desc_warning_error">警告：エラーが発生しました</string>
+    <string name="content_desc_sandbox_indicator">サンドボックスモードのインジケーター</string>
+    <string name="content_desc_success">成功</string>
+    <string name="content_desc_warning">警告</string>
+    <string name="content_desc_information">情報</string>
+    <string name="content_desc_error">エラー</string>
+    <string name="content_desc_sandbox_warning">サンドボックスモードの警告</string>
+    <string name="content_desc_app_info">アプリ情報</string>
+    <string name="content_desc_accessibility_settings">アクセシビリティ設定</string>
+    <string name="content_desc_language_settings">言語設定</string>
+    <string name="content_desc_licenses">オープンソースライセンス</string>
+    <string name="content_desc_select_dob">生年月日を選択する</string>
+    <string name="content_desc_mint_test_credential_as_issuer">発行者としてテスト資格証明を発行</string>
+    <string name="content_desc_get_credential">資格証明を取得する</string>
+    <string name="content_desc_delete_credential">資格証明を削除する</string>
+    <string name="content_desc_reset_proving_key">証明鍵をリセットする</string>
+    <string name="content_desc_environment_info">環境情報</string>
+    <string name="content_desc_help_support">ヘルプとサポート</string>
+    <string name="content_desc_privacy_protected">プライバシー保護済み</string>
+    <string name="preview_settings_title">設定のプレビュー</string>
+
+    <string name="accessibility_verification_success_description">成功</string>
+    <string name="accessibility_verification_error_description">エラー</string>
+    <string name="accessibility_breadcrumb_location_description">現在地：%s</string>
+    <string name="accessibility_breadcrumb_separator_description">次へ</string>
+    <string name="accessibility_breadcrumb_current_page_description">現在のページ：%s</string>
+    <string name="accessibility_settings_navigate_description">ナビゲート</string>
+    <string name="accessibility_credentials_settings_description">設定</string>
+    <string name="accessibility_verification_back_description">戻る</string>
+    <string name="accessibility_officer_back_description">戻る</string>
+    <string name="accessibility_discovery_back_description">戻る</string>
+    <string name="accessibility_discovery_refresh_description">更新</string>
+    <string name="accessibility_discovery_verified_description">検証済み</string>
+    <string name="accessibility_officer_done_description">完了</string>
+    <string name="accessibility_officer_attestation_qr_description">ユーザーがスキャンするための証明QRコード</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">%sへスキップ</string>
+    <string name="accessibility_skip_main_content">メインコンテンツ</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">視覚障害</string>
+    <string name="accessibility_profile_motor_impaired">運動障害</string>
+    <string name="accessibility_profile_cognitive_support">認知サポート</string>
+    <string name="accessibility_profile_elderly_support">高齢者サポート</string>
+    <string name="accessibility_profile_default">デフォルト</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">なし</string>
+    <string name="color_blind_mode_protanopia">第一色覚異常</string>
+    <string name="color_blind_mode_deuteranopia">第二色覚異常</string>
+    <string name="color_blind_mode_tritanopia">第三色覚異常</string>
+    <string name="color_blind_mode_monochrome">モノクロ</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">標準</string>
+    <string name="contrast_level_high">高 (AA)</string>
+    <string name="contrast_level_maximum">最大 (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">全幅</string>
+    <string name="text_width_comfortable">快適 (80文字)</string>
+    <string name="text_width_narrow">狭い (60文字)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">タイムアウトなし (AAA)</string>
+    <string name="timeout_behavior_standard">標準 (30秒)</string>
+    <string name="timeout_behavior_extended">延長 (60秒)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">標準</string>
+    <string name="reading_level_standard_description">専門用語を含む通常のテキスト</string>
+    <string name="reading_level_simplified">簡略化 (中学1〜3年生レベル)</string>
+    <string name="reading_level_simplified_description">平易な言葉と短い文 (AAA準拠)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <string name="help_title">ヘルプ</string>
+    <string name="help_and_support">ヘルプ &amp; サポート</string>
+    <string name="help_description">アプリの機能とアクセシビリティのヘルプを表示します</string>
+    <string name="help_center">ヘルプセンター</string>
+    <string name="help_center_description">ヘルプトピックを参照してアプリの機能について学ぶことができます</string>
+    <string name="help_search">ヘルプを検索</string>
+    <string name="help_search_placeholder">ヘルプトピックを検索...</string>
+    <string name="help_search_active">検索が有効になりました</string>
+    <string name="help_search_inactive">検索が無効になりました</string>
+    <string name="help_no_results">検索に一致するヘルプトピックが見つかりませんでした</string>
+    <string name="help_topic_not_found">ヘルプトピックが見つかりません</string>
+    <string name="help_related_topics">関連トピック</string>
+    <string name="help_content_heading">ヘルプコンテンツ</string>
+    <string name="help_related_topic_position">%1$s、%3$d件中%2$d件目</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">視覚</string>
+    <string name="help_category_typography">タイポグラフィ</string>
+    <string name="help_category_interaction">操作</string>
+    <string name="help_category_cognitive">認知サポート</string>
+    <string name="help_category_alternative_input">代替入力</string>
+    <string name="help_category_features">機能</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">資格証明の取得</string>
+    <string name="help_topic_getting_credential_summary">最初の年齢検証資格証明を取得する方法をご確認ください</string>
+    <string name="help_topic_getting_credential_content">年齢検証資格証明を取得するには：\n\n1. 認定された発行機関の窓口へお越しください\n2. 政府発行の本人確認書類を提示してください\n3. 提示されたQRコードをスキャンしてください\n4. 資格証明が安全に保存されます\n\n生年月日はお使いの端末にのみ保存され、共有されることはありません。</string>
+
+    <string name="help_topic_verifying_age_title">年齢の検証</string>
+    <string name="help_topic_verifying_age_summary">個人情報を共有せずに年齢を証明する方法</string>
+    <string name="help_topic_verifying_age_content">年齢を検証する必要がある場合：\n\n1. 検証者がQRコードを表示します\n2. アプリでスキャンしてください\n3. アプリが数学的証明を作成します\n4. 共有されるのは「はい／いいえ」の回答のみです\n\n実際の生年月日は一切開示されません。</string>
+
+    <string name="help_topic_accessibility_title">アクセシビリティ機能</string>
+    <string name="help_topic_accessibility_summary">お使いのニーズに合わせてアプリをカスタマイズします</string>
+    <string name="help_topic_accessibility_content">アプリには多くのアクセシビリティ機能が含まれています：\n\n- 大きなテキストおよび高コントラストモード\n- 音声入力とスクリーンリーダーのサポート\n- シンプルなジェスチャーとユーザーインターフェース\n- 手動コード入力オプション\n- タイムアウトの延長\n\n設定 ＞ アクセシビリティからご利用いただけます</string>
+
+    <string name="help_topic_privacy_security_title">プライバシー &amp; セキュリティ</string>
+    <string name="help_topic_privacy_security_summary">お客様の情報の保護方法</string>
+    <string name="help_topic_privacy_security_content">お客様のプライバシーを最優先に考えています：\n\n- 資格証明はお使いの端末にローカル保存されます\n- ゼロ知識証明によりデータを保護します\n- トラッキングや分析は行いません\n- 生体認証が利用可能です\n- データは暗号化されずに端末外へ送信されることはありません</string>
+
+    <string name="help_topic_troubleshooting_title">トラブルシューティング</string>
+    <string name="help_topic_troubleshooting_summary">よくある問題と解決策</string>
+    <string name="help_topic_troubleshooting_content">よくある問題と解決方法：\n\nQRスキャナーが動作しない場合：\n- 設定でカメラの権限を確認してください\n- 手動コード入力オプションをお試しください\n\n資格証明が読み込まれない場合：\n- インターネット接続を確認してください\n- 証明鍵のリセットをお試しください\n\n検証に失敗した場合：\n- 資格証明の有効期限が切れていないか確認してください\n- 検証者にサポートをお求めください</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <string name="date_label">生年月日</string>
+    <string name="date_of_birth">生年月日</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <string name="format_age_years">%d歳</string>
+    <string name="format_step_indicator">ステップ%1$d / %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <string name="tab_credentials">資格証明</string>
+    <string name="tab_settings">設定</string>
+    <string name="tab_help">ヘルプ</string>
+    <string name="tab_credentials_description">資格証明を表示します</string>
+    <string name="tab_settings_description">アプリの設定</string>
+    <string name="tab_help_description">ヘルプとサポートを表示します</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <string name="search_title">検索</string>
+    <string name="search_field_label">検索フィールド</string>
+    <string name="search_placeholder">設定、ヘルプ、機能を検索</string>
+    <string name="search_clear">検索をクリア</string>
+    <string name="search_popular">人気の検索</string>
+    <string name="search_results_heading">検索結果</string>
+    <string name="search_no_results">結果が見つかりません</string>
+    <string name="search_try_suggestions">以下のキーワードで検索してみてください：\n• アクセシビリティ\n• 設定\n• ヘルプ\n• 言語</string>
+    <string name="search_results_announcement_singular">1件の結果が見つかりました</string>
+    <string name="search_results_announcement_plural">%d件の結果が見つかりました</string>
+    <string name="search_no_results_announcement">結果が見つかりませんでした</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <string name="help_quick_access">クイックアクセス</string>
+    <string name="help_topics">ヘルプトピック</string>
+    <string name="help_glossary">用語集</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <string name="licenses_title">オープンソースライセンス</string>
+    <string name="licenses_description">このアプリは以下のオープンソースソフトウェアを使用しています。これらのライブラリを開発された方々に感謝いたします。</string>
+    <string name="licenses_tap_to_view">タップしてライセンス全文を表示</string>
+    <string name="licenses_group_header">%1$s (%2$dライブラリ)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <string name="error_no_internet">インターネット接続がありません。ネットワークを確認してもう一度お試しください。</string>
+    <string name="error_unexpected">予期しないエラーが発生しました。アプリを再起動してください。</string>
+    <string name="error_unexpected_try_again">予期しないエラーが発生しました。もう一度お試しください。</string>
+    <string name="error_storage_detailed">ストレージエラー: %s</string>
+    <string name="error_network_detailed">ネットワークエラー: %s</string>
+    <string name="error_proof_generation_failed">証明の生成に失敗しました: %s</string>
+    <string name="error_not_eligible">対象外です。この検証の要件を満たしていません。</string>
+    <string name="error_challenge_expired">チャレンジの有効期限が切れたか、見つかりませんでした。新しいチャレンジをリクエストしてください。</string>
+    <string name="error_challenge_expired_scan_new">このチャレンジは有効期限が切れています。新しいQRコードをスキャンしてください。</string>
+    <string name="error_request_out_of_order">リクエストの順序が正しくありません。もう一度お試しください。</string>
+    <string name="error_too_many_requests">リクエストが多すぎます。しばらく待ってからもう一度お試しください。</string>
+    <string name="error_server">サーバーエラーが発生しました。後でもう一度お試しください。</string>
+    <string name="error_request_failed">リクエストに失敗しました (%d)。もう一度お試しください。</string>
+    <string name="error_not_eligible_short">この検証の対象外です</string>
+    <string name="error_challenge_not_found">チャレンジが見つかりません</string>
+    <string name="error_complete_steps_in_order">手順を順番に完了してください</string>
+    <string name="error_challenge_expired_short">チャレンジの有効期限切れ</string>
+    <string name="error_authentication_cancelled">認証がキャンセルされました。年齢検証を完了するには本人確認を行ってください。</string>
+    <string name="error_invalid_data_format_short">無効なデータ形式です。もう一度お試しください。</string>
+    <string name="error_storage_check_device">ストレージエラーが発生しました。端末のストレージを確認してください。</string>
+    <string name="error_network_check_connection">ネットワークエラーが発生しました。接続を確認してください。</string>
+    <string name="error_proof_generation_failed_short">証明の生成に失敗しました。もう一度お試しください。</string>
+    <string name="error_operation_in_progress_short">別の操作が進行中です。</string>
+    <string name="error_no_internet_short">インターネット接続がありません。ネットワークを確認してください。</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <string name="verification_scan_title">検証QRをスキャン</string>
+    <string name="verification_verifying_title">年齢を検証中</string>
+    <string name="verification_success_title">年齢検証済み</string>
+    <string name="verification_failed_title">検証に失敗しました</string>
+    <string name="verification_processing_wait">数秒かかる場合があります</string>
+    <string name="verification_success_message">年齢がプライベートに検証されました</string>
+    <string name="verification_return_to_site">サイトに戻って続けることができます。</string>
+    <string name="verification_please_enter_code">検証コードを入力してください。コードは12桁の短縮コード、または検証者からの完全な検証URLのいずれかです。</string>
+    <string name="verification_error_occurred">検証中にエラーが発生しました</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <string name="credential_list_processing">処理中...</string>
+    <string name="credential_list_verify_age_button">年齢を検証</string>
+    <string name="credential_list_generate_in_person_description">対面で資格証明を生成します</string>
+    <string name="credential_list_scan_qr_title">QRコードをスキャン</string>
+    <string name="credential_list_find_locations_title">場所を探す</string>
+    <string name="credential_section_my_credential">マイ資格証明</string>
+    <string name="credential_section_managed">管理対象の資格証明</string>
+    <string name="credential_list_get_credential_button">資格証明を取得</string>
+    <string name="credential_list_add_managed_button">管理対象の資格証明を追加</string>
+    <string name="credential_section_managed_empty">お子様など、ケアする方の資格証明を追加してください。</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">資格証明の詳細</string>
+    <string name="credential_detail_not_found">資格証明が見つかりません</string>
+    <string name="credential_detail_nickname">ニックネーム</string>
+    <string name="credential_detail_no_nickname">ニックネームが設定されていません</string>
+    <string name="credential_detail_edit_nickname">ニックネームを編集</string>
+    <string name="credential_detail_status">ステータス</string>
+    <string name="credential_detail_delete">資格証明を削除</string>
+    <string name="credential_detail_delete_title">資格証明を削除</string>
+    <string name="credential_detail_delete_message">この資格証明を削除してもよろしいですか？この操作は元に戻せません。</string>
+    <string name="credential_type_primary">プライマリ</string>
+    <string name="credential_type_managed">管理対象</string>
+    <string name="credential_status_valid">有効</string>
+    <string name="credential_status_expired">期限切れ</string>
+    <string name="credential_status_invalid">無効</string>
+    <string name="action_save">保存</string>
+    <string name="credential_slots_full_title">資格証明の上限に達しました</string>
+    <string name="credential_slots_full_message">資格証明の最大数に達しました。新しい資格証明を追加するには、既存の資格証明を削除してください。</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">管理対象の資格証明</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">%1$sの年齢を検証しますか？</string>
+    <string name="managed_confirm_message">%1$sの管理対象資格証明を使用して年齢を検証しようとしています。</string>
+    <string name="managed_confirm_proceed">%1$sのために検証する</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">%1$sの証明を作成中</string>
+    <string name="verification_age_verified_for">%1$sの年齢が検証されました</string>
+    <string name="deeplink_verification_age_verified_for">%1$sの年齢が検証されました</string>
+    <string name="attestation_managed_credential_received">%1$sの資格証明を受信しました！</string>
+    <string name="attestation_managed_credential_stored">お子様の資格証明が安全に保存されました。</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">%1$sの資格証明を削除しますか？</string>
+    <string name="credential_detail_delete_managed_message">%1$sのこの管理対象資格証明を削除してもよろしいですか？この操作は元に戻せません。再度取得するには発行機関へ再度ご来訪いただく必要があります。</string>
+    <string name="credential_detail_save_error">ニックネームの保存に失敗しました</string>
+    <string name="credential_detail_delete_error">資格証明の削除に失敗しました</string>
+    <string name="accessibility_saving">保存中...</string>
+    <string name="accessibility_deleting">削除中...</string>
+    <string name="accessibility_loading">読み込み中です。お待ちください</string>
+    <string name="accessibility_issuing_credential">資格証明を発行中です。お待ちください</string>
+    <string name="dialog_delete_all_credentials_title">すべての資格証明を削除しますか？</string>
+    <string name="dialog_delete_all_credentials_message">あなたの資格証明と、お子様の管理対象資格証明がすべて削除されます。この操作は元に戻せません。</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">管理対象</string>
+    <string name="credential_slots_count">5件中%1$d件</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">検証を準備中...</string>
+    <string name="deeplink_verification_checking_credential">資格証明を検証中...</string>
+    <string name="deeplink_verification_processing_challenge">チャレンジを処理中...</string>
+    <string name="deeplink_verification_creating_proof">セキュアな証明を作成中...</string>
+    <string name="deeplink_verification_submitting_proof">証明を送信中...</string>
+    <string name="deeplink_verification_success">✔ 年齢の検証が完了しました</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">資格証明が見つかりません。先に資格証明を設定してください。</string>
+    <string name="deeplink_verification_error_failed_challenge">検証チャレンジの処理に失敗しました</string>
+    <string name="deeplink_verification_error_no_auth_prompt">認証プロンプトを表示できません</string>
+    <string name="deeplink_verification_error_failed_proof">年齢証明の作成に失敗しました</string>
+    <string name="deeplink_verification_error_verification_failed">検証に失敗しました</string>
+    <string name="deeplink_verification_error_unexpected">予期しないエラーが発生しました</string>
+    <string name="deeplink_verification_error_no_credential_selected">資格証明が選択されていません。もう一度お試しください。</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">資格証明を選択</string>
+    <string name="deeplink_verification_select_credential_subtitle">複数の資格証明が利用可能です。この検証に使用するものを選択してください。</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">年齢を検証中</string>
+    <string name="deeplink_verification_title_verified">検証済み</string>
+    <string name="deeplink_verification_title_failed">検証に失敗しました</string>
+    <string name="deeplink_verification_please_wait">しばらくお待ちください...</string>
+    <string name="deeplink_verification_age_verified">年齢検証完了！</string>
+    <string name="deeplink_verification_under_age_verified">%1$d歳未満として検証済み</string>
+    <string name="deeplink_verification_returning_browser">ブラウザに戻っています…</string>
+    <string name="deeplink_verification_return_to_browser">ブラウザに戻る</string>
+    <string name="deeplink_verification_failed_title">検証に失敗しました</string>
+    <string name="deeplink_verification_error_occurred">検証中にエラーが発生しました</string>
+
+    <string name="officer_issuance_process_title">発行プロセス</string>
+    <string name="officer_issuance_process_steps">1. ユーザーの身分証明書を確認する\n2. 生年月日を入力する\n3. 情報が正確に一致していることを確認する\n4. 証明QRコードで資格証明を発行する\n5. ユーザーがQRコードをスキャンして資格証明を受け取る</string>
+
+    <string name="officer_qr_generation_failed">QRコードの生成に失敗しました</string>
+    <string name="officer_attestation_ready_title">証明の準備完了</string>
+    <string name="officer_attestation_scan_instruction">ユーザーはProvii WalletアプリでこのQRコードをスキャンしてください</string>
+    <string name="officer_attestation_deeplink_label">証明ディープリンク</string>
+    <string name="officer_wait_for_attestation_scan">ユーザーのスキャンをお待ちください</string>
+    <string name="officer_attestation_info">資格証明はユーザーのデバイス上で生成されます</string>
+    <string name="officer_attestation_complete">証明が完了しました</string>
+    <string name="officer_user_will_complete_credential">ユーザーがデバイス上で資格証明の生成を完了します</string>
+
+    <string name="attestation_decoding">証明データをデコードしています…</string>
+    <string name="attestation_generating_randomness">安全な乱数を生成しています…</string>
+    <string name="attestation_sending">発行者に送信しています…</string>
+    <string name="attestation_verifying">コミットメントを検証しています…</string>
+    <string name="attestation_storing">資格証明を保存しています…</string>
+    <string name="attestation_complete">資格証明が完了しました！</string>
+    <string name="attestation_error_invalid_data">無効な証明データです</string>
+    <string name="attestation_error_expired">証明の有効期限が切れています</string>
+    <string name="attestation_error_network">ネットワークエラーです。接続を確認してください</string>
+    <string name="attestation_error_unexpected">予期しないエラーが発生しました</string>
+    <string name="attestation_title_processing">証明を処理中</string>
+    <string name="attestation_title_success">資格証明を受け取りました</string>
+    <string name="attestation_title_failed">発行に失敗しました</string>
+    <string name="attestation_secure_issuance">安全な発行</string>
+    <string name="attestation_privacy_preserving">プライバシーを保護した資格証明の発行</string>
+    <string name="attestation_may_take_seconds">数秒かかる場合があります</string>
+    <string name="attestation_keep_app_open">アプリを開いたままにしてください</string>
+    <string name="attestation_credential_received">資格証明を受け取りました！</string>
+    <string name="attestation_credential_stored_description">年齢検証の資格証明が安全に保存されました</string>
+    <string name="attestation_issuer_verified">発行者が検証されました</string>
+    <string name="attestation_failed_title">発行に失敗しました</string>
+    <string name="attestation_scan_qr_instead">代わりにQRをスキャン</string>
+    <string name="attestation_go_back">戻る</string>
+    <string name="attestation_step_decode">デコード</string>
+    <string name="attestation_step_generate">生成</string>
+    <string name="attestation_step_send">送信</string>
+    <string name="attestation_step_verify">確認</string>
+    <string name="attestation_step_store">保存</string>
+    <string name="attestation_step_complete">完了</string>
+    <string name="accessibility_attestation_encrypted_description">暗号化された証明を処理中</string>
+    <string name="accessibility_attestation_success_description">資格証明受け取りを示す成功チェックマーク</string>
+    <string name="accessibility_attestation_error_description">発行失敗を示すエラーアイコン</string>
+    <string name="accessibility_step_complete">ステップ%1$sが完了しました</string>
+
+    <string name="attestation_recipient_title">資格証明の受取人</string>
+    <string name="attestation_recipient_prompt">この資格証明は…</string>
+    <string name="attestation_recipient_me">自分</string>
+    <string name="attestation_recipient_child">子ども</string>
+    <string name="attestation_nickname_title">子どものニックネーム</string>
+    <string name="attestation_nickname_prompt">資格証明を区別できるようにニックネームを入力してください</string>
+    <string name="attestation_nickname_placeholder">例：Alex</string>
+    <string name="attestation_nickname_continue">続ける</string>
+    <string name="attestation_nickname_back">戻る</string>
+    <string name="accessibility_attestation_recipient_heading">この資格証明の対象者を選択してください</string>
+    <string name="accessibility_attestation_nickname_heading">子どものニックネームを入力してください</string>
+
+    <string name="officer_auth_error_invalid_format">担当者IDの形式が無効です</string>
+    <string name="officer_auth_error_challenge_failed">YubiKeyチャレンジの取得に失敗しました：%s</string>
+    <string name="officer_auth_instruction_touch_yubikey">YubiKeyに触れて認証してください</string>
+    <string name="officer_auth_error_touch_timeout">YubiKeyのタッチがタイムアウトしました</string>
+    <string name="officer_auth_error_verify_document_dob">書類と生年月日が一致していることを確認してください</string>
+    <string name="officer_auth_error_invalid_date_format">日付の形式が無効です。YYYY-MM-DDを使用してください</string>
+    <string name="officer_auth_error_must_be_18">ユーザーは18歳以上である必要があります</string>
+    <string name="officer_auth_error_not_authenticated">認証されていません。担当者IDを入力してください。</string>
+    <string name="officer_auth_error_issue_failed">資格証明の発行に失敗しました</string>
+
+    <string name="gesture_desc_tap_to_view">タップして表示</string>
+    <string name="gesture_desc_long_press_options">、オプションはロングプレス</string>
+    <string name="gesture_desc_swipe_left">、詳細操作は左にスワイプ</string>
+    <string name="gesture_desc_swipe_right">、詳細操作は右にスワイプ</string>
+    <string name="gesture_desc_tap_to_activate">タップして有効化</string>
+    <string name="gesture_desc_long_press_format">。ロングプレス：%s</string>
+    <string name="gesture_desc_swipe_format">。%s</string>
+
+    <string name="main_activity_retry">再試行</string>
+    <string name="main_activity_reset_redownload">リセットして再ダウンロード</string>
+    <string name="main_activity_show_debug_info">デバッグ情報を表示</string>
+
+    <string name="search_item_accessibility_settings_title">アクセシビリティ設定</string>
+    <string name="search_item_accessibility_settings_subtitle">操作性をカスタマイズ</string>
+    <string name="search_item_large_text_title">大きな文字</string>
+    <string name="search_item_large_text_subtitle">文字サイズを大きくする</string>
+    <string name="search_item_high_contrast_title">高コントラスト</string>
+    <string name="search_item_high_contrast_subtitle">視認性を向上させる</string>
+    <string name="search_item_voice_input_title">音声入力</string>
+    <string name="search_item_voice_input_subtitle">音声で操作する</string>
+    <string name="search_item_manual_code_entry_title">コードの手動入力</string>
+    <string name="search_item_manual_code_entry_subtitle">スキャンの代わりにコードを入力</string>
+    <string name="search_item_simplified_ui_title">シンプルなユーザーインターフェース</string>
+    <string name="search_item_simplified_ui_subtitle">視覚的な複雑さを軽減する</string>
+    <string name="search_item_color_blindness_title">色覚サポート</string>
+    <string name="search_item_color_blindness_subtitle">視認性向上のためにカラーを調整する</string>
+
+    <string name="search_item_settings_title">設定</string>
+    <string name="search_item_settings_subtitle">アプリの設定</string>
+    <string name="search_item_language_title">言語</string>
+    <string name="search_item_language_subtitle">アプリの言語を変更する</string>
+
+    <string name="search_item_credentials_title">マイ資格証明</string>
+    <string name="search_item_credentials_subtitle">資格証明を表示する</string>
+    <string name="search_item_get_credential_title">資格証明を取得する</string>
+    <string name="search_item_get_credential_subtitle">発行者を探す</string>
+
+    <string name="search_item_help_title">ヘルプ</string>
+    <string name="search_item_help_subtitle">サポートを受ける</string>
+    <string name="search_item_privacy_title">プライバシー保護</string>
+    <string name="search_item_privacy_subtitle">データの保護方法</string>
+    <string name="search_item_verification_title">年齢検証</string>
+    <string name="search_item_verification_subtitle">年齢を証明する</string>
+
+    <string name="issuer_fallback_sandbox_description">サンドボックス環境用のハードコードされたフォールバックレジストリ</string>
+    <string name="issuer_fallback_production_description">本番環境用のハードコードされたフォールバックレジストリ</string>
+    <string name="issuer_fallback_category_government">政府機関</string>
+    <string name="issuer_fallback_category_government_description">政府機関が発行する資格証明</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii サンドボックス発行者</string>
+    <string name="issuer_fallback_sandbox_issuer_description">テスト用のProvii公式サンドボックス発行者</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">サンドボックス発行者ポータルにアクセスしてください</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Provii公式資格証明発行者</string>
+    <string name="issuer_fallback_production_issuer_instructions">お近くのDMVオフィスにお越しください</string>
+
+    <string name="validation_error_birth_date_future">生年月日に未来の日付は使用できません</string>
+    <string name="validation_error_invalid_date_format">日付の形式が無効です</string>
+    <string name="validation_error_officer_id_too_short">担当者IDが短すぎます</string>
+    <string name="validation_error_invalid_officer_id_format">担当者IDの形式が無効です</string>
+    <string name="validation_error_empty_qr_code">QRコードが空です</string>
+    <string name="validation_error_qr_code_too_large">QRコードが大きすぎます</string>
+
+    <string name="sandbox_toast_developer_mode">開発者になりました！</string>
+    <string name="sandbox_toast_enabled">サンドボックスモードが有効です\nテスト環境を使用中</string>
+    <string name="sandbox_toast_disabled">本番モードが有効です\n本番環境を使用中</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">開発者モードまであと1ステップです</string>
+    <string name="sandbox_toast_steps_away">開発者モードまであと%1$dステップです</string>
+
+    <string name="yubikey_error_no_key_connected">YubiKeyが接続されていません</string>
+    <string name="yubikey_error_timeout">YubiKeyのタッチ待機がタイムアウトしました。点滅時にキーに触れてください。</string>
+    <string name="yubikey_error_not_supported">このYubiKeyスロットではチャレンジレスポンスが設定されていません</string>
+    <string name="yubikey_error_no_slot">スロット2はHMAC（ハッシュベースメッセージ認証コード）SHA1チャレンジレスポンス用に設定されていません</string>
+    <string name="yubikey_error_hmac_failed">HMAC（ハッシュベースメッセージ認証コード）の計算に失敗しました：%s</string>
+    <string name="yubikey_error_session_failed">YubiKeyへの接続に失敗しました：%s</string>
+
+    <string name="wallet_error_not_initialized">ウォレットが初期化されていません</string>
+    <string name="wallet_error_proving_key_not_found">証明鍵が見つかりません。再ダウンロードしてください</string>
+    <string name="wallet_error_proving_key_not_readable">証明鍵ファイルを読み取れません</string>
+    <string name="wallet_error_out_of_memory">メモリ不足です。アプリを再起動してください</string>
+    <string name="wallet_error_prover_error">証明者エラー：%s</string>
+    <string name="wallet_error_ffi_error">FFIエラー：%s</string>
+    <string name="wallet_error_prover_init_failed">証明者の初期化に失敗しました：%s</string>
+    <string name="wallet_error_prover_verification_failed">証明者の初期化検証に失敗しました</string>
+    <string name="wallet_error_verifier_url_update_failed">検証者のURL（ウェブアドレス）の更新に失敗しました！%1$sが期待されましたが%2$sが返されました</string>
+    <string name="wallet_error_wallet_still_null">初期化後もウォレットがnullのままです</string>
+    <string name="wallet_error_credential_not_found">資格証明が見つかりません</string>
+    <string name="wallet_error_credential_access_failed">資格証明にアクセスできません：%s</string>
+    <string name="wallet_error_invalid_format">無効な形式です：%s</string>
+    <string name="wallet_error_not_initialized_short">証明者が初期化されていません</string>
+    <string name="wallet_error_proving_key_unavailable">証明鍵が利用できません。セットアップが必要です。</string>
+    <string name="wallet_error_storage_init_failed">ストレージの初期化に失敗しました</string>
+    <string name="wallet_error_biometric_unavailable">生体認証は利用できません</string>
+    <string name="wallet_error_auth_failed">認証に失敗しました</string>
+    <string name="wallet_error_sandbox_disabled">テスト用資格証明を生成するにはサンドボックスモードを有効にしてください</string>
+    <string name="wallet_error_fetch_sandbox_credentials">サンドボックスの資格証明を取得できません。インターネット接続を確認してください。</string>
+
+    <string name="keystore_biometric_prompt_title">認証が必要です</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">年齢証明を作成するために本人確認をしてください</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">安全なストレージにアクセスする</string>
+    <string name="keystore_biometric_prompt_cancel">キャンセル</string>
+
+    <string name="licenses_accessibility_library_expanded">%1$s、%2$s、展開済み、ライセンス全文を表示中</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s、%2$s、折りたたみ済み、%3$s</string>
+
+    <string name="network_type_none">なし</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">モバイル通信</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">不明</string>
+
+    <string name="help_topic_contrast_levels_title">コントラストレベル</string>
+    <string name="help_topic_extra_large_text_title">特大文字</string>
+    <string name="help_topic_reduce_transparency_title">透明度を下げる</string>
+    <string name="help_topic_color_blind_modes_title">色覚モード</string>
+    <string name="help_topic_line_spacing_title">行間</string>
+    <string name="help_topic_paragraph_spacing_title">段落間隔</string>
+    <string name="help_topic_letter_spacing_title">文字間隔</string>
+    <string name="help_topic_text_width_title">テキスト幅</string>
+    <string name="help_topic_touch_targets_title">タッチ領域を大きくする</string>
+    <string name="help_topic_reduce_motion_title">動きを減らす</string>
+    <string name="help_topic_timeout_behavior_title">タイムアウトの動作</string>
+    <string name="help_topic_simplified_gestures_title">シンプルなジェスチャー</string>
+    <string name="help_topic_haptic_feedback_title">触覚フィードバック</string>
+    <string name="help_topic_data_preservation_title">データの保存</string>
+    <string name="help_topic_simplified_ui_title">シンプルなユーザーインターフェース</string>
+    <string name="help_topic_step_indicators_title">ステップ表示</string>
+    <string name="help_topic_verbose_descriptions_title">詳細な説明</string>
+    <string name="help_topic_confirm_actions_title">操作の確認</string>
+    <string name="help_topic_reading_level_title">シンプルな読みやすさのレベル</string>
+    <string name="help_topic_help_system_title">ヘルプシステム</string>
+    <string name="help_topic_manual_code_entry_title">コードの手動入力</string>
+    <string name="help_topic_voice_input_title">音声入力</string>
+    <string name="help_topic_screen_reader_title">スクリーンリーダーサポート</string>
+    <string name="help_topic_accessibility_profiles_title">クイックセットアッププロファイル</string>
+
+    <string name="help_topic_contrast_levels_text">テキストと背景のコントラスト比を調整します：\n\n• 標準：デフォルトのアプリカラー\n• 高（AA）：4.5:1のコントラスト比\n• 最大（AAA）：7:1以上のコントラスト比\n\nコントラストを高くすると、明るい環境や視覚に弱さのあるユーザーにとってテキストが読みやすくなります。\n\nWCAG AAAに準拠するには最大コントラストが必要です。</string>
+    <string name="help_topic_extra_large_text_text">アプリ全体のすべての文字サイズを50%大きくします。\n\nこれにより以下のユーザーにとってテキストが読みやすくなります：\n• 弱視\n• 加齢に伴う視力の変化\n• 読み書きの困難\n\nシステムのフォントサイズ設定と組み合わせて最大限の柔軟性を発揮します。</string>
+    <string name="help_topic_reduce_transparency_text">透明なオーバーレイとぼかし効果を除去します。\n\nメリット：\n• 視覚的な階層がより明確になる\n• テキストの読みやすさが向上する\n• 視覚的なノイズが減る\n• 認知的負荷が下がる\n\n弱視や認知に困難があるユーザーにおすすめします。</string>
+    <string name="help_topic_color_blind_modes_text">さまざまな色覚特性に合わせてカラーを調整します：\n\n• 1型色覚（赤）：赤が見えにくい\n• 2型色覚（緑）：緑が見えにくい\n• 3型色覚（青）：青が見えにくい\n• モノクロ：完全な色盲\n\n各モードは、その特定の色覚特性に対して区別しやすいよう慎重に選ばれたカラーを使用します。</string>
+    <string name="help_topic_line_spacing_text">テキストの行間を調整します（1.0倍〜2.0倍）。\n\n• デフォルト：1.0倍\n• AAA準拠：1.5倍以上\n\n行間を広げると：\n• 読解力が向上する\n• 目の疲れが軽減される\n• 読み書きに困難があるユーザーを助ける\n• 文章ブロックが読みやすくなる</string>
+    <string name="help_topic_paragraph_spacing_text">段落間の間隔を調整します（1.0倍〜3.0倍）。\n\n• デフォルト：1.0倍\n• AAA準拠：2.0倍以上\n\n段落間隔を広げると：\n• 内容の区切りが明確になる\n• 視覚的な整理が向上する\n• 認知的負荷が下がる\n• 読む位置を維持しやすくなる</string>
+    <string name="help_topic_letter_spacing_text">文字と文字の間隔を調整します（0.0em〜0.2em）。\n\n• デフォルト：0.0em\n• AAA準拠：0.12em以上\n\n文字間隔を広げると：\n• 個々の文字がより区別しやすくなる\n• 読み書きに困難があるユーザーを助ける\n• 読み取り精度が向上する\n• 文字の混同が減る</string>
+    <string name="help_topic_text_width_text">読みやすくするために行の長さを制限します：\n\n• 全幅：制限なし\n• 快適：80文字（推奨）\n• 狭め：60文字\n\n研究によると、1行あたり60〜80文字が最適な読書量とされています。行を短くすることで目の動きが減り、理解力が向上します。</string>
+    <string name="help_topic_touch_targets_text">タッチターゲットの最小サイズを60dp（44dpから）に拡大します。\n\nメリット：\n• ボタンやコントロールをタップしやすくなる\n• 誤タップが減る\n• 運動機能に困難があるユーザーを助ける\n• 片手操作がしやすくなる\n\nWCAG AAAでは最低60dpが必要です。</string>
+    <string name="help_topic_reduce_motion_text">すべてのアニメーションとトランジションを除去します。\n\nメリット：\n• 乗り物酔いを防ぐ\n• 気が散るのを減らす\n• 認知的負荷が下がる\n• 集中力が向上する\n\n以下のユーザーにおすすめします：\n• 前庭障害\n• 注意困難\n• 動きへの敏感さ</string>
+    <string name="help_topic_timeout_behavior_text">確認画面の自動タイムアウトを制御します：\n\n• タイムアウトなし（AAA）：無制限\n• 標準：30秒\n• 延長：60秒\n\nWCAG AAAでは、タスクの完了に時間がかかるユーザー向けにタイムアウトなしオプションが必要です。\n\nタイムアウト前にフォームデータは自動的に保存されます。</string>
+    <string name="help_topic_simplified_gestures_text">複雑なジェスチャーをシンプルな代替操作に置き換えます：\n\n• スワイプ → ボタンをタップ\n• ロングプレス → 確認付きの通常タップ\n• ピンチ/ズーム → ボタン\n\n以下のユーザーを助けます：\n• 運動機能に困難があるユーザー\n• 手の震えがあるユーザー\n• 手の動きに制限があるユーザー\n• タッチスクリーンの操作が難しいユーザー</string>
+    <string name="help_topic_haptic_feedback_text">操作に対して振動フィードバックを提供します。\n\nメリット:\n• ボタン押下を確認\n• エラーを通知\n• 触覚による確認を提供\n\n以下に該当するユーザーは無効にできます:\n• 気が散ると感じる方\n• 感覚過敏のある方\n• サイレント動作を好む方</string>
+    <string name="help_topic_data_preservation_text">タイムアウト前にフォームデータを自動保存します。\n\n機能:\n• タイムアウト10秒前に警告\n• データの保存または破棄を選択可能\n• 戻ったときに自動復元\n• 24時間のデータ保持\n\n追加の時間が必要な場合や中断が発生した場合でもデータが失われません。</string>
+    <string name="help_topic_simplified_ui_text">視覚的な複雑さを軽減します:\n\n• 一度に表示されるUI要素を減らす\n• より大きく見やすいボタン\n• 余白を広く取る\n• シンプルなレイアウト\n\nメリット:\n• 理解しやすい\n• 圧迫感が少ない\n• 集中しやすい\n• 認知負荷を軽減</string>
+    <string name="help_topic_step_indicators_text">複数ステップのプロセスの進捗を表示します。\n\n表示内容:\n• 現在のステップ番号\n• 合計ステップ数\n• 進捗の視覚化\n\nメリット:\n• 不安を軽減\n• 明確な期待値を設定\n• 方向感覚の維持に役立つ\n• 完了の進捗を表示</string>
+    <string name="help_topic_verbose_descriptions_text">追加のコンテキストと説明を提供します:\n\n• より長いボタンラベル\n• より詳細な手順\n• 追加のヒント\n• より分かりやすいエラーメッセージ\n\nユーザーの役に立つ場面:\n• 操作前に内容を理解する\n• 間違いを避ける\n• アプリの機能を習得する\n• 自信をつける</string>
+    <string name="help_topic_confirm_actions_text">重要な操作に確認を求めます:\n\n• 資格証明の削除\n• 設定の変更\n• データの消去\n\nWCAG AAAでは、すべての破壊的な操作に確認が必要です。\n\nメリット:\n• 誤操作を防ぐ\n• 実行前に確認できる\n• 不安を軽減\n• やり直す機会を提供</string>
+    <string name="help_topic_reading_level_text">より平易な表現を使用します（中学1〜3年生レベル）:\n\n• 短い文\n• 専門用語の代わりに一般的な言葉\n• 明確で直接的な言語\n• 技術用語を減らす\n\n有効時はWCAG AAA準拠。\n\nメリット:\n• 理解しやすい\n• 読解速度が向上\n• 外国語話者に適している\n• 認知負荷を軽減</string>
+    <string name="help_topic_help_system_text">アプリ全体でコンテキスト対応のヘルプが利用できます。\n\n機能:\n• 27のヘルプトピック\n• 検索可能なヘルプセンター\n• 関連トピックへのナビゲーション\n• 技術用語集\n\nヘルプへのアクセス方法:\n• 設定画面\n• 複雑な機能\n• エラーメッセージ\n• ヘルプアイコンが表示されている場所</string>
+    <string name="help_topic_manual_code_entry_text">スキャンの代わりにQRコードのデータを手動で入力します。\n\nメリット:\n• カメラへのアクセスが利用できない場合でも使用可能\n• 運動障害のあるユーザーに配慮\n• 暗い場所でも使いやすい\n• スマートフォンを静止させる必要がない\n\nカメラによるQRスキャンの代替手段です。</string>
+    <string name="help_topic_voice_input_text">タイピングの代わりに音声でテキストを入力します。\n\nメリット:\n• ハンズフリー入力\n• タイピングより速い\n• 運動障害のあるユーザーに配慮\n• 繰り返しの負担を軽減\n\nデバイスに内蔵された音声認識を使用します。</string>
+    <string name="help_topic_screen_reader_text">TalkBackスクリーンリーダーを完全にサポートします。\n\n機能:\n• すべてのUI要素にラベル付き\n• 適切な見出し構造\n• 論理的なナビゲーション順序\n• 複雑な操作に対するカスタムヒント\n\nTalkBackが検出されると、アプリは自動的に以下を有効にします:\n• 詳細な説明\n• タッチターゲットの拡大</string>
+    <string name="help_topic_accessibility_profiles_text">あらかじめ設定されたアクセシビリティプロファイル:\n\n• 視覚障害: ハイコントラスト、大きな文字、触覚フィードバック\n• 運動障害: 大きなターゲット、延長タイムアウト、確認ダイアログ\n• 認知障害: シンプルなUI、ステップ表示、説明文\n• 高齢者: 大きな文字とターゲット、シンプルなUI、モーション軽減\n• デフォルト: すべての設定をリセット\n\n各プロファイルは、そのユーザーグループに最も役立つ設定を有効にします。プロファイル適用後にさらにカスタマイズできます。</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">年齢検証</string>
+    <string name="content_age_verification_explanation">ゼロ知識証明を使用して年齢を安全に検証しています。生年月日が検証者に共有されることはありません。</string>
+    <string name="content_age_verification_instructions">検証用のQRコードにカメラを向けてください。検出されると自動的にスキャンされます。</string>
+    <string name="content_age_verification_success">年齢が正常に検証されました。検証者は実際の生年月日を知ることなく、年齢要件を満たしていることを把握します。</string>
+    <string name="content_age_verification_failed">検証に失敗しました。QRコードを再度スキャンするか、コードを手動で入力してください。</string>
+    <string name="content_credential_issuance_title">資格証明の発行</string>
+    <string name="content_credential_issuance_explanation">認定された発行者から提供されたQRコードをスキャンして、デジタル年齢資格証明を受け取ってください。</string>
+    <string name="content_credential_issuance_instructions">担当者が提示している発行用QRコードにカメラを向けてください。資格証明がデバイス上で生成されます。</string>
+    <string name="content_credential_issuance_success">資格証明が正常に作成されました。この資格証明を年齢検証に使用できます。</string>
+    <string name="content_credential_description">資格証明とは、プライバシーを保護した検証を可能にする、暗号的に署名されたあなたの身元証明です。</string>
+    <string name="content_zero_knowledge_explanation">ゼロ知識証明を使用すると、実際の年齢を明かすことなく年齢要件を満たしていることを証明できます。</string>
+    <string name="content_setup_proving_key">ゼロ知識証明の生成に必要な暗号的証明鍵をダウンロードしています</string>
+    <string name="content_processing_challenge">検証チャレンジを処理しています</string>
+    <string name="content_creating_proof">ゼロ知識年齢証明を作成しています</string>
+    <string name="content_submitting_proof">検証者に証明を送信しています</string>
+    <string name="content_error_no_credential">利用可能な資格証明がありません。まず認定された発行者から資格証明を取得してください。</string>
+    <string name="content_error_network_failed">ネットワーク接続に失敗しました。インターネット接続を確認して再試行してください。</string>
+    <string name="content_error_invalid_qr">QRコードが無効です。正しい検証コードをスキャンしていることを確認してください。</string>
+    <string name="content_error_verification_failed">検証に失敗しました。サーバーが証明を検証できませんでした。</string>
+    <string name="content_officer_authentication_title">担当者認証</string>
+    <string name="content_officer_issuance_title">資格証明の発行</string>
+    <string name="content_officer_dob_prompt">公式身分証明書に記載されている申請者の確認済み生年月日を入力してください。</string>
+    <string name="content_onboarding_welcome">Provii Walletへようこそ。プライバシーを保護するデジタル年齢検証ソリューションです。</string>
+    <string name="content_onboarding_privacy">生年月日はデバイス上に安全に保存され、検証者に送信されることはありません。</string>
+    <string name="content_onboarding_get_started">利用を開始するには、認定された発行者を訪問してデジタル年齢資格証明を取得してください。</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">年齢を検証する</string>
+    <string name="content_age_verification_explanation_simplified">年齢を検証しています。生年月日は見られたり共有されたりしません。</string>
+    <string name="content_age_verification_instructions_simplified">QRコードにカメラを向けてください。自動的にスキャンされます。</string>
+    <string name="content_age_verification_success_simplified">成功！年齢要件を満たしていることが検証されました。生年月日は知られません。</string>
+    <string name="content_age_verification_failed_simplified">うまくいきませんでした。もう一度スキャンするか、コードを入力してください。</string>
+    <string name="content_credential_issuance_title_simplified">IDカードを取得する</string>
+    <string name="content_credential_issuance_explanation_simplified">政府機関のコードをスキャンしてデジタルIDを取得してください。</string>
+    <string name="content_credential_issuance_instructions_simplified">コードにカメラを向けてください。IDがスマートフォンに保存されます。</string>
+    <string name="content_credential_issuance_success_simplified">完了！デジタルIDを使って年齢を証明できるようになりました。</string>
+    <string name="content_credential_description_simplified">資格証明とは、個人情報を共有せずに本人であることを証明するデジタルIDカードのようなものです。</string>
+    <string name="content_zero_knowledge_explanation_simplified">実際の年齢を伝えることなく、年齢要件を満たしていることを証明できます。</string>
+    <string name="content_setup_proving_key_simplified">アプリの動作に必要なセキュリティファイルをダウンロードしています</string>
+    <string name="content_processing_challenge_simplified">年齢検証リクエストを読み込んでいます</string>
+    <string name="content_creating_proof_simplified">年齢証明を作成しています</string>
+    <string name="content_submitting_proof_simplified">ウェブサイトに証明を送信しています</string>
+    <string name="content_error_no_credential_simplified">まだIDがありません。まず政府機関を訪問して取得してください。</string>
+    <string name="content_error_network_failed_simplified">インターネットに接続できません。Wi-Fiまたはデータ通信を確認して再試行してください。</string>
+    <string name="content_error_invalid_qr_simplified">そのコードは正しくないようです。正しいコードをスキャンしているか確認してください。</string>
+    <string name="content_error_verification_failed_simplified">うまくいきませんでした。ウェブサイトが証明を検証できませんでした。再試行してください。</string>
+    <string name="content_officer_authentication_title_simplified">担当者サインイン</string>
+    <string name="content_officer_issuance_title_simplified">IDカードを作成する</string>
+    <string name="content_officer_dob_prompt_simplified">公式身分証明書に記載されている本人の生年月日を入力してください。</string>
+    <string name="content_onboarding_welcome_simplified">Provii Walletへようこそ。プライバシーを守りながら年齢を証明できます。</string>
+    <string name="content_onboarding_privacy_simplified">生年月日はスマートフォン内に保存されます。他の誰も見ることができません。</string>
+    <string name="content_onboarding_get_started_simplified">始めるには、政府機関を訪問してデジタルIDを取得してください。</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">クイックレスポンス (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">暗証番号 (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">生年月日 (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">身分証明 (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">ユーザーインターフェース (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Uniform Resource Locator (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">アプリケーションプログラミングインターフェース (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">アニメーションを一時停止</string>
+    <string name="animation_resume_animations">アニメーションを再開</string>
+    <string name="animation_pause_button_text">一時停止</string>
+    <string name="animation_resume_button_text">再開</string>
+    <string name="animation_toggles_playback_hint">アニメーションの再生を切り替えます</string>
+    <string name="animation_paused_announcement">アニメーションを一時停止しました</string>
+    <string name="animation_resumed_announcement">アニメーションを再開しました</string>
+    <string name="animation_active_count">%d 件のアニメーションが実行中</string>
+    <string name="animation_loading_default">読み込み中</string>
+    <string name="animation_please_wait">この操作が完了するまでお待ちください</string>
+    <string name="animation_percent_complete">%d パーセント完了</string>
+    <string name="animation_loading_in_progress">処理中</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">キーボードショートカット</string>
+    <string name="keyboard_shortcuts_done">完了</string>
+    <string name="keyboard_shortcuts_app_section">アプリのショートカット</string>
+    <string name="keyboard_shortcuts_navigation_section">ナビゲーション</string>
+    <string name="keyboard_shortcuts_tips_section">ヒント</string>
+    <string name="keyboard_shortcuts_navigation_footer">これらのナビゲーションキーは、外付けキーボード使用時にアプリ全体で機能します</string>
+    <string name="keyboard_shortcuts_tip_external">外付けのBluetoothおよびUSBキーボードが完全にサポートされています</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">矢印キーを使用してリスト内の項目間を移動できます</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Ctrlキーを押し続けると、この画面で使用可能なショートカットが表示されます</string>
+    <string name="keyboard_shortcuts_tip_a11y">このアプリのすべての機能はキーボードからアクセスできます</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s。%3$s</string>
+    <string name="keyboard_shortcuts_dismiss">キーボードショートカットを閉じる</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">設定</string>
+    <string name="keyboard_shortcut_label_accessibility">アクセシビリティ</string>
+    <string name="keyboard_shortcut_label_help">ヘルプセンター</string>
+    <string name="keyboard_shortcut_label_add_credential">資格証明を追加</string>
+    <string name="keyboard_shortcut_label_verify">検証</string>
+    <string name="keyboard_shortcut_label_shortcuts">ショートカット</string>
+    <string name="keyboard_shortcut_desc_settings">設定を開く</string>
+    <string name="keyboard_shortcut_desc_accessibility">アクセシビリティ設定</string>
+    <string name="keyboard_shortcut_desc_help">ヘルプセンター</string>
+    <string name="keyboard_shortcut_desc_add_credential">資格証明を追加</string>
+    <string name="keyboard_shortcut_desc_verify">検証を開始</string>
+    <string name="keyboard_shortcut_desc_shortcuts">キーボードショートカット</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">戻る / 閉じる</string>
+    <string name="keyboard_shortcut_nav_back_desc">現在の画面またはダイアログを閉じます</string>
+    <string name="keyboard_shortcut_nav_next">次のフィールド</string>
+    <string name="keyboard_shortcut_nav_next_desc">次のインタラクティブ要素にフォーカスを移動します</string>
+    <string name="keyboard_shortcut_nav_prev">前のフィールド</string>
+    <string name="keyboard_shortcut_nav_prev_desc">前のインタラクティブ要素にフォーカスを移動します</string>
+    <string name="keyboard_shortcut_nav_submit">送信 / 続ける</string>
+    <string name="keyboard_shortcut_nav_submit_desc">フォーカスされているボタンを有効化するか、フォームを送信します</string>
+    <string name="keyboard_shortcut_nav_activate">ボタンを有効化</string>
+    <string name="keyboard_shortcut_nav_activate_desc">現在フォーカスされているボタンまたはトグルを有効化します</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">ダイアログが開きました。Escapeキーで閉じる、Enterキーで確認できます。</string>
+    <string name="modal_closed_announcement">ダイアログが閉じました</string>
+    <string name="modal_button_primary_label">%s（主要操作）</string>
+    <string name="modal_button_cancel_label">%s（キャンセル）</string>
+    <string name="modal_button_destructive_label">%s（破壊的な操作）</string>
+    <string name="modal_button_primary_hint">ダブルタップで確認、またはEnterキーを押してください</string>
+    <string name="modal_button_cancel_hint">ダブルタップでキャンセル、またはEscapeキーを押してください</string>
+    <string name="modal_button_destructive_hint">ダブルタップで破壊的な操作を実行します</string>
+    <string name="modal_button_secondary_hint">ダブルタップで操作を実行します</string>
+    <string name="modal_confirm">確認</string>
+    <string name="modal_cancel">キャンセル</string>
+    <string name="modal_delete">削除</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">%1$sを削除</string>
+    <string name="a11y_edit_nickname_for">%1$sのニックネームを編集</string>
+    <string name="accessibility_attestation_scan_back">戻る</string>
+    <string name="attestation_replace_confirm">置き換える</string>
+    <string name="attestation_replace_primary_message">すでに本人用の資格証明をお持ちです。新しい資格証明を作成すると、既存のものと置き換えられます。この操作は元に戻せません。</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">既存の資格証明を置き換えますか？</string>
+    <string name="attestation_scan_error_empty">QRコードが空でした</string>
+    <string name="attestation_scan_instruction">担当者が表示するQRコードにカメラを向けてください</string>
+    <string name="attestation_scan_invalid_qr">このQRコードには証明データが含まれていません</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">証明をスキャン</string>
+    <string name="attestation_scan_wrong_type_toast">これは検証用のQRコードであり、資格証明用のQRコードではありません</string>
+    <string name="biometric_required_message">資格証明を安全に保存するため、このアプリには画面ロック（PIN、パターン、または生体認証）が必要です。続行する前に、デバイスのセキュリティ設定で画面ロックを設定してください。</string>
+    <string name="biometric_required_open_settings">セキュリティ設定を開く</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">画面ロックが必要です</string>
+    <string name="challenge_sandbox_prompt_announcement">サンドボックスのチャレンジを受信しました。サンドボックスモードを有効にして続行するか、チャレンジを拒否するかを選択してください。</string>
+    <string name="challenge_sandbox_prompt_body">このチャレンジはサンドボックスの検証当事者から発行されました。このウォレットでサンドボックスモードを有効にしない限り、成功しません。</string>
+    <string name="challenge_sandbox_prompt_primary">サンドボックスを有効にして続行</string>
+    <string name="challenge_sandbox_prompt_secondary">チャレンジを拒否</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">サンドボックスのチャレンジを受信しました</string>
+    <string name="credential_detail_nickname_error">ニックネームの保存に失敗しました</string>
+    <string name="credential_list_managed_count">%2$d件中%1$d件</string>
+    <string name="credential_picker_count_shown">%1$d件の資格証明を表示中</string>
+    <string name="credential_picker_filter_clear">フィルターをクリア</string>
+    <string name="credential_picker_filter_label">名前で資格証明を絞り込む</string>
+    <string name="credential_picker_filter_placeholder">資格証明を絞り込む</string>
+    <string name="credential_picker_no_results">該当する資格証明はありません</string>
+    <string name="credential_picker_section_managed">管理している資格証明</string>
+    <string name="credential_picker_section_me">本人</string>
+    <string name="credential_picker_subtitle">検証する人を選択してください。</string>
+    <string name="credential_row_action_delete">削除</string>
+    <string name="credential_row_action_edit">ニックネームを編集</string>
+    <string name="credential_row_overflow_menu">資格証明のオプション</string>
+    <string name="deeplink_sandbox_prompt_announcement">サンドボックスのリンクを検出しました。サンドボックスモードを有効にしてリンクを開くかどうかを選択してください。</string>
+    <string name="deeplink_sandbox_prompt_body">このディープリンクは、このウォレットでサンドボックスモードを有効にした場合のみ成功します。</string>
+    <string name="deeplink_sandbox_prompt_primary">サンドボックスを有効にして開く</string>
+    <string name="deeplink_sandbox_prompt_secondary">キャンセル</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">サンドボックスのリンクを検出しました</string>
+    <string name="empty_credential_option_find_apps_a11y">参加アプリを探します。すでにあなたの年齢を把握しているスーパー、銀行、通信事業者、健康保険会社などから資格証明を取得できます。</string>
+    <string name="empty_credential_option_find_apps_desc">すでにあなたの年齢を把握しているスーパー、銀行、通信事業者、健康保険会社などから資格証明を取得</string>
+    <string name="empty_credential_option_find_apps_title">参加アプリを探す</string>
+    <string name="empty_credential_option_find_locations_a11y">お近くの場所を探します。本人確認書類を持参して直接訪問し、資格証明を取得できます。</string>
+    <string name="empty_credential_option_find_locations_desc">本人確認書類を持参して直接訪問し、資格証明を取得</string>
+    <string name="empty_credential_option_find_locations_title">お近くの場所を探す</string>
+    <string name="empty_credential_option_managed_a11y">家族や友人をサポートします。お世話している方の資格証明を管理できます。</string>
+    <string name="empty_credential_option_managed_desc">お世話している方の資格証明を管理</string>
+    <string name="empty_credential_option_managed_title">家族や友人をサポートする</string>
+    <string name="empty_credential_option_scan_a11y">スキャンするQRコードがあります。本人確認書類の確認後、検証担当者からコードを受け取った場合に使用します。</string>
+    <string name="empty_credential_option_scan_desc">本人確認書類の確認後、検証担当者からコードを受け取った場合</string>
+    <string name="empty_credential_option_scan_title">スキャンするQRコードがある</string>
+    <string name="empty_credential_subtitle">最初の資格証明の取得方法を選択してください</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">資格証明はまだありません</string>
+    <string name="error_screen_lock_required">資格証明を安全に保存するため、画面ロック（PIN、パターン、または生体認証）が必要です。デバイスの設定で画面ロックを設定してください。</string>
+    <string name="issuers_no_apps_found_description">Proviiに対応するアプリは順次追加されますので、しばらくお待ちください</string>
+    <string name="issuers_no_apps_found">参加アプリはまだありません</string>
+    <string name="issuers_no_locations_found_description">場所は順次追加されますので、しばらくお待ちください</string>
+    <string name="issuers_no_locations_found">場所が見つかりません</string>
+    <string name="managed_credential_explainer_body">お世話している方の管理資格証明を取得するには、その方と一緒に参加店舗を訪問してください。検証担当者が本人確認書類を確認します。QRコードをスキャンする際、この資格証明があなた自身のものか、管理している方のものかを尋ねられます。</string>
+    <string name="managed_credential_explainer_find_location">場所を探す</string>
+    <string name="managed_credential_explainer_have_qr">すでにQRコードがあります</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">管理している資格証明</string>
+    <string name="sandbox_credential_type">資格証明の種類</string>
+    <string name="sandbox_managed_credential_saved">管理資格証明を保存しました（%s）</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">サンドボックスモードが有効になりました。ウォレットはサンドボックスサーバーに接続されています。</string>
+    <string name="sandbox_nickname_helper">この資格証明をウォレット内で識別できるよう、名前を付けてください。</string>
+    <string name="sandbox_nickname_label">ニックネーム</string>
+    <string name="sandbox_nickname_placeholder">例: 太郎</string>
+    <string name="sandbox_nickname_required">管理資格証明にはニックネームが必要です</string>
+    <string name="sandbox_type_managed_credential">管理資格証明</string>
+    <string name="sandbox_type_your_credential">本人の資格証明</string>
+    <string name="title_find_apps">参加アプリを探す</string>
+    <string name="title_find_locations">場所を探す</string>
+    <string name="verification_go_to_attestation">資格証明を取得</string>
+    <string name="verification_wrong_qr_type_message">このQRコードは年齢検証用ではなく、新しい資格証明を取得するためのものです。証明画面に移動しますか？</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">証明QRコードを検出しました</string>
+    <string name="walkthrough_back">戻る</string>
+    <string name="walkthrough_get_started">開始する</string>
+    <string name="walkthrough_next">次へ</string>
+    <string name="walkthrough_page_indicator">%2$dページ中%1$dページ目</string>
+    <string name="walkthrough_page1_body">資格証明にはあなたの年齢のみが含まれます。それ以外は何も含まれません。氏名も、住所も、本人を特定する情報もありません。\n\n生年月日を明かすことなく、特定の年齢以上（または未満）であることを証明します。</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">資格証明とは何ですか？</string>
+    <string name="walkthrough_page2_body">すでにあなたの年齢を把握している企業のアプリから、資格証明を取得できます。たとえば銀行やスーパーアニュエーション基金などです。すでに年齢が確認されているため、再度情報を共有する必要はありません。\n\nまたは、生年月日を証明できる本人確認書類を持参して参加店舗を訪問してください。生年月日が確認され、資格証明の作成に使用されたあと破棄されます。発行者があなたの資格証明を見ることはありません。あなたの身元が資格証明と結び付けられることもありません。</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">資格証明はどうやって取得しますか？</string>
+    <string name="walkthrough_page3_body">年齢の資格証明を必要とするご家族などをお世話している場合、その方のために資格証明を取得し、ご自身のデバイスで管理できます。\n\nその方の生年月日を証明できる本人確認書類を持参して、一緒に参加店舗を訪問してください。QRコードをスキャンする際、この資格証明があなた自身のものか、管理している方のものかを尋ねられます。\n\nニックネームを付けると、それぞれの資格証明を見分けやすくなります。</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">扶養家族</string>
+    <string name="walkthrough_page4_body">年齢を検証しようとするアプリは、Proviiウォレットに直接チャレンジを送信できます。あなたは使用する資格証明を選択します。検証に成功すると、リクエスト元のアプリに戻り、検証済みとして手続きを進められます。\n\nまたは、別のデバイスに表示されるQRコードや、モバイルブラウザからウォレットに直接遷移するリンクが提示される場合もあります。アクセシビリティのための短いコードのオプションもあります。\n\n個人情報が共有されることは決してありません。年齢要件を満たすかどうかについて、はい、またはいいえの回答だけが返されます。</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">検証はどのように行われますか？</string>
+    <string name="walkthrough_page5_body">最初のステップは、参加アプリまたはお近くの場所で資格証明を取得することです。\n\n資格証明を取得すると、必要なときにいつでも個人情報を共有することなく年齢を検証できます。お世話している方の資格証明を管理することもできます。</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">準備が整いました</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">スキップ</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

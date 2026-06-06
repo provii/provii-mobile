@@ -1,0 +1,1576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">ການຕັ້ງຄ່າ</string>
+    <string name="title_accessibility">ການເຂົ້າເຖິງ</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">ຮັບໃບຢັ້ງຢືນ</string>
+    <string name="title_scan_verification_qr">ສະແກນລະຫັດ QR ການຢັ້ງຢືນ</string>
+    <string name="title_verifying_age">ກຳລັງຢັ້ງຢືນອາຍຸ</string>
+    <string name="title_age_verified">ຢັ້ງຢືນອາຍຸແລ້ວ</string>
+    <string name="title_verification_failed">ການຢັ້ງຢືນລົ້ມເຫລວ</string>
+    <string name="title_officer_mode">ໂໝດເຈົ້າໜ້າທີ່</string>
+    <string name="title_officer_dashboard">ແຜງຄວບຄຸມເຈົ້າໜ້າທີ່</string>
+    <string name="title_issue_credential">ອອກໃບຢັ້ງຢືນ</string>
+    <string name="title_credential_ready">ໃບຢັ້ງຢືນພ້ອມແລ້ວ</string>
+    <string name="title_get_your_credential">ຮັບໃບຢັ້ງຢືນຂອງທ່ານ</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">ຍິນດີຕ້ອນຮັບສູ່ Provii Wallet</string>
+    <string name="welcome_subtitle">ການຢັ້ງຢືນອາຍຸທີ່ປອດໄພ ໃຊ້ງ່າຍ</string>
+    <string name="welcome_first_credential">ເລີ່ມຕົ້ນໂດຍການເພີ່ມໃບຢັ້ງຢືນອາຍຸອັນທຳອິດຂອງທ່ານ</string>
+    <string name="welcome_description">ການຢັ້ງຢືນອາຍຸສ່ວນຕົວໂດຍໃຊ້ຫຼັກຖານບໍ່ເປີດເຜີຍຄວາມຮູ້</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">ຍິນດີຕ້ອນຮັບສູ່ Provii Wallet</string>
+    <string name="onboarding_language_subtitle">ເລືອກພາສາທີ່ທ່ານຕ້ອງການ</string>
+    <string name="onboarding_use_english">ໃຊ້ພາສາອັງກິດ</string>
+    <string name="onboarding_use_english_description">ສືບຕໍ່ໃຊ້ພາສາອັງກິດເປັນພາສາຂອງແອັບ</string>
+    <string name="onboarding_rotating_button_description">ປຸ່ມປ່ຽນພາສາ ປັດຈຸບັນສະແດງ: \u2068%1$s\u2069. ແຕະເພື່ອເລືອກພາສາອື່ນ.</string>
+    <string name="onboarding_change_later">ທ່ານສາມາດປ່ຽນສິ່ງນີ້ໄດ້ພາຍຫຼັງໃນການຕັ້ງຄ່າ</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">ການເຂົ້າເຖິງ</string>
+    <string name="onboarding_accessibility_desc">ທ່ານຕ້ອງການປັບແຕ່ງຄຸນສົມບັດການເຂົ້າເຖິງ ເຊັ່ນ ຂະໜາດຕົວໜັງສື ເປົ້າໝາຍສຳຜັດ ຫຼື ການເຄື່ອນໄຫວທີ່ຫຼຸດລົງ ຫຼື ບໍ?</string>
+    <string name="onboarding_use_defaults">ໃຊ້ຄ່າເລີ່ມຕົ້ນ</string>
+    <string name="onboarding_use_defaults_description">ສືບຕໍ່ດ້ວຍການຕັ້ງຄ່າການເຂົ້າເຖິງມາດຕະຖານ</string>
+    <string name="onboarding_open_accessibility">ການຕັ້ງຄ່າການເຂົ້າເຖິງ</string>
+    <string name="onboarding_open_accessibility_description">ເປີດການຕັ້ງຄ່າການເຂົ້າເຖິງເພື່ອປັບແຕ່ງແອັບ</string>
+    <string name="onboarding_accessibility_later">ທ່ານສາມາດປ່ຽນສິ່ງນີ້ໄດ້ພາຍຫຼັງໃນການຕັ້ງຄ່າ</string>
+    <string name="onboarding_accessibility_features_title">ຄຸນສົມບັດທີ່ມີ:</string>
+    <string name="onboarding_feature_text_size">ຂະໜາດຕົວໜັງສືໃຫຍ່ຂຶ້ນ</string>
+    <string name="onboarding_feature_touch_targets">ເພີ່ມເປົ້າໝາຍສຳຜັດ</string>
+    <string name="onboarding_feature_reduce_motion">ຫຼຸດພາບເຄື່ອນໄຫວ</string>
+    <string name="onboarding_feature_high_contrast">ໂໝດຄວາມແຕກຕ່າງສູງ</string>
+    <string name="onboarding_talkback_detected">ກວດພົບ TalkBack</string>
+    <string name="onboarding_talkback_message">ພວກເຮົາໄດ້ເປີດໃຊ້ຄຳອະທິບາຍລະອຽດເພື່ອຊ່ວຍໃຫ້ທ່ານນຳທາງໃນແອັບ.</string>
+    <string name="onboarding_continue_to_setup">ສືບຕໍ່ໄປຍັງການຕັ້ງຄ່າ</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">ຕ້ອງການການຕັ້ງຄ່າຄັ້ງດຽວ</string>
+    <string name="setup_download_required">ຕ້ອງການດາວໂຫລດ</string>
+    <string name="setup_download_description">ແອັບນີ້ຕ້ອງດາວໂຫລດອົງປະກອບຄວາມປອດໄພສຳລັບຫຼັກຖານບໍ່ເປີດເຜີຍຄວາມຮູ້ (ປະມານ 87 MB).</string>
+    <string name="setup_wifi_recommended">ແນະນຳໃຊ້ Wi-Fi</string>
+    <string name="setup_checking_status">ກຳລັງກວດສອບສະຖານະການຕັ້ງຄ່າ...</string>
+    <string name="setup_already_setup">ຕັ້ງຄ່າແລ້ວ!</string>
+    <string name="setup_ready_message">ກະເປົ໋າຂອງທ່ານພ້ອມສຳລັບການຢັ້ງຢືນອາຍຸທີ່ປອດໄພ</string>
+    <string name="setup_preparing">ກຳລັງກຽມລະບົບການຢັ້ງຢືນທີ່ປອດໄພ...</string>
+    <string name="setup_checking_components">ກຳລັງກວດສອບອົງປະກອບຄວາມປອດໄພ...</string>
+    <string name="setup_downloading">ກຳລັງດາວໂຫລດອົງປະກອບຄວາມປອດໄພ</string>
+    <string name="setup_download_progress_description">ສຳເລັດ %1$d%% (%2$s MB ຈາກ %3$s MB ທີ່ດາວໂຫລດແລ້ວ)</string>
+    <string name="setup_initializing">ກຳລັງເລີ່ມຕົ້ນອົງປະກອບຄວາມປອດໄພ...</string>
+    <string name="setup_complete">ການຕັ້ງຄ່າສຳເລັດ!</string>
+    <string name="setup_download_info">ການນີ້ເປີດໃຊ້ຫຼັກຖານບໍ່ເປີດເຜີຍຄວາມຮູ້ສຳລັບການຢັ້ງຢືນອາຍຸສ່ວນຕົວ</string>
+    <string name="setup_one_time_download">ດາວໂຫລດຄັ້ງດຽວ</string>
+    <string name="setup_stuck_message">ໃຊ້ເວລານານກວ່າທີ່ຄາດໄວ້</string>
+    <string name="setup_stuck_description">ການຕັ້ງຄ່າອາດຕິດຂັດ. ລອງເລີ່ມຕົ້ນໃໝ່.</string>
+    <string name="setup_restart_message">ແອັບຕ້ອງການເລີ່ມຕົ້ນໃໝ່. ສິ່ງນີ້ເກີດຂຶ້ນໄດ້ໃນການເປີດໃຊ້ຄັ້ງທຳອິດ.</string>
+    <string name="setup_storage_full">ບ່ອນເກັບຂໍ້ມູນເຕັມ</string>
+    <string name="setup_connection_error">ຂໍ້ຜິດພາດການເຊື່ອມຕໍ່</string>
+    <string name="setup_failed">ການຕັ້ງຄ່າລົ້ມເຫລວ</string>
+    <string name="setup_initialization_error">ຂໍ້ຜິດພາດການເລີ່ມຕົ້ນ</string>
+    <string name="error_storage_init_failed">ການເລີ່ມຕົ້ນບ່ອນເກັບຂໍ້ມູນລົ້ມເຫລວ. ກະລຸນາເລີ່ມຕົ້ນແອັບໃໝ່.</string>
+    <string name="error_storage_init_close_restart">ການເລີ່ມຕົ້ນບ່ອນເກັບຂໍ້ມູນລົ້ມເຫລວ. ກະລຸນາປິດ ແລະ ເລີ່ມຕົ້ນແອັບໃໝ່.</string>
+    <string name="setup_free_storage_message">ຄືນພື້ນທີ່ຢ່າງໜ້ອຍ 65 MB ແລ້ວລອງໃໝ່</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">ຄວາມເປັນສ່ວນຕົວຖືກປົກປ້ອງ</string>
+    <string name="setup_privacy_description">ການຢັ້ງຢືນອາຍຸຂອງທ່ານໃຊ້ຫຼັກຖານບໍ່ເປີດເຜີຍຄວາມຮູ້. ວັນເດືອນປີເກີດຂອງທ່ານຈະບໍ່ຖືກແບ່ງປັນ.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">ໃບຢັ້ງຢືນຂອງຂ້ອຍ</string>
+    <string name="credentials_empty">ບໍ່ມີໃບຢັ້ງຢືນທີ່ເກັບໄວ້</string>
+    <string name="credential_active">ໃບຢັ້ງຢືນໃຊ້ງານໄດ້</string>
+    <string name="credential_expired">ໃບຢັ້ງຢືນໝົດອາຍຸ</string>
+    <string name="credential_ready_for_verification">ພ້ອມສຳລັບການຢັ້ງຢືນ</string>
+    <string name="credential_expired_message">ໃບຢັ້ງຢືນຂອງທ່ານໝົດອາຍຸ ແລະ ຕ້ອງການການທົດແທນ</string>
+    <string name="credential_stored_successfully">ເກັບໃບຢັ້ງຢືນສຳເລັດ</string>
+    <string name="credential_stored_description">ໃບຢັ້ງຢືນອາຍຸຂອງທ່ານໄດ້ຖືກເກັບໄວ້ຢ່າງປອດໄພ ແລະ ພ້ອມໃຊ້ງານ</string>
+    <string name="credential_can_prove_age">ທ່ານສາມາດຢັ້ງຢືນອາຍຸຂອງທ່ານໄດ້ຢ່າງສ່ວນຕົວ</string>
+    <string name="credential_returning">ກຳລັງກັບໄປຍັງໃບຢັ້ງຢືນ...</string>
+    <string name="credential_view_credentials">ເບິ່ງໃບຢັ້ງຢືນ</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">ສຳເລັດ</string>
+    <string name="action_scan_qr_code">ສະແກນລະຫັດ QR</string>
+    <string name="action_find_locations">ຄົ້ນຫາສະຖານທີ່</string>
+    <string name="action_get_credential">ຮັບໃບຢັ້ງຢືນ</string>
+    <string name="action_replace_credential">ທົດແທນດ້ວຍໃບຢັ້ງຢືນໃໝ່</string>
+    <string name="action_replace_credential_now">ທົດແທນໃບຢັ້ງຢືນດຽວນີ້</string>
+    <string name="action_delete_credential">ລຶບໃບຢັ້ງຢືນ</string>
+    <string name="credential_action_scan_description">ຮັບໃບຢັ້ງຢືນຈາກຜູ້ອອກທີ່ໄດ້ຮັບອະນຸຍາດ</string>
+    <string name="credential_action_find_description">ຄົ້ນຫາຜູ້ອອກທີ່ຢູ່ໃກ້</string>
+    <string name="credential_remove_description">ລຶບໃບຢັ້ງຢືນປັດຈຸບັນ</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">ຄວາມເປັນສ່ວນຕົວ</string>
+    <string name="credential_info_privacy_value">ຖືກປົກປ້ອງ</string>
+    <string name="credential_info_status">ສະຖານະ</string>
+    <string name="credential_info_status_value">ໃຊ້ງານໄດ້</string>
+    <string name="credential_tip_title">ຄຳແນະນຳດ່ວນ</string>
+    <string name="credential_tip_message">ແຕະປຸ່ມ \'ຢັ້ງຢືນອາຍຸ\' ເພື່ອສະແກນລະຫັດ QR (Quick Response) ການຢັ້ງຢືນຢູ່ສະຖານທີ່ທີ່ເຂົ້າຮ່ວມ.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">ສະແກນລະຫັດ QR</string>
+    <string name="verification_verify_age">ຢັ້ງຢືນອາຍຸ</string>
+    <string name="verification_generating_proof">ກຳລັງສ້າງຫຼັກຖານ...</string>
+    <string name="verification_success">ການຢັ້ງຢືນສຳເລັດ</string>
+    <string name="verification_failed">ການຢັ້ງຢືນລົ້ມເຫລວ</string>
+    <string name="verification_age_verified">ຢັ້ງຢືນອາຍຸແລ້ວ</string>
+    <string name="verification_age_verified_message">ອາຍຸຂອງທ່ານໄດ້ຖືກຢັ້ງຢືນຢ່າງສ່ວນຕົວ</string>
+    <string name="verification_can_return">ທ່ານສາມາດກັບໄປຍັງເວັບໄຊໄດ້ເພື່ອສືບຕໍ່.</string>
+    <string name="verification_returning_browser">ກຳລັງກັບໄປຍັງບຣາວເຊີ...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">ຂັ້ນຕອນທີ 1 ຈາກ 2</string>
+    <string name="verification_step_2_of_2">ຂັ້ນຕອນທີ 2 ຈາກ 2</string>
+    <string name="verification_point_camera">ຊີ້ກ້ອງໄປຫາລະຫັດ QR ການຢັ້ງຢືນ</string>
+    <string name="verification_hold_steady">ຖືໄວ້ຢ່າງໝັ້ນຄົງຈົນກວ່າທ່ານຈະໄດ້ຍິນສຽງຢືນຢັນ.</string>
+    <string name="verification_reading_request">ກຳລັງອ່ານຄຳຮ້ອງຂໍການຢັ້ງຢືນ...</string>
+    <string name="verification_processing_challenge">ກຳລັງປະມວນຜົນການສິດທ໌ທ້າທາຍ...</string>
+    <string name="verification_creating_proof">ກຳລັງສ້າງຫຼັກຖານອາຍຸ...</string>
+    <string name="verification_submitting_proof">ກຳລັງສົ່ງຫຼັກຖານ...</string>
+    <string name="verification_processing_message">ອາດໃຊ້ເວລາສອງສາມວິນາທີ</string>
+    <string name="verification_preparing_proof">ພວກເຮົາກຳລັງກຽມຫຼັກຖານສ່ວນຕົວໂດຍໃຊ້ໃບຢັ້ງຢືນທີ່ບັນທຶກໄວ້ຂອງທ່ານ.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">ກຳລັງອ່ານຄຳຮ້ອງຂໍການຢັ້ງຢືນ...</string>
+    <string name="verification_status_processing_challenge">ກຳລັງປະມວນຜົນການສິດທ໌ທ້າທາຍ...</string>
+    <string name="verification_status_creating_proof">ກຳລັງສ້າງຫຼັກຖານອາຍຸ...</string>
+    <string name="verification_status_submitting_proof">ກຳລັງສົ່ງຫຼັກຖານ...</string>
+    <string name="verification_status_verified">✔ ຢັ້ງຢືນອາຍຸແລ້ວ</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">ບໍ່ສາມາດສະແດງຄຳສົ່ງເສີມການກວດສອບຕົວຕົນ</string>
+    <string name="verification_error_verification_failed">ການຢັ້ງຢືນລົ້ມເຫລວ</string>
+    <string name="verification_error_generic">ເກີດຂໍ້ຜິດພາດ</string>
+    <string name="verification_error_failed_to_process_code">ການປະມວນຜົນລະຫັດລົ້ມເຫລວ</string>
+    <string name="verification_error_failed_to_process_challenge">ການປະມວນຜົນການສິດທ໌ທ້າທາຍລົ້ມເຫລວ</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">ຜູ້ອອກທີ່ໄວ້ໃຈໄດ້ໃນອົດສະຕາລີ</string>
+    <string name="issuers_loading">ກຳລັງໂຫລດຜູ້ອອກ...</string>
+    <string name="issuers_loaded">ໂຫລດຜູ້ອອກສຳເລັດ</string>
+    <string name="issuers_unable_to_load">ບໍ່ສາມາດໂຫລດຜູ້ອອກ</string>
+    <string name="issuers_check_connection">ກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດຂອງທ່ານ ແລ້ວລອງໃໝ່</string>
+    <string name="issuers_categories_header">ໝວດໝູ່</string>
+    <string name="issuers_available_header">ຜູ້ອອກທີ່ມີ</string>
+    <string name="issuers_found_count">ພົບ %d ລາຍການ</string>
+    <string name="issuer_status_coming_soon">ໃກ້ຈະມາຮອດ</string>
+    <string name="issuer_status_verified">ຢັ້ງຢືນແລ້ວ</string>
+    <string name="issuer_how_to_get">ວິທີຮັບໃບຢັ້ງຢືນ</string>
+    <string name="issuer_service_locations">ສະຖານທີ່ໃຫ້ບໍລິການ</string>
+    <string name="issuer_visit_website">ໄປຢ້ຽມເວັບໄຊ %s</string>
+    <string name="issuer_learn_more">ຮຽນຮູ້ເພີ່ມເຕີມກ່ຽວກັບ %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">ທະນາຄານ</string>
+    <string name="category_super_fund">ກອງທຶນບຳນານ</string>
+    <string name="category_government">ລັດຖະບານ</string>
+    <string name="category_travel">ການທ່ອງທ່ຽວ</string>
+    <string name="category_telco">ໂທລະຄົມ</string>
+    <string name="category_insurance">ປະກັນໄພ</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">ການຕັ້ງຄ່າ</string>
+    <string name="settings_section_sandbox">ໂໝດ Sandbox</string>
+    <string name="settings_section_general">ທົ່ວໄປ</string>
+    <string name="settings_section_credentials">ໃບຢັ້ງຢືນ</string>
+    <string name="settings_section_advanced">ຂັ້ນສູງ</string>
+    <string name="settings_section_privacy">ຄວາມເປັນສ່ວນຕົວ</string>
+    <string name="settings_security">ຄວາມປອດໄພ</string>
+    <string name="settings_biometric">ໃຊ້ການກວດສອບຕົວຕົນດ້ວຍຊີວະສາດ</string>
+    <string name="settings_environment">ການຕັ້ງຄ່າສະພາບແວດລ້ອມ</string>
+    <string name="settings_environment_description">ເບິ່ງການຕັ້ງຄ່າສະພາບແວດລ້ອມປັດຈຸບັນ</string>
+    <string name="settings_reset_proving_key">ຣີເຊັດລະຫັດຢັ້ງຢືນ</string>
+    <string name="settings_reset_proving_key_description">ດາວໂຫລດອົງປະກອບຄວາມປອດໄພໃໝ່ (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">ອອກໃບຢັ້ງຢືນທົດສອບໃນຖານະຜູ້ອອກ</string>
+    <string name="settings_mint_test_credential_subtitle">ອອກໃບຢັ້ງຢືນທົດສອບໄປຍັງກະເປົາເງິນຂອງທ່ານ ເພື່ອທ່ານສາມາດຢັ້ງຢືນມັນຈາກການສາທິດຂອງຝ່າຍທີ່ເຊື່ອຖື.</string>
+    <string name="settings_find_trusted_issuers">ຄົ້ນຫາຜູ້ອອກທີ່ໄວ້ໃຈໄດ້</string>
+    <string name="settings_version">ເວີຊັ່ນ: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">ແຕະ 5 ຄັ້ງເພື່ອສະຫຼັບ</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">ພາສາ</string>
+    <string name="language_selection_description">ເລືອກພາສາທີ່ທ່ານຕ້ອງການ. ແອັບຈະເລີ່ມຕົ້ນໃໝ່ເພື່ອນຳໃຊ້ການປ່ຽນແປງ.</string>
+    <string name="language_selected">ເລືອກແລ້ວ</string>
+    <string name="settings_language">ພາສາ</string>
+    <string name="settings_language_description">ປ່ຽນພາສາຂອງແອັບ</string>
+    <string name="settings_licenses">ໃບອະນຸຍາດໂອເພນຊອດ</string>
+    <string name="settings_licenses_description">ເບິ່ງໃບອະນຸຍາດຂອງບຸກຄົນທີສາມ</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">ຢືນຢັນພາສາ</string>
+    <string name="language_change_to">ປ່ຽນພາສາເປັນ:</string>
+    <string name="language_restart_notice">ແອັບຈະເລີ່ມຕົ້ນໃໝ່ເພື່ອນຳໃຊ້ພາສານີ້.</string>
+    <string name="language_apply">ນຳໃຊ້</string>
+    <string name="language_cancel">ຍົກເລີກ</string>
+    <string name="language_skip_title">ຂ້າມການເລືອກພາສາ?</string>
+    <string name="language_skip_message">ຫາກທ່ານຂ້າມ ແອັບຈະໃຊ້ພາສາອັງກິດເປັນຄ່າເລີ່ມຕົ້ນ. ທ່ານສາມາດປ່ຽນພາສາໄດ້ພາຍຫຼັງໃນການຕັ້ງຄ່າ.</string>
+    <string name="language_use_english">ໃຊ້ພາສາອັງກິດ</string>
+    <string name="language_go_back">ກັບຄືນ</string>
+    <string name="language_help_title">ຊ່ວຍເຫຼືອການເລືອກພາສາ</string>
+    <string name="language_help_how_to">ວິທີເລືອກພາສາຂອງທ່ານ:</string>
+    <string name="language_help_step1">1. ໃຊ້ກ່ອງຄົ້ນຫາເພື່ອຊອກຫາພາສາຂອງທ່ານ</string>
+    <string name="language_help_step2">2. ແຕະທີ່ພາສາທີ່ທ່ານຕ້ອງການ</string>
+    <string name="language_help_step3">3. ຢືນຢັນການເລືອກຂອງທ່ານ</string>
+    <string name="language_help_system_note">ພາສາລະບົບຂອງທ່ານຈະຖືກໄຮໄລ້ຢູ່ດ້ານເທິງຫາກຮອງຮັບ.</string>
+    <string name="language_help_settings_note">ທ່ານສາມາດປ່ຽນສິ່ງນີ້ໄດ້ພາຍຫຼັງໃນການຕັ້ງຄ່າ.</string>
+    <string name="language_got_it">ເຂົ້າໃຈແລ້ວ</string>
+    <string name="language_select_title">ເລືອກພາສາ</string>
+    <string name="language_skip_button">ຂ້າມ (ໃຊ້ພາສາອັງກິດ)</string>
+    <string name="language_search_placeholder">ຄົ້ນຫາພາສາ...</string>
+    <string name="language_no_results">ບໍ່ພົບພາສາ</string>
+    <string name="language_try_different">ລອງຄຳຄົ້ນຫາອື່ນ</string>
+    <string name="language_system_badge">ພາສາລະບົບ</string>
+    <string name="language_count">%d ພາສາ</string>
+    <string name="language_no_match_announcement">ບໍ່ພົບພາສາທີ່ກົງກັບການຄົ້ນຫາ</string>
+    <string name="language_found_announcement">ພົບ %d ພາສາ</string>
+    <string name="language_search_cleared">ລ້າງການຄົ້ນຫາ ສະແດງ %d ພາສາທັງໝົດ</string>
+    <string name="language_selected_announcement">ເລືອກ %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">ໜ້າຈໍເລືອກພາສາ</string>
+    <string name="language_help_button_description">ຊ່ວຍເຫຼືອ ແລະ ຂໍ້ມູນກ່ຽວກັບການເລືອກພາສາ</string>
+    <string name="language_skip_description">ຂ້າມການເລືອກພາສາ ແລະ ໃຊ້ພາສາອັງກິດເປັນຄ່າເລີ່ມຕົ້ນ</string>
+    <string name="language_clear_search_description">ລ້າງການຄົ້ນຫາ</string>
+    <string name="language_count_description">%d ພາສາທີ່ມີ</string>
+    <string name="language_apply_description">ນຳໃຊ້ການເລືອກພາສາ ແລະ ສືບຕໍ່</string>
+    <string name="language_cancel_description">ຍົກເລີກການເລືອກພາສາ</string>
+    <string name="language_cancelled_announcement">ຍົກເລີກການເລືອກພາສາ</string>
+    <string name="language_selected_description">ພາສາທີ່ເລືອກ: %1$s, %2$s</string>
+    <string name="language_item_system">ພາສາລະບົບ: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, ເລືອກໄວ້ແລ້ວ</string>
+    <string name="language_item_system_selected">ພາສາລະບົບ: %1$s, %2$s, ເລືອກໄວ້ແລ້ວ</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">ກັບຄືນໄປຍັງການເລືອກພາສາ</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">ໂໝດ Sandbox ເປີດໃຊ້ງານ</string>
+    <string name="sandbox_mode_banner">ໂໝດ SANDBOX ACTIVE</string>
+    <string name="sandbox_mode_description">ໃຊ້ສະພາບແວດລ້ອມທົດສອບ. ແຕະໝາຍເລກເວີຊັ່ນຫ້າຄັ້ງເພື່ອສະຫຼັບ.</string>
+    <string name="sandbox_credential_title">ໃບຢັ້ງຢືນ Sandbox</string>
+    <string name="sandbox_credential_description">ສ້າງໃບຢັ້ງຢືນ Sandbox ເພື່ອທົດສອບຂະບວນການຢັ້ງຢືນໂດຍບໍ່ກະທົບຂໍ້ມູນການຜະລິດ.</string>
+    <string name="sandbox_select_age">ເລືອກອາຍຸ</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">ວັນເດືອນປີເກີດເລີ່ມຕົ້ນ: %s</string>
+    <string name="sandbox_override_dob">ແທນທີ່ວັນເດືອນປີເກີດເລີ່ມຕົ້ນ</string>
+    <string name="sandbox_override_description">ໃຊ້ວັນທີທີ່ແນ່ນອນແທນຄ່າເລີ່ມຕົ້ນຕາມອາຍຸ.</string>
+    <string name="sandbox_date_of_birth">ວັນເດືອນປີເກີດ</string>
+    <string name="sandbox_generate_credential">ສ້າງໃບຢັ້ງຢືນ</string>
+    <string name="sandbox_generating">ກຳລັງສ້າງ…</string>
+    <string name="sandbox_test_credential_saved">ບັນທຶກໃບຢັ້ງຢືນທົດສອບແລ້ວ</string>
+    <string name="sandbox_id_prefix">ຄຳນຳໜ້າ ID: %s…</string>
+    <string name="sandbox_unable_to_generate">ບໍ່ສາມາດສ້າງໃບຢັ້ງຢືນ</string>
+    <string name="settings_sandbox_dob_format">ວັນເດືອນປີເກີດ: %s</string>
+    <string name="settings_sandbox_age_dob_format">ອາຍຸ %d+ (ວັນເດືອນປີເກີດ: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">ການຕັ້ງຄ່າສະພາບແວດລ້ອມ</string>
+    <string name="environment_current">ປັດຈຸບັນ: %s</string>
+    <string name="environment_issuer_api">Issuer API (Application Programming Interface): %s</string>
+    <string name="environment_verifier_api">Verifier API (Application Programming Interface): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">ລຶບໃບຢັ້ງຢືນ?</string>
+    <string name="dialog_delete_credential_message">ການດຳເນີນການນີ້ຈະລຶບໃບຢັ້ງຢືນອອກຈາກອຸປະກອນຂອງທ່ານ. ທ່ານສາມາດດຶງຄືນໄດ້ຈາກຜູ້ອອກຫາກຕ້ອງການ.</string>
+    <string name="dialog_delete_credential_announcement">ກ່ອງໂຕ້ຕອບເປີດ: ລຶບໃບຢັ້ງຢືນ</string>
+    <string name="dialog_reset_proving_key_title">ຣີເຊັດລະຫັດຢັ້ງຢືນ?</string>
+    <string name="dialog_reset_proving_key_message">ລະຫັດຢັ້ງຢືນ ແລະ ໄຟລ໌ສະໜັບສະໜູນຈະຖືກລຶບ ແລະ ດາວໂຫລດໃໝ່ໃນຄັ້ງຕໍ່ໄປທີ່ທ່ານເປີດແອັບ.</string>
+    <string name="dialog_reset_proving_key_announcement">ກ່ອງໂຕ້ຕອບເປີດ: ຣີເຊັດລະຫັດຢັ້ງຢືນ</string>
+    <string name="dialog_environment_info_announcement">ກ່ອງໂຕ້ຕອບເປີດ: ການຕັ້ງຄ່າສະພາບແວດລ້ອມ</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">ການເຂົ້າເຖິງ</string>
+    <string name="accessibility_service_label">ການເຂົ້າເຖິງ Provii Wallet</string>
+    <string name="accessibility_service_description">ບໍລິການການເຂົ້າເຖິງ Provii Wallet ສະໜອງການສະໜັບສະໜູນຂັ້ນສູງສຳລັບຜູ້ໃຊ້ທີ່ມີຄວາມຄ່ອງຕ່ຳ. ລວມທັງການອ່ານໃບຢັ້ງຢືນອັດຕະໂນມັດ ການນຳທາງທີ່ໄດ້ຮັບການຊີ້ນຳ ແລະ ການໂຕ້ຕອບທີ່ລຽບງ່າຍ.</string>
+    <string name="accessibility_personalize">ປັບແຕ່ງປະສົບການຂອງທ່ານ</string>
+    <string name="accessibility_customize_features">ປັບແຕ່ງຄຸນສົມບັດການເຂົ້າເຖິງ</string>
+    <string name="accessibility_quick_setup">ການຕັ້ງຄ່າດ່ວນ</string>
+    <string name="accessibility_features_active">ຄຸນສົມບັດ %d ທີ່ໃຊ້ງານ</string>
+    <string name="accessibility_customize_experience">ປັບແຕ່ງປະສົບການຂອງທ່ານ</string>
+    <string name="accessibility_reset_title">ຣີເຊັດການຕັ້ງຄ່າການເຂົ້າເຖິງ?</string>
+    <string name="accessibility_reset_message">ຄ່າຕ້ອງການການເຂົ້າເຖິງທັງໝົດຈະກັບຄືນສູ່ຄ່າເລີ່ມຕົ້ນ.</string>
+    <string name="accessibility_reset">ຣີເຊັດການຕັ້ງຄ່າການເຂົ້າເຖິງ</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">ການເບິ່ງເຫັນ</string>
+    <string name="accessibility_category_interaction">ການໂຕ້ຕອບ</string>
+    <string name="accessibility_category_cognitive">ການສະໜັບສະໜູນດ້ານສະໝອງ</string>
+    <string name="accessibility_category_alternative_input">ການປ້ອນຂໍ້ມູນທາງເລືອກ</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">ຕົວໜັງສືໃຫຍ່ພິເສດ</string>
+    <string name="accessibility_extra_large_text_description">ເພີ່ມຂະໜາດຕົວໜັງສືພື້ນຖານ 45%</string>
+    <string name="accessibility_high_contrast">ຄວາມແຕກຕ່າງສູງ</string>
+    <string name="accessibility_high_contrast_description">ໃຊ້ສີທີ່ມີຄວາມແຕກຕ່າງສູງ</string>
+    <string name="accessibility_reduce_transparency">ຫຼຸດຄວາມໂປ່ງໃສ</string>
+    <string name="accessibility_reduce_transparency_description">ລຶບເອັບເຟັກ Blur ແລະ ກະຈົກ</string>
+    <string name="accessibility_dyslexia_font">ຟອນທ໌ທີ່ເໝາະກັບໂຣກ Dyslexia</string>
+    <string name="accessibility_dyslexia_font_description">ໃຊ້ຟອນທ໌ OpenDyslexic ເພື່ອປັບປຸງຄວາມສາມາດໃນການອ່ານ</string>
+    <string name="accessibility_color_blind_mode">ໂໝດຕາບອດສີ</string>
+    <string name="accessibility_color_blind_optimized">ສີທີ່ເໝາະສຳລັບ %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">ບໍ່ມີ</string>
+    <string name="color_blind_protanopia">Protanopia (ຕາບອດສີແດງ)</string>
+    <string name="color_blind_deuteranopia">Deuteranopia (ຕາບອດສີຂຽວ)</string>
+    <string name="color_blind_tritanopia">Tritanopia (ຕາບອດສີຟ້າ)</string>
+    <string name="color_blind_monochrome">ໂໂທນດຽວ</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">ເປົ້າໝາຍສຳຜັດໃຫຍ່ຂຶ້ນ</string>
+    <string name="accessibility_larger_touch_targets_description">ເພີ່ມຂະໜາດປຸ່ມ ແລະ ຊິບ</string>
+    <string name="accessibility_reduce_motion">ຫຼຸດພາບເຄື່ອນໄຫວ</string>
+    <string name="accessibility_reduce_motion_description">ຫຼຸດພາບເຄື່ອນໄຫວ ແລະ ການປ່ຽນຜ່ານ</string>
+    <string name="accessibility_extended_timeouts">ໝົດເວລາທີ່ຂະຫຍາຍ</string>
+    <string name="accessibility_extended_timeouts_description">ອະນຸຍາດໃຫ້ໃຊ້ເວລາຫຼາຍຂຶ້ນສຳລັບການດຳເນີນການທີ່ມີໄລຍະເວລາ</string>
+    <string name="accessibility_simplified_gestures">ທ່າທາງທີ່ລຽບງ່າຍ</string>
+    <string name="accessibility_simplified_gestures_description">ຫຼຸດທ່າທາງຫຼາຍຂັ້ນຕອນ</string>
+    <string name="accessibility_haptic_feedback">ການສັ່ນສະທ້ານ</string>
+    <string name="accessibility_haptic_feedback_description">ການສັ່ນຢືນຢັນສຳລັບການດຳເນີນການ</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">ໜ້າຈໍທີ່ລຽບງ່າຍ</string>
+    <string name="accessibility_simplified_interface_description">ເຊື່ອງຕົວເລືອກຂັ້ນສູງ ແລະ ຫຼຸດຄວາມວຸ້ນວາຍ</string>
+    <string name="accessibility_show_step_numbers">ສະແດງໝາຍເລກຂັ້ນຕອນ</string>
+    <string name="accessibility_show_step_numbers_description">ສະແດງຕົວຊີ້ວັດຄວາມຄືບໜ້າ</string>
+    <string name="accessibility_detailed_descriptions">ຄຳອະທິບາຍລະອຽດ</string>
+    <string name="accessibility_detailed_descriptions_description">ສະໜອງຂໍ້ຄວາມອະທິບາຍເພີ່ມເຕີມ</string>
+    <string name="accessibility_confirm_actions">ຢືນຢັນກ່ອນດຳເນີນການ</string>
+    <string name="accessibility_confirm_actions_description">ຂໍການຢືນຢັນສຳລັບການດຳເນີນການທີ່ສຳຄັນ</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">ປ້ອນລະຫັດດ້ວຍຕົນເອງ</string>
+    <string name="accessibility_manual_code_entry_description">ອະນຸຍາດໃຫ້ພິມລະຫັດ QR (Quick Response) ແທນການສະແກນ</string>
+    <string name="accessibility_voice_input">ການປ້ອນດ້ວຍສຽງ</string>
+    <string name="accessibility_voice_input_description">ເປີດໃຊ້ການຮັບຮູ້ສຽງສຳລັບຊ່ອງຂໍ້ຄວາມ</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">ການເບິ່ງເຫັນ</string>
+    <string name="accessibility_profile_motor">ການເຄື່ອນໄຫວ</string>
+    <string name="accessibility_profile_cognitive">ສະໝອງ</string>
+    <string name="accessibility_profile_senior">ຜູ້ສູງອາຍຸ</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">ກັບຄືນ</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">ໜ້າຫຼັກ</string>
+    <string name="breadcrumb_settings">ການຕັ້ງຄ່າ</string>
+    <string name="breadcrumb_accessibility">ການເຂົ້າເຖິງ</string>
+    <string name="breadcrumb_language">ພາສາ</string>
+    <string name="breadcrumb_help">ສູນຊ່ວຍເຫຼືອ</string>
+    <string name="breadcrumb_officer_mode">ໂໝດເຈົ້າໜ້າທີ່</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">ຮູບແບບຕົວໜັງສື &amp; ໄລຍະຫ່າງຂໍ້ຄວາມ</string>
+    <string name="accessibility_line_spacing">ໄລຍະຫ່າງຕ່ອນ</string>
+    <string name="accessibility_line_spacing_description">ປັບໄລຍະຫ່າງລະຫວ່າງຕ່ອນຂໍ້ຄວາມ</string>
+    <string name="accessibility_paragraph_spacing">ໄລຍະຫ່າງຍ່ອໜ້າ</string>
+    <string name="accessibility_paragraph_spacing_description">ປັບໄລຍະຫ່າງລະຫວ່າງຍ່ອໜ້າ</string>
+    <string name="accessibility_letter_spacing">ໄລຍະຫ່າງຕົວອັກຂະລະ</string>
+    <string name="accessibility_letter_spacing_description">ປັບໄລຍະຫ່າງລະຫວ່າງຕົວອັກຂະລະ</string>
+    <string name="accessibility_typography_aaa_note">ຄຳແນະນຳ AAA: ໄລຍະຫ່າງຕ່ອນ 1.5 ເທົ່າ ໄລຍະຫ່າງຍ່ອໜ້າ 2.0 ເທົ່າ ແລະ ໄລຍະຫ່າງຕົວອັກຂະລະ 0.12em.</string>
+    <string name="accessibility_spacing_current">ປັດຈຸບັນ: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">ພຶດຕິກຳໝົດເວລາ</string>
+    <string name="accessibility_timeout_no_automatic">ບໍ່ມີໝົດເວລາອັດຕະໂນມັດສຳລັບການປະຕິບັດຕາມ AAA</string>
+    <string name="accessibility_timeout_auto_advance_30">ຂ້າມອັດຕະໂນມັດຫຼັງ 30 ວິນາທີ</string>
+    <string name="accessibility_timeout_auto_advance_60">ຂ້າມອັດຕະໂນມັດຫຼັງ 60 ວິນາທີ</string>
+    <string name="accessibility_timeout_set_announcement">ຕັ້ງພຶດຕິກຳໝົດເວລາເປັນ %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">ລະດັບຄວາມແຕກຕ່າງ</string>
+    <string name="accessibility_contrast_aaa_ratio">ອັດຕາສ່ວນຄວາມແຕກຕ່າງ 7:1 ສຳລັບການປະຕິບັດຕາມ AAA</string>
+    <string name="accessibility_contrast_standard">ຄວາມແຕກຕ່າງມາດຕະຖານ</string>
+    <string name="accessibility_contrast_aa_ratio">ອັດຕາສ່ວນຄວາມແຕກຕ່າງ 4.5:1 ສຳລັບການປະຕິບັດຕາມ AA</string>
+    <string name="accessibility_contrast_set_announcement">ຕັ້ງລະດັບຄວາມແຕກຕ່າງເປັນ %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">ຕັ້ງໂໝດຕາບອດສີເປັນ %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">ຕົວເລື່ອນ %1$s. ຄ່າປັດຈຸບັນ: %2$s. %3$sຊ່ວງຈາກ %4$s ຫາ %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">ປະຕິບັດຕາມ AAA. </string>
+    <string name="accessibility_slider_announcement">%1$s ຕັ້ງເປັນ %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, ປະຕິບັດຕາມ AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s ເປີດໃຊ້ງານ</string>
+    <string name="accessibility_toggle_disabled">%s ປິດໃຊ້ງານ</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">ການຕອບສະໜອງການຢັ້ງຢືນ</string>
+    <string name="accessibility_sound_enabled">ຫຼິ້ນສຽງເມື່ອສຳເລັດ</string>
+    <string name="accessibility_sound_enabled_description">ຫຼິ້ນສຽງຢືນຢັນຫຼັງການຢັ້ງຢືນສຳເລັດ</string>
+    <string name="accessibility_sound_style">ຮູບແບບສຽງ</string>
+    <string name="accessibility_sound_preview">ຕົວຢ່າງສຽງ</string>
+    <string name="accessibility_sound_preview_preset">ຕົວຢ່າງ %s</string>
+    <string name="accessibility_sound_style_set_announcement">ຕັ້ງຮູບແບບສຽງເປັນ %s</string>
+    <string name="accessibility_haptic_enabled">ສັ່ນເມື່ອສຳເລັດ</string>
+    <string name="accessibility_haptic_enabled_description">ສະໜອງການສັ່ນສະທ້ານຫຼັງການຢັ້ງຢືນສຳເລັດ</string>
+    <string name="accessibility_sound_footer">ສຽງເຄົາລົບການຕັ້ງຄ່າໂໝດງຽບຂອງອຸປະກອນຂອງທ່ານ</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">ລະດັບສຽງ</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">ຕົວຢ່າງລະດັບສຽງປັດຈຸບັນ</string>
+    <string name="accessibility_volume_set_announcement">ຕັ້ງລະດັບສຽງເປັນ %d ເປີເຊັນ</string>
+    <string name="accessibility_volume_slider_description">ຕົວເລື່ອນລະດັບສຽງ. ຄ່າປັດຈຸບັນ: %d ເປີເຊັນ</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">ຣີເຊັດການຕັ້ງຄ່າ</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">ໂໝດເຈົ້າໜ້າທີ່</string>
+    <string name="officer_id">ລະຫັດປະຈຳຕົວເຈົ້າໜ້າທີ່ (ID)</string>
+    <string name="officer_id_placeholder">ເຊັ່ນ: OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">ປ້ອນລະຫັດປະຈຳຕົວເຈົ້າໜ້າທີ່ທີ່ໄດ້ຮັບມອບໝາຍ</string>
+    <string name="officer_yubikey_connected">ເຊື່ອມຕໍ່ YubiKey ແລ້ວ</string>
+    <string name="officer_connect_yubikey">ເຊື່ອມຕໍ່ YubiKey</string>
+    <string name="officer_touch_yubikey">ແຕະ YubiKey ຂອງທ່ານເພື່ອກວດສອບຕົວຕົນ...</string>
+    <string name="officer_authenticate_hmac">ກວດສອບຕົວຕົນດ້ວຍ HMAC (Hash-based Message Authentication Code)</string>
+    <string name="officer_authentication_process">ຂະບວນການກວດສອບຕົວຕົນ:</string>
+    <string name="officer_auth_steps">1. ປ້ອນລະຫັດປະຈຳຕົວເຈົ້າໜ້າທີ່ຂອງທ່ານ\n2. ຄລິກກວດສອບຕົວຕົນ\n3. ແຕະ YubiKey ເມື່ອກະພິບ\n4. ການກວດສອບ HMAC (Hash-based Message Authentication Code) ຢືນຢັນຕົວຕົນຂອງທ່ານ</string>
+    <string name="officer_auth_failed">ການກວດສອບຕົວຕົນລົ້ມເຫລວ. ກະລຸນາກວດສອບລະຫັດປະຈຳຕົວເຈົ້າໜ້າທີ່ຂອງທ່ານ ແລ້ວລອງໃໝ່.</string>
+    <string name="officer_session_info">ເຈົ້າໜ້າທີ່: %s</string>
+    <string name="officer_station_info">ສະຖານີ: %s</string>
+    <string name="officer_issued_today">ອອກໃຫ້ມື້ນີ້: %1$d / 50</string>
+    <string name="officer_issue_age_credential">ອອກໃບຢັ້ງຢືນອາຍຸ</string>
+    <string name="officer_issue_description">ກວດສອບຕົວຕົນຜູ້ໃຊ້ ແລະ ອອກໃບຢັ້ງຢືນອາຍຸດິຈິຕອລ</string>
+    <string name="officer_start_issuance">ເລີ່ມການອອກໃໝ່</string>
+    <string name="officer_issuance_process">ຂະບວນການອອກ</string>
+    <string name="officer_issuance_steps">1. ກວດສອບເອກະສານປະຈຳຕົວທາງກາຍຂອງຜູ້ໃຊ້\n2. ປ້ອນວັນເດືອນປີເກີດຂອງພວກເຂົາ\n3. ກວດສອບວ່າຂໍ້ມູນກົງກັນ\n4. ອອກໃບຢັ້ງຢືນດ້ວຍລະຫັດ QR (Quick Response) ການຢັ້ງຢືນ\n5. ຜູ້ໃຊ້ສະແກນລະຫັດ QR ເພື່ອຮັບໃບຢັ້ງຢືນ</string>
+    <string name="officer_verify_identity">ກວດສອບຕົວຕົນຜູ້ໃຊ້</string>
+    <string name="officer_select_dob">ເລືອກວັນເດືອນປີເກີດ</string>
+    <string name="officer_change_date">ປ່ຽນວັນທີ</string>
+    <string name="officer_age_years">ອາຍຸ: %d ປີ</string>
+    <string name="officer_under_18_warning">ອາຍຸຕ່ຳກວ່າ 18 ປີ - ບໍ່ສາມາດອອກໃບຢັ້ງຢືນ</string>
+    <string name="officer_verification_checklist">ລາຍຊື່ກວດສອບ</string>
+    <string name="officer_document_verified">ກວດສອບເອກະສານທາງກາຍແລ້ວ</string>
+    <string name="officer_document_verified_description">ຂ້ອຍໄດ້ເຫັນ ID ທີ່ໃຊ້ງານໄດ້ທີ່ລັດຖະບານອອກໃຫ້</string>
+    <string name="officer_dob_matches">ວັນເດືອນປີເກີດກົງກັນ</string>
+    <string name="officer_dob_matches_description">ວັນເດືອນປີເກີດໃນເອກະສານທາງກາຍແມ່ນ: %s</string>
+    <string name="officer_issue_credential">ອອກໃບຢັ້ງຢືນ</string>
+    <string name="officer_user_scanned_successfully">ຜູ້ໃຊ້ສະແກນສຳເລັດ</string>
+    <string name="officer_return_to_dashboard">ກັບໄປຍັງແຜງຄວບຄຸມ</string>
+    <string name="officer_go_back">ກັບຄືນ</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">ການກວດສອບຕົວຕົນ YubiKey</string>
+    <string name="yubikey_step_format">ຂັ້ນຕອນ %1$d ຈາກ %2$d</string>
+    <string name="yubikey_led_should_blink">ໄຟ LED ຂອງ YubiKey ຄວນກະພິບ</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">ກຳລັງກວດສອບຂໍ້ມູນນຳເຂົ້າ...</string>
+    <string name="officer_state_creating_attestation">ກຳລັງສ້າງການຢັ້ງຢືນ...</string>
+    <string name="officer_state_computing_commitment">ກຳລັງຄຳນວນການຜູກພັນທາງການເຂົ້າລະຫັດ...</string>
+    <string name="officer_state_creating_session">ກຳລັງສ້າງເຊດຊັນທີ່ປອດໄພ...</string>
+    <string name="officer_state_signing">ກຳລັງເຊັນໃບຢັ້ງຢືນ...</string>
+    <string name="officer_state_finalizing">ກຳລັງສຳເລັດໃບຢັ້ງຢືນ...</string>
+    <string name="officer_state_storing_attestation">ກຳລັງເກັບການຢັ້ງຢືນ...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">ເຊດຊັນໃກ້ໝົດເວລາ</string>
+    <string name="officer_session_expiring_message">ເຊດຊັນຂອງທ່ານຈະໝົດເວລາໃນ %d ວິນາທີ. ທ່ານຕ້ອງການບັນທຶກຄວາມຄືບໜ້າຫຼື ບໍ?</string>
+    <string name="officer_session_expiring_announcement">ຄຳເຕືອນ: ເຊດຊັນຂອງທ່ານຈະໝົດເວລາໃນ %d ວິນາທີ</string>
+    <string name="officer_save_and_continue">ບັນທຶກ ແລະ ສືບຕໍ່</string>
+    <string name="officer_continue_without_saving">ສືບຕໍ່ໂດຍບໍ່ບັນທຶກ</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">ວັນເດືອນປີເກີດ</string>
+    <string name="officer_age_format">ອາຍຸ: %d ປີ</string>
+    <string name="officer_under_18_full_warning">ອາຍຸຕ່ຳກວ່າ 18 ປີ - ບໍ່ສາມາດອອກໃບຢັ້ງຢືນ. ເຉພາະບຸກຄົນທີ່ມີອາຍຸ 18 ປີ ຫຼື ສູງກວ່າເທົ່ານັ້ນທີ່ມີສິດໄດ້ຮັບໃບຢັ້ງຢືນອາຍຸ. ກະລຸນາກວດສອບວ່າວັນເດືອນປີເກີດຖືກຕ້ອງ.</string>
+    <string name="officer_verification_checklist_header">ລາຍຊື່ກວດສອບ</string>
+    <string name="officer_physical_document_verified">ກວດສອບເອກະສານທາງກາຍແລ້ວ</string>
+    <string name="officer_sighted_valid_id">ຂ້ອຍໄດ້ເຫັນ ID ທີ່ໃຊ້ງານໄດ້ທີ່ລັດຖະບານອອກໃຫ້</string>
+    <string name="officer_dob_matches_exactly">ວັນເດືອນປີເກີດກົງກັນ</string>
+    <string name="officer_dob_on_document">ວັນເດືອນປີເກີດໃນເອກະສານທາງກາຍແມ່ນ: %s</string>
+    <string name="officer_error_label">ຂໍ້ຜິດພາດ</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">ສະແກນລະຫັດ QR (Quick Response) ການອອກ</string>
+    <string name="issuance_downloads_credential">ການນີ້ດາວໂຫລດໃບຢັ້ງຢືນອາຍຸຂອງທ່ານ.</string>
+    <string name="issuance_center_qr">ຈັດໃຫ້ລະຫັດ QR ຢູ່ກາງກອບ ແລ້ວຖືໄວ້ຢ່າງໝັ້ນຄົງ.</string>
+    <string name="issuance_enter_code_manually">ປ້ອນລະຫັດດ້ວຍຕົນເອງ</string>
+    <string name="issuance_processing_qr">ກຳລັງປະມວນຜົນລະຫັດ QR…</string>
+    <string name="issuance_invalid_data">ຂໍ້ມູນການອອກບໍ່ຖືກຕ້ອງ</string>
+    <string name="issuance_verification_qr_error">ນີ້ແມ່ນລະຫັດ QR ການຢັ້ງຢືນ. ກະລຸນາສະແກນລະຫັດ QR ການອອກໃບຢັ້ງຢືນ.</string>
+    <string name="issuance_invalid_qr_format">ຮູບແບບລະຫັດ QR ບໍ່ຖືກຕ້ອງ</string>
+    <string name="issuance_failed_to_process">ການປະມວນຜົນລະຫັດ QR ລົ້ມເຫລວ: %s</string>
+    <string name="issuance_code">ລະຫັດການອອກ</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">ປ້ອນລະຫັດດ້ວຍຕົນເອງ</string>
+    <string name="manual_entry_enter_code_manually">ປ້ອນລະຫັດດ້ວຍຕົນເອງ</string>
+    <string name="manual_entry_verification_description">ປ້ອນລະຫັດການຢັ້ງຢືນ 12 ຕົວເລກທີ່ສະແດງຢູ່ໜ້າຈໍຂອງຜູ້ຢັ້ງຢືນ.</string>
+    <string name="manual_entry_issuance_description">ພິມລະຫັດທີ່ສະແດງຢູ່ໜ້າຈໍຂອງຜູ້ອອກ.</string>
+    <string name="manual_entry_verification_code">ລະຫັດການຢັ້ງຢືນ</string>
+    <string name="manual_entry_submit">ສົ່ງລະຫັດ</string>
+    <string name="manual_entry_please_enter">ກະລຸນາປ້ອນລະຫັດ</string>
+    <string name="manual_entry_please_enter_verification">ກະລຸນາປ້ອນລະຫັດການຢັ້ງຢືນ</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">ເລີ່ມຟັງ</string>
+    <string name="voice_input_stop_listening">ຢຸດຟັງ</string>
+    <string name="voice_input_recognized">ຮັບຮູ້ແລ້ວ:</string>
+    <string name="content_desc_voice_input_listening">ກຳລັງຟັງການປ້ອນດ້ວຍສຽງ</string>
+    <string name="content_desc_voice_input_available">ການປ້ອນດ້ວຍສຽງໃຊ້ງານໄດ້</string>
+    <string name="voice_input_permission_title">ຕ້ອງການສິດທ໌ໄມໂຄໂຟນ</string>
+    <string name="voice_input_permission_message">ການປ້ອນດ້ວຍສຽງຕ້ອງການການເຂົ້າເຖິງໄມໂຄໂຟນ. ທ່ານສາມາດເປີດໃຊ້ໄດ້ຈາກການຕັ້ງຄ່າລະບົບ.</string>
+    <string name="voice_input_listening">ກຳລັງຟັງ…</string>
+    <string name="voice_input_error">ຂໍ້ຜິດພາດການປ້ອນດ້ວຍສຽງ</string>
+    <string name="voice_input_tap_to_speak">ແຕະເພື່ອເວົ້າ</string>
+    <string name="voice_input_did_you_say">ທ່ານເວົ້າວ່າ &quot;%1$s&quot; ແມ່ນຫຼື?</string>
+    <string name="voice_input_confirm">ຢືນຢັນ</string>
+    <string name="voice_input_retry">ລອງໃໝ່</string>
+    <string name="voice_input_cancel">ຍົກເລີກ</string>
+    <string name="voice_input_button">ການປ້ອນດ້ວຍສຽງ</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">ການປ້ອນດ້ວຍສຽງບໍ່ສາມາດໃຊ້ງານໄດ້ໃນອຸປະກອນນີ້</string>
+    <string name="voice_input_error_audio">ຂໍ້ຜິດພາດການບັນທຶກສຽງ. ກວດສອບໄມໂຄໂຟນ.</string>
+    <string name="voice_input_error_network">ຂໍ້ຜິດພາດເຄືອຂ່າຍ. ກວດສອບການເຊື່ອມຕໍ່.</string>
+    <string name="voice_input_error_network_timeout">ໝົດເວລາເຄືອຂ່າຍ. ລອງໃໝ່.</string>
+    <string name="voice_input_error_no_match">ບໍ່ພົບສຽງ. ກະລຸນາລອງໃໝ່.</string>
+    <string name="voice_input_error_recognizer_busy">ການປ້ອນດ້ວຍສຽງໄຊ. ກະລຸນາລໍຖ້າ.</string>
+    <string name="voice_input_error_server">ຂໍ້ຜິດພາດເຊີເວີ. ລອງໃໝ່ພາຍຫຼັງ.</string>
+    <string name="voice_input_error_speech_timeout">ບໍ່ໄດ້ຍິນສຽງ. ກະລຸນາເວົ້າດັງຂຶ້ນ.</string>
+    <string name="voice_input_error_insufficient_permissions">ການອະນຸຍາດໄມໂຄໂຟນຖືກປະຕິເສດ.</string>
+    <string name="voice_input_error_generic">ຂໍ້ຜິດພາດການປ້ອນດ້ວຍສຽງ. ກະລຸນາລອງໃໝ່.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">ກັບຄືນ</string>
+    <string name="action_close">ປິດ</string>
+    <string name="action_cancel">ຍົກເລີກ</string>
+    <string name="action_ok">ຕົກລົງ</string>
+    <string name="action_set">ຕັ້ງ</string>
+    <string name="action_change">ປ່ຽນ</string>
+    <string name="action_delete">ລຶບ</string>
+    <string name="action_reset">ຣີເຊັດ</string>
+    <string name="action_retry">ລອງໃໝ່</string>
+    <string name="action_try_again">ລອງໃໝ່</string>
+    <string name="action_refresh">ໂຫລດໃໝ່</string>
+    <string name="action_download_now">ດາວໂຫລດດຽວນີ້</string>
+    <string name="action_retry_setup">ລອງຕັ້ງຄ່າໃໝ່</string>
+    <string name="action_retry_download">ລອງດາວໂຫລດໃໝ່</string>
+    <string name="action_restart_setup">ເລີ່ມຕົ້ນການຕັ້ງຄ່າໃໝ່</string>
+    <string name="action_manage_storage">ຈັດການບ່ອນເກັບຂໍ້ມູນ</string>
+    <string name="action_check_wifi_settings">ກວດສອບການຕັ້ງຄ່າ Wi-Fi ກ່ອນ</string>
+    <string name="action_check_wifi_settings_short">ກວດສອບການຕັ້ງຄ່າ Wi-Fi</string>
+    <string name="action_grant_permission">ອະນຸຍາດ</string>
+    <string name="action_grant_camera_access">ອະນຸຍາດການເຂົ້າເຖິງກ້ອງ</string>
+    <string name="action_return_to_browser">ກັບໄປຍັງບຣາວເຊີ</string>
+    <string name="action_show_debug_info">ສະແດງຂໍ້ມູນ Debug</string>
+    <string name="action_reset_redownload">ຣີເຊັດ ແລະ ດາວໂຫລດໃໝ່</string>
+    <string name="action_end_session">ສິ້ນສຸດເຊດຊັນ</string>
+    <string name="action_expand">ຂະຫຍາຍ</string>
+    <string name="action_collapse">ຫຍໍ້</string>
+    <string name="accessibility_state_expanded">ຂະຫຍາຍ</string>
+    <string name="accessibility_state_collapsed">ຫຍໍ້</string>
+    <string name="accessibility_state_checked">ເລືອກແລ້ວ</string>
+    <string name="accessibility_state_unchecked">ບໍ່ໄດ້ເລືອກ</string>
+    <string name="accessibility_state_selected">ເລືອກ</string>
+    <string name="accessibility_state_not_selected">ບໍ່ໄດ້ເລືອກ</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">ເກີດຂໍ້ຜິດພາດ</string>
+    <string name="error_camera_permission">ຕ້ອງການສິດທ໌ກ້ອງສຳລັບການສະແກນ QR (Quick Response)</string>
+    <string name="error_camera_access_needed">ຕ້ອງການການເຂົ້າເຖິງກ້ອງ</string>
+    <string name="error_camera_permission_description">ອະນຸຍາດສິດທ໌ກ້ອງເພື່ອສະແກນລະຫັດ QR ຫຼື ເປີດໃຊ້ການປ້ອນດ້ວຍຕົນເອງຈາກການຕັ້ງຄ່າການເຂົ້າເຖິງ.</string>
+    <string name="error_camera_permission_required">ຕ້ອງການສິດທ໌ກ້ອງເພື່ອສະແກນລະຫັດ QR</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">ກຳລັງສະແກນລະຫັດ QR...</string>
+    <string name="qr_scanner_camera_required">ຕ້ອງການສິດທ໌ກ້ອງ</string>
+    <string name="qr_scanner_camera_preview">ຕົວຢ່າງກ້ອງສຳລັບສະແກນລະຫັດ QR</string>
+    <string name="qr_scanner_status_scanning">ກຳລັງສະແກນລະຫັດ QR</string>
+    <string name="qr_scanner_requesting_permission">ກຳລັງຂໍສິດທ໌ກ້ອງ</string>
+    <string name="error_camera_start_failed">ການເລີ່ມຕົ້ນກ້ອງລົ້ມເຫລວ: %s</string>
+    <string name="error_camera_init_failed">ການເລີ່ມຕົ້ນກ້ອງລົ້ມເຫລວ: %s</string>
+    <string name="error_biometric_not_available">ການກວດສອບຕົວຕົນດ້ວຍຊີວະສາດບໍ່ສາມາດໃຊ້ງານໄດ້</string>
+    <string name="error_network">ເກີດຂໍ້ຜິດພາດເຄືອຂ່າຍ</string>
+    <string name="error_no_credential">ບໍ່ມີໃບຢັ້ງຢືນທີ່ໃຊ້ງານໄດ້. ກະລຸນາຮັບໃບຢັ້ງຢືນກ່ອນ.</string>
+    <string name="credential_picker_title">ເລືອກໃບຢັ້ງຢືນ</string>
+    <string name="credential_picker_description">ທ່ານມີໃບຢັ້ງຢືນຫຼາຍໃບທີ່ສາມາດໃຊ້ສຳລັບການຢັ້ງຢືນນີ້. ກະລຸນາເລືອກໜຶ່ງ.</string>
+    <string name="credential_picker_expired_label">ໝົດອາຍຸ</string>
+    <string name="credential_picker_accessibility_select">ເລືອກໃບຢັ້ງຢືນ: %1$s</string>
+    <string name="error_failed_to_process_challenge">ການປະມວນຜົນການສິດທ໌ທ້າທາຍລົ້ມເຫລວ</string>
+    <string name="error_failed_to_create_proof">ການສ້າງຫຼັກຖານລົ້ມເຫລວ</string>
+    <string name="error_verification_failed">ການຢັ້ງຢືນລົ້ມເຫລວ</string>
+    <string name="error_occurred_during_verification">ເກີດຂໍ້ຜິດພາດລະຫວ່າງການຢັ້ງຢືນ</string>
+    <string name="error_connection_timeout">ການເຊື່ອມຕໍ່ໝົດເວລາ. ກະລຸນາລອງໃໝ່.</string>
+    <string name="error_unable_to_connect">ບໍ່ສາມາດເຊື່ອມຕໍ່ໄດ້. ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດຂອງທ່ານ.</string>
+    <string name="error_secure_connection_failed">ການເຊື່ອມຕໍ່ທີ່ປອດໄພລົ້ມເຫລວ. ກະລຸນາລອງໃໝ່.</string>
+    <string name="error_security_verification_failed">ການຢັ້ງຢືນຄວາມປອດໄພລົ້ມເຫລວ. ກະລຸນາລອງໃໝ່.</string>
+    <string name="error_invalid_input">ຂໍ້ມູນນຳເຂົ້າບໍ່ຖືກຕ້ອງ. ກະລຸນາກວດສອບຂໍ້ມູນຂອງທ່ານ ແລ້ວລອງໃໝ່.</string>
+    <string name="error_operation_in_progress">ການດຳເນີນການອີກອັນໜຶ່ງກຳລັງດຳເນີນ. ກະລຸນາລໍຖ້າ.</string>
+    <string name="error_operation_cancelled">ການດຳເນີນການຖືກຍົກເລີກ.</string>
+    <string name="error_age_requirement_not_met">ບໍ່ຕອບສະໜອງຂໍ້ກຳໜົດອາຍຸສຳລັບໃບຢັ້ງຢືນນີ້.</string>
+    <string name="error_biometric_required">ຕ້ອງການການກວດສອບຕົວຕົນດ້ວຍຊີວະສາດເພື່ອສືບຕໍ່.</string>
+    <string name="error_wallet_not_initialized">ກະເປົ໋າບໍ່ໄດ້ຮັບການເລີ່ມຕົ້ນ. ກະລຸນາເລີ່ມຕົ້ນແອັບໃໝ່.</string>
+    <string name="error_security">ຂໍ້ຜິດພາດຄວາມປອດໄພ. ກະລຸນາລອງໃໝ່.</string>
+    <string name="error_connection_timeout_short">ການເຊື່ອມຕໍ່ໝົດເວລາ. ກະລຸນາລອງໃໝ່.</string>
+    <string name="error_invalid_input_provided">ຂໍ້ມູນນຳເຂົ້າບໍ່ຖືກຕ້ອງ.</string>
+    <string name="error_invalid_data_format">ຮູບແບບຂໍ້ມູນບໍ່ຖືກຕ້ອງ. ກະລຸນາລອງໃໝ່.</string>
+    <string name="error_storage">ຂໍ້ຜິດພາດບ່ອນເກັບຂໍ້ມູນ. ກະລຸນາກວດສອບບ່ອນເກັບຂໍ້ມູນຂອງອຸປະກອນ.</string>
+    <string name="error_network_short">ຂໍ້ຜິດພາດເຄືອຂ່າຍ. ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ຂອງທ່ານ.</string>
+    <string name="error_label">ຂໍ້ຜິດພາດ</string>
+    <string name="error_dismiss">ປິດຂໍ້ຜິດພາດ</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">ກຳລັງປະມວນຜົນ...</string>
+    <string name="status_initializing_wallet">ກຳລັງເລີ່ມຕົ້ນກະເປົ໋າ...</string>
+    <string name="status_loading">ກຳລັງໂຫລດ...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">ຄວາມເປັນສ່ວນຕົວຖືກປົກປ້ອງ</string>
+    <string name="privacy_zk_description">ວັນເດືອນປີເກີດຂອງທ່ານຈະບໍ່ຖືກແບ່ງປັນ. ຜູ້ຢັ້ງຢືນຮຽນຮູ້ພຽງວ່າທ່ານຕອບສະໜອງຂໍ້ກຳໜົດອາຍຸຂອງພວກເຂົາ ຫຼື ບໍ.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">ການຕັ້ງຄ່າຄວາມເປັນສ່ວນຕົວ</string>
+    <string name="privacy_settings_description">ຄວບຄຸມການເກັບຂໍ້ມູນ ແລະ ຈັດການຂໍ້ມູນຂອງທ່ານ</string>
+    <string name="privacy_section_data_collection">ການເກັບຂໍ້ມູນ</string>
+    <string name="privacy_section_your_data">ຂໍ້ມູນຂອງທ່ານ</string>
+    <string name="privacy_protection_title">ຄວາມເປັນສ່ວນຕົວຂອງທ່ານຖືກປົກປ້ອງ</string>
+    <string name="privacy_protection_description">Provii Wallet ໃຊ້ຫຼັກຖານບໍ່ເປີດເຜີຍຄວາມຮູ້ເພື່ອຢັ້ງຢືນອາຍຸຂອງທ່ານໂດຍບໍ່ເປີດເຜີຍວັນເດືອນປີເກີດ. ຂໍ້ມູນໃບຢັ້ງຢືນຂອງທ່ານເກັບໄວ້ໃນອຸປະກອນຂອງທ່ານ ແລະ ຈະບໍ່ຖືກແບ່ງປັນກັບໃຜ.</string>
+    <string name="privacy_analytics_title">ການວິເຄາະ</string>
+    <string name="privacy_analytics_description">ຊ່ວຍປັບປຸງ Provii Wallet ໂດຍການແບ່ງປັນຂໍ້ມູນການໃຊ້ງານທີ່ບໍ່ລະບຸຕົວຕົນ</string>
+    <string name="privacy_analytics_enabled">ເປີດໃຊ້ການວິເຄາະ</string>
+    <string name="privacy_analytics_disabled">ປິດໃຊ້ການວິເຄາະ</string>
+    <string name="privacy_crash_reporting_title">ການລາຍງານຂໍ້ຜິດພາດ</string>
+    <string name="privacy_crash_reporting_description">ຊ່ວຍພວກເຮົາແກ້ໄຂຂໍ້ຜິດພາດໂດຍການສົ່ງລາຍງານຂໍ້ຜິດພາດອັດຕະໂນມັດ</string>
+    <string name="privacy_crash_reporting_enabled">ເປີດໃຊ້ການລາຍງານຂໍ້ຜິດພາດ</string>
+    <string name="privacy_crash_reporting_disabled">ປິດໃຊ້ການລາຍງານຂໍ້ຜິດພາດ</string>
+    <string name="privacy_what_we_collect_title">ຂໍ້ມູນທີ່ພວກເຮົາເກັບ</string>
+    <string name="privacy_what_we_collect_subtitle">ແຕະເພື່ອຮຽນຮູ້ກ່ຽວກັບການປະຕິບັດຂໍ້ມູນຂອງພວກເຮົາ</string>
+    <string name="privacy_data_collection_info_title">ຂໍ້ມູນກ່ຽວກັບການເກັບຂໍ້ມູນ</string>
+    <string name="privacy_data_we_collect_header">ສິ່ງທີ່ພວກເຮົາເກັບ (ຫາກເປີດໃຊ້):</string>
+    <string name="privacy_data_we_collect_list">- ສະຖິຕິການໃຊ້ງານແອັບທີ່ບໍ່ລະບຸຕົວຕົນ\n- ລາຍງານຂໍ້ຜິດພາດ ແລະ ບັນທຶກຂໍ້ຜິດພາດ\n- ປະເພດອຸປະກອນ ແລະ ເວີຊັ່ນ OS\n- ຂໍ້ມູນເວີຊັ່ນແອັບ</string>
+    <string name="privacy_data_we_dont_collect_header">ສິ່ງທີ່ພວກເຮົາບໍ່ເກັບ:</string>
+    <string name="privacy_data_we_dont_collect_list">- ວັນເດືອນປີເກີດຂອງທ່ານ\n- ຊື່ ຫຼື ລາຍລະອຽດສ່ວນຕົວຂອງທ່ານ\n- ທີ່ຕັ້ງຂອງທ່ານ\n- ຂໍ້ມູນໃບຢັ້ງຢືນຂອງທ່ານ\n- ຂໍ້ມູນຊີວະສາດ</string>
+    <string name="privacy_data_never_shared_note">ຂໍ້ມູນໃບຢັ້ງຢືນຂອງທ່ານຈະບໍ່ຖືກແບ່ງປັນກັບ Provii ຫຼື ບຸກຄົນທີສາມໃດ. ມັນຢູ່ໃນອຸປະກອນຂອງທ່ານ.</string>
+    <string name="privacy_policy_title">ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ</string>
+    <string name="privacy_policy_subtitle">ອ່ານນະໂຍບາຍຄວາມເປັນສ່ວນຕົວທີ່ຄົບຖ້ວນຂອງພວກເຮົາ</string>
+    <string name="privacy_delete_my_data_title">ລຶບຂໍ້ມູນຂອງຂ້ອຍ</string>
+    <string name="privacy_delete_my_data_subtitle">ລຶບໃບຢັ້ງຢືນ ແລະ ຂໍ້ມູນທີ່ເກັບທັງໝົດ</string>
+    <string name="privacy_delete_data_dialog_title">ລຶບຂໍ້ມູນທັງໝົດ?</string>
+    <string name="privacy_delete_data_dialog_message">ການນີ້ຈະລຶບໃບຢັ້ງຢືນ ແລະ ຂໍ້ມູນແອັບທັງໝົດຂອງທ່ານຢ່າງຖາວອນຈາກອຸປະກອນນີ້. ທ່ານຈຳເປັນຕ້ອງຮັບໃບຢັ້ງຢືນໃໝ່ເພື່ອໃຊ້ແອັບອີກ.</string>
+    <string name="privacy_delete_data_dialog_warning">ການດຳເນີນການນີ້ບໍ່ສາມາດຍົກເລີກໄດ້.</string>
+    <string name="privacy_delete_data_confirm">ລຶບທຸກຢ່າງ</string>
+    <string name="privacy_footer_note">ທ່ານສາມາດປ່ຽນການຕັ້ງຄ່າເຫຼົ່ານີ້ໄດ້ທຸກເວລາ. ການປ່ຽນແປງມີຜົນທັນທີ.</string>
+    <string name="dialog_delete_data_announcement">ກ່ອງໂຕ້ຕອບຢືນຢັນການລຶບຂໍ້ມູນເປີດ</string>
+    <string name="dialog_data_collection_info_announcement">ກ່ອງໂຕ້ຕອບຂໍ້ມູນການເກັບຂໍ້ມູນເປີດ</string>
+    <string name="content_desc_privacy_settings">ການຕັ້ງຄ່າຄວາມເປັນສ່ວນຕົວ ຄວບຄຸມການເກັບຂໍ້ມູນ ແລະ ຈັດການຂໍ້ມູນຂອງທ່ານ</string>
+    <string name="content_desc_data_collection_info">ເບິ່ງຂໍ້ມູນການເກັບຂໍ້ມູນ</string>
+    <string name="content_desc_privacy_policy">ເບິ່ງນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ</string>
+    <string name="content_desc_opens_external_link">ເປີດໃນບຣາວເຊີ</string>
+    <string name="content_desc_delete_my_data">ລຶບຂໍ້ມູນທັງໝົດຂອງຂ້ອຍ</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">ກັບຄືນ</string>
+    <string name="content_desc_settings">ການຕັ້ງຄ່າ</string>
+    <string name="content_desc_refresh">ໂຫລດໃໝ່</string>
+    <string name="content_desc_verified">ຢັ້ງຢືນແລ້ວ</string>
+    <string name="content_desc_expand">ຂະຫຍາຍ</string>
+    <string name="content_desc_collapse">ຫຍໍ້</string>
+    <string name="content_desc_warning_error">ຄຳເຕືອນ: ເກີດຂໍ້ຜິດພາດ</string>
+    <string name="content_desc_sandbox_indicator">ຕົວຊີ້ວັດໂໝດ Sandbox</string>
+    <string name="content_desc_success">ສຳເລັດ</string>
+    <string name="content_desc_warning">ຄຳເຕືອນ</string>
+    <string name="content_desc_information">ຂໍ້ມູນ</string>
+    <string name="content_desc_error">ຂໍ້ຜິດພາດ</string>
+    <string name="content_desc_sandbox_warning">ຄຳເຕືອນໂໝດ Sandbox</string>
+    <string name="content_desc_app_info">ຂໍ້ມູນແອັບ</string>
+    <string name="content_desc_accessibility_settings">ການຕັ້ງຄ່າການເຂົ້າເຖິງ</string>
+    <string name="content_desc_language_settings">ການຕັ້ງຄ່າພາສາ</string>
+    <string name="content_desc_licenses">ໃບອະນຸຍາດໂອເພນຊອດ</string>
+    <string name="content_desc_select_dob">ເລືອກວັນເດືອນປີເກີດ</string>
+    <string name="content_desc_mint_test_credential_as_issuer">ອອກໃບຢັ້ງຢືນທົດສອບໃນຖານະຜູ້ອອກ</string>
+    <string name="content_desc_get_credential">ຮັບໃບຢັ້ງຢືນ</string>
+    <string name="content_desc_delete_credential">ລຶບໃບຢັ້ງຢືນ</string>
+    <string name="content_desc_reset_proving_key">ຣີເຊັດລະຫັດຢັ້ງຢືນ</string>
+    <string name="content_desc_environment_info">ຂໍ້ມູນສະພາບແວດລ້ອມ</string>
+    <string name="content_desc_help_support">ຊ່ວຍເຫຼືອ ແລະ ການສະໜັບສະໜູນ</string>
+    <string name="content_desc_privacy_protected">ຄວາມເປັນສ່ວນຕົວຖືກປົກປ້ອງ</string>
+    <string name="preview_settings_title">ຕົວຢ່າງການຕັ້ງຄ່າ</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">ສຳເລັດ</string>
+    <string name="accessibility_verification_error_description">ຂໍ້ຜິດພາດ</string>
+    <string name="accessibility_breadcrumb_location_description">ທີ່ຕັ້ງ: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">ຈາກນັ້ນ</string>
+    <string name="accessibility_breadcrumb_current_page_description">ໜ້າປັດຈຸບັນ: %s</string>
+    <string name="accessibility_settings_navigate_description">ນຳທາງ</string>
+    <string name="accessibility_credentials_settings_description">ການຕັ້ງຄ່າ</string>
+    <string name="accessibility_verification_back_description">ກັບຄືນ</string>
+    <string name="accessibility_officer_back_description">ກັບຄືນ</string>
+    <string name="accessibility_discovery_back_description">ກັບຄືນ</string>
+    <string name="accessibility_discovery_refresh_description">ໂຫລດໃໝ່</string>
+    <string name="accessibility_discovery_verified_description">ຢັ້ງຢືນແລ້ວ</string>
+    <string name="accessibility_officer_done_description">ສຳເລັດ</string>
+    <string name="accessibility_officer_attestation_qr_description">ລະຫັດ QR ການຢັ້ງຢືນສຳລັບຜູ້ໃຊ້ສະແກນ</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">ຂ້າມໄປ %s</string>
+    <string name="accessibility_skip_main_content">ເນື້ອຫາຫຼັກ</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">ມີຄວາມດ້ອຍດ້ານການເບິ່ງເຫັນ</string>
+    <string name="accessibility_profile_motor_impaired">ມີຄວາມດ້ອຍດ້ານການເຄື່ອນໄຫວ</string>
+    <string name="accessibility_profile_cognitive_support">ການສະໜັບສະໜູນດ້ານສະໝອງ</string>
+    <string name="accessibility_profile_elderly_support">ການສະໜັບສະໜູນຜູ້ສູງອາຍຸ</string>
+    <string name="accessibility_profile_default">ຄ່າເລີ່ມຕົ້ນ</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">ບໍ່ມີ</string>
+    <string name="color_blind_mode_protanopia">Protanopia</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopia</string>
+    <string name="color_blind_mode_tritanopia">Tritanopia</string>
+    <string name="color_blind_mode_monochrome">ໂໂທນດຽວ</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">ມາດຕະຖານ</string>
+    <string name="contrast_level_high">ສູງ (AA)</string>
+    <string name="contrast_level_maximum">ສູງສຸດ (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">ຄວາມກວ້າງເຕັມ</string>
+    <string name="text_width_comfortable">ສະດວກສະບາຍ (80 ຕົວອັກຂະລະ)</string>
+    <string name="text_width_narrow">ແຄບ (60 ຕົວອັກຂະລະ)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">ບໍ່ໝົດເວລາ (AAA)</string>
+    <string name="timeout_behavior_standard">ມາດຕະຖານ (30 ວິ)</string>
+    <string name="timeout_behavior_extended">ຂະຫຍາຍ (60 ວິ)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">ມາດຕະຖານ</string>
+    <string name="reading_level_standard_description">ຂໍ້ຄວາມປົກກະຕິທີ່ມີຄຳສັບທາງວິຊາການ</string>
+    <string name="reading_level_simplified">ລຽບງ່າຍ (ລະດັບ 7-9)</string>
+    <string name="reading_level_simplified_description">ຄຳສັບງ່າຍກວ່າ ແລະ ປະໂຫຍກສັ້ນກວ່າ (ປະຕິບັດຕາມ AAA)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">ຊ່ວຍເຫຼືອ</string>
+    <string name="help_and_support">ຊ່ວຍເຫຼືອ &amp; ການສະໜັບສະໜູນ</string>
+    <string name="help_description">ຮັບຄວາມຊ່ວຍເຫຼືອກ່ຽວກັບຄຸນສົມບັດຂອງແອັບ ແລະ ການເຂົ້າເຖິງ</string>
+    <string name="help_center">ສູນຊ່ວຍເຫຼືອ</string>
+    <string name="help_center_description">ຊອກຫາຫົວຂໍ້ຊ່ວຍເຫຼືອ ແລະ ຮຽນຮູ້ກ່ຽວກັບຄຸນສົມບັດຂອງແອັບ</string>
+    <string name="help_search">ຄົ້ນຫາການຊ່ວຍເຫຼືອ</string>
+    <string name="help_search_placeholder">ຄົ້ນຫາຫົວຂໍ້ຊ່ວຍເຫຼືອ...</string>
+    <string name="help_search_active">ເປີດໃຊ້ການຄົ້ນຫາ</string>
+    <string name="help_search_inactive">ປິດໃຊ້ການຄົ້ນຫາ</string>
+    <string name="help_no_results">ບໍ່ພົບຫົວຂໍ້ຊ່ວຍເຫຼືອທີ່ກົງກັບການຄົ້ນຫາ</string>
+    <string name="help_topic_not_found">ບໍ່ພົບຫົວຂໍ້ຊ່ວຍເຫຼືອ</string>
+    <string name="help_related_topics">ຫົວຂໍ້ທີ່ກ່ຽວຂ້ອງ</string>
+    <string name="help_content_heading">ເນື້ອຫາຊ່ວຍເຫຼືອ</string>
+    <string name="help_related_topic_position">%1$s, ລາຍການ %2$d ຈາກ %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">ການເບິ່ງເຫັນ</string>
+    <string name="help_category_typography">ຮູບແບບຕົວໜັງສື</string>
+    <string name="help_category_interaction">ການໂຕ້ຕອບ</string>
+    <string name="help_category_cognitive">ການສະໜັບສະໜູນດ້ານສະໝອງ</string>
+    <string name="help_category_alternative_input">ການປ້ອນຂໍ້ມູນທາງເລືອກ</string>
+    <string name="help_category_features">ຄຸນສົມບັດ</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">ການຮັບໃບຢັ້ງຢືນ</string>
+    <string name="help_topic_getting_credential_summary">ຮຽນຮູ້ວິທີຮັບໃບຢັ້ງຢືນອາຍຸຄັ້ງທຳອິດຂອງທ່ານ</string>
+    <string name="help_topic_getting_credential_content">ເພື່ອຮັບໃບຢັ້ງຢືນອາຍຸ:\n\n1. ໄປຢ້ຽມສະຖານທີ່ຜູ້ອອກທີ່ໄດ້ຮັບອະນຸຍາດ\n2. ສະແດງ ID ທີ່ລັດຖະບານອອກໃຫ້\n3. ສະແກນລະຫັດ QR ທີ່ໄດ້ຮັບ\n4. ໃບຢັ້ງຢືນຂອງທ່ານຈະຖືກບັນທຶກຢ່າງປອດໄພ\n\nວັນເດືອນປີເກີດຂອງທ່ານຈະເກັບໄວ້ໃນເຄື່ອງ ແລະ ຈະບໍ່ຖືກແບ່ງປັນ.</string>
+
+    <string name="help_topic_verifying_age_title">ການຢັ້ງຢືນອາຍຸຂອງທ່ານ</string>
+    <string name="help_topic_verifying_age_summary">ວິທີຢັ້ງຢືນອາຍຸໂດຍບໍ່ແບ່ງປັນຂໍ້ມູນສ່ວນຕົວ</string>
+    <string name="help_topic_verifying_age_content">ເມື່ອທ່ານຕ້ອງການຢັ້ງຢືນອາຍຸ:\n\n1. ຜູ້ຢັ້ງຢືນຈະສະແດງລະຫັດ QR ໃຫ້ທ່ານ\n2. ສະແກນດ້ວຍແອັບ\n3. ແອັບຈະສ້າງຫຼັກຖານທາງຄະນິດສາດ\n4. ພຽງຄຳຕອບໃຊ່/ບໍ່ ຈະຖືກແບ່ງປັນ\n\nວັນເດືອນປີເກີດຂອງທ່ານຈະບໍ່ເຄີຍຖືກເປີດເຜີຍ.</string>
+
+    <string name="help_topic_accessibility_title">ຄຸນສົມບັດການເຂົ້າເຖິງ</string>
+    <string name="help_topic_accessibility_summary">ປັບແຕ່ງແອັບຕາມຄວາມຕ້ອງການຂອງທ່ານ</string>
+    <string name="help_topic_accessibility_content">ແອັບລວມຄຸນສົມບັດການເຂົ້າເຖິງຫຼາຍຢ່າງ:\n\n- ໂໝດຕົວໜັງສືໃຫຍ່ ແລະ ຄວາມແຕກຕ່າງສູງ\n- ການປ້ອນດ້ວຍສຽງ ແລະ ການຮອງຮັບໜ້າຈໍການອ່ານ\n- ທ່າທາງທີ່ລຽບງ່າຍ ແລະ ໜ້າຈໍ UI\n- ຕົວເລືອກການປ້ອນລະຫັດດ້ວຍຕົນເອງ\n- ການໝົດເວລາທີ່ຂະຫຍາຍ\n\nເຂົ້າເຖິງໄດ້ໃນ ການຕັ້ງຄ່າ > ການເຂົ້າເຖິງ</string>
+
+    <string name="help_topic_privacy_security_title">ຄວາມເປັນສ່ວນຕົວ &amp; ຄວາມປອດໄພ</string>
+    <string name="help_topic_privacy_security_summary">ວິທີປົກປ້ອງຂໍ້ມູນຂອງທ່ານ</string>
+    <string name="help_topic_privacy_security_content">ຄວາມເປັນສ່ວນຕົວຂອງທ່ານເປັນຄວາມສຳຄັນອັນດັບຕົ້ນ:\n\n- ໃບຢັ້ງຢືນເກັບໄວ້ໃນອຸປະກອນຂອງທ່ານ\n- ຫຼັກຖານບໍ່ເປີດເຜີຍຄວາມຮູ້ປົກປ້ອງຂໍ້ມູນຂອງທ່ານ\n- ບໍ່ມີການຕິດຕາມ ຫຼື ການວິເຄາະ\n- ການກວດສອບຕົວຕົນດ້ວຍຊີວະສາດໃຊ້ງານໄດ້\n- ຂໍ້ມູນຈະບໍ່ຫຼຸດອອກຈາກອຸປະກອນໂດຍບໍ່ໄດ້ເຂົ້າລະຫັດ</string>
+
+    <string name="help_topic_troubleshooting_title">ການແກ້ໄຂບັນຫາ</string>
+    <string name="help_topic_troubleshooting_summary">ບັນຫາ ແລະ ວິທີແກ້ໄຂທົ່ວໄປ</string>
+    <string name="help_topic_troubleshooting_content">ບັນຫາ ແລະ ວິທີແກ້ໄຂທົ່ວໄປ:\n\nເຄື່ອງສະແກນ QR ບໍ່ເຮັດວຽກ:\n- ກວດສອບສິດທ໌ກ້ອງໃນການຕັ້ງຄ່າ\n- ລອງຕົວເລືອກການປ້ອນລະຫັດດ້ວຍຕົນເອງ\n\nໃບຢັ້ງຢືນບໍ່ໂຫລດ:\n- ກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ\n- ລອງຣີເຊັດລະຫັດຢັ້ງຢືນ\n\nການຢັ້ງຢືນລົ້ມເຫລວ:\n- ໃຫ້ແນ່ໃຈວ່າໃບຢັ້ງຢືນບໍ່ໝົດອາຍຸ\n- ຕິດຕໍ່ຜູ້ຢັ້ງຢືນເພື່ອຂໍຄວາມຊ່ວຍເຫຼືອ</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">ວັນເດືອນປີເກີດ</string>
+    <string name="date_of_birth">ວັນເດືອນປີເກີດ</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">%d ປີ</string>
+    <string name="format_step_indicator">ຂັ້ນຕອນ %1$d ຈາກ %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">ໃບຢັ້ງຢືນ</string>
+    <string name="tab_settings">ການຕັ້ງຄ່າ</string>
+    <string name="tab_help">ຊ່ວຍເຫຼືອ</string>
+    <string name="tab_credentials_description">ເບິ່ງໃບຢັ້ງຢືນຂອງທ່ານ</string>
+    <string name="tab_settings_description">ການຕັ້ງຄ່າຂອງແອັບ</string>
+    <string name="tab_help_description">ຮັບຄວາມຊ່ວຍເຫຼືອ ແລະ ການສະໜັບສະໜູນ</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">ຄົ້ນຫາ</string>
+    <string name="search_field_label">ຊ່ອງຄົ້ນຫາ</string>
+    <string name="search_placeholder">ຄົ້ນຫາການຕັ້ງຄ່າ ຊ່ວຍເຫຼືອ ແລະ ຄຸນສົມບັດ</string>
+    <string name="search_clear">ລ້າງການຄົ້ນຫາ</string>
+    <string name="search_popular">ການຄົ້ນຫາຍອດນິຍົມ</string>
+    <string name="search_results_heading">ຜົນການຄົ້ນຫາ</string>
+    <string name="search_no_results">ບໍ່ພົບຜົນ</string>
+    <string name="search_try_suggestions">ລອງຄົ້ນຫາ:\n• ການເຂົ້າເຖິງ\n• ການຕັ້ງຄ່າ\n• ຊ່ວຍເຫຼືອ\n• ພາສາ</string>
+    <string name="search_results_announcement_singular">ພົບ 1 ຜົນ</string>
+    <string name="search_results_announcement_plural">ພົບ %d ຜົນ</string>
+    <string name="search_no_results_announcement">ບໍ່ພົບຜົນ</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">ການເຂົ້າເຖິງດ່ວນ</string>
+    <string name="help_topics">ຫົວຂໍ້ຊ່ວຍເຫຼືອ</string>
+    <string name="help_glossary">ຄຳສັບ</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">ໃບອະນຸຍາດໂອເພນຊອດ</string>
+    <string name="licenses_description">ແອັບນີ້ໃຊ້ຊອບແວໂອເພນຊອດດັ່ງຕໍ່ໄປນີ້. ພວກເຮົາຂໍຂອບໃຈນັກພັດທະນາທີ່ສ້າງໄລບ້ານລີ່ເຫຼົ່ານີ້.</string>
+    <string name="licenses_tap_to_view">ແຕະເພື່ອເບິ່ງໃບອະນຸຍາດທີ່ຄົບຖ້ວນ</string>
+    <string name="licenses_group_header">%1$s (%2$d ໄລບ້ານລີ່)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">ບໍ່ມີການເຊື່ອມຕໍ່ອິນເຕີເນັດ. ກະລຸນາກວດສອບເຄືອຂ່າຍ ແລ້ວລອງໃໝ່.</string>
+    <string name="error_unexpected">ເກີດຂໍ້ຜິດພາດທີ່ຄາດບໍ່ຮອດ. ກະລຸນາເລີ່ມຕົ້ນແອັບໃໝ່.</string>
+    <string name="error_unexpected_try_again">ເກີດຂໍ້ຜິດພາດທີ່ຄາດບໍ່ຮອດ. ກະລຸນາລອງໃໝ່.</string>
+    <string name="error_storage_detailed">ຂໍ້ຜິດພາດບ່ອນເກັບຂໍ້ມູນ: %s</string>
+    <string name="error_network_detailed">ຂໍ້ຜິດພາດເຄືອຂ່າຍ: %s</string>
+    <string name="error_proof_generation_failed">ການສ້າງຫຼັກຖານລົ້ມເຫລວ: %s</string>
+    <string name="error_not_eligible">ບໍ່ມີສິດ. ທ່ານບໍ່ຕອບສະໜອງຂໍ້ກຳໜົດສຳລັບການຢັ້ງຢືນນີ້.</string>
+    <string name="error_challenge_expired">ການສິດທ໌ທ້າທາຍໝົດອາຍຸ ຫຼື ບໍ່ພົບ. ກະລຸນາຂໍອັນໃໝ່.</string>
+    <string name="error_challenge_expired_scan_new">ການສິດທ໌ທ້າທາຍນີ້ໝົດອາຍຸ. ກະລຸນາສະແກນລະຫັດ QR ໃໝ່.</string>
+    <string name="error_request_out_of_order">ຄຳຮ້ອງຂໍຜິດລຳດັບ. ກະລຸນາລອງໃໝ່.</string>
+    <string name="error_too_many_requests">ຄຳຮ້ອງຂໍຫຼາຍເກີນໄປ. ກະລຸນາລໍຖ້າ ແລ້ວລອງໃໝ່.</string>
+    <string name="error_server">ຂໍ້ຜິດພາດເຊີເວີ. ກະລຸນາລອງໃໝ່ພາຍຫຼັງ.</string>
+    <string name="error_request_failed">ຄຳຮ້ອງຂໍລົ້ມເຫລວ (%d). ກະລຸນາລອງໃໝ່.</string>
+    <string name="error_not_eligible_short">ບໍ່ມີສິດສຳລັບການຢັ້ງຢືນນີ້</string>
+    <string name="error_challenge_not_found">ບໍ່ພົບການສິດທ໌ທ້າທາຍ</string>
+    <string name="error_complete_steps_in_order">ກະລຸນາດຳເນີນຂັ້ນຕອນຕາມລຳດັບ</string>
+    <string name="error_challenge_expired_short">ການສິດທ໌ທ້າທາຍໝົດອາຍຸ</string>
+    <string name="error_authentication_cancelled">ຍົກເລີກການກວດສອບຕົວຕົນ. ກະລຸນາຢືນຢັນຕົວຕົນຂອງທ່ານເພື່ອດຳເນີນການຢັ້ງຢືນອາຍຸ.</string>
+    <string name="error_invalid_data_format_short">ຮູບແບບຂໍ້ມູນບໍ່ຖືກຕ້ອງ. ກະລຸນາລອງໃໝ່.</string>
+    <string name="error_storage_check_device">ຂໍ້ຜິດພາດບ່ອນເກັບຂໍ້ມູນ. ກະລຸນາກວດສອບບ່ອນເກັບຂໍ້ມູນຂອງອຸປະກອນ.</string>
+    <string name="error_network_check_connection">ຂໍ້ຜິດພາດເຄືອຂ່າຍ. ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ຂອງທ່ານ.</string>
+    <string name="error_proof_generation_failed_short">ການສ້າງຫຼັກຖານລົ້ມເຫລວ. ກະລຸນາລອງໃໝ່.</string>
+    <string name="error_operation_in_progress_short">ກຳລັງດຳເນີນການອື່ນ.</string>
+    <string name="error_no_internet_short">ບໍ່ມີການເຊື່ອມຕໍ່ອິນເຕີເນັດ. ກະລຸນາກວດສອບເຄືອຂ່າຍ.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">ສະແກນ QR ການຢັ້ງຢືນ</string>
+    <string name="verification_verifying_title">ກຳລັງຢັ້ງຢືນອາຍຸ</string>
+    <string name="verification_success_title">ຢັ້ງຢືນອາຍຸແລ້ວ</string>
+    <string name="verification_failed_title">ການຢັ້ງຢືນລົ້ມເຫລວ</string>
+    <string name="verification_processing_wait">ອາດໃຊ້ເວລາສອງສາມວິນາທີ</string>
+    <string name="verification_success_message">ອາຍຸຂອງທ່ານໄດ້ຖືກຢັ້ງຢືນຢ່າງສ່ວນຕົວ</string>
+    <string name="verification_return_to_site">ທ່ານສາມາດກັບໄປຍັງເວັບໄຊໄດ້ເພື່ອສືບຕໍ່.</string>
+    <string name="verification_please_enter_code">ກະລຸນາປ້ອນລະຫັດການຢັ້ງຢືນ. ລະຫັດຄວນເປັນລະຫັດສັ້ນ 12 ຕົວເລກ ຫຼື URL ການຢັ້ງຢືນທີ່ຄົບຖ້ວນຈາກຜູ້ຢັ້ງຢືນ.</string>
+    <string name="verification_error_occurred">ເກີດຂໍ້ຜິດພາດລະຫວ່າງການຢັ້ງຢືນ</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">ກຳລັງປະມວນຜົນ...</string>
+    <string name="credential_list_verify_age_button">ຢັ້ງຢືນອາຍຸ</string>
+    <string name="credential_list_generate_in_person_description">ສ້າງໃບຢັ້ງຢືນດ້ວຍຕົນເອງ</string>
+    <string name="credential_list_scan_qr_title">ສະແກນລະຫັດ QR</string>
+    <string name="credential_list_find_locations_title">ຄົ້ນຫາສະຖານທີ່</string>
+    <string name="credential_section_my_credential">ໃບຢັ້ງຢືນຂອງຂ້ອຍ</string>
+    <string name="credential_section_managed">ໃບຢັ້ງຢືນທີ່ຈັດການ</string>
+    <string name="credential_list_get_credential_button">ຮັບໃບຢັ້ງຢືນ</string>
+    <string name="credential_list_add_managed_button">ເພີ່ມໃບຢັ້ງຢືນທີ່ຈັດການ</string>
+    <string name="credential_section_managed_empty">ເພີ່ມໃບຢັ້ງຢືນສຳລັບຜູ້ທີ່ທ່ານດູແລ ເຊັ່ນ ລູກ.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">ລາຍລະອຽດໃບຢັ້ງຢືນ</string>
+    <string name="credential_detail_not_found">ບໍ່ພົບໃບຢັ້ງຢືນ</string>
+    <string name="credential_detail_nickname">ຊື່ຫຍໍ້</string>
+    <string name="credential_detail_no_nickname">ບໍ່ໄດ້ຕັ້ງຊື່ຫຍໍ້</string>
+    <string name="credential_detail_edit_nickname">ແກ້ໄຂຊື່ຫຍໍ້</string>
+    <string name="credential_detail_status">ສະຖານະ</string>
+    <string name="credential_detail_delete">ລຶບໃບຢັ້ງຢືນ</string>
+    <string name="credential_detail_delete_title">ລຶບໃບຢັ້ງຢືນ</string>
+    <string name="credential_detail_delete_message">ທ່ານແນ່ໃຈທີ່ຈະລຶບໃບຢັ້ງຢືນນີ້ຫຼື? ການດຳເນີນການນີ້ບໍ່ສາມາດຍົກເລີກໄດ້.</string>
+    <string name="credential_type_primary">ຫຼັກ</string>
+    <string name="credential_type_managed">ຈັດການ</string>
+    <string name="credential_status_valid">ໃຊ້ງານໄດ້</string>
+    <string name="credential_status_expired">ໝົດອາຍຸ</string>
+    <string name="credential_status_invalid">ບໍ່ຖືກຕ້ອງ</string>
+    <string name="action_save">ບັນທຶກ</string>
+    <string name="credential_slots_full_title">ໃບຢັ້ງຢືນສູງສຸດ</string>
+    <string name="credential_slots_full_message">ທ່ານໄດ້ຮອດຈຳນວນໃບຢັ້ງຢືນສູງສຸດ. ລຶບໃບຢັ້ງຢືນທີ່ມີຢູ່ເພື່ອເພີ່ມໃໝ່.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">ໃບຢັ້ງຢືນທີ່ຈັດການ</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">ຢັ້ງຢືນອາຍຸສຳລັບ %1$s?</string>
+    <string name="managed_confirm_message">ທ່ານກຳລັງຈະຢັ້ງຢືນອາຍຸໂດຍໃຊ້ໃບຢັ້ງຢືນທີ່ຈັດການຂອງ %1$s.</string>
+    <string name="managed_confirm_proceed">ຢັ້ງຢືນສຳລັບ %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">ກຳລັງສ້າງຫຼັກຖານສຳລັບ %1$s</string>
+    <string name="verification_age_verified_for">ຢັ້ງຢືນອາຍຸສຳລັບ %1$s ແລ້ວ</string>
+    <string name="deeplink_verification_age_verified_for">ຢັ້ງຢືນອາຍຸສຳລັບ %1$s ແລ້ວ</string>
+    <string name="attestation_managed_credential_received">ໄດ້ຮັບໃບຢັ້ງຢືນສຳລັບ %1$s ແລ້ວ!</string>
+    <string name="attestation_managed_credential_stored">ໃບຢັ້ງຢືນຂອງລູກທ່ານໄດ້ຖືກເກັບໄວ້ຢ່າງປອດໄພ.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">ລຶບໃບຢັ້ງຢືນຂອງ %1$s?</string>
+    <string name="credential_detail_delete_managed_message">ທ່ານແນ່ໃຈທີ່ຈະລຶບໃບຢັ້ງຢືນທີ່ຈັດການນີ້ສຳລັບ %1$s ຫຼື? ການດຳເນີນການນີ້ບໍ່ສາມາດຍົກເລີກໄດ້. ທ່ານຈຳເປັນຕ້ອງໄປຢ້ຽມຜູ້ອອກອີກຄັ້ງເພື່ອທົດແທນ.</string>
+    <string name="credential_detail_save_error">ການບັນທຶກຊື່ຫຍໍ້ລົ້ມເຫລວ</string>
+    <string name="credential_detail_delete_error">ການລຶບໃບຢັ້ງຢືນລົ້ມເຫລວ</string>
+    <string name="accessibility_saving">ກຳລັງບັນທຶກ...</string>
+    <string name="accessibility_deleting">ກຳລັງລຶບ...</string>
+    <string name="accessibility_loading">ກຳລັງໂຫລດ ກະລຸນາລໍຖ້າ</string>
+    <string name="accessibility_issuing_credential">ກຳລັງອອກໃບຢັ້ງຢືນ ກະລຸນາລໍຖ້າ</string>
+    <string name="dialog_delete_all_credentials_title">ລຶບໃບຢັ້ງຢືນທັງໝົດ?</string>
+    <string name="dialog_delete_all_credentials_message">ການນີ້ຈະລຶບໃບຢັ້ງຢືນ ແລະ ໃບຢັ້ງຢືນທີ່ຈັດການສຳລັບເດັກ. ການດຳເນີນການນີ້ບໍ່ສາມາດຍົກເລີກໄດ້.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">ຈັດການ</string>
+    <string name="credential_slots_count">%1$d ຈາກ 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">ກຳລັງກຽມການຢັ້ງຢືນ...</string>
+    <string name="deeplink_verification_checking_credential">ກຳລັງກວດສອບໃບຢັ້ງຢືນ...</string>
+    <string name="deeplink_verification_processing_challenge">ກຳລັງປະມວນຜົນການສິດທ໌ທ້າທາຍ...</string>
+    <string name="deeplink_verification_creating_proof">ກຳລັງສ້າງຫຼັກຖານທີ່ປອດໄພ...</string>
+    <string name="deeplink_verification_submitting_proof">ກຳລັງສົ່ງຫຼັກຖານ...</string>
+    <string name="deeplink_verification_success">✔ ຢັ້ງຢືນອາຍຸສຳເລັດ</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">ບໍ່ພົບໃບຢັ້ງຢືນ. ກະລຸນາຕັ້ງຄ່າໃບຢັ້ງຢືນຂອງທ່ານກ່ອນ.</string>
+    <string name="deeplink_verification_error_failed_challenge">ການປະມວນຜົນການສິດທ໌ທ້າທາຍການຢັ້ງຢືນລົ້ມເຫລວ</string>
+    <string name="deeplink_verification_error_no_auth_prompt">ບໍ່ສາມາດສະແດງຄຳສົ່ງເສີມການກວດສອບຕົວຕົນ</string>
+    <string name="deeplink_verification_error_failed_proof">ການສ້າງຫຼັກຖານອາຍຸລົ້ມເຫລວ</string>
+    <string name="deeplink_verification_error_verification_failed">ການຢັ້ງຢືນລົ້ມເຫລວ</string>
+    <string name="deeplink_verification_error_unexpected">ເກີດຂໍ້ຜິດພາດທີ່ຄາດບໍ່ຮອດ</string>
+    <string name="deeplink_verification_error_no_credential_selected">ບໍ່ໄດ້ເລືອກໃບຢັ້ງຢືນ. ກະລຸນາລອງໃໝ່.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">ເລືອກໃບຢັ້ງຢືນ</string>
+    <string name="deeplink_verification_select_credential_subtitle">ມີໃບຢັ້ງຢືນຫຼາຍໃບ. ເລືອກໃບທີ່ຈະໃຊ້ສຳລັບການຢັ້ງຢືນນີ້.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">ກຳລັງຢັ້ງຢືນອາຍຸ</string>
+    <string name="deeplink_verification_title_verified">ຢັ້ງຢືນແລ້ວ</string>
+    <string name="deeplink_verification_title_failed">ການຢັ້ງຢືນລົ້ມເຫລວ</string>
+    <string name="deeplink_verification_please_wait">ກະລຸນາລໍຖ້າ...</string>
+    <string name="deeplink_verification_age_verified">ຢັ້ງຢືນອາຍຸແລ້ວ!</string>
+    <string name="deeplink_verification_under_age_verified">ຢັ້ງຢືນອາຍຸຕ່ຳກວ່າ %1$d ແລ້ວ</string>
+    <string name="deeplink_verification_returning_browser">ກຳລັງກັບໄປຍັງບຣາວເຊີ...</string>
+    <string name="deeplink_verification_return_to_browser">ກັບໄປຍັງບຣາວເຊີ</string>
+    <string name="deeplink_verification_failed_title">ການຢັ້ງຢືນລົ້ມເຫລວ</string>
+    <string name="deeplink_verification_error_occurred">ເກີດຂໍ້ຜິດພາດລະຫວ່າງການຢັ້ງຢືນ</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">ຂະບວນການອອກ</string>
+    <string name="officer_issuance_process_steps">1. ກວດສອບເອກະສານປະຈຳຕົວທາງກາຍຂອງຜູ້ໃຊ້\n2. ປ້ອນວັນເດືອນປີເກີດຂອງພວກເຂົາ\n3. ກວດສອບວ່າຂໍ້ມູນກົງກັນ\n4. ອອກໃບຢັ້ງຢືນດ້ວຍລະຫັດ QR (Quick Response) ການຢັ້ງຢືນ\n5. ຜູ້ໃຊ້ສະແກນລະຫັດ QR ເພື່ອຮັບໃບຢັ້ງຢືນ</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">ການສ້າງລະຫັດ QR ລົ້ມເຫລວ</string>
+    <string name="officer_attestation_ready_title">ການຢັ້ງຢືນພ້ອມແລ້ວ</string>
+    <string name="officer_attestation_scan_instruction">ຜູ້ໃຊ້ຄວນສະແກນລະຫັດ QR ນີ້ດ້ວຍແອັບ Provii Wallet</string>
+    <string name="officer_attestation_deeplink_label">DEEPLINK ການຢັ້ງຢືນ</string>
+    <string name="officer_wait_for_attestation_scan">ລໍຖ້າໃຫ້ຜູ້ໃຊ້ສະແກນ</string>
+    <string name="officer_attestation_info">ໃບຢັ້ງຢືນຈະຖືກສ້າງຢູ່ໃນອຸປະກອນຂອງພວກເຂົາ</string>
+    <string name="officer_attestation_complete">ການຢັ້ງຢືນສຳເລັດ</string>
+    <string name="officer_user_will_complete_credential">ຜູ້ໃຊ້ຈະດຳເນີນການສ້າງໃບຢັ້ງຢືນໃຫ້ສຳເລັດໃນອຸປະກອນຂອງພວກເຂົາ</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">ກຳລັງຖອດລະຫັດຂໍ້ມູນການຢັ້ງຢືນ...</string>
+    <string name="attestation_generating_randomness">ກຳລັງສ້າງຄ່າສຸ່ມທີ່ປອດໄພ...</string>
+    <string name="attestation_sending">ກຳລັງສົ່ງໄປຍັງຜູ້ອອກ...</string>
+    <string name="attestation_verifying">ກຳລັງກວດສອບການຜູກພັນ...</string>
+    <string name="attestation_storing">ກຳລັງເກັບໃບຢັ້ງຢືນ...</string>
+    <string name="attestation_complete">ໃບຢັ້ງຢືນສຳເລັດ!</string>
+    <string name="attestation_error_invalid_data">ຂໍ້ມູນການຢັ້ງຢືນບໍ່ຖືກຕ້ອງ</string>
+    <string name="attestation_error_expired">ການຢັ້ງຢືນໝົດອາຍຸ</string>
+    <string name="attestation_error_network">ຂໍ້ຜິດພາດເຄືອຂ່າຍ - ກະລຸນາກວດສອບການເຊື່ອມຕໍ່</string>
+    <string name="attestation_error_unexpected">ເກີດຂໍ້ຜິດພາດທີ່ຄາດບໍ່ຮອດ</string>
+    <string name="attestation_title_processing">ກຳລັງປະມວນຜົນການຢັ້ງຢືນ</string>
+    <string name="attestation_title_success">ໄດ້ຮັບໃບຢັ້ງຢືນ</string>
+    <string name="attestation_title_failed">ການອອກລົ້ມເຫລວ</string>
+    <string name="attestation_secure_issuance">ການອອກທີ່ປອດໄພ</string>
+    <string name="attestation_privacy_preserving">ການອອກໃບຢັ້ງຢືນທີ່ຮັກສາຄວາມເປັນສ່ວນຕົວ</string>
+    <string name="attestation_may_take_seconds">ອາດໃຊ້ເວລາສອງສາມວິນາທີ</string>
+    <string name="attestation_keep_app_open">ກະລຸນາຮັກສາແອັບໃຫ້ເປີດໄວ້</string>
+    <string name="attestation_credential_received">ໄດ້ຮັບໃບຢັ້ງຢືນ!</string>
+    <string name="attestation_credential_stored_description">ໃບຢັ້ງຢືນການຢັ້ງຢືນອາຍຸຂອງທ່ານໄດ້ຖືກເກັບໄວ້ຢ່າງປອດໄພ</string>
+    <string name="attestation_issuer_verified">ຢັ້ງຢືນຜູ້ອອກແລ້ວ</string>
+    <string name="attestation_failed_title">ການອອກລົ້ມເຫລວ</string>
+    <string name="attestation_scan_qr_instead">ສະແກນ QR ແທນ</string>
+    <string name="attestation_go_back">ກັບຄືນ</string>
+    <string name="attestation_step_decode">ຖອດລະຫັດ</string>
+    <string name="attestation_step_generate">ສ້າງ</string>
+    <string name="attestation_step_send">ສົ່ງ</string>
+    <string name="attestation_step_verify">ກວດສອບ</string>
+    <string name="attestation_step_store">ເກັບ</string>
+    <string name="attestation_step_complete">ສຳເລັດ</string>
+    <string name="accessibility_attestation_encrypted_description">ການຢັ້ງຢືນທີ່ເຂົ້າລະຫັດກຳລັງຖືກປະມວນຜົນ</string>
+    <string name="accessibility_attestation_success_description">ເຄື່ອງໝາຍຖືກຕ້ອງສະແດງວ່າໄດ້ຮັບໃບຢັ້ງຢືນ</string>
+    <string name="accessibility_attestation_error_description">ໄອຄອນຂໍ້ຜິດພາດສະແດງວ່າການອອກລົ້ມເຫລວ</string>
+    <string name="accessibility_step_complete">ຂັ້ນຕອນ %1$s ສຳເລັດ</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">ຜູ້ຮັບໃບຢັ້ງຢືນ</string>
+    <string name="attestation_recipient_prompt">ໃບຢັ້ງຢືນນີ້ສຳລັບ\u2026</string>
+    <string name="attestation_recipient_me">ຂ້ອຍ</string>
+    <string name="attestation_recipient_child">ເດັກ</string>
+    <string name="attestation_nickname_title">ຊື່ຫຍໍ້ຂອງເດັກ</string>
+    <string name="attestation_nickname_prompt">ປ້ອນຊື່ຫຍໍ້ເພື່ອໃຫ້ທ່ານສາມາດຈຳແນກໃບຢັ້ງຢືນ</string>
+    <string name="attestation_nickname_placeholder">ເຊັ່ນ Alex</string>
+    <string name="attestation_nickname_continue">ສືບຕໍ່</string>
+    <string name="attestation_nickname_back">ກັບຄືນ</string>
+    <string name="accessibility_attestation_recipient_heading">ເລືອກວ່າໃບຢັ້ງຢືນນີ້ສຳລັບໃຜ</string>
+    <string name="accessibility_attestation_nickname_heading">ປ້ອນຊື່ຫຍໍ້ສຳລັບເດັກ</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">ຮູບແບບ ID ເຈົ້າໜ້າທີ່ບໍ່ຖືກຕ້ອງ</string>
+    <string name="officer_auth_error_challenge_failed">ການຂໍການສິດທ໌ທ້າທາຍ YubiKey ລົ້ມເຫລວ: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">ແຕະ YubiKey ຂອງທ່ານເພື່ອກວດສອບຕົວຕົນ</string>
+    <string name="officer_auth_error_touch_timeout">YubiKey ໝົດເວລາແຕະ</string>
+    <string name="officer_auth_error_verify_document_dob">ກະລຸນາກວດສອບວ່າເອກະສານ ແລະ ວັນເດືອນປີເກີດກົງກັນ</string>
+    <string name="officer_auth_error_invalid_date_format">ຮູບແບບວັນທີບໍ່ຖືກຕ້ອງ. ໃຊ້ YYYY-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">ຜູ້ໃຊ້ຕ້ອງມີອາຍຸ 18 ປີ ຫຼື ສູງກວ່າ</string>
+    <string name="officer_auth_error_not_authenticated">ຍັງບໍ່ໄດ້ກວດສອບຕົວຕົນ. ກະລຸນາປ້ອນ ID ເຈົ້າໜ້າທີ່ກ່ອນ.</string>
+    <string name="officer_auth_error_issue_failed">ການອອກໃບຢັ້ງຢືນລົ້ມເຫລວ</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">ແຕະເພື່ອເບິ່ງ</string>
+    <string name="gesture_desc_long_press_options">, ກົດຄ້າງສຳລັບຕົວເລືອກ</string>
+    <string name="gesture_desc_swipe_left">, ປັດຊ້າຍສຳລັບການດຳເນີນການເພີ່ມເຕີມ</string>
+    <string name="gesture_desc_swipe_right">, ປັດຂວາສຳລັບການດຳເນີນການເພີ່ມເຕີມ</string>
+    <string name="gesture_desc_tap_to_activate">ແຕະເພື່ອເປີດໃຊ້</string>
+    <string name="gesture_desc_long_press_format">. ກົດຄ້າງ: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">ລອງໃໝ່</string>
+    <string name="main_activity_reset_redownload">ຣີເຊັດ ແລະ ດາວໂຫລດໃໝ່</string>
+    <string name="main_activity_show_debug_info">ສະແດງຂໍ້ມູນ Debug</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">ການຕັ້ງຄ່າການເຂົ້າເຖິງ</string>
+    <string name="search_item_accessibility_settings_subtitle">ປັບແຕ່ງປະສົບການຂອງທ່ານ</string>
+    <string name="search_item_large_text_title">ຕົວໜັງສືໃຫຍ່</string>
+    <string name="search_item_large_text_subtitle">ເພີ່ມຂະໜາດຕົວໜັງສື</string>
+    <string name="search_item_high_contrast_title">ຄວາມແຕກຕ່າງສູງ</string>
+    <string name="search_item_high_contrast_subtitle">ເພີ່ມຄວາມຊັດເຈນ</string>
+    <string name="search_item_voice_input_title">ການປ້ອນດ້ວຍສຽງ</string>
+    <string name="search_item_voice_input_subtitle">ຄວບຄຸມດ້ວຍສຽງ</string>
+    <string name="search_item_manual_code_entry_title">ການປ້ອນລະຫັດດ້ວຍຕົນເອງ</string>
+    <string name="search_item_manual_code_entry_subtitle">ພິມລະຫັດແທນການສະແກນ</string>
+    <string name="search_item_simplified_ui_title">ໜ້າຈໍ UI ທີ່ລຽບງ່າຍ</string>
+    <string name="search_item_simplified_ui_subtitle">ຫຼຸດຄວາມຊັບຊ້ອນທາງສາຍຕາ</string>
+    <string name="search_item_color_blindness_title">ການສະໜັບສະໜູນຕາບອດສີ</string>
+    <string name="search_item_color_blindness_subtitle">ປັບສີເພື່ອໃຫ້ເຫັນຊັດຂຶ້ນ</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">ການຕັ້ງຄ່າ</string>
+    <string name="search_item_settings_subtitle">ການຕັ້ງຄ່າຂອງແອັບ</string>
+    <string name="search_item_language_title">ພາສາ</string>
+    <string name="search_item_language_subtitle">ປ່ຽນພາສາຂອງແອັບ</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">ໃບຢັ້ງຢືນຂອງຂ້ອຍ</string>
+    <string name="search_item_credentials_subtitle">ເບິ່ງໃບຢັ້ງຢືນຂອງທ່ານ</string>
+    <string name="search_item_get_credential_title">ຮັບໃບຢັ້ງຢືນ</string>
+    <string name="search_item_get_credential_subtitle">ຄົ້ນຫາຜູ້ອອກ</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">ຊ່ວຍເຫຼືອ</string>
+    <string name="search_item_help_subtitle">ຮັບຄວາມຊ່ວຍເຫຼືອ</string>
+    <string name="search_item_privacy_title">ການປົກປ້ອງຄວາມເປັນສ່ວນຕົວ</string>
+    <string name="search_item_privacy_subtitle">ວິທີປົກປ້ອງຂໍ້ມູນຂອງທ່ານ</string>
+    <string name="search_item_verification_title">ການຢັ້ງຢືນອາຍຸ</string>
+    <string name="search_item_verification_subtitle">ຢັ້ງຢືນອາຍຸຂອງທ່ານ</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">ທະບຽນສຳຮອງທີ່ຕາຍຕົວສຳລັບສະພາບແວດລ້ອມ Sandbox</string>
+    <string name="issuer_fallback_production_description">ທະບຽນສຳຮອງທີ່ຕາຍຕົວສຳລັບການຜະລິດ</string>
+    <string name="issuer_fallback_category_government">ລັດຖະບານ</string>
+    <string name="issuer_fallback_category_government_description">ໃບຢັ້ງຢືນທີ່ລັດຖະບານອອກໃຫ້</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii Sandbox Issuer</string>
+    <string name="issuer_fallback_sandbox_issuer_description">ຜູ້ອອກ Sandbox ຢ່າງເປັນທາງການຂອງ Provii ສຳລັບການທົດສອບ</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">ໄປຢ້ຽມພອດທັລຜູ້ອອກ Sandbox</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">ຜູ້ອອກໃບຢັ້ງຢືນ Provii ຢ່າງເປັນທາງການ</string>
+    <string name="issuer_fallback_production_issuer_instructions">ໄປຢ້ຽມຫ້ອງການ DMV ທ້ອງຖິ່ນຂອງທ່ານ</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">ວັນເດືອນປີເກີດບໍ່ສາມາດຢູ່ໃນອະນາຄົດ</string>
+    <string name="validation_error_invalid_date_format">ຮູບແບບວັນທີບໍ່ຖືກຕ້ອງ</string>
+    <string name="validation_error_officer_id_too_short">ID ເຈົ້າໜ້າທີ່ສັ້ນເກີນໄປ</string>
+    <string name="validation_error_invalid_officer_id_format">ຮູບແບບ ID ເຈົ້າໜ້າທີ່ບໍ່ຖືກຕ້ອງ</string>
+    <string name="validation_error_empty_qr_code">ລະຫັດ QR ວ່າງ</string>
+    <string name="validation_error_qr_code_too_large">ລະຫັດ QR ໃຫຍ່ເກີນໄປ</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">ທ່ານເປັນນັກພັດທະນາ!</string>
+    <string name="sandbox_toast_enabled">ໂໝດ Sandbox ເປີດໃຊ້\nໃຊ້ສະພາບແວດລ້ອມທົດສອບ</string>
+    <string name="sandbox_toast_disabled">ໂໝດການຜະລິດເປີດໃຊ້\nໃຊ້ສະພາບແວດລ້ອມການຜະລິດ</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">ທ່ານຫ່າງຈາກໂໝດນັກພັດທະນາ 1 ຂັ້ນຕອນ</string>
+    <string name="sandbox_toast_steps_away">ທ່ານຫ່າງຈາກໂໝດນັກພັດທະນາ %1$d ຂັ້ນຕອນ</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">ບໍ່ໄດ້ເຊື່ອມຕໍ່ YubiKey</string>
+    <string name="yubikey_error_timeout">ໝົດເວລາລໍຖ້າການແຕະ YubiKey. ກະລຸນາແຕະກຸນຈໍເມື່ອກະພິບ.</string>
+    <string name="yubikey_error_not_supported">ບໍ່ໄດ້ຕັ້ງຄ່າ Challenge-response ໃນຊ່ອງ YubiKey ນີ້</string>
+    <string name="yubikey_error_no_slot">ຊ່ອງ 2 ບໍ່ໄດ້ຕັ້ງຄ່າສຳລັບ HMAC (Hash-based Message Authentication Code) SHA1 challenge-response</string>
+    <string name="yubikey_error_hmac_failed">ການຄຳນວນ HMAC (Hash-based Message Authentication Code) ລົ້ມເຫລວ: %s</string>
+    <string name="yubikey_error_session_failed">ການເຊື່ອມຕໍ່ YubiKey ລົ້ມເຫລວ: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">ກະເປົ໋າຍັງບໍ່ໄດ້ຮັບການເລີ່ມຕົ້ນ</string>
+    <string name="wallet_error_proving_key_not_found">ບໍ່ພົບລະຫັດຢັ້ງຢືນ - ກະລຸນາດາວໂຫລດໃໝ່</string>
+    <string name="wallet_error_proving_key_not_readable">ບໍ່ສາມາດອ່ານໄຟລ໌ລະຫັດຢັ້ງຢືນ</string>
+    <string name="wallet_error_out_of_memory">ໜ່ວຍຄວາມຈຳໝົດ - ກະລຸນາເລີ່ມຕົ້ນແອັບໃໝ່</string>
+    <string name="wallet_error_prover_error">ຂໍ້ຜິດພາດ Prover: %s</string>
+    <string name="wallet_error_ffi_error">ຂໍ້ຜິດພາດ FFI: %s</string>
+    <string name="wallet_error_prover_init_failed">ການເລີ່ມຕົ້ນ Prover ລົ້ມເຫລວ: %s</string>
+    <string name="wallet_error_prover_verification_failed">ການກວດສອບການເລີ່ມຕົ້ນ Prover ລົ້ມເຫລວ</string>
+    <string name="wallet_error_verifier_url_update_failed">ການອັບເດດ URL ຜູ້ຢັ້ງຢືນ (ທີ່ຢູ່ເວັບ) ລົ້ມເຫລວ! ຄາດໄວ້ %1$s ແຕ່ໄດ້ %2$s</string>
+    <string name="wallet_error_wallet_still_null">ກະເປົ໋າຍັງເປັນ null ຫຼັງການເລີ່ມຕົ້ນ</string>
+    <string name="wallet_error_credential_not_found">ບໍ່ພົບໃບຢັ້ງຢືນ</string>
+    <string name="wallet_error_credential_access_failed">ບໍ່ສາມາດເຂົ້າເຖິງໃບຢັ້ງຢືນ: %s</string>
+    <string name="wallet_error_invalid_format">ຮູບແບບບໍ່ຖືກຕ້ອງ: %s</string>
+    <string name="wallet_error_not_initialized_short">Prover ຍັງບໍ່ໄດ້ຮັບການເລີ່ມຕົ້ນ</string>
+    <string name="wallet_error_proving_key_unavailable">ລະຫັດຢັ້ງຢືນບໍ່ສາມາດໃຊ້ງານໄດ້. ຕ້ອງການການຕັ້ງຄ່າ.</string>
+    <string name="wallet_error_storage_init_failed">ການເລີ່ມຕົ້ນບ່ອນເກັບຂໍ້ມູນລົ້ມເຫລວ</string>
+    <string name="wallet_error_biometric_unavailable">ການກວດສອບຕົວຕົນດ້ວຍຊີວະສາດບໍ່ສາມາດໃຊ້ງານໄດ້</string>
+    <string name="wallet_error_auth_failed">ການກວດສອບຕົວຕົນລົ້ມເຫລວ</string>
+    <string name="wallet_error_sandbox_disabled">ເປີດໃຊ້ໂໝດ Sandbox ເພື່ອສ້າງໃບຢັ້ງຢືນທົດສອບ</string>
+    <string name="wallet_error_fetch_sandbox_credentials">ບໍ່ສາມາດດຶງໃບຢັ້ງຢືນ Sandbox ໄດ້. ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">ຕ້ອງການການກວດສອບຕົວຕົນ</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">ຢືນຢັນຕົວຕົນຂອງທ່ານເພື່ອສ້າງຫຼັກຖານອາຍຸ</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">ເຂົ້າເຖິງບ່ອນເກັບຂໍ້ມູນທີ່ປອດໄພ</string>
+    <string name="keystore_biometric_prompt_cancel">ຍົກເລີກ</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, ຂະຫຍາຍ, ສະແດງຂໍ້ຄວາມໃບອະນຸຍາດທີ່ຄົບຖ້ວນ</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, ຫຍໍ້, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">ບໍ່ມີ</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">ໂທລະສັບ</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">ບໍ່ຮູ້</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">ລະດັບຄວາມແຕກຕ່າງ</string>
+    <string name="help_topic_extra_large_text_title">ຕົວໜັງສືໃຫຍ່ພິເສດ</string>
+    <string name="help_topic_reduce_transparency_title">ຫຼຸດຄວາມໂປ່ງໃສ</string>
+    <string name="help_topic_color_blind_modes_title">ໂໝດຕາບອດສີ</string>
+    <string name="help_topic_line_spacing_title">ໄລຍະຫ່າງຕ່ອນ</string>
+    <string name="help_topic_paragraph_spacing_title">ໄລຍະຫ່າງຍ່ອໜ້າ</string>
+    <string name="help_topic_letter_spacing_title">ໄລຍະຫ່າງຕົວອັກຂະລະ</string>
+    <string name="help_topic_text_width_title">ຄວາມກວ້າງຂໍ້ຄວາມ</string>
+    <string name="help_topic_touch_targets_title">ເປົ້າໝາຍສຳຜັດໃຫຍ່ຂຶ້ນ</string>
+    <string name="help_topic_reduce_motion_title">ຫຼຸດພາບເຄື່ອນໄຫວ</string>
+    <string name="help_topic_timeout_behavior_title">ພຶດຕິກຳໝົດເວລາ</string>
+    <string name="help_topic_simplified_gestures_title">ທ່າທາງທີ່ລຽບງ່າຍ</string>
+    <string name="help_topic_haptic_feedback_title">ການສັ່ນສະທ້ານ</string>
+    <string name="help_topic_data_preservation_title">ການຮັກສາຂໍ້ມູນ</string>
+    <string name="help_topic_simplified_ui_title">ໜ້າຈໍ UI ທີ່ລຽບງ່າຍ</string>
+    <string name="help_topic_step_indicators_title">ຕົວຊີ້ວັດຂັ້ນຕອນ</string>
+    <string name="help_topic_verbose_descriptions_title">ຄຳອະທິບາຍລະອຽດ</string>
+    <string name="help_topic_confirm_actions_title">ຢືນຢັນການດຳເນີນການ</string>
+    <string name="help_topic_reading_level_title">ລະດັບການອ່ານທີ່ລຽບງ່າຍ</string>
+    <string name="help_topic_help_system_title">ລະບົບຊ່ວຍເຫຼືອ</string>
+    <string name="help_topic_manual_code_entry_title">ການປ້ອນລະຫັດດ້ວຍຕົນເອງ</string>
+    <string name="help_topic_voice_input_title">ການປ້ອນດ້ວຍສຽງ</string>
+    <string name="help_topic_screen_reader_title">ການສະໜັບສະໜູນໜ້າຈໍການອ່ານ</string>
+    <string name="help_topic_accessibility_profiles_title">ໂປຣໄຟລ໌ການຕັ້ງຄ່າດ່ວນ</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">ຄວບຄຸມອັດຕາສ່ວນຄວາມແຕກຕ່າງລະຫວ່າງຂໍ້ຄວາມ ແລະ ພື້ນຫຼັງ:\n\n• ມາດຕະຖານ: ສີຂອງແອັບຄ່າເລີ່ມຕົ້ນ\n• ສູງ (AA): ອັດຕາສ່ວນຄວາມແຕກຕ່າງ 4.5:1\n• ສູງສຸດ (AAA): ອັດຕາສ່ວນຄວາມແຕກຕ່າງ 7:1+\n\nຄວາມແຕກຕ່າງທີ່ສູງກວ່າ ເຮັດໃຫ້ຂໍ້ຄວາມອ່ານງ່າຍຂຶ້ນ ໂດຍສະເພາະໃນສະພາບແວດລ້ອມທີ່ສ່ອງສະຫວ່າງ ຫຼື ສຳລັບຜູ້ໃຊ້ທີ່ມີສາຍຕາຕ່ຳ.\n\nການປະຕິບັດຕາມ WCAG AAA ຕ້ອງການຄວາມແຕກຕ່າງສູງສຸດ.</string>
+    <string name="help_topic_extra_large_text_text">ເພີ່ມຂະໜາດຕົວໜັງສືທັງໝົດ 50% ໃນທົ່ວແອັບ.\n\nການນີ້ເຮັດໃຫ້ຂໍ້ຄວາມອ່ານງ່າຍຂຶ້ນສຳລັບຜູ້ໃຊ້ທີ່ມີ:\n• ສາຍຕາຕ່ຳ\n• ການປ່ຽນແປງສາຍຕາຕາມອາຍຸ\n• ຄວາມຫຍຸ້ງຍາກໃນການອ່ານ\n\nລວມກັບການຕັ້ງຄ່າຂະໜາດຕົວໜັງສືລະບົບເພື່ອຄວາມຍືດຫຍຸ່ນສູງສຸດ.</string>
+    <string name="help_topic_reduce_transparency_text">ລຶບ Overlay ໂປ່ງໃສ ແລະ ເອັບເຟັກ Blur.\n\nຜົນປະໂຫຍດ:\n• ລຳດັບຊັ້ນສາຍຕາທີ່ຊັດເຈນຂຶ້ນ\n• ຄວາມສາມາດໃນການອ່ານຂໍ້ຄວາມດີຂຶ້ນ\n• ຫຼຸດ Noise ທາງສາຍຕາ\n• ໂຫດຄວາມຄິດທີ່ຕ່ຳລົງ\n\nແນະນຳສຳລັບຜູ້ໃຊ້ທີ່ມີສາຍຕາຕ່ຳ ຫຼື ຄວາມຫຍຸ້ງຍາກດ້ານຄວາມຄິດ.</string>
+    <string name="help_topic_color_blind_modes_text">ປັບສີສຳລັບຕາບອດສີຕ່າງໆ:\n\n• Protanopia: ຕາບອດສີແດງ\n• Deuteranopia: ຕາບອດສີຂຽວ\n• Tritanopia: ຕາບອດສີຟ້າ\n• ໂໂທນດຽວ: ຕາບອດສີທັງໝົດ\n\nແຕ່ລະໂໝດໃຊ້ສີທີ່ເລືອກຢ່າງລະອຽດທີ່ສາມາດຈຳແນກໄດ້ສຳລັບຄວາມຜິດປົກກະຕິດ້ານການເຫັນສີຊະນິດນັ້ນ.</string>
+    <string name="help_topic_line_spacing_text">ປັບໄລຍະຫ່າງລະຫວ່າງຕ່ອນຂໍ້ຄວາມ (1.0 - 2.0 ເທົ່າ).\n\n• ຄ່າເລີ່ມຕົ້ນ: 1.0 ເທົ່າ\n• ປະຕິບັດຕາມ AAA: 1.5 ເທົ່າ ຫຼື ສູງກວ່າ\n\nໄລຍະຫ່າງຕ່ອນທີ່ເພີ່ມຂຶ້ນ:\n• ປັບປຸງຄວາມເຂົ້າໃຈໃນການອ່ານ\n• ຫຼຸດຄວາມເມື່ອຍລ້າຂອງຕາ\n• ຊ່ວຍຜູ້ໃຊ້ທີ່ມີ Dyslexia\n• ເຮັດໃຫ້ກຸ່ມຂໍ້ຄວາມໜ້ອຍທຶ່ນໜ້ອຍ</string>
+    <string name="help_topic_paragraph_spacing_text">ປັບໄລຍະຫ່າງລະຫວ່າງຍ່ອໜ້າ (1.0 - 3.0 ເທົ່າ).\n\n• ຄ່າເລີ່ມຕົ້ນ: 1.0 ເທົ່າ\n• ປະຕິບັດຕາມ AAA: 2.0 ເທົ່າ ຫຼື ສູງກວ່າ\n\nໄລຍະຫ່າງຍ່ອໜ້າທີ່ເພີ່ມຂຶ້ນ:\n• ແຍກຄວາມຄິດຢ່າງຊັດເຈນ\n• ປັບປຸງການຈັດລະບຽບສາຍຕາ\n• ຫຼຸດໂຫດຄວາມຄິດ\n• ຊ່ວຍຮັກສາຕຳແໜ່ງການອ່ານ</string>
+    <string name="help_topic_letter_spacing_text">ປັບໄລຍະຫ່າງລະຫວ່າງຕົວອັກຂະລະ (0.0 - 0.2em).\n\n• ຄ່າເລີ່ມຕົ້ນ: 0.0em\n• ປະຕິບັດຕາມ AAA: 0.12em ຫຼື ສູງກວ່າ\n\nໄລຍະຫ່າງຕົວອັກຂະລະທີ່ເພີ່ມຂຶ້ນ:\n• ເຮັດໃຫ້ຕົວອັກຂະລະແຕ່ລະຕົວຊັດເຈນຂຶ້ນ\n• ຊ່ວຍຜູ້ໃຊ້ທີ່ມີ Dyslexia\n• ປັບປຸງຄວາມຖືກຕ້ອງໃນການອ່ານ\n• ຫຼຸດຄວາມສັບສົນຕົວອັກຂະລະ</string>
+    <string name="help_topic_text_width_text">ຈຳກັດຄວາມຍາວຕ່ອນເພື່ອໃຫ້ອ່ານງ່າຍຂຶ້ນ:\n\n• ຄວາມກວ້າງເຕັມ: ບໍ່ຈຳກັດ\n• ສະດວກສະບາຍ: 80 ຕົວອັກຂະລະ (ແນະນຳ)\n• ແຄບ: 60 ຕົວອັກຂະລະ\n\nການຄົ້ນຄ້ວາສະແດງໃຫ້ເຫັນວ່າການອ່ານທີ່ດີທີ່ສຸດເກີດຂຶ້ນທີ່ 60-80 ຕົວອັກຂະລະຕໍ່ຕ່ອນ. ຕ່ອນສັ້ນຫຼຸດການເຄື່ອນໄຫວຂອງຕາ ແລະ ປັບປຸງຄວາມເຂົ້າໃຈ.</string>
+    <string name="help_topic_touch_targets_text">ເພີ່ມຂະໜາດເປົ້າໝາຍສຳຜັດຕ່ຳສຸດເປັນ 60dp (ຈາກ 44dp).\n\nຜົນປະໂຫຍດ:\n• ແຕະປຸ່ມ ແລະ ການຄວບຄຸມໄດ້ງ່າຍຂຶ້ນ\n• ຫຼຸດການແຕະຜິດ\n• ຊ່ວຍຜູ້ໃຊ້ທີ່ມີຄວາມດ້ອຍດ້ານການເຄື່ອນໄຫວ\n• ດີກວ່າສຳລັບການໃຊ້ດ້ວຍມືດຽວ\n\nWCAG AAA ຕ້ອງການຕ່ຳສຸດ 60dp.</string>
+    <string name="help_topic_reduce_motion_text">ລຶບພາບເຄື່ອນໄຫວ ແລະ ການປ່ຽນຜ່ານທັງໝົດ.\n\nຜົນປະໂຫຍດ:\n• ປ້ອງກັນອາການເມົາຄ້ານ\n• ຫຼຸດຄວາມວຸ້ນວາຍ\n• ໂຫດຄວາມຄິດທີ່ຕ່ຳລົງ\n• ປັບປຸງຄວາມສຸມໃຈ\n\nແນະນຳສຳລັບຜູ້ໃຊ້ທີ່ມີ:\n• ຄວາມຜິດປົກກະຕິ Vestibular\n• ຄວາມຫຍຸ້ງຍາກດ້ານຄວາມສົນໃຈ\n• ຄວາມໄວທີ່ຕ້ານທານການເຄື່ອນໄຫວ</string>
+    <string name="help_topic_timeout_behavior_text">ຄວບຄຸມໝົດເວລາອັດຕະໂນມັດໃນໜ້າຈໍການຢັ້ງຢືນ:\n\n• ບໍ່ໝົດເວລາ (AAA): ເວລາບໍ່ຈຳກັດ\n• ມາດຕະຖານ: 30 ວິນາທີ\n• ຂະຫຍາຍ: 60 ວິນາທີ\n\nWCAG AAA ຕ້ອງການຕົວເລືອກບໍ່ໝົດເວລາສຳລັບຜູ້ໃຊ້ທີ່ຕ້ອງການເວລາຫຼາຍກວ່ານີ້ເພື່ອດຳເນີນການ.\n\nຂໍ້ມູນແບບຟອມຈະຖືກບັນທຶກອັດຕະໂນມັດກ່ອນໝົດເວລາ.</string>
+    <string name="help_topic_simplified_gestures_text">ທົດແທນທ່າທາງທີ່ຊັບຊ້ອນດ້ວຍທາງເລືອກທີ່ງ່າຍ:\n\n• ການປັດ → ປຸ່ມແຕະ\n• ກົດຄ້າງ → ການແຕະປົກກະຕິທີ່ມີການຢືນຢັນ\n• ຫຍຽດ/ຂະຫຍາຍ → ປຸ່ມ\n\nຊ່ວຍຜູ້ໃຊ້ທີ່ມີ:\n• ຄວາມດ້ອຍດ້ານການເຄື່ອນໄຫວ\n• ອາການສັ່ນ\n• ການໃຊ້ນິ້ວທີ່ຈຳກັດ\n• ຄວາມຫຍຸ້ງຍາກໃນການໃຊ້ໜ້າຈໍສຳຜັດ</string>
+    <string name="help_topic_haptic_feedback_text">ສ່ວນ Vibration ສຳລັບການດຳເນີນການ.\n\nຜົນປະໂຫຍດ:\n• ຢືນຢັນການກົດປຸ່ມ\n• ຊີ້ໃຫ້ເຫັນຂໍ້ຜິດພາດ\n• ສ່ວນຢືນຢັນທາງສຳຜັດ\n\nສາມາດປິດໃຊ້ງານສຳລັບຜູ້ໃຊ້ທີ່:\n• ພົບວ່າມັນຫຼຸດຄວາມສຸມໃຈ\n• ມີຄວາມໄວທາງຄວາມຮູ້ສຶກ\n• ຕ້ອງການການໃຊ້ງານທີ່ງຽບ</string>
+    <string name="help_topic_data_preservation_text">ບັນທຶກຂໍ້ມູນແບບຟອມອັດຕະໂນມັດກ່ອນໝົດເວລາ.\n\nຄຸນສົມບັດ:\n• ຄຳເຕືອນ 10 ວິນາທີກ່ອນໝົດເວລາ\n• ຕົວເລືອກໃນການບັນທຶກ ຫຼື ລຶບຂໍ້ມູນ\n• ການກູ້ຄືນອັດຕະໂນມັດເມື່ອກັບ\n• ການຮັກສາຂໍ້ມູນ 24 ຊົ່ວໂມງ\n\nຮັບປະກັນວ່າຈະບໍ່ສູນເສຍຂໍ້ມູນຫາກທ່ານຕ້ອງການເວລາເພີ່ມ ຫຼື ມີການລົບກວນ.</string>
+    <string name="help_topic_simplified_ui_text">ຫຼຸດຄວາມຊັບຊ້ອນທາງສາຍຕາ:\n\n• ອົງປະກອບ UI ໜ້ອຍລົງໃນຄາວດຽວ\n• ປຸ່ມໃຫຍ່ ຊັດເຈນກວ່າ\n• ພື້ນທີ່ວ່າງຫຼາຍຂຶ້ນ\n• Layout ທີ່ລຽບງ່າຍ\n\nຜົນປະໂຫຍດ:\n• ເຂົ້າໃຈງ່າຍຂຶ້ນ\n• ໜ້ອຍຄວາມຫຍຸ້ງຍາກ\n• ຄວາມສຸມໃຈດີຂຶ້ນ\n• ໂຫດຄວາມຄິດທີ່ຫຼຸດລົງ</string>
+    <string name="help_topic_step_indicators_text">ສະແດງຄວາມຄືບໜ້າໃນຂະບວນການຫຼາຍຂັ້ນຕອນ.\n\nສະແດງ:\n• ໝາຍເລກຂັ້ນຕອນປັດຈຸບັນ\n• ຈຳນວນຂັ້ນຕອນທັງໝົດ\n• ການສະແດງຄວາມຄືບໜ້າ\n\nຜົນປະໂຫຍດ:\n• ຫຼຸດຄວາມກັງວົນ\n• ຕັ້ງຄວາມຄາດຫວັງທີ່ຊັດເຈນ\n• ຊ່ວຍຮັກສາທິດທາງ\n• ສະແດງຄວາມຄືບໜ້າໃນການສຳເລັດ</string>
+    <string name="help_topic_verbose_descriptions_text">ສ່ວນສ່ວນຂໍ້ມູນ ແລະ ຄຳອະທິບາຍເພີ່ມເຕີມ:\n\n• ຊ່ຳດ້ວຍຊ່ຳດ້ວຍ Label ລຸ່ມ\n• ຄຳແນະນຳລະອຽດກວ່າ\n• ຄຳໃບ້ເພີ່ມເຕີມ\n• ຂໍ້ຄວາມຂໍ້ຜິດພາດທີ່ຊັດເຈນຂຶ້ນ\n\nຊ່ວຍຜູ້ໃຊ້:\n• ເຂົ້າໃຈການດຳເນີນການກ່ອນທີ່ຈະດຳເນີນ\n• ຫລີກລ້ຽງຄວາມຜິດພາດ\n• ຮຽນຮູ້ຟັງຊັ່ນຂອງແອັບ\n• ສ້າງຄວາມໝັ້ນໃຈ</string>
+    <string name="help_topic_confirm_actions_text">ຕ້ອງການການຢືນຢັນສຳລັບການດຳເນີນການທີ່ສຳຄັນ:\n\n• ການລຶບໃບຢັ້ງຢືນ\n• ການປ່ຽນການຕັ້ງຄ່າ\n• ການລ້າງຂໍ້ມູນ\n\nWCAG AAA ຕ້ອງການການຢືນຢັນສຳລັບການດຳເນີນການທີ່ທຳລາຍທັງໝົດ.\n\nຜົນປະໂຫຍດ:\n• ປ້ອງກັນຄວາມຜິດພາດ\n• ອະນຸຍາດໃຫ້ທົບທວນກ່ອນດຳເນີນ\n• ຫຼຸດຄວາມກັງວົນ\n• ໃຫ້ໂອກາດທີສອງ</string>
+    <string name="help_topic_reading_level_text">ໃຊ້ພາສາທີ່ງ່າຍກວ່າ (ລະດັບ 7-9):\n\n• ປະໂຫຍກສັ້ນກວ່າ\n• ຄຳທົ່ວໄປແທນຄຳສັບ\n• ພາສາທີ່ຊັດເຈນ ໂດຍກົງ\n• ຄຳສັບທາງວິຊາການໜ້ອຍກວ່າ\n\nປະຕິບັດຕາມ WCAG AAA ເມື່ອເປີດໃຊ້.\n\nຜົນປະໂຫຍດ:\n• ເຂົ້າໃຈງ່າຍຂຶ້ນ\n• ຄວາມເຂົ້າໃຈໄວຂຶ້ນ\n• ດີກວ່າສຳລັບຜູ້ທີ່ໃຊ້ພາສາຕ່າງ\n• ໂຫດຄວາມຄິດທີ່ຫຼຸດລົງ</string>
+    <string name="help_topic_help_system_text">ຊ່ວຍເຫຼືອທີ່ ສ່ວນເນື້ອຫາທົ່ວໄປທົ່ວທັງແອັບ.\n\nຄຸນສົມບັດ:\n• ຫົວຂໍ້ຊ່ວຍເຫຼືອ 27 ຫົວຂໍ້\n• ສູນຊ່ວຍເຫຼືອທີ່ຄົ້ນຫາໄດ້\n• ການນຳທາງຫົວຂໍ້ທີ່ກ່ຽວຂ້ອງ\n• ຄຳສັບທາງວິຊາການ\n\nເຂົ້າເຖິງຊ່ວຍເຫຼືອຈາກ:\n• ໜ້າຈໍການຕັ້ງຄ່າ\n• ຄຸນສົມບັດທີ່ຊັບຊ້ອນ\n• ຂໍ້ຄວາມຂໍ້ຜິດພາດ\n• ທຸກທີ່ທີ່ທ່ານເຫັນໄອຄອນຊ່ວຍເຫຼືອ</string>
+    <string name="help_topic_manual_code_entry_text">ປ້ອນຂໍ້ມູນລະຫັດ QR ດ້ວຍຕົນເອງແທນການສະແກນ.\n\nຜົນປະໂຫຍດ:\n• ໃຊ້ງານໄດ້ເມື່ອການເຂົ້າເຖິງກ້ອງບໍ່ສາມາດໃຊ້ງານໄດ້\n• ຊ່ວຍຜູ້ໃຊ້ທີ່ມີຄວາມດ້ອຍດ້ານການເຄື່ອນໄຫວ\n• ດີກວ່າໃນສະຖານທີ່ທີ່ແສງສ່ວ່າງໜ້ອຍ\n• ບໍ່ຈຳເປັນຕ້ອງຖືໂທລະສັບໄວ້ຢ່າງໝັ້ນຄົງ\n\nທາງເລືອກໃຫ້ກັບການສະແກນ QR ໂດຍໃຊ້ກ້ອງ.</string>
+    <string name="help_topic_voice_input_text">ໃຊ້ສຽງໃນການປ້ອນຂໍ້ຄວາມແທນການພິມ.\n\nຜົນປະໂຫຍດ:\n• ການປ້ອນດ້ວຍໄມ້ຟຣີ\n• ໄວກວ່າການພິມ\n• ຊ່ວຍຜູ້ໃຊ້ທີ່ມີຄວາມດ້ອຍດ້ານການເຄື່ອນໄຫວ\n• ຫຼຸດຄວາມຕຶງຄຽດຊ້ຳ\n\nໃຊ້ການຮັບຮູ້ສຽງທີ່ຕິດຕັ້ງໃນໂທລະສັບຂອງທ່ານ.</string>
+    <string name="help_topic_screen_reader_text">ການຮອງຮັບໜ້າຈໍການອ່ານ TalkBack ທັງໝົດ.\n\nຄຸນສົມບັດ:\n• ອົງປະກອບ UI ທັງໝົດຖືກ Label\n• ໂຄງສ້າງຫົວຂໍ້ທີ່ຖືກຕ້ອງ\n• ລຳດັບການນຳທາງທີ່ສົມເຫດສົມຜົນ\n• ຄຳໃບ້ທີ່ກຳນົດເອງສຳລັບການດຳເນີນການທີ່ຊັບຊ້ອນ\n\nແອັບຈະເປີດໃຊ້ງານອັດຕະໂນມັດ:\n• ຄຳອະທິບາຍລະອຽດ\n• ເປົ້າໝາຍສຳຜັດທີ່ຂະຫຍາຍ\n\nເມື່ອກວດພົບ TalkBack.</string>
+    <string name="help_topic_accessibility_profiles_text">ໂປຣໄຟລ໌ການເຂົ້າເຖິງທີ່ຕັ້ງຄ່າໄວ້ລ່ວງໜ້າ:\n\n• ມີຄວາມດ້ອຍດ້ານສາຍຕາ: ຄວາມແຕກຕ່າງສູງ ຕົວໜັງສືໃຫຍ່ ການສັ່ນ\n• ມີຄວາມດ້ອຍດ້ານການເຄື່ອນໄຫວ: ເປົ້າໝາຍໃຫຍ່ ໝົດເວລາຂະຫຍາຍ ການຢືນຢັນ\n• ດ້ານຄວາມຄິດ: UI ທີ່ລຽບງ່າຍ ຕົວຊີ້ວັດຂັ້ນຕອນ ຄຳອະທິບາຍ\n• ຜູ້ສູງອາຍຸ: ຕົວໜັງສືໃຫຍ່ ເປົ້າໝາຍ UI ທີ່ລຽບງ່າຍ ຫຼຸດພາບເຄື່ອນໄຫວ\n• ຄ່າເລີ່ມຕົ້ນ: ຣີເຊັດການຕັ້ງຄ່າທັງໝົດ\n\nແຕ່ລະໂປຣໄຟລ໌ເປີດໃຊ້ການຕັ້ງຄ່າທີ່ຊ່ວຍຫຼາຍທີ່ສຸດສຳລັບກຸ່ມຜູ້ໃຊ້ນັ້ນ. ທ່ານສາມາດປັບແຕ່ງເພີ່ມເຕີມຫຼັງຈາກນຳໃຊ້ໂປຣໄຟລ໌.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">ການຢັ້ງຢືນອາຍຸ</string>
+    <string name="content_age_verification_explanation">ກະລຸນາລໍຖ້າໃນຂະນະທີ່ພວກເຮົາຢັ້ງຢືນອາຍຸຂອງທ່ານຢ່າງປອດໄພໂດຍໃຊ້ຫຼັກຖານບໍ່ເປີດເຜີຍຄວາມຮູ້. ວັນເດືອນປີເກີດຂອງທ່ານຈະບໍ່ຖືກແບ່ງປັນກັບຜູ້ຢັ້ງຢືນ.</string>
+    <string name="content_age_verification_instructions">ຊີ້ກ້ອງຂອງທ່ານໄປຫາລະຫັດ QR ການຢັ້ງຢືນ. ລະຫັດຈະຖືກສະແກນອັດຕະໂນມັດເມື່ອກວດພົບ.</string>
+    <string name="content_age_verification_success">ອາຍຸຂອງທ່ານໄດ້ຖືກຢັ້ງຢືນສຳເລັດ. ຜູ້ຢັ້ງຢືນຮູ້ວ່າທ່ານຕອບສະໜອງຂໍ້ກຳໜົດອາຍຸຂອງພວກເຂົາ ໂດຍບໍ່ຮູ້ວັນເດືອນປີເກີດທີ່ແທ້ຈິງຂອງທ່ານ.</string>
+    <string name="content_age_verification_failed">ການຢັ້ງຢືນລົ້ມເຫລວ. ກະລຸນາລອງສະແກນລະຫັດ QR ໃໝ່ ຫຼື ໃຊ້ການປ້ອນລະຫັດດ້ວຍຕົນເອງ.</string>
+    <string name="content_credential_issuance_title">ການອອກໃບຢັ້ງຢືນ</string>
+    <string name="content_credential_issuance_explanation">ສະແກນລະຫັດ QR ທີ່ສ່ວນໄດ້ຮັບຈາກຜູ້ອອກທີ່ໄດ້ຮັບອະນຸຍາດເພື່ອຮັບໃບຢັ້ງຢືນອາຍຸດິຈິຕອລ.</string>
+    <string name="content_credential_issuance_instructions">ຊີ້ກ້ອງຂອງທ່ານໄປຫາລະຫັດ QR ການອອກທີ່ສະແດງໂດຍເຈົ້າໜ້າທີ່. ໃບຢັ້ງຢືນຂອງທ່ານຈະຖືກສ້າງໃນອຸປະກອນຂອງທ່ານ.</string>
+    <string name="content_credential_issuance_success">ສ້າງໃບຢັ້ງຢືນສຳເລັດ. ຕອນນີ້ທ່ານສາມາດໃຊ້ໃບຢັ້ງຢືນນີ້ສຳລັບການຢັ້ງຢືນອາຍຸ.</string>
+    <string name="content_credential_description">ໃບຢັ້ງຢືນແມ່ນຫຼັກຖານຕົວຕົນທີ່ລົງລາຍເຊັນທາງການເຂົ້າລະຫັດ ທີ່ເປີດໃຊ້ການຢັ້ງຢືນທີ່ຮັກສາຄວາມເປັນສ່ວນຕົວ.</string>
+    <string name="content_zero_knowledge_explanation">ຫຼັກຖານບໍ່ເປີດເຜີຍຄວາມຮູ້ ໃຫ້ທ່ານສາມາດຢັ້ງຢືນວ່າທ່ານຕອບສະໜອງຂໍ້ກຳໜົດອາຍຸ ໂດຍບໍ່ເປີດເຜີຍອາຍຸທີ່ແທ້ຈິງຂອງທ່ານ.</string>
+    <string name="content_setup_proving_key">ກຳລັງດາວໂຫລດລະຫັດຢັ້ງຢືນທາງການເຂົ້າລະຫັດທີ່ຈຳເປັນສຳລັບການສ້າງຫຼັກຖານບໍ່ເປີດເຜີຍຄວາມຮູ້</string>
+    <string name="content_processing_challenge">ກຳລັງປະມວນຜົນການສິດທ໌ທ້າທາຍການຢັ້ງຢືນ</string>
+    <string name="content_creating_proof">ກຳລັງສ້າງຫຼັກຖານອາຍຸບໍ່ເປີດເຜີຍຄວາມຮູ້</string>
+    <string name="content_submitting_proof">ກຳລັງສົ່ງຫຼັກຖານໄປຍັງຜູ້ຢັ້ງຢືນ</string>
+    <string name="content_error_no_credential">ບໍ່ມີໃບຢັ້ງຢືນທີ່ໃຊ້ງານໄດ້. ກະລຸນາຮັບໃບຢັ້ງຢືນຈາກຜູ້ອອກທີ່ໄດ້ຮັບອະນຸຍາດກ່ອນ.</string>
+    <string name="content_error_network_failed">ການເຊື່ອມຕໍ່ເຄືອຂ່າຍລົ້ມເຫລວ. ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ ແລ້ວລອງໃໝ່.</string>
+    <string name="content_error_invalid_qr">ລະຫັດ QR ບໍ່ຖືກຕ້ອງ. ກະລຸນາໃຫ້ແນ່ໃຈວ່າທ່ານສະແກນລະຫັດການຢັ້ງຢືນທີ່ຖືກຕ້ອງ.</string>
+    <string name="content_error_verification_failed">ການຢັ້ງຢືນລົ້ມເຫລວ. ເຊີເວີບໍ່ສາມາດກວດສອບຫຼັກຖານຂອງທ່ານ.</string>
+    <string name="content_officer_authentication_title">ການກວດສອບຕົວຕົນເຈົ້າໜ້າທີ່</string>
+    <string name="content_officer_issuance_title">ການອອກໃບຢັ້ງຢືນ</string>
+    <string name="content_officer_dob_prompt">ປ້ອນວັນເດືອນປີເກີດທີ່ຢັ້ງຢືນຂອງຜູ້ສະໝັກຈາກເອກະສານ ID ທາງການ.</string>
+    <string name="content_onboarding_welcome">ຍິນດີຕ້ອນຮັບສູ່ Provii Wallet - ວິທີແກ້ໄຂການຢັ້ງຢືນອາຍຸດິຈິຕອລທີ່ຮັກສາຄວາມເປັນສ່ວນຕົວຂອງທ່ານ.</string>
+    <string name="content_onboarding_privacy">ວັນເດືອນປີເກີດຂອງທ່ານຖືກເກັບໄວ້ຢ່າງປອດໄພໃນອຸປະກອນຂອງທ່ານ ແລະ ຈະບໍ່ຖືກສົ່ງໄປຍັງຜູ້ຢັ້ງຢືນ.</string>
+    <string name="content_onboarding_get_started">ເພື່ອເລີ່ມຕົ້ນ ໃຫ້ໄປຢ້ຽມຜູ້ອອກທີ່ໄດ້ຮັບອະນຸຍາດເພື່ອຮັບໃບຢັ້ງຢືນອາຍຸດິຈິຕອລ.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">ກວດສອບອາຍຸ</string>
+    <string name="content_age_verification_explanation_simplified">ພວກເຮົາກຳລັງກວດສອບອາຍຸຂອງທ່ານ. ພວກເຮົາຈະບໍ່ເຫັນ ຫຼື ແບ່ງປັນວັນເກີດຂອງທ່ານ.</string>
+    <string name="content_age_verification_instructions_simplified">ຊີ້ກ້ອງຂອງທ່ານໄປຫາລະຫັດ QR. ມັນຈະສະແກນເອງ.</string>
+    <string name="content_age_verification_success_simplified">ສຳເລັດ! ເວັບໄຊຮູ້ວ່າທ່ານໃຫຍ່ພໍ. ພວກເຂົາຮູ້ ວັນເກີດຂອງທ່ານ.</string>
+    <string name="content_age_verification_failed_simplified">ບໍ່ສຳເລັດ. ລອງສະແກນໃໝ່ ຫຼື ພິມລະຫັດແທນ.</string>
+    <string name="content_credential_issuance_title_simplified">ຮັບ ID ຂອງທ່ານ</string>
+    <string name="content_credential_issuance_explanation_simplified">ສະແກນລະຫັດຈາກຫ້ອງການລັດຖະບານເພື່ອຮັບ ID ດິຈິຕອລ.</string>
+    <string name="content_credential_issuance_instructions_simplified">ຊີ້ກ້ອງຂອງທ່ານໄປຫາລະຫັດ. ID ຂອງທ່ານຈະຖືກບັນທຶກໃນໂທລະສັບ.</string>
+    <string name="content_credential_issuance_success_simplified">ສຳເລັດ! ຕອນນີ້ທ່ານສາມາດໃຊ້ ID ດິຈິຕອລເພື່ອຢັ້ງຢືນອາຍຸ.</string>
+    <string name="content_credential_description_simplified">ໃບຢັ້ງຢືນຄ້າຍຄືບັດ ID ດິຈິຕອລທີ່ຢັ້ງຢືນຕົວຕົນໂດຍບໍ່ແບ່ງປັນລາຍລະອຽດສ່ວນຕົວ.</string>
+    <string name="content_zero_knowledge_explanation_simplified">ທ່ານສາມາດຢັ້ງຢືນວ່າໃຫຍ່ພໍ ໂດຍບໍ່ຕ້ອງບອກໃຜວ່າອາຍຸທີ່ແທ້ຈິງ.</string>
+    <string name="content_setup_proving_key_simplified">ກຳລັງດາວໂຫລດໄຟລ໌ຄວາມປອດໄພທີ່ຈຳເປັນສຳລັບແອັບ</string>
+    <string name="content_processing_challenge_simplified">ກຳລັງອ່ານຄຳຮ້ອງຂໍກວດສອບອາຍຸ</string>
+    <string name="content_creating_proof_simplified">ກຳລັງສ້າງຫຼັກຖານອາຍຸ</string>
+    <string name="content_submitting_proof_simplified">ກຳລັງສົ່ງຫຼັກຖານໄປຍັງເວັບໄຊ</string>
+    <string name="content_error_no_credential_simplified">ທ່ານຍັງບໍ່ມີ ID. ໄປຢ້ຽມຫ້ອງການລັດຖະບານເພື່ອຮັບ.</string>
+    <string name="content_error_network_failed_simplified">ເຊື່ອມຕໍ່ອິນເຕີເນັດບໍ່ໄດ້. ກວດສອບ Wi-Fi ຫຼື ຂໍ້ມູນ ແລ້ວລອງໃໝ່.</string>
+    <string name="content_error_invalid_qr_simplified">ລະຫັດນັ້ນດູບໍ່ຖືກ. ໃຫ້ແນ່ໃຈວ່າທ່ານສະແກນລະຫັດທີ່ຖືກ.</string>
+    <string name="content_error_verification_failed_simplified">ບໍ່ສຳເລັດ. ເວັບໄຊກວດສອບຫຼັກຖານບໍ່ໄດ້. ລອງໃໝ່.</string>
+    <string name="content_officer_authentication_title_simplified">ເຈົ້າໜ້າທີ່ເຂົ້າສູ່ລະບົບ</string>
+    <string name="content_officer_issuance_title_simplified">ສ້າງບັດ ID</string>
+    <string name="content_officer_dob_prompt_simplified">ປ້ອນວັນເກີດຂອງບຸກຄົນຈາກ ID ທາງການ.</string>
+    <string name="content_onboarding_welcome_simplified">ຍິນດີຕ້ອນຮັບສູ່ Provii Wallet - ຢັ້ງຢືນອາຍຸຢ່າງສ່ວນຕົວ.</string>
+    <string name="content_onboarding_privacy_simplified">ວັນເກີດຂອງທ່ານຢູ່ໃນໂທລະສັບ. ບໍ່ມີໃຜເຫັນ.</string>
+    <string name="content_onboarding_get_started_simplified">ເພື່ອເລີ່ມຕົ້ນ ໃຫ້ໄປຢ້ຽມຫ້ອງການລັດຖະບານເພື່ອຮັບ ID ດິຈິຕອລ.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Quick Response (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">ລະຫັດລັບສ່ວນຕົວ (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">ວັນເດືອນປີເກີດ (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">ລະຫັດປະຈຳຕົວ (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">ໜ້າຈໍຜູ້ໃຊ້ (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">ທີ່ຢູ່ເວັບ (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">ຊຸດ API (Application Programming Interface)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">ຢຸດພາບເຄື່ອນໄຫວ</string>
+    <string name="animation_resume_animations">ສືບຕໍ່ພາບເຄື່ອນໄຫວ</string>
+    <string name="animation_pause_button_text">ຢຸດ</string>
+    <string name="animation_resume_button_text">ສືບຕໍ່</string>
+    <string name="animation_toggles_playback_hint">ສະຫຼັບການຫຼິ້ນພາບເຄື່ອນໄຫວ</string>
+    <string name="animation_paused_announcement">ພາບເຄື່ອນໄຫວຢຸດ</string>
+    <string name="animation_resumed_announcement">ພາບເຄື່ອນໄຫວສືບຕໍ່</string>
+    <string name="animation_active_count">%d ພາບເຄື່ອນໄຫວທີ່ໃຊ້ງານ</string>
+    <string name="animation_loading_default">ກຳລັງໂຫລດ</string>
+    <string name="animation_please_wait">ກະລຸນາລໍຖ້າໃນຂະນະທີ່ການດຳເນີນການນີ້ສຳເລັດ</string>
+    <string name="animation_percent_complete">%d ເປີເຊັນສຳເລັດ</string>
+    <string name="animation_loading_in_progress">ກຳລັງດຳເນີນ</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">ທາງລັດແປ້ນພິມ</string>
+    <string name="keyboard_shortcuts_done">ສຳເລັດ</string>
+    <string name="keyboard_shortcuts_app_section">ທາງລັດຂອງແອັບ</string>
+    <string name="keyboard_shortcuts_navigation_section">ການນຳທາງ</string>
+    <string name="keyboard_shortcuts_tips_section">ຄຳແນະນຳ</string>
+    <string name="keyboard_shortcuts_navigation_footer">ປຸ່ມນຳທາງເຫຼົ່ານີ້ໃຊ້ງານໄດ້ທົ່ວທັງແອັບດ້ວຍແປ້ນພິມພາຍນອກ</string>
+    <string name="keyboard_shortcuts_tip_external">ຮອງຮັບແປ້ນພິມ Bluetooth ແລະ USB ພາຍນອກທັງໝົດ</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">ໃຊ້ປຸ່ມລູກສອນເພື່ອນຳທາງລະຫວ່າງລາຍການໃນລາຍຊື່</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">ກົດ Ctrl ຄ້າງເພື່ອເຫັນທາງລັດທີ່ໃຊ້ງານໄດ້ໃນໜ້າຈໍນີ້</string>
+    <string name="keyboard_shortcuts_tip_a11y">ຄຸນສົມບັດທັງໝົດໃນແອັບນີ້ສາມາດເຂົ້າເຖິງໄດ້ຜ່ານແປ້ນພິມ</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">ປິດທາງລັດແປ້ນພິມ</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">ການຕັ້ງຄ່າ</string>
+    <string name="keyboard_shortcut_label_accessibility">ການເຂົ້າເຖິງ</string>
+    <string name="keyboard_shortcut_label_help">ສູນຊ່ວຍເຫຼືອ</string>
+    <string name="keyboard_shortcut_label_add_credential">ເພີ່ມໃບຢັ້ງຢືນ</string>
+    <string name="keyboard_shortcut_label_verify">ຢັ້ງຢືນ</string>
+    <string name="keyboard_shortcut_label_shortcuts">ທາງລັດ</string>
+    <string name="keyboard_shortcut_desc_settings">ເປີດການຕັ້ງຄ່າ</string>
+    <string name="keyboard_shortcut_desc_accessibility">ການຕັ້ງຄ່າການເຂົ້າເຖິງ</string>
+    <string name="keyboard_shortcut_desc_help">ສູນຊ່ວຍເຫຼືອ</string>
+    <string name="keyboard_shortcut_desc_add_credential">ເພີ່ມໃບຢັ້ງຢືນ</string>
+    <string name="keyboard_shortcut_desc_verify">ເລີ່ມການຢັ້ງຢືນ</string>
+    <string name="keyboard_shortcut_desc_shortcuts">ທາງລັດແປ້ນພິມ</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">ກັບຄືນ / ປິດ</string>
+    <string name="keyboard_shortcut_nav_back_desc">ປິດໜ້າຈໍ ຫຼື ກ່ອງໂຕ້ຕອບປັດຈຸບັນ</string>
+    <string name="keyboard_shortcut_nav_next">ຊ່ອງຕໍ່ໄປ</string>
+    <string name="keyboard_shortcut_nav_next_desc">ຍ້າຍຈຸດສຸມໄປຍັງອົງປະກອບທີ່ໂຕ້ຕອບໄດ້ຕໍ່ໄປ</string>
+    <string name="keyboard_shortcut_nav_prev">ຊ່ອງກ່ອນ</string>
+    <string name="keyboard_shortcut_nav_prev_desc">ຍ້າຍຈຸດສຸມໄປຍັງອົງປະກອບທີ່ໂຕ້ຕອບໄດ້ກ່ອນ</string>
+    <string name="keyboard_shortcut_nav_submit">ສົ່ງ / ສືບຕໍ່</string>
+    <string name="keyboard_shortcut_nav_submit_desc">ກິດຈະກຳປຸ່ມທີ່ສຸມໃຈ ຫຼື ສົ່ງແບບຟອມ</string>
+    <string name="keyboard_shortcut_nav_activate">ເປີດໃຊ້ປຸ່ມ</string>
+    <string name="keyboard_shortcut_nav_activate_desc">ເປີດໃຊ້ປຸ່ມທີ່ສຸມໃຈ ຫຼື ການສະຫຼັບ</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">ກ່ອງໂຕ້ຕອບເປີດ. ກົດ Escape ເພື່ອປິດ ກົດ Enter ເພື່ອຢືນຢັນ.</string>
+    <string name="modal_closed_announcement">ກ່ອງໂຕ້ຕອບປິດ</string>
+    <string name="modal_button_primary_label">%s (ການດຳເນີນການຫຼັກ)</string>
+    <string name="modal_button_cancel_label">%s (ຍົກເລີກ)</string>
+    <string name="modal_button_destructive_label">%s (ການດຳເນີນການທີ່ທຳລາຍ)</string>
+    <string name="modal_button_primary_hint">ແຕະສອງເທື່ອເພື່ອຢືນຢັນ ຫຼື ກົດ Enter</string>
+    <string name="modal_button_cancel_hint">ແຕະສອງເທື່ອເພື່ອຍົກເລີກ ຫຼື ກົດ Escape</string>
+    <string name="modal_button_destructive_hint">ແຕະສອງເທື່ອເພື່ອດຳເນີນການທຳລາຍ</string>
+    <string name="modal_button_secondary_hint">ແຕະສອງເທື່ອເພື່ອດຳເນີນການ</string>
+    <string name="modal_confirm">ຢືນຢັນ</string>
+    <string name="modal_cancel">ຍົກເລີກ</string>
+    <string name="modal_delete">ລຶບ</string>
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">ລຶບ %1$s</string>
+    <string name="a11y_edit_nickname_for">ແກ້ໄຂຊື່ຫຼິ້ນສຳລັບ %1$s</string>
+    <string name="accessibility_attestation_scan_back">ກັບຄືນ</string>
+    <string name="attestation_replace_confirm">ທົດແທນ</string>
+    <string name="attestation_replace_primary_message">ທ່ານມີໃບຢັ້ງຢືນສ່ວນຕົວແລ້ວ. ການສ້າງອັນໃໝ່ຈະທົດແທນອັນເກົ່າ. ການກະທຳນີ້ບໍ່ສາມາດຍົກເລີກໄດ້.</string>
+    <!-- Translator Note: These strings appear when a user tries to replace an existing credential -->
+    <string name="attestation_replace_primary_title">ທົດແທນໃບຢັ້ງຢືນທີ່ມີຢູ່ບໍ?</string>
+    <string name="attestation_scan_error_empty">ລະຫັດ QR ບໍ່ມີຂໍ້ມູນ</string>
+    <string name="attestation_scan_instruction">ຊີ້ກ້ອງຂອງທ່ານໄປຫາລະຫັດ QR ທີ່ເຈົ້າໜ້າທີ່ສະແດງ</string>
+    <string name="attestation_scan_invalid_qr">ລະຫັດ QR ນີ້ບໍ່ມີຂໍ້ມູນການຮັບຮອງ</string>
+    <!-- Translator Note: These strings appear on the QR code scanning screen for credential attestation -->
+    <string name="attestation_scan_title">ສະແກນການຮັບຮອງ</string>
+    <string name="attestation_scan_wrong_type_toast">ນີ້ແມ່ນລະຫັດ QR ການຢັ້ງຢືນ, ບໍ່ແມ່ນລະຫັດ QR ໃບຢັ້ງຢືນ</string>
+    <string name="biometric_required_message">ແອັບນີ້ຕ້ອງການການລັອກໜ້າຈໍ (PIN, ຮູບແບບ ຫຼື ຊີວະສາດ) ເພື່ອເກັບໃບຢັ້ງຢືນຢ່າງປອດໄພ. ກະລຸນາຕັ້ງຄ່າໃນການຕັ້ງຄ່າຄວາມປອດໄພອຸປະກອນຂອງທ່ານກ່ອນດຳເນີນການຕໍ່.</string>
+    <string name="biometric_required_open_settings">ເປີດການຕັ້ງຄ່າຄວາມປອດໄພ</string>
+    <!-- Translator Note: Shown when the device has no screen lock configured -->
+    <string name="biometric_required_title">ຕ້ອງການການລັອກໜ້າຈໍ</string>
+    <string name="challenge_sandbox_prompt_announcement">ໄດ້ຮັບການທ້າທາຍ Sandbox. ເລືອກວ່າຈະເປີດໃຊ້ໂໝດ Sandbox ແລະ ດຳເນີນການຕໍ່, ຫຼື ປະຕິເສດການທ້າທາຍ.</string>
+    <string name="challenge_sandbox_prompt_body">ການທ້າທາຍນີ້ອອກໂດຍຜູ້ຢັ້ງຢືນ Sandbox. ມັນຈະບໍ່ສຳເລັດຍົກເວັ້ນແຕ່ທ່ານເປີດໃຊ້ໂໝດ Sandbox ໃນກະເປົາເງິນນີ້.</string>
+    <string name="challenge_sandbox_prompt_primary">ເປີດໃຊ້ Sandbox ແລະ ດຳເນີນການຕໍ່</string>
+    <string name="challenge_sandbox_prompt_secondary">ປະຕິເສດການທ້າທາຍ</string>
+    <!-- Challenge Sandbox Prompt (W14-4.19) -->
+    <string name="challenge_sandbox_prompt_title">ໄດ້ຮັບການທ້າທາຍ Sandbox</string>
+    <string name="credential_detail_nickname_error">ບັນທຶກຊື່ຫຼິ້ນບໍ່ສຳເລັດ</string>
+    <string name="credential_list_managed_count">%1$d ຈາກ %2$d</string>
+    <string name="credential_picker_count_shown">ສະແດງໃບຢັ້ງຢືນ %1$d ໃບ</string>
+    <string name="credential_picker_filter_clear">ລຶບຕົວກອງ</string>
+    <string name="credential_picker_filter_label">ກອງໃບຢັ້ງຢືນຕາມຊື່</string>
+    <string name="credential_picker_filter_placeholder">ກອງໃບຢັ້ງຢືນ</string>
+    <string name="credential_picker_no_results">ບໍ່ພົບໃບຢັ້ງຢືນທີ່ກົງກັນ</string>
+    <string name="credential_picker_section_managed">ໃບຢັ້ງຢືນທີ່ຈັດການ</string>
+    <string name="credential_picker_section_me">ຂ້ອຍ</string>
+    <string name="credential_picker_subtitle">ເລືອກບຸກຄົນທີ່ກຳລັງຖືກຢັ້ງຢືນ.</string>
+    <string name="credential_row_action_delete">ລຶບ</string>
+    <string name="credential_row_action_edit">ແກ້ໄຂຊື່ຫຼິ້ນ</string>
+    <string name="credential_row_overflow_menu">ຕົວເລືອກໃບຢັ້ງຢືນ</string>
+    <string name="deeplink_sandbox_prompt_announcement">ກວດພົບລິ້ງ Sandbox. ເລືອກວ່າຈະເປີດໃຊ້ໂໝດ Sandbox ແລະ ເປີດລິ້ງ.</string>
+    <string name="deeplink_sandbox_prompt_body">ລິ້ງລະອຽດນີ້ຈະສຳເລັດກໍຕໍ່ເມື່ອທ່ານເປີດໃຊ້ໂໝດ Sandbox ໃນກະເປົາເງິນນີ້.</string>
+    <string name="deeplink_sandbox_prompt_primary">ເປີດໃຊ້ Sandbox ແລະ ເປີດ</string>
+    <string name="deeplink_sandbox_prompt_secondary">ຍົກເລີກ</string>
+    <!-- Deep Link Sandbox Prompt (W13-4.11) -->
+    <string name="deeplink_sandbox_prompt_title">ກວດພົບລິ້ງ Sandbox</string>
+    <string name="empty_credential_option_find_apps_a11y">ຄົ້ນຫາແອັບທີ່ເຂົ້າຮ່ວມ. ຮັບໃບຢັ້ງຢືນຈາກກອງທຶນສະສົມ, ທະນາຄານ, ບໍລິສັດໂທລະຄົມ, ຜູ້ປະກັນສຸຂະພາບ ຫຼື ຜູ້ໃດກໍຕາມທີ່ຮູ້ອາຍຸຂອງທ່ານແລ້ວ.</string>
+    <string name="empty_credential_option_find_apps_desc">ຮັບໃບຢັ້ງຢືນຈາກກອງທຶນສະສົມ, ທະນາຄານ, ບໍລິສັດໂທລະຄົມ, ຜູ້ປະກັນສຸຂະພາບ ຫຼື ຜູ້ໃດກໍຕາມທີ່ຮູ້ອາຍຸຂອງທ່ານແລ້ວ</string>
+    <string name="empty_credential_option_find_apps_title">ຄົ້ນຫາແອັບທີ່ເຂົ້າຮ່ວມ</string>
+    <string name="empty_credential_option_find_locations_a11y">ຄົ້ນຫາສະຖານທີ່ໃກ້ທ່ານ. ໄປດ້ວຍຕົນເອງພ້ອມບັດປະຈຳຕົວເພື່ອຮັບໃບຢັ້ງຢືນ.</string>
+    <string name="empty_credential_option_find_locations_desc">ໄປດ້ວຍຕົນເອງພ້ອມບັດປະຈຳຕົວເພື່ອຮັບໃບຢັ້ງຢືນ</string>
+    <string name="empty_credential_option_find_locations_title">ຄົ້ນຫາສະຖານທີ່ໃກ້ທ່ານ</string>
+    <string name="empty_credential_option_managed_a11y">ຂ້ອຍດູແລຄົນອື່ນ. ຈັດການໃບຢັ້ງຢືນສຳລັບຄົນທີ່ທ່ານດູແລ.</string>
+    <string name="empty_credential_option_managed_desc">ຈັດການໃບຢັ້ງຢືນສຳລັບຄົນທີ່ທ່ານດູແລ</string>
+    <string name="empty_credential_option_managed_title">ຂ້ອຍດູແລຄົນອື່ນ</string>
+    <string name="empty_credential_option_scan_a11y">ຂ້ອຍມີລະຫັດ QR ທີ່ຈະສະແກນ. ຜູ້ຢັ້ງຢືນໃຫ້ລະຫັດແກ່ທ່ານຫຼັງຈາກກວດເບິ່ງບັດປະຈຳຕົວແລ້ວ.</string>
+    <string name="empty_credential_option_scan_desc">ຜູ້ຢັ້ງຢືນໃຫ້ລະຫັດແກ່ທ່ານຫຼັງຈາກກວດເບິ່ງບັດປະຈຳຕົວແລ້ວ</string>
+    <string name="empty_credential_option_scan_title">ຂ້ອຍມີລະຫັດ QR ທີ່ຈະສະແກນ</string>
+    <string name="empty_credential_subtitle">ເລືອກວິທີທີ່ທ່ານຕ້ອງການຮັບໃບຢັ້ງຢືນອັນທຳອິດຂອງທ່ານ</string>
+    <!-- Redesigned Empty Credential State -->
+    <string name="empty_credential_title">ຍັງບໍ່ມີໃບຢັ້ງຢືນ</string>
+    <string name="error_screen_lock_required">ຕ້ອງການການລັອກໜ້າຈໍ (PIN, ຮູບແບບ ຫຼື ຊີວະສາດ) ເພື່ອເກັບໃບຢັ້ງຢືນຢ່າງປອດໄພ. ກະລຸນາຕັ້ງຄ່າໃນການຕັ້ງຄ່າອຸປະກອນຂອງທ່ານ.</string>
+    <string name="issuers_no_apps_found_description">ກວດເບິ່ງໃໝ່ໃນໄວໆນີ້ ເມື່ອມີແອັບເພີ່ມເຕີມຮອງຮັບ Provii</string>
+    <string name="issuers_no_apps_found">ຍັງບໍ່ມີແອັບທີ່ເຂົ້າຮ່ວມ</string>
+    <string name="issuers_no_locations_found_description">ກວດເບິ່ງໃໝ່ໃນໄວໆນີ້ ເມື່ອມີສະຖານທີ່ເພີ່ມເຕີມຖືກເພີ່ມເຂົ້າມາ</string>
+    <string name="issuers_no_locations_found">ບໍ່ພົບສະຖານທີ່</string>
+    <string name="managed_credential_explainer_body">ເພື່ອຮັບໃບຢັ້ງຢືນທີ່ຈັດການສຳລັບຄົນທີ່ທ່ານດູແລ, ໄປຍັງສະຖານທີ່ທີ່ເຂົ້າຮ່ວມພ້ອມກັນ. ຜູ້ຢັ້ງຢືນຈະກວດເບິ່ງບັດປະຈຳຕົວຂອງເຂົາເຈົ້າ. ເມື່ອທ່ານສະແກນລະຫັດ QR, ທ່ານຈະຖືກຖາມວ່າໃບຢັ້ງຢືນນີ້ແມ່ນສຳລັບທ່ານ ຫຼື ສຳລັບຄົນທີ່ທ່ານຈັດການ.</string>
+    <string name="managed_credential_explainer_find_location">ຄົ້ນຫາສະຖານທີ່</string>
+    <string name="managed_credential_explainer_have_qr">ຂ້ອຍມີລະຫັດ QR ຢູ່ແລ້ວ</string>
+    <!-- Managed Credential Explainer -->
+    <string name="managed_credential_explainer_title">ໃບຢັ້ງຢືນທີ່ຈັດການ</string>
+    <string name="sandbox_credential_type">ປະເພດໃບຢັ້ງຢືນ</string>
+    <string name="sandbox_managed_credential_saved">ບັນທຶກໃບຢັ້ງຢືນທີ່ຈັດການແລ້ວ (%s)</string>
+    <!-- Sandbox Mode Transition Announcement (W14-4.24) -->
+    <string name="sandbox_mode_enabled_announcement">ໂໝດ Sandbox ກຳລັງເຮັດວຽກຢູ່. ກະເປົາເງິນຖືກເຊື່ອມຕໍ່ກັບເຊີບເວີ Sandbox.</string>
+    <string name="sandbox_nickname_helper">ຕັ້ງຊື່ໃຫ້ໃບຢັ້ງຢືນນີ້ ເພື່ອໃຫ້ທ່ານສາມາດລະບຸໄດ້ໃນກະເປົາເງິນຂອງທ່ານ.</string>
+    <string name="sandbox_nickname_label">ຊື່ຫຼິ້ນ</string>
+    <string name="sandbox_nickname_placeholder">ຕົວຢ່າງ Sarah</string>
+    <string name="sandbox_nickname_required">ຕ້ອງການຊື່ຫຼິ້ນສຳລັບໃບຢັ້ງຢືນທີ່ຈັດການ</string>
+    <string name="sandbox_type_managed_credential">ໃບຢັ້ງຢືນທີ່ຈັດການ</string>
+    <string name="sandbox_type_your_credential">ໃບຢັ້ງຢືນຂອງທ່ານ</string>
+    <string name="title_find_apps">ຄົ້ນຫາແອັບທີ່ເຂົ້າຮ່ວມ</string>
+    <string name="title_find_locations">ຄົ້ນຫາສະຖານທີ່</string>
+    <string name="verification_go_to_attestation">ຮັບໃບຢັ້ງຢືນ</string>
+    <string name="verification_wrong_qr_type_message">ລະຫັດ QR ນີ້ແມ່ນສຳລັບຮັບໃບຢັ້ງຢືນໃໝ່, ບໍ່ແມ່ນສຳລັບການຢັ້ງຢືນອາຍຸ. ທ່ານຕ້ອງການໄປທີ່ໜ້າຈໍຮັບຮອງແທນບໍ?</string>
+    <!-- Translator Note: These strings appear when the wrong type of QR code is scanned during verification -->
+    <string name="verification_wrong_qr_type_title">ກວດພົບລະຫັດ QR ການຮັບຮອງ</string>
+    <string name="walkthrough_back">ກັບຄືນ</string>
+    <string name="walkthrough_get_started">ເລີ່ມຕົ້ນ</string>
+    <string name="walkthrough_next">ຕໍ່ໄປ</string>
+    <string name="walkthrough_page_indicator">ໜ້າ %1$d ຈາກ %2$d</string>
+    <string name="walkthrough_page1_body">ໃບຢັ້ງຢືນຂອງທ່ານປະກອບດ້ວຍອາຍຸຂອງທ່ານ. ບໍ່ມີສິ່ງອື່ນ. ບໍ່ມີຊື່, ບໍ່ມີທີ່ຢູ່, ບໍ່ມີຕົວຕົນຂອງທ່ານ.\n\nມັນຢັ້ງຢືນວ່າທ່ານມີອາຍຸເກີນ (ຫຼື ຕໍ່າກວ່າ) ອາຍຸທີ່ກຳນົດໂດຍບໍ່ເປີດເຜີຍວັນເດືອນປີເກີດຂອງທ່ານ.</string>
+    <!-- Walkthrough Page 1: What is a credential? -->
+    <string name="walkthrough_page1_heading">ໃບຢັ້ງຢືນແມ່ນຫຍັງ?</string>
+    <string name="walkthrough_page2_body">ທ່ານສາມາດຮັບໃບຢັ້ງຢືນຜ່ານແອັບຈາກບໍລິສັດທີ່ຮູ້ອາຍຸຂອງທ່ານແລ້ວ. ຕົວຢ່າງ ທະນາຄານຂອງທ່ານ ຫຼື ກອງທຶນສະສົມ. ເພາະພວກເຂົາໄດ້ຢັ້ງຢືນອາຍຸຂອງທ່ານແລ້ວ, ຈິ່ງບໍ່ຈຳເປັນຕ້ອງແບ່ງປັນສິ່ງໃດອີກ.\n\nອີກທາງເລືອກໜຶ່ງ, ໄປຍັງສະຖານທີ່ທີ່ເຂົ້າຮ່ວມພ້ອມບັດປະຈຳຕົວທີ່ຢັ້ງຢືນວັນເດືອນປີເກີດຂອງທ່ານ. ວັນເດືອນປີເກີດຂອງທ່ານຖືກກວດເບິ່ງ, ໃຊ້ເພື່ອສ້າງໃບຢັ້ງຢືນຂອງທ່ານ, ແລ້ວຈິ່ງຖືກຍົກເລີກ. ຜູ້ອອກບໍ່ເຫັນໃບຢັ້ງຢືນຂອງທ່ານ. ຕົວຕົນຂອງທ່ານບໍ່ໄດ້ຖືກຜູກກັບມັນ.</string>
+    <!-- Walkthrough Page 2: How do you get one? -->
+    <string name="walkthrough_page2_heading">ທ່ານໄດ້ຮັບແນວໃດ?</string>
+    <string name="walkthrough_page3_body">ຖ້າທ່ານດູແລຄົນທີ່ຕ້ອງການໃບຢັ້ງຢືນອາຍຸ, ທ່ານສາມາດຮັບໃບຢັ້ງຢືນສຳລັບເຂົາເຈົ້າ ແລະ ຈັດການມັນຢູ່ໃນອຸປະກອນຂອງທ່ານ.\n\nໄປຍັງສະຖານທີ່ທີ່ເຂົ້າຮ່ວມພ້ອມກັນ ພ້ອມບັດປະຈຳຕົວທີ່ຢັ້ງຢືນວັນເດືອນປີເກີດຂອງເຂົາເຈົ້າ. ເມື່ອທ່ານສະແກນລະຫັດ QR, ທ່ານຈະຖືກຖາມວ່າໃບຢັ້ງຢືນນີ້ແມ່ນສຳລັບທ່ານ ຫຼື ສຳລັບຄົນທີ່ທ່ານຈັດການ.\n\nເພີ່ມຊື່ຫຼິ້ນເພື່ອໃຫ້ທ່ານສາມາດແຍກໃບຢັ້ງຢືນຂອງເຂົາເຈົ້າອອກຈາກກັນ.</string>
+    <!-- Walkthrough Page 3: Dependants -->
+    <string name="walkthrough_page3_heading">ຜູ້ທີ່ຕ້ອງເບິ່ງແຍງ</string>
+    <string name="walkthrough_page4_body">ແອັບທີ່ພະຍາຍາມຢັ້ງຢືນອາຍຸຂອງທ່ານສາມາດສົ່ງການທ້າທາຍໂດຍກົງໄປຫາກະເປົາເງິນ Provii ຂອງທ່ານ. ທ່ານເລືອກໃບຢັ້ງຢືນທີ່ຈະໃຊ້. ເມື່ອການຢັ້ງຢືນສຳເລັດ, ທ່ານຈະຖືກນຳກັບໄປຫາແອັບທີ່ຮ້ອງຂໍ ແລະ ສາມາດດຳເນີນການຕໍ່ໃນຖານະທີ່ຢັ້ງຢືນແລ້ວ.\n\nອີກທາງເລືອກໜຶ່ງ, ທ່ານອາດຈະເຫັນລະຫັດ QR ຢູ່ໃນອຸປະກອນອື່ນ, ຫຼື ລິ້ງໃນບຣາວເຊີມືຖືຂອງທ່ານທີ່ໄປຫາກະເປົາເງິນຂອງທ່ານໂດຍກົງ. ຍັງມີຕົວເລືອກລະຫັດສັ້ນສຳລັບການເຂົ້າເຖິງ.\n\nບໍ່ມີຂໍ້ມູນສ່ວນຕົວໃດໆຖືກແບ່ງປັນ. ພຽງແຕ່ຄຳຕອບແມ່ນ ຫຼື ບໍ່ ຕໍ່ການວ່າທ່ານກົງຕາມເງື່ອນໄຂອາຍຸ.</string>
+    <!-- Walkthrough Page 4: How does verification work? -->
+    <string name="walkthrough_page4_heading">ການຢັ້ງຢືນເຮັດວຽກແນວໃດ?</string>
+    <string name="walkthrough_page5_body">ຂັ້ນຕອນທຳອິດຂອງທ່ານແມ່ນຮັບໃບຢັ້ງຢືນຜ່ານແອັບທີ່ເຂົ້າຮ່ວມ ຫຼື ຢູ່ສະຖານທີ່ໃກ້ທ່ານ.\n\nຈາກນັ້ນ, ທ່ານສາມາດຢັ້ງຢືນອາຍຸຂອງທ່ານໄດ້ທຸກເມື່ອທີ່ຈຳເປັນ, ໂດຍບໍ່ຕ້ອງແບ່ງປັນຂໍ້ມູນສ່ວນຕົວໃດໆ. ທ່ານຍັງສາມາດຈັດການໃບຢັ້ງຢືນສຳລັບຄົນທີ່ທ່ານດູແລໄດ້.</string>
+    <!-- Walkthrough Page 5: You are all set -->
+    <string name="walkthrough_page5_heading">ທ່ານພ້ອມແລ້ວ</string>
+    <!-- Translator Note: These strings appear in the post-setup walkthrough that explains how the app works -->
+    <string name="walkthrough_skip">ຂ້າມ</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

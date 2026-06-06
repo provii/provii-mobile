@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    MASVS-CODE-1: FileProvider paths restricted to specific subdirectories
+    Prevents overly broad file access that could expose sensitive data
+-->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Restrict external files to specific subdirectory for sharing -->
+    <external-files-path
+        name="shared_files"
+        path="shared/" />
+
+    <!-- Restrict cache to specific subdirectory for temporary files -->
+    <cache-path
+        name="image_cache"
+        path="images/" />
+
+    <!-- Restrict internal files to specific subdirectory -->
+    <files-path
+        name="exports"
+        path="exports/" />
+</paths>

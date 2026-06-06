@@ -1,0 +1,42 @@
+# Zizmor configuration for provii-mobile.
+#
+# Suppresses high-severity findings that are accepted risks for this repo.
+# Each rule entry documents why the finding is suppressed.
+
+rules:
+  # cache-poisoning: actions/cache and ruby/setup-ruby (with bundler-cache: true)
+  # are used in release/build flows that already require trusted tag pushes
+  # and protected secrets. The release/testflight/fad workflows trigger only
+  # on tag push or workflow_dispatch by maintainers. Caches are scoped per
+  # workflow and per-key, and the runners do not publish artefacts back to a
+  # registry that downstream consumers trust. Accepting the residual risk.
+  cache-poisoning:
+    ignore:
+      - android-fad.yml
+      - ios-testflight.yml
+      - release.yml
+
+  # dangerous-triggers: cla.yml uses pull_request_target intentionally so the
+  # CLA check can comment on PRs from forks. The workflow does not check out
+  # the PR head and only runs the contributor-assistant action with locked
+  # inputs. This is the canonical pattern for CLA bots.
+  dangerous-triggers:
+    ignore:
+      - cla.yml
+
+  # template-injection: ios-build.yml interpolates github.event.inputs.export_method
+  # into an ExportOptions.plist. Inputs come from workflow_dispatch only and are
+  # constrained to maintainer-supplied values. ios-testflight.yml interpolates
+  # inputs.changelog_override which is similarly maintainer-controlled via
+  # workflow_dispatch. Both are not attacker-reachable.
+  template-injection:
+    ignore:
+      - ios-build.yml
+      - ios-testflight.yml
+
+  # unpinned-uses: slsa-framework/slsa-github-generator must be referenced by tag
+  # because SLSA provenance verification relies on the tag-signed reusable workflow.
+  # Pinning to a SHA breaks the SLSA generator's own attestation chain.
+  unpinned-uses:
+    ignore:
+      - release.yml

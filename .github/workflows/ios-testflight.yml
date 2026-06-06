@@ -1,0 +1,132 @@
+# iOS TestFlight pipeline.
+#
+# Triggers:
+#   - push of any tag matching v*  (production releases)
+#   - workflow_dispatch              (manual TestFlight rebuilds)
+#
+# Single-bundle architecture: the TestFlight build always carries
+# bundle id `app.provii.wallet`. Sandbox vs production is a runtime
+# toggle inside the app, not a separate bundle.
+#
+# Required secrets:
+#   APP_STORE_CONNECT_API_KEY_JSON  base64-encoded JSON {key_id,issuer_id,key}
+#   IOS_KEYCHAIN_PASSWORD            ephemeral keychain unlock password
+#   SLACK_WEBHOOK_URL                optional Slack notification target
+#
+# Tim must populate these once the App Store Connect API key exists.
+
+name: iOS TestFlight
+
+on:
+  # TestFlight publishing is deliberate (needs Apple App Store Connect secrets
+  # and a macOS runner): dispatch-only, not auto-fired on tags.
+  workflow_dispatch:
+    inputs:
+      changelog_override:
+        description: 'Override the auto-generated TestFlight changelog'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+  actions: read
+  id-token: write  # required for cosign keyless signing
+
+concurrency:
+  group: ios-testflight-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  testflight:
+    name: Upload to TestFlight
+    runs-on: macos-15
+    timeout-minutes: 90
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: false  # Sigstore + keychain operations need sudo
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          fetch-depth: 0  # tag history needed for changelog generation
+          persist-credentials: false
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@c4e5b1316158f92e3d49443a9d58b31d25ac0f8f # v1.306.0
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+          working-directory: ios
+
+      - name: Install Cosign
+        uses: sigstore/cosign-installer@6f9f17788090df1f26f669e9d70d6ae9567deba6 # v4.1.2
+        with:
+          cosign-release: 'v2.4.1'
+
+      - name: Cache CocoaPods
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            ios/Pods
+            ~/Library/Caches/CocoaPods
+          key: pods-${{ runner.os }}-${{ hashFiles('ios/Podfile.lock') }}
+          restore-keys: |
+            pods-${{ runner.os }}-
+
+      - name: Cache Swift Package Manager
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: |
+            ~/Library/Developer/Xcode/DerivedData/**/SourcePackages
+            ~/Library/Caches/org.swift.swiftpm
+          key: spm-${{ runner.os }}-${{ hashFiles('ios/**/Package.resolved') }}
+          restore-keys: |
+            spm-${{ runner.os }}-
+
+      - name: Select Xcode
+        run: |
+          sudo xcode-select -s /Applications/Xcode_16.app/Contents/Developer
+          xcodebuild -version
+
+      - name: Run beta lane
+        env:
+          APP_STORE_CONNECT_API_KEY_JSON: ${{ secrets.APP_STORE_CONNECT_API_KEY_JSON }}
+          IOS_KEYCHAIN_PASSWORD: ${{ secrets.IOS_KEYCHAIN_PASSWORD }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          FASTLANE_HIDE_CHANGELOG: '1'
+          FASTLANE_SKIP_GIT_CLEAN: '1'
+          FASTLANE_DISABLE_COLORS: '1'
+          COSIGN_EXPERIMENTAL: '1'
+          CHANGELOG_OVERRIDE: ${{ inputs.changelog_override }}
+        working-directory: ios
+        run: |
+          set -euo pipefail
+          if [ -n "$CHANGELOG_OVERRIDE" ]; then
+            export FASTLANE_CHANGELOG_OVERRIDE="$CHANGELOG_OVERRIDE"
+          fi
+          bundle exec fastlane beta
+
+      - name: Upload Sigstore attestation
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: ios-sigstore-attestation-${{ github.sha }}
+          path: |
+            ios/build/attestations/ProviiWallet.ipa.sig
+            ios/build/attestations/ProviiWallet.ipa.pem
+            ios/build/attestations/ProviiWallet.ipa.sha256
+          retention-days: 90
+          if-no-files-found: warn
+
+      - name: Upload IPA
+        if: success()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: ios-ipa-${{ github.sha }}
+          path: ios/build/ProviiWallet.ipa
+          retention-days: 30
+          if-no-files-found: error

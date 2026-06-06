@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- ============================= -->
+    <!-- Basic App Information         -->
+    <!-- ============================= -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    
+    <key>CFBundleDisplayName</key>
+    <string>Provii Wallet</string>
+    
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    
+    <key>CFBundleShortVersionString</key>
+    <string>0.1.0</string>
+    
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <key>CFBundleLocalizations</key>
+    <array>
+        <string>af</string>
+        <string>am</string>
+        <string>ar</string>
+        <string>az</string>
+        <string>bg</string>
+        <string>bn</string>
+        <string>bs</string>
+        <string>ca</string>
+        <string>cs</string>
+        <string>da</string>
+        <string>de</string>
+        <string>el</string>
+        <string>en</string>
+        <string>es</string>
+        <string>fa</string>
+        <string>fi</string>
+        <string>fil</string>
+        <string>fr</string>
+        <string>he</string>
+        <string>hi</string>
+        <string>hr</string>
+        <string>hu</string>
+        <string>id</string>
+        <string>it</string>
+        <string>ja</string>
+        <string>ka</string>
+        <string>km</string>
+        <string>kn</string>
+        <string>ko</string>
+        <string>lo</string>
+        <string>lt</string>
+        <string>lv</string>
+        <string>mk</string>
+        <string>ml</string>
+        <string>mr</string>
+        <string>ms</string>
+        <string>nb</string>
+        <string>ne</string>
+        <string>nl</string>
+        <string>pa</string>
+        <string>pl</string>
+        <string>pt-BR</string>
+        <string>ro</string>
+        <string>ru</string>
+        <string>si</string>
+        <string>sk</string>
+        <string>so</string>
+        <string>sr</string>
+        <string>sv</string>
+        <string>sw</string>
+        <string>ta</string>
+        <string>te</string>
+        <string>th</string>
+        <string>tr</string>
+        <string>uk</string>
+        <string>ur</string>
+        <string>vi</string>
+        <string>zh-Hans</string>
+        <string>zh-Hant-HK</string>
+    </array>
+
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    
+    <!-- ============================= -->
+    <!-- Scene Configuration           -->
+    <!-- ============================= -->
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <true/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+    
+    <key>UIApplicationSupportsIndirectInputEvents</key>
+    <true/>
+    
+    <!-- ============================= -->
+    <!-- Launch Screen                 -->
+    <!-- ============================= -->
+    <key>UILaunchScreen</key>
+    <dict>
+        <key>UIImageName</key>
+        <string>LaunchIcon</string>
+        <key>UIColorName</key>
+        <string>SplashBackground</string>
+    </dict>
+    
+    <!-- ============================= -->
+    <!-- Device Capabilities           -->
+    <!-- ============================= -->
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>arm64</string>
+    </array>
+    
+    <!-- ============================= -->
+    <!-- Interface Orientations        -->
+    <!-- ============================= -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <!-- ============================= -->
+    <!-- Privacy Permissions           -->
+    <!-- ============================= -->
+    
+    <!-- Camera for QR code scanning -->
+    <key>NSCameraUsageDescription</key>
+    <string>Provii Wallet needs camera access to scan QR codes for credential pickup and age verification.</string>
+    
+    <!-- NFC for YubiKey communication -->
+    <key>NFCReaderUsageDescription</key>
+    <string>Provii Wallet uses NFC to communicate with your YubiKey for secure officer authentication.</string>
+    
+    <!-- Speech Recognition -->
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>Provii Wallet uses speech recognition for voice commands in accessibility mode, allowing you to control the app hands-free.</string>
+
+    <!-- Microphone for Voice Input -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Provii Wallet needs microphone access for voice control features when accessibility mode is enabled.</string>
+
+    <!-- Face ID / Touch ID for biometric authentication -->
+    <key>NSFaceIDUsageDescription</key>
+    <string>Provii Wallet uses Face ID to securely access your age credentials and verify your identity.</string>
+    
+    <!-- Local Network (optional - for mDNS/Bonjour if needed) -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Provii Wallet may use local network to discover nearby credential issuers.</string>
+    
+    <!-- Bluetooth (optional - if using Bluetooth YubiKey) -->
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Provii Wallet may use Bluetooth to communicate with YubiKey devices.</string>
+    
+    <!-- ============================= -->
+    <!-- YubiKey External Accessory    -->
+    <!-- ============================= -->
+    <key>UISupportedExternalAccessoryProtocols</key>
+    <array>
+        <string>com.yubico.yubikey.accessory.otp</string>
+        <string>com.yubico.yubikey.accessory.u2f</string>
+        <string>com.yubico.yubikey.accessory.fido2</string>
+    </array>
+    
+    <!-- ============================= -->
+    <!-- URL Scheme Queries            -->
+    <!-- ============================= -->
+    <!-- Required for JailbreakDetector URL scheme checks (iOS 9+) -->
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>cydia</string>
+        <string>sileo</string>
+        <string>zbra</string>
+        <string>filza</string>
+        <string>undecimus</string>
+    </array>
+
+    <!-- ============================= -->
+    <!-- App Transport Security        -->
+    <!-- ============================= -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <!-- Disable arbitrary loads by default for security -->
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+        
+        <!-- Allow localhost for development/testing -->
+        <key>NSAllowsLocalNetworking</key>
+        <true/>
+        
+        <!-- Allowed API domains -->
+        <key>NSExceptionDomains</key>
+        <dict>
+            <!-- Production APIs -->
+            <key>provii.app</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+            </dict>
+            
+            <!-- ZeroKP Verification -->
+            <key>verify.provii.app</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+            </dict>
+            
+            <!-- Provii Wallet domains -->
+            
+            <!-- Demo/Testing domain -->
+            <key>invokeprovii.com</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+            </dict>
+            
+            <!-- Sandbox domains -->
+            <key>sandbox-verify.provii.app</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+            </dict>
+            
+            <key>sandbox-issuer.provii.app</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+            </dict>
+            
+            <!-- Staging domains -->
+            <key>staging-verify.provii.app</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+            </dict>
+            
+            <key>staging-issuer.provii.app</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+            </dict>
+            
+            <!-- Development domains -->
+            <key>dev-verify.provii.app</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+            </dict>
+            
+            <key>dev-issuer.provii.app</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+            </dict>
+        </dict>
+    </dict>
+    
+    <!-- ============================= -->
+    <!-- Status Bar Configuration      -->
+    <!-- ============================= -->
+    <key>UIStatusBarStyle</key>
+    <string>UIStatusBarStyleDefault</string>
+    
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <false/>
+    
+    <!-- ============================= -->
+    <!-- Custom Properties             -->
+    <!-- ============================= -->
+    <!-- Environment configuration -->
+    <key>API_ENVIRONMENT</key>
+    <string>production</string>
+
+    <!-- Feature flags -->
+    <key>ENABLE_DEBUG_LOGGING</key>
+    <false/>
+
+    <!-- Background task identifiers (sandbox credential auto-refresh) -->
+    <key>BGTaskSchedulerPermittedIdentifiers</key>
+    <array>
+        <string>app.provii.wallet.sandbox.refresh</string>
+    </array>
+
+    <!-- Background modes required for BGAppRefreshTask -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>fetch</string>
+        <string>processing</string>
+    </array>
+
+    <!-- ============================= -->
+    <!-- Custom Fonts (Dyslexia-Friendly) -->
+    <!-- ============================= -->
+    <!-- OpenDyslexic Font - SIL OFL License -->
+    <!-- https://github.com/antijingoist/opendyslexic -->
+    <!-- NOTE: Font files not yet added to Resources/Fonts directory -->
+    <!-- <key>UIAppFonts</key>
+    <array>
+        <string>Fonts/OpenDyslexic-Regular.ttf</string>
+        <string>Fonts/OpenDyslexic-Bold.ttf</string>
+        <string>Fonts/OpenDyslexic-Italic.ttf</string>
+        <string>Fonts/OpenDyslexic-BoldItalic.ttf</string>
+    </array> -->
+
+</dict>
+</plist>

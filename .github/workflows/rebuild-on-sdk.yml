@@ -1,0 +1,50 @@
+# =============================================================================
+# Rebuild on provii-mobile-sdk Release
+# =============================================================================
+# This workflow triggers a CI rebuild when provii-mobile-sdk releases a new version.
+# It uses repository_dispatch events sent from the provii-mobile-sdk release workflow.
+# =============================================================================
+
+name: Rebuild on provii-mobile-sdk Release
+
+on:
+  repository_dispatch:
+    types: [provii-mobile-sdk-release]
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: rebuild-sdk-${{ github.event.client_payload.version }}
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    name: Trigger CI with new provii-mobile-sdk
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Log provii-mobile-sdk version
+        env:
+          SDK_VERSION: ${{ github.event.client_payload.version }}
+        run: |
+          echo "## provii-mobile-sdk Release Trigger" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Version:** ${SDK_VERSION}" >> $GITHUB_STEP_SUMMARY
+          echo "**Triggered at:** $(date -u)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Triggering CI workflow to rebuild with new provii-mobile-sdk artifacts..." >> $GITHUB_STEP_SUMMARY
+
+      - name: Trigger CI workflow
+        uses: benc-uk/workflow-dispatch@7a027648b88c2413826b6ddd6c76114894dc5ec4 # v1.3.1
+        with:
+          workflow: ci.yml
+          token: ${{ secrets.GITHUB_TOKEN }}

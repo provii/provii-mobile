@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    MASVS-STORAGE-1: Backup exclusion rules for sensitive data
+    Ensures encrypted SharedPreferences and wallet data are not backed up
+-->
+<full-backup-content>
+    <!-- Exclude all encrypted SharedPreferences (contain sensitive wallet data) -->
+    <exclude domain="sharedpref" path="provii_pin_prefs.xml"/>
+    <exclude domain="sharedpref" path="wallet_prefs_encrypted.xml"/>
+    <exclude domain="sharedpref" path="wallet_environment.xml"/>
+    <!-- MASVS-CODE-1: Exclude privacy preferences (EncryptedSharedPreferences) -->
+    <exclude domain="sharedpref" path="privacy_preferences_secure.xml"/>
+    <!-- Exclude secure preferences manager storage -->
+    <exclude domain="sharedpref" path="secure_prefs.xml"/>
+    <!-- Exclude native keystore manager storage -->
+    <exclude domain="sharedpref" path="native_keystore_prefs.xml"/>
+    <!-- Exclude data preservation manager (encrypted form data) -->
+    <exclude domain="sharedpref" path="data_preservation_secure.xml"/>
+    <!-- Exclude deep link nonce tracking (EncryptedSharedPreferences) -->
+    <exclude domain="sharedpref" path="provii_deeplink_nonces.xml"/>
+    <!-- Exclude secure wallet storage (EncryptedSharedPreferences) -->
+    <exclude domain="sharedpref" path="provii_wallet_secure.xml"/>
+    <!-- Exclude session storage (EncryptedSharedPreferences) -->
+    <exclude domain="sharedpref" path="provii_wallet_session.xml"/>
+    <!-- Exclude wallet database -->
+    <exclude domain="database" path="wallet.db"/>
+    <!-- Exclude all keystore-related files -->
+    <exclude domain="root" path="."/>
+</full-backup-content>

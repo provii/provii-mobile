@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Dejinta</string>
+    <string name="title_accessibility">Helitaanka</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Hel Warqadaha Aqoonsiga</string>
+    <string name="title_scan_verification_qr">Sawir koodhka QR ee xaqiijinta</string>
+    <string name="title_verifying_age">Xaqiijinta Da\'da</string>
+    <string name="title_age_verified">Da\'da Waa La Xaqiijiyay</string>
+    <string name="title_verification_failed">Xaqiijintu Waa Fashilantay</string>
+    <string name="title_officer_mode">Qaabka Sarkaalka</string>
+    <string name="title_officer_dashboard">Shabakadda Sarkaalka</string>
+    <string name="title_issue_credential">Bixinta Warqadda Aqoonsiga</string>
+    <string name="title_credential_ready">Warqadda Aqoonsiga Waa Diyaar</string>
+    <string name="title_get_your_credential">Hel Warqaddaada Aqoonsiga</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Ku soo dhawow Provii Wallet</string>
+    <string name="welcome_subtitle">Xaqiijinta da\'da oo ammaan ah oo fudud</string>
+    <string name="welcome_first_credential">Bilow adiga oo ku daraya warqaddaada aqoonsiga ee xaqiijinta da\'da ee ugu horreysa</string>
+    <string name="welcome_description">Xaqiijinta da\'da ee asturnaanta adoo isticmaalaya caddayn aqoon-la\'aan</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Ku soo dhawow Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Dooro afkaaga aad doorbideyso</string>
+    <string name="onboarding_use_english">Isticmaal Ingiriisi</string>
+    <string name="onboarding_use_english_description">Sii wad adoo Ingiriiska u isticmaalaya luqadda app-ka</string>
+    <string name="onboarding_rotating_button_description">Badhanka Beddel Luqadda, hadda wuxuu muujinayaa: %1$s. Taabo si aad luqad kale u doorato.</string>
+    <string name="onboarding_change_later">Waxaad tan bedeli kartaa dambe Goobaha</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Helitaanka</string>
+    <string name="onboarding_accessibility_desc">Ma jeclaan lahayd inaad habaynto astaamaha helitaanka sida cabbirka qoraalka, bartilmaameedyada taabashada, ama dhaqdhaqaaqa yaraanshaha?</string>
+    <string name="onboarding_use_defaults">Isticmaal Default-ka</string>
+    <string name="onboarding_use_defaults_description">Sii wad adoo isticmaalaya goobaha helitaanka caadiga ah</string>
+    <string name="onboarding_open_accessibility">Goobaha Helitaanka</string>
+    <string name="onboarding_open_accessibility_description">Fur goobaha helitaanka si aad u habaynto app-ka</string>
+    <string name="onboarding_accessibility_later">Waxaad tan bedeli kartaa dambe Goobaha</string>
+    <string name="onboarding_accessibility_features_title">Astaamaha la heli karo waxaa ka mid ah:</string>
+    <string name="onboarding_feature_text_size">Cabbirada qoraalka ee waaweyn</string>
+    <string name="onboarding_feature_touch_targets">Bartilmaameedyada taabashada oo kordhay</string>
+    <string name="onboarding_feature_reduce_motion">Yaraynta dhaqdhaqaaqa</string>
+    <string name="onboarding_feature_high_contrast">Qaabka kala-duwanaanshaha sare</string>
+    <string name="onboarding_talkback_detected">TalkBack Waa La Ogaaday</string>
+    <string name="onboarding_talkback_message">Waxaan awood u siinnay sharaxaadaha faahfaahsan si kaaga caawiso marin-habaynta app-ka.</string>
+    <string name="onboarding_continue_to_setup">Sii wad Dejinta</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Dejin hal-mar ah ayaa loo baahan yahay</string>
+    <string name="setup_download_required">Soo dejin ayaa loo baahan yahay</string>
+    <string name="setup_download_description">App-kani wuxuu u baahan yahay inuu soo dejisto qaybaha amniga ee caddayn aqoon-la\'aan (ku dhawaad 87 MB).</string>
+    <string name="setup_wifi_recommended">Wi-Fi ayaa lagu talinayaa</string>
+    <string name="setup_checking_status">Hubi xaaladda dejinta...</string>
+    <string name="setup_already_setup">Hormar Waa La Dejiyay!</string>
+    <string name="setup_ready_message">Boorsaddaadu waxay diyaar u tahay xaqiijinta da\'da ee ammaan ah</string>
+    <string name="setup_preparing">Diyaarinaya nidaamka xaqiijinta ee ammaan ah...</string>
+    <string name="setup_checking_components">Hubinaya qaybaha amniga...</string>
+    <string name="setup_downloading">Soo dejinaya qaybaha amniga</string>
+    <string name="setup_download_progress_description">%1$d%% waa dhamaatay (%2$s MB oo ka mid ah %3$s MB ayaa la soo dejistay)</string>
+    <string name="setup_initializing">Bilaabaynaya qaybaha amniga...</string>
+    <string name="setup_complete">Dejintu Waa Dhamaatay!</string>
+    <string name="setup_download_info">Tani waxay awood u siinaysaa caddayn aqoon-la\'aan ee xaqiijinta da\'da ee asturnaanta</string>
+    <string name="setup_one_time_download">Soo dejin hal-mar ah</string>
+    <string name="setup_stuck_message">Tani waxay ka qaadatay waqti ka badan inta la filayay</string>
+    <string name="setup_stuck_description">Dejintu laga yaabaa inay u dhacday. Isku day dib u bilaabashada.</string>
+    <string name="setup_restart_message">App-ka wuu u baahan yahay inuu dib u bilaabo. Tan marmar waxay dhacaysaa markii la bilaabo markii ugu horreysa.</string>
+    <string name="setup_storage_full">Kaydka Waa Ka Buuxay</string>
+    <string name="setup_connection_error">Khalad Xiriirka</string>
+    <string name="setup_failed">Dejintu Waa Fashilantay</string>
+    <string name="setup_initialization_error">Khalad Bilaabaynta</string>
+    <string name="error_storage_init_failed">Bilaabaynta kaydka ayaa fashilantay. Fadlan dib u bilaab app-ka.</string>
+    <string name="error_storage_init_close_restart">Bilaabaynta kaydka ayaa fashilantay. Fadlan xidid oo dib u bilaab app-ka.</string>
+    <string name="setup_free_storage_message">Xor u gaar ugu yaraan 65 MB ka dibna isku day mar kale</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Asturnaanta Waa La Ilaalinayaa</string>
+    <string name="setup_privacy_description">Xaqiijinta da\'daadu waxay isticmaashaa caddayn aqoon-la\'aan. Taariikhda dhalashadaadu weligeed lama wadaagaan.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Warqadahayga Aqoonsiga</string>
+    <string name="credentials_empty">Warqado aqoonsiga lama kaydin</string>
+    <string name="credential_active">Warqadda Aqoonsiga Waa Firfircoon</string>
+    <string name="credential_expired">Warqadda Aqoonsiga Waa Dhacday</string>
+    <string name="credential_ready_for_verification">Diyaar u ah xaqiijinta</string>
+    <string name="credential_expired_message">Warqaddaada aqoonsiga waa dhacday oo u baahan tahay in la beddelo</string>
+    <string name="credential_stored_successfully">Warqadda Aqoonsiga Si Guul ah Ayaa Loo Kaydiyo</string>
+    <string name="credential_stored_description">Warqaddaada aqoonsiga da\'da si ammaan ah ayaa loo kaydiyay waxayna diyaar u tahay isticmaalka</string>
+    <string name="credential_can_prove_age">Hadda waxaad si gaar ah u xaqiijin kartaa da\'daada</string>
+    <string name="credential_returning">Ku noqonaya warqadaha aqoonsiga...</string>
+    <string name="credential_view_credentials">Arag Warqadaha Aqoonsiga</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Dhammaystay</string>
+    <string name="action_scan_qr_code">Sawir koodhka QR</string>
+    <string name="action_find_locations">Raadi Goobaha</string>
+    <string name="action_get_credential">Hel warqadda aqoonsiga</string>
+    <string name="action_replace_credential">Ku beddel Warqadda Aqoonsiga Cusub</string>
+    <string name="action_replace_credential_now">Ku beddel Warqadda Aqoonsiga Hada</string>
+    <string name="action_delete_credential">Tirtir warqadda aqoonsiga</string>
+    <string name="credential_action_scan_description">Hel warqadda aqoonsiga ee bixiyaha la ogolaanshahay</string>
+    <string name="credential_action_find_description">Ogaansho bixiyeyaasha deegaanka</string>
+    <string name="credential_remove_description">Ka saar warqadda aqoonsiga ee hadda jirta</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Asturnaanta</string>
+    <string name="credential_info_privacy_value">La ilaalinayaa</string>
+    <string name="credential_info_status">Xaaladda</string>
+    <string name="credential_info_status_value">Sax ah</string>
+    <string name="credential_tip_title">Tilmaanta Degdegga ah</string>
+    <string name="credential_tip_message">Taabo badhanka \'Xaqiiji Da\'da\' si aad u sawirto koodhyada QR ee xaqiijinta ee meelaha ka qaybgalaya.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">Sawir koodhka QR</string>
+    <string name="verification_verify_age">Xaqiiji Da\'da</string>
+    <string name="verification_generating_proof">Samaynaya caddaynta...</string>
+    <string name="verification_success">Xaqiijintu waa guulaysatay</string>
+    <string name="verification_failed">Xaqiijintu Waa Fashilantay</string>
+    <string name="verification_age_verified">Da\'da Waa La Xaqiijiyay</string>
+    <string name="verification_age_verified_message">Da\'daadu si gaar ah ayaa loo xaqiijiyay</string>
+    <string name="verification_can_return">Hadda waxaad ku noqon kartaa goobta si aad u sii wadato.</string>
+    <string name="verification_returning_browser">Ku noqonaya browserka...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">Tallaabada 1 oo ka mid ah 2</string>
+    <string name="verification_step_2_of_2">Tallaabada 2 oo ka mid ah 2</string>
+    <string name="verification_point_camera">U fiirso kamiradda koodhka QR ee xaqiijinta</string>
+    <string name="verification_hold_steady">Haysato xasilloon ilaa aad maqasho codka xaqiijinta.</string>
+    <string name="verification_reading_request">Akhrinta codsiga xaqiijinta...</string>
+    <string name="verification_processing_challenge">Hawlgalinaya caqabadda...</string>
+    <string name="verification_creating_proof">Samaynaya caddaynta da\'da...</string>
+    <string name="verification_submitting_proof">Gudbinaya caddaynta...</string>
+    <string name="verification_processing_message">Tani laga yaabaa inay qaadato dhowr ilbiriqsi</string>
+    <string name="verification_preparing_proof">Waxaan diyaarinayaa caddayn gaara adoo isticmaalaya warqaddaada aqoonsiga ee la kaydiyay.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Akhrinta codsiga xaqiijinta...</string>
+    <string name="verification_status_processing_challenge">Hawlgalinaya caqabadda...</string>
+    <string name="verification_status_creating_proof">Samaynaya caddaynta da\'da...</string>
+    <string name="verification_status_submitting_proof">Gudbinaya caddaynta...</string>
+    <string name="verification_status_verified">✔ Da\'da waa la xaqiijiyay</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Lama muujin karo xogta xaqiijinta</string>
+    <string name="verification_error_verification_failed">Xaqiijintu waa fashilantay</string>
+    <string name="verification_error_generic">Khalad ayaa dhacay</string>
+    <string name="verification_error_failed_to_process_code">Hawlgalinay koodhka ayaa fashilantay</string>
+    <string name="verification_error_failed_to_process_challenge">Hawlgalinay caqabadda ayaa fashilantay</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Bixiyeyaasha la aaminsan yahay ee Australiya</string>
+    <string name="issuers_loading">Soo raraya bixiyeyaasha...</string>
+    <string name="issuers_loaded">Bixiyeyaasha si guul ah ayaa loo soo raray</string>
+    <string name="issuers_unable_to_load">Lama soo rari karo bixiyeyaasha</string>
+    <string name="issuers_check_connection">Hubi xiriirkaaga internetka ka dibna isku day mar kale</string>
+    <string name="issuers_categories_header">QAYBAHA</string>
+    <string name="issuers_available_header">BIXIYEYAASHA LA HELI KARO</string>
+    <string name="issuers_found_count">%d ayaa la helay</string>
+    <string name="issuer_status_coming_soon">Dhowaan Ayuu Imaanayaa</string>
+    <string name="issuer_status_verified">Xaqiijiyay</string>
+    <string name="issuer_how_to_get">Sida loo helayo warqadda aqoonsiga</string>
+    <string name="issuer_service_locations">Goobaha Adeegga</string>
+    <string name="issuer_visit_website">Booqo goobta %s</string>
+    <string name="issuer_learn_more">Wax badan ka baro %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Bangiyada</string>
+    <string name="category_super_fund">Sanduuqa Super</string>
+    <string name="category_government">Dowladda</string>
+    <string name="category_travel">Safarka</string>
+    <string name="category_telco">Xiriirka</string>
+    <string name="category_insurance">Caymiska</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Goobaha</string>
+    <string name="settings_section_sandbox">Qaabka Sandbox</string>
+    <string name="settings_section_general">Guud</string>
+    <string name="settings_section_credentials">Warqadaha Aqoonsiga</string>
+    <string name="settings_section_advanced">Horumarsan</string>
+    <string name="settings_section_privacy">Asturnaanta</string>
+    <string name="settings_security">Amminimada</string>
+    <string name="settings_biometric">Isticmaal xaqiijinta bayoolajiga</string>
+    <string name="settings_environment">Goobaha deegaanka</string>
+    <string name="settings_environment_description">Arag habaynta deegaanka ee hadda jirta</string>
+    <string name="settings_reset_proving_key">Dib u dejinta furaha caddaynta</string>
+    <string name="settings_reset_proving_key_description">Dib u soo dej qaybaha amniga (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Sii Warqadda Aqoonsiga Tijaabada ah Adigoo Bixiye</string>
+    <string name="settings_mint_test_credential_subtitle">U sii warqad aqoonsi tijaabo ah boorsadaada si aad uga xaqiijin karto bandhig dhinac ku tiirsan.</string>
+    <string name="settings_find_trusted_issuers">Raadi bixiyeyaasha la aaminsan yahay</string>
+    <string name="settings_version">Nooca: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Taabo 5 jeer si aad u beddesho</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Luqadda</string>
+    <string name="language_selection_description">Dooro luqaddaada aad doorbideyso. App-ku wuu dib u bilaabi doonaa si uu isbeddelka u dabaqo.</string>
+    <string name="language_selected">La doortay</string>
+    <string name="settings_language">Luqadda</string>
+    <string name="settings_language_description">Beddel luqadda app-ka</string>
+    <string name="settings_licenses">Rukhsadaha Isha Furan</string>
+    <string name="settings_licenses_description">Arag rukhsadaha dhinaca saddexaad</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Xaqiiji Luqadda</string>
+    <string name="language_change_to">Beddel luqadda:</string>
+    <string name="language_restart_notice">App-ku wuu dib u bilaabi doonaa si uu luqaddaas u dabaqo.</string>
+    <string name="language_apply">Dabaq</string>
+    <string name="language_cancel">Jooji</string>
+    <string name="language_skip_title">U bood Xulashada Luqadda?</string>
+    <string name="language_skip_message">Haddaad u booddid, app-ku wuxuu isticmaali doonaa Ingiriisiga default ahaan. Waxaad luqadda dambe bedeli kartaa Goobaha.</string>
+    <string name="language_use_english">Isticmaal Ingiriisi</string>
+    <string name="language_go_back">Dib u noqo</string>
+    <string name="language_help_title">Caawimada Xulashada Luqadda</string>
+    <string name="language_help_how_to">Sida luqaddaada loo xushayo:</string>
+    <string name="language_help_step1">1. Isticmaal sanduuqa raadinta si aad luqaddaada u gasho</string>
+    <string name="language_help_step2">2. Taabo luqaddaada aad doorbideyso</string>
+    <string name="language_help_step3">3. Xaqiiji doorashadaada</string>
+    <string name="language_help_system_note">Luqaddaada nidaamka waxaa lagu muujiyaa korka haddii ay taageeran tahay.</string>
+    <string name="language_help_settings_note">Waxaad tan dambe bedeli kartaa Goobaha.</string>
+    <string name="language_got_it">Waan Garanayaa</string>
+    <string name="language_select_title">Dooro Luqadda</string>
+    <string name="language_skip_button">U bood (Isticmaal Ingiriisi)</string>
+    <string name="language_search_placeholder">Raadi luqadaha...</string>
+    <string name="language_no_results">Luqado lama helin</string>
+    <string name="language_try_different">Isku day ereyga raadinta ee kala duwan</string>
+    <string name="language_system_badge">Luqadda Nidaamka</string>
+    <string name="language_count">%d luqadood</string>
+    <string name="language_no_match_announcement">Luqado raadintaada u dhigma lama helin</string>
+    <string name="language_found_announcement">%d luqadood ayaa la helay</string>
+    <string name="language_search_cleared">Raadinta waa la nadiifiyay, waxaa muuqanaya dhammaan %d luqadood</string>
+    <string name="language_selected_announcement">La doortay %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Shaashadda xulashada luqadda</string>
+    <string name="language_help_button_description">Caawimada iyo macluumaadka ku saabsan xulashada luqadda</string>
+    <string name="language_skip_description">U bood xulashada luqadda oo isticmaal Ingiriisiga default ahaan</string>
+    <string name="language_clear_search_description">Nadiifi raadinta</string>
+    <string name="language_count_description">%d luqadood ayaa la heli karaa</string>
+    <string name="language_apply_description">Dabaq xulashada luqadda oo sii wad</string>
+    <string name="language_cancel_description">Jooji xulashada luqadda</string>
+    <string name="language_cancelled_announcement">Xulashada luqadda waa la joojiyay</string>
+    <string name="language_selected_description">Luqadda la doortay: %1$s, %2$s</string>
+    <string name="language_item_system">Luqadda nidaamka: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, hadda la doortay</string>
+    <string name="language_item_system_selected">Luqadda nidaamka: %1$s, %2$s, hadda la doortay</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">Dib ayaa loo noqday xulashada luqadda</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">SANDBOX</string>
+    <string name="sandbox_mode_active">Qaabka Sandbox waa firfircoon yahay</string>
+    <string name="sandbox_mode_banner">QAABKA SANDBOX WAA FIRFIRCOON YAHAY</string>
+    <string name="sandbox_mode_description">Isticmaalaya deegaanka tijaabada. Taabo lambarka nooca shan jeer si aad u beddesho.</string>
+    <string name="sandbox_credential_title">Warqadda aqoonsiga ee Sandbox</string>
+    <string name="sandbox_credential_description">Samee warqadda aqoonsiga ee Sandbox si aad u tijaabiso socodka xaqiijinta adoon taaban xogta wax soo saarka.</string>
+    <string name="sandbox_select_age">Dooro da\'da</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Taariikhda dhalashadda default: %s</string>
+    <string name="sandbox_override_dob">Bedel taariikhda dhalashadda default</string>
+    <string name="sandbox_override_description">Isticmaal taarikh saxsan halkii ay ka timaadeen default-ka ku salaysan da\'da.</string>
+    <string name="sandbox_date_of_birth">Taariikhda dhalashadda</string>
+    <string name="sandbox_generate_credential">Samee warqadda aqoonsiga</string>
+    <string name="sandbox_generating">Samaynaya…</string>
+    <string name="sandbox_test_credential_saved">Warqadda aqoonsiga tijaabada ayaa la kaydiyay</string>
+    <string name="sandbox_id_prefix">Hordhaca aqoonsiga: %s…</string>
+    <string name="sandbox_unable_to_generate">Lama samee karo warqadda aqoonsiga</string>
+    <string name="settings_sandbox_dob_format">Taariikhda Dhalashadda: %s</string>
+    <string name="settings_sandbox_age_dob_format">Da\'da %d+ (Taariikhda Dhalashadda: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Habaynta deegaanka</string>
+    <string name="environment_current">Hadda: %s</string>
+    <string name="environment_issuer_api">Issuer API (Application Programming Interface): %s</string>
+    <string name="environment_verifier_api">Verifier API (Application Programming Interface): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Tirtir warqadda aqoonsiga?</string>
+    <string name="dialog_delete_credential_message">Falkan wuxuu ka saari doonaa warqadda aqoonsiga agabkaaga. Waxaad dib uga heli kartaa bixiyaha haddii loo baahdo.</string>
+    <string name="dialog_delete_credential_announcement">Dialog waa la furay: Tirtir warqadda aqoonsiga</string>
+    <string name="dialog_reset_proving_key_title">Dib u deji furaha caddaynta?</string>
+    <string name="dialog_reset_proving_key_message">Furaha caddaynta iyo faylalka taageeraya waa la tirtiri doonaa waxaana dib loogu soo dejin doonaa markii xigta aad furto app-ka.</string>
+    <string name="dialog_reset_proving_key_announcement">Dialog waa la furay: Dib u deji furaha caddaynta</string>
+    <string name="dialog_environment_info_announcement">Dialog waa la furay: Habaynta deegaanka</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">Helitaanka</string>
+    <string name="accessibility_service_label">Helitaanka Provii Wallet</string>
+    <string name="accessibility_service_description">Adeegga helitaanka ee Provii Wallet wuxuu bixiyaa taageero horumarsan oo loogu talagalay isticmaalayaasha naafada. Tani waxaa ka mid ah akhrinta tooska ah ee warqadda aqoonsiga, marin-habaynta hageeysa, iyo falgalka fudud.</string>
+    <string name="accessibility_personalize">Gaarka u gali khibradaada</string>
+    <string name="accessibility_customize_features">Habaynta astaamaha helitaanka</string>
+    <string name="accessibility_quick_setup">Dejinta degdegga ah</string>
+    <string name="accessibility_features_active">%d astaamood ayaa firfircoon</string>
+    <string name="accessibility_customize_experience">Habaynta khibradaada</string>
+    <string name="accessibility_reset_title">Dib u deji goobaha helitaanka?</string>
+    <string name="accessibility_reset_message">Dhammaan doorashada helitaanka waxay ku noqon doontaa default-kooda.</string>
+    <string name="accessibility_reset">Dib u deji goobaha helitaanka</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Aragga</string>
+    <string name="accessibility_category_interaction">Falgalka</string>
+    <string name="accessibility_category_cognitive">Taageero garashada</string>
+    <string name="accessibility_category_alternative_input">Gelin kale</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Qoraal aad u weyn</string>
+    <string name="accessibility_extra_large_text_description">Kordhinta cabbirka fooniga asaasiga ah 45%</string>
+    <string name="accessibility_high_contrast">Kala-duwanaansho sare</string>
+    <string name="accessibility_high_contrast_description">Isticmaal midabada kala-duwanaanshaha sare</string>
+    <string name="accessibility_reduce_transparency">Yaree shafaafiyaanshaha</string>
+    <string name="accessibility_reduce_transparency_description">Ka saar dhidibka iyo saameynta dhalooyinka</string>
+    <string name="accessibility_dyslexia_font">Foon-ta la wanaajiyay ee buug-akhrista</string>
+    <string name="accessibility_dyslexia_font_description">Isticmaal foon-ta OpenDyslexic si loo horumariyo akhrisamaynta</string>
+    <string name="accessibility_color_blind_mode">Qaabka indho-la\'aanta midabka</string>
+    <string name="accessibility_color_blind_optimized">Midabada la wanaajiyay ee %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Midna ma aha</string>
+    <string name="color_blind_protanopia">Protanopia (Indho-la\'aanta cas)</string>
+    <string name="color_blind_deuteranopia">Deuteranopia (Indho-la\'aanta cagaaran)</string>
+    <string name="color_blind_tritanopia">Tritanopia (Indho-la\'aanta buluug)</string>
+    <string name="color_blind_monochrome">Mid-midab</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Bartilmaameedyada taabashada ee waaweyn</string>
+    <string name="accessibility_larger_touch_targets_description">Kordhinta cabbirka badhanka iyo chip-yada</string>
+    <string name="accessibility_reduce_motion">Yaree dhaqdhaqaaqa</string>
+    <string name="accessibility_reduce_motion_description">Yaree dhaqdhaqaaqa iyo wareegista</string>
+    <string name="accessibility_extended_timeouts">Wakhtiga balaarsan</string>
+    <string name="accessibility_extended_timeouts_description">U oggolow waqti dheeraad ah oo loogu talagalay ficilada waqtiga xaddidan</string>
+    <string name="accessibility_simplified_gestures">Geesinimada fudud</string>
+    <string name="accessibility_simplified_gestures_description">Yaree geesinimada talaabada badan</string>
+    <string name="accessibility_haptic_feedback">Jawaabta taabashada</string>
+    <string name="accessibility_haptic_feedback_description">Xaqiijinta gariirka ee ficilada</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Xudunta la fududeeyay</string>
+    <string name="accessibility_simplified_interface_description">Qari doorashada horumarsan oo yaree kharaashka</string>
+    <string name="accessibility_show_step_numbers">Tus lambarka tallaabada</string>
+    <string name="accessibility_show_step_numbers_description">Muuji muuqaalka horumarinta</string>
+    <string name="accessibility_detailed_descriptions">Sharaxaadaha faahfaahsan</string>
+    <string name="accessibility_detailed_descriptions_description">Bixinta qoraalka sharaxaad dheeraad ah</string>
+    <string name="accessibility_confirm_actions">Xaqiiji ka hor ficilada</string>
+    <string name="accessibility_confirm_actions_description">Weydii xaqiijinta hawlaha muhiimka ah</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Gelinta koodhka si gacanta ah</string>
+    <string name="accessibility_manual_code_entry_description">U oggolow koodhyada QR inay la qoraan halkii laga sawiri lahaa</string>
+    <string name="accessibility_voice_input">Gelinta codda</string>
+    <string name="accessibility_voice_input_description">Awood u sii aqoonsiga hadalka ee goobaha qoraalka</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Aragga</string>
+    <string name="accessibility_profile_motor">Dhaqdhaqaaqa</string>
+    <string name="accessibility_profile_cognitive">Garashada</string>
+    <string name="accessibility_profile_senior">Waayeelka</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Dib u noqo</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Guriga</string>
+    <string name="breadcrumb_settings">Goobaha</string>
+    <string name="breadcrumb_accessibility">Helitaanka</string>
+    <string name="breadcrumb_language">Luqadda</string>
+    <string name="breadcrumb_help">Xarunta Caawimada</string>
+    <string name="breadcrumb_officer_mode">Qaabka Sarkaalka</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Nooca Foon-ta &amp; Kala-fogaanshaha Qoraalka</string>
+    <string name="accessibility_line_spacing">Kala-fogaanshaha Safka</string>
+    <string name="accessibility_line_spacing_description">Hagaaji meesha u dhexeysa safooyinka qoraalka</string>
+    <string name="accessibility_paragraph_spacing">Kala-fogaanshaha Cutubka</string>
+    <string name="accessibility_paragraph_spacing_description">Hagaaji meesha u dhexeysa cutubyadda</string>
+    <string name="accessibility_letter_spacing">Kala-fogaanshaha Xarfaha</string>
+    <string name="accessibility_letter_spacing_description">Hagaaji meesha u dhexeysa xarfaha</string>
+    <string name="accessibility_typography_aaa_note">Talooyinka AAA: 1.5x kala-fogaanshaha safka, 2.0x kala-fogaanshaha cutubka, iyo 0.12em kala-fogaanshaha xarfaha.</string>
+    <string name="accessibility_spacing_current">Hadda: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Dabeecadda Wakhtiga Dhammaadka</string>
+    <string name="accessibility_timeout_no_automatic">Wakhtiga dhammaadka tooska ah kuma jiro buuxinta AAA</string>
+    <string name="accessibility_timeout_auto_advance_30">Hormar toos ah ka dib 30 ilbiriqsi</string>
+    <string name="accessibility_timeout_auto_advance_60">Hormar toos ah ka dib 60 ilbiriqsi</string>
+    <string name="accessibility_timeout_set_announcement">Dabeecadda wakhtiga dhammaadka ayaa loo dejiyay %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Heerka Kala-duwanaanshaha</string>
+    <string name="accessibility_contrast_aaa_ratio">7:1 saamiga kala-duwanaanshaha ee buuxinta AAA</string>
+    <string name="accessibility_contrast_standard">Kala-duwanaansho caadi ah</string>
+    <string name="accessibility_contrast_aa_ratio">4.5:1 saamiga kala-duwanaanshaha ee buuxinta AA</string>
+    <string name="accessibility_contrast_set_announcement">Heerka kala-duwanaanshaha ayaa loo dejiyay %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Qaabka indho-la\'aanta midabka ayaa loo dejiyay %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">Slider-ka %1$s. Qiimaha hadda: %2$s. %3$sKala-duwanaan ka %4$s ilaa %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">Waafaqsan AAA. </string>
+    <string name="accessibility_slider_announcement">%1$s ayaa loo dejiyay %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, waafaqsan AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s waa la awood siiyay</string>
+    <string name="accessibility_toggle_disabled">%s waa la awood dhimay</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Jawaabta Xaqiijinta</string>
+    <string name="accessibility_sound_enabled">Ciyaar cod markii la guulaysto</string>
+    <string name="accessibility_sound_enabled_description">Ciyaar cod xaqiijin ah ka dib xaqiijinta guulaystay</string>
+    <string name="accessibility_sound_style">Qaabka Codka</string>
+    <string name="accessibility_sound_preview">Hormaris codka</string>
+    <string name="accessibility_sound_preview_preset">Hormaris %s</string>
+    <string name="accessibility_sound_style_set_announcement">Qaabka codka ayaa loo dejiyay %s</string>
+    <string name="accessibility_haptic_enabled">Gariir markii la guulaysto</string>
+    <string name="accessibility_haptic_enabled_description">Bixinta jawaabta taabashada ka dib xaqiijinta guulaystay</string>
+    <string name="accessibility_sound_footer">Codku wuxuu ixtiraamaa goobaha qaabka aamusnaan ee agabkaaga</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Xajmiga</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Hormaris xajmiga hadda</string>
+    <string name="accessibility_volume_set_announcement">Xajmigu wuxuu u dejiyay %d boqolkiiba</string>
+    <string name="accessibility_volume_slider_description">Slider-ka xajmiga. Qiimaha hadda: %d boqolkiiba</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Dib u Deji Goobaha</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">Qaabka Sarkaalka</string>
+    <string name="officer_id">Aqoonsiga Sarkaalka (ID)</string>
+    <string name="officer_id_placeholder">Tusaale, OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Gali aqoonsigaaga sarkaalka ee la kuu qoondeeyay</string>
+    <string name="officer_yubikey_connected">YubiKey Waa La Xidday</string>
+    <string name="officer_connect_yubikey">Xidh YubiKey</string>
+    <string name="officer_touch_yubikey">Taabo YubiKey-gaaga si aad u xaqiijiso...</string>
+    <string name="officer_authenticate_hmac">Xaqiiji adoo isticmaalaya HMAC (Hash-based Message Authentication Code)</string>
+    <string name="officer_authentication_process">Socodka Xaqiijinta:</string>
+    <string name="officer_auth_steps">1. Gali aqoonsigaaga Sarkaalka\n2. Guji Xaqiiji\n3. Taabo YubiKey markuu lama-yaab-lahaansho\n4. Xaqiijinta HMAC (Hash-based Message Authentication Code) waxay xaqiijisaa aqoonsigaaga</string>
+    <string name="officer_auth_failed">Xaqiijintu waa fashilantay. Fadlan xaqiiji aqoonsigaaga Sarkaalka ka dibna isku day mar kale.</string>
+    <string name="officer_session_info">Sarkaal: %s</string>
+    <string name="officer_station_info">Saldhiga: %s</string>
+    <string name="officer_issued_today">Maanta la bixiyay: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Bixinta Warqadda Aqoonsiga Da\'da</string>
+    <string name="officer_issue_description">Xaqiiji aqoonsiga isticmaalaha oo bixinta warqadda aqoonsiga da\'da ee dijitaalka ah</string>
+    <string name="officer_start_issuance">Bilow Bixinta Cusub</string>
+    <string name="officer_issuance_process">SOCODKA BIXINTA</string>
+    <string name="officer_issuance_steps">1. Hubi dukumiintiga aqoonsiga jireed ee isticmaalaha\n2. Gali taariikhda dhalashadda\n3. Xaqiiji macluumaadka in uu si sax ah u waafaqsanaado\n4. Bixinta warqadda aqoonsiga oo leh koodhka QR ee markhaatiga\n5. Isticmaaluhu wuxuu sawiraa koodhka QR si uu u helayo warqadda aqoonsiga</string>
+    <string name="officer_verify_identity">Xaqiiji Aqoonsiga Isticmaalaha</string>
+    <string name="officer_select_dob">Dooro Taariikhda Dhalashadda</string>
+    <string name="officer_change_date">Beddel Taariikhda</string>
+    <string name="officer_age_years">Da\'da: %d sano</string>
+    <string name="officer_under_18_warning">Ka yar 18 - Lama bixin karo warqadda aqoonsiga</string>
+    <string name="officer_verification_checklist">LIISTADA XAQIIJINTA</string>
+    <string name="officer_document_verified">Dukumiintiga jireed waa la xaqiijiyay</string>
+    <string name="officer_document_verified_description">Waxaan aragnay aqoonsi dowladeed oo sax ah</string>
+    <string name="officer_dob_matches">Taariikhda dhalashadda si sax ah ayay u waafaqsantahay</string>
+    <string name="officer_dob_matches_description">Taariikhda Dhalashadda ee dukumiintiga jireed waa: %s</string>
+    <string name="officer_issue_credential">Bixinta Warqadda Aqoonsiga</string>
+    <string name="officer_user_scanned_successfully">Isticmaaluhu Si Guul ah Ayuu U Sawiray</string>
+    <string name="officer_return_to_dashboard">Ku noqo Shabakadda</string>
+    <string name="officer_go_back">Dib u noqo</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">Xaqiijinta YubiKey</string>
+    <string name="yubikey_step_format">Tallaabada %1$d oo ka mid ah %2$d</string>
+    <string name="yubikey_led_should_blink">Nalka YubiKey waa inuu lama-yaab-lahaansho</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Ansaxinaya gelinta...</string>
+    <string name="officer_state_creating_attestation">Samaynaya markhaatiga...</string>
+    <string name="officer_state_computing_commitment">Xisaabinaya ballankii cryptographic...</string>
+    <string name="officer_state_creating_session">Samaynaya shirqool ammaan ah...</string>
+    <string name="officer_state_signing">Saxiixaya warqadda aqoonsiga...</string>
+    <string name="officer_state_finalizing">Dhammaynaya warqadda aqoonsiga...</string>
+    <string name="officer_state_storing_attestation">Kaydiya markhaatiga...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">Shirqoolku Dhowaan Wuu Dhammaanayaa</string>
+    <string name="officer_session_expiring_message">Shirqoolkaagu wuxuu dhammaan doonaa %d ilbiriqsi gudahood. Ma jeclaan lahayd inaad kaydiso horumarkaaga?</string>
+    <string name="officer_session_expiring_announcement">Digniin: Shirqoolkaagu wuxuu dhammaan doonaa %d ilbiriqsi gudahood</string>
+    <string name="officer_save_and_continue">Kaydi oo Sii wad</string>
+    <string name="officer_continue_without_saving">Sii wad Kaydinta la\'aanteed</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">TAARIIKHDA DHALASHADDA</string>
+    <string name="officer_age_format">Da\'da: %d sano</string>
+    <string name="officer_under_18_full_warning">Ka yar 18 - Lama bixin karo warqadda aqoonsiga. Shakhsiyaadka 18 sano ama ka weyn oo kaliya ayaa u qalma warqadaha aqoonsiga da\'da. Fadlan xaqiiji taariikhda dhalashadda inay saxan tahay.</string>
+    <string name="officer_verification_checklist_header">LIISTADA XAQIIJINTA</string>
+    <string name="officer_physical_document_verified">Dukumiintiga jireed waa la xaqiijiyay</string>
+    <string name="officer_sighted_valid_id">Waxaan aragnay aqoonsi dowladeed oo sax ah</string>
+    <string name="officer_dob_matches_exactly">Taariikhda dhalashadda si sax ah ayay u waafaqsantahay</string>
+    <string name="officer_dob_on_document">Taariikhda Dhalashadda ee dukumiintiga jireed waa: %s</string>
+    <string name="officer_error_label">Khalad</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">Sawir koodhka QR ee bixinta</string>
+    <string name="issuance_downloads_credential">Tani waxay soo dejisaa warqaddaada aqoonsiga da\'da.</string>
+    <string name="issuance_center_qr">Bartilmaamedka koodhka QR gudaha fargeeyaha oo haysato xasilloon.</string>
+    <string name="issuance_enter_code_manually">Gali koodhka si gacanta ah</string>
+    <string name="issuance_processing_qr">Hawlgalinaya koodhka QR…</string>
+    <string name="issuance_invalid_data">Xogta bixinta ee khaldan</string>
+    <string name="issuance_verification_qr_error">Koodhkan QR waa koodh xaqiijin. Fadlan sawir koodhka QR ee bixinta warqadda aqoonsiga.</string>
+    <string name="issuance_invalid_qr_format">Qaabka koodhka QR ee khaldan</string>
+    <string name="issuance_failed_to_process">Hawlgalinay koodhka QR ayaa fashilantay: %s</string>
+    <string name="issuance_code">Koodhka bixinta</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">Gelinta koodhka si gacanta ah</string>
+    <string name="manual_entry_enter_code_manually">Gali koodhka si gacanta ah</string>
+    <string name="manual_entry_verification_description">Gali koodhka xaqiijinta ee 12 lambar ah ee la muujiyay shaashaddda xaqiijiyaha.</string>
+    <string name="manual_entry_issuance_description">Qor koodhka la muujiyay shaashaddda bixiyaha.</string>
+    <string name="manual_entry_verification_code">Koodhka xaqiijinta</string>
+    <string name="manual_entry_submit">Gudbi koodhka</string>
+    <string name="manual_entry_please_enter">Fadlan gali koodh</string>
+    <string name="manual_entry_please_enter_verification">Fadlan gali koodhka xaqiijinta</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Bilow dhageysigu</string>
+    <string name="voice_input_stop_listening">Jooji dhageysigu</string>
+    <string name="voice_input_recognized">La aqoonsaday:</string>
+    <string name="content_desc_voice_input_listening">Dhageysanaya gelinta codda</string>
+    <string name="content_desc_voice_input_available">Gelinta codda waa la heli karaa</string>
+    <string name="voice_input_permission_title">Rukhsadda maqaarka ayaa loo baahan yahay</string>
+    <string name="voice_input_permission_message">Gelinta codda waxay u baahan tahay helitaanka maqaarka. Waxaad ka awood u siin kartaa goobaha nidaamka.</string>
+    <string name="voice_input_listening">Dhageysanaya…</string>
+    <string name="voice_input_error">Khaladka Gelinta Codda</string>
+    <string name="voice_input_tap_to_speak">Taabo si aad u hadashid</string>
+    <string name="voice_input_did_you_say">Ma tiri "%1$s"?</string>
+    <string name="voice_input_confirm">Xaqiiji</string>
+    <string name="voice_input_retry">Isku Day Mar Kale</string>
+    <string name="voice_input_cancel">Jooji</string>
+    <string name="voice_input_button">Gelinta Codda</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">Gelinta codda kuma jirto agabkan</string>
+    <string name="voice_input_error_audio">Khaladka duubista codda. Hubi maqaarka.</string>
+    <string name="voice_input_error_network">Khaladka shabakadda. Hubi xiriirka.</string>
+    <string name="voice_input_error_network_timeout">Waqtiga shabakadda wuu dhacay. Isku day mar kale.</string>
+    <string name="voice_input_error_no_match">Hadalka lama ogaan. Fadlan isku day mar kale.</string>
+    <string name="voice_input_error_recognizer_busy">Gelinta codda waa mashquul. Fadlan sug.</string>
+    <string name="voice_input_error_server">Khaladka server-ka. Isku day dambe.</string>
+    <string name="voice_input_error_speech_timeout">Hadal lama maqlin. Fadlan si adag u hadal.</string>
+    <string name="voice_input_error_insufficient_permissions">Rukhsadda maqaarka waa la diidday.</string>
+    <string name="voice_input_error_generic">Khaladka gelinta codda. Fadlan isku day mar kale.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">Dib u noqo</string>
+    <string name="action_close">Xidh</string>
+    <string name="action_cancel">Jooji</string>
+    <string name="action_ok">Hagaag</string>
+    <string name="action_set">Deji</string>
+    <string name="action_change">Beddel</string>
+    <string name="action_delete">Tirtir</string>
+    <string name="action_reset">Dib u deji</string>
+    <string name="action_retry">Isku day mar kale</string>
+    <string name="action_try_again">Isku Day Mar Kale</string>
+    <string name="action_refresh">Cusbooneysii</string>
+    <string name="action_download_now">Soo Dej Hadda</string>
+    <string name="action_retry_setup">Isku Day Mar Kale Dejinta</string>
+    <string name="action_retry_download">Isku Day Mar Kale Soo Dejinta</string>
+    <string name="action_restart_setup">Dib u Bilaab Dejinta</string>
+    <string name="action_manage_storage">Maamul Kaydka</string>
+    <string name="action_check_wifi_settings">Hubi Goobaha Wi-Fi Marka Hore</string>
+    <string name="action_check_wifi_settings_short">Hubi Goobaha Wi-Fi</string>
+    <string name="action_grant_permission">Sii Rukhsadda</string>
+    <string name="action_grant_camera_access">Sii helitaanka kamiradda</string>
+    <string name="action_return_to_browser">Ku Noqo Browserka</string>
+    <string name="action_show_debug_info">Muuji Macluumaadka Debug</string>
+    <string name="action_reset_redownload">Dib u Deji oo Dib u Soo Dej</string>
+    <string name="action_end_session">Dhamee Shirqoolka</string>
+    <string name="action_expand">Balaar</string>
+    <string name="action_collapse">Yaree</string>
+    <string name="accessibility_state_expanded">La ballaariyay</string>
+    <string name="accessibility_state_collapsed">La yareyay</string>
+    <string name="accessibility_state_checked">La calaamadeeyay</string>
+    <string name="accessibility_state_unchecked">La calaamadayn</string>
+    <string name="accessibility_state_selected">La doortay</string>
+    <string name="accessibility_state_not_selected">La dooran</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">Khalad ayaa dhacay</string>
+    <string name="error_camera_permission">Rukhsadda kamiradda ayaa loo baahan yahay sawirista koodhka QR</string>
+    <string name="error_camera_access_needed">Helitaanka kamiradda ayaa loo baahan yahay</string>
+    <string name="error_camera_permission_description">Sii rukhsadda kamiradda si aad u sawirto koodhyada QR ama awood u sii gelinta gacanta ee goobaha helitaanka.</string>
+    <string name="error_camera_permission_required">Rukhsadda kamiradda ayaa loo baahan yahay sawirista koodhyada QR</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">Raadinaya koodhka QR...</string>
+    <string name="qr_scanner_camera_required">Rukhsadda kamiradda ayaa loo baahan yahay</string>
+    <string name="qr_scanner_camera_preview">Hormaris kamiradda ee sawirista koodhyada QR</string>
+    <string name="qr_scanner_status_scanning">Raadinaya koodhka QR</string>
+    <string name="qr_scanner_requesting_permission">Codsinaaya rukhsadda kamiradda</string>
+    <string name="error_camera_start_failed">Bilaabista kamiradda ayaa fashilantay: %s</string>
+    <string name="error_camera_init_failed">Bilaabaynta kamiradda ayaa fashilantay: %s</string>
+    <string name="error_biometric_not_available">Xaqiijinta bayoolajiga kuma jirto</string>
+    <string name="error_network">Khalad shabakadda ayaa dhacay</string>
+    <string name="error_no_credential">Warqad aqoonsi lama helin. Fadlan marka hore hel warqadda aqoonsiga.</string>
+    <string name="credential_picker_title">Dooro Warqadda Aqoonsiga</string>
+    <string name="credential_picker_description">Waxaad leedahay warqado aqoonsi badan oo loo isticmaali karo xaqiijintaan. Fadlan dooro mid.</string>
+    <string name="credential_picker_expired_label">Dhacday</string>
+    <string name="credential_picker_accessibility_select">Dooro warqadda aqoonsiga: %1$s</string>
+    <string name="error_failed_to_process_challenge">Hawlgalinay caqabadda ayaa fashilantay</string>
+    <string name="error_failed_to_create_proof">Samaynta caddaynta ayaa fashilantay</string>
+    <string name="error_verification_failed">Xaqiijintu waa fashilantay</string>
+    <string name="error_occurred_during_verification">Khalad ayaa dhacay inta lagu jiro xaqiijinta</string>
+    <string name="error_connection_timeout">Xiriirku waqtigiisii dhacay. Fadlan isku day mar kale.</string>
+    <string name="error_unable_to_connect">Lama xidhi karo. Fadlan hubi xiriirkaaga internetka.</string>
+    <string name="error_secure_connection_failed">Xiriirka ammaan ah ayaa fashilantay. Fadlan isku day mar kale.</string>
+    <string name="error_security_verification_failed">Xaqiijinta amminimada ayaa fashilantay. Fadlan isku day mar kale.</string>
+    <string name="error_invalid_input">Gelinta khaldan. Fadlan hubi macluumaadkaaga ka dibna isku day mar kale.</string>
+    <string name="error_operation_in_progress">Howl kale waa socotaa. Fadlan sug.</string>
+    <string name="error_operation_cancelled">Hawsha waa la joojiyay.</string>
+    <string name="error_age_requirement_not_met">Shuruudda da\'da warqaddan aqoonsiga kuma buuxin.</string>
+    <string name="error_biometric_required">Xaqiijinta bayoolajiga ayaa loo baahan yahay si loo sii wado.</string>
+    <string name="error_wallet_not_initialized">Boorsadda lama bilaabin. Fadlan dib u bilaab app-ka.</string>
+    <string name="error_security">Khalad amminimo. Fadlan isku day mar kale.</string>
+    <string name="error_connection_timeout_short">Waqtiga xiriirka ayaa dhacay. Fadlan isku day mar kale.</string>
+    <string name="error_invalid_input_provided">Gelinta khaldan ayaa la bixiyay.</string>
+    <string name="error_invalid_data_format">Qaabka xogta khaldan. Fadlan isku day mar kale.</string>
+    <string name="error_storage">Khalad kaydka. Fadlan hubi kaydka agabka.</string>
+    <string name="error_network_short">Khalad shabakadda. Fadlan hubi xiriirkaaga.</string>
+    <string name="error_label">Khalad</string>
+    <string name="error_dismiss">Xidh khaladka</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">Hawlgalinaya...</string>
+    <string name="status_initializing_wallet">Bilaabaynaya boorsadda...</string>
+    <string name="status_loading">Soo raraya...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">Asturnaanta waa la ilaalinayaa</string>
+    <string name="privacy_zk_description">Taariikhda dhalashadaadu weligeed lama wadaagaan. Xaqiijiyeyaashu waxay ogaadaan oo kaliya haddaad buuxinayso shuruudda da\'dooda.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Goobaha Asturnaanta</string>
+    <string name="privacy_settings_description">Xukun ururinta xogta oo maamul xogta</string>
+    <string name="privacy_section_data_collection">Uruurinta Xogta</string>
+    <string name="privacy_section_your_data">Xogta Aad Leedahay</string>
+    <string name="privacy_protection_title">Asturnaantaadu Waa La Ilaalinayaa</string>
+    <string name="privacy_protection_description">Provii Wallet waxay isticmaashaa caddayn aqoon-la\'aan si loogu xaqiijiyo da\'daada adoon muujin taariikhda dhalashadda. Xogta warqaddaada aqoonsiga agabkaaga oo kaliya ayaa lagu kaydiyay oo weligeed lama wadaagaan.</string>
+    <string name="privacy_analytics_title">Falanqaynta</string>
+    <string name="privacy_analytics_description">Caawi kobcinta Provii Wallet adoo wadaagaya xog isticmaal anonymous ah</string>
+    <string name="privacy_analytics_enabled">Falanqaynta waa la awood siiyay</string>
+    <string name="privacy_analytics_disabled">Falanqaynta waa la awood dhimay</string>
+    <string name="privacy_crash_reporting_title">Warbixinta Burburrinta</string>
+    <string name="privacy_crash_reporting_description">Naga caawi hagaajinta khaladaadka adoo si toos ah u gudbinaya warbixinnada burburrinta</string>
+    <string name="privacy_crash_reporting_enabled">Warbixinta burburrinta waa la awood siiyay</string>
+    <string name="privacy_crash_reporting_disabled">Warbixinta burburrinta waa la awood dhimay</string>
+    <string name="privacy_what_we_collect_title">Xog Kuma Ururinno</string>
+    <string name="privacy_what_we_collect_subtitle">Taabo si aad wax ka baratid dhaqankaaga xogta</string>
+    <string name="privacy_data_collection_info_title">Macluumaadka Uruurinta Xogta</string>
+    <string name="privacy_data_we_collect_header">Waxa aan ururinno (haddii la awood siiyay):</string>
+    <string name="privacy_data_we_collect_list">- Xogta isticmaalka app-ka ee anonymous ah\n- Warbixinnada burburrinta iyo diiwaanada khaladaadka\n- Nooca agabka iyo nooca nidaamka\n- Macluumaadka nooca app-ka</string>
+    <string name="privacy_data_we_dont_collect_header">Waxaan weligeen ururin:</string>
+    <string name="privacy_data_we_dont_collect_list">- Taariikhda dhalashadda\n- Magacaaga ama faahfaahintaada shakhsiga\n- Goobta aad joogto\n- Xogta warqaddaada aqoonsiga\n- Xogta bayoolajiga</string>
+    <string name="privacy_data_never_shared_note">Xogta warqaddaada aqoonsiga weligeed lama wadaagaan Provii ama dhinac kasta oo saddexaad. Agabkaaga ayay ku jirtaa.</string>
+    <string name="privacy_policy_title">Siyaasadda Asturnaanta</string>
+    <string name="privacy_policy_subtitle">Akhri siyaasaddeena asturnaanta oo buuxda</string>
+    <string name="privacy_delete_my_data_title">Tirtir Xogta</string>
+    <string name="privacy_delete_my_data_subtitle">Ka saar dhammaan warqadaha aqoonsiga iyo xogta la kaydiyay</string>
+    <string name="privacy_delete_data_dialog_title">Tirtir Dhammaan Xogta?</string>
+    <string name="privacy_delete_data_dialog_message">Tani si joogto ah ayay u tirtiri doontaa dhammaan warqadahaada aqoonsiga iyo xogta app-ka ee agabkan. Waxaad u baahan doontaa inaad hesho warqadda aqoonsiga cusub si aad app-ka mar kale u isticmaasho.</string>
+    <string name="privacy_delete_data_dialog_warning">Falkan lama beddeli karo.</string>
+    <string name="privacy_delete_data_confirm">Tirtir Waxkasta</string>
+    <string name="privacy_footer_note">Waxaad beddeli kartaa goobahan marka kasta. Isbeddeladu si degdeg ah ayay u dhaqangalaan.</string>
+    <string name="dialog_delete_data_announcement">Dialog xaqiijinta tirtiridda xogta waa la furay</string>
+    <string name="dialog_data_collection_info_announcement">Dialog macluumaadka uruurinta xogta waa la furay</string>
+    <string name="content_desc_privacy_settings">Goobaha asturnaanta, xukun ururinta xogta oo maamul xogta</string>
+    <string name="content_desc_data_collection_info">Arag macluumaadka uruurinta xogta</string>
+    <string name="content_desc_privacy_policy">Arag siyaasadda asturnaanta</string>
+    <string name="content_desc_opens_external_link">Wuxuu ku furtaa browserka</string>
+    <string name="content_desc_delete_my_data">Tirtir dhammaan xogta</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">Dib u noqo</string>
+    <string name="content_desc_settings">Goobaha</string>
+    <string name="content_desc_refresh">Cusbooneysii</string>
+    <string name="content_desc_verified">Xaqiijiyay</string>
+    <string name="content_desc_expand">Balaar</string>
+    <string name="content_desc_collapse">Yaree</string>
+    <string name="content_desc_warning_error">Digniin: Khalad ayaa dhacay</string>
+    <string name="content_desc_sandbox_indicator">Muuqaala qaabka Sandbox</string>
+    <string name="content_desc_success">Guul</string>
+    <string name="content_desc_warning">Digniin</string>
+    <string name="content_desc_information">Macluumaad</string>
+    <string name="content_desc_error">Khalad</string>
+    <string name="content_desc_sandbox_warning">Digniin Qaabka Sandbox</string>
+    <string name="content_desc_app_info">Macluumaadka app-ka</string>
+    <string name="content_desc_accessibility_settings">Goobaha helitaanka</string>
+    <string name="content_desc_language_settings">Goobaha luqadda</string>
+    <string name="content_desc_licenses">Rukhsadaha isha furan</string>
+    <string name="content_desc_select_dob">Dooro taariikhda dhalashadda</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Sii Warqadda Aqoonsiga Tijaabada ah Adigoo Bixiye</string>
+    <string name="content_desc_get_credential">Hel warqadda aqoonsiga</string>
+    <string name="content_desc_delete_credential">Tirtir warqadda aqoonsiga</string>
+    <string name="content_desc_reset_proving_key">Dib u deji furaha caddaynta</string>
+    <string name="content_desc_environment_info">Macluumaadka deegaanka</string>
+    <string name="content_desc_help_support">Caawimada iyo taageerada</string>
+    <string name="content_desc_privacy_protected">Asturnaanta Waa La Ilaalinayaa</string>
+    <string name="preview_settings_title">Hormaris Goobaha</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">Guul</string>
+    <string name="accessibility_verification_error_description">Khalad</string>
+    <string name="accessibility_breadcrumb_location_description">Goobta: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">ka dibna</string>
+    <string name="accessibility_breadcrumb_current_page_description">Bogga hadda: %s</string>
+    <string name="accessibility_settings_navigate_description">Marin</string>
+    <string name="accessibility_credentials_settings_description">Goobaha</string>
+    <string name="accessibility_verification_back_description">Dib u noqo</string>
+    <string name="accessibility_officer_back_description">Dib u noqo</string>
+    <string name="accessibility_discovery_back_description">Dib u noqo</string>
+    <string name="accessibility_discovery_refresh_description">Cusbooneysii</string>
+    <string name="accessibility_discovery_verified_description">Xaqiijiyay</string>
+    <string name="accessibility_officer_done_description">Dhammaystay</string>
+    <string name="accessibility_officer_attestation_qr_description">Koodhka QR ee markhaatiga isticmaalaha in uu sawiro</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">U bood %s</string>
+    <string name="accessibility_skip_main_content">waxa ugu muhiimsan</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Aragga Naafada</string>
+    <string name="accessibility_profile_motor_impaired">Dhaqdhaqaaqa Naafada</string>
+    <string name="accessibility_profile_cognitive_support">Taageero Garashada</string>
+    <string name="accessibility_profile_elderly_support">Taageero Waayeelka</string>
+    <string name="accessibility_profile_default">Default</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Midna ma aha</string>
+    <string name="color_blind_mode_protanopia">Protanopia</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopia</string>
+    <string name="color_blind_mode_tritanopia">Tritanopia</string>
+    <string name="color_blind_mode_monochrome">Mid-midab</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Caadi</string>
+    <string name="contrast_level_high">Sare (AA)</string>
+    <string name="contrast_level_maximum">Ugu Sarreeya (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Ballaarada Buuxda</string>
+    <string name="text_width_comfortable">Raaxo (80 xaraf)</string>
+    <string name="text_width_narrow">Ciriiri (60 xaraf)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Waqti Dhammaad Midna (AAA)</string>
+    <string name="timeout_behavior_standard">Caadi (30s)</string>
+    <string name="timeout_behavior_extended">Balaarsan (60s)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Caadi</string>
+    <string name="reading_level_standard_description">Qoraalka caadiga ah oo leh ereyada farsamada</string>
+    <string name="reading_level_simplified">La fududeeyay (Fasalka 7-9)</string>
+    <string name="reading_level_simplified_description">Erayada fudud iyo jumlada gaaban (waafaqsan AAA)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">Caawimada</string>
+    <string name="help_and_support">Caawimada &amp; Taageero</string>
+    <string name="help_description">Hel caawimo ku saabsan astaamaha app-ka iyo helitaanka</string>
+    <string name="help_center">Xarunta Caawimada</string>
+    <string name="help_center_description">Raadi mawduucyada caawimada oo wax ka baro astaamaha app-ka</string>
+    <string name="help_search">Raadi caawimada</string>
+    <string name="help_search_placeholder">Raadi mawduucyada caawimada...</string>
+    <string name="help_search_active">Raadinta waa la firfircooneysiiyay</string>
+    <string name="help_search_inactive">Raadinta waa la joojiyay</string>
+    <string name="help_no_results">Mawduuc caawimo lama helin oo raadintaada u dhigma</string>
+    <string name="help_topic_not_found">Mawduuca caawimada lama helin</string>
+    <string name="help_related_topics">Mawduucyada La Xiriira</string>
+    <string name="help_content_heading">Waxa Caawimada</string>
+    <string name="help_related_topic_position">%1$s, shay %2$d oo ka mid ah %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Aragga</string>
+    <string name="help_category_typography">Nooca Foon-ta</string>
+    <string name="help_category_interaction">Falgalka</string>
+    <string name="help_category_cognitive">Taageero Garashada</string>
+    <string name="help_category_alternative_input">Gelinta Kale</string>
+    <string name="help_category_features">Astaamaha</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Helista Warqadda Aqoonsiga</string>
+    <string name="help_topic_getting_credential_summary">Baro sida loogu helayo warqaddaada aqoonsiga ee xaqiijinta da\'da ee ugu horreysa</string>
+    <string name="help_topic_getting_credential_content">Si aad u hesho warqaddaada aqoonsiga da\'da:\n\n1. Booqo goobta bixiyaha la ogolaanshahay\n2. Soo geli ID-gaaga dowladeed\n3. Sawir koodhka QR ee la bixiyay\n4. Warqaddaada aqoonsiga si ammaan ah ayaa loo kaydin doonaa\n\nTaariikhda dhalashadda si maxalli ah ayaa loo kaydiyaa weligeena lama wadaagaan.</string>
+
+    <string name="help_topic_verifying_age_title">Xaqiijinta Da\'daada</string>
+    <string name="help_topic_verifying_age_summary">Sida loo xaqiijiyo da\'daada adoon wadaagaynin macluumaadka shakhsiyeed</string>
+    <string name="help_topic_verifying_age_content">Marka aad u baahan tahay inaad xaqiijiso da\'daada:\n\n1. Xaqiijiyahu wuxuu kuu muujin doonaa koodh QR\n2. Sawir adoo isticmaalaya app-ka\n3. App-ku wuxuu abuuraa caddayn xisaab\n4. Jawaabta haa/maya oo kaliya ayaa la wadaagaa\n\nTaariikhda dhalashadda ee dhab ah WELIGEED lama muujin.</string>
+
+    <string name="help_topic_accessibility_title">Astaamaha Helitaanka</string>
+    <string name="help_topic_accessibility_summary">Habaynta app-ka baahiyahaaga</string>
+    <string name="help_topic_accessibility_content">App-ku wuxuu ku jiraa astaamaha helitaanka badan:\n\n- Qaabka qoraalka weyn iyo kala-duwanaanshaha sare\n- Gelinta codda iyo taageero akhristayaasha shaashaddda\n- Geesinimada fudud iyo xudunta\n- Doorashooyinka gelinta koodhka gacanta\n- Wakhtiyada dhammaadka balaarsan\n\nKuwan u gal Goobaha > Helitaanka</string>
+
+    <string name="help_topic_privacy_security_title">Asturnaanta &amp; Amminimada</string>
+    <string name="help_topic_privacy_security_summary">Sida macluumaadkaaga loo ilaalinayo</string>
+    <string name="help_topic_privacy_security_content">Asturnaantaadu waa mudnaanteena koowaad:\n\n- Warqadaha aqoonsiga si maxalli ah ayaa loogu kaydiyaa agabkaaga\n- Caddayn aqoon-la\'aan ayaa ilaalinaya xogta\n- Laguma raacin ama falanqayn\n- Xaqiijinta bayoolajiga waa la heli karaa\n- Xogtu weligeed agabkaaga ma tago adoon la mida ahayn</string>
+
+    <string name="help_topic_troubleshooting_title">Xalinta Dhibaatooyinka</string>
+    <string name="help_topic_troubleshooting_summary">Dhibaatooyinka caadiga ah iyo xalalkiisa</string>
+    <string name="help_topic_troubleshooting_content">Dhibaatooyinka caadiga ah iyo hagaajintooda:\n\nSawirista QR kuma shaqeyneyso:\n- Hubi rukhsadaha kamiradda Goobaha\n- Isku day doorasho gelinta koodhka gacanta\n\nWarqadda Aqoonsiga kuma Rarayneyso:\n- Hubi xiriirkaaga internetka\n- Isku day dib u dejinta furaha caddaynta\n\nXaqiijintu Waa Fashilantay:\n- Xaqiiji warqadda aqoonsiga inaysan dhacin\n- Xiriir la noqo xaqiijiyaha si aad u hesho taageero</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">TAARIIKHDA DHALASHADDA</string>
+    <string name="date_of_birth">Taariikhda dhalashadda</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">%d sano</string>
+    <string name="format_step_indicator">Tallaabada %1$d oo ka mid ah %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">Warqadaha Aqoonsiga</string>
+    <string name="tab_settings">Goobaha</string>
+    <string name="tab_help">Caawimada</string>
+    <string name="tab_credentials_description">Arag warqadahaada aqoonsiga</string>
+    <string name="tab_settings_description">Goobaha app-ka</string>
+    <string name="tab_help_description">Hel caawimada iyo taageero</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">Raadin</string>
+    <string name="search_field_label">Goobta raadinta</string>
+    <string name="search_placeholder">Raadi goobaha, caawimada, iyo astaamaha</string>
+    <string name="search_clear">Nadiifi raadinta</string>
+    <string name="search_popular">Raadimaha Caanka ah</string>
+    <string name="search_results_heading">Natiijooyinka Raadinta</string>
+    <string name="search_no_results">Natiijo Lama Helin</string>
+    <string name="search_try_suggestions">Isku day raadinta:\n• Helitaanka\n• Goobaha\n• Caawimada\n• Luqadda</string>
+    <string name="search_results_announcement_singular">1 natiijo ayaa la helay</string>
+    <string name="search_results_announcement_plural">%d natiijo ayaa la helay</string>
+    <string name="search_no_results_announcement">Natiijo lama helin</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">Gelid Degdeg ah</string>
+    <string name="help_topics">Mawduucyada Caawimada</string>
+    <string name="help_glossary">Qaamuuska</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">Rukhsadaha Isha Furan</string>
+    <string name="licenses_description">App-kani wuxuu isticmaashaa software-ka isha furan ee soo socda. Waxaan u mahadcelineynaa horumariyeyaasha abuuray maktabadahan.</string>
+    <string name="licenses_tap_to_view">Taabo si aad u aragto rukhsadda buuxda</string>
+    <string name="licenses_group_header">%1$s (%2$d maktabad)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">Xiriir internet lama helin. Fadlan hubi shabakaddaada ka dibna isku day mar kale.</string>
+    <string name="error_unexpected">Khalad la filaayn ah ayaa dhacay. Fadlan dib u bilaab app-ka.</string>
+    <string name="error_unexpected_try_again">Khalad la filaayn ah ayaa dhacay. Fadlan isku day mar kale.</string>
+    <string name="error_storage_detailed">Khalad kaydka: %s</string>
+    <string name="error_network_detailed">Khalad shabakadda: %s</string>
+    <string name="error_proof_generation_failed">Samaynta caddaynta ayaa fashilantay: %s</string>
+    <string name="error_not_eligible">Xaq u leh ma ahan. Shuruudaha xaqiijintaan kuma buuxin.</string>
+    <string name="error_challenge_expired">Caqabaddu waa dhacday ama lama helin. Fadlan codsoo mid cusub.</string>
+    <string name="error_challenge_expired_scan_new">Caqabaddani waa dhacday. Fadlan sawir koodh QR cusub.</string>
+    <string name="error_request_out_of_order">Codsiga waa ka baxay amarka. Fadlan isku day mar kale.</string>
+    <string name="error_too_many_requests">Codsiyo badan. Fadlan sug waqti yar ka dibna isku day mar kale.</string>
+    <string name="error_server">Khalad server-ka. Fadlan isku day dambe.</string>
+    <string name="error_request_failed">Codsigu wuu fashilmay (%d). Fadlan isku day mar kale.</string>
+    <string name="error_not_eligible_short">Xaq u leh ma ahan xaqiijintaan</string>
+    <string name="error_challenge_not_found">Caqabadda lama helin</string>
+    <string name="error_complete_steps_in_order">Fadlan dhammaystir tallaabada amarka</string>
+    <string name="error_challenge_expired_short">Caqabaddu waa dhacday</string>
+    <string name="error_authentication_cancelled">Xaqiijintu waa la joojiyay. Fadlan xaqiiji aqoonsigaaga si aad u dhammaystirto xaqiijinta da\'da.</string>
+    <string name="error_invalid_data_format_short">Qaabka xogta khaldan. Fadlan isku day mar kale.</string>
+    <string name="error_storage_check_device">Khalad kaydka. Fadlan hubi kaydka agabka.</string>
+    <string name="error_network_check_connection">Khalad shabakadda. Fadlan hubi xiriirkaaga.</string>
+    <string name="error_proof_generation_failed_short">Samaynta caddaynta ayaa fashilantay. Fadlan isku day mar kale.</string>
+    <string name="error_operation_in_progress_short">Howl kale waa socotaa.</string>
+    <string name="error_no_internet_short">Xiriir internet lama helin. Fadlan hubi shabakaddaada.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Sawir koodhka QR ee Xaqiijinta</string>
+    <string name="verification_verifying_title">Xaqiijinta Da\'da</string>
+    <string name="verification_success_title">Da\'da Waa La Xaqiijiyay</string>
+    <string name="verification_failed_title">Xaqiijintu Waa Fashilantay</string>
+    <string name="verification_processing_wait">Tani laga yaabaa inay qaadato dhowr ilbiriqsi</string>
+    <string name="verification_success_message">Da\'daadu si gaar ah ayaa loo xaqiijiyay</string>
+    <string name="verification_return_to_site">Hadda waxaad ku noqon kartaa goobta si aad u sii wadato.</string>
+    <string name="verification_please_enter_code">Fadlan gali koodhka xaqiijinta. Koodhku waa inuu ahaado koodh gaaban oo 12 lambar ama URL buuxa oo xaqiijin ah oo ka timid xaqiijiyaha.</string>
+    <string name="verification_error_occurred">Khalad ayaa dhacay inta lagu jiro xaqiijinta</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Hawlgalinaya...</string>
+    <string name="credential_list_verify_age_button">Xaqiiji Da\'da</string>
+    <string name="credential_list_generate_in_person_description">Samee warqadda aqoonsiga shakhsi ahaan</string>
+    <string name="credential_list_scan_qr_title">Sawir koodhka QR</string>
+    <string name="credential_list_find_locations_title">Raadi Goobaha</string>
+    <string name="credential_section_my_credential">Warqadda Aqoonsigayga</string>
+    <string name="credential_section_managed">Warqadaha Aqoonsiga ee La Maamulay</string>
+    <string name="credential_list_get_credential_button">Hel Warqadda Aqoonsiga</string>
+    <string name="credential_list_add_managed_button">Ku Dar Warqadda Aqoonsiga ee La Maamulay</string>
+    <string name="credential_section_managed_empty">Ku dar warqadda aqoonsiga qof aad daryeelayso, sida ilmo.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">Faahfaahinta Warqadda Aqoonsiga</string>
+    <string name="credential_detail_not_found">Warqadda aqoonsiga lama helin</string>
+    <string name="credential_detail_nickname">Magaca Gaarka ah</string>
+    <string name="credential_detail_no_nickname">Magac gaara lama dejin</string>
+    <string name="credential_detail_edit_nickname">Tafatir magaca gaarka ah</string>
+    <string name="credential_detail_status">Xaaladda</string>
+    <string name="credential_detail_delete">Tirtir Warqadda Aqoonsiga</string>
+    <string name="credential_detail_delete_title">Tirtir Warqadda Aqoonsiga</string>
+    <string name="credential_detail_delete_message">Ma hubtaa inaad rabto inaad tirtirsid warqaddan aqoonsiga? Falkan lama beddeli karo.</string>
+    <string name="credential_type_primary">Asaasiga</string>
+    <string name="credential_type_managed">La Maamulay</string>
+    <string name="credential_status_valid">Sax ah</string>
+    <string name="credential_status_expired">Dhacday</string>
+    <string name="credential_status_invalid">Khaldan</string>
+    <string name="action_save">Kaydi</string>
+    <string name="credential_slots_full_title">Tirada Ugu Badan ee Warqadaha Aqoonsiga Waa La Gaaray</string>
+    <string name="credential_slots_full_message">Tirada ugu badan ee warqadaha aqoonsiga ayaad gaaratay. Tirtir warqadda aqoonsiga ee jirta si aad cusub ugu darto.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">Warqadda aqoonsiga ee la maamulay</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">Xaqiiji da\'da %1$s?</string>
+    <string name="managed_confirm_message">Waxaad u socotaa inaad xaqiijiso da\'da adoo isticmaalaya warqadda aqoonsiga ee la maamulay ee %1$s.</string>
+    <string name="managed_confirm_proceed">Xaqiiji %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">Samaynaya caddaynta %1$s</string>
+    <string name="verification_age_verified_for">Da\'da %1$s waa la xaqiijiyay</string>
+    <string name="deeplink_verification_age_verified_for">Da\'da %1$s waa la xaqiijiyay</string>
+    <string name="attestation_managed_credential_received">Warqadda aqoonsiga ee %1$s waa la helay!</string>
+    <string name="attestation_managed_credential_stored">Warqadda aqoonsiga ilmahaaga si ammaan ah ayaa loo kaydiyay.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">Tirtir warqadda aqoonsiga ee %1$s?</string>
+    <string name="credential_detail_delete_managed_message">Ma hubtaa inaad rabto inaad tirtirsid warqaddan aqoonsiga ee la maamulay ee %1$s? Falkan lama beddeli karo. Waxaad u baahan doontaa inaad mar kale booqato bixiyaha si aad u beddesho.</string>
+    <string name="credential_detail_save_error">Kaydinta magaca gaarka ah ayaa fashilantay</string>
+    <string name="credential_detail_delete_error">Tirtiridda warqadda aqoonsiga ayaa fashilantay</string>
+    <string name="accessibility_saving">Kaydiya...</string>
+    <string name="accessibility_deleting">Tirtiray...</string>
+    <string name="accessibility_loading">Soo raraya, fadlan sug</string>
+    <string name="accessibility_issuing_credential">Bixinaya warqadda aqoonsiga, fadlan sug</string>
+    <string name="dialog_delete_all_credentials_title">Tirtir dhammaan warqadaha aqoonsiga?</string>
+    <string name="dialog_delete_all_credentials_message">Tani waxay tirtiraysa warqaddaada aqoonsiga iyo warqadaha aqoonsiga ee la maamulay ee carruurta. Falkan lama beddeli karo.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">La Maamulay</string>
+    <string name="credential_slots_count">%1$d oo ka mid ah 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Diyaarinaya xaqiijinta...</string>
+    <string name="deeplink_verification_checking_credential">Hubinaya warqadda aqoonsiga...</string>
+    <string name="deeplink_verification_processing_challenge">Hawlgalinaya caqabadda...</string>
+    <string name="deeplink_verification_creating_proof">Samaynaya caddayn ammaan ah...</string>
+    <string name="deeplink_verification_submitting_proof">Gudbinaya caddaynta...</string>
+    <string name="deeplink_verification_success">✔ Da\'da si guul ah ayaa loo xaqiijiyay</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">Warqadda aqoonsiga lama helin. Fadlan marka hore dejiso warqaddaada aqoonsiga.</string>
+    <string name="deeplink_verification_error_failed_challenge">Hawlgalinay caqabadda xaqiijinta ayaa fashilantay</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Lama muujin karo xogta xaqiijinta</string>
+    <string name="deeplink_verification_error_failed_proof">Samaynta caddaynta da\'da ayaa fashilantay</string>
+    <string name="deeplink_verification_error_verification_failed">Xaqiijintu waa fashilantay</string>
+    <string name="deeplink_verification_error_unexpected">Khalad la filaayn ah ayaa dhacay</string>
+    <string name="deeplink_verification_error_no_credential_selected">Warqadda aqoonsiga lama dooran. Fadlan isku day mar kale.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Dooro Warqadda Aqoonsiga</string>
+    <string name="deeplink_verification_select_credential_subtitle">Warqado aqoonsi badan ayaa la heli karaa. Dooro mid loo isticmaalo xaqiijintaan.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Xaqiijinta Da\'da</string>
+    <string name="deeplink_verification_title_verified">Xaqiijiyay</string>
+    <string name="deeplink_verification_title_failed">Xaqiijintu Waa Fashilantay</string>
+    <string name="deeplink_verification_please_wait">Fadlan sug...</string>
+    <string name="deeplink_verification_age_verified">Da\'da Waa La Xaqiijiyay!</string>
+    <string name="deeplink_verification_under_age_verified">Waa La Xaqiijiyay Ka yar %1$d</string>
+    <string name="deeplink_verification_returning_browser">Ku noqonaya browserka...</string>
+    <string name="deeplink_verification_return_to_browser">Ku Noqo Browserka</string>
+    <string name="deeplink_verification_failed_title">Xaqiijintu Waa Fashilantay</string>
+    <string name="deeplink_verification_error_occurred">Khalad ayaa dhacay inta lagu jiro xaqiijinta</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">SOCODKA BIXINTA</string>
+    <string name="officer_issuance_process_steps">1. Hubi dukumiintiga aqoonsiga jireed ee isticmaalaha\n2. Gali taariikhda dhalashadda\n3. Xaqiiji macluumaadka in uu si sax ah u waafaqsanaado\n4. Bixinta warqadda aqoonsiga oo leh koodhka QR ee markhaatiga\n5. Isticmaaluhu wuxuu sawiraa koodhka QR si uu u helayo warqadda aqoonsiga</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">Samaynta koodhka QR ayaa fashilantay</string>
+    <string name="officer_attestation_ready_title">Markhaatiga Waa Diyaar</string>
+    <string name="officer_attestation_scan_instruction">Isticmaaluhu waa inuu sawiraa koodhkaan QR adoo isticmaalaya app-kiisa Provii Wallet</string>
+    <string name="officer_attestation_deeplink_label">DEEPLINK MARKHAATIGA</string>
+    <string name="officer_wait_for_attestation_scan">Sug isticmaalaha inuu sawiro</string>
+    <string name="officer_attestation_info">Warqadda aqoonsiga ayaa agabkooda lagu sameyn doonaa</string>
+    <string name="officer_attestation_complete">Markhaatigu waa dhamaatay</string>
+    <string name="officer_user_will_complete_credential">Isticmaaluhu wuxuu dhammayn doonaa samaynta warqadda aqoonsiga agabkooda</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Furidaya xogta markhaatiga...</string>
+    <string name="attestation_generating_randomness">Samaynaya kala-guurka ammaan ah...</string>
+    <string name="attestation_sending">U diraya bixiyaha...</string>
+    <string name="attestation_verifying">Xaqiijinaya ballanka...</string>
+    <string name="attestation_storing">Kaydiya warqadda aqoonsiga...</string>
+    <string name="attestation_complete">Warqadda aqoonsiga waa dhamaatay!</string>
+    <string name="attestation_error_invalid_data">Xogta markhaatiga ee khaldan</string>
+    <string name="attestation_error_expired">Markhaatigu wuu dhacay</string>
+    <string name="attestation_error_network">Khalad shabakadda - fadlan hubi xiriirkaaga</string>
+    <string name="attestation_error_unexpected">Khalad la filaayn ah ayaa dhacay</string>
+    <string name="attestation_title_processing">Hawlgalinaya Markhaatiga</string>
+    <string name="attestation_title_success">Warqadda Aqoonsiga Waa La Helay</string>
+    <string name="attestation_title_failed">Bixintu Waa Fashilantay</string>
+    <string name="attestation_secure_issuance">Bixinta Ammaan ah</string>
+    <string name="attestation_privacy_preserving">Bixinta warqadda aqoonsiga ee ilaalinaysa asturnaanta</string>
+    <string name="attestation_may_take_seconds">Tani laga yaabaa inay qaadato dhowr ilbiriqsi</string>
+    <string name="attestation_keep_app_open">Fadlan app-ka fur haysato</string>
+    <string name="attestation_credential_received">Warqadda Aqoonsiga Waa La Helay!</string>
+    <string name="attestation_credential_stored_description">Warqaddaada aqoonsiga da\'da xaqiijinta si ammaan ah ayaa loo kaydiyay</string>
+    <string name="attestation_issuer_verified">Bixiyaha waa la xaqiijiyay</string>
+    <string name="attestation_failed_title">Bixintu Waa Fashilantay</string>
+    <string name="attestation_scan_qr_instead">Sawir koodhka QR halkiis</string>
+    <string name="attestation_go_back">Dib u noqo</string>
+    <string name="attestation_step_decode">Furi</string>
+    <string name="attestation_step_generate">Samee</string>
+    <string name="attestation_step_send">Dir</string>
+    <string name="attestation_step_verify">Xaqiiji</string>
+    <string name="attestation_step_store">Kaydi</string>
+    <string name="attestation_step_complete">Dhammaystay</string>
+    <string name="accessibility_attestation_encrypted_description">Markhaatiga la mida ah ayaa la hawlgalinayaa</string>
+    <string name="accessibility_attestation_success_description">Calaamadda guusha oo tilmaamaynaysa warqadda aqoonsiga la helay</string>
+    <string name="accessibility_attestation_error_description">Calaamadda khaladka oo tilmaamaynaysa bixintu fashilantay</string>
+    <string name="accessibility_step_complete">Tallaabada %1$s waa dhamaatay</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Qaabilaha Warqadda Aqoonsiga</string>
+    <string name="attestation_recipient_prompt">Warqaddan aqoonsiga waxay u tahay\u2026</string>
+    <string name="attestation_recipient_me">Aniga</string>
+    <string name="attestation_recipient_child">Ilmo</string>
+    <string name="attestation_nickname_title">Magaca Gaarka ah ee Ilmaha</string>
+    <string name="attestation_nickname_prompt">Gali magac gaara si aad u kala saarto warqadaha aqoonsiga</string>
+    <string name="attestation_nickname_placeholder">Tusaale. Alex</string>
+    <string name="attestation_nickname_continue">Sii wad</string>
+    <string name="attestation_nickname_back">Dib u noqo</string>
+    <string name="accessibility_attestation_recipient_heading">Dooro cidda warqaddan aqoonsiga u tahay</string>
+    <string name="accessibility_attestation_nickname_heading">Gali magac gaara ilmaha</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Qaabka ID sarkaalka ee khaldan</string>
+    <string name="officer_auth_error_challenge_failed">Helista caqabadda YubiKey ayaa fashilantay: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Taabo YubiKey-gaaga si aad u xaqiijiso</string>
+    <string name="officer_auth_error_touch_timeout">Waqtiga taabashada YubiKey ayaa dhacay</string>
+    <string name="officer_auth_error_verify_document_dob">Fadlan xaqiiji dukumiintiga iyo Taariikhda Dhalashadda inay waafaqsanyihiin</string>
+    <string name="officer_auth_error_invalid_date_format">Qaabka taariikhda khaldan. Isticmaal YYYY-MM-DD</string>
+    <string name="officer_auth_error_must_be_18">Isticmaaluhu waa inuu ahaa 18 ama ka weyn</string>
+    <string name="officer_auth_error_not_authenticated">Xaqiijin la\'aan. Fadlan marka hore gali ID-gaaga sarkaalka.</string>
+    <string name="officer_auth_error_issue_failed">Bixinta warqadda aqoonsiga ayaa fashilantay</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Taabo si aad u aragto</string>
+    <string name="gesture_desc_long_press_options">, riix muddo dheer doorashada</string>
+    <string name="gesture_desc_swipe_left">, dhufo bidix ficilada dheeraad ah</string>
+    <string name="gesture_desc_swipe_right">, dhufo midig ficilada dheeraad ah</string>
+    <string name="gesture_desc_tap_to_activate">Taabo si aad u firfircooneysiiso</string>
+    <string name="gesture_desc_long_press_format">. Riix muddo dheer: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Isku Day Mar Kale</string>
+    <string name="main_activity_reset_redownload">Dib u Deji oo Dib u Soo Dej</string>
+    <string name="main_activity_show_debug_info">Muuji Macluumaadka Debug</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Goobaha Helitaanka</string>
+    <string name="search_item_accessibility_settings_subtitle">Habaynta khibradaada</string>
+    <string name="search_item_large_text_title">Qoraal Weyn</string>
+    <string name="search_item_large_text_subtitle">Korodhsi cabbirka qoraalka</string>
+    <string name="search_item_high_contrast_title">Kala-duwanaansho Sare</string>
+    <string name="search_item_high_contrast_subtitle">Horumarinta muuqaalka</string>
+    <string name="search_item_voice_input_title">Gelinta Codda</string>
+    <string name="search_item_voice_input_subtitle">Xukun adoo isticmaalaya cod</string>
+    <string name="search_item_manual_code_entry_title">Gelinta Koodhka Gacanta</string>
+    <string name="search_item_manual_code_entry_subtitle">Qor koodhyada halkii la sawiri lahaa</string>
+    <string name="search_item_simplified_ui_title">Xudunta Fudud ee Isticmaalaha</string>
+    <string name="search_item_simplified_ui_subtitle">Yaree kakan muuqaalka</string>
+    <string name="search_item_color_blindness_title">Taageero Indho-la\'aanta Midabka</string>
+    <string name="search_item_color_blindness_subtitle">Hagaaji midabada muuqaalka horumarsan</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Goobaha</string>
+    <string name="search_item_settings_subtitle">Habaynta app-ka</string>
+    <string name="search_item_language_title">Luqadda</string>
+    <string name="search_item_language_subtitle">Beddel luqadda app-ka</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Warqadahayga Aqoonsiga</string>
+    <string name="search_item_credentials_subtitle">Arag warqadahaada aqoonsiga</string>
+    <string name="search_item_get_credential_title">Hel Warqadda Aqoonsiga</string>
+    <string name="search_item_get_credential_subtitle">Raadi bixiyeyaasha</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">Caawimada</string>
+    <string name="search_item_help_subtitle">Hel caawin</string>
+    <string name="search_item_privacy_title">Ilaalinta Asturnaanta</string>
+    <string name="search_item_privacy_subtitle">Sida xogta loo ilaalinayo</string>
+    <string name="search_item_verification_title">Xaqiijinta Da\'da</string>
+    <string name="search_item_verification_subtitle">Xaqiiji da\'daada</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Diiwaanka hore ee ku xidhan ee deegaanka Sandbox</string>
+    <string name="issuer_fallback_production_description">Diiwaanka hore ee ku xidhan ee wax soo saarka</string>
+    <string name="issuer_fallback_category_government">Dowladda</string>
+    <string name="issuer_fallback_category_government_description">Warqadaha aqoonsiga dowladeed</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Bixiyaha Sandbox ee Provii</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Bixiyaha Sandbox ee Provii ee rasmiga ah ee tijaabada</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Booqo boggaaga bixiyaha Sandbox</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Bixiyaha warqadda aqoonsiga ee Provii ee rasmiga ah</string>
+    <string name="issuer_fallback_production_issuer_instructions">Booqo xafiiska DMV ee maxalliga ah</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">Taariikhda dhalashaddu kuma noqon karto mustaqbalka</string>
+    <string name="validation_error_invalid_date_format">Qaabka taariikhda ee khaldan</string>
+    <string name="validation_error_officer_id_too_short">ID sarkaalka waa gaaban yahay</string>
+    <string name="validation_error_invalid_officer_id_format">Qaabka ID sarkaalka ee khaldan</string>
+    <string name="validation_error_empty_qr_code">Koodhka QR waa madhan yahay</string>
+    <string name="validation_error_qr_code_too_large">Koodhka QR waa aad u weyn yahay</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">Hadda waxaad tahay horumariye!</string>
+    <string name="sandbox_toast_enabled">Qaabka Sandbox Waa La Awood Siiyay\nIsticmaalaya deegaanka tijaabada</string>
+    <string name="sandbox_toast_disabled">Qaabka Wax Soo Saarka Waa La Awood Siiyay\nIsticmaalaya deegaanka wax soo saarka</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">1 tallaabo ayaad ka jiraysaa qaabka horumariyaha</string>
+    <string name="sandbox_toast_steps_away">%1$d tallaabo ayaad ka jiraysaa qaabka horumariyaha</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">YubiKey lama xiddin</string>
+    <string name="yubikey_error_timeout">Waqtiga sugitaanka taabashada YubiKey ayaa dhacay. Fadlan taabo furaha markuu lama-yaab-lahaansho.</string>
+    <string name="yubikey_error_not_supported">Jawaabta caqabadda kuma habayn goobtaan YubiKey</string>
+    <string name="yubikey_error_no_slot">Slot 2 kuma habayn HMAC (Hash-based Message Authentication Code) SHA1 ee caqabadda-jawaabta</string>
+    <string name="yubikey_error_hmac_failed">Xisaabinta HMAC (Hash-based Message Authentication Code) ayaa fashilantay: %s</string>
+    <string name="yubikey_error_session_failed">Xidida YubiKey ayaa fashilantay: %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">Boorsadda lama bilaabin</string>
+    <string name="wallet_error_proving_key_not_found">Furaha caddaynta lama helin - fadlan dib u soo dej</string>
+    <string name="wallet_error_proving_key_not_readable">Faylka furaha caddaynta lama akhriyi karo</string>
+    <string name="wallet_error_out_of_memory">Xusuusta waa dhammaatay - fadlan dib u bilaab app-ka</string>
+    <string name="wallet_error_prover_error">Khalad caddaynta: %s</string>
+    <string name="wallet_error_ffi_error">Khalad FFI: %s</string>
+    <string name="wallet_error_prover_init_failed">Bilaabaynta caddaynta ayaa fashilantay: %s</string>
+    <string name="wallet_error_prover_verification_failed">Xaqiijinta bilaabaynta caddaynta ayaa fashilantay</string>
+    <string name="wallet_error_verifier_url_update_failed">Cusbooneysiinta URL xaqiijiyaha (cinwaanka shabakadda) ayaa fashilantay! Waxaa la filayay %1$s laakiin waxaa la helay %2$s</string>
+    <string name="wallet_error_wallet_still_null">Boorsaddu weli waa maran tahay ka dib bilaabaynta</string>
+    <string name="wallet_error_credential_not_found">Warqadda aqoonsiga lama helin</string>
+    <string name="wallet_error_credential_access_failed">Lama geli karo warqadda aqoonsiga: %s</string>
+    <string name="wallet_error_invalid_format">Qaabka khaldan: %s</string>
+    <string name="wallet_error_not_initialized_short">Caddaynta lama bilaabin</string>
+    <string name="wallet_error_proving_key_unavailable">Furaha caddaynta kuma jirto. Dejin ayaa loo baahan yahay.</string>
+    <string name="wallet_error_storage_init_failed">Bilaabaynta kaydka ayaa fashilantay</string>
+    <string name="wallet_error_biometric_unavailable">Xaqiijinta bayoolajiga kuma jirto</string>
+    <string name="wallet_error_auth_failed">Xaqiijintu waa fashilantay</string>
+    <string name="wallet_error_sandbox_disabled">Awood siiso qaabka Sandbox si aad u sameyso warqadaha aqoonsiga ee tijaabada</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Lama keeni karo warqadaha aqoonsiga ee Sandbox. Fadlan hubi xiriirka internetka.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Xaqiijin Ayaa Loo Baahan Yahay</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Xaqiiji aqoonsigaaga si aad u sameyso caddaynta da\'da</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Gal kaydka ammaan ah</string>
+    <string name="keystore_biometric_prompt_cancel">Jooji</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, la ballaariyay, muujinaya qoraalka rukhsadda oo buuxa</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, la yareyay, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">Midna ma aha</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Cellular</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Aan la garanin</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">Heerarka Kala-duwanaanshaha</string>
+    <string name="help_topic_extra_large_text_title">Qoraalka Aad u Weyn</string>
+    <string name="help_topic_reduce_transparency_title">Yaree Shafaafiyaanshaha</string>
+    <string name="help_topic_color_blind_modes_title">Qaababka Indho-la\'aanta Midabka</string>
+    <string name="help_topic_line_spacing_title">Kala-fogaanshaha Safka</string>
+    <string name="help_topic_paragraph_spacing_title">Kala-fogaanshaha Cutubka</string>
+    <string name="help_topic_letter_spacing_title">Kala-fogaanshaha Xarfaha</string>
+    <string name="help_topic_text_width_title">Ballaarada Qoraalka</string>
+    <string name="help_topic_touch_targets_title">Bartilmaameedyada Taabashada ee Waaweyn</string>
+    <string name="help_topic_reduce_motion_title">Yaree Dhaqdhaqaaqa</string>
+    <string name="help_topic_timeout_behavior_title">Dabeecadda Wakhtiga Dhammaadka</string>
+    <string name="help_topic_simplified_gestures_title">Geesinimada Fudud</string>
+    <string name="help_topic_haptic_feedback_title">Jawaabta Taabashada</string>
+    <string name="help_topic_data_preservation_title">Ilaalinta Xogta</string>
+    <string name="help_topic_simplified_ui_title">Xudunta Fudud ee Isticmaalaha</string>
+    <string name="help_topic_step_indicators_title">Muuqaalka Tallaabada</string>
+    <string name="help_topic_verbose_descriptions_title">Sharaxaadaha Faahfaahsan</string>
+    <string name="help_topic_confirm_actions_title">Xaqiiji Ficilada</string>
+    <string name="help_topic_reading_level_title">Heerka Akhrisamaynta Fudud</string>
+    <string name="help_topic_help_system_title">Nidaamka Caawimada</string>
+    <string name="help_topic_manual_code_entry_title">Gelinta Koodhka Gacanta</string>
+    <string name="help_topic_voice_input_title">Gelinta Codda</string>
+    <string name="help_topic_screen_reader_title">Taageero Akhrista Shaashaddda</string>
+    <string name="help_topic_accessibility_profiles_title">Profileyaasha Dejinta Degdegga ah</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">Xukun saamiga kala-duwanaanshaha u dhexeeya qoraalka iyo asalka:\n\n• Caadi: Midabada app-ka ee default\n• Sare (AA): 4.5:1 saamiga kala-duwanaanshaha\n• Ugu Sarreeya (AAA): 7:1+ saamiga kala-duwanaanshaha\n\nKala-duwanaanshaha sare wuxuu fududeeyaa akhrisamaynta qoraalka, gaar ahaan deegaanada iftiinka xoogga leh ama isticmaalayaasha aragga hoose.\n\nBuuxinta WCAG AAA waxay u baahan tahay kala-duwanaanshaha ugu badan.</string>
+    <string name="help_topic_extra_large_text_text">Waxay kordhinaysaa dhammaan cabbirada qoraalka 50% app-ka oo dhan.\n\nTani waxay fududeysaa akhrisamaynta isticmaalayaasha:\n• Aragga hoose\n• Isbeddellada aragga xiriira da\'da\n• Dhibaatooyinka akhrisamaynta\n\nWaxay la bixisaa goobaha cabbirka foon-ta nidaamka si loogu helo kafaafka ugu badan.</string>
+    <string name="help_topic_reduce_transparency_text">Waxay ka saartaa daritaanka shafaafinta iyo saameynta dhidibka.\n\nFa\'iidooyinka:\n• Heerarchiyad muuqaal oo cad\n• Akhrisamayn qoraal oo horumarsan\n• Buuq muuqaal oo yaraanshay\n• Culeys garasheed oo yaraanshay\n\nWaxaa lagu talinayaa isticmaalayaasha aragga hoose ama dhibaatooyinka garashada.</string>
+    <string name="help_topic_color_blind_modes_text">Waxay hagaajisaa midabada noocyada kala duwan ee indho-la\'aanta midabka:\n\n• Protanopia: Indho-la\'aanta cas\n• Deuteranopia: Indho-la\'aanta cagaaran\n• Tritanopia: Indho-la\'aanta buluug\n• Mid-midab: Indho-la\'aanta midabka oo dhamaanteed\n\nQaab kasta wuxuu isticmaashaa midabada si taxadar leh loo doortay oo kala sooci kara nooca gaar ah ee meesha la aamusay ee aragga midabka.</string>
+    <string name="help_topic_line_spacing_text">Waxay hagaajisaa kala-fogaanshaha u dhexeeya safooyinka qoraalka (1.0x - 2.0x).\n\n• Default: 1.0x\n• Waafaqsan AAA: 1.5x ama ka sare\n\nKala-fogaanshaha safka oo kordhay:\n• Horumarinta fahamka akhrisamaynta\n• Yarinta xanuunka indhaha\n• Caawinta isticmaalayaasha buug-akhrisnimada\n• Ka dhigidda qaybaha qoraalka inaysan yaraanin</string>
+    <string name="help_topic_paragraph_spacing_text">Waxay hagaajisaa kala-fogaanshaha u dhexeeya cutubyadda (1.0x - 3.0x).\n\n• Default: 1.0x\n• Waafaqsan AAA: 2.0x ama ka sare\n\nKala-fogaanshaha cutubka oo kordhay:\n• Si cad u kala soocidda fikradaha\n• Horumarinta nidaamka muuqaalka\n• Yarinta culaysyada garashada\n• Caawinta xifaalida joogitaanka akhrisamaynta</string>
+    <string name="help_topic_letter_spacing_text">Waxay hagaajisaa kala-fogaanshaha u dhexeeya xarfaha (0.0em - 0.2em).\n\n• Default: 0.0em\n• Waafaqsan AAA: 0.12em ama ka sare\n\nKala-fogaanshaha xarfaha oo kordhay:\n• Ka dhigidda xarfaha kala goonida ah oo aad muuqato\n• Caawinta isticmaalayaasha buug-akhrisnimada\n• Horumarinta saxnaanta akhrisamaynta\n• Yarinta khaladaadka xarfaha</string>
+    <string name="help_topic_text_width_text">Xaddida dhererka safka akhrisamaynta fudud:\n\n• Ballaarada Buuxda: Xad maleh\n• Raaxo: 80 xaraf (waxaa lagu talinayaa)\n• Ciriiri: 60 xaraf\n\nBaadhitaanku wuxuu muujinayaa akhrisan ugu habboon waxuu dhacaa 60-80 xaraf saff kasta. Safooyinka gaaban waxay yareyaan dhaqdhaqaaqa indha waxayna horumariyaan fahamka.</string>
+    <string name="help_topic_touch_targets_text">Waxay kordhinaysaa cabbirka ugu yaraan ee bartilmaameedka taabashada 60dp (ka 44dp).\n\nFa\'iidooyinka:\n• Fududaysa taabashada badhannada iyo xukumaadka\n• Yarinta taabashada khaldan\n• Caawinta isticmaalayaasha naafada dhaqdhaqaaqa\n• Ka wanaajinta isticmaalka gacanta oo keliya\n\nWCAG AAA waxay u baahan tahay ugu yaraan 60dp.</string>
+    <string name="help_topic_reduce_motion_text">Waxay ka saartaa dhammaan dhaqdhaqaaqa iyo wareegista.\n\nFa\'iidooyinka:\n• Ka hortagga xanuunka socdaalka\n• Yarinta digsi-la\'aanta\n• Yarinta culaysyada garashada\n• Horumarinta xushmada\n\nWaxaa lagu talinayaa isticmaalayaasha:\n• Cudurrada vestibular\n• Dhibaatooyinka xushmada\n• Xasaasiyaha dhaqdhaqaaqa</string>
+    <string name="help_topic_timeout_behavior_text">Xukuma wakhtiga dhammaadka tooska ah ee shaashaadaha xaqiijinta:\n\n• Waqti Dhammaad Midna (AAA): Waqti la\'aan\n• Caadi: 30 ilbiriqsi\n• Balaarsan: 60 ilbiriqsi\n\nWCAG AAA waxay u baahan tahay doorasho waqti dhammaad la\'aan oo loogu talagalay isticmaalayaasha u baahan waqti dheeraad ah si ay u dhammaystiraan hawlaha.\n\nXogta foomka si toos ah ayaa loo kaydinayaa ka hor wakhtiyada dhammaadka.</string>
+    <string name="help_topic_simplified_gestures_text">Waxay ku beddelaysaa geesinimada kakanka ah kuwa fudud:\n\n• Dhufo → Badhan taabo\n• Riix muddo dheer → Taabo caadi oo xaqiijin leh\n• Kaabi/dheri → Badhannada\n\nCaawinta isticmaalayaasha:\n• Naafada dhaqdhaqaaqa\n• Gariirta\n• La\'aanta fudaydka\n• Dhibaatooyinka shaashaddda taabashada</string>
+    <string name="help_topic_haptic_feedback_text">Bixinta gariirka ficilada.\n\nFa\'iidooyinka:\n• Xaqiijinta riixidda badhanka\n• Muujinta khaladaadka\n• Bixinta xaqiijinta taabashada\n\nWaa la joojin karaa isticmaalayaasha:\n• Oo ka soo horjeeda\n• Oo leh xasaasiyaha dareenka\n• Oo doortay hawlgalka aamusan</string>
+    <string name="help_topic_data_preservation_text">Si toos ah ayaa loo kaydinaa xogta foomka ka hor wakhtiyada dhammaadka.\n\nAstaamaha:\n• Digniin 10 ilbiriqsi ka hor wakhtiga dhammaadka\n• Doorasho kaydinta ama diidmada xogta\n• Dib u soo celin toos ah markaa noqoto\n• Xifaalida xogta 24 saac\n\nWaxay hubisaa in xog la\' damin haddaad u baahan tahay waqti dheeraad ah ama aad kulmaan kacsi.</string>
+    <string name="help_topic_simplified_ui_text">Yarinta kakan muuqaalka:\n\n• Qaybaha UI ee ka yar ayaa la muujiyaa hal mar\n• Badhannada waaweyn oo cad\n• Meel bannaan oo dheeraad ah\n• Qaababka fudud\n\nFa\'iidooyinka:\n• Fududaynta fahamka\n• Yaraanshaha damaashaadka\n• Xushmada horumarsan\n• Culaysyada garashada oo yaraanshay</string>
+    <string name="help_topic_step_indicators_text">Muujinaya horumarinta socodka talaabada badan.\n\nWaxay muujisaa:\n• Lambarka tallaabada hadda\n• Tirada guud ee tallaabada\n• Muuqaalka horumarinta\n\nFa\'iidooyinka:\n• Yarinta welwelka\n• Dejinta rajaynta cad\n• Caawinta xifaalida jihaynta\n• Muujinta horumarinta dhammaystirka</string>
+    <string name="help_topic_verbose_descriptions_text">Bixinta macluumaadka dheeraad ah iyo sharaxaadaha:\n\n• Calaamadaha badhanka ee dheeraad ah\n• Tilmaannada faahfaahsan\n• Xogeynta dheeraad ah\n• Fariimaha khaladka ee cad\n\nCaawinta isticmaalayaasha:\n• Fahamka ficilada ka hor dadaalka\n• Ka fogaanshaha khaladaadka\n• Barashada hawlgalka app-ka\n• Dhisidda kalsoonida</string>
+    <string name="help_topic_confirm_actions_text">U baahan tahay xaqiijinta ficilada muhiimka ah:\n\n• Tirtiridda warqadaha aqoonsiga\n• Beddeli goobaha\n• Nadiifinta xogta\n\nWCAG AAA waxay u baahan tahay xaqiijin dhammaan ficilada burburinta.\n\nFa\'iidooyinka:\n• Ka hortagga xaadashada\n• U oggolaanshaha dib u eegista ka hor ficilka\n• Yarinta welwelka\n• Bixinta fursadda labaad</string>
+    <string name="help_topic_reading_level_text">Isticmaala luqadda fudud (Heerka Fasalka 7-9):\n\n• Jumlada gaaban\n• Erayada caadiga ah halkii loo isticmaali lahaa jargon-ka\n• Luqadda cad oo toos ah\n• Ereyada farsamada oo yaraanshay\n\nWaafaqsan WCAG AAA markuu awood siiyay.\n\nFa\'iidooyinka:\n• Fududaynta fahamka\n• Dhakhsiyaynta fahamka\n• Ka wanaajinta kuwa aan Ingiriiska ku hadli jirin\n• Culaysyada garashada oo yaraanshay</string>
+    <string name="help_topic_help_system_text">Caawimada xasaasiga ah ee macluumaadka oo ku jirta app-ka oo dhan.\n\nAstaamaha:\n• 27 mawduuc caawimo\n• Xarunta caawimada la raadin karo\n• Marin mawduucyada la xiriira\n• Qaamuuska farsamada\n\nGelitaanka caawimada:\n• Shaashaadaha goobaha\n• Astaamaha kakanka ah\n• Fariimaha khaladka\n• Meel kasta oo aad aragto calaamadda caawimada</string>
+    <string name="help_topic_manual_code_entry_text">Geli xogta koodhka QR si gacanta ah halkii la sawiri lahaa.\n\nFa\'iidooyinka:\n• Waxay shaqeysaa marka helitaanka kamiradda aanay heli karin\n• Caawinta isticmaalayaasha dhibaatada dhaqdhaqaaqa leh\n• Ka wanaajinta iftiinka yar\n• Ma baahna inaad qaboojisid telefoonka si xasilloon\n\nBadal sawirista QR ee salaysan kamiradda.</string>
+    <string name="help_topic_voice_input_text">Isticmaal cod si aad qoraal u geliso halkii la tiypo lahaa.\n\nFa\'iidooyinka:\n• Gelinta aan gacantu gaari\n• Ka dhakhsiyaysii tiibinta\n• Caawinta isticmaalayaasha naafada dhaqdhaqaaqa\n• Yarinta xanuunka celceliska ah\n\nIsticmaala aqoonsiga codka ee ku-dhisan agabkaaga.</string>
+    <string name="help_topic_screen_reader_text">Taageero buuxda oo loogu talagalay akhristaha shaashaddda TalkBack.\n\nAstaamaha:\n• Dhammaan qaybaha UI waa la calaamadeeyay\n• Nidaamka madaxaha saxsan\n• Amarka marin-habaynta macquulka ah\n• Xogeynta gaarka ah ee ficilada kakanka ah\n\nApp-ku si toos ah wuxuu awood u siinayaa:\n• Sharaxaadaha faahfaahsan\n• Bartilmaameedyada taabashada oo balaarsan\n\nmarkaa TalkBack la ogaado.</string>
+    <string name="help_topic_accessibility_profiles_text">Profileyaasha helitaanka ee la habeeyay:\n\n• Aragga Naafada: Kala-duwanaansho sare, qoraal weyn, gariir\n• Dhaqdhaqaaqa Naafada: Bartilmaameedyo weyn, wakhtiyada dhammaadka balaarsan, xaqiijinnada\n• Garashada: Xudunta fudud, muuqaalka tallaabada, sharaxaadaha\n• Waayeelka: Qoraal weyn, bartilmaameedyo, xudunta fudud, dhaqdhaqaaqa yaraanshay\n• Default: Dib u deji dhammaan goobaha\n\nProfile kasta wuxuu awood u siinayaa goobaha ugu caawinta badan ee kooxda isticmaalaha. Waxaad gaara ku dheeraad ah u habeyn kartaa ka dib markaad dabaqdo profile.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">Xaqiijinta Da\'da</string>
+    <string name="content_age_verification_explanation">Fadlan sug inta aan si ammaan ah uga xaqiijinayno da\'daada adoo isticmaalaya caddayn aqoon-la\'aan. Taariikhda dhalashadda weligeed lama wadaagaan xaqiijiyaha.</string>
+    <string name="content_age_verification_instructions">U fiirso kamiradda koodhka QR ee xaqiijinta. Koodhku si toos ah ayaa loo sawiri doonaa markuu la ogaado.</string>
+    <string name="content_age_verification_success">Da\'daadu si guul ah ayaa loo xaqiijiyay. Xaqiijiyuhu wuxuu ogaadaa inaad buuxinayso shuruudda da\'diisa adoon baranin taariikhda dhalashadda ee dhab ah.</string>
+    <string name="content_age_verification_failed">Xaqiijintu waa fashilantay. Fadlan isku day sawirista koodhka QR mar kale ama isticmaal gelinta koodhka gacanta.</string>
+    <string name="content_credential_issuance_title">Bixinta Warqadda Aqoonsiga</string>
+    <string name="content_credential_issuance_explanation">Sawir koodhka QR ee ay bixisay bixiyaha la ogolaanshahay si aad u hesho warqaddaada aqoonsiga da\'da ee dijitaalka ah.</string>
+    <string name="content_credential_issuance_instructions">U fiirso kamiradda koodhka QR ee bixinta ee ay muujisay sarkaalka. Warqaddaada aqoonsiga agabkaaga ayaa lagu sameyn doonaa.</string>
+    <string name="content_credential_issuance_success">Warqadda aqoonsiga si guul ah ayaa loo sameeyay. Hadda waxaad isticmaali kartaa warqaddaan aqoonsiga xaqiijinta da\'da.</string>
+    <string name="content_credential_description">Warqadda aqoonsiga waa caddayn cryptographic oo saxiixan oo aqoonsigaaga awood u siinaysa xaqiijinta ilaalinaysa asturnaanta.</string>
+    <string name="content_zero_knowledge_explanation">Caddayn aqoon-la\'aan waxay kuu oggolaanaysaa inaad xaqiijiso inaad buuxinayso shuruudda da\'da adoon muujin da\'daada dhab ah.</string>
+    <string name="content_setup_proving_key">Soo dejinaya furaha caddaynta cryptographic ee loo baahan yahay samaynta caddayn aqoon-la\'aan</string>
+    <string name="content_processing_challenge">Hawlgalinaya caqabadda xaqiijinta</string>
+    <string name="content_creating_proof">Samaynaya caddaynta da\'da ee aqoon-la\'aan</string>
+    <string name="content_submitting_proof">Gudbinaya caddaynta xaqiijiyaha</string>
+    <string name="content_error_no_credential">Warqadda aqoonsiga lama helin. Fadlan marka hore ka hel bixiyaha la ogolaanshahay.</string>
+    <string name="content_error_network_failed">Xiriirka shabakadda ayaa fashilmay. Fadlan hubi xiriirkaaga internetka ka dibna isku day mar kale.</string>
+    <string name="content_error_invalid_qr">Koodhka QR ee khaldan. Fadlan hubi inaad sawiraysid koodhka xaqiijinta saxda ah.</string>
+    <string name="content_error_verification_failed">Xaqiijintu waa fashilantay. Server-ku kuma awoodi karin xaqiijinta caddayntaada.</string>
+    <string name="content_officer_authentication_title">Xaqiijinta Sarkaalka</string>
+    <string name="content_officer_issuance_title">Bixinta Warqadda Aqoonsiga</string>
+    <string name="content_officer_dob_prompt">Gali taariikhda dhalashadda la xaqiijiyay ee codsadaha ee dukumiintigooda aqoonsiga rasmiga ah.</string>
+    <string name="content_onboarding_welcome">Ku soo dhawow Provii Wallet - xalkaaga xaqiijinta da\'da dijitaalka ah ee ilaalinaysa asturnaanta.</string>
+    <string name="content_onboarding_privacy">Taariikhda dhalashadda si ammaan ah ayaa loogu kaydisaa agabkaaga weligeednana lama gudbiyaan xaqiijiyeyaasha.</string>
+    <string name="content_onboarding_get_started">Si aad u bilaabato, booqo bixiyaha la ogolaanshahay si aad u hesho warqaddaada aqoonsiga da\'da ee dijitaalka ah.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">Hubi Da\'daada</string>
+    <string name="content_age_verification_explanation_simplified">Waxaan hubinayaa da\'daada. Taariikhda dhalashadda lama arki oo lama wadaagi doonto.</string>
+    <string name="content_age_verification_instructions_simplified">U fiirso kamiradda koodhka QR. Si toos ah ayuu u sawiri doonaa.</string>
+    <string name="content_age_verification_success_simplified">Guul! Goobtu waxay ogaatay inaad da\'da gaaray. Taariikhda dhalashadda ma garaneyso.</string>
+    <string name="content_age_verification_failed_simplified">Tani kuma shaqeynin. Isku day sawirista mar kale ama qor koodhka halkiis.</string>
+    <string name="content_credential_issuance_title_simplified">Hel ID-gaaga</string>
+    <string name="content_credential_issuance_explanation_simplified">Sawir koodhka xafiiska dowladda si aad u hesho ID-gaaga dijitaalka ah.</string>
+    <string name="content_credential_issuance_instructions_simplified">U fiirso kamiradda koodhka. ID-gaagu wuxuu ku badbaadi doonaa telefoonahaaga.</string>
+    <string name="content_credential_issuance_success_simplified">Dhamaystay! Hadda waxaad isticmaali kartaa ID-gaaga dijitaalka ah si aad u xaqiijiso da\'daada.</string>
+    <string name="content_credential_description_simplified">Warqadda aqoonsiga waxay u eg tahay kaaraha ID-ga dijitaalka ah ee xaqiijinaya cidda aad tahay adoon wadaagaynin faahfaahinta gaarka ah.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Waxaad xaqiijin kartaa inaad da\'da gaaratay adoon cidna u sheegaynin da\'daada dhab ah.</string>
+    <string name="content_setup_proving_key_simplified">Soo dejinaya faylalka amniga ee loo baahan yahay app-ka inuu shaqeeyo</string>
+    <string name="content_processing_challenge_simplified">Akhrinta codsiga hubinta da\'da</string>
+    <string name="content_creating_proof_simplified">Samaynaya caddaynta da\'daada</string>
+    <string name="content_submitting_proof_simplified">Diraya caddaynta goobta</string>
+    <string name="content_error_no_credential_simplified">ID kuma lihid. Booqo xafiiska dowladda si aad marka hore u hesho.</string>
+    <string name="content_error_network_failed_simplified">Internetka ma xidhi karo. Hubi Wi-Fi ama xogta ka dibna isku day mar kale.</string>
+    <string name="content_error_invalid_qr_simplified">Koodhkaas ma uu u muuqdo sax. Hubi inaad sawiraysid koodhka saxda ah.</string>
+    <string name="content_error_verification_failed_simplified">Tani kuma shaqeynin. Goobtu kuma hubsan kartid caddayntaada. Isku day mar kale.</string>
+    <string name="content_officer_authentication_title_simplified">Sarkaalka Gal</string>
+    <string name="content_officer_issuance_title_simplified">Samee Kaaraha ID</string>
+    <string name="content_officer_dob_prompt_simplified">Gali taariikhda dhalashadda qofka aqoonsigoodda rasmiga ah.</string>
+    <string name="content_onboarding_welcome_simplified">Ku soo dhawow Provii Wallet - xaqiiji da\'daada si gaar ah.</string>
+    <string name="content_onboarding_privacy_simplified">Taariikhda dhalashaddu telefoonahaaga ayay ku jirtaa. Cidna kale kuma arki karto.</string>
+    <string name="content_onboarding_get_started_simplified">Si aad u bilaabato, booqo xafiiska dowladda si aad u hesho ID-gaaga dijitaalka ah.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Quick Response (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Lambarka Aqoonsiga Shakhsiga (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">Taariikhda Dhalashada (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Aqoonsiga (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">Xujinta Isticmaalaha (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Uniform Resource Locator (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Xiriiriyaha Barnaamijyada Codsiga (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">Jooji dhaqdhaqaaqa</string>
+    <string name="animation_resume_animations">Dib u bilaab dhaqdhaqaaqa</string>
+    <string name="animation_pause_button_text">Jooji</string>
+    <string name="animation_resume_button_text">Dib u bilaab</string>
+    <string name="animation_toggles_playback_hint">Beddelaya ciyaarinta dhaqdhaqaaqa</string>
+    <string name="animation_paused_announcement">Dhaqdhaqaaqa waa la joojiyay</string>
+    <string name="animation_resumed_announcement">Dhaqdhaqaaqa waa dib loo bilaabay</string>
+    <string name="animation_active_count">%d dhaqdhaqaaq oo firfircoon</string>
+    <string name="animation_loading_default">Soo raraya</string>
+    <string name="animation_please_wait">Fadlan sug inta hawshu dhammaanayso</string>
+    <string name="animation_percent_complete">%d boqolkiiba ayaa dhamaatay</string>
+    <string name="animation_loading_in_progress">Socda</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">Fure-gaabanka</string>
+    <string name="keyboard_shortcuts_done">Dhammaystay</string>
+    <string name="keyboard_shortcuts_app_section">Fure-gaabanka App-ka</string>
+    <string name="keyboard_shortcuts_navigation_section">Marin-habaynta</string>
+    <string name="keyboard_shortcuts_tips_section">Tilmaannada</string>
+    <string name="keyboard_shortcuts_navigation_footer">Fure-habayntan waxay ku shaqeeyaan app-ka oo dhan oo leh kiiboodhyada dibadda</string>
+    <string name="keyboard_shortcuts_tip_external">Kiiboodhyada Bluetooth iyo USB ee dibadda si buuxda ayaa loo taageeraa</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Isticmaal fure-jihada si aad u maraysid shayada liisaska</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Haysato Ctrl si aad u aragto fure-gaabanka la heli karo shaashadddan</string>
+    <string name="keyboard_shortcuts_tip_a11y">Dhammaan astaamaha app-kani kiiboodhka ayaa loo geli karaa</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Xidh fure-gaabanka</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">Goobaha</string>
+    <string name="keyboard_shortcut_label_accessibility">Helitaanka</string>
+    <string name="keyboard_shortcut_label_help">Xarunta Caawimada</string>
+    <string name="keyboard_shortcut_label_add_credential">Ku Dar Warqadda Aqoonsiga</string>
+    <string name="keyboard_shortcut_label_verify">Xaqiiji</string>
+    <string name="keyboard_shortcut_label_shortcuts">Fure-gaabanka</string>
+    <string name="keyboard_shortcut_desc_settings">Fur Goobaha</string>
+    <string name="keyboard_shortcut_desc_accessibility">Goobaha Helitaanka</string>
+    <string name="keyboard_shortcut_desc_help">Xarunta Caawimada</string>
+    <string name="keyboard_shortcut_desc_add_credential">Ku Dar Warqadda Aqoonsiga</string>
+    <string name="keyboard_shortcut_desc_verify">Bilow Xaqiijinta</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Fure-gaabanka</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">Dib u noqo / Xidh</string>
+    <string name="keyboard_shortcut_nav_back_desc">Xidh shaashadda hadda ama dialog-ka</string>
+    <string name="keyboard_shortcut_nav_next">Goobta Xigta</string>
+    <string name="keyboard_shortcut_nav_next_desc">Dhaqdhaq xushmada curinta falgalka ee xigta</string>
+    <string name="keyboard_shortcut_nav_prev">Goobta Hore</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Dhaqdhaq xushmada curinta falgalka ee hore</string>
+    <string name="keyboard_shortcut_nav_submit">Gudbi / Sii wad</string>
+    <string name="keyboard_shortcut_nav_submit_desc">Firfircooneysi badhanka la xushmeeyo ama gudbi foom</string>
+    <string name="keyboard_shortcut_nav_activate">Firfircooneysi Badhanka</string>
+    <string name="keyboard_shortcut_nav_activate_desc">Firfircooneysi badhanka hadda la xushmeeyo ama beddelka</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">Dialog waa la furay. Riix Escape si aad u xidho, riix Enter si aad u xaqiijiso.</string>
+    <string name="modal_closed_announcement">Dialog waa la xidhay</string>
+    <string name="modal_button_primary_label">%s (ficilada asaasiga ah)</string>
+    <string name="modal_button_cancel_label">%s (jooji)</string>
+    <string name="modal_button_destructive_label">%s (ficilada burburinta)</string>
+    <string name="modal_button_primary_hint">Laba jeer taabo si aad u xaqiijiso, ama riix Enter</string>
+    <string name="modal_button_cancel_hint">Laba jeer taabo si aad u joojiso, ama riix Escape</string>
+    <string name="modal_button_destructive_hint">Laba jeer taabo si aad u fuliso ficilada burburinta</string>
+    <string name="modal_button_secondary_hint">Laba jeer taabo si aad u fuliso ficilka</string>
+    <string name="modal_confirm">Xaqiiji</string>
+    <string name="modal_cancel">Jooji</string>
+    <string name="modal_delete">Tirtir</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">Tirtir %1$s</string>
+    <string name="a11y_edit_nickname_for">Tafatir magaca gaarka ah ee %1$s</string>
+    <string name="accessibility_attestation_scan_back">Dib u laabo</string>
+    <string name="attestation_replace_confirm">Beddel</string>
+    <string name="attestation_replace_primary_message">Hore ayaad u haysatay warqad aqoonsi shakhsi ah. Samaynta mid cusub ayaa beddeli doonta tii hore. Tan dib looma noqon karo.</string>
+    <string name="attestation_replace_primary_title">Beddel warqadda aqoonsiga ee jirta?</string>
+    <string name="attestation_scan_error_empty">Koodhka QR wuu madhan yahay</string>
+    <string name="attestation_scan_instruction">U fiirso kamiradda koodhka QR ee uu sarkaalku ku muujinayo</string>
+    <string name="attestation_scan_invalid_qr">Koodhkan QR ma aha mid xanbaarsan xog markhaatinimo</string>
+    <string name="attestation_scan_title">Sawir Markhaatinimada</string>
+    <string name="attestation_scan_wrong_type_toast">Kani waa koodh QR xaqiijineed, oo aan ahayn koodh QR oo warqad aqoonsi</string>
+    <string name="biometric_required_message">App-kani wuxuu u baahan yahay xidhiidhinta shaashadda (PIN, qaab, ama bayoolajiyad) si si ammaan ah loogu kaydiyo warqadaha aqoonsiga. Fadlan mid ka samee dejinta ammaanka qalabkaaga ka hor inta aanad sii wadin.</string>
+    <string name="biometric_required_open_settings">Fur Goobaha Ammaanka</string>
+    <string name="biometric_required_title">Xidhiidhinta Shaashadda Ayaa Loo Baahan Yahay</string>
+    <string name="challenge_sandbox_prompt_announcement">Caqabad sandbox ah ayaa la helay. Dooro inaad damaaniso qaabka sandbox oo aad sii wado, ama aad diido caqabadda.</string>
+    <string name="challenge_sandbox_prompt_body">Caqabaddan waxaa soo saaray xaqiijiye sandbox ah. Ma guulaysan doonto ilaa aad ka damaaniso qaabka sandbox boorsadan.</string>
+    <string name="challenge_sandbox_prompt_primary">Damaani sandbox oo sii wad</string>
+    <string name="challenge_sandbox_prompt_secondary">Diid caqabadda</string>
+    <string name="challenge_sandbox_prompt_title">Caqabad sandbox ayaa la helay</string>
+    <string name="credential_detail_nickname_error">Kaydinta magaca gaarka ah way fashilantay</string>
+    <string name="credential_list_managed_count">%1$d ka mid ah %2$d</string>
+    <string name="credential_picker_count_shown">%1$d warqadood oo aqoonsi ah ayaa la muujiyay</string>
+    <string name="credential_picker_filter_clear">Tirtir shaandhaynta</string>
+    <string name="credential_picker_filter_label">Shaandhayso warqadaha aqoonsiga magaca</string>
+    <string name="credential_picker_filter_placeholder">Shaandhayso warqadaha aqoonsiga</string>
+    <string name="credential_picker_no_results">Ma jiraan warqado aqoonsi oo u dhigma</string>
+    <string name="credential_picker_section_managed">Warqadaha Aqoonsiga La Maamulo</string>
+    <string name="credential_picker_section_me">Aniga</string>
+    <string name="credential_picker_subtitle">Dooro qofka la xaqiijinayo.</string>
+    <string name="credential_row_action_delete">Tirtir</string>
+    <string name="credential_row_action_edit">Tafatir Magaca Gaarka ah</string>
+    <string name="credential_row_overflow_menu">Doorashooyinka warqadda aqoonsiga</string>
+    <string name="deeplink_sandbox_prompt_announcement">Xidhiidh sandbox ah ayaa la helay. Dooro inaad damaaniso qaabka sandbox oo aad furto xidhiidhka.</string>
+    <string name="deeplink_sandbox_prompt_body">Xidhiidhkani wuxuu kaliya ku guulaysan doonaa haddii aad ka damaaniso qaabka sandbox boorsadan.</string>
+    <string name="deeplink_sandbox_prompt_primary">Damaani sandbox oo fur</string>
+    <string name="deeplink_sandbox_prompt_secondary">Jooji</string>
+    <string name="deeplink_sandbox_prompt_title">Xidhiidh sandbox ayaa la helay</string>
+    <string name="empty_credential_option_find_apps_a11y">Hel app ka qaybqaata. Ka hel warqad aqoonsi shirkaddaada hawlgabka, bangiga, telcoga, caymiska caafimaadka, ama qof kasta oo hore u ogaa da\'daada.</string>
+    <string name="empty_credential_option_find_apps_desc">Ka hel warqad aqoonsi shirkaddaada hawlgabka, bangiga, telcoga, caymiska caafimaadka, ama qof kasta oo hore u ogaa da\'daada</string>
+    <string name="empty_credential_option_find_apps_title">Hel app ka qaybqaata</string>
+    <string name="empty_credential_option_find_locations_a11y">Hel goob kuu dhow. Booqo shakhsi ahaan adoo wata aqoonsigaaga si aad u hesho warqad aqoonsi.</string>
+    <string name="empty_credential_option_find_locations_desc">Booqo shakhsi ahaan adoo wata aqoonsigaaga si aad u hesho warqad aqoonsi</string>
+    <string name="empty_credential_option_find_locations_title">Hel goob kuu dhow</string>
+    <string name="empty_credential_option_managed_a11y">Waxaan daryeelaa qof. Maamul warqadaha aqoonsiga ee dadka aad daryeesho.</string>
+    <string name="empty_credential_option_managed_desc">Maamul warqadaha aqoonsiga ee dadka aad daryeesho</string>
+    <string name="empty_credential_option_managed_title">Waxaan daryeelaa qof</string>
+    <string name="empty_credential_option_scan_a11y">Waxaan haystaa koodh QR oo la sawiro. Xaqiijiye ayaa ku siiyay koodh ka dib markii uu arkay aqoonsigaaga.</string>
+    <string name="empty_credential_option_scan_desc">Xaqiijiye ayaa ku siiyay koodh ka dib markii uu arkay aqoonsigaaga</string>
+    <string name="empty_credential_option_scan_title">Waxaan haystaa koodh QR oo la sawiro</string>
+    <string name="empty_credential_subtitle">Dooro sida aad u jeclaan lahayd inaad u heshid warqaddaada aqoonsiga ee ugu horreysa</string>
+    <string name="empty_credential_title">Weli Ma Jiraan Warqado Aqoonsi</string>
+    <string name="error_screen_lock_required">Xidhiidhinta shaashadda (PIN, qaab, ama bayoolajiyad) ayaa loo baahan yahay si si ammaan ah loogu kaydiyo warqadaha aqoonsiga. Fadlan mid ka samee dejinta qalabkaaga.</string>
+    <string name="issuers_no_apps_found_description">Hubi mar dambe iyadoo app-yo badan ay taageerayaan Provii</string>
+    <string name="issuers_no_apps_found">Weli ma jiraan app-yo ka qaybqaata</string>
+    <string name="issuers_no_locations_found_description">Hubi mar dambe iyadoo goobo dheeraad ah lagu daro</string>
+    <string name="issuers_no_locations_found">Goobo lama helin</string>
+    <string name="managed_credential_explainer_body">Si aad u heshid warqad aqoonsi la maamulo qof aad daryeesho, booqo goob ka qaybqaata oo wadajir ah. Xaqiijiyaha ayaa arki doona aqoonsigooda. Marka aad sawirto koodhka QR, waxaa lagu weydiin doonaa in warqaddaan aqoonsiga ay tahay tayada ama qof aad maamusho.</string>
+    <string name="managed_credential_explainer_find_location">Hel goob</string>
+    <string name="managed_credential_explainer_have_qr">Hore ayaan u haystaa koodh QR</string>
+    <string name="managed_credential_explainer_title">Warqadaha Aqoonsiga La Maamulo</string>
+    <string name="sandbox_credential_type">Nooca warqadda aqoonsiga</string>
+    <string name="sandbox_managed_credential_saved">Warqadda aqoonsiga la maamulo waa la kaydiyay (%s)</string>
+    <string name="sandbox_mode_enabled_announcement">Qaabka sandbox hadda waa firfircoon yahay. Boorsadu waxay ku xidhan tahay server-rada sandbox.</string>
+    <string name="sandbox_nickname_helper">Sii warqaddan aqoonsiga magac si aad uga aqoonsato boorsadaada.</string>
+    <string name="sandbox_nickname_label">Magaca gaarka ah</string>
+    <string name="sandbox_nickname_placeholder">tusaale: Saaraa</string>
+    <string name="sandbox_nickname_required">Magac gaar ah ayaa loogu baahan yahay warqadaha aqoonsiga la maamulo</string>
+    <string name="sandbox_type_managed_credential">Warqad aqoonsi la maamulo</string>
+    <string name="sandbox_type_your_credential">Warqaddaada aqoonsiga</string>
+    <string name="title_find_apps">Hel App Ka Qaybqaata</string>
+    <string name="title_find_locations">Hel Goob</string>
+    <string name="verification_go_to_attestation">Hel Warqadda Aqoonsiga</string>
+    <string name="verification_wrong_qr_type_message">Koodhkan QR waxaa loogu talagalay helitaanka warqad aqoonsi cusub, oo ma aha xaqiijinta da\'da. Ma jeclaan lahayd inaad halkii aaddo shaashadda markhaatinimada?</string>
+    <string name="verification_wrong_qr_type_title">Koodhka QR ee Markhaatinimada Ayaa La Helay</string>
+    <string name="walkthrough_back">Dib</string>
+    <string name="walkthrough_get_started">Bilow</string>
+    <string name="walkthrough_next">Xiga</string>
+    <string name="walkthrough_page_indicator">Bogga %1$d ee %2$d</string>
+    <string name="walkthrough_page1_body">Warqaddaada aqoonsiga waxay xanbaarsan tahay da\'daada. Wax kale ma jiraan. Magacaaga maaha, cinwaankaaga maaha, aqoonsigaaga maaha.\n\nWaxay caddaynaysaa inaad ka weyn tahay (ama ka yar tahay) da\' gaar ah iyadoon la muujin taariikhdaada dhalashadda.</string>
+    <string name="walkthrough_page1_heading">Waa maxay warqadda aqoonsiga?</string>
+    <string name="walkthrough_page2_body">Waxaad ka heli kartaa warqad aqoonsi app uu leeyahay shirkad hore u ogaa da\'daada. Tusaale ahaan, bangigaaga ama sanduuqaaga hawlgabka. Sababtoo ah hore ayay u xaqiijiyeen da\'daada, wax dheeraad ah looma baahna in la wadaago.\n\nSi kale, booqo goob ka qaybqaata adoo wata aqoonsi caddaynaya taariikhda dhalashadahaaga. Taariikhda dhalashadahaaga waa la arkaa, waxaa loo isticmaalaa samaynta warqaddaada aqoonsiga, ka dibna waa la tuuraa. Bixiyaha weligii ma arko warqaddaada aqoonsiga. Aqoonsigaaga weligii lalama xidho.</string>
+    <string name="walkthrough_page2_heading">Sideed u heshaa mid?</string>
+    <string name="walkthrough_page3_body">Haddii aad daryeesho qof u baahan warqad aqoonsi da\', waxaad u heli kartaa oo aad ku maamuli kartaa qalabkaaga.\n\nBooqo goob ka qaybqaata wadajir adoo wata aqoonsi caddaynaya taariikhda dhalashadooda. Marka aad sawirto koodhka QR, waxaa lagu weydiin doonaa in warqaddaan aqoonsiga ay tahay tayada ama qof aad maamusho.\n\nKu dar magac gaar ah si aad u kala saari karto warqadahooda aqoonsiga.</string>
+    <string name="walkthrough_page3_heading">Dadka aad daryeesho</string>
+    <string name="walkthrough_page4_body">App raadinaya inuu xaqiijiyo da\'daada wuxuu si toos ah caqabad ugu diri karaa boorsadaada Provii. Waxaad doorataa warqadda aqoonsiga ee la isticmaalo. Marka xaqiijintu si guul leh u dhammaato, waxaa laguu celin doonaa app-ka codsanayey, waxaadna u sii socon kartaa adigoo la xaqiijiyay.\n\nSi kale, waxaa lagugu muujin karaa koodh QR oo qalab kale ku jira, ama xidhiidh ku jira browser-kaaga mobilada oo si toos ah u tagaya boorsadaada. Waxaa sidoo kale jira doorashada koodhka gaaban ee helitaanka.\n\nMacluumaad shakhsi ah weligood lama wadaago. Kaliya jawaab haa ama maya ah haddii aad buuxiso shuruudaha da\'da.</string>
+    <string name="walkthrough_page4_heading">Sidee u shaqaysaa xaqiijintu?</string>
+    <string name="walkthrough_page5_body">Tallaabadaada koowaad waa inaad heshid warqad aqoonsi app ka qaybqaata ama goob kuu dhow.\n\nHalkaa waxaad ka xaqiijin kartaa da\'daada mar kasta oo loo baahdo, iyadoon la wadaagin macluumaad shakhsi ah. Sidoo kale waxaad u maamuli kartaa warqadaha aqoonsiga dadka aad daryeesho.</string>
+    <string name="walkthrough_page5_heading">Wax walba waa diyaar</string>
+    <string name="walkthrough_skip">Ka bood</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

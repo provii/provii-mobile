@@ -1,0 +1,1682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===== BATCH 01 ===== -->
+<!-- Batch 01: App Identity, Navigation, Onboarding, Credentials -->
+
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">محفظة Provii</string>
+    <string name="app_name_debug">محفظة Provii (Debug)</string>
+    <string name="app_name_staging">محفظة Provii (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">الإعدادات</string>
+    <string name="title_accessibility">إمكانية الوصول</string>
+    <string name="title_provii_wallet">محفظة Provii</string>
+    <string name="title_get_credentials">الحصول على بيانات اعتماد</string>
+    <string name="title_scan_verification_qr">مسح رمز \u2068QR\u2069 للتحقق</string>
+    <string name="title_verifying_age">جارٍ التحقق من العمر</string>
+    <string name="title_age_verified">تم التحقق من العمر</string>
+    <string name="title_verification_failed">فشل التحقق</string>
+    <string name="title_officer_mode">وضع الموظف</string>
+    <string name="title_officer_dashboard">لوحة تحكم الموظف</string>
+    <string name="title_issue_credential">إصدار بيانات اعتماد</string>
+    <string name="title_credential_ready">بيانات الاعتماد جاهزة</string>
+    <string name="title_get_your_credential">احصل على بيانات اعتمادك</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">مرحبًا بك في محفظة Provii</string>
+    <string name="welcome_subtitle">التحقق الآمن من العمر بكل بساطة</string>
+    <string name="welcome_first_credential">ابدأ بإضافة أول بيانات اعتماد للتحقق من العمر</string>
+    <string name="welcome_description">التحقق من العمر بخصوصية باستخدام إثبات المعرفة الصفرية</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">مرحبًا بك في محفظة Provii</string>
+    <string name="onboarding_language_subtitle">اختر لغتك المفضلة</string>
+    <string name="onboarding_use_english">استخدام اللغة الإنجليزية</string>
+    <string name="onboarding_use_english_description">المتابعة باستخدام اللغة الإنجليزية كلغة التطبيق</string>
+    <string name="onboarding_rotating_button_description">زر تغيير اللغة، يعرض حاليًا: \u2068%1$s\u2069. انقر لاختيار لغة مختلفة.</string>
+    <string name="onboarding_change_later">يمكنك تغيير ذلك لاحقًا من الإعدادات</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">إمكانية الوصول</string>
+    <string name="onboarding_accessibility_desc">هل تريد تخصيص ميزات إمكانية الوصول مثل حجم النص أو أهداف اللمس أو تقليل الحركة؟</string>
+    <string name="onboarding_use_defaults">استخدام الإعدادات الافتراضية</string>
+    <string name="onboarding_use_defaults_description">المتابعة بإعدادات إمكانية الوصول القياسية</string>
+    <string name="onboarding_open_accessibility">إعدادات إمكانية الوصول</string>
+    <string name="onboarding_open_accessibility_description">فتح إعدادات إمكانية الوصول لتخصيص التطبيق</string>
+    <string name="onboarding_accessibility_later">يمكنك تغيير ذلك لاحقًا من الإعدادات</string>
+    <string name="onboarding_accessibility_features_title">تتضمن الميزات المتاحة:</string>
+    <string name="onboarding_feature_text_size">أحجام نص أكبر</string>
+    <string name="onboarding_feature_touch_targets">أهداف لمس أكبر</string>
+    <string name="onboarding_feature_reduce_motion">تقليل الحركة</string>
+    <string name="onboarding_feature_high_contrast">وضع التباين العالي</string>
+    <string name="onboarding_talkback_detected">تم اكتشاف \u2068TalkBack\u2069</string>
+    <string name="onboarding_talkback_message">تم تفعيل الأوصاف التفصيلية لمساعدتك في التنقل داخل التطبيق.</string>
+    <string name="onboarding_continue_to_setup">المتابعة إلى الإعداد</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">مطلوب إعداد لمرة واحدة</string>
+    <string name="setup_download_required">مطلوب تحميل</string>
+    <string name="setup_download_description">يحتاج هذا التطبيق إلى تحميل مكونات أمان لإثبات المعرفة الصفرية (87 ميغابايت تقريبًا).</string>
+    <string name="setup_wifi_recommended">يُنصح باستخدام \u2068Wi-Fi\u2069</string>
+    <string name="setup_checking_status">جارٍ التحقق من حالة الإعداد\u2026</string>
+    <string name="setup_already_setup">تم الإعداد بالفعل!</string>
+    <string name="setup_ready_message">محفظتك جاهزة للتحقق الآمن من العمر</string>
+    <string name="setup_preparing">جارٍ تحضير نظام التحقق الآمن\u2026</string>
+    <string name="setup_checking_components">جارٍ فحص مكونات الأمان\u2026</string>
+    <string name="setup_downloading">جارٍ تحميل مكونات الأمان</string>
+    <string name="setup_download_progress_description">اكتمل \u2068%1$d%%\u2069 (\u2068%2$s\u2069 ميغابايت من \u2068%3$s\u2069 ميغابايت تم تحميلها)</string>
+    <string name="setup_initializing">جارٍ تهيئة مكونات الأمان\u2026</string>
+    <string name="setup_complete">اكتمل الإعداد!</string>
+    <string name="setup_download_info">يتيح ذلك إثبات المعرفة الصفرية للتحقق من العمر بخصوصية</string>
+    <string name="setup_one_time_download">تحميل لمرة واحدة</string>
+    <string name="setup_stuck_message">يستغرق هذا وقتًا أطول من المتوقع</string>
+    <string name="setup_stuck_description">قد يكون الإعداد متوقفًا. حاول إعادة التشغيل.</string>
+    <string name="setup_restart_message">يحتاج التطبيق إلى إعادة تشغيل. يحدث ذلك أحيانًا عند التشغيل الأول.</string>
+    <string name="setup_storage_full">مساحة التخزين ممتلئة</string>
+    <string name="setup_connection_error">خطأ في الاتصال</string>
+    <string name="setup_failed">فشل الإعداد</string>
+    <string name="setup_initialization_error">خطأ في التهيئة</string>
+    <string name="error_storage_init_failed">فشلت تهيئة التخزين. يرجى إعادة تشغيل التطبيق.</string>
+    <string name="error_storage_init_close_restart">فشلت تهيئة التخزين. يرجى إغلاق التطبيق وإعادة تشغيله.</string>
+    <string name="setup_free_storage_message">قم بتحرير 65 ميغابايت على الأقل وحاول مجددًا</string>
+    <string name="setup_progress_format">\u2068%1$d\u2069 ميغابايت / \u2068%2$d\u2069 ميغابايت</string>
+    <string name="setup_privacy_protected">الخصوصية محمية</string>
+    <string name="setup_privacy_description">يستخدم التحقق من عمرك إثبات المعرفة الصفرية. لا تتم مشاركة تاريخ ميلادك أبدًا.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">بيانات اعتمادي</string>
+    <string name="credentials_empty">لا توجد بيانات اعتماد مخزنة</string>
+    <string name="credential_active">بيانات الاعتماد نشطة</string>
+    <string name="credential_expired">انتهت صلاحية بيانات الاعتماد</string>
+    <string name="credential_ready_for_verification">جاهزة للتحقق</string>
+    <string name="credential_expired_message">انتهت صلاحية بيانات اعتمادك ويجب استبدالها</string>
+    <string name="credential_stored_successfully">تم تخزين بيانات الاعتماد بنجاح</string>
+    <string name="credential_stored_description">تم تخزين بيانات اعتماد العمر الخاصة بك بشكل آمن وهي جاهزة للاستخدام</string>
+    <string name="credential_can_prove_age">يمكنك الآن إثبات عمرك بخصوصية</string>
+    <string name="credential_returning">جارٍ العودة إلى بيانات الاعتماد\u2026</string>
+    <string name="credential_view_credentials">عرض بيانات الاعتماد</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">تم</string>
+    <string name="action_scan_qr_code">مسح رمز \u2068QR\u2069</string>
+    <string name="action_find_locations">البحث عن مواقع</string>
+    <string name="action_get_credential">الحصول على بيانات اعتماد</string>
+    <string name="action_replace_credential">استبدال ببيانات اعتماد جديدة</string>
+    <string name="action_replace_credential_now">استبدال بيانات الاعتماد الآن</string>
+    <string name="action_delete_credential">حذف بيانات الاعتماد</string>
+    <string name="credential_action_scan_description">الحصول على بيانات اعتماد من جهة إصدار مرخّصة</string>
+    <string name="credential_action_find_description">اكتشاف جهات الإصدار القريبة</string>
+    <string name="credential_remove_description">إزالة بيانات الاعتماد الحالية</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">الخصوصية</string>
+    <string name="credential_info_privacy_value">محمية</string>
+    <string name="credential_info_status">الحالة</string>
+    <string name="credential_info_status_value">صالحة</string>
+    <string name="credential_tip_title">نصيحة سريعة</string>
+    <string name="credential_tip_message">انقر على زر \'التحقق من العمر\' لمسح رموز \u2068QR\u2069 (رمز الاستجابة السريعة) للتحقق في الأماكن المشاركة.</string>
+
+    <!-- ===== BATCH 02 ===== -->
+<!-- ==================== VERIFICATION ==================== -->
+    <!-- ملاحظة للمترجم: تظهر هذه النصوص أثناء عملية التحقق من العمر -->
+    <string name="verification_scan_qr">مسح رمز QR\u200F</string>
+    <string name="verification_verify_age">التحقق من العمر</string>
+    <string name="verification_generating_proof">جارٍ إنشاء الإثبات\u2026</string>
+    <string name="verification_success">تم التحقق بنجاح</string>
+    <string name="verification_failed">فشل التحقق</string>
+    <string name="verification_age_verified">تم التحقق من العمر</string>
+    <string name="verification_age_verified_message">تم التحقق من عمرك بخصوصية</string>
+    <string name="verification_can_return">يمكنك الآن العودة إلى الموقع للمتابعة.</string>
+    <string name="verification_returning_browser">جارٍ العودة إلى المتصفح\u2026</string>
+
+    <!-- خطوات عملية التحقق -->
+    <string name="verification_step_1_of_2">الخطوة 1 من 2</string>
+    <string name="verification_step_2_of_2">الخطوة 2 من 2</string>
+    <string name="verification_point_camera">وجّه الكاميرا نحو رمز QR\u200F الخاص بالتحقق</string>
+    <string name="verification_hold_steady">أبقِ الجهاز ثابتًا حتى تسمع نغمة التأكيد.</string>
+    <string name="verification_reading_request">جارٍ قراءة طلب التحقق\u2026</string>
+    <string name="verification_processing_challenge">جارٍ معالجة التحدي\u2026</string>
+    <string name="verification_creating_proof">جارٍ إنشاء إثبات العمر\u2026</string>
+    <string name="verification_submitting_proof">جارٍ إرسال الإثبات\u2026</string>
+    <string name="verification_processing_message">قد يستغرق ذلك بضع ثوانٍ</string>
+    <string name="verification_preparing_proof">نقوم بإعداد إثبات خاص باستخدام بيانات الاعتماد المحفوظة لديك.</string>
+
+    <!-- رسائل تقدّم التحقق -->
+    <string name="verification_status_reading_request">جارٍ قراءة طلب التحقق\u2026</string>
+    <string name="verification_status_processing_challenge">جارٍ معالجة التحدي\u2026</string>
+    <string name="verification_status_creating_proof">جارٍ إنشاء إثبات العمر\u2026</string>
+    <string name="verification_status_submitting_proof">جارٍ إرسال الإثبات\u2026</string>
+    <string name="verification_status_verified">&#x2714; تم التحقق من العمر</string>
+
+    <!-- رسائل أخطاء التحقق -->
+    <string name="verification_error_no_auth_prompt">تعذّر عرض نافذة المصادقة</string>
+    <string name="verification_error_verification_failed">فشل التحقق</string>
+    <string name="verification_error_generic">حدث خطأ</string>
+    <string name="verification_error_failed_to_process_code">فشلت معالجة الرمز</string>
+    <string name="verification_error_failed_to_process_challenge">فشلت معالجة التحدي</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- ملاحظة للمترجم: تتعلق هذه النصوص بالعثور على جهات الإصدار والتعرف عليها -->
+    <string name="issuers_trusted_in_australia">جهات الإصدار الموثوقة في أستراليا</string>
+    <string name="issuers_loading">جارٍ تحميل جهات الإصدار\u2026</string>
+    <string name="issuers_loaded">تم تحميل جهات الإصدار بنجاح</string>
+    <string name="issuers_unable_to_load">تعذّر تحميل جهات الإصدار</string>
+    <string name="issuers_check_connection">تحقق من اتصالك بالإنترنت وأعد المحاولة</string>
+    <string name="issuers_categories_header">الفئات</string>
+    <string name="issuers_available_header">جهات الإصدار المتاحة</string>
+    <string name="issuers_found_count">تم العثور على %d</string>
+    <string name="issuer_status_coming_soon">قريبًا</string>
+    <string name="issuer_status_verified">موثّقة</string>
+    <string name="issuer_how_to_get">كيفية الحصول على بيانات الاعتماد</string>
+    <string name="issuer_service_locations">مواقع الخدمة</string>
+    <string name="issuer_visit_website">زيارة موقع %s\u200F</string>
+    <string name="issuer_learn_more">معرفة المزيد عن %s\u200F</string>
+
+    <!-- فئات جهات الإصدار -->
+    <string name="category_banking">الخدمات المصرفية</string>
+    <string name="category_super_fund">صندوق التقاعد</string>
+    <string name="category_government">الجهات الحكومية</string>
+    <string name="category_travel">السفر</string>
+    <string name="category_telco">الاتصالات</string>
+    <string name="category_insurance">التأمين</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- ملاحظة للمترجم: تظهر هذه النصوص في شاشات إعدادات التطبيق -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_section_sandbox">وضع بيئة الاختبار</string>
+    <string name="settings_section_general">عام</string>
+    <string name="settings_section_credentials">بيانات الاعتماد</string>
+    <string name="settings_section_advanced">متقدم</string>
+    <string name="settings_section_privacy">الخصوصية</string>
+    <string name="settings_security">الأمان</string>
+    <string name="settings_biometric">استخدام المصادقة بالمقاييس الحيوية</string>
+    <string name="settings_environment">إعدادات البيئة</string>
+    <string name="settings_environment_description">عرض تهيئة البيئة الحالية</string>
+    <string name="settings_reset_proving_key">إعادة تعيين مفتاح الإثبات</string>
+    <string name="settings_reset_proving_key_description">إعادة تنزيل مكونات الأمان (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">إصدار بيانات اعتماد تجريبية بصفتك جهة الإصدار</string>
+    <string name="settings_mint_test_credential_subtitle">أصدر بيانات اعتماد تجريبية إلى محفظتك لتتمكن من التحقق منها من خلال عرض توضيحي للطرف المعتمد.</string>
+    <string name="settings_find_trusted_issuers">العثور على جهات إصدار موثوقة</string>
+    <string name="settings_version">الإصدار: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">انقر 5 مرات للتبديل</string>
+
+    <!-- إعدادات اللغة -->
+    <string name="language_selection_title">اللغة</string>
+    <string name="language_selection_description">اختر لغتك المفضلة. سيتم إعادة تشغيل التطبيق لتطبيق التغييرات.</string>
+    <string name="language_selected">تم الاختيار</string>
+    <string name="settings_language">اللغة</string>
+    <string name="settings_language_description">تغيير لغة التطبيق</string>
+    <string name="settings_licenses">تراخيص المصادر المفتوحة</string>
+    <string name="settings_licenses_description">عرض تراخيص الجهات الخارجية</string>
+
+    <!-- شاشة اختيار اللغة -->
+    <string name="language_confirm_title">تأكيد اللغة</string>
+    <string name="language_change_to">تغيير اللغة إلى:</string>
+    <string name="language_restart_notice">سيتم إعادة تشغيل التطبيق لتطبيق هذه اللغة.</string>
+    <string name="language_apply">تطبيق</string>
+    <string name="language_cancel">إلغاء</string>
+    <string name="language_skip_title">تخطي اختيار اللغة؟</string>
+    <string name="language_skip_message">في حال التخطي، سيستخدم التطبيق اللغة الإنجليزية بشكل افتراضي. يمكنك تغيير اللغة لاحقًا من الإعدادات.</string>
+    <string name="language_use_english">استخدام الإنجليزية</string>
+    <string name="language_go_back">العودة</string>
+    <string name="language_help_title">مساعدة اختيار اللغة</string>
+    <string name="language_help_how_to">كيفية اختيار لغتك:</string>
+    <string name="language_help_step1">1. استخدم مربع البحث للعثور على لغتك</string>
+    <string name="language_help_step2">2. انقر على اللغة المفضلة</string>
+    <string name="language_help_step3">3. أكّد اختيارك</string>
+    <string name="language_help_system_note">تظهر لغة النظام مميّزة في الأعلى إن كانت مدعومة.</string>
+    <string name="language_help_settings_note">يمكنك تغيير هذا لاحقًا من الإعدادات.</string>
+    <string name="language_got_it">حسنًا</string>
+    <string name="language_select_title">اختيار اللغة</string>
+    <string name="language_skip_button">تخطي (استخدام الإنجليزية)</string>
+    <string name="language_search_placeholder">البحث عن اللغات\u2026</string>
+    <string name="language_no_results">لم يتم العثور على لغات</string>
+    <string name="language_try_different">جرّب مصطلح بحث مختلفًا</string>
+    <string name="language_system_badge">لغة النظام</string>
+    <string name="language_count">%d لغة</string>
+    <string name="language_no_match_announcement">لم يتم العثور على لغات تطابق بحثك</string>
+    <string name="language_found_announcement">تم العثور على %d لغة</string>
+    <string name="language_search_cleared">تم مسح البحث، عرض جميع اللغات (%d لغة)</string>
+    <string name="language_selected_announcement">تم اختيار %1$s، %2$s</string>
+
+    <!-- إمكانية الوصول لاختيار اللغة -->
+    <string name="language_screen_description">شاشة اختيار اللغة</string>
+    <string name="language_help_button_description">مساعدة ومعلومات حول اختيار اللغة</string>
+    <string name="language_skip_description">تخطي اختيار اللغة واستخدام الإنجليزية بشكل افتراضي</string>
+    <string name="language_clear_search_description">مسح البحث</string>
+    <string name="language_count_description">%d لغة متاحة</string>
+    <string name="language_apply_description">تطبيق اختيار اللغة والمتابعة</string>
+    <string name="language_cancel_description">إلغاء اختيار اللغة</string>
+    <string name="language_cancelled_announcement">تم إلغاء اختيار اللغة</string>
+    <string name="language_selected_description">اللغة المختارة: %1$s، %2$s</string>
+    <string name="language_item_system">لغة النظام: %1$s، %2$s</string>
+    <string name="language_item_selected">%1$s، %2$s، مختارة حاليًا</string>
+    <string name="language_item_system_selected">لغة النظام: %1$s، %2$s، مختارة حاليًا</string>
+    <string name="language_item_default">%1$s، %2$s</string>
+    <string name="language_returned_to_selection">تم العودة إلى اختيار اللغة</string>
+
+    <!-- وضع بيئة الاختبار -->
+    <string name="sandbox_mode_badge">بيئة الاختبار</string>
+    <string name="sandbox_mode_active">وضع بيئة الاختبار مفعّل</string>
+    <string name="sandbox_mode_banner">وضع بيئة الاختبار مفعّل</string>
+    <string name="sandbox_mode_description">أنت تستخدم بيئة الاختبار. انقر على رقم الإصدار خمس مرات للتبديل.</string>
+    <string name="sandbox_credential_title">بيانات اعتماد بيئة الاختبار</string>
+    <string name="sandbox_credential_description">أنشئ بيانات اعتماد في بيئة الاختبار لتجربة عمليات التحقق دون التأثير على بيانات الإنتاج.</string>
+    <string name="sandbox_select_age">اختر العمر</string>
+    <string name="sandbox_age_format">%d\u200E+</string>
+    <string name="sandbox_default_dob">تاريخ الميلاد الافتراضي: %s</string>
+    <string name="sandbox_override_dob">تجاوز تاريخ الميلاد الافتراضي</string>
+    <string name="sandbox_override_description">استخدم تاريخًا محددًا بدلًا من التاريخ الافتراضي المبني على العمر.</string>
+    <string name="sandbox_date_of_birth">تاريخ الميلاد</string>
+    <string name="sandbox_generate_credential">إنشاء بيانات الاعتماد</string>
+    <string name="sandbox_generating">جارٍ الإنشاء\u2026</string>
+    <string name="sandbox_test_credential_saved">تم حفظ بيانات الاعتماد التجريبية</string>
+    <string name="sandbox_id_prefix">بادئة التعريف: %s\u2026\u200F</string>
+    <string name="sandbox_unable_to_generate">تعذّر إنشاء بيانات الاعتماد</string>
+    <string name="settings_sandbox_dob_format">تاريخ الميلاد: %s</string>
+    <string name="settings_sandbox_age_dob_format">العمر %d+ (تاريخ الميلاد: %s)</string>
+
+    <!-- إعدادات البيئة -->
+    <string name="environment_configuration">تهيئة البيئة</string>
+    <string name="environment_current">الحالية: %s</string>
+    <string name="environment_issuer_api">واجهة برمجة التطبيقات لجهة الإصدار (API): %s\u200F</string>
+    <string name="environment_verifier_api">واجهة برمجة التطبيقات لجهة التحقق (API): %s\u200F</string>
+
+    <!-- مربعات حوار الإعدادات -->
+    <string name="dialog_delete_credential_title">حذف بيانات الاعتماد؟</string>
+    <string name="dialog_delete_credential_message">سيؤدي هذا الإجراء إلى إزالة بيانات الاعتماد من جهازك. يمكنك استرجاعها مرة أخرى من جهة الإصدار عند الحاجة.</string>
+    <string name="dialog_delete_credential_announcement">تم فتح مربع الحوار: حذف بيانات الاعتماد</string>
+    <string name="dialog_reset_proving_key_title">إعادة تعيين مفتاح الإثبات؟</string>
+    <string name="dialog_reset_proving_key_message">سيتم حذف مفتاح الإثبات والملفات المساندة وإعادة تنزيلها عند فتح التطبيق في المرة القادمة.</string>
+    <string name="dialog_reset_proving_key_announcement">تم فتح مربع الحوار: إعادة تعيين مفتاح الإثبات</string>
+    <string name="dialog_environment_info_announcement">تم فتح مربع الحوار: تهيئة البيئة</string>
+
+    <!-- ===== BATCH 03 ===== -->
+<!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">إمكانية الوصول</string>
+    <string name="accessibility_service_label">\u200Fإمكانية الوصول في Provii Wallet</string>
+    <string name="accessibility_service_description">توفر خدمة إمكانية الوصول في Provii Wallet دعما محسنا للمستخدمين ذوي الإعاقة. يشمل ذلك القراءة التلقائية لبيانات الاعتماد والتنقل الموجه والتفاعلات المبسطة.</string>
+    <string name="accessibility_personalize">تخصيص تجربتك</string>
+    <string name="accessibility_customize_features">تخصيص ميزات إمكانية الوصول</string>
+    <string name="accessibility_quick_setup">إعداد سريع</string>
+    <!-- TODO: Convert to <plurals> resource with 6 Arabic plural forms (zero/one/two/few/many/other). Requires code change to getQuantityString(). -->
+    <string name="accessibility_features_active">%d من الميزات مفعلة</string>
+    <string name="accessibility_customize_experience">تخصيص تجربتك</string>
+    <string name="accessibility_reset_title">إعادة تعيين إعدادات إمكانية الوصول؟</string>
+    <string name="accessibility_reset_message">ستعود جميع تفضيلات إمكانية الوصول إلى قيمها الافتراضية.</string>
+    <string name="accessibility_reset">إعادة تعيين إعدادات إمكانية الوصول</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">الرؤية</string>
+    <string name="accessibility_category_interaction">التفاعل</string>
+    <string name="accessibility_category_cognitive">الدعم الإدراكي</string>
+    <string name="accessibility_category_alternative_input">الإدخال البديل</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">نص كبير جدا</string>
+    <string name="accessibility_extra_large_text_description">زيادة أحجام الخطوط الأساسية بنسبة 45%</string>
+    <string name="accessibility_high_contrast">تباين عالٍ</string>
+    <string name="accessibility_high_contrast_description">استخدام ألوان عالية التباين</string>
+    <string name="accessibility_reduce_transparency">تقليل الشفافية</string>
+    <string name="accessibility_reduce_transparency_description">إزالة تأثيرات الضبابية والزجاج</string>
+    <string name="accessibility_dyslexia_font">خط ملائم لعسر القراءة</string>
+    <string name="accessibility_dyslexia_font_description">استخدام خط \u2066OpenDyslexic\u2069 لتحسين سهولة القراءة</string>
+    <string name="accessibility_color_blind_mode">وضع عمى الألوان</string>
+    <string name="accessibility_color_blind_optimized">ألوان محسنة لـ %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">لا شيء</string>
+    <string name="color_blind_protanopia">عمى اللون الأحمر \u2066(Protanopia)\u2069</string>
+    <string name="color_blind_deuteranopia">عمى اللون الأخضر \u2066(Deuteranopia)\u2069</string>
+    <string name="color_blind_tritanopia">عمى اللون الأزرق \u2066(Tritanopia)\u2069</string>
+    <string name="color_blind_monochrome">أحادي اللون</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">أهداف لمس أكبر</string>
+    <string name="accessibility_larger_touch_targets_description">تكبير حجم الأزرار والعناصر التفاعلية</string>
+    <string name="accessibility_reduce_motion">تقليل الحركة</string>
+    <string name="accessibility_reduce_motion_description">تقليل الرسوم المتحركة والانتقالات</string>
+    <string name="accessibility_extended_timeouts">مهلات ممتدة</string>
+    <string name="accessibility_extended_timeouts_description">إتاحة وقت أطول للإجراءات المحددة بوقت</string>
+    <string name="accessibility_simplified_gestures">إيماءات مبسطة</string>
+    <string name="accessibility_simplified_gestures_description">تقليل الإيماءات متعددة الخطوات</string>
+    <string name="accessibility_haptic_feedback">استجابة لمسية</string>
+    <string name="accessibility_haptic_feedback_description">تأكيد بالاهتزاز عند تنفيذ الإجراءات</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">واجهة مبسطة</string>
+    <string name="accessibility_simplified_interface_description">إخفاء الخيارات المتقدمة وتقليل الفوضى</string>
+    <string name="accessibility_show_step_numbers">عرض أرقام الخطوات</string>
+    <string name="accessibility_show_step_numbers_description">عرض مؤشرات التقدم</string>
+    <string name="accessibility_detailed_descriptions">أوصاف تفصيلية</string>
+    <string name="accessibility_detailed_descriptions_description">توفير نصوص توضيحية إضافية</string>
+    <string name="accessibility_confirm_actions">تأكيد قبل الإجراءات</string>
+    <string name="accessibility_confirm_actions_description">طلب التأكيد عند تنفيذ العمليات المهمة</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">إدخال الرمز يدويا</string>
+    <string name="accessibility_manual_code_entry_description">السماح بكتابة رموز \u2066QR\u2069 (الاستجابة السريعة) بدلا من مسحها ضوئيا</string>
+    <string name="accessibility_voice_input">الإدخال الصوتي</string>
+    <string name="accessibility_voice_input_description">تفعيل التعرف على الكلام في حقول النص</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">الرؤية</string>
+    <string name="accessibility_profile_motor">الحركة</string>
+    <string name="accessibility_profile_cognitive">الإدراك</string>
+    <string name="accessibility_profile_senior">كبار السن</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">رجوع</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">الرئيسية</string>
+    <string name="breadcrumb_settings">الإعدادات</string>
+    <string name="breadcrumb_accessibility">إمكانية الوصول</string>
+    <string name="breadcrumb_language">اللغة</string>
+    <string name="breadcrumb_help">مركز المساعدة</string>
+    <string name="breadcrumb_officer_mode">وضع الموظف</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">الخطوط وتباعد النص</string>
+    <string name="accessibility_line_spacing">تباعد الأسطر</string>
+    <string name="accessibility_line_spacing_description">ضبط المسافة بين أسطر النص</string>
+    <string name="accessibility_paragraph_spacing">تباعد الفقرات</string>
+    <string name="accessibility_paragraph_spacing_description">ضبط المسافة بين الفقرات</string>
+    <string name="accessibility_letter_spacing">تباعد الأحرف</string>
+    <string name="accessibility_letter_spacing_description">ضبط المسافة بين الأحرف</string>
+    <string name="accessibility_typography_aaa_note">توصيات \u2066AAA\u2069: تباعد أسطر \u20661.5x\u2069 وتباعد فقرات \u20662.0x\u2069 وتباعد أحرف \u20660.12em\u2069.</string>
+    <string name="accessibility_spacing_current">الحالي: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">سلوك المهلة</string>
+    <string name="accessibility_timeout_no_automatic">بدون مهلات تلقائية للتوافق مع معيار AAA</string>
+    <string name="accessibility_timeout_auto_advance_30">الانتقال التلقائي بعد 30 ثانية</string>
+    <string name="accessibility_timeout_auto_advance_60">الانتقال التلقائي بعد 60 ثانية</string>
+    <string name="accessibility_timeout_set_announcement">تم تعيين سلوك المهلة إلى %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">مستوى التباين</string>
+    <string name="accessibility_contrast_aaa_ratio">نسبة تباين \u20667:1\u2069 للتوافق مع معيار AAA</string>
+    <string name="accessibility_contrast_standard">تباين قياسي</string>
+    <string name="accessibility_contrast_aa_ratio">نسبة تباين \u20664.5:1\u2069 للتوافق مع معيار AA</string>
+    <string name="accessibility_contrast_set_announcement">تم تعيين مستوى التباين إلى %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">تم تعيين وضع عمى الألوان إلى %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">شريط تمرير %1$s. القيمة الحالية: %2$s. %3$s\u200Fالنطاق من %4$s إلى %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">متوافق مع AAA. </string>
+    <string name="accessibility_slider_announcement">تم تعيين %1$s إلى %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">، متوافق مع AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">تم تفعيل %s</string>
+    <string name="accessibility_toggle_disabled">تم تعطيل %s</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">استجابة التحقق</string>
+    <string name="accessibility_sound_enabled">تشغيل صوت عند النجاح</string>
+    <string name="accessibility_sound_enabled_description">تشغيل صوت تأكيد بعد نجاح التحقق</string>
+    <string name="accessibility_sound_style">نمط الصوت</string>
+    <string name="accessibility_sound_preview">معاينة الصوت</string>
+    <string name="accessibility_sound_preview_preset">معاينة %s</string>
+    <string name="accessibility_sound_style_set_announcement">تم تعيين نمط الصوت إلى %s</string>
+    <string name="accessibility_haptic_enabled">اهتزاز عند النجاح</string>
+    <string name="accessibility_haptic_enabled_description">توفير استجابة لمسية بعد نجاح التحقق</string>
+    <string name="accessibility_sound_footer">يلتزم الصوت بإعدادات الوضع الصامت في جهازك</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">مستوى الصوت</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">معاينة مستوى الصوت الحالي</string>
+    <string name="accessibility_volume_set_announcement">تم تعيين مستوى الصوت إلى %d بالمائة</string>
+    <string name="accessibility_volume_slider_description">شريط تمرير مستوى الصوت. القيمة الحالية: %d بالمائة</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">إعادة تعيين الإعدادات</string>
+
+    <!-- ===== BATCH 04 ===== -->
+<!-- ==================== OFFICER MODE ==================== -->
+    <!-- Batch 04: Officer Mode, Issuance, Manual Entry (lines 441-561) -->
+    <string name="officer_mode">وضع الموظف</string>
+    <string name="officer_id">هوية الموظف (ID)</string>
+    <string name="officer_id_placeholder">مثال: OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">أدخل رقم هوية الموظف المخصص لك</string>
+    <string name="officer_yubikey_connected">YubiKey متصل</string>
+    <string name="officer_connect_yubikey">توصيل YubiKey</string>
+    <string name="officer_touch_yubikey">المس YubiKey للمصادقة\u2026</string>
+    <string name="officer_authenticate_hmac">المصادقة باستخدام HMAC (رمز مصادقة الرسائل المستند إلى التجزئة)</string>
+    <string name="officer_authentication_process">عملية المصادقة:</string>
+    <!-- C-04 applied: RLM markers added after \n before digits for RTL BiDi safety -->
+    <string name="officer_auth_steps">\u200F1. أدخل رقم هوية الموظف\n\u200F2. اضغط على \"مصادقة\"\n\u200F3. المس YubiKey عندما يومض\n\u200F4. مصادقة HMAC (رمز مصادقة الرسائل المستند إلى التجزئة) تتحقق من هويتك</string>
+    <string name="officer_auth_failed">فشلت المصادقة. يرجى التحقق من هوية الموظف والمحاولة مرة أخرى.</string>
+    <string name="officer_session_info">الموظف: %s</string>
+    <!-- H-04 applied: المحطة changed to الموقع (service location, not bus/train station) -->
+    <string name="officer_station_info">الموقع: %s</string>
+    <!-- H-03 applied: صدر changed to الإصدارات (avoids verb-gender ambiguity with feminine بيانات اعتماد) -->
+    <string name="officer_issued_today">الإصدارات اليوم: %1$d / 50</string>
+    <string name="officer_issue_age_credential">إصدار بيانات اعتماد العمر</string>
+    <string name="officer_issue_description">التحقق من هوية المستخدم وإصدار بيانات اعتماد رقمية للعمر</string>
+    <string name="officer_start_issuance">بدء إصدار جديد</string>
+    <string name="officer_issuance_process">عملية الإصدار</string>
+    <!-- C-05 applied: RLM markers added after \n before digits for RTL BiDi safety -->
+    <string name="officer_issuance_steps">\u200F1. تحقق من وثيقة الهوية الرسمية للمستخدم\n\u200F2. أدخل تاريخ الميلاد\n\u200F3. تأكد من تطابق المعلومات تمامًا\n\u200F4. أصدر بيانات الاعتماد مع رمز QR (رمز الاستجابة السريعة) للشهادة\n\u200F5. يمسح المستخدم رمز QR لاستلام بيانات الاعتماد</string>
+    <string name="officer_verify_identity">التحقق من هوية المستخدم</string>
+    <string name="officer_select_dob">اختر تاريخ الميلاد</string>
+    <string name="officer_change_date">تغيير التاريخ</string>
+    <string name="officer_age_years">العمر: %d سنة</string>
+    <string name="officer_under_18_warning">أقل من 18 عامًا - لا يمكن إصدار بيانات الاعتماد</string>
+    <string name="officer_verification_checklist">قائمة التحقق</string>
+    <string name="officer_document_verified">تم التحقق من الوثيقة الرسمية</string>
+    <string name="officer_document_verified_description">لقد اطلعت على وثيقة هوية حكومية سارية المفعول</string>
+    <string name="officer_dob_matches">تاريخ الميلاد مطابق تمامًا</string>
+    <string name="officer_dob_matches_description">تاريخ الميلاد على الوثيقة الرسمية هو: %s</string>
+    <string name="officer_issue_credential">إصدار بيانات الاعتماد</string>
+    <string name="officer_user_scanned_successfully">قام المستخدم بالمسح بنجاح</string>
+    <string name="officer_return_to_dashboard">العودة إلى لوحة التحكم</string>
+    <string name="officer_go_back">رجوع</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">مصادقة YubiKey</string>
+    <string name="yubikey_step_format">الخطوة %1$d من %2$d</string>
+    <!-- M-02 applied: مصباح changed to مؤشر (indicator, not lamp); grammar restructured -->
+    <string name="yubikey_led_should_blink">من المفترض أن يومض مؤشر YubiKey</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">جارٍ التحقق من المدخلات\u2026</string>
+    <string name="officer_state_creating_attestation">جارٍ إنشاء شهادة الإثبات\u2026</string>
+    <string name="officer_state_computing_commitment">جارٍ حساب الالتزام المشفّر\u2026</string>
+    <string name="officer_state_creating_session">جارٍ إنشاء جلسة آمنة\u2026</string>
+    <string name="officer_state_signing">جارٍ توقيع بيانات الاعتماد\u2026</string>
+    <string name="officer_state_finalizing">جارٍ إتمام بيانات الاعتماد\u2026</string>
+    <string name="officer_state_storing_attestation">جارٍ حفظ شهادة الإثبات\u2026</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">الجلسة على وشك الانتهاء</string>
+    <string name="officer_session_expiring_message">ستنتهي جلستك خلال %d ثانية. هل تريد حفظ تقدمك؟</string>
+    <string name="officer_session_expiring_announcement">تحذير: ستنتهي جلستك خلال %d ثانية</string>
+    <string name="officer_save_and_continue">حفظ ومتابعة</string>
+    <string name="officer_continue_without_saving">متابعة بدون حفظ</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">تاريخ الميلاد</string>
+    <string name="officer_age_format">العمر: %d سنة</string>
+    <string name="officer_under_18_full_warning">أقل من 18 عامًا - لا يمكن إصدار بيانات الاعتماد. يحق فقط للأشخاص الذين يبلغون 18 عامًا أو أكثر الحصول على بيانات اعتماد التحقق من العمر. يرجى التأكد من صحة تاريخ الميلاد.</string>
+    <string name="officer_verification_checklist_header">قائمة التحقق</string>
+    <string name="officer_physical_document_verified">تم التحقق من الوثيقة الرسمية</string>
+    <string name="officer_sighted_valid_id">لقد اطلعت على وثيقة هوية حكومية سارية المفعول</string>
+    <string name="officer_dob_matches_exactly">تاريخ الميلاد مطابق تمامًا</string>
+    <string name="officer_dob_on_document">تاريخ الميلاد على الوثيقة الرسمية هو: %s</string>
+    <string name="officer_error_label">خطأ</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <string name="issuance_scan_qr">امسح رمز QR (رمز الاستجابة السريعة) الخاص بالإصدار</string>
+    <string name="issuance_downloads_credential">سيؤدي ذلك إلى تنزيل بيانات اعتماد العمر الخاصة بك.</string>
+    <string name="issuance_center_qr">ضع رمز QR في وسط الإطار وأبقِ الهاتف ثابتًا.</string>
+    <string name="issuance_enter_code_manually">إدخال الرمز يدويًا</string>
+    <string name="issuance_processing_qr">جارٍ معالجة رمز QR\u2026</string>
+    <string name="issuance_invalid_data">بيانات إصدار غير صالحة</string>
+    <string name="issuance_verification_qr_error">هذا رمز QR خاص بالتحقق. يرجى مسح رمز QR الخاص بإصدار بيانات الاعتماد.</string>
+    <string name="issuance_invalid_qr_format">تنسيق رمز QR غير صالح</string>
+    <string name="issuance_failed_to_process">فشلت معالجة رمز QR: %s</string>
+    <string name="issuance_code">رمز الإصدار</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <string name="manual_entry_title">إدخال الرمز يدويًا</string>
+    <string name="manual_entry_enter_code_manually">إدخال الرمز يدويًا</string>
+    <string name="manual_entry_verification_description">أدخل رمز التحقق المكون من 12 رقمًا الظاهر على شاشة جهة التحقق.</string>
+    <string name="manual_entry_issuance_description">اكتب الرمز الظاهر على شاشة جهة الإصدار.</string>
+    <string name="manual_entry_verification_code">رمز التحقق</string>
+    <string name="manual_entry_submit">إرسال الرمز</string>
+    <string name="manual_entry_please_enter">يرجى إدخال رمز</string>
+    <string name="manual_entry_please_enter_verification">يرجى إدخال رمز التحقق</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">بدء الاستماع</string>
+    <string name="voice_input_stop_listening">إيقاف الاستماع</string>
+    <string name="voice_input_recognized">تم التعرف على:</string>
+    <string name="content_desc_voice_input_listening">جارٍ الاستماع للإدخال الصوتي</string>
+    <string name="content_desc_voice_input_available">الإدخال الصوتي متاح</string>
+    <string name="voice_input_permission_title">يلزم إذن الميكروفون</string>
+    <string name="voice_input_permission_message">يتطلب الإدخال الصوتي الوصول إلى الميكروفون. يمكنك تفعيله من إعدادات النظام.</string>
+    <string name="voice_input_listening">جارٍ الاستماع\u2026</string>
+    <string name="voice_input_error">خطأ في الإدخال الصوتي</string>
+    <string name="voice_input_tap_to_speak">انقر للتحدث</string>
+    <string name="voice_input_did_you_say">هل قلت \"%1$s\"؟</string>
+    <string name="voice_input_confirm">تأكيد</string>
+    <string name="voice_input_retry">إعادة المحاولة</string>
+    <string name="voice_input_cancel">إلغاء</string>
+    <string name="voice_input_button">الإدخال الصوتي</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">الإدخال الصوتي غير متاح على هذا الجهاز</string>
+    <string name="voice_input_error_audio">خطأ في التسجيل الصوتي. تحقق من الميكروفون.</string>
+    <string name="voice_input_error_network">خطأ في الشبكة. تحقق من الاتصال.</string>
+    <string name="voice_input_error_network_timeout">انتهت مهلة الشبكة. حاول مرة أخرى.</string>
+    <string name="voice_input_error_no_match">لم يتم اكتشاف كلام. يرجى المحاولة مرة أخرى.</string>
+    <string name="voice_input_error_recognizer_busy">الإدخال الصوتي مشغول. يرجى الانتظار.</string>
+    <string name="voice_input_error_server">خطأ في الخادم. حاول مرة أخرى لاحقًا.</string>
+    <string name="voice_input_error_speech_timeout">لم يتم سماع كلام. يرجى التحدث بصوت أعلى.</string>
+    <string name="voice_input_error_insufficient_permissions">تم رفض إذن الميكروفون.</string>
+    <string name="voice_input_error_generic">خطأ في الإدخال الصوتي. يرجى المحاولة مرة أخرى.</string>
+
+    <!-- ===== BATCH 05 ===== -->
+<!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">رجوع</string>
+    <string name="action_close">إغلاق</string>
+    <string name="action_cancel">إلغاء</string>
+    <string name="action_ok">حسنًا</string>
+    <string name="action_set">تعيين</string>
+    <string name="action_change">تغيير</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_reset">إعادة تعيين</string>
+    <string name="action_retry">إعادة المحاولة</string>
+    <!-- C-01: Changed from حاول مجددًا (masculine imperative) to masdar form for consistency -->
+    <string name="action_try_again">المحاولة مجددًا</string>
+    <string name="action_refresh">تحديث</string>
+    <string name="action_download_now">تنزيل الآن</string>
+    <string name="action_retry_setup">إعادة محاولة الإعداد</string>
+    <string name="action_retry_download">إعادة محاولة التنزيل</string>
+    <string name="action_restart_setup">إعادة بدء الإعداد</string>
+    <string name="action_manage_storage">إدارة التخزين</string>
+    <string name="action_check_wifi_settings">تحقّق من إعدادات Wi-Fi أولًا</string>
+    <string name="action_check_wifi_settings_short">تحقّق من إعدادات Wi-Fi</string>
+    <string name="action_grant_permission">منح الإذن</string>
+    <string name="action_grant_camera_access">منح إذن الكاميرا</string>
+    <string name="action_return_to_browser">العودة إلى المتصفّح</string>
+    <string name="action_show_debug_info">عرض معلومات التشخيص</string>
+    <string name="action_reset_redownload">إعادة تعيين وتنزيل مجددًا</string>
+    <string name="action_end_session">إنهاء الجلسة</string>
+    <string name="action_expand">توسيع</string>
+    <string name="action_collapse">طيّ</string>
+    <string name="accessibility_state_expanded">موسَّع</string>
+    <string name="accessibility_state_collapsed">مطويّ</string>
+    <string name="accessibility_state_checked">مُحدَّد</string>
+    <string name="accessibility_state_unchecked">غير مُحدَّد</string>
+    <string name="accessibility_state_selected">مُختار</string>
+    <string name="accessibility_state_not_selected">غير مُختار</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">حدث خطأ</string>
+    <!-- H-01: Restored "(Quick Response)" expansion per English source -->
+    <string name="error_camera_permission">يلزم إذن الكاميرا لمسح رموز QR (Quick Response)</string>
+    <string name="error_camera_access_needed">يلزم إذن الوصول إلى الكاميرا</string>
+    <string name="error_camera_permission_description">امنح إذن الكاميرا لمسح رموز QR أو فعّل الإدخال اليدوي من إعدادات إمكانية الوصول.</string>
+    <string name="error_camera_permission_required">يلزم إذن الكاميرا لمسح رموز QR</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">جارٍ البحث عن رمز QR\u2026</string>
+    <string name="qr_scanner_camera_required">يلزم إذن الكاميرا</string>
+    <string name="qr_scanner_camera_preview">معاينة الكاميرا لمسح رموز QR</string>
+    <string name="qr_scanner_status_scanning">جارٍ البحث عن رمز QR</string>
+    <string name="qr_scanner_requesting_permission">جارٍ طلب إذن الكاميرا</string>
+    <string name="error_camera_start_failed">تعذّر تشغيل الكاميرا: %s</string>
+    <string name="error_camera_init_failed">فشل تهيئة الكاميرا: %s</string>
+    <string name="error_biometric_not_available">المصادقة بالمقاييس الحيوية غير متاحة</string>
+    <string name="error_biometric_required">&#x202B;المصادقة البيومترية مطلوبة للمتابعة.&#x202C;</string>
+    <string name="error_network">حدث خطأ في الشبكة</string>
+    <string name="error_no_credential">لا توجد بيانات اعتماد متاحة. يُرجى الحصول على بيانات اعتماد أولًا.</string>
+    <string name="credential_picker_title">اختيار بيانات اعتماد</string>
+    <string name="credential_picker_description">لديك عدة بيانات اعتماد يمكن استخدامها لهذا التحقق. يُرجى اختيار واحدة.</string>
+    <string name="credential_picker_expired_label">منتهية الصلاحية</string>
+    <string name="credential_picker_accessibility_select">اختيار بيانات الاعتماد: %1$s</string>
+    <string name="error_failed_to_process_challenge">تعذّرت معالجة التحدي</string>
+    <string name="error_failed_to_create_proof">تعذّر إنشاء الإثبات</string>
+    <string name="error_verification_failed">فشل التحقق</string>
+    <string name="error_occurred_during_verification">حدث خطأ أثناء التحقق</string>
+    <string name="error_connection_timeout">انتهت مهلة الاتصال. يُرجى المحاولة مجددًا.</string>
+    <string name="error_unable_to_connect">تعذّر الاتصال. يُرجى التحقق من اتصالك بالإنترنت.</string>
+    <string name="error_secure_connection_failed">فشل الاتصال الآمن. يُرجى المحاولة مجددًا.</string>
+    <string name="error_security_verification_failed">فشل التحقق الأمني. يُرجى المحاولة مجددًا.</string>
+    <string name="error_invalid_input">إدخال غير صالح. يُرجى مراجعة بياناتك والمحاولة مجددًا.</string>
+    <string name="error_operation_in_progress">هناك عملية أخرى قيد التنفيذ. يُرجى الانتظار.</string>
+    <!-- M-02: Changed from تم إلغاء العملية to natural passive -->
+    <string name="error_operation_cancelled">أُلغيَت العملية.</string>
+    <!-- M-03: Changed from لم يتم استيفاء to shorter passive -->
+    <string name="error_age_requirement_not_met">لم يُستوفَ شرط العمر لبيانات الاعتماد هذه.</string>
+    <string name="error_wallet_not_initialized">لم تتم تهيئة المحفظة. يُرجى إعادة تشغيل التطبيق.</string>
+    <string name="error_security">خطأ أمني. يُرجى المحاولة مجددًا.</string>
+    <string name="error_connection_timeout_short">انتهت مهلة الاتصال. يُرجى المحاولة مجددًا.</string>
+    <!-- M-04: Changed from تم تقديم إدخال غير صالح to terse form -->
+    <string name="error_invalid_input_provided">إدخال غير صالح.</string>
+    <string name="error_invalid_data_format">تنسيق البيانات غير صالح. يُرجى المحاولة مجددًا.</string>
+    <string name="error_storage">خطأ في التخزين. يُرجى التحقق من مساحة تخزين الجهاز.</string>
+    <string name="error_network_short">خطأ في الشبكة. يُرجى التحقق من اتصالك.</string>
+    <string name="error_label">خطأ</string>
+    <string name="error_dismiss">تجاهل الخطأ</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">جارٍ المعالجة\u2026</string>
+    <string name="status_initializing_wallet">جارٍ تهيئة المحفظة\u2026</string>
+    <string name="status_loading">جارٍ التحميل\u2026</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">الخصوصية محمية</string>
+    <string name="privacy_zk_description">لا تتم مشاركة تاريخ ميلادك أبدًا. لا تعلم جهات التحقق سوى ما إذا كنت تستوفي شرط العمر المطلوب.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">إعدادات الخصوصية</string>
+    <string name="privacy_settings_description">التحكم في جمع البيانات وإدارة بياناتك</string>
+    <string name="privacy_section_data_collection">جمع البيانات</string>
+    <string name="privacy_section_your_data">بياناتك</string>
+    <string name="privacy_protection_title">خصوصيتك محمية</string>
+    <!-- H-03: Changed إثبات (singular) to إثباتات (plural) matching English "proofs" -->
+    <string name="privacy_protection_description">تستخدم محفظة Provii إثباتات المعرفة الصفرية للتحقق من عمرك دون الكشف عن تاريخ ميلادك. تُخزَّن بيانات اعتمادك على جهازك فقط ولا تتم مشاركتها مع أي جهة.</string>
+    <string name="privacy_analytics_title">التحليلات</string>
+    <!-- H-06: Changed مجهولة المصدر to مُجهَّلة for precision in privacy context -->
+    <string name="privacy_analytics_description">ساعد في تحسين محفظة Provii من خلال مشاركة بيانات استخدام مُجهَّلة</string>
+    <string name="privacy_analytics_enabled">التحليلات مفعّلة</string>
+    <string name="privacy_analytics_disabled">التحليلات معطّلة</string>
+    <string name="privacy_crash_reporting_title">تقارير الأعطال</string>
+    <string name="privacy_crash_reporting_description">ساعدنا في إصلاح الأخطاء عبر إرسال تقارير الأعطال تلقائيًا</string>
+    <string name="privacy_crash_reporting_enabled">تقارير الأعطال مفعّلة</string>
+    <string name="privacy_crash_reporting_disabled">تقارير الأعطال معطّلة</string>
+    <string name="privacy_what_we_collect_title">ما البيانات التي نجمعها</string>
+    <!-- M-06: Dropped المزيد (not in English source) -->
+    <string name="privacy_what_we_collect_subtitle">انقر لمعرفة ممارساتنا في التعامل مع البيانات</string>
+    <string name="privacy_data_collection_info_title">معلومات حول جمع البيانات</string>
+    <string name="privacy_data_we_collect_header">ما نجمعه (في حال التفعيل):</string>
+    <!-- H-07: Changed مجهولة المصدر to المُجهَّلة -->
+    <string name="privacy_data_we_collect_list">- إحصائيات استخدام التطبيق المُجهَّلة\n- تقارير الأعطال وسجلات الأخطاء\n- نوع الجهاز وإصدار نظام التشغيل\n- معلومات إصدار التطبيق</string>
+    <string name="privacy_data_we_dont_collect_header">ما لا نجمعه أبدًا:</string>
+    <string name="privacy_data_we_dont_collect_list">- تاريخ ميلادك\n- اسمك أو بياناتك الشخصية\n- موقعك الجغرافي\n- بيانات اعتمادك\n- بيانات المقاييس الحيوية</string>
+    <string name="privacy_data_never_shared_note">لا تتم مشاركة بيانات اعتمادك مع Provii أو أي طرف آخر. تبقى على جهازك.</string>
+    <string name="privacy_policy_title">سياسة الخصوصية</string>
+    <string name="privacy_policy_subtitle">اقرأ سياسة الخصوصية الكاملة</string>
+    <string name="privacy_delete_my_data_title">حذف بياناتي</string>
+    <string name="privacy_delete_my_data_subtitle">إزالة جميع بيانات الاعتماد والبيانات المخزّنة</string>
+    <string name="privacy_delete_data_dialog_title">حذف جميع البيانات؟</string>
+    <string name="privacy_delete_data_dialog_message">سيؤدي هذا إلى حذف جميع بيانات اعتمادك وبيانات التطبيق من هذا الجهاز نهائيًا. ستحتاج إلى الحصول على بيانات اعتماد جديدة لاستخدام التطبيق مرة أخرى.</string>
+    <string name="privacy_delete_data_dialog_warning">لا يمكن التراجع عن هذا الإجراء.</string>
+    <string name="privacy_delete_data_confirm">حذف كل شيء</string>
+    <string name="privacy_footer_note">يمكنك تغيير هذه الإعدادات في أي وقت. تسري التغييرات فورًا.</string>
+    <string name="dialog_delete_data_announcement">تم فتح مربع حوار تأكيد حذف البيانات</string>
+    <string name="dialog_data_collection_info_announcement">تم فتح مربع حوار معلومات جمع البيانات</string>
+    <string name="content_desc_privacy_settings">إعدادات الخصوصية، التحكم في جمع البيانات وإدارة بياناتك</string>
+    <string name="content_desc_data_collection_info">عرض معلومات جمع البيانات</string>
+    <string name="content_desc_privacy_policy">عرض سياسة الخصوصية</string>
+    <string name="content_desc_opens_external_link">يُفتح في المتصفّح</string>
+    <string name="content_desc_delete_my_data">حذف جميع بياناتي</string>
+
+    <!-- ===== BATCH 06 ===== -->
+<!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">رجوع</string>
+    <string name="content_desc_settings">الإعدادات</string>
+    <string name="content_desc_refresh">تحديث</string>
+    <string name="content_desc_verified">تم التحقق</string>
+    <string name="content_desc_expand">توسيع</string>
+    <string name="content_desc_collapse">طي</string>
+    <string name="content_desc_warning_error">تحذير: حدث خطأ</string>
+    <string name="content_desc_sandbox_indicator">مؤشر وضع بيئة الاختبار</string>
+    <string name="content_desc_success">نجاح</string>
+    <string name="content_desc_warning">تحذير</string>
+    <string name="content_desc_information">معلومات</string>
+    <string name="content_desc_error">خطأ</string>
+    <string name="content_desc_sandbox_warning">تحذير وضع بيئة الاختبار</string>
+    <string name="content_desc_app_info">معلومات التطبيق</string>
+    <string name="content_desc_accessibility_settings">إعدادات إمكانية الوصول</string>
+    <string name="content_desc_language_settings">إعدادات اللغة</string>
+    <string name="content_desc_licenses">تراخيص البرمجيات مفتوحة المصدر</string>
+    <string name="content_desc_select_dob">اختيار تاريخ الميلاد</string>
+    <string name="content_desc_mint_test_credential_as_issuer">إصدار بيانات اعتماد تجريبية بصفتك جهة الإصدار</string>
+    <string name="content_desc_get_credential">الحصول على بيانات اعتماد</string>
+    <string name="content_desc_delete_credential">حذف بيانات الاعتماد</string>
+    <string name="content_desc_reset_proving_key">إعادة تعيين مفتاح الإثبات</string>
+    <string name="content_desc_environment_info">معلومات البيئة</string>
+    <string name="content_desc_help_support">المساعدة والدعم</string>
+    <string name="content_desc_privacy_protected">الخصوصية محمية</string>
+    <string name="preview_settings_title">معاينة الإعدادات</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">نجاح</string>
+    <string name="accessibility_verification_error_description">خطأ</string>
+    <string name="accessibility_breadcrumb_location_description">الموقع: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">ثم</string>
+    <string name="accessibility_breadcrumb_current_page_description">الصفحة الحالية: %s</string>
+    <string name="accessibility_settings_navigate_description">انتقال</string>
+    <string name="accessibility_credentials_settings_description">الإعدادات</string>
+    <string name="accessibility_verification_back_description">رجوع</string>
+    <string name="accessibility_officer_back_description">رجوع</string>
+    <string name="accessibility_discovery_back_description">رجوع</string>
+    <string name="accessibility_discovery_refresh_description">تحديث</string>
+    <string name="accessibility_discovery_verified_description">تم التحقق</string>
+    <string name="accessibility_officer_done_description">تم</string>
+    <!-- Issue #9: Changed "بالتصديق" to "بشهادة الإثبات" for glossary consistency with batches 04/08 -->
+    <string name="accessibility_officer_attestation_qr_description">رمز QR الخاص بشهادة الإثبات ليقوم المستخدم بمسحه</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">تخطي إلى %s</string>
+    <string name="accessibility_skip_main_content">المحتوى الرئيسي</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">ضعف البصر</string>
+    <string name="accessibility_profile_motor_impaired">ضعف حركي</string>
+    <string name="accessibility_profile_cognitive_support">دعم إدراكي</string>
+    <string name="accessibility_profile_elderly_support">دعم كبار السن</string>
+    <string name="accessibility_profile_default">افتراضي</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">بدون</string>
+    <string name="color_blind_mode_protanopia">عمى اللون الأحمر</string>
+    <string name="color_blind_mode_deuteranopia">عمى اللون الأخضر</string>
+    <string name="color_blind_mode_tritanopia">عمى اللون الأزرق</string>
+    <string name="color_blind_mode_monochrome">أحادي اللون</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">قياسي</string>
+    <string name="contrast_level_high">عالٍ (AA)</string>
+    <string name="contrast_level_maximum">أقصى (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">عرض كامل</string>
+    <string name="text_width_comfortable">مريح (80 حرفًا)</string>
+    <string name="text_width_narrow">ضيق (60 حرفًا)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">بدون مهلة (AAA)</string>
+    <string name="timeout_behavior_standard">قياسي (30 ثانية)</string>
+    <string name="timeout_behavior_extended">ممتد (60 ثانية)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">قياسي</string>
+    <string name="reading_level_standard_description">نص عادي مع مصطلحات تقنية</string>
+    <string name="reading_level_simplified">مبسط (الصف 7-9)</string>
+    <string name="reading_level_simplified_description">كلمات أبسط وجمل أقصر (متوافق مع AAA)</string>
+
+    <!-- ==================== HELP &amp; SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">المساعدة</string>
+    <string name="help_and_support">المساعدة والدعم</string>
+    <string name="help_description">احصل على مساعدة في ميزات التطبيق وإمكانية الوصول</string>
+    <string name="help_center">مركز المساعدة</string>
+    <string name="help_center_description">تصفح مواضيع المساعدة وتعرف على ميزات التطبيق</string>
+    <string name="help_search">البحث في المساعدة</string>
+    <string name="help_search_placeholder">البحث في مواضيع المساعدة\u2026</string>
+    <string name="help_search_active">تم تفعيل البحث</string>
+    <string name="help_search_inactive">تم إلغاء تفعيل البحث</string>
+    <string name="help_no_results">لم يتم العثور على مواضيع مساعدة تطابق بحثك</string>
+    <string name="help_topic_not_found">لم يتم العثور على موضوع المساعدة</string>
+    <string name="help_related_topics">مواضيع ذات صلة</string>
+    <string name="help_content_heading">محتوى المساعدة</string>
+    <!-- Issue #16: Added \u200F before numeric specifiers for BiDi safety -->
+    <string name="help_related_topic_position">%1$s، العنصر \u200F%2$d من \u200F%3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">الرؤية</string>
+    <string name="help_category_typography">الخطوط والطباعة</string>
+    <string name="help_category_interaction">التفاعل</string>
+    <string name="help_category_cognitive">الدعم الإدراكي</string>
+    <string name="help_category_alternative_input">الإدخال البديل</string>
+    <string name="help_category_features">الميزات</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">الحصول على بيانات اعتماد</string>
+    <string name="help_topic_getting_credential_summary">تعرف على كيفية الحصول على بيانات اعتماد التحقق من العمر لأول مرة</string>
+    <!-- Issue #5: Added \u200F after numbered list markers for BiDi anchoring -->
+    <string name="help_topic_getting_credential_content">للحصول على بيانات اعتماد التحقق من العمر:\n\n\u200F1. قم بزيارة موقع جهة إصدار معتمدة\n\u200F2. قدم هويتك الحكومية\n\u200F3. امسح رمز \u200EQR\u200F المقدم لك\n\u200F4. سيتم حفظ بيانات اعتمادك بشكل آمن\n\nيتم تخزين تاريخ الميلاد محليًا على جهازك ولا تتم مشاركته أبدًا.</string>
+
+    <string name="help_topic_verifying_age_title">التحقق من عمرك</string>
+    <string name="help_topic_verifying_age_summary">كيفية إثبات عمرك دون مشاركة معلوماتك الشخصية</string>
+    <!-- Issues #5, #6: BiDi markers added; "المتحقق" changed to "جهة التحقق" for consistency -->
+    <string name="help_topic_verifying_age_content">عندما تحتاج إلى التحقق من عمرك:\n\n\u200F1. ستعرض لك جهة التحقق رمز \u200EQR\u200F\n\u200F2. امسحه باستخدام التطبيق\n\u200F3. ينشئ التطبيق إثباتًا رياضيًا\n\u200F4. تتم مشاركة الإجابة بنعم أو لا فقط\n\nلا يتم الكشف عن تاريخ الميلاد الفعلي أبدًا.</string>
+
+    <string name="help_topic_accessibility_title">ميزات إمكانية الوصول</string>
+    <string name="help_topic_accessibility_summary">خصص التطبيق حسب احتياجاتك</string>
+    <!-- Issues #5, #20: BiDi markers added for bullet list and > navigation symbol -->
+    <string name="help_topic_accessibility_content">يتضمن التطبيق العديد من ميزات إمكانية الوصول:\n\n- أوضاع النص الكبير والتباين العالي\n- الإدخال الصوتي ودعم قارئ الشاشة\n- إيماءات مبسطة وواجهة مستخدم سهلة\n- خيارات الإدخال اليدوي للرموز\n- مهلات ممتدة\n\nيمكنك الوصول إليها من الإعدادات \u200F> إمكانية الوصول</string>
+
+    <string name="help_topic_privacy_security_title">الخصوصية والأمان</string>
+    <string name="help_topic_privacy_security_summary">كيف يتم حماية معلوماتك</string>
+    <string name="help_topic_privacy_security_content">خصوصيتك هي أولويتنا القصوى:\n\n- بيانات الاعتماد مخزنة محليًا على جهازك\n- إثباتات المعرفة الصفرية تحمي بياناتك\n- لا يوجد تتبع أو تحليلات\n- المصادقة البيومترية متاحة\n- لا تغادر البيانات جهازك دون تشفير</string>
+
+    <string name="help_topic_troubleshooting_title">استكشاف الأخطاء وإصلاحها</string>
+    <string name="help_topic_troubleshooting_summary">المشاكل الشائعة وحلولها</string>
+    <!-- Issues #5, #7: BiDi markers added; "المتحقق" changed to "جهة التحقق" for consistency -->
+    <string name="help_topic_troubleshooting_content">المشاكل الشائعة وكيفية حلها:\n\nماسح \u200EQR\u200F لا يعمل:\n- تحقق من أذونات الكاميرا في الإعدادات\n- جرب خيار الإدخال اليدوي للرمز\n\nبيانات الاعتماد لا تظهر:\n- تحقق من اتصالك بالإنترنت\n- جرب إعادة تعيين مفتاح الإثبات\n\nفشل التحقق:\n- تأكد من أن بيانات الاعتماد غير منتهية الصلاحية\n- تواصل مع جهة التحقق للحصول على الدعم</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">\u2026</string>
+
+    <!-- ==================== DATE &amp; TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">تاريخ الميلاد</string>
+    <string name="date_of_birth">تاريخ الميلاد</string>
+
+    <!-- ==================== PLACEHOLDERS &amp; FORMATS ==================== -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <!-- Issue #1: Arabic needs <plurals> for proper سنة/سنوات/سنتان forms.
+         Kept as <string> since code uses getString(). "سنة" is correct for
+         ages 11-99 (many) and 100+ (other) but wrong for 3-10 (should be سنوات).
+         FLAG FOR CODE CHANGE: convert to <plurals> + getQuantityString(). -->
+    <string name="format_age_years">%d سنة</string>
+    <!-- Issue #14: Added \u200F before numeric specifiers for BiDi safety -->
+    <string name="format_step_indicator">الخطوة \u200F%1$d من \u200F%2$d</string>
+    <!-- Issue #15: Added \u200F before numeric specifiers for BiDi safety -->
+    <string name="format_mb_downloaded">\u200F%1$.1f ميغابايت / \u200F%2$.1f ميغابايت</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <!-- Issue #13: Shortened from "بيانات الاعتماد" (14 chars) to "اعتماداتي" (9 chars)
+         to fit tab width on small devices. Screen title in batch 01 uses longer form. -->
+    <string name="tab_credentials">اعتماداتي</string>
+    <string name="tab_settings">الإعدادات</string>
+    <string name="tab_help">المساعدة</string>
+    <string name="tab_credentials_description">عرض بيانات اعتمادك</string>
+    <string name="tab_settings_description">إعدادات التطبيق</string>
+    <string name="tab_help_description">الحصول على المساعدة والدعم</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">البحث</string>
+    <string name="search_field_label">حقل البحث</string>
+    <string name="search_placeholder">البحث في الإعدادات والمساعدة والميزات</string>
+    <string name="search_clear">مسح البحث</string>
+    <string name="search_popular">عمليات البحث الشائعة</string>
+    <string name="search_results_heading">نتائج البحث</string>
+    <string name="search_no_results">لم يتم العثور على نتائج</string>
+    <string name="search_try_suggestions">جرب البحث عن:\n\u2022 إمكانية الوصول\n\u2022 الإعدادات\n\u2022 المساعدة\n\u2022 اللغة</string>
+    <string name="search_results_announcement_singular">تم العثور على نتيجة واحدة</string>
+    <!-- Issue #2: Changed to partitive "من النتائج" to sidestep plural agreement -->
+    <string name="search_results_announcement_plural">تم العثور على %d من النتائج</string>
+    <string name="search_no_results_announcement">لم يتم العثور على نتائج</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">الوصول السريع</string>
+    <string name="help_topics">مواضيع المساعدة</string>
+    <string name="help_glossary">المصطلحات</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">تراخيص البرمجيات مفتوحة المصدر</string>
+    <string name="licenses_description">يستخدم هذا التطبيق البرمجيات مفتوحة المصدر التالية. نحن ممتنون للمطورين الذين أنشأوا هذه المكتبات.</string>
+    <string name="licenses_tap_to_view">اضغط لعرض الترخيص الكامل</string>
+    <!-- Issue #3: Changed to partitive "من المكتبات" to sidestep plural agreement -->
+    <string name="licenses_group_header">%1$s (%2$d من المكتبات)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">\u2022</string>
+
+    <!-- ===== BATCH 07 ===== -->
+<!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">لا يوجد اتصال بالإنترنت. يرجى التحقق من الشبكة والمحاولة مرة أخرى.</string>
+    <string name="error_unexpected">حدث خطأ غير متوقع. يرجى إعادة تشغيل التطبيق.</string>
+    <string name="error_unexpected_try_again">حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.</string>
+    <string name="error_storage_detailed">خطأ في التخزين: %s</string>
+    <string name="error_network_detailed">خطأ في الشبكة: %s</string>
+    <string name="error_proof_generation_failed">فشل إنشاء الإثبات: %s</string>
+    <string name="error_not_eligible">غير مؤهل. لا تستوفي متطلبات هذا التحقق.</string>
+    <string name="error_challenge_expired">انتهت صلاحية التحدي أو لم يتم العثور عليه. يرجى طلب تحدٍّ جديد.</string>
+    <string name="error_challenge_expired_scan_new">انتهت صلاحية هذا التحدي. يرجى مسح رمز QR جديد.</string>
+    <string name="error_request_out_of_order">الطلب خارج الترتيب. يرجى المحاولة مرة أخرى.</string>
+    <string name="error_too_many_requests">طلبات كثيرة جدًا. يرجى الانتظار لحظة والمحاولة مرة أخرى.</string>
+    <string name="error_server">خطأ في الخادم. يرجى المحاولة لاحقًا.</string>
+    <string name="error_request_failed">فشل الطلب (%d). يرجى المحاولة مرة أخرى.</string>
+    <string name="error_not_eligible_short">غير مؤهل لهذا التحقق</string>
+    <string name="error_challenge_not_found">لم يتم العثور على التحدي</string>
+    <string name="error_complete_steps_in_order">يرجى إكمال الخطوات بالترتيب</string>
+    <string name="error_challenge_expired_short">انتهت صلاحية التحدي</string>
+    <!-- Issue 6 ACCEPTED: Changed التحقق من هويتك to تأكيد هويتك to disambiguate from التحقق من العمر -->
+    <string name="error_authentication_cancelled">تم إلغاء المصادقة. يرجى تأكيد هويتك لإتمام التحقق من العمر.</string>
+    <string name="error_invalid_data_format_short">تنسيق البيانات غير صالح. يرجى المحاولة مرة أخرى.</string>
+    <string name="error_storage_check_device">خطأ في التخزين. يرجى التحقق من مساحة تخزين الجهاز.</string>
+    <string name="error_network_check_connection">خطأ في الشبكة. يرجى التحقق من الاتصال.</string>
+    <string name="error_proof_generation_failed_short">فشل إنشاء الإثبات. يرجى المحاولة مرة أخرى.</string>
+    <string name="error_operation_in_progress_short">هناك عملية أخرى قيد التنفيذ.</string>
+    <string name="error_no_internet_short">لا يوجد اتصال بالإنترنت. يرجى التحقق من الشبكة.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">مسح رمز QR للتحقق</string>
+    <string name="verification_verifying_title">جارٍ التحقق من العمر</string>
+    <string name="verification_success_title">تم التحقق من العمر</string>
+    <string name="verification_failed_title">فشل التحقق</string>
+    <string name="verification_processing_wait">قد يستغرق هذا بضع ثوانٍ</string>
+    <!-- Issue 21 ACCEPTED: Removed تامة intensifier to match English "privately" without overclaiming -->
+    <string name="verification_success_message">تم التحقق من عمرك بخصوصية</string>
+    <string name="verification_return_to_site">يمكنك الآن العودة إلى الموقع للمتابعة.</string>
+    <string name="verification_please_enter_code">يرجى إدخال رمز التحقق. يجب أن يكون الرمز إما رمزًا قصيرًا مكونًا من 12 رقمًا أو عنوان URL كاملًا للتحقق من جهة التحقق.</string>
+    <string name="verification_error_occurred">حدث خطأ أثناء التحقق</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">جارٍ المعالجة\u2026</string>
+    <string name="credential_list_verify_age_button">التحقق من العمر</string>
+    <string name="credential_list_generate_in_person_description">إنشاء بيانات اعتماد شخصيًا</string>
+    <string name="credential_list_scan_qr_title">مسح رمز QR</string>
+    <string name="credential_list_find_locations_title">البحث عن المواقع</string>
+    <string name="credential_section_my_credential">بيانات اعتمادي</string>
+    <string name="credential_section_managed">بيانات الاعتماد المُدارة</string>
+    <string name="credential_list_get_credential_button">الحصول على بيانات اعتماد</string>
+    <string name="credential_list_add_managed_button">إضافة بيانات اعتماد مُدارة</string>
+    <string name="credential_section_managed_empty">أضِف بيانات اعتماد لشخص ترعاه، مثل طفل.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">تفاصيل بيانات الاعتماد</string>
+    <string name="credential_detail_not_found">لم يتم العثور على بيانات الاعتماد</string>
+    <string name="credential_detail_nickname">الاسم المستعار</string>
+    <string name="credential_detail_no_nickname">لم يتم تعيين اسم مستعار</string>
+    <string name="credential_detail_edit_nickname">تعديل الاسم المستعار</string>
+    <string name="credential_detail_status">الحالة</string>
+    <string name="credential_detail_delete">حذف بيانات الاعتماد</string>
+    <string name="credential_detail_delete_title">حذف بيانات الاعتماد</string>
+    <string name="credential_detail_delete_message">هل أنت متأكد أنك تريد حذف بيانات الاعتماد هذه؟ لا يمكن التراجع عن هذا الإجراء.</string>
+    <string name="credential_type_primary">أساسية</string>
+    <string name="credential_type_managed">مُدارة</string>
+    <string name="credential_status_valid">صالحة</string>
+    <string name="credential_status_expired">منتهية الصلاحية</string>
+    <string name="credential_status_invalid">غير صالحة</string>
+    <string name="action_save">حفظ</string>
+    <string name="credential_slots_full_title">تم بلوغ الحد الأقصى لبيانات الاعتماد</string>
+    <string name="credential_slots_full_message">لقد بلغت الحد الأقصى لعدد بيانات الاعتماد. احذف بيانات اعتماد حالية لإضافة واحدة جديدة.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">بيانات اعتماد مُدارة</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <!-- Issue 9 ACCEPTED: RLM (U+200F) inserted before ؟ to prevent BiDi misplacement with interpolated LTR names -->
+    <string name="managed_confirm_title">التحقق من العمر لـ %1$s&#x200F;؟</string>
+    <string name="managed_confirm_message">أنت على وشك التحقق من العمر باستخدام بيانات اعتماد %1$s المُدارة.</string>
+    <string name="managed_confirm_proceed">التحقق لـ %1$s</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">جارٍ إنشاء الإثبات لـ %1$s</string>
+    <string name="verification_age_verified_for">تم التحقق من العمر لـ %1$s</string>
+    <string name="deeplink_verification_age_verified_for">تم التحقق من العمر لـ %1$s</string>
+    <!-- Issue 9 ACCEPTED: RLM before ! to prevent BiDi misplacement -->
+    <string name="attestation_managed_credential_received">تم استلام بيانات اعتماد %1$s&#x200F;!</string>
+    <string name="attestation_managed_credential_stored">تم تخزين بيانات اعتماد طفلك بشكل آمن.</string>
+
+    <!-- Improved delete confirmations -->
+    <!-- Issue 9 ACCEPTED: RLM before ؟ -->
+    <string name="credential_detail_delete_managed_title">حذف بيانات اعتماد %1$s&#x200F;؟</string>
+    <!-- Issue 9 ACCEPTED: RLM before ؟ in mid-sentence -->
+    <string name="credential_detail_delete_managed_message">هل أنت متأكد أنك تريد حذف بيانات الاعتماد المُدارة لـ %1$s&#x200F;؟ لا يمكن التراجع عن هذا الإجراء. ستحتاج إلى زيارة جهة الإصدار مرة أخرى لاستبدالها.</string>
+    <string name="credential_detail_save_error">فشل حفظ الاسم المستعار</string>
+    <string name="credential_detail_delete_error">فشل حذف بيانات الاعتماد</string>
+    <string name="accessibility_saving">جارٍ الحفظ\u2026</string>
+    <string name="accessibility_deleting">جارٍ الحذف\u2026</string>
+    <string name="accessibility_loading">جارٍ التحميل، يرجى الانتظار</string>
+    <string name="accessibility_issuing_credential">جارٍ إصدار بيانات الاعتماد، يرجى الانتظار</string>
+    <string name="dialog_delete_all_credentials_title">حذف جميع بيانات الاعتماد؟</string>
+    <string name="dialog_delete_all_credentials_message">سيؤدي هذا إلى حذف بيانات اعتمادك وأي بيانات اعتماد مُدارة للأطفال. لا يمكن التراجع عن هذا الإجراء.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">مُدارة</string>
+    <string name="credential_slots_count">%1$d من 5</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">جارٍ التحضير للتحقق\u2026</string>
+    <string name="deeplink_verification_checking_credential">جارٍ فحص بيانات الاعتماد\u2026</string>
+    <string name="deeplink_verification_processing_challenge">جارٍ معالجة التحدي\u2026</string>
+    <string name="deeplink_verification_creating_proof">جارٍ إنشاء إثبات آمن\u2026</string>
+    <string name="deeplink_verification_submitting_proof">جارٍ إرسال الإثبات\u2026</string>
+    <string name="deeplink_verification_success">✔ تم التحقق من العمر بنجاح</string>
+
+    <!-- Error Messages -->
+    <!-- Issue 22 ACCEPTED: Replaced repeated بيانات الاعتماد with pronoun إعدادها for natural Arabic -->
+    <string name="deeplink_verification_error_no_credential">لم يتم العثور على بيانات اعتماد. يرجى إعدادها أولًا.</string>
+    <string name="deeplink_verification_error_failed_challenge">فشلت معالجة تحدي التحقق</string>
+    <string name="deeplink_verification_error_no_auth_prompt">تعذّر عرض طلب المصادقة</string>
+    <string name="deeplink_verification_error_failed_proof">فشل إنشاء إثبات العمر</string>
+    <string name="deeplink_verification_error_verification_failed">فشل التحقق</string>
+    <string name="deeplink_verification_error_unexpected">حدث خطأ غير متوقع</string>
+    <string name="deeplink_verification_error_no_credential_selected">لم يتم اختيار بيانات اعتماد. يرجى المحاولة مرة أخرى.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">اختيار بيانات اعتماد</string>
+    <string name="deeplink_verification_select_credential_subtitle">تتوفر بيانات اعتماد متعددة. اختر بيانات الاعتماد التي تريد استخدامها لهذا التحقق.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">جارٍ التحقق من العمر</string>
+    <string name="deeplink_verification_title_verified">تم التحقق</string>
+    <string name="deeplink_verification_title_failed">فشل التحقق</string>
+    <string name="deeplink_verification_please_wait">يرجى الانتظار\u2026</string>
+    <string name="deeplink_verification_age_verified">تم التحقق من العمر!</string>
+    <!-- Issue 16 ACCEPTED: Removed gendered pronoun أنه, using impersonal construction -->
+    <string name="deeplink_verification_under_age_verified">تم التحقق بأن العمر أقل من %1$d</string>
+    <string name="deeplink_verification_returning_browser">جارٍ العودة إلى المتصفح\u2026</string>
+    <string name="deeplink_verification_return_to_browser">العودة إلى المتصفح</string>
+    <string name="deeplink_verification_failed_title">فشل التحقق</string>
+    <string name="deeplink_verification_error_occurred">حدث خطأ أثناء التحقق</string>
+
+    <!-- ===== BATCH 08 ===== -->
+<!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">عملية الإصدار</string>
+    <string name="officer_issuance_process_steps">1. تحقق من وثيقة هوية المستخدم الرسمية\n2. أدخل تاريخ الميلاد\n3. تأكد من تطابق المعلومات تمامًا\n4. أصدر بيانات الاعتماد مع رمز QR (رمز الاستجابة السريعة) لشهادة الإثبات\n5. يقوم المستخدم بمسح رمز QR لاستلام بيانات الاعتماد</string>
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">فشل إنشاء رمز QR</string>
+    <string name="officer_attestation_ready_title">شهادة الإثبات جاهزة</string>
+    <string name="officer_attestation_scan_instruction">يجب على المستخدم مسح رمز QR هذا باستخدام تطبيق محفظة Provii</string>
+    <string name="officer_attestation_deeplink_label">رابط شهادة الإثبات المباشر</string>
+    <string name="officer_wait_for_attestation_scan">انتظر حتى يقوم المستخدم بالمسح</string>
+    <string name="officer_attestation_info">سيتم إنشاء بيانات الاعتماد على جهازه</string>
+    <string name="officer_attestation_complete">اكتملت شهادة الإثبات</string>
+    <string name="officer_user_will_complete_credential">سيكمل المستخدم إنشاء بيانات الاعتماد على جهازه</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">جارٍ فك ترميز بيانات شهادة الإثبات...</string>
+    <string name="attestation_generating_randomness">جارٍ توليد أرقام عشوائية آمنة...</string>
+    <string name="attestation_sending">جارٍ الإرسال إلى جهة الإصدار...</string>
+    <string name="attestation_verifying">جارٍ التحقق من الالتزام...</string>
+    <string name="attestation_storing">جارٍ تخزين بيانات الاعتماد...</string>
+    <string name="attestation_complete">اكتملت بيانات الاعتماد!</string>
+    <string name="attestation_error_invalid_data">بيانات شهادة الإثبات غير صالحة</string>
+    <string name="attestation_error_expired">انتهت صلاحية شهادة الإثبات</string>
+    <string name="attestation_error_network">خطأ في الشبكة - يرجى التحقق من اتصالك</string>
+    <string name="attestation_error_unexpected">حدث خطأ غير متوقع</string>
+    <string name="attestation_title_processing">جارٍ معالجة شهادة الإثبات</string>
+    <string name="attestation_title_success">تم استلام بيانات الاعتماد</string>
+    <string name="attestation_title_failed">فشل الإصدار</string>
+    <string name="attestation_secure_issuance">إصدار آمن</string>
+    <string name="attestation_privacy_preserving">إصدار بيانات اعتماد يحافظ على الخصوصية</string>
+    <string name="attestation_may_take_seconds">قد تستغرق هذه العملية بضع ثوانٍ</string>
+    <string name="attestation_keep_app_open">يرجى إبقاء التطبيق مفتوحًا</string>
+    <string name="attestation_credential_received">تم استلام بيانات الاعتماد!</string>
+    <string name="attestation_credential_stored_description">تم تخزين بيانات اعتماد التحقق من العمر بشكل آمن</string>
+    <string name="attestation_issuer_verified">تم التحقق من جهة الإصدار</string>
+    <string name="attestation_failed_title">فشل الإصدار</string>
+    <string name="attestation_scan_qr_instead">مسح رمز QR بدلاً من ذلك</string>
+    <string name="attestation_go_back">رجوع</string>
+    <string name="attestation_step_decode">فك الترميز</string>
+    <string name="attestation_step_generate">التوليد</string>
+    <string name="attestation_step_send">الإرسال</string>
+    <string name="attestation_step_verify">التحقق</string>
+    <string name="attestation_step_store">التخزين</string>
+    <string name="attestation_step_complete">الاكتمال</string>
+    <string name="accessibility_attestation_encrypted_description">جارٍ معالجة شهادة إثبات مشفرة</string>
+    <string name="accessibility_attestation_success_description">علامة نجاح تشير إلى استلام بيانات الاعتماد</string>
+    <string name="accessibility_attestation_error_description">رمز خطأ يشير إلى فشل الإصدار</string>
+    <string name="accessibility_step_complete">اكتملت الخطوة %1$s</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">مستلم بيانات الاعتماد</string>
+    <string name="attestation_recipient_prompt">بيانات الاعتماد هذه مخصصة لـ \u2026</string>
+    <string name="attestation_recipient_me">لي</string>
+    <string name="attestation_recipient_child">طفل</string>
+    <string name="attestation_nickname_title">لقب الطفل</string>
+    <string name="attestation_nickname_prompt">أدخل لقبًا حتى تتمكن من التمييز بين بيانات الاعتماد</string>
+    <string name="attestation_nickname_placeholder">مثال: أحمد</string>
+    <string name="attestation_nickname_continue">متابعة</string>
+    <string name="attestation_nickname_back">رجوع</string>
+    <string name="accessibility_attestation_recipient_heading">اختر لمن بيانات الاعتماد هذه</string>
+    <string name="accessibility_attestation_nickname_heading">أدخل لقبًا للطفل</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">صيغة معرّف الموظف غير صالحة</string>
+    <string name="officer_auth_error_challenge_failed">فشل الحصول على تحدي YubiKey:\u200F %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">المس YubiKey للمصادقة</string>
+    <string name="officer_auth_error_touch_timeout">انتهت مهلة لمس YubiKey</string>
+    <string name="officer_auth_error_verify_document_dob">يرجى التحقق من تطابق الوثيقة وتاريخ الميلاد</string>
+    <string name="officer_auth_error_invalid_date_format">صيغة التاريخ غير صالحة. استخدم \u200FYYYY-MM-DD\u200F</string>
+    <string name="officer_auth_error_must_be_18">يجب أن يكون عمر المستخدم 18 عامًا أو أكثر</string>
+    <string name="officer_auth_error_not_authenticated">لم تتم المصادقة. يرجى إدخال معرّف الموظف أولاً.</string>
+    <string name="officer_auth_error_issue_failed">فشل إصدار بيانات الاعتماد</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">انقر للعرض</string>
+    <string name="gesture_desc_long_press_options">، اضغط مطولاً للخيارات</string>
+    <string name="gesture_desc_swipe_left">، اسحب لليسار لمزيد من الإجراءات</string>
+    <string name="gesture_desc_swipe_right">، اسحب لليمين لمزيد من الإجراءات</string>
+    <string name="gesture_desc_tap_to_activate">انقر للتفعيل</string>
+    <string name="gesture_desc_long_press_format">. ضغط مطول: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">إعادة المحاولة</string>
+    <string name="main_activity_reset_redownload">إعادة التعيين وإعادة التحميل</string>
+    <string name="main_activity_show_debug_info">عرض معلومات التصحيح</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">إعدادات إمكانية الوصول</string>
+    <string name="search_item_accessibility_settings_subtitle">تخصيص تجربتك</string>
+    <string name="search_item_large_text_title">نص كبير</string>
+    <string name="search_item_large_text_subtitle">تكبير حجم النص</string>
+    <string name="search_item_high_contrast_title">تباين عالٍ</string>
+    <string name="search_item_high_contrast_subtitle">تحسين الوضوح</string>
+    <string name="search_item_voice_input_title">الإدخال الصوتي</string>
+    <string name="search_item_voice_input_subtitle">التحكم بالصوت</string>
+    <string name="search_item_manual_code_entry_title">إدخال الرمز يدويًا</string>
+    <string name="search_item_manual_code_entry_subtitle">اكتب الرموز بدلاً من المسح</string>
+    <string name="search_item_simplified_ui_title">واجهة مستخدم مبسطة</string>
+    <string name="search_item_simplified_ui_subtitle">تقليل التعقيد البصري</string>
+    <string name="search_item_color_blindness_title">دعم عمى الألوان</string>
+    <string name="search_item_color_blindness_subtitle">تعديل الألوان لوضوح أفضل</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">الإعدادات</string>
+    <string name="search_item_settings_subtitle">تهيئة التطبيق</string>
+    <string name="search_item_language_title">اللغة</string>
+    <string name="search_item_language_subtitle">تغيير لغة التطبيق</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">بيانات اعتمادي</string>
+    <string name="search_item_credentials_subtitle">عرض بيانات الاعتماد الخاصة بك</string>
+    <string name="search_item_get_credential_title">الحصول على بيانات اعتماد</string>
+    <string name="search_item_get_credential_subtitle">البحث عن جهات إصدار</string>
+
+    <!-- Help Search Items -->
+    <string name="search_item_help_title">المساعدة</string>
+    <string name="search_item_help_subtitle">الحصول على مساعدة</string>
+    <string name="search_item_privacy_title">حماية الخصوصية</string>
+    <string name="search_item_privacy_subtitle">كيف تتم حماية بياناتك</string>
+    <string name="search_item_verification_title">التحقق من العمر</string>
+    <string name="search_item_verification_subtitle">إثبات عمرك</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">سجل احتياطي مضمّن لبيئة الاختبار</string>
+    <string name="issuer_fallback_production_description">سجل احتياطي مضمّن لبيئة الإنتاج</string>
+    <string name="issuer_fallback_category_government">حكومي</string>
+    <string name="issuer_fallback_category_government_description">بيانات اعتماد صادرة عن جهات حكومية</string>
+    <string name="issuer_fallback_sandbox_issuer_name">جهة إصدار Provii للاختبار</string>
+    <string name="issuer_fallback_sandbox_issuer_description">جهة إصدار Provii الرسمية لبيئة الاختبار</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">قم بزيارة بوابة جهة إصدار بيئة الاختبار</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">جهة إصدار بيانات اعتماد Provii الرسمية</string>
+    <string name="issuer_fallback_production_issuer_instructions">قم بزيارة مكتب DMV المحلي</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">لا يمكن أن يكون تاريخ الميلاد في المستقبل</string>
+    <string name="validation_error_invalid_date_format">صيغة التاريخ غير صالحة</string>
+    <string name="validation_error_officer_id_too_short">معرّف الموظف قصير جدًا</string>
+    <string name="validation_error_invalid_officer_id_format">صيغة معرّف الموظف غير صالحة</string>
+    <string name="validation_error_empty_qr_code">رمز QR فارغ</string>
+    <string name="validation_error_qr_code_too_large">رمز QR كبير جدًا</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">أنت الآن مطور!</string>
+    <string name="sandbox_toast_enabled">وضع الاختبار مفعّل\nاستخدام بيئة الاختبار</string>
+    <string name="sandbox_toast_disabled">وضع الإنتاج مفعّل\nاستخدام بيئة الإنتاج</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">أنت على بعد خطوة واحدة من وضع المطور</string>
+    <string name="sandbox_toast_steps_away">أنت على بعد %1$d من وضع المطور</string>
+
+    <!-- ===== BATCH 09 ===== -->
+<!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">مستويات التباين</string>
+    <string name="help_topic_extra_large_text_title">نص كبير جداً</string>
+    <string name="help_topic_reduce_transparency_title">تقليل الشفافية</string>
+    <string name="help_topic_color_blind_modes_title">أوضاع عمى الألوان</string>
+    <string name="help_topic_line_spacing_title">تباعد الأسطر</string>
+    <string name="help_topic_paragraph_spacing_title">تباعد الفقرات</string>
+    <string name="help_topic_letter_spacing_title">تباعد الحروف</string>
+    <string name="help_topic_text_width_title">عرض النص</string>
+    <string name="help_topic_touch_targets_title">أهداف لمس أكبر</string>
+    <string name="help_topic_reduce_motion_title">تقليل الحركة</string>
+    <string name="help_topic_timeout_behavior_title">سلوك انتهاء المهلة</string>
+    <string name="help_topic_simplified_gestures_title">إيماءات مبسطة</string>
+    <string name="help_topic_haptic_feedback_title">استجابة لمسية</string>
+    <string name="help_topic_data_preservation_title">الحفاظ على البيانات</string>
+    <string name="help_topic_simplified_ui_title">واجهة مستخدم مبسطة</string>
+    <string name="help_topic_step_indicators_title">مؤشرات الخطوات</string>
+    <string name="help_topic_verbose_descriptions_title">أوصاف تفصيلية</string>
+    <string name="help_topic_confirm_actions_title">تأكيد الإجراءات</string>
+    <string name="help_topic_reading_level_title">مستوى قراءة مبسط</string>
+    <string name="help_topic_help_system_title">نظام المساعدة</string>
+    <string name="help_topic_manual_code_entry_title">إدخال الرمز يدوياً</string>
+    <string name="help_topic_voice_input_title">الإدخال الصوتي</string>
+    <string name="help_topic_screen_reader_title">دعم قارئ الشاشة</string>
+    <string name="help_topic_accessibility_profiles_title">ملفات الإعداد السريع</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">التحكم في نسبة التباين بين النص والخلفيات:\n\n• قياسي: ألوان التطبيق الافتراضية\n• عالٍ (AA): نسبة تباين 4.5:1\n• أقصى (AAA): نسبة تباين 7:1 أو أعلى\n\nيجعل التباين الأعلى النص أسهل في القراءة، خاصة في البيئات المضيئة أو لمن يعانون من ضعف البصر.\n\nيتطلب التوافق مع WCAG AAA استخدام التباين الأقصى.</string>
+    <string name="help_topic_extra_large_text_text">يزيد جميع أحجام النص بنسبة 50% في جميع أنحاء التطبيق.\n\nيجعل هذا النص أسهل في القراءة لمن يعانون من:\n• ضعف البصر\n• تغيرات الرؤية المرتبطة بالعمر\n• صعوبات القراءة\n\nيتكامل مع إعدادات حجم الخط في النظام لتوفير أقصى مرونة.</string>
+    <string name="help_topic_reduce_transparency_text">يزيل التراكبات الشفافة وتأثيرات التمويه.\n\nالفوائد:\n• تسلسل بصري أوضح\n• سهولة أفضل في قراءة النص\n• تقليل التشويش البصري\n• تخفيف العبء الذهني\n\nيُوصى به لمن يعانون من ضعف البصر أو الصعوبات الإدراكية.</string>
+    <!-- H-03: Added "(Monochrome)" to match parenthesized English pattern of other three terms -->
+    <string name="help_topic_color_blind_modes_text">يعدّل الألوان لتناسب أنواع عمى الألوان المختلفة:\n\n• عمى اللون الأحمر (Protanopia)\n• عمى اللون الأخضر (Deuteranopia)\n• عمى اللون الأزرق (Tritanopia)\n• أحادي اللون (Monochrome): عمى ألوان كامل\n\nيستخدم كل وضع ألواناً مختارة بعناية يمكن تمييزها لذلك النوع من قصور رؤية الألوان.</string>
+    <string name="help_topic_line_spacing_text">يضبط التباعد بين أسطر النص (1.0x - 2.0x).\n\n• الافتراضي: 1.0x\n• متوافق مع AAA: 1.5x أو أعلى\n\nزيادة تباعد الأسطر:\n• تحسّن استيعاب القراءة\n• تقلل إجهاد العين\n• تساعد من يعانون من عسر القراءة\n• تجعل كتل النص أقل إرهاقاً</string>
+    <string name="help_topic_paragraph_spacing_text">يضبط التباعد بين الفقرات (1.0x - 3.0x).\n\n• الافتراضي: 1.0x\n• متوافق مع AAA: 2.0x أو أعلى\n\nزيادة تباعد الفقرات:\n• تفصل الأفكار بوضوح\n• تحسّن التنظيم البصري\n• تخفف العبء الذهني\n• تساعد في الحفاظ على موضع القراءة</string>
+    <string name="help_topic_letter_spacing_text">يضبط التباعد بين الحروف (0.0em - 0.2em).\n\n• الافتراضي: 0.0em\n• متوافق مع AAA: 0.12em أو أعلى\n\nزيادة تباعد الحروف:\n• تجعل الحروف الفردية أكثر وضوحاً\n• تساعد من يعانون من عسر القراءة\n• تحسّن دقة القراءة\n• تقلل الخلط بين الحروف</string>
+    <string name="help_topic_text_width_text">يحدّ من طول السطر لتسهيل القراءة:\n\n• العرض الكامل: بدون حد\n• مريح: 80 حرفاً (مُوصى به)\n• ضيق: 60 حرفاً\n\nتُظهر الأبحاث أن القراءة المثلى تحدث عند 60-80 حرفاً في السطر. الأسطر الأقصر تقلل حركة العين وتحسّن الاستيعاب.</string>
+    <!-- M-06: Added RLM before closing parenthesis for BiDi safety in "(من 44dp)" -->
+    <string name="help_topic_touch_targets_text">يزيد الحد الأدنى لحجم هدف اللمس إلى 60dp (من 44dp\u200F).\n\nالفوائد:\n• سهولة أكبر في الضغط على الأزرار وعناصر التحكم\n• تقليل الضغطات العرضية\n• مساعدة من يعانون من إعاقات حركية\n• أفضل للاستخدام بيد واحدة\n\nيتطلب WCAG AAA حداً أدنى قدره 60dp.</string>
+    <string name="help_topic_reduce_motion_text">يزيل جميع الرسوم المتحركة والانتقالات.\n\nالفوائد:\n• منع دوار الحركة\n• تقليل التشتت\n• تخفيف العبء الذهني\n• تحسين التركيز\n\nيُوصى به لمن يعانون من:\n• اضطرابات الجهاز الدهليزي\n• صعوبات الانتباه\n• الحساسية تجاه الحركة</string>
+    <string name="help_topic_timeout_behavior_text">يتحكم في انتهاء المهلة التلقائي في شاشات التحقق:\n\n• بدون مهلة (AAA): وقت غير محدود\n• قياسي: 30 ثانية\n• ممتد: 60 ثانية\n\nيتطلب WCAG AAA خيار عدم وجود مهلة للمستخدمين الذين يحتاجون وقتاً أطول لإكمال المهام.\n\nيتم حفظ بيانات النموذج تلقائياً قبل انتهاء المهلة.</string>
+    <!-- M-04: Added RLM marks around arrows for BiDi safety -->
+    <string name="help_topic_simplified_gestures_text">يستبدل الإيماءات المعقدة ببدائل بسيطة:\n\n• التمرير \u200F←\u200F زر ضغط\n• الضغط المطول \u200F←\u200F ضغط عادي مع تأكيد\n• القرص/التكبير \u200F←\u200F أزرار\n\nيساعد من يعانون من:\n• إعاقات حركية\n• الرعشة\n• محدودية البراعة اليدوية\n• صعوبات في استخدام الشاشة اللمسية</string>
+    <string name="help_topic_haptic_feedback_text">يوفر استجابة بالاهتزاز عند تنفيذ الإجراءات.\n\nالفوائد:\n• تأكيد الضغط على الأزرار\n• الإشارة إلى الأخطاء\n• توفير تأكيد لمسي\n\nيمكن تعطيلها لمن:\n• يجدونها مشتتة\n• لديهم حساسية حسية\n• يفضلون التشغيل الصامت</string>
+    <string name="help_topic_data_preservation_text">يحفظ بيانات النموذج تلقائياً قبل انتهاء المهلة.\n\nالميزات:\n• تحذير قبل 10 ثوانٍ من انتهاء المهلة\n• خيار حفظ البيانات أو تجاهلها\n• استعادة تلقائية عند العودة\n• الاحتفاظ بالبيانات لمدة 24 ساعة\n\nيضمن عدم فقدان البيانات إذا احتجت وقتاً إضافياً أو واجهت انقطاعات.</string>
+    <string name="help_topic_simplified_ui_text">يقلل التعقيد البصري:\n\n• عرض عدد أقل من عناصر واجهة المستخدم في وقت واحد\n• أزرار أكبر وأوضح\n• مساحات بيضاء أكثر\n• تخطيطات مبسطة\n\nالفوائد:\n• أسهل في الفهم\n• أقل إرهاقاً\n• تركيز أفضل\n• تخفيف العبء الذهني</string>
+    <string name="help_topic_step_indicators_text">يعرض التقدم خلال العمليات متعددة الخطوات.\n\nيُظهر:\n• رقم الخطوة الحالية\n• العدد الإجمالي للخطوات\n• تمثيل بصري للتقدم\n\nالفوائد:\n• تقليل القلق\n• وضع توقعات واضحة\n• المساعدة في الحفاظ على التوجه\n• إظهار تقدم الإنجاز</string>
+    <string name="help_topic_verbose_descriptions_text">يوفر سياقاً وشرحاً إضافياً:\n\n• تسميات أطول للأزرار\n• تعليمات أكثر تفصيلاً\n• تلميحات إضافية\n• رسائل خطأ أوضح\n\nيساعد المستخدمين على:\n• فهم الإجراءات قبل تنفيذها\n• تجنب الأخطاء\n• تعلم وظائف التطبيق\n• بناء الثقة</string>
+    <string name="help_topic_confirm_actions_text">يتطلب تأكيداً للإجراءات المهمة:\n\n• حذف بيانات الاعتماد\n• تغيير الإعدادات\n• مسح البيانات\n\nيتطلب WCAG AAA التأكيد لجميع الإجراءات التدميرية.\n\nالفوائد:\n• منع الحوادث\n• إتاحة المراجعة قبل التنفيذ\n• تقليل القلق\n• منح فرصة ثانية</string>
+    <!-- M-01: Added "الدراسي" for educational context clarity -->
+    <string name="help_topic_reading_level_text">يستخدم لغة أبسط (مستوى الصف الدراسي 7-9):\n\n• جمل أقصر\n• كلمات شائعة بدلاً من المصطلحات المتخصصة\n• لغة واضحة ومباشرة\n• مصطلحات تقنية أقل\n\nمتوافق مع WCAG AAA عند التفعيل.\n\nالفوائد:\n• أسهل في الفهم\n• استيعاب أسرع\n• أفضل لغير الناطقين باللغة الأصلية\n• تخفيف العبء الذهني</string>
+    <!-- H-06: Improved flow "27 موضوعاً للمساعدة" -->
+    <string name="help_topic_help_system_text">مساعدة حسب السياق متاحة في جميع أنحاء التطبيق.\n\nالميزات:\n• 27 موضوعاً للمساعدة\n• مركز مساعدة قابل للبحث\n• تنقل بين المواضيع ذات الصلة\n• مسرد مصطلحات تقنية\n\nيمكنك الوصول إلى المساعدة من:\n• شاشات الإعدادات\n• الميزات المعقدة\n• رسائل الخطأ\n• أي مكان ترى فيه رمز المساعدة</string>
+    <string name="help_topic_manual_code_entry_text">أدخل بيانات رمز QR يدوياً بدلاً من المسح الضوئي.\n\nالفوائد:\n• يعمل عند عدم توفر الوصول إلى الكاميرا\n• يساعد من يعانون من صعوبات حركية\n• أفضل في الإضاءة المنخفضة\n• لا حاجة لتثبيت الهاتف\n\nبديل لمسح QR بالكاميرا.</string>
+    <string name="help_topic_voice_input_text">استخدم الصوت لإدخال النص بدلاً من الكتابة.\n\nالفوائد:\n• إدخال بدون استخدام اليدين\n• أسرع من الكتابة\n• يساعد من يعانون من إعاقات حركية\n• يقلل الإجهاد المتكرر\n\nيستخدم ميزة التعرف على الصوت المدمجة في جهازك.</string>
+    <string name="help_topic_screen_reader_text">دعم كامل لقارئ الشاشة TalkBack.\n\nالميزات:\n• جميع عناصر واجهة المستخدم مُعنونة\n• هيكل عناوين صحيح\n• ترتيب تنقل منطقي\n• تلميحات مخصصة للإجراءات المعقدة\n\nيُفعّل التطبيق تلقائياً:\n• الأوصاف التفصيلية\n• أهداف اللمس المحسّنة\n\nعند اكتشاف TalkBack.</string>
+    <!-- H-02: Aligned body terminology with title; L-06: "الملف" consistent at end -->
+    <string name="help_topic_accessibility_profiles_text">ملفات الإعداد السريع لإمكانية الوصول المُعدة مسبقاً:\n\n• ضعاف البصر: تباين عالٍ، نص كبير، استجابة لمسية\n• ذوو الإعاقة الحركية: أهداف لمس كبيرة، مهل ممتدة، تأكيدات\n• الإدراكي: واجهة مبسطة، مؤشرات خطوات، أوصاف\n• كبار السن: نص كبير، أهداف كبيرة، واجهة مبسطة، تقليل الحركة\n• الافتراضي: إعادة تعيين جميع الإعدادات\n\nيُفعّل كل ملف الإعدادات الأكثر فائدة لتلك المجموعة من المستخدمين. يمكنك التخصيص بشكل إضافي بعد تطبيق الملف.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">التحقق من العمر</string>
+    <!-- C-01: "تقنية إثبات المعرفة الصفرية" sidesteps singular/plural issue naturally -->
+    <string name="content_age_verification_explanation">يرجى الانتظار بينما نتحقق من عمرك بشكل آمن باستخدام تقنية إثبات المعرفة الصفرية. لن يتم مشاركة تاريخ ميلادك مع جهة التحقق أبداً.</string>
+    <string name="content_age_verification_instructions">وجّه الكاميرا نحو رمز QR الخاص بالتحقق. سيتم مسح الرمز تلقائياً عند اكتشافه.</string>
+    <!-- H-01: Added "الخاصة بها" to preserve possessive "their" -->
+    <string name="content_age_verification_success">تم التحقق من عمرك بنجاح. تعلم جهة التحقق أنك تستوفي متطلبات العمر الخاصة بها دون معرفة تاريخ ميلادك الفعلي.</string>
+    <string name="content_age_verification_failed">فشل التحقق. يرجى محاولة مسح رمز QR مرة أخرى أو استخدام الإدخال اليدوي للرمز.</string>
+    <string name="content_credential_issuance_title">إصدار بيانات الاعتماد</string>
+    <string name="content_credential_issuance_explanation">امسح رمز QR المقدم من جهة الإصدار المعتمدة لاستلام بيانات اعتماد العمر الرقمية الخاصة بك.</string>
+    <string name="content_credential_issuance_instructions">وجّه الكاميرا نحو رمز QR الخاص بالإصدار الذي يعرضه الموظف. سيتم إنشاء بيانات اعتمادك على جهازك.</string>
+    <string name="content_credential_issuance_success">تم إنشاء بيانات الاعتماد بنجاح. يمكنك الآن استخدامها للتحقق من العمر.</string>
+    <!-- C-03: "موقّع تشفيرياً" (cryptographically signed, not digitally signed) -->
+    <string name="content_credential_description">بيانات الاعتماد هي إثبات هوية موقّع تشفيرياً يتيح التحقق مع الحفاظ على الخصوصية.</string>
+    <string name="content_zero_knowledge_explanation">يتيح لك إثبات المعرفة الصفرية إثبات أنك تستوفي متطلبات العمر دون الكشف عن عمرك الفعلي.</string>
+    <!-- C-02: "التشفيري" (cryptographic, not encrypted) -->
+    <string name="content_setup_proving_key">جارٍ تنزيل مفتاح الإثبات التشفيري المطلوب لإنشاء إثبات المعرفة الصفرية</string>
+    <string name="content_processing_challenge">جارٍ معالجة طلب التحقق</string>
+    <string name="content_creating_proof">جارٍ إنشاء إثبات العمر بالمعرفة الصفرية</string>
+    <string name="content_submitting_proof">جارٍ إرسال الإثبات إلى جهة التحقق</string>
+    <string name="content_error_no_credential">لا تتوفر بيانات اعتماد. يرجى الحصول على بيانات اعتماد من جهة إصدار معتمدة أولاً.</string>
+    <string name="content_error_network_failed">فشل الاتصال بالشبكة. يرجى التحقق من اتصالك بالإنترنت والمحاولة مرة أخرى.</string>
+    <string name="content_error_invalid_qr">رمز QR غير صالح. يرجى التأكد من أنك تمسح رمز التحقق الصحيح.</string>
+    <string name="content_error_verification_failed">فشل التحقق. لم يتمكن الخادم من التحقق من صحة إثباتك.</string>
+    <string name="content_officer_authentication_title">مصادقة الموظف</string>
+    <string name="content_officer_issuance_title">إصدار بيانات الاعتماد</string>
+    <string name="content_officer_dob_prompt">أدخل تاريخ ميلاد مقدم الطلب المُتحقق منه من وثيقة الهوية الرسمية.</string>
+    <!-- M-05: Added RLM after "Provii" for BiDi safety -->
+    <string name="content_onboarding_welcome">مرحباً بك في محفظة Provii\u200F - حلك الرقمي للتحقق من العمر مع الحفاظ على الخصوصية.</string>
+    <string name="content_onboarding_privacy">يتم تخزين تاريخ ميلادك بشكل آمن على جهازك ولا يتم إرساله إلى جهات التحقق أبداً.</string>
+    <string name="content_onboarding_get_started">للبدء، قم بزيارة جهة إصدار معتمدة للحصول على بيانات اعتماد العمر الرقمية الخاصة بك.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">تحقق من عمرك</string>
+    <string name="content_age_verification_explanation_simplified">نحن نتحقق من عمرك. لن نرى أو نشارك تاريخ ميلادك.</string>
+    <string name="content_age_verification_instructions_simplified">وجّه الكاميرا نحو رمز QR. سيتم المسح تلقائياً.</string>
+    <string name="content_age_verification_success_simplified">تم بنجاح! الموقع يعلم أنك كبير بما يكفي. لا يعرف تاريخ ميلادك.</string>
+    <string name="content_age_verification_failed_simplified">لم ينجح ذلك. حاول المسح مرة أخرى أو اكتب الرمز يدوياً.</string>
+    <string name="content_credential_issuance_title_simplified">احصل على بطاقتك الرقمية</string>
+    <string name="content_credential_issuance_explanation_simplified">امسح الرمز من المكتب الحكومي للحصول على هويتك الرقمية.</string>
+    <string name="content_credential_issuance_instructions_simplified">وجّه الكاميرا نحو الرمز. سيتم حفظ هويتك على هاتفك.</string>
+    <string name="content_credential_issuance_success_simplified">تم! يمكنك الآن استخدام هويتك الرقمية لإثبات عمرك.</string>
+    <string name="content_credential_description_simplified">بيانات الاعتماد تشبه بطاقة هوية رقمية تثبت هويتك دون مشاركة تفاصيل خاصة.</string>
+    <string name="content_zero_knowledge_explanation_simplified">يمكنك إثبات أنك كبير بما يكفي دون إخبار أي شخص بعمرك الحقيقي.</string>
+    <string name="content_setup_proving_key_simplified">جارٍ تنزيل ملفات الأمان اللازمة لعمل التطبيق</string>
+    <string name="content_processing_challenge_simplified">جارٍ قراءة طلب التحقق من العمر</string>
+    <string name="content_creating_proof_simplified">جارٍ إنشاء إثبات عمرك</string>
+    <string name="content_submitting_proof_simplified">جارٍ إرسال الإثبات إلى الموقع</string>
+    <!-- M-08: "زُر" is simpler than "قم بزيارة" for simplified register -->
+    <string name="content_error_no_credential_simplified">لا تملك هوية رقمية بعد. زُر مكتباً حكومياً للحصول على واحدة أولاً.</string>
+    <string name="content_error_network_failed_simplified">لا يمكن الاتصال بالإنترنت. تحقق من Wi-Fi أو بيانات الهاتف وحاول مرة أخرى.</string>
+    <string name="content_error_invalid_qr_simplified">هذا الرمز لا يبدو صحيحاً. تأكد من أنك تمسح الرمز الصحيح.</string>
+    <string name="content_error_verification_failed_simplified">لم ينجح ذلك. لم يتمكن الموقع من التحقق من إثباتك. حاول مرة أخرى.</string>
+    <string name="content_officer_authentication_title_simplified">تسجيل دخول الموظف</string>
+    <string name="content_officer_issuance_title_simplified">إنشاء بطاقة هوية</string>
+    <string name="content_officer_dob_prompt_simplified">أدخل تاريخ ميلاد الشخص من وثيقة هويته الرسمية.</string>
+    <!-- M-05: Added RLM after "Provii" for BiDi safety -->
+    <string name="content_onboarding_welcome_simplified">مرحباً بك في محفظة Provii\u200F - أثبت عمرك بخصوصية.</string>
+    <string name="content_onboarding_privacy_simplified">تاريخ ميلادك يبقى على هاتفك. لا يمكن لأي شخص آخر رؤيته.</string>
+    <!-- M-08: "زُر" is simpler than "قم بزيارة" for simplified register -->
+    <string name="content_onboarding_get_started_simplified">للبدء، زُر مكتباً حكومياً للحصول على هويتك الرقمية.</string>
+
+    <!-- ===== BATCH 10 ===== -->
+<!--
+    ============================================================
+    FINAL VALIDATION: Batch 10 Arabic Strings
+    Validator: Final Validator (2026-03-21)
+    Source review: ar-batch-10-review.md (Yara Hassan)
+    ============================================================
+
+    REVIEW DISPOSITIONS:
+
+    S-01 [HIGH] wallet_error_sandbox_disabled masculine imperative
+      REJECT , MSA masculine-default is standard in all major Arabic
+      Android localisations. No change needed.
+
+    S-02 [MEDIUM] abbreviation_id_expanded redundant wording
+      ACCEPT , Changed "هوية تعريفية (ID)" to "هوية (ID)".
+      "تعريفية" is tautological with "هوية".
+
+    S-03 [HIGH] modal_button_destructive_label/hint narrowed to "deletion"
+      ACCEPT , "Destructive" is broader than "delete". Changed
+      "إجراء حذف" to "إجراء مدمّر" in both label and hint strings.
+
+    S-04 [LOW] keyboard_shortcut_description_label colon in BiDi
+      REJECT , Reviewer says "likely fine". No change.
+
+    S-05 [HIGH] BiDi isolation for Escape/Enter/Ctrl key names
+      ACCEPT , Added RLM (&#x200F;) around English key names in
+      modal_opened_announcement, modal_button_primary_hint,
+      modal_button_cancel_hint, keyboard_shortcuts_tip_hold_ctrl.
+
+    S-06 [MEDIUM] BiDi isolation for Bluetooth/USB
+      ACCEPT , Added RLM around "Bluetooth" and "USB" in
+      keyboard_shortcuts_tip_external.
+
+    S-07 [LOW] RLM usage in YubiKey errors , PASS (correct usage).
+    S-08 [LOW] RLM in FFI error , PASS (correct usage).
+
+    S-09 [HIGH] animation_active_count not pluralised
+      REJECT , Source defect in English. Cannot fix in translation.
+
+    S-10 [LOW] animation_percent_complete not pluralised
+      REJECT , Source defect in English. Cannot fix in translation.
+
+    S-11 [LOW] keystore subtitle noun phrase , PASS.
+    S-12 [MEDIUM] BiDi isolation for URL format specifiers
+      ACCEPT , Added RLM around %1$s and %2$s in
+      wallet_error_verifier_url_update_failed.
+
+    S-13 [LOW] network_type_cellular translation , PASS.
+      Standard Android/iOS Arabic localisation term.
+
+    COMPLETENESS: All 86 string names from English source
+    (lines 1170-1219, 1332-1416) verified present.
+    FORMAT SPECIFIERS: All %s, %d, %1$s, %2$s, %3$s verified.
+    XML VALIDITY: Well-formed, all entities escaped.
+    ============================================================
+    -->
+
+    <!-- Batch 10: YubiKey Errors, Wallet Errors, Keystore, Licenses a11y, Network, Abbreviations, Animation Controls, Keyboard Shortcuts, Modal Focus Trap -->
+
+    <!-- ==================== YUBIKEY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">لا يوجد YubiKey متصل</string>
+    <string name="yubikey_error_timeout">انتهت مهلة انتظار لمس YubiKey. يرجى لمس المفتاح عندما يومض.</string>
+    <string name="yubikey_error_not_supported">لم يتم تكوين استجابة التحدي على فتحة YubiKey هذه</string>
+    <string name="yubikey_error_no_slot">لم يتم تكوين الفتحة 2 لاستجابة تحدي HMAC (Hash-based Message Authentication Code) SHA1</string>
+    <string name="yubikey_error_hmac_failed">فشل حساب HMAC (Hash-based Message Authentication Code):&#x200F; %s</string>
+    <string name="yubikey_error_session_failed">فشل الاتصال بـ YubiKey:&#x200F; %s</string>
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">لم تتم تهيئة المحفظة</string>
+    <string name="wallet_error_proving_key_not_found">مفتاح الإثبات غير موجود، يرجى إعادة التنزيل</string>
+    <string name="wallet_error_proving_key_not_readable">تعذرت قراءة ملف مفتاح الإثبات</string>
+    <string name="wallet_error_out_of_memory">نفدت الذاكرة، يرجى إعادة تشغيل التطبيق</string>
+    <string name="wallet_error_prover_error">خطأ في المُثبِت: %s</string>
+    <string name="wallet_error_ffi_error">خطأ FFI:&#x200F; %s</string>
+    <string name="wallet_error_prover_init_failed">فشلت تهيئة المُثبِت: %s</string>
+    <string name="wallet_error_prover_verification_failed">فشل التحقق من تهيئة المُثبِت</string>
+    <string name="wallet_error_verifier_url_update_failed">فشل تحديث عنوان URL (عنوان الويب) للمتحقق! كان المتوقع &#x200F;%1$s&#x200F; ولكن تم الحصول على &#x200F;%2$s&#x200F;</string>
+    <string name="wallet_error_wallet_still_null">المحفظة لا تزال فارغة بعد التهيئة</string>
+    <string name="wallet_error_credential_not_found">بيانات الاعتماد غير موجودة</string>
+    <string name="wallet_error_credential_access_failed">تعذر الوصول إلى بيانات الاعتماد: %s</string>
+    <string name="wallet_error_invalid_format">تنسيق غير صالح: %s</string>
+    <string name="wallet_error_not_initialized_short">لم تتم تهيئة المُثبِت</string>
+    <string name="wallet_error_proving_key_unavailable">مفتاح الإثبات غير متاح. يلزم إجراء الإعداد.</string>
+    <string name="wallet_error_storage_init_failed">فشلت تهيئة التخزين</string>
+    <string name="wallet_error_biometric_unavailable">المصادقة البيومترية غير متاحة</string>
+    <string name="wallet_error_auth_failed">فشلت المصادقة</string>
+    <string name="wallet_error_sandbox_disabled">قم بتفعيل وضع بيئة الاختبار لإنشاء بيانات اعتماد تجريبية</string>
+    <string name="wallet_error_fetch_sandbox_credentials">تعذر جلب بيانات اعتماد بيئة الاختبار. يرجى التحقق من اتصال الإنترنت.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">المصادقة مطلوبة</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">تحقق من هويتك لإنشاء إثبات العمر</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">الوصول إلى التخزين الآمن</string>
+    <string name="keystore_biometric_prompt_cancel">إلغاء</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s، %2$s، موسّع، يعرض نص الترخيص الكامل</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s، %2$s، مطوي، %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">لا يوجد</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">بيانات الجوال</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">غير معروف</string>
+
+    <!-- ==================== ABBREVIATIONS (WCAG 3.1.2) ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">رمز الاستجابة السريعة (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">رقم التعريف الشخصي (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">تاريخ الميلاد (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">هوية (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">واجهة المستخدم (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">محدد موقع الموارد الموحد (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">واجهة برمجة التطبيقات (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">إيقاف الرسوم المتحركة مؤقتًا</string>
+    <string name="animation_resume_animations">استئناف الرسوم المتحركة</string>
+    <string name="animation_pause_button_text">إيقاف مؤقت</string>
+    <string name="animation_resume_button_text">استئناف</string>
+    <string name="animation_toggles_playback_hint">تبديل تشغيل الرسوم المتحركة</string>
+    <string name="animation_paused_announcement">تم إيقاف الرسوم المتحركة مؤقتًا</string>
+    <string name="animation_resumed_announcement">تم استئناف الرسوم المتحركة</string>
+    <string name="animation_active_count">%d من الرسوم المتحركة النشطة</string>
+    <string name="animation_loading_default">جارٍ التحميل</string>
+    <string name="animation_please_wait">يرجى الانتظار حتى تكتمل هذه العملية</string>
+    <string name="animation_percent_complete">اكتمل %d بالمائة</string>
+    <string name="animation_loading_in_progress">قيد التنفيذ</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">اختصارات لوحة المفاتيح</string>
+    <string name="keyboard_shortcuts_done">تم</string>
+    <string name="keyboard_shortcuts_app_section">اختصارات التطبيق</string>
+    <string name="keyboard_shortcuts_navigation_section">التنقل</string>
+    <string name="keyboard_shortcuts_tips_section">نصائح</string>
+    <string name="keyboard_shortcuts_navigation_footer">تعمل مفاتيح التنقل هذه في جميع أنحاء التطبيق مع لوحات المفاتيح الخارجية</string>
+    <string name="keyboard_shortcuts_tip_external">لوحات المفاتيح الخارجية عبر &#x200F;Bluetooth&#x200F; و&#x200F;USB&#x200F; مدعومة بالكامل</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">استخدم مفاتيح الأسهم للتنقل بين العناصر في القوائم</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">اضغط مع الاستمرار على &#x200F;Ctrl&#x200F; لعرض الاختصارات المتاحة في هذه الشاشة</string>
+    <string name="keyboard_shortcuts_tip_a11y">جميع الميزات في هذا التطبيق متاحة عبر لوحة المفاتيح</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">إغلاق اختصارات لوحة المفاتيح</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">الإعدادات</string>
+    <string name="keyboard_shortcut_label_accessibility">إمكانية الوصول</string>
+    <string name="keyboard_shortcut_label_help">مركز المساعدة</string>
+    <string name="keyboard_shortcut_label_add_credential">إضافة بيانات اعتماد</string>
+    <string name="keyboard_shortcut_label_verify">تحقق</string>
+    <string name="keyboard_shortcut_label_shortcuts">اختصارات</string>
+    <string name="keyboard_shortcut_desc_settings">فتح الإعدادات</string>
+    <string name="keyboard_shortcut_desc_accessibility">إعدادات إمكانية الوصول</string>
+    <string name="keyboard_shortcut_desc_help">مركز المساعدة</string>
+    <string name="keyboard_shortcut_desc_add_credential">إضافة بيانات اعتماد</string>
+    <string name="keyboard_shortcut_desc_verify">بدء التحقق</string>
+    <string name="keyboard_shortcut_desc_shortcuts">اختصارات لوحة المفاتيح</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">رجوع / إغلاق</string>
+    <string name="keyboard_shortcut_nav_back_desc">إغلاق الشاشة أو مربع الحوار الحالي</string>
+    <string name="keyboard_shortcut_nav_next">الحقل التالي</string>
+    <string name="keyboard_shortcut_nav_next_desc">نقل التركيز إلى العنصر التفاعلي التالي</string>
+    <string name="keyboard_shortcut_nav_prev">الحقل السابق</string>
+    <string name="keyboard_shortcut_nav_prev_desc">نقل التركيز إلى العنصر التفاعلي السابق</string>
+    <string name="keyboard_shortcut_nav_submit">إرسال / متابعة</string>
+    <string name="keyboard_shortcut_nav_submit_desc">تفعيل الزر المحدد أو إرسال النموذج</string>
+    <string name="keyboard_shortcut_nav_activate">تفعيل الزر</string>
+    <string name="keyboard_shortcut_nav_activate_desc">تفعيل الزر أو مفتاح التبديل المحدد حاليًا</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">تم فتح مربع الحوار. اضغط &#x200F;Escape&#x200F; للإغلاق أو &#x200F;Enter&#x200F; للتأكيد.</string>
+    <string name="modal_closed_announcement">تم إغلاق مربع الحوار</string>
+    <string name="modal_button_primary_label">%s (الإجراء الأساسي)</string>
+    <string name="modal_button_cancel_label">%s (إلغاء)</string>
+    <string name="modal_button_destructive_label">%s (إجراء مدمّر)</string>
+    <string name="modal_button_primary_hint">انقر نقرًا مزدوجًا للتأكيد، أو اضغط &#x200F;Enter&#x200F;</string>
+    <string name="modal_button_cancel_hint">انقر نقرًا مزدوجًا للإلغاء، أو اضغط &#x200F;Escape&#x200F;</string>
+    <string name="modal_button_destructive_hint">انقر نقرًا مزدوجًا لتنفيذ الإجراء المدمّر</string>
+    <string name="modal_button_secondary_hint">انقر نقرًا مزدوجًا لتنفيذ الإجراء</string>
+    <string name="modal_confirm">تأكيد</string>
+    <string name="modal_cancel">إلغاء</string>
+    <string name="modal_delete">حذف</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">حذف ⁨%1$s⁩</string>
+    <string name="a11y_edit_nickname_for">تعديل الاسم المستعار لـ ⁨%1$s⁩</string>
+    <string name="accessibility_attestation_scan_back">رجوع</string>
+    <string name="attestation_replace_confirm">استبدال</string>
+    <string name="attestation_replace_primary_message">لديك بالفعل بيانات اعتماد شخصية. سيؤدي إنشاء بيانات اعتماد جديدة إلى استبدالها. لا يمكن التراجع عن هذا الإجراء.</string>
+    <string name="attestation_replace_primary_title">استبدال بيانات الاعتماد الموجودة؟</string>
+    <string name="attestation_scan_error_empty">رمز ⁨QR⁩ فارغ</string>
+    <string name="attestation_scan_instruction">وجّه الكاميرا نحو رمز ⁨QR⁩ الذي يعرضه الموظف</string>
+    <string name="attestation_scan_invalid_qr">رمز ⁨QR⁩ هذا لا يحتوي على بيانات شهادة إثبات</string>
+    <string name="attestation_scan_title">مسح شهادة الإثبات</string>
+    <string name="attestation_scan_wrong_type_toast">هذا رمز ⁨QR⁩ خاص بالتحقق، وليس رمز بيانات اعتماد</string>
+    <string name="biometric_required_message">يتطلب هذا التطبيق قفل شاشة (⁨PIN⁩ أو نمط أو مقياس حيوي) لتخزين بيانات الاعتماد بشكل آمن. يرجى إعداد أحدها من إعدادات أمان جهازك قبل المتابعة.</string>
+    <string name="biometric_required_open_settings">فتح إعدادات الأمان</string>
+    <string name="biometric_required_title">قفل الشاشة مطلوب</string>
+    <string name="challenge_sandbox_prompt_announcement">تم استلام تحدٍ من بيئة الاختبار. اختر ما إذا كنت تريد تفعيل وضع بيئة الاختبار والمتابعة، أو رفض التحدي.</string>
+    <string name="challenge_sandbox_prompt_body">هذا التحدي صادر عن جهة تحقق في بيئة الاختبار. لن ينجح ما لم تقم بتفعيل وضع بيئة الاختبار في هذه المحفظة.</string>
+    <string name="challenge_sandbox_prompt_primary">تفعيل بيئة الاختبار والمتابعة</string>
+    <string name="challenge_sandbox_prompt_secondary">رفض التحدي</string>
+    <string name="challenge_sandbox_prompt_title">تم استلام تحدٍ من بيئة الاختبار</string>
+    <string name="credential_detail_nickname_error">فشل حفظ الاسم المستعار</string>
+    <string name="credential_list_managed_count">⁨%1$d⁩ من ⁨%2$d⁩</string>
+    <string name="credential_picker_count_shown">⁨%1$d⁩ من بيانات الاعتماد معروضة</string>
+    <string name="credential_picker_filter_clear">مسح عامل التصفية</string>
+    <string name="credential_picker_filter_label">تصفية بيانات الاعتماد بالاسم</string>
+    <string name="credential_picker_filter_placeholder">تصفية بيانات الاعتماد</string>
+    <string name="credential_picker_no_results">لا توجد بيانات اعتماد مطابقة</string>
+    <string name="credential_picker_section_managed">بيانات الاعتماد المُدارة</string>
+    <string name="credential_picker_section_me">أنا</string>
+    <string name="credential_picker_subtitle">اختر الشخص الذي يجري التحقق منه.</string>
+    <string name="credential_row_action_delete">حذف</string>
+    <string name="credential_row_action_edit">تعديل الاسم المستعار</string>
+    <string name="credential_row_overflow_menu">خيارات بيانات الاعتماد</string>
+    <string name="deeplink_sandbox_prompt_announcement">تم اكتشاف رابط بيئة اختبار. اختر ما إذا كنت تريد تفعيل وضع بيئة الاختبار وفتح الرابط.</string>
+    <string name="deeplink_sandbox_prompt_body">لن ينجح هذا الرابط العميق إلا إذا قمت بتفعيل وضع بيئة الاختبار في هذه المحفظة.</string>
+    <string name="deeplink_sandbox_prompt_primary">تفعيل بيئة الاختبار والفتح</string>
+    <string name="deeplink_sandbox_prompt_secondary">إلغاء</string>
+    <string name="deeplink_sandbox_prompt_title">تم اكتشاف رابط بيئة اختبار</string>
+    <string name="empty_credential_option_find_apps_a11y">ابحث عن تطبيق مشارك. احصل على بيانات اعتماد من صندوق التقاعد أو البنك أو شركة الاتصالات أو شركة التأمين الصحي، أو أي جهة تعرف عمرك بالفعل.</string>
+    <string name="empty_credential_option_find_apps_desc">احصل على بيانات اعتماد من صندوق التقاعد أو البنك أو شركة الاتصالات أو شركة التأمين الصحي، أو أي جهة تعرف عمرك بالفعل</string>
+    <string name="empty_credential_option_find_apps_title">ابحث عن تطبيق مشارك</string>
+    <string name="empty_credential_option_find_locations_a11y">ابحث عن موقع قريب منك. قم بزيارة شخصية مع وثيقة هويتك للحصول على بيانات الاعتماد.</string>
+    <string name="empty_credential_option_find_locations_desc">قم بزيارة شخصية مع وثيقة هويتك للحصول على بيانات الاعتماد</string>
+    <string name="empty_credential_option_find_locations_title">ابحث عن موقع قريب منك</string>
+    <string name="empty_credential_option_managed_a11y">أرعى شخصًا ما. أدِر بيانات الاعتماد للأشخاص الذين ترعاهم.</string>
+    <string name="empty_credential_option_managed_desc">أدِر بيانات الاعتماد للأشخاص الذين ترعاهم</string>
+    <string name="empty_credential_option_managed_title">أرعى شخصًا ما</string>
+    <string name="empty_credential_option_scan_a11y">لديّ رمز ⁨QR⁩ لمسحه. أعطتك جهة تحقق رمزًا بعد الاطلاع على وثيقة هويتك.</string>
+    <string name="empty_credential_option_scan_desc">أعطتك جهة تحقق رمزًا بعد الاطلاع على وثيقة هويتك</string>
+    <string name="empty_credential_option_scan_title">لديّ رمز ⁨QR⁩ لمسحه</string>
+    <string name="empty_credential_subtitle">اختر الطريقة التي ترغب بها للحصول على أول بيانات اعتماد</string>
+    <string name="empty_credential_title">لا توجد بيانات اعتماد بعد</string>
+    <string name="error_screen_lock_required">يلزم قفل شاشة (⁨PIN⁩ أو نمط أو مقياس حيوي) لتخزين بيانات الاعتماد بشكل آمن. يرجى إعداد أحدها من إعدادات جهازك.</string>
+    <string name="issuers_no_apps_found_description">عاود التحقق قريبًا مع إضافة المزيد من التطبيقات لدعم ⁨Provii⁩</string>
+    <string name="issuers_no_apps_found">لا توجد تطبيقات مشاركة بعد</string>
+    <string name="issuers_no_locations_found_description">عاود التحقق قريبًا مع إضافة المزيد من المواقع</string>
+    <string name="issuers_no_locations_found">لم يُعثر على مواقع</string>
+    <string name="managed_credential_explainer_body">للحصول على بيانات اعتماد مُدارة لشخص ترعاه، قم بزيارة موقع مشارك معًا. ستطّلع جهة التحقق على وثيقة هويته. عند مسح رمز ⁨QR⁩، سيُطلب منك تحديد ما إذا كانت بيانات الاعتماد هذه لك أم لشخص تديره.</string>
+    <string name="managed_credential_explainer_find_location">ابحث عن موقع</string>
+    <string name="managed_credential_explainer_have_qr">لديّ رمز ⁨QR⁩ بالفعل</string>
+    <string name="managed_credential_explainer_title">بيانات الاعتماد المُدارة</string>
+    <string name="sandbox_credential_type">نوع بيانات الاعتماد</string>
+    <string name="sandbox_managed_credential_saved">تم حفظ بيانات الاعتماد المُدارة (⁨%s⁩)</string>
+    <string name="sandbox_mode_enabled_announcement">وضع بيئة الاختبار مفعّل الآن. المحفظة متصلة بخوادم بيئة الاختبار.</string>
+    <string name="sandbox_nickname_helper">امنح بيانات الاعتماد هذه اسمًا حتى تتمكن من تمييزها داخل محفظتك.</string>
+    <string name="sandbox_nickname_label">الاسم المستعار</string>
+    <string name="sandbox_nickname_placeholder">مثال: سارة</string>
+    <string name="sandbox_nickname_required">الاسم المستعار مطلوب لبيانات الاعتماد المُدارة</string>
+    <string name="sandbox_type_managed_credential">بيانات اعتماد مُدارة</string>
+    <string name="sandbox_type_your_credential">بيانات اعتمادك</string>
+    <string name="title_find_apps">ابحث عن تطبيق مشارك</string>
+    <string name="title_find_locations">ابحث عن موقع</string>
+    <string name="verification_go_to_attestation">الحصول على بيانات اعتماد</string>
+    <string name="verification_wrong_qr_type_message">رمز ⁨QR⁩ هذا مخصص للحصول على بيانات اعتماد جديدة، وليس للتحقق من العمر. هل تريد الانتقال إلى شاشة شهادة الإثبات بدلًا من ذلك؟</string>
+    <string name="verification_wrong_qr_type_title">تم اكتشاف رمز ⁨QR⁩ لشهادة إثبات</string>
+    <string name="walkthrough_back">رجوع</string>
+    <string name="walkthrough_get_started">ابدأ الآن</string>
+    <string name="walkthrough_next">التالي</string>
+    <string name="walkthrough_page_indicator">الصفحة ⁨%1$d⁩ من ⁨%2$d⁩</string>
+    <string name="walkthrough_page1_body">تحتوي بيانات اعتمادك على عمرك فقط. لا شيء آخر. لا اسمك ولا عنوانك ولا هويتك.\n\nتثبت أنك فوق (أو دون) سن معيّن دون الكشف عن تاريخ ميلادك.</string>
+    <string name="walkthrough_page1_heading">ما هي بيانات الاعتماد؟</string>
+    <string name="walkthrough_page2_body">يمكنك الحصول على بيانات الاعتماد من خلال تطبيق تابع لجهة تعرف عمرك بالفعل. صندوق التقاعد أو البنك، على سبيل المثال. ولأنهم تحققوا من عمرك مسبقًا، فلا حاجة لمشاركة أي شيء مرة أخرى.\n\nأو قم بزيارة موقع مشارك بوثيقة هوية تثبت تاريخ ميلادك. يُطّلع على تاريخ الميلاد ويُستخدم لإنشاء بيانات اعتمادك ثم يُتلَف. لا ترى جهة الإصدار بيانات اعتمادك أبدًا. ولا ترتبط هويتك بها إطلاقًا.</string>
+    <string name="walkthrough_page2_heading">كيف يمكنك الحصول عليها؟</string>
+    <string name="walkthrough_page3_body">إذا كنت ترعى شخصًا يحتاج إلى بيانات اعتماد للعمر، يمكنك الحصول عليها له وإدارتها من جهازك.\n\nقم بزيارة موقع مشارك معًا بوثيقة هوية تثبت تاريخ ميلاده. عند مسح رمز ⁨QR⁩، سيُطلب منك تحديد ما إذا كانت بيانات الاعتماد هذه لك أم لشخص تديره.\n\nأضِف اسمًا مستعارًا حتى تتمكن من التمييز بين بيانات اعتمادهم.</string>
+    <string name="walkthrough_page3_heading">المعالون</string>
+    <string name="walkthrough_page4_body">يمكن لأي تطبيق يحاول التحقق من عمرك إرسال تحدٍ مباشرة إلى محفظة ⁨Provii⁩ الخاصة بك. أنت تختار بيانات الاعتماد التي ستُستخدم. عند نجاح التحقق، ستعود إلى التطبيق الطالب وتتمكن من المتابعة بصفتك متحققًا منك.\n\nأو قد يُعرض عليك رمز ⁨QR⁩ على جهاز آخر، أو رابط في متصفح هاتفك يقودك مباشرة إلى محفظتك. يتوفر أيضًا خيار رمز قصير لأغراض إمكانية الوصول.\n\nلا تتم مشاركة أي معلومات شخصية على الإطلاق. مجرد إجابة بنعم أو لا حول ما إذا كنت تستوفي شرط العمر.</string>
+    <string name="walkthrough_page4_heading">كيف يعمل التحقق؟</string>
+    <string name="walkthrough_page5_body">خطوتك الأولى هي الحصول على بيانات اعتماد من خلال تطبيق مشارك أو من موقع قريب منك.\n\nمن هناك، يمكنك التحقق من عمرك متى احتجت إلى ذلك، دون مشاركة أي معلومات شخصية. يمكنك أيضًا إدارة بيانات الاعتماد للأشخاص الذين ترعاهم.</string>
+    <string name="walkthrough_page5_heading">أنت جاهز تمامًا</string>
+    <string name="walkthrough_skip">تخطي</string>
+
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

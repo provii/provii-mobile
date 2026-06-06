@@ -1,0 +1,151 @@
+name: Validate Localizations
+
+# Run on all pushes and pull requests that modify localization files
+on:
+  push:
+    paths:
+      - 'ios/ProviiWallet/ProviiWallet/Resources/**/*.strings'
+      - 'ios/ProviiWallet/ProviiWallet/Resources/**/*.stringsdict'
+      - 'ios/scripts/validate_localizations.py'
+      - 'ios/ProviiWalletTests/LocalizationValidationTests.swift'
+      - '.github/workflows/validate-localizations.yml'
+  pull_request:
+    paths:
+      - 'ios/ProviiWallet/ProviiWallet/Resources/**/*.strings'
+      - 'ios/ProviiWallet/ProviiWallet/Resources/**/*.stringsdict'
+      - 'ios/scripts/validate_localizations.py'
+      - 'ios/ProviiWalletTests/LocalizationValidationTests.swift'
+      - '.github/workflows/validate-localizations.yml'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+permissions:
+  contents: read
+
+jobs:
+  validate-localizations:
+    name: Validate Translation Files
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: '3.x'
+
+      - name: Validate German and French localizations
+        run: |
+          python3 ios/scripts/validate_localizations.py --verbose
+
+      - name: Check validation results
+        if: failure()
+        run: |
+          echo "::error::Localization validation failed! Please check the logs above for details."
+          echo "::error::This usually means German translations contain French words or vice versa."
+          exit 1
+
+  validate-all-languages:
+    name: Basic Validation (All Languages)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Check for empty translations
+        run: |
+          echo "Checking for empty translations in all language files..."
+          EMPTY_COUNT=0
+
+          for file in ios/ProviiWallet/ProviiWallet/Resources/*/*.strings; do
+            if [ -f "$file" ]; then
+              EMPTY=$(grep -c '"[^"]*"[[:space:]]*=[[:space:]]*"";' "$file" || true)
+              if [ "$EMPTY" -gt 0 ]; then
+                echo "::warning file=$file::Found $EMPTY empty translations"
+                EMPTY_COUNT=$((EMPTY_COUNT + EMPTY))
+              fi
+            fi
+          done
+
+          if [ "$EMPTY_COUNT" -gt 0 ]; then
+            echo "::error::Found $EMPTY_COUNT total empty translations across all files"
+            exit 1
+          fi
+
+          echo "No empty translations found"
+
+      - name: Check for duplicate keys
+        run: |
+          echo "Checking for duplicate keys in all language files..."
+          HAS_DUPLICATES=false
+
+          for file in ios/ProviiWallet/ProviiWallet/Resources/*/*.strings; do
+            if [ -f "$file" ]; then
+              # Extract keys and check for duplicates
+              KEYS=$(grep -o '"[^"]*"[[:space:]]*=' "$file" | sed 's/"//g' | sed 's/[[:space:]]*=//')
+              UNIQUE_KEYS=$(echo "$KEYS" | sort -u | wc -l)
+              TOTAL_KEYS=$(echo "$KEYS" | wc -l)
+
+              if [ "$UNIQUE_KEYS" -ne "$TOTAL_KEYS" ]; then
+                echo "::error file=$file::Found duplicate keys"
+                HAS_DUPLICATES=true
+              fi
+            fi
+          done
+
+          if [ "$HAS_DUPLICATES" = true ]; then
+            exit 1
+          fi
+
+          echo "No duplicate keys found"
+
+  summary:
+    name: Validation Summary
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: [validate-localizations, validate-all-languages]
+    if: always()
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@8d3c67de8e2fe68ef647c8db1e6a09f647780f40 # v2.19.0
+        with:
+          egress-policy: audit
+          disable-sudo: true
+
+      - name: Check validation status
+        env:
+          VALIDATE_LOCALIZATIONS_RESULT: ${{ needs.validate-localizations.result }}
+          VALIDATE_ALL_LANGUAGES_RESULT: ${{ needs.validate-all-languages.result }}
+        run: |
+          if [ "${VALIDATE_LOCALIZATIONS_RESULT}" == "success" ] && \
+             [ "${VALIDATE_ALL_LANGUAGES_RESULT}" == "success" ]; then
+            echo "All localisation validations passed"
+            exit 0
+          else
+            echo "Localisation validation failed. Review the errors above and fix the translation files."
+            exit 1
+          fi

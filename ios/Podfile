@@ -1,0 +1,72 @@
+# ios/Podfile
+
+# Minimum iOS version for modern SwiftUI APIs
+platform :ios, '17.0'
+
+# Inhibit all warnings from CocoaPods dependencies
+inhibit_all_warnings!
+
+target 'wallet' do
+  # Use dynamic frameworks for Swift compatibility
+  use_frameworks!
+
+  # YubiKit for YubiKey hardware authentication (Lightning + NFC)
+  # CocoaPods trunk is stuck at 4.4.0; pull 4.7.0 directly from GitHub
+  pod 'YubiKit', :git => 'https://github.com/Yubico/yubikit-ios.git', :tag => '4.7.0'
+  
+  # Optional: Add these if you want them
+  # pod 'Alamofire', '~> 5.8'  # Alternative to URLSession if needed
+  # pod 'SwiftLint'  # Code quality and style enforcement
+  # pod 'Firebase/Crashlytics'  # Crash reporting
+  # pod 'Firebase/Analytics'  # Analytics
+
+  target 'walletTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'walletUITests' do
+    inherit! :search_paths
+    # Pods for UI testing
+  end
+end
+
+# Post-install hook to configure pods
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      # Set minimum deployment target
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '17.0'
+      
+      # Enable module stability for framework distribution
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+      
+      # Disable bitcode (deprecated in Xcode 14)
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+      
+      # Optimize Swift compilation for debug builds
+      if config.name == 'Debug'
+        config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Onone'
+        config.build_settings['SWIFT_COMPILATION_MODE'] = 'incremental'
+      else
+        config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-O'
+        config.build_settings['SWIFT_COMPILATION_MODE'] = 'wholemodule'
+      end
+      
+      # Suppress warnings for pods
+      config.build_settings['GCC_WARN_INHIBIT_ALL_WARNINGS'] = 'YES'
+      config.build_settings['CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER'] = 'NO'
+    end
+  end
+  
+  # Fix for Xcode 15+ - prevent duplicate bundle identifier warnings
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['EXPANDED_CODE_SIGN_IDENTITY'] = ""
+        config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
+        config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
+      end
+    end
+  end
+end

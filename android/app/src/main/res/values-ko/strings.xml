@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">설정</string>
+    <string name="title_accessibility">접근성</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">자격 증명 받기</string>
+    <string name="title_scan_verification_qr">검증 QR 코드 스캔</string>
+    <string name="title_verifying_age">나이 검증 중</string>
+    <string name="title_age_verified">나이 검증 완료</string>
+    <string name="title_verification_failed">검증 실패</string>
+    <string name="title_officer_mode">담당자 모드</string>
+    <string name="title_officer_dashboard">담당자 대시보드</string>
+    <string name="title_issue_credential">자격 증명 발급</string>
+    <string name="title_credential_ready">자격 증명 준비 완료</string>
+    <string name="title_get_your_credential">자격 증명 받기</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Provii Wallet에 오신 것을 환영합니다</string>
+    <string name="welcome_subtitle">간편하고 안전한 나이 검증</string>
+    <string name="welcome_first_credential">첫 번째 나이 검증 자격 증명을 추가하여 시작하십시오</string>
+    <string name="welcome_description">영지식 증명을 활용한 프라이버시 보호 나이 검증</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Provii Wallet에 오신 것을 환영합니다</string>
+    <string name="onboarding_language_subtitle">사용할 언어를 선택하십시오</string>
+    <string name="onboarding_use_english">영어 사용</string>
+    <string name="onboarding_use_english_description">앱 언어로 영어를 계속 사용합니다</string>
+    <string name="onboarding_rotating_button_description">언어 변경 버튼, 현재 표시: %1$s. 다른 언어를 선택하려면 탭하십시오.</string>
+    <string name="onboarding_change_later">나중에 설정에서 변경할 수 있습니다</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">접근성</string>
+    <string name="onboarding_accessibility_desc">글자 크기, 터치 영역, 모션 줄이기 등 접근성 기능을 설정하시겠습니까?</string>
+    <string name="onboarding_use_defaults">기본값 사용</string>
+    <string name="onboarding_use_defaults_description">기본 접근성 설정으로 계속합니다</string>
+    <string name="onboarding_open_accessibility">접근성 설정</string>
+    <string name="onboarding_open_accessibility_description">접근성 설정을 열어 앱을 맞춤 설정합니다</string>
+    <string name="onboarding_accessibility_later">나중에 설정에서 변경할 수 있습니다</string>
+    <string name="onboarding_accessibility_features_title">사용 가능한 기능:</string>
+    <string name="onboarding_feature_text_size">큰 글자 크기</string>
+    <string name="onboarding_feature_touch_targets">넓은 터치 영역</string>
+    <string name="onboarding_feature_reduce_motion">모션 줄이기</string>
+    <string name="onboarding_feature_high_contrast">고대비 모드</string>
+    <string name="onboarding_talkback_detected">TalkBack 감지됨</string>
+    <string name="onboarding_talkback_message">앱 탐색을 돕기 위해 상세 설명을 활성화했습니다.</string>
+    <string name="onboarding_continue_to_setup">설정으로 계속</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">최초 설정 필요</string>
+    <string name="setup_download_required">다운로드 필요</string>
+    <string name="setup_download_description">이 앱은 영지식 증명을 위한 보안 구성 요소를 다운로드해야 합니다(약 87MB).</string>
+    <string name="setup_wifi_recommended">Wi-Fi 권장</string>
+    <string name="setup_checking_status">설정 상태 확인 중...</string>
+    <string name="setup_already_setup">이미 설정되었습니다!</string>
+    <string name="setup_ready_message">지갑이 안전한 나이 검증을 위해 준비되었습니다</string>
+    <string name="setup_preparing">안전한 검증 시스템 준비 중...</string>
+    <string name="setup_checking_components">보안 구성 요소 확인 중...</string>
+    <string name="setup_downloading">보안 구성 요소 다운로드 중</string>
+    <string name="setup_download_progress_description">%1$d%% 완료(%2$s MB / %3$s MB 다운로드됨)</string>
+    <string name="setup_initializing">보안 구성 요소 초기화 중...</string>
+    <string name="setup_complete">설정 완료!</string>
+    <string name="setup_download_info">이를 통해 프라이버시 보호 나이 검증을 위한 영지식 증명이 활성화됩니다</string>
+    <string name="setup_one_time_download">최초 1회 다운로드</string>
+    <string name="setup_stuck_message">예상보다 오래 걸리고 있습니다</string>
+    <string name="setup_stuck_description">설정이 중단된 것 같습니다. 재시작해 보십시오.</string>
+    <string name="setup_restart_message">앱을 재시작해야 합니다. 첫 실행 시 간혹 발생할 수 있습니다.</string>
+    <string name="setup_storage_full">저장 공간 부족</string>
+    <string name="setup_connection_error">연결 오류</string>
+    <string name="setup_failed">설정 실패</string>
+    <string name="setup_initialization_error">초기화 오류</string>
+    <string name="error_storage_init_failed">저장소 초기화에 실패했습니다. 앱을 재시작하십시오.</string>
+    <string name="error_storage_init_close_restart">저장소 초기화에 실패했습니다. 앱을 닫고 재시작하십시오.</string>
+    <string name="setup_free_storage_message">65MB 이상의 공간을 확보한 후 다시 시도하십시오</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">프라이버시 보호</string>
+    <string name="setup_privacy_description">나이 검증에 영지식 증명이 사용됩니다. 생년월일은 절대 공유되지 않습니다.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">내 자격 증명</string>
+    <string name="credentials_empty">저장된 자격 증명 없음</string>
+    <string name="credential_active">자격 증명 활성</string>
+    <string name="credential_expired">자격 증명 만료</string>
+    <string name="credential_ready_for_verification">검증 준비 완료</string>
+    <string name="credential_expired_message">자격 증명이 만료되어 교체가 필요합니다</string>
+    <string name="credential_stored_successfully">자격 증명 저장 완료</string>
+    <string name="credential_stored_description">나이 자격 증명이 안전하게 저장되어 사용할 준비가 되었습니다</string>
+    <string name="credential_can_prove_age">이제 개인 정보를 보호하면서 나이를 증명할 수 있습니다</string>
+    <string name="credential_returning">자격 증명으로 돌아가는 중...</string>
+    <string name="credential_view_credentials">자격 증명 보기</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">완료</string>
+    <string name="action_scan_qr_code">QR 코드 스캔</string>
+    <string name="action_find_locations">위치 찾기</string>
+    <string name="action_get_credential">자격 증명 받기</string>
+    <string name="action_replace_credential">새 자격 증명으로 교체</string>
+    <string name="action_replace_credential_now">지금 자격 증명 교체</string>
+    <string name="action_delete_credential">자격 증명 삭제</string>
+    <string name="credential_action_scan_description">공인 발급 기관에서 자격 증명 받기</string>
+    <string name="credential_action_find_description">근처 발급 기관 찾기</string>
+    <string name="credential_remove_description">현재 자격 증명 삭제</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">프라이버시</string>
+    <string name="credential_info_privacy_value">보호됨</string>
+    <string name="credential_info_status">상태</string>
+    <string name="credential_info_status_value">유효</string>
+    <string name="credential_tip_title">간단한 팁</string>
+    <string name="credential_tip_message">\'나이 검증\' 버튼을 탭하여 참여 업체의 검증 QR(Quick Response) 코드를 스캔하십시오.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">QR 코드 스캔</string>
+    <string name="verification_verify_age">나이 검증</string>
+    <string name="verification_generating_proof">증명 생성 중...</string>
+    <string name="verification_success">검증 성공</string>
+    <string name="verification_failed">검증 실패</string>
+    <string name="verification_age_verified">나이 검증 완료</string>
+    <string name="verification_age_verified_message">나이가 개인 정보를 보호하는 방식으로 검증되었습니다</string>
+    <string name="verification_can_return">이제 사이트로 돌아가 계속 이용하실 수 있습니다.</string>
+    <string name="verification_returning_browser">브라우저로 돌아가는 중...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">2단계 중 1단계</string>
+    <string name="verification_step_2_of_2">2단계 중 2단계</string>
+    <string name="verification_point_camera">검증 QR 코드에 카메라를 향하십시오</string>
+    <string name="verification_hold_steady">확인음이 들릴 때까지 움직이지 마십시오.</string>
+    <string name="verification_reading_request">검증 요청 읽는 중...</string>
+    <string name="verification_processing_challenge">챌린지 처리 중...</string>
+    <string name="verification_creating_proof">나이 증명 생성 중...</string>
+    <string name="verification_submitting_proof">증명 제출 중...</string>
+    <string name="verification_processing_message">몇 초 정도 걸릴 수 있습니다</string>
+    <string name="verification_preparing_proof">저장된 자격 증명을 이용해 개인 정보 보호 증명을 준비하고 있습니다.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">검증 요청 읽는 중...</string>
+    <string name="verification_status_processing_challenge">챌린지 처리 중...</string>
+    <string name="verification_status_creating_proof">나이 증명 생성 중...</string>
+    <string name="verification_status_submitting_proof">증명 제출 중...</string>
+    <string name="verification_status_verified">✔ 나이 검증 완료</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">인증 프롬프트를 표시할 수 없습니다</string>
+    <string name="verification_error_verification_failed">검증 실패</string>
+    <string name="verification_error_generic">오류가 발생했습니다</string>
+    <string name="verification_error_failed_to_process_code">코드 처리 실패</string>
+    <string name="verification_error_failed_to_process_challenge">챌린지 처리 실패</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">호주의 신뢰할 수 있는 발급 기관</string>
+    <string name="issuers_loading">발급 기관 불러오는 중...</string>
+    <string name="issuers_loaded">발급 기관 로드 완료</string>
+    <string name="issuers_unable_to_load">발급 기관을 불러올 수 없습니다</string>
+    <string name="issuers_check_connection">인터넷 연결을 확인하고 다시 시도하십시오</string>
+    <string name="issuers_categories_header">카테고리</string>
+    <string name="issuers_available_header">이용 가능한 발급 기관</string>
+    <string name="issuers_found_count">%d개 검색됨</string>
+    <string name="issuer_status_coming_soon">출시 예정</string>
+    <string name="issuer_status_verified">검증됨</string>
+    <string name="issuer_how_to_get">자격 증명 받는 방법</string>
+    <string name="issuer_service_locations">서비스 위치</string>
+    <string name="issuer_visit_website">%s 웹사이트 방문</string>
+    <string name="issuer_learn_more">%s에 대해 자세히 알아보기</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">은행</string>
+    <string name="category_super_fund">슈퍼펀드</string>
+    <string name="category_government">정부</string>
+    <string name="category_travel">여행</string>
+    <string name="category_telco">통신</string>
+    <string name="category_insurance">보험</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">설정</string>
+    <string name="settings_section_sandbox">Sandbox 모드</string>
+    <string name="settings_section_general">일반</string>
+    <string name="settings_section_credentials">자격 증명</string>
+    <string name="settings_section_advanced">고급</string>
+    <string name="settings_section_privacy">프라이버시</string>
+    <string name="settings_security">보안</string>
+    <string name="settings_biometric">생체 인증 사용</string>
+    <string name="settings_environment">환경 설정</string>
+    <string name="settings_environment_description">현재 환경 구성 보기</string>
+    <string name="settings_reset_proving_key">증명 키 초기화</string>
+    <string name="settings_reset_proving_key_description">보안 구성 요소 다시 다운로드(Debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">발급 기관으로서 테스트 자격 증명 발급</string>
+    <string name="settings_mint_test_credential_subtitle">테스트 자격 증명을 지갑에 발급하여 의존 당사자 데모에서 검증할 수 있도록 하세요.</string>
+    <string name="settings_find_trusted_issuers">공인 발급 기관 찾기</string>
+    <string name="settings_version">버전: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">5번 탭하여 전환</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">언어</string>
+    <string name="language_selection_description">사용할 언어를 선택하십시오. 변경 사항을 적용하기 위해 앱이 재시작됩니다.</string>
+    <string name="language_selected">선택됨</string>
+    <string name="settings_language">언어</string>
+    <string name="settings_language_description">앱 언어 변경</string>
+    <string name="settings_licenses">오픈 소스 라이선스</string>
+    <string name="settings_licenses_description">서드파티 라이선스 보기</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">언어 확인</string>
+    <string name="language_change_to">변경할 언어:</string>
+    <string name="language_restart_notice">이 언어를 적용하기 위해 앱이 재시작됩니다.</string>
+    <string name="language_apply">적용</string>
+    <string name="language_cancel">취소</string>
+    <string name="language_skip_title">언어 선택을 건너뛰시겠습니까?</string>
+    <string name="language_skip_message">건너뛰면 기본적으로 영어가 사용됩니다. 언어는 나중에 설정에서 변경할 수 있습니다.</string>
+    <string name="language_use_english">영어 사용</string>
+    <string name="language_go_back">뒤로 가기</string>
+    <string name="language_help_title">언어 선택 도움말</string>
+    <string name="language_help_how_to">언어 선택 방법:</string>
+    <string name="language_help_step1">1. 검색창에서 언어를 찾으십시오</string>
+    <string name="language_help_step2">2. 원하는 언어를 탭하십시오</string>
+    <string name="language_help_step3">3. 선택을 확인하십시오</string>
+    <string name="language_help_system_note">지원되는 경우 시스템 언어가 상단에 강조 표시됩니다.</string>
+    <string name="language_help_settings_note">나중에 설정에서 변경할 수 있습니다.</string>
+    <string name="language_got_it">확인</string>
+    <string name="language_select_title">언어 선택</string>
+    <string name="language_skip_button">건너뛰기(영어 사용)</string>
+    <string name="language_search_placeholder">언어 검색...</string>
+    <string name="language_no_results">검색된 언어 없음</string>
+    <string name="language_try_different">다른 검색어를 시도해 보십시오</string>
+    <string name="language_system_badge">시스템 언어</string>
+    <string name="language_count">%d개 언어</string>
+    <string name="language_no_match_announcement">검색과 일치하는 언어가 없습니다</string>
+    <string name="language_found_announcement">%d개 언어 검색됨</string>
+    <string name="language_search_cleared">검색이 지워졌습니다. 전체 %d개 언어 표시 중</string>
+    <string name="language_selected_announcement">%1$s, %2$s 선택됨</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">언어 선택 화면</string>
+    <string name="language_help_button_description">언어 선택에 관한 도움말 및 정보</string>
+    <string name="language_skip_description">언어 선택을 건너뛰고 기본적으로 영어 사용</string>
+    <string name="language_clear_search_description">검색 지우기</string>
+    <string name="language_count_description">%d개 언어 사용 가능</string>
+    <string name="language_apply_description">언어 선택을 적용하고 계속합니다</string>
+    <string name="language_cancel_description">언어 선택 취소</string>
+    <string name="language_cancelled_announcement">언어 선택이 취소되었습니다</string>
+    <string name="language_selected_description">선택된 언어: %1$s, %2$s</string>
+    <string name="language_item_system">시스템 언어: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, 현재 선택됨</string>
+    <string name="language_item_system_selected">시스템 언어: %1$s, %2$s, 현재 선택됨</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">언어 선택으로 돌아왔습니다</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">Sandbox</string>
+    <string name="sandbox_mode_active">Sandbox 모드 활성화됨</string>
+    <string name="sandbox_mode_banner">SANDBOX 모드 활성화됨</string>
+    <string name="sandbox_mode_description">테스트 환경을 사용 중입니다. 버전 번호를 다섯 번 탭하여 전환합니다.</string>
+    <string name="sandbox_credential_title">Sandbox 자격 증명</string>
+    <string name="sandbox_credential_description">프로덕션 데이터를 건드리지 않고 검증 흐름을 실행할 Sandbox 자격 증명을 생성합니다.</string>
+    <string name="sandbox_select_age">나이 선택</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">기본 생년월일: %s</string>
+    <string name="sandbox_override_dob">기본 생년월일 재정의</string>
+    <string name="sandbox_override_description">나이 기반 기본값 대신 정확한 날짜를 사용합니다.</string>
+    <string name="sandbox_date_of_birth">생년월일</string>
+    <string name="sandbox_generate_credential">자격 증명 생성</string>
+    <string name="sandbox_generating">생성 중…</string>
+    <string name="sandbox_test_credential_saved">테스트 자격 증명이 저장되었습니다</string>
+    <string name="sandbox_id_prefix">식별 접두사: %s…</string>
+    <string name="sandbox_unable_to_generate">자격 증명을 생성할 수 없습니다</string>
+    <string name="settings_sandbox_dob_format">생년월일: %s</string>
+    <string name="settings_sandbox_age_dob_format">%d세 이상 (생년월일: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">환경 구성</string>
+    <string name="environment_current">현재: %s</string>
+    <string name="environment_issuer_api">발급자 API (Application Programming Interface): %s</string>
+    <string name="environment_verifier_api">검증자 API (Application Programming Interface): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">자격 증명을 삭제하시겠습니까?</string>
+    <string name="dialog_delete_credential_message">이 작업은 기기에서 자격 증명을 제거합니다. 필요한 경우 발급자에게서 다시 받을 수 있습니다.</string>
+    <string name="dialog_delete_credential_announcement">대화 상자 열림: 자격 증명 삭제</string>
+    <string name="dialog_reset_proving_key_title">증명 키를 초기화하시겠습니까?</string>
+    <string name="dialog_reset_proving_key_message">증명 키와 지원 파일이 삭제되며, 다음에 앱을 열 때 다시 다운로드됩니다.</string>
+    <string name="dialog_reset_proving_key_announcement">대화 상자 열림: 증명 키 초기화</string>
+    <string name="dialog_environment_info_announcement">대화 상자 열림: 환경 구성</string>
+
+    <!-- ACCESSIBILITY -->
+    <string name="accessibility_title">접근성</string>
+    <string name="accessibility_service_label">Provii Wallet 접근성</string>
+    <string name="accessibility_service_description">Provii Wallet 접근성 서비스는 장애가 있는 사용자를 위한 향상된 지원을 제공합니다. 여기에는 자동 자격 증명 읽기, 안내 탐색, 간소화된 상호작용이 포함됩니다.</string>
+    <string name="accessibility_personalize">경험을 개인화하십시오</string>
+    <string name="accessibility_customize_features">접근성 기능 맞춤 설정</string>
+    <string name="accessibility_quick_setup">빠른 설정</string>
+    <string name="accessibility_features_active">%d개 기능 활성화됨</string>
+    <string name="accessibility_customize_experience">경험을 맞춤 설정하십시오</string>
+    <string name="accessibility_reset_title">접근성 설정을 초기화하시겠습니까?</string>
+    <string name="accessibility_reset_message">모든 접근성 기본 설정이 기본값으로 돌아갑니다.</string>
+    <string name="accessibility_reset">접근성 설정 초기화</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">시각</string>
+    <string name="accessibility_category_interaction">상호작용</string>
+    <string name="accessibility_category_cognitive">인지 지원</string>
+    <string name="accessibility_category_alternative_input">대체 입력</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">매우 큰 텍스트</string>
+    <string name="accessibility_extra_large_text_description">기본 글꼴 크기를 45% 늘립니다</string>
+    <string name="accessibility_high_contrast">고대비</string>
+    <string name="accessibility_high_contrast_description">고대비 색상을 사용합니다</string>
+    <string name="accessibility_reduce_transparency">투명도 줄이기</string>
+    <string name="accessibility_reduce_transparency_description">흐림 및 유리 효과를 제거합니다</string>
+    <string name="accessibility_dyslexia_font">난독증 친화적 글꼴</string>
+    <string name="accessibility_dyslexia_font_description">가독성 향상을 위해 OpenDyslexic 글꼴을 사용합니다</string>
+    <string name="accessibility_color_blind_mode">색맹 모드</string>
+    <string name="accessibility_color_blind_optimized">%s에 최적화된 색상</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">없음</string>
+    <string name="color_blind_protanopia">제1색맹 (적색맹)</string>
+    <string name="color_blind_deuteranopia">제2색맹 (녹색맹)</string>
+    <string name="color_blind_tritanopia">제3색맹 (청색맹)</string>
+    <string name="color_blind_monochrome">단색</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">더 큰 터치 대상</string>
+    <string name="accessibility_larger_touch_targets_description">버튼 및 칩 크기를 늘립니다</string>
+    <string name="accessibility_reduce_motion">모션 줄이기</string>
+    <string name="accessibility_reduce_motion_description">애니메이션 및 전환 효과를 최소화합니다</string>
+    <string name="accessibility_extended_timeouts">연장된 시간 제한</string>
+    <string name="accessibility_extended_timeouts_description">시간 제한 작업에 더 많은 시간을 허용합니다</string>
+    <string name="accessibility_simplified_gestures">간소화된 제스처</string>
+    <string name="accessibility_simplified_gestures_description">다단계 제스처를 줄입니다</string>
+    <string name="accessibility_haptic_feedback">햅틱 피드백</string>
+    <string name="accessibility_haptic_feedback_description">작업에 대한 진동 확인</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">간소화된 인터페이스</string>
+    <string name="accessibility_simplified_interface_description">고급 옵션을 숨기고 복잡함을 줄입니다</string>
+    <string name="accessibility_show_step_numbers">단계 번호 표시</string>
+    <string name="accessibility_show_step_numbers_description">진행 표시기를 표시합니다</string>
+    <string name="accessibility_detailed_descriptions">상세 설명</string>
+    <string name="accessibility_detailed_descriptions_description">추가 설명 텍스트를 제공합니다</string>
+    <string name="accessibility_confirm_actions">작업 전 확인</string>
+    <string name="accessibility_confirm_actions_description">중요한 작업 전에 확인을 요청합니다</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">수동 코드 입력</string>
+    <string name="accessibility_manual_code_entry_description">QR (Quick Response) 코드를 스캔하는 대신 직접 입력할 수 있습니다</string>
+    <string name="accessibility_voice_input">음성 입력</string>
+    <string name="accessibility_voice_input_description">텍스트 필드에 음성 인식을 활성화합니다</string>
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">시각</string>
+    <string name="accessibility_profile_motor">운동 기능</string>
+    <string name="accessibility_profile_cognitive">인지</string>
+    <string name="accessibility_profile_senior">고령자</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">뒤로</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">홈</string>
+    <string name="breadcrumb_settings">설정</string>
+    <string name="breadcrumb_accessibility">접근성</string>
+    <string name="breadcrumb_language">언어</string>
+    <string name="breadcrumb_help">도움말 센터</string>
+    <string name="breadcrumb_officer_mode">담당자 모드</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">서체 및 텍스트 간격</string>
+    <string name="accessibility_line_spacing">줄 간격</string>
+    <string name="accessibility_line_spacing_description">텍스트 줄 사이의 간격을 조정합니다</string>
+    <string name="accessibility_paragraph_spacing">단락 간격</string>
+    <string name="accessibility_paragraph_spacing_description">단락 사이의 간격을 조정합니다</string>
+    <string name="accessibility_letter_spacing">자간</string>
+    <string name="accessibility_letter_spacing_description">글자 사이의 간격을 조정합니다</string>
+    <string name="accessibility_typography_aaa_note">AAA 권고사항: 줄 간격 1.5배, 단락 간격 2.0배, 자간 0.12em.</string>
+    <string name="accessibility_spacing_current">현재: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">시간 제한 동작</string>
+    <string name="accessibility_timeout_no_automatic">AAA 준수를 위한 자동 시간 제한 없음</string>
+    <string name="accessibility_timeout_auto_advance_30">30초 후 자동 진행</string>
+    <string name="accessibility_timeout_auto_advance_60">60초 후 자동 진행</string>
+    <string name="accessibility_timeout_set_announcement">시간 제한 동작이 %s(으)로 설정되었습니다</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">대비 수준</string>
+    <string name="accessibility_contrast_aaa_ratio">AAA 준수를 위한 7:1 대비 비율</string>
+    <string name="accessibility_contrast_standard">표준 대비</string>
+    <string name="accessibility_contrast_aa_ratio">AA 준수를 위한 4.5:1 대비 비율</string>
+    <string name="accessibility_contrast_set_announcement">대비 수준이 %s(으)로 설정되었습니다</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">색맹 모드가 %s(으)로 설정되었습니다</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">%1$s 슬라이더. 현재 값: %2$s. %3$s범위 %4$s에서 %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">AAA 준수. </string>
+    <string name="accessibility_slider_announcement">%1$s이(가) %2$s%3$s(으)로 설정되었습니다</string>
+    <string name="accessibility_slider_announcement_aaa">, AAA 준수</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s 활성화됨</string>
+    <string name="accessibility_toggle_disabled">%s 비활성화됨</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">검증 피드백</string>
+    <string name="accessibility_sound_enabled">성공 시 소리 재생</string>
+    <string name="accessibility_sound_enabled_description">검증 성공 후 확인 소리를 재생합니다</string>
+    <string name="accessibility_sound_style">소리 스타일</string>
+    <string name="accessibility_sound_preview">소리 미리 듣기</string>
+    <string name="accessibility_sound_preview_preset">%s 미리 듣기</string>
+    <string name="accessibility_sound_style_set_announcement">소리 스타일이 %s(으)로 설정되었습니다</string>
+    <string name="accessibility_haptic_enabled">성공 시 진동</string>
+    <string name="accessibility_haptic_enabled_description">검증 성공 후 햅틱 피드백을 제공합니다</string>
+    <string name="accessibility_sound_footer">소리는 기기의 무음 모드 설정을 따릅니다</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">볼륨</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">현재 볼륨 미리 듣기</string>
+    <string name="accessibility_volume_set_announcement">볼륨이 %d%%로 설정되었습니다</string>
+    <string name="accessibility_volume_slider_description">볼륨 슬라이더. 현재 값: %d%%</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">설정 초기화</string>
+
+    <!-- OFFICER MODE -->
+    <string name="officer_mode">담당자 모드</string>
+    <string name="officer_id">담당자 식별 (ID)</string>
+    <string name="officer_id_placeholder">예: OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">부여된 담당자 식별 번호를 입력하십시오</string>
+    <string name="officer_yubikey_connected">YubiKey 연결됨</string>
+    <string name="officer_connect_yubikey">YubiKey 연결</string>
+    <string name="officer_touch_yubikey">YubiKey를 터치하여 인증하십시오...</string>
+    <string name="officer_authenticate_hmac">HMAC (Hash-based Message Authentication Code)으로 인증</string>
+    <string name="officer_authentication_process">인증 절차:</string>
+    <string name="officer_auth_steps">1. 담당자 식별 번호를 입력하십시오\n2. 인증을 클릭하십시오\n3. YubiKey가 깜빡일 때 터치하십시오\n4. HMAC (Hash-based Message Authentication Code) 인증으로 신원이 확인됩니다</string>
+    <string name="officer_auth_failed">인증에 실패했습니다. 담당자 식별 번호를 확인하고 다시 시도하십시오.</string>
+    <string name="officer_session_info">담당자: %s</string>
+    <string name="officer_station_info">스테이션: %s</string>
+    <string name="officer_issued_today">오늘 발급: %1$d / 50</string>
+    <string name="officer_issue_age_credential">연령 자격 증명 발급</string>
+    <string name="officer_issue_description">사용자의 신원을 확인하고 디지털 연령 자격 증명을 발급합니다</string>
+    <string name="officer_start_issuance">새 발급 시작</string>
+    <string name="officer_issuance_process">발급 절차</string>
+    <string name="officer_issuance_steps">1. 사용자의 실물 신분증을 확인하십시오\n2. 생년월일을 입력하십시오\n3. 정보가 정확히 일치하는지 확인하십시오\n4. 증명 QR (Quick Response) 코드로 자격 증명을 발급하십시오\n5. 사용자가 QR 코드를 스캔하여 자격 증명을 받습니다</string>
+    <string name="officer_verify_identity">사용자 신원 확인</string>
+    <string name="officer_select_dob">생년월일 선택</string>
+    <string name="officer_change_date">날짜 변경</string>
+    <string name="officer_age_years">나이: %d세</string>
+    <string name="officer_under_18_warning">18세 미만 - 자격 증명 발급 불가</string>
+    <string name="officer_verification_checklist">검증 체크리스트</string>
+    <string name="officer_document_verified">실물 서류 확인 완료</string>
+    <string name="officer_document_verified_description">저는 유효한 정부 발급 신분증을 확인하였습니다</string>
+    <string name="officer_dob_matches">생년월일 정확히 일치</string>
+    <string name="officer_dob_matches_description">실물 서류의 생년월일: %s</string>
+    <string name="officer_issue_credential">자격 증명 발급</string>
+    <string name="officer_user_scanned_successfully">사용자가 성공적으로 스캔했습니다</string>
+    <string name="officer_return_to_dashboard">대시보드로 돌아가기</string>
+    <string name="officer_go_back">뒤로 가기</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">YubiKey 인증</string>
+    <string name="yubikey_step_format">%1$d / %2$d 단계</string>
+    <string name="yubikey_led_should_blink">YubiKey LED가 깜빡여야 합니다</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">입력값 검증 중...</string>
+    <string name="officer_state_creating_attestation">증명 생성 중...</string>
+    <string name="officer_state_computing_commitment">암호화 커밋 계산 중...</string>
+    <string name="officer_state_creating_session">보안 세션 생성 중...</string>
+    <string name="officer_state_signing">자격 증명 서명 중...</string>
+    <string name="officer_state_finalizing">자격 증명 마무리 중...</string>
+    <string name="officer_state_storing_attestation">증명 저장 중...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">세션이 곧 만료됩니다</string>
+    <string name="officer_session_expiring_message">세션이 %d초 후에 만료됩니다. 진행 상황을 저장하시겠습니까?</string>
+    <string name="officer_session_expiring_announcement">경고: 세션이 %d초 후에 만료됩니다</string>
+    <string name="officer_save_and_continue">저장 후 계속</string>
+    <string name="officer_continue_without_saving">저장하지 않고 계속</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">생년월일</string>
+    <string name="officer_age_format">나이: %d세</string>
+    <string name="officer_under_18_full_warning">18세 미만 - 자격 증명을 발급할 수 없습니다. 연령 검증 자격 증명은 18세 이상인 개인에게만 발급됩니다. 생년월일이 올바른지 확인하십시오.</string>
+    <string name="officer_verification_checklist_header">검증 체크리스트</string>
+    <string name="officer_physical_document_verified">실물 서류 확인 완료</string>
+    <string name="officer_sighted_valid_id">유효한 정부 발급 신분증을 확인하였습니다.</string>
+    <string name="officer_dob_matches_exactly">생년월일이 정확히 일치합니다.</string>
+    <string name="officer_dob_on_document">실물 서류상 생년월일: %s</string>
+    <string name="officer_error_label">오류</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">발급 QR (Quick Response) 코드를 스캔하십시오.</string>
+    <string name="issuance_downloads_credential">연령 자격 증명이 다운로드됩니다.</string>
+    <string name="issuance_center_qr">QR 코드를 프레임 중앙에 맞추고 움직이지 마십시오.</string>
+    <string name="issuance_enter_code_manually">코드 직접 입력</string>
+    <string name="issuance_processing_qr">QR 코드 처리 중…</string>
+    <string name="issuance_invalid_data">유효하지 않은 발급 데이터입니다.</string>
+    <string name="issuance_verification_qr_error">이것은 검증 QR 코드입니다. 자격 증명 발급 QR 코드를 스캔하십시오.</string>
+    <string name="issuance_invalid_qr_format">유효하지 않은 QR 코드 형식입니다.</string>
+    <string name="issuance_failed_to_process">QR 코드 처리에 실패하였습니다: %s</string>
+    <string name="issuance_code">발급 코드</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">코드 직접 입력</string>
+    <string name="manual_entry_enter_code_manually">코드 직접 입력</string>
+    <string name="manual_entry_verification_description">검증자 화면에 표시된 12자리 검증 코드를 입력하십시오.</string>
+    <string name="manual_entry_issuance_description">발급자 화면에 표시된 코드를 입력하십시오.</string>
+    <string name="manual_entry_verification_code">검증 코드</string>
+    <string name="manual_entry_submit">코드 제출</string>
+    <string name="manual_entry_please_enter">코드를 입력하십시오.</string>
+    <string name="manual_entry_please_enter_verification">검증 코드를 입력하십시오.</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">듣기 시작</string>
+    <string name="voice_input_stop_listening">듣기 중지</string>
+    <string name="voice_input_recognized">인식됨:</string>
+    <string name="content_desc_voice_input_listening">음성 입력 듣는 중</string>
+    <string name="content_desc_voice_input_available">음성 입력 사용 가능</string>
+    <string name="voice_input_permission_title">마이크 권한이 필요합니다.</string>
+    <string name="voice_input_permission_message">음성 입력을 사용하려면 마이크 접근 권한이 필요합니다. 시스템 설정에서 활성화할 수 있습니다.</string>
+    <string name="voice_input_listening">듣는 중…</string>
+    <string name="voice_input_error">음성 입력 오류</string>
+    <string name="voice_input_tap_to_speak">탭하여 말하기</string>
+    <string name="voice_input_did_you_say">"%1$s"라고 하셨습니까?</string>
+    <string name="voice_input_confirm">확인</string>
+    <string name="voice_input_retry">다시 시도</string>
+    <string name="voice_input_cancel">취소</string>
+    <string name="voice_input_button">음성 입력</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">이 기기에서는 음성 입력을 사용할 수 없습니다.</string>
+    <string name="voice_input_error_audio">오디오 녹음 오류입니다. 마이크를 확인하십시오.</string>
+    <string name="voice_input_error_network">네트워크 오류입니다. 연결을 확인하십시오.</string>
+    <string name="voice_input_error_network_timeout">네트워크 시간이 초과되었습니다. 다시 시도하십시오.</string>
+    <string name="voice_input_error_no_match">음성이 감지되지 않았습니다. 다시 시도하십시오.</string>
+    <string name="voice_input_error_recognizer_busy">음성 입력이 사용 중입니다. 잠시 기다리십시오.</string>
+    <string name="voice_input_error_server">서버 오류입니다. 나중에 다시 시도하십시오.</string>
+    <string name="voice_input_error_speech_timeout">음성이 들리지 않았습니다. 더 크게 말씀해 주십시오.</string>
+    <string name="voice_input_error_insufficient_permissions">마이크 권한이 거부되었습니다.</string>
+    <string name="voice_input_error_generic">음성 입력 오류입니다. 다시 시도하십시오.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">뒤로</string>
+    <string name="action_close">닫기</string>
+    <string name="action_cancel">취소</string>
+    <string name="action_ok">확인</string>
+    <string name="action_set">설정</string>
+    <string name="action_change">변경</string>
+    <string name="action_delete">삭제</string>
+    <string name="action_reset">초기화</string>
+    <string name="action_retry">재시도</string>
+    <string name="action_try_again">다시 시도</string>
+    <string name="action_refresh">새로 고침</string>
+    <string name="action_download_now">지금 다운로드</string>
+    <string name="action_retry_setup">설정 재시도</string>
+    <string name="action_retry_download">다운로드 재시도</string>
+    <string name="action_restart_setup">설정 다시 시작</string>
+    <string name="action_manage_storage">저장 공간 관리</string>
+    <string name="action_check_wifi_settings">먼저 Wi-Fi 설정 확인</string>
+    <string name="action_check_wifi_settings_short">Wi-Fi 설정 확인</string>
+    <string name="action_grant_permission">권한 허용</string>
+    <string name="action_grant_camera_access">카메라 접근 허용</string>
+    <string name="action_return_to_browser">브라우저로 돌아가기</string>
+    <string name="action_show_debug_info">디버그 정보 표시</string>
+    <string name="action_reset_redownload">초기화 및 재다운로드</string>
+    <string name="action_end_session">세션 종료</string>
+    <string name="action_expand">펼치기</string>
+    <string name="action_collapse">접기</string>
+    <string name="accessibility_state_expanded">펼쳐짐</string>
+    <string name="accessibility_state_collapsed">접힘</string>
+    <string name="accessibility_state_checked">선택됨</string>
+    <string name="accessibility_state_unchecked">선택 안 됨</string>
+    <string name="accessibility_state_selected">선택됨</string>
+    <string name="accessibility_state_not_selected">선택 안 됨</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">오류가 발생하였습니다.</string>
+    <string name="error_camera_permission">QR (Quick Response) 코드 스캔을 위해 카메라 권한이 필요합니다.</string>
+    <string name="error_camera_access_needed">카메라 접근 권한이 필요합니다.</string>
+    <string name="error_camera_permission_description">QR 코드를 스캔하려면 카메라 권한을 허용하거나, 접근성 설정에서 수동 입력을 활성화하십시오.</string>
+    <string name="error_camera_permission_required">QR 코드를 스캔하려면 카메라 권한이 필요합니다.</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">QR 코드 스캔 중...</string>
+    <string name="qr_scanner_camera_required">카메라 권한이 필요합니다.</string>
+    <string name="qr_scanner_camera_preview">QR 코드 스캔용 카메라 미리보기</string>
+    <string name="qr_scanner_status_scanning">QR 코드 스캔 중</string>
+    <string name="qr_scanner_requesting_permission">카메라 권한 요청 중</string>
+    <string name="error_camera_start_failed">카메라 시작에 실패하였습니다: %s</string>
+    <string name="error_camera_init_failed">카메라 초기화에 실패하였습니다: %s</string>
+    <string name="error_biometric_not_available">생체 인증을 사용할 수 없습니다.</string>
+    <string name="error_network">네트워크 오류가 발생하였습니다.</string>
+    <string name="error_no_credential">사용 가능한 자격 증명이 없습니다. 먼저 자격 증명을 발급받으십시오.</string>
+    <string name="credential_picker_title">자격 증명 선택</string>
+    <string name="credential_picker_description">이 검증에 사용할 수 있는 자격 증명이 여러 개 있습니다. 하나를 선택하십시오.</string>
+    <string name="credential_picker_expired_label">만료됨</string>
+    <string name="credential_picker_accessibility_select">자격 증명 선택: %1$s</string>
+    <string name="error_failed_to_process_challenge">챌린지 처리에 실패하였습니다.</string>
+    <string name="error_failed_to_create_proof">증명 생성에 실패하였습니다.</string>
+    <string name="error_verification_failed">검증에 실패하였습니다.</string>
+    <string name="error_occurred_during_verification">검증 중 오류가 발생하였습니다.</string>
+    <string name="error_connection_timeout">연결 시간이 초과되었습니다. 다시 시도하십시오.</string>
+    <string name="error_unable_to_connect">연결할 수 없습니다. 인터넷 연결을 확인하십시오.</string>
+    <string name="error_secure_connection_failed">보안 연결에 실패하였습니다. 다시 시도하십시오.</string>
+    <string name="error_security_verification_failed">보안 검증에 실패하였습니다. 다시 시도하십시오.</string>
+    <string name="error_invalid_input">유효하지 않은 입력입니다. 정보를 확인하고 다시 시도하십시오.</string>
+    <string name="error_operation_in_progress">다른 작업이 진행 중입니다. 잠시 기다리십시오.</string>
+    <string name="error_operation_cancelled">작업이 취소되었습니다.</string>
+    <string name="error_age_requirement_not_met">이 자격 증명의 연령 요건을 충족하지 못하였습니다.</string>
+    <string name="error_biometric_required">계속하려면 생체 인증이 필요합니다.</string>
+    <string name="error_wallet_not_initialized">지갑이 초기화되지 않았습니다. 앱을 다시 시작하십시오.</string>
+    <string name="error_security">보안 오류입니다. 다시 시도하십시오.</string>
+    <string name="error_connection_timeout_short">연결 시간 초과입니다. 다시 시도하십시오.</string>
+    <string name="error_invalid_input_provided">유효하지 않은 입력이 제공되었습니다.</string>
+    <string name="error_invalid_data_format">유효하지 않은 데이터 형식입니다. 다시 시도하십시오.</string>
+    <string name="error_storage">저장 오류입니다. 기기 저장 공간을 확인하십시오.</string>
+    <string name="error_network_short">네트워크 오류입니다. 연결을 확인하십시오.</string>
+    <string name="error_label">오류</string>
+    <string name="error_dismiss">오류 닫기</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">처리 중...</string>
+    <string name="status_initializing_wallet">지갑 초기화 중...</string>
+    <string name="status_loading">로딩 중...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">개인정보 보호됨</string>
+    <string name="privacy_zk_description">생년월일은 절대 공유되지 않습니다. 검증자는 연령 요건 충족 여부만 확인합니다.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">개인정보 설정</string>
+    <string name="privacy_settings_description">데이터 수집 제어 및 데이터 관리</string>
+    <string name="privacy_section_data_collection">데이터 수집</string>
+    <string name="privacy_section_your_data">내 데이터</string>
+    <string name="privacy_protection_title">개인정보가 보호됩니다.</string>
+    <string name="privacy_protection_description">Provii Wallet은 영지식 증명을 사용하여 생년월일을 노출하지 않고 연령을 검증합니다. 자격 증명 데이터는 기기에만 저장되며 누구와도 절대 공유되지 않습니다.</string>
+    <string name="privacy_analytics_title">분석</string>
+    <string name="privacy_analytics_description">익명 사용 데이터를 공유하여 Provii Wallet 개선에 도움을 주십시오.</string>
+    <string name="privacy_analytics_enabled">분석 활성화됨</string>
+    <string name="privacy_analytics_disabled">분석 비활성화됨</string>
+    <string name="privacy_crash_reporting_title">오류 보고</string>
+    <string name="privacy_crash_reporting_description">충돌 보고서를 자동으로 전송하여 버그 수정에 도움을 주십시오.</string>
+    <string name="privacy_crash_reporting_enabled">오류 보고 활성화됨</string>
+    <string name="privacy_crash_reporting_disabled">오류 보고 비활성화됨</string>
+    <string name="privacy_what_we_collect_title">수집하는 데이터</string>
+    <string name="privacy_what_we_collect_subtitle">탭하여 데이터 처리 방식을 알아보십시오.</string>
+    <string name="privacy_data_collection_info_title">데이터 수집 정보</string>
+    <string name="privacy_data_we_collect_header">수집 항목 (활성화된 경우):</string>
+    <string name="privacy_data_we_collect_list">- 익명 앱 사용 통계\n- 충돌 보고서 및 오류 로그\n- 기기 유형 및 OS 버전\n- 앱 버전 정보</string>
+    <string name="privacy_data_we_dont_collect_header">절대 수집하지 않는 항목:</string>
+    <string name="privacy_data_we_dont_collect_list">- 생년월일\n- 이름 또는 개인 정보\n- 위치 정보\n- 자격 증명 데이터\n- 생체 데이터</string>
+    <string name="privacy_data_never_shared_note">자격 증명 데이터는 Provii 또는 제3자와 절대 공유되지 않습니다. 기기에만 저장됩니다.</string>
+    <string name="privacy_policy_title">개인정보 처리방침</string>
+    <string name="privacy_policy_subtitle">전체 개인정보 처리방침 읽기</string>
+    <string name="privacy_delete_my_data_title">내 데이터 삭제</string>
+    <string name="privacy_delete_my_data_subtitle">저장된 모든 자격 증명 및 데이터 삭제</string>
+    <string name="privacy_delete_data_dialog_title">모든 데이터를 삭제하시겠습니까?</string>
+    <string name="privacy_delete_data_dialog_message">이 기기에서 모든 자격 증명과 앱 데이터가 영구적으로 삭제됩니다. 앱을 다시 사용하려면 새 자격 증명을 발급받아야 합니다.</string>
+    <string name="privacy_delete_data_dialog_warning">이 작업은 취소할 수 없습니다.</string>
+    <string name="privacy_delete_data_confirm">모두 삭제</string>
+    <string name="privacy_footer_note">이 설정은 언제든지 변경할 수 있습니다. 변경 사항은 즉시 적용됩니다.</string>
+    <string name="dialog_delete_data_announcement">데이터 삭제 확인 대화상자가 열렸습니다.</string>
+    <string name="dialog_data_collection_info_announcement">데이터 수집 정보 대화상자가 열렸습니다.</string>
+    <string name="content_desc_privacy_settings">개인정보 설정, 데이터 수집 제어 및 데이터 관리</string>
+    <string name="content_desc_data_collection_info">데이터 수집 정보 보기</string>
+    <string name="content_desc_privacy_policy">개인정보 처리방침 보기</string>
+    <string name="content_desc_opens_external_link">브라우저에서 열기</string>
+    <string name="content_desc_delete_my_data">내 모든 데이터 삭제</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">뒤로</string>
+    <string name="content_desc_settings">설정</string>
+    <string name="content_desc_refresh">새로 고침</string>
+    <string name="content_desc_verified">검증됨</string>
+    <string name="content_desc_expand">펼치기</string>
+    <string name="content_desc_collapse">접기</string>
+    <string name="content_desc_warning_error">경고: 오류가 발생하였습니다.</string>
+    <string name="content_desc_sandbox_indicator">샌드박스 모드 표시기</string>
+    <string name="content_desc_success">성공</string>
+    <string name="content_desc_warning">경고</string>
+    <string name="content_desc_information">정보</string>
+    <string name="content_desc_error">오류</string>
+    <string name="content_desc_sandbox_warning">샌드박스 모드 경고</string>
+    <string name="content_desc_app_info">앱 정보</string>
+    <string name="content_desc_accessibility_settings">접근성 설정</string>
+    <string name="content_desc_language_settings">언어 설정</string>
+    <string name="content_desc_licenses">오픈 소스 라이선스</string>
+    <string name="content_desc_select_dob">생년월일 선택</string>
+    <string name="content_desc_mint_test_credential_as_issuer">발급 기관으로서 테스트 자격 증명 발급</string>
+    <string name="content_desc_get_credential">자격 증명 발급</string>
+    <string name="content_desc_delete_credential">자격 증명 삭제</string>
+    <string name="content_desc_reset_proving_key">증명 키 초기화</string>
+    <string name="content_desc_environment_info">환경 정보</string>
+    <string name="content_desc_help_support">도움말 및 지원</string>
+    <string name="content_desc_privacy_protected">개인정보 보호됨</string>
+    <string name="preview_settings_title">설정 미리보기</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">성공</string>
+    <string name="accessibility_verification_error_description">오류</string>
+    <string name="accessibility_breadcrumb_location_description">위치: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">다음</string>
+    <string name="accessibility_breadcrumb_current_page_description">현재 페이지: %s</string>
+    <string name="accessibility_settings_navigate_description">탐색</string>
+    <string name="accessibility_credentials_settings_description">설정</string>
+    <string name="accessibility_verification_back_description">뒤로</string>
+    <string name="accessibility_officer_back_description">뒤로</string>
+    <string name="accessibility_discovery_back_description">뒤로</string>
+    <string name="accessibility_discovery_refresh_description">새로 고침</string>
+    <string name="accessibility_discovery_verified_description">검증됨</string>
+    <string name="accessibility_officer_done_description">완료</string>
+    <string name="accessibility_officer_attestation_qr_description">사용자가 스캔할 증명 QR 코드</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">%s(으)로 건너뛰기</string>
+    <string name="accessibility_skip_main_content">주요 콘텐츠</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">시각 장애</string>
+    <string name="accessibility_profile_motor_impaired">운동 장애</string>
+    <string name="accessibility_profile_cognitive_support">인지 지원</string>
+    <string name="accessibility_profile_elderly_support">고령자 지원</string>
+    <string name="accessibility_profile_default">기본값</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">없음</string>
+    <string name="color_blind_mode_protanopia">제1색맹</string>
+    <string name="color_blind_mode_deuteranopia">제2색맹</string>
+    <string name="color_blind_mode_tritanopia">제3색맹</string>
+    <string name="color_blind_mode_monochrome">단색</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">표준</string>
+    <string name="contrast_level_high">높음 (AA)</string>
+    <string name="contrast_level_maximum">최대 (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">전체 너비</string>
+    <string name="text_width_comfortable">편안함 (80자)</string>
+    <string name="text_width_narrow">좁음 (60자)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">시간 초과 없음 (AAA)</string>
+    <string name="timeout_behavior_standard">표준 (30초)</string>
+    <string name="timeout_behavior_extended">연장 (60초)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">표준</string>
+    <string name="reading_level_standard_description">기술 용어가 포함된 일반 텍스트</string>
+    <string name="reading_level_simplified">간소화됨 (7~9학년 수준)</string>
+    <string name="reading_level_simplified_description">더 쉬운 단어와 짧은 문장 (AAA 준수)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <string name="help_title">도움말</string>
+    <string name="help_and_support">도움말 &amp; 지원</string>
+    <string name="help_description">앱 기능 및 접근성에 관한 도움말을 확인하십시오</string>
+    <string name="help_center">도움말 센터</string>
+    <string name="help_center_description">도움말 주제를 탐색하고 앱 기능을 알아보십시오</string>
+    <string name="help_search">도움말 검색</string>
+    <string name="help_search_placeholder">도움말 주제 검색...</string>
+    <string name="help_search_active">검색 활성화됨</string>
+    <string name="help_search_inactive">검색 비활성화됨</string>
+    <string name="help_no_results">검색어와 일치하는 도움말 주제가 없습니다</string>
+    <string name="help_topic_not_found">도움말 주제를 찾을 수 없습니다</string>
+    <string name="help_related_topics">관련 주제</string>
+    <string name="help_content_heading">도움말 내용</string>
+    <string name="help_related_topic_position">%1$s, %2$d/%3$d번째 항목</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">시각</string>
+    <string name="help_category_typography">서체</string>
+    <string name="help_category_interaction">상호작용</string>
+    <string name="help_category_cognitive">인지 지원</string>
+    <string name="help_category_alternative_input">대체 입력</string>
+    <string name="help_category_features">기능</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">자격 증명 받기</string>
+    <string name="help_topic_getting_credential_summary">첫 번째 연령 검증 자격 증명을 받는 방법을 알아보십시오</string>
+    <string name="help_topic_getting_credential_content">연령 검증 자격 증명을 받으려면:\n\n1. 공인 발급 기관을 방문하십시오\n2. 정부 발급 신분증을 제시하십시오\n3. 제공된 QR 코드를 스캔하십시오\n4. 자격 증명이 안전하게 저장됩니다\n\n생년월일은 기기에 로컬로 저장되며 절대 공유되지 않습니다.</string>
+
+    <string name="help_topic_verifying_age_title">연령 검증하기</string>
+    <string name="help_topic_verifying_age_summary">개인 정보를 공유하지 않고 연령을 증명하는 방법</string>
+    <string name="help_topic_verifying_age_content">연령을 검증해야 할 때:\n\n1. 검증자가 QR 코드를 보여줍니다\n2. 앱으로 스캔하십시오\n3. 앱이 수학적 증명을 생성합니다\n4. 예/아니오 답변만 공유됩니다\n\n실제 생년월일은 절대 공개되지 않습니다.</string>
+
+    <string name="help_topic_accessibility_title">접근성 기능</string>
+    <string name="help_topic_accessibility_summary">필요에 맞게 앱을 맞춤 설정하십시오</string>
+    <string name="help_topic_accessibility_content">앱에는 다양한 접근성 기능이 포함되어 있습니다:\n\n- 큰 텍스트 및 고대비 모드\n- 음성 입력 및 화면 읽기 프로그램 지원\n- 간소화된 제스처 및 사용자 인터페이스\n- 수동 코드 입력 옵션\n- 연장된 시간 초과\n\n설정 > 접근성에서 이 기능에 접근하십시오</string>
+
+    <string name="help_topic_privacy_security_title">개인정보 보호 &amp; 보안</string>
+    <string name="help_topic_privacy_security_summary">귀하의 정보가 어떻게 보호되는지 알아보십시오</string>
+    <string name="help_topic_privacy_security_content">개인정보 보호는 최우선 사항입니다:\n\n- 자격 증명은 기기에 로컬로 저장됩니다\n- 영지식 증명으로 데이터를 보호합니다\n- 추적 또는 분석 없음\n- 생체 인증 사용 가능\n- 데이터는 절대 암호화되지 않은 상태로 기기를 떠나지 않습니다</string>
+
+    <string name="help_topic_troubleshooting_title">문제 해결</string>
+    <string name="help_topic_troubleshooting_summary">일반적인 문제 및 해결책</string>
+    <string name="help_topic_troubleshooting_content">일반적인 문제 및 해결 방법:\n\nQR 스캐너가 작동하지 않는 경우:\n- 설정에서 카메라 권한을 확인하십시오\n- 수동 코드 입력 옵션을 사용해 보십시오\n\n자격 증명이 로드되지 않는 경우:\n- 인터넷 연결을 확인하십시오\n- 증명 키를 재설정해 보십시오\n\n검증에 실패한 경우:\n- 자격 증명이 만료되지 않았는지 확인하십시오\n- 지원을 위해 검증자에게 문의하십시오</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <string name="date_label">생년월일</string>
+    <string name="date_of_birth">생년월일</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <string name="format_age_years">%d세</string>
+    <string name="format_step_indicator">%1$d/%2$d단계</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <string name="tab_credentials">자격 증명</string>
+    <string name="tab_settings">설정</string>
+    <string name="tab_help">도움말</string>
+    <string name="tab_credentials_description">자격 증명 보기</string>
+    <string name="tab_settings_description">앱 설정</string>
+    <string name="tab_help_description">도움말 및 지원 받기</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <string name="search_title">검색</string>
+    <string name="search_field_label">검색 필드</string>
+    <string name="search_placeholder">설정, 도움말, 기능 검색</string>
+    <string name="search_clear">검색 지우기</string>
+    <string name="search_popular">인기 검색어</string>
+    <string name="search_results_heading">검색 결과</string>
+    <string name="search_no_results">결과를 찾을 수 없음</string>
+    <string name="search_try_suggestions">다음으로 검색해 보십시오:\n• 접근성\n• 설정\n• 도움말\n• 언어</string>
+    <string name="search_results_announcement_singular">결과 1개를 찾았습니다</string>
+    <string name="search_results_announcement_plural">결과 %d개를 찾았습니다</string>
+    <string name="search_no_results_announcement">결과를 찾을 수 없습니다</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <string name="help_quick_access">빠른 접근</string>
+    <string name="help_topics">도움말 주제</string>
+    <string name="help_glossary">용어집</string>
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <string name="licenses_title">오픈 소스 라이선스</string>
+    <string name="licenses_description">이 앱은 다음 오픈 소스 소프트웨어를 사용합니다. 이 라이브러리를 만든 개발자들에게 감사드립니다.</string>
+    <string name="licenses_tap_to_view">탭하여 전체 라이선스 보기</string>
+    <string name="licenses_group_header">%1$s (%2$d개 라이브러리)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <string name="error_no_internet">인터넷 연결이 없습니다. 네트워크를 확인한 후 다시 시도하십시오.</string>
+    <string name="error_unexpected">예상치 못한 오류가 발생하였습니다. 앱을 다시 시작하십시오.</string>
+    <string name="error_unexpected_try_again">예상치 못한 오류가 발생하였습니다. 다시 시도하십시오.</string>
+    <string name="error_storage_detailed">저장소 오류: %s</string>
+    <string name="error_network_detailed">네트워크 오류: %s</string>
+    <string name="error_proof_generation_failed">증명 생성에 실패했습니다: %s</string>
+    <string name="error_not_eligible">자격이 없습니다. 이 검증의 요건을 충족하지 않습니다.</string>
+    <string name="error_challenge_expired">챌린지가 만료되었거나 찾을 수 없습니다. 새 챌린지를 요청하십시오.</string>
+    <string name="error_challenge_expired_scan_new">이 챌린지가 만료되었습니다. 새 QR 코드를 스캔하십시오.</string>
+    <string name="error_request_out_of_order">요청 순서가 잘못되었습니다. 다시 시도하십시오.</string>
+    <string name="error_too_many_requests">요청이 너무 많습니다. 잠시 기다린 후 다시 시도하십시오.</string>
+    <string name="error_server">서버 오류입니다. 나중에 다시 시도하십시오.</string>
+    <string name="error_request_failed">요청에 실패하였습니다 (%d). 다시 시도하십시오.</string>
+    <string name="error_not_eligible_short">이 검증에 자격이 없습니다</string>
+    <string name="error_challenge_not_found">챌린지를 찾을 수 없습니다</string>
+    <string name="error_complete_steps_in_order">순서대로 단계를 완료하십시오</string>
+    <string name="error_challenge_expired_short">챌린지가 만료됨</string>
+    <string name="error_authentication_cancelled">인증이 취소되었습니다. 연령 검증을 완료하려면 신원을 확인하십시오.</string>
+    <string name="error_invalid_data_format_short">데이터 형식이 잘못되었습니다. 다시 시도하십시오.</string>
+    <string name="error_storage_check_device">저장소 오류입니다. 기기 저장소를 확인하십시오.</string>
+    <string name="error_network_check_connection">네트워크 오류입니다. 연결 상태를 확인하십시오.</string>
+    <string name="error_proof_generation_failed_short">증명 생성에 실패하였습니다. 다시 시도하십시오.</string>
+    <string name="error_operation_in_progress_short">다른 작업이 진행 중입니다.</string>
+    <string name="error_no_internet_short">인터넷 연결이 없습니다. 네트워크를 확인하십시오.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <string name="verification_scan_title">검증 QR 스캔</string>
+    <string name="verification_verifying_title">연령 검증 중</string>
+    <string name="verification_success_title">연령 검증됨</string>
+    <string name="verification_failed_title">검증 실패</string>
+    <string name="verification_processing_wait">몇 초 정도 걸릴 수 있습니다</string>
+    <string name="verification_success_message">귀하의 연령이 비공개로 검증되었습니다</string>
+    <string name="verification_return_to_site">이제 사이트로 돌아가 계속할 수 있습니다.</string>
+    <string name="verification_please_enter_code">검증 코드를 입력하십시오. 코드는 12자리 단축 코드이거나 검증자의 전체 검증 URL이어야 합니다.</string>
+    <string name="verification_error_occurred">검증 중 오류가 발생했습니다</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <string name="credential_list_processing">처리 중...</string>
+    <string name="credential_list_verify_age_button">연령 검증</string>
+    <string name="credential_list_generate_in_person_description">직접 자격 증명 생성</string>
+    <string name="credential_list_scan_qr_title">QR 코드 스캔</string>
+    <string name="credential_list_find_locations_title">위치 찾기</string>
+    <string name="credential_section_my_credential">내 자격 증명</string>
+    <string name="credential_section_managed">관리 자격 증명</string>
+    <string name="credential_list_get_credential_button">자격 증명 받기</string>
+    <string name="credential_list_add_managed_button">관리 자격 증명 추가</string>
+    <string name="credential_section_managed_empty">자녀 등 돌보는 사람을 위한 자격 증명을 추가하십시오.</string>
+
+    <!-- ==================== CREDENTIAL DETAIL SCREEN STRINGS ==================== -->
+    <string name="credential_detail_title">자격 증명 세부 정보</string>
+    <string name="credential_detail_not_found">자격 증명을 찾을 수 없습니다</string>
+    <string name="credential_detail_nickname">별명</string>
+    <string name="credential_detail_no_nickname">설정된 별명 없음</string>
+    <string name="credential_detail_edit_nickname">별명 수정</string>
+    <string name="credential_detail_status">상태</string>
+    <string name="credential_detail_delete">자격 증명 삭제</string>
+    <string name="credential_detail_delete_title">자격 증명 삭제</string>
+    <string name="credential_detail_delete_message">이 자격 증명을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.</string>
+    <string name="credential_type_primary">기본</string>
+    <string name="credential_type_managed">관리됨</string>
+    <string name="credential_status_valid">유효함</string>
+    <string name="credential_status_expired">만료됨</string>
+    <string name="credential_status_invalid">유효하지 않음</string>
+    <string name="action_save">저장</string>
+    <string name="credential_slots_full_title">최대 자격 증명 수에 도달했습니다</string>
+    <string name="credential_slots_full_message">최대 자격 증명 수에 도달하였습니다. 기존 자격 증명을 삭제하여 새 자격 증명을 추가하십시오.</string>
+    <!-- Privacy: TalkBack uses generic label for managed credentials in list (child name protection) -->
+    <string name="accessibility_managed_credential">관리 자격 증명</string>
+
+    <!-- Managed credential confirmation interstitial -->
+    <string name="managed_confirm_title">%1$s의 연령을 검증하시겠습니까?</string>
+    <string name="managed_confirm_message">%1$s의 관리 자격 증명을 사용하여 연령을 검증하려고 합니다.</string>
+    <string name="managed_confirm_proceed">%1$s를 위해 검증</string>
+
+    <!-- Credential-aware success/processing messages -->
+    <string name="verification_creating_proof_for">%1$s를 위한 증명 생성 중</string>
+    <string name="verification_age_verified_for">%1$s의 연령이 검증되었습니다</string>
+    <string name="deeplink_verification_age_verified_for">%1$s의 연령이 검증되었습니다</string>
+    <string name="attestation_managed_credential_received">%1$s의 자격 증명이 수신되었습니다!</string>
+    <string name="attestation_managed_credential_stored">자녀의 자격 증명이 안전하게 저장되었습니다.</string>
+
+    <!-- Improved delete confirmations -->
+    <string name="credential_detail_delete_managed_title">%1$s의 자격 증명을 삭제하시겠습니까?</string>
+    <string name="credential_detail_delete_managed_message">%1$s의 관리 자격 증명을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다. 교체하려면 발급 기관을 다시 방문해야 합니다.</string>
+    <string name="credential_detail_save_error">별명 저장에 실패했습니다</string>
+    <string name="credential_detail_delete_error">자격 증명 삭제에 실패했습니다</string>
+    <string name="accessibility_saving">저장 중...</string>
+    <string name="accessibility_deleting">삭제 중...</string>
+    <string name="accessibility_loading">로딩 중입니다. 잠시 기다려 주십시오</string>
+    <string name="accessibility_issuing_credential">자격 증명 발급 중입니다. 잠시 기다려 주십시오</string>
+    <string name="dialog_delete_all_credentials_title">모든 자격 증명을 삭제하시겠습니까?</string>
+    <string name="dialog_delete_all_credentials_message">자격 증명과 자녀를 위한 모든 관리 자격 증명이 삭제됩니다. 이 작업은 취소할 수 없습니다.</string>
+
+    <!-- Managed credential list indicators -->
+    <string name="credential_managed_label">관리됨</string>
+    <string name="credential_slots_count">5개 중 %1$d개</string>
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">검증 준비 중...</string>
+    <string name="deeplink_verification_checking_credential">자격 증명 확인 중...</string>
+    <string name="deeplink_verification_processing_challenge">챌린지 처리 중...</string>
+    <string name="deeplink_verification_creating_proof">보안 증명 생성 중...</string>
+    <string name="deeplink_verification_submitting_proof">증명 제출 중...</string>
+    <string name="deeplink_verification_success">✔ 연령이 성공적으로 검증되었습니다</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">자격 증명을 찾을 수 없습니다. 먼저 자격 증명을 설정하십시오.</string>
+    <string name="deeplink_verification_error_failed_challenge">검증 챌린지 처리에 실패했습니다</string>
+    <string name="deeplink_verification_error_no_auth_prompt">인증 프롬프트를 표시할 수 없습니다</string>
+    <string name="deeplink_verification_error_failed_proof">연령 증명 생성에 실패했습니다</string>
+    <string name="deeplink_verification_error_verification_failed">검증에 실패했습니다</string>
+    <string name="deeplink_verification_error_unexpected">예상치 못한 오류가 발생했습니다</string>
+    <string name="deeplink_verification_error_no_credential_selected">선택된 자격 증명이 없습니다. 다시 시도하십시오.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">자격 증명 선택</string>
+    <string name="deeplink_verification_select_credential_subtitle">여러 자격 증명을 사용할 수 있습니다. 이 검증에 사용할 자격 증명을 선택하십시오.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">연령 검증 중</string>
+    <string name="deeplink_verification_title_verified">검증됨</string>
+    <string name="deeplink_verification_title_failed">검증 실패</string>
+    <string name="deeplink_verification_please_wait">잠시 기다려 주십시오...</string>
+    <string name="deeplink_verification_age_verified">연령이 검증되었습니다!</string>
+    <string name="deeplink_verification_under_age_verified">%1$d세 미만 검증 완료</string>
+    <string name="deeplink_verification_returning_browser">브라우저로 돌아가는 중...</string>
+    <string name="deeplink_verification_return_to_browser">브라우저로 돌아가기</string>
+    <string name="deeplink_verification_failed_title">검증 실패</string>
+    <string name="deeplink_verification_error_occurred">검증 중 오류가 발생하였습니다</string>
+
+    <string name="officer_issuance_process_title">발급 절차</string>
+    <string name="officer_issuance_process_steps">1. 사용자의 실물 신분증을 확인합니다\n2. 생년월일을 입력합니다\n3. 정보가 정확히 일치하는지 확인합니다\n4. QR (Quick Response) 코드가 포함된 증명으로 자격 증명을 발급합니다\n5. 사용자가 QR 코드를 스캔하여 자격 증명을 받습니다</string>
+
+    <string name="officer_qr_generation_failed">QR 코드 생성에 실패했습니다</string>
+    <string name="officer_attestation_ready_title">증명 준비 완료</string>
+    <string name="officer_attestation_scan_instruction">사용자가 Provii Wallet 앱으로 이 QR 코드를 스캔해야 합니다</string>
+    <string name="officer_attestation_deeplink_label">증명 딥링크</string>
+    <string name="officer_wait_for_attestation_scan">사용자가 스캔할 때까지 기다립니다</string>
+    <string name="officer_attestation_info">자격 증명이 사용자의 기기에서 생성됩니다</string>
+    <string name="officer_attestation_complete">증명이 완료되었습니다</string>
+    <string name="officer_user_will_complete_credential">사용자가 자신의 기기에서 자격 증명 생성을 완료합니다</string>
+
+    <string name="attestation_decoding">증명 데이터를 디코딩하는 중...</string>
+    <string name="attestation_generating_randomness">보안 난수를 생성하는 중...</string>
+    <string name="attestation_sending">발급 기관에 전송하는 중...</string>
+    <string name="attestation_verifying">커밋먼트를 검증하는 중...</string>
+    <string name="attestation_storing">자격 증명을 저장하는 중...</string>
+    <string name="attestation_complete">자격 증명이 완료되었습니다!</string>
+    <string name="attestation_error_invalid_data">유효하지 않은 증명 데이터입니다</string>
+    <string name="attestation_error_expired">증명이 만료되었습니다</string>
+    <string name="attestation_error_network">네트워크 오류 - 연결 상태를 확인해 주십시오</string>
+    <string name="attestation_error_unexpected">예기치 않은 오류가 발생했습니다</string>
+    <string name="attestation_title_processing">증명 처리 중</string>
+    <string name="attestation_title_success">자격 증명을 받았습니다</string>
+    <string name="attestation_title_failed">발급 실패</string>
+    <string name="attestation_secure_issuance">보안 발급</string>
+    <string name="attestation_privacy_preserving">개인정보 보호 자격 증명 발급</string>
+    <string name="attestation_may_take_seconds">몇 초 정도 걸릴 수 있습니다</string>
+    <string name="attestation_keep_app_open">앱을 계속 열어 두십시오</string>
+    <string name="attestation_credential_received">자격 증명을 받았습니다!</string>
+    <string name="attestation_credential_stored_description">연령 검증 자격 증명이 안전하게 저장되었습니다</string>
+    <string name="attestation_issuer_verified">발급 기관이 확인되었습니다</string>
+    <string name="attestation_failed_title">발급 실패</string>
+    <string name="attestation_scan_qr_instead">대신 QR 스캔하기</string>
+    <string name="attestation_go_back">뒤로 가기</string>
+    <string name="attestation_step_decode">디코딩</string>
+    <string name="attestation_step_generate">생성</string>
+    <string name="attestation_step_send">전송</string>
+    <string name="attestation_step_verify">검증</string>
+    <string name="attestation_step_store">저장</string>
+    <string name="attestation_step_complete">완료</string>
+    <string name="accessibility_attestation_encrypted_description">암호화된 증명을 처리하는 중입니다</string>
+    <string name="accessibility_attestation_success_description">자격 증명을 받았음을 나타내는 성공 체크 표시</string>
+    <string name="accessibility_attestation_error_description">발급 실패를 나타내는 오류 아이콘</string>
+    <string name="accessibility_step_complete">%1$s 단계 완료</string>
+
+    <string name="attestation_recipient_title">자격 증명 수령인</string>
+    <string name="attestation_recipient_prompt">이 자격 증명은 다음을 위한 것입니다\u2026</string>
+    <string name="attestation_recipient_me">본인</string>
+    <string name="attestation_recipient_child">자녀</string>
+    <string name="attestation_nickname_title">자녀의 별명</string>
+    <string name="attestation_nickname_prompt">자격 증명을 구별할 수 있도록 별명을 입력하십시오</string>
+    <string name="attestation_nickname_placeholder">예: Alex</string>
+    <string name="attestation_nickname_continue">계속</string>
+    <string name="attestation_nickname_back">뒤로</string>
+    <string name="accessibility_attestation_recipient_heading">이 자격 증명을 받을 사람을 선택하십시오</string>
+    <string name="accessibility_attestation_nickname_heading">자녀의 별명을 입력하십시오</string>
+
+    <string name="officer_auth_error_invalid_format">유효하지 않은 담당자 ID 형식입니다</string>
+    <string name="officer_auth_error_challenge_failed">YubiKey 챌린지를 가져오지 못했습니다: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">YubiKey를 터치하여 인증하십시오</string>
+    <string name="officer_auth_error_touch_timeout">YubiKey 터치 시간이 초과되었습니다</string>
+    <string name="officer_auth_error_verify_document_dob">서류와 생년월일이 일치하는지 확인해 주십시오</string>
+    <string name="officer_auth_error_invalid_date_format">날짜 형식이 유효하지 않습니다. YYYY-MM-DD 형식을 사용하십시오</string>
+    <string name="officer_auth_error_must_be_18">사용자는 만 18세 이상이어야 합니다</string>
+    <string name="officer_auth_error_not_authenticated">인증되지 않았습니다. 먼저 담당자 ID를 입력해 주십시오.</string>
+    <string name="officer_auth_error_issue_failed">자격 증명 발급에 실패했습니다</string>
+
+    <string name="gesture_desc_tap_to_view">탭하여 보기</string>
+    <string name="gesture_desc_long_press_options">, 옵션을 보려면 길게 누르십시오</string>
+    <string name="gesture_desc_swipe_left">, 더 많은 동작을 보려면 왼쪽으로 스와이프하십시오</string>
+    <string name="gesture_desc_swipe_right">, 더 많은 동작을 보려면 오른쪽으로 스와이프하십시오</string>
+    <string name="gesture_desc_tap_to_activate">탭하여 활성화</string>
+    <string name="gesture_desc_long_press_format">. 길게 누르기: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <string name="main_activity_retry">다시 시도</string>
+    <string name="main_activity_reset_redownload">초기화 및 다시 다운로드</string>
+    <string name="main_activity_show_debug_info">디버그 정보 표시</string>
+
+    <string name="search_item_accessibility_settings_title">접근성 설정</string>
+    <string name="search_item_accessibility_settings_subtitle">사용 환경을 맞춤 설정하십시오</string>
+    <string name="search_item_large_text_title">큰 텍스트</string>
+    <string name="search_item_large_text_subtitle">텍스트 크기를 늘립니다</string>
+    <string name="search_item_high_contrast_title">고대비</string>
+    <string name="search_item_high_contrast_subtitle">가시성을 향상시킵니다</string>
+    <string name="search_item_voice_input_title">음성 입력</string>
+    <string name="search_item_voice_input_subtitle">음성으로 제어하십시오</string>
+    <string name="search_item_manual_code_entry_title">코드 직접 입력</string>
+    <string name="search_item_manual_code_entry_subtitle">스캔 대신 코드를 직접 입력합니다</string>
+    <string name="search_item_simplified_ui_title">간소화된 사용자 인터페이스</string>
+    <string name="search_item_simplified_ui_subtitle">시각적 복잡성을 줄입니다</string>
+    <string name="search_item_color_blindness_title">색맹 지원</string>
+    <string name="search_item_color_blindness_subtitle">더 잘 보이도록 색상을 조정합니다</string>
+
+    <string name="search_item_settings_title">설정</string>
+    <string name="search_item_settings_subtitle">앱 구성</string>
+    <string name="search_item_language_title">언어</string>
+    <string name="search_item_language_subtitle">앱 언어를 변경합니다</string>
+
+    <string name="search_item_credentials_title">내 자격 증명</string>
+    <string name="search_item_credentials_subtitle">자격 증명을 확인합니다</string>
+    <string name="search_item_get_credential_title">자격 증명 받기</string>
+    <string name="search_item_get_credential_subtitle">발급 기관을 찾습니다</string>
+
+    <string name="search_item_help_title">도움말</string>
+    <string name="search_item_help_subtitle">도움을 받으십시오</string>
+    <string name="search_item_privacy_title">개인정보 보호</string>
+    <string name="search_item_privacy_subtitle">내 데이터가 보호되는 방식</string>
+    <string name="search_item_verification_title">연령 검증</string>
+    <string name="search_item_verification_subtitle">나이를 증명합니다</string>
+
+    <string name="issuer_fallback_sandbox_description">샌드박스 환경을 위한 하드코딩된 대체 레지스트리</string>
+    <string name="issuer_fallback_production_description">프로덕션을 위한 하드코딩된 대체 레지스트리</string>
+    <string name="issuer_fallback_category_government">정부</string>
+    <string name="issuer_fallback_category_government_description">정부 발급 자격 증명</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Provii 샌드박스 발급 기관</string>
+    <string name="issuer_fallback_sandbox_issuer_description">테스트용 공식 Provii 샌드박스 발급 기관</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">샌드박스 발급 기관 포털을 방문하십시오</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">공식 Provii 자격 증명 발급 기관</string>
+    <string name="issuer_fallback_production_issuer_instructions">가까운 DMV 사무소를 방문하십시오</string>
+
+    <string name="validation_error_birth_date_future">생년월일은 미래일 수 없습니다</string>
+    <string name="validation_error_invalid_date_format">날짜 형식이 유효하지 않습니다</string>
+    <string name="validation_error_officer_id_too_short">담당자 식별 번호가 너무 짧습니다</string>
+    <string name="validation_error_invalid_officer_id_format">담당자 식별 번호 형식이 유효하지 않습니다</string>
+    <string name="validation_error_empty_qr_code">QR 코드가 비어 있습니다</string>
+    <string name="validation_error_qr_code_too_large">QR 코드가 너무 큽니다</string>
+
+    <string name="sandbox_toast_developer_mode">이제 개발자가 되었습니다!</string>
+    <string name="sandbox_toast_enabled">샌드박스 모드 활성화\n테스트 환경을 사용 중입니다</string>
+    <string name="sandbox_toast_disabled">프로덕션 모드 활성화\n프로덕션 환경을 사용 중입니다</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">개발자 모드까지 1단계 남았습니다</string>
+    <string name="sandbox_toast_steps_away">개발자 모드까지 %1$d단계 남았습니다</string>
+
+    <string name="yubikey_error_no_key_connected">연결된 YubiKey가 없습니다</string>
+    <string name="yubikey_error_timeout">YubiKey 터치를 기다리는 시간이 초과되었습니다. 키가 깜박일 때 터치해 주십시오.</string>
+    <string name="yubikey_error_not_supported">이 YubiKey 슬롯에 챌린지-응답이 구성되어 있지 않습니다</string>
+    <string name="yubikey_error_no_slot">슬롯 2가 HMAC (Hash-based Message Authentication Code) SHA1 챌린지-응답으로 구성되어 있지 않습니다</string>
+    <string name="yubikey_error_hmac_failed">HMAC (Hash-based Message Authentication Code) 계산에 실패했습니다: %s</string>
+    <string name="yubikey_error_session_failed">YubiKey에 연결하지 못했습니다: %s</string>
+
+    <string name="wallet_error_not_initialized">지갑이 초기화되지 않았습니다</string>
+    <string name="wallet_error_proving_key_not_found">증명 키를 찾을 수 없습니다. 다시 다운로드해 주십시오</string>
+    <string name="wallet_error_proving_key_not_readable">증명 키 파일을 읽을 수 없습니다</string>
+    <string name="wallet_error_out_of_memory">메모리가 부족합니다. 앱을 다시 시작해 주십시오</string>
+    <string name="wallet_error_prover_error">증명자 오류: %s</string>
+    <string name="wallet_error_ffi_error">FFI 오류: %s</string>
+    <string name="wallet_error_prover_init_failed">증명자 초기화에 실패했습니다: %s</string>
+    <string name="wallet_error_prover_verification_failed">증명자 초기화 검증에 실패했습니다</string>
+    <string name="wallet_error_verifier_url_update_failed">검증자 URL(웹 주소)을 업데이트하지 못했습니다! %1$s를 예상했지만 %2$s를 받았습니다</string>
+    <string name="wallet_error_wallet_still_null">초기화 후에도 지갑이 여전히 null입니다</string>
+    <string name="wallet_error_credential_not_found">자격 증명을 찾을 수 없습니다</string>
+    <string name="wallet_error_credential_access_failed">자격 증명에 접근할 수 없습니다: %s</string>
+    <string name="wallet_error_invalid_format">유효하지 않은 형식입니다: %s</string>
+    <string name="wallet_error_not_initialized_short">증명자가 초기화되지 않았습니다</string>
+    <string name="wallet_error_proving_key_unavailable">증명 키를 사용할 수 없습니다. 설정이 필요합니다.</string>
+    <string name="wallet_error_storage_init_failed">저장소 초기화에 실패했습니다</string>
+    <string name="wallet_error_biometric_unavailable">생체 인증을 사용할 수 없습니다</string>
+    <string name="wallet_error_auth_failed">인증에 실패했습니다</string>
+    <string name="wallet_error_sandbox_disabled">테스트 자격 증명을 생성하려면 샌드박스 모드를 활성화하십시오</string>
+    <string name="wallet_error_fetch_sandbox_credentials">샌드박스 자격 증명을 가져올 수 없습니다. 인터넷 연결을 확인해 주십시오.</string>
+
+    <string name="keystore_biometric_prompt_title">인증 필요</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">연령 증명을 생성하려면 신원을 확인하십시오</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">보안 저장소에 접근합니다</string>
+    <string name="keystore_biometric_prompt_cancel">취소</string>
+
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, 확장됨, 전체 라이선스 텍스트 표시 중</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, 축소됨, %3$s</string>
+
+    <string name="network_type_none">없음</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">셀룰러</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">알 수 없음</string>
+
+    <string name="help_topic_contrast_levels_title">대비 수준</string>
+    <string name="help_topic_extra_large_text_title">매우 큰 텍스트</string>
+    <string name="help_topic_reduce_transparency_title">투명도 줄이기</string>
+    <string name="help_topic_color_blind_modes_title">색맹 모드</string>
+    <string name="help_topic_line_spacing_title">줄 간격</string>
+    <string name="help_topic_paragraph_spacing_title">단락 간격</string>
+    <string name="help_topic_letter_spacing_title">자간</string>
+    <string name="help_topic_text_width_title">텍스트 너비</string>
+    <string name="help_topic_touch_targets_title">더 큰 터치 영역</string>
+    <string name="help_topic_reduce_motion_title">동작 줄이기</string>
+    <string name="help_topic_timeout_behavior_title">시간 초과 동작</string>
+    <string name="help_topic_simplified_gestures_title">간소화된 제스처</string>
+    <string name="help_topic_haptic_feedback_title">햅틱 피드백</string>
+    <string name="help_topic_data_preservation_title">데이터 보존</string>
+    <string name="help_topic_simplified_ui_title">간소화된 사용자 인터페이스</string>
+    <string name="help_topic_step_indicators_title">단계 표시기</string>
+    <string name="help_topic_verbose_descriptions_title">상세 설명</string>
+    <string name="help_topic_confirm_actions_title">동작 확인</string>
+    <string name="help_topic_reading_level_title">간소화된 읽기 수준</string>
+    <string name="help_topic_help_system_title">도움말 시스템</string>
+    <string name="help_topic_manual_code_entry_title">코드 직접 입력</string>
+    <string name="help_topic_voice_input_title">음성 입력</string>
+    <string name="help_topic_screen_reader_title">화면 읽기 프로그램 지원</string>
+    <string name="help_topic_accessibility_profiles_title">빠른 설정 프로필</string>
+
+    <string name="help_topic_contrast_levels_text">텍스트와 배경 간의 대비 비율을 조정합니다:\n\n• 표준: 기본 앱 색상\n• 높음 (AA): 4.5:1 대비 비율\n• 최대 (AAA): 7:1 이상의 대비 비율\n\n대비가 높을수록 텍스트를 읽기 쉬워집니다. 밝은 환경이나 저시력 사용자에게 특히 유용합니다.\n\nWCAG AAA 준수를 위해서는 최대 대비가 필요합니다.</string>
+    <string name="help_topic_extra_large_text_text">앱 전체의 텍스트 크기를 50% 늘립니다.\n\n다음과 같은 사용자에게 텍스트를 읽기 쉽게 합니다:\n• 저시력\n• 노화로 인한 시력 변화\n• 읽기 어려움\n\n최대 유연성을 위해 시스템 글꼴 크기 설정과 함께 적용됩니다.</string>
+    <string name="help_topic_reduce_transparency_text">투명한 오버레이와 흐림 효과를 제거합니다.\n\n장점:\n• 더 명확한 시각적 계층 구조\n• 텍스트 가독성 향상\n• 시각적 노이즈 감소\n• 인지 부하 감소\n\n저시력 또는 인지 어려움이 있는 사용자에게 권장됩니다.</string>
+    <string name="help_topic_color_blind_modes_text">다양한 유형의 색맹에 맞게 색상을 조정합니다:\n\n• 제1색맹(Protanopia): 적색맹\n• 제2색맹(Deuteranopia): 녹색맹\n• 제3색맹(Tritanopia): 청색맹\n• 단색: 완전 색맹\n\n각 모드는 특정 유형의 색각 이상에 구별 가능한 색상을 신중하게 선택하여 사용합니다.</string>
+    <string name="help_topic_line_spacing_text">텍스트 줄 간격을 조정합니다 (1.0배 - 2.0배).\n\n• 기본: 1.0배\n• AAA 준수: 1.5배 이상\n\n줄 간격을 늘리면:\n• 읽기 이해력 향상\n• 눈의 피로 감소\n• 난독증 사용자에게 도움\n• 텍스트 블록이 덜 부담스러워짐</string>
+    <string name="help_topic_paragraph_spacing_text">단락 간격을 조정합니다 (1.0배 - 3.0배).\n\n• 기본: 1.0배\n• AAA 준수: 2.0배 이상\n\n단락 간격을 늘리면:\n• 내용을 명확히 구분\n• 시각적 구성 향상\n• 인지 부하 감소\n• 읽는 위치를 유지하는 데 도움</string>
+    <string name="help_topic_letter_spacing_text">자간을 조정합니다 (0.0em - 0.2em).\n\n• 기본: 0.0em\n• AAA 준수: 0.12em 이상\n\n자간을 늘리면:\n• 개별 글자를 더 뚜렷하게 구분\n• 난독증 사용자에게 도움\n• 읽기 정확도 향상\n• 글자 혼동 감소</string>
+    <string name="help_topic_text_width_text">읽기 편의를 위해 줄 길이를 제한합니다:\n\n• 전체 너비: 제한 없음\n• 편안함: 80자 (권장)\n• 좁게: 60자\n\n연구에 따르면 줄당 60-80자일 때 최적의 읽기가 이루어집니다. 짧은 줄은 눈의 이동을 줄이고 이해력을 향상시킵니다.</string>
+    <string name="help_topic_touch_targets_text">최소 터치 영역을 60dp로 늘립니다 (44dp에서 증가).\n\n장점:\n• 버튼과 컨트롤을 탭하기 쉬워짐\n• 실수로 탭하는 경우 감소\n• 운동 장애가 있는 사용자에게 도움\n• 한 손 사용 시 편리함\n\nWCAG AAA는 최소 60dp를 요구합니다.</string>
+    <string name="help_topic_reduce_motion_text">모든 애니메이션과 전환 효과를 제거합니다.\n\n장점:\n• 멀미 방지\n• 주의 분산 감소\n• 인지 부하 감소\n• 집중력 향상\n\n다음 사용자에게 권장됩니다:\n• 전정 장애\n• 주의력 어려움\n• 동작 민감성</string>
+    <string name="help_topic_timeout_behavior_text">검증 화면의 자동 시간 초과를 제어합니다:\n\n• 시간 제한 없음 (AAA): 무제한 시간\n• 표준: 30초\n• 연장: 60초\n\nWCAG AAA는 작업 완료에 더 많은 시간이 필요한 사용자를 위해 시간 제한 없음 옵션을 요구합니다.\n\n시간 초과 전에 양식 데이터가 자동으로 저장됩니다.</string>
+    <string name="help_topic_simplified_gestures_text">복잡한 제스처를 간단한 대안으로 대체합니다:\n\n• 스와이프 → 버튼 탭\n• 길게 누르기 → 확인이 포함된 일반 탭\n• 핀치/확대 → 버튼\n\n다음 사용자에게 도움이 됩니다:\n• 운동 장애\n• 떨림\n• 제한된 손 민첩성\n• 터치스크린 어려움</string>
+    <string name="help_topic_haptic_feedback_text">동작에 대한 진동 피드백을 제공합니다.\n\n이점:\n• 버튼 누름 확인\n• 오류 알림\n• 촉각 확인 제공\n\n다음 사용자에게는 비활성화할 수 있습니다:\n• 방해가 된다고 느끼는 사용자\n• 감각 민감성이 있는 사용자\n• 무음 작동을 선호하는 사용자</string>
+    <string name="help_topic_data_preservation_text">시간 초과 전에 양식 데이터를 자동으로 저장합니다.\n\n기능:\n• 시간 초과 10초 전 경고\n• 데이터 저장 또는 삭제 선택\n• 돌아왔을 때 자동 복원\n• 24시간 데이터 보관\n\n추가 시간이 필요하거나 작업이 중단되어도 데이터 손실이 발생하지 않습니다.</string>
+    <string name="help_topic_simplified_ui_text">시각적 복잡성을 줄입니다:\n\n• 한 번에 표시되는 UI 요소 감소\n• 더 크고 명확한 버튼\n• 더 넓은 여백\n• 단순화된 레이아웃\n\n이점:\n• 이해하기 쉬움\n• 부담이 적음\n• 더 나은 집중\n• 인지 부하 감소</string>
+    <string name="help_topic_step_indicators_text">여러 단계 프로세스의 진행 상황을 보여줍니다.\n\n표시 내용:\n• 현재 단계 번호\n• 전체 단계 수\n• 진행 시각화\n\n이점:\n• 불안 감소\n• 명확한 기대 설정\n• 방향 유지에 도움\n• 완료 진행률 표시</string>
+    <string name="help_topic_verbose_descriptions_text">추가 맥락과 설명을 제공합니다:\n\n• 더 긴 버튼 레이블\n• 더 상세한 안내\n• 추가 힌트\n• 더 명확한 오류 메시지\n\n사용자에게 도움이 됩니다:\n• 행동하기 전에 동작 이해\n• 실수 방지\n• 앱 기능 익히기\n• 자신감 형성</string>
+    <string name="help_topic_confirm_actions_text">중요한 동작에 대한 확인을 요구합니다:\n\n• 자격 증명 삭제\n• 설정 변경\n• 데이터 초기화\n\nWCAG AAA는 모든 위험한 동작에 대한 확인을 요구합니다.\n\n이점:\n• 실수 방지\n• 동작 전 검토 가능\n• 불안 감소\n• 두 번째 기회 제공</string>
+    <string name="help_topic_reading_level_text">더 쉬운 언어를 사용합니다(7~9학년 수준):\n\n• 짧은 문장\n• 전문 용어 대신 일반 단어\n• 명확하고 직접적인 언어\n• 적은 기술 용어\n\n활성화 시 WCAG AAA 준수.\n\n이점:\n• 이해하기 쉬움\n• 더 빠른 이해\n• 비원어민 화자에게 더 좋음\n• 인지 부하 감소</string>
+    <string name="help_topic_help_system_text">앱 전체에서 상황에 맞는 도움말을 이용할 수 있습니다.\n\n기능:\n• 27개 도움말 주제\n• 검색 가능한 도움말 센터\n• 관련 주제 탐색\n• 기술 용어집\n\n도움말 접근 위치:\n• 설정 화면\n• 복잡한 기능\n• 오류 메시지\n• 도움말 아이콘이 표시된 모든 곳</string>
+    <string name="help_topic_manual_code_entry_text">카메라로 스캔하는 대신 QR 코드 데이터를 수동으로 입력합니다.\n\n이점:\n• 카메라 접근이 불가능할 때 사용 가능\n• 운동 장애가 있는 사용자에게 도움\n• 저조도 환경에서 더 효과적\n• 휴대폰을 고정하지 않아도 됨\n\n카메라 기반 QR 스캔의 대안입니다.</string>
+    <string name="help_topic_voice_input_text">타이핑 대신 음성으로 텍스트를 입력합니다.\n\n이점:\n• 핸즈프리 입력\n• 타이핑보다 빠름\n• 운동 장애가 있는 사용자에게 도움\n• 반복적인 긴장 감소\n\n기기에 내장된 음성 인식을 사용합니다.</string>
+    <string name="help_topic_screen_reader_text">TalkBack 화면 읽기 프로그램을 완벽하게 지원합니다.\n\n기능:\n• 모든 UI 요소에 레이블 부여\n• 적절한 제목 구조\n• 논리적인 탐색 순서\n• 복잡한 동작에 대한 사용자 정의 힌트\n\n앱이 자동으로 활성화합니다:\n• 상세한 설명\n• 향상된 터치 목표\n\nTalkBack이 감지되면.</string>
+    <string name="help_topic_accessibility_profiles_text">미리 구성된 접근성 프로파일:\n\n• 시각 장애: 고대비, 큰 텍스트, 햅틱\n• 운동 장애: 큰 목표, 연장된 시간 초과, 확인\n• 인지: 단순화된 UI, 단계 표시기, 설명\n• 노인: 큰 텍스트, 목표, 단순화된 UI, 모션 감소\n• 기본값: 모든 설정 초기화\n\n각 프로파일은 해당 사용자 그룹에 가장 유용한 설정을 활성화합니다. 프로파일 적용 후 추가로 맞춤 설정할 수 있습니다.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - STANDARD ==================== -->
+    <!-- Translator Note: Standard reading level content -->
+    <string name="content_age_verification_title">나이 검증</string>
+    <string name="content_age_verification_explanation">영지식 증명을 사용하여 귀하의 나이를 안전하게 검증하는 동안 기다려 주십시오. 귀하의 생년월일은 검증자에게 절대 공유되지 않습니다.</string>
+    <string name="content_age_verification_instructions">검증 QR 코드에 카메라를 향하십시오. 코드가 감지되면 자동으로 스캔됩니다.</string>
+    <string name="content_age_verification_success">나이가 성공적으로 검증되었습니다. 검증자는 귀하의 실제 생년월일을 알지 못하면서도 나이 요건을 충족함을 확인합니다.</string>
+    <string name="content_age_verification_failed">검증에 실패했습니다. QR 코드를 다시 스캔하거나 수동 코드 입력을 사용해 주십시오.</string>
+    <string name="content_credential_issuance_title">자격 증명 발급</string>
+    <string name="content_credential_issuance_explanation">디지털 나이 자격 증명을 받으려면 공인 발급 기관이 제공하는 QR 코드를 스캔하십시오.</string>
+    <string name="content_credential_issuance_instructions">담당자가 제시하는 발급 QR 코드에 카메라를 향하십시오. 자격 증명이 기기에서 생성됩니다.</string>
+    <string name="content_credential_issuance_success">자격 증명이 성공적으로 생성되었습니다. 이 자격 증명을 나이 검증에 사용할 수 있습니다.</string>
+    <string name="content_credential_description">자격 증명은 개인 정보를 보호하는 방식으로 검증을 가능하게 하는 암호학적으로 서명된 신원 증명입니다.</string>
+    <string name="content_zero_knowledge_explanation">영지식 증명을 통해 실제 나이를 공개하지 않고도 나이 요건을 충족함을 증명할 수 있습니다.</string>
+    <string name="content_setup_proving_key">영지식 증명 생성에 필요한 암호학적 증명 키를 다운로드 중입니다</string>
+    <string name="content_processing_challenge">검증 요청을 처리 중입니다</string>
+    <string name="content_creating_proof">영지식 나이 증명을 생성 중입니다</string>
+    <string name="content_submitting_proof">검증자에게 증명을 제출 중입니다</string>
+    <string name="content_error_no_credential">사용 가능한 자격 증명이 없습니다. 먼저 공인 발급 기관에서 자격 증명을 받으십시오.</string>
+    <string name="content_error_network_failed">네트워크 연결에 실패했습니다. 인터넷 연결을 확인하고 다시 시도하십시오.</string>
+    <string name="content_error_invalid_qr">잘못된 QR 코드입니다. 올바른 검증 코드를 스캔하고 있는지 확인하십시오.</string>
+    <string name="content_error_verification_failed">검증에 실패했습니다. 서버가 귀하의 증명을 검증하지 못했습니다.</string>
+    <string name="content_officer_authentication_title">담당자 인증</string>
+    <string name="content_officer_issuance_title">자격 증명 발급</string>
+    <string name="content_officer_dob_prompt">신청자의 공식 신분증에서 확인된 생년월일을 입력하십시오.</string>
+    <string name="content_onboarding_welcome">Provii Wallet에 오신 것을 환영합니다. 개인 정보를 보호하는 디지털 나이 검증 솔루션입니다.</string>
+    <string name="content_onboarding_privacy">귀하의 생년월일은 기기에 안전하게 저장되며 검증자에게 절대 전송되지 않습니다.</string>
+    <string name="content_onboarding_get_started">시작하려면 공인 발급 기관을 방문하여 디지털 나이 자격 증명을 받으십시오.</string>
+
+    <!-- ==================== LOCALIZED CONTENT - SIMPLIFIED ==================== -->
+    <!-- Translator Note: Simplified reading level content (Grade 7-9) -->
+    <string name="content_age_verification_title_simplified">나이 확인</string>
+    <string name="content_age_verification_explanation_simplified">나이를 확인하고 있습니다. 생년월일은 볼 수도, 공유되지도 않습니다.</string>
+    <string name="content_age_verification_instructions_simplified">QR 코드에 카메라를 향하십시오. 자동으로 스캔됩니다.</string>
+    <string name="content_age_verification_success_simplified">완료! 웹사이트에서 충분한 나이임을 확인했습니다. 생년월일은 알 수 없습니다.</string>
+    <string name="content_age_verification_failed_simplified">작동하지 않았습니다. 다시 스캔하거나 코드를 직접 입력하십시오.</string>
+    <string name="content_credential_issuance_title_simplified">ID 카드 받기</string>
+    <string name="content_credential_issuance_explanation_simplified">디지털 ID를 받으려면 관공서의 코드를 스캔하십시오.</string>
+    <string name="content_credential_issuance_instructions_simplified">코드에 카메라를 향하십시오. ID가 휴대폰에 저장됩니다.</string>
+    <string name="content_credential_issuance_success_simplified">완료! 이제 디지털 ID로 나이를 증명할 수 있습니다.</string>
+    <string name="content_credential_description_simplified">자격 증명은 개인 정보를 공개하지 않고 신원을 증명하는 디지털 ID 카드와 같습니다.</string>
+    <string name="content_zero_knowledge_explanation_simplified">실제 나이를 알리지 않고도 충분한 나이임을 증명할 수 있습니다.</string>
+    <string name="content_setup_proving_key_simplified">앱 작동에 필요한 보안 파일을 다운로드 중입니다</string>
+    <string name="content_processing_challenge_simplified">나이 확인 요청을 읽는 중입니다</string>
+    <string name="content_creating_proof_simplified">나이 증명을 생성 중입니다</string>
+    <string name="content_submitting_proof_simplified">웹사이트에 증명을 전송 중입니다</string>
+    <string name="content_error_no_credential_simplified">아직 ID가 없습니다. 먼저 관공서를 방문하여 받으십시오.</string>
+    <string name="content_error_network_failed_simplified">인터넷에 연결할 수 없습니다. 와이파이 또는 데이터를 확인하고 다시 시도하십시오.</string>
+    <string name="content_error_invalid_qr_simplified">해당 코드가 올바르지 않습니다. 올바른 코드를 스캔하고 있는지 확인하십시오.</string>
+    <string name="content_error_verification_failed_simplified">작동하지 않았습니다. 웹사이트에서 증명을 확인하지 못했습니다. 다시 시도하십시오.</string>
+    <string name="content_officer_authentication_title_simplified">담당자 로그인</string>
+    <string name="content_officer_issuance_title_simplified">ID 카드 만들기</string>
+    <string name="content_officer_dob_prompt_simplified">공식 신분증에서 해당 인의 생년월일을 입력하십시오.</string>
+    <string name="content_onboarding_welcome_simplified">Provii Wallet에 오신 것을 환영합니다. 개인 정보를 보호하며 나이를 증명하세요.</string>
+    <string name="content_onboarding_privacy_simplified">생년월일은 휴대폰에 저장됩니다. 다른 사람은 볼 수 없습니다.</string>
+    <string name="content_onboarding_get_started_simplified">시작하려면 관공서를 방문하여 디지털 ID를 받으십시오.</string>
+
+    <!-- ==================== ABBREVIATION EXPANSIONS ==================== -->
+    <!-- Translator Note: These provide screen reader announcements for abbreviations on first use per session (WCAG 3.1.2) -->
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">빠른 응답 (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">개인 식별 번호 (PIN)</string>
+    <string name="abbreviation_dob_short">DOB</string>
+    <string name="abbreviation_dob_expanded">생년월일 (DOB)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">신원 확인 (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">사용자 인터페이스 (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">균일 자원 위치 지정자 (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">애플리케이션 프로그래밍 인터페이스 (API)</string>
+
+    <!-- ==================== ANIMATION CONTROLS (WCAG 2.2.2) ==================== -->
+    <!-- Translator Note: These strings support animation pause/resume controls for accessibility -->
+    <string name="animation_pause_animations">애니메이션 일시 정지</string>
+    <string name="animation_resume_animations">애니메이션 재개</string>
+    <string name="animation_pause_button_text">일시 정지</string>
+    <string name="animation_resume_button_text">재개</string>
+    <string name="animation_toggles_playback_hint">애니메이션 재생을 전환합니다</string>
+    <string name="animation_paused_announcement">애니메이션이 일시 정지되었습니다</string>
+    <string name="animation_resumed_announcement">애니메이션이 재개되었습니다</string>
+    <string name="animation_active_count">%d개의 애니메이션이 실행 중입니다</string>
+    <string name="animation_loading_default">로딩 중</string>
+    <string name="animation_please_wait">이 작업이 완료될 때까지 기다려 주십시오</string>
+    <string name="animation_percent_complete">%d퍼센트 완료</string>
+    <string name="animation_loading_in_progress">진행 중</string>
+
+    <!-- ==================== KEYBOARD SHORTCUTS (WCAG 2.1.3) ==================== -->
+    <!-- Translator Note: These strings support keyboard shortcut display and navigation -->
+    <string name="keyboard_shortcuts_title">키보드 단축키</string>
+    <string name="keyboard_shortcuts_done">완료</string>
+    <string name="keyboard_shortcuts_app_section">앱 단축키</string>
+    <string name="keyboard_shortcuts_navigation_section">탐색</string>
+    <string name="keyboard_shortcuts_tips_section">팁</string>
+    <string name="keyboard_shortcuts_navigation_footer">이 탐색 키는 외부 키보드를 사용할 때 앱 전체에서 작동합니다</string>
+    <string name="keyboard_shortcuts_tip_external">외부 Bluetooth 및 USB 키보드가 완전히 지원됩니다</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">목록에서 항목 간 탐색하려면 화살표 키를 사용하십시오</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">이 화면에서 사용 가능한 단축키를 보려면 Ctrl을 길게 누르십시오</string>
+    <string name="keyboard_shortcuts_tip_a11y">이 앱의 모든 기능은 키보드로 접근할 수 있습니다</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">키보드 단축키 닫기</string>
+    <!-- App shortcut labels and descriptions (must be localisable) -->
+    <string name="keyboard_shortcut_label_settings">설정</string>
+    <string name="keyboard_shortcut_label_accessibility">접근성</string>
+    <string name="keyboard_shortcut_label_help">도움말 센터</string>
+    <string name="keyboard_shortcut_label_add_credential">자격 증명 추가</string>
+    <string name="keyboard_shortcut_label_verify">검증</string>
+    <string name="keyboard_shortcut_label_shortcuts">단축키</string>
+    <string name="keyboard_shortcut_desc_settings">설정 열기</string>
+    <string name="keyboard_shortcut_desc_accessibility">접근성 설정</string>
+    <string name="keyboard_shortcut_desc_help">도움말 센터</string>
+    <string name="keyboard_shortcut_desc_add_credential">자격 증명 추가</string>
+    <string name="keyboard_shortcut_desc_verify">검증 시작</string>
+    <string name="keyboard_shortcut_desc_shortcuts">키보드 단축키</string>
+    <!-- Navigation shortcut labels and descriptions -->
+    <string name="keyboard_shortcut_nav_back">뒤로 가기 / 닫기</string>
+    <string name="keyboard_shortcut_nav_back_desc">현재 화면 또는 대화 상자 닫기</string>
+    <string name="keyboard_shortcut_nav_next">다음 필드</string>
+    <string name="keyboard_shortcut_nav_next_desc">다음 상호작용 요소로 포커스 이동</string>
+    <string name="keyboard_shortcut_nav_prev">이전 필드</string>
+    <string name="keyboard_shortcut_nav_prev_desc">이전 상호작용 요소로 포커스 이동</string>
+    <string name="keyboard_shortcut_nav_submit">제출 / 계속</string>
+    <string name="keyboard_shortcut_nav_submit_desc">포커스된 버튼을 활성화하거나 양식을 제출합니다</string>
+    <string name="keyboard_shortcut_nav_activate">버튼 활성화</string>
+    <string name="keyboard_shortcut_nav_activate_desc">현재 포커스된 버튼 또는 토글을 활성화합니다</string>
+
+    <!-- ==================== MODAL FOCUS TRAP (WCAG 2.1.2) ==================== -->
+    <!-- Translator Note: These strings support modal dialog accessibility -->
+    <string name="modal_opened_announcement">대화 상자가 열렸습니다. 닫으려면 Escape를 누르고 확인하려면 Enter를 누르십시오.</string>
+    <string name="modal_closed_announcement">대화 상자가 닫혔습니다</string>
+    <string name="modal_button_primary_label">%s (기본 동작)</string>
+    <string name="modal_button_cancel_label">%s (취소)</string>
+    <string name="modal_button_destructive_label">%s (위험한 동작)</string>
+    <string name="modal_button_primary_hint">확인하려면 두 번 탭하거나 Enter를 누르십시오</string>
+    <string name="modal_button_cancel_hint">취소하려면 두 번 탭하거나 Escape를 누르십시오</string>
+    <string name="modal_button_destructive_hint">위험한 동작을 수행하려면 두 번 탭하십시오</string>
+    <string name="modal_button_secondary_hint">동작을 수행하려면 두 번 탭하십시오</string>
+    <string name="modal_confirm">확인</string>
+    <string name="modal_cancel">취소</string>
+    <string name="modal_delete">삭제</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">%1$s 삭제</string>
+    <string name="a11y_edit_nickname_for">%1$s의 별명 수정</string>
+    <string name="accessibility_attestation_scan_back">뒤로 가기</string>
+    <string name="attestation_replace_confirm">교체</string>
+    <string name="attestation_replace_primary_message">이미 개인 자격 증명을 보유하고 있습니다. 새로 만들면 기존 자격 증명이 교체됩니다. 이 작업은 되돌릴 수 없습니다.</string>
+    <string name="attestation_replace_primary_title">기존 자격 증명을 교체하시겠습니까?</string>
+    <string name="attestation_scan_error_empty">QR 코드가 비어 있습니다</string>
+    <string name="attestation_scan_instruction">담당자가 표시한 QR 코드에 카메라를 향하십시오</string>
+    <string name="attestation_scan_invalid_qr">이 QR 코드에는 증명 데이터가 포함되어 있지 않습니다</string>
+    <string name="attestation_scan_title">증명 스캔</string>
+    <string name="attestation_scan_wrong_type_toast">이 QR 코드는 검증용이며, 자격 증명용이 아닙니다</string>
+    <string name="biometric_required_message">자격 증명을 안전하게 저장하려면 화면 잠금(PIN, 패턴 또는 생체 인식)이 필요합니다. 계속하기 전에 기기 보안 설정에서 화면 잠금을 설정해 주십시오.</string>
+    <string name="biometric_required_open_settings">보안 설정 열기</string>
+    <string name="biometric_required_title">화면 잠금 필요</string>
+    <string name="challenge_sandbox_prompt_announcement">Sandbox 챌린지가 수신되었습니다. Sandbox 모드를 활성화하고 계속할지 또는 챌린지를 거부할지 선택하십시오.</string>
+    <string name="challenge_sandbox_prompt_body">이 챌린지는 Sandbox 검증자가 발행한 것입니다. 이 지갑에서 Sandbox 모드를 활성화해야만 진행할 수 있습니다.</string>
+    <string name="challenge_sandbox_prompt_primary">Sandbox 활성화 후 계속</string>
+    <string name="challenge_sandbox_prompt_secondary">챌린지 거부</string>
+    <string name="challenge_sandbox_prompt_title">Sandbox 챌린지 수신됨</string>
+    <string name="credential_detail_nickname_error">별명을 저장하지 못했습니다</string>
+    <string name="credential_list_managed_count">%2$d개 중 %1$d개</string>
+    <string name="credential_picker_count_shown">자격 증명 %1$d개 표시됨</string>
+    <string name="credential_picker_filter_clear">필터 지우기</string>
+    <string name="credential_picker_filter_label">이름으로 자격 증명 필터링</string>
+    <string name="credential_picker_filter_placeholder">자격 증명 필터링</string>
+    <string name="credential_picker_no_results">일치하는 자격 증명 없음</string>
+    <string name="credential_picker_section_managed">관리 중인 자격 증명</string>
+    <string name="credential_picker_section_me">본인</string>
+    <string name="credential_picker_subtitle">검증할 사용자를 선택하십시오.</string>
+    <string name="credential_row_action_delete">삭제</string>
+    <string name="credential_row_action_edit">별명 수정</string>
+    <string name="credential_row_overflow_menu">자격 증명 옵션</string>
+    <string name="deeplink_sandbox_prompt_announcement">Sandbox 링크가 감지되었습니다. Sandbox 모드를 활성화하고 링크를 열지 선택하십시오.</string>
+    <string name="deeplink_sandbox_prompt_body">이 딥링크는 이 지갑에서 Sandbox 모드를 활성화해야만 진행됩니다.</string>
+    <string name="deeplink_sandbox_prompt_primary">Sandbox 활성화 후 열기</string>
+    <string name="deeplink_sandbox_prompt_secondary">취소</string>
+    <string name="deeplink_sandbox_prompt_title">Sandbox 링크 감지됨</string>
+    <string name="empty_credential_option_find_apps_a11y">참여 앱을 찾으십시오. 본인의 나이를 이미 알고 있는 연금, 은행, 통신사, 건강 보험사 또는 그 외 기관에서 자격 증명을 받으십시오.</string>
+    <string name="empty_credential_option_find_apps_desc">본인의 나이를 이미 알고 있는 연금, 은행, 통신사, 건강 보험사 또는 그 외 기관에서 자격 증명을 받으십시오</string>
+    <string name="empty_credential_option_find_apps_title">참여 앱 찾기</string>
+    <string name="empty_credential_option_find_locations_a11y">근처 위치를 찾으십시오. 신분증을 가지고 직접 방문하여 자격 증명을 받으십시오.</string>
+    <string name="empty_credential_option_find_locations_desc">신분증을 가지고 직접 방문하여 자격 증명을 받으십시오</string>
+    <string name="empty_credential_option_find_locations_title">근처 위치 찾기</string>
+    <string name="empty_credential_option_managed_a11y">돌보는 사람이 있습니다. 돌보는 사람을 위한 자격 증명을 관리합니다.</string>
+    <string name="empty_credential_option_managed_desc">돌보는 사람을 위한 자격 증명을 관리합니다</string>
+    <string name="empty_credential_option_managed_title">돌보는 사람이 있습니다</string>
+    <string name="empty_credential_option_scan_a11y">스캔할 QR 코드가 있습니다. 검증자가 신분증을 확인한 후 코드를 제공했습니다.</string>
+    <string name="empty_credential_option_scan_desc">검증자가 신분증을 확인한 후 코드를 제공했습니다</string>
+    <string name="empty_credential_option_scan_title">스캔할 QR 코드가 있습니다</string>
+    <string name="empty_credential_subtitle">첫 번째 자격 증명을 받는 방법을 선택하십시오</string>
+    <string name="empty_credential_title">아직 자격 증명이 없습니다</string>
+    <string name="error_screen_lock_required">자격 증명을 안전하게 저장하려면 화면 잠금(PIN, 패턴 또는 생체 인식)이 필요합니다. 기기 설정에서 화면 잠금을 설정해 주십시오.</string>
+    <string name="issuers_no_apps_found_description">더 많은 앱이 Provii를 지원할 예정이니 잠시 후 다시 확인해 주십시오</string>
+    <string name="issuers_no_apps_found">아직 참여 앱이 없습니다</string>
+    <string name="issuers_no_locations_found_description">더 많은 위치가 추가될 예정이니 잠시 후 다시 확인해 주십시오</string>
+    <string name="issuers_no_locations_found">위치를 찾을 수 없습니다</string>
+    <string name="managed_credential_explainer_body">돌보는 사람을 위한 관리 자격 증명을 받으려면 함께 참여 위치를 방문하십시오. 검증자가 그 사람의 신분증을 확인합니다. QR 코드를 스캔하면 이 자격 증명이 본인용인지 관리하는 사람용인지 묻는 메시지가 표시됩니다.</string>
+    <string name="managed_credential_explainer_find_location">위치 찾기</string>
+    <string name="managed_credential_explainer_have_qr">이미 QR 코드가 있습니다</string>
+    <string name="managed_credential_explainer_title">관리 자격 증명</string>
+    <string name="sandbox_credential_type">자격 증명 유형</string>
+    <string name="sandbox_managed_credential_saved">관리 자격 증명이 저장되었습니다 (%s)</string>
+    <string name="sandbox_mode_enabled_announcement">Sandbox 모드가 활성화되었습니다. 지갑이 Sandbox 서버에 연결되었습니다.</string>
+    <string name="sandbox_nickname_helper">지갑에서 식별할 수 있도록 이 자격 증명에 이름을 지정하십시오.</string>
+    <string name="sandbox_nickname_label">별명</string>
+    <string name="sandbox_nickname_placeholder">예: Sarah</string>
+    <string name="sandbox_nickname_required">관리 자격 증명에는 별명이 필요합니다</string>
+    <string name="sandbox_type_managed_credential">관리 자격 증명</string>
+    <string name="sandbox_type_your_credential">본인 자격 증명</string>
+    <string name="title_find_apps">참여 앱 찾기</string>
+    <string name="title_find_locations">위치 찾기</string>
+    <string name="verification_go_to_attestation">자격 증명 받기</string>
+    <string name="verification_wrong_qr_type_message">이 QR 코드는 새 자격 증명을 받기 위한 것이며, 나이 검증용이 아닙니다. 증명 화면으로 이동하시겠습니까?</string>
+    <string name="verification_wrong_qr_type_title">증명 QR 코드 감지됨</string>
+    <string name="walkthrough_back">뒤로</string>
+    <string name="walkthrough_get_started">시작하기</string>
+    <string name="walkthrough_next">다음</string>
+    <string name="walkthrough_page_indicator">%2$d페이지 중 %1$d페이지</string>
+    <string name="walkthrough_page1_body">자격 증명에는 나이만 포함됩니다. 그 외에는 아무것도 포함되지 않습니다. 이름도, 주소도, 신원도 포함되지 않습니다.\n\n생년월일을 공개하지 않고도 특정 나이 이상(또는 이하)임을 증명합니다.</string>
+    <string name="walkthrough_page1_heading">자격 증명이란?</string>
+    <string name="walkthrough_page2_body">본인의 나이를 이미 알고 있는 회사의 앱을 통해 자격 증명을 받을 수 있습니다. 예를 들어 은행이나 연금 펀드입니다. 이미 나이를 검증했기 때문에 다시 공유할 필요가 없습니다.\n\n또는 생년월일을 증명하는 신분증을 가지고 참여 위치를 방문하십시오. 생년월일을 확인하여 자격 증명을 만든 후 즉시 폐기합니다. 발급 기관은 자격 증명을 절대 보지 않습니다. 신원이 자격 증명에 연결되지 않습니다.</string>
+    <string name="walkthrough_page2_heading">자격 증명은 어떻게 받나요?</string>
+    <string name="walkthrough_page3_body">나이 자격 증명이 필요한 사람을 돌보고 있다면, 그 사람을 위한 자격 증명을 받아 본인 기기에서 관리할 수 있습니다.\n\n그 사람의 생년월일을 증명하는 신분증을 가지고 함께 참여 위치를 방문하십시오. QR 코드를 스캔하면 이 자격 증명이 본인용인지 관리하는 사람용인지 묻는 메시지가 표시됩니다.\n\n자격 증명을 구분할 수 있도록 별명을 추가하십시오.</string>
+    <string name="walkthrough_page3_heading">피부양자</string>
+    <string name="walkthrough_page4_body">나이를 검증하려는 앱은 Provii 지갑으로 직접 챌린지를 보낼 수 있습니다. 사용할 자격 증명은 본인이 선택합니다. 검증이 성공하면 요청한 앱으로 돌아가 검증된 상태로 진행할 수 있습니다.\n\n또는 다른 기기에서 QR 코드가 표시되거나, 모바일 브라우저의 링크가 지갑으로 바로 연결될 수 있습니다. 접근성을 위한 짧은 코드 옵션도 있습니다.\n\n개인 정보는 절대 공유되지 않습니다. 나이 요건을 충족하는지 여부에 대한 예 또는 아니오 답변만 전달됩니다.</string>
+    <string name="walkthrough_page4_heading">검증은 어떻게 작동하나요?</string>
+    <string name="walkthrough_page5_body">첫 단계는 참여 앱을 통해 또는 근처 위치에서 자격 증명을 받는 것입니다.\n\n그다음에는 개인 정보를 공유하지 않고도 필요할 때마다 나이를 검증할 수 있습니다. 돌보는 사람을 위한 자격 증명도 관리할 수 있습니다.</string>
+    <string name="walkthrough_page5_heading">모든 준비가 완료되었습니다</string>
+    <string name="walkthrough_skip">건너뛰기</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

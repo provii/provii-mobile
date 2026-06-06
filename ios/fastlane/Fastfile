@@ -1,0 +1,197 @@
+# Fastfile , Provii wallet iOS distribution lanes.
+#
+# Two lanes:
+#   - `beta`    -> archive, sign, Sigstore-attest the IPA, upload to TestFlight,
+#                  notify Slack, append a changelog entry.
+#   - `release` -> submit the most recent TestFlight build to App Store review
+#                  (kept skeletal pending the first App Store submission).
+#
+# Single-bundle architecture: `app.provii.wallet` services every audience.
+# Runtime environment is controlled inside the app, not at sign time.
+#
+# Code signing strategy: manual `get_certificates` + `get_provisioning_profile`
+# rather than `match`. Match would push private keys into a shared git repo,
+# which conflicts with the wallet repo's policy of zero secrets in version
+# control. The manual flow uses an App Store Connect API key (read from
+# APP_STORE_CONNECT_API_KEY_PATH or APP_STORE_CONNECT_API_KEY_JSON) plus an
+# ephemeral keychain on each CI run.
+#
+# Required environment for the beta lane:
+#   APP_STORE_CONNECT_API_KEY_JSON  base64-encoded JSON key payload
+#   IOS_KEYCHAIN_PASSWORD           ephemeral keychain unlock password
+#   SLACK_WEBHOOK_URL               optional, suppresses notification if absent
+#
+# Sigstore: cosign attestation is generated for the signed IPA before upload,
+# producing a `.sig` + `.cert` pair under `ios/build/attestations/`. The
+# attestation is uploaded as a CI artifact for SLSA Level 3 traceability and
+# is referenced from the changelog entry.
+
+default_platform(:ios)
+
+WORKSPACE   = "wallet.xcworkspace".freeze
+SCHEME      = "wallet".freeze
+BUILD_DIR   = "build".freeze
+ATTEST_DIR  = "build/attestations".freeze
+CHANGELOG   = "../CHANGELOG.md".freeze
+
+platform :ios do
+  before_all do
+    setup_ci if ENV["CI"]
+  end
+
+  desc "Build, sign, attest, and upload a TestFlight build."
+  lane :beta do
+    api_key = load_app_store_connect_api_key
+
+    ensure_git_status_clean unless ENV["FASTLANE_SKIP_GIT_CLEAN"]
+
+    increment_build_number(
+      xcodeproj: "wallet.xcodeproj",
+      build_number: latest_testflight_build_number(
+        api_key: api_key,
+        app_identifier: "app.provii.wallet"
+      ).to_i + 1
+    )
+
+    cocoapods(repo_update: true) if File.exist?("../Podfile")
+
+    get_certificates(
+      api_key: api_key,
+      output_path: "fastlane/certs"
+    )
+    get_provisioning_profile(
+      api_key: api_key,
+      app_identifier: "app.provii.wallet",
+      provisioning_name: "Provii Wallet App Store",
+      adhoc: false
+    )
+
+    build_app(
+      workspace: WORKSPACE,
+      scheme: SCHEME,
+      configuration: "Release",
+      output_directory: BUILD_DIR,
+      output_name: "ProviiWallet.ipa",
+      export_method: "app-store",
+      clean: true,
+      include_bitcode: false,
+      include_symbols: true,
+      export_options: {
+        teamID: CredentialsManager::AppfileConfig.try_fetch_value(:team_id),
+        uploadBitcode: false,
+        uploadSymbols: true,
+        compileBitcode: false
+      }
+    )
+
+    sigstore_attest_ipa("#{BUILD_DIR}/ProviiWallet.ipa")
+
+    upload_to_testflight(
+      api_key: api_key,
+      ipa: "#{BUILD_DIR}/ProviiWallet.ipa",
+      skip_waiting_for_build_processing: true,
+      changelog: changelog_for_build,
+      distribute_external: false,
+      notify_external_testers: false
+    )
+
+    append_changelog_entry
+
+    notify_slack(
+      message: ":iphone: TestFlight build #{lane_context[SharedValues::BUILD_NUMBER]} uploaded for app.provii.wallet"
+    )
+  end
+
+  desc "Submit the latest TestFlight build to App Store review (skeleton)."
+  lane :release do
+    api_key = load_app_store_connect_api_key
+
+    deliver(
+      api_key: api_key,
+      app_identifier: "app.provii.wallet",
+      submit_for_review: true,
+      automatic_release: false,
+      force: true,
+      skip_metadata: false,
+      skip_screenshots: true,
+      precheck_include_in_app_purchases: false,
+      submission_information: {
+        add_id_info_uses_idfa: false,
+        export_compliance_uses_encryption: true,
+        export_compliance_is_exempt: false,
+        export_compliance_contains_third_party_cryptography: false,
+        export_compliance_contains_proprietary_cryptography: false,
+        export_compliance_available_on_french_store: true
+      }
+    )
+  end
+
+  # ---------------------------------------------------------------------------
+  # Helpers
+  # ---------------------------------------------------------------------------
+
+  def load_app_store_connect_api_key
+    if ENV["APP_STORE_CONNECT_API_KEY_JSON"]
+      key_payload = Base64.decode64(ENV["APP_STORE_CONNECT_API_KEY_JSON"])
+      key_json    = JSON.parse(key_payload)
+      app_store_connect_api_key(
+        key_id: key_json.fetch("key_id"),
+        issuer_id: key_json.fetch("issuer_id"),
+        key_content: key_json.fetch("key"),
+        is_key_content_base64: false,
+        in_house: false
+      )
+    elsif ENV["APP_STORE_CONNECT_API_KEY_PATH"]
+      app_store_connect_api_key(
+        key_id: ENV.fetch("APP_STORE_CONNECT_API_KEY_ID"),
+        issuer_id: ENV.fetch("APP_STORE_CONNECT_API_KEY_ISSUER_ID"),
+        key_filepath: ENV.fetch("APP_STORE_CONNECT_API_KEY_PATH"),
+        in_house: false
+      )
+    else
+      UI.user_error!(
+        "Set APP_STORE_CONNECT_API_KEY_JSON (CI) or APP_STORE_CONNECT_API_KEY_PATH + " \
+        "APP_STORE_CONNECT_API_KEY_ID + APP_STORE_CONNECT_API_KEY_ISSUER_ID (local)."
+      )
+    end
+  end
+
+  def sigstore_attest_ipa(ipa_path)
+    sh "mkdir -p #{ATTEST_DIR}"
+    cosign = ENV["COSIGN_BIN"] || "cosign"
+    sh "#{cosign} sign-blob --yes --output-signature #{ATTEST_DIR}/ProviiWallet.ipa.sig " \
+       "--output-certificate #{ATTEST_DIR}/ProviiWallet.ipa.pem #{ipa_path}"
+    digest = sh("shasum -a 256 #{ipa_path} | awk '{print $1}'").strip
+    File.write("#{ATTEST_DIR}/ProviiWallet.ipa.sha256", "#{digest}  ProviiWallet.ipa\n")
+    UI.success("Sigstore attestation written under #{ATTEST_DIR} (sha256=#{digest})")
+  end
+
+  def changelog_for_build
+    changes = sh("git log --pretty=format:'- %s' $(git describe --tags --abbrev=0 2>/dev/null || echo HEAD~10)..HEAD").strip
+    truncated = changes.length > 4000 ? "#{changes[0, 3997]}..." : changes
+    truncated.empty? ? "Routine TestFlight rebuild." : truncated
+  end
+
+  def append_changelog_entry
+    return unless File.exist?(CHANGELOG)
+    build = lane_context[SharedValues::BUILD_NUMBER]
+    version = lane_context[SharedValues::VERSION_NUMBER]
+    timestamp = Time.now.utc.strftime("%Y-%m-%d")
+    entry = "\n## iOS #{version} (#{build}) , #{timestamp}\n\n#{changelog_for_build}\n"
+    File.open(CHANGELOG, "a") { |f| f.write(entry) }
+  end
+
+  def notify_slack(message:)
+    webhook = ENV["SLACK_WEBHOOK_URL"]
+    if webhook.nil? || webhook.empty?
+      UI.message("SLACK_WEBHOOK_URL not set; skipping notification.")
+      return
+    end
+    slack(
+      slack_url: webhook,
+      message: message,
+      success: true,
+      default_payloads: %i[git_branch git_author last_git_commit]
+    )
+  end
+end

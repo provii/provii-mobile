@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Filipino (tl) - Plurals FINAL
+    Validated: 2026-03-21
+
+    Fixes applied from tl-batch-10-review.md:
+      LOW #18:  Removed redundant "mga" after "walang" in zero-quantity items
+                (credential_count, documents_uploaded, notifications_unread,
+                verifications_remaining)
+      LOW #19-20: Removed redundant "mga" after numerals in "other" quantity
+                  items throughout. Filipino numerals already encode plurality.
+      LOW #21:  Fixed awkward double-"na" in documents_uploaded zero;
+                reordered to "Walang dokumentong na-upload"
+      LOW #22:  Dropped "mga" from notifications_unread zero
+
+    Convention: "mga" is omitted when a numeral or "walang" already signals
+    quantity. This keeps UI strings shorter without loss of meaning.
+-->
+<resources>
+    <!-- Bilang ng mga Kredensyal -->
+    <plurals name="credential_count">
+        <item quantity="zero">Walang kredensyal</item>
+        <item quantity="one">1 kredensyal</item>
+        <item quantity="other">%d kredensyal</item>
+    </plurals>
+
+    <!-- Bilang ng mga Session -->
+    <plurals name="session_count">
+        <item quantity="one">1 aktibong session</item>
+        <item quantity="other">%d aktibong session</item>
+    </plurals>
+
+    <!-- Mga Araw na Nakalipas -->
+    <plurals name="days_ago">
+        <item quantity="one">1 araw na ang nakalipas</item>
+        <item quantity="other">%d araw na ang nakalipas</item>
+    </plurals>
+
+    <!-- Mga Oras na Nakalipas -->
+    <plurals name="hours_ago">
+        <item quantity="one">1 oras na ang nakalipas</item>
+        <item quantity="other">%d oras na ang nakalipas</item>
+    </plurals>
+
+    <!-- Mga Minuto na Nakalipas -->
+    <plurals name="minutes_ago">
+        <item quantity="one">1 minuto na ang nakalipas</item>
+        <item quantity="other">%d minuto na ang nakalipas</item>
+    </plurals>
+
+    <!-- Mga Natitirang Pagsubok -->
+    <plurals name="attempts_left">
+        <item quantity="one">1 pagsubok na lang ang natitira</item>
+        <item quantity="other">%d pagsubok na lang ang natitira</item>
+    </plurals>
+
+    <!-- Mga Na-upload na Dokumento -->
+    <plurals name="documents_uploaded">
+        <!-- FIX #21: Reordered to avoid double "na" -->
+        <item quantity="zero">Walang dokumentong na-upload</item>
+        <item quantity="one">1 dokumentong na-upload</item>
+        <item quantity="other">%d dokumentong na-upload</item>
+    </plurals>
+
+    <!-- Mga Natitirang Beripikasyon -->
+    <plurals name="verifications_remaining">
+        <item quantity="zero">Walang natitirang beripikasyon</item>
+        <item quantity="one">1 natitirang beripikasyon</item>
+        <item quantity="other">%d natitirang beripikasyon</item>
+    </plurals>
+
+    <!-- Mga Napiling Item -->
+    <plurals name="items_selected">
+        <item quantity="one">1 napiling item</item>
+        <item quantity="other">%d napiling item</item>
+    </plurals>
+
+    <!-- Mga Hindi pa Nababasang Notification -->
+    <plurals name="notifications_unread">
+        <!-- FIX #22: Dropped "mga" after "walang" -->
+        <item quantity="zero">Walang hindi pa nababasang notification</item>
+        <item quantity="one">1 hindi pa nababasang notification</item>
+        <item quantity="other">%d hindi pa nababasang notification</item>
+    </plurals>
+
+    <!-- Mga Kredensyal na Na-issue Ngayong Araw -->
+    <plurals name="credentials_issued_today">
+        <item quantity="zero">Walang kredensyal na na-issue ngayong araw</item>
+        <item quantity="one">1 kredensyal na na-issue ngayong araw</item>
+        <item quantity="other">%d kredensyal na na-issue ngayong araw</item>
+    </plurals>
+
+    <!-- Mga Taong Naghihintay -->
+    <plurals name="people_waiting">
+        <item quantity="one">1 taong naghihintay</item>
+        <item quantity="other">%d taong naghihintay</item>
+    </plurals>
+</resources>

@@ -1,0 +1,1696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translator Note: These are the app names shown in the launcher and system settings -->
+    <string name="app_name">Provii Wallet</string>
+    <string name="app_name_debug">Provii Wallet (Debug)</string>
+    <string name="app_name_staging">Provii Wallet (Staging)</string>
+
+    <!-- ==================== NAVIGATION & SCREEN TITLES ==================== -->
+    <!-- Translator Note: These are titles shown in the top app bar of each screen -->
+    <string name="title_settings">Setări</string>
+    <string name="title_accessibility">Accesibilitate</string>
+    <string name="title_provii_wallet">Provii Wallet</string>
+    <string name="title_get_credentials">Obțineți acreditări</string>
+    <string name="title_scan_verification_qr">Scanați codul QR de verificare</string>
+    <string name="title_verifying_age">Se verifică vârsta</string>
+    <string name="title_age_verified">Vârsta verificată</string>
+    <string name="title_verification_failed">Verificarea a eșuat</string>
+    <string name="title_officer_mode">Modul ofițer</string>
+    <string name="title_officer_dashboard">Panoul ofițerului</string>
+    <string name="title_issue_credential">Emiteți acreditarea</string>
+    <string name="title_credential_ready">Acreditarea este gata</string>
+    <string name="title_get_your_credential">Obțineți acreditarea dumneavoastră</string>
+
+    <!-- ==================== ONBOARDING & WELCOME ==================== -->
+    <!-- Translator Note: These strings appear during the initial app setup and first-time user experience -->
+    <string name="welcome_title">Bun venit la Provii Wallet</string>
+    <string name="welcome_subtitle">Verificare sigură a vârstei, simplificată</string>
+    <string name="welcome_first_credential">Începeți prin adăugarea primei dumneavoastră acreditări de verificare a vârstei</string>
+    <string name="welcome_description">Verificare privată a vârstei folosind dovezi cu cunoaștere zero</string>
+
+    <!-- Simple Language Choice Screen (First Onboarding Screen) -->
+    <string name="onboarding_welcome">Bun venit la Provii Wallet</string>
+    <string name="onboarding_language_subtitle">Alegeți preferința de limbă</string>
+    <string name="onboarding_use_english">Utilizați engleza</string>
+    <string name="onboarding_use_english_description">Continuați să utilizați engleza ca limbă a aplicației</string>
+    <string name="onboarding_rotating_button_description">Butonul Schimbați limba, afișând în prezent: %1$s. Atingeți pentru a selecta o altă limbă.</string>
+    <string name="onboarding_change_later">Puteți modifica această opțiune mai târziu în Setări</string>
+
+    <!-- Simple Accessibility Choice Screen (Second Onboarding Screen) -->
+    <string name="onboarding_accessibility_title">Accesibilitate</string>
+    <string name="onboarding_accessibility_desc">Doriți să personalizați funcțiile de accesibilitate, precum dimensiunea textului, zonele de atingere sau mișcarea redusă?</string>
+    <string name="onboarding_use_defaults">Utilizați valorile implicite</string>
+    <string name="onboarding_use_defaults_description">Continuați cu setările standard de accesibilitate</string>
+    <string name="onboarding_open_accessibility">Setări de accesibilitate</string>
+    <string name="onboarding_open_accessibility_description">Deschideți setările de accesibilitate pentru a personaliza aplicația</string>
+    <string name="onboarding_accessibility_later">Puteți modifica această opțiune mai târziu în Setări</string>
+    <string name="onboarding_accessibility_features_title">Funcțiile disponibile includ:</string>
+    <string name="onboarding_feature_text_size">Dimensiuni mai mari ale textului</string>
+    <string name="onboarding_feature_touch_targets">Zone de atingere mărite</string>
+    <string name="onboarding_feature_reduce_motion">Mișcare redusă</string>
+    <string name="onboarding_feature_high_contrast">Mod cu contrast ridicat</string>
+    <string name="onboarding_talkback_detected">TalkBack detectat</string>
+    <string name="onboarding_talkback_message">Am activat descrierile detaliate pentru a vă ajuta să navigați în aplicație.</string>
+    <string name="onboarding_continue_to_setup">Continuați la configurare</string>
+
+    <!-- Setup Screen -->
+    <string name="setup_one_time_required">Configurare unică necesară</string>
+    <string name="setup_download_required">Descărcare necesară</string>
+    <string name="setup_download_description">Această aplicație trebuie să descarce componente de securitate pentru dovezi cu cunoaștere zero (aproximativ 87 MB).</string>
+    <string name="setup_wifi_recommended">Wi-Fi recomandat</string>
+    <string name="setup_checking_status">Se verifică starea configurării...</string>
+    <string name="setup_already_setup">Deja configurat!</string>
+    <string name="setup_ready_message">Portofelul dumneavoastră este pregătit pentru verificarea sigură a vârstei</string>
+    <string name="setup_preparing">Se pregătește sistemul de verificare securizat...</string>
+    <string name="setup_checking_components">Se verifică componentele de securitate...</string>
+    <string name="setup_downloading">Se descarcă componentele de securitate</string>
+    <string name="setup_download_progress_description">%1$d%% finalizat (%2$s MB din %3$s MB descărcați)</string>
+    <string name="setup_initializing">Se inițializează componentele de securitate...</string>
+    <string name="setup_complete">Configurare finalizată!</string>
+    <string name="setup_download_info">Aceasta activează dovezile cu cunoaștere zero pentru verificarea privată a vârstei</string>
+    <string name="setup_one_time_download">Descărcare unică</string>
+    <string name="setup_stuck_message">Aceasta durează mai mult decât era de așteptat</string>
+    <string name="setup_stuck_description">Configurarea ar putea fi blocată. Încercați să reporniți.</string>
+    <string name="setup_restart_message">Aplicația trebuie să repornească. Acest lucru se întâmplă uneori la prima lansare.</string>
+    <string name="setup_storage_full">Spațiu de stocare plin</string>
+    <string name="setup_connection_error">Eroare de conexiune</string>
+    <string name="setup_failed">Configurarea a eșuat</string>
+    <string name="setup_initialization_error">Eroare de inițializare</string>
+    <string name="error_storage_init_failed">Inițializarea stocării a eșuat. Reporniți aplicația.</string>
+    <string name="error_storage_init_close_restart">Inițializarea stocării a eșuat. Închideți și reporniți aplicația.</string>
+    <string name="setup_free_storage_message">Eliberați cel puțin 65 MB și încercați din nou</string>
+    <string name="setup_progress_format">%1$d MB / %2$d MB</string>
+    <string name="setup_privacy_protected">Confidențialitate protejată</string>
+    <string name="setup_privacy_description">Verificarea vârstei dumneavoastră utilizează dovezi cu cunoaștere zero. Data de naștere nu este niciodată partajată.</string>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <!-- Translator Note: These strings relate to managing age verification credentials -->
+    <string name="credentials_title">Acreditările mele</string>
+    <string name="credentials_empty">Nu există acreditări stocate</string>
+    <string name="credential_active">Acreditare activă</string>
+    <string name="credential_expired">Acreditare expirată</string>
+    <string name="credential_ready_for_verification">Pregătită pentru verificare</string>
+    <string name="credential_expired_message">Acreditarea dumneavoastră a expirat și trebuie înlocuită</string>
+    <string name="credential_stored_successfully">Acreditare stocată cu succes</string>
+    <string name="credential_stored_description">Acreditarea dumneavoastră de vârstă a fost stocată în siguranță și este gata de utilizare</string>
+    <string name="credential_can_prove_age">Acum puteți dovedi vârsta dumneavoastră în mod privat</string>
+    <string name="credential_returning">Se revine la acreditări...</string>
+    <string name="credential_view_credentials">Vizualizați acreditările</string>
+
+    <!-- Credential Actions -->
+    <string name="action_done">Gata</string>
+    <string name="action_scan_qr_code">Scanați codul QR</string>
+    <string name="action_find_locations">Găsiți locații</string>
+    <string name="action_get_credential">Obțineți o acreditare</string>
+    <string name="action_replace_credential">Înlocuiți cu o acreditare nouă</string>
+    <string name="action_replace_credential_now">Înlocuiți acreditarea acum</string>
+    <string name="action_delete_credential">Ștergeți acreditarea</string>
+    <string name="credential_action_scan_description">Obțineți acreditarea de la un emitent autorizat</string>
+    <string name="credential_action_find_description">Descoperiți emitenții din apropiere</string>
+    <string name="credential_remove_description">Eliminați acreditarea curentă</string>
+
+    <!-- Credential Info -->
+    <string name="credential_info_privacy">Confidențialitate</string>
+    <string name="credential_info_privacy_value">Protejată</string>
+    <string name="credential_info_status">Stare</string>
+    <string name="credential_info_status_value">Valabilă</string>
+    <string name="credential_tip_title">Sfat rapid</string>
+    <string name="credential_tip_message">Atingeți butonul \'Verificați vârsta\' pentru a scana coduri QR (Quick Response) de verificare la locațiile participante.</string>
+
+    <!-- ==================== VERIFICATION ==================== -->
+    <!-- Translator Note: These strings appear during the age verification process -->
+    <string name="verification_scan_qr">Scanați codul QR</string>
+    <string name="verification_verify_age">Verificați vârsta</string>
+    <string name="verification_generating_proof">Se generează dovada...</string>
+    <string name="verification_success">Verificare reușită</string>
+    <string name="verification_failed">Verificarea a eșuat</string>
+    <string name="verification_age_verified">Vârstă verificată</string>
+    <string name="verification_age_verified_message">Vârsta dumneavoastră a fost verificată în mod privat</string>
+    <string name="verification_can_return">Acum puteți reveni la site pentru a continua.</string>
+    <string name="verification_returning_browser">Se revine la browser...</string>
+
+    <!-- Verification Process Steps -->
+    <string name="verification_step_1_of_2">Pasul 1 din 2</string>
+    <string name="verification_step_2_of_2">Pasul 2 din 2</string>
+    <string name="verification_point_camera">Îndreptați camera spre codul QR de verificare</string>
+    <string name="verification_hold_steady">Țineți stabil până auziți un semnal de confirmare.</string>
+    <string name="verification_reading_request">Se citește solicitarea de verificare...</string>
+    <string name="verification_processing_challenge">Se procesează challenge-ul...</string>
+    <string name="verification_creating_proof">Se creează dovada de vârstă...</string>
+    <string name="verification_submitting_proof">Se trimite dovada...</string>
+    <string name="verification_processing_message">Aceasta poate dura câteva secunde</string>
+    <string name="verification_preparing_proof">Pregătim o dovadă privată folosind acreditarea dumneavoastră salvată.</string>
+
+    <!-- Verification Progress Messages -->
+    <string name="verification_status_reading_request">Se citește solicitarea de verificare...</string>
+    <string name="verification_status_processing_challenge">Se procesează challenge-ul...</string>
+    <string name="verification_status_creating_proof">Se creează dovada de vârstă...</string>
+    <string name="verification_status_submitting_proof">Se trimite dovada...</string>
+    <string name="verification_status_verified">✔ Vârstă verificată</string>
+
+    <!-- Verification Error Messages -->
+    <string name="verification_error_no_auth_prompt">Imposibil de afișat promptul de autentificare</string>
+    <string name="verification_error_verification_failed">Verificarea a eșuat</string>
+    <string name="verification_error_generic">A apărut o eroare</string>
+    <string name="verification_error_failed_to_process_code">Procesarea codului a eșuat</string>
+    <string name="verification_error_failed_to_process_challenge">Procesarea challenge-ului a eșuat</string>
+
+    <!-- ==================== ISSUERS & DISCOVERY ==================== -->
+    <!-- Translator Note: These strings relate to finding and learning about credential issuers -->
+    <string name="issuers_trusted_in_australia">Emitenți de încredere în Australia</string>
+    <string name="issuers_loading">Se încarcă emitenții...</string>
+    <string name="issuers_loaded">Emitenții au fost încărcați cu succes</string>
+    <string name="issuers_unable_to_load">Imposibil de încărcat emitenții</string>
+    <string name="issuers_check_connection">Verificați conexiunea la internet și încercați din nou</string>
+    <string name="issuers_categories_header">CATEGORII</string>
+    <string name="issuers_available_header">EMIȚĂTORI DISPONIBILI</string>
+    <string name="issuers_found_count">%d găsiți</string>
+    <string name="issuer_status_coming_soon">În curând</string>
+    <string name="issuer_status_verified">Verificat</string>
+    <string name="issuer_how_to_get">Cum se obține acreditarea</string>
+    <string name="issuer_service_locations">Locații de servicii</string>
+    <string name="issuer_visit_website">Vizitați site-ul %s</string>
+    <string name="issuer_learn_more">Aflați mai multe despre %s</string>
+
+    <!-- Issuer Categories -->
+    <string name="category_banking">Servicii bancare</string>
+    <string name="category_super_fund">Fond de pensii</string>
+    <string name="category_government">Guvern</string>
+    <string name="category_travel">Călătorii</string>
+    <string name="category_telco">Telecomunicații</string>
+    <string name="category_insurance">Asigurări</string>
+
+    <!-- ==================== SETTINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app settings screens -->
+    <string name="settings_title">Setări</string>
+    <string name="settings_section_sandbox">Modul Sandbox</string>
+    <string name="settings_section_general">General</string>
+    <string name="settings_section_credentials">Acreditări</string>
+    <string name="settings_section_advanced">Avansat</string>
+    <string name="settings_section_privacy">Confidențialitate</string>
+    <string name="settings_security">Securitate</string>
+    <string name="settings_biometric">Utilizați autentificarea biometrică</string>
+    <string name="settings_environment">Setările mediului</string>
+    <string name="settings_environment_description">Vizualizați configurația curentă a mediului</string>
+    <string name="settings_reset_proving_key">Resetați cheia de dovadă</string>
+    <string name="settings_reset_proving_key_description">Redescărcați componentele de securitate (debug)</string>
+    <string name="settings_mint_test_credential_as_issuer">Emite acreditare de test ca Emitent</string>
+    <string name="settings_mint_test_credential_subtitle">Emite o acreditare de test în portofelul tău pentru a o putea verifica dintr-o demonstrație a părții care se bazează.</string>
+    <string name="settings_find_trusted_issuers">Găsiți emitenți de încredere</string>
+    <string name="settings_version">Versiunea: 1.0.0</string>
+    <string name="settings_tap_5x_toggle">Atingeți de 5 ori pentru a comuta</string>
+
+    <!-- Language Settings -->
+    <string name="language_selection_title">Limbă</string>
+    <string name="language_selection_description">Selectați limba preferată. Aplicația va reporni pentru a aplica modificările.</string>
+    <string name="language_selected">Selectată</string>
+    <string name="settings_language">Limbă</string>
+    <string name="settings_language_description">Schimbați limba aplicației</string>
+    <string name="settings_licenses">Licențe open source</string>
+    <string name="settings_licenses_description">Vizualizați licențele terților</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_confirm_title">Confirmați limba</string>
+    <string name="language_change_to">Schimbați limba în:</string>
+    <string name="language_restart_notice">Aplicația va reporni pentru a aplica această limbă.</string>
+    <string name="language_apply">Aplicați</string>
+    <string name="language_cancel">Anulați</string>
+    <string name="language_skip_title">Omiteți selectarea limbii?</string>
+    <string name="language_skip_message">Dacă omiteți, aplicația va utiliza engleza în mod implicit. Puteți schimba limba mai târziu în Setări.</string>
+    <string name="language_use_english">Utilizați engleza</string>
+    <string name="language_go_back">Înapoi</string>
+    <string name="language_help_title">Ajutor pentru selectarea limbii</string>
+    <string name="language_help_how_to">Cum se selectează limba:</string>
+    <string name="language_help_step1">1. Utilizați caseta de căutare pentru a găsi limba dumneavoastră</string>
+    <string name="language_help_step2">2. Atingeți limba preferată</string>
+    <string name="language_help_step3">3. Confirmați selecția</string>
+    <string name="language_help_system_note">Limba sistemului dumneavoastră este evidențiată în partea de sus dacă este acceptată.</string>
+    <string name="language_help_settings_note">Puteți modifica această opțiune mai târziu în Setări.</string>
+    <string name="language_got_it">Am înțeles</string>
+    <string name="language_select_title">Selectați limba</string>
+    <string name="language_skip_button">Omiteți (utilizați engleza)</string>
+    <string name="language_search_placeholder">Căutați limbi...</string>
+    <string name="language_no_results">Nu s-au găsit limbi</string>
+    <string name="language_try_different">Încercați un alt termen de căutare</string>
+    <string name="language_system_badge">Limba sistemului</string>
+    <string name="language_count">%d limbi</string>
+    <string name="language_no_match_announcement">Nu s-au găsit limbi care să corespundă căutării dumneavoastră</string>
+    <string name="language_found_announcement">%d limbi găsite</string>
+    <string name="language_search_cleared">Căutare ștearsă, se afișează toate cele %d limbi</string>
+    <string name="language_selected_announcement">Selectată %1$s, %2$s</string>
+
+    <!-- Language Selection Accessibility -->
+    <string name="language_screen_description">Ecranul de selectare a limbii</string>
+    <string name="language_help_button_description">Ajutor și informații despre selectarea limbii</string>
+    <string name="language_skip_description">Omiteți selectarea limbii și utilizați engleza în mod implicit</string>
+    <!-- Language Selection Accessibility -->
+    <string name="language_clear_search_description">Ştergeţi căutarea</string>
+    <string name="language_count_description">%d limbi disponibile</string>
+    <string name="language_apply_description">Aplicaţi selectarea limbii şi continuaţi</string>
+    <string name="language_cancel_description">Anulaţi selectarea limbii</string>
+    <string name="language_cancelled_announcement">Selectarea limbii a fost anulată</string>
+    <string name="language_selected_description">Limbă selectată: %1$s, %2$s</string>
+    <string name="language_item_system">Limba sistemului: %1$s, %2$s</string>
+    <string name="language_item_selected">%1$s, %2$s, selectată în prezent</string>
+    <string name="language_item_system_selected">Limba sistemului: %1$s, %2$s, selectată în prezent</string>
+    <string name="language_item_default">%1$s, %2$s</string>
+    <string name="language_returned_to_selection">S-a revenit la selectarea limbii</string>
+
+    <!-- Sandbox Mode -->
+    <string name="sandbox_mode_badge">Sandbox</string>
+    <string name="sandbox_mode_active">Modul Sandbox activ</string>
+    <string name="sandbox_mode_banner">MOD Sandbox ACTIV</string>
+    <string name="sandbox_mode_description">Se utilizează mediul de testare. Atingeţi numărul versiunii de cinci ori pentru a comuta.</string>
+    <string name="sandbox_credential_title">Acreditare Sandbox</string>
+    <string name="sandbox_credential_description">Generaţi o acreditare Sandbox pentru a testa fluxurile de verificare fără a accesa datele de producţie.</string>
+    <string name="sandbox_select_age">Selectaţi vârsta</string>
+    <string name="sandbox_age_format">%d+</string>
+    <string name="sandbox_default_dob">Data de naştere implicită: %s</string>
+    <string name="sandbox_override_dob">Înlocuiţi data de naştere implicită</string>
+    <string name="sandbox_override_description">Utilizaţi o dată exactă în locul celei implicite bazate pe vârstă.</string>
+    <string name="sandbox_date_of_birth">Data de naştere</string>
+    <string name="sandbox_generate_credential">Generaţi acreditare</string>
+    <string name="sandbox_generating">Se generează…</string>
+    <string name="sandbox_test_credential_saved">Acreditare de testare salvată</string>
+    <string name="sandbox_id_prefix">Prefix de identificare: %s…</string>
+    <string name="sandbox_unable_to_generate">Imposibil de generat acreditarea</string>
+    <string name="settings_sandbox_dob_format">Data de naştere: %s</string>
+    <string name="settings_sandbox_age_dob_format">Vârsta %d+ (Data de naştere: %s)</string>
+
+    <!-- Environment Configuration -->
+    <string name="environment_configuration">Configurarea mediului</string>
+    <string name="environment_current">Curent: %s</string>
+    <string name="environment_issuer_api">API-ul emitentului (Interfaţă de Programare a Aplicaţiei): %s</string>
+    <string name="environment_verifier_api">API-ul verificatorului (Interfaţă de Programare a Aplicaţiei): %s</string>
+
+    <!-- Settings Dialogs -->
+    <string name="dialog_delete_credential_title">Ştergeţi acreditarea?</string>
+    <string name="dialog_delete_credential_message">Această acţiune elimină acreditarea de pe dispozitivul dumneavoastră. O puteţi recupera de la emitent dacă este necesar.</string>
+    <string name="dialog_delete_credential_announcement">Dialogul deschis: Ştergeţi acreditarea</string>
+    <string name="dialog_reset_proving_key_title">Resetaţi cheia de dovadă?</string>
+    <string name="dialog_reset_proving_key_message">Cheia de dovadă şi fişierele de suport vor fi şterse şi descărcate din nou data viitoare când deschideţi aplicaţia.</string>
+    <string name="dialog_reset_proving_key_announcement">Dialogul deschis: Resetaţi cheia de dovadă</string>
+    <string name="dialog_environment_info_announcement">Dialogul deschis: Configurarea mediului</string>
+
+    <!-- ==================== ACCESSIBILITY ==================== -->
+    <!-- Translator Note: These strings support users with disabilities and accessibility features -->
+    <string name="accessibility_title">Accesibilitate</string>
+    <string name="accessibility_service_label">Accesibilitate Provii Wallet</string>
+    <string name="accessibility_service_description">Serviciul de accesibilitate Provii Wallet oferă suport extins pentru utilizatorii cu dizabilităţi. Acesta include citirea automată a acreditărilor, navigare ghidată şi interacţiuni simplificate.</string>
+    <string name="accessibility_personalize">Personalizaţi-vă experienţa</string>
+    <string name="accessibility_customize_features">Personalizaţi funcţiile de accesibilitate</string>
+    <string name="accessibility_quick_setup">Configurare rapidă</string>
+    <string name="accessibility_features_active">%d funcţii active</string>
+    <string name="accessibility_customize_experience">Personalizaţi-vă experienţa</string>
+    <string name="accessibility_reset_title">Resetaţi setările de accesibilitate?</string>
+    <string name="accessibility_reset_message">Toate preferinţele de accesibilitate vor reveni la valorile implicite.</string>
+    <string name="accessibility_reset">Resetaţi setările de accesibilitate</string>
+
+    <!-- Accessibility Categories -->
+    <string name="accessibility_category_vision">Vedere</string>
+    <string name="accessibility_category_interaction">Interacţiune</string>
+    <string name="accessibility_category_cognitive">Suport cognitiv</string>
+    <string name="accessibility_category_alternative_input">Introducere alternativă</string>
+
+    <!-- Vision Features -->
+    <string name="accessibility_extra_large_text">Text extra mare</string>
+    <string name="accessibility_extra_large_text_description">Măriţi dimensiunile de bază ale fontului cu 45%</string>
+    <string name="accessibility_high_contrast">Contrast ridicat</string>
+    <string name="accessibility_high_contrast_description">Utilizaţi culori cu contrast ridicat</string>
+    <string name="accessibility_reduce_transparency">Reduceţi transparenţa</string>
+    <string name="accessibility_reduce_transparency_description">Eliminaţi efectele de blur şi sticlă</string>
+    <string name="accessibility_color_blind_mode">Mod pentru daltonism</string>
+    <string name="accessibility_color_blind_optimized">Culori optimizate pentru %s</string>
+
+    <!-- Color Blind Modes -->
+    <string name="color_blind_none">Fără</string>
+    <string name="color_blind_protanopia">Protanopie (orbire la roşu)</string>
+    <string name="color_blind_deuteranopia">Deuteranopie (orbire la verde)</string>
+    <string name="color_blind_tritanopia">Tritanopie (orbire la albastru)</string>
+    <string name="color_blind_monochrome">Monocrom</string>
+
+    <!-- Interaction Features -->
+    <string name="accessibility_larger_touch_targets">Zone de atingere mai mari</string>
+    <string name="accessibility_larger_touch_targets_description">Măriţi dimensiunile butoanelor şi elementelor</string>
+    <string name="accessibility_reduce_motion">Reduceţi mişcarea</string>
+    <string name="accessibility_reduce_motion_description">Minimizaţi animaţiile şi tranziţiile</string>
+    <string name="accessibility_extended_timeouts">Perioade de expirare extinse</string>
+    <string name="accessibility_extended_timeouts_description">Permiteţi mai mult timp pentru acţiunile cu limită de timp</string>
+    <string name="accessibility_simplified_gestures">Gesturi simplificate</string>
+    <string name="accessibility_simplified_gestures_description">Reduceţi gesturile cu mai mulţi paşi</string>
+    <string name="accessibility_haptic_feedback">Feedback haptic</string>
+    <string name="accessibility_haptic_feedback_description">Confirmare prin vibraţie pentru acţiuni</string>
+
+    <!-- Cognitive Support Features -->
+    <string name="accessibility_simplified_interface">Interfaţă simplificată</string>
+    <string name="accessibility_simplified_interface_description">Ascundeţi opţiunile avansate şi reduceţi aglomeraţia</string>
+    <string name="accessibility_show_step_numbers">Afişaţi numerele paşilor</string>
+    <string name="accessibility_show_step_numbers_description">Afişaţi indicatori de progres</string>
+    <string name="accessibility_detailed_descriptions">Descrieri detaliate</string>
+    <string name="accessibility_detailed_descriptions_description">Oferiţi text explicativ suplimentar</string>
+    <string name="accessibility_confirm_actions">Confirmaţi înainte de acţiuni</string>
+    <string name="accessibility_confirm_actions_description">Solicitaţi confirmare pentru operaţiunile importante</string>
+
+    <!-- Alternative Input Features -->
+    <string name="accessibility_manual_code_entry">Introducere manuală a codului</string>
+    <string name="accessibility_manual_code_entry_description">Permiteţi introducerea codurilor QR (Răspuns Rapid) în loc de scanare</string>
+    <string name="accessibility_voice_input">Introducere vocală</string>
+    <string name="accessibility_voice_input_description">Activaţi recunoaşterea vocală pentru câmpurile de text</string>
+
+    <!-- Verification Feedback (Sound Settings) -->
+
+    <!-- Sound Preset Names -->
+
+    <!-- Sound Style Accessibility -->
+
+    <!-- Quick Setup Profiles -->
+    <string name="accessibility_profile_vision">Vedere</string>
+    <string name="accessibility_profile_motor">Motor</string>
+    <string name="accessibility_profile_cognitive">Cognitiv</string>
+    <string name="accessibility_profile_senior">Senior</string>
+
+    <!-- Accessibility Screen Additional Strings -->
+    <string name="accessibility_back">Înapoi</string>
+
+    <!-- Breadcrumb Navigation -->
+    <string name="breadcrumb_home">Acasă</string>
+    <string name="breadcrumb_settings">Setări</string>
+    <string name="breadcrumb_accessibility">Accesibilitate</string>
+    <string name="breadcrumb_language">Limbă</string>
+    <string name="breadcrumb_help">Centru de ajutor</string>
+    <string name="breadcrumb_officer_mode">Mod Ofiţer</string>
+
+    <!-- Typography & Text Spacing Section -->
+    <string name="accessibility_typography_section">Tipografie şi spaţiere text</string>
+    <string name="accessibility_line_spacing">Spaţiere rânduri</string>
+    <string name="accessibility_line_spacing_description">Ajustaţi spaţiul dintre rândurile de text</string>
+    <string name="accessibility_paragraph_spacing">Spaţiere paragrafe</string>
+    <string name="accessibility_paragraph_spacing_description">Ajustaţi spaţiul dintre paragrafe</string>
+    <string name="accessibility_letter_spacing">Spaţiere litere</string>
+    <string name="accessibility_letter_spacing_description">Ajustaţi spaţiul dintre litere</string>
+    <string name="accessibility_typography_aaa_note">Recomandări AAA: spaţiere rânduri 1,5x, spaţiere paragrafe 2,0x şi spaţiere litere 0,12em.</string>
+    <string name="accessibility_spacing_current">Curent: %s</string>
+    <string name="accessibility_aaa_badge">AAA</string>
+    <string name="accessibility_aaa_threshold">%s (AAA)</string>
+
+    <!-- Timeout Behavior -->
+    <string name="accessibility_timeout_behavior">Comportament la expirare</string>
+    <string name="accessibility_timeout_no_automatic">Fără expirare automată pentru conformitate AAA</string>
+    <string name="accessibility_timeout_auto_advance_30">Avansare automată după 30 de secunde</string>
+    <string name="accessibility_timeout_auto_advance_60">Avansare automată după 60 de secunde</string>
+    <string name="accessibility_timeout_set_announcement">Comportamentul la expirare setat la %s</string>
+
+    <!-- Contrast Level -->
+    <string name="accessibility_contrast_level">Nivel de contrast</string>
+    <string name="accessibility_contrast_aaa_ratio">Raport de contrast 7:1 pentru conformitate AAA</string>
+    <string name="accessibility_contrast_standard">Contrast standard</string>
+    <string name="accessibility_contrast_aa_ratio">Raport de contrast 4,5:1 pentru conformitate AA</string>
+    <string name="accessibility_contrast_set_announcement">Nivelul de contrast setat la %s</string>
+
+    <!-- Color Blind Mode -->
+    <string name="accessibility_color_blind_set_announcement">Modul pentru daltonism setat la %s</string>
+
+    <!-- Text Spacing Slider -->
+    <string name="accessibility_slider_description">Glisorul %1$s. Valoare curentă: %2$s. %3$sInterval de la %4$s la %5$s</string>
+    <string name="accessibility_slider_aaa_compliant">Conform AAA. </string>
+    <string name="accessibility_slider_announcement">%1$s setat la %2$s%3$s</string>
+    <string name="accessibility_slider_announcement_aaa">, conform AAA</string>
+
+    <!-- Toggle Announcements -->
+    <string name="accessibility_toggle_enabled">%s activat</string>
+    <string name="accessibility_toggle_disabled">%s dezactivat</string>
+
+    <!-- Verification Feedback Section -->
+    <string name="accessibility_verification_feedback_section">Feedback de verificare</string>
+    <string name="accessibility_sound_enabled">Redaţi sunet la succes</string>
+    <string name="accessibility_sound_enabled_description">Redaţi un sunet de confirmare după verificarea reuşită</string>
+    <string name="accessibility_sound_style">Stil de sunet</string>
+    <string name="accessibility_sound_preview">Previzualizaţi sunetul</string>
+    <string name="accessibility_sound_preview_preset">Previzualizaţi %s</string>
+    <string name="accessibility_sound_style_set_announcement">Stilul de sunet setat la %s</string>
+    <string name="accessibility_haptic_enabled">Vibraţie la succes</string>
+    <string name="accessibility_haptic_enabled_description">Oferiţi feedback haptic după verificarea reuşită</string>
+    <string name="accessibility_sound_footer">Sunetul respectă setările modului silențios al dispozitivului dumneavoastră</string>
+
+    <!-- Volume Slider -->
+    <string name="accessibility_volume">Volum</string>
+    <string name="accessibility_volume_percent">%d%%</string>
+    <string name="accessibility_volume_preview">Previzualizaţi volumul curent</string>
+    <string name="accessibility_volume_set_announcement">Volumul setat la %d procente</string>
+    <string name="accessibility_volume_slider_description">Glisor de volum. Valoare curentă: %d procente</string>
+    <string name="accessibility_volume_min">0%</string>
+    <string name="accessibility_volume_max">100%</string>
+
+    <!-- Reset Dialog -->
+    <string name="accessibility_reset_icon_description">Resetaţi setările</string>
+
+    <!-- ==================== OFFICER MODE ==================== -->
+    <!-- Translator Note: These strings are for authorized officers issuing credentials -->
+    <string name="officer_mode">Mod Ofiţer</string>
+    <string name="officer_id">Identificarea ofiţerului (ID)</string>
+    <string name="officer_id_placeholder">ex.: OFFICER_WA_ALB_001</string>
+    <string name="officer_id_hint">Introduceţi identificarea ofiţerului atribuit dumneavoastră</string>
+    <string name="officer_yubikey_connected">YubiKey conectat</string>
+    <string name="officer_connect_yubikey">Conectaţi YubiKey</string>
+    <string name="officer_touch_yubikey">Atingeţi YubiKey-ul pentru autentificare...</string>
+    <string name="officer_authenticate_hmac">Autentificaţi cu HMAC (Cod de Autentificare a Mesajelor bazat pe Hash)</string>
+    <string name="officer_authentication_process">Procesul de autentificare:</string>
+    <string name="officer_auth_steps">1. Introduceţi identificarea dumneavoastră de ofiţer\n2. Faceţi clic pe Autentificare\n3. Atingeţi YubiKey când luminează intermitent\n4. Autentificarea HMAC (Cod de Autentificare a Mesajelor bazat pe Hash) vă verifică identitatea</string>
+    <string name="officer_auth_failed">Autentificarea a eşuat. Vă rugăm să verificaţi identificarea dumneavoastră de ofiţer şi să încercaţi din nou.</string>
+    <string name="officer_session_info">Ofiţer: %s</string>
+    <string name="officer_station_info">Staţie: %s</string>
+    <string name="officer_issued_today">Emise astăzi: %1$d / 50</string>
+    <string name="officer_issue_age_credential">Emiteţi acreditare de vârstă</string>
+    <string name="officer_issue_description">Verificaţi identitatea utilizatorului şi emiteţi o acreditare digitală de vârstă</string>
+    <string name="officer_start_issuance">Începeţi o nouă emitere</string>
+    <string name="officer_issuance_process">PROCESUL DE EMITERE</string>
+    <string name="officer_issuance_steps">1. Verificaţi documentul de identificare fizic al utilizatorului\n2. Introduceţi data lor de naştere\n3. Verificaţi că informaţiile se potrivesc exact\n4. Emiteţi acreditarea cu codul QR (Răspuns Rapid) de atestare\n5. Utilizatorul scanează codul QR pentru a primi acreditarea</string>
+    <string name="officer_verify_identity">Verificaţi identitatea utilizatorului</string>
+    <string name="officer_select_dob">Selectaţi data de naştere</string>
+    <string name="officer_change_date">Schimbaţi data</string>
+    <string name="officer_age_years">Vârstă: %d ani</string>
+    <string name="officer_under_18_warning">Sub 18 ani - Nu se poate emite acreditare</string>
+    <string name="officer_verification_checklist">LISTA DE VERIFICARE</string>
+    <string name="officer_document_verified">Document fizic verificat</string>
+    <string name="officer_document_verified_description">Am văzut o identificare valabilă emisă de guvern</string>
+    <string name="officer_dob_matches">Data de naştere se potriveşte exact</string>
+    <string name="officer_dob_matches_description">Data de naştere de pe documentul fizic este: %s</string>
+    <string name="officer_issue_credential">Emiteţi acreditare</string>
+    <string name="officer_user_scanned_successfully">Utilizatorul a scanat cu succes</string>
+    <string name="officer_return_to_dashboard">Reveniţi la tabloul de bord</string>
+    <string name="officer_go_back">Mergeţi înapoi</string>
+
+    <!-- Yubikey Authentication -->
+    <string name="yubikey_authentication">Autentificare YubiKey</string>
+    <string name="yubikey_step_format">Pasul %1$d din %2$d</string>
+    <string name="yubikey_led_should_blink">LED-ul YubiKey ar trebui să lumineze intermitent</string>
+
+    <!-- Officer Issuance States -->
+    <string name="officer_state_validating">Se validează datele de intrare...</string>
+    <string name="officer_state_creating_attestation">Se creează atestarea...</string>
+    <string name="officer_state_computing_commitment">Se calculează angajamentul criptografic...</string>
+    <string name="officer_state_creating_session">Se creează sesiunea securizată...</string>
+    <string name="officer_state_signing">Se semnează acreditarea...</string>
+    <string name="officer_state_finalizing">Se finalizează acreditarea...</string>
+    <string name="officer_state_storing_attestation">Se stochează atestarea...</string>
+
+    <!-- Officer Session Expiry -->
+    <string name="officer_session_expiring">Sesiunea expiră în curând</string>
+    <string name="officer_session_expiring_message">Sesiunea dumneavoastră va expira în %d secunde. Doriţi să salvaţi progresul?</string>
+    <string name="officer_session_expiring_announcement">Avertisment: Sesiunea dumneavoastră va expira în %d secunde</string>
+    <string name="officer_save_and_continue">Salvaţi şi continuaţi</string>
+    <string name="officer_continue_without_saving">Continuaţi fără salvare</string>
+
+    <!-- Officer DOB Screen -->
+    <string name="officer_dob_label">DATA DE NAŞTERE</string>
+    <string name="officer_age_format">Vârstă: %d ani</string>
+    <string name="officer_under_18_full_warning">Sub 18 ani - Nu se poate emite acreditare. Numai persoanele cu vârsta de 18 ani sau mai mult sunt eligibile pentru acreditări de verificare a vârstei. Vă rugăm să verificaţi că data de naştere este corectă.</string>
+    <string name="officer_verification_checklist_header">LISTA DE VERIFICARE</string>
+    <string name="officer_physical_document_verified">Document fizic verificat</string>
+    <string name="officer_sighted_valid_id">Am văzut o identificare valabilă emisă de guvern</string>
+    <string name="officer_dob_matches_exactly">Data de naştere se potriveşte exact</string>
+    <string name="officer_dob_on_document">Data de naştere de pe documentul fizic este: %s</string>
+    <string name="officer_error_label">Eroare</string>
+
+    <!-- ==================== ISSUANCE / ONBOARDING ==================== -->
+    <!-- Translator Note: These strings guide users through receiving their credential -->
+    <string name="issuance_scan_qr">Scanați codul QR (Răspuns Rapid) de emitere</string>
+    <string name="issuance_downloads_credential">Aceasta descarcă acreditarea dumneavoastră de vârstă.</string>
+    <string name="issuance_center_qr">Centaţi codul QR în cadru şi ţineţi dispozitivul stabil.</string>
+    <string name="issuance_enter_code_manually">Introduceţi codul manual</string>
+    <string name="issuance_processing_qr">Se procesează codul QR…</string>
+    <string name="issuance_invalid_data">Date de emitere invalide</string>
+    <string name="issuance_verification_qr_error">Acesta este un cod QR de verificare. Vă rugăm să scanați codul QR de emitere a acreditării.</string>
+    <string name="issuance_invalid_qr_format">Format de cod QR invalid</string>
+    <string name="issuance_failed_to_process">Procesarea codului QR a eşuat: %s</string>
+    <string name="issuance_code">Cod de emitere</string>
+
+    <!-- ==================== MANUAL ENTRY ==================== -->
+    <!-- Translator Note: These strings support manual code entry for accessibility -->
+    <string name="manual_entry_title">Introducere manuală a codului</string>
+    <string name="manual_entry_enter_code_manually">Introduceţi codul manual</string>
+    <string name="manual_entry_verification_description">Introduceţi codul de verificare din 12 cifre afişat pe ecranul verificatorului.</string>
+    <string name="manual_entry_issuance_description">Tastaţi codul afişat pe ecranul emitentului.</string>
+    <string name="manual_entry_verification_code">Cod de verificare</string>
+    <string name="manual_entry_submit">Trimiteţi codul</string>
+    <string name="manual_entry_please_enter">Vă rugăm să introduceţi un cod</string>
+    <string name="manual_entry_please_enter_verification">Vă rugăm să introduceţi un cod de verificare</string>
+
+    <!-- Voice Input -->
+    <string name="voice_input_start_listening">Începeţi ascultarea</string>
+    <string name="voice_input_stop_listening">Opriţi ascultarea</string>
+    <string name="voice_input_recognized">Recunoscut:</string>
+    <string name="content_desc_voice_input_listening">Ascultare pentru introducere vocală</string>
+    <string name="content_desc_voice_input_available">Introducere vocală disponibilă</string>
+    <string name="voice_input_permission_title">Este necesară permisiunea pentru microfon</string>
+    <string name="voice_input_permission_message">Introducerea vocală necesită acces la microfon. Puteţi activa din setările sistemului.</string>
+    <string name="voice_input_listening">Se ascultă…</string>
+    <string name="voice_input_error">Eroare de introducere vocală</string>
+    <string name="voice_input_tap_to_speak">Atingeţi pentru a vorbi</string>
+    <string name="voice_input_did_you_say">Aţi spus „%1$s"?</string>
+    <string name="voice_input_confirm">Confirmaţi</string>
+    <string name="voice_input_retry">Încercaţi din nou</string>
+    <string name="voice_input_cancel">Anulaţi</string>
+    <string name="voice_input_button">Introducere vocală</string>
+
+    <!-- Voice Input Error Messages -->
+    <string name="voice_input_error_not_available">Introducerea vocală nu este disponibilă pe acest dispozitiv</string>
+    <string name="voice_input_error_audio">Eroare de înregistrare audio. Verificaţi microfonul.</string>
+    <string name="voice_input_error_network">Eroare de reţea. Verificaţi conexiunea.</string>
+    <string name="voice_input_error_network_timeout">Expirare reţea. Încercaţi din nou.</string>
+    <string name="voice_input_error_no_match">Nu s-a detectat nicio vorbire. Vă rugăm să încercaţi din nou.</string>
+    <string name="voice_input_error_recognizer_busy">Introducerea vocală este ocupată. Vă rugăm să aşteptaţi.</string>
+    <string name="voice_input_error_server">Eroare de server. Încercaţi din nou mai târziu.</string>
+    <string name="voice_input_error_speech_timeout">Nu s-a auzit nicio vorbire. Vă rugăm să vorbiţi mai tare.</string>
+    <string name="voice_input_error_insufficient_permissions">Permisiunea pentru microfon a fost refuzată.</string>
+    <string name="voice_input_error_generic">Eroare de introducere vocală. Vă rugăm să încercaţi din nou.</string>
+
+    <!-- ==================== COMMON ACTIONS ==================== -->
+    <!-- Translator Note: These are commonly used action buttons throughout the app -->
+    <string name="action_back">Înapoi</string>
+    <string name="action_close">Închideţi</string>
+    <string name="action_cancel">Anulaţi</string>
+    <string name="action_ok">OK</string>
+    <string name="action_set">Setaţi</string>
+    <string name="action_change">Schimbaţi</string>
+    <string name="action_delete">Ştergeţi</string>
+    <string name="action_reset">Resetaţi</string>
+    <string name="action_retry">Reîncercaţi</string>
+    <string name="action_try_again">Încercaţi din nou</string>
+    <string name="action_refresh">Reîmprospătaţi</string>
+    <string name="action_download_now">Descărcaţi acum</string>
+    <string name="action_retry_setup">Reîncercaţi configurarea</string>
+    <string name="action_retry_download">Reîncercaţi descărcarea</string>
+    <string name="action_restart_setup">Reporniţi configurarea</string>
+    <string name="action_manage_storage">Gestionaţi stocarea</string>
+    <string name="action_check_wifi_settings">Verificaţi mai întâi setările Wi-Fi</string>
+    <string name="action_check_wifi_settings_short">Verificaţi setările Wi-Fi</string>
+    <string name="action_grant_permission">Acordaţi permisiunea</string>
+    <string name="action_grant_camera_access">Acordaţi acces la cameră</string>
+    <string name="action_return_to_browser">Reveniţi la browser</string>
+    <string name="action_show_debug_info">Afişaţi informaţii de depanare</string>
+    <string name="action_reset_redownload">Resetaţi şi redescărcaţi</string>
+    <string name="action_end_session">Încheiaţi sesiunea</string>
+    <string name="action_expand">Extindeţi</string>
+    <string name="action_collapse">Restrângeţi</string>
+    <string name="accessibility_state_expanded">Extins</string>
+    <string name="accessibility_state_collapsed">Restrâns</string>
+    <string name="accessibility_state_checked">Bifat</string>
+    <string name="accessibility_state_unchecked">Nebifat</string>
+    <string name="accessibility_state_selected">Selectat</string>
+    <string name="accessibility_state_not_selected">Neselectat</string>
+
+    <!-- ==================== ERRORS & VALIDATION ==================== -->
+    <!-- Translator Note: These are error messages shown when something goes wrong -->
+    <string name="error_generic">A apărut o eroare</string>
+    <string name="error_camera_permission">Este necesară permisiunea pentru cameră pentru scanarea QR (Răspuns Rapid)</string>
+    <string name="error_camera_access_needed">Este necesar accesul la cameră</string>
+    <string name="error_camera_permission_description">Acordaţi permisiunea pentru cameră pentru a scana coduri QR sau activaţi introducerea manuală din setările de accesibilitate.</string>
+    <string name="error_camera_permission_required">Permisiunea pentru cameră este necesară pentru a scana coduri QR</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_scanning">Se scanează după cod QR...</string>
+    <string name="qr_scanner_camera_required">Este necesară permisiunea pentru cameră</string>
+    <string name="qr_scanner_camera_preview">Previzualizare cameră pentru scanarea codurilor QR</string>
+    <string name="qr_scanner_status_scanning">Se scanează după cod QR</string>
+    <string name="qr_scanner_requesting_permission">Se solicită permisiunea pentru cameră</string>
+    <string name="error_camera_start_failed">Pornirea camerei a eşuat: %s</string>
+    <string name="error_camera_init_failed">Iniţializarea camerei a eşuat: %s</string>
+    <string name="error_biometric_not_available">Autentificarea biometrică nu este disponibilă</string>
+    <string name="error_network">A apărut o eroare de reţea</string>
+    <string name="error_no_credential">Nu există nicio acreditare disponibilă. Vă rugăm să obţineţi mai întâi o acreditare.</string>
+    <string name="credential_picker_title">Alegeţi o acreditare</string>
+    <string name="credential_picker_description">Aveţi mai multe acreditări care pot fi utilizate pentru această verificare. Vă rugăm să selectaţi una.</string>
+    <string name="credential_picker_expired_label">Expirată</string>
+    <string name="credential_picker_accessibility_select">Selectaţi acreditarea: %1$s</string>
+    <string name="error_failed_to_process_challenge">Procesarea challenge-ului a eşuat</string>
+    <string name="error_failed_to_create_proof">Crearea dovezii a eşuat</string>
+    <string name="error_verification_failed">Verificarea a eşuat</string>
+    <string name="error_occurred_during_verification">A apărut o eroare în timpul verificării</string>
+    <string name="error_connection_timeout">Conexiunea a expirat. Vă rugăm să încercaţi din nou.</string>
+    <string name="error_unable_to_connect">Imposibil de conectat. Vă rugăm să verificaţi conexiunea la internet.</string>
+    <string name="error_secure_connection_failed">Conexiunea securizată a eşuat. Vă rugăm să încercaţi din nou.</string>
+    <string name="error_security_verification_failed">Verificarea de securitate a eşuat. Vă rugăm să încercaţi din nou.</string>
+    <string name="error_invalid_input">Date de intrare invalide. Vă rugăm să verificaţi informaţiile şi să încercaţi din nou.</string>
+    <string name="error_operation_in_progress">O altă operaţiune este în curs. Vă rugăm să aşteptaţi.</string>
+    <string name="error_operation_cancelled">Operaţiunea a fost anulată.</string>
+    <string name="error_age_requirement_not_met">Cerinţa de vârstă nu este îndeplinită pentru această acreditare.</string>
+    <string name="error_wallet_not_initialized">Portofelul nu a fost iniţializat. Vă rugăm să reporniţi aplicaţia.</string>
+    <string name="error_security">Eroare de securitate. Vă rugăm să încercaţi din nou.</string>
+    <string name="error_connection_timeout_short">Expirare conexiune. Vă rugăm să încercaţi din nou.</string>
+    <string name="error_invalid_input_provided">Date de intrare invalide furnizate.</string>
+    <string name="error_invalid_data_format">Format de date invalid. Vă rugăm să încercaţi din nou.</string>
+    <string name="error_storage">Eroare de stocare. Vă rugăm să verificaţi stocarea dispozitivului.</string>
+    <string name="error_network_short">Eroare de reţea. Vă rugăm să verificaţi conexiunea.</string>
+    <string name="error_label">Eroare</string>
+    <string name="error_dismiss">Ignoraţi eroarea</string>
+
+    <!-- ==================== STATUS MESSAGES ==================== -->
+    <!-- Translator Note: These messages show the current status or progress -->
+    <string name="status_processing">Se procesează...</string>
+    <string name="status_initializing_wallet">Se iniţializează portofelul...</string>
+    <string name="status_loading">Se încarcă...</string>
+
+    <!-- ==================== PRIVACY & SECURITY ==================== -->
+    <!-- Translator Note: These strings explain privacy and security features -->
+    <string name="privacy_protected">Confidenţialitate protejată</string>
+    <string name="privacy_zk_description">Data dumneavoastră de naştere nu este niciodată partajată. Verificatorii află doar dacă îndepliniţi cerinţa lor de vârstă.</string>
+
+    <!-- Privacy Settings Screen (MASVS-PRIVACY-2) -->
+    <string name="privacy_settings_title">Setări de confidenţialitate</string>
+    <string name="privacy_settings_description">Controlaţi colectarea datelor şi gestionaţi-vă datele</string>
+    <string name="privacy_section_data_collection">Colectarea datelor</string>
+    <string name="privacy_section_your_data">Datele dumneavoastră</string>
+    <string name="privacy_protection_title">Confidenţialitatea dumneavoastră este protejată</string>
+    <string name="privacy_protection_description">Provii Wallet utilizează dovezi de cunoaştere zero pentru a verifica vârsta dumneavoastră fără a dezvălui data de naştere. Datele acreditării sunt stocate doar pe dispozitivul dumneavoastră şi nu sunt partajate niciodată cu nimeni.</string>
+    <string name="privacy_analytics_title">Analiză</string>
+    <string name="privacy_analytics_description">Ajutaţi la îmbunătăţirea Provii Wallet partajând date anonime de utilizare</string>
+    <string name="privacy_analytics_enabled">Analiza activată</string>
+    <string name="privacy_analytics_disabled">Analiza dezactivată</string>
+    <string name="privacy_crash_reporting_title">Raportare erori</string>
+    <string name="privacy_crash_reporting_description">Ajutaţi-ne să corectăm erorile prin trimiterea automată a rapoartelor de erori</string>
+    <string name="privacy_crash_reporting_enabled">Raportarea erorilor activată</string>
+    <string name="privacy_crash_reporting_disabled">Raportarea erorilor dezactivată</string>
+    <string name="privacy_what_we_collect_title">Ce date colectăm</string>
+    <string name="privacy_what_we_collect_subtitle">Atingeţi pentru a afla despre practicile noastre privind datele</string>
+    <string name="privacy_data_collection_info_title">Informaţii privind colectarea datelor</string>
+    <string name="privacy_data_we_collect_header">Ce colectăm (dacă este activat):</string>
+    <string name="privacy_data_we_collect_list">- Statistici anonime de utilizare a aplicaţiei\n- Rapoarte de erori şi jurnale de erori\n- Tipul dispozitivului şi versiunea sistemului de operare\n- Informaţii despre versiunea aplicaţiei</string>
+    <string name="privacy_data_we_dont_collect_header">Ce nu colectăm niciodată:</string>
+    <string name="privacy_data_we_dont_collect_list">- Data dumneavoastră de naştere\n- Numele sau detaliile dumneavoastră personale\n- Locaţia dumneavoastră\n- Datele acreditării dumneavoastră\n- Date biometrice</string>
+    <string name="privacy_data_never_shared_note">Datele acreditării dumneavoastră nu sunt niciodată partajate cu Provii sau cu terţe părţi. Rămân pe dispozitivul dumneavoastră.</string>
+    <string name="privacy_policy_title">Politică de confidenţialitate</string>
+    <string name="privacy_policy_subtitle">Citiţi politica noastră completă de confidenţialitate</string>
+    <string name="privacy_delete_my_data_title">Ştergeţi datele mele</string>
+    <string name="privacy_delete_my_data_subtitle">Eliminaţi toate acreditările şi datele stocate</string>
+    <string name="privacy_delete_data_dialog_title">Ştergeţi toate datele?</string>
+    <string name="privacy_delete_data_dialog_message">Aceasta va şterge permanent toate acreditările şi datele aplicaţiei de pe acest dispozitiv. Va trebui să obţineţi o nouă acreditare pentru a utiliza din nou aplicaţia.</string>
+    <string name="privacy_delete_data_dialog_warning">Această acţiune nu poate fi anulată.</string>
+    <string name="privacy_delete_data_confirm">Ștergeți tot</string>
+    <string name="privacy_footer_note">Puteți modifica aceste setări oricând. Modificările intră în vigoare imediat.</string>
+    <string name="dialog_delete_data_announcement">Dialog de confirmare a ștergerii datelor deschis</string>
+    <string name="dialog_data_collection_info_announcement">Dialog cu informații despre colectarea datelor deschis</string>
+    <string name="content_desc_privacy_settings">Setări de confidențialitate, controlați colectarea datelor și gestionați datele dumneavoastră</string>
+    <string name="content_desc_data_collection_info">Vizualizați informații despre colectarea datelor</string>
+    <string name="content_desc_privacy_policy">Vizualizați politica de confidențialitate</string>
+    <string name="content_desc_opens_external_link">Se deschide în browser</string>
+    <string name="content_desc_delete_my_data">Ștergeți toate datele mele</string>
+
+    <!-- ==================== CONTENT DESCRIPTIONS ==================== -->
+    <!-- Translator Note: These are for screen readers and accessibility services -->
+    <string name="content_desc_back">Înapoi</string>
+    <string name="content_desc_settings">Setări</string>
+    <string name="content_desc_refresh">Reîmprospătare</string>
+    <string name="content_desc_verified">Verificat</string>
+    <string name="content_desc_expand">Extindere</string>
+    <string name="content_desc_collapse">Restrângere</string>
+    <string name="content_desc_warning_error">Avertisment: A apărut o eroare</string>
+    <string name="content_desc_sandbox_indicator">Indicator mod sandbox</string>
+    <string name="content_desc_success">Succes</string>
+    <string name="content_desc_warning">Avertisment</string>
+    <string name="content_desc_information">Informații</string>
+    <string name="content_desc_error">Eroare</string>
+    <string name="content_desc_sandbox_warning">Avertisment mod sandbox</string>
+    <string name="content_desc_app_info">Informații despre aplicație</string>
+    <string name="content_desc_accessibility_settings">Setări de accesibilitate</string>
+    <string name="content_desc_language_settings">Setări de limbă</string>
+    <string name="content_desc_licenses">Licențe open source</string>
+    <string name="content_desc_select_dob">Selectați data nașterii</string>
+    <string name="content_desc_mint_test_credential_as_issuer">Emite acreditare de test ca Emitent</string>
+    <string name="content_desc_get_credential">Obțineți o acreditare</string>
+    <string name="content_desc_delete_credential">Ștergeți acreditarea</string>
+    <string name="content_desc_reset_proving_key">Resetați cheia de dovadă</string>
+    <string name="content_desc_environment_info">Informații despre mediu</string>
+    <string name="content_desc_help_support">Ajutor și asistență</string>
+    <string name="content_desc_privacy_protected">Confidențialitate protejată</string>
+    <string name="preview_settings_title">Previzualizare setări</string>
+
+    <!-- Accessibility Content Descriptions - Added by Agent 3 -->
+    <string name="accessibility_verification_success_description">Succes</string>
+    <string name="accessibility_verification_error_description">Eroare</string>
+    <string name="accessibility_breadcrumb_location_description">Locație: %s</string>
+    <string name="accessibility_breadcrumb_separator_description">apoi</string>
+    <string name="accessibility_breadcrumb_current_page_description">Pagina curentă: %s</string>
+    <string name="accessibility_settings_navigate_description">Navigați</string>
+    <string name="accessibility_credentials_settings_description">Setări</string>
+    <string name="accessibility_verification_back_description">Înapoi</string>
+    <string name="accessibility_officer_back_description">Înapoi</string>
+    <string name="accessibility_discovery_back_description">Înapoi</string>
+    <string name="accessibility_discovery_refresh_description">Reîmprospătare</string>
+    <string name="accessibility_discovery_verified_description">Verificat</string>
+    <string name="accessibility_officer_done_description">Gata</string>
+    <string name="accessibility_officer_attestation_qr_description">Cod QR de atestare pentru scanare de către utilizator</string>
+
+    <!-- Skip Links for Keyboard Navigation (WCAG 2.4.1) -->
+    <string name="accessibility_skip_to">Treceți la %s</string>
+    <string name="accessibility_skip_main_content">conținutul principal</string>
+
+    <!-- Accessibility Profile Names -->
+    <string name="accessibility_profile_vision_impaired">Deficiență vizuală</string>
+    <string name="accessibility_profile_motor_impaired">Deficiență motorie</string>
+    <string name="accessibility_profile_cognitive_support">Suport cognitiv</string>
+    <string name="accessibility_profile_elderly_support">Suport pentru vârstnici</string>
+    <string name="accessibility_profile_default">Implicit</string>
+
+    <!-- Color Blind Mode Display Names -->
+    <string name="color_blind_mode_none">Niciunul</string>
+    <string name="color_blind_mode_protanopia">Protanopie</string>
+    <string name="color_blind_mode_deuteranopia">Deuteranopie</string>
+    <string name="color_blind_mode_tritanopia">Tritanopie</string>
+    <string name="color_blind_mode_monochrome">Monocrom</string>
+
+    <!-- Contrast Level Display Names -->
+    <string name="contrast_level_standard">Standard</string>
+    <string name="contrast_level_high">Ridicat (AA)</string>
+    <string name="contrast_level_maximum">Maxim (AAA)</string>
+
+    <!-- Text Width Display Names -->
+    <string name="text_width_full">Lățime completă</string>
+    <string name="text_width_comfortable">Confortabil (80 de caractere)</string>
+    <string name="text_width_narrow">Îngust (60 de caractere)</string>
+
+    <!-- Timeout Behavior Display Names -->
+    <string name="timeout_behavior_none">Fără expirare (AAA)</string>
+    <string name="timeout_behavior_standard">Standard (30s)</string>
+    <string name="timeout_behavior_extended">Extins (60s)</string>
+
+    <!-- Reading Level Display Names -->
+    <string name="reading_level_standard">Standard</string>
+    <string name="reading_level_standard_description">Text obișnuit cu termeni tehnici</string>
+    <string name="reading_level_simplified">Simplificat (clasa 7-9)</string>
+    <string name="reading_level_simplified_description">Cuvinte mai simple și propoziții mai scurte (conform AAA)</string>
+
+    <!-- ==================== HELP & SUPPORT ==================== -->
+    <!-- Translator Note: These strings appear in the help and support system -->
+    <string name="help_title">Ajutor</string>
+    <string name="help_and_support">Ajutor &amp; Asistență</string>
+    <string name="help_description">Obțineți ajutor cu funcțiile aplicației și accesibilitatea</string>
+    <string name="help_center">Centru de ajutor</string>
+    <string name="help_center_description">Răsfoiți subiectele de ajutor și aflați despre funcțiile aplicației</string>
+    <string name="help_search">Căutare ajutor</string>
+    <string name="help_search_placeholder">Căutați subiecte de ajutor...</string>
+    <string name="help_search_active">Căutare activată</string>
+    <string name="help_search_inactive">Căutare dezactivată</string>
+    <string name="help_no_results">Nu s-au găsit subiecte de ajutor care să corespundă căutării dumneavoastră</string>
+    <string name="help_topic_not_found">Subiectul de ajutor nu a fost găsit</string>
+    <string name="help_related_topics">Subiecte conexe</string>
+    <string name="help_content_heading">Conținut ajutor</string>
+    <string name="help_related_topic_position">%1$s, elementul %2$d din %3$d</string>
+
+    <!-- Help Categories -->
+    <string name="help_category_vision">Vedere</string>
+    <string name="help_category_typography">Tipografie</string>
+    <string name="help_category_interaction">Interacțiune</string>
+    <string name="help_category_cognitive">Suport cognitiv</string>
+    <string name="help_category_alternative_input">Introducere alternativă</string>
+    <string name="help_category_features">Funcții</string>
+
+    <!-- Help Topics (HelpScreen.kt) -->
+    <string name="help_topic_getting_credential_title">Obținerea unei acreditări</string>
+    <string name="help_topic_getting_credential_summary">Aflați cum să obțineți prima dumneavoastră acreditare de verificare a vârstei</string>
+    <string name="help_topic_getting_credential_content">Pentru a obține acreditarea de verificare a vârstei:\n\n1. Vizitați o locație emitent autorizat\n2. Prezentați actul de identitate emis de autorități\n3. Scanați codul QR furnizat\n4. Acreditarea va fi salvată în siguranță\n\nData nașterii este stocată local și nu este niciodată partajată.</string>
+
+    <string name="help_topic_verifying_age_title">Verificarea vârstei dumneavoastră</string>
+    <string name="help_topic_verifying_age_summary">Cum se dovedeşte vârsta fără a partaja informaţii personale</string>
+    <string name="help_topic_verifying_age_content">Când trebuie să verificați vârsta:\n\n1. Verificatorul vă va afișa un cod QR\n2. Scanați-l cu aplicația\n3. Aplicația creează o dovadă matematică\n4. Se partajează doar răspunsul da/nu\n\nData dumneavoastră de naștere NICIODATĂ nu este dezvăluită.</string>
+
+    <string name="help_topic_accessibility_title">Funcții de accesibilitate</string>
+    <string name="help_topic_accessibility_summary">Personalizați aplicația după nevoile dumneavoastră</string>
+    <string name="help_topic_accessibility_content">Aplicația include multe funcții de accesibilitate:\n\n- Moduri de text mare și contrast ridicat\n- Introducere vocală și suport pentru cititor de ecran\n- Gesturi simplificate și UI\n- Opțiuni de introducere manuală a codului\n- Expirări extinse\n\nAccesați-le din Setări > Accesibilitate</string>
+
+    <string name="help_topic_privacy_security_title">Confidențialitate &amp; Securitate</string>
+    <string name="help_topic_privacy_security_summary">Cum sunt protejate informațiile dumneavoastră</string>
+    <string name="help_topic_privacy_security_content">Confidențialitatea dumneavoastră este prioritatea noastră principală:\n\n- Acreditările sunt stocate local pe dispozitivul dumneavoastră\n- Dovezile cu cunoaștere zero vă protejează datele\n- Fără urmărire sau analiză\n- Autentificare biometrică disponibilă\n- Datele nu părăsesc niciodată dispozitivul dumneavoastră necriptate</string>
+
+    <string name="help_topic_troubleshooting_title">Depanare</string>
+    <string name="help_topic_troubleshooting_summary">Probleme frecvente și soluții</string>
+    <string name="help_topic_troubleshooting_content">Probleme frecvente și remedieri:\n\nScanner QR nu funcționează:\n- Verificați permisiunile camerei în Setări\n- Încercați opțiunea de introducere manuală a codului\n\nAcreditarea nu se încarcă:\n- Verificați conexiunea la internet\n- Încercați să resetați cheia de dovadă\n\nVerificare eșuată:\n- Asigurați-vă că acreditarea nu a expirat\n- Contactați verificatorul pentru asistență</string>
+
+    <!-- Help Text Formatting -->
+    <string name="help_text_ellipsis">…</string>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <!-- Translator Note: These are format strings for dates and times -->
+    <string name="date_label">DATA NAȘTERII</string>
+    <string name="date_of_birth">Data nașterii</string>
+
+    <!-- ==================== PLACEHOLDERS & FORMATS ==================== -->
+    <!-- Translator Note: These use placeholders (%s, %d) for dynamic content -->
+    <!-- Format: %s = string, %d = number, %1$s = first string argument, etc. -->
+    <string name="format_age_years">%d ani</string>
+    <string name="format_step_indicator">Pasul %1$d din %2$d</string>
+    <string name="format_mb_downloaded">%1$.1f MB / %2$.1f MB</string>
+    <string name="format_percentage">%d%%</string>
+
+    <!-- ==================== TAB NAVIGATION ==================== -->
+    <!-- Translator Note: Tab bar labels for bottom navigation -->
+    <string name="tab_credentials">Acreditări</string>
+    <string name="tab_settings">Setări</string>
+    <string name="tab_help">Ajutor</string>
+    <string name="tab_credentials_description">Vizualizați acreditările dumneavoastră</string>
+    <string name="tab_settings_description">Setările aplicației</string>
+    <string name="tab_help_description">Obțineți ajutor și asistență</string>
+
+    <!-- ==================== SEARCH ==================== -->
+    <!-- Translator Note: Search functionality strings -->
+    <string name="search_title">Căutare</string>
+    <string name="search_field_label">Câmp de căutare</string>
+    <string name="search_placeholder">Căutați setări, ajutor și funcții</string>
+    <string name="search_clear">Ștergeți căutarea</string>
+    <string name="search_popular">Căutări populare</string>
+    <string name="search_results_heading">Rezultate căutare</string>
+    <string name="search_no_results">Nu s-au găsit rezultate</string>
+    <string name="search_try_suggestions">Încercați să căutați:\n• Accesibilitate\n• Setări\n• Ajutor\n• Limbă</string>
+    <string name="search_results_announcement_singular">S-a găsit 1 rezultat</string>
+    <string name="search_results_announcement_plural">S-au găsit %d rezultate</string>
+    <string name="search_no_results_announcement">Nu s-au găsit rezultate</string>
+
+    <!-- ==================== HELP SCREEN ==================== -->
+    <!-- Translator Note: Help and support content -->
+    <string name="help_quick_access">Acces rapid</string>
+    <string name="help_topics">Subiecte de ajutor</string>
+    <string name="help_glossary">Glosar</string>
+
+    <!-- ==================== LAUNCHER SHORTCUTS ==================== -->
+    <!-- Translator Note: Android launcher shortcut labels -->
+
+    <!-- ==================== OPEN SOURCE LICENSES ==================== -->
+    <!-- Translator Note: Open source licenses screen -->
+    <string name="licenses_title">Licențe open source</string>
+    <string name="licenses_description">Această aplicație folosește următoarele programe open source. Suntem recunoscători dezvoltatorilor care au creat aceste biblioteci.</string>
+    <string name="licenses_tap_to_view">Atingeți pentru a vedea licența completă</string>
+    <string name="licenses_group_header">%1$s (%2$d biblioteci)</string>
+    <string name="licenses_version_format">v%s</string>
+    <string name="licenses_bullet_separator">•</string>
+
+    <!-- Issue Flow -->
+
+    <!-- DeepLink Issue Screen -->
+
+    <!-- ==================== ERROR HANDLER MESSAGES ==================== -->
+    <!-- Translator Note: These are error messages from the error handler system -->
+    <string name="error_no_internet">Fără conexiune la internet. Vă rugăm verificați rețeaua și încercați din nou.</string>
+    <string name="error_unexpected">A apărut o eroare neașteptată. Vă rugăm să reporniți aplicația.</string>
+    <string name="error_unexpected_try_again">A apărut o eroare neașteptată. Vă rugăm să încercați din nou.</string>
+    <string name="error_storage_detailed">Eroare de stocare: %s</string>
+    <string name="error_network_detailed">Eroare de rețea: %s</string>
+    <string name="error_proof_generation_failed">Generarea dovezii a eșuat: %s</string>
+    <string name="error_not_eligible">Neeligibil. Nu îndepliniți cerințele pentru această verificare.</string>
+    <string name="error_challenge_expired">Challenge-ul a expirat sau nu a fost găsit. Vă rugăm să solicitați unul nou.</string>
+    <string name="error_challenge_expired_scan_new">Acest challenge a expirat. Vă rugăm scanați un nou cod QR.</string>
+    <string name="error_request_out_of_order">Cerere în afara ordinii. Vă rugăm să încercați din nou.</string>
+    <string name="error_too_many_requests">Prea multe cereri. Vă rugăm așteptați un moment și încercați din nou.</string>
+    <string name="error_server">Eroare server. Vă rugăm să încercați din nou mai târziu.</string>
+    <string name="error_request_failed">Cerere eșuată (%d). Vă rugăm să încercați din nou.</string>
+    <string name="error_not_eligible_short">Neeligibil pentru această verificare</string>
+    <string name="error_challenge_not_found">Challenge-ul nu a fost găsit</string>
+    <string name="error_complete_steps_in_order">Vă rugăm completați pașii în ordine</string>
+    <string name="error_challenge_expired_short">Challenge-ul a expirat</string>
+    <string name="error_authentication_cancelled">Autentificare anulată. Vă rugăm să vă verificați identitatea pentru a finaliza verificarea vârstei.</string>
+    <string name="error_invalid_data_format_short">Format de date invalid. Vă rugăm să încercați din nou.</string>
+    <string name="error_storage_check_device">Eroare de stocare. Vă rugăm verificați stocarea dispozitivului.</string>
+    <string name="error_network_check_connection">Eroare de rețea. Vă rugăm verificați conexiunea.</string>
+    <string name="error_proof_generation_failed_short">Generarea dovezii a eșuat. Vă rugăm să încercați din nou.</string>
+    <string name="error_operation_in_progress_short">O altă operațiune este în desfășurare.</string>
+    <string name="error_no_internet_short">Fără conexiune la internet. Vă rugăm verificați rețeaua.</string>
+
+    <!-- ==================== VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during the verification process -->
+    <string name="verification_scan_title">Scanați QR-ul de verificare</string>
+    <string name="verification_verifying_title">Se verifică vârsta</string>
+    <string name="verification_success_title">Vârstă verificată</string>
+    <string name="verification_failed_title">Verificare eșuată</string>
+    <string name="verification_processing_wait">Aceasta poate dura câteva secunde</string>
+    <string name="verification_success_message">Vârsta dumneavoastră a fost verificată în mod privat</string>
+    <string name="verification_return_to_site">Puteți reveni acum la site pentru a continua.</string>
+    <string name="verification_please_enter_code">Vă rugăm introduceți un cod de verificare. Codul ar trebui să fie fie un cod scurt de 12 cifre, fie un URL complet de verificare de la verificator.</string>
+    <string name="verification_error_occurred">A apărut o eroare în timpul verificării</string>
+
+    <!-- ==================== CREDENTIAL SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear on the credential list screen -->
+    <string name="credential_list_processing">Se procesează...</string>
+    <string name="credential_list_verify_age_button">Verificați vârsta</string>
+    <string name="credential_list_generate_in_person_description">Generați o acreditare în persoană</string>
+    <string name="credential_list_scan_qr_title">Scanați codul QR</string>
+    <string name="credential_list_find_locations_title">Găsiți locații</string>
+    <string name="credential_section_my_credential">Acreditarea mea</string>
+    <string name="credential_section_managed">Acreditări gestionate</string>
+    <string name="credential_list_get_credential_button">Obțineți o acreditare</string>
+    <string name="credential_list_add_managed_button">Adăugați o acreditare gestionată</string>
+
+    <!-- ==================== DEEPLINK ISSUE SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during deep link credential issuance process -->
+    <!-- Progress Messages -->
+
+    <!-- Error Messages -->
+
+    <!-- UI Text -->
+
+    <!-- Content Descriptions -->
+
+    <!-- Processing Step Format -->
+
+    <!-- ==================== DEEPLINK VERIFICATION SCREEN STRINGS ==================== -->
+    <!-- Translator Note: These strings appear during deep link verification process -->
+    <!-- Progress Messages -->
+    <string name="deeplink_verification_preparing">Se pregătește verificarea...</string>
+    <string name="deeplink_verification_checking_credential">Se verifică acreditarea...</string>
+    <string name="deeplink_verification_processing_challenge">Se procesează challenge-ul...</string>
+    <string name="deeplink_verification_creating_proof">Se creează o dovadă securizată...</string>
+    <string name="deeplink_verification_submitting_proof">Se trimite dovada...</string>
+    <string name="deeplink_verification_success">✔ Vârstă verificată cu succes</string>
+
+    <!-- Error Messages -->
+    <string name="deeplink_verification_error_no_credential">Nu s-a găsit nicio acreditare. Vă rugăm configurați mai întâi acreditarea.</string>
+    <string name="deeplink_verification_error_failed_challenge">Procesarea challenge-ului de verificare a eșuat</string>
+    <string name="deeplink_verification_error_no_auth_prompt">Imposibil de afișat promptul de autentificare</string>
+    <string name="deeplink_verification_error_failed_proof">Crearea dovezii de vârstă a eșuat</string>
+    <string name="deeplink_verification_error_verification_failed">Verificare eșuată</string>
+    <string name="deeplink_verification_error_unexpected">A apărut o eroare neașteptată</string>
+    <string name="deeplink_verification_error_no_credential_selected">Nu a fost selectată nicio acreditare. Vă rugăm să încercați din nou.</string>
+
+    <!-- Credential Picker -->
+    <string name="deeplink_verification_select_credential_title">Selectați o acreditare</string>
+    <string name="deeplink_verification_select_credential_subtitle">Sunt disponibile mai multe acreditări. Alegeți pe care să o utilizați pentru această verificare.</string>
+
+    <!-- UI Text -->
+    <string name="deeplink_verification_title_verifying">Se verifică vârsta</string>
+    <string name="deeplink_verification_title_verified">Verificat</string>
+    <string name="deeplink_verification_title_failed">Verificare eșuată</string>
+    <string name="deeplink_verification_please_wait">Vă rugăm așteptați...</string>
+    <string name="deeplink_verification_age_verified">Vârstă verificată!</string>
+    <string name="deeplink_verification_under_age_verified">Verificat sub %1$d</string>
+    <string name="deeplink_verification_returning_browser">Se revine la browser...</string>
+    <string name="deeplink_verification_return_to_browser">Reveniți la browser</string>
+    <string name="deeplink_verification_failed_title">Verificare eșuată</string>
+    <string name="deeplink_verification_error_occurred">A apărut o eroare în timpul verificării</string>
+
+    <!-- ==================== OFFICER ADDITIONAL STRINGS ==================== -->
+    <!-- Translator Note: Additional strings for officer mode screens -->
+
+    <!-- Officer Session Expiry -->
+
+    <!-- Officer Issuance Process Instructions -->
+    <string name="officer_issuance_process_title">PROCESUL DE EMITERE</string>
+    <string name="officer_issuance_process_steps">1. Verificați documentul de identificare fizic al utilizatorului\n2. Introduceți data nașterii\n3. Verificați că informațiile corespund exact\n4. Emiteți acreditarea cu codul QR de atestare\n5. Utilizatorul scanează codul QR pentru a primi acreditarea</string>
+
+    <!-- Officer DOB Entry -->
+
+    <!-- Officer Verification Checklist -->
+
+    <!-- Officer Attestation QR Screen -->
+    <string name="officer_qr_generation_failed">Generarea codului QR a eșuat</string>
+    <string name="officer_attestation_ready_title">Atestare pregătită</string>
+    <string name="officer_attestation_scan_instruction">Utilizatorul trebuie să scaneze acest cod QR cu aplicația Provii Wallet</string>
+    <string name="officer_attestation_deeplink_label">DEEPLINK ATESTARE</string>
+    <string name="officer_wait_for_attestation_scan">Așteptați scanarea utilizatorului</string>
+    <string name="officer_attestation_info">Acreditarea va fi generată pe dispozitivul acestuia</string>
+    <string name="officer_attestation_complete">Atestare finalizată</string>
+    <string name="officer_user_will_complete_credential">Utilizatorul va finaliza generarea acreditării pe dispozitivul său</string>
+
+    <!-- ==================== BLIND ATTESTATION ==================== -->
+    <!-- Translator Note: These strings are shown during the blind attestation credential issuance process -->
+    <string name="attestation_decoding">Se decodează datele de atestare...</string>
+    <string name="attestation_generating_randomness">Se generează aleatoriu securizat...</string>
+    <string name="attestation_sending">Se trimite la emitent...</string>
+    <string name="attestation_verifying">Se verifică angajamentul...</string>
+    <string name="attestation_storing">Se stochează acreditarea...</string>
+    <string name="attestation_complete">Acreditare completă!</string>
+    <string name="attestation_error_invalid_data">Date de atestare invalide</string>
+    <string name="attestation_error_expired">Atestarea a expirat</string>
+    <string name="attestation_error_network">Eroare de rețea - vă rugăm verificați conexiunea</string>
+    <string name="attestation_error_unexpected">A apărut o eroare neașteptată</string>
+    <string name="attestation_title_processing">Se procesează atestarea</string>
+    <string name="attestation_title_success">Acreditare primită</string>
+    <string name="attestation_title_failed">Emitere eșuată</string>
+    <string name="attestation_secure_issuance">Emitere securizată</string>
+    <string name="attestation_privacy_preserving">Emitere de acreditare cu protecția confidențialității</string>
+    <string name="attestation_may_take_seconds">Aceasta poate dura câteva secunde</string>
+    <string name="attestation_keep_app_open">Vă rugăm mențineți aplicația deschisă</string>
+    <string name="attestation_credential_received">Acreditare primită!</string>
+    <string name="attestation_credential_stored_description">Acreditarea dumneavoastră de verificare a vârstei a fost stocată în siguranță</string>
+    <string name="attestation_issuer_verified">Emitent verificat</string>
+    <string name="attestation_failed_title">Emitere eșuată</string>
+    <string name="attestation_scan_qr_instead">Scanați QR în schimb</string>
+    <string name="attestation_go_back">Înapoi</string>
+    <string name="attestation_step_decode">Decodare</string>
+    <string name="attestation_step_generate">Generare</string>
+    <string name="attestation_step_send">Trimitere</string>
+    <string name="attestation_step_verify">Verificare</string>
+    <string name="attestation_step_store">Stocare</string>
+    <string name="attestation_step_complete">Complet</string>
+    <string name="accessibility_attestation_encrypted_description">Atestare criptată în curs de procesare</string>
+    <string name="accessibility_attestation_success_description">Bifă de succes care indică acreditarea primită</string>
+    <string name="accessibility_attestation_error_description">Pictogramă de eroare care indică emiterea eșuată</string>
+    <string name="accessibility_step_complete">Pasul %1$s finalizat</string>
+
+    <!-- Blind Attestation: Credential Recipient -->
+    <string name="attestation_recipient_title">Destinatar acreditare</string>
+    <string name="attestation_recipient_prompt">Această acreditare este pentru\u2026</string>
+    <string name="attestation_recipient_me">Eu</string>
+    <string name="attestation_recipient_child">Un copil</string>
+    <string name="attestation_nickname_title">Pseudonimul copilului</string>
+    <string name="attestation_nickname_prompt">Introduceți un pseudonim pentru a putea deosebi acreditările</string>
+    <string name="attestation_nickname_placeholder">ex. Alex</string>
+    <string name="attestation_nickname_continue">Continuați</string>
+    <string name="attestation_nickname_back">Înapoi</string>
+    <string name="accessibility_attestation_recipient_heading">Alegeți pentru cine este această acreditare</string>
+    <string name="accessibility_attestation_nickname_heading">Introduceți un pseudonim pentru copil</string>
+
+    <!-- Officer Error Messages -->
+    <string name="officer_auth_error_invalid_format">Format invalid de ID ofițer</string>
+    <string name="officer_auth_error_challenge_failed">Obținerea challenge-ului YubiKey a eșuat: %s</string>
+    <string name="officer_auth_instruction_touch_yubikey">Atingeți YubiKey pentru a vă autentifica</string>
+    <string name="officer_auth_error_touch_timeout">Atingerea YubiKey a expirat</string>
+    <string name="officer_auth_error_verify_document_dob">Vă rugăm verificați că documentul și data nașterii corespund</string>
+    <string name="officer_auth_error_invalid_date_format">Format de dată invalid. Utilizați AAAA-LL-ZZ</string>
+    <string name="officer_auth_error_must_be_18">Utilizatorul trebuie să aibă cel puțin 18 ani</string>
+    <string name="officer_auth_error_not_authenticated">Neautentificat. Vă rugăm introduceți mai întâi ID-ul dumneavoastră de ofițer.</string>
+    <string name="officer_auth_error_issue_failed">Emiterea acreditării a eșuat</string>
+
+    <!-- ==================== GESTURE SIMPLIFICATION ==================== -->
+    <!-- Translator Note: These strings describe gestures for accessibility/screen readers -->
+    <string name="gesture_desc_tap_to_view">Atingeți pentru a vizualiza</string>
+    <string name="gesture_desc_long_press_options">, apăsați lung pentru opțiuni</string>
+    <string name="gesture_desc_swipe_left">, glisați la stânga pentru mai multe acțiuni</string>
+    <string name="gesture_desc_swipe_right">, glisați la dreapta pentru mai multe acțiuni</string>
+    <string name="gesture_desc_tap_to_activate">Atingeți pentru a activa</string>
+    <string name="gesture_desc_long_press_format">. Apăsare lungă: %s</string>
+    <string name="gesture_desc_swipe_format">. %s</string>
+
+    <!-- ==================== MAIN ACTIVITY STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the main activity during initialization and errors -->
+    <string name="main_activity_retry">Reîncercați</string>
+    <string name="main_activity_reset_redownload">Resetați și re-descărcați</string>
+    <string name="main_activity_show_debug_info">Afișați informații de depanare</string>
+
+    <!-- ==================== SEARCH MANAGER STRINGS ==================== -->
+    <!-- Translator Note: These strings appear in the app-wide search functionality -->
+
+    <!-- Accessibility Settings Search Items -->
+    <string name="search_item_accessibility_settings_title">Setări de accesibilitate</string>
+    <string name="search_item_accessibility_settings_subtitle">Personalizați experiența dumneavoastră</string>
+    <string name="search_item_large_text_title">Text mare</string>
+    <string name="search_item_large_text_subtitle">Măriți dimensiunea textului</string>
+    <string name="search_item_high_contrast_title">Contrast ridicat</string>
+    <string name="search_item_high_contrast_subtitle">Îmbunătățiți vizibilitatea</string>
+    <string name="search_item_voice_input_title">Introducere vocală</string>
+    <string name="search_item_voice_input_subtitle">Controlați cu vocea</string>
+    <string name="search_item_manual_code_entry_title">Introducere manuală a codului</string>
+    <string name="search_item_manual_code_entry_subtitle">Tastați coduri în loc să le scanați</string>
+    <string name="search_item_simplified_ui_title">UI simplificat</string>
+    <string name="search_item_simplified_ui_subtitle">Reduceți complexitatea vizuală</string>
+    <string name="search_item_color_blindness_title">Suport pentru daltonism</string>
+    <string name="search_item_color_blindness_subtitle">Ajustați culorile pentru o mai bună vizibilitate</string>
+
+    <!-- Settings Search Items -->
+    <string name="search_item_settings_title">Setări</string>
+    <string name="search_item_settings_subtitle">Configurarea aplicației</string>
+    <string name="search_item_language_title">Limbă</string>
+    <string name="search_item_language_subtitle">Schimbați limba aplicației</string>
+
+    <!-- Credentials Search Items -->
+    <string name="search_item_credentials_title">Acreditările mele</string>
+    <string name="search_item_credentials_subtitle">Vizualizați acreditările dumneavoastră</string>
+    <string name="search_item_get_credential_title">Obțineți o acreditare</string>
+    <string name="search_item_get_credential_subtitle">Găsiți emitenți</string>
+    <string name="search_item_help_title">Ajutor</string>
+    <string name="search_item_help_subtitle">Obțineți asistență</string>
+    <string name="search_item_privacy_title">Protecția confidențialității</string>
+    <string name="search_item_privacy_subtitle">Cum sunt protejate datele dumneavoastră</string>
+    <string name="search_item_verification_title">Verificarea vârstei</string>
+    <string name="search_item_verification_subtitle">Dovediți vârsta dumneavoastră</string>
+
+    <!-- ==================== ISSUER REPOSITORY FALLBACK STRINGS ==================== -->
+    <!-- Translator Note: These strings are used as fallback when issuer registry cannot be loaded -->
+    <string name="issuer_fallback_sandbox_description">Registru de rezervă hardcodat pentru mediul sandbox</string>
+    <string name="issuer_fallback_production_description">Registru de rezervă hardcodat pentru producție</string>
+    <string name="issuer_fallback_category_government">Guvern</string>
+    <string name="issuer_fallback_category_government_description">Acreditări emise de autorități</string>
+    <string name="issuer_fallback_sandbox_issuer_name">Emitent sandbox Provii</string>
+    <string name="issuer_fallback_sandbox_issuer_description">Emitent oficial sandbox Provii pentru testare</string>
+    <string name="issuer_fallback_sandbox_issuer_instructions">Vizitați portalul emitentului sandbox</string>
+    <string name="issuer_fallback_production_issuer_name">Provii DMV</string>
+    <string name="issuer_fallback_production_issuer_description">Emitent oficial de acreditări Provii</string>
+    <string name="issuer_fallback_production_issuer_instructions">Vizitați biroul DMV local</string>
+
+    <!-- ==================== VALIDATION ERROR MESSAGES ==================== -->
+    <!-- Translator Note: These strings are validation error messages shown to users -->
+    <string name="validation_error_birth_date_future">Data nașterii nu poate fi în viitor</string>
+    <string name="validation_error_invalid_date_format">Format de dată invalid</string>
+    <string name="validation_error_officer_id_too_short">ID-ul ofițerului este prea scurt</string>
+    <string name="validation_error_invalid_officer_id_format">Format invalid de ID ofițer</string>
+    <string name="validation_error_empty_qr_code">Cod QR gol</string>
+    <string name="validation_error_qr_code_too_large">Codul QR este prea mare</string>
+
+    <!-- ==================== SANDBOX TOGGLE MESSAGES ==================== -->
+    <!-- Translator Note: These strings appear when toggling sandbox/developer mode -->
+    <string name="sandbox_toast_developer_mode">Ați devenit dezvoltator!</string>
+    <string name="sandbox_toast_enabled">Mod sandbox activat\nSe utilizează mediul de test</string>
+    <string name="sandbox_toast_disabled">Mod producție activat\nSe utilizează mediul de producție</string>
+    <string name="sandbox_toast_switching">Switching…</string>
+    <string name="sandbox_toast_one_step_away">Mai aveți 1 pas până la modul dezvoltator</string>
+    <string name="sandbox_toast_steps_away">Mai aveți %1$d pași până la modul dezvoltator</string>
+
+    <!-- ==================== YUBIKEY MANAGER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for YubiKey hardware authentication -->
+    <string name="yubikey_error_no_key_connected">Niciun YubiKey conectat</string>
+    <string name="yubikey_error_timeout">Expirare la așteptarea atingerii YubiKey. Vă rugăm atingeți cheia când clipește.</string>
+    <string name="yubikey_error_not_supported">Challenge-response neconfigurat pe acest slot YubiKey</string>
+    <string name="yubikey_error_no_slot">Slotul 2 nu este configurat pentru challenge-response HMAC SHA1</string>
+    <string name="yubikey_error_hmac_failed">Calculul HMAC a eșuat: %s</string>
+    <string name="yubikey_error_session_failed">Conectarea la YubiKey a eșuat: %s</string>
+
+    <!-- ==================== DEEPLINK HANDLER ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages for deep link processing -->
+
+    <!-- ==================== WALLET REPOSITORY ERROR MESSAGES ==================== -->
+    <!-- Translator Note: Error messages from wallet repository operations -->
+    <string name="wallet_error_not_initialized">Portofelul nu este inițializat</string>
+    <string name="wallet_error_proving_key_not_found">Cheia de dovadă nu a fost găsită - vă rugăm re-descărcați</string>
+    <string name="wallet_error_proving_key_not_readable">Fișierul cheii de dovadă nu poate fi citit</string>
+    <string name="wallet_error_out_of_memory">Memorie insuficientă - vă rugăm reporniți aplicația</string>
+    <string name="wallet_error_prover_error">Eroare doveditor: %s</string>
+    <string name="wallet_error_ffi_error">Eroare FFI: %s</string>
+    <string name="wallet_error_prover_init_failed">Inițializarea doveditorului a eșuat: %s</string>
+    <string name="wallet_error_prover_verification_failed">Verificarea inițializării doveditorului a eșuat</string>
+    <string name="wallet_error_verifier_url_update_failed">Actualizarea URL-ului verificatorului a eșuat! Se așteptea %1$s dar s-a primit %2$s</string>
+    <string name="wallet_error_wallet_still_null">Portofelul este încă nul după inițializare</string>
+    <string name="wallet_error_credential_not_found">Acreditarea nu a fost găsită</string>
+    <string name="wallet_error_credential_access_failed">Imposibil de accesat acreditarea: %s</string>
+    <string name="wallet_error_invalid_format">Format invalid: %s</string>
+    <string name="wallet_error_not_initialized_short">Doveditorul nu este inițializat</string>
+    <string name="wallet_error_proving_key_unavailable">Cheia de dovadă nu este disponibilă. Configurare necesară.</string>
+    <string name="wallet_error_storage_init_failed">Inițializarea stocării a eșuat</string>
+    <string name="wallet_error_biometric_unavailable">Autentificarea biometrică nu este disponibilă</string>
+    <string name="wallet_error_auth_failed">Autentificare eșuată</string>
+    <string name="wallet_error_sandbox_disabled">Activați modul sandbox pentru a genera acreditări de test</string>
+    <string name="wallet_error_fetch_sandbox_credentials">Imposibil de preluat acreditările sandbox. Vă rugăm verificați conexiunea la internet.</string>
+
+    <!-- ==================== KEYSTORE BRIDGE STRINGS ==================== -->
+    <!-- Translator Note: Strings for keystore and biometric authentication -->
+    <string name="keystore_biometric_prompt_title">Autentificare necesară</string>
+    <string name="keystore_biometric_prompt_subtitle_create_proof">Verificați identitatea pentru a crea dovada de vârstă</string>
+    <string name="keystore_biometric_prompt_subtitle_access_storage">Accesați stocarea securizată</string>
+    <string name="keystore_biometric_prompt_cancel">Anulați</string>
+
+    <!-- ==================== LICENSES SCREEN ACCESSIBILITY ==================== -->
+    <!-- Translator Note: Accessibility descriptions for the licenses screen -->
+    <string name="licenses_accessibility_library_expanded">%1$s, %2$s, extins, se afișează textul complet al licenței</string>
+    <string name="licenses_accessibility_library_collapsed">%1$s, %2$s, restrâns, %3$s</string>
+
+    <!-- ==================== NETWORK MANAGER STRINGS ==================== -->
+    <!-- Translator Note: Network connection type labels -->
+    <string name="network_type_none">Niciunul</string>
+    <string name="network_type_wifi">Wi-Fi</string>
+    <string name="network_type_cellular">Celular</string>
+    <string name="network_type_ethernet">Ethernet</string>
+    <string name="network_type_unknown">Necunoscut</string>
+
+    <!-- ==================== HELP SYSTEM - TITLES ==================== -->
+    <!-- Translator Note: Help topic titles for accessibility help system -->
+    <string name="help_topic_contrast_levels_title">Niveluri de contrast</string>
+    <string name="help_topic_extra_large_text_title">Text extra mare</string>
+    <string name="help_topic_reduce_transparency_title">Reduceți transparența</string>
+    <string name="help_topic_color_blind_modes_title">Moduri pentru daltonism</string>
+    <string name="help_topic_line_spacing_title">Spațiere între rânduri</string>
+    <string name="help_topic_paragraph_spacing_title">Spațiere între paragrafe</string>
+    <string name="help_topic_letter_spacing_title">Spațiere între litere</string>
+    <string name="help_topic_text_width_title">Lățimea textului</string>
+    <string name="help_topic_touch_targets_title">Ținte de atingere mai mari</string>
+    <string name="help_topic_reduce_motion_title">Reduceți mișcarea</string>
+    <string name="help_topic_timeout_behavior_title">Comportament la expirare</string>
+    <string name="help_topic_simplified_gestures_title">Gesturi simplificate</string>
+    <string name="help_topic_haptic_feedback_title">Feedback haptic</string>
+    <string name="help_topic_data_preservation_title">Păstrarea datelor</string>
+    <string name="help_topic_simplified_ui_title">UI simplificat</string>
+    <string name="help_topic_step_indicators_title">Indicatori de pas</string>
+    <string name="help_topic_verbose_descriptions_title">Descrieri detaliate</string>
+    <string name="help_topic_confirm_actions_title">Confirmați acțiunile</string>
+    <string name="help_topic_reading_level_title">Nivel simplificat de lectură</string>
+    <string name="help_topic_help_system_title">Sistemul de ajutor</string>
+    <string name="help_topic_manual_code_entry_title">Introducere manuală a codului</string>
+    <string name="help_topic_voice_input_title">Introducere vocală</string>
+    <string name="help_topic_screen_reader_title">Suport pentru cititor de ecran</string>
+    <string name="help_topic_accessibility_profiles_title">Profiluri de configurare rapidă</string>
+
+    <!-- ==================== HELP SYSTEM - HELP TEXT ==================== -->
+    <!-- Translator Note: Detailed help text for accessibility features -->
+    <string name="help_topic_contrast_levels_text">Controlați raportul de contrast dintre text și fundal:\n\n• Standard: Culorile implicite ale aplicației\n• Ridicat (AA): Raport de contrast de 4,5:1\n• Maxim (AAA): Raport de contrast de 7:1 sau mai mult\n\nContrastul mai mare face textul mai ușor de citit, mai ales în medii luminoase sau pentru utilizatorii cu vedere slabă.\n\nConformitatea WCAG AAA necesită contrast maxim.</string>
+    <string name="help_topic_extra_large_text_text">Mărește toate dimensiunile textului cu 50% în întreaga aplicație.\n\nAceasta facilitează citirea textului pentru utilizatorii cu:\n• Vedere slabă\n• Modificări ale vederii legate de vârstă\n• Dificultăți de citire\n\nSe combină cu setările de dimensiune a fontului de sistem pentru flexibilitate maximă.</string>
+    <string name="help_topic_reduce_transparency_text">Elimină straturile transparente și efectele de estompare.\n\nBeneficii:\n• Ierarhie vizuală mai clară\n• Lizibilitate mai bună a textului\n• Zgomot vizual redus\n• Sarcină cognitivă redusă\n\nRecomandat pentru utilizatorii cu vedere slabă sau dificultăți cognitive.</string>
+    <string name="help_topic_color_blind_modes_text">Ajustează culorile pentru diferite tipuri de daltonism:\n\n• Protanopie: Orbire la roșu\n• Deuteranopie: Orbire la verde\n• Tritanopie: Orbire la albastru\n• Monocrom: Daltonism complet\n\nFiecare mod folosește culori selectate cu atenție, care sunt diferențiabile pentru acel tip specific de deficiență de vedere a culorilor.</string>
+    <string name="help_topic_line_spacing_text">Ajustează spațierea dintre rândurile de text (1,0x - 2,0x).\n\n• Implicit: 1,0x\n• Conform AAA: 1,5x sau mai mult\n\nSpațierea mărită între rânduri:\n• Îmbunătățește înțelegerea lecturii\n• Reduce oboseala ochilor\n• Ajută utilizatorii cu dislexie\n• Face blocurile de text mai puțin copleșitoare</string>
+    <string name="help_topic_paragraph_spacing_text">Ajustează spațierea dintre paragrafe (1,0x - 3,0x).\n\n• Implicit: 1,0x\n• Conform AAA: 2,0x sau mai mult\n\nSpațierea mărită între paragrafe:\n• Separă clar ideile\n• Îmbunătățește organizarea vizuală\n• Reduce sarcina cognitivă\n• Ajută la menținerea poziției de lectură</string>
+    <string name="help_topic_letter_spacing_text">Ajustează spațierea dintre litere (0,0em - 0,2em).\n\n• Implicit: 0,0em\n• Conform AAA: 0,12em sau mai mult\n\nSpațierea mărită dintre litere:\n• Face literele individuale mai distincte\n• Ajută utilizatorii cu dislexie\n• Îmbunătățește acuratețea lecturii\n• Reduce confuzia dintre litere</string>
+    <string name="help_topic_text_width_text">Limitează lungimea rândului pentru o lectură mai ușoară:\n\n• Lățime completă: Fără limită\n• Confortabil: 80 de caractere (recomandat)\n• Îngust: 60 de caractere\n\nCercetările arată că lectura optimă se produce la 60-80 de caractere pe rând. Rândurile mai scurte reduc mișcarea ochilor și îmbunătățesc înțelegerea.</string>
+    <string name="help_topic_touch_targets_text">Mărește dimensiunea minimă a țintei de atingere la 60dp (față de 44dp).\n\nBeneficii:\n• Mai ușor de atins butoanele și comenzile\n• Reduce atingerile accidentale\n• Ajută utilizatorii cu deficiențe motorii\n• Mai bun pentru utilizarea cu o singură mână\n\nWCAG AAA necesită minimum 60dp.</string>
+    <string name="help_topic_reduce_motion_text">Elimină toate animațiile și tranzițiile.\n\nBeneficii:\n• Previne răul de mișcare\n• Reduce distragerea atenției\n• Scade sarcina cognitivă\n• Îmbunătățește concentrarea\n\nRecomandat pentru utilizatorii cu:\n• Tulburări vestibulare\n• Dificultăți de atenție\n• Sensibilitate la mișcare</string>
+    <string name="help_topic_timeout_behavior_text">Controlează expirarea automată pe ecranele de verificare:\n\n• Fără expirare (AAA): Timp nelimitat\n• Standard: 30 de secunde\n• Extins: 60 de secunde\n\nWCAG AAA necesită opțiunea fără expirare pentru utilizatorii care au nevoie de mai mult timp pentru a finaliza sarcinile.\n\nDatele din formulare sunt salvate automat înainte de expirare.</string>
+    <string name="help_topic_simplified_gestures_text">Înlocuiește gesturile complexe cu alternative simple:\n\n• Glisare → Buton de atingere\n• Apăsare lungă → Atingere regulată cu confirmare\n• Ciupire/zoom → Butoane\n\nAjută utilizatorii cu:\n• Deficiențe motorii\n• Tremur\n• Dexteritate limitată\n• Dificultăți cu ecranul tactil</string>
+
+    <!-- ==================== TRANSLATED MISSING STRINGS ==================== -->
+    <string name="accessibility_dyslexia_font">Font prietenos pentru dislexie</string>
+    <string name="accessibility_dyslexia_font_description">Utilizați fontul OpenDyslexic pentru lizibilitate îmbunătățită</string>
+    <string name="error_biometric_required">Autentificarea biometrică este necesară pentru a continua.</string>
+    <string name="credential_section_managed_empty">Adăugați o acreditare pentru cineva de care vă pasă, cum ar fi un copil.</string>
+    <string name="credential_detail_title">Detalii acreditare</string>
+    <string name="credential_detail_not_found">Acreditarea nu a fost găsită</string>
+    <string name="credential_detail_nickname">Pseudonim</string>
+    <string name="credential_detail_no_nickname">Niciun pseudonim setat</string>
+    <string name="credential_detail_edit_nickname">Editați pseudonimul</string>
+    <string name="credential_detail_status">Stare</string>
+    <string name="credential_detail_delete">Ștergeți acreditarea</string>
+    <string name="credential_detail_delete_title">Ștergeți acreditarea</string>
+    <string name="credential_detail_delete_message">Sigur doriți să ștergeți această acreditare? Această acțiune nu poate fi anulată.</string>
+    <string name="credential_type_primary">Primară</string>
+    <string name="credential_type_managed">Gestionată</string>
+    <string name="credential_status_valid">Valabilă</string>
+    <string name="credential_status_expired">Expirată</string>
+    <string name="credential_status_invalid">Invalidă</string>
+    <string name="action_save">Salvați</string>
+    <string name="credential_slots_full_title">Număr maxim de acreditări atins</string>
+    <string name="credential_slots_full_message">Ați atins numărul maxim de acreditări. Ștergeți o acreditare existentă pentru a adăuga una nouă.</string>
+    <string name="accessibility_managed_credential">Acreditare gestionată</string>
+    <string name="managed_confirm_title">Verificați vârsta pentru %1$s?</string>
+    <string name="managed_confirm_message">Urmează să verificați vârsta folosind acreditarea gestionată a lui %1$s.</string>
+    <string name="managed_confirm_proceed">Verificați pentru %1$s</string>
+    <string name="verification_creating_proof_for">Se creează dovada pentru %1$s</string>
+    <string name="verification_age_verified_for">Vârsta verificată pentru %1$s</string>
+    <string name="deeplink_verification_age_verified_for">Vârsta verificată pentru %1$s</string>
+    <string name="attestation_managed_credential_received">Acreditare pentru %1$s primită!</string>
+    <string name="attestation_managed_credential_stored">Acreditarea copilului dumneavoastră a fost stocată în siguranță.</string>
+    <string name="credential_detail_delete_managed_title">Ștergeți acreditarea lui %1$s?</string>
+    <string name="credential_detail_delete_managed_message">Sigur doriți să ștergeți această acreditare gestionată pentru %1$s? Această acțiune nu poate fi anulată. Va trebui să vizitați din nou un emitent pentru a o înlocui.</string>
+    <string name="credential_detail_save_error">Salvarea pseudonimului a eșuat</string>
+    <string name="credential_detail_delete_error">Ștergerea acreditării a eșuat</string>
+    <string name="accessibility_saving">Se salvează...</string>
+    <string name="accessibility_deleting">Se șterge...</string>
+    <string name="accessibility_loading">Se încarcă, vă rugăm așteptați</string>
+    <string name="accessibility_issuing_credential">Se emite acreditarea, vă rugăm așteptați</string>
+    <string name="dialog_delete_all_credentials_title">Ștergeți toate acreditările?</string>
+    <string name="dialog_delete_all_credentials_message">Aceasta va șterge acreditarea dumneavoastră și orice acreditări gestionate pentru copii. Această acțiune nu poate fi anulată.</string>
+    <string name="credential_managed_label">Gestionată</string>
+    <string name="credential_slots_count">%1$d din 5</string>
+    <string name="help_topic_haptic_feedback_text">Oferă feedback prin vibrație pentru acțiuni.
+
+Beneficii:
+• Confirmă apăsările de butoane
+• Indică erori
+• Oferă confirmare tactilă
+
+Poate fi dezactivat pentru utilizatorii care:
+• Îl consideră deranjant
+• Au sensibilități senzoriale
+• Preferă funcționarea silențioasă</string>
+    <string name="help_topic_data_preservation_text">Salvează automat datele din formular înainte de expirare.
+
+Funcții:
+• Avertizare cu 10 secunde înainte de expirare
+• Opțiunea de salvare sau renunțare la date
+• Restaurare automată la revenire
+• Retenție date 24 de ore
+
+Asigură că nu pierdeți date dacă aveți nevoie de timp suplimentar sau experimentați întreruperi.</string>
+    <string name="help_topic_simplified_ui_text">Reduce complexitatea vizuală:
+
+• Mai puține elemente de interfață afișate simultan
+• Butoane mai mari și mai clare
+• Mai mult spațiu alb
+• Aspecte simplificate
+
+Beneficii:
+• Mai ușor de înțeles
+• Mai puțin copleșitor
+• Concentrare mai bună
+• Sarcină cognitivă redusă</string>
+    <string name="help_topic_step_indicators_text">Arată progresul prin procese cu mai mulți pași.
+
+Afișează:
+• Numărul pasului curent
+• Numărul total de pași
+• Vizualizare progres
+
+Beneficii:
+• Reduce anxietatea
+• Stabilește așteptări clare
+• Ajută la menținerea orientării
+• Arată progresul finalizării</string>
+    <string name="help_topic_verbose_descriptions_text">Oferă context și explicații suplimentare:
+
+• Etichete mai lungi pentru butoane
+• Instrucțiuni mai detaliate
+• Indicii suplimentare
+• Mesaje de eroare mai clare
+
+Ajută utilizatorii să:
+• Înțeleagă acțiunile înainte de a le efectua
+• Evite greșelile
+• Învețe funcționalitatea aplicației
+• Câștige încredere</string>
+    <string name="help_topic_confirm_actions_text">Necesită confirmare pentru acțiunile importante:
+
+• Ștergerea acreditărilor
+• Modificarea setărilor
+• Ștergerea datelor
+
+WCAG AAA necesită confirmare pentru toate acțiunile distructive.
+
+Beneficii:
+• Previne accidentele
+• Permite revizuirea înainte de acțiune
+• Reduce anxietatea
+• Oferă o a doua șansă</string>
+    <string name="help_topic_reading_level_text">Utilizează un limbaj mai simplu (nivel clasele 7-9):
+
+• Propoziții mai scurte
+• Cuvinte comune în loc de jargon
+• Limbaj clar și direct
+• Mai puțini termeni tehnici
+
+Conform WCAG AAA când este activat.
+
+Beneficii:
+• Mai ușor de înțeles
+• Înțelegere mai rapidă
+• Mai bun pentru vorbitorii non-nativi
+• Sarcină cognitivă redusă</string>
+    <string name="help_topic_help_system_text">Ajutor sensibil la context disponibil în întreaga aplicație.
+
+Funcții:
+• 27 de subiecte de ajutor
+• Centru de ajutor cu căutare
+• Navigare subiecte conexe
+• Glosar tehnic
+
+Accesați ajutorul din:
+• Ecranele de setări
+• Funcțiile complexe
+• Mesajele de eroare
+• Oriunde vedeți o pictogramă de ajutor</string>
+    <string name="help_topic_manual_code_entry_text">Introduceți datele codului QR manual în loc să le scanați.
+
+Beneficii:
+• Funcționează când accesul la cameră nu este disponibil
+• Ajută utilizatorii cu dificultăți motorii
+• Mai bun în condiții de lumină slabă
+• Nu este necesar să țineți telefonul stabil
+
+Alternativă la scanarea QR bazată pe cameră.</string>
+    <string name="help_topic_voice_input_text">Utilizați vocea pentru a introduce text în loc să tastați.
+
+Beneficii:
+• Introducere fără mâini
+• Mai rapidă decât tastarea
+• Ajută utilizatorii cu deficiențe motorii
+• Reduce efortul repetitiv
+
+Utilizează recunoașterea vocală integrată a dispozitivului dumneavoastră.</string>
+    <string name="help_topic_screen_reader_text">Suport complet pentru cititorul de ecran TalkBack.
+
+Funcții:
+• Toate elementele de interfață etichetate
+• Structură corectă de titluri
+• Ordine logică de navigare
+• Indicii personalizate pentru acțiuni complexe
+
+Aplicația activează automat:
+• Descrieri detaliate
+• Ținte de atingere îmbunătățite
+
+când este detectat TalkBack.</string>
+    <string name="help_topic_accessibility_profiles_text">Profiluri de accesibilitate preconfigurate:
+
+• Deficiență vizuală: Contrast ridicat, text mare, haptic
+• Deficiență motorie: Ținte mari, expirări extinse, confirmări
+• Cognitiv: UI simplificat, indicatori de pas, descrieri
+• Vârstnic: Text mare, ținte, UI simplificat, mișcare redusă
+• Implicit: Resetați toate setările
+
+Fiecare profil activează cele mai utile setări pentru acel grup de utilizatori. Puteți personaliza în continuare după aplicarea unui profil.</string>
+    <string name="content_age_verification_title">Verificarea vârstei</string>
+    <string name="content_age_verification_explanation">Vă rugăm așteptați în timp ce verificăm în siguranță vârsta dumneavoastră folosind dovezi cu cunoaștere zero. Data de naștere nu este niciodată partajată cu verificatorul.</string>
+    <string name="content_age_verification_instructions">Îndreptați camera spre codul QR de verificare. Codul va fi scanat automat când este detectat.</string>
+    <string name="content_age_verification_success">Vârsta dumneavoastră a fost verificată cu succes. Verificatorul știe că îndepliniți cerința de vârstă fără a afla data dumneavoastră reală de naștere.</string>
+    <string name="content_age_verification_failed">Verificare eșuată. Vă rugăm încercați să scanați din nou codul QR sau utilizați introducerea manuală a codului.</string>
+    <string name="content_credential_issuance_title">Emiterea acreditării</string>
+    <string name="content_credential_issuance_explanation">Scanați codul QR furnizat de emitentul autorizat pentru a primi acreditarea dumneavoastră digitală de vârstă.</string>
+    <string name="content_credential_issuance_instructions">Îndreptați camera spre codul QR de emitere afișat de ofițer. Acreditarea dumneavoastră va fi generată pe dispozitiv.</string>
+    <string name="content_credential_issuance_success">Acreditare creată cu succes. Puteți utiliza acum această acreditare pentru verificarea vârstei.</string>
+    <string name="content_credential_description">O acreditare este o dovadă semnată criptografic a identității dumneavoastră care permite verificarea cu protecția confidențialității.</string>
+    <string name="content_zero_knowledge_explanation">Dovezile cu cunoaștere zero vă permit să dovediți că îndepliniți o cerință de vârstă fără a dezvălui vârsta dumneavoastră reală.</string>
+    <string name="content_setup_proving_key">Se descarcă cheia criptografică de dovadă necesară pentru generarea dovezilor cu cunoaștere zero</string>
+    <string name="content_processing_challenge">Se procesează challenge-ul de verificare</string>
+    <string name="content_creating_proof">Se creează dovada de vârstă cu cunoaștere zero</string>
+    <string name="content_submitting_proof">Se trimite dovada la verificator</string>
+    <string name="content_error_no_credential">Nicio acreditare disponibilă. Vă rugăm obțineți mai întâi o acreditare de la un emitent autorizat.</string>
+    <string name="content_error_network_failed">Conexiunea la rețea a eșuat. Vă rugăm verificați conexiunea la internet și încercați din nou.</string>
+    <string name="content_error_invalid_qr">Cod QR invalid. Vă rugăm asigurați-vă că scanați codul de verificare corect.</string>
+    <string name="content_error_verification_failed">Verificare eșuată. Serverul nu a putut valida dovada dumneavoastră.</string>
+    <string name="content_officer_authentication_title">Autentificarea ofițerului</string>
+    <string name="content_officer_issuance_title">Emiterea acreditării</string>
+    <string name="content_officer_dob_prompt">Introduceți data de naștere verificată a solicitantului din documentul de identificare oficial.</string>
+    <string name="content_onboarding_welcome">Bun venit la Provii Wallet , soluția dumneavoastră de verificare digitală a vârstei cu protecția confidențialității.</string>
+    <string name="content_onboarding_privacy">Data dumneavoastră de naștere este stocată în siguranță pe dispozitiv și nu este niciodată transmisă verificatorilor.</string>
+    <string name="content_onboarding_get_started">Pentru a începe, vizitați un emitent autorizat pentru a obține acreditarea dumneavoastră digitală de vârstă.</string>
+    <string name="content_age_verification_title_simplified">Verificați vârsta</string>
+    <string name="content_age_verification_explanation_simplified">Verificăm vârsta dumneavoastră. Nu vom vedea sau partaja ziua de naștere.</string>
+    <string name="content_age_verification_instructions_simplified">Îndreptați camera spre codul QR. Se va scana singur.</string>
+    <string name="content_age_verification_success_simplified">Succes! Site-ul știe că aveți vârsta necesară. Nu îi cunoaște ziua de naștere.</string>
+    <string name="content_age_verification_failed_simplified">Nu a funcționat. Încercați să scanați din nou sau tastați codul.</string>
+    <string name="content_credential_issuance_title_simplified">Obțineți actul de identitate</string>
+    <string name="content_credential_issuance_explanation_simplified">Scanați codul de la biroul guvernamental pentru a obține actul dumneavoastră de identitate digital.</string>
+    <string name="content_credential_issuance_instructions_simplified">Îndreptați camera spre cod. Actul de identitate va fi salvat pe telefon.</string>
+    <string name="content_credential_issuance_success_simplified">Gata! Puteți folosi acum actul de identitate digital pentru a dovedi vârsta.</string>
+    <string name="content_credential_description_simplified">O acreditare este ca un act de identitate digital care dovedește cine sunteți fără a partaja detalii private.</string>
+    <string name="content_zero_knowledge_explanation_simplified">Puteți dovedi că aveți vârsta necesară fără a spune nimănui vârsta reală.</string>
+    <string name="content_setup_proving_key_simplified">Se descarcă fișierele de securitate necesare pentru funcționarea aplicației</string>
+    <string name="content_processing_challenge_simplified">Se citește solicitarea de verificare a vârstei</string>
+    <string name="content_creating_proof_simplified">Se creează dovada de vârstă</string>
+    <string name="content_submitting_proof_simplified">Se trimite dovada la site</string>
+    <string name="content_error_no_credential_simplified">Nu aveți încă un act de identitate. Vizitați un birou guvernamental pentru a obține unul.</string>
+    <string name="content_error_network_failed_simplified">Nu se poate conecta la internet. Verificați Wi-Fi sau datele și încercați din nou.</string>
+    <string name="content_error_invalid_qr_simplified">Codul nu pare corect. Asigurați-vă că scanați codul corect.</string>
+    <string name="content_error_verification_failed_simplified">Nu a funcționat. Site-ul nu a putut verifica dovada. Încercați din nou.</string>
+    <string name="content_officer_authentication_title_simplified">Conectare ofițer</string>
+    <string name="content_officer_issuance_title_simplified">Creați actul de identitate</string>
+    <string name="content_officer_dob_prompt_simplified">Introduceți ziua de naștere a persoanei din documentul de identificare oficial.</string>
+    <string name="content_onboarding_welcome_simplified">Bun venit la Provii Wallet , dovediți vârsta în mod privat.</string>
+    <string name="content_onboarding_privacy_simplified">Ziua de naștere rămâne pe telefonul dumneavoastră. Nimeni altcineva nu o poate vedea.</string>
+    <string name="content_onboarding_get_started_simplified">Pentru a începe, vizitați un birou guvernamental pentru a obține actul de identitate digital.</string>
+    <string name="abbreviation_qr_short">QR</string>
+    <string name="abbreviation_qr_expanded">Răspuns Rapid (QR)</string>
+    <string name="abbreviation_pin_short">PIN</string>
+    <string name="abbreviation_pin_expanded">Număr de Identificare Personal (PIN)</string>
+    <string name="abbreviation_dob_short">DN</string>
+    <string name="abbreviation_dob_expanded">Data Nașterii (DN)</string>
+    <string name="abbreviation_id_short">ID</string>
+    <string name="abbreviation_id_expanded">Identificare (ID)</string>
+    <string name="abbreviation_ui_short">UI</string>
+    <string name="abbreviation_ui_expanded">Interfață Utilizator (UI)</string>
+    <string name="abbreviation_url_short">URL</string>
+    <string name="abbreviation_url_expanded">Localizator Uniform de Resurse (URL)</string>
+    <string name="abbreviation_api_short">API</string>
+    <string name="abbreviation_api_expanded">Interfață de Programare a Aplicației (API)</string>
+    <string name="animation_pause_animations">Opriți animațiile</string>
+    <string name="animation_resume_animations">Reluați animațiile</string>
+    <string name="animation_pause_button_text">Opriți</string>
+    <string name="animation_resume_button_text">Reluați</string>
+    <string name="animation_toggles_playback_hint">Comutați redarea animației</string>
+    <string name="animation_paused_announcement">Animații oprite</string>
+    <string name="animation_resumed_announcement">Animații reluate</string>
+    <string name="animation_active_count">%d animații active</string>
+    <string name="animation_loading_default">Se încarcă</string>
+    <string name="animation_please_wait">Vă rugăm așteptați finalizarea acestei operațiuni</string>
+    <string name="animation_percent_complete">%d procente finalizat</string>
+    <string name="animation_loading_in_progress">În curs</string>
+    <string name="keyboard_shortcuts_title">Comenzi rapide de la tastatură</string>
+    <string name="keyboard_shortcuts_done">Gata</string>
+    <string name="keyboard_shortcuts_app_section">Comenzi rapide aplicație</string>
+    <string name="keyboard_shortcuts_navigation_section">Navigare</string>
+    <string name="keyboard_shortcuts_tips_section">Sfaturi</string>
+    <string name="keyboard_shortcuts_navigation_footer">Aceste taste de navigare funcționează în întreaga aplicație cu tastaturi externe</string>
+    <string name="keyboard_shortcuts_tip_external">Tastaturile Bluetooth și USB externe sunt complet acceptate</string>
+    <string name="keyboard_shortcuts_tip_arrow_keys">Utilizați tastele săgeți pentru a naviga între elemente din liste</string>
+    <string name="keyboard_shortcuts_tip_hold_ctrl">Mențineți apăsat Ctrl pentru a vedea comenzile rapide disponibile pe acest ecran</string>
+    <string name="keyboard_shortcuts_tip_a11y">Toate funcțiile din această aplicație sunt accesibile prin tastatură</string>
+    <string name="keyboard_shortcut_description_label">%1$s: %2$s. %3$s</string>
+    <string name="keyboard_shortcuts_dismiss">Închideți comenzile rapide de tastatură</string>
+    <string name="keyboard_shortcut_label_settings">Setări</string>
+    <string name="keyboard_shortcut_label_accessibility">Accesibilitate</string>
+    <string name="keyboard_shortcut_label_help">Centru de ajutor</string>
+    <string name="keyboard_shortcut_label_add_credential">Adăugați o acreditare</string>
+    <string name="keyboard_shortcut_label_verify">Verificați</string>
+    <string name="keyboard_shortcut_label_shortcuts">Comenzi rapide</string>
+    <string name="keyboard_shortcut_desc_settings">Deschideți Setări</string>
+    <string name="keyboard_shortcut_desc_accessibility">Setări de accesibilitate</string>
+    <string name="keyboard_shortcut_desc_help">Centru de ajutor</string>
+    <string name="keyboard_shortcut_desc_add_credential">Adăugați o acreditare</string>
+    <string name="keyboard_shortcut_desc_verify">Porniți verificarea</string>
+    <string name="keyboard_shortcut_desc_shortcuts">Comenzi rapide de tastatură</string>
+    <string name="keyboard_shortcut_nav_back">Înapoi / Închideți</string>
+    <string name="keyboard_shortcut_nav_back_desc">Închideți ecranul sau dialogul curent</string>
+    <string name="keyboard_shortcut_nav_next">Câmpul următor</string>
+    <string name="keyboard_shortcut_nav_next_desc">Mutați focalizarea pe următorul element interactiv</string>
+    <string name="keyboard_shortcut_nav_prev">Câmpul anterior</string>
+    <string name="keyboard_shortcut_nav_prev_desc">Mutați focalizarea pe elementul interactiv anterior</string>
+    <string name="keyboard_shortcut_nav_submit">Trimiteți / Continuați</string>
+    <string name="keyboard_shortcut_nav_submit_desc">Activați butonul focalizat sau trimiteți un formular</string>
+    <string name="keyboard_shortcut_nav_activate">Activați butonul</string>
+    <string name="keyboard_shortcut_nav_activate_desc">Activați butonul sau comutatorul focalizat curent</string>
+    <string name="modal_opened_announcement">Dialog deschis. Apăsați Escape pentru a închide, Enter pentru a confirma.</string>
+    <string name="modal_closed_announcement">Dialog închis</string>
+    <string name="modal_button_primary_label">%s (acțiune principală)</string>
+    <string name="modal_button_cancel_label">%s (anulare)</string>
+    <string name="modal_button_destructive_label">%s (acțiune distructivă)</string>
+    <string name="modal_button_primary_hint">Atingeți de două ori pentru a confirma sau apăsați Enter</string>
+    <string name="modal_button_cancel_hint">Atingeți de două ori pentru a anula sau apăsați Escape</string>
+    <string name="modal_button_destructive_hint">Atingeți de două ori pentru a efectua acțiunea distructivă</string>
+    <string name="modal_button_secondary_hint">Atingeți de două ori pentru a efectua acțiunea</string>
+    <string name="modal_confirm">Confirmați</string>
+    <string name="modal_cancel">Anulați</string>
+    <string name="modal_delete">Ștergeți</string>
+
+    <!-- ==================== NEW STRINGS (synced 2026-04-29) ==================== -->
+    <string name="a11y_delete_credential_for">Ștergeți %1$s</string>
+    <string name="a11y_edit_nickname_for">Editați porecla pentru %1$s</string>
+    <string name="accessibility_attestation_scan_back">Înapoi</string>
+    <string name="attestation_replace_confirm">Înlocuiți</string>
+    <string name="attestation_replace_primary_message">Aveți deja o acreditare personală. Crearea uneia noi o va înlocui. Această acțiune nu poate fi anulată.</string>
+    <string name="attestation_replace_primary_title">Înlocuiți acreditarea existentă?</string>
+    <string name="attestation_scan_error_empty">Codul QR a fost gol</string>
+    <string name="attestation_scan_instruction">Îndreptați camera spre codul QR afișat de către agent</string>
+    <string name="attestation_scan_invalid_qr">Acest cod QR nu conține date de atestare</string>
+    <string name="attestation_scan_title">Scanați atestarea</string>
+    <string name="attestation_scan_wrong_type_toast">Acesta este un cod QR de verificare, nu un cod QR de acreditare</string>
+    <string name="biometric_required_message">Această aplicație necesită o blocare a ecranului (PIN, model sau biometrică) pentru a stoca în siguranță acreditările. Vă rugăm să configurați una în setările de securitate ale dispozitivului înainte de a continua.</string>
+    <string name="biometric_required_open_settings">Deschideți setările de securitate</string>
+    <string name="biometric_required_title">Blocare a ecranului necesară</string>
+    <string name="challenge_sandbox_prompt_announcement">Challenge Sandbox primit. Alegeți dacă activați modul Sandbox și continuați sau respingeți challenge-ul.</string>
+    <string name="challenge_sandbox_prompt_body">Acest challenge a fost emis de un verificator Sandbox. Nu va reuși decât dacă activați modul Sandbox în acest portofel.</string>
+    <string name="challenge_sandbox_prompt_primary">Activați Sandbox și continuați</string>
+    <string name="challenge_sandbox_prompt_secondary">Respingeți challenge-ul</string>
+    <string name="challenge_sandbox_prompt_title">Challenge Sandbox primit</string>
+    <string name="credential_detail_nickname_error">Salvarea poreclei a eșuat</string>
+    <string name="credential_list_managed_count">%1$d din %2$d</string>
+    <string name="credential_picker_count_shown">%1$d acreditări afișate</string>
+    <string name="credential_picker_filter_clear">Ștergeți filtrul</string>
+    <string name="credential_picker_filter_label">Filtrați acreditările după nume</string>
+    <string name="credential_picker_filter_placeholder">Filtrați acreditările</string>
+    <string name="credential_picker_no_results">Nicio acreditare corespunzătoare</string>
+    <string name="credential_picker_section_managed">Acreditări gestionate</string>
+    <string name="credential_picker_section_me">Eu</string>
+    <string name="credential_picker_subtitle">Selectați persoana care este verificată.</string>
+    <string name="credential_row_action_delete">Ștergeți</string>
+    <string name="credential_row_action_edit">Editați porecla</string>
+    <string name="credential_row_overflow_menu">Opțiuni acreditare</string>
+    <string name="deeplink_sandbox_prompt_announcement">Link Sandbox detectat. Alegeți dacă activați modul Sandbox și deschideți linkul.</string>
+    <string name="deeplink_sandbox_prompt_body">Acest deep-link va reuși doar dacă activați modul Sandbox în acest portofel.</string>
+    <string name="deeplink_sandbox_prompt_primary">Activați Sandbox și deschideți</string>
+    <string name="deeplink_sandbox_prompt_secondary">Anulați</string>
+    <string name="deeplink_sandbox_prompt_title">Link Sandbox detectat</string>
+    <string name="empty_credential_option_find_apps_a11y">Găsiți o aplicație participantă. Obțineți o acreditare de la fondul dumneavoastră de pensii, bancă, operator de telecomunicații, asigurător de sănătate sau de la oricine vă cunoaște deja vârsta.</string>
+    <string name="empty_credential_option_find_apps_desc">Obțineți o acreditare de la fondul dumneavoastră de pensii, bancă, operator de telecomunicații, asigurător de sănătate sau de la oricine vă cunoaște deja vârsta</string>
+    <string name="empty_credential_option_find_apps_title">Găsiți o aplicație participantă</string>
+    <string name="empty_credential_option_find_locations_a11y">Găsiți o locație în apropiere. Vizitați personal cu actul dumneavoastră de identitate pentru a obține o acreditare.</string>
+    <string name="empty_credential_option_find_locations_desc">Vizitați personal cu actul dumneavoastră de identitate pentru a obține o acreditare</string>
+    <string name="empty_credential_option_find_locations_title">Găsiți o locație în apropiere</string>
+    <string name="empty_credential_option_managed_a11y">Am grijă de cineva. Gestionați acreditările pentru persoanele de care aveți grijă.</string>
+    <string name="empty_credential_option_managed_desc">Gestionați acreditările pentru persoanele de care aveți grijă</string>
+    <string name="empty_credential_option_managed_title">Am grijă de cineva</string>
+    <string name="empty_credential_option_scan_a11y">Am un cod QR de scanat. Un verificator v-a dat un cod după ce v-a verificat actul de identitate.</string>
+    <string name="empty_credential_option_scan_desc">Un verificator v-a dat un cod după ce v-a verificat actul de identitate</string>
+    <string name="empty_credential_option_scan_title">Am un cod QR de scanat</string>
+    <string name="empty_credential_subtitle">Alegeți cum doriți să obțineți prima dumneavoastră acreditare</string>
+    <string name="empty_credential_title">Nicio acreditare încă</string>
+    <string name="error_screen_lock_required">Este necesară o blocare a ecranului (PIN, model sau biometrică) pentru a stoca în siguranță acreditările. Vă rugăm să configurați una în setările dispozitivului.</string>
+    <string name="issuers_no_apps_found_description">Reveniți în curând, deoarece tot mai multe aplicații adaugă suport pentru Provii</string>
+    <string name="issuers_no_apps_found">Nicio aplicație participantă încă</string>
+    <string name="issuers_no_locations_found_description">Reveniți în curând, deoarece se adaugă tot mai multe locații</string>
+    <string name="issuers_no_locations_found">Nicio locație găsită</string>
+    <string name="managed_credential_explainer_body">Pentru a obține o acreditare gestionată pentru o persoană de care aveți grijă, vizitați împreună o locație participantă. Verificatorul îi va examina actul de identitate. Când scanați codul QR, veți fi întrebat dacă această acreditare este pentru dumneavoastră sau pentru o persoană pe care o gestionați.</string>
+    <string name="managed_credential_explainer_find_location">Găsiți o locație</string>
+    <string name="managed_credential_explainer_have_qr">Am deja un cod QR</string>
+    <string name="managed_credential_explainer_title">Acreditări gestionate</string>
+    <string name="sandbox_credential_type">Tip de acreditare</string>
+    <string name="sandbox_managed_credential_saved">Acreditare gestionată salvată (%s)</string>
+    <string name="sandbox_mode_enabled_announcement">Modul Sandbox este acum activ. Portofelul este conectat la serverele Sandbox.</string>
+    <string name="sandbox_nickname_helper">Dați acestei acreditări un nume pentru a o putea identifica în portofelul dumneavoastră.</string>
+    <string name="sandbox_nickname_label">Poreclă</string>
+    <string name="sandbox_nickname_placeholder">de ex. Sarah</string>
+    <string name="sandbox_nickname_required">O poreclă este necesară pentru acreditările gestionate</string>
+    <string name="sandbox_type_managed_credential">Acreditare gestionată</string>
+    <string name="sandbox_type_your_credential">Acreditarea dumneavoastră</string>
+    <string name="title_find_apps">Găsiți o aplicație participantă</string>
+    <string name="title_find_locations">Găsiți o locație</string>
+    <string name="verification_go_to_attestation">Obțineți acreditarea</string>
+    <string name="verification_wrong_qr_type_message">Acest cod QR este pentru obținerea unei acreditări noi, nu pentru verificarea vârstei. Doriți să mergeți la ecranul de atestare în schimb?</string>
+    <string name="verification_wrong_qr_type_title">Cod QR de atestare detectat</string>
+    <string name="walkthrough_back">Înapoi</string>
+    <string name="walkthrough_get_started">Începeți</string>
+    <string name="walkthrough_next">Următorul</string>
+    <string name="walkthrough_page_indicator">Pagina %1$d din %2$d</string>
+    <string name="walkthrough_page1_body">Acreditarea dumneavoastră conține vârsta dumneavoastră. Nimic altceva. Nici numele, nici adresa, nici identitatea dumneavoastră.\n\nDovedește că aveți peste (sau sub) o anumită vârstă fără a dezvălui data dumneavoastră de naștere.</string>
+    <string name="walkthrough_page1_heading">Ce este o acreditare?</string>
+    <string name="walkthrough_page2_body">Puteți obține o acreditare prin intermediul unei aplicații de la o companie care vă cunoaște deja vârsta. Banca dumneavoastră sau fondul de pensii, de exemplu. Deoarece v-au verificat deja vârsta, nu trebuie partajat nimic din nou.\n\nAlternativ, vizitați o locație participantă cu un act de identitate care vă dovedește data nașterii. Data dumneavoastră de naștere este examinată, utilizată pentru a crea acreditarea, apoi este eliminată. Emitentul nu vede niciodată acreditarea dumneavoastră. Identitatea dumneavoastră nu este niciodată legată de aceasta.</string>
+    <string name="walkthrough_page2_heading">Cum obțineți una?</string>
+    <string name="walkthrough_page3_body">Dacă aveți grijă de cineva care are nevoie de o acreditare de vârstă, puteți obține una pentru această persoană și o puteți gestiona pe dispozitivul dumneavoastră.\n\nVizitați împreună o locație participantă cu un act de identitate care îi dovedește data nașterii. Când scanați codul QR, veți fi întrebat dacă această acreditare este pentru dumneavoastră sau pentru o persoană pe care o gestionați.\n\nAdăugați o poreclă pentru a putea distinge între acreditările lor.</string>
+    <string name="walkthrough_page3_heading">Persoane în întreținere</string>
+    <string name="walkthrough_page4_body">O aplicație care încearcă să vă verifice vârsta poate trimite un challenge direct către portofelul dumneavoastră Provii. Alegeți ce acreditare să utilizați. La verificarea reușită, veți fi redirecționat la aplicația care a făcut solicitarea și veți putea continua ca verificat.\n\nAlternativ, vi se poate prezenta un cod QR pe un alt dispozitiv sau un link în browserul mobil care duce direct la portofelul dumneavoastră. Există, de asemenea, o opțiune de cod scurt pentru accesibilitate.\n\nNicio informație personală nu este partajată vreodată. Doar un răspuns da sau nu la întrebarea dacă îndepliniți cerința de vârstă.</string>
+    <string name="walkthrough_page4_heading">Cum funcționează verificarea?</string>
+    <string name="walkthrough_page5_body">Primul dumneavoastră pas este să obțineți o acreditare prin intermediul unei aplicații participante sau la o locație din apropierea dumneavoastră.\n\nDe acolo, vă puteți verifica vârsta ori de câte ori este nevoie, fără a partaja informații personale. Puteți, de asemenea, să gestionați acreditările pentru persoanele de care aveți grijă.</string>
+    <string name="walkthrough_page5_heading">Sunteți pregătit</string>
+    <string name="walkthrough_skip">Omiteți</string>
+    <string name="officer_preservation_failed">Could not save your progress. Encrypted storage is unavailable. You can continue without saving.</string>
+    <string name="security_restricted_body">A security issue has been detected on this device. Credential access is restricted to protect your data. Please ensure the device is not rooted, no instrumentation frameworks are running, and the application has not been tampered with. Restart the app after resolving the issue.</string>
+    <string name="splash_loading_announcement">Provii. Loading.</string>
+    <string name="page_indicator_description">Page %1$d of %2$d</string>
+    <string name="glossary_term_zero_knowledge_proof">Zero-Knowledge Proof</string>
+    <string name="glossary_term_credential">Credential</string>
+    <string name="glossary_term_issuer">Issuer</string>
+    <string name="glossary_term_verifier">Verifier</string>
+    <string name="glossary_term_qr_code">QR Code</string>
+    <string name="glossary_term_pedersen_commitment">Pedersen Commitment</string>
+    <string name="glossary_term_range_proof">Range Proof</string>
+    <string name="glossary_term_challenge">Challenge</string>
+    <string name="glossary_term_cryptographic_commitment">Cryptographic Commitment</string>
+    <string name="glossary_term_digital_signature">Digital Signature</string>
+    <string name="glossary_term_privacy_preserving">Privacy-Preserving</string>
+    <string name="glossary_term_proving_key">Proving Key</string>
+    <string name="glossary_term_verification_key">Verification Key</string>
+    <string name="glossary_term_session">Session</string>
+    <string name="glossary_term_homomorphic_encryption">Homomorphic Encryption</string>
+    <string name="glossary_term_trusted_authority">Trusted Authority</string>
+    <string name="glossary_short_zero_knowledge_proof">A way to prove something is true without revealing the actual information.</string>
+    <string name="glossary_short_credential">A digital proof of your identity stored on your device.</string>
+    <string name="glossary_short_issuer">A trusted authority that creates and signs your credential.</string>
+    <string name="glossary_short_verifier">A website or service that checks if you meet an age requirement.</string>
+    <string name="glossary_short_qr_code">A square barcode that contains information you can scan with your camera.</string>
+    <string name="glossary_short_pedersen_commitment">A mathematical way to hide information while still allowing proofs about it.</string>
+    <string name="glossary_short_range_proof">A proof that a number falls within a certain range without revealing the number.</string>
+    <string name="glossary_short_challenge">A request from a verifier asking you to prove something about your age.</string>
+    <string name="glossary_short_cryptographic_commitment">A way to commit to information that can be revealed and verified later.</string>
+    <string name="glossary_short_digital_signature">A mathematical proof that a document came from a specific source and hasn\'t been altered.</string>
+    <string name="glossary_short_privacy_preserving">Technology that protects your personal information while still allowing verification.</string>
+    <string name="glossary_short_proving_key">Cryptographic data needed to generate zero-knowledge proofs.</string>
+    <string name="glossary_short_verification_key">Cryptographic data used by verifiers to check proofs.</string>
+    <string name="glossary_short_session">A single age verification attempt from start to finish.</string>
+    <string name="glossary_short_homomorphic_encryption">Encryption that allows mathematical operations on encrypted data.</string>
+    <string name="glossary_short_trusted_authority">An organization authorized to verify identities and issue credentials.</string>
+    <string name="glossary_full_zero_knowledge_proof">A zero-knowledge proof is a cryptographic method where one party (the prover) can prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself.\n\nExample: You can prove you\'re over 21 without showing your exact age or date of birth.\n\nThis is the core technology that makes Provii Wallet privacy-preserving. When you verify your age, the verifier learns only that you meet their requirement (e.g., "over 18"), not your actual age or date of birth.</string>
+    <string name="glossary_full_credential">A credential is a cryptographically signed piece of information that proves an attribute about you. In Provii Wallet, your credential contains your date of birth in an encrypted form.\n\nKey properties:\n• Stored only on your device\n• Never transmitted to verifiers\n• Used to generate zero-knowledge proofs\n• Issued by trusted authorities\n• Cannot be forged or modified\n\nThink of it as a digital version of your ID card, but one that allows you to prove specific facts (like "over 18") without showing the whole card.</string>
+    <string name="glossary_full_issuer">An issuer is an organization authorized to verify your identity and create digital credentials. This could be a government agency, DMV office, or other trusted institution.\n\nThe issuer\'s role:\n• Verifies your identity in person\n• Checks official documents (passport, driver\'s license)\n• Creates your digital credential\n• Signs it cryptographically\n• Helps you store it on your device\n\nThe issuer only needs to verify you once. After that, you can use your credential to verify your age as many times as needed without involving the issuer again.</string>
+    <string name="glossary_full_verifier">A verifier is any website, app, or service that needs to confirm you meet an age requirement. Examples include:\n• Websites selling age-restricted products\n• Online services with age requirements\n• Apps with age-gated content\n\nWhat the verifier learns:\n• Only whether you meet their requirement (yes/no)\n• Nothing about your actual age\n• Nothing about your date of birth\n• Nothing that could identify you\n\nThe verifier receives a cryptographic proof that is mathematically valid but reveals no personal information beyond the yes/no answer to their specific age check.</string>
+    <string name="glossary_full_qr_code">A QR (Quick Response) code is a two-dimensional barcode that can store text, numbers, or web addresses. Provii Wallet uses QR codes in two ways:\n\n1. Credential Issuance: Scan a code from the issuer to receive your credential\n2. Age Verification: Scan a code from a verifier to start the verification process\n\nQR codes are just a convenient way to transfer small amounts of data. If you have difficulty scanning QR codes, you can use the Manual Code Entry alternative input method to type the information instead.</string>
+    <string name="glossary_full_pedersen_commitment">A Pedersen commitment is a cryptographic technique that allows you to commit to a value without revealing it. It\'s like putting a number in a sealed envelope.\n\nProperties:\n• Hiding: No one can see what number is committed\n• Binding: You can\'t change the number after committing\n• Homomorphic: Allows mathematical operations on committed values\n\nIn Provii Wallet, your date of birth is stored as a Pedersen commitment. This allows you to prove facts about your age (like "over 18") without ever revealing your actual birth date.</string>
+    <string name="glossary_full_range_proof" formatted="false">A range proof is a type of zero-knowledge proof that demonstrates a committed value lies within a specific range, without revealing the actual value.\n\nExample: Proving you\'re between 18 and 120 years old without revealing you\'re 25.\n\nHow Provii Wallet uses range proofs:\n• To prove your age exceeds a minimum (e.g., 18, 21)\n• Without revealing your exact age\n• Without revealing your date of birth\n• In a way that\'s mathematically verifiable\n\nThe verifier can be 100% certain the proof is valid, but learns nothing about your actual age beyond the yes/no answer.</string>
+    <string name="glossary_full_challenge">A challenge is a request issued by a verifier that specifies:\n• What needs to be proven (e.g., "over 18")\n• A unique session identifier\n• A cryptographic nonce (random number) for security\n\nThe challenge ensures:\n• Each verification is unique and can\'t be reused\n• The proof is tied to this specific verification session\n• Replay attacks are prevented\n• The verifier can trust the response\n\nWhen you scan a QR code from a verifier, you\'re receiving a challenge. Your wallet then generates a zero-knowledge proof in response to that challenge.</string>
+    <string name="glossary_full_cryptographic_commitment">A cryptographic commitment is like a sealed envelope - you can commit to a value without revealing it, and later prove what that value was without the ability to change it.\n\nTwo key properties:\n1. Hiding: The commitment doesn\'t reveal the value\n2. Binding: You can\'t change the value after committing\n\nYour age credential uses commitments to hide your date of birth while still allowing you to prove facts about your age. The commitment is created when you receive your credential from the issuer.</string>
+    <string name="glossary_full_digital_signature">A digital signature is a cryptographic technique that proves:\n• Who created or authorized a document\n• The document hasn\'t been modified since signing\n• The signer cannot deny having signed it\n\nIn Provii Wallet:\n• The issuer digitally signs your credential\n• This proves the credential is authentic\n• It prevents anyone from creating fake credentials\n• It ensures your credential hasn\'t been tampered with\n\nDigital signatures are the digital equivalent of handwritten signatures, but much more secure and verifiable.</string>
+    <string name="glossary_full_privacy_preserving">Privacy-preserving means the system is designed from the ground up to minimize data exposure and protect your personal information.\n\nProvii Wallet\'s privacy-preserving features:\n• Zero-knowledge proofs reveal only yes/no answers\n• Your date of birth never leaves your device\n• Verifiers learn nothing about your actual age\n• No tracking or profiling is possible\n• No central database of verifications\n• Each verification is unlinkable to others\n\nTraditional age verification systems require you to show your full ID or date of birth. Privacy-preserving systems like Provii Wallet allow verification without revealing unnecessary information.</string>
+    <string name="glossary_full_proving_key">A proving key is public cryptographic data used to generate zero-knowledge proofs. It\'s like a recipe that tells your device how to create valid proofs.\n\nKey facts:\n• Public and safe to download\n• Same for all users\n• Required to generate proofs\n• About 150-200MB in size\n• Downloaded once and cached\n\nThe app downloads the proving key the first time you perform a verification. This is a one-time download that enables all future verifications.</string>
+    <string name="glossary_full_verification_key">A verification key is public cryptographic data that verifiers use to check if a zero-knowledge proof is valid. It\'s the counterpart to the proving key.\n\nKey facts:\n• Much smaller than proving key (~1KB)\n• Public and widely distributed\n• Verifiers have their own copy\n• Ensures only valid proofs are accepted\n• Same verification key for all users\n\nWhen a verifier checks your proof, they use the verification key to mathematically confirm it\'s valid without learning anything about your actual age.</string>
+    <string name="glossary_full_session">A session represents one complete age verification interaction:\n\n1. Verifier creates a challenge\n2. You scan the QR code\n3. App generates a proof\n4. Proof is submitted to verifier\n5. Verifier checks proof and responds\n\nEach session:\n• Is unique and time-limited\n• Has a unique identifier\n• Cannot be reused or replayed\n• Typically completes in seconds\n• Leaves no persistent record\n\nSessions ensure security and prevent someone from reusing an old proof to bypass verification.</string>
+    <string name="glossary_full_homomorphic_encryption">Homomorphic encryption is a special form of encryption that allows certain mathematical operations to be performed on encrypted data without decrypting it first.\n\nExample: You can add two encrypted numbers and get an encrypted result that, when decrypted, equals the sum of the original numbers.\n\nProvii Wallet uses homomorphic properties of Pedersen commitments to:\n• Compare encrypted ages to threshold values\n• Generate range proofs\n• Perform age checks without revealing age\n\nThis is what enables zero-knowledge proofs to work - you can prove relationships between values without revealing the values themselves.</string>
+    <string name="glossary_full_trusted_authority">A trusted authority is an organization that:\n• Has legal authority to verify identities\n• Follows strict identity verification procedures\n• Is trusted by verifiers to issue accurate credentials\n• Maintains high security standards\n\nExamples:\n• Government agencies\n• Department of Motor Vehicles (DMV)\n• Passport offices\n• Licensed identity verification services\n\nThe trust model ensures that:\n• Only legitimate authorities can issue credentials\n• Verifiers can trust the credentials are accurate\n• Users have confidence in the system\n• Fraud is prevented\n\nYou must visit a trusted authority in person to receive your initial credential.</string>
+</resources>

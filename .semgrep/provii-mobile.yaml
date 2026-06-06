@@ -1,0 +1,192 @@
+rules:
+
+  # ============================================================================
+  # RULE 1: Hardcoded secrets in Swift
+  # ============================================================================
+  # Catches API keys, tokens, and secrets assigned directly as string literals
+  # in Swift source files. Excludes test directories and example code.
+  - id: provii.mobile.swift-hardcoded-secret
+    pattern-regex: '(?:let|var)\s+\w*(?:apiKey|secretKey|token|password|secret|privateKey|authKey)\w*\s*(?::\s*String)?\s*=\s*"[^"]{8,}"'
+    paths:
+      include:
+        - "ios/**"
+      exclude:
+        - "**/Tests/**"
+        - "**/*Tests*/**"
+        - "**/Preview*/**"
+        - "**/Mocks/**"
+    message: >
+      Possible hardcoded secret in Swift source. API keys, tokens, and
+      passwords must not be embedded in source code. Use Keychain Services
+      or environment-based configuration.
+    languages: [swift]
+    severity: ERROR
+    metadata:
+      category: security
+      subcategory: hardcoded-credentials
+      cwe: "CWE-798: Use of Hard-coded Credentials"
+
+  # ============================================================================
+  # RULE 2: Hardcoded secrets in Kotlin
+  # ============================================================================
+  - id: provii.mobile.kotlin-hardcoded-secret
+    pattern-regex: '(?:val|var)\s+\w*(?:apiKey|secretKey|token|password|secret|privateKey|authKey)\w*\s*(?::\s*String)?\s*=\s*"[^"]{8,}"'
+    paths:
+      include:
+        - "android/**"
+      exclude:
+        - "**/test/**"
+        - "**/androidTest/**"
+        - "**/Mock*/**"
+    message: >
+      Possible hardcoded secret in Kotlin source. API keys, tokens, and
+      passwords must not be embedded in source code. Use EncryptedSharedPreferences
+      or the Android Keystore system.
+    languages: [kotlin]
+    severity: ERROR
+    metadata:
+      category: security
+      subcategory: hardcoded-credentials
+      cwe: "CWE-798: Use of Hard-coded Credentials"
+
+  # ============================================================================
+  # RULE 3: Insecure HTTP URLs in Swift (non-localhost)
+  # ============================================================================
+  - id: provii.mobile.swift-insecure-http
+    pattern-regex: 'URL\(string:\s*"http://(?!localhost|127\.0\.0\.1|10\.0\.)'
+    paths:
+      include:
+        - "ios/**"
+      exclude:
+        - "**/Tests/**"
+        - "**/*Tests*/**"
+        - "**/Preview*/**"
+    message: >
+      Insecure HTTP URL detected in Swift source. All network requests
+      must use HTTPS. App Transport Security may block HTTP at runtime,
+      but the code should not rely on that.
+    languages: [swift]
+    severity: ERROR
+    metadata:
+      category: security
+      subcategory: cleartext-transport
+      cwe: "CWE-319: Cleartext Transmission of Sensitive Information"
+
+  # ============================================================================
+  # RULE 4: Insecure HTTP URLs in Kotlin (non-localhost)
+  # ============================================================================
+  - id: provii.mobile.kotlin-insecure-http
+    pattern-regex: '"http://(?!localhost|127\.0\.0\.1|10\.0\.)'
+    paths:
+      include:
+        - "android/**"
+      exclude:
+        - "**/test/**"
+        - "**/androidTest/**"
+    message: >
+      Insecure HTTP URL detected in Kotlin source. All network requests
+      must use HTTPS to prevent credential interception.
+    languages: [kotlin]
+    severity: ERROR
+    metadata:
+      category: security
+      subcategory: cleartext-transport
+      cwe: "CWE-319: Cleartext Transmission of Sensitive Information"
+
+  # ============================================================================
+  # RULE 5: Non-constant-time comparison of secrets in Swift
+  # ============================================================================
+  - id: provii.mobile.swift-non-ct-comparison
+    pattern-regex: '(?:hmac|token|secret|authTag|signature|apiKey|nonce|pin)\w*\s*==\s*(?:hmac|token|secret|authTag|signature|apiKey|nonce|pin)'
+    paths:
+      include:
+        - "ios/**"
+      exclude:
+        - "**/Tests/**"
+        - "**/*Tests*/**"
+    message: >
+      Direct == comparison on values that appear to be secrets or MACs.
+      Use crypto.subtle.timingSafeEqual() or constantTimeCompare() from
+      Core/Security/ to prevent timing side-channels.
+    languages: [swift]
+    severity: ERROR
+    metadata:
+      category: security
+      subcategory: timing-attack
+      cwe: "CWE-208: Observable Timing Discrepancy"
+
+  # ============================================================================
+  # RULE 6: Print/NSLog in production Swift code
+  # ============================================================================
+  - id: provii.mobile.swift-debug-output
+    patterns:
+      - pattern-either:
+          - pattern: print(...)
+          - pattern: NSLog(...)
+          - pattern: debugPrint(...)
+      - pattern-not-inside: |
+          #if DEBUG
+          ...
+          #endif
+    paths:
+      include:
+        - "ios/ProviiWallet/ProviiWallet/**"
+      exclude:
+        - "**/Tests/**"
+        - "**/*Tests*/**"
+        - "**/Preview*/**"
+    message: >
+      Debug output (print/NSLog/debugPrint) in production code may leak
+      sensitive information. Wrap in #if DEBUG or remove entirely.
+    languages: [swift]
+    severity: WARNING
+    metadata:
+      category: security
+      subcategory: information-leak
+      cwe: "CWE-532: Insertion of Sensitive Information into Log File"
+
+  # ============================================================================
+  # RULE 7: Log.d/Log.v in production Kotlin code
+  # ============================================================================
+  - id: provii.mobile.kotlin-debug-logging
+    patterns:
+      - pattern-either:
+          - pattern: Log.d(...)
+          - pattern: Log.v(...)
+    paths:
+      include:
+        - "android/app/src/main/**"
+      exclude:
+        - "**/test/**"
+        - "**/androidTest/**"
+    message: >
+      Debug/verbose logging in production code may leak sensitive data
+      on user devices. Use Timber with a release-safe tree, or remove
+      debug log calls from production paths.
+    languages: [kotlin]
+    severity: WARNING
+    metadata:
+      category: security
+      subcategory: information-leak
+      cwe: "CWE-532: Insertion of Sensitive Information into Log File"
+
+  # ============================================================================
+  # RULE 8: WebView JavaScript enabled without restriction
+  # ============================================================================
+  - id: provii.mobile.kotlin-webview-js-enabled
+    pattern: $SETTINGS.javaScriptEnabled = true
+    paths:
+      include:
+        - "android/**"
+      exclude:
+        - "**/test/**"
+        - "**/androidTest/**"
+    message: >
+      WebView JavaScript is enabled. Ensure the WebView loads only trusted
+      content and has appropriate URL validation to prevent XSS.
+    languages: [kotlin]
+    severity: WARNING
+    metadata:
+      category: security
+      subcategory: webview-security
+      cwe: "CWE-79: Improper Neutralization of Input During Web Page Generation"
